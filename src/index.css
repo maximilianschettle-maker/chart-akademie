@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-nacht text-schrift font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-akzent/30;
+  }
+}
+
+@layer components {
+  /* Fließtext innerhalb von Lektions-Blöcken (kommt aus html-Strings) */
+  .lektion-text strong {
+    @apply text-white font-semibold;
+  }
+  .lektion-text em {
+    @apply text-akzent not-italic;
+  }
+  .lektion-text ul {
+    @apply list-disc pl-5 space-y-1 my-2;
+  }
+  .lektion-text ol {
+    @apply list-decimal pl-5 space-y-1 my-2;
+  }
+  .lektion-text p + p {
+    @apply mt-3;
+  }
+  .lektion-text code {
+    @apply bg-nacht px-1.5 py-0.5 rounded text-akzent text-[0.9em];
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
