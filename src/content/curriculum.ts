@@ -1,5 +1,5 @@
 import type { Lesson, LevelDef } from '../types'
-import { l1Lektionen, l2Lektionen } from './lektionen'
+import { l1Lektionen, l2Lektionen, l3Lektionen, l4Lektionen } from './lektionen'
 
 // Einzige Quelle für Reihenfolge und Freischaltung des Lernpfads.
 
@@ -20,28 +20,13 @@ export const CURRICULUM: LevelDef[] = [
     level: 3,
     titel: 'Parameter & Marktdaten',
     beschreibung: 'Volume, Volume Profile, Open Interest, Funding, Liquidation & Liquidity Map, Heatmaps.',
-    lektionIds: [],
-    geplant: [
-      'Volumen richtig lesen',
-      'Volume Profile (POC & Value Area)',
-      'Open Interest & Funding Rate',
-      'Liquidation & Liquidity Map',
-      'Heatmaps & Orderbuch-Level',
-      'EMA & RSI — die zwei Indikatoren, die reichen',
-    ],
+    lektionIds: ['l3-01', 'l3-02', 'l3-03', 'l3-04', 'l3-05', 'l3-06'],
   },
   {
     level: 4,
     titel: 'Strategien',
-    beschreibung: 'Fünf konkrete Setups — mit annotierten Beispielen und Replay-Übungen.',
-    lektionIds: [],
-    geplant: [
-      'Trendfolge mit EMAs',
-      'Support/Resistance-Bounce',
-      'Breakout + Retest',
-      'Range Trading',
-      'Liquidity Sweep (SMC-Basics)',
-    ],
+    beschreibung: 'Fünf konkrete Setups — mit echten Beispielen und Replay-Übungen.',
+    lektionIds: ['l4-01', 'l4-02', 'l4-03', 'l4-04', 'l4-05'],
   },
   {
     level: 5,
@@ -53,7 +38,7 @@ export const CURRICULUM: LevelDef[] = [
 ]
 
 export const LEKTIONEN: Record<string, Lesson> = Object.fromEntries(
-  [...l1Lektionen, ...l2Lektionen].map((l) => [l.id, l]),
+  [...l1Lektionen, ...l2Lektionen, ...l3Lektionen, ...l4Lektionen].map((l) => [l.id, l]),
 )
 
 export const QUIZ_BESTANDEN_PROZENT = 70

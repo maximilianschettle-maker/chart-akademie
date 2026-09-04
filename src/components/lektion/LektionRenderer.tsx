@@ -71,6 +71,7 @@ function Block({ block, onQuizFertig }: { block: LessonBlock; onQuizFertig: (p: 
           bis={block.bis}
           annotationen={block.annotationen}
           beschreibung={block.beschreibung}
+          emaPerioden={block.emaPerioden}
         />
       )
     case 'quiz':

@@ -12,6 +12,7 @@ interface ChartBlockProps {
   bis: number
   annotationen?: ChartAnnotation[]
   beschreibung?: string
+  emaPerioden?: number[]
 }
 
 export function ChartBlock({
@@ -22,6 +23,7 @@ export function ChartBlock({
   bis,
   annotationen,
   beschreibung,
+  emaPerioden,
 }: ChartBlockProps) {
   const [candles, setCandles] = useState<Candle[] | null>(null)
   const [fehler, setFehler] = useState(false)
@@ -58,7 +60,7 @@ export function ChartBlock({
           <LoaderCircle className="h-6 w-6 animate-spin" />
         </div>
       ) : (
-        <ChartPanel candles={candles} annotationen={annotationen} />
+        <ChartPanel candles={candles} annotationen={annotationen} emaPerioden={emaPerioden} />
       )}
       {beschreibung && <p className="mt-3 text-sm text-gedimmt">{beschreibung}</p>}
     </div>

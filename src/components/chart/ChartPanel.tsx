@@ -3,6 +3,7 @@ import {
   createChart,
   CandlestickSeries,
   HistogramSeries,
+  LineSeries,
   createSeriesMarkers,
   ColorType,
   type UTCTimestamp,
@@ -10,6 +11,9 @@ import {
   type Time,
 } from 'lightweight-charts'
 import type { Candle, ChartAnnotation } from '../../types'
+import { ema } from '../../engine/indikatoren/ema'
+
+const EMA_FARBEN = ['#F59E0B', '#3B82F6', '#A855F7']
 
 // Einzige Stelle im Projekt, die lightweight-charts direkt anspricht (v5-API!).
 
@@ -26,6 +30,7 @@ interface ChartPanelProps {
   annotationen?: ChartAnnotation[]
   hoehe?: number
   zeigeVolumen?: boolean
+  emaPerioden?: number[]
 }
 
 export function ChartPanel({
@@ -33,6 +38,7 @@ export function ChartPanel({
   annotationen = [],
   hoehe = 380,
   zeigeVolumen = true,
+  emaPerioden,
 }: ChartPanelProps) {
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -91,6 +97,24 @@ export function ChartPanel({
       })
     }
 
+    if (emaPerioden) {
+      emaPerioden.forEach((periode, idx) => {
+        const werte = ema(candles, periode)
+        const serie = chart.addSeries(LineSeries, {
+          color: EMA_FARBEN[idx % EMA_FARBEN.length],
+          lineWidth: 2,
+          priceLineVisible: false,
+          lastValueVisible: false,
+          title: `EMA ${periode}`,
+        })
+        serie.setData(
+          candles
+            .map((c, i) => ({ time: c.time as UTCTimestamp, value: werte[i] }))
+            .filter((p) => Number.isFinite(p.value)),
+        )
+      })
+    }
+
     const marker: SeriesMarker<Time>[] = []
     for (const a of annotationen) {
       if (a.typ === 'marker') {
@@ -128,7 +152,7 @@ export function ChartPanel({
       beobachter.disconnect()
       chart.remove()
     }
-  }, [candles, annotationen, hoehe, zeigeVolumen])
+  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden])
 
   return <div ref={containerRef} className="w-full overflow-hidden rounded-lg" />
 }

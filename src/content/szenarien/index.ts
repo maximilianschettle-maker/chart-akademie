@@ -88,4 +88,60 @@ export const SZENARIEN: Record<string, Scenario> = {
     },
     datumVerdeckt: true,
   },
+
+  's-range-btc-sep23': {
+    id: 's-range-btc-sep23',
+    titel: 'Range Trading',
+    strategieId: 'range-trading',
+    datensatz: 'btc-range-sep23',
+    symbol: 'BTCUSDT',
+    interval: '1h',
+    startIndex: 336,
+    endIndex: 576,
+    aufgabe:
+      'Der Markt pendelt seit Tagen in einer Range: Unterkante ~25.400–25.700 $ (mehrfach getestet), Oberkante ~26.000–26.400 $. Range-Regel: am Rand kaufen/verkaufen, nie in der Mitte. Der Preis nähert sich gerade wieder der Unterkante. Platziere deinen Long am Range-Tief — Stop UNTER der Range, Ziel an der Oberkante.',
+    richtung: 'long',
+    entryZone: { preisVon: 25350, preisBis: 25750, barVon: 408, barBis: 480 },
+    idealEntry: 25600,
+    idealStopLoss: 25150,
+    idealTakeProfit: 26350,
+    feedback: {
+      perfekt:
+        'Sauberes Range-Handwerk: Long an der mehrfach bestätigten Unterkante, Stop unter der Range, Ziel an der Oberkante. Der Markt lief ans Ziel. Und beachte, was wenige Tage später passierte: Die Range brach nach unten — Ranges enden irgendwann, deshalb ist der Stop unter der Range nicht verhandelbar.',
+      ok: 'Entry an der Unterkante war richtig. Aber Stop oder Ziel waren unsauber — beim Range-Trade gehört der SL UNTER die Range (nicht mitten hinein) und das Ziel an die Oberkante, sonst stimmt das CRV nicht.',
+      verpasst:
+        'Kein Entry — dabei hat die Unterkante der Range mehrere Stunden lang Einstiege angeboten. Range-Trading ist das geduldigste Setup überhaupt: Man wartet, bis der Preis zum Rand kommt, und handelt den Abpraller. In der Mitte der Range gibt es dagegen nichts zu holen.',
+      falsch:
+        'Das passte nicht zum Range-Plan — falsche Richtung oder Entry außerhalb der Unterkanten-Zone (25.350–25.750 $). Der häufigste Range-Fehler: in der Mitte einsteigen, wo weder Stop noch Ziel sinnvoll definierbar sind.',
+    },
+    datumVerdeckt: true,
+  },
+
+  's-sweep-btc-mai24': {
+    id: 's-sweep-btc-mai24',
+    titel: 'Liquidity Sweep',
+    strategieId: 'liquidity-sweep',
+    datensatz: 'btc-sweep-mai24',
+    symbol: 'BTCUSDT',
+    interval: '4h',
+    startIndex: 180,
+    endIndex: 342,
+    aufgabe:
+      'Unter dem Markt liegt ein markanter Doppelboden (~59.600 $) — und darunter schlummern die Stops und Liquidationen aller, die dort long gegangen sind. Szenario: Der Preis bricht unter den Doppelboden ein (Sweep!). Deine Aufgabe: NICHT in Panik shorten, sondern auf die Rückeroberung des Levels warten und den Long platzieren — Stop unter dem Sweep-Tief.',
+    richtung: 'long',
+    entryZone: { preisVon: 56600, preisBis: 60500, barVon: 222, barBis: 240 },
+    idealEntry: 59000,
+    idealStopLoss: 56400,
+    idealTakeProfit: 64500,
+    feedback: {
+      perfekt:
+        'Exzellent — das schwerste Setup des Kurses, sauber ausgeführt: Der Bruch des Doppelbodens war der Sweep, deine Rückeroberungs-Entry mit Stop unter dem Sweep-Tief war der Lehrbuch-Einstieg. Der Markt lief anschließend über 71.000 $. Genau so nutzt man die Liquiditäts-Mechanik aus Level 3.',
+      ok: 'Richtige Zone — du hast den Sweep als Kaufgelegenheit erkannt statt panisch zu verkaufen. Aber Stop oder Ziel waren unsauber: Der SL gehört UNTER das Sweep-Tief (56.553 $), das Ziel mindestens zurück in die alte Range.',
+      verpasst:
+        'Kein Entry. Verständlich — ein brechender Doppelboden sieht nach Crash aus. Aber genau das ist der Sweep: Die erzwungenen Verkäufe (Stops + Liquidationen) werden abgeräumt, große Käufer füllen sich, und die Rückeroberung des Levels ist das Signal. Der Markt lief danach von 58.000 auf über 71.000 $.',
+      falsch:
+        'Das war nicht der Plan — falsche Richtung oder Entry außerhalb der Sweep-Zone. Der klassische Fehler hier: unter dem gebrochenen Doppelboden SHORT zu gehen — genau in die Zone hinein, in der die Abwärtsbewegung ihre erzwungenen Verkäufer verliert. Nach dem Sweep gehört das Level beobachtet, nicht gejagt.',
+    },
+    datumVerdeckt: true,
+  },
 }

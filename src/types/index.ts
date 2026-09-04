@@ -54,6 +54,7 @@ export type LessonBlock =
       bis: number
       annotationen?: ChartAnnotation[]
       beschreibung?: string
+      emaPerioden?: number[]
     }
   | { typ: 'quiz'; fragen: QuizFrage[] }
   | { typ: 'uebung'; szenarioId: string }
