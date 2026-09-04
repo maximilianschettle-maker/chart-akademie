@@ -26,7 +26,7 @@ export function JournalPage() {
         Alle Trades aus deinen Simulator-Sessions — dein wichtigstes Lernwerkzeug.
       </p>
 
-      <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+      <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
         <Kachel
           titel="Kontostand"
           wert={`${kontostand.toLocaleString('de-DE', { maximumFractionDigits: 0 })} $`}
@@ -46,6 +46,11 @@ export function JournalPage() {
         <Kachel
           titel="Profit-Faktor"
           wert={Number.isFinite(stats.profitFaktor) ? stats.profitFaktor.toFixed(2) : '∞'}
+        />
+        <Kachel
+          titel="Max. Drawdown"
+          wert={`−${stats.maxDrawdown.toLocaleString('de-DE', { maximumFractionDigits: 0 })} $`}
+          farbe="text-short"
         />
       </div>
 

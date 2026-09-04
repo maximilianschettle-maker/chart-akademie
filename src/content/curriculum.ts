@@ -1,5 +1,5 @@
 import type { Lesson, LevelDef } from '../types'
-import { l1Lektionen, l2Lektionen, l3Lektionen, l4Lektionen } from './lektionen'
+import { l1Lektionen, l2Lektionen, l3Lektionen, l4Lektionen, l5Lektionen } from './lektionen'
 
 // Einzige Quelle für Reihenfolge und Freischaltung des Lernpfads.
 
@@ -32,13 +32,15 @@ export const CURRICULUM: LevelDef[] = [
     level: 5,
     titel: 'Praxis',
     beschreibung: 'Szenario-Serie, freier Replay-Modus und dein Trade-Journal.',
-    lektionIds: [],
-    geplant: ['Geführte Szenario-Serie', 'Freier Replay-Modus', 'Trade-Journal & Statistik'],
+    lektionIds: ['l5-01', 'l5-02', 'l5-03'],
   },
 ]
 
 export const LEKTIONEN: Record<string, Lesson> = Object.fromEntries(
-  [...l1Lektionen, ...l2Lektionen, ...l3Lektionen, ...l4Lektionen].map((l) => [l.id, l]),
+  [...l1Lektionen, ...l2Lektionen, ...l3Lektionen, ...l4Lektionen, ...l5Lektionen].map((l) => [
+    l.id,
+    l,
+  ]),
 )
 
 export const QUIZ_BESTANDEN_PROZENT = 70

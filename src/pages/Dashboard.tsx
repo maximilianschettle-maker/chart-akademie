@@ -1,5 +1,6 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Lock, CheckCircle2, Circle, ArrowRight, Clock, Target } from 'lucide-react'
+import { Lock, CheckCircle2, Circle, ArrowRight, Clock, Target, RotateCcw } from 'lucide-react'
 import { CURRICULUM, LEKTIONEN, istLevelFrei, naechsteOffeneLektion } from '../content/curriculum'
 import { SZENARIEN } from '../content/szenarien'
 import { useProgressStore } from '../stores/progressStore'
@@ -8,6 +9,8 @@ import { ProgressRing } from '../components/ui/ProgressRing'
 export function Dashboard() {
   const abgeschlossene = useProgressStore((s) => s.abgeschlosseneLektionen)
   const szenarioErgebnisse = useProgressStore((s) => s.szenarioErgebnisse)
+  const zuruecksetzen = useProgressStore((s) => s.zuruecksetzen)
+  const [resetBestaetigen, setResetBestaetigen] = useState(false)
   const naechste = naechsteOffeneLektion(abgeschlossene)
 
   return (
@@ -139,6 +142,38 @@ export function Dashboard() {
             )
           })}
         </div>
+      </div>
+
+      <div className="mt-10 border-t border-rand pt-4">
+        {resetBestaetigen ? (
+          <div className="flex flex-wrap items-center gap-3 text-sm">
+            <span className="text-gedimmt">
+              Gesamten Lernfortschritt (Lektionen + Übungen) wirklich zurücksetzen?
+            </span>
+            <button
+              onClick={() => {
+                zuruecksetzen()
+                setResetBestaetigen(false)
+              }}
+              className="rounded-lg bg-short px-3 py-1.5 font-semibold text-white"
+            >
+              Ja, zurücksetzen
+            </button>
+            <button
+              onClick={() => setResetBestaetigen(false)}
+              className="rounded-lg bg-flaeche px-3 py-1.5 text-gedimmt hover:text-white"
+            >
+              Abbrechen
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={() => setResetBestaetigen(true)}
+            className="inline-flex items-center gap-1.5 text-xs text-gedimmt hover:text-short"
+          >
+            <RotateCcw className="h-3.5 w-3.5" /> Lernfortschritt zurücksetzen
+          </button>
+        )}
       </div>
     </div>
   )
