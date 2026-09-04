@@ -1,8 +1,11 @@
-import { Lightbulb, TriangleAlert, Pin } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { Lightbulb, TriangleAlert, Pin, Target, CheckCircle2 } from 'lucide-react'
 import type { Lesson, LessonBlock } from '../../types'
 import { Quiz } from './Quiz'
 import { ChartBlock } from './ChartBlock'
 import { DemoRegistry } from './demos'
+import { SZENARIEN } from '../../content/szenarien'
+import { useProgressStore } from '../../stores/progressStore'
 
 interface LektionRendererProps {
   lektion: Lesson
@@ -73,8 +76,35 @@ function Block({ block, onQuizFertig }: { block: LessonBlock; onQuizFertig: (p: 
     case 'quiz':
       return <Quiz fragen={block.fragen} onFertig={onQuizFertig} />
     case 'uebung':
-      return null // kommt in Phase 3 (geführte Szenarien)
+      return <UebungKarte szenarioId={block.szenarioId} />
   }
+}
+
+function UebungKarte({ szenarioId }: { szenarioId: string }) {
+  const szenario = SZENARIEN[szenarioId]
+  const ergebnis = useProgressStore((s) => s.szenarioErgebnisse[szenarioId])
+  if (!szenario) return null
+  return (
+    <Link
+      to={`/uebung/${szenarioId}`}
+      className="flex items-center justify-between rounded-xl border border-akzent/40 bg-flaeche p-4 transition-colors hover:border-akzent"
+    >
+      <div>
+        <div className="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-akzent">
+          <Target className="h-4 w-4" /> Chart-Übung
+        </div>
+        <div className="mt-1 font-semibold text-white">{szenario.titel}</div>
+        <div className="text-xs text-gedimmt">
+          Am echten historischen Chart — Kerze für Kerze.
+        </div>
+      </div>
+      {ergebnis && (
+        <span className="inline-flex items-center gap-1 text-xs font-semibold text-long">
+          <CheckCircle2 className="h-4 w-4" /> {ergebnis.bewertung}
+        </span>
+      )}
+    </Link>
+  )
 }
 
 export function LektionRenderer({ lektion, onQuizFertig }: LektionRendererProps) {

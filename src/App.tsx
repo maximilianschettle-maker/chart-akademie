@@ -4,6 +4,7 @@ import { Dashboard } from './pages/Dashboard'
 import { LektionPage } from './pages/LektionPage'
 import { SimulatorPage } from './pages/SimulatorPage'
 import { JournalPage } from './pages/JournalPage'
+import { UebungPage } from './pages/UebungPage'
 
 function Platzhalter({ titel }: { titel: string }) {
   return (
@@ -54,6 +55,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/lektion/:lektionId" element={<LektionPage />} />
+          <Route path="/uebung/:szenarioId" element={<UebungPage />} />
           <Route path="/simulator" element={<SimulatorPage />} />
           <Route path="/journal" element={<JournalPage />} />
           <Route path="*" element={<Platzhalter titel="Seite nicht gefunden" />} />

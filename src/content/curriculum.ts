@@ -1,5 +1,5 @@
 import type { Lesson, LevelDef } from '../types'
-import { l1Lektionen } from './lektionen'
+import { l1Lektionen, l2Lektionen } from './lektionen'
 
 // Einzige Quelle für Reihenfolge und Freischaltung des Lernpfads.
 
@@ -14,13 +14,7 @@ export const CURRICULUM: LevelDef[] = [
     level: 2,
     titel: 'Risikomanagement',
     beschreibung: 'Das Fundament: Position Sizing, Stop-Loss, R-Multiple, Psychologie.',
-    lektionIds: [],
-    geplant: [
-      'Warum Risiko vor Entry kommt',
-      'Position Sizing & die 1-%-Regel',
-      'Stop-Loss, Take-Profit & R-Multiple',
-      'Trading-Psychologie',
-    ],
+    lektionIds: ['l2-01', 'l2-02', 'l2-03', 'l2-04'],
   },
   {
     level: 3,
@@ -59,7 +53,7 @@ export const CURRICULUM: LevelDef[] = [
 ]
 
 export const LEKTIONEN: Record<string, Lesson> = Object.fromEntries(
-  [...l1Lektionen].map((l) => [l.id, l]),
+  [...l1Lektionen, ...l2Lektionen].map((l) => [l.id, l]),
 )
 
 export const QUIZ_BESTANDEN_PROZENT = 70

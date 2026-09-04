@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
-import { Lock, CheckCircle2, Circle, ArrowRight, Clock } from 'lucide-react'
+import { Lock, CheckCircle2, Circle, ArrowRight, Clock, Target } from 'lucide-react'
 import { CURRICULUM, LEKTIONEN, istLevelFrei, naechsteOffeneLektion } from '../content/curriculum'
+import { SZENARIEN } from '../content/szenarien'
 import { useProgressStore } from '../stores/progressStore'
 import { ProgressRing } from '../components/ui/ProgressRing'
 
 export function Dashboard() {
   const abgeschlossene = useProgressStore((s) => s.abgeschlosseneLektionen)
+  const szenarioErgebnisse = useProgressStore((s) => s.szenarioErgebnisse)
   const naechste = naechsteOffeneLektion(abgeschlossene)
 
   return (
@@ -106,6 +108,37 @@ export function Dashboard() {
             </div>
           )
         })}
+      </div>
+
+      <div className="mt-8">
+        <h2 className="text-lg font-bold text-white">Chart-Übungen</h2>
+        <p className="mt-1 text-sm text-gedimmt">
+          Echte historische Setups, Kerze für Kerze — hättest du den Entry gefunden?
+        </p>
+        <div className="mt-3 grid gap-3 sm:grid-cols-3">
+          {Object.values(SZENARIEN).map((s) => {
+            const ergebnis = szenarioErgebnisse[s.id]
+            return (
+              <Link
+                key={s.id}
+                to={`/uebung/${s.id}`}
+                className="rounded-xl border border-rand bg-flaeche p-4 transition-colors hover:border-akzent"
+              >
+                <Target className="h-4 w-4 text-akzent" />
+                <div className="mt-2 text-sm font-semibold text-white">{s.titel}</div>
+                <div className="mt-1 text-xs text-gedimmt">
+                  {ergebnis ? (
+                    <span className={ergebnis.bewertung === 'perfekt' ? 'text-long' : 'text-akzent'}>
+                      Ergebnis: {ergebnis.bewertung}
+                    </span>
+                  ) : (
+                    'Noch nicht versucht'
+                  )}
+                </div>
+              </Link>
+            )
+          })}
+        </div>
       </div>
     </div>
   )
