@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, Link, NavLink } from 'react-router-dom'
 import { CandlestickChart } from 'lucide-react'
 import { Dashboard } from './pages/Dashboard'
 import { LektionPage } from './pages/LektionPage'
+import { SimulatorPage } from './pages/SimulatorPage'
+import { JournalPage } from './pages/JournalPage'
 
 function Platzhalter({ titel }: { titel: string }) {
   return (
@@ -52,8 +54,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/lektion/:lektionId" element={<LektionPage />} />
-          <Route path="/simulator" element={<Platzhalter titel="Simulator" />} />
-          <Route path="/journal" element={<Platzhalter titel="Trade-Journal" />} />
+          <Route path="/simulator" element={<SimulatorPage />} />
+          <Route path="/journal" element={<JournalPage />} />
           <Route path="*" element={<Platzhalter titel="Seite nicht gefunden" />} />
         </Routes>
       </main>
