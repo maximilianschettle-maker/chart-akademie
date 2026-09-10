@@ -28,9 +28,17 @@ Plan: `C:\Users\maxis\.claude\plans\ich-will-gerne-ein-jiggly-wombat.md`
 - **5 kuratierte Szenarien** (echte Binance-Daten, statisch in public/szenarien/): Breakout Okt 23, Bounce Juni 23, Trendfolge Feb 24, Range Sep 23, Sweep Mai 24. Zonen anhand der Skript-Ausgabe (`scripts/hole-szenario.mjs`) definiert.
 - 16 vitest-Tests grün, Build grün.
 
+## Stand 2026-09-10 — Live auf GitHub Pages, Handy-tauglich
+
+- UI manuell im Browser durchgeklickt: sieht gut aus, keine Befunde.
+- GitHub-Repo angelegt: https://github.com/maximilianschettle-maker/chart-akademie (public).
+- Deploy: `.github/workflows/deploy.yml` (Lint + Tests + Build → actions/deploy-pages), Pages auf build_type=workflow. Live: **https://maximilianschettle-maker.github.io/chart-akademie/**
+- Dafür: `base: '/chart-akademie/'` in vite.config.ts, HashRouter statt BrowserRouter (Pages kann keine Rewrites → Reload/Deep-Link wäre 404), PWA-Manifest + PNG-Icons (per PowerShell/System.Drawing aus dem Favicon-Motiv), Mobile-Meta-Tags → „Zum Startbildschirm hinzufügen" auf Android/iOS.
+- Kein Service-Worker: Live-Daten brauchen ohnehin Netz; Übungsdaten liegen im Repo.
+
 Offen / Ideen für später:
-- UI im Browser durchspielen (Chrome-Extension war nicht verbunden — manueller Test steht aus!).
-- Code-Splitting (Bundle > 500 kB Warnung), GitHub-Remote anlegen + pushen.
+- Am Handy prüfen: Homescreen-Install, Chart-Bedienung per Touch (lightweight-charts), OrderTicket-Layout auf schmalen Screens.
+- Code-Splitting (Bundle > 500 kB Warnung).
 - Mehr Szenarien für die Meisterprüfung (ohne Strategie-Ansage), Trailing-Stop im Broker, ETH/SOL-Szenarien.
 
 Stolpersteine:
