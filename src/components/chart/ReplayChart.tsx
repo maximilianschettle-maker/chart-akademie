@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import {
   createChart,
   CandlestickSeries,
@@ -9,12 +9,18 @@ import {
   type IPriceLine,
   type UTCTimestamp,
 } from 'lightweight-charts'
-import type { Candle } from '../../types'
+import type { Candle, Zeichnung } from '../../types'
 import { CHART_FARBEN } from './ChartPanel'
+import { aggregiere } from '../../engine/aggregation'
+import { ZonenPrimitive } from './zonenPrimitive'
 
 // Chart für den Replay-Modus: hängt neue Bars per series.update() an,
 // statt bei jedem Schritt neu zu rendern. Zeitachse optional verdeckt
-// (Anti-Schummel im freien Replay).
+// (Anti-Schummel im freien Replay). Optional als höherer Timeframe
+// (bucketSek) — dann wird aus den sichtbaren Bars live aggregiert, die
+// letzte HTF-Kerze wächst mit jedem Schritt (kein Blick in die Zukunft).
+
+export type ZeichenModus = 'aus' | 'linie' | 'zone'
 
 interface ReplayChartProps {
   candles: Candle[]
@@ -24,6 +30,13 @@ interface ReplayChartProps {
   entryPreis?: number
   stopLoss?: number
   takeProfit?: number
+  /** Höherer Timeframe in Sekunden (z.B. 14400 für 4h aus 1h-Bars) */
+  bucketSek?: number
+  /** Kompakt: ohne Volumen (für den Kontext-Chart) */
+  kompakt?: boolean
+  zeichnungen?: Zeichnung[]
+  zeichenModus?: ZeichenModus
+  onZeichnung?: (z: Zeichnung) => void
 }
 
 function barZuKerze(c: Candle) {
@@ -44,6 +57,8 @@ function barZuVolumen(c: Candle) {
   }
 }
 
+const KEINE_ZEICHNUNGEN: Zeichnung[] = []
+
 export function ReplayChart({
   candles,
   cursor,
@@ -52,13 +67,42 @@ export function ReplayChart({
   entryPreis,
   stopLoss,
   takeProfit,
+  bucketSek,
+  kompakt = false,
+  zeichnungen = KEINE_ZEICHNUNGEN,
+  zeichenModus = 'aus',
+  onZeichnung,
 }: ReplayChartProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const chartRef = useRef<IChartApi | null>(null)
   const kerzenRef = useRef<ISeriesApi<'Candlestick'> | null>(null)
   const volumenRef = useRef<ISeriesApi<'Histogram'> | null>(null)
-  const letzterCursorRef = useRef(0)
+  const zonenRef = useRef<ZonenPrimitive | null>(null)
+  const letzteAnzahlRef = useRef(-1)
   const preisLinienRef = useRef<IPriceLine[]>([])
+  const zeichenLinienRef = useRef<IPriceLine[]>([])
+  const tempLinieRef = useRef<IPriceLine | null>(null)
+  const zeichenModusRef = useRef<ZeichenModus>(zeichenModus)
+  const onZeichnungRef = useRef(onZeichnung)
+  const ersterKlickRef = useRef<number | null>(null)
+
+  useEffect(() => {
+    zeichenModusRef.current = zeichenModus
+    onZeichnungRef.current = onZeichnung
+    // Moduswechsel bricht eine halb gezeichnete Zone ab
+    ersterKlickRef.current = null
+    const kerzen = kerzenRef.current
+    if (kerzen && tempLinieRef.current) {
+      kerzen.removePriceLine(tempLinieRef.current)
+      tempLinieRef.current = null
+    }
+  }, [zeichenModus, onZeichnung])
+
+  // Sichtbare Daten: candles[0..cursor], optional auf den höheren Timeframe aggregiert
+  const daten = useMemo(() => {
+    const sichtbar = candles.slice(0, cursor + 1)
+    return bucketSek ? aggregiere(sichtbar, bucketSek) : sichtbar
+  }, [candles, cursor, bucketSek])
 
   // Chart einmal pro Datensatz aufbauen
   useEffect(() => {
@@ -93,16 +137,68 @@ export function ReplayChart({
       wickUpColor: CHART_FARBEN.long,
       wickDownColor: CHART_FARBEN.short,
     })
-    const volumen = chart.addSeries(HistogramSeries, {
-      priceScaleId: 'volumen',
-      priceFormat: { type: 'volume' },
-    })
-    chart.priceScale('volumen').applyOptions({ scaleMargins: { top: 0.85, bottom: 0 } })
+    let volumen: ISeriesApi<'Histogram'> | null = null
+    if (!kompakt) {
+      volumen = chart.addSeries(HistogramSeries, {
+        priceScaleId: 'volumen',
+        priceFormat: { type: 'volume' },
+      })
+      chart.priceScale('volumen').applyOptions({ scaleMargins: { top: 0.85, bottom: 0 } })
+    }
+    const zonen = new ZonenPrimitive()
+    kerzen.attachPrimitive(zonen)
+
+    // Klick → Zeichnung (Linie: 1 Klick, Zone: 2 Klicks). Bewusst ein DOM-Listener statt
+    // chart.subscribeClick: der Chart verschluckt den zweiten von zwei schnellen Klicks als
+    // Doppelklick — am Handy wäre die Zone damit kaum zu zeichnen.
+    const klick = (e: MouseEvent) => {
+      const modus = zeichenModusRef.current
+      if (modus === 'aus') return
+      const rect = container.getBoundingClientRect()
+      const x = e.clientX - rect.left
+      const y = e.clientY - rect.top
+      // Klicks auf Preis-/Zeitachse ignorieren
+      if (x > rect.width - chart.priceScale('right').width()) return
+      if (y > rect.height - chart.timeScale().height()) return
+      const preis = kerzen.coordinateToPrice(y)
+      if (preis === null) return
+      const id = `z-${Date.now()}`
+      if (modus === 'linie') {
+        onZeichnungRef.current?.({ id, typ: 'linie', preis })
+        return
+      }
+      if (ersterKlickRef.current === null) {
+        ersterKlickRef.current = preis
+        tempLinieRef.current = kerzen.createPriceLine({
+          price: preis,
+          color: '#F59E0B',
+          lineWidth: 1,
+          lineStyle: 3,
+          axisLabelVisible: false,
+          title: 'Zone…',
+        })
+      } else {
+        const a = ersterKlickRef.current
+        ersterKlickRef.current = null
+        if (tempLinieRef.current) {
+          kerzen.removePriceLine(tempLinieRef.current)
+          tempLinieRef.current = null
+        }
+        onZeichnungRef.current?.({
+          id,
+          typ: 'zone',
+          preisVon: Math.min(a, preis),
+          preisBis: Math.max(a, preis),
+        })
+      }
+    }
+    container.addEventListener('click', klick)
 
     chartRef.current = chart
     kerzenRef.current = kerzen
     volumenRef.current = volumen
-    letzterCursorRef.current = -1 // erzwingt setData im Cursor-Effekt
+    zonenRef.current = zonen
+    letzteAnzahlRef.current = -1 // erzwingt setData im Daten-Effekt
 
     const beobachter = new ResizeObserver(() => {
       chart.applyOptions({ width: container.clientWidth })
@@ -111,35 +207,40 @@ export function ReplayChart({
 
     return () => {
       beobachter.disconnect()
+      container.removeEventListener('click', klick)
       chart.remove()
       chartRef.current = null
       kerzenRef.current = null
       volumenRef.current = null
+      zonenRef.current = null
       preisLinienRef.current = []
+      zeichenLinienRef.current = []
+      tempLinieRef.current = null
     }
-  }, [candles, hoehe, zeitVerdeckt])
+  }, [candles, hoehe, zeitVerdeckt, kompakt, bucketSek])
 
-  // Cursor-Fortschritt: inkrementell anhängen (oder bei Sprung zurück neu setzen)
+  // Fortschritt: inkrementell anhängen; die letzte Bar wird immer mit aktualisiert
+  // (bei Aggregation wächst sie), bei Sprung zurück alles neu setzen.
   useEffect(() => {
     const kerzen = kerzenRef.current
-    const volumen = volumenRef.current
     const chart = chartRef.current
-    if (!kerzen || !volumen || !chart || candles.length === 0) return
+    if (!kerzen || !chart || daten.length === 0) return
+    const volumen = volumenRef.current
 
-    const letzter = letzterCursorRef.current
-    if (letzter < 0 || cursor < letzter) {
-      const sichtbar = candles.slice(0, cursor + 1)
-      kerzen.setData(sichtbar.map(barZuKerze))
-      volumen.setData(sichtbar.map(barZuVolumen))
-      chart.timeScale().setVisibleLogicalRange({ from: cursor - 120, to: cursor + 8 })
+    const letzte = letzteAnzahlRef.current
+    if (letzte < 0 || daten.length < letzte) {
+      kerzen.setData(daten.map(barZuKerze))
+      volumen?.setData(daten.map(barZuVolumen))
+      const n = daten.length - 1
+      chart.timeScale().setVisibleLogicalRange({ from: n - (bucketSek ? 60 : 120), to: n + 8 })
     } else {
-      for (let i = letzter + 1; i <= cursor && i < candles.length; i++) {
-        kerzen.update(barZuKerze(candles[i]))
-        volumen.update(barZuVolumen(candles[i]))
+      for (let i = Math.max(0, letzte - 1); i < daten.length; i++) {
+        kerzen.update(barZuKerze(daten[i]))
+        volumen?.update(barZuVolumen(daten[i]))
       }
     }
-    letzterCursorRef.current = cursor
-  }, [cursor, candles])
+    letzteAnzahlRef.current = daten.length
+  }, [daten, bucketSek])
 
   // Entry/SL/TP als Preislinien
   useEffect(() => {
@@ -166,7 +267,36 @@ export function ReplayChart({
         }),
       )
     }
-  }, [entryPreis, stopLoss, takeProfit, candles])
+  }, [entryPreis, stopLoss, takeProfit, candles, bucketSek])
 
-  return <div ref={containerRef} className="w-full overflow-hidden rounded-lg" />
+  // Zeichnungen: Linien als Preislinien, Zonen über das Primitive
+  useEffect(() => {
+    const kerzen = kerzenRef.current
+    if (!kerzen) return
+    for (const linie of zeichenLinienRef.current) kerzen.removePriceLine(linie)
+    zeichenLinienRef.current = []
+    for (const z of zeichnungen) {
+      if (z.typ !== 'linie') continue
+      zeichenLinienRef.current.push(
+        kerzen.createPriceLine({
+          price: z.preis,
+          color: '#3B82F6',
+          lineWidth: 1,
+          lineStyle: 0,
+          axisLabelVisible: true,
+          title: '',
+        }),
+      )
+    }
+    zonenRef.current?.setZonen(
+      zeichnungen.flatMap((z) => (z.typ === 'zone' ? [{ preisVon: z.preisVon, preisBis: z.preisBis }] : [])),
+    )
+  }, [zeichnungen, candles, bucketSek])
+
+  return (
+    <div
+      ref={containerRef}
+      className={`w-full overflow-hidden rounded-lg ${zeichenModus !== 'aus' ? 'cursor-crosshair' : ''}`}
+    />
+  )
 }

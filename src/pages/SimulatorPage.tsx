@@ -1,13 +1,15 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Dices, LoaderCircle, WifiOff, EyeOff } from 'lucide-react'
-import type { Candle, Trade } from '../types'
+import type { Candle, Trade, Zeichnung } from '../types'
 import { getCandles } from '../data/candleService'
 import { useReplay } from '../hooks/useReplay'
 import { useSchmal, chartHoehe } from '../hooks/useSchmal'
 import { useSimulatorStore } from '../stores/simulatorStore'
 import { statistik } from '../engine/bewertung'
-import { ReplayChart } from '../components/chart/ReplayChart'
+import { HOEHERE_TIMEFRAMES } from '../engine/aggregation'
+import { ReplayChart, type ZeichenModus } from '../components/chart/ReplayChart'
 import { ReplayControls } from '../components/chart/ReplayControls'
+import { ZeichenLeiste } from '../components/chart/ZeichenLeiste'
 import { OrderTicket } from '../components/simulator/OrderTicket'
 import { PositionPanel } from '../components/simulator/PositionPanel'
 import { TradeHistorie } from '../components/simulator/TradeHistorie'
@@ -55,19 +57,25 @@ async function zufaelligeSession(): Promise<Session> {
 function ReplaySession({ session, onNeueSession }: { session: Session; onNeueSession: () => void }) {
   const kontostandStore = useSimulatorStore((s) => s.kontostand)
   const tradesUebernehmen = useSimulatorStore((s) => s.tradesUebernehmen)
-  const startKapitalRef = useRef(kontostandStore)
+  // Startkapital der Session einmalig einfrieren (der Store ändert sich während der Session)
+  const [startKapital] = useState(kontostandStore)
 
-  const replay = useReplay(session.candles, START_CURSOR, startKapitalRef.current)
+  const replay = useReplay(session.candles, START_CURSOR, startKapital)
   const { broker } = replay
   const schmal = useSchmal()
+
+  const [zeichnungen, setZeichnungen] = useState<Zeichnung[]>([])
+  const [zeichenModus, setZeichenModus] = useState<ZeichenModus>('aus')
+  const [kontextSek, setKontextSek] = useState<number | null>(null)
+  const timeframes = HOEHERE_TIMEFRAMES[session.interval] ?? []
 
   // Abgeschlossene Trades laufend in den persistenten Store übernehmen
   useEffect(() => {
     if (broker.trades.length === 0) return
     tradesUebernehmen(
-      broker.trades.map((t): Trade => ({ ...t, id: `${session.id}:${t.id}` })),
+      broker.trades.map((t): Trade => ({ ...t, id: `${session.id}:${t.id}`, interval: session.interval })),
     )
-  }, [broker.trades, session.id, tradesUebernehmen])
+  }, [broker.trades, session.id, session.interval, tradesUebernehmen])
 
   const unrealisiert = broker.position
     ? broker.position.richtung === 'long'
@@ -78,6 +86,12 @@ function ReplaySession({ session, onNeueSession }: { session: Session; onNeueSes
   const stats = statistik(broker.trades)
   const datumFormat = (t: number) =>
     new Date(t * 1000).toLocaleDateString('de-DE', { year: 'numeric', month: 'short', day: 'numeric' })
+
+  const linien = {
+    entryPreis: broker.position?.entryPreis,
+    stopLoss: broker.position?.stopLoss ?? broker.offeneOrder?.stopLoss,
+    takeProfit: broker.position?.takeProfit ?? broker.offeneOrder?.takeProfit,
+  }
 
   return (
     <div className="space-y-4">
@@ -109,17 +123,45 @@ function ReplaySession({ session, onNeueSession }: { session: Session; onNeueSes
 
       <div className="grid gap-4 lg:grid-cols-[1fr_300px]">
         <div className="space-y-4">
+          {kontextSek !== null && (
+            <div className="rounded-xl border border-rand bg-flaeche p-3">
+              <div className="mb-1 text-xs text-gedimmt">
+                Kontext: {timeframes.find((t) => t.sek === kontextSek)?.label} — dieselben Kerzen, gröber
+                zusammengefasst. Trend und große Zonen erkennst du hier, den Entry unten.
+              </div>
+              <ReplayChart
+                candles={session.candles}
+                cursor={replay.cursor}
+                hoehe={schmal ? 180 : 220}
+                zeitVerdeckt={!replay.fertig}
+                bucketSek={kontextSek}
+                kompakt
+                zeichnungen={zeichnungen}
+                {...linien}
+              />
+            </div>
+          )}
           <div className="rounded-xl border border-rand bg-flaeche p-3">
             <ReplayChart
               candles={session.candles}
               cursor={replay.cursor}
               hoehe={chartHoehe(schmal)}
               zeitVerdeckt={!replay.fertig}
-              entryPreis={broker.position?.entryPreis}
-              stopLoss={broker.position?.stopLoss ?? broker.offeneOrder?.stopLoss}
-              takeProfit={broker.position?.takeProfit ?? broker.offeneOrder?.takeProfit}
+              zeichnungen={zeichnungen}
+              zeichenModus={zeichenModus}
+              onZeichnung={(z) => setZeichnungen((alt) => [...alt, z])}
+              {...linien}
             />
           </div>
+          <ZeichenLeiste
+            modus={zeichenModus}
+            onModus={setZeichenModus}
+            anzahl={zeichnungen.length}
+            onLoeschen={() => setZeichnungen([])}
+            timeframes={timeframes}
+            kontextSek={kontextSek}
+            onKontext={setKontextSek}
+          />
           <ReplayControls
             laufend={replay.laufend}
             geschwindigkeit={replay.geschwindigkeit}
@@ -135,6 +177,9 @@ function ReplaySession({ session, onNeueSession }: { session: Session; onNeueSes
             aktuellerPreis={replay.aktuellerPreis}
             onSchliessen={replay.schliessen}
             onStornieren={replay.stornieren}
+            onTeilSchliessen={replay.teilweiseSchliessen}
+            onBreakEven={replay.aufBreakEven}
+            onStopsSetzen={replay.stopsSetzen}
           />
         </div>
 
@@ -145,6 +190,7 @@ function ReplaySession({ session, onNeueSession }: { session: Session; onNeueSes
             barIndex={replay.cursor}
             deaktiviert={!!broker.position || !!broker.offeneOrder || replay.fertig}
             onPlatzieren={replay.platzieren}
+            mitSetupTag
           />
           {replay.fertig && (
             <div className="rounded-xl border border-akzent/40 bg-flaeche p-4 text-sm">
@@ -179,7 +225,7 @@ function ReplaySession({ session, onNeueSession }: { session: Session; onNeueSes
 
       <div className="rounded-xl border border-rand bg-flaeche p-4">
         <h3 className="mb-2 text-sm font-semibold text-white">Trades dieser Session</h3>
-        <TradeHistorie trades={broker.trades} />
+        <TradeHistorie trades={broker.trades} mitSetup />
       </div>
     </div>
   )

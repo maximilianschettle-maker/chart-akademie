@@ -1,14 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { ArrowLeft, LoaderCircle, RotateCcw, Target, WifiOff } from 'lucide-react'
-import type { Candle } from '../types'
+import type { Candle, Zeichnung } from '../types'
+import { HOEHERE_TIMEFRAMES } from '../engine/aggregation'
+import { ZeichenLeiste } from '../components/chart/ZeichenLeiste'
 import { SZENARIEN } from '../content/szenarien'
 import { getSzenarioDaten } from '../data/szenarien'
 import { useReplay } from '../hooks/useReplay'
 import { useSchmal, chartHoehe } from '../hooks/useSchmal'
 import { bewerteSzenario } from '../engine/szenarioGrader'
 import { useProgressStore } from '../stores/progressStore'
-import { ReplayChart } from '../components/chart/ReplayChart'
+import { ReplayChart, type ZeichenModus } from '../components/chart/ReplayChart'
 import { ReplayControls } from '../components/chart/ReplayControls'
 import { OrderTicket } from '../components/simulator/OrderTicket'
 import { PositionPanel } from '../components/simulator/PositionPanel'
@@ -35,6 +37,10 @@ function UebungSession({
   const replay = useReplay(candles, szenario.startIndex, UEBUNGS_KAPITAL, szenario.id)
   const { broker } = replay
   const schmal = useSchmal()
+  const [zeichnungen, setZeichnungen] = useState<Zeichnung[]>([])
+  const [zeichenModus, setZeichenModus] = useState<ZeichenModus>('aus')
+  const [kontextSek, setKontextSek] = useState<number | null>(null)
+  const timeframes = HOEHERE_TIMEFRAMES[szenario.interval] ?? []
   const szenarioAbschliessen = useProgressStore((s) => s.szenarioAbschliessen)
   const gespeichertRef = useRef(false)
 
@@ -58,12 +64,28 @@ function UebungSession({
   return (
     <div className="grid gap-4 lg:grid-cols-[1fr_300px]">
       <div className="space-y-4">
+        {kontextSek !== null && (
+          <div className="rounded-xl border border-rand bg-flaeche p-3">
+            <ReplayChart
+              candles={candles}
+              cursor={replay.cursor}
+              hoehe={schmal ? 180 : 220}
+              zeitVerdeckt={szenario.datumVerdeckt && !replay.fertig}
+              bucketSek={kontextSek}
+              kompakt
+              zeichnungen={zeichnungen}
+            />
+          </div>
+        )}
         <div className="rounded-xl border border-rand bg-flaeche p-3">
           <ReplayChart
             candles={candles}
             cursor={replay.cursor}
             hoehe={chartHoehe(schmal)}
             zeitVerdeckt={szenario.datumVerdeckt && !replay.fertig}
+            zeichnungen={zeichnungen}
+            zeichenModus={zeichenModus}
+            onZeichnung={(z) => setZeichnungen((alt) => [...alt, z])}
             entryPreis={replay.fertig ? szenario.idealEntry : broker.position?.entryPreis}
             stopLoss={
               replay.fertig
@@ -84,6 +106,15 @@ function UebungSession({
             </p>
           )}
         </div>
+        <ZeichenLeiste
+          modus={zeichenModus}
+          onModus={setZeichenModus}
+          anzahl={zeichnungen.length}
+          onLoeschen={() => setZeichnungen([])}
+          timeframes={timeframes}
+          kontextSek={kontextSek}
+          onKontext={setKontextSek}
+        />
         <ReplayControls
           laufend={replay.laufend}
           geschwindigkeit={replay.geschwindigkeit}
@@ -99,6 +130,9 @@ function UebungSession({
           aktuellerPreis={replay.aktuellerPreis}
           onSchliessen={replay.schliessen}
           onStornieren={replay.stornieren}
+          onTeilSchliessen={replay.teilweiseSchliessen}
+          onBreakEven={replay.aufBreakEven}
+          onStopsSetzen={replay.stopsSetzen}
         />
       </div>
 

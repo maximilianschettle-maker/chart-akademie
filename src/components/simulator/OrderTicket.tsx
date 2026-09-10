@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { Order, Richtung } from '../../types'
 import { mengeAusRisiko } from '../../engine/broker'
+import { STRATEGIEN } from '../../content/strategien'
 
 interface OrderTicketProps {
   aktuellerPreis: number
@@ -8,6 +9,8 @@ interface OrderTicketProps {
   barIndex: number
   deaktiviert: boolean
   onPlatzieren: (order: Order) => void
+  /** Setup-Tag abfragen (Simulator ja, geführte Übung nein — dort ist es vorgegeben) */
+  mitSetupTag?: boolean
 }
 
 function zahl(wert: string): number {
@@ -21,17 +24,22 @@ export function OrderTicket({
   barIndex,
   deaktiviert,
   onPlatzieren,
+  mitSetupTag = false,
 }: OrderTicketProps) {
   const [richtung, setRichtung] = useState<Richtung>('long')
   const [typ, setTyp] = useState<'market' | 'limit'>('market')
   const [limitText, setLimitText] = useState('')
   const [slText, setSlText] = useState('')
   const [tpText, setTpText] = useState('')
+  const [trailingText, setTrailingText] = useState('')
   const [risikoProzent, setRisikoProzent] = useState(1)
+  const [strategieId, setStrategieId] = useState('')
+  const [erweitert, setErweitert] = useState(false)
 
   const limitPreis = zahl(limitText)
   const stopLoss = zahl(slText)
   const takeProfit = zahl(tpText)
+  const trailing = zahl(trailingText)
   const entryRef = typ === 'limit' ? limitPreis : aktuellerPreis
   const risikoBetrag = (kontostand * risikoProzent) / 100
   const menge = entryRef > 0 && stopLoss > 0 ? mengeAusRisiko(risikoBetrag, entryRef, stopLoss) : 0
@@ -44,6 +52,7 @@ export function OrderTicket({
   else if (richtung === 'long' && takeProfit <= entryRef) fehler = 'Long: TP muss über dem Entry liegen.'
   else if (richtung === 'short' && stopLoss <= entryRef) fehler = 'Short: SL muss über dem Entry liegen.'
   else if (richtung === 'short' && takeProfit >= entryRef) fehler = 'Short: TP muss unter dem Entry liegen.'
+  else if (trailingText.trim() !== '' && trailing <= 0) fehler = 'Trailing-Abstand muss größer 0 sein.'
 
   const chance = Math.abs(takeProfit - entryRef)
   const risiko = Math.abs(entryRef - stopLoss)
@@ -60,6 +69,8 @@ export function OrderTicket({
       takeProfit,
       menge,
       erstelltBarIndex: barIndex,
+      trailingAbstand: trailing > 0 ? trailing : undefined,
+      strategieId: mitSetupTag && strategieId ? strategieId : undefined,
     })
     setLimitText('')
   }
@@ -152,6 +163,45 @@ export function OrderTicket({
             className="mt-1 w-full accent-akzent"
           />
         </label>
+
+        <button
+          onClick={() => setErweitert((e) => !e)}
+          className="text-xs text-gedimmt underline-offset-2 hover:text-schrift hover:underline"
+        >
+          {erweitert ? 'Weniger Optionen' : 'Mehr Optionen (Trailing, Setup-Tag)'}
+        </button>
+
+        {erweitert && (
+          <div className="space-y-2 rounded-lg bg-nacht/60 p-3">
+            <label className="block text-xs text-gedimmt">
+              Trailing-Stop-Abstand ($, optional)
+              <input
+                value={trailingText}
+                onChange={(e) => setTrailingText(e.target.value)}
+                placeholder="z.B. 400 — SL folgt dem Kurs"
+                className={eingabeStil}
+                inputMode="decimal"
+              />
+            </label>
+            {mitSetupTag && (
+              <label className="block text-xs text-gedimmt">
+                Welches Setup handelst du?
+                <select
+                  value={strategieId}
+                  onChange={(e) => setStrategieId(e.target.value)}
+                  className={eingabeStil}
+                >
+                  <option value="">— nicht getaggt —</option>
+                  {STRATEGIEN.map((s) => (
+                    <option key={s.id} value={s.id}>
+                      {s.name}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
+          </div>
+        )}
       </div>
 
       {menge > 0 && !fehler && (
@@ -159,6 +209,12 @@ export function OrderTicket({
           Größe: <span className="text-white">{menge.toFixed(6)}</span> · CRV:{' '}
           <span className={crv >= 1.5 ? 'text-long' : 'text-akzent'}>{crv.toFixed(2)}</span>
           {crv < 1.5 && ' (unter 1,5 — lohnt sich das Setup?)'}
+          {trailing > 0 && (
+            <>
+              {' '}
+              · Trailing <span className="text-white">{trailing.toLocaleString('de-DE')} $</span>
+            </>
+          )}
         </div>
       )}
       {fehler && <div className="mt-3 text-xs text-short">{fehler}</div>}

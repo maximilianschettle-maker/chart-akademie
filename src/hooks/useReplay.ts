@@ -6,6 +6,9 @@ import {
   orderPlatzieren,
   orderStornieren,
   positionSchliessen,
+  teilSchliessen,
+  stopsAendern,
+  breakEven,
   barVerarbeiten,
 } from '../engine/broker'
 
@@ -30,7 +33,7 @@ export function useReplay(
     cursor: startCursor,
     broker: neuerBroker(startKapital),
   }))
-  const [laufend, setLaufend] = useState(false)
+  const [laufend, setLaufendRoh] = useState(false)
   const [geschwindigkeit, setGeschwindigkeit] = useState<Geschwindigkeit>(2)
 
   const fertig = zustand.cursor >= candles.length - 1
@@ -50,17 +53,22 @@ export function useReplay(
   }, [candles, szenarioId])
 
   const stepRef = useRef(step)
-  stepRef.current = step
+  useEffect(() => {
+    stepRef.current = step
+  }, [step])
 
+  // Timer läuft nur, solange „laufend“ und noch Bars übrig sind; am Ende stoppt er
+  // sich selbst, ohne einen zusätzlichen Render-Zyklus über einen State-Effekt.
   useEffect(() => {
     if (!laufend || fertig) return
     const timer = setInterval(() => stepRef.current(), 1000 / geschwindigkeit)
     return () => clearInterval(timer)
   }, [laufend, geschwindigkeit, fertig])
 
-  useEffect(() => {
-    if (fertig) setLaufend(false)
-  }, [fertig])
+  const setLaufend = useCallback(
+    (wert: boolean) => setLaufendRoh(wert && !fertig),
+    [fertig],
+  )
 
   const platzieren = useCallback((order: Order) => {
     setZustand((z) => ({ ...z, broker: orderPlatzieren(z.broker, order) }))
@@ -77,6 +85,27 @@ export function useReplay(
     })
   }, [candles, szenarioId])
 
+  const teilweiseSchliessen = useCallback(
+    (anteil: number) => {
+      setZustand((z) => {
+        const bar = candles[z.cursor]
+        return { ...z, broker: teilSchliessen(z.broker, anteil, bar.close, bar.time, szenarioId) }
+      })
+    },
+    [candles, szenarioId],
+  )
+
+  const stopsSetzen = useCallback(
+    (neu: { stopLoss?: number; takeProfit?: number; trailingAbstand?: number | null }) => {
+      setZustand((z) => ({ ...z, broker: stopsAendern(z.broker, candles[z.cursor].close, neu) }))
+    },
+    [candles],
+  )
+
+  const aufBreakEven = useCallback(() => {
+    setZustand((z) => ({ ...z, broker: breakEven(z.broker, candles[z.cursor].close) }))
+  }, [candles])
+
   const aktuelleBar = candles[zustand.cursor]
 
   return {
@@ -84,7 +113,7 @@ export function useReplay(
     broker: zustand.broker,
     aktuelleBar,
     aktuellerPreis: aktuelleBar?.close ?? 0,
-    laufend,
+    laufend: laufend && !fertig,
     geschwindigkeit,
     fertig,
     setLaufend,
@@ -93,5 +122,8 @@ export function useReplay(
     platzieren,
     stornieren,
     schliessen,
+    teilweiseSchliessen,
+    stopsSetzen,
+    aufBreakEven,
   }
 }

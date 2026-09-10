@@ -89,6 +89,10 @@ export interface Order {
   takeProfit: number
   menge: number // in Basiswährung (z.B. BTC)
   erstelltBarIndex: number
+  /** Absoluter Preisabstand; wenn gesetzt, folgt der SL dem Kurs (nur in Gewinnrichtung). */
+  trailingAbstand?: number
+  /** Selbst-Tag des Traders: welches Setup wird gehandelt? (für die Journal-Auswertung) */
+  strategieId?: string
 }
 
 export interface Position {
@@ -98,7 +102,18 @@ export interface Position {
   menge: number
   stopLoss: number
   takeProfit: number
+  trailingAbstand?: number
+  /** Bestes erreichtes Extrem seit Entry (Long: Hoch, Short: Tief) — Basis für Trailing */
+  extremum: number
+  /** Ursprüngliches Risiko in $ (|Entry − Erst-SL| × Erst-Menge) — hält das R-Multiple
+   *  stabil, auch wenn der SL später auf Break-even wandert oder Teile verkauft werden. */
+  risikoBetrag: number
+  /** Aufgelaufene Funding-Kosten (positiv = gezahlt) für die noch offene Menge */
+  fundingKosten: number
+  strategieId?: string
 }
+
+export type ExitGrund = 'sl' | 'tp' | 'manuell' | 'szenarioEnde' | 'teil' | 'trailing'
 
 export interface Trade {
   id: string
@@ -112,9 +127,22 @@ export interface Trade {
   takeProfit: number
   pnl: number
   rMultiple: number
-  exitGrund: 'sl' | 'tp' | 'manuell' | 'szenarioEnde'
+  exitGrund: ExitGrund
   szenarioId?: string
+  /** Gebühren (Taker beide Seiten) — fehlt bei Trades aus älteren Versionen */
+  gebuehren?: number
+  /** Funding-Kosten während der Haltezeit — fehlt bei Trades aus älteren Versionen */
+  funding?: number
+  strategieId?: string
+  /** Kerzenintervall der Session (z.B. '1h') — für Haltedauer-Auswertungen */
+  interval?: string
 }
+
+// ── Zeichnungen im Chart ─────────────────────────────────────────────────────
+
+export type Zeichnung =
+  | { id: string; typ: 'linie'; preis: number }
+  | { id: string; typ: 'zone'; preisVon: number; preisBis: number }
 
 // ── Geführte Übungs-Szenarien ────────────────────────────────────────────────
 
