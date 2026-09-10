@@ -31,8 +31,8 @@ export const CURRICULUM: LevelDef[] = [
   {
     level: 5,
     titel: 'Praxis',
-    beschreibung: 'Szenario-Serie, freier Replay-Modus und dein Trade-Journal.',
-    lektionIds: ['l5-01', 'l5-02', 'l5-03'],
+    beschreibung: 'Szenario-Serie, freier Replay-Modus, Trade-Journal — und die Prüfung ohne Ansage.',
+    lektionIds: ['l5-01', 'l5-02', 'l5-03', 'l5-04'],
   },
 ]
 

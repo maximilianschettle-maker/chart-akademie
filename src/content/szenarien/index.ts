@@ -1,10 +1,11 @@
 import type { Scenario } from '../../types'
+import { WEITERE_SZENARIEN } from './weitere'
 
 // Kuratierte Übungs-Szenarien auf echten historischen Daten.
 // Alle Preise/Bar-Indizes wurden anhand der eingecheckten Datensätze bestimmt
 // (siehe scripts/hole-szenario.mjs).
 
-export const SZENARIEN: Record<string, Scenario> = {
+const ERSTE_SZENARIEN: Record<string, Scenario> = {
   's-breakout-btc-okt23': {
     id: 's-breakout-btc-okt23',
     titel: 'Breakout + Retest',
@@ -145,3 +146,6 @@ export const SZENARIEN: Record<string, Scenario> = {
     datumVerdeckt: true,
   },
 }
+
+/** Alle kuratierten Szenarien (erste Welle: nur BTC mit Ansage; zweite: ETH/SOL + Kein-Trade, ohne Ansage). */
+export const SZENARIEN: Record<string, Scenario> = { ...ERSTE_SZENARIEN, ...WEITERE_SZENARIEN }

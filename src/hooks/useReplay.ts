@@ -106,6 +106,24 @@ export function useReplay(
     setZustand((z) => ({ ...z, broker: breakEven(z.broker, candles[z.cursor].close) }))
   }, [candles])
 
+  /** „Kein Trade“: alle restlichen Bars in einem Rutsch durch den Broker laufen lassen. */
+  const zumEnde = useCallback(() => {
+    setLaufendRoh(false)
+    setZustand((z) => {
+      let cursor = z.cursor
+      let broker = z.broker
+      while (cursor < candles.length - 1) {
+        cursor++
+        const bar = candles[cursor]
+        broker = barVerarbeiten(broker, bar, szenarioId)
+        if (cursor === candles.length - 1 && broker.position) {
+          broker = positionSchliessen(broker, bar.close, bar.time, 'szenarioEnde', szenarioId)
+        }
+      }
+      return { cursor, broker }
+    })
+  }, [candles, szenarioId])
+
   const aktuelleBar = candles[zustand.cursor]
 
   return {
@@ -125,5 +143,6 @@ export function useReplay(
     teilweiseSchliessen,
     stopsSetzen,
     aufBreakEven,
+    zumEnde,
   }
 }

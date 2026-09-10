@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Dices, LoaderCircle, WifiOff, EyeOff } from 'lucide-react'
-import type { Candle, Trade, Zeichnung } from '../types'
-import { getCandles } from '../data/candleService'
+import type { Trade, Zeichnung } from '../types'
+import { zufaelligerAbschnitt, type Abschnitt } from '../data/zufall'
 import { useReplay } from '../hooks/useReplay'
 import { useSchmal, chartHoehe } from '../hooks/useSchmal'
 import { useSimulatorStore } from '../stores/simulatorStore'
@@ -17,42 +17,10 @@ import { TradeHistorie } from '../components/simulator/TradeHistorie'
 // Freier Replay-Modus: zufälliger historischer Abschnitt, Datum und Symbol
 // verdeckt, damit man nicht aus der Erinnerung "schummeln" kann.
 
-const SYMBOLE = ['BTCUSDT', 'ETHUSDT', 'SOLUSDT']
-const INTERVALLE: Record<string, number> = { '15m': 900, '1h': 3600, '4h': 14400 }
 const GESAMT_BARS = 800
 const START_CURSOR = 500 // sichtbarer Kontext; danach ~300 Bars Replay
 
-interface Session {
-  id: string
-  candles: Candle[]
-  symbol: string
-  interval: string
-  anzeigeName: string
-}
-
-async function zufaelligeSession(): Promise<Session> {
-  const symbol = SYMBOLE[Math.floor(Math.random() * SYMBOLE.length)]
-  const intervalle = Object.keys(INTERVALLE)
-  const interval = intervalle[Math.floor(Math.random() * intervalle.length)]
-  const sek = INTERVALLE[interval]
-
-  const fruehestens = 1609459200 // 2021-01-01 (alle drei Symbole liquide)
-  const spaetestens = Math.floor(Date.now() / 1000) - (GESAMT_BARS + 10) * sek
-  const von = fruehestens + Math.floor(Math.random() * (spaetestens - fruehestens))
-  const bis = von + (GESAMT_BARS + 5) * sek
-
-  const candles = await getCandles(symbol, interval, von, bis)
-  if (candles.length < GESAMT_BARS * 0.85) {
-    throw new Error('Zu wenige Kerzen im Zeitraum')
-  }
-  return {
-    id: `${symbol}-${von}-${interval}`,
-    candles: candles.slice(0, GESAMT_BARS),
-    symbol,
-    interval,
-    anzeigeName: `Asset ${['A', 'B', 'C', 'D', 'E'][Math.floor(Math.random() * 5)]}`,
-  }
-}
+type Session = Abschnitt
 
 function ReplaySession({ session, onNeueSession }: { session: Session; onNeueSession: () => void }) {
   const kontostandStore = useSimulatorStore((s) => s.kontostand)
@@ -240,7 +208,7 @@ export function SimulatorPage() {
     setSession(null)
     for (let versuch = 0; versuch < 3; versuch++) {
       try {
-        const s = await zufaelligeSession()
+        const s = await zufaelligerAbschnitt(GESAMT_BARS)
         setSession(s)
         setStatus('idle')
         return

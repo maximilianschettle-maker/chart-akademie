@@ -151,18 +151,26 @@ export type SzenarioBewertung = 'perfekt' | 'ok' | 'verpasst' | 'falsch'
 export interface Scenario {
   id: string
   titel: string
-  strategieId: string // z.B. 'breakout-retest'
+  strategieId: string // z.B. 'breakout-retest' — oder 'kein-trade'
   datensatz: string // Dateiname unter public/szenarien/
   symbol: string
   interval: string
   startIndex: number // Replay beginnt hier (Kontext davor sichtbar)
   endIndex: number
   aufgabe: string
-  richtung: Richtung
-  entryZone: { preisVon: number; preisBis: number; barVon: number; barBis: number }
-  idealEntry: number
-  idealStopLoss: number
-  idealTakeProfit: number
+  /** 'keiner': die richtige Antwort ist, NICHT zu handeln */
+  richtung: Richtung | 'keiner'
+  /** Pflicht, wenn richtung ≠ 'keiner' */
+  entryZone?: { preisVon: number; preisBis: number; barVon: number; barBis: number }
+  idealEntry?: number
+  idealStopLoss?: number
+  idealTakeProfit?: number
   feedback: { perfekt: string; ok: string; verpasst: string; falsch: string }
   datumVerdeckt: boolean
+  /** Meisterprüfung II: Setup wird nicht verraten — Aufgabe ist generisch, Auflösung nennt es */
+  ansageVerdeckt?: boolean
+  /** Bei richtung 'keiner': diese Handelsrichtung gilt als „ok“ statt „falsch“ (z.B. Fakeout-Short) */
+  alternativRichtung?: Richtung
+  /** Automatisch aus einem Zufallsabschnitt erzeugt (nicht kuratiert) */
+  generiert?: boolean
 }

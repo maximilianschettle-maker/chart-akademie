@@ -1,22 +1,25 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { ArrowLeft, LoaderCircle, RotateCcw, Target, WifiOff } from 'lucide-react'
-import type { Candle, Zeichnung } from '../types'
-import { HOEHERE_TIMEFRAMES } from '../engine/aggregation'
-import { ZeichenLeiste } from '../components/chart/ZeichenLeiste'
+import { ArrowLeft, Ban, Dices, LoaderCircle, RotateCcw, Target, WifiOff } from 'lucide-react'
+import type { Candle, Scenario, Zeichnung } from '../types'
 import { SZENARIEN } from '../content/szenarien'
+import { strategieName } from '../content/strategien'
 import { getSzenarioDaten } from '../data/szenarien'
+import { zufaelligerAbschnittMitVersuchen } from '../data/zufall'
 import { useReplay } from '../hooks/useReplay'
 import { useSchmal, chartHoehe } from '../hooks/useSchmal'
 import { bewerteSzenario } from '../engine/szenarioGrader'
+import { findeSetup, setupZuSzenario } from '../engine/setupErkennung'
+import { HOEHERE_TIMEFRAMES } from '../engine/aggregation'
 import { useProgressStore } from '../stores/progressStore'
 import { ReplayChart, type ZeichenModus } from '../components/chart/ReplayChart'
 import { ReplayControls } from '../components/chart/ReplayControls'
+import { ZeichenLeiste } from '../components/chart/ZeichenLeiste'
 import { OrderTicket } from '../components/simulator/OrderTicket'
 import { PositionPanel } from '../components/simulator/PositionPanel'
-import type { Scenario } from '../types'
 
 const UEBUNGS_KAPITAL = 10000
+const ZUFALL_NACHLAUF = 80
 
 const BEWERTUNG_ANZEIGE = {
   perfekt: { label: 'Perfekt!', farbe: 'text-long', rahmen: 'border-long/50' },
@@ -29,10 +32,13 @@ function UebungSession({
   szenario,
   candles,
   onNochmal,
+  onNeu,
 }: {
   szenario: Scenario
   candles: Candle[]
   onNochmal: () => void
+  /** Nur bei Zufalls-Übungen: neue Übung generieren */
+  onNeu?: () => void
 }) {
   const replay = useReplay(candles, szenario.startIndex, UEBUNGS_KAPITAL, szenario.id)
   const { broker } = replay
@@ -40,6 +46,7 @@ function UebungSession({
   const [zeichnungen, setZeichnungen] = useState<Zeichnung[]>([])
   const [zeichenModus, setZeichenModus] = useState<ZeichenModus>('aus')
   const [kontextSek, setKontextSek] = useState<number | null>(null)
+  const [keinTradeErklaert, setKeinTradeErklaert] = useState(false)
   const timeframes = HOEHERE_TIMEFRAMES[szenario.interval] ?? []
   const szenarioAbschliessen = useProgressStore((s) => s.szenarioAbschliessen)
   const gespeichertRef = useRef(false)
@@ -50,16 +57,26 @@ function UebungSession({
   )
 
   useEffect(() => {
-    if (resultat && !gespeichertRef.current) {
+    if (resultat && !gespeichertRef.current && !szenario.generiert) {
       gespeichertRef.current = true
       szenarioAbschliessen(szenario.id, {
         bewertung: resultat.bewertung,
         rMultiple: resultat.rMultiple,
       })
     }
-  }, [resultat, szenario.id, szenarioAbschliessen])
+  }, [resultat, szenario.id, szenario.generiert, szenarioAbschliessen])
 
   const anzeige = resultat ? BEWERTUNG_ANZEIGE[resultat.bewertung] : null
+  const ersterTrade = broker.trades[0]
+  const gesamtR = resultat?.rMultiple ?? 0
+  const gesamtPnl = broker.trades.reduce((s, t) => s + t.pnl, 0)
+  const zeigeIdeal = replay.fertig && szenario.richtung !== 'keiner'
+
+  // Kein Trade: Entscheidung festhalten und den Rest des Replays durchlaufen lassen
+  function keinTrade() {
+    setKeinTradeErklaert(true)
+    replay.zumEnde()
+  }
 
   return (
     <div className="grid gap-4 lg:grid-cols-[1fr_300px]">
@@ -86,23 +103,24 @@ function UebungSession({
             zeichnungen={zeichnungen}
             zeichenModus={zeichenModus}
             onZeichnung={(z) => setZeichnungen((alt) => [...alt, z])}
-            entryPreis={replay.fertig ? szenario.idealEntry : broker.position?.entryPreis}
+            entryPreis={zeigeIdeal ? szenario.idealEntry : broker.position?.entryPreis}
             stopLoss={
-              replay.fertig
+              zeigeIdeal
                 ? szenario.idealStopLoss
                 : (broker.position?.stopLoss ?? broker.offeneOrder?.stopLoss)
             }
             takeProfit={
-              replay.fertig
+              zeigeIdeal
                 ? szenario.idealTakeProfit
                 : (broker.position?.takeProfit ?? broker.offeneOrder?.takeProfit)
             }
           />
-          {replay.fertig && (
+          {zeigeIdeal && szenario.idealEntry !== undefined && (
             <p className="mt-2 text-xs text-gedimmt">
-              Eingezeichnet: der Ideal-Trade dieses Szenarios (Entry {szenario.idealEntry.toLocaleString('de-DE')} $,
-              SL {szenario.idealStopLoss.toLocaleString('de-DE')} $, TP{' '}
-              {szenario.idealTakeProfit.toLocaleString('de-DE')} $).
+              Eingezeichnet: der Ideal-Trade dieses Szenarios (Entry{' '}
+              {szenario.idealEntry.toLocaleString('de-DE')} $, SL{' '}
+              {szenario.idealStopLoss?.toLocaleString('de-DE')} $, TP{' '}
+              {szenario.idealTakeProfit?.toLocaleString('de-DE')} $).
             </p>
           )}
         </div>
@@ -138,15 +156,26 @@ function UebungSession({
 
       <div className="space-y-4">
         {!replay.fertig && (
-          <OrderTicket
-            aktuellerPreis={replay.aktuellerPreis}
-            kontostand={broker.kontostand}
-            barIndex={replay.cursor}
-            deaktiviert={
-              !!broker.position || !!broker.offeneOrder || broker.trades.length > 0
-            }
-            onPlatzieren={replay.platzieren}
-          />
+          <>
+            <OrderTicket
+              aktuellerPreis={replay.aktuellerPreis}
+              kontostand={broker.kontostand}
+              barIndex={replay.cursor}
+              deaktiviert={
+                !!broker.position || !!broker.offeneOrder || broker.trades.length > 0
+              }
+              onPlatzieren={replay.platzieren}
+            />
+            {broker.trades.length === 0 && !broker.position && !broker.offeneOrder && (
+              <button
+                onClick={keinTrade}
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-rand bg-flaeche py-2.5 text-sm font-semibold text-schrift hover:border-akzent hover:text-white"
+                title="Entscheidung: Hier gibt es kein regelkonformes Setup"
+              >
+                <Ban className="h-4 w-4 text-akzent" /> Kein Trade — hier gibt es nichts zu handeln
+              </button>
+            )}
+          </>
         )}
         {!replay.fertig && broker.trades.length > 0 && !broker.position && (
           <p className="rounded-xl border border-rand bg-flaeche p-4 text-xs text-gedimmt">
@@ -157,16 +186,28 @@ function UebungSession({
         {resultat && anzeige && (
           <div className={`rounded-xl border ${anzeige.rahmen} bg-flaeche p-4 text-sm`}>
             <div className={`text-lg font-bold ${anzeige.farbe}`}>{anzeige.label}</div>
-            {broker.trades[0] && (
+            {szenario.ansageVerdeckt && (
+              <div className="mt-1 text-xs text-gedimmt">
+                Auflösung: <span className="font-semibold text-white">{strategieName(szenario.strategieId)}</span>
+                {' · '}
+                {szenario.symbol} ({szenario.interval})
+              </div>
+            )}
+            {ersterTrade ? (
               <div className="tabular-nums mt-1 text-xs text-gedimmt">
                 Dein Trade:{' '}
-                <span className={broker.trades[0].rMultiple >= 0 ? 'text-long' : 'text-short'}>
-                  {broker.trades[0].rMultiple >= 0 ? '+' : ''}
-                  {broker.trades[0].rMultiple.toFixed(2)}R
+                <span className={gesamtR >= 0 ? 'text-long' : 'text-short'}>
+                  {gesamtR >= 0 ? '+' : ''}
+                  {gesamtR.toFixed(2)}R
                 </span>{' '}
-                ({broker.trades[0].pnl >= 0 ? '+' : ''}
-                {broker.trades[0].pnl.toLocaleString('de-DE', { maximumFractionDigits: 0 })} $)
+                ({gesamtPnl >= 0 ? '+' : ''}
+                {gesamtPnl.toLocaleString('de-DE', { maximumFractionDigits: 0 })} $)
+                {broker.trades.length > 1 && ` · ${broker.trades.length} Teil-Exits`}
               </div>
+            ) : (
+              keinTradeErklaert && (
+                <div className="mt-1 text-xs text-gedimmt">Deine Entscheidung: kein Trade.</div>
+              )
             )}
             <p className="mt-3 leading-relaxed text-schrift">{resultat.text}</p>
             <div className="mt-4 flex gap-2">
@@ -176,12 +217,21 @@ function UebungSession({
               >
                 <RotateCcw className="h-3.5 w-3.5" /> Nochmal
               </button>
-              <Link
-                to="/"
-                className="flex-1 rounded-lg bg-akzent py-2 text-center text-xs font-bold text-nacht hover:brightness-110"
-              >
-                Zum Lernpfad
-              </Link>
+              {onNeu ? (
+                <button
+                  onClick={onNeu}
+                  className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg bg-akzent py-2 text-xs font-bold text-nacht hover:brightness-110"
+                >
+                  <Dices className="h-3.5 w-3.5" /> Neue Zufalls-Übung
+                </button>
+              ) : (
+                <Link
+                  to="/"
+                  className="flex-1 rounded-lg bg-akzent py-2 text-center text-xs font-bold text-nacht hover:brightness-110"
+                >
+                  Zum Lernpfad
+                </Link>
+              )}
             </div>
           </div>
         )}
@@ -190,19 +240,47 @@ function UebungSession({
   )
 }
 
+interface Geladen {
+  szenario: Scenario
+  candles: Candle[]
+}
+
+/** Zufalls-Übung: zufälligen Abschnitt laden, bis die Erkennung ein Setup findet. */
+async function zufallsUebung(): Promise<Geladen> {
+  for (let versuch = 0; versuch < 6; versuch++) {
+    const abschnitt = await zufaelligerAbschnittMitVersuchen(700, 2)
+    const setup = findeSetup(abschnitt.candles, ZUFALL_NACHLAUF)
+    if (!setup) continue
+    const szenario = setupZuSzenario(setup, abschnitt.symbol, abschnitt.interval, ZUFALL_NACHLAUF)
+    return { szenario, candles: abschnitt.candles.slice(0, szenario.endIndex + 1) }
+  }
+  throw new Error('Kein Setup gefunden')
+}
+
 export function UebungPage() {
   const { szenarioId } = useParams<{ szenarioId: string }>()
-  const szenario = szenarioId ? SZENARIEN[szenarioId] : undefined
-  const [candles, setCandles] = useState<Candle[] | null>(null)
+  const istZufall = szenarioId === 'zufall'
+  const kuratiert = !istZufall && szenarioId ? SZENARIEN[szenarioId] : undefined
+  const [geladen, setGeladen] = useState<Geladen | null>(null)
   const [fehler, setFehler] = useState(false)
   const [versuch, setVersuch] = useState(0)
+  const [generation, setGeneration] = useState(0)
 
   useEffect(() => {
-    if (!szenario) return
     let aktiv = true
-    getSzenarioDaten(szenario.datensatz)
-      .then((d) => {
-        if (aktiv) setCandles(d.candles.slice(0, szenario.endIndex + 1))
+    setGeladen(null)
+    setFehler(false)
+    const laden = istZufall
+      ? zufallsUebung()
+      : kuratiert
+        ? getSzenarioDaten(kuratiert.datensatz).then((d) => ({
+            szenario: kuratiert,
+            candles: d.candles.slice(0, kuratiert.endIndex + 1),
+          }))
+        : Promise.reject(new Error('unbekannt'))
+    laden
+      .then((g) => {
+        if (aktiv) setGeladen(g)
       })
       .catch(() => {
         if (aktiv) setFehler(true)
@@ -210,9 +288,9 @@ export function UebungPage() {
     return () => {
       aktiv = false
     }
-  }, [szenario])
+  }, [istZufall, kuratiert, generation])
 
-  if (!szenario) {
+  if (!istZufall && !kuratiert) {
     return (
       <div className="mx-auto max-w-3xl px-4 py-16 text-center text-gedimmt">
         Übung nicht gefunden.{' '}
@@ -223,6 +301,9 @@ export function UebungPage() {
     )
   }
 
+  const szenario = geladen?.szenario ?? kuratiert
+  const aufgabe = szenario?.aufgabe
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
       <Link to="/" className="inline-flex items-center gap-1 text-sm text-gedimmt hover:text-schrift">
@@ -230,27 +311,51 @@ export function UebungPage() {
       </Link>
       <div className="mt-3 mb-5">
         <div className="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-akzent">
-          <Target className="h-4 w-4" /> Geführte Übung
+          {istZufall ? <Dices className="h-4 w-4" /> : <Target className="h-4 w-4" />}
+          {istZufall ? 'Zufalls-Übung' : 'Geführte Übung'}
+          {szenario?.ansageVerdeckt && (
+            <span className="rounded bg-flaeche px-1.5 py-0.5 text-[10px] text-gedimmt">ohne Ansage</span>
+          )}
         </div>
-        <h1 className="mt-1 text-2xl font-bold text-white">{szenario.titel}</h1>
-        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-gedimmt">{szenario.aufgabe}</p>
+        <h1 className="mt-1 text-2xl font-bold text-white">
+          {istZufall ? 'Erkenne das Setup' : szenario?.titel}
+        </h1>
+        {aufgabe && <p className="mt-2 max-w-3xl text-sm leading-relaxed text-gedimmt">{aufgabe}</p>}
+        {istZufall && !geladen && !fehler && (
+          <p className="mt-2 text-xs text-gedimmt">
+            Suche in zufälligen Marktabschnitten nach einem Setup aus Level 4 …
+          </p>
+        )}
       </div>
 
       {fehler ? (
         <div className="flex h-64 flex-col items-center justify-center gap-2 text-gedimmt">
           <WifiOff className="h-6 w-6" />
-          <p className="text-sm">Szenario-Daten konnten nicht geladen werden.</p>
+          <p className="text-sm">
+            {istZufall
+              ? 'Kein Setup gefunden oder Kursdaten nicht erreichbar.'
+              : 'Szenario-Daten konnten nicht geladen werden.'}
+          </p>
+          {istZufall && (
+            <button
+              onClick={() => setGeneration((g) => g + 1)}
+              className="mt-2 rounded-lg bg-flaeche px-4 py-2 text-sm hover:text-white"
+            >
+              Erneut versuchen
+            </button>
+          )}
         </div>
-      ) : candles === null ? (
+      ) : geladen === null ? (
         <div className="flex h-64 items-center justify-center text-gedimmt">
           <LoaderCircle className="h-7 w-7 animate-spin" />
         </div>
       ) : (
         <UebungSession
-          key={versuch}
-          szenario={szenario}
-          candles={candles}
+          key={`${geladen.szenario.id}-${versuch}`}
+          szenario={geladen.szenario}
+          candles={geladen.candles}
           onNochmal={() => setVersuch((v) => v + 1)}
+          onNeu={istZufall ? () => setGeneration((g) => g + 1) : undefined}
         />
       )}
     </div>

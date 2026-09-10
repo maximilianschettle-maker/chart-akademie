@@ -22,9 +22,10 @@ import { l4_05 } from './l4-05-liquidity-sweep'
 import { l5_01 } from './l5-01-meisterpruefung'
 import { l5_02 } from './l5-02-freier-replay'
 import { l5_03 } from './l5-03-journal'
+import { l5_04 } from './l5-04-meisterpruefung-2'
 
 export const l1Lektionen: Lesson[] = [l1_01, l1_02, l1_03, l1_04, l1_05]
 export const l2Lektionen: Lesson[] = [l2_01, l2_02, l2_03, l2_04]
 export const l3Lektionen: Lesson[] = [l3_01, l3_02, l3_03, l3_04, l3_05, l3_06]
 export const l4Lektionen: Lesson[] = [l4_01, l4_02, l4_03, l4_04, l4_05]
-export const l5Lektionen: Lesson[] = [l5_01, l5_02, l5_03]
+export const l5Lektionen: Lesson[] = [l5_01, l5_02, l5_03, l5_04]

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Lock, CheckCircle2, Circle, ArrowRight, Clock, Target, RotateCcw } from 'lucide-react'
+import { Lock, CheckCircle2, Circle, ArrowRight, Clock, Target, RotateCcw, Dices } from 'lucide-react'
 import { CURRICULUM, LEKTIONEN, istLevelFrei, naechsteOffeneLektion } from '../content/curriculum'
 import { SZENARIEN } from '../content/szenarien'
 import { useProgressStore } from '../stores/progressStore'
@@ -119,6 +119,16 @@ export function Dashboard() {
           Echte historische Setups, Kerze für Kerze — hättest du den Entry gefunden?
         </p>
         <div className="mt-3 grid gap-3 sm:grid-cols-3">
+          <Link
+            to="/uebung/zufall"
+            className="rounded-xl border border-akzent/40 bg-flaeche p-4 transition-colors hover:border-akzent"
+          >
+            <Dices className="h-4 w-4 text-akzent" />
+            <div className="mt-2 text-sm font-semibold text-white">Zufalls-Übung</div>
+            <div className="mt-1 text-xs text-gedimmt">
+              Automatisch erkanntes Setup in einem zufälligen Markt — jedes Mal neu, ohne Ansage.
+            </div>
+          </Link>
           {Object.values(SZENARIEN).map((s) => {
             const ergebnis = szenarioErgebnisse[s.id]
             return (
@@ -130,6 +140,7 @@ export function Dashboard() {
                 <Target className="h-4 w-4 text-akzent" />
                 <div className="mt-2 text-sm font-semibold text-white">{s.titel}</div>
                 <div className="mt-1 text-xs text-gedimmt">
+                  {s.ansageVerdeckt && <span className="mr-1 rounded bg-nacht px-1.5 py-0.5 text-[10px] uppercase tracking-wide">ohne Ansage</span>}
                   {ergebnis ? (
                     <span className={ergebnis.bewertung === 'perfekt' ? 'text-long' : 'text-akzent'}>
                       Ergebnis: {ergebnis.bewertung}

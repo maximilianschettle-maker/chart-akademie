@@ -17,11 +17,16 @@ export const STRATEGIEN: StrategieDef[] = [
   { id: 'kein-setup', name: 'Kein klares Setup / Bauchgefühl', kurz: 'Kein Setup' },
 ]
 
+/** Anzeige-Name inkl. der Sonder-Ids aus Übungen (nicht wählbar im Order-Ticket). */
+export const SONDER_NAMEN: Record<string, string> = {
+  'kein-trade': 'Kein Trade — richtig war Abwarten',
+}
+
 export const STRATEGIE_NAME: Record<string, string> = Object.fromEntries(
   STRATEGIEN.map((s) => [s.id, s.name]),
 )
 
 export function strategieName(id?: string): string {
   if (!id) return 'Ohne Tag'
-  return STRATEGIE_NAME[id] ?? id
+  return STRATEGIE_NAME[id] ?? SONDER_NAMEN[id] ?? id
 }
