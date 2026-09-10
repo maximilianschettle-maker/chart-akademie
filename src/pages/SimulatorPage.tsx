@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Dices, LoaderCircle, WifiOff, EyeOff } from 'lucide-react'
 import type { Trade, Zeichnung } from '../types'
-import { zufaelligerAbschnitt, type Abschnitt } from '../data/zufall'
+import { zufaelligerAbschnittMitVersuchen, type Abschnitt } from '../data/zufall'
 import { useReplay } from '../hooks/useReplay'
 import { useSchmal, chartHoehe } from '../hooks/useSchmal'
 import { useSimulatorStore } from '../stores/simulatorStore'
@@ -69,6 +69,11 @@ function ReplaySession({ session, onNeueSession }: { session: Session; onNeueSes
           {replay.fertig ? session.symbol : session.anzeigeName}
         </span>
         <span className="text-gedimmt">{session.interval}-Kerzen</span>
+        {session.offline && (
+          <span className="rounded bg-nacht px-1.5 py-0.5 text-[10px] uppercase tracking-wide text-gedimmt" title="Kursdaten-API nicht erreichbar — eingebauter Abschnitt">
+            offline-Vorrat
+          </span>
+        )}
         <span className="text-gedimmt">
           {replay.fertig
             ? `${datumFormat(session.candles[0].time)} – ${datumFormat(session.candles[session.candles.length - 1].time)}`
@@ -206,17 +211,14 @@ export function SimulatorPage() {
   async function starten() {
     setStatus('laedt')
     setSession(null)
-    for (let versuch = 0; versuch < 3; versuch++) {
-      try {
-        const s = await zufaelligerAbschnitt(GESAMT_BARS)
-        setSession(s)
-        setStatus('idle')
-        return
-      } catch {
-        // nächster Versuch mit neuem Zufallsabschnitt
-      }
+    try {
+      // 3 Online-Versuche, danach automatisch der eingebaute Offline-Vorrat
+      const s = await zufaelligerAbschnittMitVersuchen(GESAMT_BARS, 3)
+      setSession(s)
+      setStatus('idle')
+    } catch {
+      setStatus('fehler')
     }
-    setStatus('fehler')
   }
 
   return (

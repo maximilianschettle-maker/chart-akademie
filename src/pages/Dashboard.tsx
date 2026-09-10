@@ -6,6 +6,7 @@ import { CURRICULUM, LEKTIONEN, istLevelFrei, naechsteOffeneLektion } from '../c
 import { SZENARIEN } from '../content/szenarien'
 import { useProgressStore } from '../stores/progressStore'
 import { ProgressRing } from '../components/ui/ProgressRing'
+import { DatenSicherung } from '../components/DatenSicherung'
 
 export function Dashboard() {
   const abgeschlossene = useProgressStore((s) => s.abgeschlosseneLektionen)
@@ -176,7 +177,11 @@ export function Dashboard() {
         </div>
       </div>
 
-      <div className="mt-10 border-t border-rand pt-4">
+      <div className="mt-10">
+        <DatenSicherung />
+      </div>
+
+      <div className="mt-6 border-t border-rand pt-4">
         {resetBestaetigen ? (
           <div className="flex flex-wrap items-center gap-3 text-sm">
             <span className="text-gedimmt">

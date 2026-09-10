@@ -1,10 +1,11 @@
 // Holt historische Binance-Klines und legt sie als statischen Szenario-Datensatz ab.
-// Aufruf: node scripts/hole-szenario.mjs BTCUSDT 1h 2023-09-20 2023-11-01 btc-breakout-okt23
+// Aufruf: node scripts/hole-szenario.mjs BTCUSDT 1h 2023-09-20 2023-11-01 btc-breakout-okt23 [ordner]
+// ordner: Zielordner unter public/ (Standard: szenarien; 'replay' fuer die Offline-Fallbacks des Simulators)
 // Gibt zusätzlich eine Tages-Zusammenfassung mit Bar-Indizes aus (zum Definieren der Entry-Zonen).
 
 import { writeFileSync, mkdirSync } from 'node:fs'
 
-const [symbol, interval, vonIso, bisIso, name] = process.argv.slice(2)
+const [symbol, interval, vonIso, bisIso, name, ordner = 'szenarien'] = process.argv.slice(2)
 if (!name) {
   console.error('Aufruf: node scripts/hole-szenario.mjs SYMBOL INTERVAL VON BIS NAME')
   process.exit(1)
@@ -37,8 +38,8 @@ while (cursor < bis) {
   if (chunk.length < 1000) break
 }
 
-mkdirSync('public/szenarien', { recursive: true })
-const datei = `public/szenarien/${name}.json`
+mkdirSync(`public/${ordner}`, { recursive: true })
+const datei = `public/${ordner}/${name}.json`
 writeFileSync(datei, JSON.stringify({ symbol, interval, candles }))
 console.log(`${datei}: ${candles.length} Kerzen (${symbol} ${interval}, ${vonIso}..${bisIso})`)
 
