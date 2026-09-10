@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Lock, CheckCircle2, Circle, ArrowRight, Clock, Target, RotateCcw, Dices, Brain } from 'lucide-react'
 import { faellige } from '../engine/wiederholung'
-import { CURRICULUM, LEKTIONEN, istLevelFrei, naechsteOffeneLektion } from '../content/curriculum'
+import { CURRICULUM, LEKTIONEN_META, istLevelFrei, naechsteOffeneLektion } from '../content/curriculum'
 import { SZENARIEN } from '../content/szenarien'
 import { useProgressStore } from '../stores/progressStore'
 import { ProgressRing } from '../components/ui/ProgressRing'
@@ -90,7 +90,7 @@ export function Dashboard() {
 
               <ul className="mt-4 space-y-1.5">
                 {level.lektionIds.map((id) => {
-                  const lektion = LEKTIONEN[id]
+                  const lektion = LEKTIONEN_META[id]
                   if (!lektion) return null
                   const abgeschlossen = id in abgeschlossene
                   return (

@@ -1,18 +1,21 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, Brain, CheckCircle2 } from 'lucide-react'
-import type { QuizFrage } from '../types'
-import { LEKTIONEN } from '../content/curriculum'
+import { ArrowLeft, Brain, CheckCircle2, LoaderCircle } from 'lucide-react'
+import type { Lesson, QuizFrage } from '../types'
+import { LEKTIONEN_META, ladeLektion } from '../content/curriculum'
 import { useProgressStore } from '../stores/progressStore'
-import { faellige, naechsteFaelligkeit, schluessel } from '../engine/wiederholung'
+import { faellige, naechsteFaelligkeit, schluessel, type WiederholungsEintrag } from '../engine/wiederholung'
 import { Quiz } from '../components/lektion/Quiz'
 
-/** Quizfrage einer Lektion nachschlagen (der Index zählt über alle Quiz-Blöcke der Lektion). */
-export function frageNachschlagen(lektionId: string, frageIndex: number): QuizFrage | undefined {
-  const lektion = LEKTIONEN[lektionId]
-  if (!lektion) return undefined
+/** Quizfrage einer geladenen Lektion (der Index zählt über alle Quiz-Blöcke der Lektion). */
+export function frageAus(lektion: Lesson, frageIndex: number): QuizFrage | undefined {
   const fragen = lektion.bloecke.flatMap((b) => (b.typ === 'quiz' ? b.fragen : []))
   return fragen[frageIndex]
+}
+
+interface RundenFrage {
+  e: WiederholungsEintrag
+  frage: QuizFrage
 }
 
 export function WiederholungPage() {
@@ -20,15 +23,29 @@ export function WiederholungPage() {
   const wiederholungBeantwortet = useProgressStore((s) => s.wiederholungBeantwortet)
   // Fällige Fragen beim Betreten einfrieren, damit die Liste sich während der Runde nicht verändert
   const [runde] = useState(() => faellige(wiederholungen))
+  const [fragen, setFragen] = useState<RundenFrage[] | null>(null)
   const [fertig, setFertig] = useState(false)
 
-  const fragen = useMemo(
-    () =>
-      runde
-        .map((e) => ({ e, frage: frageNachschlagen(e.lektionId, e.frageIndex) }))
-        .filter((x): x is { e: (typeof runde)[number]; frage: QuizFrage } => !!x.frage),
-    [runde],
-  )
+  // Lektionen der fälligen Fragen nachladen (lazy)
+  useEffect(() => {
+    let aktiv = true
+    const ids = [...new Set(runde.map((e) => e.lektionId))]
+    Promise.all(ids.map((id) => ladeLektion(id).catch(() => null)))
+      .then((lektionen) => {
+        if (!aktiv) return
+        const map = new Map(ids.map((id, i) => [id, lektionen[i]]))
+        const liste: RundenFrage[] = []
+        for (const e of runde) {
+          const l = map.get(e.lektionId)
+          const frage = l ? frageAus(l, e.frageIndex) : undefined
+          if (frage) liste.push({ e, frage })
+        }
+        setFragen(liste)
+      })
+    return () => {
+      aktiv = false
+    }
+  }, [runde])
 
   const gesamtInBox = Object.keys(wiederholungen).length
   const naechste = naechsteFaelligkeit(wiederholungen)
@@ -49,7 +66,11 @@ export function WiederholungPage() {
         </p>
       </div>
 
-      {fragen.length === 0 || fertig ? (
+      {fragen === null ? (
+        <div className="flex h-48 items-center justify-center text-gedimmt">
+          <LoaderCircle className="h-6 w-6 animate-spin" />
+        </div>
+      ) : fragen.length === 0 || fertig ? (
         <div className="rounded-xl border border-rand bg-flaeche p-6 text-center">
           <CheckCircle2 className="mx-auto mb-3 h-10 w-10 text-long" />
           <p className="font-semibold text-white">
@@ -72,13 +93,8 @@ export function WiederholungPage() {
       ) : (
         <>
           <p className="mb-3 text-xs text-gedimmt">
-            {fragen.length} Frage{fragen.length === 1 ? '' : 'n'} fällig
-            {fragen.length > 0 && (
-              <>
-                {' '}
-                · aus: {[...new Set(fragen.map((f) => LEKTIONEN[f.e.lektionId]?.titel))].join(', ')}
-              </>
-            )}
+            {fragen.length} Frage{fragen.length === 1 ? '' : 'n'} fällig · aus:{' '}
+            {[...new Set(fragen.map((f) => LEKTIONEN_META[f.e.lektionId]?.titel))].join(', ')}
           </p>
           <Quiz
             fragen={fragen.map((f) => f.frage)}

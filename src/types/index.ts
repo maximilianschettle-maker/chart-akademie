@@ -59,12 +59,15 @@ export type LessonBlock =
   | { typ: 'quiz'; fragen: QuizFrage[] }
   | { typ: 'uebung'; szenarioId: string }
 
-export interface Lesson {
+export interface LessonMeta {
   id: string // z.B. 'l1-02'
   level: number
   titel: string
   untertitel: string
   dauerMin: number
+}
+
+export interface Lesson extends LessonMeta {
   bloecke: LessonBlock[]
 }
 

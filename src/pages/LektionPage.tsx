@@ -1,6 +1,8 @@
+import { useEffect, useState } from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
-import { ArrowLeft, ArrowRight, CheckCircle2, Clock } from 'lucide-react'
-import { CURRICULUM, LEKTIONEN, QUIZ_BESTANDEN_PROZENT } from '../content/curriculum'
+import { ArrowLeft, ArrowRight, CheckCircle2, Clock, LoaderCircle } from 'lucide-react'
+import type { Lesson } from '../types'
+import { CURRICULUM, LEKTIONEN_META, QUIZ_BESTANDEN_PROZENT, ladeLektion } from '../content/curriculum'
 import { useProgressStore } from '../stores/progressStore'
 import { LektionRenderer } from '../components/lektion/LektionRenderer'
 
@@ -11,8 +13,28 @@ export function LektionPage() {
   const lektionAbschliessen = useProgressStore((s) => s.lektionAbschliessen)
   const frageBeantwortet = useProgressStore((s) => s.frageBeantwortet)
 
-  const lektion = lektionId ? LEKTIONEN[lektionId] : undefined
-  if (!lektion) {
+  const meta = lektionId ? LEKTIONEN_META[lektionId] : undefined
+  const [lektion, setLektion] = useState<Lesson | null>(null)
+  const [fehler, setFehler] = useState(false)
+
+  useEffect(() => {
+    if (!meta) return
+    let aktiv = true
+    setLektion(null)
+    setFehler(false)
+    ladeLektion(meta.id)
+      .then((l) => {
+        if (aktiv) setLektion(l)
+      })
+      .catch(() => {
+        if (aktiv) setFehler(true)
+      })
+    return () => {
+      aktiv = false
+    }
+  }, [meta])
+
+  if (!meta) {
     return (
       <div className="mx-auto max-w-3xl px-4 py-16 text-center text-gedimmt">
         Lektion nicht gefunden.{' '}
@@ -23,16 +45,16 @@ export function LektionPage() {
     )
   }
 
-  const level = CURRICULUM.find((l) => l.level === lektion.level)
+  const level = CURRICULUM.find((l) => l.level === meta.level)
   const idsImLevel = level?.lektionIds ?? []
-  const pos = idsImLevel.indexOf(lektion.id)
+  const pos = idsImLevel.indexOf(meta.id)
   const vorherigeId = pos > 0 ? idsImLevel[pos - 1] : undefined
   const naechsteId = pos >= 0 && pos < idsImLevel.length - 1 ? idsImLevel[pos + 1] : undefined
-  const abgeschlossen = lektion.id in abgeschlossene
+  const abgeschlossen = meta.id in abgeschlossene
 
   function quizFertig(prozent: number) {
     if (prozent >= QUIZ_BESTANDEN_PROZENT) {
-      lektionAbschliessen(lektion!.id, prozent)
+      lektionAbschliessen(meta!.id, prozent)
     }
   }
 
@@ -44,28 +66,38 @@ export function LektionPage() {
 
       <div className="mt-3 mb-6">
         <div className="text-xs font-medium uppercase tracking-wider text-akzent">
-          Level {lektion.level} · Lektion {pos + 1}
+          Level {meta.level} · Lektion {pos + 1}
         </div>
-        <h1 className="mt-1 text-2xl font-bold text-white">{lektion.titel}</h1>
-        <p className="mt-1 text-gedimmt">{lektion.untertitel}</p>
+        <h1 className="mt-1 text-2xl font-bold text-white">{meta.titel}</h1>
+        <p className="mt-1 text-gedimmt">{meta.untertitel}</p>
         <div className="mt-2 flex items-center gap-3 text-xs text-gedimmt">
           <span className="inline-flex items-center gap-1">
-            <Clock className="h-3.5 w-3.5" /> ~{lektion.dauerMin} Min
+            <Clock className="h-3.5 w-3.5" /> ~{meta.dauerMin} Min
           </span>
           {abgeschlossen && (
             <span className="inline-flex items-center gap-1 text-long">
               <CheckCircle2 className="h-3.5 w-3.5" /> Abgeschlossen (
-              {abgeschlossene[lektion.id].quizProzent} %)
+              {abgeschlossene[meta.id].quizProzent} %)
             </span>
           )}
         </div>
       </div>
 
-      <LektionRenderer
-        lektion={lektion}
-        onQuizFertig={quizFertig}
-        onFrage={(i, richtig) => frageBeantwortet(lektion.id, i, richtig)}
-      />
+      {fehler ? (
+        <p className="py-10 text-center text-sm text-gedimmt">
+          Lektion konnte nicht geladen werden. Prüfe die Verbindung und lade die Seite neu.
+        </p>
+      ) : lektion === null ? (
+        <div className="flex h-48 items-center justify-center text-gedimmt">
+          <LoaderCircle className="h-6 w-6 animate-spin" />
+        </div>
+      ) : (
+        <LektionRenderer
+          lektion={lektion}
+          onQuizFertig={quizFertig}
+          onFrage={(i, richtig) => frageBeantwortet(lektion.id, i, richtig)}
+        />
+      )}
 
       <div className="mt-8 flex items-center justify-between border-t border-rand pt-5">
         {vorherigeId ? (

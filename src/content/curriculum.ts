@@ -1,7 +1,9 @@
-import type { Lesson, LevelDef } from '../types'
-import { l1Lektionen, l2Lektionen, l3Lektionen, l4Lektionen, l5Lektionen } from './lektionen'
+import type { LessonMeta, LevelDef } from '../types'
+import { LEKTION_META, ladeLektion } from './lektionen'
 
 // Einzige Quelle für Reihenfolge und Freischaltung des Lernpfads.
+// Lektionstexte werden lazy geladen (siehe lektionen/index.ts) — hier gibt es
+// nur die Meta-Daten.
 
 export const CURRICULUM: LevelDef[] = [
   {
@@ -36,12 +38,11 @@ export const CURRICULUM: LevelDef[] = [
   },
 ]
 
-export const LEKTIONEN: Record<string, Lesson> = Object.fromEntries(
-  [...l1Lektionen, ...l2Lektionen, ...l3Lektionen, ...l4Lektionen, ...l5Lektionen].map((l) => [
-    l.id,
-    l,
-  ]),
+export const LEKTIONEN_META: Record<string, LessonMeta> = Object.fromEntries(
+  LEKTION_META.map((l) => [l.id, l]),
 )
+
+export { ladeLektion }
 
 export const QUIZ_BESTANDEN_PROZENT = 70
 
@@ -62,11 +63,11 @@ export function istLevelFrei(
 /** Die nächste noch offene Lektion (für den „Weiter lernen"-Button). */
 export function naechsteOffeneLektion(
   abgeschlossene: Record<string, unknown>,
-): Lesson | undefined {
+): LessonMeta | undefined {
   for (const level of CURRICULUM) {
     if (!istLevelFrei(level.level, abgeschlossene)) break
     for (const id of level.lektionIds) {
-      if (!(id in abgeschlossene)) return LEKTIONEN[id]
+      if (!(id in abgeschlossene)) return LEKTIONEN_META[id]
     }
   }
   return undefined
