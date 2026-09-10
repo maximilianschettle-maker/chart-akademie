@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link, NavLink } from 'react-router-dom'
+import { HashRouter, Routes, Route, Link, NavLink } from 'react-router-dom'
 import { CandlestickChart } from 'lucide-react'
 import { Dashboard } from './pages/Dashboard'
 import { LektionPage } from './pages/LektionPage'
@@ -37,7 +37,7 @@ function NavEintrag({ zu, text }: { zu: string; text: string }) {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <header className="sticky top-0 z-10 border-b border-rand bg-nacht/90 backdrop-blur">
         <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3">
           <Link to="/" className="flex items-center gap-2 font-bold text-white">
@@ -64,6 +64,6 @@ export default function App() {
       <footer className="mx-auto max-w-3xl px-4 py-8 text-center text-xs text-gedimmt">
         ChartAkademie — Lern-Projekt. Keine Anlageberatung; alle Simulationen mit fiktivem Kapital.
       </footer>
-    </BrowserRouter>
+    </HashRouter>
   )
 }

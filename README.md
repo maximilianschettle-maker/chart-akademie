@@ -29,3 +29,12 @@ Neue Übungs-Datensätze: `node scripts/hole-szenario.mjs SYMBOL INTERVAL VON BI
 ## Hinweis
 
 Reines Lernprojekt. Keine Anlageberatung — alle Simulationen laufen mit fiktivem Kapital.
+
+## Deployment & Handy
+
+Jeder Push auf `main` baut die App per GitHub Actions und veröffentlicht sie auf GitHub Pages:
+**https://maximilianschettle-maker.github.io/chart-akademie/**
+
+Auf dem Handy: Link im Browser öffnen, dann „Zum Startbildschirm hinzufügen" (Android: Chrome-Menü; iOS: Teilen-Symbol). Die App startet danach wie eine native App im Vollbild. Fortschritt und Journal liegen im Browser-Speicher des jeweiligen Geräts.
+
+Technik: `base: '/chart-akademie/'` in `vite.config.ts`, `HashRouter` (GitHub Pages kennt keine Server-Rewrites), PWA-Manifest unter `public/manifest.webmanifest`.
