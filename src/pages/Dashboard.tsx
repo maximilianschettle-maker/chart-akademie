@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Lock, CheckCircle2, Circle, ArrowRight, Clock, Target, RotateCcw, Dices } from 'lucide-react'
+import { Lock, CheckCircle2, Circle, ArrowRight, Clock, Target, RotateCcw, Dices, Brain } from 'lucide-react'
+import { faellige } from '../engine/wiederholung'
 import { CURRICULUM, LEKTIONEN, istLevelFrei, naechsteOffeneLektion } from '../content/curriculum'
 import { SZENARIEN } from '../content/szenarien'
 import { useProgressStore } from '../stores/progressStore'
@@ -10,6 +11,9 @@ export function Dashboard() {
   const abgeschlossene = useProgressStore((s) => s.abgeschlosseneLektionen)
   const szenarioErgebnisse = useProgressStore((s) => s.szenarioErgebnisse)
   const zuruecksetzen = useProgressStore((s) => s.zuruecksetzen)
+  const wiederholungen = useProgressStore((s) => s.wiederholungen)
+  const faelligeFragen = faellige(wiederholungen).length
+  const inBox = Object.keys(wiederholungen).length
   const [resetBestaetigen, setResetBestaetigen] = useState(false)
   const naechste = naechsteOffeneLektion(abgeschlossene)
 
@@ -33,6 +37,23 @@ export function Dashboard() {
             </span>
           </span>
           <ArrowRight className="h-5 w-5" />
+        </Link>
+      )}
+
+      {inBox > 0 && (
+        <Link
+          to="/wiederholung"
+          className={`mt-3 flex items-center justify-between rounded-xl border px-5 py-3 text-sm transition-colors hover:border-akzent ${
+            faelligeFragen > 0 ? 'border-akzent/50 bg-flaeche' : 'border-rand bg-flaeche'
+          }`}
+        >
+          <span className="inline-flex items-center gap-2 text-schrift">
+            <Brain className="h-4 w-4 text-akzent" />
+            {faelligeFragen > 0
+              ? `Wiederholung: ${faelligeFragen} Frage${faelligeFragen === 1 ? '' : 'n'} fällig`
+              : `Wiederholungs-Box: ${inBox} Frage${inBox === 1 ? '' : 'n'}, heute nichts fällig`}
+          </span>
+          <ArrowRight className="h-4 w-4 text-gedimmt" />
         </Link>
       )}
 

@@ -6,9 +6,13 @@ import { QUIZ_BESTANDEN_PROZENT } from '../../content/curriculum'
 interface QuizProps {
   fragen: QuizFrage[]
   onFertig: (prozent: number) => void
+  /** Pro Frage: Index + ob richtig — für die Wiederholungs-Box (Spaced Repetition) */
+  onFrage?: (frageIndex: number, richtig: boolean) => void
+  /** Wiederholungs-Modus: keine Bestanden-Schwelle, andere Abschlussmeldung */
+  wiederholung?: boolean
 }
 
-export function Quiz({ fragen, onFertig }: QuizProps) {
+export function Quiz({ fragen, onFertig, onFrage, wiederholung = false }: QuizProps) {
   const [index, setIndex] = useState(0)
   const [auswahl, setAuswahl] = useState<number | null>(null)
   const [richtige, setRichtige] = useState(0)
@@ -20,7 +24,9 @@ export function Quiz({ fragen, onFertig }: QuizProps) {
   function antworten(i: number) {
     if (beantwortet) return
     setAuswahl(i)
-    if (i === frage.richtigIndex) setRichtige((r) => r + 1)
+    const richtig = i === frage.richtigIndex
+    if (richtig) setRichtige((r) => r + 1)
+    onFrage?.(index, richtig)
   }
 
   function weiter() {
@@ -43,7 +49,7 @@ export function Quiz({ fragen, onFertig }: QuizProps) {
 
   if (fertig) {
     const prozent = Math.round((richtige / fragen.length) * 100)
-    const bestanden = prozent >= QUIZ_BESTANDEN_PROZENT
+    const bestanden = wiederholung || prozent >= QUIZ_BESTANDEN_PROZENT
     return (
       <div className="rounded-xl border border-rand bg-flaeche p-6 text-center">
         {bestanden ? (
@@ -55,9 +61,11 @@ export function Quiz({ fragen, onFertig }: QuizProps) {
           {richtige} von {fragen.length} richtig ({prozent} %)
         </p>
         <p className="mt-1 text-sm text-gedimmt">
-          {bestanden
-            ? 'Quiz bestanden — die Lektion ist abgeschlossen.'
-            : `Mindestens ${QUIZ_BESTANDEN_PROZENT} % nötig. Lies die Lektion noch einmal und versuch es erneut.`}
+          {wiederholung
+            ? 'Wiederholung abgeschlossen. Richtige Fragen rücken eine Stufe weiter, falsche kommen morgen wieder.'
+            : bestanden
+              ? 'Quiz bestanden — die Lektion ist abgeschlossen.'
+              : `Mindestens ${QUIZ_BESTANDEN_PROZENT} % nötig. Lies die Lektion noch einmal und versuch es erneut.`}
         </p>
         {!bestanden && (
           <button
@@ -74,7 +82,7 @@ export function Quiz({ fragen, onFertig }: QuizProps) {
   return (
     <div className="rounded-xl border border-rand bg-flaeche p-6">
       <div className="mb-1 text-xs font-medium uppercase tracking-wider text-gedimmt">
-        Quiz — Frage {index + 1} von {fragen.length}
+        {wiederholung ? 'Wiederholung' : 'Quiz'} — Frage {index + 1} von {fragen.length}
       </div>
       <p className="mb-4 font-semibold text-white">{frage.frage}</p>
       <div className="space-y-2">

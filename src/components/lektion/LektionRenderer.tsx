@@ -10,6 +10,8 @@ import { useProgressStore } from '../../stores/progressStore'
 interface LektionRendererProps {
   lektion: Lesson
   onQuizFertig: (prozent: number) => void
+  /** Pro Quizfrage (Index über alle Quiz-Blöcke der Lektion): richtig/falsch */
+  onFrage?: (frageIndex: number, richtig: boolean) => void
 }
 
 const CALLOUT_STIL = {
@@ -18,7 +20,17 @@ const CALLOUT_STIL = {
   merke: { icon: Pin, rahmen: 'border-long/40', titel: 'Merke' },
 } as const
 
-function Block({ block, onQuizFertig }: { block: LessonBlock; onQuizFertig: (p: number) => void }) {
+function Block({
+  block,
+  onQuizFertig,
+  onFrage,
+  frageOffset,
+}: {
+  block: LessonBlock
+  onQuizFertig: (p: number) => void
+  onFrage?: (frageIndex: number, richtig: boolean) => void
+  frageOffset: number
+}) {
   switch (block.typ) {
     case 'text':
       return (
@@ -75,7 +87,13 @@ function Block({ block, onQuizFertig }: { block: LessonBlock; onQuizFertig: (p: 
         />
       )
     case 'quiz':
-      return <Quiz fragen={block.fragen} onFertig={onQuizFertig} />
+      return (
+        <Quiz
+          fragen={block.fragen}
+          onFertig={onQuizFertig}
+          onFrage={onFrage ? (i, r) => onFrage(frageOffset + i, r) : undefined}
+        />
+      )
     case 'uebung':
       return <UebungKarte szenarioId={block.szenarioId} />
   }
@@ -108,12 +126,24 @@ function UebungKarte({ szenarioId }: { szenarioId: string }) {
   )
 }
 
-export function LektionRenderer({ lektion, onQuizFertig }: LektionRendererProps) {
+export function LektionRenderer({ lektion, onQuizFertig, onFrage }: LektionRendererProps) {
+  // Frage-Indizes laufen über alle Quiz-Blöcke der Lektion durch (für die Wiederholungs-Box)
+  let offset = 0
   return (
     <div className="space-y-6">
-      {lektion.bloecke.map((block, i) => (
-        <Block key={i} block={block} onQuizFertig={onQuizFertig} />
-      ))}
+      {lektion.bloecke.map((block, i) => {
+        const eigenerOffset = offset
+        if (block.typ === 'quiz') offset += block.fragen.length
+        return (
+          <Block
+            key={i}
+            block={block}
+            onQuizFertig={onQuizFertig}
+            onFrage={onFrage}
+            frageOffset={eigenerOffset}
+          />
+        )
+      })}
     </div>
   )
 }

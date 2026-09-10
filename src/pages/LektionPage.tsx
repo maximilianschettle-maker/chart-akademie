@@ -9,6 +9,7 @@ export function LektionPage() {
   const navigate = useNavigate()
   const abgeschlossene = useProgressStore((s) => s.abgeschlosseneLektionen)
   const lektionAbschliessen = useProgressStore((s) => s.lektionAbschliessen)
+  const frageBeantwortet = useProgressStore((s) => s.frageBeantwortet)
 
   const lektion = lektionId ? LEKTIONEN[lektionId] : undefined
   if (!lektion) {
@@ -60,7 +61,11 @@ export function LektionPage() {
         </div>
       </div>
 
-      <LektionRenderer lektion={lektion} onQuizFertig={quizFertig} />
+      <LektionRenderer
+        lektion={lektion}
+        onQuizFertig={quizFertig}
+        onFrage={(i, richtig) => frageBeantwortet(lektion.id, i, richtig)}
+      />
 
       <div className="mt-8 flex items-center justify-between border-t border-rand pt-5">
         {vorherigeId ? (

@@ -9,6 +9,9 @@ const LektionPage = lazy(() => import('./pages/LektionPage').then((m) => ({ defa
 const SimulatorPage = lazy(() => import('./pages/SimulatorPage').then((m) => ({ default: m.SimulatorPage })))
 const JournalPage = lazy(() => import('./pages/JournalPage').then((m) => ({ default: m.JournalPage })))
 const UebungPage = lazy(() => import('./pages/UebungPage').then((m) => ({ default: m.UebungPage })))
+const WiederholungPage = lazy(() =>
+  import('./pages/WiederholungPage').then((m) => ({ default: m.WiederholungPage })),
+)
 
 function Platzhalter({ titel }: { titel: string }) {
   return (
@@ -71,6 +74,7 @@ export default function App() {
             <Route path="/uebung/:szenarioId" element={<UebungPage />} />
             <Route path="/simulator" element={<SimulatorPage />} />
             <Route path="/journal" element={<JournalPage />} />
+            <Route path="/wiederholung" element={<WiederholungPage />} />
             <Route path="*" element={<Platzhalter titel="Seite nicht gefunden" />} />
           </Routes>
         </Suspense>
