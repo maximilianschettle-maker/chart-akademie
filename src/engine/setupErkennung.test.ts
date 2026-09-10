@@ -3,10 +3,15 @@ import {
   erkenneRangeBounce,
   erkenneTrendPullback,
   erkenneBreakoutRetest,
+  erkenneAn,
   findeSetup,
   setupZuSzenario,
+  type ErkanntesSetup,
 } from './setupErkennung'
 import type { Candle } from '../types'
+
+// Synthetische Daten prüfen die Grundlogik; die echten Datensätze werden in
+// setupErkennung.real.test.ts geprüft.
 
 function kerze(i: number, open: number, close: number, spanne = 0.5): Candle {
   return {
@@ -19,8 +24,8 @@ function kerze(i: number, open: number, close: number, spanne = 0.5): Candle {
   }
 }
 
-/** Synthetische Range 100..110 mit Berührungen beider Ränder, Preis am Ende nahe der Unterkante. */
-function rangeDaten(n = 200): Candle[] {
+/** Synthetische Range 100..110 mit Berührungen beider Ränder. */
+function rangeDaten(n = 240): Candle[] {
   const c: Candle[] = []
   for (let i = 0; i < n; i++) {
     const phase = (i % 40) / 40 // Dreieckswelle zwischen 100 und 110
@@ -41,13 +46,13 @@ function trendDaten(n = 220): Candle[] {
   return c
 }
 
-/** Decke bei 110 dreimal getestet, dann Ausbruch auf 116, dann Retest bei ~110,5. */
+/** Decke bei ~109,7 dreimal getestet, Ausbruch auf 116, Retest bei ~110,5, danach Anstieg. */
 function breakoutDaten(): Candle[] {
   const c: Candle[] = []
   let i = 0
   for (; i < 150; i++) {
     const phase = i % 30
-    const wert = phase < 15 ? 100 + phase * 0.62 : 109.3 - (phase - 15) * 0.62 // Hochs bei ~109,7
+    const wert = phase < 15 ? 100 + phase * 0.62 : 109.3 - (phase - 15) * 0.62
     c.push(kerze(i, wert, wert + 0.1, 0.2))
   }
   for (let k = 0; k < 6; k++, i++) c.push(kerze(i, 108 + k * 1.5, 109 + k * 1.5, 0.3)) // Ausbruch bis ~116
@@ -57,37 +62,50 @@ function breakoutDaten(): Candle[] {
   return c
 }
 
-describe('Setup-Erkennung', () => {
-  it('erkennt einen Range-Bounce an der Unterkante', () => {
+function scanne(c: Candle[], von: number, bis: number, f: (c: Candle[], i: number) => ErkanntesSetup | null) {
+  const treffer: ErkanntesSetup[] = []
+  for (let i = von; i <= bis; i++) {
+    const s = f(c, i)
+    if (s) treffer.push(s)
+  }
+  return treffer
+}
+
+describe('Setup-Erkennung (synthetisch)', () => {
+  it('erkennt einen Range-Bounce an der Unterkante — genau einmal pro Anlauf', () => {
     const c = rangeDaten()
-    // Signal dort, wo der Preis gerade zur Unterkante zurückkommt (phase ≈ 0,95)
-    const i = 40 * 4 + 38
-    const s = erkenneRangeBounce(c, i)
-    expect(s?.strategieId).toBe('range-trading')
-    expect(s?.richtung).toBe('long')
-    expect(s!.idealStopLoss).toBeLessThan(100)
-    expect(s!.idealTakeProfit).toBeGreaterThan(108)
+    const t = scanne(c, 150, 239, erkenneRangeBounce)
+    expect(t.length).toBeGreaterThan(0)
+    expect(t.length).toBeLessThanOrEqual(3) // 240 Bars, Anlauf alle 40 Bars
+    expect(t[0].richtung).toBe('long')
+    expect(t[0].idealStopLoss).toBeLessThan(100)
+    expect(t[0].idealTakeProfit).toBeGreaterThan(108)
   })
 
   it('erkennt keinen Range-Bounce in einem Trend', () => {
-    expect(erkenneRangeBounce(trendDaten(), 200)).toBeNull()
+    expect(scanne(trendDaten(), 150, 219, erkenneRangeBounce)).toHaveLength(0)
   })
 
-  it('erkennt einen Trendfolge-Pullback (long)', () => {
+  it('erkennt einen Trendfolge-Pullback (long) beim ersten EMA-Kontakt', () => {
     const c = trendDaten()
-    const s = erkenneTrendPullback(c, c.length - 1, 'long')
-    expect(s?.strategieId).toBe('trendfolge-ema')
-    expect(s?.richtung).toBe('long')
-    expect((s!.idealTakeProfit - s!.idealEntry) / (s!.idealEntry - s!.idealStopLoss)).toBeGreaterThanOrEqual(1.5)
+    const t = scanne(c, 200, c.length - 1, (c, i) => erkenneTrendPullback(c, i, 'long'))
+    expect(t.length).toBeGreaterThan(0)
+    const s = t[0]
+    expect(s.strategieId).toBe('trendfolge-ema')
+    expect((s.idealTakeProfit - s.idealEntry) / (s.idealEntry - s.idealStopLoss)).toBeGreaterThanOrEqual(1.5)
   })
 
-  it('erkennt Breakout + Retest', () => {
+  it('erkennt Breakout + Retest beim ersten Rücklauf auf die Decke', () => {
     const c = breakoutDaten()
-    const i = 150 + 6 + 4
-    const s = erkenneBreakoutRetest(c, i)
-    expect(s?.strategieId).toBe('breakout-retest')
-    expect(s!.idealStopLoss).toBeLessThan(109.7)
-    expect(s!.idealTakeProfit).toBeGreaterThan(s!.idealEntry)
+    const t = scanne(c, 155, 175, erkenneBreakoutRetest)
+    expect(t.length).toBeGreaterThan(0)
+    expect(t[0].idealStopLoss).toBeLessThan(109.7)
+    expect(t[0].idealTakeProfit).toBeGreaterThan(t[0].idealEntry)
+  })
+
+  it('erkenneAn liefert für ruhige Daten ohne Struktur nichts', () => {
+    const flach = Array.from({ length: 300 }, (_, i) => kerze(i, 100, 100.05, 0.1))
+    expect(scanne(flach, 150, 299, erkenneAn)).toHaveLength(0)
   })
 
   it('findeSetup liefert deterministisch mit festem Zufall und baut ein Szenario', () => {

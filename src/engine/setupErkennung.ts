@@ -3,12 +3,18 @@ import { ema } from './indikatoren/ema'
 
 // Regelbasierte Setup-Erkennung in einem beliebigen Kerzenabschnitt.
 // Sucht an einem Signal-Index i (nur Daten bis i sichtbar — kein Blick in die
-// Zukunft) nach einem der drei am klarsten definierbaren Setups aus Level 4:
-//   - Range-Bounce an der Unterkante (range-trading)
-//   - Trendfolge-Pullback an die EMA 20 (trendfolge-ema)
+// Zukunft) nach einem der Setups aus Level 4:
 //   - Breakout + Retest einer mehrfach getesteten Decke (breakout-retest)
+//   - Liquidity Sweep: Docht unter eine Unterstützung + Rückeroberung (liquidity-sweep)
+//   - Range-Bounce an der Unterkante (range-trading)
+//   - S/R-Bounce an einer mehrfach bestätigten Zone (sr-bounce)
+//   - Trendfolge-Pullback an die EMA 20 (trendfolge-ema)
+// Jeder Detektor feuert nur beim ERSTEN Eintritt in seine Zone (nicht an jeder
+// Bar darin) und arbeitet mit einer Toleranz, die sich an der Kerzenspanne des
+// Abschnitts orientiert (15m-BTC ist enger als 4h-SOL).
 // Aus dem Treffer wird ein Übungs-Szenario gebaut. Ob der Trade dann aufgeht,
-// ist offen — genau wie im Markt.
+// ist offen — genau wie im Markt. Geprüft gegen die eingecheckten echten
+// Datensätze in setupErkennung.real.test.ts.
 
 export interface ErkanntesSetup {
   strategieId: string
@@ -24,6 +30,8 @@ export interface ErkanntesSetup {
 
 const MIN_CRV = 1.5
 
+// ── Hilfsfunktionen ──────────────────────────────────────────────────────────
+
 function maxHigh(c: Candle[], von: number, bis: number): number {
   let m = -Infinity
   for (let i = Math.max(0, von); i <= bis; i++) m = Math.max(m, c[i].high)
@@ -33,6 +41,19 @@ function minLow(c: Candle[], von: number, bis: number): number {
   let m = Infinity
   for (let i = Math.max(0, von); i <= bis; i++) m = Math.min(m, c[i].low)
   return m
+}
+
+/** Typische relative Kerzenspanne (Median von (high−low)/close) der letzten 100 Bars. */
+export function typischeSpanne(c: Candle[], i: number): number {
+  const werte: number[] = []
+  for (let k = Math.max(1, i - 100); k <= i; k++) werte.push((c[k].high - c[k].low) / c[k].close)
+  werte.sort((a, b) => a - b)
+  return werte[Math.floor(werte.length / 2)] ?? 0.01
+}
+
+/** Zonen-Toleranz aus der Kerzenspanne: 1,5 Spannen, begrenzt auf 0,4 %–6 %. */
+function toleranz(c: Candle[], i: number): number {
+  return Math.min(0.06, Math.max(0.004, 1.5 * typischeSpanne(c, i)))
 }
 
 /** Anzahl „Berührungen“ eines Bands, mindestens `abstand` Bars auseinander. */
@@ -54,6 +75,137 @@ function beruehrungen(
   return n
 }
 
+/** Indizes lokaler Swing-Tiefs/-Hochs (Extremum im Fenster ±breite). */
+function swings(c: Candle[], von: number, bis: number, art: 'tief' | 'hoch', breite = 4): number[] {
+  const out: number[] = []
+  for (let i = Math.max(breite, von); i <= Math.min(bis, c.length - 1 - breite); i++) {
+    let extrem = true
+    for (let k = i - breite; k <= i + breite && extrem; k++) {
+      if (k === i) continue
+      if (art === 'tief' ? c[k].low < c[i].low : c[k].high > c[i].high) extrem = false
+    }
+    if (extrem) out.push(i)
+  }
+  return out
+}
+
+/**
+ * Mehrfach bestätigtes Level: ein Swing-Extrem, zu dem mindestens ein weiteres
+ * Swing-Extrem innerhalb der Toleranz liegt (≥ 10 Bars Abstand). Liefert den
+ * Durchschnitt der Cluster-Preise oder null.
+ */
+function bestaetigtesLevel(
+  c: Candle[],
+  von: number,
+  bis: number,
+  art: 'tief' | 'hoch',
+  tol: number,
+): number | null {
+  const idx = swings(c, von, bis, art)
+  const preis = (i: number) => (art === 'tief' ? c[i].low : c[i].high)
+  let bestes: { preis: number; n: number } | null = null
+  for (const a of idx) {
+    const cluster = idx.filter(
+      (b) => b === a || (Math.abs(preis(b) - preis(a)) / preis(a) <= tol && Math.abs(b - a) >= 10),
+    )
+    if (cluster.length >= 2 && (!bestes || cluster.length > bestes.n)) {
+      bestes = { preis: cluster.reduce((s, b) => s + preis(b), 0) / cluster.length, n: cluster.length }
+    }
+  }
+  return bestes?.preis ?? null
+}
+
+function runde(p: number): string {
+  return rundePreis(p).toLocaleString('de-DE', { maximumFractionDigits: 2 })
+}
+
+/** Preis auf eine sinnvolle Genauigkeit runden (BTC ganze Dollar, SOL Cent). */
+export function rundePreis(p: number): number {
+  const stellen = p >= 1000 ? 0 : p >= 100 ? 1 : 2
+  const f = 10 ** stellen
+  return Math.round(p * f) / f
+}
+
+// ── Detektoren ───────────────────────────────────────────────────────────────
+
+/**
+ * Breakout + Retest: Irgendwo in den letzten 250 Bars hat ein Close eine
+ * Decke überschritten, die davor ≥ 3× gehalten hatte. Seitdem kein Close
+ * klar unter der Decke (sonst Fakeout), aber schon mal deutlich darüber.
+ * Jetzt kommt der Preis zum ersten Mal zurück auf die Decke.
+ */
+export function erkenneBreakoutRetest(c: Candle[], i: number): ErkanntesSetup | null {
+  if (i < 150) return null
+  const tol = toleranz(c, i)
+  const close = c[i].close
+  for (let k = i - 5; k >= Math.max(121, i - 250); k--) {
+    const level = maxHigh(c, k - 120, k - 1)
+    if (!(c[k].close > level * (1 + tol / 2) && c[k - 1].close <= level)) continue // erster Close drüber
+    const nah = (b: Candle) => b.high >= level * (1 - tol) && b.high <= level * 1.002
+    if (beruehrungen(c, k - 120, k - 1, nah, 10) < 3) continue
+    let verloren = false
+    let weit = false
+    for (let m = k; m < i; m++) {
+      if (c[m].close < level * (1 - tol)) verloren = true
+      if (c[m].close > level * (1 + tol)) weit = true
+    }
+    if (verloren || !weit) continue
+    const inZone = close >= level * (1 - tol) && close <= level * (1 + tol)
+    const vorherDrueber = c[i - 1].close > level * (1 + tol)
+    if (!inZone || !vorherDrueber) return null
+    const idealEntry = level * 1.003
+    const idealStopLoss = level * (1 - 2 * tol)
+    let idealTakeProfit = maxHigh(c, k, i)
+    if ((idealTakeProfit - idealEntry) / (idealEntry - idealStopLoss) < MIN_CRV) {
+      idealTakeProfit = idealEntry + (idealEntry - idealStopLoss) * 2
+    }
+    return {
+      strategieId: 'breakout-retest',
+      richtung: 'long',
+      signalIndex: i,
+      entryZone: { preisVon: level * (1 - 1.5 * tol), preisBis: level * (1 + 1.5 * tol), barVon: i, barBis: i + 30 },
+      idealEntry,
+      idealStopLoss,
+      idealTakeProfit,
+      lage: `Ein Widerstand um ~${runde(level)} $ hat mehrfach gehalten und wurde vor einiger Zeit impulsiv überschritten.`,
+    }
+  }
+  return null
+}
+
+/**
+ * Liquidity Sweep: Docht unter eine mehrfach bestätigte Unterstützung, und die
+ * aktuelle Kerze ist der erste Close wieder darüber.
+ */
+export function erkenneLiquiditySweep(c: Candle[], i: number): ErkanntesSetup | null {
+  if (i < 150) return null
+  const tol = toleranz(c, i)
+  const level = bestaetigtesLevel(c, i - 250, i - 6, 'tief', tol)
+  if (level === null) return null
+  const sweepTief = minLow(c, i - 3, i)
+  if (sweepTief > level * (1 - tol / 2)) return null // kein echter Bruch
+  const close = c[i].close
+  if (close < level || close > level * (1 + 2 * tol)) return null
+  if (c[i - 1].close >= level) return null // erster Close zurück über dem Level
+  const idealEntry = level * 1.005
+  const idealStopLoss = sweepTief * 0.995
+  let idealTakeProfit = maxHigh(c, i - 40, i - 1)
+  if ((idealTakeProfit - idealEntry) / (idealEntry - idealStopLoss) < MIN_CRV) {
+    idealTakeProfit = idealEntry + 2 * (idealEntry - idealStopLoss)
+  }
+  return {
+    strategieId: 'liquidity-sweep',
+    richtung: 'long',
+    signalIndex: i,
+    entryZone: { preisVon: level * (1 - tol), preisBis: level * (1 + 2.5 * tol), barVon: i, barBis: i + 15 },
+    idealEntry,
+    idealStopLoss,
+    idealTakeProfit,
+    lage: `Eine mehrfach bestätigte Unterstützung um ~${runde(level)} $ wurde gerade mit einem Docht unterschritten.`,
+  }
+}
+
+/** Range-Bounce: Preis erreicht zum ersten Mal wieder das untere Drittel einer klaren Range. */
 export function erkenneRangeBounce(c: Candle[], i: number): ErkanntesSetup | null {
   const N = 80
   if (i < N + 20) return null
@@ -65,9 +217,9 @@ export function erkenneRangeBounce(c: Candle[], i: number): ErkanntesSetup | nul
   const obenBand = (b: Candle) => b.high >= hoch - 0.15 * w
   if (beruehrungen(c, i - N, i - 1, untenBand, 8) < 2) return null
   if (beruehrungen(c, i - N, i - 1, obenBand, 8) < 2) return null
-  // Preis nähert sich gerade der Unterkante, ist aber noch nicht darunter
   const close = c[i].close
-  if (close > tief + 0.35 * w || close < tief) return null
+  if (close > tief + 0.3 * w || close < tief) return null
+  if (c[i - 1].close <= tief + 0.3 * w) return null // erster Eintritt ins untere Band
   const idealEntry = tief + 0.1 * w
   const idealStopLoss = tief - 0.15 * w
   const idealTakeProfit = hoch - 0.1 * w
@@ -83,12 +235,63 @@ export function erkenneRangeBounce(c: Candle[], i: number): ErkanntesSetup | nul
   }
 }
 
+/** S/R-Bounce: erster Eintritt in eine mehrfach bestätigte Zone, nach Anlauf von außen. */
+export function erkenneSrBounce(c: Candle[], i: number, richtung: Richtung): ErkanntesSetup | null {
+  if (i < 150) return null
+  const tol = toleranz(c, i)
+  const close = c[i].close
+  if (richtung === 'long') {
+    const level = bestaetigtesLevel(c, i - 150, i - 6, 'tief', tol)
+    if (level === null) return null
+    if (close < level * (1 - tol) || close > level * (1 + tol)) return null
+    if (c[i - 1].close <= level * (1 + tol)) return null // erster Eintritt
+    if (maxHigh(c, i - 30, i - 1) < level * (1 + 4 * tol)) return null // kam von weiter oben
+    const idealEntry = level * 1.003
+    const idealStopLoss = level * (1 - 2 * tol)
+    let idealTakeProfit = maxHigh(c, i - 60, i - 1)
+    if ((idealTakeProfit - idealEntry) / (idealEntry - idealStopLoss) < MIN_CRV) {
+      idealTakeProfit = idealEntry + 2 * (idealEntry - idealStopLoss)
+    }
+    return {
+      strategieId: 'sr-bounce',
+      richtung: 'long',
+      signalIndex: i,
+      entryZone: { preisVon: level * (1 - 1.5 * tol), preisBis: level * (1 + 1.5 * tol), barVon: i, barBis: i + 25 },
+      idealEntry,
+      idealStopLoss,
+      idealTakeProfit,
+      lage: `Unter dem Markt liegt eine Zone um ~${runde(level)} $, die schon mehrfach als Unterstützung gehalten hat — der Preis fällt gerade wieder hinein.`,
+    }
+  }
+  const level = bestaetigtesLevel(c, i - 150, i - 6, 'hoch', tol)
+  if (level === null) return null
+  if (close > level * (1 + tol) || close < level * (1 - tol)) return null
+  if (c[i - 1].close >= level * (1 - tol)) return null
+  if (minLow(c, i - 30, i - 1) > level * (1 - 4 * tol)) return null
+  const idealEntry = level * 0.997
+  const idealStopLoss = level * (1 + 2 * tol)
+  let idealTakeProfit = minLow(c, i - 60, i - 1)
+  if ((idealEntry - idealTakeProfit) / (idealStopLoss - idealEntry) < MIN_CRV) {
+    idealTakeProfit = idealEntry - 2 * (idealStopLoss - idealEntry)
+  }
+  return {
+    strategieId: 'sr-bounce',
+    richtung: 'short',
+    signalIndex: i,
+    entryZone: { preisVon: level * (1 - 1.5 * tol), preisBis: level * (1 + 1.5 * tol), barVon: i, barBis: i + 25 },
+    idealEntry,
+    idealStopLoss,
+    idealTakeProfit,
+    lage: `Über dem Markt liegt eine Zone um ~${runde(level)} $, an der der Preis schon mehrfach abgeprallt ist — er steigt gerade wieder hinein.`,
+  }
+}
+
+/** Trendfolge-Pullback: intakter EMA-Trend, Preis berührt erstmals wieder die EMA 20. */
 export function erkenneTrendPullback(c: Candle[], i: number, richtung: Richtung): ErkanntesSetup | null {
   if (i < 120) return null
   const sicht = c.slice(0, i + 1)
   const e20 = ema(sicht, 20)
   const e50 = ema(sicht, 50)
-  // Trend intakt: EMA20 auf der richtigen Seite der EMA50 seit 30 Bars
   for (let k = i - 30; k <= i; k++) {
     if (!Number.isFinite(e20[k]) || !Number.isFinite(e50[k])) return null
     if (richtung === 'long' ? e20[k] <= e50[k] : e20[k] >= e50[k]) return null
@@ -99,16 +302,15 @@ export function erkenneTrendPullback(c: Candle[], i: number, richtung: Richtung)
     const hoch = maxHigh(c, i - 40, i - 1)
     const altesHoch = maxHigh(c, i - 80, i - 41)
     if (hoch <= altesHoch) return null // kein Higher High
-    // Pullback: Close in der Nähe der EMA20, deutlich unter dem letzten Hoch
     if (close < ema20 * 0.98 || close > ema20 * 1.015) return null
+    // erster Kontakt: vorherige Bar noch klar über der EMA, und kürzlich deutlich darüber
+    if (c[i - 1].close <= e20[i - 1] * 1.005) return null
+    if (maxHigh(c, i - 10, i - 1) < ema20 * 1.015) return null
     if (close > hoch * 0.985) return null
     const swingTief = minLow(c, i - 12, i)
     const idealEntry = ema20
-    // Stop unter das letzte Swing-Tief; liegt das über dem Entry, unter die EMA 50
     const idealStopLoss = (swingTief < idealEntry ? swingTief : e50[i]) * 0.995
-    // Ziel: altes Hoch, mindestens aber 2R (Trendfolge läuft oft weiter als das letzte Hoch)
     const idealTakeProfit = Math.max(hoch, idealEntry + 2 * (idealEntry - idealStopLoss))
-    if ((idealTakeProfit - idealEntry) / (idealEntry - idealStopLoss) < MIN_CRV) return null
     return {
       strategieId: 'trendfolge-ema',
       richtung: 'long',
@@ -124,12 +326,13 @@ export function erkenneTrendPullback(c: Candle[], i: number, richtung: Richtung)
   const altesTief = minLow(c, i - 80, i - 41)
   if (tief >= altesTief) return null
   if (close > ema20 * 1.02 || close < ema20 * 0.985) return null
+  if (c[i - 1].close >= e20[i - 1] * 0.995) return null
+  if (minLow(c, i - 10, i - 1) > ema20 * 0.985) return null
   if (close < tief * 1.015) return null
   const swingHoch = maxHigh(c, i - 12, i)
   const idealEntry = ema20
   const idealStopLoss = (swingHoch > idealEntry ? swingHoch : e50[i]) * 1.005
   const idealTakeProfit = Math.min(tief, idealEntry - 2 * (idealStopLoss - idealEntry))
-  if ((idealEntry - idealTakeProfit) / (idealStopLoss - idealEntry) < MIN_CRV) return null
   return {
     strategieId: 'trendfolge-ema',
     richtung: 'short',
@@ -142,46 +345,19 @@ export function erkenneTrendPullback(c: Candle[], i: number, richtung: Richtung)
   }
 }
 
-export function erkenneBreakoutRetest(c: Candle[], i: number): ErkanntesSetup | null {
-  if (i < 140) return null
-  const level = maxHigh(c, i - 120, i - 12)
-  const nahAmLevel = (b: Candle) => b.high >= level * 0.99 && b.high <= level * 1.002
-  if (beruehrungen(c, i - 120, i - 12, nahAmLevel, 10) < 3) return null
-  // Ausbruch: ein Close deutlich über dem Level in den letzten 12 Bars
-  let ausbruch = -1
-  for (let k = i - 11; k <= i - 2; k++) if (c[k].close > level * 1.01) ausbruch = k
-  if (ausbruch < 0) return null
-  const ausbruchsHoch = maxHigh(c, ausbruch, i)
-  // Retest: Preis kommt zurück auf das Level, hat es aber nicht klar verloren
-  const close = c[i].close
-  if (close < level * 0.985 || close > level * 1.02) return null
-  const idealEntry = level * 1.003
-  const idealStopLoss = level * 0.975
-  let idealTakeProfit = ausbruchsHoch
-  if ((idealTakeProfit - idealEntry) / (idealEntry - idealStopLoss) < MIN_CRV) {
-    idealTakeProfit = idealEntry + (idealEntry - idealStopLoss) * 2
-  }
-  return {
-    strategieId: 'breakout-retest',
-    richtung: 'long',
-    signalIndex: i,
-    entryZone: { preisVon: level * 0.98, preisBis: level * 1.02, barVon: i, barBis: i + 30 },
-    idealEntry,
-    idealStopLoss,
-    idealTakeProfit,
-    lage: `Ein Widerstand um ~${runde(level)} $ hat mehrfach gehalten und wurde vor Kurzem impulsiv überschritten.`,
-  }
-}
+// ── Suche & Szenario ─────────────────────────────────────────────────────────
 
-function runde(p: number): string {
-  return rundePreis(p).toLocaleString('de-DE', { maximumFractionDigits: 2 })
-}
-
-/** Preis auf eine sinnvolle Genauigkeit runden (BTC ganze Dollar, SOL Cent). */
-export function rundePreis(p: number): number {
-  const stellen = p >= 1000 ? 0 : p >= 100 ? 1 : 2
-  const f = 10 ** stellen
-  return Math.round(p * f) / f
+/** Alle Detektoren an einem Index, in Prioritätsreihenfolge. */
+export function erkenneAn(c: Candle[], i: number): ErkanntesSetup | null {
+  return (
+    erkenneBreakoutRetest(c, i) ??
+    erkenneLiquiditySweep(c, i) ??
+    erkenneRangeBounce(c, i) ??
+    erkenneSrBounce(c, i, 'long') ??
+    erkenneSrBounce(c, i, 'short') ??
+    erkenneTrendPullback(c, i, 'long') ??
+    erkenneTrendPullback(c, i, 'short')
+  )
 }
 
 /**
@@ -191,17 +367,13 @@ export function rundePreis(p: number): number {
  */
 export function findeSetup(c: Candle[], nachlauf = 80, zufall: () => number = Math.random): ErkanntesSetup | null {
   const kandidaten: number[] = []
-  for (let i = 150; i < c.length - nachlauf; i += 2) kandidaten.push(i)
+  for (let i = 150; i < c.length - nachlauf; i++) kandidaten.push(i)
   for (let k = kandidaten.length - 1; k > 0; k--) {
     const j = Math.floor(zufall() * (k + 1))
     ;[kandidaten[k], kandidaten[j]] = [kandidaten[j], kandidaten[k]]
   }
   for (const i of kandidaten) {
-    const treffer =
-      erkenneBreakoutRetest(c, i) ??
-      erkenneRangeBounce(c, i) ??
-      erkenneTrendPullback(c, i, 'long') ??
-      erkenneTrendPullback(c, i, 'short')
+    const treffer = erkenneAn(c, i)
     if (treffer) return treffer
   }
   return null
