@@ -83,6 +83,7 @@ export function ReplayChart({
         visible: !zeitVerdeckt,
         rightOffset: 5,
       },
+      handleScroll: { vertTouchDrag: false },
     })
 
     const kerzen = chart.addSeries(CandlestickSeries, {

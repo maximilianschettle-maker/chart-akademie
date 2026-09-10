@@ -60,6 +60,8 @@ export function ChartPanel({
       rightPriceScale: { borderColor: CHART_FARBEN.gitter },
       timeScale: { borderColor: CHART_FARBEN.gitter, timeVisible: true },
       crosshair: { mode: 0 },
+      // Am Handy soll vertikales Wischen die Seite scrollen, nicht den Chart
+      handleScroll: { vertTouchDrag: false },
     })
 
     const kerzenSerie = chart.addSeries(CandlestickSeries, {

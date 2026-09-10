@@ -3,6 +3,7 @@ import { LoaderCircle, WifiOff } from 'lucide-react'
 import type { Candle, ChartAnnotation } from '../../types'
 import { getCandles } from '../../data/candleService'
 import { ChartPanel } from '../chart/ChartPanel'
+import { useSchmal, chartHoehe } from '../../hooks/useSchmal'
 
 interface ChartBlockProps {
   titel?: string
@@ -27,6 +28,7 @@ export function ChartBlock({
 }: ChartBlockProps) {
   const [candles, setCandles] = useState<Candle[] | null>(null)
   const [fehler, setFehler] = useState(false)
+  const schmal = useSchmal()
 
   useEffect(() => {
     let aktiv = true
@@ -60,7 +62,12 @@ export function ChartBlock({
           <LoaderCircle className="h-6 w-6 animate-spin" />
         </div>
       ) : (
-        <ChartPanel candles={candles} annotationen={annotationen} emaPerioden={emaPerioden} />
+        <ChartPanel
+          candles={candles}
+          annotationen={annotationen}
+          emaPerioden={emaPerioden}
+          hoehe={chartHoehe(schmal, 380, 260)}
+        />
       )}
       {beschreibung && <p className="mt-3 text-sm text-gedimmt">{beschreibung}</p>}
     </div>

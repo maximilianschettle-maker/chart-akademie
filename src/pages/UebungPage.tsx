@@ -5,6 +5,7 @@ import type { Candle } from '../types'
 import { SZENARIEN } from '../content/szenarien'
 import { getSzenarioDaten } from '../data/szenarien'
 import { useReplay } from '../hooks/useReplay'
+import { useSchmal, chartHoehe } from '../hooks/useSchmal'
 import { bewerteSzenario } from '../engine/szenarioGrader'
 import { useProgressStore } from '../stores/progressStore'
 import { ReplayChart } from '../components/chart/ReplayChart'
@@ -33,6 +34,7 @@ function UebungSession({
 }) {
   const replay = useReplay(candles, szenario.startIndex, UEBUNGS_KAPITAL, szenario.id)
   const { broker } = replay
+  const schmal = useSchmal()
   const szenarioAbschliessen = useProgressStore((s) => s.szenarioAbschliessen)
   const gespeichertRef = useRef(false)
 
@@ -60,6 +62,7 @@ function UebungSession({
           <ReplayChart
             candles={candles}
             cursor={replay.cursor}
+            hoehe={chartHoehe(schmal)}
             zeitVerdeckt={szenario.datumVerdeckt && !replay.fertig}
             entryPreis={replay.fertig ? szenario.idealEntry : broker.position?.entryPreis}
             stopLoss={

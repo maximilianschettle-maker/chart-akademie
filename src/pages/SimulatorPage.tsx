@@ -3,6 +3,7 @@ import { Dices, LoaderCircle, WifiOff, EyeOff } from 'lucide-react'
 import type { Candle, Trade } from '../types'
 import { getCandles } from '../data/candleService'
 import { useReplay } from '../hooks/useReplay'
+import { useSchmal, chartHoehe } from '../hooks/useSchmal'
 import { useSimulatorStore } from '../stores/simulatorStore'
 import { statistik } from '../engine/bewertung'
 import { ReplayChart } from '../components/chart/ReplayChart'
@@ -58,6 +59,7 @@ function ReplaySession({ session, onNeueSession }: { session: Session; onNeueSes
 
   const replay = useReplay(session.candles, START_CURSOR, startKapitalRef.current)
   const { broker } = replay
+  const schmal = useSchmal()
 
   // Abgeschlossene Trades laufend in den persistenten Store übernehmen
   useEffect(() => {
@@ -111,6 +113,7 @@ function ReplaySession({ session, onNeueSession }: { session: Session; onNeueSes
             <ReplayChart
               candles={session.candles}
               cursor={replay.cursor}
+              hoehe={chartHoehe(schmal)}
               zeitVerdeckt={!replay.fertig}
               entryPreis={broker.position?.entryPreis}
               stopLoss={broker.position?.stopLoss ?? broker.offeneOrder?.stopLoss}
