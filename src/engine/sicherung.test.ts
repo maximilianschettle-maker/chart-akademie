@@ -4,6 +4,7 @@ import {
   istSicherung,
   sicherungZusammenfuehren,
   kontostandAus,
+  mergeRueckblicke,
 } from './sicherung'
 import type { Trade } from '../types'
 
@@ -63,5 +64,29 @@ describe('Sicherung', () => {
     expect(r.fortschritt.szenarioErgebnisse.s1.bewertung).toBe('ok')
     expect(r.fortschritt.szenarioErgebnisse.s2.bewertung).toBe('perfekt')
     expect(r.fortschritt.wiederholungen['l1-01#0'].stufe).toBe(1)
+  })
+})
+
+describe('Setup-Rückblicke in der Sicherung', () => {
+  const rb = (sitzungId: string, erstelltAm: number, trades = 0) => ({
+    sitzungId,
+    symbol: 'BTCUSDT',
+    interval: '1h',
+    erstelltAm,
+    kerzen: 100,
+    eintraege: [],
+    trades,
+    tradesOhneSetup: 0,
+  })
+
+  it('landen im Export und überstehen JSON', () => {
+    const s = sicherungErstellen([], leer, new Date(0), [rb('a', 1)])
+    expect(JSON.parse(JSON.stringify(s)).simulator.rueckblicke).toHaveLength(1)
+  })
+
+  it('werden je Sitzung zusammengeführt — der neuere Stand gewinnt', () => {
+    const r = mergeRueckblicke([rb('a', 1, 1), rb('b', 2)], [rb('a', 5, 7), rb('c', 3)])
+    expect(r.map((x) => x.sitzungId)).toEqual(['b', 'c', 'a'])
+    expect(r.find((x) => x.sitzungId === 'a')?.trades).toBe(7)
   })
 })

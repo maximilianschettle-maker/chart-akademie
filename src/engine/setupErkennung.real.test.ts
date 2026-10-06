@@ -69,3 +69,35 @@ describe('Setup-Erkennung an echten Daten', () => {
     expect(JSON.stringify(bericht).length).toBeGreaterThan(2)
   })
 })
+
+describe('Short-Seite: spiegelbildlich zur Long-Seite', () => {
+  // Kurs am Kehrwert spiegeln: aus jedem Tief wird ein Hoch, Verhältnisse bleiben erhalten.
+  function spiegeln(c: Candle[]): Candle[] {
+    const k = c[0].close * c[0].close
+    return c.map((b) => ({ ...b, open: k / b.open, close: k / b.close, high: k / b.low, low: k / b.high }))
+  }
+
+  it('findet im gespiegelten Chart Short-Setups, wo das Original Long-Setups hat', () => {
+    const zaehler: Record<string, { long: number; short: number }> = {}
+    for (const name of ['replay-btc-1h-2022', 'replay-eth-4h-2021', 'replay-sol-15m-2023']) {
+      const original = lade('replay', name)
+      const gespiegelt = spiegeln(original)
+      for (let i = 150; i < original.length - 10; i++) {
+        const a = erkenneAn(original, i)
+        const b = erkenneAn(gespiegelt, i)
+        if (a?.richtung === 'long') (zaehler[a.strategieId] ??= { long: 0, short: 0 }).long++
+        if (b?.richtung === 'short') (zaehler[b.strategieId] ??= { long: 0, short: 0 }).short++
+        // Short-Setups haben Stop über und Ziel unter dem Einstieg
+        if (b?.richtung === 'short') {
+          expect(b.idealStopLoss).toBeGreaterThan(b.idealEntry)
+          expect(b.idealTakeProfit).toBeLessThan(b.idealEntry)
+        }
+      }
+    }
+    for (const [strategie, z] of Object.entries(zaehler)) {
+      // Die Toleranzen sind multiplikativ, die Spiegelung trifft sie nicht aufs Prozent — grob gleich viele reicht
+      expect(z.short, `${strategie}: ${z.long} long, ${z.short} short`).toBeGreaterThanOrEqual(Math.floor(z.long / 2))
+      expect(z.short, `${strategie}: ${z.long} long, ${z.short} short`).toBeLessThanOrEqual(z.long * 2 + 2)
+    }
+  })
+})

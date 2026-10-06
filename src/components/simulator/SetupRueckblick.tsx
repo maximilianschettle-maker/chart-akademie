@@ -3,19 +3,33 @@ import { Link } from 'react-router-dom'
 import { BookOpen, ChevronDown, ChevronRight, Eye, LoaderCircle, RotateCcw, SearchCheck } from 'lucide-react'
 import type { Candle, ChartAnnotation, Trade } from '../../types'
 import type { ErkanntesSetup } from '../../engine/setupErkennung'
-import { rueckblick, rueckblickSumme, sucheSetups, type SetupFund } from '../../engine/rueckblick'
+import {
+  pruefeEigeneTrades,
+  rueckblick,
+  rueckblickKompakt,
+  rueckblickSumme,
+  sucheSetups,
+  type SetupFund,
+  type TradeAbgleich,
+} from '../../engine/rueckblick'
 import { STRATEGIEN, strategieName } from '../../content/strategien'
 import { fmtPreis, fmtR } from '../../engine/format'
+import { useSimulatorStore } from '../../stores/simulatorStore'
 import { ChartPanel, CHART_FARBEN } from '../chart/ChartPanel'
 
 // Setup-Rückblick am Sitzungsende: Was hat der gespielte Abschnitt angeboten,
 // was davon wurde gehandelt, was verpasst — mit Chart zum Moment der
-// Entscheidung, Erkennungsmerkmalen und (auf Wunsch) der Auflösung.
+// Entscheidung, Erkennungsmerkmalen und (auf Wunsch) der Auflösung. Dazu die
+// Gegenprobe: Hatte jeder eigene Trade ein erkennbares Setup?
 
 const VORLAUF = 140 // Kerzen vor dem Signal im Detail-Chart
+const SUCH_VORLAUF = 30 // so weit vor Sitzungsbeginn sucht die Erkennung (für frühe eigene Trades)
+const ERSTE = 5 // so viele Einträge zeigt die Liste zunächst
 const EBENEN_FARBE = '#3B82F6'
 
 interface SetupRueckblickProps {
+  /** Sitzung, zu der der Rückblick gehört — unter dieser Id landet er im Journal */
+  sitzung: { id: string; symbol: string; interval: string }
   candles: Candle[]
   /** erste und letzte gespielte Kerze */
   startIndex: number
@@ -41,11 +55,42 @@ const STATUS = {
   belegt: { text: 'im Trade', stil: 'bg-rand text-gedimmt' },
 } as const
 
+const chip = (aktiv: boolean) =>
+  `rounded-lg px-2.5 py-1.5 text-xs font-semibold ${
+    aktiv ? 'bg-akzent text-nacht' : 'bg-nacht text-gedimmt hover:text-schrift'
+  }`
+
 function ErgebnisText({ fund }: { fund: SetupFund }) {
   const { art, r } = fund.ergebnis
   if (art === 'tp') return <span className="text-long">Ziel erreicht {fmtR(r)}</span>
   if (art === 'sl') return <span className="text-short">ausgestoppt {fmtR(r)}</span>
   return <span className="text-gedimmt">noch offen ({fmtR(r)})</span>
+}
+
+function Deutlichkeit({ wert }: { wert: number }) {
+  return (
+    <span
+      className="inline-flex gap-0.5"
+      title={`Deutlichkeit ${wert} von 5: wie lehrbuchmäßig das Setup zu erkennen war — keine Gewinnwahrscheinlichkeit`}
+      aria-label={`Deutlichkeit ${wert} von 5`}
+    >
+      {[1, 2, 3, 4, 5].map((n) => (
+        <span key={n} className={`h-1.5 w-1.5 rounded-full ${n <= wert ? 'bg-akzent' : 'bg-rand'}`} />
+      ))}
+    </span>
+  )
+}
+
+function TrendMarke({ mitTrend }: { mitTrend: boolean | null }) {
+  if (mitTrend === null) return null
+  return (
+    <span
+      className={`rounded px-1.5 py-0.5 text-[11px] ${mitTrend ? 'bg-nacht text-schrift' : 'bg-nacht text-gedimmt'}`}
+      title="Übergeordneter Trend: Kurs über bzw. unter der EMA 200 zum Zeitpunkt des Signals"
+    >
+      {mitTrend ? 'mit Trend' : 'gegen Trend'}
+    </span>
+  )
 }
 
 function FundDetail({
@@ -143,6 +188,15 @@ function FundDetail({
               <li key={m}>{m}</li>
             ))}
           </ol>
+          {fund.mitTrend !== null && (
+            <p className="mt-2 text-xs leading-relaxed text-gedimmt">
+              Übergeordneter Trend (EMA 200):{' '}
+              <span className="text-schrift">
+                {fund.mitTrend ? 'in Handelsrichtung' : 'gegen die Handelsrichtung'}
+              </span>
+              {!fund.mitTrend && ' — gegen den Trend braucht ein Setup mehr Bestätigung.'}
+            </p>
+          )}
         </div>
 
         <div className="rounded-lg bg-nacht p-3">
@@ -206,18 +260,69 @@ function FundDetail({
   )
 }
 
-type Filter = 'verpasst' | 'gehandelt' | 'alle'
+/** Gegenprobe: Hatte jeder eigene Trade ein erkennbares Setup? */
+function EigeneTrades({ abgleich }: { abgleich: TradeAbgleich[] }) {
+  if (abgleich.length === 0) return null
+  const ohne = abgleich.filter((a) => !a.setup).length
+  return (
+    <div className="border-t border-rand p-4">
+      <h3 className="text-sm font-semibold text-white">Deine Trades im Abgleich</h3>
+      <p className="mt-1 text-xs leading-relaxed text-gedimmt">
+        {ohne === 0
+          ? `Alle ${abgleich.length} Trades hatten ein erkanntes Setup.`
+          : `${ohne} von ${abgleich.length} Trades ${ohne === 1 ? 'hatte' : 'hatten'} kein erkanntes Setup.`}{' '}
+        Ohne Treffer heißt: Bauchgefühl — oder ein Setup, das die Erkennung nicht kennt. Schau dir diese Trades
+        zuerst an.
+      </p>
+      <ul className="mt-2 divide-y divide-rand/50 text-xs">
+        {abgleich.map((a) => (
+          <li key={a.trade.key} className="tabular-nums flex flex-wrap items-center gap-x-3 gap-y-1 py-2">
+            <span className={`font-bold uppercase ${a.trade.richtung === 'long' ? 'text-long' : 'text-short'}`}>
+              {a.trade.richtung}
+            </span>
+            <span className="text-gedimmt">{datum(a.trade.entryTime)}</span>
+            {a.setup ? (
+              <span className="text-schrift">
+                passt zu <span className="font-semibold text-white">{strategieName(a.setup.strategieId)}</span>
+              </span>
+            ) : (
+              <span className="rounded bg-akzent/15 px-1.5 py-0.5 font-semibold text-akzent">
+                kein erkanntes Setup
+              </span>
+            )}
+            {a.tagPasst === false && a.setup && (
+              <span className="text-gedimmt">(von dir getaggt als {strategieName(a.trade.strategieId)})</span>
+            )}
+            {!a.setup && a.trade.strategieId && (
+              <span className="text-gedimmt">(getaggt als {strategieName(a.trade.strategieId)})</span>
+            )}
+            <span className={`ml-auto ${a.trade.rMultiple >= 0 ? 'text-long' : 'text-short'}`}>
+              {fmtR(a.trade.rMultiple)}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
 
-export function SetupRueckblick({ candles, startIndex, endIndex, trades, onNochmal }: SetupRueckblickProps) {
+type Filter = 'verpasst' | 'gehandelt' | 'alle'
+type Sortierung = 'deutlich' | 'zeit'
+
+export function SetupRueckblick({ sitzung, candles, startIndex, endIndex, trades, onNochmal }: SetupRueckblickProps) {
+  const rueckblickSpeichern = useSimulatorStore((s) => s.rueckblickSpeichern)
   const [setups, setSetups] = useState<ErkanntesSetup[] | null>(null)
   const [fortschritt, setFortschritt] = useState(0)
   const [offen, setOffen] = useState<string | null>(null)
   const [filter, setFilter] = useState<Filter | null>(null)
+  const [nurMitTrend, setNurMitTrend] = useState(false)
+  const [sortierung, setSortierung] = useState<Sortierung>('deutlich')
+  const [alleZeigen, setAlleZeigen] = useState(false)
 
   // Suche einmal anstoßen — in Häppchen, damit die Seite bedienbar bleibt
   useEffect(() => {
     let abgebrochen = false
-    void sucheSetups(candles, startIndex, endIndex, {
+    void sucheSetups(candles, startIndex - SUCH_VORLAUF, endIndex, {
       onFortschritt: (anteil) => {
         if (!abgebrochen) setFortschritt(anteil)
       },
@@ -231,10 +336,33 @@ export function SetupRueckblick({ candles, startIndex, endIndex, trades, onNochm
   }, [candles, startIndex, endIndex])
 
   const funde = useMemo(
-    () => (setups ? rueckblick(candles, setups, trades, endIndex) : []),
-    [setups, candles, trades, endIndex],
+    () => (setups ? rueckblick(candles, setups, trades, endIndex, startIndex) : []),
+    [setups, candles, trades, endIndex, startIndex],
+  )
+  const abgleich = useMemo(
+    () => (setups ? pruefeEigeneTrades(candles, setups, trades) : []),
+    [setups, candles, trades],
   )
   const summe = useMemo(() => rueckblickSumme(funde), [funde])
+
+  // Fürs Journal ablegen (je Sitzung ein Eintrag — ersetzt einen älteren Stand)
+  useEffect(() => {
+    if (!setups) return
+    rueckblickSpeichern(
+      rueckblickKompakt(
+        {
+          sitzungId: sitzung.id,
+          symbol: sitzung.symbol,
+          interval: sitzung.interval,
+          kerzen: endIndex - startIndex + 1,
+          erstelltAm: Math.floor(Date.now() / 1000),
+        },
+        candles,
+        funde,
+        abgleich,
+      ),
+    )
+  }, [setups, funde, abgleich, candles, sitzung.id, sitzung.symbol, sitzung.interval, startIndex, endIndex, rueckblickSpeichern])
 
   const karte = 'rounded-xl border border-rand bg-flaeche'
 
@@ -248,11 +376,17 @@ export function SetupRueckblick({ candles, startIndex, endIndex, trades, onNochm
   }
 
   const aktiverFilter: Filter = filter ?? (summe.verpasst > 0 ? 'verpasst' : 'alle')
-  const sichtbar = funde.filter((f) => aktiverFilter === 'alle' || f.status === aktiverFilter)
-  const chip = (aktiv: boolean) =>
-    `rounded-lg px-2.5 py-1.5 text-xs font-semibold ${
-      aktiv ? 'bg-akzent text-nacht' : 'bg-nacht text-gedimmt hover:text-schrift'
-    }`
+  const gefiltert = funde
+    .filter((f) => aktiverFilter === 'alle' || f.status === aktiverFilter)
+    .filter((f) => !nurMitTrend || f.mitTrend === true)
+  const sortiert =
+    sortierung === 'deutlich'
+      ? [...gefiltert].sort(
+          (a, b) => b.deutlichkeit - a.deutlichkeit || a.setup.signalIndex - b.setup.signalIndex,
+        )
+      : gefiltert
+  const sichtbar = alleZeigen ? sortiert : sortiert.slice(0, ERSTE)
+  const mitTrendAnzahl = funde.filter((f) => f.mitTrend === true).length
 
   return (
     <div className={karte}>
@@ -263,8 +397,7 @@ export function SetupRueckblick({ candles, startIndex, endIndex, trades, onNochm
         {summe.gesamt === 0 ? (
           <p className="mt-1.5 text-sm text-gedimmt">
             In diesem Abschnitt hat die Erkennung kein Setup aus Level 4 gefunden
-            {endIndex - startIndex < 60 ? ' — er war auch recht kurz' : ''}. Wenn du trotzdem gehandelt hast:
-            Prüfe im Journal, ob die Trades ein eigenes Setup hatten.
+            {endIndex - startIndex < 60 ? ' — er war auch recht kurz' : ''}.
           </p>
         ) : (
           <>
@@ -285,9 +418,10 @@ export function SetupRueckblick({ candles, startIndex, endIndex, trades, onNochm
             </p>
             <p className="mt-1 text-xs text-gedimmt">
               Regelbasierte Erkennung: Sie findet nicht jedes Setup, und nicht jedes gefundene ist ein gutes.
-              Ergebnisse ohne Gebühren, Einstieg zum Schlusskurs der Signalkerze.
+              Ergebnisse ohne Gebühren, Einstieg zum Schlusskurs der Signalkerze. Die Punkte zeigen, wie deutlich
+              ein Setup zu erkennen war — nicht, wie wahrscheinlich es gewinnt.
             </p>
-            <div className="mt-3 flex flex-wrap gap-1.5">
+            <div className="mt-3 flex flex-wrap items-center gap-1.5">
               <button onClick={() => setFilter('verpasst')} className={chip(aktiverFilter === 'verpasst')}>
                 Verpasst ({summe.verpasst})
               </button>
@@ -296,6 +430,21 @@ export function SetupRueckblick({ candles, startIndex, endIndex, trades, onNochm
               </button>
               <button onClick={() => setFilter('alle')} className={chip(aktiverFilter === 'alle')}>
                 Alle ({summe.gesamt})
+              </button>
+              <span className="mx-1 h-5 w-px bg-rand" />
+              <button
+                onClick={() => setNurMitTrend((n) => !n)}
+                className={chip(nurMitTrend)}
+                title="Nur Setups in Richtung des übergeordneten Trends (EMA 200)"
+              >
+                nur mit Trend ({mitTrendAnzahl})
+              </button>
+              <span className="mx-1 h-5 w-px bg-rand" />
+              <button onClick={() => setSortierung('deutlich')} className={chip(sortierung === 'deutlich')}>
+                Deutlichste zuerst
+              </button>
+              <button onClick={() => setSortierung('zeit')} className={chip(sortierung === 'zeit')}>
+                Zeitlich
               </button>
             </div>
           </>
@@ -326,6 +475,8 @@ export function SetupRueckblick({ candles, startIndex, endIndex, trades, onNochm
                     {f.setup.richtung}
                   </span>
                   <span className={`rounded px-1.5 py-0.5 text-[11px] font-semibold ${status.stil}`}>{status.text}</span>
+                  <Deutlichkeit wert={f.deutlichkeit} />
+                  <TrendMarke mitTrend={f.mitTrend} />
                   <span className="tabular-nums text-xs text-gedimmt">
                     {datum(candles[f.setup.signalIndex].time)} · Kerze {f.setup.signalIndex - startIndex + 1}
                   </span>
@@ -339,11 +490,21 @@ export function SetupRueckblick({ candles, startIndex, endIndex, trades, onNochm
           })}
         </ul>
       )}
-      {summe.gesamt > 0 && sichtbar.length === 0 && (
+      {sortiert.length > ERSTE && (
+        <button
+          onClick={() => setAlleZeigen((a) => !a)}
+          className="w-full border-t border-rand px-4 py-2.5 text-center text-xs font-semibold text-gedimmt hover:text-white"
+        >
+          {alleZeigen ? 'Nur die ersten 5 zeigen' : `Weitere ${sortiert.length - ERSTE} anzeigen`}
+        </button>
+      )}
+      {summe.gesamt > 0 && sortiert.length === 0 && (
         <p className="border-t border-rand px-4 py-3 text-sm text-gedimmt">
-          {aktiverFilter === 'verpasst' ? 'Nichts verpasst — stark.' : 'Keine Einträge in dieser Ansicht.'}
+          {aktiverFilter === 'verpasst' && !nurMitTrend ? 'Nichts verpasst — stark.' : 'Keine Einträge in dieser Ansicht.'}
         </p>
       )}
+
+      <EigeneTrades abgleich={abgleich} />
     </div>
   )
 }

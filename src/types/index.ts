@@ -163,6 +163,8 @@ export interface Trade {
 export type Zeichnung =
   | { id: string; typ: 'linie'; preis: number }
   | { id: string; typ: 'zone'; preisVon: number; preisBis: number }
+  /** Trendlinie durch zwei Punkte (Zeit in Unix-Sekunden), im Chart nach rechts verlängert */
+  | { id: string; typ: 'trend'; t1: number; p1: number; t2: number; p2: number }
 
 // ── Geführte Übungs-Szenarien ────────────────────────────────────────────────
 

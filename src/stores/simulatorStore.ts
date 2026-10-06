@@ -4,7 +4,11 @@ import type { Trade, Zeichnung } from '../types'
 import type { BrokerZustand } from '../engine/broker'
 import { MAKER_GEBUEHR, SLIPPAGE, TAKER_GEBUEHR } from '../engine/broker'
 import type { SitzungConfig } from '../data/sitzung'
-import { kontostandAus, mergeTrades } from '../engine/sicherung'
+import type { GespeicherterRueckblick } from '../engine/rueckblick'
+import { kontostandAus, mergeRueckblicke, mergeTrades } from '../engine/sicherung'
+
+/** So viele Setup-Rückblicke bleiben fürs Journal erhalten (älteste fallen heraus) */
+const MAX_RUECKBLICKE = 200
 
 export const START_KAPITAL = 10000
 
@@ -51,6 +55,11 @@ interface SimulatorState {
   tradeHistorie: Trade[]
   einstellungen: SimEinstellungen
   aktiveSitzung: GespeicherteSitzung | null
+  /** Setup-Rückblicke beendeter Sitzungen (kompakt) — Grundlage der Journal-Bilanz */
+  rueckblicke: GespeicherterRueckblick[]
+  /** Legt den Rückblick einer Sitzung ab; ein älterer Stand derselben Sitzung wird ersetzt. */
+  rueckblickSpeichern: (rb: GespeicherterRueckblick) => void
+  rueckblickeImportieren: (neue: GespeicherterRueckblick[]) => void
   /** Übernimmt neue Trades (dedupliziert per id) und verbucht ihre PnL. */
   tradesUebernehmen: (neue: Trade[]) => void
   /** Import aus einer Sicherung: Trades zusammenführen, Kontostand neu ableiten. */
@@ -67,6 +76,15 @@ export const useSimulatorStore = create<SimulatorState>()(
       tradeHistorie: [],
       einstellungen: STANDARD_EINSTELLUNGEN,
       aktiveSitzung: null,
+      rueckblicke: [],
+
+      rueckblickSpeichern: (rb) =>
+        set((s) => ({
+          rueckblicke: [...s.rueckblicke.filter((r) => r.sitzungId !== rb.sitzungId), rb].slice(-MAX_RUECKBLICKE),
+        })),
+
+      rueckblickeImportieren: (neue) =>
+        set((s) => ({ rueckblicke: mergeRueckblicke(s.rueckblicke, neue).slice(-MAX_RUECKBLICKE) })),
 
       tradesUebernehmen: (neue) =>
         set((s) => {
@@ -89,7 +107,8 @@ export const useSimulatorStore = create<SimulatorState>()(
 
       sitzungSpeichern: (aktiveSitzung) => set({ aktiveSitzung }),
 
-      zuruecksetzen: () => set({ kontostand: START_KAPITAL, tradeHistorie: [], aktiveSitzung: null }),
+      zuruecksetzen: () =>
+        set({ kontostand: START_KAPITAL, tradeHistorie: [], aktiveSitzung: null, rueckblicke: [] }),
     }),
     {
       name: 'chartakademie-simulator',
@@ -100,6 +119,7 @@ export const useSimulatorStore = create<SimulatorState>()(
           ...aktuell,
           ...g,
           einstellungen: { ...STANDARD_EINSTELLUNGEN, ...g.einstellungen },
+          rueckblicke: g.rueckblicke ?? [],
         }
       },
     },

@@ -10,6 +10,8 @@ import {
   LoaderCircle,
   Minus,
   PlayCircle,
+  Ruler,
+  TrendingUp,
   RectangleHorizontal,
   Settings2,
   Trash2,
@@ -245,6 +247,7 @@ function SitzungAnsicht({
 
       {fertig && !wiederholung && (
         <SetupRueckblick
+          sitzung={config}
           candles={candles}
           startIndex={sitzung.startIndex}
           endIndex={cursor}
@@ -300,6 +303,20 @@ function SitzungAnsicht({
                 title="S/R-Zone: zwei Tipps (obere und untere Kante)"
               >
                 <RectangleHorizontal className="h-3.5 w-3.5" /> Zone
+              </button>
+              <button
+                onClick={() => setZeichenModus(zeichenModus === 'trend' ? 'aus' : 'trend')}
+                className={chip(zeichenModus === 'trend')}
+                title="Trendlinie: zwei Tipps (z.B. zwei Tiefs) — wird nach rechts verlängert"
+              >
+                <TrendingUp className="h-3.5 w-3.5" /> Trend
+              </button>
+              <button
+                onClick={() => setZeichenModus(zeichenModus === 'messen' ? 'aus' : 'messen')}
+                className={chip(zeichenModus === 'messen')}
+                title="Messen: zwei Tipps — zeigt Abstand in %, Preis und Kerzen"
+              >
+                <Ruler className="h-3.5 w-3.5" /> Messen
               </button>
               {sitzung.zeichnungen.length > 0 && (
                 <button

@@ -74,7 +74,20 @@ Wunsch: in der Auswertung sehen, welche Setups man verpasst hat — mit Chart un
 - **Nachtrag (Rückmeldung „ein Setup hat sich selbst ausgestoppt“):** Analyse über 8 echte Märkte (342 Setups) zeigte Ideal-Trades mit unsinnig engem Stop (bis 0,19 ATR, CRV 15) und einen Fall, in dem der Docht der Signalkerze den Stop schon durchstoßen hatte. `bewerteIdeal` setzt den Stop jetzt mindestens 1 ATR vom Einstieg und immer 0,25 ATR jenseits des Signalkerzen-Extrems; Setups, deren CRV dadurch unter 1 fällt, entfallen. Befund aus derselben Analyse (noch nicht umgesetzt): Setups mit dem EMA-200-Trend brachten +22R (41 % Treffer), gegen den Trend −16R (31 %); Liquidity-Sweep-Long gegen den Trend nur 14 % Treffer.
 - Lehre erneut: Detektor-Treffer immer im echten Chart ansehen — die Tests waren grün, die Bilder zeigten die Schwächen.
 
-Bewusst nicht gebaut: mehrere Positionen gleichzeitig / Nachkaufen, Liquidations-Simulation, Schritt zurück, Trendlinien.
+## Stand 2026-10-06 (abends) — Sechs Ausbauten rund um den Setup-Rückblick (120 Tests grün)
+
+1. **Short-Seite der Erkennung:** Breakout+Retest, Liquidity Sweep und Range-Bounce erkennen jetzt beide Richtungen (`erkenneXxx(c, i, richtung)`). Wirkt auch in der Zufalls-Übung.
+2. **Trend-Kennzeichnung:** `SetupFund.mitTrend` (Kurs über/unter EMA 200 zum Signal), Marke je Setup und Filter „nur mit Trend“ (Standard aus).
+3. **Deutlichkeit statt Qualität:** `deutlichkeit()` 1–5 (Bestätigungen des Levels, Trendrichtung, CRV ≥ 1,5). Liste sortiert „Deutlichste zuerst“, zeigt 5, Rest per „Weitere anzeigen“.
+4. **Eigene Trades gegenprüfen:** `pruefeEigeneTrades` — je Trade das passende erkannte Setup oder „kein erkanntes Setup“, plus Tag-Abgleich. Die Suche beginnt 30 Kerzen vor Sitzungsstart, damit frühe Trades ihr Setup finden.
+5. **Rückblick im Journal:** kompakter Stand je Sitzung in `simulatorStore.rueckblicke` (max. 200, in Export/Import), `SetupBilanz` im Journal: je Setup angeboten/gehandelt/verpasst/Quote und was die verpassten gebracht hätten; Hinweis auf das am häufigsten verpasste Setup.
+6. **Zeichenwerkzeuge:** Trendlinie (zwei Punkte, nach rechts verlängert, als `Zeichnung` gespeichert) und Messen (%, Preis, Kerzen; mit der Maus live). `zeichenPrimitive.ts` (vorher zonenPrimitive) zeichnet Zonen, Trendlinien und Messung; Punkte sind (Zeit, Preis) und überstehen den Timeframe-Wechsel.
+
+**Befunde aus der Analyse über 8 Märkte (414 Setups) — wichtig für spätere Arbeit an der Erkennung:**
+- Zahl der Level-Tests und CRV-Band sagen den Ausgang NICHT vorher (Stärke 3: 39 % Treffer, Stärke 5: 33 %). Deshalb heißt das Maß „Deutlichkeit“ und nicht „Qualität“.
+- Trendfilter insgesamt leicht positiv (mit Trend 40 % / +19R, gegen 31 % / −9R), je Setup aber uneinheitlich: Sweep-Long gegen den Trend 14 %, Sweep-Short gegen den Trend 46 %. Stichprobe je Zelle klein (n = 10–40) und von der Marktphase geprägt → gegen-Trend-Setups werden nur gekennzeichnet, nicht ausgeblendet.
+
+Bewusst nicht gebaut: mehrere Positionen gleichzeitig / Nachkaufen, Liquidations-Simulation, Schritt zurück.
 
 Offen / Ideen für später:
 - Am echten Handy prüfen (Touch-Zeichnen, Homescreen-Install, SW-Update-Verhalten).

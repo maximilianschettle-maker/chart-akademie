@@ -10,6 +10,8 @@ import { istSicherung, sicherungErstellen, sicherungZusammenfuehren } from '../e
 export function DatenSicherung() {
   const tradeHistorie = useSimulatorStore((s) => s.tradeHistorie)
   const tradesImportieren = useSimulatorStore((s) => s.tradesImportieren)
+  const rueckblicke = useSimulatorStore((s) => s.rueckblicke)
+  const rueckblickeImportieren = useSimulatorStore((s) => s.rueckblickeImportieren)
   const abgeschlosseneLektionen = useProgressStore((s) => s.abgeschlosseneLektionen)
   const szenarioErgebnisse = useProgressStore((s) => s.szenarioErgebnisse)
   const wiederholungen = useProgressStore((s) => s.wiederholungen)
@@ -18,7 +20,12 @@ export function DatenSicherung() {
   const [meldung, setMeldung] = useState<{ text: string; fehler?: boolean } | null>(null)
 
   function exportieren() {
-    const s = sicherungErstellen(tradeHistorie, { abgeschlosseneLektionen, szenarioErgebnisse, wiederholungen })
+    const s = sicherungErstellen(
+      tradeHistorie,
+      { abgeschlosseneLektionen, szenarioErgebnisse, wiederholungen },
+      new Date(),
+      rueckblicke,
+    )
     const blob = new Blob([JSON.stringify(s, null, 2)], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
@@ -43,6 +50,7 @@ export function DatenSicherung() {
         daten,
       )
       tradesImportieren(r.tradeHistorie)
+      rueckblickeImportieren(daten.simulator.rueckblicke ?? [])
       fortschrittImportieren(r.fortschritt)
       setMeldung({
         text: `Importiert und zusammengeführt: ${r.neueTrades} neue Trades, jetzt ${Object.keys(r.fortschritt.abgeschlosseneLektionen).length} abgeschlossene Lektionen.`,

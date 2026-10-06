@@ -1,5 +1,6 @@
 import type { SzenarioBewertung, Trade } from '../types'
 import type { WiederholungsEintrag } from './wiederholung'
+import type { GespeicherterRueckblick } from './rueckblick'
 
 // Export/Import des kompletten Nutzerstands als JSON-Datei — damit Fortschritt
 // und Journal zwischen PC und Handy wandern können. Import MERGT (statt zu
@@ -21,7 +22,8 @@ export interface Sicherung {
   app: 'chartakademie'
   version: number
   exportiertAm: string
-  simulator: { tradeHistorie: Trade[] }
+  /** rueckblicke fehlt in Sicherungen aus älteren Versionen */
+  simulator: { tradeHistorie: Trade[]; rueckblicke?: GespeicherterRueckblick[] }
   fortschritt: {
     abgeschlosseneLektionen: Record<string, LektionErgebnis>
     szenarioErgebnisse: Record<string, SzenarioErgebnis>
@@ -33,12 +35,13 @@ export function sicherungErstellen(
   tradeHistorie: Trade[],
   fortschritt: Sicherung['fortschritt'],
   jetzt = new Date(),
+  rueckblicke: GespeicherterRueckblick[] = [],
 ): Sicherung {
   return {
     app: 'chartakademie',
     version: SICHERUNG_VERSION,
     exportiertAm: jetzt.toISOString(),
-    simulator: { tradeHistorie },
+    simulator: { tradeHistorie, rueckblicke },
     fortschritt,
   }
 }
@@ -63,6 +66,19 @@ export function mergeTrades(vorhanden: Trade[], neue: Trade[]): Trade[] {
   const ids = new Set(vorhanden.map((t) => t.id))
   const frisch = neue.filter((t) => !ids.has(t.id))
   return [...vorhanden, ...frisch].sort((a, b) => a.exitTime - b.exitTime || a.entryTime - b.entryTime)
+}
+
+/** Setup-Rückblicke zusammenführen: je Sitzung einer, der neuere Stand gewinnt. */
+export function mergeRueckblicke(
+  vorhanden: GespeicherterRueckblick[],
+  neue: GespeicherterRueckblick[],
+): GespeicherterRueckblick[] {
+  const map = new Map(vorhanden.map((r) => [r.sitzungId, r]))
+  for (const r of neue) {
+    const alt = map.get(r.sitzungId)
+    if (!alt || r.erstelltAm > alt.erstelltAm) map.set(r.sitzungId, r)
+  }
+  return [...map.values()].sort((a, b) => a.erstelltAm - b.erstelltAm)
 }
 
 export function mergeLektionen(

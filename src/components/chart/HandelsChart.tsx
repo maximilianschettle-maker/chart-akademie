@@ -13,6 +13,7 @@ import {
   type ISeriesApi,
   type ISeriesMarkersPluginApi,
   type IPriceLine,
+  type Logical,
   type SeriesMarker,
   type Time,
   type UTCTimestamp,
@@ -23,14 +24,14 @@ import { aggregiere, bucketStart } from '../../engine/aggregation'
 import { ema } from '../../engine/indikatoren/ema'
 import { rsi } from '../../engine/indikatoren/rsi'
 import { fmtPreis, preisStellen, rundePreis } from '../../engine/format'
-import { ZonenPrimitive } from './zonenPrimitive'
+import { ZeichenPrimitive, type Messung, type Punkt } from './zeichenPrimitive'
 
 // Chart für Replay und Simulator. Hängt neue Bars per series.update() an, statt
 // bei jedem Schritt neu zu rendern, und wird nur einmal pro Mount aufgebaut —
 // Timeframe-Wechsel, Indikatoren und nachgeladene Kerzen lassen Zoom und
 // Zeichnungen in Ruhe. Preislinien (Entry/SL/TP) sind mit Maus oder Finger ziehbar.
 
-export type ZeichenModus = 'aus' | 'linie' | 'zone'
+export type ZeichenModus = 'aus' | 'linie' | 'zone' | 'trend' | 'messen'
 
 export interface ChartLinie {
   id: string
@@ -155,7 +156,12 @@ export function HandelsChart({
   const emaRef = useRef(new Map<number, ISeriesApi<'Line'>>())
   const rsiRef = useRef<ISeriesApi<'Line'> | null>(null)
   const markerRef = useRef<ISeriesMarkersPluginApi<Time> | null>(null)
-  const zonenRef = useRef<ZonenPrimitive | null>(null)
+  const zonenRef = useRef<ZeichenPrimitive | null>(null)
+  // Was gerade im Chart liegt (ggf. aggregiert) — für Zeit ↔ x der Zeichnungen
+  const datenRef = useRef<Candle[]>([])
+  // Halb fertige Trendlinie bzw. Messung: erster Punkt gesetzt, zweiter fehlt noch
+  const ankerRef = useRef<Punkt | null>(null)
+  const messRef = useRef<{ a: Punkt; fest: boolean } | null>(null)
   const linienRef = useRef(new Map<string, { linie: IPriceLine; def: ChartLinie }>())
   const zeichenLinienRef = useRef<IPriceLine[]>([])
   const tempLinieRef = useRef<IPriceLine | null>(null)
@@ -170,9 +176,13 @@ export function HandelsChart({
     propsRef.current = { zeichenModus, onZeichnung, onLinieZiehen, onLinieLos, onPick }
   })
 
-  // Moduswechsel bricht eine halb gezeichnete Zone ab
+  // Moduswechsel bricht halb Gezeichnetes ab und räumt die Messung weg
   useEffect(() => {
     ersterKlickRef.current = null
+    ankerRef.current = null
+    messRef.current = null
+    zonenRef.current?.setAnker(null)
+    zonenRef.current?.setMessung(null)
     const kerzen = kerzenRef.current
     if (kerzen && tempLinieRef.current) {
       kerzen.removePriceLine(tempLinieRef.current)
@@ -233,8 +243,47 @@ export function HandelsChart({
         return { ...info, priceRange: { minValue, maxValue } }
       },
     })
-    const zonen = new ZonenPrimitive()
+    const zonen = new ZeichenPrimitive()
     kerzen.attachPrimitive(zonen)
+
+    // Index der Kerze, die diesen Zeitpunkt enthält (im höheren Timeframe: ihr Bucket)
+    const indexZuZeit = (zeit: number): number | null => {
+      const d = datenRef.current
+      if (d.length === 0 || zeit < d[0].time) return null
+      let lo = 0
+      let hi = d.length - 1
+      while (lo < hi) {
+        const mitte = (lo + hi + 1) >> 1
+        if (d[mitte].time <= zeit) lo = mitte
+        else hi = mitte - 1
+      }
+      return lo
+    }
+    zonen.zeitZuX = (zeit) => {
+      const index = indexZuZeit(zeit)
+      return index === null ? null : chart.timeScale().logicalToCoordinate(index as Logical)
+    }
+    /** Punkt (Zeit, Preis) unter einer Chart-Koordinate — rechts vom letzten Balken zählt der letzte. */
+    const punktBei = (x: number, preis: number): Punkt | null => {
+      const d = datenRef.current
+      const logisch = chart.timeScale().coordinateToLogical(x)
+      if (logisch === null || d.length === 0) return null
+      const index = Math.max(0, Math.min(d.length - 1, Math.round(logisch)))
+      return { zeit: d[index].time, preis }
+    }
+    const messungAus = (a: Punkt, b: Punkt): Messung => {
+      const diff = b.preis - a.preis
+      const prozent = a.preis !== 0 ? (diff / a.preis) * 100 : 0
+      const kerzen_ = Math.abs((indexZuZeit(b.zeit) ?? 0) - (indexZuZeit(a.zeit) ?? 0))
+      const vz = diff >= 0 ? '+' : '−'
+      const p = Math.abs(prozent).toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+      return {
+        a,
+        b,
+        text: `${vz}${p} %  ·  ${vz}${fmtPreis(Math.abs(diff), a.preis)}  ·  ${kerzen_} ${kerzen_ === 1 ? 'Kerze' : 'Kerzen'}`,
+        positiv: diff >= 0,
+      }
+    }
 
     chartRef.current = chart
     kerzenRef.current = kerzen
@@ -295,6 +344,13 @@ export function HandelsChart({
       if (!zug) {
         if (e.pointerType === 'mouse') {
           container.classList.toggle('linie-greifbar', trefferLinie(yVon(e), 7) !== null)
+          // Messung folgt der Maus, bis der zweite Punkt gesetzt ist
+          const mess = messRef.current
+          if (mess && !mess.fest && propsRef.current.zeichenModus === 'messen') {
+            const roh = kerzen.coordinateToPrice(yVon(e))
+            const punkt = roh !== null && roh > 0 ? punktBei(e.clientX - container.getBoundingClientRect().left, rundePreis(roh)) : null
+            if (punkt) zonen.setMessung(messungAus(mess.a, punkt))
+          }
         }
         return
       }
@@ -338,7 +394,7 @@ export function HandelsChart({
       if (e.cancelable) e.preventDefault()
     }
 
-    // Tipp → Preis wählen oder zeichnen (Linie: 1 Tipp, Zone: 2 Tipps). Bewusst nicht
+    // Tipp → Preis wählen, zeichnen oder messen (Linie: 1 Tipp, sonst 2 Tipps). Bewusst nicht
     // chart.subscribeClick: der Chart verschluckt den zweiten von zwei schnellen Klicks
     // als Doppelklick — am Handy wäre die Zone damit kaum zu zeichnen.
     const tippen = (clientX: number, clientY: number) => {
@@ -360,6 +416,36 @@ export function HandelsChart({
       const id = `z-${Date.now()}`
       if (modus === 'linie') {
         melden?.({ id, typ: 'linie', preis })
+        return
+      }
+      if (modus === 'trend' || modus === 'messen') {
+        const punkt = punktBei(x, preis)
+        if (!punkt) return
+        if (modus === 'messen') {
+          const mess = messRef.current
+          if (!mess || mess.fest) {
+            // erster Punkt (oder neue Messung)
+            messRef.current = { a: punkt, fest: false }
+            zonen.setMessung(null)
+            zonen.setAnker(punkt)
+          } else {
+            mess.fest = true
+            zonen.setAnker(null)
+            zonen.setMessung(messungAus(mess.a, punkt))
+          }
+          return
+        }
+        const a = ankerRef.current
+        if (!a) {
+          ankerRef.current = punkt
+          zonen.setAnker(punkt)
+          return
+        }
+        if (a.zeit === punkt.zeit) return // zwei Punkte auf derselben Kerze ergeben keine Linie
+        const [links, rechts] = a.zeit < punkt.zeit ? [a, punkt] : [punkt, a]
+        ankerRef.current = null
+        zonen.setAnker(null)
+        melden?.({ id, typ: 'trend', t1: links.zeit, p1: links.preis, t2: rechts.zeit, p2: rechts.preis })
         return
       }
       if (ersterKlickRef.current === null) {
@@ -497,6 +583,7 @@ export function HandelsChart({
     const kerzen = kerzenRef.current
     const chart = chartRef.current
     if (!kerzen || !chart || daten.length === 0) return
+    datenRef.current = daten
     const stand = standRef.current
     const bucket = bucketSek ?? 0
     const n = daten.length - 1
@@ -621,6 +708,11 @@ export function HandelsChart({
     }
     zonenRef.current?.setZonen(
       zeichnungen.flatMap((z) => (z.typ === 'zone' ? [{ preisVon: z.preisVon, preisBis: z.preisBis }] : [])),
+    )
+    zonenRef.current?.setTrendlinien(
+      zeichnungen.flatMap((z) =>
+        z.typ === 'trend' ? [{ a: { zeit: z.t1, preis: z.p1 }, b: { zeit: z.t2, preis: z.p2 } }] : [],
+      ),
     )
   }, [zeichnungen])
 

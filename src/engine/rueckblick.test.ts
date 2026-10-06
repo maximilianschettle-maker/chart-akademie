@@ -5,7 +5,16 @@ import { join } from 'node:path'
 import type { Candle, CandleDatensatz, Trade } from '../types'
 import type { ErkanntesSetup } from './setupErkennung'
 import { erkenneAn, erkenneImFenster } from './setupErkennung'
-import { bewerteIdeal, rueckblick, rueckblickSumme, sucheBereich } from './rueckblick'
+import {
+  bewerteIdeal,
+  deutlichkeit,
+  pruefeEigeneTrades,
+  rueckblick,
+  rueckblickKompakt,
+  rueckblickSumme,
+  setupBilanz,
+  sucheBereich,
+} from './rueckblick'
 
 function bar(time: number, teil: Partial<Candle> = {}): Candle {
   return { time, open: 100, high: 101, low: 99, close: 100, volume: 1, ...teil }
@@ -202,5 +211,79 @@ describe('Suche an echten Daten', () => {
       if ((a?.strategieId ?? null) === (b?.strategieId ?? null)) gleich++
     }
     expect(gleich / gesamt).toBeGreaterThan(0.97)
+  })
+})
+
+describe('Trend, Deutlichkeit und Abgleich', () => {
+  it('mitTrend: Long über der EMA 200, Short darunter; ohne Vorgeschichte null', () => {
+    // 260 Kerzen steigend → Kurs liegt über der EMA 200
+    const steigend = Array.from({ length: 260 }, (_, i) => bar(i, { open: 100 + i, high: 101 + i, low: 99 + i, close: 100 + i }))
+    const an = (richtung: 'long' | 'short') =>
+      setup({
+        richtung,
+        signalIndex: 250,
+        entryZone: { preisVon: 0, preisBis: 9999, barVon: 250, barBis: 255 },
+        idealStopLoss: richtung === 'long' ? 330 : 370,
+        idealTakeProfit: richtung === 'long' ? 400 : 300,
+      })
+    expect(rueckblick(steigend, [an('long')], [], 259)[0].mitTrend).toBe(true)
+    expect(rueckblick(steigend, [an('short')], [], 259)[0].mitTrend).toBe(false)
+    expect(rueckblick(flach(40), [setup()], [], 39)[0].mitTrend).toBeNull()
+  })
+
+  it('Deutlichkeit zählt Bestätigungen, Trendrichtung und CRV — höchstens 5', () => {
+    expect(deutlichkeit(setup({ staerke: 2 }), false, 1.2)).toBe(1)
+    expect(deutlichkeit(setup({ staerke: 3 }), false, 1.2)).toBe(2)
+    expect(deutlichkeit(setup({ staerke: 6 }), true, 2)).toBe(5)
+    expect(deutlichkeit(setup({ staerke: undefined }), true, 2)).toBe(4) // Trend-Setup
+  })
+
+  it('Signale vor Sitzungsbeginn zählen nicht als Angebot, finden aber den eigenen Trade', () => {
+    const c = flach(40)
+    const frueh = setup({ signalIndex: 8, entryZone: { preisVon: 98, preisBis: 102, barVon: 8, barBis: 14 } })
+    expect(rueckblick(c, [frueh], [], 39, 10)).toHaveLength(0)
+    const ab = pruefeEigeneTrades(c, [frueh], [trade({ entryTime: 11, exitTime: 13 })])
+    expect(ab[0].setup).toBe(frueh)
+  })
+
+  it('eigene Trades: mit Setup, ohne Setup, und Tag-Abgleich', () => {
+    const c = flach(40)
+    const s = setup()
+    const ab = pruefeEigeneTrades(c, [s], [
+      trade({ id: 'a', entryTime: 3, exitTime: 5, strategieId: 'sr-bounce' }),
+      trade({ id: 'b', entryTime: 20, exitTime: 22, strategieId: 'range-trading' }),
+      trade({ id: 'c', entryTime: 4, exitTime: 6, entryPreis: 101, strategieId: 'range-trading' }),
+    ])
+    expect(ab.map((a) => [!!a.setup, a.tagPasst])).toEqual([
+      [true, true],
+      [true, false],
+      [false, null],
+    ])
+  })
+
+  it('Bilanz über mehrere Sitzungen: belegt zählt nicht als Angebot', () => {
+    const c = flach(40)
+    c[5] = bar(5, { high: 111 })
+    const a = setup()
+    const b = setup({ signalIndex: 20, entryZone: { preisVon: 98, preisBis: 102, barVon: 20, barBis: 24 } })
+    const meta = { sitzungId: 's1', symbol: 'BTCUSDT', interval: '1h', kerzen: 40, erstelltAm: 1 }
+    const eigene = [trade({ entryTime: 21, exitTime: 23 })]
+    const funde = rueckblick(c, [a, b], eigene, 39)
+    const kompakt = rueckblickKompakt(meta, c, funde, pruefeEigeneTrades(c, [a, b], eigene))
+    expect(kompakt.eintraege).toHaveLength(2)
+    expect(kompakt.trades).toBe(1)
+    expect(kompakt.tradesOhneSetup).toBe(0)
+    const belegt = { ...kompakt, sitzungId: 's2', eintraege: [{ ...kompakt.eintraege[0], status: 'belegt' as const }] }
+    const bilanz = setupBilanz([kompakt, belegt])
+    expect(bilanz.sitzungen).toBe(2)
+    expect(bilanz.zeilen[0]).toMatchObject({
+      strategieId: 'sr-bounce',
+      angeboten: 2,
+      gehandelt: 1,
+      verpasst: 1,
+      quote: 50,
+      verpassteGewinner: 1,
+    })
+    expect(bilanz.zeilen[0].verpassteR).toBeCloseTo(2, 6)
   })
 })

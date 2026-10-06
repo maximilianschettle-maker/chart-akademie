@@ -1,4 +1,4 @@
-import { Minus, RectangleHorizontal, Eraser, Layers } from 'lucide-react'
+import { Minus, RectangleHorizontal, Eraser, Layers, Ruler, TrendingUp } from 'lucide-react'
 import type { ZeichenModus } from './HandelsChart'
 
 interface ZeichenLeisteProps {
@@ -16,6 +16,8 @@ const HINWEIS: Record<ZeichenModus, string> = {
   aus: '',
   linie: 'Tippe in den Chart, um eine horizontale Linie zu setzen.',
   zone: 'Zwei Tipps in den Chart: obere und untere Kante der Zone.',
+  trend: 'Zwei Tipps in den Chart (z.B. zwei Tiefs) — die Linie wird nach rechts verlängert.',
+  messen: 'Zwei Tipps in den Chart: Start und Ende. Ein weiterer Tipp beginnt eine neue Messung.',
 }
 
 export function ZeichenLeiste({
@@ -47,6 +49,20 @@ export function ZeichenLeiste({
         title="S/R-Zone (zwei Klicks)"
       >
         <RectangleHorizontal className="h-3.5 w-3.5" /> Zone
+      </button>
+      <button
+        onClick={() => onModus(modus === 'trend' ? 'aus' : 'trend')}
+        className={knopf(modus === 'trend')}
+        title="Trendlinie (zwei Klicks)"
+      >
+        <TrendingUp className="h-3.5 w-3.5" /> Trend
+      </button>
+      <button
+        onClick={() => onModus(modus === 'messen' ? 'aus' : 'messen')}
+        className={knopf(modus === 'messen')}
+        title="Abstand messen (zwei Klicks)"
+      >
+        <Ruler className="h-3.5 w-3.5" /> Messen
       </button>
       <button
         onClick={onLoeschen}

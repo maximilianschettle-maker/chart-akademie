@@ -17,6 +17,7 @@ import { EquityKurve } from '../components/journal/EquityKurve'
 import { RVerteilung } from '../components/journal/RVerteilung'
 import { Auswertungstabelle } from '../components/journal/Auswertungstabelle'
 import { Fehlermuster } from '../components/journal/Fehlermuster'
+import { SetupBilanz } from '../components/journal/SetupBilanz'
 
 function Kachel({ titel, wert, farbe }: { titel: string; wert: string; farbe?: string }) {
   return (
@@ -28,7 +29,7 @@ function Kachel({ titel, wert, farbe }: { titel: string; wert: string; farbe?: s
 }
 
 export function JournalPage() {
-  const { kontostand, tradeHistorie, zuruecksetzen } = useSimulatorStore()
+  const { kontostand, tradeHistorie, rueckblicke, zuruecksetzen } = useSimulatorStore()
   const [bestaetigen, setBestaetigen] = useState(false)
   const gesamtPnl = kontostand - START_KAPITAL
 
@@ -119,6 +120,10 @@ export function JournalPage() {
           titel="Nach Richtung"
           gruppen={gruppiere(logisch, (t) => (t.richtung === 'long' ? 'Long' : 'Short'))}
         />
+      </div>
+
+      <div className="mt-4">
+        <SetupBilanz rueckblicke={rueckblicke} />
       </div>
 
       <div className="mt-6 rounded-xl border border-rand bg-flaeche p-4">
