@@ -41,7 +41,13 @@ const NACHLADE_SCHWELLE = 250 // so viele Kerzen vor dem Datenende wird der näc
  * Simulator-Sitzung: Replay über nachwachsende Kerzen, Broker, Nachladen,
  * Auto-Pause bei Fill/Exit und laufendes Sichern (Reload-fest).
  */
-export function useSitzung(config: SitzungConfig, daten: SitzungDaten, fortsetzen: GespeicherteSitzung | null) {
+export function useSitzung(
+  config: SitzungConfig,
+  daten: SitzungDaten,
+  fortsetzen: GespeicherteSitzung | null,
+  /** Wiederholung einer bekannten Stelle: Trades gehen nicht ins Journal, der Stand wird nicht gesichert */
+  wiederholung = false,
+) {
   const einstellungen = useSimulatorStore((s) => s.einstellungen)
   const tradesUebernehmen = useSimulatorStore((s) => s.tradesUebernehmen)
   const sitzungSpeichern = useSimulatorStore((s) => s.sitzungSpeichern)
@@ -158,7 +164,7 @@ export function useSitzung(config: SitzungConfig, daten: SitzungDaten, fortsetze
 
   // Abgeschlossene Trades laufend ins Journal
   useEffect(() => {
-    if (broker.trades.length === 0) return
+    if (wiederholung || broker.trades.length === 0) return
     tradesUebernehmen(
       broker.trades.map((t): Trade => ({
         ...t,
@@ -167,11 +173,12 @@ export function useSitzung(config: SitzungConfig, daten: SitzungDaten, fortsetze
         symbol: config.symbol,
       })),
     )
-  }, [broker.trades, config.id, config.interval, config.symbol, tradesUebernehmen])
+  }, [wiederholung, broker.trades, config.id, config.interval, config.symbol, tradesUebernehmen])
 
   // Stand sichern: im Stand bei jeder Änderung, im Lauf alle 20 Kerzen
   const cursorZeit = candles[cursor]?.time ?? config.startZeit
   useEffect(() => {
+    if (wiederholung) return
     if (fertig) {
       sitzungSpeichern(null)
       return
@@ -185,7 +192,7 @@ export function useSitzung(config: SitzungConfig, daten: SitzungDaten, fortsetze
       startKapital: start.startKapital,
       gespieltKerzen: cursor - daten.startIndex + 1,
     })
-  }, [fertig, laufend, cursor, cursorZeit, broker, zeichnungen, config, start.startKapital, daten.startIndex, sitzungSpeichern])
+  }, [wiederholung, fertig, laufend, cursor, cursorZeit, broker, zeichnungen, config, start.startKapital, daten.startIndex, sitzungSpeichern])
 
   // Beim Verlassen der Seite mitten im Lauf den letzten Stand sichern
   const standRef = useRef<GespeicherteSitzung | null>(null)
@@ -201,7 +208,12 @@ export function useSitzung(config: SitzungConfig, daten: SitzungDaten, fortsetze
           gespieltKerzen: cursor - daten.startIndex + 1,
         }
   })
-  useEffect(() => () => sitzungSpeichern(standRef.current), [sitzungSpeichern])
+  useEffect(
+    () => () => {
+      if (!wiederholung) sitzungSpeichern(standRef.current)
+    },
+    [wiederholung, sitzungSpeichern],
+  )
 
   const setLaufend = useCallback((wert: boolean) => setLaufendRoh(wert), [])
 

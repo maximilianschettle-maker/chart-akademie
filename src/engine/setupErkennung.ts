@@ -26,6 +26,26 @@ export interface ErkanntesSetup {
   idealTakeProfit: number
   /** Kurzbeschreibung der Marktlage (ohne das Setup zu verraten) */
   lage: string
+  /** Woran das Setup an der Signalkerze erkennbar war — als Checkliste für den Rückblick */
+  merkmale: string[]
+  /** Preis-Ebenen, die das Setup ausmachen (Level, Range-Kanten) */
+  ebenen: SetupEbene[]
+  /** Auffällige Kerzen (Tests des Levels, Ausbruch, Sweep …) */
+  punkte: SetupPunkt[]
+  /** EMAs, die zum Setup gehören */
+  emaPerioden?: number[]
+}
+
+export interface SetupEbene {
+  preis: number
+  text: string
+}
+
+export interface SetupPunkt {
+  index: number
+  text: string
+  /** Markierung über (true) oder unter der Kerze */
+  oben: boolean
 }
 
 const MIN_CRV = 1.5
@@ -56,23 +76,39 @@ function toleranz(c: Candle[], i: number): number {
   return Math.min(0.06, Math.max(0.004, 1.5 * typischeSpanne(c, i)))
 }
 
-/** Anzahl „Berührungen“ eines Bands, mindestens `abstand` Bars auseinander. */
-function beruehrungen(
+/** Indizes der „Berührungen“ eines Bands, mindestens `abstand` Bars auseinander. */
+function beruehrungsIndizes(
   c: Candle[],
   von: number,
   bis: number,
   test: (bar: Candle) => boolean,
   abstand: number,
-): number {
-  let n = 0
+): number[] {
+  const out: number[] = []
   let letzte = -Infinity
   for (let i = Math.max(0, von); i <= bis; i++) {
     if (test(c[i]) && i - letzte >= abstand) {
-      n++
+      out.push(i)
       letzte = i
     }
   }
-  return n
+  return out
+}
+
+function argMin(c: Candle[], von: number, bis: number): number {
+  let best = Math.max(0, von)
+  for (let i = best; i <= bis; i++) if (c[i].low < c[best].low) best = i
+  return best
+}
+function argMax(c: Candle[], von: number, bis: number): number {
+  let best = Math.max(0, von)
+  for (let i = best; i <= bis; i++) if (c[i].high > c[best].high) best = i
+  return best
+}
+
+/** Höchstens die letzten `n` Indizes als Markierungen. */
+function alsPunkte(indizes: number[], text: string, oben: boolean, n = 3): SetupPunkt[] {
+  return indizes.slice(-n).map((index) => ({ index, text, oben }))
 }
 
 /** Indizes lokaler Swing-Tiefs/-Hochs (Extremum im Fenster ±breite). */
@@ -100,19 +136,26 @@ function bestaetigtesLevel(
   bis: number,
   art: 'tief' | 'hoch',
   tol: number,
-): number | null {
+): { preis: number; indizes: number[] } | null {
   const idx = swings(c, von, bis, art)
   const preis = (i: number) => (art === 'tief' ? c[i].low : c[i].high)
-  let bestes: { preis: number; n: number } | null = null
+  let bestes: { preis: number; indizes: number[] } | null = null
   for (const a of idx) {
     const cluster = idx.filter(
       (b) => b === a || (Math.abs(preis(b) - preis(a)) / preis(a) <= tol && Math.abs(b - a) >= 10),
     )
-    if (cluster.length >= 2 && (!bestes || cluster.length > bestes.n)) {
-      bestes = { preis: cluster.reduce((s, b) => s + preis(b), 0) / cluster.length, n: cluster.length }
+    if (cluster.length >= 2 && (!bestes || cluster.length > bestes.indizes.length)) {
+      bestes = { preis: cluster.reduce((s, b) => s + preis(b), 0) / cluster.length, indizes: cluster }
     }
   }
-  return bestes?.preis ?? null
+  return bestes
+}
+
+/** Wurde ein Level nach seinem letzten Test klar gebrochen? Dann gilt es nicht mehr. */
+function gebrochenSeit(c: Candle[], tests: number[], i: number, bruch: (bar: Candle) => boolean): boolean {
+  const letzter = Math.max(...tests)
+  for (let m = letzter + 1; m < i; m++) if (bruch(c[m])) return true
+  return false
 }
 
 function runde(p: number): string {
@@ -142,7 +185,8 @@ export function erkenneBreakoutRetest(c: Candle[], i: number): ErkanntesSetup | 
     const level = maxHigh(c, k - 120, k - 1)
     if (!(c[k].close > level * (1 + tol / 2) && c[k - 1].close <= level)) continue // erster Close drüber
     const nah = (b: Candle) => b.high >= level * (1 - tol) && b.high <= level * 1.002
-    if (beruehrungen(c, k - 120, k - 1, nah, 10) < 3) continue
+    const tests = beruehrungsIndizes(c, k - 120, k - 1, nah, 10)
+    if (tests.length < 3) continue
     let verloren = false
     let weit = false
     for (let m = k; m < i; m++) {
@@ -168,6 +212,14 @@ export function erkenneBreakoutRetest(c: Candle[], i: number): ErkanntesSetup | 
       idealStopLoss,
       idealTakeProfit,
       lage: `Ein Widerstand um ~${runde(level)} $ hat mehrfach gehalten und wurde vor einiger Zeit impulsiv überschritten.`,
+      merkmale: [
+        `Widerstand um ~${runde(level)} $: ${tests.length}× angelaufen und jedes Mal abgewiesen.`,
+        `Ausbruch vor ${i - k} Kerzen: Schlusskurs klar über dem Level.`,
+        'Seitdem kein Schlusskurs zurück unter das Level — kein Fakeout.',
+        'Jetzt der erste Rücklauf auf das alte Hoch: Aus Widerstand wird Unterstützung — hier liegt der Entry.',
+      ],
+      ebenen: [{ preis: level, text: 'alter Widerstand' }],
+      punkte: [...alsPunkte(tests, 'Test', true), { index: k, text: 'Ausbruch', oben: false }],
     }
   }
   return null
@@ -180,13 +232,17 @@ export function erkenneBreakoutRetest(c: Candle[], i: number): ErkanntesSetup | 
 export function erkenneLiquiditySweep(c: Candle[], i: number): ErkanntesSetup | null {
   if (i < 150) return null
   const tol = toleranz(c, i)
-  const level = bestaetigtesLevel(c, i - 250, i - 6, 'tief', tol)
-  if (level === null) return null
+  const cluster = bestaetigtesLevel(c, i - 250, i - 6, 'tief', tol)
+  if (cluster === null) return null
+  const level = cluster.preis
   const sweepTief = minLow(c, i - 3, i)
   if (sweepTief > level * (1 - tol / 2)) return null // kein echter Bruch
   const close = c[i].close
   if (close < level || close > level * (1 + 2 * tol)) return null
   if (c[i - 1].close >= level) return null // erster Close zurück über dem Level
+  let darunter = 0
+  for (let m = i - 1; m >= 0 && c[m].close < level; m--) darunter++
+  if (darunter > 8) return null // länger darunter = Bruch, kein Sweep
   const idealEntry = level * 1.005
   const idealStopLoss = sweepTief * 0.995
   let idealTakeProfit = maxHigh(c, i - 40, i - 1)
@@ -202,6 +258,14 @@ export function erkenneLiquiditySweep(c: Candle[], i: number): ErkanntesSetup | 
     idealStopLoss,
     idealTakeProfit,
     lage: `Eine mehrfach bestätigte Unterstützung um ~${runde(level)} $ wurde gerade mit einem Docht unterschritten.`,
+    merkmale: [
+      `Unterstützung um ~${runde(level)} $: ${cluster.indizes.length} Swing-Tiefs auf gleicher Höhe — darunter liegen die Stops der Longs.`,
+      `Ein Docht sticht bis ~${runde(sweepTief)} $ darunter: Die Stops werden abgefischt.`,
+      'Der Schlusskurs liegt sofort wieder über dem Level — die Unterstützung ist zurückerobert.',
+      'Entry nach der Rückeroberung, Stop unter das Docht-Tief.',
+    ],
+    ebenen: [{ preis: level, text: 'Unterstützung' }],
+    punkte: [...alsPunkte(cluster.indizes, 'Tief', false), { index: argMin(c, i - 3, i), text: 'Sweep', oben: false }],
   }
 }
 
@@ -215,8 +279,16 @@ export function erkenneRangeBounce(c: Candle[], i: number): ErkanntesSetup | nul
   if (w <= 0 || w / tief > 0.12) return null // zu wild für eine Range
   const untenBand = (b: Candle) => b.low <= tief + 0.15 * w
   const obenBand = (b: Candle) => b.high >= hoch - 0.15 * w
-  if (beruehrungen(c, i - N, i - 1, untenBand, 8) < 2) return null
-  if (beruehrungen(c, i - N, i - 1, obenBand, 8) < 2) return null
+  const testsUnten = beruehrungsIndizes(c, i - N, i - 1, untenBand, 8)
+  const testsOben = beruehrungsIndizes(c, i - N, i - 1, obenBand, 8)
+  if (testsUnten.length < 2 || testsOben.length < 2) return null
+  // Echte Range = Pendeln. Erst nur unten und dann nur oben getestet ist eine Stufe (Trendschub).
+  const folge = [...testsUnten.map((k) => ({ k, seite: 'u' })), ...testsOben.map((k) => ({ k, seite: 'o' }))].sort(
+    (a, b) => a.k - b.k,
+  )
+  let wechsel = 0
+  for (let m = 1; m < folge.length; m++) if (folge[m].seite !== folge[m - 1].seite) wechsel++
+  if (wechsel < 2) return null
   const close = c[i].close
   if (close > tief + 0.3 * w || close < tief) return null
   if (c[i - 1].close <= tief + 0.3 * w) return null // erster Eintritt ins untere Band
@@ -232,6 +304,16 @@ export function erkenneRangeBounce(c: Candle[], i: number): ErkanntesSetup | nul
     idealStopLoss,
     idealTakeProfit,
     lage: `Der Markt pendelt seit ~${N} Kerzen zwischen ~${runde(tief)} und ~${runde(hoch)} $ und nähert sich gerade dem unteren Bereich.`,
+    merkmale: [
+      `Seit ~${N} Kerzen Seitwärtsphase zwischen ~${runde(tief)} und ~${runde(hoch)} $ (${((w / tief) * 100).toLocaleString('de-DE', { maximumFractionDigits: 1 })} % breit) — kein Trend.`,
+      `Oberkante ${testsOben.length}× und Unterkante ${testsUnten.length}× getestet: Beide Seiten halten.`,
+      'Jetzt der erste Eintritt ins untere Drittel — Long Richtung Oberkante, Stop unter die Range.',
+    ],
+    ebenen: [
+      { preis: hoch, text: 'Range-Oberkante' },
+      { preis: tief, text: 'Range-Unterkante' },
+    ],
+    punkte: [...alsPunkte(testsOben, 'Test', true, 2), ...alsPunkte(testsUnten, 'Test', false, 2)],
   }
 }
 
@@ -241,11 +323,13 @@ export function erkenneSrBounce(c: Candle[], i: number, richtung: Richtung): Erk
   const tol = toleranz(c, i)
   const close = c[i].close
   if (richtung === 'long') {
-    const level = bestaetigtesLevel(c, i - 150, i - 6, 'tief', tol)
-    if (level === null) return null
+    const cluster = bestaetigtesLevel(c, i - 150, i - 6, 'tief', tol)
+    if (cluster === null) return null
+    const level = cluster.preis
     if (close < level * (1 - tol) || close > level * (1 + tol)) return null
     if (c[i - 1].close <= level * (1 + tol)) return null // erster Eintritt
     if (maxHigh(c, i - 30, i - 1) < level * (1 + 4 * tol)) return null // kam von weiter oben
+    if (gebrochenSeit(c, cluster.indizes, i, (b) => b.close < level * (1 - 2 * tol))) return null
     const idealEntry = level * 1.003
     const idealStopLoss = level * (1 - 2 * tol)
     let idealTakeProfit = maxHigh(c, i - 60, i - 1)
@@ -261,13 +345,22 @@ export function erkenneSrBounce(c: Candle[], i: number, richtung: Richtung): Erk
       idealStopLoss,
       idealTakeProfit,
       lage: `Unter dem Markt liegt eine Zone um ~${runde(level)} $, die schon mehrfach als Unterstützung gehalten hat — der Preis fällt gerade wieder hinein.`,
+      merkmale: [
+        `Zone um ~${runde(level)} $: ${cluster.indizes.length}× als Unterstützung gehalten (Swing-Tiefs auf gleicher Höhe).`,
+        'Der Kurs kommt von deutlich weiter oben — kein Dauer-Geknabber an der Zone.',
+        'Jetzt der erste Eintritt in die Zone: Long mit Stop knapp darunter.',
+      ],
+      ebenen: [{ preis: level, text: 'Unterstützung' }],
+      punkte: alsPunkte(cluster.indizes, 'Tief', false),
     }
   }
-  const level = bestaetigtesLevel(c, i - 150, i - 6, 'hoch', tol)
-  if (level === null) return null
+  const cluster = bestaetigtesLevel(c, i - 150, i - 6, 'hoch', tol)
+  if (cluster === null) return null
+  const level = cluster.preis
   if (close > level * (1 + tol) || close < level * (1 - tol)) return null
   if (c[i - 1].close >= level * (1 - tol)) return null
   if (minLow(c, i - 30, i - 1) > level * (1 - 4 * tol)) return null
+  if (gebrochenSeit(c, cluster.indizes, i, (b) => b.close > level * (1 + 2 * tol))) return null
   const idealEntry = level * 0.997
   const idealStopLoss = level * (1 + 2 * tol)
   let idealTakeProfit = minLow(c, i - 60, i - 1)
@@ -283,6 +376,13 @@ export function erkenneSrBounce(c: Candle[], i: number, richtung: Richtung): Erk
     idealStopLoss,
     idealTakeProfit,
     lage: `Über dem Markt liegt eine Zone um ~${runde(level)} $, an der der Preis schon mehrfach abgeprallt ist — er steigt gerade wieder hinein.`,
+    merkmale: [
+      `Zone um ~${runde(level)} $: ${cluster.indizes.length}× als Widerstand gehalten (Swing-Hochs auf gleicher Höhe).`,
+      'Der Kurs kommt von deutlich weiter unten — ein frischer Anlauf.',
+      'Jetzt der erste Eintritt in die Zone: Short mit Stop knapp darüber.',
+    ],
+    ebenen: [{ preis: level, text: 'Widerstand' }],
+    punkte: alsPunkte(cluster.indizes, 'Hoch', true),
   }
 }
 
@@ -320,6 +420,14 @@ export function erkenneTrendPullback(c: Candle[], i: number, richtung: Richtung)
       idealStopLoss,
       idealTakeProfit,
       lage: `Der Markt macht seit Wochen höhere Hochs und höhere Tiefs und setzt gerade vom letzten Hoch (~${runde(hoch)} $) zurück.`,
+      merkmale: [
+        'EMA 20 liegt seit über 30 Kerzen über der EMA 50 — intakter Aufwärtstrend.',
+        `Höheres Hoch bei ~${runde(hoch)} $: Der Trend hat sich gerade erst bestätigt.`,
+        'Jetzt der erste Rücksetzer an die EMA 20 — Einstieg in Trendrichtung, Stop unter das letzte Swing-Tief.',
+      ],
+      ebenen: [],
+      punkte: [{ index: argMax(c, i - 40, i - 1), text: 'höheres Hoch', oben: true }],
+      emaPerioden: [20, 50],
     }
   }
   const tief = minLow(c, i - 40, i - 1)
@@ -342,6 +450,14 @@ export function erkenneTrendPullback(c: Candle[], i: number, richtung: Richtung)
     idealStopLoss,
     idealTakeProfit,
     lage: `Der Markt macht seit Wochen tiefere Tiefs und tiefere Hochs und erholt sich gerade vom letzten Tief (~${runde(tief)} $).`,
+    merkmale: [
+      'EMA 20 liegt seit über 30 Kerzen unter der EMA 50 — intakter Abwärtstrend.',
+      `Tieferes Tief bei ~${runde(tief)} $: Der Trend hat sich gerade erst bestätigt.`,
+      'Jetzt die erste Erholung an die EMA 20 — Short in Trendrichtung, Stop über das letzte Swing-Hoch.',
+    ],
+    ebenen: [],
+    punkte: [{ index: argMin(c, i - 40, i - 1), text: 'tieferes Tief', oben: false }],
+    emaPerioden: [20, 50],
   }
 }
 
@@ -358,6 +474,26 @@ export function erkenneAn(c: Candle[], i: number): ErkanntesSetup | null {
     erkenneTrendPullback(c, i, 'long') ??
     erkenneTrendPullback(c, i, 'short')
   )
+}
+
+/** Längste Rückschau aller Detektoren (Breakout: 250 + 120 Bars) plus Reserve für die EMAs. */
+export const ERKENNUNG_RUECKSCHAU = 420
+
+/**
+ * Wie erkenneAn, rechnet aber nur auf einem Fenster vor dem Index — die Kosten
+ * hängen dann nicht von der Länge des Abschnitts ab (wichtig für lange
+ * Simulator-Sitzungen). Indizes im Ergebnis beziehen sich auf `c`.
+ */
+export function erkenneImFenster(c: Candle[], i: number): ErkanntesSetup | null {
+  const von = Math.max(0, i - ERKENNUNG_RUECKSCHAU)
+  const s = erkenneAn(c.slice(von, i + 1), i - von)
+  if (!s || von === 0) return s
+  return {
+    ...s,
+    signalIndex: s.signalIndex + von,
+    entryZone: { ...s.entryZone, barVon: s.entryZone.barVon + von, barBis: s.entryZone.barBis + von },
+    punkte: s.punkte.map((p) => ({ ...p, index: p.index + von })),
+  }
 }
 
 /**

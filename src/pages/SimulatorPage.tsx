@@ -13,6 +13,7 @@ import {
   RectangleHorizontal,
   Settings2,
   Trash2,
+  Undo2,
   WifiOff,
 } from 'lucide-react'
 import {
@@ -39,6 +40,7 @@ import { OrderTicket } from '../components/simulator/OrderTicket'
 import { PositionPanel } from '../components/simulator/PositionPanel'
 import { TradeHistorie } from '../components/simulator/TradeHistorie'
 import { SitzungsStatistik } from '../components/simulator/SitzungsStatistik'
+import { SetupRueckblick } from '../components/simulator/SetupRueckblick'
 
 // Simulator: Backtesting von Hand. Symbol, Timeframe und Startpunkt frei wählbar
 // (oder blind/zufällig), Replay ohne festes Ende, Orders direkt im Chart.
@@ -65,13 +67,20 @@ function SitzungAnsicht({
   daten,
   fortsetzen,
   onNeu,
+  onNochmal,
+  onZurueck,
 }: {
   config: SitzungConfig
   daten: SitzungDaten
   fortsetzen: GespeicherteSitzung | null
   onNeu: () => void
+  /** Stelle aus dem Setup-Rückblick als Wiederholung spielen */
+  onNochmal?: (signalZeit: number) => void
+  /** gesetzt → diese Ansicht IST eine Wiederholung; führt zurück zur Auswertung */
+  onZurueck?: () => void
 }) {
-  const sitzung = useSitzung(config, daten, fortsetzen)
+  const wiederholung = !!onZurueck
+  const sitzung = useSitzung(config, daten, fortsetzen, wiederholung)
   const { broker, candles, cursor, aktuellerPreis, fertig } = sitzung
   const einstellungen = useSimulatorStore((s) => s.einstellungen)
   const einstellungenSetzen = useSimulatorStore((s) => s.einstellungenSetzen)
@@ -175,7 +184,16 @@ function SitzungAnsicht({
             {fmtGeldVz(sitzungPnl + unrealisiert)} Sitzung
           </span>
         </span>
-        {!fertig &&
+        {wiederholung && (
+          <button
+            onClick={onZurueck}
+            className="inline-flex items-center gap-1.5 rounded-lg bg-akzent px-3 py-1.5 text-xs font-bold text-nacht hover:brightness-110"
+          >
+            <Undo2 className="h-3.5 w-3.5" /> Zurück zur Auswertung
+          </button>
+        )}
+        {!wiederholung &&
+          !fertig &&
           (beendenFragen ? (
             <span className="inline-flex items-center gap-2 text-xs">
               {broker.position ? 'Position wird glattgestellt.' : 'Sitzung auswerten?'}
@@ -196,7 +214,14 @@ function SitzungAnsicht({
           ))}
       </div>
 
-      {fertig && (
+      {wiederholung && (
+        <div className="rounded-xl border border-akzent/40 bg-akzent/5 px-4 py-2.5 text-sm text-akzent">
+          Wiederholung: Du startest kurz vor dem Signal. Suche die Merkmale aus dem Rückblick im Chart und
+          handle das Setup — diese Trades zählen nicht fürs Journal.
+        </div>
+      )}
+
+      {fertig && !wiederholung && (
         <div className="rounded-xl border border-akzent/40 bg-flaeche p-4 text-sm">
           <h2 className="font-bold text-white">Sitzung beendet — Auflösung</h2>
           <p className="mt-1 text-gedimmt">
@@ -216,6 +241,16 @@ function SitzungAnsicht({
             </Link>
           </div>
         </div>
+      )}
+
+      {fertig && !wiederholung && (
+        <SetupRueckblick
+          candles={candles}
+          startIndex={sitzung.startIndex}
+          endIndex={cursor}
+          trades={broker.trades}
+          onNochmal={config.offlineDatei ? undefined : onNochmal}
+        />
       )}
 
       <div className="grid gap-3 lg:grid-cols-[minmax(0,1fr)_320px]">
@@ -655,6 +690,24 @@ export function SimulatorPage() {
   const gespeichert = useSimulatorStore((s) => s.aktiveSitzung)
   const sitzungSpeichern = useSimulatorStore((s) => s.sitzungSpeichern)
   const [phase, setPhase] = useState<Phase>({ art: 'start' })
+  // Wiederholung einer Stelle aus dem Setup-Rückblick: läuft neben der beendeten
+  // Sitzung (die bleibt eingehängt, nur versteckt), damit die Auswertung erhalten bleibt.
+  const [wiederholung, setWiederholung] = useState<
+    { art: 'laedt' } | { art: 'fehler' } | { art: 'aktiv'; config: SitzungConfig; daten: SitzungDaten } | null
+  >(null)
+
+  async function nochmalSpielen(basis: SitzungConfig, signalZeit: number) {
+    setWiederholung({ art: 'laedt' })
+    try {
+      // 40 Kerzen vor dem Signal einsteigen — genug, um die Lage zu lesen
+      const start = signalZeit - 40 * intervallSek(basis.interval)
+      const config = neueSitzung({ symbol: basis.symbol, interval: basis.interval, start, blind: false })
+      const daten = await ladeSitzung(config)
+      setWiederholung({ art: 'aktiv', config, daten })
+    } catch {
+      setWiederholung({ art: 'fehler' })
+    }
+  }
 
   async function starten(wahl: Wahl) {
     setPhase({ art: 'laedt' })
@@ -748,12 +801,39 @@ export function SimulatorPage() {
         </div>
       )}
       {phase.art === 'aktiv' && (
+        <div className={wiederholung ? 'hidden' : ''}>
+          <SitzungAnsicht
+            key={phase.config.id}
+            config={phase.config}
+            daten={phase.daten}
+            fortsetzen={phase.fortsetzen}
+            onNeu={() => setPhase({ art: 'start' })}
+            onNochmal={(zeit) => void nochmalSpielen(phase.config, zeit)}
+          />
+        </div>
+      )}
+      {wiederholung?.art === 'laedt' && (
+        <div className="flex h-64 items-center justify-center text-gedimmt">
+          <LoaderCircle className="h-7 w-7 animate-spin" />
+        </div>
+      )}
+      {wiederholung?.art === 'fehler' && (
+        <div className="flex h-64 flex-col items-center justify-center gap-3 text-gedimmt">
+          <WifiOff className="h-6 w-6" />
+          <p className="text-sm">Die Stelle konnte nicht geladen werden.</p>
+          <button onClick={() => setWiederholung(null)} className="rounded-lg bg-flaeche px-4 py-2 text-sm hover:text-white">
+            Zurück zur Auswertung
+          </button>
+        </div>
+      )}
+      {wiederholung?.art === 'aktiv' && (
         <SitzungAnsicht
-          key={phase.config.id}
-          config={phase.config}
-          daten={phase.daten}
-          fortsetzen={phase.fortsetzen}
-          onNeu={() => setPhase({ art: 'start' })}
+          key={wiederholung.config.id}
+          config={wiederholung.config}
+          daten={wiederholung.daten}
+          fortsetzen={null}
+          onNeu={() => setWiederholung(null)}
+          onZurueck={() => setWiederholung(null)}
         />
       )}
     </div>

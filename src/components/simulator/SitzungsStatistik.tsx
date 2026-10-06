@@ -57,7 +57,7 @@ export function SitzungsStatistik({ trades, startKapital }: { trades: Trade[]; s
         <Zahl titel="Ø Verlierer" wert={fmtR(k.durchschnittVerlustR)} />
         <Zahl
           titel="Max. Drawdown"
-          wert={`−${k.maxDrawdownProzent.toLocaleString('de-DE', { maximumFractionDigits: 1 })} %`}
+          wert={`${k.maxDrawdown > 0 ? '−' : ''}${k.maxDrawdownProzent.toLocaleString('de-DE', { maximumFractionDigits: 1 })} %`}
           hinweis={`Größter Rückgang vom bisherigen Höchststand des Kontos: ${fmtGeld(-k.maxDrawdown)}`}
         />
         <Zahl titel="Verlustserie" wert={`${k.laengsteVerlustserie} in Folge`} />

@@ -31,6 +31,8 @@ interface ChartPanelProps {
   hoehe?: number
   zeigeVolumen?: boolean
   emaPerioden?: number[]
+  /** Freiraum rechts in Kerzen — damit Markierungen an der letzten Kerze nicht am Rand kleben */
+  randRechts?: number
 }
 
 export function ChartPanel({
@@ -39,6 +41,7 @@ export function ChartPanel({
   hoehe = 380,
   zeigeVolumen = true,
   emaPerioden,
+  randRechts = 0,
 }: ChartPanelProps) {
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -144,6 +147,9 @@ export function ChartPanel({
     }
 
     chart.timeScale().fitContent()
+    if (randRechts > 0) {
+      chart.timeScale().setVisibleLogicalRange({ from: -0.5, to: candles.length - 0.5 + randRechts })
+    }
 
     const beobachter = new ResizeObserver(() => {
       chart.applyOptions({ width: container.clientWidth })
@@ -154,7 +160,7 @@ export function ChartPanel({
       beobachter.disconnect()
       chart.remove()
     }
-  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden])
+  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden, randRechts])
 
   return <div ref={containerRef} className="w-full overflow-hidden rounded-lg" />
 }

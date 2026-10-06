@@ -63,6 +63,16 @@ Anlass: Kurs durchgearbeitet, aber „das Testen anhand der historischen Daten k
 - **Gefundener Altfehler:** Am Handy kam kein Tipp im Chart an (Zeichnen!) — lightweight-charts ruft bei Touch `preventDefault`, dann feuert kein `click`. Tipp-Erkennung läuft jetzt über Pointer-Events.
 - Test: Playwright-Skripte in `%TEMP%\ca\pw` (smoke2–4): Desktop + 390 px, Maus- und CDP-Touch-Drag, Reload/Fortsetzen, Blockgrenze (1500 Kerzen 5m-DOGE), Datenende, Übung. Keine Konsolenfehler.
 
+## Stand 2026-10-06 (später) — Setup-Rückblick am Sitzungsende (108 Tests grün)
+
+Wunsch: in der Auswertung sehen, welche Setups man verpasst hat — mit Chart und woran man sie hätte erkennen können.
+
+- `engine/rueckblick.ts`: `sucheSetups` (in Häppchen, friert die Seite nicht ein) scannt die gespielten Kerzen mit den Level-4-Detektoren, fasst dichte Treffer zusammen (gleiche Richtung < 15 Kerzen, gleiches Setup im offenen Entry-Fenster) und verwirft Signale auf einer Impulskerze gegen die Handelsrichtung (fallendes Messer). `bewerteIdeal`: fester, nachvollziehbarer Trade (Einstieg zum Schlusskurs der Signalkerze, SL/TP aus der Erkennung, SL-zuerst, nur bis zur letzten gespielten Kerze, CRV ≥ 1). `rueckblick`: Status je Setup — gehandelt (eigener Einstieg gleicher Richtung im Entry-Fenster), belegt (anderer Trade lief), sonst verpasst.
+- `engine/setupErkennung.ts`: jedes Setup trägt jetzt `merkmale` (Checkliste), `ebenen`, `punkte` (Tests, Ausbruch, Sweep …) und ggf. `emaPerioden`. `erkenneImFenster` rechnet auf 420 Kerzen Rückschau (Kosten unabhängig von der Sitzungslänge; ~0,2 s für 760 Kerzen). Qualität nachgeschärft, nachdem die ersten echten Treffer im Chart schwach aussahen: Range braucht ≥ 2 Kantenwechsel (sonst Stufe), S/R-Level darf seit dem letzten Test nicht klar gebrochen sein, Sweep höchstens 8 Kerzen unter dem Level. Kuratierte Szenarien werden weiter gefunden (real-Test).
+- `components/simulator/SetupRueckblick.tsx`: Zusammenfassung (x gehandelt, y verpasst, davon Gewinner/Verlierer, Summe R), Filter, je Setup aufklappbar: Chart im Moment des Signals mit Ebenen/Markierungen und Ideal-Trade, „Auflösung zeigen“, Merkmale-Checkliste, Link zur Lektion.
+- „Stelle nochmal spielen“: startet 40 Kerzen vor dem Signal als **Wiederholung** (`useSitzung(..., wiederholung)`: kein Journal, kein Sichern). Die beendete Sitzung bleibt versteckt eingehängt → „Zurück zur Auswertung“ erhält den Rückblick.
+- Lehre erneut: Detektor-Treffer immer im echten Chart ansehen — die Tests waren grün, die Bilder zeigten die Schwächen.
+
 Bewusst nicht gebaut: mehrere Positionen gleichzeitig / Nachkaufen, Liquidations-Simulation, Schritt zurück, Trendlinien.
 
 Offen / Ideen für später:
