@@ -56,7 +56,8 @@ export function bewerteSzenario(
   const inZone =
     !!zone &&
     trade.richtung === szenario.richtung &&
-    entryIndex >= zone.barVon &&
+    // Market füllt zum Schlusskurs der Kerze davor → eine Kerze Toleranz am Zonenanfang
+    entryIndex >= zone.barVon - 1 &&
     entryIndex <= zone.barBis &&
     trade.entryPreis >= zone.preisVon &&
     trade.entryPreis <= zone.preisBis
@@ -71,7 +72,7 @@ export function bewerteSzenario(
       : trade.stopLoss > trade.entryPreis
   const risiko = Math.abs(trade.entryPreis - trade.stopLoss)
   const chance = Math.abs(trade.takeProfit - trade.entryPreis)
-  const crv = risiko > 0 ? chance / risiko : 0
+  const crv = risiko > 0 && trade.takeProfit > 0 ? chance / risiko : 0
 
   if (slRichtig && crv >= MIN_CRV) {
     return { bewertung: 'perfekt', text: szenario.feedback.perfekt, rMultiple: r }

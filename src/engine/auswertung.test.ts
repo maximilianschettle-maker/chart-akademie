@@ -7,6 +7,7 @@ import {
   haltedauer,
   rVerteilung,
   fehlerMuster,
+  kennzahlen,
 } from './auswertung'
 import type { Trade } from '../types'
 
@@ -114,5 +115,41 @@ describe('Fehler-Muster', () => {
       trade({ id: `s:${i}-x`, entryTime: i * 50 * 3600, exitTime: i * 50 * 3600 + 5 * 3600, richtung: i % 2 ? 'long' : 'short', strategieId: 'range-trading' }),
     )
     expect(fehlerMuster(logischeTrades(trades))).toHaveLength(0)
+  })
+})
+
+describe('Kennzahlen', () => {
+  const lt = logischeTrades([
+    trade({ id: 's:1', entryTime: 1 * 3600, exitTime: 2 * 3600, pnl: 200, rMultiple: 2, mfeR: 4 }),
+    trade({ id: 's:2', entryTime: 3 * 3600, exitTime: 4 * 3600, pnl: -100, rMultiple: -1, exitGrund: 'sl' }),
+    trade({ id: 's:3', entryTime: 5 * 3600, exitTime: 6 * 3600, pnl: -100, rMultiple: -1, exitGrund: 'sl' }),
+    trade({ id: 's:4', entryTime: 7 * 3600, exitTime: 8 * 3600, pnl: 300, rMultiple: 3, mfeR: 3 }),
+  ])
+
+  it('Trefferquote, Profit-Faktor, Erwartungswert', () => {
+    const k = kennzahlen(lt, 10000)
+    expect(k.anzahl).toBe(4)
+    expect(k.trefferquote).toBe(50)
+    expect(k.profitFaktor).toBeCloseTo(2.5, 6)
+    expect(k.durchschnittR).toBeCloseTo(0.75, 6)
+    expect(k.durchschnittGewinnR).toBeCloseTo(2.5, 6)
+    expect(k.durchschnittVerlustR).toBeCloseTo(-1, 6)
+  })
+
+  it('Drawdown vom Höchststand und längste Verlustserie', () => {
+    const k = kennzahlen(lt, 10000)
+    expect(k.maxDrawdown).toBe(200) // 10.200 → 10.000
+    expect(k.maxDrawdownProzent).toBeCloseTo((200 / 10200) * 100, 6)
+    expect(k.laengsteVerlustserie).toBe(2)
+  })
+
+  it('MFE-Ausbeute: Anteil des Buchgewinns, den die Gewinner mitnehmen', () => {
+    expect(kennzahlen(lt, 10000).mfeAusbeute).toBeCloseTo((0.5 + 1) / 2, 6)
+    expect(kennzahlen([], 10000).mfeAusbeute).toBeNull()
+  })
+
+  it('ohne Take-Profit zählt ein Trade nicht als „CRV zu klein“', () => {
+    const ohneTp = logischeTrades([trade({ takeProfit: 0 })])
+    expect(Number.isNaN(ohneTp[0].geplantesCrv)).toBe(true)
   })
 })

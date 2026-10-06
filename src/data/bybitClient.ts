@@ -4,6 +4,7 @@ import type { Candle } from '../types'
 // Bybit v5 Spot-Klines; Antwort-Liste kommt NEUESTE zuerst.
 
 const INTERVAL_MAP: Record<string, string> = {
+  '5m': '5',
   '15m': '15',
   '1h': '60',
   '4h': '240',

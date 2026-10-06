@@ -8,6 +8,9 @@ import {
   stopsAendern,
   breakEven,
   mengeAusRisiko,
+  marketSofort,
+  orderAendern,
+  MAKER_GEBUEHR,
   TAKER_GEBUEHR,
   SLIPPAGE,
   FUNDING_RATE,
@@ -113,9 +116,9 @@ describe('Trailing-Stop', () => {
     let z = mitLongPosition({ trailingAbstand: 5 })
     z = barVerarbeiten(z, bar({ time: 2, high: 110, low: 99, close: 108 }))
     expect(z.position?.stopLoss).toBe(105) // 110 − 5
-    z = barVerarbeiten(z, bar({ time: 3, high: 108, low: 106, close: 107 })) // Hoch fällt → SL bleibt
+    z = barVerarbeiten(z, bar({ time: 3, open: 107.5, high: 108, low: 106, close: 107 })) // Hoch fällt → SL bleibt
     expect(z.position?.stopLoss).toBe(105)
-    z = barVerarbeiten(z, bar({ time: 4, high: 107, low: 104, close: 104.5 })) // berührt 105
+    z = barVerarbeiten(z, bar({ time: 4, open: 106.5, high: 107, low: 104, close: 104.5 })) // berührt 105
     expect(z.position).toBeNull()
     expect(z.trades[0].exitGrund).toBe('trailing')
     expect(z.trades[0].pnl).toBeGreaterThan(0)
@@ -224,7 +227,8 @@ describe('PnL, Gebühren & Funding', () => {
     z = barVerarbeiten(z, bar({ time: t0, high: 101, low: 99, close: 100 }))
     z = barVerarbeiten(z, bar({ time: t0 + 3600, high: 121, low: 99 })) // TP
     expect(z.trades[0].funding).toBeCloseTo(100 * FUNDING_RATE, 10)
-    expect(z.trades[0].pnl).toBeLessThan(20 - (100 + 120) * TAKER_GEBUEHR) // minus Funding
+    // Entry als Taker, TP als Maker — und das Funding geht zusätzlich ab
+    expect(z.trades[0].pnl).toBeLessThan(20 - 100 * TAKER_GEBUEHR - 120 * MAKER_GEBUEHR)
   })
 })
 
@@ -235,5 +239,97 @@ describe('Position Sizing', () => {
   })
   it('gibt 0 zurück, wenn SL auf dem Entry liegt', () => {
     expect(mengeAusRisiko(100, 100, 100)).toBe(0)
+  })
+})
+
+describe('Sofort-Fill, Stop-Entry & Gaps', () => {
+  it('marketSofort füllt ohne Warten zum aktuellen Kurs (mit Slippage)', () => {
+    const z = marketSofort(neuerBroker(10000), marketLong(), 100, 5)
+    expect(z.offeneOrder).toBeNull()
+    expect(z.position?.entryPreis).toBeCloseTo(100 * (1 + SLIPPAGE), 10)
+    expect(z.position?.entryTime).toBe(5)
+  })
+
+  it('Stop-Entry löst erst beim Durchbruch aus — als Market mit Slippage', () => {
+    const order = marketLong({ typ: 'stop', limitPreis: 104, stopLoss: 100, takeProfit: 0 })
+    let z = orderPlatzieren(neuerBroker(10000), order)
+    z = barVerarbeiten(z, bar({ time: 1, high: 103.5 }))
+    expect(z.position).toBeNull()
+    z = barVerarbeiten(z, bar({ time: 2, open: 103, high: 106, low: 102.5, close: 105 }))
+    expect(z.position?.entryPreis).toBeCloseTo(104 * (1 + SLIPPAGE), 10)
+  })
+
+  it('Stop-Entry mit Gap: eröffnet die Kerze schon darüber, zählt das Open', () => {
+    const order = marketLong({ typ: 'stop', limitPreis: 104, stopLoss: 100, takeProfit: 0 })
+    let z = orderPlatzieren(neuerBroker(10000), order)
+    z = barVerarbeiten(z, bar({ time: 1, open: 107, high: 108, low: 106, close: 107 }))
+    expect(z.position?.entryPreis).toBeCloseTo(107 * (1 + SLIPPAGE), 10)
+  })
+
+  it('Limit über dem Kurs füllt sofort zum besseren Open statt zum Limit', () => {
+    const order = marketLong({ typ: 'limit', limitPreis: 104 })
+    let z = orderPlatzieren(neuerBroker(10000), order)
+    z = barVerarbeiten(z, bar({ time: 1, open: 101, high: 102, low: 100.5, close: 101 }))
+    expect(z.position?.entryPreis).toBe(101)
+  })
+
+  it('SL mit Gap: eröffnet die Kerze unter dem Stop, wird zum Open ausgeführt', () => {
+    const z = barVerarbeiten(mitLongPosition(), bar({ time: 2, open: 85, high: 86, low: 84, close: 85 }))
+    expect(z.trades[0].exitPreis).toBeCloseTo(85 * (1 - SLIPPAGE), 10)
+    expect(z.trades[0].rMultiple).toBeLessThan(-1.4)
+  })
+
+  it('ohne Take-Profit (0) läuft die Position weiter, egal wie hoch der Kurs steigt', () => {
+    let z = mitLongPosition({ takeProfit: 0 })
+    z = barVerarbeiten(z, bar({ time: 2, high: 500, low: 99, close: 400 }))
+    expect(z.position).not.toBeNull()
+    expect(z.trades).toHaveLength(0)
+  })
+
+  it('Limit-Einstieg und Take-Profit zahlen die Maker-Gebühr', () => {
+    let z = orderPlatzieren(neuerBroker(10000), marketLong({ typ: 'limit', limitPreis: 96, stopLoss: 90, takeProfit: 108 }))
+    z = barVerarbeiten(z, bar({ time: 1, open: 100, high: 101, low: 95.5, close: 97 }))
+    z = barVerarbeiten(z, bar({ time: 2, open: 97, high: 109, low: 96.5, close: 108 }))
+    expect(z.trades[0].exitGrund).toBe('tp')
+    expect(z.trades[0].gebuehren).toBeCloseTo((96 + 108) * MAKER_GEBUEHR, 10)
+  })
+
+  it('eigene Kosten im Zustand ersetzen die Standardwerte', () => {
+    let z = neuerBroker(10000, { taker: 0.001, maker: 0, slippage: 0, funding: 0 })
+    z = marketSofort(z, marketLong(), 100, 1)
+    expect(z.position?.entryPreis).toBe(100)
+    z = positionSchliessen(z, 110, 2)
+    expect(z.trades[0].gebuehren).toBeCloseTo((100 + 110) * 0.001, 10)
+  })
+})
+
+describe('MFE/MAE & Order ändern', () => {
+  it('merkt sich den besten und schlechtesten Kurs in R', () => {
+    let z = mitLongPosition() // Entry 100, SL 90 → 1R = 10
+    z = barVerarbeiten(z, bar({ time: 2, high: 112, low: 96, close: 110 }))
+    z = barVerarbeiten(z, bar({ time: 3, high: 111, low: 104, close: 105 }))
+    z = positionSchliessen(z, 105, 3)
+    expect(z.trades[0].mfeR).toBeCloseTo(1.2, 6)
+    expect(z.trades[0].maeR).toBeCloseTo(0.4, 6)
+  })
+
+  it('ein Stop-Exit zählt mindestens bis zum Stop als MAE', () => {
+    const z = barVerarbeiten(mitLongPosition(), bar({ time: 2, high: 101, low: 89 }))
+    expect(z.trades[0].maeR).toBeGreaterThanOrEqual(1)
+  })
+
+  it('wartende Order lässt sich verschieben, aber nicht in einen ungültigen Zustand', () => {
+    const z = orderPlatzieren(neuerBroker(10000), marketLong({ typ: 'limit', limitPreis: 96 }))
+    expect(orderAendern(z, { stopLoss: 92 }).offeneOrder?.stopLoss).toBe(92)
+    expect(orderAendern(z, { limitPreis: 94 }).offeneOrder?.limitPreis).toBe(94)
+    expect(orderAendern(z, { stopLoss: 97 })).toBe(z) // SL über dem Einstieg
+  })
+
+  it('zwei Trades in derselben Kerze bekommen verschiedene Ids', () => {
+    let z = marketSofort(neuerBroker(10000), marketLong(), 100, 5)
+    z = positionSchliessen(z, 100, 5)
+    z = marketSofort(z, marketLong(), 100, 5)
+    z = positionSchliessen(z, 100, 5)
+    expect(new Set(z.trades.map((t) => t.id)).size).toBe(2)
   })
 })

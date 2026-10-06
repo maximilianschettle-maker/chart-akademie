@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { X, Scissors, ShieldCheck, SlidersHorizontal } from 'lucide-react'
 import type { Order, Position } from '../../types'
+import { fmtGeldVz, fmtPreis, fmtR, zahl } from '../../engine/format'
 
 interface PositionPanelProps {
   position: Position | null
@@ -11,15 +12,6 @@ interface PositionPanelProps {
   onTeilSchliessen?: (anteil: number) => void
   onBreakEven?: () => void
   onStopsSetzen?: (neu: { stopLoss?: number; takeProfit?: number; trailingAbstand?: number | null }) => void
-}
-
-function geld(n: number, stellen = 2) {
-  return n.toLocaleString('de-DE', { maximumFractionDigits: stellen })
-}
-
-function zahl(wert: string): number {
-  const n = parseFloat(wert.replace(',', '.'))
-  return Number.isFinite(n) ? n : 0
 }
 
 export function PositionPanel({
@@ -40,15 +32,20 @@ export function PositionPanel({
   if (!position && !offeneOrder) return null
 
   if (offeneOrder && !position) {
+    const o = offeneOrder
     return (
       <div className="rounded-xl border border-akzent/40 bg-flaeche p-4">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-wrap items-center justify-between gap-2">
           <div className="text-sm">
-            <span className="font-bold uppercase text-akzent">{offeneOrder.richtung}</span>{' '}
-            <span className="text-gedimmt">
-              {offeneOrder.typ === 'limit'
-                ? `Limit @ ${geld(offeneOrder.limitPreis ?? 0)} $ — wartet auf Ausführung`
-                : 'Market — füllt mit der nächsten Kerze'}
+            <span className={`font-bold uppercase ${o.richtung === 'long' ? 'text-long' : 'text-short'}`}>
+              {o.richtung}
+            </span>{' '}
+            <span className="tabular-nums text-gedimmt">
+              {o.typ === 'market'
+                ? 'Market — füllt mit der nächsten Kerze'
+                : `${o.typ === 'stop' ? 'Stop' : 'Limit'} @ ${fmtPreis(o.limitPreis ?? 0)} · SL ${fmtPreis(o.stopLoss, o.limitPreis)}${
+                    o.takeProfit > 0 ? ` · TP ${fmtPreis(o.takeProfit, o.limitPreis)}` : ''
+                  } — wartet auf Ausführung`}
             </span>
           </div>
           <button
@@ -63,6 +60,7 @@ export function PositionPanel({
   }
 
   if (!position) return null
+  const ref = position.entryPreis
   const pnl =
     position.richtung === 'long'
       ? (aktuellerPreis - position.entryPreis) * position.menge
@@ -101,16 +99,17 @@ export function PositionPanel({
             {position.richtung}
           </span>{' '}
           <span className="tabular-nums text-gedimmt">
-            {geld(position.menge, 6)} · Entry {geld(position.entryPreis)} $ · SL {geld(position.stopLoss)} $
-            {breakEvenAktiv && <span className="text-akzent"> (BE)</span>} · TP {geld(position.takeProfit)} $
+            {position.menge.toLocaleString('de-DE', { maximumSignificantDigits: 5 })} · Entry {fmtPreis(ref)} · SL{' '}
+            {fmtPreis(position.stopLoss, ref)}
+            {breakEvenAktiv && <span className="text-akzent"> (BE)</span>} · TP{' '}
+            {position.takeProfit > 0 ? fmtPreis(position.takeProfit, ref) : '—'}
             {position.trailingAbstand && (
-              <span className="text-akzent"> · Trailing {geld(position.trailingAbstand, 0)} $</span>
+              <span className="text-akzent"> · Trailing {fmtPreis(position.trailingAbstand, ref)}</span>
             )}
           </span>
         </div>
         <div className={`tabular-nums text-sm font-bold ${pnl >= 0 ? 'text-long' : 'text-short'}`}>
-          {pnl >= 0 ? '+' : ''}
-          {geld(pnl)} $ <span className="font-normal opacity-80">({rOffen >= 0 ? '+' : ''}{rOffen.toFixed(2)}R)</span>
+          {fmtGeldVz(pnl, 2)} <span className="font-normal opacity-80">({fmtR(rOffen)})</span>
         </div>
       </div>
 
@@ -118,8 +117,7 @@ export function PositionPanel({
         <p className="tabular-nums mt-1 text-xs text-gedimmt">
           Funding bisher:{' '}
           <span className={position.fundingKosten > 0 ? 'text-short' : 'text-long'}>
-            {position.fundingKosten > 0 ? '−' : '+'}
-            {geld(Math.abs(position.fundingKosten))} $
+            {fmtGeldVz(-position.fundingKosten, 2)}
           </span>
         </p>
       )}
@@ -129,9 +127,18 @@ export function PositionPanel({
           Position schließen
         </button>
         {onTeilSchliessen && (
-          <button onClick={() => onTeilSchliessen(0.5)} className={knopf} title="Hälfte glattstellen, Rest laufen lassen">
-            <Scissors className="h-3.5 w-3.5" /> 50 % raus
-          </button>
+          <>
+            <button onClick={() => onTeilSchliessen(0.25)} className={knopf} title="Ein Viertel glattstellen">
+              <Scissors className="h-3.5 w-3.5" /> 25 %
+            </button>
+            <button
+              onClick={() => onTeilSchliessen(0.5)}
+              className={knopf}
+              title="Hälfte glattstellen, Rest laufen lassen"
+            >
+              <Scissors className="h-3.5 w-3.5" /> 50 % raus
+            </button>
+          </>
         )}
         {onBreakEven && (
           <button
@@ -154,28 +161,43 @@ export function PositionPanel({
         <div className="mt-3 grid grid-cols-1 gap-2 rounded-lg bg-nacht/60 p-3 sm:grid-cols-3">
           <label className="block text-xs text-gedimmt">
             Neuer SL
-            <input value={slText} onChange={(e) => setSlText(e.target.value)} placeholder={geld(position.stopLoss)} className={eingabeStil} inputMode="decimal" />
+            <input
+              value={slText}
+              onChange={(e) => setSlText(e.target.value)}
+              placeholder={fmtPreis(position.stopLoss, ref)}
+              className={eingabeStil}
+              inputMode="decimal"
+            />
           </label>
           <label className="block text-xs text-gedimmt">
-            Neuer TP
-            <input value={tpText} onChange={(e) => setTpText(e.target.value)} placeholder={geld(position.takeProfit)} className={eingabeStil} inputMode="decimal" />
+            Neuer TP (0 = keiner)
+            <input
+              value={tpText}
+              onChange={(e) => setTpText(e.target.value)}
+              placeholder={position.takeProfit > 0 ? fmtPreis(position.takeProfit, ref) : 'kein TP'}
+              className={eingabeStil}
+              inputMode="decimal"
+            />
           </label>
           <label className="block text-xs text-gedimmt">
             Trailing ($, 0 = aus)
             <input
               value={trailingText}
               onChange={(e) => setTrailingText(e.target.value)}
-              placeholder={position.trailingAbstand ? geld(position.trailingAbstand, 0) : 'aus'}
+              placeholder={position.trailingAbstand ? fmtPreis(position.trailingAbstand, ref) : 'aus'}
               className={eingabeStil}
               inputMode="decimal"
             />
           </label>
-          <div className="sm:col-span-3 flex items-center gap-2">
-            <button onClick={uebernehmen} className="rounded-lg bg-akzent px-3 py-1.5 text-xs font-bold text-nacht hover:brightness-110">
+          <div className="flex items-center gap-2 sm:col-span-3">
+            <button
+              onClick={uebernehmen}
+              className="rounded-lg bg-akzent px-3 py-1.5 text-xs font-bold text-nacht hover:brightness-110"
+            >
               Übernehmen
             </button>
             <span className="text-xs text-gedimmt">
-              Ein SL/TP auf der falschen Seite des Kurses wird ignoriert.
+              SL und TP lassen sich auch direkt im Chart ziehen. Die falsche Seite des Kurses wird ignoriert.
             </span>
           </div>
         </div>

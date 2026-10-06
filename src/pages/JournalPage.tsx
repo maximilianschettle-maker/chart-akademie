@@ -123,7 +123,7 @@ export function JournalPage() {
 
       <div className="mt-6 rounded-xl border border-rand bg-flaeche p-4">
         <h2 className="mb-2 text-sm font-semibold text-white">Alle Exits</h2>
-        <TradeHistorie trades={tradeHistorie} mitSetup />
+        <TradeHistorie trades={tradeHistorie} mitSetup mitExkursion mitZeit />
       </div>
 
       <div className="mt-8 border-t border-rand pt-4">

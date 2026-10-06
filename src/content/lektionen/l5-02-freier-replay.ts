@@ -9,13 +9,13 @@ export const l5_02: Lesson = {
   bloecke: [
     {
       typ: 'text',
-      html: `<p>Im <strong>Simulator</strong> dieser App bekommst du einen zufälligen historischen Marktabschnitt — Symbol und Datum verdeckt, damit dein Gedächtnis nicht mitspielt. Kein Hinweis, welches Setup (oder ob überhaupt eines) auftaucht. Genau wie live.</p>
+      html: `<p>Im <strong>Simulator</strong> dieser App spielst du echte historische Kurse Kerze für Kerze ab. Im Modus <strong>Blind</strong> bekommst du einen zufälligen Abschnitt — Symbol und Datum verdeckt, damit dein Gedächtnis nicht mitspielt. Im Modus <strong>Gezielt testen</strong> wählst du Symbol, Timeframe und Startdatum selbst und prüfst ein Setup über Wochen oder Monate. Kein Hinweis, welches Setup (oder ob überhaupt eines) auftaucht. Genau wie live.</p>
 <p>So trainierst du dort mit System statt zu daddeln:</p>
 <ol>
-<li><strong>Erst analysieren, dann abspielen:</strong> Nutze die 500 Kontext-Kerzen. Regime? Wichtige Zonen? Markiere sie gedanklich, BEVOR du auf Play drückst.</li>
-<li><strong>Regeln vorab festlegen:</strong> Welche Setups handelst du in dieser Session? Wie viel Risiko (empfohlen: 1 %)? Maximal 2–3 Trades pro Session.</li>
+<li><strong>Erst analysieren, dann abspielen:</strong> Nutze die 1.000 Kerzen Vorgeschichte und die höheren Timeframes. Regime? Wichtige Zonen? Zeichne sie ein, BEVOR du auf Play drückst.</li>
+<li><strong>Regeln vorab festlegen:</strong> Welche Setups handelst du in dieser Session? Wie viel Risiko (empfohlen: 1 %)? Stop und Ziel setzt du direkt im Chart — die Linien lassen sich ziehen.</li>
 <li><strong>Kein Setup = kein Trade.</strong> Manche Abschnitte bieten schlicht nichts. Eine Session ohne Trade ist ein Erfolg, wenn es nichts zu holen gab.</li>
-<li><strong>Nach der Session ins Journal:</strong> Waren die Trades regelkonform? Das R-Ergebnis ist zweitrangig.</li>
+<li><strong>Nach der Session auswerten:</strong> Waren die Trades regelkonform? Die Statistik zeigt Trefferquote, Erwartungswert in R und Drawdown — aussagekräftig wird das ab etwa 20–30 Trades.</li>
 </ol>`,
     },
     {

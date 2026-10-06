@@ -28,6 +28,8 @@ export async function getCandles(
       throw binanceFehler
     }
   }
-  if (candles.length > 0) await inCache(key, candles)
+  // Nur abgeschlossene Zeiträume cachen — ein Bereich, der bis in die Zukunft
+  // reicht, bekäme sonst für immer einen unvollständigen Stand.
+  if (candles.length > 0 && bis * 1000 < Date.now()) await inCache(key, candles)
   return candles
 }

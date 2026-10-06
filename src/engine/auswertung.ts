@@ -21,6 +21,15 @@ export interface LogischerTrade {
   strategieId?: string
   interval?: string
   teilExits: number
+  /** Maximaler Buchgewinn / -verlust während der Haltezeit in R — fehlt bei älteren Trades */
+  mfeR?: number
+  maeR?: number
+}
+
+function groesser(a: number | undefined, b: number | undefined): number | undefined {
+  if (a === undefined) return b
+  if (b === undefined) return a
+  return Math.max(a, b)
 }
 
 const INTERVALL_SEK: Record<string, number> = {
@@ -50,6 +59,8 @@ export function logischeTrades(trades: Trade[]): LogischerTrade[] {
       vorhanden.rMultiple += t.rMultiple
       vorhanden.exitTime = Math.max(vorhanden.exitTime, t.exitTime)
       vorhanden.teilExits += 1
+      vorhanden.mfeR = groesser(vorhanden.mfeR, t.mfeR)
+      vorhanden.maeR = groesser(vorhanden.maeR, t.maeR)
       if (t.exitTime >= vorhanden.exitTime) vorhanden.exitGrund = t.exitGrund
       continue
     }
@@ -64,12 +75,15 @@ export function logischeTrades(trades: Trade[]): LogischerTrade[] {
       exitTime: t.exitTime,
       pnl: t.pnl,
       rMultiple: t.rMultiple,
-      geplantesCrv: risiko > 0 ? chance / risiko : 0,
+      // Ohne Take-Profit gibt es kein geplantes CRV → NaN fällt aus allen CRV-Vergleichen heraus
+      geplantesCrv: t.takeProfit > 0 ? (risiko > 0 ? chance / risiko : 0) : NaN,
       risikoProzent: t.entryPreis > 0 ? risiko / t.entryPreis : 0,
       exitGrund: t.exitGrund,
       strategieId: t.strategieId,
       interval: t.interval,
       teilExits: 1,
+      mfeR: t.mfeR,
+      maeR: t.maeR,
     })
   }
   return [...map.values()].sort((a, b) => a.entryTime - b.entryTime)
@@ -283,4 +297,74 @@ export function fehlerMuster(trades: LogischerTrade[]): Hinweis[] {
   }
 
   return hinweise
+}
+
+// ── Kennzahlen einer Sitzung / des Journals ──────────────────────────────────
+
+export interface Kennzahlen {
+  anzahl: number
+  gewinner: number
+  trefferquote: number // 0..100
+  summePnl: number
+  summeR: number
+  /** Erwartungswert je Trade in R */
+  durchschnittR: number
+  durchschnittGewinnR: number
+  durchschnittVerlustR: number
+  /** Summe Gewinne / Summe Verluste; Infinity ohne Verlierer */
+  profitFaktor: number
+  maxDrawdown: number
+  maxDrawdownProzent: number
+  laengsteVerlustserie: number
+  /** Anteil des maximalen Buchgewinns (MFE), den die Gewinner tatsächlich mitgenommen haben; null ohne Daten */
+  mfeAusbeute: number | null
+}
+
+export function kennzahlen(trades: LogischerTrade[], startKapital: number): Kennzahlen {
+  const gewinner = trades.filter((t) => t.pnl > 0)
+  const verlierer = trades.filter((t) => t.pnl <= 0)
+  const summeGewinne = gewinner.reduce((s, t) => s + t.pnl, 0)
+  const summeVerluste = Math.abs(verlierer.reduce((s, t) => s + t.pnl, 0))
+  const summeR = trades.reduce((s, t) => s + t.rMultiple, 0)
+  const schnitt = (liste: LogischerTrade[]) =>
+    liste.length > 0 ? liste.reduce((s, t) => s + t.rMultiple, 0) / liste.length : 0
+
+  let stand = startKapital
+  let hoch = startKapital
+  let maxDrawdown = 0
+  let maxDrawdownProzent = 0
+  let serie = 0
+  let laengsteVerlustserie = 0
+  for (const t of [...trades].sort((a, b) => a.exitTime - b.exitTime)) {
+    stand += t.pnl
+    hoch = Math.max(hoch, stand)
+    if (hoch - stand > maxDrawdown) {
+      maxDrawdown = hoch - stand
+      maxDrawdownProzent = hoch > 0 ? ((hoch - stand) / hoch) * 100 : 0
+    }
+    serie = t.pnl <= 0 ? serie + 1 : 0
+    laengsteVerlustserie = Math.max(laengsteVerlustserie, serie)
+  }
+
+  const mitMfe = gewinner.filter((t) => t.mfeR !== undefined && t.mfeR > 0)
+  const mfeAusbeute =
+    mitMfe.length > 0
+      ? mitMfe.reduce((s, t) => s + Math.min(1, Math.max(0, t.rMultiple / (t.mfeR as number))), 0) / mitMfe.length
+      : null
+
+  return {
+    anzahl: trades.length,
+    gewinner: gewinner.length,
+    trefferquote: trades.length > 0 ? (gewinner.length / trades.length) * 100 : 0,
+    summePnl: trades.reduce((s, t) => s + t.pnl, 0),
+    summeR,
+    durchschnittR: trades.length > 0 ? summeR / trades.length : 0,
+    durchschnittGewinnR: schnitt(gewinner),
+    durchschnittVerlustR: schnitt(verlierer),
+    profitFaktor: summeVerluste > 0 ? summeGewinne / summeVerluste : summeGewinne > 0 ? Infinity : 0,
+    maxDrawdown,
+    maxDrawdownProzent,
+    laengsteVerlustserie,
+    mfeAusbeute,
+  }
 }

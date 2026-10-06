@@ -86,9 +86,12 @@ export type Richtung = 'long' | 'short'
 export interface Order {
   id: string
   richtung: Richtung
-  typ: 'market' | 'limit'
+  /** limit: wartet auf einen besseren Preis · stop: Einstieg erst beim Durchbruch (läuft als Market) */
+  typ: 'market' | 'limit' | 'stop'
+  /** Auslösepreis für limit UND stop */
   limitPreis?: number
   stopLoss: number
+  /** 0 = kein Take-Profit (Exit manuell oder über Trailing) */
   takeProfit: number
   menge: number // in Basiswährung (z.B. BTC)
   erstelltBarIndex: number
@@ -96,6 +99,7 @@ export interface Order {
   trailingAbstand?: number
   /** Selbst-Tag des Traders: welches Setup wird gehandelt? (für die Journal-Auswertung) */
   strategieId?: string
+  notiz?: string
 }
 
 export interface Position {
@@ -114,6 +118,14 @@ export interface Position {
   /** Aufgelaufene Funding-Kosten (positiv = gezahlt) für die noch offene Menge */
   fundingKosten: number
   strategieId?: string
+  /** Gebührensatz des Einstiegs (Maker bei Limit, sonst Taker) — fehlt bei alten Ständen */
+  entryGebuehr?: number
+  /** |Entry − Erst-SL| je Einheit — Basis für MAE/MFE in R */
+  risikoAbstand?: number
+  /** Bester / schlechtester Kurs seit dem Einstieg (für MFE/MAE) */
+  bestPreis?: number
+  schlechtestPreis?: number
+  notiz?: string
 }
 
 export type ExitGrund = 'sl' | 'tp' | 'manuell' | 'szenarioEnde' | 'teil' | 'trailing'
@@ -139,6 +151,11 @@ export interface Trade {
   strategieId?: string
   /** Kerzenintervall der Session (z.B. '1h') — für Haltedauer-Auswertungen */
   interval?: string
+  /** Maximaler Buchgewinn / -verlust während der Haltezeit, in R (MFE/MAE) */
+  mfeR?: number
+  maeR?: number
+  symbol?: string
+  notiz?: string
 }
 
 // ── Zeichnungen im Chart ─────────────────────────────────────────────────────

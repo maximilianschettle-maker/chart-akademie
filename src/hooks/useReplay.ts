@@ -5,6 +5,7 @@ import {
   neuerBroker,
   orderPlatzieren,
   orderStornieren,
+  marketSofort,
   positionSchliessen,
   teilSchliessen,
   stopsAendern,
@@ -70,9 +71,20 @@ export function useReplay(
     [fertig],
   )
 
-  const platzieren = useCallback((order: Order) => {
-    setZustand((z) => ({ ...z, broker: orderPlatzieren(z.broker, order) }))
-  }, [])
+  // Market füllt sofort zum aktuellen Kurs (Schlusskurs der letzten sichtbaren Kerze)
+  const platzieren = useCallback(
+    (order: Order) => {
+      setZustand((z) => {
+        const bar = candles[z.cursor]
+        const broker =
+          order.typ === 'market'
+            ? marketSofort(z.broker, order, bar.close, bar.time)
+            : orderPlatzieren(z.broker, order)
+        return { ...z, broker }
+      })
+    },
+    [candles],
+  )
 
   const stornieren = useCallback(() => {
     setZustand((z) => ({ ...z, broker: orderStornieren(z.broker) }))

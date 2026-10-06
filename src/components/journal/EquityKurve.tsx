@@ -8,6 +8,8 @@ interface EquityKurveProps {
   punkte: EquityPunkt[]
   startKapital: number
   hoehe?: number
+  /** Breite des Koordinatensystems — kleiner wählen, wenn die Kurve schmal angezeigt wird (Schrift bleibt lesbar) */
+  breite?: number
 }
 
 const AKZENT = '#F59E0B'
@@ -16,9 +18,8 @@ function geld(n: number) {
   return `${n >= 0 ? '' : '−'}${Math.abs(n).toLocaleString('de-DE', { maximumFractionDigits: 0 })} $`
 }
 
-export function EquityKurve({ punkte, startKapital, hoehe = 200 }: EquityKurveProps) {
+export function EquityKurve({ punkte, startKapital, hoehe = 200, breite = 640 }: EquityKurveProps) {
   const [aktiv, setAktiv] = useState<number | null>(null)
-  const breite = 640
   const rand = { oben: 12, unten: 22, links: 8, rechts: 8 }
 
   const geo = useMemo(() => {
@@ -33,7 +34,7 @@ export function EquityKurve({ punkte, startKapital, hoehe = 200 }: EquityKurvePr
     const pfad = punkte.map((p, i) => `${i === 0 ? 'M' : 'L'}${x(i).toFixed(1)},${y(p.kontostand).toFixed(1)}`).join(' ')
     const flaeche = `${pfad} L${x(punkte.length - 1).toFixed(1)},${y(startKapital).toFixed(1)} L${x(0).toFixed(1)},${y(startKapital).toFixed(1)} Z`
     return { x, y, pfad, flaeche, min, max }
-  }, [punkte, startKapital, hoehe, rand.links, rand.rechts, rand.oben, rand.unten])
+  }, [punkte, startKapital, hoehe, breite, rand.links, rand.rechts, rand.oben, rand.unten])
 
   if (punkte.length < 2) {
     return (

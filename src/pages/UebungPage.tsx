@@ -12,7 +12,10 @@ import { bewerteSzenario } from '../engine/szenarioGrader'
 import { findeSetup, setupZuSzenario } from '../engine/setupErkennung'
 import { HOEHERE_TIMEFRAMES } from '../engine/aggregation'
 import { useProgressStore } from '../stores/progressStore'
-import { ReplayChart, type ZeichenModus } from '../components/chart/ReplayChart'
+import { HandelsChart, type ChartLinie, type ZeichenModus } from '../components/chart/HandelsChart'
+import { CHART_FARBEN } from '../components/chart/ChartPanel'
+import { useHandel } from '../hooks/useHandel'
+import { letzterAtr } from '../engine/indikatoren/atr'
 import { ReplayControls } from '../components/chart/ReplayControls'
 import { ZeichenLeiste } from '../components/chart/ZeichenLeiste'
 import { OrderTicket } from '../components/simulator/OrderTicket'
@@ -71,6 +74,17 @@ function UebungSession({
   const gesamtR = resultat?.rMultiple ?? 0
   const gesamtPnl = broker.trades.reduce((s, t) => s + t.pnl, 0)
   const zeigeIdeal = replay.fertig && szenario.richtung !== 'keiner'
+  const handel = useHandel(broker, replay.aktuellerPreis, { stopsSetzen: replay.stopsSetzen })
+  const atr = useMemo(() => letzterAtr(candles, replay.cursor), [candles, replay.cursor])
+  // Nach dem Ende: statt der eigenen Linien den Ideal-Trade des Szenarios zeigen
+  const linien = useMemo((): ChartLinie[] => {
+    if (!zeigeIdeal) return handel.linien
+    const ideal: ChartLinie[] = []
+    if (szenario.idealEntry) ideal.push({ id: 'ideal-entry', preis: szenario.idealEntry, farbe: '#F59E0B', titel: 'Entry', imBlick: true })
+    if (szenario.idealStopLoss) ideal.push({ id: 'ideal-sl', preis: szenario.idealStopLoss, farbe: CHART_FARBEN.short, titel: 'SL', imBlick: true })
+    if (szenario.idealTakeProfit) ideal.push({ id: 'ideal-tp', preis: szenario.idealTakeProfit, farbe: CHART_FARBEN.long, titel: 'TP', imBlick: true })
+    return ideal
+  }, [zeigeIdeal, handel.linien, szenario.idealEntry, szenario.idealStopLoss, szenario.idealTakeProfit])
 
   // Kein Trade: Entscheidung festhalten und den Rest des Replays durchlaufen lassen
   function keinTrade() {
@@ -83,7 +97,7 @@ function UebungSession({
       <div className="space-y-4">
         {kontextSek !== null && (
           <div className="rounded-xl border border-rand bg-flaeche p-3">
-            <ReplayChart
+            <HandelsChart
               candles={candles}
               cursor={replay.cursor}
               hoehe={schmal ? 180 : 220}
@@ -95,7 +109,7 @@ function UebungSession({
           </div>
         )}
         <div className="rounded-xl border border-rand bg-flaeche p-3">
-          <ReplayChart
+          <HandelsChart
             candles={candles}
             cursor={replay.cursor}
             hoehe={chartHoehe(schmal)}
@@ -103,17 +117,10 @@ function UebungSession({
             zeichnungen={zeichnungen}
             zeichenModus={zeichenModus}
             onZeichnung={(z) => setZeichnungen((alt) => [...alt, z])}
-            entryPreis={zeigeIdeal ? szenario.idealEntry : broker.position?.entryPreis}
-            stopLoss={
-              zeigeIdeal
-                ? szenario.idealStopLoss
-                : (broker.position?.stopLoss ?? broker.offeneOrder?.stopLoss)
-            }
-            takeProfit={
-              zeigeIdeal
-                ? szenario.idealTakeProfit
-                : (broker.position?.takeProfit ?? broker.offeneOrder?.takeProfit)
-            }
+            linien={linien}
+            onLinieZiehen={handel.onLinieZiehen}
+            onLinieLos={handel.onLinieLos}
+            onPick={handel.onPick}
           />
           {zeigeIdeal && szenario.idealEntry !== undefined && (
             <p className="mt-2 text-xs text-gedimmt">
@@ -158,6 +165,8 @@ function UebungSession({
         {!replay.fertig && (
           <>
             <OrderTicket
+              entwurf={handel.entwurf}
+              onEntwurf={handel.entwurfTeil}
               aktuellerPreis={replay.aktuellerPreis}
               kontostand={broker.kontostand}
               barIndex={replay.cursor}
@@ -165,6 +174,10 @@ function UebungSession({
                 !!broker.position || !!broker.offeneOrder || broker.trades.length > 0
               }
               onPlatzieren={replay.platzieren}
+              atr={atr}
+              tpPflicht
+              pickZiel={handel.pickZiel}
+              onPickZiel={handel.setPickZiel}
             />
             {broker.trades.length === 0 && !broker.position && !broker.offeneOrder && (
               <button

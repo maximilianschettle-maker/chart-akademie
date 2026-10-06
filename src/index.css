@@ -36,3 +36,13 @@
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
+
+/* Chart: ziehbare Preislinie unter der Maus bzw. Preis-Auswahl aktiv */
+.linie-greifbar,
+.linie-greifbar * {
+  cursor: ns-resize !important;
+}
+.chart-waehlt,
+.chart-waehlt * {
+  cursor: crosshair !important;
+}

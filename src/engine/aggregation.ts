@@ -10,8 +10,13 @@ export function intervalSekunden(candles: Candle[]): number {
   return Number.isFinite(min) ? min : 60
 }
 
+const WOCHE = 604800
+const MONTAG_OFFSET = 4 * 86400
+
 /** Start des Buckets, in dem die Bar liegt (zeitbasiert, robust gegen Datenlücken). */
 export function bucketStart(time: number, bucketSek: number): number {
+  // Wochen beginnen montags 00:00 UTC — die Unix-Epoche war ein Donnerstag
+  if (bucketSek === WOCHE) return Math.floor((time - MONTAG_OFFSET) / WOCHE) * WOCHE + MONTAG_OFFSET
   return Math.floor(time / bucketSek) * bucketSek
 }
 
@@ -54,4 +59,5 @@ export const HOEHERE_TIMEFRAMES: Record<string, { label: string; sek: number }[]
     { label: '1D', sek: 86400 },
     { label: '1W', sek: 604800 },
   ],
+  '1d': [{ label: '1W', sek: 604800 }],
 }

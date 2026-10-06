@@ -1,5 +1,5 @@
 import { Minus, RectangleHorizontal, Eraser, Layers } from 'lucide-react'
-import type { ZeichenModus } from './ReplayChart'
+import type { ZeichenModus } from './HandelsChart'
 
 interface ZeichenLeisteProps {
   modus: ZeichenModus

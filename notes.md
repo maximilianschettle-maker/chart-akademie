@@ -51,6 +51,20 @@ Werkzeug: Chrome-Extension war wieder nicht verbunden → **Playwright in `%TEMP
 - **Setup-Erkennung neu geschrieben** (`engine/setupErkennung.ts`): zusätzlich S/R-Bounce (long/short, Swing-Cluster als Zone) und Liquidity Sweep (Docht unter Unterstützung + erster Close zurück). Breakout+Retest sucht den Ausbruch bis 250 Bars zurück und filtert Fakeouts (Close klar unter der Decke seit Ausbruch). Zonen-Toleranz adaptiv aus der Median-Kerzenspanne (0,4–6 %). Jeder Detektor feuert nur beim ersten Eintritt in seine Zone. **`setupErkennung.real.test.ts` prüft gegen die echten Datensätze**: ETH-Retest-Zone, SOL-Sweep am 5.8., BTC-Range/-Bounce werden gefunden, der BTC-Fakeout Apr 24 löst nichts aus, Trefferdichte < 10 %. Erste Fassung war an echten Daten komplett daneben (Ausbruchs-Hoch als Level, 12-Bar-Fenster, Treffer an jeder Bar) — Lehre: Detektoren immer gegen echte Daten testen, nicht nur synthetisch.
 - **Lektionen lazy:** `content/lektionen/meta.ts` (generiert per `npm run gen:meta`, Staleness-Test) im Start-Bundle, Texte per dynamic import beim Öffnen. Index-Chunk 367 → 259 kB.
 
+## Stand 2026-10-06 — Simulator-Umbau zum Backtesting-Werkzeug (96 Tests grün)
+
+Anlass: Kurs durchgearbeitet, aber „das Testen anhand der historischen Daten klappt nicht richtig“. Technisch lief der alte Simulator fehlerfrei — er taugte nur nicht zum Testen (Zufallsabschnitt, 300 Kerzen, Preise blind eintippen, SL/TP-Linien oft außerhalb des Bildes, keine Zeitachse).
+
+- **Sitzungen** (`data/sitzung.ts`, `hooks/useSitzung.ts`): Symbol (9 Coins), Timeframe (5m–1D), Startdatum wählbar oder blind/zufällig. Kerzen in festen 1000er-Blöcken relativ zum Start (Cache trifft beim Fortsetzen), Nachladen 250 Kerzen vor dem Datenende, Replay bis „heute“. Tempo bis 50 Kerzen/s (ab 25/s mehrere Kerzen je Tick). Auto-Pause bei Fill/Exit. Stand liegt in `simulatorStore.aktiveSitzung` → Reload/Tab-Kill-fest, „Fortsetzen“ im Startdialog.
+- **Broker** (`engine/broker.ts`): `marketSofort` (füllt zum aktuellen Schlusskurs — auch in den Übungen, vorher „nächste Kerze“), Stop-Entry neben Limit, Gaps (Open zählt), TP optional (`takeProfit: 0`), Maker-Gebühr für Limit-Einstieg/TP, Kosten im Zustand (`BrokerZustand.kosten`, einstellbar), MFE/MAE je Trade, `orderAendern`, Trade-Ids mit laufender Nummer (zwei Trades in derselben Kerze kollidierten sonst).
+- **Chart** (`components/chart/HandelsChart.tsx`, ersetzt ReplayChart): einmal pro Mount gebaut; Timeframe-Wechsel, Indikatoren (EMA 20/50/200, RSI-Pane, Volumen) und nachgeladene Kerzen lassen Zoom in Ruhe. Preislinien per Id abgeglichen, **ziehbar** (Pointer-Capture in der Capture-Phase, Chart-Scroll währenddessen aus), in die Auto-Skalierung einbezogen. Trade-Marker, OHLC-Legende, Preis-Präzision je Kursgröße (`engine/format.ts`).
+- **Order-Ticket** (`engine/orderEntwurf.ts`, `hooks/useHandel.ts`): Entwurf liegt bei der Seite, Ticket und Chart zeigen dasselbe. SL per ATR-Vielfachem, TP per R-Vielfachem, Preis im Chart antippen, Limit/Stop automatisch aus der Lage zum Kurs, Hebel-Limit (Größe wird gekappt), Notiz je Trade.
+- **Auswertung**: `kennzahlen()` in `engine/auswertung.ts` (Profit-Faktor, Erwartungswert, Drawdown %, Verlustserie, MFE-Ausbeute), `SitzungsStatistik` live neben dem Chart; Journal-Tabelle mit MFE/MAE und Einstiegszeit.
+- **Gefundener Altfehler:** Am Handy kam kein Tipp im Chart an (Zeichnen!) — lightweight-charts ruft bei Touch `preventDefault`, dann feuert kein `click`. Tipp-Erkennung läuft jetzt über Pointer-Events.
+- Test: Playwright-Skripte in `%TEMP%\ca\pw` (smoke2–4): Desktop + 390 px, Maus- und CDP-Touch-Drag, Reload/Fortsetzen, Blockgrenze (1500 Kerzen 5m-DOGE), Datenende, Übung. Keine Konsolenfehler.
+
+Bewusst nicht gebaut: mehrere Positionen gleichzeitig / Nachkaufen, Liquidations-Simulation, Schritt zurück, Trendlinien.
+
 Offen / Ideen für später:
 - Am echten Handy prüfen (Touch-Zeichnen, Homescreen-Install, SW-Update-Verhalten).
 - Detektor-Trefferqualität in der Zufalls-Übung im Alltag beobachten (Zonen ggf. enger/weiter).
