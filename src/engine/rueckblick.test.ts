@@ -87,6 +87,36 @@ describe('bewerteIdeal', () => {
   })
 })
 
+describe('Stop-Abstand im regelkonformen Trade', () => {
+  // 30 ruhige Kerzen (Spanne 2 → ATR 2), Signal an Index 25
+  const ruhig = () => Array.from({ length: 30 }, (_, i) => bar(i))
+  const an25 = (teil: Partial<ErkanntesSetup>) =>
+    setup({ signalIndex: 25, entryZone: { preisVon: 98, preisBis: 102, barVon: 25, barBis: 29 }, ...teil })
+
+  it('ein unsinnig enger Stop wird auf 1 ATR Abstand geweitet', () => {
+    const b = bewerteIdeal(ruhig(), an25({ idealStopLoss: 99.7, idealTakeProfit: 106 }), 29)
+    expect(b?.stopLoss).toBeCloseTo(98, 6) // 100 − 1 × ATR(2), nicht 99,7
+    expect(b?.crv).toBeCloseTo(3, 6) // statt 20
+    expect(b?.ergebnis.art).toBe('offen') // normales Rauschen (Tief 99) stoppt nicht mehr aus
+  })
+
+  it('hat der Docht der Signalkerze den Stop schon durchstoßen, wandert er unter das Docht-Tief', () => {
+    const c = ruhig()
+    c[25] = bar(25, { low: 93 })
+    const b = bewerteIdeal(c, an25({ idealStopLoss: 95, idealTakeProfit: 125 }), 29)
+    expect(b?.stopLoss).toBeLessThan(93)
+  })
+
+  it('wird das CRV durch den weiteren Stop zu klein, fällt das Setup heraus', () => {
+    expect(bewerteIdeal(ruhig(), an25({ idealStopLoss: 99.7, idealTakeProfit: 101.5 }), 29)).toBeNull()
+  })
+
+  it('Short spiegelbildlich', () => {
+    const b = bewerteIdeal(ruhig(), an25({ richtung: 'short', idealStopLoss: 100.3, idealTakeProfit: 94 }), 29)
+    expect(b?.stopLoss).toBeCloseTo(102, 6)
+  })
+})
+
 describe('rueckblick', () => {
   const c = flach(40)
 

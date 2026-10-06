@@ -1,6 +1,7 @@
 import type { Candle, Trade } from '../types'
 import { erkenneImFenster, typischeSpanne, type ErkanntesSetup } from './setupErkennung'
 import { logischeTrades, type LogischerTrade } from './auswertung'
+import { letzterAtr } from './indikatoren/atr'
 
 // Setup-Rückblick nach einer Simulator-Sitzung: Welche Setups aus Level 4 hat
 // der gespielte Abschnitt angeboten — und welche davon wurden gehandelt, welche
@@ -35,6 +36,8 @@ export interface SetupFund {
 const MIN_CRV = 1
 const MIN_ABSTAND = 15 // Kerzen zwischen zwei Setups derselben Richtung
 const IMPULS = 3.5 // Vielfaches der typischen Kerzenspanne
+const MIN_STOP_ATR = 1 // Stop mindestens so viele ATR vom Einstieg entfernt
+const DOCHT_PUFFER_ATR = 0.25 // Abstand des Stops zum Extrem der Signalkerze
 
 /**
  * Signalkerze ist ein Impuls GEGEN die Handelsrichtung (z.B. Absturz in eine
@@ -55,12 +58,22 @@ export function bewerteIdeal(
   bisIndex: number,
 ): Pick<SetupFund, 'entry' | 'stopLoss' | 'takeProfit' | 'crv' | 'ergebnis'> | null {
   const long = setup.richtung === 'long'
-  const entry = c[setup.signalIndex].close
-  const stopLoss = setup.idealStopLoss
+  const signal = c[setup.signalIndex]
+  const entry = signal.close
   const takeProfit = setup.idealTakeProfit
-  const risiko = long ? entry - stopLoss : stopLoss - entry
   const chance = long ? takeProfit - entry : entry - takeProfit
-  if (risiko <= 0 || chance <= 0) return null
+  if (chance <= 0 || (long ? setup.idealStopLoss >= entry : setup.idealStopLoss <= entry)) return null
+
+  // Der Stop der Erkennung hängt am Level, nicht an der Kerze. Zum Schlusskurs der
+  // Signalkerze kann er dadurch unsinnig eng sein (oder ihr Docht hat ihn schon
+  // durchstoßen) — so ein Trade stoppt sich im normalen Rauschen selbst aus.
+  // Deshalb: mindestens 1 ATR Abstand und immer jenseits des Signalkerzen-Extrems.
+  const atr = letzterAtr(c, setup.signalIndex)
+  const stopLoss = long
+    ? Math.min(setup.idealStopLoss, entry - MIN_STOP_ATR * atr, signal.low - DOCHT_PUFFER_ATR * atr)
+    : Math.max(setup.idealStopLoss, entry + MIN_STOP_ATR * atr, signal.high + DOCHT_PUFFER_ATR * atr)
+  const risiko = long ? entry - stopLoss : stopLoss - entry
+  if (risiko <= 0) return null
   const crv = chance / risiko
   if (crv < MIN_CRV) return null
 
