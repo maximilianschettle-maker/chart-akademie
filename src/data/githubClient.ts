@@ -131,6 +131,18 @@ async function dateiSchreiben(
   })
 }
 
+/** Erster Abschnitt des Ordner-Pfads, der im Repository eine Datei statt eines Ordners ist. */
+async function ordnerIstDatei(ziel: GitZiel): Promise<string | null> {
+  const teile = ziel.ordner.split('/').filter(Boolean)
+  for (let i = 1; i <= teile.length; i++) {
+    const pfad = teile.slice(0, i)
+    const res = await anfrage(ziel.token, `/repos/${ziel.repo}/contents/${pfad.map(encodeURIComponent).join('/')}`)
+    if (res.status === 404) return null
+    if (res.ok && !Array.isArray(await res.json())) return pfad.join('/')
+  }
+  return null
+}
+
 function keineSyncDatei(teil: SyncTeil): GitFehler {
   return new GitFehler(`„${SYNC_DATEI[teil]}“ im Repository ist keine ChartAkademie-Datei.`, 422)
 }
@@ -183,8 +195,21 @@ export async function standPushen(
         datei?.sha,
         `ChartAkademie: ${SYNC_NAME[teil]} (${teilUmfang(teil, stand)})`,
       )
-      // 409: zwischen Lesen und Schreiben hat ein anderes Gerät gepusht → einmal neu ansetzen
-      if (res.status === 409 && versuch === 0) continue
+      if (res.status === 409 || res.status === 422) {
+        // Liegt dort, wo der Ordner hin soll, eine Datei, kann GitHub ihn nicht anlegen
+        const blockiert = await ordnerIstDatei(ziel)
+        if (blockiert) {
+          throw new GitFehler(
+            `Im Repository liegt eine Datei namens „${blockiert}“ — dort kann kein Ordner entstehen. Datei löschen oder einen anderen Ordner wählen.`,
+            res.status,
+          )
+        }
+        // sonst: zwischen Lesen und Schreiben hat ein anderes Gerät gepusht → einmal neu ansetzen
+        if (res.status === 409 && versuch === 0) {
+          await new Promise((r) => setTimeout(r, 700))
+          continue
+        }
+      }
       await mussOk(res, `${name} schreiben`)
       geschrieben.push(teil)
       return

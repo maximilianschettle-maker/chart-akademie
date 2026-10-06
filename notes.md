@@ -95,7 +95,9 @@ Wunsch: Journal und Lernfortschritt in einem Git-Repository speichern, wählbar,
 - `data/githubClient.ts`: Contents-API direkt aus dem Browser (CORS geprüft), `cache: 'no-store'` (GitHub erlaubt sonst 60 s Cache → veralteter sha). Push liest erst den Repo-Stand, führt zusammen, schreibt nur bei Änderung, wiederholt einmal bei 409. Über 1 MB Fallback auf den Raw-Medientyp.
 - `stores/syncStore.ts` (`chartakademie-sync`): Repo, Ordner, Token, Auswahl — getrennt vom Nutzerstand, Token landet nie in Export/Repo.
 - `components/GitSync.tsx` auf dem Dashboard: Repo-Vorschläge per Token, „ersetzen statt zusammenführen“ mit Rückfrage (für den Fall Journal-Reset), `simulatorStore.journalErsetzen`.
-- Test: `githubClient.test.ts` mit nachgebauter Contents-API, Playwright `smoke7.mjs` (GitHub per Route-Mock). **Noch nicht gegen das echte GitHub mit echtem Token gelaufen.**
+- Test: `githubClient.test.ts` mit nachgebauter Contents-API, Playwright `smoke7.mjs` (GitHub per Route-Mock). Erster echter Push aus der Live-App hat geklappt (Rückmeldung „geht“).
+- Daten-Repo: `maximilianschettle-maker/chart-akademie-daten` (privat), Ordner `chartakademie/`.
+- **Stolperstein beim ersten Push (409):** Im Daten-Repo lag eine von Hand angelegte *Datei* `chartakademie` — unter einer Datei kann GitHub keinen Ordner anlegen. Datei gelöscht; die App prüft bei 409/422 jetzt, ob ein Abschnitt des Ordner-Pfads eine Datei ist, und sagt das im Klartext (`ordnerIstDatei`). Wiederholung nach 409 wartet 700 ms.
 - Hinweis: Daten-Repo getrennt vom App-Repo halten — das App-Repo ist öffentlich und jeder Push dorthin löst ein Deploy aus.
 
 Bewusst nicht gebaut: mehrere Positionen gleichzeitig / Nachkaufen, Liquidations-Simulation, Schritt zurück.
@@ -103,7 +105,7 @@ Bewusst nicht gebaut: mehrere Positionen gleichzeitig / Nachkaufen, Liquidations
 Offen / Ideen für später:
 - Am echten Handy prüfen (Touch-Zeichnen, Homescreen-Install, SW-Update-Verhalten).
 - Detektor-Trefferqualität in der Zufalls-Übung im Alltag beobachten (Zonen ggf. enger/weiter).
-- Git-Sync: einmal mit echtem Token gegen GitHub prüfen; ggf. Auto-Sync (Holen beim Start, Push nach Sitzungsende).
+- Git-Sync: „Holen“ am Handy ausprobieren; ggf. Auto-Sync (Holen beim Start, Push nach Sitzungsende).
 - Mehr Szenarien für die Meisterprüfung (ohne Strategie-Ansage), Trailing-Stop im Broker, ETH/SOL-Szenarien.
 
 Stolpersteine:

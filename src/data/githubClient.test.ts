@@ -50,6 +50,8 @@ function falschesGitHub(opts: { push?: boolean; existiert?: boolean } = {}) {
         return antwort(409)
       }
       if (dateien.get(name)?.sha !== body.sha) return antwort(409)
+      // wie GitHub: unter einer Datei kann kein Ordner entstehen
+      if (dateien.has(name.split('/')[0]) && name.includes('/')) return antwort(409)
       dateien.set(name, { text: vonBase64(body.content), sha: `sha${++zaehler}` })
       commits.push(body.message)
       return antwort(200)
@@ -119,6 +121,13 @@ describe('GitHub-Client', () => {
     await expect(standHolen(ziel, ['journal'])).rejects.toThrow(/keine ChartAkademie-Datei/)
     // …und ein Push mischt sich nicht in eine fremde Datei
     await expect(standPushen(ziel, ['journal'], stand('a'))).rejects.toThrow(GitFehler)
+  })
+
+  it('erklärt, wenn eine Datei den Ordner blockiert', async () => {
+    const gh = falschesGitHub()
+    gh.lege('chartakademie', ' ')
+    await expect(standPushen(ziel, ['journal'], stand('a'))).rejects.toThrow(/Datei namens „chartakademie“/)
+    expect(gh.commits).toHaveLength(0)
   })
 
   it('meldet fehlendes Repository und fehlendes Schreibrecht verständlich', async () => {
