@@ -7,6 +7,7 @@ import { SZENARIEN } from '../content/szenarien'
 import { useProgressStore } from '../stores/progressStore'
 import { ProgressRing } from '../components/ui/ProgressRing'
 import { DatenSicherung } from '../components/DatenSicherung'
+import { GitSync } from '../components/GitSync'
 
 export function Dashboard() {
   const abgeschlossene = useProgressStore((s) => s.abgeschlosseneLektionen)
@@ -179,6 +180,10 @@ export function Dashboard() {
 
       <div className="mt-10">
         <DatenSicherung />
+      </div>
+
+      <div className="mt-4">
+        <GitSync />
       </div>
 
       <div className="mt-6 border-t border-rand pt-4">

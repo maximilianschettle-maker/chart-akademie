@@ -16,6 +16,7 @@ Eine Trading-Lern-App für Krypto: Schritt für Schritt vom Candlestick bis zum 
 - **Journal mit Auswertung** — Equity-Kurve, R-Verteilung, Auswertung nach Setup/Tageszeit/Haltedauer, regelbasierte Hinweise auf Fehler-Muster (Stop zu eng, zu früh raus, Übertraden nach Verlust …).
 - **Spaced Repetition** — falsch beantwortete Quizfragen kommen nach 1/3/7/14/30 Tagen wieder.
 - **Export/Import** — Fortschritt und Journal als JSON-Datei zwischen Geräten übertragen (Import führt zusammen).
+- **Git-Sync** — Journal und Lernfortschritt (einzeln wählbar) in einem eigenen GitHub-Repository sichern: „Holen“ und „Push“ auf dem Dashboard, als `journal.json` / `fortschritt.json` über die GitHub-API. Braucht ein Fine-grained Token mit „Contents: Read and write“ für das Daten-Repository (am besten privat, nicht das App-Repo); das Token bleibt im Browser.
 - **Echte Daten** — Binance Spot-API (mit Bybit-Fallback und IndexedDB-Cache); die Übungs-Datensätze liegen statisch im Repo und funktionieren offline.
 
 ## Entwicklung

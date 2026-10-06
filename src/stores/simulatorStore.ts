@@ -64,6 +64,8 @@ interface SimulatorState {
   tradesUebernehmen: (neue: Trade[]) => void
   /** Import aus einer Sicherung: Trades zusammenführen, Kontostand neu ableiten. */
   tradesImportieren: (neue: Trade[]) => void
+  /** Journal durch einen fremden Stand ersetzen (Git-Sync „ersetzen“); die laufende Sitzung bleibt. */
+  journalErsetzen: (tradeHistorie: Trade[], rueckblicke: GespeicherterRueckblick[]) => void
   einstellungenSetzen: (neu: Partial<SimEinstellungen>) => void
   sitzungSpeichern: (s: GespeicherteSitzung | null) => void
   zuruecksetzen: () => void
@@ -101,6 +103,13 @@ export const useSimulatorStore = create<SimulatorState>()(
         set((s) => {
           const tradeHistorie = mergeTrades(s.tradeHistorie, neue)
           return { tradeHistorie, kontostand: kontostandAus(START_KAPITAL, tradeHistorie) }
+        }),
+
+      journalErsetzen: (tradeHistorie, rueckblicke) =>
+        set({
+          tradeHistorie,
+          kontostand: kontostandAus(START_KAPITAL, tradeHistorie),
+          rueckblicke: rueckblicke.slice(-MAX_RUECKBLICKE),
         }),
 
       einstellungenSetzen: (neu) => set((s) => ({ einstellungen: { ...s.einstellungen, ...neu } })),

@@ -87,12 +87,23 @@ Wunsch: in der Auswertung sehen, welche Setups man verpasst hat — mit Chart un
 - Zahl der Level-Tests und CRV-Band sagen den Ausgang NICHT vorher (Stärke 3: 39 % Treffer, Stärke 5: 33 %). Deshalb heißt das Maß „Deutlichkeit“ und nicht „Qualität“.
 - Trendfilter insgesamt leicht positiv (mit Trend 40 % / +19R, gegen 31 % / −9R), je Setup aber uneinheitlich: Sweep-Long gegen den Trend 14 %, Sweep-Short gegen den Trend 46 %. Stichprobe je Zelle klein (n = 10–40) und von der Marktphase geprägt → gegen-Trend-Setups werden nur gekennzeichnet, nicht ausgeblendet.
 
+## Stand 2026-10-06 (nachts) — Git-Sync über GitHub (133 Tests grün)
+
+Wunsch: Journal und Lernfortschritt in einem Git-Repository speichern, wählbar, mit Holen und Push.
+
+- `engine/gitSync.ts` (pur): zwei Dateien `journal.json` / `fortschritt.json`, stabil serialisiert (sortierte Schlüssel, kein Zeitstempel → gleicher Stand = gleicher Text = kein Commit), Zusammenführen über die Merge-Funktionen aus `sicherung.ts`.
+- `data/githubClient.ts`: Contents-API direkt aus dem Browser (CORS geprüft), `cache: 'no-store'` (GitHub erlaubt sonst 60 s Cache → veralteter sha). Push liest erst den Repo-Stand, führt zusammen, schreibt nur bei Änderung, wiederholt einmal bei 409. Über 1 MB Fallback auf den Raw-Medientyp.
+- `stores/syncStore.ts` (`chartakademie-sync`): Repo, Ordner, Token, Auswahl — getrennt vom Nutzerstand, Token landet nie in Export/Repo.
+- `components/GitSync.tsx` auf dem Dashboard: Repo-Vorschläge per Token, „ersetzen statt zusammenführen“ mit Rückfrage (für den Fall Journal-Reset), `simulatorStore.journalErsetzen`.
+- Test: `githubClient.test.ts` mit nachgebauter Contents-API, Playwright `smoke7.mjs` (GitHub per Route-Mock). **Noch nicht gegen das echte GitHub mit echtem Token gelaufen.**
+- Hinweis: Daten-Repo getrennt vom App-Repo halten — das App-Repo ist öffentlich und jeder Push dorthin löst ein Deploy aus.
+
 Bewusst nicht gebaut: mehrere Positionen gleichzeitig / Nachkaufen, Liquidations-Simulation, Schritt zurück.
 
 Offen / Ideen für später:
 - Am echten Handy prüfen (Touch-Zeichnen, Homescreen-Install, SW-Update-Verhalten).
 - Detektor-Trefferqualität in der Zufalls-Übung im Alltag beobachten (Zonen ggf. enger/weiter).
-- Backend-Sync statt JSON-Datei, wenn Handy-Nutzung wirklich Alltag wird.
+- Git-Sync: einmal mit echtem Token gegen GitHub prüfen; ggf. Auto-Sync (Holen beim Start, Push nach Sitzungsende).
 - Mehr Szenarien für die Meisterprüfung (ohne Strategie-Ansage), Trailing-Stop im Broker, ETH/SOL-Szenarien.
 
 Stolpersteine:
