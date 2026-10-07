@@ -8,6 +8,7 @@ import { useProgressStore } from '../stores/progressStore'
 import { ProgressRing } from '../components/ui/ProgressRing'
 import { DatenSicherung } from '../components/DatenSicherung'
 import { GitSync } from '../components/GitSync'
+import { BewertungsBadge } from '../components/ui/BewertungsBadge'
 
 export function Dashboard() {
   const abgeschlossene = useProgressStore((s) => s.abgeschlosseneLektionen)
@@ -164,13 +165,7 @@ export function Dashboard() {
                 <div className="mt-2 text-sm font-semibold text-white">{s.titel}</div>
                 <div className="mt-1 text-xs text-gedimmt">
                   {s.ansageVerdeckt && <span className="mr-1 rounded bg-nacht px-1.5 py-0.5 text-[10px] uppercase tracking-wide">ohne Ansage</span>}
-                  {ergebnis ? (
-                    <span className={ergebnis.bewertung === 'perfekt' ? 'text-long' : 'text-akzent'}>
-                      Ergebnis: {ergebnis.bewertung}
-                    </span>
-                  ) : (
-                    'Noch nicht versucht'
-                  )}
+                  <BewertungsBadge bewertung={ergebnis?.bewertung} />
                 </div>
               </Link>
             )

@@ -22,6 +22,8 @@ export interface SimEinstellungen {
   maxHebel: number
   /** Replay hält an, sobald eine Order füllt oder eine Position schließt */
   pauseBeiEreignis: boolean
+  /** Chart zeigt die Unterkerzen (15m zu 1h) statt der wachsenden Hauptkerze */
+  unterkerzenAnzeigen: boolean
   ema: number[]
   rsi: boolean
   volumen: boolean
@@ -34,6 +36,7 @@ export const STANDARD_EINSTELLUNGEN: SimEinstellungen = {
   funding: true,
   maxHebel: 20,
   pauseBeiEreignis: true,
+  unterkerzenAnzeigen: false,
   ema: [],
   rsi: false,
   volumen: true,

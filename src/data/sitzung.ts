@@ -1,6 +1,7 @@
 import type { Candle, CandleDatensatz } from '../types'
 import { getCandles } from './candleService'
 import { REPLAY_FALLBACKS } from './zufall'
+import { UNTER_INTERVALL } from '../engine/intrabar'
 
 // Simulator-Sitzung: frei wählbarer oder zufälliger Startpunkt, Kerzen werden in
 // festen Blöcken nachgeladen — das Replay läuft so lange, wie es Daten gibt.
@@ -122,8 +123,21 @@ export function fruehesterStart(symbol: string, interval: string): number {
 
 export interface BlockErgebnis {
   candles: Candle[]
+  /** Unterkerzen (z.B. 15m zu 1h) für das Intrabar-Replay; leer, wenn nicht ladbar → OHLC-Pfad */
+  unter: Candle[]
   /** false: Dieser Block reicht bis „jetzt“ — danach gibt es nichts mehr */
   hatMehr: boolean
+}
+
+/** Unterkerzen für einen Zeitraum — Fehler werden geschluckt (dann OHLC-Annäherung). */
+export async function ladeUnterkerzen(symbol: string, interval: string, von: number, bis: number): Promise<Candle[]> {
+  const unter = UNTER_INTERVALL[interval]
+  if (!unter) return []
+  try {
+    return await getCandles(symbol, unter, von, bis)
+  } catch {
+    return []
+  }
 }
 
 /**
@@ -135,15 +149,22 @@ export async function ladeBlock(config: SitzungConfig, k: number): Promise<Block
   const von = config.startZeit + k * BLOCK * sek
   const bis = von + BLOCK * sek - 1
   const jetzt = Math.floor(Date.now() / 1000)
-  if (von > jetzt) return { candles: [], hatMehr: false }
-  const candles = await getCandles(config.symbol, config.interval, von, bis)
+  if (von > jetzt) return { candles: [], unter: [], hatMehr: false }
+  const [candles, unter] = await Promise.all([
+    getCandles(config.symbol, config.interval, von, bis),
+    ladeUnterkerzen(config.symbol, config.interval, von, bis),
+  ])
   // Die gerade laufende (unfertige) Kerze nicht ins Replay nehmen
   const fertig = candles.filter((c) => c.time >= von && c.time <= bis && c.time + sek <= jetzt)
-  return { candles: fertig, hatMehr: bis < jetzt }
+  const letzte = fertig[fertig.length - 1]
+  const unterFertig = letzte ? unter.filter((c) => c.time >= von && c.time < letzte.time + sek) : []
+  return { candles: fertig, unter: unterFertig, hatMehr: bis < jetzt }
 }
 
 export interface SitzungDaten {
   candles: Candle[]
+  /** Unterkerzen zu `candles` (lückenhaft erlaubt; fehlende Hauptkerzen laufen über den OHLC-Pfad) */
+  unter: Candle[]
   /** Index der ersten Replay-Kerze (davor: Vorgeschichte) */
   startIndex: number
   /** Nächster nachzuladender Block; null = Ende der Daten */
@@ -162,12 +183,13 @@ export async function ladeSitzung(config: SitzungConfig, bisZeit?: number): Prom
   const bloecke = await Promise.all(nummern.map((k) => ladeBlock(config, k)))
 
   const candles = bloecke.flatMap((b) => b.candles)
+  const unter = bloecke.flatMap((b) => b.unter)
   const startIndex = candles.findIndex((c) => c.time >= config.startZeit)
   if (startIndex < 50 || candles.length - startIndex < 20) {
     throw new Error('Zu wenige Kerzen im gewählten Zeitraum')
   }
   const letzter = bloecke[bloecke.length - 1]
-  return { candles, startIndex, naechsterBlock: letzter.hatMehr ? letzterNoetig + 1 : null }
+  return { candles, unter, startIndex, naechsterBlock: letzter.hatMehr ? letzterNoetig + 1 : null }
 }
 
 async function ladeOffline(datei: string): Promise<SitzungDaten> {
@@ -176,6 +198,7 @@ async function ladeOffline(datei: string): Promise<SitzungDaten> {
   const daten = (await res.json()) as CandleDatensatz
   return {
     candles: daten.candles,
+    unter: [],
     startIndex: Math.min(500, Math.floor(daten.candles.length * 0.6)),
     naechsterBlock: null,
   }

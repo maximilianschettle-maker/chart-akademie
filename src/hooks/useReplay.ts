@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { Candle, Order } from '../types'
 import {
   type BrokerZustand,
@@ -12,78 +12,93 @@ import {
   breakEven,
   barVerarbeiten,
 } from '../engine/broker'
+import { intervalSekunden } from '../engine/aggregation'
+import {
+  type Teilstand,
+  aktuellerStand,
+  fertigerStand,
+  istKerzeFertig,
+  naechsterTeilschritt,
+  schritteJeKerze,
+  sichtbareKerzen,
+  unterkerzenBis,
+} from '../engine/intrabar'
 
 export type Geschwindigkeit = 1 | 2 | 5 | 10
 
 interface ReplayZustand {
-  cursor: number
+  stand: Teilstand
   broker: BrokerZustand
 }
 
 /**
- * Bar-by-Bar-Replay über einem festen Kerzen-Array.
- * Der Chart zeigt candles[0..cursor]; jede neue Bar läuft durch den Broker.
+ * Intrabar-Replay über einem festen Kerzen-Array: Jede Hauptkerze wächst aus
+ * ihren Unterkerzen (echte 15m/1h-Daten oder OHLC-Pfad); jede Unterkerze läuft
+ * durch den Broker. Der Chart zeigt candles[0..cursor], die letzte ggf. unfertig.
  */
 export function useReplay(
   candles: Candle[],
   startCursor: number,
   startKapital: number,
   szenarioId?: string,
+  unter: Candle[] | null = null,
 ) {
+  const sek = useMemo(() => intervalSekunden(candles), [candles])
   const [zustand, setZustand] = useState<ReplayZustand>(() => ({
-    cursor: startCursor,
+    stand: fertigerStand(candles, sek, unter, startCursor),
     broker: neuerBroker(startKapital),
   }))
   const [laufend, setLaufendRoh] = useState(false)
   const [geschwindigkeit, setGeschwindigkeit] = useState<Geschwindigkeit>(2)
 
-  const fertig = zustand.cursor >= candles.length - 1
+  const { stand } = zustand
+  const fertig = stand.cursor >= candles.length - 1 && istKerzeFertig(candles, sek, unter, stand)
+  const jeKerze = useMemo(() => schritteJeKerze(sek, unter), [sek, unter])
 
+  /** Eine Unterkerze weiter. */
   const step = useCallback(() => {
     setZustand((z) => {
-      const naechster = z.cursor + 1
-      if (naechster >= candles.length) return z
-      const bar = candles[naechster]
-      let broker = barVerarbeiten(z.broker, bar, szenarioId)
-      // Session-Ende: offene Position zum Schlusskurs der letzten Bar glattstellen
-      if (naechster === candles.length - 1 && broker.position) {
-        broker = positionSchliessen(broker, bar.close, bar.time, 'szenarioEnde', szenarioId)
+      const s = naechsterTeilschritt(candles, sek, unter, z.stand)
+      if (!s) return z
+      let broker = barVerarbeiten(z.broker, s.sub, szenarioId)
+      // Session-Ende: offene Position zum letzten Kurs glattstellen
+      if (s.stand.cursor === candles.length - 1 && s.kerzeFertig && broker.position) {
+        broker = positionSchliessen(broker, s.sub.close, s.sub.time, 'szenarioEnde', szenarioId)
       }
-      return { cursor: naechster, broker }
+      return { stand: s.stand, broker }
     })
-  }, [candles, szenarioId])
+  }, [candles, sek, unter, szenarioId])
 
   const stepRef = useRef(step)
   useEffect(() => {
     stepRef.current = step
   }, [step])
 
-  // Timer läuft nur, solange „laufend“ und noch Bars übrig sind; am Ende stoppt er
-  // sich selbst, ohne einen zusätzlichen Render-Zyklus über einen State-Effekt.
+  // Timer läuft nur, solange „laufend“ und noch Schritte übrig sind; Tempo = Hauptkerzen je Sekunde
   useEffect(() => {
     if (!laufend || fertig) return
-    const timer = setInterval(() => stepRef.current(), 1000 / geschwindigkeit)
+    const timer = setInterval(() => stepRef.current(), 1000 / (geschwindigkeit * jeKerze))
     return () => clearInterval(timer)
-  }, [laufend, geschwindigkeit, fertig])
+  }, [laufend, geschwindigkeit, fertig, jeKerze])
 
   const setLaufend = useCallback(
     (wert: boolean) => setLaufendRoh(wert && !fertig),
     [fertig],
   )
 
-  // Market füllt sofort zum aktuellen Kurs (Schlusskurs der letzten sichtbaren Kerze)
+  // Market füllt sofort zum aktuellen Kurs (Schlusskurs der letzten verarbeiteten Unterkerze)
   const platzieren = useCallback(
     (order: Order) => {
       setZustand((z) => {
-        const bar = candles[z.cursor]
+        const { kerze, zeit } = aktuellerStand(candles, sek, unter, z.stand)
         const broker =
           order.typ === 'market'
-            ? marketSofort(z.broker, order, bar.close, bar.time)
+            ? marketSofort(z.broker, order, kerze.close, zeit)
             : orderPlatzieren(z.broker, order)
         return { ...z, broker }
       })
     },
-    [candles],
+    [candles, sek, unter],
   )
 
   const stornieren = useCallback(() => {
@@ -92,57 +107,68 @@ export function useReplay(
 
   const schliessen = useCallback(() => {
     setZustand((z) => {
-      const bar = candles[z.cursor]
-      return { ...z, broker: positionSchliessen(z.broker, bar.close, bar.time, 'manuell', szenarioId) }
+      const { kerze, zeit } = aktuellerStand(candles, sek, unter, z.stand)
+      return { ...z, broker: positionSchliessen(z.broker, kerze.close, zeit, 'manuell', szenarioId) }
     })
-  }, [candles, szenarioId])
+  }, [candles, sek, unter, szenarioId])
 
   const teilweiseSchliessen = useCallback(
     (anteil: number) => {
       setZustand((z) => {
-        const bar = candles[z.cursor]
-        return { ...z, broker: teilSchliessen(z.broker, anteil, bar.close, bar.time, szenarioId) }
+        const { kerze, zeit } = aktuellerStand(candles, sek, unter, z.stand)
+        return { ...z, broker: teilSchliessen(z.broker, anteil, kerze.close, zeit, szenarioId) }
       })
     },
-    [candles, szenarioId],
+    [candles, sek, unter, szenarioId],
   )
 
   const stopsSetzen = useCallback(
     (neu: { stopLoss?: number; takeProfit?: number; trailingAbstand?: number | null }) => {
-      setZustand((z) => ({ ...z, broker: stopsAendern(z.broker, candles[z.cursor].close, neu) }))
+      setZustand((z) => ({ ...z, broker: stopsAendern(z.broker, aktuellerStand(candles, sek, unter, z.stand).kerze.close, neu) }))
     },
-    [candles],
+    [candles, sek, unter],
   )
 
   const aufBreakEven = useCallback(() => {
-    setZustand((z) => ({ ...z, broker: breakEven(z.broker, candles[z.cursor].close) }))
-  }, [candles])
+    setZustand((z) => ({ ...z, broker: breakEven(z.broker, aktuellerStand(candles, sek, unter, z.stand).kerze.close) }))
+  }, [candles, sek, unter])
 
-  /** „Kein Trade“: alle restlichen Bars in einem Rutsch durch den Broker laufen lassen. */
+  /** „Kein Trade“: alle restlichen Unterkerzen in einem Rutsch durch den Broker laufen lassen. */
   const zumEnde = useCallback(() => {
     setLaufendRoh(false)
     setZustand((z) => {
-      let cursor = z.cursor
+      let st = z.stand
       let broker = z.broker
-      while (cursor < candles.length - 1) {
-        cursor++
-        const bar = candles[cursor]
-        broker = barVerarbeiten(broker, bar, szenarioId)
-        if (cursor === candles.length - 1 && broker.position) {
-          broker = positionSchliessen(broker, bar.close, bar.time, 'szenarioEnde', szenarioId)
+      for (;;) {
+        const s = naechsterTeilschritt(candles, sek, unter, st)
+        if (!s) break
+        st = s.stand
+        broker = barVerarbeiten(broker, s.sub, szenarioId)
+        if (st.cursor === candles.length - 1 && s.kerzeFertig && broker.position) {
+          broker = positionSchliessen(broker, s.sub.close, s.sub.time, 'szenarioEnde', szenarioId)
         }
       }
-      return { cursor, broker }
+      return { stand: st, broker }
     })
-  }, [candles, szenarioId])
+  }, [candles, sek, unter, szenarioId])
 
-  const aktuelleBar = candles[zustand.cursor]
+  // Sichtbare Hauptkerzen (letzte ggf. unfertig) und Unterkerzen bis zum aktuellen Schritt
+  const sichtbar = useMemo(() => sichtbareKerzen(candles, sek, unter, stand), [candles, sek, unter, stand])
+  const basisUnter = useMemo(() => unterkerzenBis(candles, sek, unter, stand), [candles, sek, unter, stand])
+  const aktuelleBar = sichtbar[stand.cursor]
 
   return {
-    cursor: zustand.cursor,
+    cursor: stand.cursor,
+    teil: stand.teil,
     broker: zustand.broker,
     aktuelleBar,
     aktuellerPreis: aktuelleBar?.close ?? 0,
+    /** Hauptkerzen 0..cursor, die letzte ggf. erst teilweise aufgebaut */
+    sichtbar,
+    /** Unterkerzen bis zum aktuellen Schritt (Anzeige im Unter-Timeframe) */
+    basisUnter,
+    unterVerfuegbar: !!unter && unter.length > 0,
+    jeKerze,
     laufend: laufend && !fertig,
     geschwindigkeit,
     fertig,

@@ -97,11 +97,17 @@ function SitzungAnsicht({
   const [anzeigeSek, setAnzeigeSek] = useState<number | null>(null)
   const [beendenFragen, setBeendenFragen] = useState(false)
   const basisSek = intervallSek(config.interval)
-  const timeframes = useMemo(() => anzeigeTimeframes(config.interval), [config.interval])
+  // Intrabar: wachsende Hauptkerze (Standard) oder die Unterkerzen selbst (Einstellung)
+  const zeigeUnter = einstellungen.unterkerzenAnzeigen && sitzung.unterVerfuegbar
+  const chartBasis = zeigeUnter ? sitzung.basisUnter : candles
+  const timeframes = useMemo(
+    () => anzeigeTimeframes(zeigeUnter && sitzung.unterInterval ? sitzung.unterInterval : config.interval),
+    [config.interval, zeigeUnter, sitzung.unterInterval],
+  )
   const verdeckt = config.blind && !fertig
 
-  // Tastatur: Leertaste = Play/Pause, → = eine Kerze, Umschalt+→ = zehn
-  const { schritte, setLaufend, laufend } = sitzung
+  // Tastatur: Leertaste = Play/Pause, → = eine Unterkerze, Umschalt+→ = zehn Hauptkerzen
+  const { schritte, setLaufend, laufend, jeKerze } = sitzung
   useEffect(() => {
     const taste = (e: KeyboardEvent) => {
       const ziel = e.target as HTMLElement | null
@@ -111,12 +117,12 @@ function SitzungAnsicht({
         setLaufend(!laufend)
       } else if (e.code === 'ArrowRight' && !laufend) {
         e.preventDefault()
-        schritte(e.shiftKey ? 10 : 1)
+        schritte(e.shiftKey ? 10 * jeKerze : 1)
       }
     }
     window.addEventListener('keydown', taste)
     return () => window.removeEventListener('keydown', taste)
-  }, [schritte, setLaufend, laufend])
+  }, [schritte, setLaufend, laufend, jeKerze])
 
   const unrealisiert = broker.position
     ? (broker.position.richtung === 'long' ? 1 : -1) *
@@ -156,7 +162,8 @@ function SitzungAnsicht({
 
   const gespielt = cursor - sitzung.startIndex + 1
   const ereignis = sitzung.ereignis
-  const zeitraum = `${datumZeit(candles[sitzung.startIndex].time, false)} – ${datumZeit(candles[cursor].time, false)}`
+  // Vor der ersten Replay-Kerze ist die Startkerze noch nicht sichtbar (candles = sichtbare Kerzen)
+  const zeitraum = `${datumZeit((candles[sitzung.startIndex] ?? candles[cursor]).time, false)} – ${datumZeit(candles[cursor].time, false)}`
 
   return (
     <div className="space-y-3">
@@ -329,8 +336,8 @@ function SitzungAnsicht({
               )}
             </div>
             <HandelsChart
-              candles={candles}
-              cursor={cursor}
+              candles={chartBasis}
+              cursor={chartBasis.length - 1}
               hoehe={schmal ? 380 : 540}
               zeitVerdeckt={verdeckt}
               bucketSek={anzeigeSek ?? undefined}
@@ -354,8 +361,25 @@ function SitzungAnsicht({
             onGeschwindigkeit={sitzung.setTempo}
             onStep={() => sitzung.schritte(1)}
             stufen={GESCHWINDIGKEITEN}
-            onSprung={() => sitzung.schritte(10)}
+            onSprung={() => sitzung.schritte(10 * sitzung.jeKerze)}
           >
+            <label
+              className={`inline-flex items-center gap-1.5 ${sitzung.unterVerfuegbar ? 'cursor-pointer' : 'opacity-50'}`}
+              title={
+                sitzung.unterVerfuegbar
+                  ? 'Chart zeigt die Unterkerzen statt der wachsenden Hauptkerze'
+                  : 'Keine Unterkerzen ladbar — Kerzen werden über den OHLC-Pfad angenähert'
+              }
+            >
+              <input
+                type="checkbox"
+                checked={einstellungen.unterkerzenAnzeigen}
+                disabled={!sitzung.unterVerfuegbar}
+                onChange={(e) => einstellungenSetzen({ unterkerzenAnzeigen: e.target.checked })}
+                className="accent-akzent"
+              />
+              {sitzung.unterInterval ?? 'Unter'}-Kerzen
+            </label>
             <label className="inline-flex cursor-pointer items-center gap-1.5" title="Replay hält an, sobald eine Order füllt oder eine Position schließt">
               <input
                 type="checkbox"

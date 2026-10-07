@@ -1,6 +1,7 @@
 import type { SzenarioBewertung, Trade } from '../types'
 import type { WiederholungsEintrag } from './wiederholung'
 import type { GespeicherterRueckblick } from './rueckblick'
+import { BEWERTUNG_RANG } from './szenarioGrader'
 
 // Export/Import des kompletten Nutzerstands als JSON-Datei — damit Fortschritt
 // und Journal zwischen PC und Handy wandern können. Import MERGT (statt zu
@@ -60,7 +61,6 @@ export function istSicherung(x: unknown): x is Sicherung {
   )
 }
 
-const RANG: Record<SzenarioBewertung, number> = { falsch: 0, verpasst: 1, ok: 2, perfekt: 3 }
 
 export function mergeTrades(vorhanden: Trade[], neue: Trade[]): Trade[] {
   const ids = new Set(vorhanden.map((t) => t.id))
@@ -100,7 +100,7 @@ export function mergeSzenarien(
   const out = { ...a }
   for (const [id, e] of Object.entries(b)) {
     const alt = out[id]
-    if (!alt || RANG[e.bewertung] > RANG[alt.bewertung]) out[id] = e
+    if (!alt || BEWERTUNG_RANG[e.bewertung] > BEWERTUNG_RANG[alt.bewertung]) out[id] = e
   }
   return out
 }

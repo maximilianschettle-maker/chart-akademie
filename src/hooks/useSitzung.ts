@@ -15,6 +15,18 @@ import {
   barVerarbeiten,
 } from '../engine/broker'
 import { letzterAtr } from '../engine/indikatoren/atr'
+import { intervalSekunden } from '../engine/aggregation'
+import {
+  type Teilstand,
+  UNTER_INTERVALL,
+  aktuellerStand,
+  fertigerStand,
+  istKerzeFertig,
+  naechsterTeilschritt,
+  schritteJeKerze,
+  sichtbareKerzen,
+  unterkerzenBis,
+} from '../engine/intrabar'
 import { ladeBlock, type SitzungConfig, type SitzungDaten } from '../data/sitzung'
 import { useSimulatorStore, type GespeicherteSitzung } from '../stores/simulatorStore'
 
@@ -30,7 +42,8 @@ export interface Ereignis {
 }
 
 interface Zustand {
-  cursor: number
+  /** Intrabar-Cursor: Hauptkerze + verarbeitete Unterkerzen */
+  stand: Teilstand
   broker: BrokerZustand
   ereignis: Ereignis | null
 }
@@ -38,7 +51,8 @@ interface Zustand {
 const NACHLADE_SCHWELLE = 250 // so viele Kerzen vor dem Datenende wird der nächste Block geholt
 
 /**
- * Simulator-Sitzung: Replay über nachwachsende Kerzen, Broker, Nachladen,
+ * Simulator-Sitzung: Intrabar-Replay über nachwachsende Kerzen (jede Hauptkerze
+ * wächst aus ihren Unterkerzen, der Broker prüft je Unterkerze), Nachladen,
  * Auto-Pause bei Fill/Exit und laufendes Sichern (Reload-fest).
  */
 export function useSitzung(
@@ -52,6 +66,8 @@ export function useSitzung(
   const tradesUebernehmen = useSimulatorStore((s) => s.tradesUebernehmen)
   const sitzungSpeichern = useSimulatorStore((s) => s.sitzungSpeichern)
   const kontostandStore = useSimulatorStore((s) => s.kontostand)
+
+  const sek = useMemo(() => intervalSekunden(daten.candles), [daten.candles])
 
   // Startwerte einmalig einfrieren (der Store ändert sich während der Sitzung)
   const [start] = useState(() => {
@@ -83,46 +99,62 @@ export function useSitzung(
   useEffect(() => {
     candlesRef.current = candles
   }, [candles])
+  const [unter, setUnter] = useState<Candle[]>(daten.unter ?? [])
+  const unterRef = useRef(unter)
+  useEffect(() => {
+    unterRef.current = unter
+  }, [unter])
+  const unterOderNull = unter.length > 0 ? unter : null
   const [naechsterBlock, setNaechsterBlock] = useState<number | null>(daten.naechsterBlock)
   const [ladeFehler, setLadeFehler] = useState(false)
   const laedtRef = useRef(false)
 
-  const [zustand, setZustand] = useState<Zustand>({ cursor: start.cursor, broker: start.broker, ereignis: null })
+  const [zustand, setZustand] = useState<Zustand>(() => ({
+    stand: fertigerStand(daten.candles, sek, daten.unter?.length ? daten.unter : null, start.cursor),
+    broker: start.broker,
+    ereignis: null,
+  }))
   const [laufend, setLaufendRoh] = useState(false)
   const [tempo, setTempo] = useState<Tempo>(2)
   const [beendet, setBeendet] = useState(false)
   const [zeichnungen, setZeichnungen] = useState<Zeichnung[]>(start.zeichnungen)
 
-  const { cursor, broker } = zustand
-  const amDatenEnde = cursor >= candles.length - 1
+  const { stand, broker } = zustand
+  const cursor = stand.cursor
+  const amDatenEnde = cursor >= candles.length - 1 && istKerzeFertig(candles, sek, unterOderNull, stand)
   const fertig = beendet || (amDatenEnde && naechsterBlock === null)
+  const jeKerze = useMemo(() => schritteJeKerze(sek, unterOderNull), [sek, unterOderNull])
 
-  /** n Kerzen weiter — hält sofort an, wenn eine Order füllt oder eine Position schließt. */
+  /** n Unterkerzen weiter — hält sofort an, wenn eine Order füllt oder eine Position schließt. */
   const schritte = useCallback((n: number) => {
     setZustand((z) => {
       const alle = candlesRef.current
-      let { cursor, broker } = z
+      const u = unterRef.current.length > 0 ? unterRef.current : null
+      let st = z.stand
+      let broker = z.broker
       let ereignis = z.ereignis
-      for (let i = 0; i < n && cursor + 1 < alle.length; i++) {
-        cursor++
+      for (let i = 0; i < n; i++) {
+        const s = naechsterTeilschritt(alle, sek, u, st)
+        if (!s) break
+        st = s.stand
         const vorher = broker
-        broker = barVerarbeiten(broker, alle[cursor])
+        broker = barVerarbeiten(broker, s.sub)
         const geschlossen = broker.trades.length > vorher.trades.length
         const gefuellt = !vorher.position && (!!broker.position || geschlossen)
         if (geschlossen || gefuellt) {
           ereignis = {
             nr: (z.ereignis?.nr ?? 0) + 1,
-            cursor,
+            cursor: st.cursor,
             art: geschlossen ? 'exit' : 'fill',
             trade: geschlossen ? broker.trades[broker.trades.length - 1] : undefined,
           }
           break
         }
       }
-      if (cursor === z.cursor) return z
-      return { cursor, broker, ereignis }
+      if (st === z.stand) return z
+      return { stand: st, broker, ereignis }
     })
-  }, [])
+  }, [sek])
 
   // Auto-Pause bei Fill/Exit
   const ereignisNr = zustand.ereignis?.nr ?? 0
@@ -130,14 +162,15 @@ export function useSitzung(
     if (ereignisNr > 0 && einstellungen.pauseBeiEreignis) setLaufendRoh(false)
   }, [ereignisNr, einstellungen.pauseBeiEreignis])
 
-  // Abspielen: ab 25 Kerzen/s mehrere Kerzen je Tick statt immer kürzerer Timer
+  // Abspielen: Tempo = Hauptkerzen je Sekunde; ab ~25 Schritten/s mehrere Unterkerzen je Tick
   useEffect(() => {
     if (!laufend || fertig) return
-    const intervall = Math.max(1000 / tempo, 40)
-    const jeTick = Math.max(1, Math.round((tempo * intervall) / 1000))
+    const proSekunde = tempo * jeKerze
+    const intervall = Math.max(1000 / proSekunde, 40)
+    const jeTick = Math.max(1, Math.round((proSekunde * intervall) / 1000))
     const timer = setInterval(() => schritte(jeTick), intervall)
     return () => clearInterval(timer)
-  }, [laufend, tempo, fertig, schritte])
+  }, [laufend, tempo, fertig, schritte, jeKerze])
 
   // Nachladen, bevor das Replay das Ende der geladenen Kerzen erreicht
   const nachladen = useCallback(async () => {
@@ -149,6 +182,9 @@ export function useSitzung(
       const letzteZeit = candlesRef.current[candlesRef.current.length - 1]?.time ?? 0
       const neu = block.candles.filter((c) => c.time > letzteZeit)
       if (neu.length > 0) setCandles((alt) => [...alt, ...neu])
+      const letzteUnter = unterRef.current[unterRef.current.length - 1]?.time ?? 0
+      const neuUnter = block.unter.filter((c) => c.time > letzteUnter && c.time > letzteZeit)
+      if (neuUnter.length > 0) setUnter((alt) => [...alt, ...neuUnter])
       setNaechsterBlock(block.hatMehr ? naechsterBlock + 1 : null)
     } catch {
       setLadeFehler(true)
@@ -175,8 +211,10 @@ export function useSitzung(
     )
   }, [wiederholung, broker.trades, config.id, config.interval, config.symbol, tradesUebernehmen])
 
-  // Stand sichern: im Stand bei jeder Änderung, im Lauf alle 20 Kerzen
-  const cursorZeit = candles[cursor]?.time ?? config.startZeit
+  // Stand sichern: im Stand bei jeder Änderung, im Lauf alle 20 Kerzen.
+  // Gesichert wird die letzte VOLLSTÄNDIGE Kerze — eine halb aufgebaute Kerze beginnt nach dem Reload neu.
+  const kerzeFertig = istKerzeFertig(candles, sek, unterOderNull, stand)
+  const cursorZeit = candles[kerzeFertig ? cursor : Math.max(0, cursor - 1)]?.time ?? config.startZeit
   useEffect(() => {
     if (wiederholung) return
     if (fertig) {
@@ -217,16 +255,23 @@ export function useSitzung(
 
   const setLaufend = useCallback((wert: boolean) => setLaufendRoh(wert), [])
 
-  const platzieren = useCallback((order: Order) => {
-    setZustand((z) => {
-      const bar = candlesRef.current[z.cursor]
-      const neu =
-        order.typ === 'market'
-          ? marketSofort(z.broker, order, bar.close, bar.time)
-          : orderPlatzieren(z.broker, order)
-      return { ...z, broker: neu }
-    })
-  }, [])
+  /** Aktueller Kurs und Zeitpunkt (letzte verarbeitete Unterkerze) für Market-Aktionen */
+  const jetzt = useCallback(
+    (st: Teilstand) => aktuellerStand(candlesRef.current, sek, unterRef.current.length > 0 ? unterRef.current : null, st),
+    [sek],
+  )
+
+  const platzieren = useCallback(
+    (order: Order) => {
+      setZustand((z) => {
+        const { kerze, zeit } = jetzt(z.stand)
+        const neu =
+          order.typ === 'market' ? marketSofort(z.broker, order, kerze.close, zeit) : orderPlatzieren(z.broker, order)
+        return { ...z, broker: neu }
+      })
+    },
+    [jetzt],
+  )
 
   const stornieren = useCallback(() => setZustand((z) => ({ ...z, broker: orderStornieren(z.broker) })), [])
 
@@ -238,52 +283,65 @@ export function useSitzung(
 
   const schliessen = useCallback(() => {
     setZustand((z) => {
-      const bar = candlesRef.current[z.cursor]
-      return { ...z, broker: positionSchliessen(z.broker, bar.close, bar.time, 'manuell') }
+      const { kerze, zeit } = jetzt(z.stand)
+      return { ...z, broker: positionSchliessen(z.broker, kerze.close, zeit, 'manuell') }
     })
-  }, [])
+  }, [jetzt])
 
-  const teilweiseSchliessen = useCallback((anteil: number) => {
-    setZustand((z) => {
-      const bar = candlesRef.current[z.cursor]
-      return { ...z, broker: teilSchliessen(z.broker, anteil, bar.close, bar.time) }
-    })
-  }, [])
+  const teilweiseSchliessen = useCallback(
+    (anteil: number) => {
+      setZustand((z) => {
+        const { kerze, zeit } = jetzt(z.stand)
+        return { ...z, broker: teilSchliessen(z.broker, anteil, kerze.close, zeit) }
+      })
+    },
+    [jetzt],
+  )
 
   const stopsSetzen = useCallback(
     (neu: { stopLoss?: number; takeProfit?: number; trailingAbstand?: number | null }) =>
-      setZustand((z) => ({ ...z, broker: stopsAendern(z.broker, candlesRef.current[z.cursor].close, neu) })),
-    [],
+      setZustand((z) => ({ ...z, broker: stopsAendern(z.broker, jetzt(z.stand).kerze.close, neu) })),
+    [jetzt],
   )
 
   const aufBreakEven = useCallback(
-    () => setZustand((z) => ({ ...z, broker: breakEven(z.broker, candlesRef.current[z.cursor].close) })),
-    [],
+    () => setZustand((z) => ({ ...z, broker: breakEven(z.broker, jetzt(z.stand).kerze.close) })),
+    [jetzt],
   )
 
   /** Sitzung beenden: offene Position zum aktuellen Kurs glattstellen, Order verwerfen. */
   const beenden = useCallback(() => {
     setLaufendRoh(false)
     setZustand((z) => {
-      const bar = candlesRef.current[z.cursor]
+      const { kerze, zeit } = jetzt(z.stand)
       let b = orderStornieren(z.broker)
-      if (b.position) b = positionSchliessen(b, bar.close, bar.time, 'szenarioEnde')
+      if (b.position) b = positionSchliessen(b, kerze.close, zeit, 'szenarioEnde')
       return { ...z, broker: b }
     })
     setBeendet(true)
-  }, [])
+  }, [jetzt])
 
   // Datenende erreicht: offene Position automatisch glattstellen
   useEffect(() => {
     if (!beendet && amDatenEnde && naechsterBlock === null) beenden()
   }, [beendet, amDatenEnde, naechsterBlock, beenden])
 
-  const aktuelleBar = candles[cursor]
-  const atr = useMemo(() => letzterAtr(candles, cursor), [candles, cursor])
+  // Sichtbare Hauptkerzen (letzte ggf. unfertig) — alles Nachgelagerte (ATR, Rückblick) sieht nur das
+  const sichtbar = useMemo(() => sichtbareKerzen(candles, sek, unterOderNull, stand), [candles, sek, unterOderNull, stand])
+  const basisUnter = useMemo(() => unterkerzenBis(candles, sek, unterOderNull, stand), [candles, sek, unterOderNull, stand])
+  const aktuelleBar = sichtbar[cursor]
+  const atr = useMemo(() => letzterAtr(sichtbar, cursor), [sichtbar, cursor])
 
   return {
-    candles,
+    candles: sichtbar,
     cursor,
+    teil: stand.teil,
+    /** Unterkerzen bis zum aktuellen Schritt (Anzeige im Unter-Timeframe) */
+    basisUnter,
+    unterVerfuegbar: unter.length > 0,
+    unterInterval: UNTER_INTERVALL[config.interval],
+    /** Replay-Schritte je Hauptkerze */
+    jeKerze,
     broker,
     startIndex: daten.startIndex,
     startKapital: start.startKapital,

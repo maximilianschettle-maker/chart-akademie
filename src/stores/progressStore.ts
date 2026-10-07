@@ -7,6 +7,7 @@ import {
   nachWiederholung,
   schluessel,
 } from '../engine/wiederholung'
+import { besseresErgebnis } from '../engine/szenarioGrader'
 
 interface LektionErgebnis {
   quizProzent: number
@@ -49,9 +50,13 @@ export const useProgressStore = create<ProgressState>()(
           },
         })),
 
+      // Mehrere Versuche: der beste zählt (perfekt > ok > verpasst > falsch)
       szenarioAbschliessen: (szenarioId, ergebnis) =>
         set((s) => ({
-          szenarioErgebnisse: { ...s.szenarioErgebnisse, [szenarioId]: ergebnis },
+          szenarioErgebnisse: {
+            ...s.szenarioErgebnisse,
+            [szenarioId]: besseresErgebnis(s.szenarioErgebnisse[szenarioId], ergebnis),
+          },
         })),
 
       frageBeantwortet: (lektionId, frageIndex, richtig) =>

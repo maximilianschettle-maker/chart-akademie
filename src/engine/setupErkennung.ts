@@ -577,7 +577,7 @@ export function findeSetup(c: Candle[], nachlauf = 80, zufall: () => number = Ma
 const FEEDBACK_GENERISCH = {
   perfekt:
     'Setup erkannt und regelkonform ausgeführt: Entry in der Zone, Stop auf der richtigen Seite, CRV ≥ 1,5. Ob der Trade gewonnen oder verloren hat, ist Statistik — der Prozess war richtig. Genau das trainierst du hier.',
-  ok: 'Die Zone hast du richtig gelesen, aber Stop oder Ziel waren unsauber (SL nicht an der Widerlegung oder CRV unter 1,5). Beim nächsten Mal: erst Stop und Ziel definieren, dann Entry.',
+  gut: 'Die Zone hast du richtig gelesen — Entry-Lage, Stop oder CRV waren aber nicht sauber (siehe Kriterien). Beim nächsten Mal: erst Stop und Ziel definieren, dann Entry.',
   verpasst:
     'Kein Entry — dabei hat die Erkennung hier ein Setup aus Level 4 gesehen. Schau dir die eingezeichnete Zone an: Hättest du sie mit den Zeichenwerkzeugen vorher markiert, wäre der Auslöser sichtbar gewesen.',
   falsch:

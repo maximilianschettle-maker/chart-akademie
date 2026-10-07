@@ -168,7 +168,24 @@ export type Zeichnung =
 
 // ── Geführte Übungs-Szenarien ────────────────────────────────────────────────
 
-export type SzenarioBewertung = 'perfekt' | 'ok' | 'verpasst' | 'falsch'
+/** Prozess-Bewertung einer Übung. 'ok' wird nicht mehr vergeben (alte gespeicherte Ergebnisse). */
+export type SzenarioBewertung = 'perfekt' | 'gut' | 'ok' | 'verpasst' | 'falsch'
+
+/** Prüfkriterien einer Übung — alles, was über Richtung/Zone/Ideal-Trade hinausgeht. */
+export interface SzenarioKriterien {
+  /** Ereignis, das vor dem Entry abgewartet werden muss; `bar` = Kerzenindex aus den Daten, ab dem es erfüllt ist */
+  trigger?: { beschreibung: string; bar: number }
+  /** Der Stop muss jenseits dieses Levels liegen (Long: darunter, Short: darüber) */
+  stopRegel?: { beschreibung: string; level: number }
+  /** Preis-Toleranz um die Entry-Zone als Anteil (Standard 0,01 = 1 %) */
+  toleranz?: number
+  /** Standard 1,5 */
+  minCrv?: number
+  /** Auto-Pause im Replay, sobald eine Kerze die um diesen Anteil erweiterte Entry-Zone berührt (Standard 0,005 = 0,5 %) */
+  pauseAbstand?: number
+  /** „Verpasst“ nur, wenn mindestens so viele Kerzen die Zone erreichbar machten (Standard 2); sonst „nur Limit hätte gegriffen“ */
+  minErreichbareKerzen?: number
+}
 
 export interface Scenario {
   id: string
@@ -187,7 +204,14 @@ export interface Scenario {
   idealEntry?: number
   idealStopLoss?: number
   idealTakeProfit?: number
-  feedback: { perfekt: string; ok: string; verpasst: string; falsch: string }
+  /** Lehrtexte je Prozess-Ergebnis. Platzhalter: {zone} = Entry-Preiszone, {fenster} = Entry-Zeitraum,
+   *  {trigger} = Zeitpunkt des Triggers (beide aus den Kerzen).
+   *  gut: Richtung/Trigger/Stop ok, aber Entry-Lage oder CRV mit Warnung ·
+   *  falsch: Trigger nicht abgewartet oder Stop auf der falschen Seite ·
+   *  falscheRichtung: gegen die Setup-Richtung gehandelt (fehlt → falsch) */
+  feedback: { perfekt: string; gut: string; verpasst: string; falsch: string; falscheRichtung?: string }
+  /** Trigger, Stop-Regel, Toleranz, minCRV — fehlt bei generierten Übungen (dann nur Zone + Standardwerte) */
+  kriterien?: SzenarioKriterien
   datumVerdeckt: boolean
   /** Meisterprüfung II: Setup wird nicht verraten — Aufgabe ist generisch, Auflösung nennt es */
   ansageVerdeckt?: boolean

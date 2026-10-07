@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
-import { Lightbulb, TriangleAlert, Pin, Target, CheckCircle2 } from 'lucide-react'
+import { Lightbulb, TriangleAlert, Pin, Target } from 'lucide-react'
 import type { Lesson, LessonBlock } from '../../types'
 import { Quiz } from './Quiz'
 import { ChartBlock } from './ChartBlock'
 import { DemoRegistry } from './demos'
 import { SZENARIEN } from '../../content/szenarien'
 import { useProgressStore } from '../../stores/progressStore'
+import { BewertungsBadge } from '../ui/BewertungsBadge'
 
 interface LektionRendererProps {
   lektion: Lesson
@@ -117,11 +118,7 @@ function UebungKarte({ szenarioId }: { szenarioId: string }) {
           Am echten historischen Chart — Kerze für Kerze.
         </div>
       </div>
-      {ergebnis && (
-        <span className="inline-flex items-center gap-1 text-xs font-semibold text-long">
-          <CheckCircle2 className="h-4 w-4" /> {ergebnis.bewertung}
-        </span>
-      )}
+      {ergebnis && <BewertungsBadge bewertung={ergebnis.bewertung} />}
     </Link>
   )
 }

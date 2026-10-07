@@ -100,6 +100,17 @@ Wunsch: Journal und Lernfortschritt in einem Git-Repository speichern, wählbar,
 - **Stolperstein beim ersten Push (409):** Im Daten-Repo lag eine von Hand angelegte *Datei* `chartakademie` — unter einer Datei kann GitHub keinen Ordner anlegen. Datei gelöscht; die App prüft bei 409/422 jetzt, ob ein Abschnitt des Ordner-Pfads eine Datei ist, und sagt das im Klartext (`ordnerIstDatei`). Wiederholung nach 409 wartet 700 ms.
 - Hinweis: Daten-Repo getrennt vom App-Repo halten — das App-Repo ist öffentlich und jeder Push dorthin löst ein Deploy aus.
 
+## Stand 2026-10-07 — Übungs-Bewertung repariert, vier Phasen ausgebaut (236 Tests grün)
+
+Anlass: Korrekte Trades wurden „Daneben“ bewertet, Übersicht zeigte für alles grüne Haken. Vierphasiger Auftrag, je Phase Stopp und OK.
+
+1. **Bugfixes:** Entry-Zeitfenster in der Szenario-Config begannen zu spät (Trend Bar 280 statt 288, Breakout 518 statt 528, Range 381, Bounce ab Rückeroberung 451), Sammelmeldung ersetzt. Zone/Fenster/Trigger nur noch aus `entryZone`/`kriterien`; Texte mit Platzhaltern `{zone}`, `{fenster}`, `{trigger}` (`textFuellen`). Limit-Fill im Broker war korrekt; neu: „Order nie gefüllt“ als eigener Grund mit erreichtem Tief. `bewertungAnzeige.ts` = einzige Stelle für Icon/Farbe je Status, `progressStore` speichert den besten Versuch (`besseresErgebnis`).
+2. **Differenzierte Analyse** (`szenarioGrader.ts`): Kriterien Richtung, Trigger (Kerzenindex aus den Daten), Entry-Zeit, Entry-Preis (Toleranz 1 %, CRV-Folge gegen Ideal-Entry), Stop (Seite + `stopRegel`-Level), CRV — je ok/warnung/fehler mit Soll/Ist/Satz. Fehler → falsch, Warnung → gut (neuer Status), sonst perfekt; `bilanz` trennt Prozess und Ergebnis. `idealTrade()` spielt den Ideal-Trade ab dem Trigger durch. Review (`uebungsReview.ts`): eigener Trade + Ideal-Trade (blau gepunktet), Entry-Fenster als Box (`ChartBox`, `zeichenPrimitive`), Marker `hinweis`. **Entscheidung:** Bei Bounce/Sweep ist die Rückeroberung der Trigger, vorab gefüllte Limits gelten als „Trigger nicht abgewartet“ — bei Bedarf eine Zeile im Grader (Warnung statt Fehler).
+3. **Mehrere Trades** (`uebungsVerlauf.ts`): Sperre nur bei offener Position/Order; logische Trades (Teil-Exits zusammen) einzeln bewertet, bester zählt; Zusammenfassung; Durchlauf-Historie im Seiten-Zustand (nicht im Store).
+4. **Zone in einer Kerze:** Ticket startet mit Limit/Stop (`useHandel.standardTyp`), Tipp im Aufgabentext; `autoPause.ts` (0,5 % vor der Zone, ab Trigger−1, Hinweis-Box); `erreichbareKerzen` → unter `minErreichbareKerzen` (2) Grund `nurLimit` statt verpasst. **Intrabar** (`engine/intrabar.ts`): `scripts/hole-unterkerzen.mjs` holt 15m zu 1h bzw. 1h zu 4h (`public/szenarien/<name>-15m.json`), Simulator lädt Unterkerzen je Block mit (`ladeUnterkerzen`). Teilstand `{cursor, teil}` in `useReplay`/`useSitzung`, Broker je Unterkerze, OHLC-Pfad (grün O→L→H→C, rot O→H→L→C) als Rückfall. Fill-Zeiten sind Unterkerzen-Zeiten → Grader `kerzenIndex`, Chart rastet Marker ein. Setting `einstellungen.unterkerzenAnzeigen` (Chart-Basis = Unterkerzen, Haupt-Intervall als Timeframe-Knopf).
+- **Im Browser gefunden** (Playwright `%TEMP%\ca\pw\smoke9–11`): `HandelsChart` baut bei Wechsel des Basis-Intervalls neu auf (sonst Absturz beim inkrementellen Update), `SimulatorPage` greift vor der ersten Replay-Kerze nicht mehr auf die Startkerze zu (candles = sichtbare Kerzen).
+- Stolperstein: lange Heredocs im Bash-Tool scheitern („unexpected EOF“) → Patch-Skripte per Write-Tool anlegen.
+
 Bewusst nicht gebaut: mehrere Positionen gleichzeitig / Nachkaufen, Liquidations-Simulation, Schritt zurück.
 
 Offen / Ideen für später:
@@ -107,6 +118,7 @@ Offen / Ideen für später:
 - Detektor-Trefferqualität in der Zufalls-Übung im Alltag beobachten (Zonen ggf. enger/weiter).
 - Git-Sync: „Holen“ am Handy ausprobieren; ggf. Auto-Sync (Holen beim Start, Push nach Sitzungsende).
 - Mehr Szenarien für die Meisterprüfung (ohne Strategie-Ansage), Trailing-Stop im Broker, ETH/SOL-Szenarien.
+- Übungen: Trigger bei Bounce/Sweep ggf. als Warnung statt Fehler; Übungs-Historie dauerhaft speichern; Unterkerzen für die Offline-Vorräte.
 
 Stolpersteine:
 - lightweight-charts v5-API ≠ v4-Tutorials (`chart.addSeries(CandlestickSeries, …)`, Marker via `createSeriesMarkers`).

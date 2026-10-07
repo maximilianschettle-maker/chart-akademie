@@ -12,6 +12,8 @@ interface Aktionen {
   stopsSetzen: (neu: { stopLoss?: number; takeProfit?: number }) => void
   /** fehlt → wartende Orders sind im Chart nicht verschiebbar */
   orderSetzen?: (neu: { limitPreis?: number; stopLoss?: number; takeProfit?: number }) => void
+  /** Order-Typ beim Start des Tickets (geführte Übungen: 'preis' = Limit/Stop vorab in die Zone) */
+  standardTyp?: OrderEntwurf['typ']
 }
 
 /**
@@ -20,7 +22,7 @@ interface Aktionen {
  * Ziehen/Antippen im Chart zurück in Entwurf bzw. Broker-Aktionen.
  */
 export function useHandel(broker: BrokerZustand, aktuellerPreis: number, aktionen: Aktionen) {
-  const [entwurf, setEntwurf] = useState<OrderEntwurf>(LEERER_ENTWURF)
+  const [entwurf, setEntwurf] = useState<OrderEntwurf>(() => ({ ...LEERER_ENTWURF, typ: aktionen.standardTyp ?? LEERER_ENTWURF.typ }))
   const [pickZiel, setPickZiel] = useState<PickZiel | null>(null)
   const { stopsSetzen, orderSetzen } = aktionen
 

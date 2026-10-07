@@ -1,19 +1,29 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { ArrowLeft, Ban, Dices, LoaderCircle, RotateCcw, Target, WifiOff } from 'lucide-react'
+import { ArrowLeft, Ban, Dices, LoaderCircle, PauseCircle, RotateCcw, Target, WifiOff } from 'lucide-react'
 import type { Candle, Scenario, Zeichnung } from '../types'
 import { SZENARIEN } from '../content/szenarien'
 import { strategieName } from '../content/strategien'
-import { getSzenarioDaten } from '../data/szenarien'
+import { getSzenarioDaten, getSzenarioUnterkerzen } from '../data/szenarien'
 import { zufaelligerAbschnittMitVersuchen } from '../data/zufall'
+import { getCandles } from '../data/candleService'
+import { UNTER_INTERVALL } from '../engine/intrabar'
+import { intervalSekunden } from '../engine/aggregation'
+import { useSimulatorStore } from '../stores/simulatorStore'
 import { useReplay } from '../hooks/useReplay'
 import { useSchmal, chartHoehe } from '../hooks/useSchmal'
-import { bewerteSzenario } from '../engine/szenarioGrader'
+import { type KriteriumStatus, datumZeitText, textFuellen } from '../engine/szenarioGrader'
+import { reviewAnzeige, tradeMarker } from '../engine/uebungsReview'
+import { autoPauseGrund } from '../engine/autoPause'
+import { type Durchlauf, type TradeBewertung, alleBewertungen, uebungsErgebnis, zusammenfassung } from '../engine/uebungsVerlauf'
+import { BEWERTUNG_ANZEIGE } from '../components/ui/bewertungAnzeige'
+import { BewertungsBadge } from '../components/ui/BewertungsBadge'
+import { CircleCheck, CircleX, TriangleAlert } from 'lucide-react'
 import { findeSetup, setupZuSzenario } from '../engine/setupErkennung'
 import { HOEHERE_TIMEFRAMES } from '../engine/aggregation'
+import { fmtR } from '../engine/format'
 import { useProgressStore } from '../stores/progressStore'
 import { HandelsChart, type ChartLinie, type ZeichenModus } from '../components/chart/HandelsChart'
-import { CHART_FARBEN } from '../components/chart/ChartPanel'
 import { useHandel } from '../hooks/useHandel'
 import { letzterAtr } from '../engine/indikatoren/atr'
 import { ReplayControls } from '../components/chart/ReplayControls'
@@ -24,67 +34,160 @@ import { PositionPanel } from '../components/simulator/PositionPanel'
 const UEBUNGS_KAPITAL = 10000
 const ZUFALL_NACHLAUF = 80
 
-const BEWERTUNG_ANZEIGE = {
-  perfekt: { label: 'Perfekt!', farbe: 'text-long', rahmen: 'border-long/50' },
-  ok: { label: 'Solide — mit Luft nach oben', farbe: 'text-akzent', rahmen: 'border-akzent/50' },
-  verpasst: { label: 'Verpasst', farbe: 'text-akzent', rahmen: 'border-akzent/50' },
-  falsch: { label: 'Daneben', farbe: 'text-short', rahmen: 'border-short/50' },
-} as const
+const KRITERIUM_STATUS: Record<KriteriumStatus, { Icon: typeof CircleCheck; farbe: string; titel: string }> = {
+  ok: { Icon: CircleCheck, farbe: 'text-long', titel: 'erfüllt' },
+  warnung: { Icon: TriangleAlert, farbe: 'text-akzent', titel: 'Warnung' },
+  fehler: { Icon: CircleX, farbe: 'text-short', titel: 'Fehler' },
+}
+
+/** Eine Zeile der Trade-Liste: Nummer, Zeitpunkt, Richtung, R, Bewertung. */
+function TradeZeile({
+  b,
+  aktiv,
+  onClick,
+}: {
+  b: TradeBewertung
+  aktiv?: boolean
+  onClick?: () => void
+}) {
+  const inhalt = (
+    <>
+      <span className="w-6 shrink-0 font-semibold text-white">#{b.nr}</span>
+      <span className="tabular-nums flex-1 truncate text-gedimmt">
+        {datumZeitText(b.entryTime)} · {b.richtung === 'long' ? 'Long' : 'Short'}
+      </span>
+      <span className={`tabular-nums shrink-0 font-semibold ${b.rMultiple >= 0 ? 'text-long' : 'text-short'}`}>{fmtR(b.rMultiple)}</span>
+      <span className="shrink-0">
+        <BewertungsBadge bewertung={b.resultat.bewertung} />
+      </span>
+    </>
+  )
+  const klasse = `flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left text-xs ${
+    aktiv ? 'bg-nacht ring-1 ring-akzent/60' : onClick ? 'hover:bg-nacht' : ''
+  }`
+  return onClick ? (
+    <button onClick={onClick} className={klasse} aria-pressed={aktiv}>
+      {inhalt}
+    </button>
+  ) : (
+    <div className={klasse}>{inhalt}</div>
+  )
+}
 
 function UebungSession({
   szenario,
   candles,
+  unter,
+  durchlaufNr,
+  fruehere,
+  onFertig,
   onNochmal,
   onNeu,
 }: {
   szenario: Scenario
   candles: Candle[]
+  /** Unterkerzen (15m zu 1h) für das Intrabar-Replay; null → OHLC-Annäherung */
+  unter: Candle[] | null
+  /** 1-basierte Nummer dieses Durchlaufs (Nochmal zählt hoch) */
+  durchlaufNr: number
+  /** Frühere Durchläufe derselben Übung — bleiben über „Nochmal“ erhalten */
+  fruehere: Durchlauf[]
+  onFertig: (durchlauf: Durchlauf) => void
   onNochmal: () => void
   /** Nur bei Zufalls-Übungen: neue Übung generieren */
   onNeu?: () => void
 }) {
-  const replay = useReplay(candles, szenario.startIndex, UEBUNGS_KAPITAL, szenario.id)
+  const replay = useReplay(candles, szenario.startIndex, UEBUNGS_KAPITAL, szenario.id, unter)
   const { broker } = replay
   const schmal = useSchmal()
+  // Anzeige: wachsende Hauptkerze (Standard) oder die Unterkerzen selbst (Einstellung, wie im Simulator)
+  const unterkerzenAnzeigen = useSimulatorStore((s) => s.einstellungen.unterkerzenAnzeigen)
+  const einstellungenSetzen = useSimulatorStore((s) => s.einstellungenSetzen)
+  const zeigeUnter = unterkerzenAnzeigen && replay.unterVerfuegbar
+  const chartBasis = zeigeUnter ? replay.basisUnter : replay.sichtbar
+  const hauptSek = useMemo(() => intervalSekunden(candles), [candles])
+  const unterInterval = UNTER_INTERVALL[szenario.interval]
   const [zeichnungen, setZeichnungen] = useState<Zeichnung[]>([])
   const [zeichenModus, setZeichenModus] = useState<ZeichenModus>('aus')
   const [kontextSek, setKontextSek] = useState<number | null>(null)
   const [keinTradeErklaert, setKeinTradeErklaert] = useState(false)
-  const timeframes = HOEHERE_TIMEFRAMES[szenario.interval] ?? []
+  const [auswahl, setAuswahl] = useState<string | null>(null)
+  const [pauseHinweis, setPauseHinweis] = useState<string | null>(null)
+  // scharf = die nächste Annäherung an die Zone darf wieder pausieren
+  const pauseScharfRef = useRef(true)
+  const hoehere = HOEHERE_TIMEFRAMES[szenario.interval] ?? []
+  // Bei Unterkerzen-Anzeige ist das Haupt-Intervall selbst ein höherer Timeframe
+  const timeframes = zeigeUnter ? [{ label: szenario.interval, sek: hauptSek }, ...hoehere] : hoehere
   const szenarioAbschliessen = useProgressStore((s) => s.szenarioAbschliessen)
   const gespeichertRef = useRef(false)
 
-  const resultat = useMemo(
-    () => (replay.fertig ? bewerteSzenario(szenario, candles, broker.trades) : null),
-    [replay.fertig, szenario, candles, broker.trades],
+  // Jeder Trade wird einzeln bewertet; das Übungsergebnis ist der beste Trade
+  const ergebnis = useMemo(
+    () => (replay.fertig ? uebungsErgebnis(szenario, candles, broker.trades, broker.offeneOrder) : null),
+    [replay.fertig, szenario, candles, broker.trades, broker.offeneOrder],
   )
 
   useEffect(() => {
-    if (resultat && !gespeichertRef.current && !szenario.generiert) {
+    if (ergebnis && !gespeichertRef.current) {
       gespeichertRef.current = true
-      szenarioAbschliessen(szenario.id, {
-        bewertung: resultat.bewertung,
-        rMultiple: resultat.rMultiple,
-      })
+      if (!szenario.generiert) {
+        szenarioAbschliessen(szenario.id, {
+          bewertung: ergebnis.resultat.bewertung,
+          rMultiple: ergebnis.resultat.rMultiple,
+        })
+      }
+      onFertig({ nr: durchlaufNr, bewertungen: ergebnis.bewertungen })
     }
-  }, [resultat, szenario.id, szenario.generiert, szenarioAbschliessen])
+  }, [ergebnis, szenario.id, szenario.generiert, szenarioAbschliessen, onFertig, durchlaufNr])
 
+  // Angezeigter Trade: Auswahl aus der Liste, sonst der beste
+  const gewaehlt = ergebnis ? (ergebnis.bewertungen.find((b) => b.key === auswahl) ?? ergebnis.bester) : undefined
+  const resultat = gewaehlt?.resultat ?? ergebnis?.resultat ?? null
+  const gesamtAnzeige = ergebnis ? BEWERTUNG_ANZEIGE[ergebnis.resultat.bewertung] : null
   const anzeige = resultat ? BEWERTUNG_ANZEIGE[resultat.bewertung] : null
-  const ersterTrade = broker.trades[0]
-  const gesamtR = resultat?.rMultiple ?? 0
-  const gesamtPnl = broker.trades.reduce((s, t) => s + t.pnl, 0)
   const zeigeIdeal = replay.fertig && szenario.richtung !== 'keiner'
-  const handel = useHandel(broker, replay.aktuellerPreis, { stopsSetzen: replay.stopsSetzen })
-  const atr = useMemo(() => letzterAtr(candles, replay.cursor), [candles, replay.cursor])
-  // Nach dem Ende: statt der eigenen Linien den Ideal-Trade des Szenarios zeigen
-  const linien = useMemo((): ChartLinie[] => {
-    if (!zeigeIdeal) return handel.linien
-    const ideal: ChartLinie[] = []
-    if (szenario.idealEntry) ideal.push({ id: 'ideal-entry', preis: szenario.idealEntry, farbe: '#F59E0B', titel: 'Entry', imBlick: true })
-    if (szenario.idealStopLoss) ideal.push({ id: 'ideal-sl', preis: szenario.idealStopLoss, farbe: CHART_FARBEN.short, titel: 'SL', imBlick: true })
-    if (szenario.idealTakeProfit) ideal.push({ id: 'ideal-tp', preis: szenario.idealTakeProfit, farbe: CHART_FARBEN.long, titel: 'TP', imBlick: true })
-    return ideal
-  }, [zeigeIdeal, handel.linien, szenario.idealEntry, szenario.idealStopLoss, szenario.idealTakeProfit])
+  // Geführte Übung: Limit/Stop vorausgewählt — die Order gehört vorab in die Zone
+  const handel = useHandel(broker, replay.aktuellerPreis, { stopsSetzen: replay.stopsSetzen, standardTyp: 'preis' })
+
+  // Auto-Pause: einmal je Annäherung an die Entry-Zone, nur im laufenden Replay ohne Position/Order
+  const { laufend, setLaufend, cursor, fertig, aktuelleBar } = replay
+  useEffect(() => {
+    if (fertig) return
+    const grund = autoPauseGrund(szenario, candles, cursor, aktuelleBar)
+    if (!grund) {
+      pauseScharfRef.current = true
+      return
+    }
+    if (!pauseScharfRef.current) return
+    pauseScharfRef.current = false
+    if (!laufend || broker.position || broker.offeneOrder) return
+    setLaufend(false)
+    setPauseHinweis(grund.text)
+  }, [szenario, candles, cursor, aktuelleBar, fertig, laufend, setLaufend, broker.position, broker.offeneOrder])
+
+  function weiter(wert: boolean) {
+    if (wert) setPauseHinweis(null)
+    replay.setLaufend(wert)
+  }
+  function schritt() {
+    setPauseHinweis(null)
+    replay.step()
+  }
+  const atr = useMemo(() => letzterAtr(replay.sichtbar, replay.cursor), [replay.sichtbar, replay.cursor])
+  // Nach dem Ende: Review mit eigenem Trade UND Ideal-Trade, Entry-Fenster als Box
+  const review = useMemo(
+    () => (zeigeIdeal && resultat ? reviewAnzeige(szenario, candles, broker.trades, resultat.ideal, gewaehlt?.key) : null),
+    [zeigeIdeal, resultat, szenario, candles, broker.trades, gewaehlt?.key],
+  )
+  // Während des Replays: Marker der bereits geschlossenen Trades
+  const laufMarker = useMemo(() => tradeMarker(broker.trades), [broker.trades])
+  const linien: ChartLinie[] = review ? review.linien : handel.linien
+  const gesamt = useMemo(
+    () => (ergebnis ? zusammenfassung(alleBewertungen([...fruehere, { nr: durchlaufNr, bewertungen: ergebnis.bewertungen }])) : null),
+    [ergebnis, fruehere, durchlaufNr],
+  )
+  const dieserDurchlauf = ergebnis ? zusammenfassung(ergebnis.bewertungen) : null
+  const geschlossen = broker.trades.length > 0 && !broker.position && !broker.offeneOrder
 
   // Kein Trade: Entscheidung festhalten und den Rest des Replays durchlaufen lassen
   function keinTrade() {
@@ -98,8 +201,8 @@ function UebungSession({
         {kontextSek !== null && (
           <div className="rounded-xl border border-rand bg-flaeche p-3">
             <HandelsChart
-              candles={candles}
-              cursor={replay.cursor}
+              candles={chartBasis}
+              cursor={chartBasis.length - 1}
               hoehe={schmal ? 180 : 220}
               zeitVerdeckt={szenario.datumVerdeckt && !replay.fertig}
               bucketSek={kontextSek}
@@ -108,26 +211,50 @@ function UebungSession({
             />
           </div>
         )}
+        {pauseHinweis && !replay.laufend && !replay.fertig && (
+          <div className="flex items-start gap-2 rounded-xl border border-akzent/50 bg-akzent/10 p-3 text-xs text-schrift" role="status">
+            <PauseCircle className="h-4 w-4 shrink-0 text-akzent" />
+            <span className="flex-1 leading-snug">{pauseHinweis}</span>
+            <button onClick={() => setPauseHinweis(null)} className="shrink-0 rounded-md bg-nacht px-2 py-1 font-semibold text-gedimmt hover:text-white">
+              OK
+            </button>
+          </div>
+        )}
         <div className="rounded-xl border border-rand bg-flaeche p-3">
           <HandelsChart
-            candles={candles}
-            cursor={replay.cursor}
+            candles={chartBasis}
+            cursor={chartBasis.length - 1}
             hoehe={chartHoehe(schmal)}
             zeitVerdeckt={szenario.datumVerdeckt && !replay.fertig}
             zeichnungen={zeichnungen}
             zeichenModus={zeichenModus}
             onZeichnung={(z) => setZeichnungen((alt) => [...alt, z])}
             linien={linien}
+            marker={review ? review.marker : laufMarker}
+            boxen={review?.boxen}
             onLinieZiehen={handel.onLinieZiehen}
             onLinieLos={handel.onLinieLos}
             onPick={handel.onPick}
           />
-          {zeigeIdeal && szenario.idealEntry !== undefined && (
+          {review && (
             <p className="mt-2 text-xs text-gedimmt">
-              Eingezeichnet: der Ideal-Trade dieses Szenarios (Entry{' '}
-              {szenario.idealEntry.toLocaleString('de-DE')} $, SL{' '}
-              {szenario.idealStopLoss?.toLocaleString('de-DE')} $, TP{' '}
-              {szenario.idealTakeProfit?.toLocaleString('de-DE')} $).
+              <span className="font-semibold text-akzent">Durchgezogen/gestrichelt</span> = dein Trade
+              {gewaehlt && ergebnis && ergebnis.bewertungen.length > 1 ? ` #${gewaehlt.nr}` : ''} (Entry, SL, TP) ·{' '}
+              <span className="font-semibold text-[#3B82F6]">blau gepunktet</span> = Ideal-Trade
+              {resultat?.ideal && (
+                <>
+                  {' '}
+                  (Entry {resultat.ideal.entry.toLocaleString('de-DE')} $, SL{' '}
+                  {resultat.ideal.stopLoss.toLocaleString('de-DE')} $, TP {resultat.ideal.takeProfit.toLocaleString('de-DE')} $)
+                </>
+              )}{' '}
+              · <span className="font-semibold text-[#3B82F6]">blaue Box</span> = Entry-Fenster (Zone × Zeitraum)
+              {szenario.kriterien?.trigger && (
+                <>
+                  {' '}
+                  · <span className="font-semibold text-[#A855F7]">Trigger</span> = {szenario.kriterien.trigger.beschreibung}
+                </>
+              )}
             </p>
           )}
         </div>
@@ -145,10 +272,24 @@ function UebungSession({
           geschwindigkeit={replay.geschwindigkeit}
           fertig={replay.fertig}
           verbleibendeBars={candles.length - 1 - replay.cursor}
-          onLaufend={replay.setLaufend}
+          onLaufend={weiter}
           onGeschwindigkeit={replay.setGeschwindigkeit}
-          onStep={replay.step}
-        />
+          onStep={schritt}
+        >
+          {replay.unterVerfuegbar ? (
+            <label className="inline-flex cursor-pointer items-center gap-1.5" title="Chart zeigt die Unterkerzen statt der wachsenden Hauptkerze">
+              <input
+                type="checkbox"
+                checked={unterkerzenAnzeigen}
+                onChange={(e) => einstellungenSetzen({ unterkerzenAnzeigen: e.target.checked })}
+                className="accent-akzent"
+              />
+              {unterInterval}-Kerzen zeigen
+            </label>
+          ) : (
+            <span title="Keine Unterkerzen vorhanden — die Kerze wird über den OHLC-Pfad angenähert">Intrabar: OHLC-Annäherung</span>
+          )}
+        </ReplayControls>
         <PositionPanel
           position={broker.position}
           offeneOrder={broker.offeneOrder}
@@ -170,9 +311,8 @@ function UebungSession({
               aktuellerPreis={replay.aktuellerPreis}
               kontostand={broker.kontostand}
               barIndex={replay.cursor}
-              deaktiviert={
-                !!broker.position || !!broker.offeneOrder || broker.trades.length > 0
-              }
+              // Nur eine offene Position/Order gleichzeitig — geschlossene Trades sperren nicht
+              deaktiviert={!!broker.position || !!broker.offeneOrder}
               onPlatzieren={replay.platzieren}
               atr={atr}
               tpPflicht
@@ -188,17 +328,19 @@ function UebungSession({
                 <Ban className="h-4 w-4 text-akzent" /> Kein Trade — hier gibt es nichts zu handeln
               </button>
             )}
+            {geschlossen && (
+              <p className="rounded-xl border border-rand bg-flaeche p-4 text-xs text-gedimmt">
+                {broker.trades.length === 1 ? 'Dein Trade ist' : `${broker.trades.length} Trades sind`} geschlossen. Du kannst
+                weiter handeln — oder das Replay bis zum Ende laufen lassen, dann wird jeder Trade einzeln bewertet.
+              </p>
+            )}
           </>
         )}
-        {!replay.fertig && broker.trades.length > 0 && !broker.position && (
-          <p className="rounded-xl border border-rand bg-flaeche p-4 text-xs text-gedimmt">
-            Dein Trade ist geschlossen. Lass das Replay bis zum Ende laufen, um die Auswertung zu
-            sehen.
-          </p>
-        )}
-        {resultat && anzeige && (
-          <div className={`rounded-xl border ${anzeige.rahmen} bg-flaeche p-4 text-sm`}>
-            <div className={`text-lg font-bold ${anzeige.farbe}`}>{anzeige.label}</div>
+        {ergebnis && resultat && anzeige && gesamtAnzeige && (
+          <div className={`rounded-xl border ${gesamtAnzeige.rahmen} bg-flaeche p-4 text-sm`}>
+            <div className={`inline-flex items-center gap-2 text-lg font-bold ${gesamtAnzeige.farbe}`}>
+              <gesamtAnzeige.Icon className="h-5 w-5" /> {gesamtAnzeige.label}
+            </div>
             {szenario.ansageVerdeckt && (
               <div className="mt-1 text-xs text-gedimmt">
                 Auflösung: <span className="font-semibold text-white">{strategieName(szenario.strategieId)}</span>
@@ -206,27 +348,94 @@ function UebungSession({
                 {szenario.symbol} ({szenario.interval})
               </div>
             )}
-            {ersterTrade ? (
-              <div className="tabular-nums mt-1 text-xs text-gedimmt">
-                Dein Trade:{' '}
-                <span className={gesamtR >= 0 ? 'text-long' : 'text-short'}>
-                  {gesamtR >= 0 ? '+' : ''}
-                  {gesamtR.toFixed(2)}R
-                </span>{' '}
-                ({gesamtPnl >= 0 ? '+' : ''}
-                {gesamtPnl.toLocaleString('de-DE', { maximumFractionDigits: 0 })} $)
-                {broker.trades.length > 1 && ` · ${broker.trades.length} Teil-Exits`}
+            {ergebnis.bewertungen.length === 0 && keinTradeErklaert && (
+              <div className="mt-1 text-xs text-gedimmt">Deine Entscheidung: kein Trade.</div>
+            )}
+
+            {ergebnis.bewertungen.length > 0 && (
+              <div className="mt-3">
+                <div className="mb-1 text-[11px] font-medium uppercase tracking-wider text-gedimmt">
+                  {ergebnis.bewertungen.length === 1 ? 'Dein Trade' : `Deine Trades (Durchlauf ${durchlaufNr})`}
+                </div>
+                <div className="space-y-0.5">
+                  {ergebnis.bewertungen.map((b) => (
+                    <TradeZeile
+                      key={b.key}
+                      b={b}
+                      aktiv={gewaehlt?.key === b.key}
+                      onClick={ergebnis.bewertungen.length > 1 ? () => setAuswahl(b.key) : undefined}
+                    />
+                  ))}
+                </div>
+                {dieserDurchlauf && ergebnis.bewertungen.length > 1 && (
+                  <p className="tabular-nums mt-1 text-[11px] text-gedimmt">{dieserDurchlauf.text}. Gewertet wird der beste Trade.</p>
+                )}
               </div>
-            ) : (
-              keinTradeErklaert && (
-                <div className="mt-1 text-xs text-gedimmt">Deine Entscheidung: kein Trade.</div>
-              )
+            )}
+
+            {gewaehlt && resultat.bilanz.ergebnis && (
+              <div className="mt-3 rounded-lg bg-nacht p-3 text-xs">
+                <div className="flex flex-wrap gap-x-4 gap-y-1">
+                  {ergebnis.bewertungen.length > 1 && <span className="font-semibold text-white">Trade #{gewaehlt.nr}</span>}
+                  <span>
+                    Prozess: <span className={`font-semibold ${anzeige.farbe}`}>{resultat.bilanz.prozess}</span>
+                  </span>
+                  <span className="tabular-nums">
+                    Ergebnis:{' '}
+                    <span className={`font-semibold ${gewaehlt.rMultiple >= 0 ? 'text-long' : 'text-short'}`}>{resultat.bilanz.ergebnis}</span>
+                  </span>
+                </div>
+                <p className="mt-1 text-gedimmt">{resultat.bilanz.fazit}</p>
+              </div>
+            )}
+            {resultat.kriterien.length > 0 && (
+              <table className="mt-3 w-full text-xs">
+                <tbody>
+                  {resultat.kriterien.map((k) => {
+                    const s = KRITERIUM_STATUS[k.status]
+                    return (
+                      <tr key={k.id} className="border-t border-rand align-top">
+                        <td className="py-1.5 pr-2">
+                          <s.Icon className={`h-4 w-4 ${s.farbe}`} aria-label={s.titel} />
+                        </td>
+                        <td className="py-1.5 pr-2 whitespace-nowrap font-semibold text-white">{k.titel}</td>
+                        <td className="py-1.5 leading-snug text-gedimmt">
+                          {k.text}
+                          <div className="tabular-nums mt-0.5 text-[10px] opacity-80">
+                            Soll: {k.soll} · Ist: {k.ist}
+                          </div>
+                        </td>
+                      </tr>
+                    )
+                  })}
+                </tbody>
+              </table>
             )}
             <p className="mt-3 leading-relaxed text-schrift">{resultat.text}</p>
+
+            {fruehere.length > 0 && gesamt && (
+              <div className="mt-4 border-t border-rand pt-3">
+                <div className="mb-1 text-[11px] font-medium uppercase tracking-wider text-gedimmt">Frühere Durchläufe</div>
+                <div className="space-y-0.5">
+                  {fruehere.map((d) =>
+                    d.bewertungen.length === 0 ? (
+                      <div key={d.nr} className="px-2 py-1 text-xs text-gedimmt">
+                        Durchlauf {d.nr}: kein Trade
+                      </div>
+                    ) : (
+                      d.bewertungen.map((b) => <TradeZeile key={`${d.nr}-${b.key}`} b={{ ...b, nr: d.nr }} />)
+                    ),
+                  )}
+                </div>
+                <p className="tabular-nums mt-2 text-[11px] text-gedimmt">Alle Durchläufe: {gesamt.text}</p>
+              </div>
+            )}
+
             <div className="mt-4 flex gap-2">
               <button
                 onClick={onNochmal}
                 className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg bg-nacht py-2 text-xs font-semibold text-schrift hover:text-white"
+                title="Chart zurück auf den Ausgangspunkt — die Historie bleibt"
               >
                 <RotateCcw className="h-3.5 w-3.5" /> Nochmal
               </button>
@@ -256,6 +465,16 @@ function UebungSession({
 interface Geladen {
   szenario: Scenario
   candles: Candle[]
+  unter: Candle[] | null
+}
+
+/** Unterkerzen auf den Zeitraum der Hauptkerzen beschneiden. */
+function unterBeschneiden(unter: Candle[] | null, candles: Candle[]): Candle[] | null {
+  if (!unter || unter.length === 0 || candles.length === 0) return null
+  const sek = intervalSekunden(candles)
+  const ende = candles[candles.length - 1].time + sek
+  const teil = unter.filter((c) => c.time >= candles[0].time && c.time < ende)
+  return teil.length > 0 ? teil : null
 }
 
 /** Zufalls-Übung: zufälligen Abschnitt laden, bis die Erkennung ein Setup findet. */
@@ -265,7 +484,19 @@ async function zufallsUebung(): Promise<Geladen> {
     const setup = findeSetup(abschnitt.candles, ZUFALL_NACHLAUF)
     if (!setup) continue
     const szenario = setupZuSzenario(setup, abschnitt.symbol, abschnitt.interval, ZUFALL_NACHLAUF)
-    return { szenario, candles: abschnitt.candles.slice(0, szenario.endIndex + 1) }
+    const candles = abschnitt.candles.slice(0, szenario.endIndex + 1)
+    // Unterkerzen für das Intrabar-Replay — wenn nicht ladbar, läuft die Übung über den OHLC-Pfad
+    let unter: Candle[] | null = null
+    const unterIv = UNTER_INTERVALL[abschnitt.interval]
+    if (unterIv) {
+      try {
+        const sek = intervalSekunden(candles)
+        unter = await getCandles(abschnitt.symbol, unterIv, candles[0].time, candles[candles.length - 1].time + sek - 1)
+      } catch {
+        unter = null
+      }
+    }
+    return { szenario, candles, unter: unterBeschneiden(unter, candles) }
   }
   throw new Error('Kein Setup gefunden')
 }
@@ -278,18 +509,24 @@ export function UebungPage() {
   const [fehler, setFehler] = useState(false)
   const [versuch, setVersuch] = useState(0)
   const [generation, setGeneration] = useState(0)
+  // Historie der Durchläufe dieser Übung — „Nochmal“ setzt nur den Chart zurück
+  const [durchlaeufe, setDurchlaeufe] = useState<Durchlauf[]>([])
 
   useEffect(() => {
     let aktiv = true
     setGeladen(null)
     setFehler(false)
+    setDurchlaeufe([])
+    setVersuch(0)
     const laden = istZufall
       ? zufallsUebung()
       : kuratiert
-        ? getSzenarioDaten(kuratiert.datensatz).then((d) => ({
-            szenario: kuratiert,
-            candles: d.candles.slice(0, kuratiert.endIndex + 1),
-          }))
+        ? Promise.all([getSzenarioDaten(kuratiert.datensatz), getSzenarioUnterkerzen(kuratiert.datensatz, kuratiert.interval)]).then(
+            ([d, u]) => {
+              const candles = d.candles.slice(0, kuratiert.endIndex + 1)
+              return { szenario: kuratiert, candles, unter: unterBeschneiden(u, candles) }
+            },
+          )
         : Promise.reject(new Error('unbekannt'))
     laden
       .then((g) => {
@@ -315,7 +552,8 @@ export function UebungPage() {
   }
 
   const szenario = geladen?.szenario ?? kuratiert
-  const aufgabe = szenario?.aufgabe
+  // Zone im Aufgabentext kommt aus derselben Config wie die Bewertung
+  const aufgabe = szenario ? textFuellen(szenario.aufgabe, szenario) : undefined
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
@@ -328,6 +566,9 @@ export function UebungPage() {
           {istZufall ? 'Zufalls-Übung' : 'Geführte Übung'}
           {szenario?.ansageVerdeckt && (
             <span className="rounded bg-flaeche px-1.5 py-0.5 text-[10px] text-gedimmt">ohne Ansage</span>
+          )}
+          {versuch > 0 && (
+            <span className="rounded bg-flaeche px-1.5 py-0.5 text-[10px] text-gedimmt">Durchlauf {versuch + 1}</span>
           )}
         </div>
         <h1 className="mt-1 text-2xl font-bold text-white">
@@ -367,6 +608,10 @@ export function UebungPage() {
           key={`${geladen.szenario.id}-${versuch}`}
           szenario={geladen.szenario}
           candles={geladen.candles}
+          unter={geladen.unter}
+          durchlaufNr={versuch + 1}
+          fruehere={durchlaeufe.filter((d) => d.nr <= versuch)}
+          onFertig={(d) => setDurchlaeufe((alt) => [...alt.filter((x) => x.nr !== d.nr), d])}
           onNochmal={() => setVersuch((v) => v + 1)}
           onNeu={istZufall ? () => setGeneration((g) => g + 1) : undefined}
         />

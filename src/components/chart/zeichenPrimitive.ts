@@ -21,6 +21,16 @@ export interface Zone {
   preisBis: number
 }
 
+/** Rechteck Preiszone × Zeitraum (z.B. Entry-Fenster in der Übungs-Review) */
+export interface Box {
+  zeitVon: number
+  zeitBis: number
+  preisVon: number
+  preisBis: number
+  fuellung: string
+  rand: string
+}
+
 export interface Punkt {
   zeit: number
   preis: number
@@ -53,9 +63,28 @@ class ZonenRenderer implements IPrimitivePaneRenderer {
   }
 
   draw(target: CanvasRenderingTarget2D): void {
-    const { serie, zonen } = this.eigner
-    if (!serie || zonen.length === 0) return
+    const { serie, zonen, boxen, zeitZuX } = this.eigner
+    if (!serie || (zonen.length === 0 && boxen.length === 0)) return
     target.useMediaCoordinateSpace(({ context, mediaSize }) => {
+      for (const b of boxen) {
+        if (!zeitZuX) break
+        const x1 = zeitZuX(b.zeitVon)
+        const x2 = zeitZuX(b.zeitBis)
+        const y1 = serie.priceToCoordinate(b.preisVon)
+        const y2 = serie.priceToCoordinate(b.preisBis)
+        if (x1 === null || x2 === null || y1 === null || y2 === null) continue
+        const links = Math.min(x1, x2)
+        const breite = Math.max(2, Math.abs(x2 - x1))
+        const oben = Math.min(y1, y2)
+        const hoehe = Math.max(1, Math.abs(y2 - y1))
+        context.fillStyle = b.fuellung
+        context.fillRect(links, oben, breite, hoehe)
+        context.strokeStyle = b.rand
+        context.lineWidth = 1
+        context.setLineDash([4, 3])
+        context.strokeRect(links, oben, breite, hoehe)
+        context.setLineDash([])
+      }
       for (const z of zonen) {
         const y1 = serie.priceToCoordinate(z.preisVon)
         const y2 = serie.priceToCoordinate(z.preisBis)
@@ -192,6 +221,7 @@ class PaneView implements IPrimitivePaneView {
 
 export class ZeichenPrimitive implements ISeriesPrimitive<Time> {
   zonen: Zone[] = []
+  boxen: Box[] = []
   trendlinien: TrendLinie[] = []
   messung: Messung | null = null
   anker: Punkt | null = null
@@ -216,6 +246,11 @@ export class ZeichenPrimitive implements ISeriesPrimitive<Time> {
 
   setZonen(zonen: Zone[]): void {
     this.zonen = zonen
+    this.requestUpdate?.()
+  }
+
+  setBoxen(boxen: Box[]): void {
+    this.boxen = boxen
     this.requestUpdate?.()
   }
 

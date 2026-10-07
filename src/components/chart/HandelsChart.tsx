@@ -20,7 +20,7 @@ import {
 } from 'lightweight-charts'
 import type { Candle, Zeichnung } from '../../types'
 import { CHART_FARBEN } from './ChartPanel'
-import { aggregiere, bucketStart } from '../../engine/aggregation'
+import { aggregiere, bucketStart, intervalSekunden } from '../../engine/aggregation'
 import { ema } from '../../engine/indikatoren/ema'
 import { rsi } from '../../engine/indikatoren/rsi'
 import { fmtPreis, preisStellen, rundePreis } from '../../engine/format'
@@ -43,13 +43,30 @@ export interface ChartLinie {
   fest?: boolean
   /** in die Auto-Skalierung einbeziehen, damit SL/TP nicht außerhalb des Bildes liegen */
   imBlick?: boolean
+  /** Linienstil, wenn nicht `fest`: gestrichelt (Standard) oder gepunktet (z.B. Ideal-Trade) */
+  stil?: 'gestrichelt' | 'gepunktet'
 }
 
 export interface ChartMarker {
   time: number
-  art: 'long' | 'short' | 'exit'
+  /** long/short: Einstiegspfeil · exit: Kreis mit R · hinweis: neutrales Quadrat mit Text (Ideal-Entry, Trigger …) */
+  art: 'long' | 'short' | 'exit' | 'hinweis'
   text?: string
   gewinn?: boolean
+  /** nur hinweis: Farbe und Lage (oben = über der Kerze) */
+  farbe?: string
+  oben?: boolean
+}
+
+/** Halbtransparente Box Preiszone × Zeitraum (z.B. Entry-Fenster) */
+export interface ChartBox {
+  id: string
+  zeitVon: number
+  zeitBis: number
+  preisVon: number
+  preisBis: number
+  fuellung: string
+  rand: string
 }
 
 export interface IndikatorWahl {
@@ -78,6 +95,7 @@ interface HandelsChartProps {
   /** gesetzt → der nächste Tipp in den Chart liefert einen Preis (statt zu zeichnen) */
   onPick?: ((preis: number) => void) | null
   marker?: ChartMarker[]
+  boxen?: ChartBox[]
   indikatoren?: IndikatorWahl
 }
 
@@ -85,6 +103,7 @@ const EMA_FARBEN: Record<number, string> = { 20: '#F59E0B', 50: '#3B82F6', 200: 
 const KEINE_ZEICHNUNGEN: Zeichnung[] = []
 const KEINE_LINIEN: ChartLinie[] = []
 const KEINE_MARKER: ChartMarker[] = []
+const KEINE_BOXEN: ChartBox[] = []
 const STANDARD_INDIKATOREN: IndikatorWahl = { ema: [], rsi: false, volumen: true }
 
 const SCROLL_AN = { mouseWheel: true, pressedMouseMove: true, horzTouchDrag: true, vertTouchDrag: false }
@@ -146,6 +165,7 @@ export function HandelsChart({
   onLinieLos,
   onPick = null,
   marker = KEINE_MARKER,
+  boxen = KEINE_BOXEN,
   indikatoren = STANDARD_INDIKATOREN,
 }: HandelsChartProps) {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -167,7 +187,7 @@ export function HandelsChart({
   const tempLinieRef = useRef<IPriceLine | null>(null)
   const ersterKlickRef = useRef<number | null>(null)
   // Stand des Daten-Effekts: was liegt gerade im Chart?
-  const standRef = useRef({ anzahl: -1, bucket: -1, serien: '' })
+  const standRef = useRef({ anzahl: -1, bucket: -1, basis: -1, serien: '' })
   const letzteBarRef = useRef<Candle | null>(null)
   const fadenkreuzRef = useRef<() => boolean>(() => false)
   // Immer aktuelle Props für die DOM-Listener, die nur einmal registriert werden
@@ -289,7 +309,7 @@ export function HandelsChart({
     kerzenRef.current = kerzen
     zonenRef.current = zonen
     markerRef.current = createSeriesMarkers(kerzen, [])
-    standRef.current = { anzahl: -1, bucket: -1, serien: '' }
+    standRef.current = { anzahl: -1, bucket: -1, basis: -1, serien: '' }
     const linienMap = linienRef.current
     const emaMap = emaRef.current
 
@@ -586,6 +606,8 @@ export function HandelsChart({
     datenRef.current = daten
     const stand = standRef.current
     const bucket = bucketSek ?? 0
+    // Basis-Intervall der Rohdaten: wechselt es (Hauptkerzen ↔ Unterkerzen), muss der Chart neu aufgebaut werden
+    const basis = intervalSekunden(candles)
     const n = daten.length - 1
     const letzte = daten[n]
     letzteBarRef.current = letzte
@@ -593,7 +615,7 @@ export function HandelsChart({
     const emaWerte = [...emaRef.current].map(([periode, serie]) => ({ serie, werte: ema(daten, periode) }))
     const rsiWerte = rsiRef.current ? rsi(daten, 14) : null
 
-    const neuerTimeframe = stand.anzahl < 0 || stand.bucket !== bucket
+    const neuerTimeframe = stand.anzahl < 0 || stand.bucket !== bucket || stand.basis !== basis
     if (neuerTimeframe || daten.length < stand.anzahl || stand.serien !== serienSignatur) {
       const stellen = preisStellen(letzte.close)
       kerzen.applyOptions({ priceFormat: { type: 'price', precision: stellen, minMove: 10 ** -stellen } })
@@ -617,10 +639,10 @@ export function HandelsChart({
       }
       if (rsiWerte) for (const punkt of linienPunkte(daten, rsiWerte, ab)) rsiRef.current?.update(punkt)
     }
-    standRef.current = { anzahl: daten.length, bucket, serien: serienSignatur }
+    standRef.current = { anzahl: daten.length, bucket, basis, serien: serienSignatur }
 
     if (!fadenkreuzRef.current()) legendeSetzen(legendeRef.current, letzte)
-  }, [daten, bucketSek, serienSignatur])
+  }, [daten, candles, bucketSek, serienSignatur])
 
   // ── Preislinien (Entry/SL/TP …): per Id abgleichen statt neu aufzubauen ────
   useEffect(() => {
@@ -635,7 +657,7 @@ export function HandelsChart({
         price: def.preis,
         color: def.farbe,
         lineWidth: def.ziehbar ? 2 : 1,
-        lineStyle: def.fest ? 0 : 2,
+        lineStyle: def.fest ? 0 : def.stil === 'gepunktet' ? 1 : 2,
         axisLabelVisible: true,
         title: def.titel,
       } as const
@@ -661,10 +683,22 @@ export function HandelsChart({
   useEffect(() => {
     const plugin = markerRef.current
     if (!plugin) return
+    // Trade-Zeiten stammen aus Unterkerzen (Intrabar) → auf die Kerze des angezeigten Intervalls einrasten
+    const rasterSek = bucketSek ?? intervalSekunden(datenRef.current)
     const liste: SeriesMarker<Time>[] = marker
-      .map((m) => ({ ...m, time: bucketSek ? bucketStart(m.time, bucketSek) : m.time }))
+      .map((m) => ({ ...m, time: bucketStart(m.time, rasterSek) }))
       .sort((a, b) => a.time - b.time)
       .map((m) => {
+        if (m.art === 'hinweis') {
+          return {
+            time: m.time as UTCTimestamp,
+            position: m.oben ? ('aboveBar' as const) : ('belowBar' as const),
+            shape: 'square' as const,
+            color: m.farbe ?? '#3B82F6',
+            text: m.text ?? '',
+            size: 0.7,
+          }
+        }
         if (m.art === 'exit') {
           return {
             time: m.time as UTCTimestamp,
@@ -715,6 +749,11 @@ export function HandelsChart({
       ),
     )
   }, [zeichnungen])
+
+  // ── Boxen (Entry-Fenster der Review) über das Primitive ───────────────────
+  useEffect(() => {
+    zonenRef.current?.setBoxen(boxen)
+  }, [boxen])
 
   const waehltPreis = !!onPick || zeichenModus !== 'aus'
 
