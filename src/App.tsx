@@ -12,6 +12,9 @@ const UebungPage = lazy(() => import('./pages/UebungPage').then((m) => ({ defaul
 const WiederholungPage = lazy(() =>
   import('./pages/WiederholungPage').then((m) => ({ default: m.WiederholungPage })),
 )
+// Aktien-Bereich (Fundamentalanalyse): eigenes Modul unter src/aktien, nur hier angebunden.
+const AktienPage = lazy(() => import('./aktien/pages/AktienPage').then((m) => ({ default: m.AktienPage })))
+const FirmaPage = lazy(() => import('./aktien/pages/FirmaPage').then((m) => ({ default: m.FirmaPage })))
 
 function Platzhalter({ titel }: { titel: string }) {
   return (
@@ -63,6 +66,7 @@ export default function App() {
             <NavEintrag zu="/" text="Lernpfad" />
             <NavEintrag zu="/simulator" text="Simulator" />
             <NavEintrag zu="/journal" text="Journal" />
+            <NavEintrag zu="/aktien" text="Aktien" />
           </nav>
         </div>
       </header>
@@ -75,6 +79,8 @@ export default function App() {
             <Route path="/simulator" element={<SimulatorPage />} />
             <Route path="/journal" element={<JournalPage />} />
             <Route path="/wiederholung" element={<WiederholungPage />} />
+            <Route path="/aktien" element={<AktienPage />} />
+            <Route path="/aktien/:symbol" element={<FirmaPage />} />
             <Route path="*" element={<Platzhalter titel="Seite nicht gefunden" />} />
           </Routes>
         </Suspense>

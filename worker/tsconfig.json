@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "lib": [
+      "ES2023"
+    ],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "types": [
+      "@cloudflare/workers-types"
+    ],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowImportingTsExtensions": true
+  },
+  "include": [
+    "src",
+    "../src/aktien/engine",
+    "../src/aktien/types.ts"
+  ],
+  "exclude": [
+    "../src/aktien/engine/**/*.test.ts",
+    "../src/aktien/engine/fixtures"
+  ]
+}

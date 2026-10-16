@@ -1,0 +1,19 @@
+# Cloudflare Worker: Proxy + Cache für den Aktien-Bereich (SEC EDGAR + Yahoo Finance).
+# Deploy: npm run worker:deploy  ·  lokal: npm run worker:dev (Port 8787)
+# Secrets (nie hier eintragen): AKTIEN_SECRET, SEC_USER_AGENT → `npx wrangler secret put NAME --config worker/wrangler.toml`
+# Lokal liegen die Secrets in worker/.dev.vars (gitignored).
+
+name = "chart-akademie-aktien"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+# KV-Namespace für den Cache und den Geräte-Sync (Watchlist, DCF-Annahmen).
+# Anlegen: npx wrangler kv namespace create AKTIEN_KV --config worker/wrangler.toml
+# und die ausgegebene id hier eintragen.
+[[kv_namespaces]]
+binding = "AKTIEN_KV"
+id = "00000000000000000000000000000000"

@@ -9,7 +9,10 @@
     "lint": "oxlint",
     "test": "vitest run",
     "gen:meta": "vitest run --config vitest.gen.config.ts",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "worker:dev": "wrangler dev --config worker/wrangler.toml --port 8787",
+    "worker:deploy": "wrangler deploy --config worker/wrangler.toml",
+    "worker:check": "tsc -p worker"
   },
   "dependencies": {
     "idb": "^8.0.3",
@@ -21,6 +24,7 @@
     "zustand": "^5.0.15"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261016.1",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
@@ -31,6 +35,12 @@
     "tailwindcss": "^3.4.19",
     "typescript": "~6.0.2",
     "vite": "^8.2.2",
-    "vitest": "^5.0.0"
+    "vitest": "^5.0.0",
+    "wrangler": "^4.151.1",
+    "yahoo-finance2": "^4.0.4"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "workerd@1.20261012.1": true
   }
 }
