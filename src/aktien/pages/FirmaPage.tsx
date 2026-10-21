@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { ArrowLeft, Check, ExternalLink, Plus, RefreshCw, Trash2 } from 'lucide-react'
+import { ArrowLeft, ArrowLeftRight, Check, ExternalLink, Plus, RefreshCw, Trash2 } from 'lucide-react'
 import { AbschlussTabelle } from '../components/AbschlussTabelle'
 import { DcfRechner } from '../components/DcfRechner'
 import { KennzahlenKacheln } from '../components/KennzahlenKacheln'
+import { KursChart } from '../components/KursChart'
 import { EINGABE, KNOPF, Kachel, Meldung, QuellenBadge } from '../components/ui'
 import { firmenCache } from '../data/cache'
 import { ladeFirma } from '../data/service'
@@ -90,6 +91,9 @@ export function FirmaPage() {
               </div>
             </div>
             <div className="flex items-center gap-2">
+              <Link to={`/aktien/vergleich?s=${encodeURIComponent(symbol)}`} className={KNOPF} title="Mit anderen Firmen vergleichen">
+                <ArrowLeftRight className="h-3.5 w-3.5" /> Vergleich
+              </Link>
               <button type="button" className={KNOPF} onClick={() => laden(true)} disabled={laeuft} title="Beim Worker neu laden">
                 <RefreshCw className={`h-3.5 w-3.5 ${laeuft ? 'animate-spin' : ''}`} />
               </button>
@@ -141,6 +145,7 @@ export function FirmaPage() {
           <div className="mt-5">
             {tab === 'ueberblick' && k && (
               <div className="space-y-6">
+                <KursChart symbol={symbol} />
                 <KennzahlenKacheln k={k} waehrung={daten.firma.waehrung} kursWaehrung={daten.kurs?.waehrung} kursbezugMoeglich={daten.kurs?.waehrung === daten.firma.waehrung} />
                 {daten.firma.beschreibung && (
                   <details className="text-sm text-gedimmt">

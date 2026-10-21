@@ -15,6 +15,7 @@ const WiederholungPage = lazy(() =>
 // Aktien-Bereich (Fundamentalanalyse): eigenes Modul unter src/aktien, nur hier angebunden.
 const AktienPage = lazy(() => import('./aktien/pages/AktienPage').then((m) => ({ default: m.AktienPage })))
 const FirmaPage = lazy(() => import('./aktien/pages/FirmaPage').then((m) => ({ default: m.FirmaPage })))
+const VergleichPage = lazy(() => import('./aktien/pages/VergleichPage').then((m) => ({ default: m.VergleichPage })))
 
 function Platzhalter({ titel }: { titel: string }) {
   return (
@@ -80,6 +81,7 @@ export default function App() {
             <Route path="/journal" element={<JournalPage />} />
             <Route path="/wiederholung" element={<WiederholungPage />} />
             <Route path="/aktien" element={<AktienPage />} />
+            <Route path="/aktien/vergleich" element={<VergleichPage />} />
             <Route path="/aktien/:symbol" element={<FirmaPage />} />
             <Route path="*" element={<Platzhalter titel="Seite nicht gefunden" />} />
           </Routes>

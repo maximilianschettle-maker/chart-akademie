@@ -2,8 +2,9 @@
 // die Fundamentaldaten (Zusammenführen passiert hier im Browser, siehe engine/normalisierung).
 import { fundamentaldatenBauen } from '../engine/normalisierung'
 import { useAktienStore } from '../store'
-import type { Fundamentaldaten, Kurs, SecTeil, Suchtreffer, SyncZustand, YahooTeil } from '../types'
-import { firmenCache, kursCache } from './cache'
+import type { Fundamentaldaten, Kurs, KursChart, SecTeil, Suchtreffer, SyncZustand, YahooTeil } from '../types'
+import { bereichDef, type ChartBereich } from '../engine/chart'
+import { chartCache, firmenCache, kursCache } from './cache'
 import { AktienFehler, anfrage } from './client'
 
 const TAG_MS = 86_400_000
@@ -100,6 +101,24 @@ export async function zustandSchreiben(z: SyncZustand): Promise<{ ok: true } | {
       const fern = await zustandHolen()
       if (fern) return { ok: false, fern }
     }
+    throw e
+  }
+}
+
+/** Kursverlauf: IndexedDB (Frische je Bereich wie im Worker) → Worker; bei Netzfehler der alte Stand. */
+export async function ladeChart(symbol: string, bereich: ChartBereich, frisch = false): Promise<KursChart> {
+  const def = bereichDef(bereich)
+  if (!def) throw new AktienFehler(`Unbekannter Zeitraum ${bereich}`, 400)
+  const key = `${symbol}:${def.bereich}`
+  const gecacht = await chartCache.lesen(key)
+  if (gecacht && !frisch && Date.now() - gecacht.standAm < def.ttlSek * 1000) return gecacht.daten
+  try {
+    const daten = await anfrage<KursChart>(`/api/chart/${encodeURIComponent(symbol)}?bereich=${def.bereich}${frisch ? '&frisch=1' : ''}`)
+    if (!daten) throw new AktienFehler(`Keine Kursdaten für ${symbol}`, 404)
+    await chartCache.schreiben(key, daten)
+    return daten
+  } catch (e) {
+    if (gecacht) return gecacht.daten
     throw e
   }
 }

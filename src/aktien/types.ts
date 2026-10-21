@@ -195,3 +195,25 @@ export interface SyncZustand {
   cikManuell: Record<string, string>
   aktualisiertAm: number
 }
+
+// ── Kursverlauf (Yahoo chart über den Worker) ────────────────────────────────
+
+/** Eine Kerze; strukturgleich mit `Candle` des Trainingsteils, damit das ChartPanel sie zeichnen kann. */
+export interface Kerze {
+  /** Unix-Sekunden, Tagesanfang UTC */
+  time: number
+  open: number
+  high: number
+  low: number
+  close: number
+  volume: number
+}
+
+export interface KursChart {
+  symbol: string
+  /** Handelswährung laut Yahoo */
+  waehrung: string
+  bereich: string
+  kerzen: Kerze[]
+  standAm: number
+}

@@ -1,6 +1,7 @@
 // Yahoo Finance über yahoo-finance2: Suche, Kurs, Profil, Abschlüsse (ca. 4 Jahre).
 import YahooFinance from 'yahoo-finance2'
-import type { Kurs, Suchtreffer, YahooTeil } from '../../src/aktien/types'
+import type { Kurs, KursChart, Suchtreffer, YahooTeil } from '../../src/aktien/types'
+import { kerzenAusChart, periodeAb, type BereichDef, type ChartRoh } from '../../src/aktien/engine/chart'
 import { firmaAusQuoteSummary, gjEndeMonatAusQuoteSummary, kursAusQuoteSummary, suchtrefferAus, yahooJahre, yahooQuartale, type QuoteSummaryRoh, type ZeitreihenZeile } from '../../src/aktien/engine/yahoo'
 import { HttpFehler } from './http'
 
@@ -30,7 +31,7 @@ async function quoteSummary(symbol: string): Promise<QuoteSummaryRoh> {
 
 function uebersetzen(e: unknown, symbol: string): Error {
   const text = e instanceof Error ? e.message : String(e)
-  if (/not found|No fundamentals|404|Quote not found/i.test(text)) return new HttpFehler(`Yahoo kennt "${symbol}" nicht`, 404)
+  if (/not found|No fundamentals|404|Quote not found|No data found|delisted/i.test(text)) return new HttpFehler(`Yahoo kennt "${symbol}" nicht`, 404)
   if (/429|Too Many Requests/i.test(text)) return new HttpFehler('Yahoo bremst gerade (429) — später erneut versuchen', 503)
   return new HttpFehler(`Yahoo: ${text}`, 502)
 }
@@ -79,4 +80,17 @@ export async function suche(begriff: string): Promise<Suchtreffer[]> {
   } catch (e) {
     throw uebersetzen(e, begriff)
   }
+}
+
+/** Kursverlauf als Kerzen; Intervall und Startdatum hängen am Bereich (siehe engine/chart). */
+export async function chartKerzen(symbol: string, def: BereichDef): Promise<KursChart> {
+  let roh: ChartRoh
+  try {
+    roh = (await yf().chart(symbol, { period1: periodeAb(def, Date.now()), interval: def.intervall }, { validateResult: false })) as unknown as ChartRoh
+  } catch (e) {
+    throw uebersetzen(e, symbol)
+  }
+  const kerzen = kerzenAusChart(roh)
+  if (kerzen.length === 0) throw new HttpFehler(`Keine Kursdaten für "${symbol}"`, 404)
+  return { symbol, waehrung: roh.meta?.currency ?? '', bereich: def.bereich, kerzen, standAm: Date.now() }
 }

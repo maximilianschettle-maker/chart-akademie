@@ -21,7 +21,7 @@ Eine Trading-Lern-App für Krypto: Schritt für Schritt vom Candlestick bis zum 
 
 ## Aktien (Fundamentalanalyse)
 
-Eigener Bereich unter **Aktien**: Firma suchen (US + EU), Watchlist, Firmenseite mit Kennzahlen (Bewertung, Profitabilität, Wachstum, Bilanz), Mehrjahres-Tabelle aus GuV/Bilanz/Cashflow (Geschäftsjahre und Quartale) und ein Zwei-Phasen-DCF mit Sensitivitätsmatrix. Watchlist und DCF-Annahmen gleichen sich zwischen PC und Handy ab.
+Eigener Bereich unter **Aktien**: Firma suchen (US + EU), Watchlist, Firmenseite mit Kursverlauf (1 Monat bis Max), Kennzahlen (Bewertung, Profitabilität, Wachstum, Bilanz), Mehrjahres-Tabelle aus GuV/Bilanz/Cashflow (Geschäftsjahre und Quartale), ein Zwei-Phasen-DCF mit Sensitivitätsmatrix und ein Firmenvergleich (bis zu 6 Firmen nebeneinander, beste Spalte je Kennzahl markiert). Watchlist und DCF-Annahmen gleichen sich zwischen PC und Handy ab.
 
 - **Quellen (kostenlos):** SEC EDGAR XBRL für alle US-Filer, auch EU-Firmen mit US-Listing (SAP, ASML, Novartis …, 10+ Jahre, geprüfte Berichte) und Yahoo Finance (inoffiziell) für Suche, Kurs, Profil und als Lückenfüller (ca. 4 Jahre).
 - **Technik:** Beide Quellen sind aus dem Browser nicht erreichbar (CORS). Ein kleiner **Cloudflare Worker** (`worker/`) holt, normalisiert und cacht die Daten (KV, 7 Tage) und hält den Geräte-Sync. Er ist mit einem eigenen Geheimnis geschützt; es gibt keine Anbieter-Schlüssel. Der gemeinsame Code (Normalisierung, Kennzahlen, DCF) liegt in `src/aktien/engine/` und ist getestet.

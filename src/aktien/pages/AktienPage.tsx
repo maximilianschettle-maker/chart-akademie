@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { Suche } from '../components/Suche'
 import { WatchlistTabelle } from '../components/WatchlistTabelle'
 import { WorkerEinstellungen } from '../components/WorkerEinstellungen'
@@ -15,6 +16,8 @@ export function AktienPage() {
   useAktienStore((s) => s.workerUrl)
   useAktienStore((s) => s.secret)
   const konfiguriert = workerKonfiguriert()
+  const watchlist = useAktienStore((s) => s.watchlist)
+  const vergleichZiel = `/aktien/vergleich?s=${encodeURIComponent(watchlist.slice(0, 4).map((w) => w.symbol).join(','))}`
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
@@ -35,7 +38,16 @@ export function AktienPage() {
           <Abschnitt
             titel="Watchlist"
             kinder={<WatchlistTabelle />}
-            rechts={syncFehler ? <span className="text-[11px] text-short">Sync: {syncFehler}</span> : <span className="text-[11px] text-gedimmt">auf allen Geräten gleich</span>}
+            rechts={
+              <span className="flex items-center gap-3 text-[11px]">
+                {syncFehler ? <span className="text-short">Sync: {syncFehler}</span> : <span className="text-gedimmt">auf allen Geräten gleich</span>}
+                {watchlist.length >= 2 && (
+                  <Link to={vergleichZiel} className="font-semibold text-akzent hover:underline">
+                    Vergleichen →
+                  </Link>
+                )}
+              </span>
+            }
           />
         </>
       )}

@@ -6,6 +6,7 @@
 //   GET  /api/suche?q=                     Yahoo-Suche (Aktien)
 //   GET  /api/yahoo/:symbol[?frisch=1]     Firma + Abschlüsse von Yahoo (KV 7 Tage)
 //   GET  /api/kurs/:symbol[?frisch=1]      Kurs + Bewertung (Cache-API 15 min)
+//   GET  /api/chart/:symbol?bereich=1M|6M|1J|5J|MAX[&frisch=1]   Kursverlauf als Kerzen (Cache-API 1 h – 1 Tag)
 //   GET  /api/sec/:symbol?name=&waehrung=&cik=[&frisch=1]   SEC-Abschlüsse (KV 7 Tage), 204 ohne Zuordnung
 //   GET  /api/zustand · PUT /api/zustand   Watchlist + DCF-Annahmen für den Geräte-Sync (KV)
 
@@ -13,7 +14,8 @@ import type { SyncZustand } from '../../src/aktien/types'
 import { kvLesen, kvSchreiben, mitCacheApi, mitKv } from './cache'
 import { HttpFehler, corsHeader, fehler, json, pruefeZugang, type Env } from './http'
 import { cikIndex, secTeilLaden } from './sec'
-import { kurs, suche, yahooTeil } from './yahoo'
+import { chartKerzen, kurs, suche, yahooTeil } from './yahoo'
+import { bereichDef } from '../../src/aktien/engine/chart'
 
 const VERSION = '0.1.0'
 const TAG_MS = 86_400_000
@@ -46,6 +48,14 @@ export default {
           antwort.sec = s.status === 'fulfilled' ? 'ok' : (s.reason as Error).message
         }
         return json(req, antwort)
+      }
+
+      if (pfad.startsWith('/api/chart/') && req.method === 'GET') {
+        const symbol = symbolAus(pfad, '/api/chart/')
+        const def = bereichDef(url.searchParams.get('bereich') ?? '1J')
+        if (!def) throw new HttpFehler('Ungültiger Bereich (1M, 6M, 1J, 5J, MAX)', 400)
+        const r = await mitCacheApi(`chart/${symbol}/${def.bereich}`, def.ttlSek, frisch, () => chartKerzen(symbol, def))
+        return json(req, r.daten)
       }
 
       if (pfad === '/api/suche' && req.method === 'GET') {

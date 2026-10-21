@@ -28,3 +28,6 @@ dist-ssr
 .wrangler
 .env
 .env.*
+worker/.prod.secret
+worker/.prod.secret.qr.png
+worker/.worker-url.qr.png

@@ -16,4 +16,4 @@ enabled = true
 # und die ausgegebene id hier eintragen.
 [[kv_namespaces]]
 binding = "AKTIEN_KV"
-id = "00000000000000000000000000000000"
+id = "8b16d3abad0445c5af80e88f8d13b91d"

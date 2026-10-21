@@ -111,6 +111,31 @@ Anlass: Korrekte Trades wurden „Daneben“ bewertet, Übersicht zeigte für al
 - **Im Browser gefunden** (Playwright `%TEMP%\ca\pw\smoke9–11`): `HandelsChart` baut bei Wechsel des Basis-Intervalls neu auf (sonst Absturz beim inkrementellen Update), `SimulatorPage` greift vor der ersten Replay-Kerze nicht mehr auf die Startkerze zu (candles = sichtbare Kerzen).
 - Stolperstein: lange Heredocs im Bash-Tool scheitern („unexpected EOF“) → Patch-Skripte per Write-Tool anlegen.
 
+## Stand 2026-10-21 spät — Firmenvergleich (288 Tests grün)
+
+- Seite `/aktien/vergleich?s=SAP.DE,AAPL` (`VergleichPage.tsx`): Auswahl steht in der URL (teilbar), Chips zum Entfernen, Watchlist-Einträge als „+“-Knöpfe, Ticker-Eingabe, max. 6 Firmen. Einstiege: „Vergleichen →“ neben der Watchlist (ab 2 Einträgen, erste 4 vorausgewählt) und Knopf „Vergleich“ auf der Firmenseite.
+- Engine `src/aktien/engine/vergleich.ts`: VERGLEICH_GRUPPEN (Größe, Bewertung, Profitabilität, Wachstum, Bilanz) mit Richtung je Zeile (hoch / niedrig / niedrigPositiv für Multiples / keine), `besteSpalte` (mind. 2 Werte, Gleichstand = keine Hervorhebung), `symboleAusText`. Beträge in Firmenwährung, nicht umgerechnet → Größe-Zeilen ohne „beste“.
+- Tabelle: sticky Kennzahl-Spalte, horizontal scrollbar am Handy, beste Zelle grün (`bg-long/10`). Daten über `ladeFirma` (Cache zuerst) je Spalte, Fehler bleiben in der Spaltenüberschrift stehen.
+- Geprüft: Playwright gegen `vite preview` + Prod-Worker, Desktop und 390 px; dabei zog der Geräte-Sync die echte Watchlist des Nutzers (SPCX, 9868.HK) — Tests dürfen die Watchlist nie verändern. Zwei 404-Konsolenmeldungen stammen vom SEC-Endpunkt für Nicht-SEC-Firmen (erwartet, wird als Hinweis angezeigt).
+- Offen: Commit + Push (löst Pages-Deploy aus), danach Test am Handy. Ideen: Währungsumrechnung für Größe-Zeilen, Vergleich als Watchlist-Ansicht speichern, Kurschart mit Vergleichslinie (indexiert) im Vergleich.
+
+## Stand 2026-10-21 abends — Kurschart auf der Firmenseite (281 Tests grün)
+
+- Worker: `GET /api/chart/:symbol?bereich=1M|6M|1J|5J|MAX` → yahoo-finance2 `chart()` (1d/1d/1d/1wk/1mo), Cache-API 1 h (1M–1J), 6 h (5J), 1 Tag (MAX). Antwort `KursChart` {symbol, waehrung, bereich, kerzen[], standAm}; ~0,3 s kalt, 3–70 KB. „No data found/delisted“ → 404. Deployt (Version b6a5d600).
+- Gemeinsam `src/aktien/engine/chart.ts`: BEREICHE, periodeAb, kerzenAusChart (OHLC-Lücken raus, Zeit = Tagesanfang UTC, Duplikate → letzte), chartVeraenderung (Start/Ende/%/Hoch/Tief). Tests mit Fixture `yahoo-sap-chart.json`.
+- Browser: IndexedDB-Store `charts` (DB-Version 2, Upgrade mit contains-Prüfung), `ladeChart` in service.ts (Frische = Worker-TTL, bei Netzfehler alter Stand), Komponente `KursChart.tsx` (Zeitraum-Tabs, Veränderung farbig, Hoch/Tief, Kerzenart, Stand) im Überblick-Tab über den Kennzahlen. `ChartPanel` bekam nur das optionale Prop `zeitSichtbar` (bleibt die einzige lightweight-charts-Stelle).
+- Geprüft: Playwright gegen `vite preview` + Prod-Worker, Desktop und 390 px, 1J und 5J, 0 Konsolenfehler.
+
+## Stand 2026-10-21 — Worker deployt, Quellen von Cloudflare aus erreichbar
+
+- `npx wrangler login` (Konto maximilian.schettle@gmail.com, Account-ID 92510c77…), KV-Namespace AKTIEN_KV = `8b16d3abad0445c5af80e88f8d13b91d` (in `worker/wrangler.toml` eingetragen), Secrets `AKTIEN_SECRET` (neu erzeugt, 48 Hex, liegt nur in `worker/.prod.secret`, gitignored) und `SEC_USER_AGENT` (Wert aus `.dev.vars`) gesetzt, `npm run worker:deploy` → **https://chart-akademie-aktien.chart-akademie.workers.dev** (Version f40e5b2f).
+- Stolperstein: direkt nach dem ersten Deploy ~5 min TLS-Handshake-Fehler (Alert 40) auf der neuen workers.dev-Subdomain, Zertifikat war noch nicht ausgestellt; von selbst erledigt.
+- Remote-Tests (curl): `/api/status?pruefen=1` → yahoo ok, sec ok; ohne Token 401; Suche „sap“ ok; Kurs AAPL ok; SEC SAP kalt 3,0 s / warm 0,16 s (KV), SEC AAPL kalt 2,0 s (46 KB), SIE.DE → 204; Yahoo SAP.DE/AAPL kalt 1,7 s; Zustand leer → null; Fantasie-Ticker → 404 mit Meldung. 10-ms-CPU-Limit hat nicht gegriffen.
+- GitHub Pages (Workflow deploy.yml, letzter Lauf 2026-10-16 grün) enthält den Aktien-Bereich bereits: https://maximilianschettle-maker.github.io/chart-akademie/#/aktien (HashRouter).
+- Smoke-Test der Live-App gegen den Worker (Playwright in %LOCALAPPDATA%\Temp\ca-smoke\smoke.mjs, Store per localStorage vorbelegt): Desktop und 390 px, Suche „SAP“ → SAP.DE → Überblick mit SEC+Yahoo-Badges, Kurs, Kennzahlen, Wachstum; 0 Konsolenfehler. Chrome-Extension war wieder nicht verbunden.
+- QR-Codes zum Abtippen am Handy: `worker/.prod.secret.qr.png` (Geheimnis) und `worker/.worker-url.qr.png` (URL), beide gitignored.
+- 2026-10-21 abends: Nutzer hat URL + Geheimnis eingetragen, Test am Handy erfolgreich. Offen: `worker/wrangler.toml` + `.gitignore` sind noch nicht committet (beim goodnight). Danach: Kurschart, Firmenvergleich.
+
 ## Stand 2026-10-16 — Aktien-Bereich: Fundamentalanalyse (SEC EDGAR + Yahoo, Cloudflare Worker; 274 Tests grün)
 
 Wunsch: Fundamentalanalyse für US- und EU-Aktien, privat, auch am Handy, kostenlos. EODHD geprüft (Fundamentals ab 59,99 €/Monat, Demo-Token nur sechs Ticker) → verworfen zugunsten SEC EDGAR (XBRL, kostenlos, 10+ Jahre, auch 20-F-Filer wie SAP/ASML) + Yahoo Finance (yahoo-finance2 v4, inoffiziell, Suche/Kurs/Profil/4 Jahre Bilanzen).

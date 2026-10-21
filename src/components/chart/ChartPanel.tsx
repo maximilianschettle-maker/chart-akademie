@@ -33,6 +33,8 @@ interface ChartPanelProps {
   emaPerioden?: number[]
   /** Freiraum rechts in Kerzen — damit Markierungen an der letzten Kerze nicht am Rand kleben */
   randRechts?: number
+  /** Uhrzeit an der Zeitachse; bei Tages-/Wochenkerzen (Aktien) aus */
+  zeitSichtbar?: boolean
 }
 
 export function ChartPanel({
@@ -42,6 +44,7 @@ export function ChartPanel({
   zeigeVolumen = true,
   emaPerioden,
   randRechts = 0,
+  zeitSichtbar = true,
 }: ChartPanelProps) {
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -61,7 +64,7 @@ export function ChartPanel({
         horzLines: { color: CHART_FARBEN.gitter },
       },
       rightPriceScale: { borderColor: CHART_FARBEN.gitter },
-      timeScale: { borderColor: CHART_FARBEN.gitter, timeVisible: true },
+      timeScale: { borderColor: CHART_FARBEN.gitter, timeVisible: zeitSichtbar },
       crosshair: { mode: 0 },
       // Am Handy soll vertikales Wischen die Seite scrollen, nicht den Chart
       handleScroll: { vertTouchDrag: false },
@@ -160,7 +163,7 @@ export function ChartPanel({
       beobachter.disconnect()
       chart.remove()
     }
-  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden, randRechts])
+  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden, randRechts, zeitSichtbar])
 
   return <div ref={containerRef} className="w-full overflow-hidden rounded-lg" />
 }
