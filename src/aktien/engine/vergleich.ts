@@ -13,7 +13,10 @@ export interface VergleichZeile {
   richtung: Richtung
   hinweis?: string
   wert: (d: Fundamentaldaten, k: Kennzahlen) => number | null
-  format: (wert: number | null, d: Fundamentaldaten) => string
+  /** `waehrung` gesetzt: Anzeige in dieser (umgerechneten) Währung statt der Originalwährung */
+  format: (wert: number | null, d: Fundamentaldaten, waehrung?: string) => string
+  /** Originalwährung des Betrags; nur bei Geldbeträgen gesetzt (die Seite rechnet sie ggf. um) */
+  waehrung?: (d: Fundamentaldaten) => string
 }
 
 export interface VergleichGruppe {
@@ -31,10 +34,10 @@ export const VERGLEICH_GRUPPEN: VergleichGruppe[] = [
   {
     titel: 'Größe',
     zeilen: [
-      { id: 'kurs', titel: 'Kurs', richtung: 'keine', wert: (d) => d.kurs?.preis ?? null, format: (v, d) => fmtKurs(v, d.kurs?.waehrung) },
-      { id: 'marktkap', titel: 'Marktkapitalisierung', richtung: 'keine', wert: (d) => d.kurs?.marktkap ?? null, format: (v, d) => fmtBetrag(v, d.kurs?.waehrung) },
-      { id: 'umsatz', titel: 'Umsatz (letztes GJ)', richtung: 'keine', wert: (d) => letzteJahre(d.jahre, 1)[0]?.umsatz ?? null, format: (v, d) => fmtBetrag(v, d.firma.waehrung) },
-      { id: 'gewinn', titel: 'Nettogewinn (letztes GJ)', richtung: 'keine', wert: (d) => letzteJahre(d.jahre, 1)[0]?.nettogewinn ?? null, format: (v, d) => fmtBetrag(v, d.firma.waehrung) },
+      { id: 'kurs', titel: 'Kurs', richtung: 'keine', wert: (d) => d.kurs?.preis ?? null, format: (v, d, w) => fmtKurs(v, w ?? d.kurs?.waehrung), waehrung: (d) => d.kurs?.waehrung ?? '' },
+      { id: 'marktkap', titel: 'Marktkapitalisierung', richtung: 'keine', wert: (d) => d.kurs?.marktkap ?? null, format: (v, d, w) => fmtBetrag(v, w ?? d.kurs?.waehrung), waehrung: (d) => d.kurs?.waehrung ?? '' },
+      { id: 'umsatz', titel: 'Umsatz (letztes GJ)', richtung: 'keine', wert: (d) => letzteJahre(d.jahre, 1)[0]?.umsatz ?? null, format: (v, d, w) => fmtBetrag(v, w ?? d.firma.waehrung), waehrung: (d) => d.firma.waehrung },
+      { id: 'gewinn', titel: 'Nettogewinn (letztes GJ)', richtung: 'keine', wert: (d) => letzteJahre(d.jahre, 1)[0]?.nettogewinn ?? null, format: (v, d, w) => fmtBetrag(v, w ?? d.firma.waehrung), waehrung: (d) => d.firma.waehrung },
     ],
   },
   {

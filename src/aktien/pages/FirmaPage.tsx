@@ -11,6 +11,7 @@ import { ladeFirma } from '../data/service'
 import { syncStarten } from '../data/sync'
 import { fmtBetrag, fmtKurs, fmtProzent, fmtZeitpunkt } from '../engine/format'
 import { kennzahlen } from '../engine/kennzahlen'
+import { kursFuerKennzahlen } from '../engine/waehrung'
 import { useAktienStore } from '../store'
 import type { Fundamentaldaten } from '../types'
 
@@ -57,7 +58,7 @@ export function FirmaPage() {
     laden(false)
   }, [laden])
 
-  const k = useMemo(() => (daten ? kennzahlen(daten.jahre, daten.kurs, daten.firma.waehrung) : null), [daten])
+  const k = useMemo(() => (daten ? kennzahlen(daten.jahre, kursFuerKennzahlen(daten), daten.firma.waehrung) : null), [daten])
 
   async function cikAnwenden(wert: string) {
     const cik = wert.replace(/\D/g, '')
@@ -146,7 +147,7 @@ export function FirmaPage() {
             {tab === 'ueberblick' && k && (
               <div className="space-y-6">
                 <KursChart symbol={symbol} />
-                <KennzahlenKacheln k={k} waehrung={daten.firma.waehrung} kursWaehrung={daten.kurs?.waehrung} kursbezugMoeglich={daten.kurs?.waehrung === daten.firma.waehrung} />
+                <KennzahlenKacheln k={k} waehrung={daten.firma.waehrung} kursWaehrung={daten.kurs?.waehrung} kursbezugMoeglich={daten.kurs?.waehrung === daten.firma.waehrung || Boolean(daten.wechselkurs)} />
                 {daten.firma.beschreibung && (
                   <details className="text-sm text-gedimmt">
                     <summary className="cursor-pointer text-schrift hover:text-white">Über die Firma</summary>

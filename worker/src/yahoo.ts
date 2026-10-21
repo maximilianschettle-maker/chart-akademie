@@ -1,6 +1,6 @@
 // Yahoo Finance über yahoo-finance2: Suche, Kurs, Profil, Abschlüsse (ca. 4 Jahre).
 import YahooFinance from 'yahoo-finance2'
-import type { Kurs, KursChart, Suchtreffer, YahooTeil } from '../../src/aktien/types'
+import type { Kurs, KursChart, Suchtreffer, Wechselkurs, YahooTeil } from '../../src/aktien/types'
 import { kerzenAusChart, periodeAb, type BereichDef, type ChartRoh } from '../../src/aktien/engine/chart'
 import { firmaAusQuoteSummary, gjEndeMonatAusQuoteSummary, kursAusQuoteSummary, suchtrefferAus, yahooJahre, yahooQuartale, type QuoteSummaryRoh, type ZeitreihenZeile } from '../../src/aktien/engine/yahoo'
 import { HttpFehler } from './http'
@@ -93,4 +93,26 @@ export async function chartKerzen(symbol: string, def: BereichDef): Promise<Kurs
   const kerzen = kerzenAusChart(roh)
   if (kerzen.length === 0) throw new HttpFehler(`Keine Kursdaten für "${symbol}"`, 404)
   return { symbol, waehrung: roh.meta?.currency ?? '', bereich: def.bereich, kerzen, standAm: Date.now() }
+}
+
+/** Wechselkurse für Paarcodes wie 'HKDCNY' über Yahoo-Quotes ('HKDCNY=X'); unbekannte Paare fehlen im Ergebnis. */
+export async function wechselkurse(paare: string[]): Promise<Record<string, Wechselkurs>> {
+  if (paare.length === 0) return {}
+  type QuoteRoh = { symbol?: string; regularMarketPrice?: number; regularMarketTime?: unknown }
+  let roh: QuoteRoh[]
+  try {
+    roh = (await yf().quote(paare.map((p) => `${p}=X`), {}, { validateResult: false })) as unknown as QuoteRoh[]
+  } catch (e) {
+    throw uebersetzen(e, paare.join(','))
+  }
+  const aus: Record<string, Wechselkurs> = {}
+  for (const q of Array.isArray(roh) ? roh : []) {
+    const code = (q.symbol ?? '').replace(/=X$/, '')
+    const kurs = q.regularMarketPrice
+    if (!/^[A-Z]{6}$/.test(code) || typeof kurs !== 'number' || !(kurs > 0)) continue
+    const t = q.regularMarketTime
+    const zeit = t instanceof Date ? t.getTime() : typeof t === 'number' ? t * 1000 : Date.now()
+    aus[code] = { von: code.slice(0, 3), nach: code.slice(3), kurs, standAm: zeit }
+  }
+  return aus
 }

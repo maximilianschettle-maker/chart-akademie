@@ -3,11 +3,12 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowLeft, Plus, X } from 'lucide-react'
 import { EINGABE, KNOPF, Meldung } from '../components/ui'
 import { workerKonfiguriert } from '../data/client'
-import { ladeFirma } from '../data/service'
+import { ladeFirma, ladeWechselkurse } from '../data/service'
 import { syncStarten } from '../data/sync'
 import { fmtZeitpunkt } from '../engine/format'
 import { kennzahlen, type Kennzahlen } from '../engine/kennzahlen'
 import { MAX_FIRMEN, VERGLEICH_GRUPPEN, besteSpalte, symboleAusText } from '../engine/vergleich'
+import { betragUmrechnen, kursFuerKennzahlen, paarCode } from '../engine/waehrung'
 import { useAktienStore } from '../store'
 import type { Fundamentaldaten } from '../types'
 
@@ -27,6 +28,10 @@ export function VergleichPage() {
   const [spalten, setSpalten] = useState<Record<string, Spalte>>({})
   const [eingabe, setEingabe] = useState('')
   const konfiguriert = workerKonfiguriert()
+  const anzeigeWaehrung = useAktienStore((s) => s.vergleichsWaehrung)
+  const einstellungenSetzen = useAktienStore((s) => s.einstellungenSetzen)
+  const [wechselkurse, setWechselkurse] = useState<Record<string, number>>({})
+  const [wechselkursFehler, setWechselkursFehler] = useState<string | null>(null)
 
   useEffect(() => syncStarten(), [])
 
@@ -51,7 +56,7 @@ export function VergleichPage() {
       ladeFirma(symbol)
         .then((d) => {
           if (!aktiv) return
-          const k = d ? kennzahlen(d.jahre, d.kurs, d.firma.waehrung) : null
+          const k = d ? kennzahlen(d.jahre, kursFuerKennzahlen(d), d.firma.waehrung) : null
           setSpalten((s) => ({ ...s, [symbol]: { symbol, daten: d, k, fehler: d ? null : 'Keine Daten', laeuft: false } }))
         })
         .catch((e: unknown) => {
@@ -67,6 +72,36 @@ export function VergleichPage() {
   }, [symbole])
 
   const aktive = symbole.map((s) => spalten[s]).filter((s): s is Spalte => Boolean(s))
+
+  // Wechselkurse für die Anzeige-Währung: je Spalte Kurs- und Berichtswährung
+  const benoetigt = useMemo(() => {
+    if (!anzeigeWaehrung) return [] as string[]
+    const paare = new Set<string>()
+    for (const s of aktive) {
+      if (!s.daten) continue
+      for (const w of [s.daten.kurs?.waehrung, s.daten.firma.waehrung]) if (w && w !== anzeigeWaehrung) paare.add(paarCode(w, anzeigeWaehrung))
+    }
+    return [...paare].filter((p) => !(p in wechselkurse))
+    // wechselkurse absichtlich nicht als Abhängigkeit: es geht nur um fehlende Paare
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [anzeigeWaehrung, aktive])
+  useEffect(() => {
+    if (benoetigt.length === 0) return
+    let aktiv = true
+    ladeWechselkurse(benoetigt)
+      .then((r) => {
+        if (!aktiv) return
+        setWechselkurse((w) => ({ ...w, ...Object.fromEntries(Object.entries(r).map(([p, wk]) => [p, wk.kurs])) }))
+        const fehlt = benoetigt.filter((p) => !r[p])
+        setWechselkursFehler(fehlt.length > 0 ? `Kein Wechselkurs für ${fehlt.map((p) => `${p.slice(0, 3)}→${p.slice(3)}`).join(', ')}` : null)
+      })
+      .catch((e: unknown) => {
+        if (aktiv) setWechselkursFehler(e instanceof Error ? e.message : String(e))
+      })
+    return () => {
+      aktiv = false
+    }
+  }, [benoetigt])
   const mitDaten = aktive.filter((s) => s.daten && s.k)
   const nichtGewaehlt = watchlist.filter((w) => !symbole.includes(w.symbol))
 
@@ -76,7 +111,7 @@ export function VergleichPage() {
         <ArrowLeft className="h-3.5 w-3.5" /> Zur Watchlist
       </Link>
       <h1 className="mt-3 text-2xl font-bold text-white">Firmenvergleich</h1>
-      <p className="mt-1 text-sm text-gedimmt">Bis zu {MAX_FIRMEN} Firmen nebeneinander. Die beste Spalte je Zeile ist grün markiert; Beträge stehen in der jeweiligen Währung und werden nicht umgerechnet.</p>
+      <p className="mt-1 text-sm text-gedimmt">Bis zu {MAX_FIRMEN} Firmen nebeneinander. Die beste Spalte je Zeile ist grün markiert. Beträge wahlweise in der Originalwährung oder mit Yahoo-Wechselkursen in EUR oder USD umgerechnet.</p>
 
       {!konfiguriert && <Meldung text="Worker-URL und Geheimnis fehlen — auf der Aktien-Seite eintragen." fehler />}
 
@@ -111,6 +146,27 @@ export function VergleichPage() {
       {symbole.length === 0 && <p className="mt-6 text-sm text-gedimmt">Wähle oben Firmen aus der Watchlist oder gib Ticker ein.</p>}
 
       {aktive.length > 0 && (
+        <div className="mt-4 flex flex-wrap items-center gap-2 text-xs text-gedimmt">
+          <span>Beträge anzeigen in</span>
+          {[
+            ['', 'jeweiliger Währung'],
+            ['EUR', 'EUR'],
+            ['USD', 'USD'],
+          ].map(([wert, titel]) => (
+            <button
+              key={wert}
+              type="button"
+              className={`rounded-md px-2 py-1 font-semibold ${anzeigeWaehrung === wert ? 'bg-akzent text-nacht' : 'bg-flaeche text-gedimmt hover:text-schrift'}`}
+              onClick={() => einstellungenSetzen({ vergleichsWaehrung: wert })}
+            >
+              {titel}
+            </button>
+          ))}
+          {wechselkursFehler && <span className="text-short">{wechselkursFehler}</span>}
+        </div>
+      )}
+
+      {aktive.length > 0 && (
         <div className="mt-5 overflow-x-auto rounded-xl border border-rand bg-flaeche">
           <table className="w-full text-xs tabular-nums">
             <thead>
@@ -130,7 +186,7 @@ export function VergleichPage() {
             </thead>
             <tbody>
               {VERGLEICH_GRUPPEN.map((g) => (
-                <Gruppe key={g.titel} titel={g.titel} spalten={aktive} zeilen={g.zeilen} />
+                <Gruppe key={g.titel} titel={g.titel} spalten={aktive} zeilen={g.zeilen} anzeigeWaehrung={anzeigeWaehrung} wechselkurse={wechselkurse} />
               ))}
             </tbody>
           </table>
@@ -139,14 +195,26 @@ export function VergleichPage() {
 
       {mitDaten.length > 0 && (
         <p className="mt-3 text-[11px] text-gedimmt">
-          Kursbezogene Werte (KGV, KBV, KUV, EV/EBITDA, FCF-Rendite) nur, wenn Kurs- und Berichtswährung übereinstimmen. Datenstand {mitDaten.map((s) => `${s.symbol} ${fmtZeitpunkt(s.daten!.standAm)}`).join(' · ')}.
+          Kursbezogene Werte (KGV, KBV, KUV, EV/EBITDA, FCF-Rendite) werden bei abweichender Kurswährung mit dem Yahoo-Wechselkurs in die Berichtswährung umgerechnet. Datenstand {mitDaten.map((s) => `${s.symbol} ${fmtZeitpunkt(s.daten!.standAm)}`).join(' · ')}.
         </p>
       )}
     </div>
   )
 }
 
-function Gruppe({ titel, spalten, zeilen }: { titel: string; spalten: Spalte[]; zeilen: (typeof VERGLEICH_GRUPPEN)[number]['zeilen'] }) {
+function Gruppe({
+  titel,
+  spalten,
+  zeilen,
+  anzeigeWaehrung,
+  wechselkurse,
+}: {
+  titel: string
+  spalten: Spalte[]
+  zeilen: (typeof VERGLEICH_GRUPPEN)[number]['zeilen']
+  anzeigeWaehrung: string
+  wechselkurse: Record<string, number>
+}) {
   return (
     <>
       <tr>
@@ -155,8 +223,15 @@ function Gruppe({ titel, spalten, zeilen }: { titel: string; spalten: Spalte[]; 
         </td>
       </tr>
       {zeilen.map((z) => {
-        const werte = spalten.map((s) => (s.daten && s.k ? z.wert(s.daten, s.k) : null))
-        const beste = besteSpalte(werte, z.richtung)
+        // Beträge auf die Anzeige-Währung bringen; ohne Wechselkurs bleibt der Wert in Originalwährung
+        const umgerechnet = anzeigeWaehrung && z.waehrung
+        const werte = spalten.map((s) => {
+          if (!s.daten || !s.k) return null
+          const v = z.wert(s.daten, s.k)
+          return umgerechnet ? betragUmrechnen(v, z.waehrung!(s.daten), anzeigeWaehrung, wechselkurse) ?? v : v
+        })
+        const vergleichbar = !z.waehrung || (umgerechnet && spalten.every((s) => !s.daten || z.waehrung!(s.daten) === anzeigeWaehrung || paarCode(z.waehrung!(s.daten), anzeigeWaehrung) in wechselkurse))
+        const beste = vergleichbar ? besteSpalte(werte, z.richtung) : null
         return (
           <tr key={z.id} className="border-t border-rand/60">
             <td className="sticky left-0 whitespace-nowrap bg-flaeche px-3 py-1.5 text-schrift">
@@ -165,7 +240,7 @@ function Gruppe({ titel, spalten, zeilen }: { titel: string; spalten: Spalte[]; 
             </td>
             {spalten.map((s, i) => (
               <td key={s.symbol} className={`px-3 py-1.5 ${beste === i ? 'bg-long/10 font-semibold text-long' : 'text-white'}`}>
-                {s.daten ? z.format(werte[i], s.daten) : '–'}
+                {s.daten ? z.format(werte[i], s.daten, umgerechnet && werte[i] !== null && (z.waehrung!(s.daten) === anzeigeWaehrung || paarCode(z.waehrung!(s.daten), anzeigeWaehrung) in wechselkurse) ? anzeigeWaehrung : undefined) : '–'}
               </td>
             ))}
           </tr>

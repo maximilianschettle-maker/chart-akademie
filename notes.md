@@ -111,6 +111,15 @@ Anlass: Korrekte Trades wurden „Daneben“ bewertet, Übersicht zeigte für al
 - **Im Browser gefunden** (Playwright `%TEMP%\ca\pw\smoke9–11`): `HandelsChart` baut bei Wechsel des Basis-Intervalls neu auf (sonst Absturz beim inkrementellen Update), `SimulatorPage` greift vor der ersten Replay-Kerze nicht mehr auf die Startkerze zu (candles = sichtbare Kerzen).
 - Stolperstein: lange Heredocs im Bash-Tool scheitern („unexpected EOF“) → Patch-Skripte per Write-Tool anlegen.
 
+## Stand 2026-10-21 nachts — Währungsumrechnung (294 Tests grün)
+
+- Worker `GET /api/wechselkurse?paare=HKDCNY,USDEUR` → Yahoo quote `XXXYYY=X`, Cache-API 1 h je Paar, Antwort {kurse, fehlend}. Deployt (Version f9cf8147).
+- Engine `waehrung.ts`: paarSymbol/paarCode, kursUmrechnen (Beträge ja, Verhältnisse nein), kursFuerKennzahlen (Kurs in Berichtswährung, wenn Wechselkurs da), betragUmrechnen (direkt oder rückwärts), wechselkursText.
+- Service: `ladeFirma` holt bei abweichender Kurswährung automatisch den Wechselkurs (IndexedDB-Store `wechselkurse`, DB v3, 1 h) → `daten.wechselkurs`; Hinweis „… werden nicht berechnet“ wird durch „… mit 1 HKD = 0,85 CNY umgerechnet“ ersetzt. Firmenseite, Watchlist und Vergleich rechnen Kennzahlen mit `kursFuerKennzahlen` → XPeng (HKD/CNY) hat jetzt KBV 2,2×, KUV, FCF-Rendite usw.
+- Vergleich: Schalter „Beträge anzeigen in jeweiliger Währung / EUR / USD“ (Store `vergleichsWaehrung`, nur lokal), Größe-Zeilen werden umgerechnet (XPeng 70,9 Mrd. HKD → 8,0 Mrd. €, Apple 5,0 Bio. $ → 4,5 Bio. €); fehlende Paare → Hinweis, Wert bleibt original.
+- Geprüft: Playwright gegen `vite preview` + Prod-Worker (XPeng-Firmenseite, Vergleich XPeng/SAP/Apple in EUR), 0 Konsolenfehler.
+- Offen: Commit + Push. Ideen: Kurschart mit indexierter Vergleichslinie im Vergleich, Vergleich als gespeicherte Ansicht, DCF in Anzeige-Währung.
+
 ## Stand 2026-10-21 spät — Firmenvergleich (288 Tests grün)
 
 - Seite `/aktien/vergleich?s=SAP.DE,AAPL` (`VergleichPage.tsx`): Auswahl steht in der URL (teilbar), Chips zum Entfernen, Watchlist-Einträge als „+“-Knöpfe, Ticker-Eingabe, max. 6 Firmen. Einstiege: „Vergleichen →“ neben der Watchlist (ab 2 Einträgen, erste 4 vorausgewählt) und Knopf „Vergleich“ auf der Firmenseite.

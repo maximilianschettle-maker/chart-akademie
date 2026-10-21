@@ -10,6 +10,8 @@ export interface AktienEinstellungen {
   /** Basis-URL des Cloudflare Workers, z.B. https://chart-akademie-aktien.xyz.workers.dev */
   workerUrl: string
   secret: string
+  /** Firmenvergleich: Beträge in dieser Währung anzeigen; '' = jeweilige Originalwährung */
+  vergleichsWaehrung: string
 }
 
 interface AktienState extends AktienEinstellungen, Omit<SyncZustand, 'aktualisiertAm'> {
@@ -34,6 +36,7 @@ export const useAktienStore = create<AktienState>()(
     (set) => ({
       workerUrl: STANDARD_URL,
       secret: STANDARD_SECRET,
+      vergleichsWaehrung: '',
       watchlist: [],
       dcfAnnahmen: {},
       cikManuell: {},

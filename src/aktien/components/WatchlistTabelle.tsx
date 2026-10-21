@@ -4,6 +4,7 @@ import { RefreshCw, Trash2 } from 'lucide-react'
 import { ladeFirma } from '../data/service'
 import { fmtBetrag, fmtFaktor, fmtKurs, fmtProzent } from '../engine/format'
 import { kennzahlen } from '../engine/kennzahlen'
+import { kursFuerKennzahlen } from '../engine/waehrung'
 import { useAktienStore } from '../store'
 import type { Fundamentaldaten } from '../types'
 import { KNOPF, QuellenBadge } from './ui'
@@ -80,7 +81,7 @@ export function WatchlistTabelle() {
           <tbody className="tabular-nums">
             {zeilen.map((z) => {
               const d = z.daten
-              const k = d ? kennzahlen(d.jahre, d.kurs, d.firma.waehrung) : null
+              const k = d ? kennzahlen(d.jahre, kursFuerKennzahlen(d), d.firma.waehrung) : null
               return (
                 <tr key={z.symbol} className="border-b border-rand/50">
                   <td className="py-2 pr-3">

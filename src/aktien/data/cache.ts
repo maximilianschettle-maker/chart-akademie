@@ -1,5 +1,5 @@
 import { openDB, type IDBPDatabase } from 'idb'
-import type { Fundamentaldaten, Kurs, KursChart } from '../types'
+import type { Fundamentaldaten, Kurs, KursChart, Wechselkurs } from '../types'
 
 // Eigene IndexedDB für den Aktien-Bereich (die Kerzen-DB bleibt unangetastet).
 // Einträge tragen ihren Zeitstempel; die Frische prüft der Aufrufer. Fehler sind nie fatal.
@@ -8,6 +8,7 @@ const DB_NAME = 'chartakademie-aktien'
 const FIRMEN = 'firmen'
 const KURSE = 'kurse'
 const CHARTS = 'charts'
+const WECHSELKURSE = 'wechselkurse'
 
 interface Eintrag<T> {
   standAm: number
@@ -18,9 +19,9 @@ let dbPromise: Promise<IDBPDatabase> | null = null
 
 function getDb() {
   if (!dbPromise) {
-    dbPromise = openDB(DB_NAME, 2, {
+    dbPromise = openDB(DB_NAME, 3, {
       upgrade(db) {
-        for (const store of [FIRMEN, KURSE, CHARTS]) {
+        for (const store of [FIRMEN, KURSE, CHARTS, WECHSELKURSE]) {
           if (!db.objectStoreNames.contains(store)) db.createObjectStore(store)
         }
       },
@@ -66,4 +67,10 @@ export const kursCache = {
 export const chartCache = {
   lesen: (key: string) => lesen<KursChart>(CHARTS, key),
   schreiben: (key: string, daten: KursChart) => schreiben(CHARTS, key, daten),
+}
+
+/** Wechselkurse je Paarcode ('HKDCNY'); Frische 1 h prüft der Aufrufer. */
+export const wechselkursCache = {
+  lesen: (paar: string) => lesen<Wechselkurs>(WECHSELKURSE, paar),
+  schreiben: (paar: string, daten: Wechselkurs) => schreiben(WECHSELKURSE, paar, daten),
 }

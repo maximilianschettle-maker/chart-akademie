@@ -2,9 +2,10 @@
 // die Fundamentaldaten (Zusammenführen passiert hier im Browser, siehe engine/normalisierung).
 import { fundamentaldatenBauen } from '../engine/normalisierung'
 import { useAktienStore } from '../store'
-import type { Fundamentaldaten, Kurs, KursChart, SecTeil, Suchtreffer, SyncZustand, YahooTeil } from '../types'
+import type { Fundamentaldaten, Kurs, KursChart, SecTeil, Suchtreffer, SyncZustand, Wechselkurs, YahooTeil } from '../types'
+import { paarCode, wechselkursText } from '../engine/waehrung'
 import { bereichDef, type ChartBereich } from '../engine/chart'
-import { chartCache, firmenCache, kursCache } from './cache'
+import { chartCache, firmenCache, kursCache, wechselkursCache } from './cache'
 import { AktienFehler, anfrage } from './client'
 
 const TAG_MS = 86_400_000
@@ -37,7 +38,51 @@ export async function ladeFirma(symbol: string, opt: LadeOptionen = {}): Promise
     const kurs = await ladeKurs(symbol, opt.frisch ?? false)
     if (kurs) daten = { ...daten, kurs }
   }
-  return daten
+  return mitWechselkurs(daten, opt.nurCache ?? false)
+}
+
+const WECHSELKURS_FRISCHE_MS = 60 * 60_000
+const HINWEIS_OHNE_KURSBEZUG = /Kennzahlen mit Kursbezug werden nicht berechnet/
+
+/** Bei abweichender Kurswährung den Wechselkurs holen (Cache 1 h) und den Hinweis entsprechend anpassen. */
+async function mitWechselkurs(daten: Fundamentaldaten, nurCache: boolean): Promise<Fundamentaldaten> {
+  const kurs = daten.kurs
+  if (!kurs || kurs.waehrung === daten.firma.waehrung) return daten
+  const code = paarCode(kurs.waehrung, daten.firma.waehrung)
+  let wk: Wechselkurs | undefined
+  try {
+    wk = (await ladeWechselkurse([code], nurCache))[code]
+  } catch {
+    wk = undefined
+  }
+  if (!wk) return daten
+  const hinweise = daten.hinweise.filter((h) => !HINWEIS_OHNE_KURSBEZUG.test(h))
+  hinweise.push(`Kurs in ${kurs.waehrung}, Abschlüsse in ${daten.firma.waehrung}: kursbezogene Kennzahlen mit ${wechselkursText(wk)} (Yahoo) umgerechnet.`)
+  return { ...daten, wechselkurs: wk, hinweise }
+}
+
+/** Wechselkurse für Paarcodes wie 'USDEUR'; aus dem Cache, wenn jünger als eine Stunde, sonst vom Worker. */
+export async function ladeWechselkurse(paare: string[], nurCache = false): Promise<Record<string, Wechselkurs>> {
+  const aus: Record<string, Wechselkurs> = {}
+  const fehlend: string[] = []
+  for (const p of paare) {
+    const g = await wechselkursCache.lesen(p)
+    if (g && (nurCache || Date.now() - g.standAm < WECHSELKURS_FRISCHE_MS)) aus[p] = g.daten
+    else fehlend.push(p)
+  }
+  if (fehlend.length === 0 || nurCache) return aus
+  const antwort = await anfrage<{ kurse: Record<string, Wechselkurs> }>(`/api/wechselkurse?paare=${encodeURIComponent(fehlend.join(','))}`)
+  for (const p of fehlend) {
+    const wk = antwort?.kurse[p]
+    if (wk) {
+      aus[p] = wk
+      await wechselkursCache.schreiben(p, wk)
+    } else {
+      const g = await wechselkursCache.lesen(p)
+      if (g) aus[p] = g.daten
+    }
+  }
+  return aus
 }
 
 async function vomWorker(symbol: string, frisch: boolean): Promise<Fundamentaldaten> {

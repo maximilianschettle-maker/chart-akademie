@@ -7,7 +7,7 @@ export function KennzahlenKacheln({ k, waehrung, kursWaehrung, kursbezugMoeglich
   const jahr = k.jahr ? `GJ ${k.jahr}` : undefined
   return (
     <div className="space-y-4">
-      <Gruppe titel="Bewertung" hinweis={!kursbezugMoeglich && kursWaehrung ? `Kurs in ${kursWaehrung}, Abschlüsse in ${waehrung}: nur Yahoo-Verhältnisse` : undefined}>
+      <Gruppe titel="Bewertung" hinweis={!kursbezugMoeglich && kursWaehrung ? `Kurs in ${kursWaehrung}, Abschlüsse in ${waehrung}: nur Yahoo-Verhältnisse` : kursWaehrung && kursWaehrung !== waehrung ? `Kurs ${kursWaehrung} → ${waehrung} umgerechnet` : undefined}>
         <Kachel titel="KGV" wert={fmtFaktor(k.kgv)} hinweis="Kurs ÷ Gewinn je Aktie (TTM)" />
         <Kachel titel="KBV" wert={fmtFaktor(k.kbv)} hinweis="Kurs ÷ Buchwert" />
         <Kachel titel="KUV" wert={fmtFaktor(k.kuv)} hinweis="Marktkap. ÷ Umsatz" />

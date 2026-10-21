@@ -134,6 +134,16 @@ export interface Fundamentaldaten {
   /** gesetzt, wenn ein Teil nur aus dem alten Cache kam */
   veraltet?: boolean
   hinweise: string[]
+  /** Kurs- → Berichtswährung, wenn beide verschieden sind und Yahoo den Kurs liefert */
+  wechselkurs?: Wechselkurs
+}
+
+export interface Wechselkurs {
+  von: string
+  nach: string
+  /** 1 von = kurs nach */
+  kurs: number
+  standAm: number
 }
 
 export interface Suchtreffer {

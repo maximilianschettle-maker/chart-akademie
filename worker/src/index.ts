@@ -6,6 +6,7 @@
 //   GET  /api/suche?q=                     Yahoo-Suche (Aktien)
 //   GET  /api/yahoo/:symbol[?frisch=1]     Firma + Abschlüsse von Yahoo (KV 7 Tage)
 //   GET  /api/kurs/:symbol[?frisch=1]      Kurs + Bewertung (Cache-API 15 min)
+//   GET  /api/wechselkurse?paare=HKDCNY,USDEUR   Wechselkurse (Cache-API 1 h je Paar)
 //   GET  /api/chart/:symbol?bereich=1M|6M|1J|5J|MAX[&frisch=1]   Kursverlauf als Kerzen (Cache-API 1 h – 1 Tag)
 //   GET  /api/sec/:symbol?name=&waehrung=&cik=[&frisch=1]   SEC-Abschlüsse (KV 7 Tage), 204 ohne Zuordnung
 //   GET  /api/zustand · PUT /api/zustand   Watchlist + DCF-Annahmen für den Geräte-Sync (KV)
@@ -14,7 +15,7 @@ import type { SyncZustand } from '../../src/aktien/types'
 import { kvLesen, kvSchreiben, mitCacheApi, mitKv } from './cache'
 import { HttpFehler, corsHeader, fehler, json, pruefeZugang, type Env } from './http'
 import { cikIndex, secTeilLaden } from './sec'
-import { chartKerzen, kurs, suche, yahooTeil } from './yahoo'
+import { chartKerzen, kurs, suche, wechselkurse, yahooTeil } from './yahoo'
 import { bereichDef } from '../../src/aktien/engine/chart'
 
 const VERSION = '0.1.0'
@@ -48,6 +49,19 @@ export default {
           antwort.sec = s.status === 'fulfilled' ? 'ok' : (s.reason as Error).message
         }
         return json(req, antwort)
+      }
+
+      if (pfad === '/api/wechselkurse' && req.method === 'GET') {
+        const paare = [...new Set((url.searchParams.get('paare') ?? '').toUpperCase().split(',').map((p) => p.trim()).filter(Boolean))]
+        if (paare.length === 0 || paare.length > 12 || paare.some((p) => !/^[A-Z]{6}$/.test(p))) throw new HttpFehler('paare: 1–12 Codes wie HKDCNY', 400)
+        const kurse: Record<string, unknown> = {}
+        const fehlend: string[] = []
+        for (const p of paare) {
+          const r = await mitCacheApi(`wechselkurs/${p}`, 3600, frisch, async () => (await wechselkurse([p]))[p] ?? null)
+          if (r.daten) kurse[p] = r.daten
+          else fehlend.push(p)
+        }
+        return json(req, { kurse, fehlend })
       }
 
       if (pfad.startsWith('/api/chart/') && req.method === 'GET') {
