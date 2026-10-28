@@ -123,20 +123,24 @@ export const TRACKER_MAX_JE_LAUF = 6
 
 /** Neue Tracker-Signale (aktive Muster, Push an) als Nachrichten; Schlüssel `tracker:<signal-id>` */
 export function faelligeTrackerPushes(daten: TrackerDaten, gesendet: Record<string, string>, jetzt: Date, appUrl: string): PushNachricht[] {
-  if (!daten.config?.push) return []
+  if (!daten.config) return []
   const grenze = new Date(jetzt.getTime() - TRACKER_SIGNAL_TAGE * 86_400_000).toISOString().slice(0, 10)
   const liste: PushNachricht[] = []
-  for (const inst of daten.instrumente) {
-    for (const s of inst.signale) {
-      if (s.datum < grenze || !daten.config.muster[s.muster] || gesendet[`tracker:${s.id}`]) continue
+  const sammle = (inst: TrackerDaten['instrumente'][number], signale: TrackerDaten['instrumente'][number]['signale'], muster: Record<string, boolean>, stunde: boolean) => {
+    for (const s of signale) {
+      if (s.datum < grenze || !muster[s.muster] || gesendet[`tracker:${s.id}`]) continue
       liste.push({
         key: `tracker:${s.id}`,
-        titel: `${inst.name}: ${s.titel}`,
-        text: `${s.text}${s.vorlaeufig ? ' (Tageskerze noch offen)' : ''}`,
+        titel: `${inst.name}${stunde ? ' (1h)' : ''}: ${s.titel}`,
+        text: `${s.text}${s.vorlaeufig ? (stunde ? ' (Stundenkerze noch offen)' : ' (Tageskerze noch offen)') : ''}`,
         url: appUrl,
-        tag: `tracker-${inst.id}-${s.muster}`,
+        tag: `tracker-${inst.id}-${s.muster}${stunde ? '-1h' : ''}`,
       })
     }
+  }
+  for (const inst of daten.instrumente) {
+    if (daten.config.push) sammle(inst, inst.signale, daten.config.muster, false)
+    if (daten.config.pushStunde && inst.stunde) sammle(inst, inst.stunde.signale, daten.config.musterStunde ?? {}, true)
   }
   liste.sort((a, b) => a.key.localeCompare(b.key))
   return liste.slice(0, TRACKER_MAX_JE_LAUF)

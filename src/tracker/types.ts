@@ -23,12 +23,20 @@ export interface MusterDef {
   beschreibung: string
 }
 
+/** Zeitebene: Tageskerzen (Swing) oder Stundenkerzen (Intraday) */
+export type Ebene = 'tag' | 'stunde'
+
 export interface TrackerConfig {
   /** Instrument-Ids aus dem Katalog, in Anzeige-Reihenfolge */
   instrumente: string[]
+  /** Muster auf der Tagesebene */
   muster: Record<MusterId, boolean>
-  /** Push-Nachrichten bei neuen Signalen */
+  /** Push-Nachrichten bei neuen Tages-Signalen */
   push: boolean
+  /** Muster auf der Stundenebene */
+  musterStunde: Record<MusterId, boolean>
+  /** Push-Nachrichten bei neuen Stunden-Signalen */
+  pushStunde: boolean
   /** Unix-ms der letzten Änderung – neuerer Stand gewinnt beim Sync */
   aktualisiertAm: number
 }
@@ -36,13 +44,17 @@ export interface TrackerConfig {
 export type Richtung = 'long' | 'short' | 'neutral'
 
 export interface Signal {
-  /** eindeutig je Instrument, Muster, Richtung und Tageskerze */
+  /** eindeutig je Instrument, Ebene, Muster, Richtung und Kerze */
   id: string
   instrument: string
+  /** fehlt bei älteren Daten = Tagesebene */
+  ebene?: Ebene
   muster: MusterId
   richtung: Richtung
   /** Tag der Kerze (ISO-Datum, UTC) */
   datum: string
+  /** Beginn der Kerze (UTC-ISO) – auf der Stundenebene mit Uhrzeit */
+  kerzeZeit?: string
   /** Lauf, der das Signal zuerst gesehen hat (UTC-ISO) */
   zeit: string
   preis: number
@@ -76,8 +88,19 @@ export interface Analyse {
   atr14: number | null
   tunnel: Tunnel | null
   trend: 'auf' | 'ab' | 'seitwaerts'
-  /** letzte Tageskerze noch offen */
+  /** letzte Kerze noch offen */
   vorlaeufig: boolean
+}
+
+/** Kerzen, Analyse und Signale einer Zeitebene */
+export interface EbeneDaten {
+  quelle: 'yahoo' | 'coinbase' | 'alt'
+  /** Kerzen als [time (Unix-Sek), open, high, low, close, volume] */
+  kerzen: number[][]
+  analyse: Analyse | null
+  /** Signale der letzten 30 Tage, neueste zuerst */
+  signale: Signal[]
+  fehler?: string
 }
 
 export interface InstrumentDaten {
@@ -87,12 +110,14 @@ export interface InstrumentDaten {
   waehrung: string
   dezimalen: number
   quelle: 'yahoo' | 'coinbase' | 'alt'
-  /** Tageskerzen als [time (Unix-Sek, UTC-Tagesanfang), open, high, low, close, volume], die letzten ~300 */
+  /** Tageskerzen als [time (Unix-Sek, UTC-Tagesanfang), open, high, low, close, volume], die letzten ~2 Jahre */
   kerzen: number[][]
   analyse: Analyse | null
-  /** Signale der letzten 30 Tage, neueste zuerst */
+  /** Tages-Signale der letzten 30 Tage, neueste zuerst */
   signale: Signal[]
   fehler?: string
+  /** Stundenebene (fehlt bei älteren Daten) */
+  stunde?: EbeneDaten
 }
 
 export interface TrackerDaten {

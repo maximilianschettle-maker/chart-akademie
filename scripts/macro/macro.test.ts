@@ -278,3 +278,31 @@ describe('tracker-push', () => {
     expect(faelligeTrackerPushes({ ...tracker, config: { ...tracker.config, push: false } }, {}, jetzt, 'u')).toEqual([])
   })
 })
+
+describe('tracker-push stunde', () => {
+  it('pusht Stunden-Signale nur mit eigenem Schalter und Muster', () => {
+    const basis = {
+      version: 1,
+      lastUpdated: 'x',
+      configQuelle: 'datei',
+      config: { instrumente: ['dax'], muster: { ausbruch: true, tunnel: true, 'ema-kreuz': true, rsi: true, setup: true }, push: true, musterStunde: { ausbruch: true, tunnel: false, 'ema-kreuz': true, rsi: true, setup: true }, pushStunde: true, aktualisiertAm: 0 },
+      instrumente: [
+        {
+          id: 'dax', name: 'DAX', symbol: '^GDAXI', waehrung: 'EUR', dezimalen: 0, quelle: 'yahoo', kerzen: [], analyse: null, signale: [],
+          stunde: {
+            quelle: 'yahoo', kerzen: [], analyse: null,
+            signale: [
+              { id: 'dax:ausbruch:long:stunde:2026-10-28T14', instrument: 'dax', ebene: 'stunde', muster: 'ausbruch', richtung: 'long', datum: '2026-10-28', zeit: 'x', preis: 1, titel: 'Breakout über 20-Stunden-Hoch', text: 't' },
+              { id: 'dax:tunnel:neutral:stunde:2026-10-28T14', instrument: 'dax', ebene: 'stunde', muster: 'tunnel', richtung: 'neutral', datum: '2026-10-28', zeit: 'x', preis: 1, titel: 'Tunnel erkannt', text: 't' },
+            ],
+          },
+        },
+      ],
+    } as unknown as import('../../src/tracker/types.ts').TrackerDaten
+    const jetzt = new Date('2026-10-28T19:00:00Z')
+    const p = faelligeTrackerPushes(basis, {}, jetzt, 'u')
+    expect(p.map((x) => x.key)).toEqual(['tracker:dax:ausbruch:long:stunde:2026-10-28T14'])
+    expect(p[0].titel).toBe('DAX (1h): Breakout über 20-Stunden-Hoch')
+    expect(faelligeTrackerPushes({ ...basis, config: { ...basis.config, pushStunde: false } }, {}, jetzt, 'u')).toEqual([])
+  })
+})

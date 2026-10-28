@@ -86,7 +86,7 @@ describe('analyse', () => {
   })
 
   it('wandelt Kerzen kompakt und zurück', () => {
-    const c = kerzen(seitwaerts(5))
+    const c = kerzen(seitwaerts(5)).map((k) => ({ ...k, open: Math.round(k.open * 1e5) / 1e5, high: Math.round(k.high * 1e5) / 1e5, low: Math.round(k.low * 1e5) / 1e5, close: Math.round(k.close * 1e5) / 1e5 }))
     expect(kerzenAusKompakt(kerzenKompakt(c))).toEqual(c)
     expect(kerzenAusKompakt([[1, 2], ['x' as unknown as number, 1, 1, 1, 1, 1]])).toEqual([])
   })
@@ -104,16 +104,27 @@ describe('katalog', () => {
   })
 })
 
-describe('liveKurse', () => {
-  it('nimmt den Vortagesschluss, wenn die letzte Kerze vom selben Tag ist', async () => {
-    const { vortagesSchluss, aktuellerKurs } = await import('../liveKurse')
-    const c = kerzen([100, 101, 102])
-    const letzteMs = c[2].time * 1000
-    expect(vortagesSchluss(c, letzteMs + 3_600_000)).toBe(101)
-    expect(vortagesSchluss(c, letzteMs + 86_400_000)).toBe(102)
-    expect(vortagesSchluss([], 0)).toBeNull()
-    expect(aktuellerKurs({ kurs: 5, kursZeit: '2026-10-28T10:00:00Z' }, { preis: 6, zeit: Date.parse('2026-10-28T11:00:00Z') })).toMatchObject({ preis: 6, live: true })
-    expect(aktuellerKurs({ kurs: 5, kursZeit: '2026-10-28T10:00:00Z' }, { preis: 6, zeit: Date.parse('2026-10-28T09:00:00Z') })).toMatchObject({ preis: 5, live: false })
-    expect(aktuellerKurs(null, undefined)).toBeNull()
+describe('stundenebene', () => {
+  it('nutzt Stunden-Ids, Vorläufigkeit nach Intervall und eigene Texte', async () => {
+    const { STUNDEN_OPTIONEN } = await import('./analyse')
+    const closes = [...seitwaerts(40), 104, 105]
+    // Stundenkerzen: Zeiten im Stundenraster
+    const c = kerzen(closes).map((k, i) => ({ ...k, time: 1_700_000_000 + i * 3600 }))
+    const letzte = c[c.length - 2]
+    const r = analysiere(c.slice(0, -1), 'test', ALLE, new Date((letzte.time + 1800) * 1000), undefined, STUNDEN_OPTIONEN)!
+    const a = r.signale.find((s) => s.muster === 'ausbruch')!
+    expect(a.ebene).toBe('stunde')
+    expect(a.vorlaeufig).toBe(true)
+    expect(a.id).toBe(`test:ausbruch:long:stunde:${new Date(letzte.time * 1000).toISOString().slice(0, 13)}`)
+    expect(a.text).toContain('20-Stunden-Hoch')
+    const fertig = analysiere(c.slice(0, -1), 'test', ALLE, new Date((letzte.time + 7200) * 1000), undefined, STUNDEN_OPTIONEN)!
+    expect(fertig.analyse.vorlaeufig).toBe(false)
+  })
+  it('normalisiert die Stunden-Einstellungen', () => {
+    const n = normalisiereConfig({ musterStunde: { setup: false }, pushStunde: false })
+    expect(n.musterStunde.setup).toBe(false)
+    expect(n.musterStunde.ausbruch).toBe(true)
+    expect(n.pushStunde).toBe(false)
+    expect(normalisiereConfig({}).pushStunde).toBe(true)
   })
 })

@@ -14,9 +14,9 @@ export function TrackerWidget() {
   const live = useLiveKurse(symbole)
   const signale = daten
     ? daten.instrumente
-        .flatMap((i) => i.signale.map((s) => ({ ...s, name: i.name })))
-        .sort((a, b) => b.datum.localeCompare(a.datum) || b.zeit.localeCompare(a.zeit))
-        .slice(0, 4)
+        .flatMap((i) => [...i.signale, ...(i.stunde?.signale ?? [])].map((s) => ({ ...s, name: i.name })))
+        .sort((a, b) => (b.kerzeZeit ?? b.datum).localeCompare(a.kerzeZeit ?? a.datum) || b.zeit.localeCompare(a.zeit))
+        .slice(0, 5)
     : []
   const neuesterKurs = daten ? Math.max(...daten.instrumente.map((i) => Math.max(live[i.symbol]?.zeit ?? 0, i.analyse ? Date.parse(i.analyse.kursZeit) : 0))) : 0
 
@@ -65,7 +65,10 @@ export function TrackerWidget() {
               {signale.map((s) => (
                 <li key={s.id} className="flex flex-wrap items-baseline gap-x-2">
                   <span className="tabular-nums text-gedimmt">{fmtDatumKurz(s.datum)}</span>
-                  <span className="text-schrift">{s.name}:</span>
+                  <span className="text-schrift">
+                    {s.name}
+                    {s.ebene === 'stunde' && <span className="text-gedimmt"> (1h)</span>}:
+                  </span>
                   <span className={`font-semibold ${richtungFarbe(s.richtung)}`}>{s.titel}</span>
                   {s.vorlaeufig && <span className="text-[10px] uppercase tracking-wide text-gedimmt">vorläufig</span>}
                 </li>

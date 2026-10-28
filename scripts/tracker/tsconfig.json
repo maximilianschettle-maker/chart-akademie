@@ -20,7 +20,8 @@
   },
   "include": [
     "./*.ts",
-    "../../src/tracker/**/*.ts"
+    "../../src/tracker/types.ts",
+    "../../src/tracker/engine/*.ts"
   ],
   "exclude": [
     "**/*.test.ts"

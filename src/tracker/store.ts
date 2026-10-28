@@ -16,6 +16,8 @@ interface TrackerState {
   instrumentUmschalten: (id: string) => void
   musterUmschalten: (id: MusterId) => void
   pushSetzen: (an: boolean) => void
+  musterUmschaltenStunde: (id: MusterId) => void
+  pushStundeSetzen: (an: boolean) => void
   /** fernen Stand holen; ist er neuer, übernehmen, sonst eigenen schreiben */
   abgleichen: () => Promise<void>
 }
@@ -58,6 +60,8 @@ export const useTrackerStore = create<TrackerState>()(
         },
         musterUmschalten: (id) => aendern({ muster: { ...get().config.muster, [id]: !get().config.muster[id] } }),
         pushSetzen: (an) => aendern({ push: an }),
+        musterUmschaltenStunde: (id) => aendern({ musterStunde: { ...get().config.musterStunde, [id]: !get().config.musterStunde[id] } }),
+        pushStundeSetzen: (an) => aendern({ pushStunde: an }),
         abgleichen: async () => {
           if (!workerKonfiguriert()) {
             set({ sync: 'kein-worker' })

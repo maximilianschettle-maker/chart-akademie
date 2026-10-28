@@ -4,13 +4,20 @@ import { rsi } from '../../engine/indikatoren/rsi'
 import { atr } from '../../engine/indikatoren/atr'
 import { erkenneImFenster } from '../../engine/setupErkennung'
 import { STRATEGIEN } from '../../content/strategien'
-import type { Analyse, MusterId, Richtung, Signal, Tunnel } from '../types'
+import type { Analyse, Ebene, MusterId, Richtung, Signal, Tunnel } from '../types'
 
-// Charttechnische Analyse eines Instruments auf Tageskerzen. Reine Funktionen, ohne Netz.
-// Läuft in der GitHub Action (scripts/tracker/hole-tracker.ts); das Frontend zeigt nur das Ergebnis.
-// Die letzte Kerze darf unvollständig sein (laufender Handelstag) – Signale daraus sind „vorläufig“.
+// Charttechnische Analyse eines Instruments auf Kerzen einer Zeitebene (Tag oder Stunde).
+// Reine Funktionen, ohne Netz. Läuft in der GitHub Action (scripts/tracker/hole-tracker.ts);
+// das Frontend zeigt nur das Ergebnis. Die letzte Kerze darf unvollständig sein – Signale
+// daraus sind „vorläufig“.
 
 export interface AnalyseOptionen {
+  /** Zeitebene – steckt in der Signal-Id */
+  ebene: Ebene
+  /** Kerzenlänge in Sekunden (Vorläufigkeit, Zeitstempel) */
+  intervallSek: number
+  /** Einheit für Texte, z.B. „Tage“ oder „Stunden“ */
+  einheit: string
   /** Fenster für Hoch/Tief beim Breakout (ohne die aktuelle Kerze) */
   ausbruchTage: number
   tunnelMinTage: number
@@ -19,14 +26,32 @@ export interface AnalyseOptionen {
   tunnelAtrFaktor: number
   /** Randzone des Tunnels als Anteil der Höhe */
   tunnelRand: number
+  /** Fenster für das „lange“ Hoch/Tief (52 Wochen auf Tagesebene) */
+  langTage: number
+  langName: string
 }
 
 export const STANDARD_OPTIONEN: AnalyseOptionen = {
+  ebene: 'tag',
+  intervallSek: 86_400,
+  einheit: 'Tage',
   ausbruchTage: 20,
   tunnelMinTage: 15,
   tunnelMaxTage: 60,
   tunnelAtrFaktor: 4,
   tunnelRand: 0.2,
+  langTage: 252,
+  langName: '52-Wochen',
+}
+
+/** Stundenkerzen: gleiche Regeln, Fenster in Stunden; „lang“ = 20 Handelstage */
+export const STUNDEN_OPTIONEN: AnalyseOptionen = {
+  ...STANDARD_OPTIONEN,
+  ebene: 'stunde',
+  intervallSek: 3_600,
+  einheit: 'Stunden',
+  langTage: 140,
+  langName: '20-Tage',
 }
 
 export function isoDatum(timeSek: number): string {
@@ -92,9 +117,10 @@ export function analysiere(
   if (n < 25) return null
   const i = n - 1
   const c = kerzen
-  const heute = jetzt.toISOString().slice(0, 10)
   const datum = isoDatum(c[i].time)
-  const vorlaeufig = datum >= heute
+  const kerzeZeit = new Date(c[i].time * 1000).toISOString()
+  // Kerze noch offen, solange ihr Intervall nicht abgelaufen ist
+  const vorlaeufig = (c[i].time + opt.intervallSek) * 1000 > jetzt.getTime()
 
   const ema20 = ema(c, 20)
   const ema50 = ema(c, 50)
@@ -105,8 +131,8 @@ export function analysiere(
 
   const hoch20 = maxHigh(c, i - opt.ausbruchTage, i - 1)
   const tief20 = minLow(c, i - opt.ausbruchTage, i - 1)
-  const hoch52w = maxHigh(c, i - 252, i - 1)
-  const tief52w = minLow(c, i - 252, i - 1)
+  const hoch52w = maxHigh(c, i - opt.langTage, i - 1)
+  const tief52w = minLow(c, i - opt.langTage, i - 1)
   const tunnel = findeTunnel(c, i, atrI, opt)
   const tunnelVorher = findeTunnel(c, i - 1, endlich(atr14[i - 1]) ?? atrI, opt)
 
@@ -141,13 +167,17 @@ export function analysiere(
 
   const signale: Signal[] = []
   const zeit = jetzt.toISOString()
+  // Tagesebene behält die alte Id-Form (Dedupe gegen bereits gesendete Pushes)
+  const idKerze = opt.ebene === 'tag' ? datum : `${opt.ebene}:${kerzeZeit.slice(0, 13)}`
   const neu = (m: MusterId, richtung: Richtung, titel: string, text: string, preis = close) => {
     signale.push({
-      id: `${instrumentId}:${m}:${richtung}:${datum}`,
+      id: `${instrumentId}:${m}:${richtung}:${idKerze}`,
       instrument: instrumentId,
+      ebene: opt.ebene,
       muster: m,
       richtung,
       datum,
+      kerzeZeit,
       zeit,
       preis,
       titel,
@@ -161,21 +191,22 @@ export function analysiere(
   if (muster.ausbruch && i >= opt.ausbruchTage + 1) {
     const hochVorher = maxHigh(c, i - 1 - opt.ausbruchTage, i - 2)
     const tiefVorher = minLow(c, i - 1 - opt.ausbruchTage, i - 2)
+    const fenster = `${opt.ausbruchTage}-${opt.einheit}`
     if (close > hoch20 && c[i - 1].close <= hochVorher) {
       const ath = close > hoch52w
       neu(
         'ausbruch',
         'long',
-        ath ? 'Breakout auf 52-Wochen-Hoch' : `Breakout über ${opt.ausbruchTage}-Tage-Hoch`,
-        `Schluss ${pz(close, hoch20)} über dem ${opt.ausbruchTage}-Tage-Hoch${tunnelVorher ? ` – Ausbruch aus dem Tunnel (${tunnelVorher.seitTagen} Tage)` : ''}.`,
+        ath ? `Breakout auf ${opt.langName}-Hoch` : `Breakout über ${fenster}-Hoch`,
+        `Schluss ${pz(close, hoch20)} über dem ${fenster}-Hoch${tunnelVorher ? ` – Ausbruch aus dem Tunnel (${tunnelVorher.seitTagen} ${opt.einheit})` : ''}.`,
       )
     } else if (close < tief20 && c[i - 1].close >= tiefVorher) {
       const atl = close < tief52w
       neu(
         'ausbruch',
         'short',
-        atl ? 'Bruch auf 52-Wochen-Tief' : `Bruch unter ${opt.ausbruchTage}-Tage-Tief`,
-        `Schluss ${pz(close, tief20)} unter dem ${opt.ausbruchTage}-Tage-Tief${tunnelVorher ? ` – Ausbruch aus dem Tunnel nach unten (${tunnelVorher.seitTagen} Tage)` : ''}.`,
+        atl ? `Bruch auf ${opt.langName}-Tief` : `Bruch unter ${fenster}-Tief`,
+        `Schluss ${pz(close, tief20)} unter dem ${fenster}-Tief${tunnelVorher ? ` – Ausbruch aus dem Tunnel nach unten (${tunnelVorher.seitTagen} ${opt.einheit})` : ''}.`,
       )
     }
   }
@@ -184,7 +215,7 @@ export function analysiere(
   if (muster.tunnel && tunnel) {
     const spanne = `${fmt(tunnel.tief)}–${fmt(tunnel.hoch)}`
     if (!tunnelVorher) {
-      neu('tunnel', 'neutral', 'Tunnel erkannt', `Seit ${tunnel.seitTagen} Tagen zwischen ${spanne} (Höhe ${pz(tunnel.hoch, tunnel.tief)}).`)
+      neu('tunnel', 'neutral', 'Tunnel erkannt', `Seit ${tunnel.seitTagen} ${opt.einheit} zwischen ${spanne} (Höhe ${pz(tunnel.hoch, tunnel.tief)}).`)
     }
     if (tunnel.lage !== 'mitte' && (!tunnelVorher || tunnelVorher.lage !== tunnel.lage)) {
       const unten = tunnel.lage === 'unten'
@@ -192,7 +223,7 @@ export function analysiere(
         'tunnel',
         unten ? 'long' : 'short',
         unten ? 'Am unteren Tunnelrand' : 'Am oberen Tunnelrand',
-        `${unten ? 'Unterkante' : 'Oberkante'} ${fmt(unten ? tunnel.tief : tunnel.hoch)} des Tunnels ${spanne} (seit ${tunnel.seitTagen} Tagen) – Bounce oder Ausbruch?`,
+        `${unten ? 'Unterkante' : 'Oberkante'} ${fmt(unten ? tunnel.tief : tunnel.hoch)} des Tunnels ${spanne} (seit ${tunnel.seitTagen} ${opt.einheit}) – Bounce oder Ausbruch?`,
       )
     }
   }
@@ -246,8 +277,13 @@ function fmt(n: number): string {
 }
 
 /** Kerzen kompakt als Zahlenfelder (JSON) und zurück */
+/** Yahoo liefert 7844.52001953125 – auf 5 Nachkommastellen runden spart ~40 % JSON (EUR/USD braucht 5) */
+function r5(n: number): number {
+  return Math.round(n * 1e5) / 1e5
+}
+
 export function kerzenKompakt(kerzen: Candle[]): number[][] {
-  return kerzen.map((k) => [k.time, k.open, k.high, k.low, k.close, k.volume])
+  return kerzen.map((k) => [k.time, r5(k.open), r5(k.high), r5(k.low), r5(k.close), Math.round(k.volume)])
 }
 
 export function kerzenAusKompakt(felder: number[][]): Candle[] {

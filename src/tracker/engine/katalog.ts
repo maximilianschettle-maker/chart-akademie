@@ -49,11 +49,24 @@ export const MUSTER: MusterDef[] = [
 
 export const MUSTER_NACH_ID: Record<MusterId, MusterDef> = Object.fromEntries(MUSTER.map((m) => [m.id, m])) as Record<MusterId, MusterDef>
 
+export const ALLE_MUSTER_AN: Record<MusterId, boolean> = { ausbruch: true, tunnel: true, 'ema-kreuz': true, rsi: true, setup: true }
+
 export const STANDARD_CONFIG: TrackerConfig = {
   instrumente: ['sp500', 'nasdaq100', 'gold', 'bitcoin', 'dax', 'eurusd'],
-  muster: { ausbruch: true, tunnel: true, 'ema-kreuz': true, rsi: true, setup: true },
+  muster: { ...ALLE_MUSTER_AN },
   push: true,
+  musterStunde: { ...ALLE_MUSTER_AN },
+  pushStunde: true,
   aktualisiertAm: 0,
+}
+
+function musterAus(roh: unknown, standard: Record<MusterId, boolean>): Record<MusterId, boolean> {
+  const muster = { ...standard }
+  if (roh && typeof roh === 'object') {
+    const r = roh as Partial<Record<MusterId, unknown>>
+    for (const m of MUSTER) if (typeof r[m.id] === 'boolean') muster[m.id] = r[m.id] as boolean
+  }
+  return muster
 }
 
 /** Unbekannte Instrumente raus, fehlende Muster mit Standard auffüllen */
@@ -62,14 +75,17 @@ export function normalisiereConfig(roh: unknown): TrackerConfig {
   const instrumente = Array.isArray(r.instrumente)
     ? [...new Set(r.instrumente.filter((id): id is string => typeof id === 'string' && id in INSTRUMENT_NACH_ID))]
     : [...STANDARD_CONFIG.instrumente]
-  const muster = { ...STANDARD_CONFIG.muster }
-  if (r.muster && typeof r.muster === 'object') {
-    for (const m of MUSTER) if (typeof r.muster[m.id] === 'boolean') muster[m.id] = r.muster[m.id]
-  }
   return {
     instrumente,
-    muster,
+    muster: musterAus(r.muster, STANDARD_CONFIG.muster),
     push: typeof r.push === 'boolean' ? r.push : STANDARD_CONFIG.push,
+    musterStunde: musterAus(r.musterStunde, STANDARD_CONFIG.musterStunde),
+    pushStunde: typeof r.pushStunde === 'boolean' ? r.pushStunde : STANDARD_CONFIG.pushStunde,
     aktualisiertAm: typeof r.aktualisiertAm === 'number' && Number.isFinite(r.aktualisiertAm) ? r.aktualisiertAm : 0,
   }
 }
+
+export const EBENEN: { id: 'tag' | 'stunde'; name: string; kurz: string }[] = [
+  { id: 'tag', name: 'Tageskerzen', kurz: 'Tag' },
+  { id: 'stunde', name: 'Stundenkerzen', kurz: '1h' },
+]

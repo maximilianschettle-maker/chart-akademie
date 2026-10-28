@@ -1,6 +1,6 @@
-// Markt-Tracker: holt Tageskerzen der konfigurierten Instrumente (Yahoo Finance, Coinbase als
-// Krypto-Fallback), analysiert sie (src/tracker/engine/analyse.ts) und schreibt
-// public/data/tracker.json. Läuft in der GitHub Action tracker.yml und lokal:
+// Markt-Tracker: holt Tages- und Stundenkerzen der konfigurierten Instrumente (Yahoo Finance,
+// Coinbase als Krypto-Fallback), analysiert beide Ebenen (src/tracker/engine/analyse.ts) und
+// schreibt public/data/tracker.json. Läuft in der GitHub Action tracker.yml und lokal:
 //   npx tsx scripts/tracker/hole-tracker.ts   (tsx, weil die Engine Code aus src/ ohne Dateiendungen importiert)
 // Konfiguration: Worker-KV (/api/tracker, Env AKTIEN_WORKER_URL + AKTIEN_SECRET) → sonst
 // data/tracker-config.json → sonst Standard. Gibt `changed=true|false` nach $GITHUB_OUTPUT.
@@ -9,15 +9,17 @@ import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } fr
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { Candle } from '../../src/types'
-import type { Instrument, InstrumentDaten, Signal, TrackerConfig, TrackerDaten } from '../../src/tracker/types'
+import type { Ebene, EbeneDaten, Instrument, InstrumentDaten, Signal, TrackerConfig, TrackerDaten } from '../../src/tracker/types'
 import { INSTRUMENT_NACH_ID, normalisiereConfig } from '../../src/tracker/engine/katalog'
-import { analysiere, kerzenAusKompakt, kerzenKompakt } from '../../src/tracker/engine/analyse'
+import { analysiere, kerzenAusKompakt, kerzenKompakt, STANDARD_OPTIONEN, STUNDEN_OPTIONEN } from '../../src/tracker/engine/analyse'
 
 const WURZEL = fileURLToPath(new URL('../../', import.meta.url))
 const AUSGABE = join(WURZEL, 'public', 'data', 'tracker.json')
 const CONFIG_DATEI = join(WURZEL, 'data', 'tracker-config.json')
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
-const KERZEN_IM_JSON = 520
+const KERZEN_IM_JSON: Record<Ebene, number> = { tag: 520, stunde: 400 }
+/** Für die Analyse (Setup-Erkennung braucht bis zu 420 Kerzen Rückschau) */
+const KERZEN_ANALYSE = 600
 const SIGNAL_TAGE = 30
 const NEU_SCHREIBEN_NACH_MS = 20 * 3600_000
 /** Kursbewegung, ab der ein Lauf trotz sonst gleicher Daten schreibt (Live-Kurse zeigt die App über den Worker) */
@@ -81,11 +83,20 @@ interface YahooChart {
   }
 }
 
+interface Geladen {
+  kerzen: Candle[]
+  kurs?: number
+  kursZeit?: string
+  quelle: EbeneDaten['quelle']
+  fehler?: string
+}
+
 function tagesanfang(sek: number): number {
   return Math.floor(sek / TAG_SEK) * TAG_SEK
 }
 
-export function kerzenAusYahoo(json: YahooChart): { kerzen: Candle[]; kurs?: number; kursZeit?: string } {
+/** Tageskerzen auf den UTC-Tagesanfang normieren (Börsen liefern die Eröffnungszeit), Stundenkerzen bleiben */
+export function kerzenAusYahoo(json: YahooChart, ebene: Ebene): { kerzen: Candle[]; kurs?: number; kursZeit?: string } {
   const r = json.chart?.result?.[0]
   if (!r?.timestamp || !r.indicators?.quote?.[0]) throw new Error(json.chart?.error?.description ?? 'Yahoo: leere Antwort')
   const q = r.indicators.quote[0]
@@ -96,7 +107,7 @@ export function kerzenAusYahoo(json: YahooChart): { kerzen: Candle[]; kurs?: num
     const l = q.low?.[i]
     const c = q.close?.[i]
     if (![o, h, l, c].every((x) => typeof x === 'number' && Number.isFinite(x))) return
-    const time = tagesanfang(t)
+    const time = ebene === 'tag' ? tagesanfang(t) : t
     nachZeit.set(time, { time, open: o!, high: h!, low: l!, close: c!, volume: typeof q.volume?.[i] === 'number' ? q.volume![i]! : 0 })
   })
   const kerzen = [...nachZeit.values()].sort((a, b) => a.time - b.time)
@@ -110,47 +121,46 @@ export function kerzenAusYahoo(json: YahooChart): { kerzen: Candle[]; kurs?: num
   }
 }
 
-async function yahoo(symbol: string) {
-  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=2y&interval=1d`
-  return kerzenAusYahoo(JSON.parse(await hole(url)) as YahooChart)
+async function yahoo(symbol: string, ebene: Ebene) {
+  const bereich = ebene === 'tag' ? 'range=2y&interval=1d' : 'range=730d&interval=1h'
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?${bereich}`
+  return kerzenAusYahoo(JSON.parse(await hole(url)) as YahooChart, ebene)
 }
 
 /** Coinbase: [time, low, high, open, close, volume], neueste zuerst, max. 300 */
-export function kerzenAusCoinbase(json: unknown): Candle[] {
+export function kerzenAusCoinbase(json: unknown, ebene: Ebene): Candle[] {
   if (!Array.isArray(json)) throw new Error('Coinbase: unerwartete Antwort')
   const kerzen = (json as number[][])
     .filter((z) => Array.isArray(z) && z.length >= 6 && z.every((x) => typeof x === 'number'))
-    .map((z) => ({ time: tagesanfang(z[0]), low: z[1], high: z[2], open: z[3], close: z[4], volume: z[5] }))
+    .map((z) => ({ time: ebene === 'tag' ? tagesanfang(z[0]) : z[0], low: z[1], high: z[2], open: z[3], close: z[4], volume: z[5] }))
     .sort((a, b) => a.time - b.time)
   if (kerzen.length < 30) throw new Error(`Coinbase: nur ${kerzen.length} Kerzen`)
   return kerzen
 }
 
-async function coinbase(produkt: string) {
-  const url = `https://api.exchange.coinbase.com/products/${produkt}/candles?granularity=86400`
-  const kerzen = kerzenAusCoinbase(JSON.parse(await hole(url)))
+async function coinbase(produkt: string, ebene: Ebene) {
+  const url = `https://api.exchange.coinbase.com/products/${produkt}/candles?granularity=${ebene === 'tag' ? 86400 : 3600}`
+  const kerzen = kerzenAusCoinbase(JSON.parse(await hole(url)), ebene)
   const letzte = kerzen[kerzen.length - 1]
   return { kerzen, kurs: letzte.close, kursZeit: new Date().toISOString() }
 }
 
-async function ladeKerzen(inst: Instrument, alt: InstrumentDaten | undefined) {
+async function ladeKerzen(inst: Instrument, ebene: Ebene, alt: EbeneDaten | undefined): Promise<Geladen | null> {
   try {
-    const r = await yahoo(inst.symbol)
-    return { ...r, quelle: 'yahoo' as const }
+    return { ...(await yahoo(inst.symbol, ebene)), quelle: 'yahoo' }
   } catch (e) {
-    log(inst.name, 'Yahoo fehlgeschlagen:', (e as Error).message)
+    log(inst.name, ebene, 'Yahoo fehlgeschlagen:', (e as Error).message)
   }
   if (inst.coinbase) {
     try {
-      const r = await coinbase(inst.coinbase)
-      return { ...r, quelle: 'coinbase' as const }
+      return { ...(await coinbase(inst.coinbase, ebene)), quelle: 'coinbase' }
     } catch (e) {
-      log(inst.name, 'Coinbase fehlgeschlagen:', (e as Error).message)
+      log(inst.name, ebene, 'Coinbase fehlgeschlagen:', (e as Error).message)
     }
   }
   if (alt && alt.kerzen.length) {
-    log(inst.name, 'nutze alten Stand')
-    return { kerzen: kerzenAusKompakt(alt.kerzen), kurs: alt.analyse?.kurs, kursZeit: alt.analyse?.kursZeit, quelle: 'alt' as const, fehler: 'Kursquelle nicht erreichbar, alter Stand' }
+    log(inst.name, ebene, 'nutze alten Stand')
+    return { kerzen: kerzenAusKompakt(alt.kerzen), kurs: alt.analyse?.kurs, kursZeit: alt.analyse?.kursZeit, quelle: 'alt', fehler: 'Kursquelle nicht erreichbar, alter Stand' }
   }
   return null
 }
@@ -166,17 +176,42 @@ function signaleZusammen(alt: Signal[], neu: Signal[], jetzt: Date): Signal[] {
     // Erstsichtung behalten, Text/Vorläufigkeit aktualisieren
     m.set(s.id, vorhanden ? { ...s, zeit: vorhanden.zeit } : s)
   }
-  return [...m.values()].sort((a, b) => b.datum.localeCompare(a.datum) || b.zeit.localeCompare(a.zeit))
+  return [...m.values()].sort((a, b) => (b.kerzeZeit ?? b.datum).localeCompare(a.kerzeZeit ?? a.datum) || b.zeit.localeCompare(a.zeit))
 }
 
-/** Ohne Lauf-Zeitstempel und ohne die laufend schwankenden Kursfelder */
+async function ebeneLaden(inst: Instrument, ebene: Ebene, alt: EbeneDaten | undefined, muster: TrackerConfig['muster'], jetzt: Date): Promise<EbeneDaten> {
+  const geladen = await ladeKerzen(inst, ebene, alt)
+  if (!geladen) return { quelle: 'alt', kerzen: [], analyse: null, signale: alt?.signale ?? [], fehler: 'Keine Kursdaten' }
+  const live = geladen.kurs !== undefined && geladen.kursZeit ? { kurs: geladen.kurs, zeit: geladen.kursZeit } : undefined
+  const opt = ebene === 'tag' ? STANDARD_OPTIONEN : STUNDEN_OPTIONEN
+  const ergebnis = analysiere(geladen.kerzen.slice(-KERZEN_ANALYSE), inst.id, muster, jetzt, live, opt)
+  const neueSignale = ergebnis?.signale ?? []
+  if (neueSignale.length) log(inst.name, ebene, '→', neueSignale.map((s) => `${s.titel}${s.vorlaeufig ? ' (vorläufig)' : ''}`).join(' | '))
+  return {
+    quelle: geladen.quelle,
+    kerzen: kerzenKompakt(geladen.kerzen.slice(-KERZEN_IM_JSON[ebene])),
+    analyse: ergebnis?.analyse ?? null,
+    signale: signaleZusammen(alt?.signale ?? [], neueSignale, jetzt),
+    ...(geladen.fehler ? { fehler: geladen.fehler } : {}),
+  }
+}
+
+/** Ohne Lauf-Zeitstempel, ohne schwankende Kursfelder und ohne die jeweils offene letzte Kerze */
 function kern(d: TrackerDaten): string {
+  const ebeneKern = (e: EbeneDaten | undefined) =>
+    e && {
+      quelle: e.quelle,
+      kerzen: e.kerzen.slice(0, -1),
+      analyse: e.analyse ? { ...e.analyse, kurs: 0, kursZeit: '', aenderungTag: 0 } : null,
+      signale: e.signale.map((s) => ({ ...s, zeit: '' })),
+      fehler: e.fehler,
+    }
   return JSON.stringify({
     config: d.config,
     instrumente: d.instrumente.map((i) => ({
-      ...i,
-      analyse: i.analyse ? { ...i.analyse, kurs: 0, kursZeit: '', aenderungTag: 0 } : null,
-      signale: i.signale.map((s) => ({ ...s, zeit: '' })),
+      id: i.id,
+      tag: ebeneKern({ quelle: i.quelle, kerzen: i.kerzen, analyse: i.analyse, signale: i.signale, fehler: i.fehler }),
+      stunde: ebeneKern(i.stunde),
     })),
   })
 }
@@ -185,39 +220,29 @@ async function main() {
   const jetzt = new Date()
   const alt = liesJson<TrackerDaten>(AUSGABE)
   const { config, quelle } = await ladeConfig()
-  log('Instrumente:', config.instrumente.join(', '), '· Muster:', Object.entries(config.muster).filter(([, an]) => an).map(([m]) => m).join(', '))
+  const an = (m: TrackerConfig['muster']) => Object.entries(m).filter(([, x]) => x).map(([k]) => k).join(', ') || 'keine'
+  log('Instrumente:', config.instrumente.join(', '), '· Muster Tag:', an(config.muster), '· Muster Stunde:', an(config.musterStunde))
 
   const instrumente: InstrumentDaten[] = []
   for (const id of config.instrumente) {
     const inst = INSTRUMENT_NACH_ID[id]
     if (!inst) continue
     const vorher = alt?.instrumente.find((i) => i.id === id)
-    const geladen = await ladeKerzen(inst, vorher)
-    const basis: InstrumentDaten = {
+    const altTag: EbeneDaten | undefined = vorher ? { quelle: vorher.quelle, kerzen: vorher.kerzen, analyse: vorher.analyse, signale: vorher.signale } : undefined
+    const tag = await ebeneLaden(inst, 'tag', altTag, config.muster, jetzt)
+    const stunde = await ebeneLaden(inst, 'stunde', vorher?.stunde, config.musterStunde, jetzt)
+    instrumente.push({
       id,
       name: inst.name,
       symbol: inst.symbol,
       waehrung: inst.waehrung,
       dezimalen: inst.dezimalen,
-      quelle: geladen?.quelle ?? 'alt',
-      kerzen: [],
-      analyse: null,
-      signale: vorher?.signale ?? [],
-    }
-    if (!geladen) {
-      instrumente.push({ ...basis, fehler: 'Keine Kursdaten' })
-      continue
-    }
-    const live = geladen.kurs !== undefined && geladen.kursZeit ? { kurs: geladen.kurs, zeit: geladen.kursZeit } : undefined
-    const ergebnis = analysiere(geladen.kerzen, id, config.muster, jetzt, live)
-    const neueSignale = ergebnis?.signale ?? []
-    if (neueSignale.length) log(inst.name, '→', neueSignale.map((s) => `${s.titel}${s.vorlaeufig ? ' (vorläufig)' : ''}`).join(' | '))
-    instrumente.push({
-      ...basis,
-      kerzen: kerzenKompakt(geladen.kerzen.slice(-KERZEN_IM_JSON)),
-      analyse: ergebnis?.analyse ?? null,
-      signale: signaleZusammen(vorher?.signale ?? [], neueSignale, jetzt),
-      ...('fehler' in geladen && geladen.fehler ? { fehler: geladen.fehler } : {}),
+      quelle: tag.quelle,
+      kerzen: tag.kerzen,
+      analyse: tag.analyse,
+      signale: tag.signale,
+      ...(tag.fehler ? { fehler: tag.fehler } : {}),
+      stunde,
     })
   }
 
@@ -234,12 +259,12 @@ async function main() {
   if (schreiben) {
     daten.lastUpdated = jetzt.toISOString()
     writeFileSync(AUSGABE, JSON.stringify(daten) + '\n')
-    log(kernGleich ? (kursBewegt ? 'Kurse bewegt, geschrieben' : 'Stand aufgefrischt') : 'tracker.json geschrieben', `(${instrumente.length} Instrumente)`)
+    log(kernGleich ? (kursBewegt ? 'Kurse bewegt, geschrieben' : 'Stand aufgefrischt') : 'tracker.json geschrieben', `(${instrumente.length} Instrumente, ${Math.round(JSON.stringify(daten).length / 1024)} KB)`)
   } else {
     log('Keine wesentliche Änderung, nichts geschrieben')
   }
   if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, `changed=${schreiben}\n`)
-  if (instrumente.some((i) => i.fehler)) process.exitCode = 2
+  if (instrumente.some((i) => i.fehler || i.stunde?.fehler)) process.exitCode = 2
 }
 
 main().catch((e) => {
