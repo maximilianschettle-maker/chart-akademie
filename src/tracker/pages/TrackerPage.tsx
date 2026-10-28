@@ -9,12 +9,20 @@ import { INSTRUMENTE, INSTRUMENT_NACH_ID, MUSTER, MUSTER_NACH_ID } from '../engi
 import { kerzenAusKompakt } from '../engine/analyse'
 import type { InstrumentDaten, Signal } from '../types'
 import { fmtDatumKurz, fmtKurs, fmtProzentVz, fmtStand, richtungFarbe, richtungText } from '../format'
+import { aktuellerKurs, useLiveKurse, vortagesSchluss, type LiveKurs } from '../liveKurse'
+import { workerKonfiguriert } from '../../aktien/data/client'
 
 // Markt-Tracker: Instrumente laut Konfiguration, je Instrument Kurs, Lage, Chart mit Marken
 // und die Signale der letzten Wochen. Einstellungen (Instrumente, Muster, Push) gehen
 // in den Worker-KV; die Action liest sie beim nächsten Lauf.
 
-const CHART_KERZEN = 130
+const BEREICHE = [
+  { id: '3M', kerzen: 66 },
+  { id: '6M', kerzen: 130 },
+  { id: '1J', kerzen: 252 },
+  { id: '2J', kerzen: 520 },
+] as const
+type BereichId = (typeof BEREICHE)[number]['id']
 const CHART_HOEHE = 220
 const FARBE_LEVEL = '#8B95A5'
 const FARBE_TUNNEL = '#A855F7'
@@ -39,10 +47,17 @@ function SignalZeile({ s, dezimalen, waehrung }: { s: Signal; dezimalen: number;
   )
 }
 
-function InstrumentKarte({ inst, jetzt }: { inst: InstrumentDaten; jetzt: number }) {
+function InstrumentKarte({ inst, jetzt, live }: { inst: InstrumentDaten; jetzt: number; live?: LiveKurs }) {
   const [offen, setOffen] = useState(true)
-  const kerzen = useMemo(() => kerzenAusKompakt(inst.kerzen).slice(-CHART_KERZEN), [inst.kerzen])
+  const [bereich, setBereich] = useState<BereichId>('1J')
+  const alleKerzen = useMemo(() => kerzenAusKompakt(inst.kerzen), [inst.kerzen])
+  const kerzen = useMemo(() => alleKerzen.slice(-(BEREICHE.find((b) => b.id === bereich)?.kerzen ?? 252)), [alleKerzen, bereich])
   const a = inst.analyse
+  // Kurs: Live vom Worker, wenn neuer als der Stand der Action
+  const kurs = aktuellerKurs(a, live)
+  const vortag = kurs ? vortagesSchluss(alleKerzen, kurs.zeitMs) : null
+  const aenderung = kurs && vortag ? kurs.preis / vortag - 1 : (a?.aenderungTag ?? 0)
+  const preis = kurs?.preis ?? a?.kurs ?? 0
   const annotationen = useMemo((): ChartAnnotation[] => {
     if (!a) return []
     const liste: ChartAnnotation[] = [
@@ -69,7 +84,7 @@ function InstrumentKarte({ inst, jetzt }: { inst: InstrumentDaten; jetzt: number
     return liste
   }, [a, inst.signale, kerzen])
 
-  const veraltet = a ? jetzt - Date.parse(a.kursZeit) > TRACKER_VERALTET_AB_MS * 2 : false
+  const veraltet = kurs ? jetzt - kurs.zeitMs > TRACKER_VERALTET_AB_MS * 2 : false
   const trendText = a ? (a.trend === 'auf' ? 'Aufwärtstrend' : a.trend === 'ab' ? 'Abwärtstrend' : 'seitwärts') : ''
   const trendFarbe = a ? (a.trend === 'auf' ? 'text-long' : a.trend === 'ab' ? 'text-short' : 'text-gedimmt') : ''
 
@@ -80,15 +95,15 @@ function InstrumentKarte({ inst, jetzt }: { inst: InstrumentDaten; jetzt: number
           <h2 className="text-base font-bold text-white">{inst.name}</h2>
           <p className="text-[11px] text-gedimmt">
             {inst.symbol} · {inst.quelle === 'alt' ? 'alter Stand' : inst.quelle}
-            {a && ` · Kurs ${fmtStand(a.kursZeit)} Uhr`}
+            {kurs && ` · Kurs ${fmtStand(new Date(kurs.zeitMs).toISOString())} Uhr${kurs.live ? ' (live)' : ''}`}
           </p>
         </div>
         <div className="flex items-start gap-2">
-          {a ? (
+          {kurs ? (
             <div className="text-right">
-              <div className="tabular-nums text-lg font-bold text-white">{fmtKurs(a.kurs, inst.dezimalen, inst.waehrung)}</div>
-              <div className={`tabular-nums text-xs font-semibold ${a.aenderungTag > 0 ? 'text-long' : a.aenderungTag < 0 ? 'text-short' : 'text-gedimmt'}`}>
-                {fmtProzentVz(a.aenderungTag)} heute
+              <div className="tabular-nums text-lg font-bold text-white">{fmtKurs(preis, inst.dezimalen, inst.waehrung)}</div>
+              <div className={`tabular-nums text-xs font-semibold ${aenderung > 0 ? 'text-long' : aenderung < 0 ? 'text-short' : 'text-gedimmt'}`}>
+                {fmtProzentVz(aenderung)} heute
               </div>
             </div>
           ) : (
@@ -108,10 +123,10 @@ function InstrumentKarte({ inst, jetzt }: { inst: InstrumentDaten; jetzt: number
             </span>
           )}
           <span className="text-gedimmt">
-            20T-Hoch {fmtKurs(a.hoch20, inst.dezimalen, inst.waehrung)} ({fmtProzentVz(a.hoch20 / a.kurs - 1)})
+            20T-Hoch {fmtKurs(a.hoch20, inst.dezimalen, inst.waehrung)} ({fmtProzentVz(a.hoch20 / preis - 1)})
           </span>
           <span className="text-gedimmt">
-            20T-Tief {fmtKurs(a.tief20, inst.dezimalen, inst.waehrung)} ({fmtProzentVz(a.tief20 / a.kurs - 1)})
+            20T-Tief {fmtKurs(a.tief20, inst.dezimalen, inst.waehrung)} ({fmtProzentVz(a.tief20 / preis - 1)})
           </span>
           {a.rsi14 !== null && (
             <span className={a.rsi14 > 70 ? 'text-short' : a.rsi14 < 30 ? 'text-long' : 'text-gedimmt'}>RSI {a.rsi14.toFixed(0)}</span>
@@ -127,6 +142,20 @@ function InstrumentKarte({ inst, jetzt }: { inst: InstrumentDaten; jetzt: number
 
       {offen && kerzen.length > 0 && (
         <div className="mt-3">
+          <div className="mb-1.5 flex justify-end gap-1" role="tablist" aria-label="Zeitraum">
+            {BEREICHE.map((b) => (
+              <button
+                key={b.id}
+                type="button"
+                role="tab"
+                aria-selected={b.id === bereich}
+                onClick={() => setBereich(b.id)}
+                className={`rounded-md px-2 py-0.5 text-[11px] font-semibold ${b.id === bereich ? 'bg-akzent text-nacht' : 'bg-nacht text-gedimmt hover:text-schrift'}`}
+              >
+                {b.id}
+              </button>
+            ))}
+          </div>
           <ChartPanel candles={kerzen} annotationen={annotationen} hoehe={CHART_HOEHE} zeigeVolumen={false} emaPerioden={[20, 50]} zeitSichtbar={false} randRechts={2} />
         </div>
       )}
@@ -158,10 +187,19 @@ export function TrackerPage() {
   const pushSetzen = useTrackerStore((s) => s.pushSetzen)
   const abgleichen = useTrackerStore((s) => s.abgleichen)
   const [einstellungenOffen, setEinstellungenOffen] = useState(false)
+  const [frischSignal, setFrischSignal] = useState(0)
+  const symbole = useMemo(() => (daten ? daten.instrumente.map((i) => i.symbol) : []), [daten])
+  const liveKurse = useLiveKurse(symbole, frischSignal)
+  const mitWorker = workerKonfiguriert()
 
   useEffect(() => {
     abgleichen()
   }, [abgleichen])
+
+  const alles = () => {
+    neuLaden()
+    setFrischSignal((n) => n + 1)
+  }
 
   const veraltet = daten ? jetzt - Date.parse(daten.lastUpdated) > TRACKER_VERALTET_AB_MS : false
   // Vom Lauf abweichende Konfiguration: Änderungen greifen erst beim nächsten Lauf der Action
@@ -184,7 +222,7 @@ export function TrackerPage() {
           <button onClick={() => setEinstellungenOffen((o) => !o)} className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold ${einstellungenOffen ? 'bg-akzent text-nacht' : 'bg-flaeche text-schrift hover:text-white'}`}>
             <Settings2 className="h-3.5 w-3.5" /> Einstellungen
           </button>
-          <button onClick={neuLaden} className="inline-flex items-center gap-1.5 rounded-lg bg-flaeche px-3 py-1.5 text-xs font-semibold text-schrift hover:text-white">
+          <button onClick={alles} className="inline-flex items-center gap-1.5 rounded-lg bg-flaeche px-3 py-1.5 text-xs font-semibold text-schrift hover:text-white">
             <RefreshCw className="h-3.5 w-3.5" /> Aktualisieren
           </button>
         </div>
@@ -262,6 +300,7 @@ export function TrackerPage() {
           <p className="mt-4 flex flex-wrap items-center gap-x-2 text-[11px] text-gedimmt">
             <span>Stand: {fmtStand(daten.lastUpdated)} Uhr</span>
             <span>· Konfiguration des Laufs: {daten.configQuelle === 'worker' ? 'Worker' : daten.configQuelle === 'datei' ? 'Datei im Repo' : 'Standard'}</span>
+            <span>· Kurse: {mitWorker ? 'live über den Worker (alle 5 Min)' : 'vom letzten Lauf – Worker unter Aktien eintragen für Live-Kurse'}</span>
             {veraltet && (
               <span className="inline-flex items-center gap-1 text-akzent">
                 <TriangleAlert className="h-3 w-3" /> älter als 26 Stunden
@@ -277,7 +316,7 @@ export function TrackerPage() {
               .map((id) => daten.instrumente.find((i) => i.id === id))
               .filter((i): i is InstrumentDaten => Boolean(i))
               .map((inst) => (
-                <InstrumentKarte key={inst.id} inst={inst} jetzt={jetzt} />
+                <InstrumentKarte key={inst.id} inst={inst} jetzt={jetzt} live={liveKurse[inst.symbol]} />
               ))}
             {daten.instrumente.filter((i) => !config.instrumente.includes(i.id)).length > 0 && (
               <p className="text-xs text-gedimmt">

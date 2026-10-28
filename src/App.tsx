@@ -48,7 +48,7 @@ function NavEintrag({ zu, text }: { zu: string; text: string }) {
     <NavLink
       to={zu}
       className={({ isActive }) =>
-        `rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
+        `shrink-0 rounded-lg px-1.5 py-1.5 text-xs font-medium transition-colors sm:px-3 sm:text-sm ${
           isActive ? 'bg-flaeche text-white' : 'text-gedimmt hover:text-schrift'
         }`
       }
@@ -62,16 +62,20 @@ export default function App() {
   return (
     <HashRouter>
       <header className="sticky top-0 z-10 border-b border-rand bg-nacht/90 backdrop-blur">
-        <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3">
-          <Link to="/" className="flex items-center gap-2 font-bold text-white">
+        <div className="mx-auto flex max-w-3xl items-center justify-between gap-2 px-3 py-3 sm:px-4">
+          {/* Logo erst ab Tablet-Breite – am Handy brauchen die sechs Reiter die ganze Zeile */}
+          <Link to="/" className="hidden shrink-0 items-center gap-2 font-bold text-white sm:flex">
             <CandlestickChart className="h-5 w-5 text-akzent" />
-            <span className="hidden sm:inline">ChartAkademie</span>
+            <span className="hidden md:inline">ChartAkademie</span>
           </Link>
-          <nav className="flex gap-1">
+          {/* Sechs Reiter: am Handy seitlich scrollbar statt umgebrochen */}
+          <nav className="flex gap-0.5 overflow-x-auto whitespace-nowrap sm:gap-1 [scrollbar-width:none]">
             <NavEintrag zu="/" text="Lernpfad" />
             <NavEintrag zu="/simulator" text="Simulator" />
             <NavEintrag zu="/journal" text="Journal" />
             <NavEintrag zu="/aktien" text="Aktien" />
+            <NavEintrag zu="/makro" text="Zinsen" />
+            <NavEintrag zu="/tracker" text="Tracker" />
           </nav>
         </div>
       </header>

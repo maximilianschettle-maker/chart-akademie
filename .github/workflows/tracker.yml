@@ -4,12 +4,14 @@ name: Markt-Tracker
 # erkennt Muster (Breakout, Tunnel, EMA-Kreuz, RSI, Lehrbuch-Setups) und verschickt
 # Push-Nachrichten bei neuen Signalen. Konfiguration kommt aus dem Worker-KV
 # (App → Tracker → Einstellungen), sonst aus data/tracker-config.json.
-# Stündlich werktags (Börsen- und Krypto-Zeiten), am Wochenende dreimal (Krypto).
+# Werktags alle 15 Minuten (Börsen- und Krypto-Zeiten), am Wochenende alle zwei Stunden (Krypto).
+# Committet wird nur bei neuen Signalen/Kerzen oder deutlicher Kursbewegung; Live-Kurse holt
+# die App selbst über den Worker, deshalb muss nicht jeder Lauf deployen.
 
 on:
   schedule:
-    - cron: '5 7-22 * * 1-5' # Mo–Fr stündlich, 07:05–22:05 UTC
-    - cron: '5 8,14,20 * * 0,6' # Sa/So
+    - cron: '*/15 7-22 * * 1-5' # Mo–Fr alle 15 Minuten, 07:00–22:45 UTC
+    - cron: '0 */2 * * 0,6' # Sa/So alle zwei Stunden
   workflow_dispatch:
 
 permissions:

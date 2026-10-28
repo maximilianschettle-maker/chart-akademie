@@ -17,11 +17,11 @@ const WURZEL = fileURLToPath(new URL('../../', import.meta.url))
 const AUSGABE = join(WURZEL, 'public', 'data', 'tracker.json')
 const CONFIG_DATEI = join(WURZEL, 'data', 'tracker-config.json')
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
-const KERZEN_IM_JSON = 300
+const KERZEN_IM_JSON = 520
 const SIGNAL_TAGE = 30
 const NEU_SCHREIBEN_NACH_MS = 20 * 3600_000
-/** Kursbewegung, ab der ein Lauf trotz sonst gleicher Daten schreibt */
-const KURS_SCHWELLE = 0.003
+/** Kursbewegung, ab der ein Lauf trotz sonst gleicher Daten schreibt (Live-Kurse zeigt die App über den Worker) */
+const KURS_SCHWELLE = 0.01
 const TAG_SEK = 86_400
 
 function log(...t: unknown[]) {

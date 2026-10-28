@@ -1,18 +1,24 @@
+import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { Activity, ArrowRight, TriangleAlert } from 'lucide-react'
 import { useTracker } from '../useTracker'
+import { kerzenAusKompakt } from '../engine/analyse'
+import { aktuellerKurs, useLiveKurse, vortagesSchluss } from '../liveKurse'
 import { fmtDatumKurz, fmtKurs, fmtProzentVz, fmtStand, richtungFarbe } from '../format'
 
-// Dashboard-Karte: Kurse auf einen Blick und die neuesten Signale.
+// Dashboard-Karte: Kurse auf einen Blick (live über den Worker, wenn eingetragen) und die neuesten Signale.
 
 export function TrackerWidget() {
   const { daten, status, fehler } = useTracker()
+  const symbole = useMemo(() => (daten ? daten.instrumente.map((i) => i.symbol) : []), [daten])
+  const live = useLiveKurse(symbole)
   const signale = daten
     ? daten.instrumente
         .flatMap((i) => i.signale.map((s) => ({ ...s, name: i.name })))
         .sort((a, b) => b.datum.localeCompare(a.datum) || b.zeit.localeCompare(a.zeit))
         .slice(0, 4)
     : []
+  const neuesterKurs = daten ? Math.max(...daten.instrumente.map((i) => Math.max(live[i.symbol]?.zeit ?? 0, i.analyse ? Date.parse(i.analyse.kursZeit) : 0))) : 0
 
   return (
     <section className="mt-4 rounded-xl border border-rand bg-flaeche p-4">
@@ -35,21 +41,24 @@ export function TrackerWidget() {
       {daten && (
         <>
           <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 text-sm sm:grid-cols-3">
-            {daten.instrumente.map((i) => (
-              <div key={i.id} className="flex items-baseline justify-between gap-2">
-                <span className="truncate text-schrift">{i.name}</span>
-                {i.analyse ? (
-                  <span className="tabular-nums text-xs">
-                    <span className="text-white">{fmtKurs(i.analyse.kurs, i.dezimalen, i.waehrung)}</span>{' '}
-                    <span className={i.analyse.aenderungTag > 0 ? 'text-long' : i.analyse.aenderungTag < 0 ? 'text-short' : 'text-gedimmt'}>
-                      {fmtProzentVz(i.analyse.aenderungTag)}
+            {daten.instrumente.map((i) => {
+              const k = aktuellerKurs(i.analyse, live[i.symbol])
+              const vortag = k ? vortagesSchluss(kerzenAusKompakt(i.kerzen.slice(-3)), k.zeitMs) : null
+              const aenderung = k && vortag ? k.preis / vortag - 1 : (i.analyse?.aenderungTag ?? 0)
+              return (
+                <div key={i.id} className="flex items-baseline justify-between gap-2">
+                  <span className="truncate text-schrift">{i.name}</span>
+                  {k ? (
+                    <span className="tabular-nums text-xs">
+                      <span className="text-white">{fmtKurs(k.preis, i.dezimalen, i.waehrung)}</span>{' '}
+                      <span className={aenderung > 0 ? 'text-long' : aenderung < 0 ? 'text-short' : 'text-gedimmt'}>{fmtProzentVz(aenderung)}</span>
                     </span>
-                  </span>
-                ) : (
-                  <span className="text-xs text-gedimmt">–</span>
-                )}
-              </div>
-            ))}
+                  ) : (
+                    <span className="text-xs text-gedimmt">–</span>
+                  )}
+                </div>
+              )
+            })}
           </div>
           {signale.length > 0 && (
             <ul className="mt-3 space-y-1 border-t border-rand pt-2 text-xs">
@@ -63,7 +72,9 @@ export function TrackerWidget() {
               ))}
             </ul>
           )}
-          <p className="mt-2 text-[11px] text-gedimmt">Stand: {fmtStand(daten.lastUpdated)} Uhr</p>
+          <p className="mt-2 text-[11px] text-gedimmt">
+            Kurse {neuesterKurs > 0 ? fmtStand(new Date(neuesterKurs).toISOString()) : '–'} Uhr · Signale vom Lauf {fmtStand(daten.lastUpdated)} Uhr
+          </p>
         </>
       )}
     </section>
