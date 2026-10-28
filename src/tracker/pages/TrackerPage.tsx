@@ -31,7 +31,7 @@ const BEREICHE: Record<Ebene, { id: string; kerzen: number; titel?: string }[]> 
     { id: 'Alle', kerzen: 400, titel: 'alle gespeicherten Stundenkerzen' },
   ],
 }
-const STANDARD_BEREICH: Record<Ebene, string> = { tag: '1J', stunde: '120 K' }
+const STANDARD_BEREICH: Record<Ebene, string> = { tag: '1J', stunde: '50 K' }
 const CHART_HOEHE = 220
 
 function ebeneDaten(inst: InstrumentDaten, ebene: Ebene): EbeneDaten | null {
@@ -95,6 +95,8 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
       liste.push({ typ: 'preislinie', preis: a.tunnel.tief, text: 'Tunnel', farbe: FARBE_TUNNEL })
     }
     const zeiten = new Set(kerzen.map((k) => k.time))
+    // Signale sind neueste zuerst sortiert; nur die drei jüngsten tragen Text, sonst wird der Chart unleserlich
+    let beschriftet = 0
     for (const s of daten.signale) {
       const time = Math.floor(Date.parse(s.kerzeZeit ?? s.datum) / 1000)
       if (!zeiten.has(time)) continue
@@ -103,7 +105,7 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
         time,
         position: s.richtung === 'long' ? 'belowBar' : 'aboveBar',
         form: s.richtung === 'long' ? 'arrowUp' : s.richtung === 'short' ? 'arrowDown' : 'circle',
-        text: MUSTER_NACH_ID[s.muster]?.name.split(' ')[0] ?? s.muster,
+        text: beschriftet++ < 3 ? (MUSTER_NACH_ID[s.muster]?.name.split(' ')[0] ?? s.muster) : '',
         farbe: s.richtung === 'long' ? '#22C55E' : s.richtung === 'short' ? '#EF4444' : '#F59E0B',
       })
     }
@@ -202,7 +204,7 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
               </button>
             ))}
           </div>
-          <ChartPanel candles={kerzen} annotationen={annotationen} hoehe={CHART_HOEHE} zeigeVolumen={false} emaPerioden={[20, 50]} zeitSichtbar={ebene === 'stunde'} randRechts={2} />
+          <ChartPanel candles={kerzen} annotationen={annotationen} hoehe={CHART_HOEHE} zeigeVolumen={false} emaPerioden={[20, 50]} zeitSichtbar={ebene === 'stunde'} randRechts={ebene === 'stunde' ? 6 : 2} />
         </div>
       )}
 
@@ -265,7 +267,7 @@ export function TrackerPage() {
             <Activity className="h-6 w-6 text-akzent" /> Markt-Tracker
           </h1>
           <p className="mt-1 text-gedimmt">
-            Tageskerzen der großen Märkte, charttechnisch ausgewertet: Breakouts, Tunnel, EMA-Kreuzungen, RSI, Lehrbuch-Setups. Mit Push bei neuen Signalen.
+            Tages- und Stundenkerzen der großen Märkte, charttechnisch ausgewertet: Breakouts, Tunnel, EMA-Kreuzungen, RSI, Lehrbuch-Setups. Mit Push bei neuen Signalen.
           </p>
         </div>
         <div className="flex gap-2">

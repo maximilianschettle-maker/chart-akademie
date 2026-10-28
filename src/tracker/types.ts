@@ -62,6 +62,8 @@ export interface Signal {
   text: string
   /** Tageskerze war beim Lauf noch nicht geschlossen – kann sich bis zum Schluss noch ändern */
   vorlaeufig?: boolean
+  /** rückwirkend aus der Kerzenhistorie ermittelt (kein Lauf hat es live gesehen) – wird nicht gepusht */
+  nachgetragen?: boolean
 }
 
 export interface Tunnel {

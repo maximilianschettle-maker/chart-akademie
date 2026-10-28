@@ -263,6 +263,7 @@ describe('tracker-push', () => {
           { id: 'dax:tunnel:short:2026-10-28', instrument: 'dax', muster: 'tunnel', richtung: 'short', datum: '2026-10-28', zeit: 'x', preis: 1, titel: 'Am oberen Tunnelrand', text: 'Oberkante.', vorlaeufig: true },
           { id: 'dax:rsi:short:2026-10-28', instrument: 'dax', muster: 'rsi', richtung: 'short', datum: '2026-10-28', zeit: 'x', preis: 1, titel: 'RSI überkauft', text: 'RSI.' },
           { id: 'dax:ausbruch:long:2026-10-01', instrument: 'dax', muster: 'ausbruch', richtung: 'long', datum: '2026-10-01', zeit: 'x', preis: 1, titel: 'Breakout', text: 'alt.' },
+          { id: 'dax:ausbruch:long:2026-10-27', instrument: 'dax', muster: 'ausbruch', richtung: 'long', datum: '2026-10-27', zeit: 'x', preis: 1, titel: 'Breakout', text: 'nachgetragen.', nachgetragen: true },
         ],
       },
     ],

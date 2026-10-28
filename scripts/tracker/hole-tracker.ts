@@ -11,7 +11,7 @@ import { fileURLToPath } from 'node:url'
 import type { Candle } from '../../src/types'
 import type { Ebene, EbeneDaten, Instrument, InstrumentDaten, Signal, TrackerConfig, TrackerDaten } from '../../src/tracker/types'
 import { INSTRUMENT_NACH_ID, normalisiereConfig } from '../../src/tracker/engine/katalog'
-import { analysiere, kerzenAusKompakt, kerzenKompakt, STANDARD_OPTIONEN, STUNDEN_OPTIONEN } from '../../src/tracker/engine/analyse'
+import { analysiere, analysiereHistorie, kerzenAusKompakt, kerzenKompakt, STANDARD_OPTIONEN, STUNDEN_OPTIONEN } from '../../src/tracker/engine/analyse'
 
 const WURZEL = fileURLToPath(new URL('../../', import.meta.url))
 const AUSGABE = join(WURZEL, 'public', 'data', 'tracker.json')
@@ -20,6 +20,8 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const KERZEN_IM_JSON: Record<Ebene, number> = { tag: 520, stunde: 400 }
 /** Für die Analyse (Setup-Erkennung braucht bis zu 420 Kerzen Rückschau) */
 const KERZEN_ANALYSE = 600
+/** so viele abgeschlossene Kerzen vor der aktuellen werden rückwirkend auf Signale geprüft */
+const KERZEN_HISTORIE: Record<Ebene, number> = { tag: 25, stunde: 200 }
 const SIGNAL_TAGE = 30
 const NEU_SCHREIBEN_NACH_MS = 20 * 3600_000
 /** Kursbewegung, ab der ein Lauf trotz sonst gleicher Daten schreibt (Live-Kurse zeigt die App über den Worker) */
@@ -187,11 +189,15 @@ async function ebeneLaden(inst: Instrument, ebene: Ebene, alt: EbeneDaten | unde
   const ergebnis = analysiere(geladen.kerzen.slice(-KERZEN_ANALYSE), inst.id, muster, jetzt, live, opt)
   const neueSignale = ergebnis?.signale ?? []
   if (neueSignale.length) log(inst.name, ebene, '→', neueSignale.map((s) => `${s.titel}${s.vorlaeufig ? ' (vorläufig)' : ''}`).join(' | '))
+  // Historie nachtragen: nur Ids, die noch kein Lauf gesehen hat (signaleZusammen behält Vorhandenes)
+  const bekannt = new Set((alt?.signale ?? []).map((s) => s.id))
+  const historie = analysiereHistorie(geladen.kerzen.slice(-KERZEN_ANALYSE), inst.id, muster, opt, KERZEN_HISTORIE[ebene]).filter((s) => !bekannt.has(s.id))
+  if (historie.length) log(inst.name, ebene, 'nachgetragen:', historie.length)
   return {
     quelle: geladen.quelle,
     kerzen: kerzenKompakt(geladen.kerzen.slice(-KERZEN_IM_JSON[ebene])),
     analyse: ergebnis?.analyse ?? null,
-    signale: signaleZusammen(alt?.signale ?? [], neueSignale, jetzt),
+    signale: signaleZusammen([...(alt?.signale ?? []), ...historie], neueSignale, jetzt),
     ...(geladen.fehler ? { fehler: geladen.fehler } : {}),
   }
 }

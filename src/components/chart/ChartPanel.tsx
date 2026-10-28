@@ -6,6 +6,7 @@ import {
   LineSeries,
   createSeriesMarkers,
   ColorType,
+  TickMarkType,
   type UTCTimestamp,
   type SeriesMarker,
   type Time,
@@ -14,6 +15,24 @@ import type { Candle, ChartAnnotation } from '../../types'
 import { ema } from '../../engine/indikatoren/ema'
 
 const EMA_FARBEN = ['#F59E0B', '#3B82F6', '#A855F7']
+
+// lightweight-charts beschriftet Zeiten in UTC; Intraday-Kerzen sollen Berliner Uhrzeit zeigen.
+const ZONE = 'Europe/Berlin'
+const fmtUhr = new Intl.DateTimeFormat('de-DE', { timeZone: ZONE, hour: '2-digit', minute: '2-digit' })
+const fmtTag = new Intl.DateTimeFormat('de-DE', { timeZone: ZONE, weekday: 'short', day: 'numeric' })
+const fmtMonat = new Intl.DateTimeFormat('de-DE', { timeZone: ZONE, month: 'short' })
+const fmtJahr = new Intl.DateTimeFormat('de-DE', { timeZone: ZONE, year: 'numeric' })
+const fmtVoll = new Intl.DateTimeFormat('de-DE', { timeZone: ZONE, weekday: 'short', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })
+const alsDatum = (t: Time) => (typeof t === 'number' ? new Date(t * 1000) : null)
+
+function tickBerlin(time: Time, typ: TickMarkType): string | null {
+  const d = alsDatum(time)
+  if (!d) return null
+  if (typ === TickMarkType.Time || typ === TickMarkType.TimeWithSeconds) return fmtUhr.format(d)
+  if (typ === TickMarkType.DayOfMonth) return fmtTag.format(d).replace(',', '')
+  if (typ === TickMarkType.Month) return fmtMonat.format(d).replace('.', '')
+  return fmtJahr.format(d)
+}
 
 // Einzige Stelle im Projekt, die lightweight-charts direkt anspricht (v5-API!).
 
@@ -64,7 +83,10 @@ export function ChartPanel({
         horzLines: { color: CHART_FARBEN.gitter },
       },
       rightPriceScale: { borderColor: CHART_FARBEN.gitter },
-      timeScale: { borderColor: CHART_FARBEN.gitter, timeVisible: zeitSichtbar },
+      timeScale: { borderColor: CHART_FARBEN.gitter, timeVisible: zeitSichtbar, ...(zeitSichtbar ? { tickMarkFormatter: tickBerlin } : {}) },
+      ...(zeitSichtbar
+        ? { localization: { locale: 'de-DE', timeFormatter: (t: Time) => (alsDatum(t) ? fmtVoll.format(alsDatum(t) as Date) : String(t)) } }
+        : {}),
       crosshair: { mode: 0 },
       // Am Handy soll vertikales Wischen die Seite scrollen, nicht den Chart
       handleScroll: { vertTouchDrag: false },

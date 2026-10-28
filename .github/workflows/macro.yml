@@ -10,8 +10,9 @@ name: Makro-Daten (Fed & EZB)
 
 on:
   schedule:
-    - cron: '0 6 * * *' # täglich 06:00 UTC
-    - cron: '*/10 11-22 * * 2-4' # Di–Do alle 10 Minuten, 11:00–22:50 UTC (Entscheidungsfenster)
+    # Nicht zur vollen Stunde/zehn Minuten: dann ist GitHubs Scheduler am vollsten und lässt Läufe aus
+    - cron: '6 6 * * *' # täglich 06:06 UTC
+    - cron: '3,13,23,33,43,53 11-22 * * 2-4' # Di–Do alle 10 Minuten, 11:03–22:53 UTC (Entscheidungsfenster)
   workflow_dispatch:
     inputs:
       aktion:
@@ -36,7 +37,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  RASTER_CRON: '*/10 11-22 * * 2-4'
+  RASTER_CRON: '3,13,23,33,43,53 11-22 * * 2-4'
 
 jobs:
   makro:

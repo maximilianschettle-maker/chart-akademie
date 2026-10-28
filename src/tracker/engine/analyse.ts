@@ -78,6 +78,9 @@ function endlich(n: number | undefined): number | null {
  * Tunnel am Index i: längstes Fenster (min..max Tage) bis i, dessen Höhe ≤ Faktor × ATR ist
  * und dessen Ränder jeweils mindestens zweimal berührt wurden.
  */
+/** So viele Kerzen ohne Tunnel müssen vergehen, bevor „Tunnel erkannt“ erneut gemeldet wird (Flattern am Fensterrand) */
+export const TUNNEL_RUHE = 5
+
 export function findeTunnel(c: Candle[], i: number, atrWert: number, opt: AnalyseOptionen = STANDARD_OPTIONEN): Tunnel | null {
   if (!Number.isFinite(atrWert) || atrWert <= 0) return null
   for (let n = Math.min(opt.tunnelMaxTage, i + 1); n >= opt.tunnelMinTage; n--) {
@@ -135,6 +138,9 @@ export function analysiere(
   const tief52w = minLow(c, i - opt.langTage, i - 1)
   const tunnel = findeTunnel(c, i, atrI, opt)
   const tunnelVorher = findeTunnel(c, i - 1, endlich(atr14[i - 1]) ?? atrI, opt)
+  // jüngster Tunnel der letzten TUNNEL_RUHE Kerzen: ein Tunnel, der eine Kerze lang aus dem Raster fällt, gilt nicht als neu
+  let tunnelZuletzt = tunnelVorher
+  for (let k = i - 2; !tunnelZuletzt && k >= i - TUNNEL_RUHE && k >= 1; k--) tunnelZuletzt = findeTunnel(c, k, endlich(atr14[k]) ?? atrI, opt)
 
   const e50 = endlich(ema50[i])
   const e200 = endlich(ema200[i])
@@ -214,10 +220,10 @@ export function analysiere(
   // ── Tunnel: neu entstanden oder Rand erreicht ──────────────────────────────
   if (muster.tunnel && tunnel) {
     const spanne = `${fmt(tunnel.tief)}–${fmt(tunnel.hoch)}`
-    if (!tunnelVorher) {
+    if (!tunnelZuletzt) {
       neu('tunnel', 'neutral', 'Tunnel erkannt', `Seit ${tunnel.seitTagen} ${opt.einheit} zwischen ${spanne} (Höhe ${pz(tunnel.hoch, tunnel.tief)}).`)
     }
-    if (tunnel.lage !== 'mitte' && (!tunnelVorher || tunnelVorher.lage !== tunnel.lage)) {
+    if (tunnel.lage !== 'mitte' && (!tunnelZuletzt || tunnelZuletzt.lage !== tunnel.lage)) {
       const unten = tunnel.lage === 'unten'
       neu(
         'tunnel',
@@ -269,6 +275,30 @@ export function analysiere(
   }
 
   return { analyse, signale }
+}
+
+/**
+ * Signale der letzten `anzahl` abgeschlossenen Kerzen vor der aktuellen, rückwirkend aus der Historie.
+ * Damit zeigt die Signalliste auch dann etwas, wenn die Action die Kerzen nicht live gesehen hat
+ * (Erstlauf, neue Ebene, Lücken). Markiert mit `nachgetragen`, damit daraus kein Push wird.
+ */
+export function analysiereHistorie(
+  kerzen: Candle[],
+  instrumentId: string,
+  muster: Record<MusterId, boolean>,
+  opt: AnalyseOptionen = STANDARD_OPTIONEN,
+  anzahl = 25,
+): Signal[] {
+  const signale: Signal[] = []
+  const n = kerzen.length
+  // j = Index der jeweils "letzten" Kerze; die Folgekerze gilt als Zeitpunkt der Sichtung
+  for (let j = Math.max(25, n - 1 - anzahl); j <= n - 2; j++) {
+    const sichtung = new Date(kerzen[j + 1].time * 1000)
+    const e = analysiere(kerzen.slice(0, j + 1), instrumentId, muster, sichtung, undefined, opt)
+    if (!e) continue
+    for (const s of e.signale) signale.push({ ...s, nachgetragen: true })
+  }
+  return signale
 }
 
 function fmt(n: number): string {

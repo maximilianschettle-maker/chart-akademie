@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { Candle } from '../../types'
-import { analysiere, findeTunnel, kerzenAusKompakt, kerzenKompakt } from './analyse'
+import { analysiere, analysiereHistorie, findeTunnel, kerzenAusKompakt, kerzenKompakt } from './analyse'
 import { normalisiereConfig, STANDARD_CONFIG } from './katalog'
 
 const TAG = 86_400
@@ -36,6 +36,23 @@ describe('analyse', () => {
     expect(tag2.signale.some((s) => s.muster === 'ausbruch')).toBe(false)
     expect(tag1.analyse.hoch20).toBeGreaterThan(101)
     expect(tag1.analyse.vorlaeufig).toBe(false)
+  })
+
+  it('trägt Signale vergangener Kerzen nach, markiert sie und lässt die aktuelle Kerze aus', () => {
+    // Breakout an Kerze 41 (Index 40), danach fünf ruhige Kerzen; die letzte Kerze gehört dem Live-Lauf
+    const closes = [...seitwaerts(40), 104, 105, 105, 105, 105, 105]
+    const c = kerzen(closes)
+    const h = analysiereHistorie(c, 'test', ALLE, undefined, 10)
+    const ausbruch = h.filter((s) => s.muster === 'ausbruch')
+    expect(ausbruch).toHaveLength(1)
+    expect(ausbruch[0]).toMatchObject({ nachgetragen: true, datum: new Date(c[40].time * 1000).toISOString().slice(0, 10) })
+    expect(ausbruch[0].vorlaeufig).toBeUndefined()
+    // Sichtung = Folgekerze, nicht "jetzt"
+    expect(ausbruch[0].zeit).toBe(new Date(c[41].time * 1000).toISOString())
+    // ein zu kurzes Fenster findet den Ausbruch nicht mehr
+    expect(analysiereHistorie(c, 'test', ALLE, undefined, 3).some((s) => s.muster === 'ausbruch')).toBe(false)
+    // nur abgeschlossene Kerzen vor der aktuellen: die letzte Kerze liefert keinen Eintrag
+    expect(h.every((s) => s.datum <= new Date(c[c.length - 2].time * 1000).toISOString().slice(0, 10))).toBe(true)
   })
 
   it('erkennt einen Tunnel mit mehrfach berührten Rändern und den Rand', () => {

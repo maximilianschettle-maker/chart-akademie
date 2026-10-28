@@ -128,7 +128,7 @@ export function faelligeTrackerPushes(daten: TrackerDaten, gesendet: Record<stri
   const liste: PushNachricht[] = []
   const sammle = (inst: TrackerDaten['instrumente'][number], signale: TrackerDaten['instrumente'][number]['signale'], muster: Record<string, boolean>, stunde: boolean) => {
     for (const s of signale) {
-      if (s.datum < grenze || !muster[s.muster] || gesendet[`tracker:${s.id}`]) continue
+      if (s.nachgetragen || s.datum < grenze || !muster[s.muster] || gesendet[`tracker:${s.id}`]) continue
       liste.push({
         key: `tracker:${s.id}`,
         titel: `${inst.name}${stunde ? ' (1h)' : ''}: ${s.titel}`,

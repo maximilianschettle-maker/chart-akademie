@@ -10,8 +10,9 @@ name: Markt-Tracker
 
 on:
   schedule:
-    - cron: '*/15 7-22 * * 1-5' # Mo–Fr alle 15 Minuten, 07:00–22:45 UTC
-    - cron: '0 */2 * * 0,6' # Sa/So alle zwei Stunden
+    # Nicht zur vollen Viertelstunde: dann ist GitHubs Scheduler am vollsten und lässt Läufe aus
+    - cron: '4,19,34,49 7-22 * * 1-5' # Mo–Fr alle 15 Minuten, 07:04–22:49 UTC
+    - cron: '4 */2 * * 0,6' # Sa/So alle zwei Stunden
   workflow_dispatch:
 
 permissions:
