@@ -38,6 +38,26 @@ Lokal: `npm run worker:dev` startet den Worker auf Port 8787 mit den Werten aus 
 
 Limits: Workers Free hat 100.000 Aufrufe/Tag und 10 ms CPU je Aufruf — deshalb holt der Worker je Kennzahl kleine SEC-Antworten statt des großen Gesamtdokuments. Yahoo ist kein offizieller Dienst; fällt es aus, liefert der Worker den letzten Stand („veraltet“).
 
+## Zinsentscheidungen (Fed & EZB) mit Push
+
+Widget auf dem Dashboard und Seite **Zinsentscheidungen** (`#/makro`): aktueller Leitzins (Fed-Zielkorridor, EZB-Einlagesatz), letzte Änderung in Basispunkten, nächste Sitzung mit Countdown (deutsche Zeit, Zeitumstellung berücksichtigt), Ergebnis am Entscheidungstag („unverändert 3,75–4,00 %“), Link zum Statement, Zinshistorie als Chart, kommende Termine (SEP markiert), Pressemitteilungen. Im Simulator (nicht im Blind-Modus) und im Aktien-Kurschart lassen sich die Entscheidungstage als Marker zuschalten („Zinsen“).
+
+- **Kein Backend, keine Schlüssel im Browser:** Die GitHub Action `macro.yml` (`scripts/macro/`) holt die Daten und schreibt `public/data/macro.json` (Feld `lastUpdated`) plus `public/data/zinsentscheidungen.ics`; committet wird nur bei Änderung, danach stößt sie den Pages-Deploy an. Das Frontend liest ausschließlich diese Datei; der Service Worker holt `data/` netz-zuerst.
+- **Quellen:** FRED `DFEDTARU`/`DFEDTARL` (mit Secret `FRED_API_KEY`, sonst der CSV-Export ohne Key), FOMC-Kalender `federalreserve.gov/monetarypolicy/fomccalendars.htm` (Fallback `data/fomc-dates.json`), Fed-RSS „Monetary Policy“, EZB-Einlagesatz über das ECB Data Portal (`FM.B.U2.EUR.4F.KR.DFR.LEV`), EZB-Sitzungskalender (nur künftige Termine; Vergangenes in `data/ezb-dates.json`), EZB-Presse-Feed gefiltert auf „Monetary policy decisions“.
+- **Zeitplan:** täglich 06:00 UTC; Di–Do alle 10 Minuten 11:00–22:50 UTC (deckt EZB 14:15 Frankfurt und Fed 14:00 New York in Sommer- und Winterzeit ab). Raster-Läufe brechen sofort ab, wenn kein Termin nah ist (`lauf-noetig.ts`). Cron-Verspätung ist eingeplant: breite Push-Fenster, Sendestatus in `data/push-status.json`.
+- **Web Push (VAPID):** Die Action verschickt selbst (`sende-push.ts`): am Vortag, 15–75 Minuten vorher und sobald das Ergebnis vorliegt. Einrichtung: `npm run push:keys` → Secrets `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` (mailto:); dann in der App unter Zinsentscheidungen → Benachrichtigungen aktivieren, die angezeigte Subscription als Secret `PUSH_SUBSCRIPTION` hinterlegen. iPhone: nur aus der auf dem Home-Bildschirm installierten App (ab iOS 16.4). Testmodus: Actions → „Makro-Daten“ → Run workflow → Aktion `test-push`.
+- **Kalender-Backup:** `https://maximilianschettle-maker.github.io/chart-akademie/data/zinsentscheidungen.ics` (webcal-Link auf der Makro-Seite), mit Erinnerungen am Vortag und eine Stunde vorher.
+- Lokal: `npm run macro:holen` (schreibt die JSON), `npm run macro:check` (Typen), Tests in `scripts/macro/macro.test.ts` laufen mit `npm test`.
+
+## Markt-Tracker (Charttechnik mit Push)
+
+Seite **Markt-Tracker** (`#/tracker`) und Karte auf dem Dashboard: die gängigen Märkte (S&P 500, Nasdaq 100, DAX, Euro Stoxx 50, Nikkei, Gold, Silber, Öl, Bitcoin, Ethereum, EUR/USD – wählbar) auf Tageskerzen, je Instrument Kurs, Tagesveränderung, Trend (EMA 50/200), 20-Tage-Hoch/-Tief, RSI, Chart mit Marken und die Signale der letzten 30 Tage.
+
+- **Muster (einzeln zuschaltbar):** Breakout (erster Schluss über dem 20-Tage-Hoch / unter dem 20-Tage-Tief, 52-Wochen-Marken werden genannt), Tunnel/Range (seit ≥ 15 Tagen zwischen zwei Marken, Höhe ≤ 4 × ATR, beide Ränder mehrfach berührt; Meldung bei Entstehen und am Rand), EMA-Kreuzung (20/50, 50/200), RSI extrem (70/30), Lehrbuch-Setups aus der Übungs-Engine (`engine/setupErkennung.ts`) auf Tageskerzen. Engine in `src/tracker/engine/analyse.ts`, getestet.
+- **Ablauf:** Action `tracker.yml` (`scripts/tracker/hole-tracker.ts`, werktags stündlich, am Wochenende dreimal) holt Yahoo-Tageskerzen (2 Jahre; Krypto-Fallback Coinbase), analysiert, schreibt `public/data/tracker.json`, pusht neue Signale (höchstens sechs je Lauf, nur Signale der letzten zwei Tage) und committet bei Änderung. Signale der laufenden Tageskerze heißen „vorläufig“.
+- **Konfiguration ohne Backend:** Instrumente, Muster und Push-Schalter werden in der App gesetzt und im Worker-KV abgelegt (`/api/tracker`, Worker neu deployen: `npm run worker:deploy`). Die Action liest sie mit den Secrets `AKTIEN_WORKER_URL` und `AKTIEN_SECRET`; ohne Worker gilt `data/tracker-config.json`. Änderungen wirken ab dem nächsten Lauf.
+- Lokal: `npm run tracker:holen` (schreibt die JSON), `npm run tracker:check` (Typen).
+
 ## Entwicklung
 
 ```bash
@@ -49,6 +69,11 @@ npm run lint    # oxlint
 npm run worker:dev     # Aktien-Worker lokal (Port 8787)
 npm run worker:check   # Typen des Workers
 npm run worker:deploy  # Worker auf Cloudflare veröffentlichen
+npm run macro:holen    # Fed/EZB-Daten nach public/data/macro.json (wie die Action)
+npm run macro:check    # Typen des Makro-Skripts
+npm run push:keys      # VAPID-Schlüsselpaar für Web Push erzeugen
+npm run tracker:holen  # Markt-Tracker: Kurse holen, analysieren, public/data/tracker.json
+npm run tracker:check  # Typen des Tracker-Skripts und der Engine
 ```
 
 Neue Übungs-Datensätze: `node scripts/hole-szenario.mjs SYMBOL INTERVAL VON BIS NAME` (legt JSON unter `public/szenarien/` ab und druckt eine Tages-Übersicht mit Bar-Indizes zum Definieren der Entry-Zonen).

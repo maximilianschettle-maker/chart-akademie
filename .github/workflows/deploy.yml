@@ -3,6 +3,11 @@ name: Deploy auf GitHub Pages
 on:
   push:
     branches: [main]
+    # Nur Sendestatus/Fallback-Listen (data/) berühren die App nicht; macro.yml stößt den
+    # Deploy bei Datenänderungen unter public/data selbst per workflow_dispatch an.
+    paths-ignore:
+      - 'data/**'
+      - 'notes.md'
   workflow_dispatch:
 
 permissions:

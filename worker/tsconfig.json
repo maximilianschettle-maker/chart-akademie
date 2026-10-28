@@ -20,7 +20,8 @@
   "include": [
     "src",
     "../src/aktien/engine",
-    "../src/aktien/types.ts"
+    "../src/aktien/types.ts",
+    "../src/tracker/types.ts"
   ],
   "exclude": [
     "../src/aktien/engine/**/*.test.ts",

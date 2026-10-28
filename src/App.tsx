@@ -16,6 +16,10 @@ const WiederholungPage = lazy(() =>
 const AktienPage = lazy(() => import('./aktien/pages/AktienPage').then((m) => ({ default: m.AktienPage })))
 const FirmaPage = lazy(() => import('./aktien/pages/FirmaPage').then((m) => ({ default: m.FirmaPage })))
 const VergleichPage = lazy(() => import('./aktien/pages/VergleichPage').then((m) => ({ default: m.VergleichPage })))
+// Makro-Bereich (Zinsentscheidungen Fed/EZB aus public/data/macro.json): src/makro, Widget auf dem Dashboard.
+const MakroPage = lazy(() => import('./makro/pages/MakroPage').then((m) => ({ default: m.MakroPage })))
+// Markt-Tracker (Tageskerzen + Muster aus public/data/tracker.json): src/tracker
+const TrackerPage = lazy(() => import('./tracker/pages/TrackerPage').then((m) => ({ default: m.TrackerPage })))
 
 function Platzhalter({ titel }: { titel: string }) {
   return (
@@ -83,6 +87,8 @@ export default function App() {
             <Route path="/aktien" element={<AktienPage />} />
             <Route path="/aktien/vergleich" element={<VergleichPage />} />
             <Route path="/aktien/:symbol" element={<FirmaPage />} />
+            <Route path="/makro" element={<MakroPage />} />
+            <Route path="/tracker" element={<TrackerPage />} />
             <Route path="*" element={<Platzhalter titel="Seite nicht gefunden" />} />
           </Routes>
         </Suspense>

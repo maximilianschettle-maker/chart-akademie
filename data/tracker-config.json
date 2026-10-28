@@ -1,0 +1,7 @@
+{
+  "hinweis": "Fallback-Konfiguration des Markt-Trackers, falls der Worker (KV /api/tracker) nicht erreichbar ist. Normalerweise pflegst du das in der App unter Tracker → Einstellungen. Instrument-Ids: sp500, nasdaq100, dax, stoxx50, nikkei, gold, silber, oel, bitcoin, ethereum, eurusd.",
+  "instrumente": ["sp500", "nasdaq100", "gold", "bitcoin", "dax", "eurusd"],
+  "muster": { "ausbruch": true, "tunnel": true, "ema-kreuz": true, "rsi": true, "setup": true },
+  "push": true,
+  "aktualisiertAm": 0
+}

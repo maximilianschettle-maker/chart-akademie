@@ -1,0 +1,80 @@
+name: Markt-Tracker
+
+# Holt Tageskerzen der konfigurierten Instrumente (S&P 500, Nasdaq, Gold, Bitcoin …),
+# erkennt Muster (Breakout, Tunnel, EMA-Kreuz, RSI, Lehrbuch-Setups) und verschickt
+# Push-Nachrichten bei neuen Signalen. Konfiguration kommt aus dem Worker-KV
+# (App → Tracker → Einstellungen), sonst aus data/tracker-config.json.
+# Stündlich werktags (Börsen- und Krypto-Zeiten), am Wochenende dreimal (Krypto).
+
+on:
+  schedule:
+    - cron: '5 7-22 * * 1-5' # Mo–Fr stündlich, 07:05–22:05 UTC
+    - cron: '5 8,14,20 * * 0,6' # Sa/So
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+# Dieselbe Gruppe wie macro.yml: beide committen data/push-status.json
+concurrency:
+  group: daten-action
+  cancel-in-progress: false
+
+jobs:
+  tracker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci --ignore-scripts
+
+      - name: Kurse holen und analysieren
+        id: daten
+        env:
+          AKTIEN_WORKER_URL: ${{ secrets.AKTIEN_WORKER_URL }}
+          AKTIEN_SECRET: ${{ secrets.AKTIEN_SECRET }}
+        run: npx tsx scripts/tracker/hole-tracker.ts
+
+      - name: Push verschicken
+        env:
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
+          PUSH_SUBSCRIPTION: ${{ secrets.PUSH_SUBSCRIPTION }}
+          APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/#/makro
+        run: node scripts/macro/sende-push.ts
+
+      - name: Committen, wenn sich etwas geändert hat
+        id: commit
+        run: |
+          git add public/data
+          [ -f data/push-status.json ] && git add data/push-status.json
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if git diff --cached --name-only | grep -q '^public/'; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Tracker-Daten: Stand $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3; do
+            git push && break
+            git pull --rebase && sleep 5
+          done
+
+      - name: Pages-Deploy anstoßen
+        if: steps.commit.outputs.deploy == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

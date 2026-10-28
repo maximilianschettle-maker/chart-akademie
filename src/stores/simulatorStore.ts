@@ -27,6 +27,8 @@ export interface SimEinstellungen {
   ema: number[]
   rsi: boolean
   volumen: boolean
+  /** Fed-/EZB-Entscheidungstage als Markierungen im Chart (nicht im Blind-Modus) */
+  zinsen: boolean
 }
 
 export const STANDARD_EINSTELLUNGEN: SimEinstellungen = {
@@ -40,6 +42,7 @@ export const STANDARD_EINSTELLUNGEN: SimEinstellungen = {
   ema: [],
   rsi: false,
   volumen: true,
+  zinsen: false,
 }
 
 /** Stand einer laufenden Sitzung — überlebt Reload und geschlossene Tabs. */

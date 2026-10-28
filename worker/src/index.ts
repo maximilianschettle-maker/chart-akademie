@@ -10,8 +10,10 @@
 //   GET  /api/chart/:symbol?bereich=1M|6M|1J|5J|MAX[&frisch=1]   Kursverlauf als Kerzen (Cache-API 1 h – 1 Tag)
 //   GET  /api/sec/:symbol?name=&waehrung=&cik=[&frisch=1]   SEC-Abschlüsse (KV 7 Tage), 204 ohne Zuordnung
 //   GET  /api/zustand · PUT /api/zustand   Watchlist + DCF-Annahmen für den Geräte-Sync (KV)
+//   GET  /api/tracker · PUT /api/tracker   Konfiguration des Markt-Trackers (KV); liest auch die GitHub Action
 
 import type { SyncZustand } from '../../src/aktien/types'
+import type { TrackerConfig } from '../../src/tracker/types'
 import { kvLesen, kvSchreiben, mitCacheApi, mitKv } from './cache'
 import { HttpFehler, corsHeader, fehler, json, pruefeZugang, type Env } from './http'
 import { cikIndex, secTeilLaden } from './sec'
@@ -116,6 +118,22 @@ export default {
           const alt = await kvLesen<SyncZustand>(env, 'zustand')
           if (alt && alt.daten.aktualisiertAm > neu.aktualisiertAm) return json(req, alt.daten, 409)
           await kvSchreiben(env, 'zustand', neu)
+          return json(req, neu)
+        }
+      }
+
+      if (pfad === '/api/tracker') {
+        if (req.method === 'GET') {
+          const alt = await kvLesen<TrackerConfig>(env, 'tracker')
+          return json(req, alt?.daten ?? null)
+        }
+        if (req.method === 'PUT') {
+          const neu = (await req.json()) as TrackerConfig
+          if (!neu || !Array.isArray(neu.instrumente) || typeof neu.aktualisiertAm !== 'number' || typeof neu.muster !== 'object')
+            throw new HttpFehler('Ungültige Tracker-Konfiguration', 400)
+          const alt = await kvLesen<TrackerConfig>(env, 'tracker')
+          if (alt && alt.daten.aktualisiertAm > neu.aktualisiertAm) return json(req, alt.daten, 409)
+          await kvSchreiben(env, 'tracker', neu)
           return json(req, neu)
         }
       }

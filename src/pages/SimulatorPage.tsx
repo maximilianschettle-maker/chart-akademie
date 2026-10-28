@@ -43,6 +43,8 @@ import { PositionPanel } from '../components/simulator/PositionPanel'
 import { TradeHistorie } from '../components/simulator/TradeHistorie'
 import { SitzungsStatistik } from '../components/simulator/SitzungsStatistik'
 import { SetupRueckblick } from '../components/simulator/SetupRueckblick'
+import { useMakro } from '../makro/useMakro'
+import { MARKER_FARBE, intervallAusKerzen, terminMarker } from '../makro/termine'
 
 // Simulator: Backtesting von Hand. Symbol, Timeframe und Startpunkt frei wählbar
 // (oder blind/zufällig), Replay ohne festes Ende, Orders direkt im Chart.
@@ -148,6 +150,22 @@ function SitzungAnsicht({
     if (broker.position) einstieg(broker.position.entryTime, broker.position.richtung)
     return liste
   }, [broker.trades, broker.position])
+
+  // Zinsentscheidungen (Fed/EZB) als Hinweis-Marker — zuschaltbar, im Blind-Modus aus (würde das Datum verraten)
+  const zinsenAn = einstellungen.zinsen && !verdeckt
+  const makro = useMakro(60_000)
+  const zinsMarker = useMemo((): ChartMarker[] => {
+    if (!zinsenAn || !makro.daten) return []
+    const zeiten = chartBasis.map((c) => c.time)
+    return terminMarker(makro.daten, zeiten, intervallAusKerzen(zeiten)).map((m) => ({
+      time: m.entscheidung,
+      art: 'hinweis',
+      text: m.text,
+      farbe: MARKER_FARBE[m.bank],
+      oben: true,
+    }))
+  }, [zinsenAn, makro.daten, chartBasis])
+  const alleMarker = useMemo(() => (zinsMarker.length ? [...marker, ...zinsMarker] : marker), [marker, zinsMarker])
 
   const indikatoren = useMemo(
     () => ({ ema: einstellungen.ema, rsi: einstellungen.rsi, volumen: einstellungen.volumen }),
@@ -296,6 +314,15 @@ function SitzungAnsicht({
               >
                 Vol
               </button>
+              {!verdeckt && (
+                <button
+                  onClick={() => einstellungenSetzen({ zinsen: !einstellungen.zinsen })}
+                  className={chip(einstellungen.zinsen)}
+                  title="Fed- und EZB-Entscheidungstage im Chart markieren"
+                >
+                  Zinsen
+                </button>
+              )}
               <span className="mx-1 h-5 w-px bg-rand" />
               <button
                 onClick={() => setZeichenModus(zeichenModus === 'linie' ? 'aus' : 'linie')}
@@ -348,7 +375,7 @@ function SitzungAnsicht({
               onLinieZiehen={handel.onLinieZiehen}
               onLinieLos={handel.onLinieLos}
               onPick={handel.onPick}
-              marker={marker}
+              marker={alleMarker}
               indikatoren={indikatoren}
             />
           </div>

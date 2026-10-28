@@ -12,7 +12,13 @@
     "preview": "vite preview",
     "worker:dev": "wrangler dev --config worker/wrangler.toml --port 8787",
     "worker:deploy": "wrangler deploy --config worker/wrangler.toml",
-    "worker:check": "tsc -p worker"
+    "worker:check": "tsc -p worker",
+    "macro:holen": "node scripts/macro/hole-macro.ts",
+    "macro:push": "node scripts/macro/sende-push.ts",
+    "macro:check": "tsc -p scripts/macro",
+    "push:keys": "node scripts/macro/vapid-keys.ts",
+    "tracker:holen": "tsx scripts/tracker/hole-tracker.ts",
+    "tracker:check": "tsc -p scripts/tracker"
   },
   "dependencies": {
     "idb": "^8.0.3",
@@ -28,14 +34,17 @@
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
+    "@types/web-push": "^3.6.4",
     "@vitejs/plugin-react": "^6.1.0",
     "autoprefixer": "^10.5.4",
     "oxlint": "^1.81.0",
     "postcss": "^8.5.28",
     "tailwindcss": "^3.4.19",
+    "tsx": "^4.23.15",
     "typescript": "~6.0.2",
     "vite": "^8.2.2",
     "vitest": "^5.0.0",
+    "web-push": "^3.6.7",
     "wrangler": "^4.151.1",
     "yahoo-finance2": "^4.0.4"
   },

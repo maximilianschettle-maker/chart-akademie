@@ -9,6 +9,8 @@ import { ProgressRing } from '../components/ui/ProgressRing'
 import { DatenSicherung } from '../components/DatenSicherung'
 import { GitSync } from '../components/GitSync'
 import { BewertungsBadge } from '../components/ui/BewertungsBadge'
+import { ZinsWidget } from '../makro/components/ZinsWidget'
+import { TrackerWidget } from '../tracker/components/TrackerWidget'
 
 export function Dashboard() {
   const abgeschlossene = useProgressStore((s) => s.abgeschlosseneLektionen)
@@ -59,6 +61,9 @@ export function Dashboard() {
           <ArrowRight className="h-4 w-4 text-gedimmt" />
         </Link>
       )}
+
+      <ZinsWidget />
+      <TrackerWidget />
 
       <div className="mt-8 space-y-5">
         {CURRICULUM.map((level) => {
