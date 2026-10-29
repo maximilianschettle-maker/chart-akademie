@@ -27,6 +27,19 @@ describe('Kursverlauf: Rohdaten → Kerzen', () => {
     expect(k).toEqual([{ time: Date.UTC(2026, 0, 5) / 1000, open: 10, high: 12, low: 9, close: 11, volume: 0 }])
   })
 
+  it('Intraday: Zeitstempel bleiben minutengenau, keine Zusammenfassung je Tag', () => {
+    const k = kerzenAusChart(
+      {
+        quotes: [
+          { date: '2026-01-05T14:30:00.000Z', open: 10, high: 11, low: 9, close: 10.5, volume: 100 },
+          { date: '2026-01-05T14:35:00.000Z', open: 10.5, high: 12, low: 10, close: 11, volume: 50 },
+        ],
+      },
+      true,
+    )
+    expect(k.map((x) => x.time)).toEqual([Date.UTC(2026, 0, 5, 14, 30) / 1000, Date.UTC(2026, 0, 5, 14, 35) / 1000])
+  })
+
   it('leere Antwort → keine Kerzen', () => {
     expect(kerzenAusChart({})).toEqual([])
   })
@@ -35,8 +48,10 @@ describe('Kursverlauf: Rohdaten → Kerzen', () => {
 describe('Kursverlauf: Zeiträume', () => {
   const jetzt = Date.UTC(2026, 9, 21, 12)
 
-  it('kennt die fünf Bereiche, unbekannte Eingaben liefern null', () => {
-    expect(BEREICHE.map((b) => b.bereich)).toEqual(['1M', '6M', '1J', '5J', 'MAX'])
+  it('kennt die sieben Bereiche, unbekannte Eingaben liefern null', () => {
+    expect(BEREICHE.map((b) => b.bereich)).toEqual(['1T', '5T', '1M', '6M', '1J', '5J', 'MAX'])
+    expect(bereichDef('1T')).toMatchObject({ intervall: '5m', intraday: true })
+    expect(bereichDef('5t')?.intervall).toBe('15m')
     expect(bereichDef('1j')?.intervall).toBe('1d')
     expect(bereichDef('5J')?.intervall).toBe('1wk')
     expect(bereichDef('max')?.intervall).toBe('1mo')

@@ -5,6 +5,7 @@ import { StartPage } from './pages/StartPage'
 import { BereichLayout } from './pages/BereichLayout'
 import { TabLeisteOben, TabLeisteUnten } from './components/ui/TabLeiste'
 import { ANALYSE_TABS, TRAINING_TABS, neuerPfad } from './navigation'
+import { AnsichtSchalter } from './analyse/AnsichtSchalter'
 
 // Struktur siehe src/navigation.ts: Start · Training (Lernpfad, Simulator, Journal) · Analyse
 // (Aktien, Tracker, Makro & News). Route-Splitting: Simulator/Übung ziehen lightweight-charts
@@ -89,7 +90,7 @@ export default function App() {
               <Route path="/uebung/:szenarioId" element={<UebungPage />} />
               <Route path="/wiederholung" element={<WiederholungPage />} />
 
-              <Route path="/analyse" element={<BereichLayout tabs={ANALYSE_TABS} label="Analyse" />}>
+              <Route path="/analyse" element={<BereichLayout tabs={ANALYSE_TABS} label="Analyse" rechts={<AnsichtSchalter />} />}>
                 <Route index element={<Navigate to="/analyse/aktien" replace />} />
                 <Route path="aktien" element={<AktienPage />} />
                 <Route path="aktien/vergleich" element={<VergleichPage />} />

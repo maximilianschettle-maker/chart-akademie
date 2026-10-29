@@ -154,7 +154,7 @@ export function FirmaPage() {
           <div className="mt-5">
             {tab === 'ueberblick' && k && (
               <div className="space-y-6">
-                <KursChart symbol={symbol} />
+                <KursChart symbol={symbol} kennzahlen={k} />
                 <KennzahlenKacheln k={k} waehrung={daten.firma.waehrung} kursWaehrung={daten.kurs?.waehrung} kursbezugMoeglich={daten.kurs?.waehrung === daten.firma.waehrung || Boolean(daten.wechselkurs)} />
                 {daten.firma.beschreibung && (
                   <details className="text-sm text-gedimmt">

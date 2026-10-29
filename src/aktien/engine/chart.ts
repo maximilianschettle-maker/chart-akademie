@@ -2,13 +2,15 @@
 // Reine Funktionen ohne Netz — laufen im Worker (Umwandlung) und im Browser (Anzeige).
 import type { Kerze } from '../types'
 
-export type ChartBereich = '1M' | '6M' | '1J' | '5J' | 'MAX'
+export type ChartBereich = '1T' | '5T' | '1M' | '6M' | '1J' | '5J' | 'MAX'
 
 export interface BereichDef {
   bereich: ChartBereich
   titel: string
   /** Yahoo-Intervall */
-  intervall: '1d' | '1wk' | '1mo'
+  intervall: '5m' | '15m' | '1d' | '1wk' | '1mo'
+  /** Kerzen innerhalb eines Tages: Zeitstempel bleiben minutengenau, Uhrzeit an der Achse */
+  intraday?: boolean
   /** Länge des Zeitraums in Tagen; null = so weit die Daten reichen */
   tage: number | null
   /** Wie lange der Worker die Antwort im Cache hält */
@@ -17,6 +19,9 @@ export interface BereichDef {
 
 const STUNDE = 3600
 export const BEREICHE: BereichDef[] = [
+  // Intraday (Trader-Ansicht): Yahoo liefert 5m/15m nur für die letzten 60 Tage; 3 bzw. 7 Kalendertage reichen für 1–5 Handelstage
+  { bereich: '1T', titel: '5m', intervall: '5m', tage: 3, intraday: true, ttlSek: 5 * 60 },
+  { bereich: '5T', titel: '15m', intervall: '15m', tage: 7, intraday: true, ttlSek: 5 * 60 },
   { bereich: '1M', titel: '1M', intervall: '1d', tage: 31, ttlSek: STUNDE },
   { bereich: '6M', titel: '6M', intervall: '1d', tage: 183, ttlSek: STUNDE },
   { bereich: '1J', titel: '1J', intervall: '1d', tage: 366, ttlSek: STUNDE },
@@ -54,15 +59,16 @@ const TAG_SEK = 86_400
  * Kerzen aus der Rohantwort: Zeilen ohne vollständige OHLC-Werte fallen weg, der Zeitstempel
  * wird auf den Tagesanfang (UTC) gesetzt (Yahoo liefert die Handelseröffnung in Börsenzeit),
  * doppelte Tage behalten die letzte Zeile, Ergebnis aufsteigend sortiert.
+ * Intraday bleibt der Zeitstempel sekundengenau (Kerzenbeginn).
  */
-export function kerzenAusChart(roh: ChartRoh): Kerze[] {
+export function kerzenAusChart(roh: ChartRoh, intraday = false): Kerze[] {
   const nachZeit = new Map<number, Kerze>()
   for (const q of roh.quotes ?? []) {
     const ms = typeof q.date === 'string' ? Date.parse(q.date) : q.date.getTime()
     if (!Number.isFinite(ms)) continue
     const { open, high, low, close } = q
     if (!istZahl(open) || !istZahl(high) || !istZahl(low) || !istZahl(close)) continue
-    const time = Math.floor(ms / 1000 / TAG_SEK) * TAG_SEK
+    const time = intraday ? Math.floor(ms / 1000) : Math.floor(ms / 1000 / TAG_SEK) * TAG_SEK
     nachZeit.set(time, { time, open, high, low, close, volume: istZahl(q.volume) ? q.volume : 0 })
   }
   return [...nachZeit.values()].sort((a, b) => a.time - b.time)

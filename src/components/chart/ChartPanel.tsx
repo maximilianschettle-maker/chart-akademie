@@ -8,7 +8,11 @@ import {
   LineSeries,
   createSeriesMarkers,
   ColorType,
+  LineType,
+  PriceScaleMode,
   TickMarkType,
+  type ISeriesApi,
+  type SeriesType,
   type UTCTimestamp,
   type SeriesMarker,
   type Time,
@@ -47,6 +51,15 @@ export const CHART_FARBEN = {
   text: '#8B95A5',
 }
 
+/** Zusätzliche Linie auf einer eigenen (linken) Preisskala, z.B. der Leitzins in Prozent */
+export interface OverlayLinie {
+  punkte: { time: number; value: number }[]
+  farbe: string
+  titel: string
+  /** Einheit hinter dem Wert an der Achse, Standard „%“ */
+  einheit?: string
+}
+
 interface ChartPanelProps {
   candles: Candle[]
   annotationen?: ChartAnnotation[]
@@ -57,6 +70,11 @@ interface ChartPanelProps {
   randRechts?: number
   /** Uhrzeit an der Zeitachse; bei Tages-/Wochenkerzen (Aktien) aus */
   zeitSichtbar?: boolean
+  /** Kerzen (Standard) oder Schlusskurs-Linie (Investor-Ansicht) */
+  typ?: 'kerzen' | 'linie'
+  /** logarithmische Preisachse (lange Zeiträume) */
+  logSkala?: boolean
+  overlay?: OverlayLinie | null
 }
 
 export function ChartPanel({
@@ -67,6 +85,9 @@ export function ChartPanel({
   emaPerioden,
   randRechts = 0,
   zeitSichtbar = true,
+  typ = 'kerzen',
+  logSkala = false,
+  overlay = null,
 }: ChartPanelProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const resetRef = useRef<(() => void) | null>(null)
@@ -88,7 +109,8 @@ export function ChartPanel({
         vertLines: { color: CHART_FARBEN.gitter },
         horzLines: { color: CHART_FARBEN.gitter },
       },
-      rightPriceScale: { borderColor: CHART_FARBEN.gitter },
+      rightPriceScale: { borderColor: CHART_FARBEN.gitter, mode: logSkala ? PriceScaleMode.Logarithmic : PriceScaleMode.Normal },
+      leftPriceScale: { visible: Boolean(overlay && overlay.punkte.length), borderColor: CHART_FARBEN.gitter },
       timeScale: { borderColor: CHART_FARBEN.gitter, timeVisible: zeitSichtbar, ...(zeitSichtbar ? { tickMarkFormatter: tickBerlin } : {}) },
       ...(zeitSichtbar
         ? { localization: { locale: 'de-DE', timeFormatter: (t: Time) => (alsDatum(t) ? fmtVoll.format(alsDatum(t) as Date) : String(t)) } }
@@ -101,22 +123,46 @@ export function ChartPanel({
     })
     ;(container as HTMLDivElement & { __chart?: IChartApi }).__chart = chart
 
-    const kerzenSerie = chart.addSeries(CandlestickSeries, {
-      upColor: CHART_FARBEN.long,
-      downColor: CHART_FARBEN.short,
-      borderVisible: false,
-      wickUpColor: CHART_FARBEN.long,
-      wickDownColor: CHART_FARBEN.short,
-    })
-    kerzenSerie.setData(
-      candles.map((c) => ({
-        time: c.time as UTCTimestamp,
-        open: c.open,
-        high: c.high,
-        low: c.low,
-        close: c.close,
-      })),
-    )
+    let kerzenSerie: ISeriesApi<SeriesType>
+    if (typ === 'linie') {
+      const linie = chart.addSeries(LineSeries, { color: '#3B82F6', lineWidth: 2, priceLineVisible: true, lastValueVisible: true })
+      linie.setData(candles.map((c) => ({ time: c.time as UTCTimestamp, value: c.close })))
+      kerzenSerie = linie
+    } else {
+      const kerzen = chart.addSeries(CandlestickSeries, {
+        upColor: CHART_FARBEN.long,
+        downColor: CHART_FARBEN.short,
+        borderVisible: false,
+        wickUpColor: CHART_FARBEN.long,
+        wickDownColor: CHART_FARBEN.short,
+      })
+      kerzen.setData(
+        candles.map((c) => ({
+          time: c.time as UTCTimestamp,
+          open: c.open,
+          high: c.high,
+          low: c.low,
+          close: c.close,
+        })),
+      )
+      kerzenSerie = kerzen
+    }
+
+    if (overlay && overlay.punkte.length > 0) {
+      const einheit = overlay.einheit ?? ' %'
+      const ov = chart.addSeries(LineSeries, {
+        priceScaleId: 'left',
+        color: overlay.farbe,
+        lineWidth: 1,
+        lineType: LineType.WithSteps,
+        priceLineVisible: false,
+        lastValueVisible: true,
+        title: overlay.titel,
+        priceFormat: { type: 'custom', minMove: 0.01, formatter: (v: number) => `${v.toFixed(2).replace('.', ',')}${einheit}` },
+      })
+      ov.setData(overlay.punkte.map((p) => ({ time: p.time as UTCTimestamp, value: p.value })))
+      chart.priceScale('left').applyOptions({ scaleMargins: { top: 0.1, bottom: 0.25 } })
+    }
 
     if (zeigeVolumen) {
       const volumenSerie = chart.addSeries(HistogramSeries, {
@@ -206,7 +252,7 @@ export function ChartPanel({
       resetRef.current = null
       chart.remove()
     }
-  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden, randRechts, zeitSichtbar])
+  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden, randRechts, zeitSichtbar, typ, logSkala, overlay])
 
   return (
     <div className="relative">

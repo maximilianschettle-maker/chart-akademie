@@ -7,7 +7,7 @@
 //   GET  /api/yahoo/:symbol[?frisch=1]     Firma + Abschlüsse von Yahoo (KV 7 Tage)
 //   GET  /api/kurs/:symbol[?frisch=1]      Kurs + Bewertung (15 min; bei Yahoo-Ausfall letzter Stand, veraltet=true)
 //   GET  /api/wechselkurse?paare=HKDCNY,USDEUR   Wechselkurse (1 h je Paar)
-//   GET  /api/chart/:symbol?bereich=1M|6M|1J|5J|MAX[&frisch=1]   Kursverlauf als Kerzen (1 h – 1 Tag)
+//   GET  /api/chart/:symbol?bereich=1T|5T|1M|6M|1J|5J|MAX[&frisch=1]   Kursverlauf als Kerzen (5 min – 1 Tag)
 //   GET  /api/sec/:symbol?name=&waehrung=&cik=[&frisch=1]   SEC-Abschlüsse (KV 7 Tage), 204 ohne Zuordnung
 //   GET  /api/zustand · PUT /api/zustand   Watchlist + DCF-Annahmen für den Geräte-Sync (KV)
 //   GET  /api/tracker · PUT /api/tracker   Konfiguration des Markt-Trackers (KV); liest auch die GitHub Action
@@ -74,7 +74,7 @@ async function bearbeiten(req: Request, env: Env, url: URL): Promise<Response> {
   if (pfad.startsWith('/api/chart/') && req.method === 'GET') {
     const symbol = symbolAus(pfad, '/api/chart/')
     const def = bereichDef(url.searchParams.get('bereich') ?? '1J')
-    if (!def) throw new HttpFehler('Ungültiger Bereich (1M, 6M, 1J, 5J, MAX)', 400)
+    if (!def) throw new HttpFehler('Ungültiger Bereich (1T, 5T, 1M, 6M, 1J, 5J, MAX)', 400)
     const r = await mitCache(env, `chart/${symbol}/${def.bereich}`, def.ttlSek, frisch, () => chartKerzen(symbol, def))
     return json(req, { ...r.daten, standAm: r.standAm, veraltet: r.veraltet || undefined })
   }

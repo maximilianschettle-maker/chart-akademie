@@ -91,7 +91,7 @@ export async function chartKerzen(symbol: string, def: BereichDef): Promise<Kurs
   } catch (e) {
     throw uebersetzen(e, symbol)
   }
-  const kerzen = kerzenAusChart(roh)
+  const kerzen = kerzenAusChart(roh, def.intraday)
   if (kerzen.length === 0) throw new HttpFehler(`Keine Kursdaten für "${symbol}"`, 404)
   return { symbol, waehrung: roh.meta?.currency ?? '', bereich: def.bereich, kerzen, standAm: Date.now() }
 }
