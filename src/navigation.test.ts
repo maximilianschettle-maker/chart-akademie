@@ -29,6 +29,6 @@ describe('navigation', () => {
     expect(HAUPTBEREICHE.map((b) => b.id)).toEqual(['start', 'training', 'analyse'])
     for (const t of TRAINING_TABS) expect(hauptbereichVon(t.pfad)).toBe('training')
     for (const t of ANALYSE_TABS) expect(hauptbereichVon(t.pfad)).toBe('analyse')
-    expect(ANALYSE_TABS.map((t) => t.text)).toContain('Makro & News')
+    expect(ANALYSE_TABS.map((t) => t.text)).toEqual(['Aktien', 'Tracker', 'Makro', 'News'])
   })
 })

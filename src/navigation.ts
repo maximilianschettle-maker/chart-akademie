@@ -4,7 +4,7 @@
 //   Start      /                      Startseite: Termine, Watchlist, Journal, Weiterlernen
 //   Training   /training              Lernpfad · /training/simulator · /training/journal
 //              /lektion/:id, /uebung/:id, /wiederholung (Detailseiten ohne Segment-Leiste)
-//   Analyse    /analyse/aktien        Aktien (+ /vergleich, /:symbol) · /analyse/tracker · /analyse/makro
+//   Analyse    /analyse/aktien        Aktien (+ /vergleich, /:symbol) · /analyse/tracker · /analyse/makro · /analyse/news
 //
 // Alte Pfade (Lesezeichen, Push-Links, ICS) werden weitergeleitet, siehe neuerPfad().
 
@@ -32,7 +32,8 @@ export const TRAINING_TABS: NavZiel[] = [
 export const ANALYSE_TABS: NavZiel[] = [
   { pfad: '/analyse/aktien', text: 'Aktien' },
   { pfad: '/analyse/tracker', text: 'Tracker' },
-  { pfad: '/analyse/makro', text: 'Makro & News' },
+  { pfad: '/analyse/makro', text: 'Makro' },
+  { pfad: '/analyse/news', text: 'News' },
 ]
 
 const TRAINING_PRAEFIXE = ['/training', '/lektion', '/uebung', '/wiederholung']

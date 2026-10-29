@@ -4,7 +4,7 @@ import { NEWS, useBoard } from './laden'
 import { KATEGORIE_TEXT, MARKT_TEXT, type MarktTag, type NewsKategorie } from './types'
 import { fmtStand } from '../makro/format'
 
-// Geopolitik-Board (Makro & News): kuratierte Meldungen in vier festen Kategorien, jede mit Tags der
+// Geopolitik-Board (Analyse → News): kuratierte Meldungen in vier festen Kategorien, jede mit Tags der
 // potenziell betroffenen Märkte. Daten aus public/data/news.json (Action board.yml, stündlich).
 
 const KATEGORIEN: (NewsKategorie | 'alle')[] = ['alle', 'handel', 'konflikte', 'energie', 'politik']

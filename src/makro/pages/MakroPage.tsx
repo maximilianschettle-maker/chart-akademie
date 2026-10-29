@@ -7,7 +7,6 @@ import { ZinsKarte } from '../components/ZinsKarte'
 import { ZinsChart } from '../components/ZinsChart'
 import { PushEinstellungen } from '../components/PushEinstellungen'
 import { Wirtschaftskalender } from '../../board/Wirtschaftskalender'
-import { NewsBoard } from '../../board/NewsBoard'
 
 // Makro-Seite: beide Banken ausführlich, Zinshistorie, kommende Termine, letzte
 // Pressemitteilungen, Push- und Kalender-Einstellungen, Herkunft der Daten.
@@ -38,10 +37,10 @@ export function MakroPage() {
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <h1 className="inline-flex items-center gap-2 text-2xl font-bold text-white">
-            <Landmark className="h-6 w-6 text-akzent" /> Makro & News
+            <Landmark className="h-6 w-6 text-akzent" /> Makro
           </h1>
           <p className="mt-1 text-gedimmt">
-            Notenbanken zuerst: Fed und EZB mit Leitzins, nächster Sitzung und Ergebnis am Entscheidungstag. Wirtschaftskalender und Geopolitik-Board folgen. Alle Zeiten in deutscher Zeit.
+            Fed und EZB mit Leitzins, nächster Sitzung und Ergebnis am Entscheidungstag, dazu der Wirtschaftskalender für USA und Euroraum. Geopolitik steht unter „News“. Alle Zeiten in deutscher Zeit.
           </p>
         </div>
         <button onClick={neuLaden} className="tipp inline-flex items-center gap-1.5 rounded-lg bg-flaeche px-3 py-1.5 text-xs font-semibold text-schrift hover:text-white">
@@ -116,10 +115,6 @@ export function MakroPage() {
           <div className="mt-6">
             <Wirtschaftskalender />
           </div>
-          <div className="mt-6">
-            <NewsBoard />
-          </div>
-
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {(['fed', 'ezb'] as Bank[]).map((bank) => (
               <section key={bank} className="rounded-xl border border-rand bg-flaeche p-4">

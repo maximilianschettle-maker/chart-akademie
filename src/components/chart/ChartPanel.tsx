@@ -70,7 +70,7 @@ interface ChartPanelProps {
   randRechts?: number
   /** Uhrzeit an der Zeitachse; bei Tages-/Wochenkerzen (Aktien) aus */
   zeitSichtbar?: boolean
-  /** Kerzen (Standard) oder Schlusskurs-Linie (Investor-Ansicht) */
+  /** Kerzen (Standard) oder Schlusskurs-Linie */
   typ?: 'kerzen' | 'linie'
   /** logarithmische Preisachse (lange Zeiträume) */
   logSkala?: boolean

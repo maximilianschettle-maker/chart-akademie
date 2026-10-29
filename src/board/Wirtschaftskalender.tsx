@@ -3,7 +3,7 @@ import { KALENDER, useBoard } from './laden'
 import { INDIKATOR_TEXT, REGION_TEXT, type IndikatorWert, type KalenderTermin } from './types'
 import { fmtStand, fmtTagKurz, fmtUhr } from '../makro/format'
 
-// Wirtschaftskalender (Makro & News): nächste Veröffentlichungen (CPI/HVPI, Arbeitsmarkt, BIP) für USA und
+// Wirtschaftskalender (Analyse → Makro): nächste Veröffentlichungen (CPI/HVPI, Arbeitsmarkt, BIP) für USA und
 // Euroraum und die zuletzt gemeldeten Werte mit Vorwert. Daten aus public/data/kalender.json.
 
 const REGION_FARBE: Record<KalenderTermin['region'], string> = { us: 'text-blue-400', ez: 'text-purple-400' }

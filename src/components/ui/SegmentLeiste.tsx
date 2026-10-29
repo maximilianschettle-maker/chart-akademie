@@ -2,9 +2,9 @@ import type { ReactNode } from 'react'
 import { NavLink } from 'react-router-dom'
 import type { NavZiel } from '../../navigation'
 
-// Segment-Leiste für die Unterbereiche (Lernpfad/Simulator/Journal bzw. Aktien/Tracker/Makro & News).
+// Segment-Leiste für die Unterbereiche (Lernpfad/Simulator/Journal bzw. Aktien/Tracker/Makro/News).
 // Am Handy klebt sie oben, damit man innerhalb eines Bereichs ohne Scrollen wechseln kann.
-// `rechts` nimmt einen kleinen Zusatz auf (z.B. den Trader/Investor-Schalter).
+// `rechts` nimmt einen kleinen Zusatz auf (derzeit ungenutzt).
 
 export function SegmentLeiste({ tabs, label, rechts }: { tabs: NavZiel[]; label: string; rechts?: ReactNode }) {
   return (

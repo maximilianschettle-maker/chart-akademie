@@ -35,7 +35,7 @@ export function TermineKompakt() {
           <CalendarClock className="h-4 w-4 text-akzent" /> Nächste Termine
         </h2>
         <Link to="/analyse/makro" className="inline-flex min-h-9 items-center gap-1 text-xs font-semibold text-akzent hover:underline">
-          Makro & News <ArrowRight className="h-3.5 w-3.5" />
+          Makro <ArrowRight className="h-3.5 w-3.5" />
         </Link>
       </div>
       {status === 'laedt' && <p className="mt-3 text-sm text-gedimmt">Lade Termine …</p>}

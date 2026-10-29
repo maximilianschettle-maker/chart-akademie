@@ -5,10 +5,9 @@ import { StartPage } from './pages/StartPage'
 import { BereichLayout } from './pages/BereichLayout'
 import { TabLeisteOben, TabLeisteUnten } from './components/ui/TabLeiste'
 import { ANALYSE_TABS, TRAINING_TABS, neuerPfad } from './navigation'
-import { AnsichtSchalter } from './analyse/AnsichtSchalter'
 
 // Struktur siehe src/navigation.ts: Start · Training (Lernpfad, Simulator, Journal) · Analyse
-// (Aktien, Tracker, Makro & News). Route-Splitting: Simulator/Übung ziehen lightweight-charts
+// (Aktien, Tracker, Makro, News). Route-Splitting: Simulator/Übung ziehen lightweight-charts
 // nach, Lektionen die Demos — der Erststart (Startseite) bleibt am Handy leicht.
 const LernpfadPage = lazy(() => import('./pages/LernpfadPage').then((m) => ({ default: m.LernpfadPage })))
 const LektionPage = lazy(() => import('./pages/LektionPage').then((m) => ({ default: m.LektionPage })))
@@ -20,9 +19,10 @@ const WiederholungPage = lazy(() => import('./pages/WiederholungPage').then((m) 
 const AktienPage = lazy(() => import('./aktien/pages/AktienPage').then((m) => ({ default: m.AktienPage })))
 const FirmaPage = lazy(() => import('./aktien/pages/FirmaPage').then((m) => ({ default: m.FirmaPage })))
 const VergleichPage = lazy(() => import('./aktien/pages/VergleichPage').then((m) => ({ default: m.VergleichPage })))
-// Makro & News (Zinsentscheidungen Fed/EZB aus public/data/macro.json): src/makro
+// Makro (Zinsentscheidungen Fed/EZB aus public/data/macro.json + Wirtschaftskalender): src/makro, src/board
 const MakroPage = lazy(() => import('./makro/pages/MakroPage').then((m) => ({ default: m.MakroPage })))
 // Markt-Tracker (Tages- und Stundenkerzen + Muster aus public/data/tracker.json): src/tracker
+const NewsPage = lazy(() => import('./board/NewsPage').then((m) => ({ default: m.NewsPage })))
 const TrackerPage = lazy(() => import('./tracker/pages/TrackerPage').then((m) => ({ default: m.TrackerPage })))
 
 function Platzhalter({ titel }: { titel: string }) {
@@ -90,13 +90,14 @@ export default function App() {
               <Route path="/uebung/:szenarioId" element={<UebungPage />} />
               <Route path="/wiederholung" element={<WiederholungPage />} />
 
-              <Route path="/analyse" element={<BereichLayout tabs={ANALYSE_TABS} label="Analyse" rechts={<AnsichtSchalter />} />}>
+              <Route path="/analyse" element={<BereichLayout tabs={ANALYSE_TABS} label="Analyse" />}>
                 <Route index element={<Navigate to="/analyse/aktien" replace />} />
                 <Route path="aktien" element={<AktienPage />} />
                 <Route path="aktien/vergleich" element={<VergleichPage />} />
                 <Route path="aktien/:symbol" element={<FirmaPage />} />
                 <Route path="tracker" element={<TrackerPage />} />
                 <Route path="makro" element={<MakroPage />} />
+                <Route path="news" element={<NewsPage />} />
               </Route>
 
               {/* alte Pfade */}

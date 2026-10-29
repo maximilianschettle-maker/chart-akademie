@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 import { SegmentLeiste } from '../components/ui/SegmentLeiste'
 import type { NavZiel } from '../navigation'
 
-// Rahmen eines Hauptbereichs: Segment-Leiste oben (optional mit Zusatz rechts, z.B. Trader/Investor),
+// Rahmen eines Hauptbereichs: Segment-Leiste oben (optional mit Zusatz rechts),
 // darunter die jeweilige Seite. Die Seiten behalten ihre eigenen Container (max-w, px), deshalb hier
 // nur ein schmaler Rahmen für die Leiste; der Simulator ist breiter als die anderen Seiten und soll das bleiben.
 

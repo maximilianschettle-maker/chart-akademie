@@ -12,7 +12,6 @@ import { fmtDatumKurz, fmtKurs, fmtProzentVz, fmtStand, richtungFarbe, richtungT
 import { aktuellerKurs, useLiveKurse, vortagesSchluss, type LiveKurs } from '../liveKurse'
 import { workerKonfiguriert } from '../../aktien/data/client'
 import { DatenStatus } from '../../aktien/components/DatenStatus'
-import { useAnsicht } from '../../analyse/ansichtStore'
 
 // Markt-Tracker: Instrumente laut Konfiguration, je Instrument Kurs, Lage, Chart mit Marken
 // und die Signale der letzten Wochen. Einstellungen (Instrumente, Muster, Push) gehen
@@ -69,10 +68,9 @@ function SignalZeile({ s, dezimalen, waehrung }: { s: Signal; dezimalen: number;
   )
 }
 
-function InstrumentKarte({ inst, jetzt, live, ebene, onEbene, investor }: { inst: InstrumentDaten; jetzt: number; live?: LiveKurs; ebene: Ebene; onEbene: (e: Ebene) => void; investor: boolean }) {
+function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: InstrumentDaten; jetzt: number; live?: LiveKurs; ebene: Ebene; onEbene: (e: Ebene) => void }) {
   const [offen, setOffen] = useState(true)
-  // Investor-Ansicht: längerer Zeitraum, Linie statt Kerzen, Log-Skala, keine EMAs
-  const [bereiche, setBereiche] = useState<Record<Ebene, string>>({ ...STANDARD_BEREICH, tag: investor ? '2J' : STANDARD_BEREICH.tag })
+  const [bereiche, setBereiche] = useState<Record<Ebene, string>>({ ...STANDARD_BEREICH })
   const bereich = bereiche[ebene]
   const daten = ebeneDaten(inst, ebene)
   const tagesKerzen = useMemo(() => kerzenAusKompakt(inst.kerzen), [inst.kerzen])
@@ -213,11 +211,9 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene, investor }: { inst
             annotationen={annotationen}
             hoehe={CHART_HOEHE}
             zeigeVolumen={false}
-            emaPerioden={investor && ebene === 'tag' ? undefined : EMA_TRACKER}
+            emaPerioden={EMA_TRACKER}
             zeitSichtbar={ebene === 'stunde'}
             randRechts={ebene === 'stunde' ? 6 : 2}
-            typ={investor && ebene === 'tag' ? 'linie' : 'kerzen'}
-            logSkala={investor && ebene === 'tag'}
           />
         </div>
       )}
@@ -257,7 +253,6 @@ export function TrackerPage() {
   const symbole = useMemo(() => (daten ? daten.instrumente.map((i) => i.symbol) : []), [daten])
   const liveKurse = useLiveKurse(symbole, frischSignal)
   const mitWorker = workerKonfiguriert()
-  const investor = useAnsicht() === 'investor'
 
   useEffect(() => {
     abgleichen()
@@ -367,7 +362,7 @@ export function TrackerPage() {
             </span>
           </div>
           <p className="mt-2 text-[11px] text-gedimmt">
-            Push-Zustellung braucht die Einrichtung unter <Link to="/analyse/makro" className="text-akzent underline">Makro & News → Benachrichtigungen</Link>. Änderungen hier gelten ab dem nächsten Lauf der Action (werktags stündlich).
+            Push-Zustellung braucht die Einrichtung unter <Link to="/analyse/makro" className="text-akzent underline">Makro → Benachrichtigungen</Link>. Änderungen hier gelten ab dem nächsten Lauf der Action (werktags stündlich).
           </p>
         </section>
       )}
@@ -404,7 +399,7 @@ export function TrackerPage() {
               .map((id) => daten.instrumente.find((i) => i.id === id))
               .filter((i): i is InstrumentDaten => Boolean(i))
               .map((inst) => (
-                <InstrumentKarte key={inst.id} inst={inst} jetzt={jetzt} live={liveKurse[inst.symbol]} ebene={ebene} onEbene={setEbene} investor={investor} />
+                <InstrumentKarte key={inst.id} inst={inst} jetzt={jetzt} live={liveKurse[inst.symbol]} ebene={ebene} onEbene={setEbene} />
               ))}
             {daten.instrumente.filter((i) => !config.instrumente.includes(i.id)).length > 0 && (
               <p className="text-xs text-gedimmt">
