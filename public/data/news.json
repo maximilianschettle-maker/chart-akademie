@@ -1,7 +1,122 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-29T19:15:11.416Z",
+ "lastUpdated": "2026-10-29T23:22:46.763Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
+   "titel": "What Israeli Election Results Reveal About the Electorate",
+   "link": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-29T23:11:25.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Some groups stood by Prime Minister Benjamin Netanyahu’s party, but support fell off among others. Turnout was also a striking factor in the election.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-election-results-netanyahu-eisenkot.html",
+   "titel": "No Clear Winner in Israel Election, Final Results Show",
+   "link": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-election-results-netanyahu-eisenkot.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-29T23:07:49.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Prime Minister Benjamin Netanyahu’s party and its allies won 53 seats in Parliament, falling short of the outright majority needed to form a government. The main opposition bloc, led by Gadi Eisenkot, won 48.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/hubschrauber-bosnien-absturz-100.html",
+   "titel": "Bosnien-Herzegowina: Militär-Hubschrauber abgestürzt - vier Tote",
+   "link": "https://www.tagesschau.de/ausland/europa/hubschrauber-bosnien-absturz-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-29T23:05:38.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In dem einstigen Bürgerkriegsland Bosnien-Herzegowina verunglückt ein Militärhelikopter der EU-Friedensmission. Die Insassen kamen alle aus Italien. Der genaue Hergang ist noch unklar.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/29/world/americas/machado-trump-venezuela-return.html",
+   "titel": "Venezuelan Opposition Leader Thanks Trump But Marks Distance from Washington",
+   "link": "https://www.nytimes.com/2026/10/29/world/americas/machado-trump-venezuela-return.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-29T22:28:05.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Finally home in Caracas, María Corina Machado called for elections next year, and said her return was organized by her team, not any government.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-alphabet-kursrutsch-vernichtet-500-milliarden-dollar-boersenwert/100265906.html",
+   "titel": "US-Börsen: Massiver Kursrutsch von Alphabet: Google-Konzern verliert 500 Milliarden Dollar Börsenwert",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-alphabet-kursrutsch-vernichtet-500-milliarden-dollar-boersenwert/100265906.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-29T20:58:20.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Für den Tech-Konzern war es der schlechteste Tag jemals an der Börse. Das hat auch den Nasdaq belastet, der deutlich im Minus schließt. Auch der Dow verliert.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo",
+   "titel": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
+   "link": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-29T20:21:54.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The PM's Likud party has alleged foreign interference and said Arab-led parties \"stole\" the election after his coalition lost its majority.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/ministerin-prien-ki-steuer-100.html",
+   "titel": "Debatte in der Koalition über Steuer auf Umsätze durch KI",
+   "link": "https://www.tagesschau.de/inland/ministerin-prien-ki-steuer-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-29T20:12:03.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In Deutschland könnte es eine Steuer auf Umsätze geben, die mit Künstlicher Intelligenz erzielt werden. Auch Familienministerin Prien sprach sich nun dafür aus. So soll auf Veränderungen in der Arbeitswelt reagiert werden - zum Beispiel auf",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ck1l393pyrylo",
+   "titel": "'The city is alive': A brief peace in Kherson, but residents fear what comes next",
+   "link": "https://www.bbc.co.uk/news/articles/ck1l393pyrylo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-29T20:05:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A temporary ceasefire has brought rare quiet to Kherson, offering its residents a glimpse of normal life before fighting resumes.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-putin-warnt-vor-ostsee-situation-wie-in-strasse-von-hormus/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Putin warnt vor Eskalation in der Ostsee: „Will keine Situation wie in Hormus“",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-putin-warnt-vor-ostsee-situation-wie-in-strasse-von-hormus/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-29T19:43:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Selenskyj: Russland vor neuen Angriffen mit ballistischen Raketen +++ 1000 Einwohner wollen Oleschky verlassen +++ Russland verlängert Diesel-Exportverbot – Ausnahme für USA +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/israel-patt-im-parlament-keine-klare-regierungsmehrheit-nach-wahl/100266007.html",
+   "titel": "Parlamentswahl: Alle Stimmen ausgezählt: Patt nach Wahl in Israel",
+   "link": "https://www.handelsblatt.com/politik/international/israel-patt-im-parlament-keine-klare-regierungsmehrheit-nach-wahl/100266007.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-29T19:25:56.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach Auszählung aller Stimmen bleibt Netanjahus Likud-Partei Wahlsiegerin. Doch der Abstand zur Opposition ist gering – und für beide Seiten scheint die Regierungsbildung unmöglich.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/elif-eralp-angst-vor-hamas-unterstuetzern-wird-zur-machtfrage-in-berlin/100265958.html",
    "titel": "Elif Eralp: „Toxische Mischung“ – Angst vor Hamas-Unterstützern wird zur Machtfrage in Berlin",
@@ -129,7 +244,7 @@
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/us-praesident-ueber-norwegen-tourismusverbaende-machen-sich-ueber-donald-trumps-scheisshaus-spruch-lustig-a-5ebd07f8-cc13-4707-8574-92b684b785a6",
-   "titel": "US-Präsident über Norwegen: Tourismusverbände machen sich über Donald Trumps »Scheißhaus«-Spruch lustig",
+   "titel": "Donald Trump über Norwegen: Tourismusverbände machen sich über »Scheißhaus«-Spruch lustig",
    "link": "https://www.spiegel.de/wirtschaft/us-praesident-ueber-norwegen-tourismusverbaende-machen-sich-ueber-donald-trumps-scheisshaus-spruch-lustig-a-5ebd07f8-cc13-4707-8574-92b684b785a6#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-10-29T16:28:00.000Z",
@@ -173,7 +288,7 @@
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/unternehmen/condor-einigt-sich-mit-piloten-a-99c1e7b2-b601-487e-96ed-c02d06c106c5",
-   "titel": "Condor einigt sich mit Piloten",
+   "titel": "Condor einigt sich mit Pilotengewerkschaft",
    "link": "https://www.spiegel.de/wirtschaft/unternehmen/condor-einigt-sich-mit-piloten-a-99c1e7b2-b601-487e-96ed-c02d06c106c5#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-10-29T15:47:00.000Z",
@@ -451,6 +566,17 @@
    "sprache": "en"
   },
   {
+   "id": "https://www.faz.net/aktuell/wirtschaft/immobilien-wohnen/bauen-kaufen/peter-haimerl-villa-aus-den-70ern-verschwindet-im-huegel-accg-201310299.html",
+   "titel": "Bauen im Bestand: Das Haus, das in den Hügel kriecht",
+   "link": "https://www.faz.net/aktuell/wirtschaft/immobilien-wohnen/bauen-kaufen/peter-haimerl-villa-aus-den-70ern-verschwindet-im-huegel-accg-201310299.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-10-29T08:56:45.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Wo früher der Pool war, wird jetzt gewohnt: Der für seine ungewöhnlichen Bauten bekannte Architekt Peter Haimerl lässt eine Villa aus den siebziger Jahren in einem Hügel verschwinden und wie neu daraus auferstehen.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.bbc.co.uk/news/articles/cw78prj801pvo",
    "titel": "Ethiopia acquires Russian fighter jets and air defence systems amid war in Tigray",
    "link": "https://www.bbc.co.uk/news/articles/cw78prj801pvo?at_medium=RSS&at_campaign=rss",
@@ -688,7 +814,7 @@
    "titel": "The Ocean ‘Was the Color of Chocolate.’ Mexico Declares War on Seaweed.",
    "link": "https://www.nytimes.com/2026/10/28/world/americas/mexico-seaweed-navy.html",
    "quelle": "NYT World",
-   "zeit": "2026-10-28T12:08:53.000Z",
+   "zeit": "2026-10-28T12:08:54.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "To protect Mexico’s tourism-reliant economy, the Navy is fighting a massive sargassum bloom that dumps thousands of tons of seaweed onto Caribbean beaches daily.",
@@ -773,13 +899,13 @@
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 10,
   "DW": 9,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 6,
-  "Handelsblatt": 6,
-  "BBC World": 9,
-  "NYT World": 25,
+  "Handelsblatt": 7,
+  "BBC World": 10,
+  "NYT World": 26,
   "EIA Today in Energy": 1
  }
 }
