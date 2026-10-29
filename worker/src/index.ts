@@ -49,7 +49,9 @@ async function bearbeiten(req: Request, env: Env, url: URL): Promise<Response> {
   if (pfad === '/api/status' && req.method === 'GET') {
     const antwort: Record<string, unknown> = { version: VERSION, zeit: Date.now() }
     const cron = await kvLesen<CronStatus>(env, CRON_STATUS_KEY)
-    antwort.cron = cron ? { ...cron.daten, tokenGesetzt: Boolean(env.GITHUB_DISPATCH_TOKEN) } : { tokenGesetzt: Boolean(env.GITHUB_DISPATCH_TOKEN), laeufe: 0 }
+    // tokenLaenge hilft bei der Diagnose: ein leer eingegebenes Secret (z.B. ohne Terminal-Eingabe) hat Länge 0
+    const token = env.GITHUB_DISPATCH_TOKEN ?? ''
+    antwort.cron = { ...(cron?.daten ?? { zuletzt: {}, laeufe: 0 }), tokenGesetzt: token.length > 0, tokenLaenge: token.length }
     if (url.searchParams.get('pruefen') === '1') {
       const [y, s] = await Promise.allSettled([kurs('AAPL'), cikIndex(env)])
       antwort.yahoo = y.status === 'fulfilled' ? 'ok' : (y.reason as Error).message
