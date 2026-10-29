@@ -1,69 +1,30 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Lock, CheckCircle2, Circle, ArrowRight, Clock, Target, RotateCcw, Dices, Brain } from 'lucide-react'
-import { faellige } from '../engine/wiederholung'
-import { CURRICULUM, LEKTIONEN_META, istLevelFrei, naechsteOffeneLektion } from '../content/curriculum'
+import { Lock, CheckCircle2, Circle, Target, RotateCcw, Dices } from 'lucide-react'
+import { CURRICULUM, LEKTIONEN_META, istLevelFrei } from '../content/curriculum'
 import { SZENARIEN } from '../content/szenarien'
 import { useProgressStore } from '../stores/progressStore'
 import { ProgressRing } from '../components/ui/ProgressRing'
 import { DatenSicherung } from '../components/DatenSicherung'
 import { GitSync } from '../components/GitSync'
 import { BewertungsBadge } from '../components/ui/BewertungsBadge'
-import { ZinsWidget } from '../makro/components/ZinsWidget'
-import { TrackerWidget } from '../tracker/components/TrackerWidget'
+import { WeiterLernen } from '../components/start/WeiterLernen'
 
-export function Dashboard() {
+export function LernpfadPage() {
   const abgeschlossene = useProgressStore((s) => s.abgeschlosseneLektionen)
   const szenarioErgebnisse = useProgressStore((s) => s.szenarioErgebnisse)
   const zuruecksetzen = useProgressStore((s) => s.zuruecksetzen)
-  const wiederholungen = useProgressStore((s) => s.wiederholungen)
-  const faelligeFragen = faellige(wiederholungen).length
-  const inBox = Object.keys(wiederholungen).length
   const [resetBestaetigen, setResetBestaetigen] = useState(false)
-  const naechste = naechsteOffeneLektion(abgeschlossene)
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8">
-      <h1 className="text-2xl font-bold text-white">Dein Lernpfad</h1>
+    <div className="mx-auto max-w-3xl px-4 py-5 sm:py-8">
+      <h1 className="text-2xl font-bold text-white">Lernpfad</h1>
       <p className="mt-1 text-gedimmt">
         Schritt für Schritt zum systematischen Trading — Level für Level, mit Quiz und
         Chart-Übungen.
       </p>
 
-      {naechste && (
-        <Link
-          to={`/lektion/${naechste.id}`}
-          className="mt-5 flex items-center justify-between rounded-xl bg-akzent px-5 py-4 font-semibold text-nacht transition-transform hover:scale-[1.01]"
-        >
-          <span>
-            Weiter lernen: {naechste.titel}
-            <span className="ml-2 inline-flex items-center gap-1 text-sm font-normal opacity-80">
-              <Clock className="h-3.5 w-3.5" /> ~{naechste.dauerMin} Min
-            </span>
-          </span>
-          <ArrowRight className="h-5 w-5" />
-        </Link>
-      )}
-
-      {inBox > 0 && (
-        <Link
-          to="/wiederholung"
-          className={`mt-3 flex items-center justify-between rounded-xl border px-5 py-3 text-sm transition-colors hover:border-akzent ${
-            faelligeFragen > 0 ? 'border-akzent/50 bg-flaeche' : 'border-rand bg-flaeche'
-          }`}
-        >
-          <span className="inline-flex items-center gap-2 text-schrift">
-            <Brain className="h-4 w-4 text-akzent" />
-            {faelligeFragen > 0
-              ? `Wiederholung: ${faelligeFragen} Frage${faelligeFragen === 1 ? '' : 'n'} fällig`
-              : `Wiederholungs-Box: ${inBox} Frage${inBox === 1 ? '' : 'n'}, heute nichts fällig`}
-          </span>
-          <ArrowRight className="h-4 w-4 text-gedimmt" />
-        </Link>
-      )}
-
-      <ZinsWidget />
-      <TrackerWidget />
+      <WeiterLernen />
 
       <div className="mt-8 space-y-5">
         {CURRICULUM.map((level) => {

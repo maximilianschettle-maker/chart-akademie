@@ -38,7 +38,7 @@ export function LektionPage() {
     return (
       <div className="mx-auto max-w-3xl px-4 py-16 text-center text-gedimmt">
         Lektion nicht gefunden.{' '}
-        <Link to="/" className="text-akzent underline">
+        <Link to="/training" className="text-akzent underline">
           Zurück zum Lernpfad
         </Link>
       </div>
@@ -59,8 +59,8 @@ export function LektionPage() {
   }
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8">
-      <Link to="/" className="inline-flex items-center gap-1 text-sm text-gedimmt hover:text-schrift">
+    <div className="mx-auto max-w-3xl px-4 py-5 sm:py-8">
+      <Link to="/training" className="inline-flex items-center gap-1 text-sm text-gedimmt hover:text-schrift">
         <ArrowLeft className="h-4 w-4" /> Lernpfad
       </Link>
 

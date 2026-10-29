@@ -46,3 +46,13 @@
 .chart-waehlt * {
   cursor: crosshair !important;
 }
+
+/* Touch-Ziele: am Handy mindestens 44 px hoch (Apple HIG / Material), am Desktop kompakt */
+.tipp {
+  min-height: 2.75rem;
+}
+@media (min-width: 640px) {
+  .tipp {
+    min-height: 0;
+  }
+}

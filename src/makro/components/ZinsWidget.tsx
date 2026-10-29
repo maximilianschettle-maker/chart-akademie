@@ -17,7 +17,7 @@ export function ZinsWidget() {
         <h2 className="inline-flex items-center gap-2 text-base font-bold text-white">
           <Landmark className="h-4 w-4 text-akzent" /> Nächste Zinsentscheidung
         </h2>
-        <Link to="/makro" className="inline-flex items-center gap-1 text-xs font-semibold text-akzent hover:underline">
+        <Link to="/analyse/makro" className="inline-flex items-center gap-1 text-xs font-semibold text-akzent hover:underline">
           Details <ArrowRight className="h-3.5 w-3.5" />
         </Link>
       </div>

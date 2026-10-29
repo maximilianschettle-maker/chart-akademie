@@ -263,7 +263,7 @@ function SitzungAnsicht({
             >
               Neue Sitzung
             </button>
-            <Link to="/journal" className="rounded-lg bg-nacht px-4 py-2 text-sm font-semibold text-schrift hover:text-white">
+            <Link to="/training/journal" className="rounded-lg bg-nacht px-4 py-2 text-sm font-semibold text-schrift hover:text-white">
               Zum Journal
             </Link>
           </div>

@@ -85,7 +85,7 @@ export function WatchlistTabelle() {
               return (
                 <tr key={z.symbol} className="border-b border-rand/50">
                   <td className="py-2 pr-3">
-                    <Link to={`/aktien/${encodeURIComponent(z.symbol)}`} className="font-semibold text-schrift hover:text-white">
+                    <Link to={`/analyse/aktien/${encodeURIComponent(z.symbol)}`} className="font-semibold text-schrift hover:text-white">
                       {z.name}
                     </Link>
                     <div className="text-[11px] text-gedimmt">

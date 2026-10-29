@@ -71,7 +71,7 @@ export function FirmaPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-6">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <Link to="/aktien" className="inline-flex items-center gap-1 text-xs text-gedimmt hover:text-schrift">
+        <Link to="/analyse/aktien" className="inline-flex items-center gap-1 text-xs text-gedimmt hover:text-schrift">
           <ArrowLeft className="h-3.5 w-3.5" /> Zur Watchlist
         </Link>
         <DatenStatus />
@@ -100,7 +100,7 @@ export function FirmaPage() {
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <Link to={`/aktien/vergleich?s=${encodeURIComponent(symbol)}`} className={KNOPF} title="Mit anderen Firmen vergleichen">
+              <Link to={`/analyse/aktien/vergleich?s=${encodeURIComponent(symbol)}`} className={KNOPF} title="Mit anderen Firmen vergleichen">
                 <ArrowLeftRight className="h-3.5 w-3.5" /> Vergleich
               </Link>
               <button type="button" className={KNOPF} onClick={() => laden(true)} disabled={laeuft} title="Beim Worker neu laden">
@@ -143,7 +143,7 @@ export function FirmaPage() {
               <button
                 key={t.id}
                 type="button"
-                className={`-mb-px border-b-2 px-3 py-2 text-sm font-medium ${tab === t.id ? 'border-akzent text-white' : 'border-transparent text-gedimmt hover:text-schrift'}`}
+                className={`tipp -mb-px border-b-2 px-3 py-2 text-sm font-medium ${tab === t.id ? 'border-akzent text-white' : 'border-transparent text-gedimmt hover:text-schrift'}`}
                 onClick={() => setTab(t.id)}
               >
                 {t.titel}

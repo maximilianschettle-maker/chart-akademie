@@ -51,8 +51,8 @@ export function WiederholungPage() {
   const naechste = naechsteFaelligkeit(wiederholungen)
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8">
-      <Link to="/" className="inline-flex items-center gap-1 text-sm text-gedimmt hover:text-schrift">
+    <div className="mx-auto max-w-3xl px-4 py-5 sm:py-8">
+      <Link to="/training" className="inline-flex items-center gap-1 text-sm text-gedimmt hover:text-schrift">
         <ArrowLeft className="h-4 w-4" /> Lernpfad
       </Link>
       <div className="mt-3 mb-6">
@@ -84,7 +84,7 @@ export function WiederholungPage() {
                 }`}
           </p>
           <Link
-            to="/"
+            to="/training"
             className="mt-4 inline-block rounded-lg bg-akzent px-4 py-2 text-sm font-semibold text-nacht hover:brightness-110"
           >
             Zum Lernpfad

@@ -43,7 +43,7 @@ const FARBE_LEVEL = '#8B95A5'
 const FARBE_TUNNEL = '#A855F7'
 
 const chip = (aktiv: boolean) =>
-  `rounded-lg px-2.5 py-1.5 text-xs font-semibold transition-colors ${aktiv ? 'bg-akzent text-nacht' : 'bg-nacht text-gedimmt hover:text-schrift'}`
+  `tipp rounded-lg px-2.5 py-1.5 text-xs font-semibold transition-colors ${aktiv ? 'bg-akzent text-nacht' : 'bg-nacht text-gedimmt hover:text-schrift'}`
 
 function signalZeitText(s: Signal): string {
   if (s.ebene === 'stunde' && s.kerzeZeit) return `${fmtDatumKurz(s.datum)} ${fmtStand(s.kerzeZeit).slice(-5)}`
@@ -153,7 +153,7 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
             onClick={() => onEbene(e.id)}
             disabled={e.id === 'stunde' && !inst.stunde}
             title={e.id === 'stunde' && !inst.stunde ? 'Stundenkerzen kommen mit dem nächsten Lauf der Action' : e.name}
-            className={`rounded-md px-2 py-0.5 text-[11px] font-semibold disabled:opacity-40 ${e.id === ebene ? 'bg-flaeche text-white ring-1 ring-rand' : 'bg-nacht text-gedimmt hover:text-schrift'}`}
+            className={`tipp rounded-md px-2.5 py-0.5 text-[11px] font-semibold disabled:opacity-40 ${e.id === ebene ? 'bg-flaeche text-white ring-1 ring-rand' : 'bg-nacht text-gedimmt hover:text-schrift'}`}
           >
             {e.name}
           </button>
@@ -199,7 +199,7 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
                 aria-selected={b.id === bereich}
                 title={b.titel}
                 onClick={() => setBereiche((alt) => ({ ...alt, [ebene]: b.id }))}
-                className={`rounded-md px-2 py-0.5 text-[11px] font-semibold ${b.id === bereich ? 'bg-akzent text-nacht' : 'bg-nacht text-gedimmt hover:text-schrift'}`}
+                className={`tipp rounded-md px-2.5 py-0.5 text-[11px] font-semibold ${b.id === bereich ? 'bg-akzent text-nacht' : 'bg-nacht text-gedimmt hover:text-schrift'}`}
               >
                 {b.id}
               </button>
@@ -261,7 +261,7 @@ export function TrackerPage() {
     : []
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8">
+    <div className="mx-auto max-w-3xl px-4 py-5 sm:py-8">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <h1 className="inline-flex items-center gap-2 text-2xl font-bold text-white">
@@ -272,10 +272,10 @@ export function TrackerPage() {
           </p>
         </div>
         <div className="flex gap-2">
-          <button onClick={() => setEinstellungenOffen((o) => !o)} className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold ${einstellungenOffen ? 'bg-akzent text-nacht' : 'bg-flaeche text-schrift hover:text-white'}`}>
+          <button onClick={() => setEinstellungenOffen((o) => !o)} className={`tipp inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold ${einstellungenOffen ? 'bg-akzent text-nacht' : 'bg-flaeche text-schrift hover:text-white'}`}>
             <Settings2 className="h-3.5 w-3.5" /> Einstellungen
           </button>
-          <button onClick={alles} className="inline-flex items-center gap-1.5 rounded-lg bg-flaeche px-3 py-1.5 text-xs font-semibold text-schrift hover:text-white">
+          <button onClick={alles} className="tipp inline-flex items-center gap-1.5 rounded-lg bg-flaeche px-3 py-1.5 text-xs font-semibold text-schrift hover:text-white">
             <RefreshCw className="h-3.5 w-3.5" /> Aktualisieren
           </button>
         </div>
@@ -342,7 +342,7 @@ export function TrackerPage() {
               )}
               {sync === 'kein-worker' && (
                 <>
-                  <CloudOff className="h-3.5 w-3.5" /> Kein Worker eingetragen (<Link to="/aktien" className="text-akzent underline">Aktien → Einstellungen</Link>) – Action nutzt die Datei im Repo
+                  <CloudOff className="h-3.5 w-3.5" /> Kein Worker eingetragen (<Link to="/analyse/aktien" className="text-akzent underline">Aktien → Einstellungen</Link>) – Action nutzt die Datei im Repo
                 </>
               )}
               {sync === 'fehler' && (
@@ -353,7 +353,7 @@ export function TrackerPage() {
             </span>
           </div>
           <p className="mt-2 text-[11px] text-gedimmt">
-            Push-Zustellung braucht die Einrichtung unter <Link to="/makro" className="text-akzent underline">Zinsentscheidungen → Benachrichtigungen</Link>. Änderungen hier gelten ab dem nächsten Lauf der Action (werktags stündlich).
+            Push-Zustellung braucht die Einrichtung unter <Link to="/analyse/makro" className="text-akzent underline">Makro & News → Benachrichtigungen</Link>. Änderungen hier gelten ab dem nächsten Lauf der Action (werktags stündlich).
           </p>
         </section>
       )}

@@ -93,7 +93,7 @@ export function KursChart({ symbol }: { symbol: string }) {
                 type="button"
                 role="tab"
                 aria-selected={b.bereich === bereich}
-                className={`rounded-md px-2 py-1 text-xs font-semibold ${b.bereich === bereich ? 'bg-akzent text-nacht' : 'bg-flaeche text-gedimmt hover:text-schrift'}`}
+                className={`tipp rounded-md px-2.5 py-1 text-xs font-semibold ${b.bereich === bereich ? 'bg-akzent text-nacht' : 'bg-flaeche text-gedimmt hover:text-schrift'}`}
                 onClick={() => setBereich(b.bereich)}
               >
                 {b.titel}
@@ -105,7 +105,7 @@ export function KursChart({ symbol }: { symbol: string }) {
             type="button"
             aria-pressed={zinsen}
             title="Fed- und EZB-Zinsentscheidungen im Chart markieren"
-            className={`rounded-md px-2 py-1 text-xs font-semibold ${zinsen ? 'bg-akzent text-nacht' : 'bg-flaeche text-gedimmt hover:text-schrift'}`}
+            className={`tipp rounded-md px-2.5 py-1 text-xs font-semibold ${zinsen ? 'bg-akzent text-nacht' : 'bg-flaeche text-gedimmt hover:text-schrift'}`}
             onClick={zinsenUmschalten}
           >
             Zinsen

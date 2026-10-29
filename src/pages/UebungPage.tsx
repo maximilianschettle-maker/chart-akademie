@@ -448,7 +448,7 @@ function UebungSession({
                 </button>
               ) : (
                 <Link
-                  to="/"
+                  to="/training"
                   className="flex-1 rounded-lg bg-akzent py-2 text-center text-xs font-bold text-nacht hover:brightness-110"
                 >
                   Zum Lernpfad
@@ -544,7 +544,7 @@ export function UebungPage() {
     return (
       <div className="mx-auto max-w-3xl px-4 py-16 text-center text-gedimmt">
         Übung nicht gefunden.{' '}
-        <Link to="/" className="text-akzent underline">
+        <Link to="/training" className="text-akzent underline">
           Zurück zum Lernpfad
         </Link>
       </div>
@@ -556,8 +556,8 @@ export function UebungPage() {
   const aufgabe = szenario ? textFuellen(szenario.aufgabe, szenario) : undefined
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8">
-      <Link to="/" className="inline-flex items-center gap-1 text-sm text-gedimmt hover:text-schrift">
+    <div className="mx-auto max-w-6xl px-4 py-5 sm:py-8">
+      <Link to="/training" className="inline-flex items-center gap-1 text-sm text-gedimmt hover:text-schrift">
         <ArrowLeft className="h-4 w-4" /> Lernpfad
       </Link>
       <div className="mt-3 mb-5">

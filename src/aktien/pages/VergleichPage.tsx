@@ -107,7 +107,7 @@ export function VergleichPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-6">
-      <Link to="/aktien" className="inline-flex items-center gap-1 text-xs text-gedimmt hover:text-schrift">
+      <Link to="/analyse/aktien" className="inline-flex items-center gap-1 text-xs text-gedimmt hover:text-schrift">
         <ArrowLeft className="h-3.5 w-3.5" /> Zur Watchlist
       </Link>
       <h1 className="mt-3 text-2xl font-bold text-white">Firmenvergleich</h1>
@@ -174,7 +174,7 @@ export function VergleichPage() {
                 <th className="sticky left-0 bg-flaeche px-3 py-2 font-medium">Kennzahl</th>
                 {aktive.map((s) => (
                   <th key={s.symbol} className="min-w-[7.5rem] px-3 py-2 align-top font-medium">
-                    <Link to={`/aktien/${encodeURIComponent(s.symbol)}`} className="font-semibold text-white hover:text-akzent">
+                    <Link to={`/analyse/aktien/${encodeURIComponent(s.symbol)}`} className="font-semibold text-white hover:text-akzent">
                       {s.symbol}
                     </Link>
                     <div className="truncate text-[11px] font-normal text-gedimmt" title={s.daten?.firma.name}>

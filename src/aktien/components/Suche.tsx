@@ -63,7 +63,7 @@ export function Suche() {
             const drin = watchlist.some((w) => w.symbol === t.symbol)
             return (
               <li key={t.symbol} className="flex items-center justify-between gap-2 px-3 py-2 text-sm">
-                <button type="button" className="min-w-0 flex-1 text-left hover:text-white" onClick={() => navigate(`/aktien/${encodeURIComponent(t.symbol)}`)}>
+                <button type="button" className="min-w-0 flex-1 text-left hover:text-white" onClick={() => navigate(`/analyse/aktien/${encodeURIComponent(t.symbol)}`)}>
                   <span className="font-semibold text-schrift">{t.name}</span>
                   <span className="ml-2 text-xs text-gedimmt">
                     {t.symbol} · {t.boerse}

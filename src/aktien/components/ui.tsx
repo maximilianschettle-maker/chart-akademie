@@ -3,8 +3,8 @@ import type { Quelle } from '../types'
 
 // Kleine, wiederverwendete Bausteine im Stil des restlichen Projekts.
 
-export const KNOPF = 'inline-flex items-center gap-1.5 rounded-lg bg-flaeche px-3 py-1.5 text-xs font-semibold text-schrift hover:text-white disabled:opacity-40'
-export const KNOPF_AKZENT = 'inline-flex items-center gap-1.5 rounded-lg bg-akzent px-3 py-1.5 text-xs font-semibold text-nacht hover:brightness-110 disabled:opacity-40'
+export const KNOPF = 'tipp inline-flex items-center gap-1.5 rounded-lg bg-flaeche px-3 py-1.5 text-xs font-semibold text-schrift hover:text-white disabled:opacity-40'
+export const KNOPF_AKZENT = 'tipp inline-flex items-center gap-1.5 rounded-lg bg-akzent px-3 py-1.5 text-xs font-semibold text-nacht hover:brightness-110 disabled:opacity-40'
 export const EINGABE = 'w-full rounded-lg border border-rand bg-nacht px-3 py-2 text-sm text-schrift outline-none focus:border-akzent'
 export const KARTE = 'rounded-xl border border-rand bg-flaeche p-4'
 

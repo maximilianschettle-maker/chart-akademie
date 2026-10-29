@@ -2,6 +2,16 @@
 
 Eine Trading-Lern-App für Krypto: Schritt für Schritt vom Candlestick bis zum eigenen, regelbasierten Trading — mit echten historischen Charts, interaktiven Demos und einem Bar-für-Bar-Replay-Simulator.
 
+## Aufbau der App (seit 2026-10-29)
+
+Drei Hauptbereiche, am Handy als untere Tab-Leiste, am Desktop als Reiter im Kopf (`src/navigation.ts`):
+
+- **Start** (`#/`) — kompaktes Dashboard: Weiterlernen, nächste Fed/EZB-Termine, Markt-Tracker mit Signalen, Aktien-Watchlist, letzte Journal-Einträge, Statuspunkt der Worker-Daten.
+- **Training** (`#/training`) — Segment-Leiste Lernpfad · Simulator · Journal; Lektionen, Übungen und Wiederholung sind Detailseiten darunter.
+- **Analyse** (`#/analyse/…`) — Segment-Leiste Aktien · Tracker · Makro & News (Notenbanken, später Wirtschaftskalender und Geopolitik-Board).
+
+Alte Pfade (`#/simulator`, `#/journal`, `#/aktien/…`, `#/makro`, `#/tracker`) leiten weiter, Push-Links und Lesezeichen funktionieren also weiter. Touch-Ziele sind am Handy mindestens 44 px hoch (Klasse `tipp`), Seiten haben 16 px Seitenrand und keinen horizontalen Überlauf (per Playwright bei 390 px geprüft).
+
 ## Features
 
 - **Geführter Lernpfad** — 5 Level, 23 Lektionen mit Quiz-Freischaltung:
@@ -21,7 +31,7 @@ Eine Trading-Lern-App für Krypto: Schritt für Schritt vom Candlestick bis zum 
 
 ## Aktien (Fundamentalanalyse)
 
-Eigener Bereich unter **Aktien**: Firma suchen (US + EU), Watchlist, Firmenseite mit Kursverlauf (1 Monat bis Max), Kennzahlen (Bewertung, Profitabilität, Wachstum, Bilanz), Mehrjahres-Tabelle aus GuV/Bilanz/Cashflow (Geschäftsjahre und Quartale), ein Zwei-Phasen-DCF mit Sensitivitätsmatrix und ein Firmenvergleich (bis zu 6 Firmen nebeneinander, beste Spalte je Kennzahl markiert). Watchlist und DCF-Annahmen gleichen sich zwischen PC und Handy ab.
+Eigener Bereich unter **Analyse → Aktien**: Firma suchen (US + EU), Watchlist, Firmenseite mit Kursverlauf (1 Monat bis Max), Kennzahlen (Bewertung, Profitabilität, Wachstum, Bilanz), Mehrjahres-Tabelle aus GuV/Bilanz/Cashflow (Geschäftsjahre und Quartale), ein Zwei-Phasen-DCF mit Sensitivitätsmatrix und ein Firmenvergleich (bis zu 6 Firmen nebeneinander, beste Spalte je Kennzahl markiert). Watchlist und DCF-Annahmen gleichen sich zwischen PC und Handy ab.
 
 - **Quellen (kostenlos):** SEC EDGAR XBRL für alle US-Filer, auch EU-Firmen mit US-Listing (SAP, ASML, Novartis …, 10+ Jahre, geprüfte Berichte) und Yahoo Finance (inoffiziell) für Suche, Kurs, Profil und als Lückenfüller (ca. 4 Jahre).
 - **Technik:** Beide Quellen sind aus dem Browser nicht erreichbar (CORS). Ein kleiner **Cloudflare Worker** (`worker/`) holt, normalisiert und cacht die Daten (KV, 7 Tage) und hält den Geräte-Sync. Er ist mit einem eigenen Geheimnis geschützt; es gibt keine Anbieter-Schlüssel. Der gemeinsame Code (Normalisierung, Kennzahlen, DCF) liegt in `src/aktien/engine/` und ist getestet.

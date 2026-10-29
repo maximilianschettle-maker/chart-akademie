@@ -32,17 +32,17 @@ export function MakroPage() {
   const { daten, status, fehler, ausCache, jetzt, neuLaden } = useMakro()
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8">
+    <div className="mx-auto max-w-3xl px-4 py-5 sm:py-8">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <h1 className="inline-flex items-center gap-2 text-2xl font-bold text-white">
-            <Landmark className="h-6 w-6 text-akzent" /> Zinsentscheidungen
+            <Landmark className="h-6 w-6 text-akzent" /> Makro & News
           </h1>
           <p className="mt-1 text-gedimmt">
-            Fed und EZB: aktueller Leitzins, nächste Sitzung, Ergebnis am Entscheidungstag. Alle Zeiten in deutscher Zeit.
+            Notenbanken zuerst: Fed und EZB mit Leitzins, nächster Sitzung und Ergebnis am Entscheidungstag. Wirtschaftskalender und Geopolitik-Board folgen. Alle Zeiten in deutscher Zeit.
           </p>
         </div>
-        <button onClick={neuLaden} className="inline-flex items-center gap-1.5 rounded-lg bg-flaeche px-3 py-1.5 text-xs font-semibold text-schrift hover:text-white">
+        <button onClick={neuLaden} className="tipp inline-flex items-center gap-1.5 rounded-lg bg-flaeche px-3 py-1.5 text-xs font-semibold text-schrift hover:text-white">
           <RefreshCw className="h-3.5 w-3.5" /> Aktualisieren
         </button>
       </div>

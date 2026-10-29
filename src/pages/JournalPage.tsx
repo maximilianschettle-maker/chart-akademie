@@ -44,7 +44,7 @@ export function JournalPage() {
   const gebuehren = tradeHistorie.reduce((s, t) => s + (t.gebuehren ?? 0) + (t.funding ?? 0), 0)
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
+    <div className="mx-auto max-w-4xl px-4 py-5 sm:py-8">
       <h1 className="text-2xl font-bold text-white">Trade-Journal</h1>
       <p className="mt-1 text-sm text-gedimmt">
         Alle Trades aus deinen Simulator-Sessions — dein wichtigstes Lernwerkzeug.

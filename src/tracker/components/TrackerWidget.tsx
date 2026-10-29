@@ -27,7 +27,7 @@ export function TrackerWidget() {
         <h2 className="inline-flex items-center gap-2 text-base font-bold text-white">
           <Activity className="h-4 w-4 text-akzent" /> Markt-Tracker
         </h2>
-        <Link to="/tracker" className="inline-flex items-center gap-1 text-xs font-semibold text-akzent hover:underline">
+        <Link to="/analyse/tracker" className="inline-flex items-center gap-1 text-xs font-semibold text-akzent hover:underline">
           Details <ArrowRight className="h-3.5 w-3.5" />
         </Link>
       </div>
@@ -48,9 +48,9 @@ export function TrackerWidget() {
               const aenderung = k && vortag ? k.preis / vortag - 1 : (i.analyse?.aenderungTag ?? 0)
               return (
                 <div key={i.id} className="flex items-baseline justify-between gap-2">
-                  <span className="truncate text-schrift">{i.name}</span>
+                  <span className="min-w-0 truncate text-schrift">{i.name}</span>
                   {k ? (
-                    <span className="tabular-nums text-xs">
+                    <span className="shrink-0 whitespace-nowrap tabular-nums text-xs">
                       <span className="text-white">{fmtKurs(k.preis, i.dezimalen, i.waehrung)}</span>{' '}
                       <span className={aenderung > 0 ? 'text-long' : aenderung < 0 ? 'text-short' : 'text-gedimmt'}>{fmtProzentVz(aenderung)}</span>
                     </span>

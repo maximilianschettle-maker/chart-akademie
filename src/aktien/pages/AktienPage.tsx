@@ -21,7 +21,7 @@ export function AktienPage() {
   const vergleichZiel = `/aktien/vergleich?s=${encodeURIComponent(watchlist.slice(0, 4).map((w) => w.symbol).join(','))}`
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8">
+    <div className="mx-auto max-w-3xl px-4 py-5 sm:py-8">
       <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
         <h1 className="text-2xl font-bold text-white">Aktien</h1>
         <DatenStatus />
