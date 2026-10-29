@@ -6,6 +6,8 @@ import type { Bank, MakroDaten, QuellenStatus, ZinsTermin } from '../types'
 import { ZinsKarte } from '../components/ZinsKarte'
 import { ZinsChart } from '../components/ZinsChart'
 import { PushEinstellungen } from '../components/PushEinstellungen'
+import { Wirtschaftskalender } from '../../board/Wirtschaftskalender'
+import { NewsBoard } from '../../board/NewsBoard'
 
 // Makro-Seite: beide Banken ausführlich, Zinshistorie, kommende Termine, letzte
 // Pressemitteilungen, Push- und Kalender-Einstellungen, Herkunft der Daten.
@@ -110,6 +112,13 @@ export function MakroPage() {
               Projektionen.
             </p>
           </section>
+
+          <div className="mt-6">
+            <Wirtschaftskalender />
+          </div>
+          <div className="mt-6">
+            <NewsBoard />
+          </div>
 
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {(['fed', 'ezb'] as Bank[]).map((bank) => (

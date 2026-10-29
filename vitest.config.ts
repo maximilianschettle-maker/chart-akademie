@@ -4,6 +4,6 @@ import { defineConfig } from 'vitest/config'
 // Der Meta-Generator (scripts/) läuft über `npm run gen:meta`.
 export default defineConfig({
   test: {
-    include: ['src/**/*.test.ts', 'scripts/macro/**/*.test.ts'],
+    include: ['src/**/*.test.ts', 'scripts/macro/**/*.test.ts', 'scripts/board/**/*.test.ts'],
   },
 })

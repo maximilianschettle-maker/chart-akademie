@@ -26,5 +26,6 @@ crons = [
   "*/15 7-22 * * MON-FRI", # Tracker Mo–Fr alle 15 Minuten
   "0 */2 * * SAT,SUN",   # Tracker Sa/So alle zwei Stunden
   "0 6 * * *",         # Makro täglich
-  "*/10 11-22 * * TUE-THU" # Makro Di–Do im Entscheidungsfenster (Frühausstieg in der Action)
+  "*/10 11-22 * * TUE-THU", # Makro Di–Do im Entscheidungsfenster (Frühausstieg in der Action)
+  "23 * * * *"             # Makro-Board (Kalender & News) stündlich
 ]

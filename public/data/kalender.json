@@ -1,0 +1,267 @@
+{
+ "version": 1,
+ "lastUpdated": "2026-10-29T19:15:11.416Z",
+ "termine": [
+  {
+   "id": "ez:bip:2026-10-30:42",
+   "region": "ez",
+   "indikator": "bip",
+   "titel": "BIP Euroraum (vorläufige Schnellschätzung)",
+   "periode": "Q3 2026",
+   "zeitUtc": "2026-10-30T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:arbeitsmarkt:2026-10-30:26",
+   "region": "ez",
+   "indikator": "arbeitsmarkt",
+   "titel": "Arbeitslosenquote Euroraum",
+   "periode": "September 2026",
+   "zeitUtc": "2026-10-30T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:cpi:2026-11-04:43",
+   "region": "ez",
+   "indikator": "cpi",
+   "titel": "Inflation Euroraum (HVPI, Schnellschätzung)",
+   "periode": "Oktober 2026",
+   "zeitUtc": "2026-11-04T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:bip:2026-11-13:47",
+   "region": "ez",
+   "indikator": "bip",
+   "titel": "BIP Euroraum (Schnellschätzung + Beschäftigung)",
+   "periode": "Q3 2026",
+   "zeitUtc": "2026-11-13T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:cpi:2026-11-18:36",
+   "region": "ez",
+   "indikator": "cpi",
+   "titel": "Inflation Euroraum (HVPI, endgültig)",
+   "periode": "Oktober 2026",
+   "zeitUtc": "2026-11-18T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "us:bip:2026-11-25",
+   "region": "us",
+   "indikator": "bip",
+   "titel": "BIP Q3 2026 (2. Schätzung)",
+   "periode": "Q3 2026",
+   "zeitUtc": "2026-11-25T13:30:00.000Z",
+   "quelle": "BEA",
+   "link": "https://www.bea.gov/news/schedule"
+  },
+  {
+   "id": "ez:cpi:2026-12-01:43",
+   "region": "ez",
+   "indikator": "cpi",
+   "titel": "Inflation Euroraum (HVPI, Schnellschätzung)",
+   "periode": "November 2026",
+   "zeitUtc": "2026-12-01T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:arbeitsmarkt:2026-12-02:26",
+   "region": "ez",
+   "indikator": "arbeitsmarkt",
+   "titel": "Arbeitslosenquote Euroraum",
+   "periode": "Oktober 2026",
+   "zeitUtc": "2026-12-02T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:cpi:2026-12-17:36",
+   "region": "ez",
+   "indikator": "cpi",
+   "titel": "Inflation Euroraum (HVPI, endgültig)",
+   "periode": "November 2026",
+   "zeitUtc": "2026-12-17T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:cpi:2027-01-06:43",
+   "region": "ez",
+   "indikator": "cpi",
+   "titel": "Inflation Euroraum (HVPI, Schnellschätzung)",
+   "periode": "Dezember 2026",
+   "zeitUtc": "2027-01-06T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:arbeitsmarkt:2027-01-07:26",
+   "region": "ez",
+   "indikator": "arbeitsmarkt",
+   "titel": "Arbeitslosenquote Euroraum",
+   "periode": "November 2026",
+   "zeitUtc": "2027-01-07T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:cpi:2027-01-19:36",
+   "region": "ez",
+   "indikator": "cpi",
+   "titel": "Inflation Euroraum (HVPI, endgültig)",
+   "periode": "Dezember 2026",
+   "zeitUtc": "2027-01-19T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:bip:2027-01-29:42",
+   "region": "ez",
+   "indikator": "bip",
+   "titel": "BIP Euroraum (vorläufige Schnellschätzung)",
+   "periode": "Q4 2026",
+   "zeitUtc": "2027-01-29T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:arbeitsmarkt:2027-02-01:26",
+   "region": "ez",
+   "indikator": "arbeitsmarkt",
+   "titel": "Arbeitslosenquote Euroraum",
+   "periode": "Dezember 2026",
+   "zeitUtc": "2027-02-01T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:cpi:2027-02-02:43",
+   "region": "ez",
+   "indikator": "cpi",
+   "titel": "Inflation Euroraum (HVPI, Schnellschätzung)",
+   "periode": "Januar 2027",
+   "zeitUtc": "2027-02-02T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:bip:2027-02-15:47",
+   "region": "ez",
+   "indikator": "bip",
+   "titel": "BIP Euroraum (Schnellschätzung + Beschäftigung)",
+   "periode": "Q4 2026",
+   "zeitUtc": "2027-02-15T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  },
+  {
+   "id": "ez:cpi:2027-02-24:36",
+   "region": "ez",
+   "indikator": "cpi",
+   "titel": "Inflation Euroraum (HVPI, endgültig)",
+   "periode": "Januar 2027",
+   "zeitUtc": "2027-02-24T11:00:00.000Z",
+   "quelle": "Eurostat",
+   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
+  }
+ ],
+ "werte": [
+  {
+   "region": "ez",
+   "indikator": "arbeitsmarkt",
+   "titel": "Arbeitslosenquote Euroraum",
+   "periode": "2026-08",
+   "wert": 6.4,
+   "einheit": "%",
+   "vorher": 6.4,
+   "quelle": "Eurostat (une_rt_m)",
+   "link": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_m/default/table"
+  },
+  {
+   "region": "ez",
+   "indikator": "bip",
+   "titel": "BIP Euroraum (real)",
+   "periode": "2026-Q2",
+   "wert": 0.6,
+   "einheit": "% Q/Q",
+   "vorher": 0,
+   "quelle": "Eurostat (namq_10_gdp)",
+   "link": "https://ec.europa.eu/eurostat/databrowser/view/namq_10_gdp/default/table"
+  },
+  {
+   "region": "ez",
+   "indikator": "cpi",
+   "titel": "Inflation Euroraum (HVPI)",
+   "periode": "2025-12",
+   "wert": 2,
+   "einheit": "% J/J",
+   "vorher": 2.1,
+   "quelle": "Eurostat (prc_hicp_manr)",
+   "link": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_manr/default/table"
+  },
+  {
+   "region": "us",
+   "indikator": "arbeitsmarkt",
+   "titel": "Arbeitslosenquote USA",
+   "periode": "2026-09",
+   "wert": 4.2,
+   "einheit": "%",
+   "vorher": 4.1,
+   "quelle": "FRED (UNRATE)",
+   "link": "https://fred.stlouisfed.org/series/UNRATE"
+  },
+  {
+   "region": "us",
+   "indikator": "arbeitsmarkt",
+   "titel": "Neue Stellen USA (Payrolls)",
+   "periode": "2026-09",
+   "wert": 29,
+   "einheit": "Tsd.",
+   "vorher": 133,
+   "quelle": "FRED (PAYEMS)",
+   "link": "https://fred.stlouisfed.org/series/PAYEMS"
+  },
+  {
+   "region": "us",
+   "indikator": "bip",
+   "titel": "BIP USA (real, annualisiert)",
+   "periode": "2026-Q3",
+   "wert": 3.4,
+   "einheit": "% Q/Q ann.",
+   "vorher": 2.2,
+   "quelle": "FRED (A191RL1Q225SBEA)",
+   "link": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA"
+  },
+  {
+   "region": "us",
+   "indikator": "cpi",
+   "titel": "Inflation USA (CPI)",
+   "periode": "2026-09",
+   "wert": 3.7,
+   "einheit": "% J/J",
+   "vorher": 3.4,
+   "quelle": "FRED (CPIAUCSL)",
+   "link": "https://fred.stlouisfed.org/series/CPIAUCSL"
+  }
+ ],
+ "quellen": {
+  "fred-termine": "ohne-key",
+  "bea": "live",
+  "eurostat-termine": "live",
+  "fred-CPIAUCSL": "live",
+  "fred-UNRATE": "live",
+  "fred-PAYEMS": "live",
+  "fred-A191RL1Q225SBEA": "live",
+  "eurostat-prc_hicp_manr": "live",
+  "eurostat-une_rt_m": "live",
+  "eurostat-namq_10_gdp": "live"
+ }
+}

@@ -25,6 +25,7 @@ export const AUFTRAEGE: Record<string, Auftrag> = {
   '0 */2 * * SAT,SUN': { workflow: 'tracker.yml' },
   '0 6 * * *': { workflow: 'macro.yml' },
   '*/10 11-22 * * TUE-THU': { workflow: 'macro.yml', inputs: { anlass: MAKRO_RASTER } },
+  '23 * * * *': { workflow: 'board.yml' },
 }
 
 export interface CronStatus {

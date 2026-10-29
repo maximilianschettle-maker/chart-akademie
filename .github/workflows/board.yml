@@ -1,0 +1,65 @@
+name: Makro-Board (Kalender & News)
+
+# Holt den Wirtschaftskalender (USA: FRED-Veröffentlichungstermine mit FRED_API_KEY, BEA-Terminplan ohne Key,
+# Ist-Werte aus dem FRED-CSV-Export; Euroraum: Eurostat-Terminkalender und Eurostat-API) und das
+# Geopolitik-Newsboard (kuratierte RSS-Feeds, optional GDELT) nach public/data/kalender.json und
+# public/data/news.json. Committet nur bei Änderung. Stündlich; der Takt kommt vor allem vom
+# Cloudflare-Cron des Workers (workflow_dispatch), GitHubs Schedule ist nur Fallback.
+
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+# Dieselbe Gruppe wie macro.yml und tracker.yml (gemeinsame Commits auf public/data)
+concurrency:
+  group: daten-action
+  cancel-in-progress: false
+
+jobs:
+  board:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci --ignore-scripts
+
+      - name: Kalender und News holen
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          # GDELT liefert aus GitHub-Runnern fast immer 429 (1 Anfrage je 5 s je IP, geteilte IPs) – bei Bedarf auf '1'
+          GDELT: '0'
+        run: npx tsx scripts/board/hole-board.ts
+
+      - name: Committen, wenn sich etwas geändert hat
+        id: commit
+        run: |
+          git add public/data/kalender.json public/data/news.json
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "deploy=true" >> "$GITHUB_OUTPUT"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Board-Daten: Stand $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3; do
+            git push && break
+            git pull --rebase && sleep 5
+          done
+
+      - name: Pages-Deploy anstoßen
+        if: steps.commit.outputs.deploy == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

@@ -18,7 +18,9 @@
     "macro:check": "tsc -p scripts/macro",
     "push:keys": "node scripts/macro/vapid-keys.ts",
     "tracker:holen": "tsx scripts/tracker/hole-tracker.ts",
-    "tracker:check": "tsc -p scripts/tracker"
+    "tracker:check": "tsc -p scripts/tracker",
+    "board:holen": "tsx scripts/board/hole-board.ts",
+    "board:check": "tsc -p scripts/board"
   },
   "dependencies": {
     "idb": "^8.0.3",
