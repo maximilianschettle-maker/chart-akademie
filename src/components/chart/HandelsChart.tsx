@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react'
-import { Crosshair } from 'lucide-react'
+import { Crosshair, Maximize2 } from 'lucide-react'
+import { installiereGesten } from './gesten'
 import {
   createChart,
   createSeriesMarkers,
@@ -108,7 +109,8 @@ const STANDARD_INDIKATOREN: IndikatorWahl = { ema: [], rsi: false, volumen: true
 
 const SCROLL_AN = { mouseWheel: true, pressedMouseMove: true, horzTouchDrag: true, vertTouchDrag: false }
 const SCROLL_AUS = { mouseWheel: false, pressedMouseMove: false, horzTouchDrag: false, vertTouchDrag: false }
-const SKALA_AN = { axisPressedMouseMove: true, mouseWheel: true, pinch: true }
+// Pinch macht ./gesten.ts (beide Achsen), die Bibliothek würde nur die Zeitachse zoomen
+const SKALA_AN = { axisPressedMouseMove: true, mouseWheel: true, pinch: false }
 const SKALA_AUS = { axisPressedMouseMove: false, mouseWheel: false, pinch: false }
 
 function barZuKerze(c: Candle) {
@@ -190,6 +192,7 @@ export function HandelsChart({
   const standRef = useRef({ anzahl: -1, bucket: -1, basis: -1, serien: '' })
   const letzteBarRef = useRef<Candle | null>(null)
   const fadenkreuzRef = useRef<() => boolean>(() => false)
+  const resetAnsichtRef = useRef<(() => void) | null>(null)
   // Immer aktuelle Props für die DOM-Listener, die nur einmal registriert werden
   const propsRef = useRef({ zeichenModus, onZeichnung, onLinieZiehen, onLinieLos, onPick })
   useEffect(() => {
@@ -307,6 +310,20 @@ export function HandelsChart({
 
     chartRef.current = chart
     kerzenRef.current = kerzen
+    // Doppeltipp, Achsen-Zug am Handy, Zwei-Finger-Zoom/-Verschieben; kein Doppeltipp-Reset beim Zeichnen/Preiswählen
+    const ansichtZuruecksetzen = () => {
+      chart.priceScale('right').setAutoScale(true)
+      const n = datenRef.current.length
+      const breite = container.clientWidth || 800
+      const sichtbar = Math.min(220, Math.max(60, Math.round(breite / 7)))
+      chart.timeScale().setVisibleLogicalRange({ from: n - sichtbar, to: n + 8 })
+    }
+    resetAnsichtRef.current = ansichtZuruecksetzen
+    const gestenWeg = installiereGesten(chart, container, {
+      serie: kerzen,
+      reset: ansichtZuruecksetzen,
+      resetErlaubt: () => propsRef.current.zeichenModus === 'aus' && !propsRef.current.onPick,
+    })
     zonenRef.current = zonen
     markerRef.current = createSeriesMarkers(kerzen, [])
     standRef.current = { anzahl: -1, bucket: -1, basis: -1, serien: '' }
@@ -504,6 +521,8 @@ export function HandelsChart({
 
     return () => {
       beobachter.disconnect()
+      gestenWeg()
+      resetAnsichtRef.current = null
       container.removeEventListener('pointerdown', onPointerDown, true)
       container.removeEventListener('pointermove', onPointerMove, true)
       container.removeEventListener('pointerup', onPointerEnde, true)
@@ -772,10 +791,17 @@ export function HandelsChart({
           />
           <button
             onClick={() => chartRef.current?.timeScale().scrollToRealTime()}
-            className={`absolute right-[76px] z-[3] rounded-md border border-rand bg-nacht/80 p-1.5 text-gedimmt hover:text-white ${zeitVerdeckt ? 'bottom-2' : 'bottom-9'}`}
+            className={`tipp absolute right-[76px] z-[3] rounded-md border border-rand bg-nacht/80 p-1.5 text-gedimmt hover:text-white ${zeitVerdeckt ? 'bottom-2' : 'bottom-9'}`}
             title="Zur aktuellen Kerze springen"
           >
             <Crosshair className="h-3.5 w-3.5" />
+          </button>
+          <button
+            onClick={() => resetAnsichtRef.current?.()}
+            className={`tipp absolute right-[112px] z-[3] rounded-md border border-rand bg-nacht/80 p-1.5 text-gedimmt hover:text-white ${zeitVerdeckt ? 'bottom-2' : 'bottom-9'}`}
+            title="Ansicht zurücksetzen: Preisachse automatisch, Zeitachse auf die letzten Kerzen (auch per Doppeltipp)"
+          >
+            <Maximize2 className="h-3.5 w-3.5" />
           </button>
         </>
       )}

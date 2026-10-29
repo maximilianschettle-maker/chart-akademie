@@ -10,6 +10,8 @@ Drei Hauptbereiche, am Handy als untere Tab-Leiste, am Desktop als Reiter im Kop
 - **Training** (`#/training`) — Segment-Leiste Lernpfad · Simulator · Journal; Lektionen, Übungen und Wiederholung sind Detailseiten darunter.
 - **Analyse** (`#/analyse/…`) — Segment-Leiste Aktien · Tracker · Makro & News (Notenbanken, später Wirtschaftskalender und Geopolitik-Board).
 
+**Chart-Bedienung** (alle Charts, `src/components/chart/gesten.ts`): Preisachse mit einem Finger oder der Maus hoch/runter ziehen = strecken/stauchen; zwei Finger auf dem Chart = Pinch-Zoom in beide Richtungen und Verschieben (auch senkrecht); ein Finger waagerecht = scrollen, senkrecht = Seite scrollen; Mausrad = Zeit zoomen, nach einem Achsen-Zug zieht die Maus den Chart auch senkrecht. Doppeltipp/Doppelklick auf den Chart oder der Knopf „Auto“ setzt auf automatische Skalierung und eingepasste Zeitachse zurück.
+
 Alte Pfade (`#/simulator`, `#/journal`, `#/aktien/…`, `#/makro`, `#/tracker`) leiten weiter, Push-Links und Lesezeichen funktionieren also weiter. Touch-Ziele sind am Handy mindestens 44 px hoch (Klasse `tipp`), Seiten haben 16 px Seitenrand und keinen horizontalen Überlauf (per Playwright bei 390 px geprüft).
 
 ## Features

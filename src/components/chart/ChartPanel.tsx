@@ -1,6 +1,8 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { Maximize2 } from 'lucide-react'
 import {
   createChart,
+  type IChartApi,
   CandlestickSeries,
   HistogramSeries,
   LineSeries,
@@ -13,6 +15,7 @@ import {
 } from 'lightweight-charts'
 import type { Candle, ChartAnnotation } from '../../types'
 import { ema } from '../../engine/indikatoren/ema'
+import { installiereGesten } from './gesten'
 
 const EMA_FARBEN = ['#F59E0B', '#3B82F6', '#A855F7']
 
@@ -66,6 +69,9 @@ export function ChartPanel({
   zeitSichtbar = true,
 }: ChartPanelProps) {
   const containerRef = useRef<HTMLDivElement>(null)
+  const resetRef = useRef<(() => void) | null>(null)
+  // Preisachse von Hand verändert → Knopf „Ansicht zurücksetzen“ einblenden
+  const [manuell, setManuell] = useState(false)
 
   useEffect(() => {
     const container = containerRef.current
@@ -88,9 +94,12 @@ export function ChartPanel({
         ? { localization: { locale: 'de-DE', timeFormatter: (t: Time) => (alsDatum(t) ? fmtVoll.format(alsDatum(t) as Date) : String(t)) } }
         : {}),
       crosshair: { mode: 0 },
-      // Am Handy soll vertikales Wischen die Seite scrollen, nicht den Chart
+      // Am Handy soll vertikales Wischen mit einem Finger die Seite scrollen, nicht den Chart;
+      // Zwei-Finger-Gesten, Achsen-Zug und Doppeltipp übernimmt ./gesten.ts (Pinch der Bibliothek aus)
       handleScroll: { vertTouchDrag: false },
+      handleScale: { pinch: false },
     })
+    ;(container as HTMLDivElement & { __chart?: IChartApi }).__chart = chart
 
     const kerzenSerie = chart.addSeries(CandlestickSeries, {
       upColor: CHART_FARBEN.long,
@@ -171,10 +180,20 @@ export function ChartPanel({
       createSeriesMarkers(kerzenSerie, marker)
     }
 
-    chart.timeScale().fitContent()
-    if (randRechts > 0) {
-      chart.timeScale().setVisibleLogicalRange({ from: -0.5, to: candles.length - 0.5 + randRechts })
+    const ansichtEinpassen = () => {
+      chart.priceScale('right').setAutoScale(true)
+      chart.timeScale().fitContent()
+      if (randRechts > 0) {
+        chart.timeScale().setVisibleLogicalRange({ from: -0.5, to: candles.length - 0.5 + randRechts })
+      }
     }
+    ansichtEinpassen()
+    setManuell(false)
+    resetRef.current = () => {
+      ansichtEinpassen()
+      setManuell(false)
+    }
+    const gestenWeg = installiereGesten(chart, container, { serie: kerzenSerie, reset: ansichtEinpassen, onManuell: setManuell })
 
     const beobachter = new ResizeObserver(() => {
       chart.applyOptions({ width: container.clientWidth })
@@ -183,9 +202,25 @@ export function ChartPanel({
 
     return () => {
       beobachter.disconnect()
+      gestenWeg()
+      resetRef.current = null
       chart.remove()
     }
   }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden, randRechts, zeitSichtbar])
 
-  return <div ref={containerRef} className="w-full overflow-hidden rounded-lg" />
+  return (
+    <div className="relative">
+      <div ref={containerRef} className="w-full overflow-hidden rounded-lg" />
+      {manuell && (
+        <button
+          type="button"
+          onClick={() => resetRef.current?.()}
+          className="absolute left-2 top-2 z-[3] inline-flex min-h-9 items-center gap-1 rounded-md border border-rand bg-nacht/80 px-2 text-[11px] font-semibold text-gedimmt hover:text-white"
+          title="Ansicht zurücksetzen (auch per Doppeltipp auf den Chart)"
+        >
+          <Maximize2 className="h-3.5 w-3.5" /> Auto
+        </button>
+      )}
+    </div>
+  )
 }
