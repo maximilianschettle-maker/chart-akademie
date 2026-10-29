@@ -6,6 +6,7 @@ import { DcfRechner } from '../components/DcfRechner'
 import { KennzahlenKacheln } from '../components/KennzahlenKacheln'
 import { KursChart } from '../components/KursChart'
 import { EINGABE, KNOPF, Kachel, Meldung, QuellenBadge } from '../components/ui'
+import { DatenStatus } from '../components/DatenStatus'
 import { firmenCache } from '../data/cache'
 import { ladeFirma } from '../data/service'
 import { syncStarten } from '../data/sync'
@@ -69,9 +70,12 @@ export function FirmaPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-6">
-      <Link to="/aktien" className="inline-flex items-center gap-1 text-xs text-gedimmt hover:text-schrift">
-        <ArrowLeft className="h-3.5 w-3.5" /> Zur Watchlist
-      </Link>
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <Link to="/aktien" className="inline-flex items-center gap-1 text-xs text-gedimmt hover:text-schrift">
+          <ArrowLeft className="h-3.5 w-3.5" /> Zur Watchlist
+        </Link>
+        <DatenStatus />
+      </div>
 
       {laeuft && !daten && <p className="mt-6 text-sm text-gedimmt">Lade {symbol} … (beim ersten Mal ein paar Sekunden, danach aus dem Cache)</p>}
       {fehler && !daten && <Meldung text={fehler} fehler />}
@@ -88,7 +92,11 @@ export function FirmaPage() {
                 {daten.firma.branche && <span>· {daten.firma.branche}</span>}
                 {daten.firma.land && <span>· {daten.firma.land}</span>}
                 <span className="inline-flex gap-1">{daten.quellen.map((q) => <QuellenBadge key={q} quelle={q} />)}</span>
-                {daten.veraltet && <span className="rounded border border-short/40 px-1.5 py-0.5 text-[10px] text-short">veraltet</span>}
+                {daten.veraltet && (
+                  <span className="rounded border border-akzent/40 px-1.5 py-0.5 text-[10px] text-akzent" title="Der Worker war nicht erreichbar; angezeigt wird der zuletzt gespeicherte Stand">
+                    veraltet · Stand {fmtZeitpunkt(daten.standAm)}
+                  </span>
+                )}
               </div>
             </div>
             <div className="flex items-center gap-2">

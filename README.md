@@ -36,7 +36,11 @@ Eigener Bereich unter **Aktien**: Firma suchen (US + EU), Watchlist, Firmenseite
 
 Lokal: `npm run worker:dev` startet den Worker auf Port 8787 mit den Werten aus `worker/.dev.vars` (gitignored, z.B. `AKTIEN_SECRET=test`); der Dev-Server nimmt diese Adresse als Standard. `npm run worker:check` prüft die Typen des Workers.
 
-Limits: Workers Free hat 100.000 Aufrufe/Tag und 10 ms CPU je Aufruf — deshalb holt der Worker je Kennzahl kleine SEC-Antworten statt des großen Gesamtdokuments. Yahoo ist kein offizieller Dienst; fällt es aus, liefert der Worker den letzten Stand („veraltet“).
+Limits: Workers Free hat 100.000 Aufrufe/Tag, 10 ms CPU je Aufruf und 1.000 KV-Schreibvorgänge/Tag — deshalb holt der Worker je Kennzahl kleine SEC-Antworten statt des großen Gesamtdokuments, und Kurse werden höchstens alle 30 Minuten je Symbol in KV gesichert (davor ein Speicher-Cache im Isolate). Yahoo ist kein offizieller Dienst; fällt es aus, liefert der Worker den letzten Stand (`veraltet: true`, `standAm`).
+
+Robustheit (seit 2026-10-29): Jede Anfrage bekommt einen eigenen Yahoo-Client mit Zeitlimit (ein geteilter Client hing unter parallelen Anfragen → Cloudflare-Fehlerseite ohne CORS-Header → „Worker nicht erreichbar“), der Worker antwortet spätestens nach 25 s mit 504, Fehler tragen immer CORS-Header. Die App wiederholt lesende Anfragen dreimal mit Backoff, zeigt bei Ausfall den gespeicherten Stand mit „Stand: …“ und oben rechts einen Statuspunkt (Daten live / veraltet / Fehler). Nachsehen bei Problemen: Cloudflare-Dashboard → Workers & Pages → chart-akademie-aktien → Logs und Metrics; https://www.cloudflarestatus.com; lokal `npx wrangler tail chart-akademie-aktien --config worker/wrangler.toml`.
+
+**Cron-Wecker für die GitHub Actions:** GitHubs Scheduler lässt Läufe massenhaft aus (29.10.2026: 2 von ~45 Tracker-Läufen). Deshalb stößt der Worker die Workflows `tracker.yml` und `macro.yml` per `workflow_dispatch` an (`worker/src/cron.ts`, Zeiten in `wrangler.toml`, Wochentage als Namen, weil Cloudflare 1 = Sonntag zählt). Einrichtung: feingranulares GitHub-Token nur für dieses Repo mit „Actions: Read and write“ erzeugen (Settings → Developer settings → Fine-grained tokens), dann `npx wrangler secret put GITHUB_DISPATCH_TOKEN --config worker/wrangler.toml`. `/api/status` zeigt unter `cron`, ob das Token gesetzt ist, wann zuletzt angestoßen wurde und den letzten Fehler. Die Schedules in den Workflows bleiben als Fallback; doppelte Läufe fängt die Concurrency-Gruppe ab.
 
 ## Zinsentscheidungen (Fed & EZB) mit Push
 

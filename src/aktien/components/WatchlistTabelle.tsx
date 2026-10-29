@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { RefreshCw, Trash2 } from 'lucide-react'
 import { ladeFirma } from '../data/service'
-import { fmtBetrag, fmtFaktor, fmtKurs, fmtProzent } from '../engine/format'
+import { fmtBetrag, fmtFaktor, fmtKurs, fmtProzent, fmtZeitpunkt } from '../engine/format'
 import { kennzahlen } from '../engine/kennzahlen'
 import { kursFuerKennzahlen } from '../engine/waehrung'
 import { useAktienStore } from '../store'
@@ -91,6 +91,11 @@ export function WatchlistTabelle() {
                     <div className="text-[11px] text-gedimmt">
                       {z.symbol}
                       {z.fehler && <span className="ml-2 text-short">{z.fehler}</span>}
+                      {d?.veraltet && (
+                        <span className="ml-2 text-akzent" title="Worker nicht erreichbar – gespeicherter Stand">
+                          Stand {fmtZeitpunkt(d.standAm)}
+                        </span>
+                      )}
                       {!d && !z.fehler && <span className="ml-2">lädt …</span>}
                     </div>
                   </td>

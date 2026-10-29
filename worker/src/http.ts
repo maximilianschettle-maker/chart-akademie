@@ -6,6 +6,10 @@ export interface Env {
   AKTIEN_SECRET: string
   /** Pflicht bei der SEC: "Name E-Mail" (wrangler secret, weil das Repo öffentlich ist) */
   SEC_USER_AGENT: string
+  /** Feingranulares GitHub-Token (Actions: write) für den Cron-Wecker (wrangler secret), optional */
+  GITHUB_DISPATCH_TOKEN?: string
+  /** owner/repo, Standard siehe cron.ts */
+  GITHUB_REPO?: string
 }
 
 const ERLAUBTE_ORIGINS = ['https://maximilianschettle-maker.github.io']
@@ -40,7 +44,23 @@ export class HttpFehler extends Error {
 export function fehler(req: Request, e: unknown): Response {
   if (e instanceof HttpFehler) return json(req, { fehler: e.message }, e.status)
   const text = e instanceof Error ? e.message : String(e)
-  return json(req, { fehler: text }, 500)
+  return json(req, { fehler: `Worker-Fehler: ${text}` }, 500)
+}
+
+/**
+ * Antwortet spätestens nach `ms` mit 504 statt zu hängen. Eine hängende Anfrage bricht die
+ * Laufzeit mit einer Cloudflare-Fehlerseite ohne CORS-Header ab, die der Browser als Netzfehler meldet.
+ */
+export async function mitZeitlimit<T>(arbeit: Promise<T>, ms: number): Promise<T> {
+  let timer: ReturnType<typeof setTimeout> | null = null
+  const limit = new Promise<never>((_, reject) => {
+    timer = setTimeout(() => reject(new HttpFehler(`Zeitüberschreitung nach ${Math.round(ms / 1000)} s – Quelle antwortet nicht`, 504)), ms)
+  })
+  try {
+    return await Promise.race([arbeit, limit])
+  } finally {
+    if (timer !== null) clearTimeout(timer)
+  }
 }
 
 export function pruefeZugang(req: Request, env: Env): void {

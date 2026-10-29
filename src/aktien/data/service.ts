@@ -4,9 +4,11 @@ import { fundamentaldatenBauen } from '../engine/normalisierung'
 import { useAktienStore } from '../store'
 import type { Fundamentaldaten, Kurs, KursChart, SecTeil, Suchtreffer, SyncZustand, Wechselkurs, YahooTeil } from '../types'
 import { paarCode, wechselkursText } from '../engine/waehrung'
+import { fmtZeitpunkt } from '../engine/format'
 import { bereichDef, type ChartBereich } from '../engine/chart'
 import { chartCache, firmenCache, kursCache, wechselkursCache } from './cache'
 import { AktienFehler, anfrage } from './client'
+import { datenStatus } from './status'
 
 const TAG_MS = 86_400_000
 export const FIRMA_FRISCHE_MS = 7 * TAG_MS
@@ -29,8 +31,16 @@ export async function ladeFirma(symbol: string, opt: LadeOptionen = {}): Promise
   } else if (opt.nurCache) {
     return null
   } else {
-    daten = await vomWorker(symbol, opt.frisch ?? false)
-    await firmenCache.schreiben(symbol, daten)
+    try {
+      daten = await vomWorker(symbol, opt.frisch ?? false)
+      await firmenCache.schreiben(symbol, daten)
+    } catch (e) {
+      // Worker nicht erreichbar: der gespeicherte Stand ist besser als eine leere Seite
+      if (!gecacht) throw e
+      const grund = e instanceof Error ? e.message : String(e)
+      datenStatus.veraltet(gecacht.standAm, grund)
+      daten = { ...gecacht.daten, standAm: gecacht.standAm, veraltet: true, hinweise: [...gecacht.daten.hinweise, `Gespeicherter Stand vom ${fmtZeitpunkt(gecacht.standAm)} – neu laden nicht möglich: ${grund}`] }
+    }
   }
 
   // Kurs separat (kurzlebig). Scheitert er, bleibt der alte Kurs aus den Daten.
@@ -108,15 +118,23 @@ async function vomWorker(symbol: string, frisch: boolean): Promise<Fundamentalda
   return daten
 }
 
+/** Kurs: IndexedDB (15 min) → Worker; bei Fehler der alte Stand (als veraltet gemeldet) oder null. */
 export async function ladeKurs(symbol: string, frisch = false): Promise<Kurs | null> {
   const gecacht = await kursCache.lesen(symbol)
   if (gecacht && !frisch && Date.now() - gecacht.standAm < KURS_FRISCHE_MS) return gecacht.daten
   try {
     const kurs = await anfrage<Kurs>(`/api/kurs/${encodeURIComponent(symbol)}${frisch ? '?frisch=1' : ''}`)
-    if (kurs) await kursCache.schreiben(symbol, kurs)
+    if (kurs?.veraltet) {
+      // Der Worker hat Yahoo nicht erreicht und liefert seinen letzten Stand
+      datenStatus.veraltet(kurs.standAm, 'Yahoo nicht erreichbar, Worker liefert den letzten Stand')
+      if (gecacht && gecacht.standAm >= (kurs.standAm ?? 0)) return { ...gecacht.daten, veraltet: true }
+    } else if (kurs) {
+      await kursCache.schreiben(symbol, kurs)
+    }
     return kurs ?? gecacht?.daten ?? null
-  } catch {
-    return gecacht?.daten ?? null
+  } catch (e) {
+    if (gecacht) datenStatus.veraltet(gecacht.standAm, e instanceof Error ? e.message : String(e))
+    return gecacht ? { ...gecacht.daten, veraltet: true } : null
   }
 }
 
@@ -160,10 +178,14 @@ export async function ladeChart(symbol: string, bereich: ChartBereich, frisch = 
   try {
     const daten = await anfrage<KursChart>(`/api/chart/${encodeURIComponent(symbol)}?bereich=${def.bereich}${frisch ? '&frisch=1' : ''}`)
     if (!daten) throw new AktienFehler(`Keine Kursdaten für ${symbol}`, 404)
-    await chartCache.schreiben(key, daten)
+    if (daten.veraltet) datenStatus.veraltet(daten.standAm, 'Yahoo nicht erreichbar, Worker liefert den letzten Stand')
+    else await chartCache.schreiben(key, daten)
     return daten
   } catch (e) {
-    if (gecacht) return gecacht.daten
+    if (gecacht) {
+      datenStatus.veraltet(gecacht.standAm, e instanceof Error ? e.message : String(e))
+      return { ...gecacht.daten, veraltet: true, standAm: gecacht.standAm }
+    }
     throw e
   }
 }

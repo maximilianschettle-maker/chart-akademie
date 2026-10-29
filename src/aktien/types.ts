@@ -28,6 +28,10 @@ export interface Kurs {
   waehrung: string
   /** Unix-Sekunden der Kursfeststellung */
   zeit: number
+  /** Unix-ms, wann der Worker den Kurs zuletzt erfolgreich geholt hat */
+  standAm?: number
+  /** gesetzt, wenn Yahoo nicht erreichbar war und der Worker seinen letzten Stand liefert */
+  veraltet?: boolean
   marktkap?: number
   aktienAnzahl?: number
   enterpriseValue?: number
@@ -226,4 +230,6 @@ export interface KursChart {
   bereich: string
   kerzen: Kerze[]
   standAm: number
+  /** gesetzt, wenn die Quelle nicht erreichbar war und ein alter Stand angezeigt wird */
+  veraltet?: boolean
 }

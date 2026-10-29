@@ -11,6 +11,7 @@ import type { Ebene, EbeneDaten, InstrumentDaten, MusterId, Signal } from '../ty
 import { fmtDatumKurz, fmtKurs, fmtProzentVz, fmtStand, richtungFarbe, richtungText } from '../format'
 import { aktuellerKurs, useLiveKurse, vortagesSchluss, type LiveKurs } from '../liveKurse'
 import { workerKonfiguriert } from '../../aktien/data/client'
+import { DatenStatus } from '../../aktien/components/DatenStatus'
 
 // Markt-Tracker: Instrumente laut Konfiguration, je Instrument Kurs, Lage, Chart mit Marken
 // und die Signale der letzten Wochen. Einstellungen (Instrumente, Muster, Push) gehen
@@ -372,7 +373,8 @@ export function TrackerPage() {
           <p className="mt-4 flex flex-wrap items-center gap-x-2 text-[11px] text-gedimmt">
             <span>Stand: {fmtStand(daten.lastUpdated)} Uhr</span>
             <span>· Konfiguration des Laufs: {daten.configQuelle === 'worker' ? 'Worker' : daten.configQuelle === 'datei' ? 'Datei im Repo' : 'Standard'}</span>
-            <span>· Kurse: {mitWorker ? 'live über den Worker (alle 5 Min)' : 'vom letzten Lauf – Worker unter Aktien eintragen für Live-Kurse'}</span>
+            <span>· Kurse: {mitWorker ? 'über den Worker (alle 5 Min)' : 'vom letzten Lauf – Worker unter Aktien eintragen für Live-Kurse'}</span>
+            {mitWorker && <DatenStatus />}
             {veraltet && (
               <span className="inline-flex items-center gap-1 text-akzent">
                 <TriangleAlert className="h-3 w-3" /> älter als 26 Stunden

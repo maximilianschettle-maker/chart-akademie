@@ -17,3 +17,14 @@ enabled = true
 [[kv_namespaces]]
 binding = "AKTIEN_KV"
 id = "8b16d3abad0445c5af80e88f8d13b91d"
+
+# Cron-Wecker (siehe src/cron.ts): stößt die GitHub Actions per workflow_dispatch an, weil GitHubs
+# eigener Scheduler Läufe massenhaft auslässt. Braucht das Secret GITHUB_DISPATCH_TOKEN.
+# Die Ausdrücke müssen genau zu AUFTRAEGE in src/cron.ts passen.
+[triggers]
+crons = [
+  "*/15 7-22 * * MON-FRI", # Tracker Mo–Fr alle 15 Minuten
+  "0 */2 * * SAT,SUN",   # Tracker Sa/So alle zwei Stunden
+  "0 6 * * *",         # Makro täglich
+  "*/10 11-22 * * TUE-THU" # Makro Di–Do im Entscheidungsfenster (Frühausstieg in der Action)
+]

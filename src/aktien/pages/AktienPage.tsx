@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Suche } from '../components/Suche'
 import { WatchlistTabelle } from '../components/WatchlistTabelle'
 import { WorkerEinstellungen } from '../components/WorkerEinstellungen'
+import { DatenStatus } from '../components/DatenStatus'
 import { Abschnitt } from '../components/ui'
 import { workerKonfiguriert } from '../data/client'
 import { syncStarten, useSyncFehler } from '../data/sync'
@@ -21,7 +22,10 @@ export function AktienPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
-      <h1 className="text-2xl font-bold text-white">Aktien</h1>
+      <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1">
+        <h1 className="text-2xl font-bold text-white">Aktien</h1>
+        <DatenStatus />
+      </div>
       <p className="mt-1 text-gedimmt">Fundamentalanalyse für US- und EU-Aktien: Bilanzen aus SEC EDGAR und Yahoo, Kennzahlen, Fair-Value-Rechner.</p>
 
       {!konfiguriert ? (

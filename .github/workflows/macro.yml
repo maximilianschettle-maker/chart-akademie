@@ -26,6 +26,10 @@ on:
         description: 'Text der Testnachricht (nur bei test-push)'
         type: string
         default: 'Testnachricht aus der GitHub Action'
+      anlass:
+        description: 'Intern: Cron-Ausdruck, in dessen Namen der Worker-Wecker anstößt (leer = immer laufen)'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -48,7 +52,8 @@ jobs:
       - name: Lauf nötig?
         id: pruefen
         env:
-          ANLASS: ${{ github.event.schedule || github.event_name }}
+          # Vom Worker-Cron angestoßene Läufe geben das Raster als Input mit, damit der Frühausstieg greift
+          ANLASS: ${{ github.event.schedule || inputs.anlass || github.event_name }}
         run: node scripts/macro/lauf-noetig.ts
 
       - uses: actions/setup-node@v4

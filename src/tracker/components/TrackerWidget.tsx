@@ -5,6 +5,7 @@ import { useTracker } from '../useTracker'
 import { kerzenAusKompakt } from '../engine/analyse'
 import { aktuellerKurs, useLiveKurse, vortagesSchluss } from '../liveKurse'
 import { fmtDatumKurz, fmtKurs, fmtProzentVz, fmtStand, richtungFarbe } from '../format'
+import { DatenStatus } from '../../aktien/components/DatenStatus'
 
 // Dashboard-Karte: Kurse auf einen Blick (live über den Worker, wenn eingetragen) und die neuesten Signale.
 
@@ -75,8 +76,11 @@ export function TrackerWidget() {
               ))}
             </ul>
           )}
-          <p className="mt-2 text-[11px] text-gedimmt">
-            Kurse {neuesterKurs > 0 ? fmtStand(new Date(neuesterKurs).toISOString()) : '–'} Uhr · Signale vom Lauf {fmtStand(daten.lastUpdated)} Uhr
+          <p className="mt-2 flex flex-wrap items-center gap-x-2 text-[11px] text-gedimmt">
+            <span>
+              Kurse {neuesterKurs > 0 ? fmtStand(new Date(neuesterKurs).toISOString()) : '–'} Uhr · Signale vom Lauf {fmtStand(daten.lastUpdated)} Uhr
+            </span>
+            <DatenStatus />
           </p>
         </>
       )}

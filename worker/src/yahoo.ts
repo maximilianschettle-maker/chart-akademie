@@ -5,18 +5,18 @@ import { kerzenAusChart, periodeAb, type BereichDef, type ChartRoh } from '../..
 import { firmaAusQuoteSummary, gjEndeMonatAusQuoteSummary, kursAusQuoteSummary, suchtrefferAus, yahooJahre, yahooQuartale, type QuoteSummaryRoh, type ZeitreihenZeile } from '../../src/aktien/engine/yahoo'
 import { HttpFehler } from './http'
 
-// Eine Instanz je Isolate: Cookie und Crumb werden wiederverwendet.
+// Je Aufruf ein eigener Client mit eigener Warteschlange und eigenem Zeitlimit. Cookie und Crumb
+// (reine Strings) teilen sich alle Clients über das Cookie-Glas der Standard-Optionen.
+// Ein geteilter Client hängte unter parallelen Anfragen: Workers verbieten, dass I/O-Objekte
+// (fetch, Timer, AbortSignal) einer Anfrage aus einer anderen genutzt werden → „Worker's code had hung“.
 type YahooInstanz = InstanceType<typeof YahooFinance>
-let instanz: YahooInstanz | null = null
+const ZEITLIMIT_MS = 20_000
 function yf(): YahooInstanz {
-  if (!instanz) {
-    instanz = new YahooFinance({
-      suppressNotices: ['yahooSurvey'],
-      queue: { concurrency: 2 },
-      fetchOptions: { signal: AbortSignal.timeout(15_000) },
-    })
-  }
-  return instanz
+  return new YahooFinance({
+    suppressNotices: ['yahooSurvey'],
+    queue: { concurrency: 4 },
+    fetchOptions: { signal: AbortSignal.timeout(ZEITLIMIT_MS) },
+  })
 }
 
 const MODULE = ['price', 'summaryDetail', 'defaultKeyStatistics', 'financialData', 'assetProfile'] as const
@@ -33,6 +33,7 @@ function uebersetzen(e: unknown, symbol: string): Error {
   const text = e instanceof Error ? e.message : String(e)
   if (/not found|No fundamentals|404|Quote not found|No data found|delisted/i.test(text)) return new HttpFehler(`Yahoo kennt "${symbol}" nicht`, 404)
   if (/429|Too Many Requests/i.test(text)) return new HttpFehler('Yahoo bremst gerade (429) — später erneut versuchen', 503)
+  if (/abort|timeout|timed out/i.test(text)) return new HttpFehler(`Yahoo antwortet nicht (Zeitlimit ${ZEITLIMIT_MS / 1000} s)`, 504)
   return new HttpFehler(`Yahoo: ${text}`, 502)
 }
 
