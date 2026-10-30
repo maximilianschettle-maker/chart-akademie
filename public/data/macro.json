@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-10-29T17:18:11.644Z",
+  "lastUpdated": "2026-10-30T12:41:03.662Z",
   "quellen": {
     "fedZins": "live",
     "fedTermine": "live",
@@ -1234,7 +1234,7 @@
     ],
     "meldungen": [
       {
-        "titel": "Christine Lagarde, Boris Vujčić: Monetary policy statement",
+        "titel": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
         "datum": "2026-10-29T14:00:00.000Z",
         "link": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html"
       },
