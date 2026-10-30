@@ -1,7 +1,43 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-30T11:23:35.067Z",
+ "lastUpdated": "2026-10-30T12:23:31.456Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/10/30/world/europe/ukraine-russia-natural-gas-pipes.html",
+   "titel": "Ukrainians Are Fighting Russians Inside Underground Gas Pipes. I Went in One.",
+   "link": "https://www.nytimes.com/2026/10/30/world/europe/ukraine-russia-natural-gas-pipes.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-30T12:15:29.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "I experienced war’s subterranean future as drones dominate the skies. I didn’t like it.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
+   "titel": "Rare Evacuation Announced by Melania Trump Begins in Ukrainian City of Oleshky",
+   "link": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-30T12:09:46.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Many of the people left in Oleshky, where bombardment is constant, have run out of food. A truce that began Tuesday is supposed to allow aid in and civilians out.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/dienstleister/logistik-bahn-bremst-milliarden-militaerprojekt-in-bremerhaven/100261874.html",
+   "titel": "Logistik: Nato-Drehkreuz: Deutsche Bahn könnte milliardenschweres Militärprojekt in Bremerhaven verzögern",
+   "link": "https://www.handelsblatt.com/unternehmen/dienstleister/logistik-bahn-bremst-milliarden-militaerprojekt-in-bremerhaven/100261874.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-30T11:33:37.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd",
+    "ruestung"
+   ],
+   "text": "Mit 1,35 Milliarden Euro will Verteidigungsminister Pistorius Bremerhaven bis 2031 zur Nato-Drehscheibe ausbauen. Doch wichtige Absprachen mit der Deutschen Bahn und anderen fehlen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c60me298k1yeo",
    "titel": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
@@ -22,17 +58,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Ukrainian soldiers are traveling underground through abandoned gas pipes to reach positions near the front. Our correspondent Maria Varenikova joins them on the journey through the kill zone and into positions where troops can spend weeks a",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
-   "titel": "Rare Evacuation Announced by Melania Trump Begins in Ukrainian City of Oleshky",
-   "link": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-30T11:10:32.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Many of the people left in Oleshky, where bombardment is constant, have run out of food. A truce that began Tuesday is supposed to allow aid in and civilians out.",
    "sprache": "en"
   },
   {
@@ -102,17 +127,6 @@
    "maerkte": [],
    "text": "Europas Autoindustrie steckt in der Zollfalle. Schutzwälle gegen China-Importe können ihr Zeit verschaffen. Den auch selbstverschuldeten Verlust an Wettbewerbsfähigkeit ersetzen sie nicht.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/30/world/europe/ukraine-russia-natural-gas-pipes.html",
-   "titel": "Ukrainians Are Fighting Russians Inside Underground Gas Pipes. I Went in One.",
-   "link": "https://www.nytimes.com/2026/10/30/world/europe/ukraine-russia-natural-gas-pipes.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-30T09:51:11.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "I experienced war’s subterranean future as drones dominate the skies. I didn’t like it.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/binance-kryptoboerse-meldet-hackerangriff-bitcoin-auf-sechs-wochen-tief/100266046.html",
@@ -265,6 +279,17 @@
    "maerkte": [],
    "text": "Gemeinsam unabhängiger werden - das ist das große Ziel der angestrebten neuen Allianz zwischen Kanada und der EU. Ein Beispiel: die Zusammenarbeit im Bereich Künstlicher Intelligenz. Von Giselle Ucar.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-election-coalition-scenarios.html",
+   "titel": "Israel’s Election Results Show No Clear Winner. What Are the Paths to a New Government?",
+   "link": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-election-coalition-scenarios.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-30T06:31:57.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Deadlock is possible, as neither the bloc of Prime Minister Benjamin Netanyahu nor his main challenger have won a majority. But there are still paths to a new government.",
+   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
@@ -995,28 +1020,6 @@
    "maerkte": [],
    "text": "The troops are trying to recover four military personnel who went missing in an ambush on the outskirts of the Haitian capital Port-au-Prince.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/eu-kanada-gipfel-100.html",
-   "titel": "EU-Kanada-Gipfel: Kanada wird vorerst kein \"assoziiertes EU-Mitglied\"",
-   "link": "https://www.tagesschau.de/ausland/europa/eu-kanada-gipfel-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-29T06:20:37.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Kanzler Merz und andere EU-Regierungschefs haben die Kanada-Pläne von EU-Kommissionspräsidentin von der Leyen abgeschwächt - kurz vor dem heute beginnenden EU-Kanada-Gipfel. Von einer \"assoziierten Mitgliedschaft\" ist nicht mehr die Rede. V",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/28/world/israel-election-results-spain-train.html",
-   "titel": "What to Make of Israel’s Ambiguous Election",
-   "link": "https://www.nytimes.com/2026/10/28/world/israel-election-results-spain-train.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-29T05:04:25.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Neither Benjamin Netanyahu nor his rivals won a majority, leaving Arab lawmakers as potential kingmakers in the new Parliament.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1024,9 +1027,9 @@
   "DW": 7,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 7,
+  "Handelsblatt": 6,
   "BBC World": 14,
-  "NYT World": 26,
+  "NYT World": 27,
   "EIA Today in Energy": 1
  }
 }
