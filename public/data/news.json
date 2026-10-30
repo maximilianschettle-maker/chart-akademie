@@ -1,16 +1,51 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-30T16:43:45.548Z",
+ "lastUpdated": "2026-10-30T17:23:32.655Z",
  "eintraege": [
   {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/boris-pistorius-bei-helsing-lob-fuer-ruestungsindustrie-kamikazedrohnen-fuer-die-bundeswehr-201634498.html",
+   "titel": "Drohnen für die Bundeswehr: Deutschland als „Taktgeber für Europas Verteidigungsfähigkeit“",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/boris-pistorius-bei-helsing-lob-fuer-ruestungsindustrie-kamikazedrohnen-fuer-die-bundeswehr-201634498.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-10-30T17:01:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Bundesverteidigungsminister Boris Pistorius hat Rüstungsunternehmen im Großraum München besucht – und machte ein paar wegweisende Ankündigungen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo",
+   "titel": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+   "link": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-30T16:48:12.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/berlin-eralp-debatte-spiegel-bericht-100.html",
+   "titel": "Debatte um Eralp überlagert Regierungsbildung",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/berlin-eralp-debatte-spiegel-bericht-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-30T16:44:36.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Regierungsbildung in Berlin wird erneut von einer Debatte um die Linke überschattet. Im Fokus: die eventuell künftige Regierende Bürgermeisterin Eralp und ihr Umgang mit Islamismus. Ihre Partei stellt sich entschieden hinter sie.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.bbc.co.uk/news/articles/c60me298k1yeo",
-   "titel": "Ceasefire allows evacuation from devastated Russian-occupied Oleshky",
+   "titel": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
    "link": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-10-30T16:26:11.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "But several hundred people are understood to have decided to stay in the frontline town, despite the lack of gas, electricity and running water.",
+   "text": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers.",
    "sprache": "en"
   },
   {
@@ -372,17 +407,6 @@
    "maerkte": [],
    "text": "The leading contenders, Prime Minister Benjamin Netanyahu and Gadi Eisenkot, aren’t substantially different in their approach to Israel’s security or in their opposition to a Palestinian state.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/berlin-eralp-debatte-spiegel-bericht-100.html",
-   "titel": "Debatte um Eralp überlagert Regierungsbildung",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/berlin-eralp-debatte-spiegel-bericht-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-30T09:02:46.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Regierungsbildung in Berlin wird erneut von einer Debatte über die Linkspartei überschattet. Im Fokus: die eventuell künftige Regierende Bürgermeisterin Eralp. Und die Frage, wie entschieden sie gegen Islamismus vorgehen kann.",
-   "sprache": "de"
   },
   {
    "id": "https://www.nytimes.com/2026/10/30/world/asia/call-of-duty-seoul-itaweon-crowd-crush.html",
@@ -1001,38 +1025,14 @@
    "maerkte": [],
    "text": "A rare localized cease-fire announced by the first lady offered a brief respite for Kherson, Ukraine, where Russian drones and artillery have long terrorized civilians.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ckn9rq8204l0o",
-   "titel": "Shock of rail tragedy gives way to sorrow and outrage in politically divided Spain",
-   "link": "https://www.bbc.co.uk/news/articles/ckn9rq8204l0o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-29T14:08:23.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "The latest train crash will pile pressure on the government of Pedro Sánchez, one month before the general election.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/29/world/europe/france-shootings-suspect.html",
-   "titel": "Suspect in France Shootings Said He Targeted Muslims and Africans, Prosecutor Says",
-   "link": "https://www.nytimes.com/2026/10/29/world/europe/france-shootings-suspect.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-29T14:05:08.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The suspect, identified only as Kévin T., admitted to planning the attacks near Paris last week, the prosecutor said. One person was killed and seven wounded.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 10,
   "DW": 7,
   "Spiegel Wirtschaft": 5,
-  "FAZ Wirtschaft": 4,
-  "Handelsblatt": 5,
+  "FAZ Wirtschaft": 5,
+  "Handelsblatt": 3,
   "BBC World": 14,
   "NYT World": 25,
   "EIA Today in Energy": 1
