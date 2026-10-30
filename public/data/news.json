@@ -1,13 +1,24 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-30T19:23:32.719Z",
+ "lastUpdated": "2026-10-30T20:23:31.799Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo",
+   "titel": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+   "link": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-30T20:10:56.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/10/30/world/americas/el-salvador-haiti-soldiers-bukele.html",
    "titel": "Could El Salvador’s Bukele Be Haiti’s Savior?",
    "link": "https://www.nytimes.com/2026/10/30/world/americas/el-salvador-haiti-soldiers-bukele.html",
    "quelle": "NYT World",
-   "zeit": "2026-10-30T19:22:04.000Z",
+   "zeit": "2026-10-30T20:06:07.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The Salvadoran government dispatched more than 2,000 troops to Haiti this week in an extraordinary deployment on foreign soil.",
@@ -91,27 +102,14 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo",
-   "titel": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
-   "link": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-30T17:39:43.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-evakuierung-aus-russisch-besetztem-oleschky-abgeschlossen/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Evakuierung aus russisch besetztem Oleschky abgeschlossen",
    "link": "https://www.handelsblatt.com/politik/international/ukraine-evakuierung-aus-russisch-besetztem-oleschky-abgeschlossen/27982126.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-10-30T17:29:00.000Z",
    "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Russische und ukrainische Menschenrechtsbeauftragte treten gemeinsam auf +++ Moskau: Ukraine greift wieder russische Raffinerien an +++ Der Newsblog.",
+   "maerkte": [],
+   "text": "Russische und ukrainische Menschenrechtsbeauftragte treten gemeinsam auf +++ USA genehmigen Verkauf von 500 Patriot-Raketen an die Ukraine +++ Der Newsblog.",
    "sprache": "de"
   },
   {
