@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-30T22:23:34.440Z",
+ "lastUpdated": "2026-10-30T23:23:34.233Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-lawrow-keine-entspannung-zwischen-moskau-und-washington/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Lawrow – keine Entspannung zwischen Moskau und Washington",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-lawrow-keine-entspannung-zwischen-moskau-und-washington/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-30T22:46:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Selenskyj kündigt „wichtige“ Gespräche in der Türkei an +++ Evakuierung aus russisch besetztem Oleschky abgeschlossen +++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo",
    "titel": "US approves sale of 500 Patriot missiles to Ukraine",
@@ -1014,17 +1025,6 @@
    "maerkte": [],
    "text": "Deutsche Politiker warten ab: Noch ist unklar, wer Israel künftig regiert. Die Sorge gilt auch Gaza: Welche Folgen hätte ein Machtvakuum? Viele hoffen zudem auf eine Regierung ohne religiöse Hardliner.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/28/world/americas/flavio-bolsonaro-us-miami-brazil-trump.html",
-   "titel": "Flávio Bolsonaro Lands in Miami After Fleeing Brazil",
-   "link": "https://www.nytimes.com/2026/10/28/world/americas/flavio-bolsonaro-us-miami-brazil-trump.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-29T15:06:48.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Mr. Bolsonaro, who lost Sunday’s presidential election, fled Brazil for the United States via Argentina after the police canceled his passport in relation to an investigation.",
-   "sprache": "en"
   }
  ],
  "quellen": {
