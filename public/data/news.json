@@ -1,16 +1,62 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-29T23:22:46.763Z",
+ "lastUpdated": "2026-10-30T02:43:05.174Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-putin-warnt-vor-ostsee-situation-wie-in-strasse-von-hormus/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Putin warnt vor Eskalation in der Ostsee: „Will keine Situation wie in Hormus“",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-putin-warnt-vor-ostsee-situation-wie-in-strasse-von-hormus/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-30T01:23:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Bericht: Die Ukraine setzt Angriffe auf russische Raffinerien auf Druck der USA aus +++ IAEA: Mitarbeiter von AKW Saporischschja bei Drohnenangriff getötet +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/usa-sollen-audi-zehn-prozent-zoll-fuer-einfuhren-angeboten-haben-a-dc3287f0-503e-4f6e-ac10-6cbf6c2adbad",
+   "titel": "USA sollen Audi zehn Prozent Zoll für Einfuhren angeboten haben",
+   "link": "https://www.spiegel.de/wirtschaft/usa-sollen-audi-zehn-prozent-zoll-fuer-einfuhren-angeboten-haben-a-dc3287f0-503e-4f6e-ac10-6cbf6c2adbad#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-10-30T00:35:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Für Autos aus Europa kassieren die USA 15 Prozent Einfuhrzoll, aus Mexiko sogar 25 Prozent. Audi soll künftig deutlich weniger zahlen – als Gegenleistung für den geplanten Fabrikneubau in Georgia.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/israel-wahl-ergebnis-102.html",
+   "titel": "Wahl in Israel: Alle Stimmen ausgezählt - Patt bleibt bestehen",
+   "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-ergebnis-102.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-30T00:01:06.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Auszählung der Stimmen in Israel bestätigt, dass eine äußerst schwierige Regierungsbildung bevorsteht. Unterdessen ist ein Streit über das Wahlergebnis entbrannt - die Likud-Partei spricht von \"gestohlener Wahl\".",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
    "titel": "What Israeli Election Results Reveal About the Electorate",
    "link": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
    "quelle": "NYT World",
-   "zeit": "2026-10-29T23:11:25.000Z",
+   "zeit": "2026-10-29T23:45:50.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "Some groups stood by Prime Minister Benjamin Netanyahu’s party, but support fell off among others. Turnout was also a striking factor in the election.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/29/world/europe/stephen-james-hubbard-russian-prison.html",
+   "titel": "Newly Freed American Describes His Years in Russian Prison",
+   "link": "https://www.nytimes.com/2026/10/29/world/europe/stephen-james-hubbard-russian-prison.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-29T23:32:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Stephen James Hubbard, the retired teacher arrested soon after Russia’s full-scale invasion of Ukraine in 2022, said he sometimes lost hope.",
    "sprache": "en"
   },
   {
@@ -92,19 +138,6 @@
    "maerkte": [],
    "text": "A temporary ceasefire has brought rare quiet to Kherson, offering its residents a glimpse of normal life before fighting resumes.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-putin-warnt-vor-ostsee-situation-wie-in-strasse-von-hormus/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Putin warnt vor Eskalation in der Ostsee: „Will keine Situation wie in Hormus“",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-putin-warnt-vor-ostsee-situation-wie-in-strasse-von-hormus/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-29T19:43:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Selenskyj: Russland vor neuen Angriffen mit ballistischen Raketen +++ 1000 Einwohner wollen Oleschky verlassen +++ Russland verlängert Diesel-Exportverbot – Ausnahme für USA +++ Der Newsblog.",
-   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/israel-patt-im-parlament-keine-klare-regierungsmehrheit-nach-wahl/100266007.html",
@@ -392,7 +425,7 @@
    "titel": "How André Janones Helped Turbocharge Lula’s Comeback in Brazil’s Election",
    "link": "https://www.nytimes.com/2026/10/28/world/americas/andre-janones-whatsapp-lula-brazil-election.html",
    "quelle": "NYT World",
-   "zeit": "2026-10-29T14:44:20.000Z",
+   "zeit": "2026-10-29T14:44:21.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "With street talk and tactics from the far-right’s playbook, André Janones used a WhatsApp channel to help organize millions of Brazilians online.",
@@ -447,7 +480,7 @@
    "titel": "Suspect in France Shootings Said He Targeted Muslims and Africans, Prosecutor Says",
    "link": "https://www.nytimes.com/2026/10/29/world/europe/france-shootings-suspect.html",
    "quelle": "NYT World",
-   "zeit": "2026-10-29T14:05:07.000Z",
+   "zeit": "2026-10-29T14:05:08.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The suspect, identified only as Kévin T., admitted to planning the attacks near Paris last week, the prosecutor said. One person was killed and seven wounded.",
@@ -899,9 +932,9 @@
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 11,
   "DW": 9,
-  "Spiegel Wirtschaft": 2,
+  "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 7,
   "BBC World": 10,
