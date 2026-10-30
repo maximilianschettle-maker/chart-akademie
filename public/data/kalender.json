@@ -1,16 +1,7 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-30T10:12:38.010Z",
+ "lastUpdated": "2026-10-30T13:23:34.588Z",
  "termine": [
-  {
-   "id": "us:bip:2026-10-29",
-   "region": "us",
-   "indikator": "bip",
-   "titel": "BIP (BEA)",
-   "zeitUtc": "2026-10-29T12:30:00.000Z",
-   "quelle": "FRED",
-   "link": "https://fred.stlouisfed.org/release?rid=53"
-  },
   {
    "id": "ez:bip:2026-10-30:42",
    "region": "ez",

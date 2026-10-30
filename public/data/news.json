@@ -1,7 +1,87 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-30T12:23:31.456Z",
+ "lastUpdated": "2026-10-30T13:23:34.588Z",
  "eintraege": [
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/big-oil-bp-shell-und-exxonmobil-erzielen-rekordgewinne-201636148.html",
+   "titel": "BP, Shell und Co.: Die Gewinne der Ölkonzerne sprudeln exorbitant",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/big-oil-bp-shell-und-exxonmobil-erzielen-rekordgewinne-201636148.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-10-30T13:13:47.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "eurusd"
+   ],
+   "text": "Mehr als 55 Milliarden Dollar Gewinn haben die fünf „Big Oil“-Konzerne im dritten Quartal verbucht. Sie profitieren vom Ölpreisanstieg und Raffineriegewinnen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/waffenfund-remscheid-urteil-100.html",
+   "titel": "Remscheider Waffenprozess: Illegaler Waffensammler zu Haftstrafe verurteilt",
+   "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/waffenfund-remscheid-urteil-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-30T13:08:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "300 scharfe Waffen, 100.000 Schuss Munition und das alles in einem Wohngebiet - es war einer größten Waffenfunde in Deutschland. Für seine illegale Sammlung ist ein Mann aus Remscheid nun zu sechseinhalb Jahren Haft verurteilt worden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
+   "titel": "Rare Evacuation Announced by Melania Trump Begins in Ukrainian City of Oleshky",
+   "link": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-30T12:58:05.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Many of the people left in Oleshky, where bombardment is constant, have run out of food. A truce that began Tuesday is supposed to allow aid in and civilians out.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/29/world/europe/stephen-james-hubbard-russian-prison.html",
+   "titel": "Newly Freed American Describes His Years in Russian Prison",
+   "link": "https://www.nytimes.com/2026/10/29/world/europe/stephen-james-hubbard-russian-prison.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-30T12:48:14.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Stephen James Hubbard, the retired teacher arrested soon after Russia’s full-scale invasion of Ukraine in 2022, said he sometimes lost hope.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/serbien-nach-aleksandar-vucics-wahlniederlage-die-siegereichen-anh%C3%A4nger-der-studierenden-liste-werden-ungeduldig/a-79805086",
+   "titel": "Serbien nach Aleksandar Vucics Wahlniederlage: Die siegereichen Anhänger der Studierenden-Liste werden ungeduldig",
+   "link": "https://www.dw.com/de/serbien-nach-aleksandar-vucics-wahlniederlage-die-siegereichen-anhänger-der-studierenden-liste-werden-ungeduldig/a-79805086?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-10-30T12:42:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach dem Wahlsieg der Studierendenliste bröckelt Aleksandar Vucics Machtapparat. Viele Bürger fordern rasch Gerechtigkeit. Doch noch haben die Verlierer wichtige Machthebel in Behörden, Justiz und Verwaltung in der Hand.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/technologie/hackerangriff-binance-interview-100.html",
+   "titel": "Experte zum Krypto-Angriff: \"Drei Milliarden sind definitiv weg\"",
+   "link": "https://www.tagesschau.de/wirtschaft/technologie/hackerangriff-binance-interview-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-30T12:32:21.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Beim Hackerangriff auf die Kryptobörse Binance geht es um Digitalwährungen in Milliardenhöhe. Cybersicherheitsexperte Mirko Ross erklärt, warum die Spur nach Nordkorea führt und was Anleger beachten sollten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c60me298k1yeo",
+   "titel": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
+   "link": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-30T12:25:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Several hundred people are understood to have decided to stay in the frontline town, despite the lack of gas, electricity and running water.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/10/30/world/europe/ukraine-russia-natural-gas-pipes.html",
    "titel": "Ukrainians Are Fighting Russians Inside Underground Gas Pipes. I Went in One.",
@@ -11,17 +91,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "I experienced war’s subterranean future as drones dominate the skies. I didn’t like it.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
-   "titel": "Rare Evacuation Announced by Melania Trump Begins in Ukrainian City of Oleshky",
-   "link": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-30T12:09:46.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Many of the people left in Oleshky, where bombardment is constant, have run out of food. A truce that began Tuesday is supposed to allow aid in and civilians out.",
    "sprache": "en"
   },
   {
@@ -37,17 +106,6 @@
    ],
    "text": "Mit 1,35 Milliarden Euro will Verteidigungsminister Pistorius Bremerhaven bis 2031 zur Nato-Drehscheibe ausbauen. Doch wichtige Absprachen mit der Deutschen Bahn und anderen fehlen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c60me298k1yeo",
-   "titel": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
-   "link": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-30T11:17:32.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Several hundred people are understood to have decided to stay in the frontline town, despite the lack of gas, electricity and running water.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/video/world/europe/100000011210889/how-ukrainian-soldiers-are-moving-underground.html",
@@ -81,7 +139,7 @@
    "zeit": "2026-10-30T10:48:01.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Im dritten Quartal ist das Bruttoinlandsprodukt doppelt so stark gestiegen, wie abzusehen war. Dennoch war es nur ein Mini-Wachstum. Drei Bereiche sind für diese Entwicklung entscheidend.",
+   "text": "Im dritten Quartal ist das Bruttoinlandsprodukt doppelt so stark gestiegen als absehbar. Dennoch war es nur ein Mini-Wachstum. Was die Zahlen über das Gesamtjahr aussagen.",
    "sprache": "de"
   },
   {
@@ -108,7 +166,7 @@
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/bip-in-deutschland-wirtschaftsleistung-legt-im-dritten-quartal-leicht-zu-a-fd34e9f5-40ab-41c2-bc12-2c34fb488c3f",
-   "titel": "BIP in Deutschland: Wirtschaftsleistung legt im dritten Quartal leicht zu",
+   "titel": "BIP: Deutschlands Wirtschaft wächst im Sommer überraschend",
    "link": "https://www.spiegel.de/wirtschaft/bip-in-deutschland-wirtschaftsleistung-legt-im-dritten-quartal-leicht-zu-a-fd34e9f5-40ab-41c2-bc12-2c34fb488c3f#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-10-30T10:07:00.000Z",
@@ -426,17 +484,6 @@
    "maerkte": [],
    "text": "Die Auszählung aller Stimmen in Israel bestätigt, dass eine äußerst schwierige Regierungsbildung bevorsteht. Unterdessen ist ein Streit über das Wahlergebnis entbrannt - die Likud-Partei spricht von \"gestohlener Wahl\".",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/29/world/europe/stephen-james-hubbard-russian-prison.html",
-   "titel": "Newly Freed American Describes His Years in Russian Prison",
-   "link": "https://www.nytimes.com/2026/10/29/world/europe/stephen-james-hubbard-russian-prison.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-29T23:32:33.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Stephen James Hubbard, the retired teacher arrested soon after Russia’s full-scale invasion of Ukraine in 2022, said he sometimes lost hope.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-election-results-netanyahu-eisenkot.html",
@@ -976,59 +1023,15 @@
    "maerkte": [],
    "text": "Despite years of political baggage, the Israeli prime minister outperformed expectations, and his rivals, by playing on Jewish voters’ fears of Arab political power and potential security threats.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cm62y46d97wwo",
-   "titel": "How could Israel break election deadlock? Here are four scenarios",
-   "link": "https://www.bbc.co.uk/news/articles/cm62y46d97wwo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-29T09:06:48.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "With more than 90% of votes counted, all signs point to an impasse. The most likely outcome may be new elections.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/immobilien-wohnen/bauen-kaufen/peter-haimerl-villa-aus-den-70ern-verschwindet-im-huegel-accg-201310299.html",
-   "titel": "Bauen im Bestand: Das Haus, das in den Hügel kriecht",
-   "link": "https://www.faz.net/aktuell/wirtschaft/immobilien-wohnen/bauen-kaufen/peter-haimerl-villa-aus-den-70ern-verschwindet-im-huegel-accg-201310299.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-10-29T08:56:45.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Wo früher der Pool war, wird jetzt gewohnt: Der für seine ungewöhnlichen Bauten bekannte Architekt Peter Haimerl lässt eine Villa aus den siebziger Jahren in einem Hügel verschwinden und wie neu daraus auferstehen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cw78prj801pvo",
-   "titel": "Ethiopia acquires Russian fighter jets and air defence systems amid war in Tigray",
-   "link": "https://www.bbc.co.uk/news/articles/cw78prj801pvo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-29T08:23:31.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The acquisition of the warplanes comes amid ongoing fighting in northern Tigray region that started last month.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ck0e075n79j5o",
-   "titel": "El Salvador sends 2,000 troops to Haiti to rescue four missing soldiers",
-   "link": "https://www.bbc.co.uk/news/articles/ck0e075n79j5o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-29T06:24:56.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The troops are trying to recover four military personnel who went missing in an ambush on the outskirts of the Haitian capital Port-au-Prince.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 14,
-  "DW": 7,
+  "DW": 8,
   "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 4,
+  "FAZ Wirtschaft": 5,
   "Handelsblatt": 6,
-  "BBC World": 14,
+  "BBC World": 12,
   "NYT World": 27,
   "EIA Today in Energy": 1
  }
