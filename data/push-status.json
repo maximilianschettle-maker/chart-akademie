@@ -11,6 +11,9 @@
     "ezb-2026-10-29:ergebnis": "2026-10-29T17:18:14.390Z",
     "tracker:nasdaq100:ema-kreuz:short:2026-10-29": "2026-10-29T19:42:24.702Z",
     "tracker:bitcoin:ausbruch:short:2026-10-29": "2026-10-29T23:39:01.517Z",
-    "tracker:gold:ausbruch:short:2026-10-30": "2026-10-30T11:30:47.046Z"
+    "tracker:gold:ausbruch:short:2026-10-30": "2026-10-30T11:30:47.046Z",
+    "tracker:nasdaq100:ausbruch:short:2026-10-30": "2026-10-30T13:30:45.643Z",
+    "tracker:nasdaq100:ausbruch:short:stunde:2026-10-30T13": "2026-10-30T13:30:45.721Z",
+    "tracker:nasdaq100:ema-kreuz:short:2026-10-30": "2026-10-30T13:30:45.902Z"
   }
 }
