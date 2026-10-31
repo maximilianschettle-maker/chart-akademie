@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T06:23:28.674Z",
+ "lastUpdated": "2026-10-31T08:23:36.565Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/ukraine-soll-nachschub-an-patriot-raketen-erhalten-news-kompakt-das-wichtigste-kurz-gefasst/a-79813926",
+   "titel": "Ukraine soll Nachschub an Patriot-Raketen erhalten - News kompakt: Das Wichtigste kurz gefasst",
+   "link": "https://www.dw.com/de/ukraine-soll-nachschub-an-patriot-raketen-erhalten-news-kompakt-das-wichtigste-kurz-gefasst/a-79813926?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-10-31T08:00:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die USA genehmigen den Verkauf Hunderter Abfangraketen an die Ukraine. Die europaweiten Jugendproteste erfassen nun auch Deutschland. Der DW-Nachrichtenüberblick.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/linke-berlin-parteitag-eralp-100.html",
+   "titel": "Die Linke in Berlin: Aus dem Trubel in die Koalition?",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/linke-berlin-parteitag-eralp-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-31T07:43:12.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Berliner Linke entscheidet heute über den Start von Koalitionsverhandlungen mit SPD und Grünen. Überschattet wird der Parteitag von Antisemitismusvorwürfen und einem Spiegel-Bericht. Von Frank Aischmann.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cmeweppr990qo",
    "titel": "Spain train disaster clouds Sánchez chances of re-election",
@@ -1005,33 +1027,11 @@
    ],
    "text": "The Treasury Department accused Rwanda of undermining a U.S.-brokered peace agreement by supporting a rebel group in the eastern Democratic Republic of Congo.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo",
-   "titel": "EU chief lays out vision for new Canada partnership at Montreal summit",
-   "link": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-29T17:02:59.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Ursula von der Leyen continued to use the term \"associate member\" for Canada despite some opposition of the bloc's members, including Germany.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/video/world/middleeast/100000011242127/how-israels-election-could-end.html",
-   "titel": "How Israel’s Election Could End",
-   "link": "https://www.nytimes.com/video/world/middleeast/100000011242127/how-israels-election-could-end.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-29T17:01:22.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Neither Benjamin Netanyahu nor Gadi Eisenkot won a majority in Israel’s Parliament, leaving both with a chance to form a government. Our Jerusalem bureau chief, David M. Halbfinger, explains the possible coalitions and the obstacles to an o",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 9,
-  "DW": 7,
+  "DW": 8,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 5,
