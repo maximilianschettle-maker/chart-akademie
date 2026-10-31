@@ -1,16 +1,27 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T16:23:34.772Z",
+ "lastUpdated": "2026-10-31T17:23:32.014Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/syria-saudi-defense-pact.html",
+   "titel": "Syria Weighs Joining Saudi Mutual Defense Pact as Yemen War Rages",
+   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/syria-saudi-defense-pact.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-31T17:18:30.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A move to join Saudi Arabia’s agreement with Turkey and Pakistan could entangle more countries in the kingdom’s escalating conflict between the Iran-backed Houthis.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/inland/innenpolitik/linke-parteitag-koalitionsverhandlungen-100.html",
    "titel": "Berliner Linke stimmt für Aufnahme von Koalitionsverhandlungen mit Grünen und SPD",
    "link": "https://www.tagesschau.de/inland/innenpolitik/linke-parteitag-koalitionsverhandlungen-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-10-31T16:13:23.000Z",
+   "zeit": "2026-10-31T16:39:40.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "In Berlin hat sich nach Grünen und SPD nun auch die Linke für Koalitionsverhandlungen ausgesprochen. Auf einem Parteitag stimmte eine klare Mehrheit dafür. Sechs Wochen nach der Wahl können die Gespräche damit beginnen.",
+   "text": "Sechs Wochen nach der Wahl in Berlin ist der Weg frei für rot-grün-rote Koalitionsverhandlungen: Nach Grünen und SPD stimmte nun auch ein Parteitag der Linken dafür. Am Montag sollen die Gespräche beginnen.",
    "sprache": "de"
   },
   {
@@ -70,7 +81,7 @@
   },
   {
    "id": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
-   "titel": "Rare Evacuation Announced by Melania Trump Begins in Ukrainian City of Oleshky",
+   "titel": "Evacuees Arrive to Safety From Besieged Ukrainian City of Oleshky",
    "link": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
    "quelle": "NYT World",
    "zeit": "2026-10-31T15:24:29.000Z",
@@ -92,7 +103,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/berlin-weg-frei-fuer-rot-gruen-rote-koalitionsgespraeche-in-berlin/100266336.html",
-   "titel": "Berlin: Elif Eralp: „Werden uns nicht kleinkriegen lassen“",
+   "titel": "Berlin: Weg frei für rot-grün-rote Koalitionsgespräche in Berlin",
    "link": "https://www.handelsblatt.com/politik/deutschland/berlin-weg-frei-fuer-rot-gruen-rote-koalitionsgespraeche-in-berlin/100266336.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-10-31T15:19:50.000Z",
@@ -1007,17 +1018,6 @@
    "maerkte": [],
    "text": "Die PHP-Lücke war das größte Cyberereignis seit Jahren. Sie hat gezeigt, was auf uns zukommt. Dass sie aus der politischen Debatte schon wieder verschwunden ist, könnte sich rächen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/eu-kanada-ki-100.html",
-   "titel": "EU-Kanada-Gipfel: Zusammenarbeit bei KI verstärken",
-   "link": "https://www.tagesschau.de/ausland/amerika/eu-kanada-ki-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-30T06:38:08.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Gemeinsam unabhängiger werden - das ist das große Ziel der angestrebten neuen Allianz zwischen Kanada und der EU. Ein Beispiel: die Zusammenarbeit im Bereich Künstlicher Intelligenz. Von Giselle Ucar.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1026,8 +1026,8 @@
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 6,
-  "BBC World": 12,
-  "NYT World": 24,
+  "BBC World": 11,
+  "NYT World": 25,
   "EIA Today in Energy": 1
  }
 }
