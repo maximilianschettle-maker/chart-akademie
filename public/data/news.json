@@ -1,13 +1,46 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T13:23:33.300Z",
+ "lastUpdated": "2026-10-31T14:23:31.296Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+   "titel": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
+   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-31T14:18:45.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "With Prime Minister Benjamin Netanyahu fighting to stay in power and President Trump facing a tough midterm, Iran’s leaders expect no major shift in policy.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
+   "titel": "Train Disaster Is Blow to Spain’s Leader, Already Election Underdog",
+   "link": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-31T14:14:18.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Prime Minister Pedro Sánchez wanted to campaign on inequality and housing, but the second major rail accident this year has put his government’s competence on trial.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-irans-aussenminister-sieht-keine-notwendigkeit-fuer-usa-treffen/100136895.html",
+   "titel": "+++ Iran-Krieg +++: Irans Außenminister sieht keine Notwendigkeit für USA-Treffen",
+   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-irans-aussenminister-sieht-keine-notwendigkeit-fuer-usa-treffen/100136895.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-31T14:08:01.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Iran: US-Angriff auf Fischerboote nahe Insel Keschm +++ Hebrons Bürgermeister warnt vor Folgen der Abriegelung +++ Chamenei fordert eine wirksame Reaktion auf jede Bedrohung +++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo",
    "titel": "Evacuees from Russia-occupied city where residents ate weeds arrive in Ukraine",
    "link": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-10-31T13:12:46.000Z",
+   "zeit": "2026-10-31T13:45:34.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Residents left the devastated city on Friday following a ceasefire brokered by US First Lady Melania Trump.",
@@ -18,22 +51,33 @@
    "titel": "Linkspartei: Eralp rechnet mit Zustimmung zu Koalitionsgesprächen",
    "link": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-10-31T12:45:22.000Z",
+   "zeit": "2026-10-31T13:45:21.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "In Berlin läuft der Parteitag der Linkspartei. Fraktionschefin Eralp verteidigte das Sondierungspapier mit Grünen sowie SPD und warb für Koalitionsverhandlungen. Sie äußerte sich auch zur umstrittenen Abgeordneten Emde.",
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
-   "titel": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
-   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+   "id": "https://www.nytimes.com/2026/10/02/world/africa/ethiopia-tigray-conflict.html",
+   "titel": "What to Know About Fighting Between Ethiopia and Rebels in Tigray",
+   "link": "https://www.nytimes.com/2026/10/02/world/africa/ethiopia-tigray-conflict.html",
    "quelle": "NYT World",
-   "zeit": "2026-10-31T12:26:58.000Z",
+   "zeit": "2026-10-31T13:22:39.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "With Prime Minister Benjamin Netanyahu fighting to stay in power and President Trump facing a tough midterm, Iran’s leaders expect no major shift in policy.",
+   "text": "Ethiopian officials said Russia had delivered 12 fighter jets and would also send air defense systems, adding to fears of a renewed conflict in the Horn of Africa.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/berlin-elif-eralp-werden-uns-nicht-kleinkriegen-lassen/100266336.html",
+   "titel": "Berlin: Elif Eralp: „Werden uns nicht kleinkriegen lassen“",
+   "link": "https://www.handelsblatt.com/politik/deutschland/berlin-elif-eralp-werden-uns-nicht-kleinkriegen-lassen/100266336.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-31T12:50:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Viele Anwürfe von außen und eine Debatte um die Sicherheit ihrer Familie. Auf einem Landesparteitag spricht die Berliner Spitzenlinke Eralp von einer „Angriffswelle“.",
+   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo",
@@ -82,17 +126,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
-   "titel": "Train Disaster Is a Blow to Spain’s Leader, Already an Election Underdog",
-   "link": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-31T11:42:16.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Prime Minister Pedro Sánchez wanted to campaign on inequality and housing, but the second major rail accident this year has put his government’s competence on trial.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.tagesschau.de/ausland/amerika/midterms-alaska-sullivan-100.html",
    "titel": "Zwei Sullivans in Alaska - wollen Demokraten die Wahl manipulieren?",
    "link": "https://www.tagesschau.de/ausland/amerika/midterms-alaska-sullivan-100.html",
@@ -127,13 +160,13 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-zivilisten-aus-ukrainischer-frontstadt-in-belarus-eingetroffen/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Zivilisten aus ukrainischer Frontstadt in Belarus eingetroffen",
+   "titel": "+++ Ukraine-Krieg +++: Zivilisten aus ukrainischer Frontstadt Oleschky in Belarus eingetroffen",
    "link": "https://www.handelsblatt.com/politik/international/ukraine-zivilisten-aus-ukrainischer-frontstadt-in-belarus-eingetroffen/27982126.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-10-31T09:19:35.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "USA genehmigen Verkauf von 500 Patriot-Raketen an die Ukraine +++ Selenskyj kündigt „wichtige“ Gespräche in der Türkei an +++ Der Newsblog.",
+   "text": "Ukraine: Haben russische Fabrik für Raketentreibstoff angegriffen +++ Ukraine meldet massive Stromausfälle durch russische Drohnenangriffe +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -989,49 +1022,16 @@
    ],
    "text": "Bericht: Die Ukraine setzt Angriffe auf russische Raffinerien auf Druck der USA aus +++ IAEA: Mitarbeiter von AKW Saporischschja bei Drohnenangriff getötet +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/unternehmen/usa-sollen-audi-zehn-prozent-zoll-fuer-einfuhren-angeboten-haben-a-dc3287f0-503e-4f6e-ac10-6cbf6c2adbad",
-   "titel": "USA sollen Audi zehn Prozent Zoll für Einfuhren angeboten haben",
-   "link": "https://www.spiegel.de/wirtschaft/unternehmen/usa-sollen-audi-zehn-prozent-zoll-fuer-einfuhren-angeboten-haben-a-dc3287f0-503e-4f6e-ac10-6cbf6c2adbad#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-10-30T00:35:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Für Autos aus Europa kassieren die USA 15 Prozent Einfuhrzoll, aus Mexiko sogar 25 Prozent. Audi soll künftig deutlich weniger zahlen – als Gegenleistung für den geplanten Fabrikneubau in Georgia.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/usa-sollen-audi-zehn-prozent-zoll-fuer-einfuhren-angeboten-haben-a-dc3287f0-503e-4f6e-ac10-6cbf6c2adbad",
-   "titel": "USA sollen Audi zehn Prozent Zoll für Einfuhren angeboten haben",
-   "link": "https://www.spiegel.de/wirtschaft/usa-sollen-audi-zehn-prozent-zoll-fuer-einfuhren-angeboten-haben-a-dc3287f0-503e-4f6e-ac10-6cbf6c2adbad#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-10-30T00:35:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Für Autos aus Europa kassieren die USA 15 Prozent Einfuhrzoll, aus Mexiko sogar 25 Prozent. Audi soll künftig deutlich weniger zahlen – als Gegenleistung für den geplanten Fabrikneubau in Georgia.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmx2dwzp0z0vo",
-   "titel": "Student-backed election winners demand sweeping resignations in Serbia",
-   "link": "https://www.bbc.co.uk/news/articles/cmx2dwzp0z0vo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-30T00:17:28.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Days after ousting Aleksandar Vučić's party from power, Student List MPs call for top figures to stand down.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 12,
   "DW": 9,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 7,
+  "Handelsblatt": 8,
   "BBC World": 15,
-  "NYT World": 22,
+  "NYT World": 23,
   "EIA Today in Energy": 1
  }
 }
