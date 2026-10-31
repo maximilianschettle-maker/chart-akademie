@@ -1,16 +1,16 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T17:23:32.014Z",
+ "lastUpdated": "2026-10-31T18:23:31.919Z",
  "eintraege": [
   {
-   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/syria-saudi-defense-pact.html",
-   "titel": "Syria Weighs Joining Saudi Mutual Defense Pact as Yemen War Rages",
-   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/syria-saudi-defense-pact.html",
+   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+   "titel": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
+   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
    "quelle": "NYT World",
-   "zeit": "2026-10-31T17:18:30.000Z",
+   "zeit": "2026-10-31T18:15:16.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "A move to join Saudi Arabia’s agreement with Turkey and Pakistan could entangle more countries in the kingdom’s escalating conflict between the Iran-backed Houthis.",
+   "text": "With Prime Minister Benjamin Netanyahu fighting to stay in power and President Trump facing a tough midterm, Iran’s leaders expect no major shift in policy.",
    "sprache": "en"
   },
   {
@@ -18,10 +18,54 @@
    "titel": "Berliner Linke stimmt für Aufnahme von Koalitionsverhandlungen mit Grünen und SPD",
    "link": "https://www.tagesschau.de/inland/innenpolitik/linke-parteitag-koalitionsverhandlungen-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-10-31T16:39:40.000Z",
+   "zeit": "2026-10-31T18:00:40.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "Sechs Wochen nach der Wahl in Berlin ist der Weg frei für rot-grün-rote Koalitionsverhandlungen: Nach Grünen und SPD stimmte nun auch ein Parteitag der Linken dafür. Am Montag sollen die Gespräche beginnen.",
+   "text": "Sechs Wochen nach der Wahl in Berlin ist der Weg frei für rot-grün-rote Koalitionsverhandlungen: Nach Grünen und SPD stimmte nun auch der Parteitag der Linken dafür. Am Montag sollen die Gespräche beginnen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-oleschky-fluechtlinge-in-der-ukraine-angekommen/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Oleschky-Flüchtlinge in der Ukraine angekommen – Evakuierung von ukrainischer Frontstadt beendet",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-oleschky-fluechtlinge-in-der-ukraine-angekommen/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-31T17:59:54.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Erdogan nennt Angriffe auf Handelsschiffe im Schwarzen Meer inakzeptabel +++ Selenskyj: Habe mit Erdogan über bevorstehende Verhandlungen beraten +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/syria-saudi-defense-pact.html",
+   "titel": "Syria Weighs Joining Saudi Mutual Defense Pact as Yemen War Rages",
+   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/syria-saudi-defense-pact.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-31T17:56:18.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A move to join Saudi Arabia’s agreement with Turkey and Pakistan could entangle more countries in the kingdom’s escalating conflict between the Iran-backed Houthis.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/linke-in-berlin-kommen-der-regierungs%C3%BCbernahme-n%C3%A4her/a-79817713",
+   "titel": "Linke in Berlin kommen der Regierungsübernahme näher",
+   "link": "https://www.dw.com/de/linke-in-berlin-kommen-der-regierungsübernahme-näher/a-79817713?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-10-31T17:55:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Auf einem Parteitag ebnet die Linke im Stadtstaat Berlin den Weg zu Koalitionsverhandlungen mit Grünen und SPD. Für Unruhe sorgt weiter ein umstrittener Medienbericht über die potenzielle Regierungschefin Elif Eralp.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-irans-aussenminister-sieht-keine-notwendigkeit-fuer-usa-treffen/100136895.html",
+   "titel": "+++ Iran-Krieg +++: Irans Außenminister sieht keine Notwendigkeit für USA-Treffen",
+   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-irans-aussenminister-sieht-keine-notwendigkeit-fuer-usa-treffen/100136895.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-31T17:32:51.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Rubio: Noch keine Entscheidung zu weiterem US-Militäreinsatz gegen Iran +++ Von Huthi entführter UN-Mitarbeiter tot +++ Iran: US-Angriff auf Fischerboote nahe Insel Keschm +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -91,17 +135,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-oleschky-fluechtlinge-in-der-ukraine-angekommen/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Oleschky-Flüchtlinge in der Ukraine angekommen – Evakuierung von ukrainischer Frontstadt beendet",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-oleschky-fluechtlinge-in-der-ukraine-angekommen/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-31T15:20:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ukraine greift russische Fabrik für Raketentreibstoff an +++ Massive Stromausfälle durch russische Drohnenangriffe in der Ukraine +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.handelsblatt.com/politik/deutschland/berlin-weg-frei-fuer-rot-gruen-rote-koalitionsgespraeche-in-berlin/100266336.html",
    "titel": "Berlin: Weg frei für rot-grün-rote Koalitionsgespräche in Berlin",
    "link": "https://www.handelsblatt.com/politik/deutschland/berlin-weg-frei-fuer-rot-gruen-rote-koalitionsgespraeche-in-berlin/100266336.html",
@@ -157,17 +190,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
-   "titel": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
-   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-31T14:22:20.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "With Prime Minister Benjamin Netanyahu fighting to stay in power and President Trump facing a tough midterm, Iran’s leaders expect no major shift in policy.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
    "titel": "Train Disaster Is Blow to Spain’s Leader, Already Election Underdog",
    "link": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
@@ -177,17 +199,6 @@
    "maerkte": [],
    "text": "Prime Minister Pedro Sánchez wanted to campaign on inequality and housing, but the second major rail accident this year has put his government’s competence on trial.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-irans-aussenminister-sieht-keine-notwendigkeit-fuer-usa-treffen/100136895.html",
-   "titel": "+++ Iran-Krieg +++: Irans Außenminister sieht keine Notwendigkeit für USA-Treffen",
-   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-irans-aussenminister-sieht-keine-notwendigkeit-fuer-usa-treffen/100136895.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-31T14:08:01.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Iran: US-Angriff auf Fischerboote nahe Insel Keschm +++ Hebrons Bürgermeister warnt vor Folgen der Abriegelung +++ Chamenei fordert eine wirksame Reaktion auf jede Bedrohung +++ Der Newsblog.",
-   "sprache": "de"
   },
   {
    "id": "https://www.nytimes.com/2026/10/02/world/africa/ethiopia-tigray-conflict.html",
@@ -1007,27 +1018,16 @@
    "maerkte": [],
    "text": "Imaan Mazari and Hadi Ali Chattha were charged over an incident in 2024, when England's cricket team was touring Pakistan.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/editorial-der-hacker-in-ihrem-rechner/100265829.html",
-   "titel": "Editorial: Der Hacker in Ihrem Rechner",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/editorial-der-hacker-in-ihrem-rechner/100265829.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-30T07:17:20.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die PHP-Lücke war das größte Cyberereignis seit Jahren. Sie hat gezeigt, was auf uns zukommt. Dass sie aus der politischen Debatte schon wieder verschwunden ist, könnte sich rächen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 14,
-  "DW": 8,
+  "DW": 9,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 6,
   "BBC World": 11,
-  "NYT World": 25,
+  "NYT World": 24,
   "EIA Today in Energy": 1
  }
 }
