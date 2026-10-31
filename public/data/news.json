@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T09:23:31.298Z",
+ "lastUpdated": "2026-10-31T10:23:34.555Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/polen-krise-um-verfassungsgericht-in-polen-spitzt-sich-zu/100266281.html",
+   "titel": "Polen: Krise um Verfassungsgericht in Polen spitzt sich zu",
+   "link": "https://www.handelsblatt.com/politik/international/polen-krise-um-verfassungsgericht-in-polen-spitzt-sich-zu/100266281.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-31T10:05:47.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Erneut spaltet ein geplanter Umbau des Verfassungsgerichts die polnische Gesellschaft. Als Folge der Eskalation erklären zwei Botschafter nun ihren Rücktritt.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-genehmigen-verkauf-von-500-patriot-raketen-an-die-ukraine/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: USA genehmigen Verkauf von 500 Patriot-Raketen an die Ukraine",
@@ -1012,17 +1023,6 @@
    "maerkte": [],
    "text": "Nach Auszählung aller Stimmen bleibt Netanjahus Likud-Partei Wahlsiegerin. Doch der Abstand zur Opposition ist gering – und für beide Seiten scheint die Regierungsbildung unmöglich.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/elif-eralp-angst-vor-hamas-unterstuetzern-wird-zur-machtfrage-in-berlin/100265958.html",
-   "titel": "Elif Eralp: „Toxische Mischung“ – Angst vor Hamas-Unterstützern wird zur Machtfrage in Berlin",
-   "link": "https://www.handelsblatt.com/politik/deutschland/elif-eralp-angst-vor-hamas-unterstuetzern-wird-zur-machtfrage-in-berlin/100265958.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-29T18:55:54.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die bekannt gewordene Angst der Berliner Spitzenkandidatin Elif Eralp vor Hamas-Sympathisanten sorgt für heftige Kritik. Politiker von CDU und SPD stellen ihre Eignung infrage.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1030,9 +1030,9 @@
   "DW": 8,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 6,
-  "Handelsblatt": 5,
+  "Handelsblatt": 6,
   "BBC World": 15,
-  "NYT World": 26,
+  "NYT World": 22,
   "EIA Today in Energy": 1
  }
 }
