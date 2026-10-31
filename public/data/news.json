@@ -1,7 +1,84 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T15:23:31.444Z",
+ "lastUpdated": "2026-10-31T16:23:34.772Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/linke-parteitag-koalitionsverhandlungen-100.html",
+   "titel": "Berliner Linke stimmt für Aufnahme von Koalitionsverhandlungen mit Grünen und SPD",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/linke-parteitag-koalitionsverhandlungen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-31T16:13:23.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In Berlin hat sich nach Grünen und SPD nun auch die Linke für Koalitionsverhandlungen ausgesprochen. Auf einem Parteitag stimmte eine klare Mehrheit dafür. Sechs Wochen nach der Wahl können die Gespräche damit beginnen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/afrika/westsahara-un-mission-100.html",
+   "titel": "Aus für UN-Friedensmission in der Westsahara nach Veto im UN-Sicherheitsrat",
+   "link": "https://www.tagesschau.de/ausland/afrika/westsahara-un-mission-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-31T16:12:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach mehr als 30 Jahren kommt nun das Aus für die UN-Friedensmission MINURSO: Russland hat die Verlängerung im UN-Sicherheitsrat blockiert. Damit müssen zivile und militärische Kräfte das Gebiet in den kommenden Tagen verlassen - auch deuts",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
+   "titel": "Linkspartei: Eralp rechnet mit Zustimmung zu Koalitionsgesprächen",
+   "link": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-31T16:07:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In Berlin läuft der Parteitag der Linkspartei. Fraktionschefin Eralp verteidigte das Sondierungspapier mit Grünen sowie SPD und warb für Koalitionsverhandlungen. Sie äußerte sich auch zur umstrittenen Abgeordneten Emde.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo",
+   "titel": "Ukrainian evacuees reunite with family after years trapped in Russia-occupied city",
+   "link": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-31T15:50:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Many residents left Oleshky on Friday following a ceasefire brokered by US First Lady Melania Trump.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/bio-vordenker-niggli-rechnet-mit-oekolandbau-ab-bio-bringt-fuers-klima-nichts-accg-201602935.html",
+   "titel": "Öko-Vordenker Urs Niggli: „Bio bringt fürs Klima nichts“",
+   "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/bio-vordenker-niggli-rechnet-mit-oekolandbau-ab-bio-bringt-fuers-klima-nichts-accg-201602935.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-10-31T15:44:04.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Schweizer Urs Niggli gilt als Vordenker des Ökolandbaus und hat ihn jahrzehntelang geprägt. Einst war er euphorisch, heute blickt er kritisch auf die Branche und sagt: Mit Ökolandbau lässt sich die Welt nicht ernähren.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/audi-chef-doellner-und-trump-wie-moralisch-muessen-manager-sein-accg-201628474.html",
+   "titel": "Wahlkampf in Amerika: Ist es moralisch in Ordnung, wenn der Audi-Chef mit Trump auftritt?",
+   "link": "https://www.faz.net/aktuell/wirtschaft/audi-chef-doellner-und-trump-wie-moralisch-muessen-manager-sein-accg-201628474.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-10-31T15:27:04.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Gernot Döllner macht Werbung für Donald Trump, kurz vor den wichtigen Zwischenwahlen. Das wirft grundsätzliche Fragen auf zur politischen Verantwortung von Managern. Auch wegen der AfD.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
+   "titel": "Rare Evacuation Announced by Melania Trump Begins in Ukrainian City of Oleshky",
+   "link": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-31T15:24:29.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A few days of truce allowed the removal of remaining civilians from Oleshky, which continual Russian attacks have made all but uninhabitable.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-oleschky-fluechtlinge-in-der-ukraine-angekommen/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Oleschky-Flüchtlinge in der Ukraine angekommen – Evakuierung von ukrainischer Frontstadt beendet",
@@ -14,6 +91,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.handelsblatt.com/politik/deutschland/berlin-weg-frei-fuer-rot-gruen-rote-koalitionsgespraeche-in-berlin/100266336.html",
+   "titel": "Berlin: Elif Eralp: „Werden uns nicht kleinkriegen lassen“",
+   "link": "https://www.handelsblatt.com/politik/deutschland/berlin-weg-frei-fuer-rot-gruen-rote-koalitionsgespraeche-in-berlin/100266336.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-31T15:19:50.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Viele Anwürfe von außen und die Debatte um Koalitionsverhandlungen. Auf einem Landesparteitag spricht die Berliner Spitzenlinke Eralp von einer „Angriffswelle“.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.handelsblatt.com/politik/deutschland/berlin-elif-eralp-werden-uns-nicht-kleinkriegen-lassen/100266336.html",
    "titel": "Berlin: Elif Eralp: „Werden uns nicht kleinkriegen lassen“",
    "link": "https://www.handelsblatt.com/politik/deutschland/berlin-elif-eralp-werden-uns-nicht-kleinkriegen-lassen/100266336.html",
@@ -23,17 +111,6 @@
    "maerkte": [],
    "text": "Viele Anwürfe von außen und eine Debatte um die Sicherheit ihrer Familie. Auf einem Landesparteitag spricht die Berliner Spitzenlinke Eralp von einer „Angriffswelle“.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
-   "titel": "Rare Evacuation Announced by Melania Trump Begins in Ukrainian City of Oleshky",
-   "link": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-31T15:19:49.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A few days of truce allowed the removal of remaining civilians from Oleshky, which continual Russian attacks have made all but uninhabitable.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/oleschky-ukraine-100.html",
@@ -56,17 +133,6 @@
    "maerkte": [],
    "text": "Der Oberste Führer der Islamischen Republik, den die Öffentlichkeit nicht zu Gesicht bekommt, soll gesprochen haben. Sein Außenminister sekundiert.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo",
-   "titel": "Evacuees from Russia-occupied city where residents ate weeds arrive in Ukraine",
-   "link": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-31T14:53:34.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Residents left the devastated city on Friday following a ceasefire brokered by US First Lady Melania Trump.",
-   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cmwyv2y7g9l8o",
@@ -110,17 +176,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Iran: US-Angriff auf Fischerboote nahe Insel Keschm +++ Hebrons Bürgermeister warnt vor Folgen der Abriegelung +++ Chamenei fordert eine wirksame Reaktion auf jede Bedrohung +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
-   "titel": "Linkspartei: Eralp rechnet mit Zustimmung zu Koalitionsgesprächen",
-   "link": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-31T13:45:21.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In Berlin läuft der Parteitag der Linkspartei. Fraktionschefin Eralp verteidigte das Sondierungspapier mit Grünen sowie SPD und warb für Koalitionsverhandlungen. Sie äußerte sich auch zur umstrittenen Abgeordneten Emde.",
    "sprache": "de"
   },
   {
@@ -963,71 +1018,14 @@
    "maerkte": [],
    "text": "Gemeinsam unabhängiger werden - das ist das große Ziel der angestrebten neuen Allianz zwischen Kanada und der EU. Ein Beispiel: die Zusammenarbeit im Bereich Künstlicher Intelligenz. Von Giselle Ucar.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-election-coalition-scenarios.html",
-   "titel": "Israel’s Election Results Show No Clear Winner. What Are the Paths to a New Government?",
-   "link": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-election-coalition-scenarios.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-30T06:31:57.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Deadlock is possible, as neither the bloc of Prime Minister Benjamin Netanyahu nor his main challenger have won a majority. But there are still paths to a new government.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
-   "titel": "What Israeli Election Results Reveal About the Electorate",
-   "link": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-30T06:31:44.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Some groups stood by Prime Minister Benjamin Netanyahu’s party, but support fell off among others. Turnout was also a striking factor in the election.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/salzgitter-hebt-gewinnprognose-an-aktie-steigt-um-zehn-prozent-accg-201633228.html",
-   "titel": "Gewinnprognose erhöht: Aufwärts mit Salzgitter",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/salzgitter-hebt-gewinnprognose-an-aktie-steigt-um-zehn-prozent-accg-201633228.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-10-30T06:25:29.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Zum zweiten Mal in diesem Jahr schraubt Salzgitter die Gewinnerwartungen nach oben. Dem Stahlkonzern hilft dabei auch der gestiegene Kupferpreis. Der Börse gefallen die Aussichten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/eu-kanada-zweiter-tag-100.html",
-   "titel": "EU-Kanada-Gipfel: \"Die neue Allianz ist keine Marketing-Übung\"",
-   "link": "https://www.tagesschau.de/ausland/amerika/eu-kanada-zweiter-tag-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-30T05:46:43.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Beim EU-Kanada-Gipfel ging es auf europäischer Seite bislang viel darum, wie die neue Allianz denn heißen soll. Kanadas Premier Carney sagt dazu: \"Der Name ist egal.\" Heute sollen konkrete Vereinbarungen folgen. Von Martin Ganslmeier.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/30/world/middleeast/arab-voters-israel-election-taibe.html",
-   "titel": "An Arab Town in Israel Celebrates the Election but Wonders What Will Change",
-   "link": "https://www.nytimes.com/2026/10/30/world/middleeast/arab-voters-israel-election-taibe.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-30T04:01:20.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Gains for Arab-led parties have electrified Taibe, in central Israel, even as voters elsewhere in Israel say they have no place in any future government.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
+  "tagesschau": 14,
   "DW": 8,
   "Spiegel Wirtschaft": 5,
-  "FAZ Wirtschaft": 5,
-  "Handelsblatt": 7,
+  "FAZ Wirtschaft": 6,
+  "Handelsblatt": 6,
   "BBC World": 12,
   "NYT World": 24,
   "EIA Today in Energy": 1
