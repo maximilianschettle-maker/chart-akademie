@@ -1,7 +1,84 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T08:23:36.565Z",
+ "lastUpdated": "2026-10-31T09:23:31.298Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-genehmigen-verkauf-von-500-patriot-raketen-an-die-ukraine/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: USA genehmigen Verkauf von 500 Patriot-Raketen an die Ukraine",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-genehmigen-verkauf-von-500-patriot-raketen-an-die-ukraine/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-31T09:19:35.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Belarus: Evakuierte aus Oleschky eingetroffen +++ Lawrow – keine Entspannung zwischen Moskau und Washington +++ Selenskyj kündigt „wichtige“ Gespräche in der Türkei an +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/cw4g1vlj4v2jo",
+   "titel": "CCTV, zip ties and election watchers: How US mail-in votes are secured and counted",
+   "link": "https://www.bbc.co.uk/news/videos/cw4g1vlj4v2jo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-31T09:16:14.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "BBC Verify goes to an election centre to get a behind-the-scenes look at how mail-in ballots for the US midterm elections are processed.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-evakuierung-oleschky-100.html",
+   "titel": "Evakuierungsaktion im ukrainischen Oleschky abgeschlossen",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-evakuierung-oleschky-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-31T09:14:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Es war die größte gemeinsame Aktion von Ukrainern und Russen seit Kriegsbeginn: Mit 25 Bussen wurden Menschen aus der Frontstadt Oleschky gebracht. Ein Teil von ihnen ist bereits in Belarus angekommen, um in die Ukraine weiterzureisen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
+   "titel": "Train Disaster Is a Blow to Spain’s Leader, Already an Election Underdog",
+   "link": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-31T09:06:03.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Prime Minister Pedro Sánchez wanted to campaign on inequality and housing, but the second major rail accident this year has put his government’s competence on trial.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+   "titel": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
+   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-31T09:05:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Prime Minister Benjamin Netanyahu is jockeying to stay in power, and President Trump is in a tough midterm fight, yet Iran’s leaders do not expect a major shift in Israeli or U.S. policy.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/handelskonflikt-nicht-zulassen-dass-die-industrielle-basis-verloren-geht/100265455.html",
+   "titel": "Handelskonflikt: Steinmeier in Peking: „Nicht zulassen, dass die industrielle Basis verloren geht“",
+   "link": "https://www.handelsblatt.com/politik/international/handelskonflikt-nicht-zulassen-dass-die-industrielle-basis-verloren-geht/100265455.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-31T08:58:46.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Beim Besuch des Bundespräsidenten in der Volksrepublik zeigt sich die chinesische Seite erst „robust“, dann versöhnlich. Wie ernst nimmt Peking Europas Sorge um das hohe Handelsdefizit?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c60me298k1yeo",
+   "titel": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
+   "link": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-31T08:49:35.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.dw.com/de/ukraine-soll-nachschub-an-patriot-raketen-erhalten-news-kompakt-das-wichtigste-kurz-gefasst/a-79813926",
    "titel": "Ukraine soll Nachschub an Patriot-Raketen erhalten - News kompakt: Das Wichtigste kurz gefasst",
@@ -329,28 +406,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/c60me298k1yeo",
-   "titel": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
-   "link": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-30T16:26:11.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/handelskonflikt-nicht-zulassen-dass-die-industrielle-basis-verloren-geht/100265455.html",
-   "titel": "Handelskonflikt: Steinmeier in Peking: „Nicht zulassen, dass die industrielle Basis verloren geht“",
-   "link": "https://www.handelsblatt.com/politik/international/handelskonflikt-nicht-zulassen-dass-die-industrielle-basis-verloren-geht/100265455.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-30T16:13:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Beim Besuch des Bundespräsidenten in der Volksrepublik zeigt sich die chinesische Seite erst „robust“, dann versöhnlich. Wie ernst nimmt Peking Europas Sorge um das hohe Handelsdefizit?",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/articles/c63r529wn2vzo",
    "titel": "Democratic senator blames Egypt press crackdown on US military aid decision",
    "link": "https://www.bbc.co.uk/news/articles/c63r529wn2vzo?at_medium=RSS&at_campaign=rss",
@@ -432,6 +487,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.dw.com/de/donald-trump-verliert-wichtige-verb%C3%BCndete-nach-wahlen-in-serbien-und-brasilien/a-79800362",
+   "titel": "Donald Trump verliert wichtige Verbündete nach Wahlen in Serbien und Brasilien",
+   "link": "https://www.dw.com/de/donald-trump-verliert-wichtige-verbündete-nach-wahlen-in-serbien-und-brasilien/a-79800362?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-10-30T14:33:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Bolsonaro kommt nicht an die Macht, Vucic wurde abgewählt und selbst Netanjahu ist geschwächt: US-Präsident Donald Trump ist mit aktuellen globalen Wahlergebnissen unzufrieden - und spricht wieder von Betrug.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.dw.com/de/us-pr%C3%A4sident-trump-verliert-einen-wichtigen-verb%C3%BCndeten-nach-der-serbien-wahl-und-gewinnt-in-brasilien-keinen-neuen-hinzu/a-79800362",
    "titel": "US-Präsident Trump verliert einen wichtigen Verbündeten nach der Serbien-Wahl und gewinnt in Brasilien keinen neuen hinzu",
    "link": "https://www.dw.com/de/us-präsident-trump-verliert-einen-wichtigen-verbündeten-nach-der-serbien-wahl-und-gewinnt-in-brasilien-keinen-neuen-hinzu/a-79800362?maca=de-rss-de-all-1119-xml-mrss",
@@ -476,6 +542,17 @@
     "eurusd"
    ],
    "text": "Mehr als 55 Milliarden Dollar Gewinn haben die fünf „Big Oil“-Konzerne im dritten Quartal verbucht. Sie profitieren vom Ölpreisanstieg und Raffineriegewinnen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/serbien-nach-aleksandar-vucics-wahlniederlage-die-sieger-werden-ungeduldig/a-79805086",
+   "titel": "Serbien nach Aleksandar Vucics Wahlniederlage: Die Sieger werden ungeduldig",
+   "link": "https://www.dw.com/de/serbien-nach-aleksandar-vucics-wahlniederlage-die-sieger-werden-ungeduldig/a-79805086?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-10-30T12:42:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach dem Wahlsieg der Studierendenliste bröckelt Aleksandar Vucics Machtapparat. Viele Bürger fordern rasch Gerechtigkeit. Doch noch haben die Verlierer wichtige Machthebel in Behörden, Justiz und Verwaltung in der Hand.",
    "sprache": "de"
   },
   {
@@ -756,17 +833,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-genehmigen-verkauf-von-500-patriot-raketen-an-die-ukraine/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: USA genehmigen Verkauf von 500 Patriot-Raketen an die Ukraine",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-genehmigen-verkauf-von-500-patriot-raketen-an-die-ukraine/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-30T04:10:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Lawrow – keine Entspannung zwischen Moskau und Washington +++ Selenskyj kündigt „wichtige“ Gespräche in der Türkei an +++ Evakuierung aus Oleschky abgeschlossen +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.nytimes.com/2026/10/30/world/middleeast/arab-voters-israel-election-taibe.html",
    "titel": "An Arab Town in Israel Celebrates the Election but Wonders What Will Change",
    "link": "https://www.nytimes.com/2026/10/30/world/middleeast/arab-voters-israel-election-taibe.html",
@@ -957,85 +1023,15 @@
    "maerkte": [],
    "text": "Die bekannt gewordene Angst der Berliner Spitzenkandidatin Elif Eralp vor Hamas-Sympathisanten sorgt für heftige Kritik. Politiker von CDU und SPD stellen ihre Eignung infrage.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/29/world/americas/flavio-bolsonaro-trump-brazil-us.html",
-   "titel": "Trump and His Aides Helped Bolsonaro Flee Brazil and Enter U.S.",
-   "link": "https://www.nytimes.com/2026/10/29/world/americas/flavio-bolsonaro-trump-brazil-us.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-29T18:53:47.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Trump ensured Flávio Bolsonaro, who lost a presidential election in Brazil and faces multiple criminal investigations there, could enter the United States, U.S. officials said.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/giorgia-melonis-haushaltspolitik-lavieren-statt-reformen-201632875.html",
-   "titel": "Haushaltspolitik in Italien: Meloni wurstelt sich durch",
-   "link": "https://www.faz.net/aktuell/wirtschaft/giorgia-melonis-haushaltspolitik-lavieren-statt-reformen-201632875.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-10-29T18:44:24.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Die italienische Ministerpräsidentin lässt einen Haushaltsplan beschließen, dem die klare Stoßrichtung fehlt. Immerhin verschreckt er nicht die ausländischen Investoren. Doch das reformbedürftige Italien braucht mehr.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/industrie/autoindustrie-audi-als-dealmaker-bmw-und-mercedes-hoffen-auf-zollerleichterung/100265925.html",
-   "titel": "Autoindustrie: Audi als Dealmaker? Auch BMW und Mercedes hoffen auf Zollerleichterung",
-   "link": "https://www.handelsblatt.com/unternehmen/industrie/autoindustrie-audi-als-dealmaker-bmw-und-mercedes-hoffen-auf-zollerleichterung/100265925.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-29T18:13:24.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Bislang hat die VW-Tochter nur mündliche Zusagen der US-Regierung für Zollerleichterungen. Sollte Washington Wort halten, könnte daraus ein Deal für die deutsche Autoindustrie werden.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/nahost-bombardiert-trump-nach-den-zwischenwahlen-den-iran/100265471.html",
-   "titel": "Nahost: USA und Israel drohen den Mullahs – eskaliert Trump nach den Zwischenwahlen den Krieg?",
-   "link": "https://www.handelsblatt.com/politik/international/nahost-bombardiert-trump-nach-den-zwischenwahlen-den-iran/100265471.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-29T17:31:53.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Das US-Militär bereitet sich auf schwerere Bombenangriffe vor, das Regime in Teheran will mit heftigen Attacken antworten. Die könnten auch Europa treffen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/berlin-abgeordnetenhaus-erste-sitzung-100.html",
-   "titel": "Linken-Politikerin Klein neue Parlamentspräsidentin",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/berlin-abgeordnetenhaus-erste-sitzung-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-29T17:31:06.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Knapp sechs Wochen nach der Wahl in Berlin ist das Abgeordnetenhaus zu seiner konstituierenden Sitzung zusammengekommen. Die Linken-Politikerin Klein ist zur neuen Präsidentin des Parlaments gewählt worden.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/29/world/africa/rwanda-sanctions-m23-congo.html",
-   "titel": "U.S. Hits Rwanda With New Sanctions Over a Conflict Trump Declared ‘Ended’",
-   "link": "https://www.nytimes.com/2026/10/29/world/africa/rwanda-sanctions-m23-congo.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-29T17:13:48.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "The Treasury Department accused Rwanda of undermining a U.S.-brokered peace agreement by supporting a rebel group in the eastern Democratic Republic of Congo.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 10,
   "DW": 8,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 5,
-  "BBC World": 14,
+  "BBC World": 15,
   "NYT World": 26,
   "EIA Today in Energy": 1
  }
