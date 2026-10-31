@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T12:23:29.522Z",
+ "lastUpdated": "2026-10-31T13:23:33.300Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo",
+   "titel": "Evacuees from Russia-occupied city where residents ate weeds arrive in Ukraine",
+   "link": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-31T13:12:46.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Residents left the devastated city on Friday following a ceasefire brokered by US First Lady Melania Trump.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
+   "titel": "Linkspartei: Eralp rechnet mit Zustimmung zu Koalitionsgesprächen",
+   "link": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-31T12:45:22.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In Berlin läuft der Parteitag der Linkspartei. Fraktionschefin Eralp verteidigte das Sondierungspapier mit Grünen sowie SPD und warb für Koalitionsverhandlungen. Sie äußerte sich auch zur umstrittenen Abgeordneten Emde.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+   "titel": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
+   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-31T12:26:58.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "With Prime Minister Benjamin Netanyahu fighting to stay in power and President Trump facing a tough midterm, Iran’s leaders expect no major shift in policy.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo",
    "titel": "US approves sale of 500 Patriot missiles to Ukraine",
@@ -23,17 +56,6 @@
    "maerkte": [],
    "text": "Auch rund eine Woche nach ihrem Wahlsieg in Serbien staunt die Studentenbewegung noch über ihren Erfolg. Ihre Mitglieder merken aber im Alltag: Das System von Ex-Präsident Vucic verschwindet nicht über Nacht. Von A. Bachmann und I. Bafas.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo",
-   "titel": "Evacuees from Russia-occupied city where residents ate weeds on way to Ukraine",
-   "link": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-31T12:05:04.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Residents left the devastated city on Friday following a ceasefire brokered by US First Lady Melania Trump.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/afd-leak-die-afd-ihre-trump-nahe-agentur-und-der-aerger-um-380.000-euro/100265075.html",
@@ -69,17 +91,6 @@
    "maerkte": [],
    "text": "Prime Minister Pedro Sánchez wanted to campaign on inequality and housing, but the second major rail accident this year has put his government’s competence on trial.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
-   "titel": "Linkspartei: Eralp rechnet mit Zustimmung zu Koalitionsgesprächen",
-   "link": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-31T11:15:09.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In Berlin läuft der Parteitag der Linkspartei. Fraktionschefin Eralp verteidigte das Sondierungspapier mit Grünen sowie SPD und warb für Koalitionsverhandlungen. Sie äußerte sich auch zur umstrittenen Abgeordneten Emde.",
-   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/midterms-alaska-sullivan-100.html",
@@ -138,7 +149,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/videos/cw4g1vlj4v2jo",
-   "titel": "CCTV, zip ties and election watchers: How US mail-in votes are secured and counted",
+   "titel": "CCTV and zip ties: How US mail-in votes are secured and counted",
    "link": "https://www.bbc.co.uk/news/videos/cw4g1vlj4v2jo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-10-31T09:16:14.000Z",
@@ -157,17 +168,6 @@
    "maerkte": [],
    "text": "Es war die größte gemeinsame Aktion von Ukrainern und Russen seit Kriegsbeginn: Mit 25 Bussen wurden Menschen aus der Frontstadt Oleschky gebracht. Ein Teil von ihnen ist bereits in Belarus angekommen, um in die Ukraine weiterzureisen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
-   "titel": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
-   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-31T09:05:41.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Prime Minister Benjamin Netanyahu is jockeying to stay in power, and President Trump is in a tough midterm fight, yet Iran’s leaders do not expect a major shift in Israeli or U.S. policy.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/handelskonflikt-nicht-zulassen-dass-die-industrielle-basis-verloren-geht/100265455.html",
