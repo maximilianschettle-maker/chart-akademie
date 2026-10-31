@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T02:23:34.759Z",
+ "lastUpdated": "2026-10-31T03:23:31.881Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmly016ep243o",
+   "titel": "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it",
+   "link": "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-31T02:39:25.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "A century-old paper mill in Témiscaming, Quebec is indefinitely closed after the US imposed 50% tariffs on its products, putting hundreds out of work.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/crz9824d5e88o",
    "titel": "Police deployed during stand-off over control of top Poland court",
@@ -97,7 +108,7 @@
    "titel": "Ukrainians Are Fighting Russians Inside Underground Gas Pipes. I Went in One.",
    "link": "https://www.nytimes.com/2026/10/30/world/europe/ukraine-russia-natural-gas-pipes.html",
    "quelle": "NYT World",
-   "zeit": "2026-10-30T20:40:51.000Z",
+   "zeit": "2026-10-30T20:40:52.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "I experienced war’s subterranean future as drones dominate the skies. I didn’t like it.",
@@ -1016,21 +1027,10 @@
    "maerkte": [],
    "text": "Die 1000 Condor-Pilotinnen und -Piloten haben sich mit der Fluggesellschaft auf einen langfristigen Tariffrieden verständigt. Sie verzichten gegen Beschäftigungszusagen unter anderem für zwei Jahre auf Gehaltserhöhungen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/29/world/americas/haiti-elections-postponed-violence.html",
-   "titel": "Haiti Postpones Elections as Gang Violence Runs Rampant",
-   "link": "https://www.nytimes.com/2026/10/29/world/americas/haiti-elections-postponed-violence.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-29T15:29:56.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Haiti is in the throes of debilitating gang violence, which has kept officials from organizing an election to pick a new president.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 8,
   "DW": 7,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 6,
