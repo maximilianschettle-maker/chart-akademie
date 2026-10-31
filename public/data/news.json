@@ -1,17 +1,39 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T19:23:48.564Z",
+ "lastUpdated": "2026-10-31T20:04:04.532Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
+   "titel": "Evacuees Arrive to Safety From Besieged Ukrainian City of Oleshky",
+   "link": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-31T19:44:20.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A few days of truce allowed the removal of remaining civilians from Oleshky, which continual Russian attacks have made all but uninhabitable.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
    "titel": "Linkspartei: Eralp rechnet mit Zustimmung zu Koalitionsgesprächen",
    "link": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-10-31T19:09:52.000Z",
+   "zeit": "2026-10-31T19:39:40.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "In Berlin läuft der Parteitag der Linkspartei. Fraktionschefin Eralp verteidigte das Sondierungspapier mit Grünen sowie SPD und warb für Koalitionsverhandlungen. Sie äußerte sich auch zur umstrittenen Abgeordneten Emde.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o",
+   "titel": "'We came back from hell', say Ukrainians after years in Russia-occupied frontline city",
+   "link": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-31T19:22:26.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "One evacuated couple says they crossed minefields in Oleshky in a search for food.",
+   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
@@ -80,6 +102,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.bbc.co.uk/news/videos/cmy83w0jwznpo",
+   "titel": "Emotional reunions with loved ones for Oleshky evacuees",
+   "link": "https://www.bbc.co.uk/news/videos/cmy83w0jwznpo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-31T16:55:47.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The BBC's Dan Johnson travelled to the northern Ukrainian border with Belarus after evacuated Oleshky residents arrived in buses and ambulances following a temporary ceasefire.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.tagesschau.de/ausland/afrika/westsahara-un-mission-100.html",
    "titel": "Aus für UN-Friedensmission in der Westsahara nach Veto im UN-Sicherheitsrat",
    "link": "https://www.tagesschau.de/ausland/afrika/westsahara-un-mission-100.html",
@@ -122,17 +155,6 @@
    "maerkte": [],
    "text": "Gernot Döllner macht Werbung für Donald Trump, kurz vor den wichtigen Zwischenwahlen. Das wirft grundsätzliche Fragen auf zur politischen Verantwortung von Managern. Auch wegen der AfD.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
-   "titel": "Evacuees Arrive to Safety From Besieged Ukrainian City of Oleshky",
-   "link": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-31T15:24:29.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A few days of truce allowed the removal of remaining civilians from Oleshky, which continual Russian attacks have made all but uninhabitable.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/berlin-weg-frei-fuer-rot-gruen-rote-koalitionsgespraeche-in-berlin/100266336.html",
@@ -994,39 +1016,15 @@
    "maerkte": [],
    "text": "Die Krise trifft Audi immer härter. Die Ingolstädter erzielen nur noch einen sehr geringen Gewinn. Und Unternehmenschef Döllner steht wegen seines Auftritts in Trumps Wahlkampf weiter unter Druck.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/kampf-den-schattenflotten-was-kann-die-eu-ohne-die-usa-tun/a-79797804",
-   "titel": "Kampf den Schattenflotten: Was kann die EU ohne die USA tun?",
-   "link": "https://www.dw.com/de/kampf-den-schattenflotten-was-kann-die-eu-ohne-die-usa-tun/a-79797804?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-10-30T07:58:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Die USA sollen Medienberichten zufolge erwägen, sogenannte \"Dark Tankers\" in legale Schiffe umzuwandeln, um ihnen den Transport von Rohöl zu ermöglichen, das nicht den Sanktionen unterliegt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/crq5nplyvlg8o",
-   "titel": "Human rights lawyer couple sentenced to 10 years' prison in Pakistan",
-   "link": "https://www.bbc.co.uk/news/articles/crq5nplyvlg8o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-30T07:53:38.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Imaan Mazari and Hadi Ali Chattha were charged over an incident in 2024, when England's cricket team was touring Pakistan.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 14,
+  "tagesschau": 13,
   "DW": 9,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 6,
-  "BBC World": 11,
+  "BBC World": 12,
   "NYT World": 24,
   "EIA Today in Energy": 1
  }
