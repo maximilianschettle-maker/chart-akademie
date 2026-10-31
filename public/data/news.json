@@ -1,7 +1,75 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T11:23:30.439Z",
+ "lastUpdated": "2026-10-31T12:23:29.522Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo",
+   "titel": "US approves sale of 500 Patriot missiles to Ukraine",
+   "link": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-31T12:21:25.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The American-made interceptors are the only effective weapon for downing Russia's ballistic missiles.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/serbien-studenten-nach-wahlsieg-100.html",
+   "titel": "Das System Vucic in Serbien: Besiegt, aber nicht verschwunden",
+   "link": "https://www.tagesschau.de/ausland/europa/serbien-studenten-nach-wahlsieg-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-31T12:08:42.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Auch rund eine Woche nach ihrem Wahlsieg in Serbien staunt die Studentenbewegung noch über ihren Erfolg. Ihre Mitglieder merken aber im Alltag: Das System von Ex-Präsident Vucic verschwindet nicht über Nacht. Von A. Bachmann und I. Bafas.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo",
+   "titel": "Evacuees from Russia-occupied city where residents ate weeds on way to Ukraine",
+   "link": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-10-31T12:05:04.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Residents left the devastated city on Friday following a ceasefire brokered by US First Lady Melania Trump.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/afd-leak-die-afd-ihre-trump-nahe-agentur-und-der-aerger-um-380.000-euro/100265075.html",
+   "titel": "AfD-Leak: Wahlkampf auf texanisch: Die AfD, ihre Trump-nahe Agentur und der Ärger um 380.000 Euro",
+   "link": "https://www.handelsblatt.com/politik/deutschland/afd-leak-die-afd-ihre-trump-nahe-agentur-und-der-aerger-um-380.000-euro/100265075.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-31T12:00:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Für den Wahlkampf 2017 setzte die Partei auf die Agentur des Mannes, der „das republikanische Internet erfand“. Interna zeigen, wie Weidel dabei auch den Kontakt zu Steve Bannon suchte.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/merz-asienreise-abschluss-100.html",
+   "titel": "Merz nach Asienreise: \"Hat sich in mehrfacher Hinsicht gelohnt\"",
+   "link": "https://www.tagesschau.de/ausland/asien/merz-asienreise-abschluss-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-31T11:56:25.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Fünf Tage lang war Kanzler Merz in Asien. Es ging um Geschäfte mit einer Boom-Region, Allianzen gegen Großmächte, um Cybersicherheit und Verteidigung. Eine Auszeit von der deutschen Innenpolitik, die sich laut Merz gelohnt hat. Von D. Peppi",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
+   "titel": "Train Disaster Is a Blow to Spain’s Leader, Already an Election Underdog",
+   "link": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-31T11:42:16.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Prime Minister Pedro Sánchez wanted to campaign on inequality and housing, but the second major rail accident this year has put his government’s competence on trial.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
    "titel": "Linkspartei: Eralp rechnet mit Zustimmung zu Koalitionsgesprächen",
@@ -89,17 +157,6 @@
    "maerkte": [],
    "text": "Es war die größte gemeinsame Aktion von Ukrainern und Russen seit Kriegsbeginn: Mit 25 Bussen wurden Menschen aus der Frontstadt Oleschky gebracht. Ein Teil von ihnen ist bereits in Belarus angekommen, um in die Ukraine weiterzureisen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
-   "titel": "Train Disaster Is a Blow to Spain’s Leader, Already an Election Underdog",
-   "link": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-31T09:06:03.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Prime Minister Pedro Sánchez wanted to campaign on inequality and housing, but the second major rail accident this year has put his government’s competence on trial.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
@@ -202,7 +259,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cmly016ep243o",
-   "titel": "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it",
+   "titel": "The fight to save Canadian town threatened by Trump's tariffs",
    "link": "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-10-31T02:39:25.000Z",
@@ -253,17 +310,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The Salvadoran government dispatched more than 2,000 troops to Haiti this week in an extraordinary deployment on foreign soil.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo",
-   "titel": "US approves sale of 500 Patriot missiles to Ukraine",
-   "link": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-31T00:40:43.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The American-made interceptors are the only effective weapon for downing Russia's ballistic missiles.",
    "sprache": "en"
   },
   {
@@ -976,58 +1022,14 @@
    "maerkte": [],
    "text": "Days after ousting Aleksandar Vučić's party from power, Student List MPs call for top figures to stand down.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/israel-wahl-ergebnis-102.html",
-   "titel": "Wahl in Israel: Alle Stimmen ausgezählt - Patt bleibt bestehen",
-   "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-ergebnis-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-30T00:01:06.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Auszählung aller Stimmen in Israel bestätigt, dass eine äußerst schwierige Regierungsbildung bevorsteht. Unterdessen ist ein Streit über das Wahlergebnis entbrannt - die Likud-Partei spricht von \"gestohlener Wahl\".",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/hubschrauber-bosnien-absturz-100.html",
-   "titel": "Bosnien und Herzegowina: Militärhubschrauber abgestürzt - vier Tote",
-   "link": "https://www.tagesschau.de/ausland/europa/hubschrauber-bosnien-absturz-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-29T23:05:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Beim Absturz eines Militärhubschraubers der EU-Friedenstruppe in Bosnien und Herzegowina sind vier Menschen ums Leben gekommen. Die Insassen kamen alle aus Italien. Der genaue Hergang ist noch unklar.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/29/world/americas/machado-trump-venezuela-return.html",
-   "titel": "Venezuelan Opposition Leader Thanks Trump But Marks Distance from Washington",
-   "link": "https://www.nytimes.com/2026/10/29/world/americas/machado-trump-venezuela-return.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-29T22:28:05.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Finally home in Caracas, María Corina Machado called for elections next year, and said her return was organized by her team, not any government.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ck054d5mnzreo",
-   "titel": "Venezuela opposition leader María Machado calls for elections upon return",
-   "link": "https://www.bbc.co.uk/news/articles/ck054d5mnzreo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-29T21:05:03.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Machado, who was in exile for nearly a year, said the transition in Venezuela's government would be \"irreversible, organised, pacific\".",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 13,
   "DW": 9,
   "Spiegel Wirtschaft": 5,
-  "FAZ Wirtschaft": 6,
-  "Handelsblatt": 6,
+  "FAZ Wirtschaft": 5,
+  "Handelsblatt": 7,
   "BBC World": 15,
   "NYT World": 22,
   "EIA Today in Energy": 1
