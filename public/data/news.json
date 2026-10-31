@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T20:04:04.532Z",
+ "lastUpdated": "2026-10-31T20:23:33.040Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+   "titel": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
+   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+   "quelle": "NYT World",
+   "zeit": "2026-10-31T20:04:18.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "With Prime Minister Benjamin Netanyahu fighting to stay in power and President Trump facing a tough midterm, Iran’s leaders expect no major shift in policy.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html",
    "titel": "Evacuees Arrive to Safety From Besieged Ukrainian City of Oleshky",
@@ -33,17 +44,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "One evacuated couple says they crossed minefields in Oleshky in a search for food.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
-   "titel": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
-   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-31T18:15:16.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "With Prime Minister Benjamin Netanyahu fighting to stay in power and President Trump facing a tough midterm, Iran’s leaders expect no major shift in policy.",
    "sprache": "en"
   },
   {
@@ -1025,7 +1025,7 @@
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 6,
   "BBC World": 12,
-  "NYT World": 24,
+  "NYT World": 23,
   "EIA Today in Energy": 1
  }
 }
