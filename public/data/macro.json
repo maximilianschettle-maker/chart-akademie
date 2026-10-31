@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-10-30T12:41:03.662Z",
+  "lastUpdated": "2026-10-31T06:00:41.139Z",
   "quellen": {
     "fedZins": "live",
     "fedTermine": "live",
@@ -1233,6 +1233,11 @@
       }
     ],
     "meldungen": [
+      {
+        "titel": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+        "datum": "2026-10-30T14:00:00.000Z",
+        "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html"
+      },
       {
         "titel": "Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)",
         "datum": "2026-10-29T14:00:00.000Z",
