@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T10:23:34.555Z",
+ "lastUpdated": "2026-10-31T11:23:30.439Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
+   "titel": "Linkspartei: Eralp rechnet mit Zustimmung zu Koalitionsgesprächen",
+   "link": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-31T11:15:09.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In Berlin läuft der Parteitag der Linkspartei. Fraktionschefin Eralp verteidigte das Sondierungspapier mit Grünen sowie SPD und warb für Koalitionsverhandlungen. Sie äußerte sich auch zur umstrittenen Abgeordneten Emde.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/midterms-alaska-sullivan-100.html",
+   "titel": "Zwei Sullivans in Alaska - wollen Demokraten die Wahl manipulieren?",
+   "link": "https://www.tagesschau.de/ausland/amerika/midterms-alaska-sullivan-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-10-31T10:51:32.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In Alaska deutet sich bei den US-Zwischenwahlen ein knappes Rennen um den Senatsposten an. Der republikanische Amtsinhaber Sullivan kämpft auch mit namensgleicher Konkurrenz. Ein Foul der Demokraten? Nun klagt das Justizministerium.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/eklat-um-verfassungsgericht-polens-pr%C3%A4sident-sagt-reise-ab/a-79814902",
+   "titel": "Eklat um Verfassungsgericht: Polens Präsident sagt Reise ab",
+   "link": "https://www.dw.com/de/eklat-um-verfassungsgericht-polens-präsident-sagt-reise-ab/a-79814902?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-10-31T10:36:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Das nationalkonservative Staatsoberhaupt stemmt sich gegen die Ernennung mehrerer neuer Richter. Hintergrund ist ein Machtkampf mit der pro-europäischen Koalition um den polnischen Ministerpräsidenten Tusk.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/polen-krise-um-verfassungsgericht-in-polen-spitzt-sich-zu/100266281.html",
    "titel": "Polen: Krise um Verfassungsgericht in Polen spitzt sich zu",
@@ -11,6 +44,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Erneut spaltet ein geplanter Umbau des Verfassungsgerichts die polnische Gesellschaft. Als Folge der Eskalation erklären zwei Botschafter nun ihren Rücktritt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-zivilisten-aus-ukrainischer-frontstadt-in-belarus-eingetroffen/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Zivilisten aus ukrainischer Frontstadt in Belarus eingetroffen",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-zivilisten-aus-ukrainischer-frontstadt-in-belarus-eingetroffen/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-31T09:19:35.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "USA genehmigen Verkauf von 500 Patriot-Raketen an die Ukraine +++ Selenskyj kündigt „wichtige“ Gespräche in der Türkei an +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -976,58 +1020,11 @@
    "maerkte": [],
    "text": "Machado, who was in exile for nearly a year, said the transition in Venezuela's government would be \"irreversible, organised, pacific\".",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-alphabet-kursrutsch-vernichtet-500-milliarden-dollar-boersenwert/100265906.html",
-   "titel": "US-Börsen: Massiver Kursrutsch von Alphabet: Google-Konzern verliert 500 Milliarden Dollar Börsenwert",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-alphabet-kursrutsch-vernichtet-500-milliarden-dollar-boersenwert/100265906.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-29T20:58:20.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Für den Tech-Konzern war es der schlechteste Tag jemals an der Börse. Das hat auch den Nasdaq belastet, der deutlich im Minus schließt. Auch der Dow verliert.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/ministerin-prien-ki-steuer-100.html",
-   "titel": "Debatte in der Koalition über Steuer auf Umsätze durch KI",
-   "link": "https://www.tagesschau.de/inland/ministerin-prien-ki-steuer-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-29T20:12:03.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In Deutschland könnte es eine Steuer auf Umsätze geben, die mit Künstlicher Intelligenz erzielt werden. Auch Familienministerin Prien sprach sich nun dafür aus. So soll auf Veränderungen in der Arbeitswelt reagiert werden - zum Beispiel auf",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ck1l393pyrylo",
-   "titel": "'The city is alive': A brief peace in Kherson, but residents fear what comes next",
-   "link": "https://www.bbc.co.uk/news/articles/ck1l393pyrylo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-29T20:05:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A temporary ceasefire has brought rare quiet to Kherson, offering its residents a glimpse of normal life before fighting resumes.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/israel-patt-im-parlament-keine-klare-regierungsmehrheit-nach-wahl/100266007.html",
-   "titel": "Parlamentswahl: Alle Stimmen ausgezählt: Patt nach Wahl in Israel",
-   "link": "https://www.handelsblatt.com/politik/international/israel-patt-im-parlament-keine-klare-regierungsmehrheit-nach-wahl/100266007.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-29T19:25:56.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach Auszählung aller Stimmen bleibt Netanjahus Likud-Partei Wahlsiegerin. Doch der Abstand zur Opposition ist gering – und für beide Seiten scheint die Regierungsbildung unmöglich.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
-  "DW": 8,
+  "tagesschau": 11,
+  "DW": 9,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 6,

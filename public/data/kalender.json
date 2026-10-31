@@ -1,27 +1,7 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T10:23:34.555Z",
+ "lastUpdated": "2026-10-31T11:23:30.439Z",
  "termine": [
-  {
-   "id": "ez:bip:2026-10-30:42",
-   "region": "ez",
-   "indikator": "bip",
-   "titel": "BIP Euroraum (vorläufige Schnellschätzung)",
-   "periode": "Q3 2026",
-   "zeitUtc": "2026-10-30T11:00:00.000Z",
-   "quelle": "Eurostat",
-   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
-  },
-  {
-   "id": "ez:arbeitsmarkt:2026-10-30:26",
-   "region": "ez",
-   "indikator": "arbeitsmarkt",
-   "titel": "Arbeitslosenquote Euroraum",
-   "periode": "September 2026",
-   "zeitUtc": "2026-10-30T11:00:00.000Z",
-   "quelle": "Eurostat",
-   "link": "https://ec.europa.eu/eurostat/news/release-calendar"
-  },
   {
    "id": "ez:cpi:2026-11-04:43",
    "region": "ez",
