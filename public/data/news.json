@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T22:23:31.634Z",
+ "lastUpdated": "2026-10-31T23:23:30.640Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
@@ -187,6 +187,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Nach der Evakuierung der von Russland besetzten Stadt Oleschky sind gerettete Bewohner in ukrainisch kontrolliertem Gebiet angekommen. Zuvor waren sie mit Militärflugzeugen nach Belarus gebracht worden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/gen-z-regelt-pluenderungen-und-angriffe-auf-polizisten-in-frankfurt/100266344.html",
+   "titel": "„Gen Z regelt“: Plünderungen und Angriffe auf Polizisten in Frankfurt",
+   "link": "https://www.handelsblatt.com/politik/deutschland/gen-z-regelt-pluenderungen-und-angriffe-auf-polizisten-in-frankfurt/100266344.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-10-31T15:01:42.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach der Auflösung einer Jugenddemo plündern Randalierer Geschäfte und greifen Polizisten an. Die Polizei sperrt die Einkaufsstraße Zeil ab.",
    "sprache": "de"
   },
   {
@@ -1005,17 +1016,6 @@
    "maerkte": [],
    "text": "Military-involved deaths have roiled a country with an iron-fisted new president — and a history of extrajudicial killings.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/audi-gewinn-bricht-drastisch-ein-accg-201635587.html",
-   "titel": "Minus 87 Prozent: Audi-Gewinn bricht im dritten Quartal drastisch ein",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/audi-gewinn-bricht-drastisch-ein-accg-201635587.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-10-30T08:10:08.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Krise trifft Audi immer härter. Die Ingolstädter erzielen nur noch einen sehr geringen Gewinn. Und Unternehmenschef Döllner steht wegen seines Auftritts in Trumps Wahlkampf weiter unter Druck.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1023,8 +1023,8 @@
   "DW": 9,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 6,
-  "Handelsblatt": 6,
-  "BBC World": 11,
+  "Handelsblatt": 7,
+  "BBC World": 10,
   "NYT World": 22,
   "EIA Today in Energy": 1
  }
