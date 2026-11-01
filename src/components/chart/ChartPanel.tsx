@@ -1,5 +1,8 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { Maximize2 } from 'lucide-react'
+import { VollbildKnopf, VollbildRahmen } from './Vollbild'
+import { useVollbild } from './useVollbild'
+import { useSchmal } from '../../hooks/useSchmal'
 import {
   createChart,
   type IChartApi,
@@ -19,6 +22,7 @@ import {
 } from 'lightweight-charts'
 import type { Candle, ChartAnnotation } from '../../types'
 import { ema } from '../../engine/indikatoren/ema'
+import { preisStellen } from '../../engine/format'
 import { installiereGesten } from './gesten'
 
 const EMA_FARBEN = ['#F59E0B', '#3B82F6', '#A855F7']
@@ -75,6 +79,10 @@ interface ChartPanelProps {
   /** logarithmische Preisachse (lange Zeiträume) */
   logSkala?: boolean
   overlay?: OverlayLinie | null
+  /** Vollbild-Knopf anbieten (Standard ja) */
+  vollbild?: boolean
+  /** Werkzeugleiste oben im Vollbild (z.B. Zeitraum-Knöpfe) */
+  vollbildLeiste?: ReactNode
 }
 
 export function ChartPanel({
@@ -88,9 +96,13 @@ export function ChartPanel({
   typ = 'kerzen',
   logSkala = false,
   overlay = null,
+  vollbild = true,
+  vollbildLeiste,
 }: ChartPanelProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const resetRef = useRef<(() => void) | null>(null)
+  const vb = useVollbild()
+  const schmal = useSchmal()
   // Preisachse von Hand verändert → Knopf „Ansicht zurücksetzen“ einblenden
   const [manuell, setManuell] = useState(false)
 
@@ -99,11 +111,13 @@ export function ChartPanel({
     if (!container || candles.length === 0) return
 
     const chart = createChart(container, {
-      height: hoehe,
+      height: container.clientHeight || hoehe,
       layout: {
         background: { type: ColorType.Solid, color: CHART_FARBEN.hintergrund },
         textColor: CHART_FARBEN.text,
         fontFamily: 'Inter, system-ui, sans-serif',
+        // am Handy kleinere Achsenschrift → schmalere Preisachse, mehr Platz für Kerzen
+        fontSize: schmal ? 10 : 12,
       },
       grid: {
         vertLines: { color: CHART_FARBEN.gitter },
@@ -129,12 +143,15 @@ export function ChartPanel({
       linie.setData(candles.map((c) => ({ time: c.time as UTCTimestamp, value: c.close })))
       kerzenSerie = linie
     } else {
+      // Nachkommastellen nach Kursniveau (Bitcoin 84840,1 statt 84840,05) → schmalere Preisachse
+      const stellen = preisStellen(candles[candles.length - 1].close)
       const kerzen = chart.addSeries(CandlestickSeries, {
         upColor: CHART_FARBEN.long,
         downColor: CHART_FARBEN.short,
         borderVisible: false,
         wickUpColor: CHART_FARBEN.long,
         wickDownColor: CHART_FARBEN.short,
+        priceFormat: { type: 'price', precision: stellen, minMove: 10 ** -stellen },
       })
       kerzen.setData(
         candles.map((c) => ({
@@ -242,7 +259,8 @@ export function ChartPanel({
     const gestenWeg = installiereGesten(chart, container, { serie: kerzenSerie, reset: ansichtEinpassen, onManuell: setManuell })
 
     const beobachter = new ResizeObserver(() => {
-      chart.applyOptions({ width: container.clientWidth })
+      // Höhe kommt vom Container (Prop „hoehe“ oder Vollbild-Rahmen), Breite vom Layout
+      chart.applyOptions({ width: container.clientWidth, height: container.clientHeight || undefined })
     })
     beobachter.observe(container)
 
@@ -252,21 +270,26 @@ export function ChartPanel({
       resetRef.current = null
       chart.remove()
     }
-  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden, randRechts, zeitSichtbar, typ, logSkala, overlay])
+  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden, randRechts, zeitSichtbar, typ, logSkala, overlay, schmal])
 
   return (
-    <div className="relative">
-      <div ref={containerRef} className="w-full overflow-hidden rounded-lg" />
-      {manuell && (
-        <button
-          type="button"
-          onClick={() => resetRef.current?.()}
-          className="absolute left-2 top-2 z-[3] inline-flex min-h-9 items-center gap-1 rounded-md border border-rand bg-nacht/80 px-2 text-[11px] font-semibold text-gedimmt hover:text-white"
-          title="Ansicht zurücksetzen (auch per Doppeltipp auf den Chart)"
-        >
-          <Maximize2 className="h-3.5 w-3.5" /> Auto
-        </button>
+    <VollbildRahmen hoehe={hoehe} steuerung={vb} leiste={vollbildLeiste}>
+      {(h, imVollbild) => (
+        <>
+          <div ref={containerRef} style={{ height: h }} className={`w-full overflow-hidden ${imVollbild ? '' : 'rounded-lg'}`} />
+          {manuell && (
+            <button
+              type="button"
+              onClick={() => resetRef.current?.()}
+              className="absolute left-2 top-2 z-[3] inline-flex min-h-9 items-center gap-1 rounded-md border border-rand bg-nacht/80 px-2 text-[11px] font-semibold text-gedimmt hover:text-white"
+              title="Ansicht zurücksetzen (auch per Doppeltipp auf den Chart)"
+            >
+              <Maximize2 className="h-3.5 w-3.5" /> Auto
+            </button>
+          )}
+          {vollbild && <VollbildKnopf an={imVollbild} onClick={vb.umschalten} className="absolute bottom-9 right-[76px]" />}
+        </>
       )}
-    </div>
+    </VollbildRahmen>
   )
 }

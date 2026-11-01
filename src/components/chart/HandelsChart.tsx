@@ -1,6 +1,9 @@
-import { useEffect, useMemo, useRef } from 'react'
+import { useEffect, useMemo, useRef, type ReactNode } from 'react'
 import { Crosshair, Maximize2 } from 'lucide-react'
 import { installiereGesten } from './gesten'
+import { VollbildKnopf, VollbildRahmen } from './Vollbild'
+import { useVollbild } from './useVollbild'
+import { useSchmal } from '../../hooks/useSchmal'
 import {
   createChart,
   createSeriesMarkers,
@@ -98,6 +101,12 @@ interface HandelsChartProps {
   marker?: ChartMarker[]
   boxen?: ChartBox[]
   indikatoren?: IndikatorWahl
+  /** Vollbild-Knopf anbieten (Standard ja, außer kompakt) */
+  vollbild?: boolean
+  /** Werkzeugleiste oben im Vollbild (z.B. Indikatoren, Zeichenwerkzeuge) */
+  vollbildLeiste?: ReactNode
+  /** Zusatz unter dem Chart im Vollbild (z.B. CRV-Rechner) */
+  vollbildUnten?: ReactNode
 }
 
 const EMA_FARBEN: Record<number, string> = { 20: '#F59E0B', 50: '#3B82F6', 200: '#A855F7' }
@@ -169,8 +178,13 @@ export function HandelsChart({
   marker = KEINE_MARKER,
   boxen = KEINE_BOXEN,
   indikatoren = STANDARD_INDIKATOREN,
+  vollbild = !kompakt,
+  vollbildLeiste,
+  vollbildUnten,
 }: HandelsChartProps) {
   const containerRef = useRef<HTMLDivElement>(null)
+  const vb = useVollbild()
+  const schmal = useSchmal()
   const legendeRef = useRef<HTMLDivElement>(null)
   const chartRef = useRef<IChartApi | null>(null)
   const kerzenRef = useRef<ISeriesApi<'Candlestick'> | null>(null)
@@ -515,7 +529,8 @@ export function HandelsChart({
     container.addEventListener('touchmove', schlucken, { capture: true, passive: false })
 
     const beobachter = new ResizeObserver(() => {
-      chart.applyOptions({ width: container.clientWidth })
+      // Höhe kommt vom Container (Prop „hoehe“ oder Vollbild-Rahmen), Breite vom Layout
+      chart.applyOptions({ width: container.clientWidth, height: container.clientHeight || undefined })
     })
     beobachter.observe(container)
 
@@ -547,10 +562,11 @@ export function HandelsChart({
   // ── Größe und Zeitachse ────────────────────────────────────────────────────
   useEffect(() => {
     chartRef.current?.applyOptions({
-      height: hoehe,
       timeScale: { visible: !zeitVerdeckt, timeVisible: !zeitVerdeckt },
+      // am Handy kleinere Achsenschrift → schmalere Preisachse, mehr Platz für Kerzen
+      layout: { fontSize: schmal ? 10 : 12 },
     })
-  }, [hoehe, zeitVerdeckt])
+  }, [zeitVerdeckt, schmal])
 
   // ── Indikator-Serien an die Auswahl anpassen ───────────────────────────────
   const emaWahl = kompakt ? '' : indikatoren.ema.join(',')
@@ -777,34 +793,39 @@ export function HandelsChart({
   const waehltPreis = !!onPick || zeichenModus !== 'aus'
 
   return (
-    <div className="relative">
-      <div
-        ref={containerRef}
-        style={{ height: hoehe }}
-        className={`w-full overflow-hidden rounded-lg ${waehltPreis ? 'chart-waehlt' : ''}`}
-      />
-      {!kompakt && (
+    <VollbildRahmen hoehe={hoehe} steuerung={vb} leiste={vollbildLeiste} unten={vollbildUnten}>
+      {(h, imVollbild) => (
         <>
           <div
-            ref={legendeRef}
-            className="tabular-nums pointer-events-none absolute left-2 top-1.5 z-[3] whitespace-pre text-[10px] font-medium sm:text-[11px]"
+            ref={containerRef}
+            style={{ height: h }}
+            className={`w-full overflow-hidden ${imVollbild ? '' : 'rounded-lg'} ${waehltPreis ? 'chart-waehlt' : ''}`}
           />
-          <button
-            onClick={() => chartRef.current?.timeScale().scrollToRealTime()}
-            className={`tipp absolute right-[76px] z-[3] rounded-md border border-rand bg-nacht/80 p-1.5 text-gedimmt hover:text-white ${zeitVerdeckt ? 'bottom-2' : 'bottom-9'}`}
-            title="Zur aktuellen Kerze springen"
-          >
-            <Crosshair className="h-3.5 w-3.5" />
-          </button>
-          <button
-            onClick={() => resetAnsichtRef.current?.()}
-            className={`tipp absolute right-[112px] z-[3] rounded-md border border-rand bg-nacht/80 p-1.5 text-gedimmt hover:text-white ${zeitVerdeckt ? 'bottom-2' : 'bottom-9'}`}
-            title="Ansicht zurücksetzen: Preisachse automatisch, Zeitachse auf die letzten Kerzen (auch per Doppeltipp)"
-          >
-            <Maximize2 className="h-3.5 w-3.5" />
-          </button>
+          {!kompakt && (
+            <>
+              <div
+                ref={legendeRef}
+                className="tabular-nums pointer-events-none absolute left-2 top-1.5 z-[3] whitespace-pre text-[10px] font-medium sm:text-[11px]"
+              />
+              <button
+                onClick={() => chartRef.current?.timeScale().scrollToRealTime()}
+                className={`tipp absolute right-[76px] z-[3] rounded-md border border-rand bg-nacht/80 p-1.5 text-gedimmt hover:text-white ${zeitVerdeckt ? 'bottom-2' : 'bottom-9'}`}
+                title="Zur aktuellen Kerze springen"
+              >
+                <Crosshair className="h-3.5 w-3.5" />
+              </button>
+              <button
+                onClick={() => resetAnsichtRef.current?.()}
+                className={`tipp absolute right-[112px] z-[3] rounded-md border border-rand bg-nacht/80 p-1.5 text-gedimmt hover:text-white ${zeitVerdeckt ? 'bottom-2' : 'bottom-9'}`}
+                title="Ansicht zurücksetzen: Preisachse automatisch, Zeitachse auf die letzten Kerzen (auch per Doppeltipp)"
+              >
+                <Maximize2 className="h-3.5 w-3.5" />
+              </button>
+              {vollbild && <VollbildKnopf an={imVollbild} onClick={vb.umschalten} className={`absolute right-[148px] ${zeitVerdeckt ? 'bottom-2' : 'bottom-9'}`} />}
+            </>
+          )}
         </>
       )}
-    </div>
+    </VollbildRahmen>
   )
 }

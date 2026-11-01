@@ -78,9 +78,9 @@ export function TraderChart({ kerzen, symbol, waehrung, intervall, zinsMarker, h
   const emaUmschalten = (p: number) => setzen({ ema: ema.includes(p) ? ema.filter((x) => x !== p) : [...ema, p].sort((a, b) => a - b) })
   const chip = (aktiv: boolean, extra = '') => `tipp inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold ${aktiv ? 'bg-akzent text-nacht' : 'bg-nacht text-gedimmt hover:text-schrift'} ${extra}`
 
-  return (
-    <div>
-      <div className="mb-2 flex flex-wrap items-center gap-1.5">
+  // Die Werkzeugleiste steht normal über dem Chart und im Vollbild oben im Rahmen (gleiche Knöpfe, gleicher Zustand)
+  const leiste = (
+    <div className="flex flex-wrap items-center gap-1.5">
         {EMA_WAHL.map((p) => (
           <button key={p} type="button" className={chip(ema.includes(p))} onClick={() => emaUmschalten(p)} aria-pressed={ema.includes(p)}>
             EMA {p}
@@ -114,7 +114,13 @@ export function TraderChart({ kerzen, symbol, waehrung, intervall, zinsMarker, h
         <button type="button" className={chip(crvAn)} onClick={() => setCrvAn((a) => !a)} aria-pressed={crvAn} title="Einstieg, Stop und Ziel als Linien im Chart, Stückzahl und CRV darunter">
           <Target className="h-3.5 w-3.5" /> CRV
         </button>
-      </div>
+    </div>
+  )
+  const rechner = crvAn ? <CrvRechner werte={crv} waehrung={waehrung} onWerte={setCrv} pick={pick} onPick={setPick} /> : null
+
+  return (
+    <div>
+      <div className="mb-2">{leiste}</div>
       {modus !== 'aus' && (
         <p className="mb-2 text-[11px] text-akzent">
           {modus === 'linie' && 'Tippe in den Chart, um eine horizontale Linie zu setzen.'}
@@ -136,12 +142,10 @@ export function TraderChart({ kerzen, symbol, waehrung, intervall, zinsMarker, h
         onLinieLos={linieSetzen}
         onPick={onPick}
         marker={zinsMarker.length ? zinsMarker : KEINE_MARKER}
+        vollbildLeiste={leiste}
+        vollbildUnten={rechner}
       />
-      {crvAn && (
-        <div className="mt-3">
-          <CrvRechner werte={crv} waehrung={waehrung} onWerte={setCrv} pick={pick} onPick={setPick} />
-        </div>
-      )}
+      {rechner && <div className="mt-3">{rechner}</div>}
     </div>
   )
 }

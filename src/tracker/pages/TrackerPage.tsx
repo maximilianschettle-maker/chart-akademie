@@ -118,6 +118,25 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
   const trendText = a ? (a.trend === 'auf' ? 'Aufwärtstrend' : a.trend === 'ab' ? 'Abwärtstrend' : 'seitwärts') : ''
   const trendFarbe = a ? (a.trend === 'auf' ? 'text-long' : a.trend === 'ab' ? 'text-short' : 'text-gedimmt') : ''
 
+  // Zeitraum-Knöpfe: über dem Chart und oben im Vollbild
+  const zeitraumLeiste = (
+    <div className="flex gap-1" role="tablist" aria-label="Zeitraum">
+      {BEREICHE[ebene].map((b) => (
+        <button
+          key={b.id}
+          type="button"
+          role="tab"
+          aria-selected={b.id === bereich}
+          title={b.titel}
+          onClick={() => setBereiche((alt) => ({ ...alt, [ebene]: b.id }))}
+          className={`tipp rounded-md px-2.5 py-0.5 text-[11px] font-semibold ${b.id === bereich ? 'bg-akzent text-nacht' : 'bg-nacht text-gedimmt hover:text-schrift'}`}
+        >
+          {b.id}
+        </button>
+      ))}
+    </div>
+  )
+
   return (
     <section className="rounded-xl border border-rand bg-flaeche p-4">
       <button type="button" onClick={() => setOffen((o) => !o)} className="flex w-full items-start justify-between gap-3 text-left">
@@ -191,21 +210,7 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
 
       {offen && kerzen.length > 0 && (
         <div className="mt-3">
-          <div className="mb-1.5 flex justify-end gap-1" role="tablist" aria-label="Zeitraum">
-            {BEREICHE[ebene].map((b) => (
-              <button
-                key={b.id}
-                type="button"
-                role="tab"
-                aria-selected={b.id === bereich}
-                title={b.titel}
-                onClick={() => setBereiche((alt) => ({ ...alt, [ebene]: b.id }))}
-                className={`tipp rounded-md px-2.5 py-0.5 text-[11px] font-semibold ${b.id === bereich ? 'bg-akzent text-nacht' : 'bg-nacht text-gedimmt hover:text-schrift'}`}
-              >
-                {b.id}
-              </button>
-            ))}
-          </div>
+          <div className="mb-1.5 flex justify-end">{zeitraumLeiste}</div>
           <ChartPanel
             candles={kerzen}
             annotationen={annotationen}
@@ -214,6 +219,7 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
             emaPerioden={EMA_TRACKER}
             zeitSichtbar={ebene === 'stunde'}
             randRechts={ebene === 'stunde' ? 6 : 2}
+            vollbildLeiste={zeitraumLeiste}
           />
         </div>
       )}
