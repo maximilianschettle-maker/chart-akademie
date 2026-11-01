@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-01T12:23:36.313Z",
+ "lastUpdated": "2026-11-01T13:23:33.239Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/polen-streit-um-polens-verfassungsgericht-eskaliert/100266434.html",
+   "titel": "Polen: „Staatsstreich“ oder Rückkehr zur Rechtmäßigkeit? Der Streit um Polens Verfassungsgericht eskaliert",
+   "link": "https://www.handelsblatt.com/politik/international/polen-streit-um-polens-verfassungsgericht-eskaliert/100266434.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-01T13:07:02.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In der Nacht zum Samstag marschiert die Polizei vor Polens Verfassungsgericht auf, und der Staatspräsident liefert sich ein Handgemenge mit einer Richterin. Es geht um die Macht in dem Gremium.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/russland-sanktionen-was-stillgelegte-russische-jachten-den-steuerzahler-kosten-a-41f8f7e7-7cbe-46b1-880f-158cd1caaa23",
+   "titel": "Russland-Sanktionen: Was stillgelegte russische Jachten den Steuerzahler kosten",
+   "link": "https://www.spiegel.de/wirtschaft/russland-sanktionen-was-stillgelegte-russische-jachten-den-steuerzahler-kosten-a-41f8f7e7-7cbe-46b1-880f-158cd1caaa23#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-01T12:39:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Ob im Hafen von Triest oder auf einer Bremer Werft: Im Rahmen von Sanktionen konfiszierte russische Megajachten verursachen gigantische Kosten. Die rechtliche Lage ist komplex, zuständige Politiker genervt.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/iran-krieg-israelische-opposition-warnt-vor-neuem-krieg-mit-iran/100136895.html",
    "titel": "+++ Iran-Krieg +++: Israelischer Oppositionspolitiker warnt vor neuem Krieg mit Iran unter Netanjahu",
@@ -183,7 +205,7 @@
    "maerkte": [
     "aktien"
    ],
-   "text": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls.",
+   "text": "Thousands gathered in the heart of delhi, calling for the chief election commissioner to step down.",
    "sprache": "en"
   },
   {
@@ -988,37 +1010,13 @@
    "maerkte": [],
    "text": "Bei den Wahlen in Israel habe es eine groß angelegte Einmischung durch das Ausland gegeben, behauptet die Partei von Ministerpräsident Benjamin Netanjahu. Im Zentrum der Vorwürfe stehen die arabischen Parteien.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/binance-kryptoboerse-meldet-hackerangriff-bitcoin-verliert-deutlich/100266046.html",
-   "titel": "Kryptobörse: Größter Krypto-Diebstahl aller Zeiten – Binance meldet Hackerangriff",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/binance-kryptoboerse-meldet-hackerangriff-bitcoin-verliert-deutlich/100266046.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-30T14:50:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Nach Angaben von Binance sind insgesamt Werte in Höhe von schätzungsweise 6,3 Milliarden Dollar betroffen. Hinter dem Angriff wird bereits eine bestimmte Hackergruppe vermutet.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ckwyq2509p7xo",
-   "titel": "Pope Leo XIV becomes first pontiff to vote in a US election",
-   "link": "https://www.bbc.co.uk/news/articles/ckwyq2509p7xo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-30T14:48:22.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The Chicago-born pontiff, who has a tense relationship with Trump, mailed in a ballot for the midterm elections that will decide control of the US Congress.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 16,
   "DW": 9,
-  "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 6,
+  "Spiegel Wirtschaft": 5,
+  "FAZ Wirtschaft": 5,
   "Handelsblatt": 7,
   "BBC World": 11,
   "NYT World": 19,
