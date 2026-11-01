@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-01T04:23:31.979Z",
+ "lastUpdated": "2026-11-01T05:23:31.634Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/polen-eskalation-verfassungsgericht-102.html",
+   "titel": "Polen: Tusk beklagt Angriff auf \"Demokratie und Rechtsstaat\"",
+   "link": "https://www.tagesschau.de/ausland/europa/polen-eskalation-verfassungsgericht-102.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-01T04:26:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Polens Präsident drängt sich mit Körpereinsatz ins Verfassungsgericht und drückt eine Richterin nach unten. Nun äußert sich Regierungschef Tusk zu dem Vorfall. Der Opposition wirft er einen Angriff auf Demokratie und Rechtsstaat vor.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/asien/hack-binance-100.html",
    "titel": "FBI macht Nordkorea für Hackerangriff auf Binance verantwortlich",
@@ -1007,21 +1018,10 @@
    ],
    "text": "Nach Angaben von Binance sind insgesamt Werte in Höhe von schätzungsweise 6,3 Milliarden Dollar betroffen. Hinter dem Angriff wird bereits eine bestimmte Hackergruppe vermutet.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/konjunktur/konjunktur-deutsche-wirtschaft-waechst-im-dritten-quartal/100266091.html",
-   "titel": "Konjunktur: Deutsche Wirtschaft wächst im dritten Quartal – trotz Belastungen",
-   "link": "https://www.handelsblatt.com/politik/konjunktur/konjunktur-deutsche-wirtschaft-waechst-im-dritten-quartal/100266091.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-30T09:24:34.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Niedrige Rheinpegel, schwächere Exporte und hohe Energiepreise belasten. Trotzdem wächst die deutsche Wirtschaft stärker als von Ökonomen erwartet.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 14,
+  "tagesschau": 15,
   "DW": 9,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 6,
