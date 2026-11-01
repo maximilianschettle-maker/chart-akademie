@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-01T07:23:30.378Z",
+ "lastUpdated": "2026-11-01T08:23:33.739Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/steinmeier-ki-100.html",
+   "titel": "Steinmeier zu KI: \"Nicht das Ob steht zur Frage, sondern das Wie\"",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/steinmeier-ki-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-01T08:01:11.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Zum Abschluss seiner China-Reise hat Bundespräsident Steinmeier vor den Risiken Künstlicher Intelligenz für die Demokratie gewarnt. Über Fortschritte im Handelskonflikt zwischen Europa und China äußerte er sich vorsichtig optimistisch. Von ",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/trump-bolsonaro-usa-100.html",
+   "titel": "Trump lädt Flávio Bolsonaro zum Bleiben ein",
+   "link": "https://www.tagesschau.de/ausland/amerika/trump-bolsonaro-usa-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-01T07:45:02.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach seiner Wahlniederlage setzte sich der brasilianische Präsidentschaftskandidat Flávio Bolsonaro in die USA ab. Dort darf er bleiben - \"so lange, wie er will\", sagte Präsident Trump. Treffen will er Bolsonaro vorerst nicht.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/robert-habeck-china-hat-den-freihandel-zu-einer-falle-gemacht/100265339.html",
+   "titel": "Robert Habeck: „China hat den Freihandel zu einer Falle gemacht“",
+   "link": "https://www.handelsblatt.com/politik/deutschland/robert-habeck-china-hat-den-freihandel-zu-einer-falle-gemacht/100265339.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-01T07:01:35.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Ex-Vizekanzler Habeck spricht im Handelsblatt-Interview über Europas Kampf gegen die Supermächte, die anstehenden US-Wahlen – und er verrät, wen er aktuell für den größten Europäer hält.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/robert-habeck-es-kann-schlimmer-kommen-als-mit-trump/100265339.html",
    "titel": "Interview: „Es kann schlimmer kommen als mit Trump“: Robert Habecks Strategie gegen die USA, Russland und China",
@@ -15,7 +48,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo",
-   "titel": "India's opposition set to hold mega rally seeking election chief's resignation",
+   "titel": "India's opposition holds mega rally seeking election chief's resignation",
    "link": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-01T07:00:55.000Z",
@@ -985,43 +1018,10 @@
    ],
    "text": "Nach Angaben von Binance sind insgesamt Werte in Höhe von schätzungsweise 6,3 Milliarden Dollar betroffen. Hinter dem Angriff wird bereits eine bestimmte Hackergruppe vermutet.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/konjunktur/konjunktur-deutsche-wirtschaft-waechst-staerker-als-erwartet/100266091.html",
-   "titel": "Konjunktur: Deutsche Wirtschaft wächst stärker als erwartet – weil es in einem Bereich erstaunlich gut läuft",
-   "link": "https://www.handelsblatt.com/politik/konjunktur/konjunktur-deutsche-wirtschaft-waechst-staerker-als-erwartet/100266091.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-30T10:48:01.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Im dritten Quartal ist das Bruttoinlandsprodukt doppelt so stark gestiegen als absehbar. Dennoch war es nur ein Mini-Wachstum. Was die Zahlen über das Gesamtjahr aussagen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/aussenministertreffen-usa-100.html",
-   "titel": "G20-Außenministertreffen mit Lawrow und Wadephul in Atlanta",
-   "link": "https://www.tagesschau.de/ausland/amerika/aussenministertreffen-usa-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-30T10:37:11.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Außenminister der G20-Staaten treffen sich in den USA. Mit dabei ist auch Russlands Vertreter Lawrow. Für Deutschland nimmt Minister Wadephul teil. Das Treffen könnte beim Umgang mit Russland eine Art Generalprobe für den G20-Gipfel sei",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/videos/cq77pm2jmmd5o",
-   "titel": "What's at stake for Trump in the US midterms?",
-   "link": "https://www.bbc.co.uk/news/videos/cq77pm2jmmd5o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-30T10:19:48.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Anthony Zurcher explains how the results of the midterm elections could reshape the rest of Trump's presidency.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 15,
+  "tagesschau": 16,
   "DW": 9,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 7,
