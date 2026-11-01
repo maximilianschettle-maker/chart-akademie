@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-01T10:23:29.239Z",
+ "lastUpdated": "2026-11-01T11:23:34.453Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/energie-bundesnetzagentur-sieht-geringes-risiko-einer-gasknappheit/100266431.html",
+   "titel": "Energie: Bundesnetzagentur sieht geringes Risiko einer Gasknappheit",
+   "link": "https://www.handelsblatt.com/politik/deutschland/energie-bundesnetzagentur-sieht-geringes-risiko-einer-gasknappheit/100266431.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-01T11:06:53.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Netzagenturchef Klaus Müller gibt trotz niedrigerer Füllstände der Gasspeicher Entwarnung bei der Versorgung. Der Lobbyverband warnt dagegen vor Risiken.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/01/world/middleeast/netanyahu-coalition-building-tests-political-skills.html",
+   "titel": "Netanyahu’s Bid to Stay in Power Will Test His Political Savvy",
+   "link": "https://www.nytimes.com/2026/11/01/world/middleeast/netanyahu-coalition-building-tests-political-skills.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-01T10:20:20.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "After losing ground in Israel’s election, Prime Minister Benjamin Netanyahu must draw on decades of political capital and reckon with old foes if he is to build a governing coalition.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/asien/hack-binance-100.html",
    "titel": "FBI macht Nordkorea für Hackerangriff auf Binance verantwortlich",
@@ -990,37 +1014,12 @@
    "maerkte": [],
    "text": "Bolsonaro kommt nicht an die Macht, Vucic wurde abgewählt und selbst Netanjahu ist geschwächt: US-Präsident Donald Trump ist mit aktuellen globalen Wahlergebnissen unzufrieden - und spricht wieder von Betrug.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/israel-wahlergebnis-korri-100.html",
-   "titel": "Wahl-Patt in Israel: Regierungsbildung nicht in Sicht",
-   "link": "https://www.tagesschau.de/ausland/asien/israel-wahlergebnis-korri-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-30T14:28:05.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Das Endergebnis der Wahl in Israel bringt für keinen Parteienblock eine regierungsfähige Mehrheit. Jetzt könnten die arabischen Parteien zum Zuge kommen. Doch aus dem Netanjahu-Lager kommen neue Vorwürfe. Konkurrent Eisenkot reagiert. Von T",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/big-oil-bp-shell-und-exxonmobil-erzielen-rekordgewinne-201636148.html",
-   "titel": "BP, Shell und Co.: Die Gewinne der Ölkonzerne sprudeln exorbitant",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/big-oil-bp-shell-und-exxonmobil-erzielen-rekordgewinne-201636148.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-10-30T13:13:47.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "eurusd"
-   ],
-   "text": "Mehr als 55 Milliarden Dollar Gewinn haben die fünf „Big Oil“-Konzerne im dritten Quartal verbucht. Sie profitieren vom Ölpreisanstieg und Raffineriegewinnen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 16,
   "DW": 8,
-  "Spiegel Wirtschaft": 5,
+  "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 7,
   "Handelsblatt": 7,
   "BBC World": 11,
