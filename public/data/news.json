@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-01T01:23:32.697Z",
+ "lastUpdated": "2026-11-01T02:23:32.535Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/hack-binance-100.html",
+   "titel": "FBI macht Nordkorea für Hackerangriff auf Binance verantwortlich",
+   "link": "https://www.tagesschau.de/ausland/asien/hack-binance-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-01T02:06:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Laut Experten war es der bisher größte Hackerangriff auf eine Börse für Digitalwährungen. Am Donnerstag war er bekannt geworden - und schnell geriet Nordkorea ins Visier. Nun macht auch das FBI nordkoreanische Hacker dafür verantwortlich.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-iran-beharrt-auf-bedingungen-und-droht-mit-neuen-waffen/100136895.html",
+   "titel": "+++ Iran-Krieg +++: Iran beharrt auf Bedingungen – und droht mit neuen Waffen",
+   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-iran-beharrt-auf-bedingungen-und-droht-mit-neuen-waffen/100136895.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-01T01:36:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Irans Außenminister sieht keine Notwendigkeit für USA-Treffen +++ Rubio: Noch keine Entscheidung zu weiterem US-Militäreinsatz gegen Iran +++ Von Huthi entführter UN-Mitarbeiter tot +++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo",
    "titel": "India's opposition set to hold mega rally seeking election chief's resignation",
@@ -210,7 +234,7 @@
    "zeit": "2026-10-31T15:01:42.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Nach der Auflösung einer Jugenddemo plündern Randalierer Geschäfte und greifen Polizisten an. Die Polizei sperrt die Einkaufsstraße Zeil ab.",
+   "text": "Randalierer plündern nach einer Jugenddemo Geschäfte und greifen Polizisten an. In der Nacht beruhigt sich die Lage in Frankfurt, die Polizei bleibt mit starken Kräften vor Ort.",
    "sprache": "de"
   },
   {
@@ -994,34 +1018,10 @@
    "maerkte": [],
    "text": "Niedrige Rheinpegel, schwächere Exporte und hohe Energiepreise belasten. Trotzdem wächst die deutsche Wirtschaft stärker als von Ökonomen erwartet.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/industrie/quartalszahlen-hohe-oelpreise-bringen-bp-milliardengewinn/24098412.html",
-   "titel": "+++ Geschäftszahlen +++: Hohe Ölpreise bringen BP Milliardengewinn – Konzern will Deepwater-Horizon-Schulden damit zahlen",
-   "link": "https://www.handelsblatt.com/unternehmen/industrie/quartalszahlen-hohe-oelpreise-bringen-bp-milliardengewinn/24098412.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-30T09:16:32.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Sanofi hebt Jahresziele an +++ Starbucks stellt dank Sanierungserfolgen höheren Gewinn in Aussicht +++ Gewinn von BYD wächst langsamer als erwartet +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/30/world/europe/israel-election-netanyahu-eisenkot.html",
-   "titel": "Israel’s Election Is Unlikely to Change Its Policies and Global Isolation",
-   "link": "https://www.nytimes.com/2026/10/30/world/europe/israel-election-netanyahu-eisenkot.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-30T09:03:38.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The leading contenders, Prime Minister Benjamin Netanyahu and Gadi Eisenkot, aren’t substantially different in their approach to Israel’s security or in their opposition to a Palestinian state.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 14,
   "DW": 9,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 6,
