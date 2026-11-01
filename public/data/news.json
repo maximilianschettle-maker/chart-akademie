@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-01T16:23:31.058Z",
+ "lastUpdated": "2026-11-01T17:23:30.032Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo",
+   "titel": "Israeli strikes in Gaza kill eight including child, hospitals say",
+   "link": "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-01T17:06:32.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Five officers from the Hamas-run police have been killed in Khan Younis and three people, including a child, killed in Gaza City, officials say.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-festnahme-nach-terrorhinweis-russischer-fsb-dankt-usa/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Festnahme nach Terrorhinweis – russischer FSB dankt USA",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-festnahme-nach-terrorhinweis-russischer-fsb-dankt-usa/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-01T16:44:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russische Industrieanlage bei Drohnenangriff beschädigt+++ Oleschky-Flüchtlinge in der Ukraine angekommen +++ Erdogan nennt Angriffe im Schwarzen Meer inakzeptabel +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/golfstaaten-midterms-usa-100.html",
+   "titel": "Iran-Krieg: Golfstaaten bereiten sich auf neue Eskalation vor",
+   "link": "https://www.tagesschau.de/ausland/golfstaaten-midterms-usa-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-01T16:24:24.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Die Sorge vor einer erneuten Eskalation im Iran-Krieg wächst - vor allem in den Golfstaaten. Eine Folge: Aufrüstung. Auf einer Konferenz beraten Politiker aus der Region mit Experten. Auch Deutschland ist vertreten. Von M. Behrendt.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.dw.com/de/vorgaben-f%C3%BCr-gasspeicher-f%C3%BCllstand-in-deutschland-verfehlt/a-79822308",
    "titel": "Vorgaben für Gasspeicher-Füllstand in Deutschland verfehlt",
@@ -979,48 +1014,15 @@
    ],
    "text": "Bundesverteidigungsminister Boris Pistorius hat Rüstungsunternehmen im Großraum München besucht – und machte ein paar wegweisende Ankündigungen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/berlin-eralp-debatte-spiegel-bericht-100.html",
-   "titel": "Debatte um Eralp überlagert Regierungsbildung",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/berlin-eralp-debatte-spiegel-bericht-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-30T16:44:36.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Regierungsbildung in Berlin wird erneut von einer Debatte um die Linke überschattet. Im Fokus: die eventuell künftige Regierende Bürgermeisterin Eralp und ihr Umgang mit Islamismus. Ihre Partei stellt sich entschieden hinter sie.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c63r529wn2vzo",
-   "titel": "Democratic senator blames Egypt press crackdown on US military aid decision",
-   "link": "https://www.bbc.co.uk/news/articles/c63r529wn2vzo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-30T15:17:11.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Chris Murphy said waiving a human rights condition on aid paved the way for arrests of journalists.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo",
-   "titel": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
-   "link": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-30T15:09:29.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The PM's Likud party has alleged foreign interference and said Arab-led parties \"stole\" the election after his coalition lost its majority.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 15,
+  "tagesschau": 16,
   "DW": 8,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 4,
-  "BBC World": 11,
+  "Handelsblatt": 5,
+  "BBC World": 12,
   "NYT World": 19,
   "EIA Today in Energy": 0
  }
