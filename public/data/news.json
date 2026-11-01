@@ -1,17 +1,39 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-01T21:23:30.376Z",
+ "lastUpdated": "2026-11-01T22:23:27.287Z",
  "eintraege": [
   {
    "id": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo",
    "titel": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire ends",
    "link": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-01T21:01:58.000Z",
+   "zeit": "2026-11-01T21:55:01.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "A rare humanitarian ceasefire allowed civilians to evacuate the Russian-occupied city of Oleshky.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/us-zoelle-carney-zieht-positives-fazit-nach-gespraech-mit-trump/30026990.html",
+   "titel": "+++ US-Zollpolitik +++: Carney zieht positives Fazit nach Gespräch mit Trump",
+   "link": "https://www.handelsblatt.com/politik/international/us-zoelle-carney-zieht-positives-fazit-nach-gespraech-mit-trump/30026990.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-01T21:32:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Bericht: USA heben Zölle auf bestimmte kanadische Waren auf +++ USA und Kanada verhandeln laut Insidern über Lockerung von Zöllen +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-festnahme-nach-terrorhinweis-russischer-fsb-dankt-usa/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Festnahme nach Terrorhinweis – russischer FSB dankt USA",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-festnahme-nach-terrorhinweis-russischer-fsb-dankt-usa/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-01T21:28:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ukrainische Luftwaffe: Warn-App für Luftangriffe wurde gehackt +++ Selenskyj zu Treffen mit Putin in der Türkei bereit +++ Russische Industrieanlage bei Drohnenangriff beschädigt +++ Der Newsblog.",
+   "sprache": "de"
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/donald-trump-zur-halbzeit-was-er-wirklich-erreicht-hat-201625540.html",
@@ -89,17 +111,6 @@
    "maerkte": [],
    "text": "Five officers from the Hamas-run police have been killed in Khan Younis and three people, including a child, killed in Gaza City, officials say.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-festnahme-nach-terrorhinweis-russischer-fsb-dankt-usa/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Festnahme nach Terrorhinweis – russischer FSB dankt USA",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-festnahme-nach-terrorhinweis-russischer-fsb-dankt-usa/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-01T16:44:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russische Industrieanlage bei Drohnenangriff beschädigt+++ Oleschky-Flüchtlinge in der Ukraine angekommen +++ Erdogan nennt Angriffe im Schwarzen Meer inakzeptabel +++ Der Newsblog.",
-   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/ausland/golfstaaten-midterms-usa-100.html",
@@ -997,17 +1008,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Stephen James Hubbard, the retired teacher arrested soon after Russia’s full-scale invasion of Ukraine in 2022, said he sometimes lost hope.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/30/world/asia/call-of-duty-seoul-itaweon-crowd-crush.html",
-   "titel": "New ‘Call of Duty’ Game Draws Criticism for Using Footage of Deadly Seoul Crowd Crush",
-   "link": "https://www.nytimes.com/2026/10/30/world/asia/call-of-duty-seoul-itaweon-crowd-crush.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-30T18:32:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Call of Duty: Modern Warfare 4 uses actual visuals from a Halloween crowd crush in South Korea, in which over 150 people died in a narrow alleyway.",
    "sprache": "en"
   }
  ],
