@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-01T06:21:56.429Z",
+ "lastUpdated": "2026-11-01T07:23:30.378Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/robert-habeck-es-kann-schlimmer-kommen-als-mit-trump/100265339.html",
+   "titel": "Interview: „Es kann schlimmer kommen als mit Trump“: Robert Habecks Strategie gegen die USA, Russland und China",
+   "link": "https://www.handelsblatt.com/politik/deutschland/robert-habeck-es-kann-schlimmer-kommen-als-mit-trump/100265339.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-01T07:01:35.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der Ex-Vizekanzler spricht im Handelsblatt-Interview über Europas Kampf gegen die Supermächte, die anstehenden US-Wahlen – und verrät, wen er aktuell für den größten Europäer hält.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo",
+   "titel": "India's opposition set to hold mega rally seeking election chief's resignation",
+   "link": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-01T07:00:55.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/amerika-trump-brasiliens-wahlverlierer-bolsonaro-kann-in-usa-bleiben/100266404.html",
+   "titel": "US-Außenpolitik: Trump: Brasiliens Wahlverlierer Bolsonaro kann in USA bleiben",
+   "link": "https://www.handelsblatt.com/politik/international/amerika-trump-brasiliens-wahlverlierer-bolsonaro-kann-in-usa-bleiben/100266404.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-01T06:53:24.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der US-Präsident nennt die Wahl in Brasilien „eine Schande“. Die Äußerungen dürften die Beziehungen zwischen den beiden größten Demokratien Amerikas weiter belasten.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/netzagentur-haelt-gasversorgung-trotz-verfehlter-speicherziele-fuer-sicher-accg-201640256.html",
    "titel": "Energieversorgung: Netzagentur hält Gasversorgung trotz verfehlter Speicherziele für sicher",
@@ -49,19 +84,6 @@
    "maerkte": [],
    "text": "Irans Außenminister sieht keine Notwendigkeit für USA-Treffen +++ Rubio: Noch keine Entscheidung zu weiterem US-Militäreinsatz gegen Iran +++ Von Huthi entführter UN-Mitarbeiter tot +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo",
-   "titel": "India's opposition set to hold mega rally seeking election chief's resignation",
-   "link": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-01T00:12:07.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
@@ -996,28 +1018,6 @@
    "maerkte": [],
    "text": "Anthony Zurcher explains how the results of the midterm elections could reshape the rest of Trump's presidency.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/bip-in-deutschland-wirtschaftsleistung-legt-im-dritten-quartal-leicht-zu-a-fd34e9f5-40ab-41c2-bc12-2c34fb488c3f",
-   "titel": "BIP: Deutschlands Wirtschaft wächst im Sommer überraschend",
-   "link": "https://www.spiegel.de/wirtschaft/bip-in-deutschland-wirtschaftsleistung-legt-im-dritten-quartal-leicht-zu-a-fd34e9f5-40ab-41c2-bc12-2c34fb488c3f#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-10-30T10:07:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Trockenheit, hohe Energiepreise und weltweite Handelshemmnisse – keine günstigen Voraussetzungen für Wachstum. Trotzdem hat die Wirtschaftsleistung im dritten Quartal leicht zugelegt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/wirtschaftsforum/bert-ruerup-zoelle-sind-das-janusgesicht-des-protektionismus/100264969.html",
-   "titel": "Bert Rürup: Zölle sind das Janusgesicht des Protektionismus",
-   "link": "https://www.handelsblatt.com/meinung/wirtschaftsforum/bert-ruerup-zoelle-sind-das-janusgesicht-des-protektionismus/100264969.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-30T09:53:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Europas Autoindustrie steckt in der Zollfalle. Schutzwälle gegen China-Importe können ihr Zeit verschaffen. Den auch selbstverschuldeten Verlust an Wettbewerbsfähigkeit ersetzen sie nicht.",
-   "sprache": "de"
   }
  ],
  "quellen": {
