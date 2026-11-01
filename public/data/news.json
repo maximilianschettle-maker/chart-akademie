@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-01T15:23:31.328Z",
+ "lastUpdated": "2026-11-01T16:23:31.058Z",
  "eintraege": [
   {
    "id": "https://www.dw.com/de/vorgaben-f%C3%BCr-gasspeicher-f%C3%BCllstand-in-deutschland-verfehlt/a-79822308",
@@ -1015,9 +1015,9 @@
   }
  ],
  "quellen": {
-  "tagesschau": 16,
+  "tagesschau": 15,
   "DW": 8,
-  "Spiegel Wirtschaft": 5,
+  "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 4,
   "BBC World": 11,
