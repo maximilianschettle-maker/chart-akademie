@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-01T22:54:39.165Z",
+ "lastUpdated": "2026-11-01T23:23:30.167Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/usa-streit-zwischen-demokraten-in-michigan-droht-zu-eskalieren/29669594.html",
+   "titel": "+++ US-Midterms +++: Streit zwischen Demokraten in Michigan droht zu eskalieren",
+   "link": "https://www.handelsblatt.com/politik/international/usa-streit-zwischen-demokraten-in-michigan-droht-zu-eskalieren/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-01T23:09:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Trump setzt vor US-Wahlen Regierungshilfen als Druckmittel ein +++ Gericht weist Trump-Klage zu Wahl in Alaska ab +++ Washington D.C. und Virginia klagen gegen Trumps Triumphbogen +++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo",
    "titel": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire ends",
@@ -78,17 +89,6 @@
    "maerkte": [],
    "text": "Vier Menschen haben in den USA gemeinsam ein Jahr auf 160 Quadratmetern verbracht - für die Wissenschaft. Nun ist das NASA-Experiment vorbei. Ziel der langen Zeit in Isolation war die Simulation des Lebens auf dem Mars.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/usa-streit-zwischen-demokraten-in-michigan-droht-zu-eskalieren/29669594.html",
-   "titel": "+++ US-Midterms +++: Streit zwischen Demokraten in Michigan droht zu eskalieren",
-   "link": "https://www.handelsblatt.com/politik/international/usa-streit-zwischen-demokraten-in-michigan-droht-zu-eskalieren/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-01T18:23:28.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Gericht weist Trump-Klage zu Wahl in Alaska ab +++ Washington D.C. und Virginia klagen gegen Trumps Triumphbogen +++ Ermittlungen zu Senatswahl in Alaska bestätigt +++ Der Newsblog.",
-   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/c9kgj7k7ry0ro",
