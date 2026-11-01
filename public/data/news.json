@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-01T14:23:33.911Z",
+ "lastUpdated": "2026-11-01T15:23:31.328Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/vorgaben-f%C3%BCr-gasspeicher-f%C3%BCllstand-in-deutschland-verfehlt/a-79822308",
+   "titel": "Vorgaben für Gasspeicher-Füllstand in Deutschland verfehlt",
+   "link": "https://www.dw.com/de/vorgaben-für-gasspeicher-füllstand-in-deutschland-verfehlt/a-79822308?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-01T14:26:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Eigentlich sollten die Gasspeicher am 1. November zu 70 Prozent gefüllt sein. Dieses Ziel wurde nicht erreicht. Das Wirtschaftsministerium beteuert dennoch, die Versorgung im kommenden Winter sei gesichert",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/usa-midterms-colorado-100.html",
+   "titel": "Wahlkampf der US-Demokraten: Links, rechts - oder am besten in der Mitte?",
+   "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-colorado-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-01T14:25:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Gemeinsam gegen Trump: Darin sind sich die Demokraten in den USA einig. Aber darüber hinaus? Im Wahlkampf in Colorado zeigt sich die ganze Bandbreite an politischen Ideen der Partei. Isabel Schayani hat drei Kandidierende begleitet.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/polen-streit-um-polens-verfassungsgericht-eskaliert/100266434.html",
    "titel": "Polen: „Staatsstreich“ oder Rückkehr zur Rechtmäßigkeit? Der Streit um Polens Verfassungsgericht eskaliert",
@@ -988,36 +1012,14 @@
    "maerkte": [],
    "text": "The PM's Likud party has alleged foreign interference and said Arab-led parties \"stole\" the election after his coalition lost its majority.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-election-results-netanyahu-eisenkot.html",
-   "titel": "No Clear Winner in Israel Election, Final Results Show",
-   "link": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-election-results-netanyahu-eisenkot.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-30T15:02:51.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Prime Minister Benjamin Netanyahu’s party and its allies won 53 seats in Parliament, falling short of the outright majority needed to form a government. The main opposition bloc, led by Gadi Eisenkot, won 48.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/beh%C3%B6rden-in-israel-weisen-wahlbetrugsvorw%C3%BCrfe-zur%C3%BCck/a-79808773",
-   "titel": "Behörden in Israel weisen Wahlbetrugsvorwürfe zurück",
-   "link": "https://www.dw.com/de/behörden-in-israel-weisen-wahlbetrugsvorwürfe-zurück/a-79808773?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-10-30T14:57:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Bei den Wahlen in Israel habe es eine groß angelegte Einmischung durch das Ausland gegeben, behauptet die Partei von Ministerpräsident Benjamin Netanjahu. Im Zentrum der Vorwürfe stehen die arabischen Parteien.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 16,
   "DW": 8,
   "Spiegel Wirtschaft": 5,
-  "FAZ Wirtschaft": 5,
-  "Handelsblatt": 7,
+  "FAZ Wirtschaft": 4,
+  "Handelsblatt": 4,
   "BBC World": 11,
   "NYT World": 19,
   "EIA Today in Energy": 0
