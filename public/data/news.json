@@ -1,7 +1,20 @@
 {
  "version": 1,
- "lastUpdated": "2026-10-31T23:23:30.640Z",
+ "lastUpdated": "2026-11-01T00:23:32.508Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo",
+   "titel": "India's opposition set to hold mega rally seeking election chief's resignation",
+   "link": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-01T00:12:07.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
    "titel": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
@@ -1004,17 +1017,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "The leading contenders, Prime Minister Benjamin Netanyahu and Gadi Eisenkot, aren’t substantially different in their approach to Israel’s security or in their opposition to a Palestinian state.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/30/world/americas/colombia-crackdown-army-killings-de-la-espriella.html",
-   "titel": "Colombia’s ‘Narcoterrorist’ Crackdown Raises Questions Over Killings",
-   "link": "https://www.nytimes.com/2026/10/30/world/americas/colombia-crackdown-army-killings-de-la-espriella.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-30T09:00:55.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Military-involved deaths have roiled a country with an iron-fisted new president — and a history of extrajudicial killings.",
    "sprache": "en"
   }
  ],
