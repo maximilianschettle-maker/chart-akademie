@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-01T23:23:30.167Z",
+ "lastUpdated": "2026-11-02T01:23:26.857Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-zivilisten-aus-cherson-in-sicherheit-gebracht-waffenruhe-in-oleschky-beendet/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Zivilisten aus Cherson in Sicherheit gebracht – Waffenruhe in Oleschky beendet",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-zivilisten-aus-cherson-in-sicherheit-gebracht-waffenruhe-in-oleschky-beendet/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-02T01:18:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ukrainische Luftwaffe: Warn-App für Luftangriffe wurde gehackt +++ Festnahme nach Terrorhinweis – russischer FSB dankt USA +++ Selenskyj zu Treffen mit Putin in der Türkei bereit +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-waffenruhe-cherson-100.html",
+   "titel": "Ukraine: Feuerpause in Oleschky ausgelaufen",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-waffenruhe-cherson-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-02T01:09:27.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Feuerpause in Oleschky ist vorbei. Vor ihrem Ende nutzte das ukrainische Militär noch die Gelegenheit, weitere Menschen aus der Region in Sicherheit zu bringen. Unterdessen melden Ukraine und Russland Cyberattacken auf ihre Warn-Apps.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/usa-streit-zwischen-demokraten-in-michigan-droht-zu-eskalieren/29669594.html",
    "titel": "+++ US-Midterms +++: Streit zwischen Demokraten in Michigan droht zu eskalieren",
@@ -987,37 +1009,15 @@
    "maerkte": [],
    "text": "Der Wahlkampf in den USA ist für Politiker auch eine Gelegenheit, sich zu positionieren - für die Präsidentschaftswahl 2028. Kaliforniens Gouverneur Newsom werden Ambitionen nachgesagt - doch es gibt viele Vorbehalte. Von R. Spiegelhauer.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/30/world/europe/greece-explosion-athens-arrests.html",
-   "titel": "3 Arrested in Connection With Deadly Blast in Central Athens",
-   "link": "https://www.nytimes.com/2026/10/30/world/europe/greece-explosion-athens-arrests.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-30T18:45:35.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "The authorities said an attempt to steal copper gas pipes ultimately led to the massive explosion last month, which killed six people.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/29/world/europe/stephen-james-hubbard-russian-prison.html",
-   "titel": "Newly Freed American Describes His Years in Russian Prison",
-   "link": "https://www.nytimes.com/2026/10/29/world/europe/stephen-james-hubbard-russian-prison.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-30T18:36:51.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Stephen James Hubbard, the retired teacher arrested soon after Russia’s full-scale invasion of Ukraine in 2022, said he sometimes lost hope.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 16,
   "DW": 8,
-  "Spiegel Wirtschaft": 4,
+  "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 6,
-  "BBC World": 13,
+  "BBC World": 11,
   "NYT World": 17,
   "EIA Today in Energy": 0
  }
