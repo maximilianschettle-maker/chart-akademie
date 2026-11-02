@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-02T14:23:30.249Z",
+ "lastUpdated": "2026-11-02T15:23:32.658Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo",
+   "titel": "Shop freezers in seven European countries hit by cyber-attack",
+   "link": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-02T15:12:22.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The temperature of freezers in several shops across Europe reportedly rose to as high as 50C.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
+   "titel": "What Israeli Election Results Reveal About the Electorate",
+   "link": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-02T15:09:20.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Some groups stood by Prime Minister Benjamin Netanyahu’s party, but support fell off among others. Turnout was also a striking factor in the election.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/crq5n6204g20o",
+   "titel": "What we know about the alert app hack in Ukraine and Russia",
+   "link": "https://www.bbc.co.uk/news/videos/crq5n6204g20o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-02T14:24:25.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Both Ukraine and Russia say their air raid alert apps were cyber-attacked - Joe Tidy explains what we know so far.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/inland/innenpolitik/cyberattacke-linkspartei-mail-postfaecher-100.html",
    "titel": "Massive Cyberattacke auf Linken-Abgeordnete in Berlin",
@@ -12,17 +45,6 @@
    "maerkte": [],
    "text": "Tausende Nachrichten binnen Minuten: Ein massiver Cyberagriff hat die Mail-Postfächer der Linken im Bundestag lahmgelegt. Wer hinter der Attacke steckt, ist noch unklar. Andere Fraktionen waren nicht betroffen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo",
-   "titel": "Shop freezers in seven European countries hit by suspected cyber-attack",
-   "link": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-02T14:11:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The temperature of freezers in several shops across Europe reportedly rose to as high as 50C.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/aussenpolitik-afd-forciert-plaene-fuer-nord-stream-gipfel-mit-usa-und-russland/100265526.html",
@@ -59,17 +81,6 @@
     "oel"
    ],
    "text": "Iranian officials spoke of some progress in negotiating to reopen the strait, a vital oil and gas shipping lane, even as they prepare for all-out war.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
-   "titel": "What Israeli Election Results Reveal About the Electorate",
-   "link": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-02T13:16:19.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Some groups stood by Prime Minister Benjamin Netanyahu’s party, but support fell off among others. Turnout was also a striking factor in the election.",
    "sprache": "en"
   },
   {
@@ -135,7 +146,7 @@
    "zeit": "2026-11-02T12:05:34.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "The country was the first to contribute troops to the AU mission established to stabilise Somalia in 2007.",
+   "text": "Uganda has been helping Somalia battle an insurgency led by the al-Shabab militant group since 2007.",
    "sprache": "en"
   },
   {
@@ -181,6 +192,17 @@
    "maerkte": [],
    "text": "Spätestens Anfang 2027 soll ein Spritpreisdeckel gelten – als Ersatz für den Tankrabatt, so haben es die Koalitionsspitzen vereinbart. Das Wirtschaftsministerium legt nun erste Pläne vor. Sie sehen einige zusätzliche Hürden vor.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/cjly0p753dxxo",
+   "titel": "What are Americans voting for in this election?",
+   "link": "https://www.bbc.co.uk/news/videos/cjly0p753dxxo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-02T09:22:55.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The BBC's Maddie Gerber explains what's on the ballot in the 2026 midterm elections in the United States.",
+   "sprache": "en"
   },
   {
    "id": "https://www.dw.com/de/w%C3%BCrgt-der-neue-konflikt-%C3%A4thiopiens-wirtschaftswachstum-ab/a-79804678",
@@ -996,37 +1018,15 @@
    "maerkte": [],
    "text": "Many residents left Oleshky on Friday following a ceasefire brokered by US First Lady Melania Trump.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/bio-vordenker-niggli-rechnet-mit-oekolandbau-ab-bio-bringt-fuers-klima-nichts-accg-201602935.html",
-   "titel": "Öko-Vordenker Urs Niggli: „Bio bringt fürs Klima nichts“",
-   "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/bio-vordenker-niggli-rechnet-mit-oekolandbau-ab-bio-bringt-fuers-klima-nichts-accg-201602935.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-10-31T15:44:04.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Schweizer Urs Niggli gilt als Vordenker des Ökolandbaus und hat ihn jahrzehntelang geprägt. Einst war er euphorisch, heute blickt er kritisch auf die Branche und sagt: Mit Ökolandbau lässt sich die Welt nicht ernähren.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/audi-chef-doellner-und-trump-wie-moralisch-muessen-manager-sein-accg-201628474.html",
-   "titel": "Wahlkampf in Amerika: Ist es moralisch in Ordnung, wenn der Audi-Chef mit Trump auftritt?",
-   "link": "https://www.faz.net/aktuell/wirtschaft/audi-chef-doellner-und-trump-wie-moralisch-muessen-manager-sein-accg-201628474.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-10-31T15:27:04.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Gernot Döllner macht Werbung für Donald Trump, kurz vor den wichtigen Zwischenwahlen. Das wirft grundsätzliche Fragen auf zur politischen Verantwortung von Managern. Auch wegen der AfD.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 14,
-  "DW": 7,
-  "Spiegel Wirtschaft": 4,
+  "tagesschau": 13,
+  "DW": 6,
+  "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 4,
-  "BBC World": 9,
+  "Handelsblatt": 3,
+  "BBC World": 11,
   "NYT World": 15,
   "EIA Today in Energy": 0
  }
