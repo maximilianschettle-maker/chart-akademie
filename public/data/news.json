@@ -1,7 +1,62 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-02T12:23:35.026Z",
+ "lastUpdated": "2026-11-02T13:23:32.710Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo",
+   "titel": "Shop freezers in six European countries hit by suspected cyber-attack",
+   "link": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-02T13:19:56.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The temperature of freezers in several shops across Europe reportedly rose to as high as 50C.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
+   "titel": "What Israeli Election Results Reveal About the Electorate",
+   "link": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-voter-data-takeaways.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-02T13:16:19.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Some groups stood by Prime Minister Benjamin Netanyahu’s party, but support fell off among others. Turnout was also a striking factor in the election.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/brasilien-lulas-letzter-triumph-koennte-brasilien-teuer-zu-stehen-kommen/100266219.html",
+   "titel": "Brasilien: Lulas Triumph könnte Brasilien teuer zu stehen kommen – Stagnation bereits 2027 erwartet",
+   "link": "https://www.handelsblatt.com/politik/international/brasilien-lulas-letzter-triumph-koennte-brasilien-teuer-zu-stehen-kommen/100266219.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-02T13:01:40.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der Sozialdemokrat hat die Wahl mit einer Politik gewonnen, die Brasiliens Wirtschaft zunehmend belastet. Warum sollte Lula ausgerechnet jetzt seinen Kurs ändern?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/russlands-r%C3%BCckkehr-spaltet-den-eishockeysport-deb-pr%C3%BCft-r%C3%BCckgabe-der-heim-wm-2027/a-79828606",
+   "titel": "Russlands Rückkehr spaltet den Eishockeysport: DEB prüft Rückgabe der Heim-WM 2027",
+   "link": "https://www.dw.com/de/russlands-rückkehr-spaltet-den-eishockeysport-deb-prüft-rückgabe-der-heim-wm-2027/a-79828606?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-02T12:36:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Nach der Zulassung Russlands durch den CAS zieht der Deutsche Eishockey-Bund eine Rückgabe der WM 2027 in Betracht. Der Verband warnt vor Sicherheitskosten, Visa-Konflikten und möglichen Boykotten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/flugzeugabsturz-usa-florida-100.html",
+   "titel": "Neun Tote bei Flugzeugabsturz in Florida",
+   "link": "https://www.tagesschau.de/ausland/amerika/flugzeugabsturz-usa-florida-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-02T12:33:01.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In den USA sind neun Menschen beim Absturz eines Flugzeugs gestorben. Der Privatjet war im Bundesstaat Florida über einem Wohngebiet abgestürzt. Zuvor hatte die Pilotin Probleme mit dem Wetter gemeldet.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cr0qkve1x224o",
    "titel": "Ryanair says it may freeze workers' pay and raise airfares",
@@ -33,17 +88,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The country was the first to contribute troops to the AU mission established to stabilise Somalia in 2007.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo",
-   "titel": "Supermarket freezers in Belgium, Sweden and Luxembourg hit by suspected cyber-attack",
-   "link": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-02T11:56:32.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Stores in Sweden say temperatures for its freezers were raised to 50 C (122F).",
    "sprache": "en"
   },
   {
@@ -81,7 +125,7 @@
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/katherina-reiche-cdu-formuliert-erste-plaene-fuer-spritpreisdeckel-a-f41e4366-d70a-485a-959b-f5d16256e46a",
-   "titel": "Katherina Reiche (CDU) formuliert erste Pläne für Spritpreisdeckel",
+   "titel": "CDU: Katherina Reiche formuliert erste Pläne für Spritpreisdeckel",
    "link": "https://www.spiegel.de/wirtschaft/katherina-reiche-cdu-formuliert-erste-plaene-fuer-spritpreisdeckel-a-f41e4366-d70a-485a-959b-f5d16256e46a#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-11-02T09:53:00.000Z",
@@ -102,9 +146,9 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.handelsblatt.com/politik/international/usa-verachtenswerter-verrat-schumer-kritisiert-abtruennige-abgeordnete/29669594.html",
+   "id": "https://www.handelsblatt.com/politik/international/us-midterms-verachtenswerter-verrat-schumer-kritisiert-abtruennige-abgeordnete/29669594.html",
    "titel": "+++ US-Midterms +++: „Verachtenswerter Verrat“ – Schumer kritisiert abtrünnige Abgeordnete",
-   "link": "https://www.handelsblatt.com/politik/international/usa-verachtenswerter-verrat-schumer-kritisiert-abtruennige-abgeordnete/29669594.html",
+   "link": "https://www.handelsblatt.com/politik/international/us-midterms-verachtenswerter-verrat-schumer-kritisiert-abtruennige-abgeordnete/29669594.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-02T08:43:41.000Z",
    "kategorie": "politik",
@@ -113,14 +157,14 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.tagesschau.de/ausland/amerika/flugzeugabsturz-usa-florida-100.html",
-   "titel": "Neun Tote bei Flugzeugabsturz in Florida",
-   "link": "https://www.tagesschau.de/ausland/amerika/flugzeugabsturz-usa-florida-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-02T08:13:47.000Z",
-   "kategorie": "konflikte",
+   "id": "https://www.handelsblatt.com/politik/international/usa-verachtenswerter-verrat-schumer-kritisiert-abtruennige-abgeordnete/29669594.html",
+   "titel": "+++ US-Midterms +++: „Verachtenswerter Verrat“ – Schumer kritisiert abtrünnige Abgeordnete",
+   "link": "https://www.handelsblatt.com/politik/international/usa-verachtenswerter-verrat-schumer-kritisiert-abtruennige-abgeordnete/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-02T08:43:41.000Z",
+   "kategorie": "politik",
    "maerkte": [],
-   "text": "In den USA sind neun Menschen beim Absturz eines Flugzeugs gestorben. Der Privatjet war im Bundesstaat Florida über einem Wohngebiet abgestürzt. Zuvor hatte der Pilot Probleme mit dem Wetter gemeldet.",
+   "text": "Streit zwischen Demokraten in Michigan droht zu eskalieren ++ Trump setzt vor US-Wahlen Regierungshilfen als Druckmittel ein +++ Gericht weist Trump-Klage zu Wahl in Alaska ab +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -970,60 +1014,16 @@
    "maerkte": [],
    "text": "The prime minister has previously emphasised military preparedness as central to his government's ambitions.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
-   "titel": "Train Disaster Is Blow to Spain’s Leader, Already Election Underdog",
-   "link": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-31T14:14:19.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Prime Minister Pedro Sánchez wanted to campaign on inequality and housing, but the second major rail accident this year has put his government’s competence on trial.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/02/world/africa/ethiopia-tigray-conflict.html",
-   "titel": "What to Know About Fighting Between Ethiopia and Rebels in Tigray",
-   "link": "https://www.nytimes.com/2026/10/02/world/africa/ethiopia-tigray-conflict.html",
-   "quelle": "NYT World",
-   "zeit": "2026-10-31T13:22:39.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ethiopian officials said Russia had delivered 12 fighter jets and would also send air defense systems, adding to fears of a renewed conflict in the Horn of Africa.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo",
-   "titel": "US approves sale of 500 Patriot missiles to Ukraine",
-   "link": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-31T12:21:25.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The American-made interceptors are the only effective weapon for downing Russia's ballistic missiles.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/serbien-studenten-nach-wahlsieg-100.html",
-   "titel": "Das System Vucic in Serbien: Besiegt, aber nicht verschwunden",
-   "link": "https://www.tagesschau.de/ausland/europa/serbien-studenten-nach-wahlsieg-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-31T12:08:42.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Auch rund eine Woche nach ihrem Wahlsieg in Serbien staunt die Studentenbewegung noch über ihren Erfolg. Ihre Mitglieder merken aber im Alltag: Das System von Ex-Präsident Vucic verschwindet nicht über Nacht. Von A. Bachmann und I. Bafas.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 15,
+  "tagesschau": 13,
   "DW": 7,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 5,
+  "Handelsblatt": 4,
   "BBC World": 9,
-  "NYT World": 14,
+  "NYT World": 15,
   "EIA Today in Energy": 0
  }
 }
