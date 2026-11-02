@@ -1,17 +1,61 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-02T11:23:36.012Z",
+ "lastUpdated": "2026-11-02T12:23:35.026Z",
  "eintraege": [
   {
    "id": "https://www.bbc.co.uk/news/articles/cr0qkve1x224o",
    "titel": "Ryanair says it may freeze workers' pay and raise airfares",
    "link": "https://www.bbc.co.uk/news/articles/cr0qkve1x224o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-02T11:10:52.000Z",
+   "zeit": "2026-11-02T12:22:10.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The airline says fuel prices may rise by €2bn in 2028 unless there is an end to the US-Israel war with Iran.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/02/world/middleeast/israel-election-prime-minister.html",
+   "titel": "Netanyahu and Eisenkot Seek Shot to Be Israel’s Premier",
+   "link": "https://www.nytimes.com/2026/11/02/world/middleeast/israel-election-prime-minister.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-02T12:13:26.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Party leaders will make competing cases to the Israeli president for either Benjamin Netanyahu or Gadi Eisenkot to get the first chance to build a governing coalition.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c8zxlqxwed4do",
+   "titel": "Uganda begins withdrawing troops from Somalia after 20 years",
+   "link": "https://www.bbc.co.uk/news/articles/c8zxlqxwed4do?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-02T12:05:34.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The country was the first to contribute troops to the AU mission established to stabilise Somalia in 2007.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo",
+   "titel": "Supermarket freezers in Belgium, Sweden and Luxembourg hit by suspected cyber-attack",
+   "link": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-02T11:56:32.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Stores in Sweden say temperatures for its freezers were raised to 50 C (122F).",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/regional/berlin/koalitionsgespraeche-rot-gruen-rot-100.html",
+   "titel": "Rot-grün-rote Koalitionsgespräche in Berlin gestartet",
+   "link": "https://www.tagesschau.de/inland/regional/berlin/koalitionsgespraeche-rot-gruen-rot-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-02T11:47:01.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Linke, Grüne und SPD haben in Berlin ihre Verhandlungen über eine gemeinsame Regierung begonnen. Bis Dezember könnte ein Koalitionsvertrag stehen - doch sicher ist das nicht. Mehrere SPD-Politiker sprechen sich gegen eine Koalition aus.",
+   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/inland/innenpolitik/bas-ruecktritt-feldenkirchen-100.html",
@@ -25,14 +69,14 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/02/world/middleeast/israel-election-prime-minister.html",
-   "titel": "Netanyahu and Eisenkot Seek Shot to Be Israel’s Premier",
-   "link": "https://www.nytimes.com/2026/11/02/world/middleeast/israel-election-prime-minister.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-02T10:30:54.000Z",
-   "kategorie": "politik",
+   "id": "https://www.bbc.co.uk/news/articles/cv4g13z0px8yo",
+   "titel": "Five arrested after South African farmer shot and tortured",
+   "link": "https://www.bbc.co.uk/news/articles/cv4g13z0px8yo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-02T10:48:47.000Z",
+   "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Party leaders will make competing cases to the Israeli president for either Benjamin Netanyahu or Gadi Eisenkot to get the first chance to build a governing coalition.",
+   "text": "The attack on Donovan Marx, 50, comes as right-wing groups say there is a genocide of white people - a claim widely discredited.",
    "sprache": "en"
   },
   {
@@ -58,17 +102,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/c8zxlqxwed4do",
-   "titel": "Uganda begins withdrawing troops from Somalia after 20 years",
-   "link": "https://www.bbc.co.uk/news/articles/c8zxlqxwed4do?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-02T08:55:27.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The country was the first to contribute troops to the AU mission established to stabilise Somalia in 2007.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/politik/international/usa-verachtenswerter-verrat-schumer-kritisiert-abtruennige-abgeordnete/29669594.html",
    "titel": "+++ US-Midterms +++: „Verachtenswerter Verrat“ – Schumer kritisiert abtrünnige Abgeordnete",
    "link": "https://www.handelsblatt.com/politik/international/usa-verachtenswerter-verrat-schumer-kritisiert-abtruennige-abgeordnete/29669594.html",
@@ -77,17 +110,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Streit zwischen Demokraten in Michigan droht zu eskalieren ++ Trump setzt vor US-Wahlen Regierungshilfen als Druckmittel ein +++ Gericht weist Trump-Klage zu Wahl in Alaska ab +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/regional/berlin/koalitionsgespraeche-rot-gruen-rot-100.html",
-   "titel": "Rot-grün-rote Koalitionsgespräche in Berlin starten",
-   "link": "https://www.tagesschau.de/inland/regional/berlin/koalitionsgespraeche-rot-gruen-rot-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-02T08:23:43.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Linke, Grüne und SPD in Berlin beginnen ihre Verhandlungen über eine gemeinsame Regierung. Bis Dezember könnte ein Koalitionsvertrag stehen - doch sicher ist das nicht. Mehrere prominente SPD-Mitglieder sprechen sich gegen eine Koalition au",
    "sprache": "de"
   },
   {
@@ -992,39 +1014,15 @@
    "maerkte": [],
    "text": "Auch rund eine Woche nach ihrem Wahlsieg in Serbien staunt die Studentenbewegung noch über ihren Erfolg. Ihre Mitglieder merken aber im Alltag: Das System von Ex-Präsident Vucic verschwindet nicht über Nacht. Von A. Bachmann und I. Bafas.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/afd-leak-die-afd-ihre-trump-nahe-agentur-und-der-aerger-um-380.000-euro/100265075.html",
-   "titel": "AfD-Leak: Wahlkampf auf texanisch: Die AfD, ihre Trump-nahe Agentur und der Ärger um 380.000 Euro",
-   "link": "https://www.handelsblatt.com/politik/deutschland/afd-leak-die-afd-ihre-trump-nahe-agentur-und-der-aerger-um-380.000-euro/100265075.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-31T12:00:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Für den Wahlkampf 2017 setzte die Partei auf die Agentur des Mannes, der „das republikanische Internet erfand“. Interna zeigen, wie Weidel dabei auch den Kontakt zu Steve Bannon suchte.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/merz-asienreise-abschluss-100.html",
-   "titel": "Merz nach Asienreise: \"Hat sich in mehrfacher Hinsicht gelohnt\"",
-   "link": "https://www.tagesschau.de/ausland/asien/merz-asienreise-abschluss-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-31T11:56:25.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Fünf Tage lang war Kanzler Merz in Asien. Es ging um Geschäfte mit einer Boom-Region, Allianzen gegen Großmächte, um Cybersicherheit und Verteidigung. Eine Auszeit von der deutschen Innenpolitik, die sich laut Merz gelohnt hat. Von D. Peppi",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 16,
+  "tagesschau": 15,
   "DW": 7,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 6,
-  "BBC World": 8,
+  "Handelsblatt": 5,
+  "BBC World": 9,
   "NYT World": 14,
   "EIA Today in Energy": 0
  }
