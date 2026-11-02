@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-02T01:23:26.857Z",
+ "lastUpdated": "2026-11-02T02:35:36.620Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-krieg-app-fuer-notfall-warnungen-in-ukraine-und-russland-gehackt/100266492.html",
+   "titel": "Ukraine-Krieg: App für Notfall-Warnungen in Ukraine und Russland gehackt",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-krieg-app-fuer-notfall-warnungen-in-ukraine-und-russland-gehackt/100266492.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-02T02:24:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Radioaktive Strahlung in Kiew und Angriffe mit chemischen Waffen? Falsche Warnmeldungen in einer offenbar gehackten Notfall-App schrecken Bürger in der Ukraine auf. Es folgt ein Cyberangriff auf Russland.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-zivilisten-aus-cherson-in-sicherheit-gebracht-waffenruhe-in-oleschky-beendet/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Zivilisten aus Cherson in Sicherheit gebracht – Waffenruhe in Oleschky beendet",
@@ -998,17 +1009,6 @@
    "maerkte": [],
    "text": "I experienced war’s subterranean future as drones dominate the skies. I didn’t like it.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/usa-midterms-newsom-ambitionen-100.html",
-   "titel": "USA: Bereitet Newsom eine Präsidentschaftskandidatur vor?",
-   "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-newsom-ambitionen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-30T18:46:53.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der Wahlkampf in den USA ist für Politiker auch eine Gelegenheit, sich zu positionieren - für die Präsidentschaftswahl 2028. Kaliforniens Gouverneur Newsom werden Ambitionen nachgesagt - doch es gibt viele Vorbehalte. Von R. Spiegelhauer.",
-   "sprache": "de"
   }
  ],
  "quellen": {
