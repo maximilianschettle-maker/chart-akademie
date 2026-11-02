@@ -3,6 +3,7 @@
 /** Sinnvolle Nachkommastellen für einen Kurs dieser Größenordnung. */
 export function preisStellen(preis: number): number {
   const p = Math.abs(preis)
+  if (p >= 10_000) return 0 // Nasdaq 28.385, Bitcoin 77.707: die Stelle trägt nichts, kostet aber Achsenbreite
   if (p >= 1000) return 1
   if (p >= 10) return 2
   if (p >= 1) return 3

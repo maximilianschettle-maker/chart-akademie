@@ -121,7 +121,7 @@ describe('Gemeldete Fälle an echten Daten', () => {
     const r = bewerteSzenario(sz, c, b.trades, b.offeneOrder)
     expect(r.bewertung).toBe('verpasst')
     expect(r.grund).toBe('orderNichtGefuellt')
-    expect(r.text).toContain('Deine Limit-Order bei 25.348,7 $ wurde nie gefüllt.')
+    expect(r.text).toContain('Deine Limit-Order bei 25.349 $ wurde nie gefüllt.')
     expect(r.text).toContain('(16.06.2023, 15:00) fiel der Kurs nur bis')
   })
 

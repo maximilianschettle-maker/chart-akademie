@@ -72,6 +72,8 @@ interface ChartPanelProps {
   emaPerioden?: number[]
   /** Freiraum rechts in Kerzen — damit Markierungen an der letzten Kerze nicht am Rand kleben */
   randRechts?: number
+  /** Anfangs nur die letzten n Kerzen zeigen; der Rest bleibt zum Zurückscrollen und als Vorlauf für die EMAs */
+  sichtbar?: number
   /** Uhrzeit an der Zeitachse; bei Tages-/Wochenkerzen (Aktien) aus */
   zeitSichtbar?: boolean
   /** Kerzen (Standard) oder Schlusskurs-Linie */
@@ -93,6 +95,7 @@ export function ChartPanel({
   zeigeVolumen = true,
   emaPerioden,
   randRechts = 0,
+  sichtbar,
   zeitSichtbar = true,
   typ = 'kerzen',
   logSkala = false,
@@ -122,7 +125,7 @@ export function ChartPanel({
         textColor: CHART_FARBEN.text,
         fontFamily: 'Inter, system-ui, sans-serif',
         // am Handy kleinere Achsenschrift → schmalere Preisachse, mehr Platz für Kerzen
-        fontSize: schmal ? 10 : 12,
+        fontSize: schmal ? 9 : 12,
       },
       grid: {
         vertLines: { color: CHART_FARBEN.gitter },
@@ -249,9 +252,11 @@ export function ChartPanel({
 
     const ansichtEinpassen = () => {
       chart.priceScale(PREISACHSE).setAutoScale(true)
-      chart.timeScale().fitContent()
-      if (randRechts > 0) {
-        chart.timeScale().setVisibleLogicalRange({ from: -0.5, to: candles.length - 0.5 + randRechts })
+      const von = sichtbar && sichtbar < candles.length ? candles.length - sichtbar - 0.5 : -0.5
+      if (von > -0.5 || randRechts > 0) {
+        chart.timeScale().setVisibleLogicalRange({ from: von, to: candles.length - 0.5 + randRechts })
+      } else {
+        chart.timeScale().fitContent()
       }
     }
     ansichtEinpassen()
@@ -282,7 +287,7 @@ export function ChartPanel({
       beschriftungRef.current = null
       chart.remove()
     }
-  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden, randRechts, zeitSichtbar, typ, logSkala, schmal])
+  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden, randRechts, sichtbar, zeitSichtbar, typ, logSkala, schmal])
 
   useEffect(() => {
     beschriftetRef.current = beschriftet

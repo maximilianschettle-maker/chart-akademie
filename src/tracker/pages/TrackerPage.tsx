@@ -82,11 +82,10 @@ function InstrumentKarte({ inst, jetzt, live, ebene }: { inst: InstrumentDaten; 
   const bereich = bereiche[ebene]
   const daten = ebeneDaten(inst, ebene)
   const tagesKerzen = useMemo(() => kerzenAusKompakt(inst.kerzen), [inst.kerzen])
-  const alleKerzen = useMemo(() => (ebene === 'tag' ? tagesKerzen : kerzenAusKompakt(daten?.kerzen ?? [])), [ebene, tagesKerzen, daten?.kerzen])
-  const kerzen = useMemo(
-    () => alleKerzen.slice(-(BEREICHE[ebene].find((b) => b.id === bereich)?.kerzen ?? 252)),
-    [alleKerzen, bereich, ebene],
-  )
+  const kerzen = useMemo(() => (ebene === 'tag' ? tagesKerzen : kerzenAusKompakt(daten?.kerzen ?? [])), [ebene, tagesKerzen, daten?.kerzen])
+  // Der Zeitraum ist nur der sichtbare Ausschnitt – der Chart bekommt alle Kerzen, damit EMA 50
+  // auch bei „50 K“ Vorlauf hat (vorher: 50 Kerzen → EMA 50 ohne einen einzigen gültigen Wert)
+  const sichtbar = BEREICHE[ebene].find((b) => b.id === bereich)?.kerzen ?? 252
   const a = daten?.analyse ?? null
   const einheit = ebene === 'tag' ? '20T' : '20h'
   // Kurs: Live vom Worker, wenn neuer als der Stand der Action (Tagesveränderung immer gegen den Vortagesschluss)
@@ -147,7 +146,7 @@ function InstrumentKarte({ inst, jetzt, live, ebene }: { inst: InstrumentDaten; 
   )
 
   return (
-    <section className="rounded-xl border border-rand bg-flaeche p-4">
+    <section className="rounded-xl border border-rand bg-flaeche p-3 sm:p-4">
       <button
         type="button"
         onClick={() => setOffen((o) => !o)}
@@ -211,17 +210,21 @@ function InstrumentKarte({ inst, jetzt, live, ebene }: { inst: InstrumentDaten; 
       {offen && kerzen.length > 0 && (
         <div className="mt-3">
           <div className="mb-1.5 flex justify-end">{zeitraumLeiste}</div>
-          <ChartPanel
-            candles={kerzen}
-            annotationen={annotationen}
-            hoehe={schmal ? CHART_HOEHE.schmal : CHART_HOEHE.breit}
-            zeigeVolumen={false}
-            emaPerioden={EMA_TRACKER}
-            zeitSichtbar={ebene === 'stunde'}
-            randRechts={6}
-            vollbildLeiste={zeitraumLeiste}
-            kompakteBeschriftung
-          />
+          {/* Chart bis an den Kartenrand – am Handy zählt jeder Pixel Breite */}
+          <div className="-mx-3 sm:-mx-2">
+            <ChartPanel
+              candles={kerzen}
+              sichtbar={sichtbar}
+              annotationen={annotationen}
+              hoehe={schmal ? CHART_HOEHE.schmal : CHART_HOEHE.breit}
+              zeigeVolumen={false}
+              emaPerioden={EMA_TRACKER}
+              zeitSichtbar={ebene === 'stunde'}
+              randRechts={6}
+              vollbildLeiste={zeitraumLeiste}
+              kompakteBeschriftung
+            />
+          </div>
         </div>
       )}
 
@@ -286,7 +289,7 @@ export function TrackerPage() {
     : []
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-5 sm:py-8">
+    <div className="mx-auto max-w-3xl px-3 py-5 sm:px-4 sm:py-8">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <h1 className="inline-flex items-center gap-2 text-2xl font-bold text-white">

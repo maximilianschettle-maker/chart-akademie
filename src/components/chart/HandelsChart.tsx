@@ -586,7 +586,7 @@ export function HandelsChart({
     chartRef.current?.applyOptions({
       timeScale: { visible: !zeitVerdeckt, timeVisible: !zeitVerdeckt },
       // am Handy kleinere Achsenschrift → schmalere Preisachse, mehr Platz für Kerzen
-      layout: { fontSize: schmal ? 10 : 12 },
+      layout: { fontSize: schmal ? 9 : 12 },
     })
   }, [zeitVerdeckt, schmal])
 
