@@ -1,16 +1,64 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-02T13:23:32.710Z",
+ "lastUpdated": "2026-11-02T14:23:30.249Z",
  "eintraege": [
   {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/cyberattacke-linkspartei-mail-postfaecher-100.html",
+   "titel": "Massive Cyberattacke auf Linken-Abgeordnete in Berlin",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/cyberattacke-linkspartei-mail-postfaecher-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-02T14:14:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Tausende Nachrichten binnen Minuten: Ein massiver Cyberagriff hat die Mail-Postfächer der Linken im Bundestag lahmgelegt. Wer hinter der Attacke steckt, ist noch unklar. Andere Fraktionen waren nicht betroffen.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo",
-   "titel": "Shop freezers in six European countries hit by suspected cyber-attack",
+   "titel": "Shop freezers in seven European countries hit by suspected cyber-attack",
    "link": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-02T13:19:56.000Z",
+   "zeit": "2026-11-02T14:11:13.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The temperature of freezers in several shops across Europe reportedly rose to as high as 50C.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/aussenpolitik-afd-forciert-plaene-fuer-nord-stream-gipfel-mit-usa-und-russland/100265526.html",
+   "titel": "Außenpolitik: AfD forciert Pläne für Nord-Stream-Gipfel mit USA und Russland",
+   "link": "https://www.handelsblatt.com/politik/deutschland/aussenpolitik-afd-forciert-plaene-fuer-nord-stream-gipfel-mit-usa-und-russland/100265526.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-02T14:09:17.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Die AfD will bei einem Gipfel in Abu Dhabi über die Zukunft der Nord-Stream-Pipelines verhandeln. Zugleich konkretisiert sie in zwei Positionspapieren ihre außenpolitische Strategie.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/reiche-spritpreisdeckel-entwurf-100.html",
+   "titel": "Ministerin Reiche legt ersten Entwurf für Spritpreisdeckel-Gesetz vor",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/reiche-spritpreisdeckel-entwurf-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-02T14:03:56.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Wirtschaftsministerin Reiche ist keine Befürworterin eines Spritpreisdeckels. Doch die Koalition will das Instrument einführen. Nun liegt ein erster Gesetzentwurf ihres Ministeriums vor. Er beschreibt, wann der Spritpreisdeckel gelten soll ",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/02/world/middleeast/iran-deal-strait-of-hormuz.html",
+   "titel": "Iran Says It Would Reopen Strait of Hormuz in 2 Days as Part of U.S. Deal",
+   "link": "https://www.nytimes.com/2026/11/02/world/middleeast/iran-deal-strait-of-hormuz.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-02T13:44:14.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Iranian officials spoke of some progress in negotiating to reopen the strait, a vital oil and gas shipping lane, even as they prepare for all-out war.",
    "sprache": "en"
   },
   {
@@ -211,6 +259,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Vor Angriffen warnt die Ukraine die Bevölkerung per App. Doch dabei gibt es nun ein Problem: Die App wurde gehackt, in Kiew wurde fälschlicherweise vor \"Gefahr durch Strahlung\" gewarnt. Auch Russland meldet einen Angriff auf seine Warn-App.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/weg-von-fossilen-energien-diese-chance-bieten-die-hohen-energiepreise-201528233.html",
+   "titel": "Hohe Energiepreise: Weg von fossilen Energien – jetzt oder nie!",
+   "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/weg-von-fossilen-energien-diese-chance-bieten-die-hohen-energiepreise-201528233.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-02T06:32:39.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "Die hohen Energiepreise bieten die Chance auf schnellere Elektrifizierung. Doch Berlin und Brüssel verheddern sich in gemischten politischen Signalen.",
    "sprache": "de"
   },
   {
@@ -959,65 +1018,10 @@
    "maerkte": [],
    "text": "Gernot Döllner macht Werbung für Donald Trump, kurz vor den wichtigen Zwischenwahlen. Das wirft grundsätzliche Fragen auf zur politischen Verantwortung von Managern. Auch wegen der AfD.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/berlin-weg-frei-fuer-rot-gruen-rote-koalitionsgespraeche-in-berlin/100266336.html",
-   "titel": "Berlin: Weg frei für rot-grün-rote Koalitionsgespräche in Berlin",
-   "link": "https://www.handelsblatt.com/politik/deutschland/berlin-weg-frei-fuer-rot-gruen-rote-koalitionsgespraeche-in-berlin/100266336.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-31T15:19:50.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Viele Anwürfe von außen und die Debatte um Koalitionsverhandlungen. Auf einem Landesparteitag spricht die Berliner Spitzenlinke Eralp von einer „Angriffswelle“.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/berlin-elif-eralp-werden-uns-nicht-kleinkriegen-lassen/100266336.html",
-   "titel": "Berlin: Elif Eralp: „Werden uns nicht kleinkriegen lassen“",
-   "link": "https://www.handelsblatt.com/politik/deutschland/berlin-elif-eralp-werden-uns-nicht-kleinkriegen-lassen/100266336.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-10-31T15:19:50.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Viele Anwürfe von außen und eine Debatte um die Sicherheit ihrer Familie. Auf einem Landesparteitag spricht die Berliner Spitzenlinke Eralp von einer „Angriffswelle“.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/oleschky-ukraine-100.html",
-   "titel": "Bewohner Oleschkys auf ukrainisch kontrolliertem Gebiet angekommen",
-   "link": "https://www.tagesschau.de/ausland/oleschky-ukraine-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-10-31T15:06:39.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach der Evakuierung der von Russland besetzten Stadt Oleschky sind gerettete Bewohner in ukrainisch kontrolliertem Gebiet angekommen. Zuvor waren sie mit Militärflugzeugen nach Belarus gebracht worden.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/iran-geographisch-uneingeschr%C3%A4nkte-antwort-bei-us-attacke/a-79816195",
-   "titel": "Iran: \"Geographisch uneingeschränkte Antwort\" bei US-Attacke",
-   "link": "https://www.dw.com/de/iran-geographisch-uneingeschränkte-antwort-bei-us-attacke/a-79816195?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-10-31T14:56:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Oberste Führer der Islamischen Republik, den die Öffentlichkeit nicht zu Gesicht bekommt, soll gesprochen haben. Sein Außenminister sekundiert.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmwyv2y7g9l8o",
-   "titel": "Ethiopian PM puts ministers through military training",
-   "link": "https://www.bbc.co.uk/news/articles/cmwyv2y7g9l8o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-10-31T14:28:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The prime minister has previously emphasised military preparedness as central to his government's ambitions.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 14,
   "DW": 7,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
