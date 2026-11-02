@@ -3,6 +3,7 @@ import type { IChartApi, ISeriesApi, SeriesType } from 'lightweight-charts'
 // Chart-Bedienung über das hinaus, was lightweight-charts von sich aus kann (Phase 2):
 //
 //   Doppeltipp / Doppelklick auf den Chart      → zurück zur Automatik (Preisachse auto, Zeit eingepasst)
+//   Ein Tipp mit dem Finger (ohne Ziehen)        → onTipp (z.B. Beschriftungen ein-/ausblenden)
 //   Ein Finger auf der Preisachse hoch/runter   → Preisachse strecken/stauchen (Maus: macht die Bibliothek)
 //   Zwei Finger auf dem Chart                   → Pinch-Zoom in beide Richtungen und Verschieben (auch vertikal)
 //   Ein Finger auf dem Chart                    → wie bisher: waagerecht scrollen; senkrecht scrollt die Seite
@@ -31,6 +32,24 @@ export function achsenZugFaktor(dyPx: number, empfindlichkeit = 160): number {
   return Math.exp(dyPx / empfindlichkeit)
 }
 
+export type AchsenSeite = 'left' | 'right'
+
+/** Liegt x (im Container) auf der Preisachse? Die Achse sitzt links oder rechts und ist `achsenBreite` breit. */
+export function aufAchse(x: number, seite: AchsenSeite, gesamtBreite: number, achsenBreite: number): boolean {
+  return seite === 'left' ? x < achsenBreite : x >= gesamtBreite - achsenBreite
+}
+
+/** Linker Rand der Zeichenfläche (Pane) im Container */
+export function paneStart(seite: AchsenSeite, achsenBreite: number): number {
+  return seite === 'left' ? achsenBreite : 0
+}
+
+/** Doppeltipp-Fenster in ms; ein einzelner Tipp gilt erst danach als solcher */
+export const DOPPELTIPP_MS = 350
+/** Ein Tipp darf sich so weit bewegen (px) und so lange dauern (ms), sonst war es Ziehen */
+export const TIPP_MAX_PX = 10
+export const TIPP_MAX_MS = 500
+
 interface Finger {
   x: number
   y: number
@@ -49,11 +68,16 @@ export interface GestenOptionen {
   resetErlaubt?: () => boolean
   /** Erkannte Gesten melden (für die Anzeige des Reset-Knopfs) */
   onManuell?: (manuell: boolean) => void
+  /** Seite der Preisachse (Standard rechts) */
+  achse?: AchsenSeite
+  /** Ein einzelner Finger-Tipp auf die Zeichenfläche (kein Doppeltipp, kein Ziehen) */
+  onTipp?: () => void
 }
 
 /** Hängt die Gesten an den Chart-Container. Liefert eine Aufräumfunktion. */
 export function installiereGesten(chart: IChartApi, container: HTMLElement, opt: GestenOptionen): () => void {
-  const preisSkala = () => chart.priceScale('right')
+  const seite: AchsenSeite = opt.achse ?? 'right'
+  const preisSkala = () => chart.priceScale(seite)
   const zeitSkala = () => chart.timeScale()
 
   const reset =
@@ -73,7 +97,8 @@ export function installiereGesten(chart: IChartApi, container: HTMLElement, opt:
   }
   const paneBreite = () => container.clientWidth - preisSkala().width()
   const paneHoehe = () => container.clientHeight - zeitSkala().height()
-  const aufPreisachse = (f: Finger) => f.x >= paneBreite() && f.y < paneHoehe()
+  const paneLinks = () => paneStart(seite, preisSkala().width())
+  const aufPreisachse = (f: Finger) => aufAchse(f.x, seite, container.clientWidth, preisSkala().width()) && f.y < paneHoehe()
 
   // Preisbereich der Skala = innerer Bereich ohne die Ränder (scaleMargins); get/set der Bibliothek
   // sind dazu symmetrisch. Pixel werden deshalb auf die innere Höhe bezogen.
@@ -93,24 +118,43 @@ export function installiereGesten(chart: IChartApi, container: HTMLElement, opt:
     zeitSkala().setVisibleLogicalRange(b)
   }
 
-  // ── Doppeltipp / Doppelklick ────────────────────────────────────────────────
+  // ── Tipp, Doppeltipp / Doppelklick ─────────────────────────────────────────
   let letzterTipp: { zeit: number; f: Finger; typ: string } | null = null
+  let tippStart: { zeit: number; f: Finger; id: number } | null = null
+  let tippTimer: ReturnType<typeof setTimeout> | null = null
+  const onPointerDown = (e: PointerEvent) => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return
+    tippStart = { zeit: performance.now(), f: lage(e), id: e.pointerId }
+  }
   const onPointerUp = (e: PointerEvent) => {
     if (e.pointerType === 'mouse' && e.button !== 0) return
     const f = lage(e)
     const jetzt = performance.now()
-    if (letzterTipp && letzterTipp.typ === e.pointerType && jetzt - letzterTipp.zeit < 350 && Math.hypot(f.x - letzterTipp.f.x, f.y - letzterTipp.f.y) < 30) {
+    const start = tippStart
+    tippStart = null
+    if (letzterTipp && letzterTipp.typ === e.pointerType && jetzt - letzterTipp.zeit < DOPPELTIPP_MS && Math.hypot(f.x - letzterTipp.f.x, f.y - letzterTipp.f.y) < 30) {
       letzterTipp = null
+      if (tippTimer) clearTimeout(tippTimer)
+      tippTimer = null
       if (opt.resetErlaubt?.() ?? true) resetMelden()
       return
     }
     letzterTipp = { zeit: jetzt, f, typ: e.pointerType }
+    // Einzelner Finger-Tipp auf die Zeichenfläche: erst melden, wenn kein zweiter Tipp folgt
+    const kurz = start && start.id === e.pointerId && jetzt - start.zeit <= TIPP_MAX_MS && Math.hypot(f.x - start.f.x, f.y - start.f.y) <= TIPP_MAX_PX
+    if (opt.onTipp && e.pointerType === 'touch' && kurz && !aufPreisachse(f) && f.y < paneHoehe()) {
+      if (tippTimer) clearTimeout(tippTimer)
+      tippTimer = setTimeout(() => {
+        tippTimer = null
+        opt.onTipp?.()
+      }, DOPPELTIPP_MS)
+    }
   }
 
   // ── Touch: Achsen-Zug und Zwei-Finger-Gesten ────────────────────────────────
   type Geste =
     | { art: 'achse'; startY: number; bereich: Bereich }
-    | { art: 'pinch'; a: Finger; b: Finger; zeit: Bereich; preis: Bereich; breite: number; innenOben: number; innenHoehe: number }
+    | { art: 'pinch'; a: Finger; b: Finger; zeit: Bereich; preis: Bereich; breite: number; links: number; innenOben: number; innenHoehe: number }
     | { art: 'ausklingen' }
   let geste: Geste | null = null
 
@@ -131,7 +175,7 @@ export function installiereGesten(chart: IChartApi, container: HTMLElement, opt:
       const preis = preisBereichJetzt()
       if (!zeit || !preis) return
       const { oben, hoehe } = innen()
-      geste = { art: 'pinch', a: finger[0], b: finger[1], zeit, preis, breite: paneBreite(), innenOben: oben, innenHoehe: hoehe }
+      geste = { art: 'pinch', a: finger[0], b: finger[1], zeit, preis, breite: paneBreite(), links: paneLinks(), innenOben: oben, innenHoehe: hoehe }
       e.stopPropagation()
       e.preventDefault()
       return
@@ -163,9 +207,9 @@ export function installiereGesten(chart: IChartApi, container: HTMLElement, opt:
       const faktorX = dx0 / dx1
       const faktorY = dy0 / dy1
 
-      // Zeit: logische Einheiten je Pixel aus dem Startbereich
+      // Zeit: logische Einheiten je Pixel aus dem Startbereich (x relativ zum linken Rand der Zeichenfläche)
       const zeitJeP = (geste.zeit.to - geste.zeit.from) / geste.breite
-      const zeitNeu = verschiebeBereich(zoomBereich(geste.zeit, faktorX, m0.x / geste.breite), -(m1.x - m0.x) * zeitJeP * faktorX)
+      const zeitNeu = verschiebeBereich(zoomBereich(geste.zeit, faktorX, (m0.x - geste.links) / geste.breite), -(m1.x - m0.x) * zeitJeP * faktorX)
       zeitBereichSetzen(zeitNeu)
 
       // Preis: oben = to, unten = from (innerer Bereich). Finger nach oben schiebt den Inhalt nach oben,
@@ -188,6 +232,7 @@ export function installiereGesten(chart: IChartApi, container: HTMLElement, opt:
   const touchActionVorher = container.style.touchAction
   container.style.touchAction = 'pan-y'
 
+  container.addEventListener('pointerdown', onPointerDown, true)
   container.addEventListener('pointerup', onPointerUp, true)
   container.addEventListener('touchstart', onTouchStart, { capture: true, passive: false })
   container.addEventListener('touchmove', onTouchMove, { capture: true, passive: false })
@@ -196,6 +241,8 @@ export function installiereGesten(chart: IChartApi, container: HTMLElement, opt:
 
   return () => {
     container.style.touchAction = touchActionVorher
+    if (tippTimer) clearTimeout(tippTimer)
+    container.removeEventListener('pointerdown', onPointerDown, true)
     container.removeEventListener('pointerup', onPointerUp, true)
     container.removeEventListener('touchstart', onTouchStart, true)
     container.removeEventListener('touchmove', onTouchMove, true)

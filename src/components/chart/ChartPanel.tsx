@@ -1,17 +1,18 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
-import { Maximize2 } from 'lucide-react'
+import { Captions, CaptionsOff, Maximize2 } from 'lucide-react'
 import { VollbildKnopf, VollbildRahmen } from './Vollbild'
 import { useVollbild } from './useVollbild'
 import { useSchmal } from '../../hooks/useSchmal'
 import {
   createChart,
   type IChartApi,
+  type IPriceLine,
+  type ISeriesMarkersPluginApi,
   CandlestickSeries,
   HistogramSeries,
   LineSeries,
   createSeriesMarkers,
   ColorType,
-  LineType,
   PriceScaleMode,
   TickMarkType,
   type ISeriesApi,
@@ -45,7 +46,12 @@ function tickBerlin(time: Time, typ: TickMarkType): string | null {
   return fmtJahr.format(d)
 }
 
-// Einzige Stelle im Projekt, die lightweight-charts direkt anspricht (v5-API!).
+// Einzige Stelle im Projekt, die lightweight-charts direkt anspricht (v5-API!) — neben HandelsChart.
+//
+// Preisachse links: rechts stehen die aktuellen Kerzen, die soll die Achse nicht verdecken.
+// Beschriftungen (Linien-Titel, EMA-Namen, Marker-Texte) lassen sich ausblenden; mit
+// `kompakteBeschriftung` starten sie am Handy ausgeblendet und kommen per Tipp auf den Chart
+// oder über den Knopf unten rechts.
 
 export const CHART_FARBEN = {
   long: '#22C55E',
@@ -55,14 +61,8 @@ export const CHART_FARBEN = {
   text: '#8B95A5',
 }
 
-/** Zusätzliche Linie auf einer eigenen (linken) Preisskala, z.B. der Leitzins in Prozent */
-export interface OverlayLinie {
-  punkte: { time: number; value: number }[]
-  farbe: string
-  titel: string
-  /** Einheit hinter dem Wert an der Achse, Standard „%“ */
-  einheit?: string
-}
+/** Seite der Preisachse — alle Serien hängen an dieser Skala */
+export const PREISACHSE = 'left'
 
 interface ChartPanelProps {
   candles: Candle[]
@@ -78,11 +78,12 @@ interface ChartPanelProps {
   typ?: 'kerzen' | 'linie'
   /** logarithmische Preisachse (lange Zeiträume) */
   logSkala?: boolean
-  overlay?: OverlayLinie | null
   /** Vollbild-Knopf anbieten (Standard ja) */
   vollbild?: boolean
   /** Werkzeugleiste oben im Vollbild (z.B. Zeitraum-Knöpfe) */
   vollbildLeiste?: ReactNode
+  /** Am Handy ohne Beschriftungen starten (nur Linien); Lektionen lassen das aus, dort sind die Texte Inhalt */
+  kompakteBeschriftung?: boolean
 }
 
 export function ChartPanel({
@@ -95,9 +96,9 @@ export function ChartPanel({
   zeitSichtbar = true,
   typ = 'kerzen',
   logSkala = false,
-  overlay = null,
   vollbild = true,
   vollbildLeiste,
+  kompakteBeschriftung = false,
 }: ChartPanelProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const resetRef = useRef<(() => void) | null>(null)
@@ -105,6 +106,10 @@ export function ChartPanel({
   const schmal = useSchmal()
   // Preisachse von Hand verändert → Knopf „Ansicht zurücksetzen“ einblenden
   const [manuell, setManuell] = useState(false)
+  // Beschriftungen an/aus — ohne Neuaufbau des Charts (Zoom und Ansicht bleiben)
+  const [beschriftet, setBeschriftet] = useState(() => !(kompakteBeschriftung && schmal))
+  const beschriftetRef = useRef(beschriftet)
+  const beschriftungRef = useRef<((an: boolean) => void) | null>(null)
 
   useEffect(() => {
     const container = containerRef.current
@@ -123,8 +128,8 @@ export function ChartPanel({
         vertLines: { color: CHART_FARBEN.gitter },
         horzLines: { color: CHART_FARBEN.gitter },
       },
-      rightPriceScale: { borderColor: CHART_FARBEN.gitter, mode: logSkala ? PriceScaleMode.Logarithmic : PriceScaleMode.Normal },
-      leftPriceScale: { visible: Boolean(overlay && overlay.punkte.length), borderColor: CHART_FARBEN.gitter },
+      rightPriceScale: { visible: false },
+      leftPriceScale: { visible: true, borderColor: CHART_FARBEN.gitter, mode: logSkala ? PriceScaleMode.Logarithmic : PriceScaleMode.Normal },
       timeScale: { borderColor: CHART_FARBEN.gitter, timeVisible: zeitSichtbar, ...(zeitSichtbar ? { tickMarkFormatter: tickBerlin } : {}) },
       ...(zeitSichtbar
         ? { localization: { locale: 'de-DE', timeFormatter: (t: Time) => (alsDatum(t) ? fmtVoll.format(alsDatum(t) as Date) : String(t)) } }
@@ -139,13 +144,14 @@ export function ChartPanel({
 
     let kerzenSerie: ISeriesApi<SeriesType>
     if (typ === 'linie') {
-      const linie = chart.addSeries(LineSeries, { color: '#3B82F6', lineWidth: 2, priceLineVisible: true, lastValueVisible: true })
+      const linie = chart.addSeries(LineSeries, { priceScaleId: PREISACHSE, color: '#3B82F6', lineWidth: 2, priceLineVisible: true, lastValueVisible: true })
       linie.setData(candles.map((c) => ({ time: c.time as UTCTimestamp, value: c.close })))
       kerzenSerie = linie
     } else {
       // Nachkommastellen nach Kursniveau (Bitcoin 84840,1 statt 84840,05) → schmalere Preisachse
       const stellen = preisStellen(candles[candles.length - 1].close)
       const kerzen = chart.addSeries(CandlestickSeries, {
+        priceScaleId: PREISACHSE,
         upColor: CHART_FARBEN.long,
         downColor: CHART_FARBEN.short,
         borderVisible: false,
@@ -163,22 +169,6 @@ export function ChartPanel({
         })),
       )
       kerzenSerie = kerzen
-    }
-
-    if (overlay && overlay.punkte.length > 0) {
-      const einheit = overlay.einheit ?? ' %'
-      const ov = chart.addSeries(LineSeries, {
-        priceScaleId: 'left',
-        color: overlay.farbe,
-        lineWidth: 1,
-        lineType: LineType.WithSteps,
-        priceLineVisible: false,
-        lastValueVisible: true,
-        title: overlay.titel,
-        priceFormat: { type: 'custom', minMove: 0.01, formatter: (v: number) => `${v.toFixed(2).replace('.', ',')}${einheit}` },
-      })
-      ov.setData(overlay.punkte.map((p) => ({ time: p.time as UTCTimestamp, value: p.value })))
-      chart.priceScale('left').applyOptions({ scaleMargins: { top: 0.1, bottom: 0.25 } })
     }
 
     if (zeigeVolumen) {
@@ -199,21 +189,27 @@ export function ChartPanel({
       })
     }
 
+    // Alles, was einen Text trägt, merken — für das Ein-/Ausblenden der Beschriftung
+    const beschriftete: { setze: (an: boolean) => void }[] = []
+
     if (emaPerioden) {
       emaPerioden.forEach((periode, idx) => {
         const werte = ema(candles, periode)
+        const titel = `EMA ${periode}`
         const serie = chart.addSeries(LineSeries, {
+          priceScaleId: PREISACHSE,
           color: EMA_FARBEN[idx % EMA_FARBEN.length],
           lineWidth: 2,
           priceLineVisible: false,
           lastValueVisible: false,
-          title: `EMA ${periode}`,
+          title: titel,
         })
         serie.setData(
           candles
             .map((c, i) => ({ time: c.time as UTCTimestamp, value: werte[i] }))
             .filter((p) => Number.isFinite(p.value)),
         )
+        beschriftete.push({ setze: (an) => serie.applyOptions({ title: an ? titel : '' }) })
       })
     }
 
@@ -228,23 +224,31 @@ export function ChartPanel({
           text: a.text,
         })
       } else if (a.typ === 'preislinie') {
-        kerzenSerie.createPriceLine({
+        const titel = a.text ?? ''
+        const linie: IPriceLine = kerzenSerie.createPriceLine({
           price: a.preis,
           color: a.farbe ?? '#F59E0B',
           lineWidth: 1,
           lineStyle: 2,
           axisLabelVisible: true,
-          title: a.text ?? '',
+          title: titel,
         })
+        if (titel) beschriftete.push({ setze: (an) => linie.applyOptions({ title: an ? titel : '' }) })
       }
     }
     if (marker.length > 0) {
       marker.sort((a, b) => (a.time as number) - (b.time as number))
-      createSeriesMarkers(kerzenSerie, marker)
+      const plugin: ISeriesMarkersPluginApi<Time> = createSeriesMarkers(kerzenSerie, marker)
+      beschriftete.push({ setze: (an) => plugin.setMarkers(an ? marker : marker.map((m) => ({ ...m, text: '' }))) })
     }
+    const beschriftungAnwenden = (an: boolean) => {
+      for (const b of beschriftete) b.setze(an)
+    }
+    beschriftungRef.current = beschriftungAnwenden
+    beschriftungAnwenden(beschriftetRef.current)
 
     const ansichtEinpassen = () => {
-      chart.priceScale('right').setAutoScale(true)
+      chart.priceScale(PREISACHSE).setAutoScale(true)
       chart.timeScale().fitContent()
       if (randRechts > 0) {
         chart.timeScale().setVisibleLogicalRange({ from: -0.5, to: candles.length - 0.5 + randRechts })
@@ -256,7 +260,14 @@ export function ChartPanel({
       ansichtEinpassen()
       setManuell(false)
     }
-    const gestenWeg = installiereGesten(chart, container, { serie: kerzenSerie, reset: ansichtEinpassen, onManuell: setManuell })
+    const gestenWeg = installiereGesten(chart, container, {
+      serie: kerzenSerie,
+      achse: PREISACHSE,
+      reset: ansichtEinpassen,
+      onManuell: setManuell,
+      // Ein Tipp mit dem Finger: Beschriftungen ein-/ausblenden
+      onTipp: () => setBeschriftet((b) => !b),
+    })
 
     const beobachter = new ResizeObserver(() => {
       // Höhe kommt vom Container (Prop „hoehe“ oder Vollbild-Rahmen), Breite vom Layout
@@ -268,9 +279,17 @@ export function ChartPanel({
       beobachter.disconnect()
       gestenWeg()
       resetRef.current = null
+      beschriftungRef.current = null
       chart.remove()
     }
-  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden, randRechts, zeitSichtbar, typ, logSkala, overlay, schmal])
+  }, [candles, annotationen, hoehe, zeigeVolumen, emaPerioden, randRechts, zeitSichtbar, typ, logSkala, schmal])
+
+  useEffect(() => {
+    beschriftetRef.current = beschriftet
+    beschriftungRef.current?.(beschriftet)
+  }, [beschriftet])
+
+  const knopf = 'tipp absolute z-[3] rounded-md border border-rand bg-nacht/80 p-1.5 text-gedimmt hover:text-white'
 
   return (
     <VollbildRahmen hoehe={hoehe} steuerung={vb} leiste={vollbildLeiste}>
@@ -281,13 +300,23 @@ export function ChartPanel({
             <button
               type="button"
               onClick={() => resetRef.current?.()}
-              className="absolute left-2 top-2 z-[3] inline-flex min-h-9 items-center gap-1 rounded-md border border-rand bg-nacht/80 px-2 text-[11px] font-semibold text-gedimmt hover:text-white"
+              className="absolute right-2 top-2 z-[3] inline-flex min-h-9 items-center gap-1 rounded-md border border-rand bg-nacht/80 px-2 text-[11px] font-semibold text-gedimmt hover:text-white"
               title="Ansicht zurücksetzen (auch per Doppeltipp auf den Chart)"
             >
               <Maximize2 className="h-3.5 w-3.5" /> Auto
             </button>
           )}
-          {vollbild && <VollbildKnopf an={imVollbild} onClick={vb.umschalten} className="absolute bottom-9 right-[76px]" />}
+          <button
+            type="button"
+            onClick={() => setBeschriftet((b) => !b)}
+            className={`${knopf} bottom-9 right-2`}
+            title={beschriftet ? 'Beschriftungen ausblenden (auch per Tipp auf den Chart)' : 'Beschriftungen einblenden (auch per Tipp auf den Chart)'}
+            aria-pressed={beschriftet}
+            aria-label="Beschriftungen"
+          >
+            {beschriftet ? <Captions className="h-3.5 w-3.5" /> : <CaptionsOff className="h-3.5 w-3.5" />}
+          </button>
+          {vollbild && <VollbildKnopf an={imVollbild} onClick={vb.umschalten} className="absolute bottom-9 right-[38px]" />}
         </>
       )}
     </VollbildRahmen>

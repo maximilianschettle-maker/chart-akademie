@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { achsenZugFaktor, verschiebeBereich, zoomBereich } from './gesten'
+import { achsenZugFaktor, aufAchse, paneStart, verschiebeBereich, zoomBereich } from './gesten'
 
 describe('Chart-Gesten (Rechenhelfer)', () => {
   it('zoomt um den Anker und hält den Ankerpunkt fest', () => {
@@ -24,5 +24,19 @@ describe('Chart-Gesten (Rechenhelfer)', () => {
     expect(achsenZugFaktor(-160)).toBeCloseTo(1 / Math.E, 6)
     // symmetrisch: gleiche Strecke hin und zurück hebt sich auf
     expect(achsenZugFaktor(80) * achsenZugFaktor(-80)).toBeCloseTo(1, 9)
+  })
+
+  it('Preisachse links: Treffer am linken Rand, Zeichenfläche beginnt hinter der Achse', () => {
+    expect(aufAchse(10, 'left', 390, 60)).toBe(true)
+    expect(aufAchse(60, 'left', 390, 60)).toBe(false)
+    expect(aufAchse(380, 'left', 390, 60)).toBe(false)
+    expect(paneStart('left', 60)).toBe(60)
+  })
+
+  it('Preisachse rechts: Treffer am rechten Rand, Zeichenfläche beginnt bei 0', () => {
+    expect(aufAchse(380, 'right', 390, 60)).toBe(true)
+    expect(aufAchse(329, 'right', 390, 60)).toBe(false)
+    expect(aufAchse(10, 'right', 390, 60)).toBe(false)
+    expect(paneStart('right', 60)).toBe(0)
   })
 })

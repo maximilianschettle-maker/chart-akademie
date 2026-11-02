@@ -218,8 +218,9 @@ function InstrumentKarte({ inst, jetzt, live, ebene }: { inst: InstrumentDaten; 
             zeigeVolumen={false}
             emaPerioden={EMA_TRACKER}
             zeitSichtbar={ebene === 'stunde'}
-            randRechts={ebene === 'stunde' ? 6 : 2}
+            randRechts={6}
             vollbildLeiste={zeitraumLeiste}
+            kompakteBeschriftung
           />
         </div>
       )}

@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useRef, type ReactNode } from 'react'
-import { Crosshair, Maximize2 } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
+import { Captions, CaptionsOff, Crosshair, Maximize2 } from 'lucide-react'
 import { installiereGesten } from './gesten'
 import { VollbildKnopf, VollbildRahmen } from './Vollbild'
 import { useVollbild } from './useVollbild'
@@ -23,7 +23,7 @@ import {
   type UTCTimestamp,
 } from 'lightweight-charts'
 import type { Candle, Zeichnung } from '../../types'
-import { CHART_FARBEN } from './ChartPanel'
+import { CHART_FARBEN, PREISACHSE } from './ChartPanel'
 import { aggregiere, bucketStart, intervalSekunden } from '../../engine/aggregation'
 import { ema } from '../../engine/indikatoren/ema'
 import { rsi } from '../../engine/indikatoren/rsi'
@@ -34,6 +34,7 @@ import { ZeichenPrimitive, type Messung, type Punkt } from './zeichenPrimitive'
 // bei jedem Schritt neu zu rendern, und wird nur einmal pro Mount aufgebaut —
 // Timeframe-Wechsel, Indikatoren und nachgeladene Kerzen lassen Zoom und
 // Zeichnungen in Ruhe. Preislinien (Entry/SL/TP) sind mit Maus oder Finger ziehbar.
+// Preisachse links (siehe ChartPanel); Linien-Titel und Marker-Texte lassen sich ausblenden.
 
 export type ZeichenModus = 'aus' | 'linie' | 'zone' | 'trend' | 'messen'
 
@@ -107,6 +108,8 @@ interface HandelsChartProps {
   vollbildLeiste?: ReactNode
   /** Zusatz unter dem Chart im Vollbild (z.B. CRV-Rechner) */
   vollbildUnten?: ReactNode
+  /** Am Handy ohne Linien-Titel und Marker-Texte starten (Tipp auf den Chart oder Knopf blendet sie ein) */
+  kompakteBeschriftung?: boolean
 }
 
 const EMA_FARBEN: Record<number, string> = { 20: '#F59E0B', 50: '#3B82F6', 200: '#A855F7' }
@@ -181,10 +184,12 @@ export function HandelsChart({
   vollbild = !kompakt,
   vollbildLeiste,
   vollbildUnten,
+  kompakteBeschriftung = false,
 }: HandelsChartProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const vb = useVollbild()
   const schmal = useSchmal()
+  const [beschriftet, setBeschriftet] = useState(() => !(kompakteBeschriftung && schmal))
   const legendeRef = useRef<HTMLDivElement>(null)
   const chartRef = useRef<IChartApi | null>(null)
   const kerzenRef = useRef<ISeriesApi<'Candlestick'> | null>(null)
@@ -206,6 +211,7 @@ export function HandelsChart({
   const standRef = useRef({ anzahl: -1, bucket: -1, basis: -1, serien: '' })
   const letzteBarRef = useRef<Candle | null>(null)
   const fadenkreuzRef = useRef<() => boolean>(() => false)
+  const legendeRueckenRef = useRef<(() => void) | null>(null)
   const resetAnsichtRef = useRef<(() => void) | null>(null)
   // Immer aktuelle Props für die DOM-Listener, die nur einmal registriert werden
   const propsRef = useRef({ zeichenModus, onZeichnung, onLinieZiehen, onLinieLos, onPick })
@@ -252,13 +258,15 @@ export function HandelsChart({
         horzLines: { color: CHART_FARBEN.gitter },
       },
       crosshair: { mode: CrosshairMode.Normal },
-      rightPriceScale: { borderColor: CHART_FARBEN.gitter },
+      rightPriceScale: { visible: false },
+      leftPriceScale: { visible: true, borderColor: CHART_FARBEN.gitter },
       timeScale: { borderColor: CHART_FARBEN.gitter, rightOffset: 6 },
       handleScroll: SCROLL_AN,
       handleScale: SKALA_AN,
     })
 
     const kerzen = chart.addSeries(CandlestickSeries, {
+      priceScaleId: PREISACHSE,
       upColor: CHART_FARBEN.long,
       downColor: CHART_FARBEN.short,
       borderVisible: false,
@@ -326,7 +334,7 @@ export function HandelsChart({
     kerzenRef.current = kerzen
     // Doppeltipp, Achsen-Zug am Handy, Zwei-Finger-Zoom/-Verschieben; kein Doppeltipp-Reset beim Zeichnen/Preiswählen
     const ansichtZuruecksetzen = () => {
-      chart.priceScale('right').setAutoScale(true)
+      chart.priceScale(PREISACHSE).setAutoScale(true)
       const n = datenRef.current.length
       const breite = container.clientWidth || 800
       const sichtbar = Math.min(220, Math.max(60, Math.round(breite / 7)))
@@ -335,8 +343,13 @@ export function HandelsChart({
     resetAnsichtRef.current = ansichtZuruecksetzen
     const gestenWeg = installiereGesten(chart, container, {
       serie: kerzen,
+      achse: PREISACHSE,
       reset: ansichtZuruecksetzen,
       resetErlaubt: () => propsRef.current.zeichenModus === 'aus' && !propsRef.current.onPick,
+      // Ein Finger-Tipp blendet Beschriftungen ein/aus – außer beim Zeichnen oder Preiswählen, da setzt der Tipp etwas
+      onTipp: () => {
+        if (propsRef.current.zeichenModus === 'aus' && !propsRef.current.onPick) setBeschriftet((b) => !b)
+      },
     })
     zonenRef.current = zonen
     markerRef.current = createSeriesMarkers(kerzen, [])
@@ -345,11 +358,18 @@ export function HandelsChart({
     const emaMap = emaRef.current
 
     // ── Legende (OHLC unter dem Fadenkreuz, sonst letzte Kerze) ──────────────
+    // Sie steht oben links, also neben der Preisachse – deren Breite ändert sich mit den Zahlen
+    const legendeRuecken = () => {
+      const el = legendeRef.current
+      if (el) el.style.left = `${chart.priceScale(PREISACHSE).width() + 8}px`
+    }
+    legendeRueckenRef.current = legendeRuecken
     let fadenkreuzAktiv = false
     chart.subscribeCrosshairMove((param) => {
       const punkt = param.seriesData.get(kerzen) as OhlcPunkt | undefined
       fadenkreuzAktiv = !!punkt
       legendeSetzen(legendeRef.current, punkt ?? letzteBarRef.current)
+      legendeRuecken()
     })
     fadenkreuzRef.current = () => fadenkreuzAktiv
 
@@ -455,7 +475,7 @@ export function HandelsChart({
       const x = clientX - rect.left
       const y = clientY - rect.top
       // Klicks auf Preis-/Zeitachse ignorieren
-      if (x > rect.width - chart.priceScale('right').width()) return
+      if (x < chart.priceScale(PREISACHSE).width()) return
       if (y > rect.height - chart.timeScale().height()) return
       const roh = kerzen.coordinateToPrice(y)
       if (roh === null || roh <= 0) return
@@ -531,6 +551,7 @@ export function HandelsChart({
     const beobachter = new ResizeObserver(() => {
       // Höhe kommt vom Container (Prop „hoehe“ oder Vollbild-Rahmen), Breite vom Layout
       chart.applyOptions({ width: container.clientWidth, height: container.clientHeight || undefined })
+      legendeRuecken()
     })
     beobachter.observe(container)
 
@@ -538,6 +559,7 @@ export function HandelsChart({
       beobachter.disconnect()
       gestenWeg()
       resetAnsichtRef.current = null
+      legendeRueckenRef.current = null
       container.removeEventListener('pointerdown', onPointerDown, true)
       container.removeEventListener('pointermove', onPointerMove, true)
       container.removeEventListener('pointerup', onPointerEnde, true)
@@ -588,6 +610,7 @@ export function HandelsChart({
       emaRef.current.set(
         periode,
         chart.addSeries(LineSeries, {
+          priceScaleId: PREISACHSE,
           color: EMA_FARBEN[periode] ?? '#94A3B8',
           lineWidth: 1,
           priceLineVisible: false,
@@ -613,7 +636,7 @@ export function HandelsChart({
     if (mitRsi && !rsiRef.current) {
       const serie = chart.addSeries(
         LineSeries,
-        { color: '#A78BFA', lineWidth: 1, priceLineVisible: false, lastValueVisible: true },
+        { priceScaleId: PREISACHSE, color: '#A78BFA', lineWidth: 1, priceLineVisible: false, lastValueVisible: true },
         1,
       )
       for (const [preis, farbe] of [
@@ -694,7 +717,7 @@ export function HandelsChart({
         lineWidth: def.ziehbar ? 2 : 1,
         lineStyle: def.fest ? 0 : def.stil === 'gepunktet' ? 1 : 2,
         axisLabelVisible: true,
-        title: def.titel,
+        title: beschriftet ? def.titel : '',
       } as const
       const vorhanden = map.get(def.id)
       if (vorhanden) {
@@ -710,9 +733,9 @@ export function HandelsChart({
       map.delete(id)
     }
     // Auto-Skalierung neu rechnen lassen (der Provider liest die Linien)
-    const skala = chartRef.current?.priceScale('right')
+    const skala = chartRef.current?.priceScale(PREISACHSE)
     if (skala?.options().autoScale) skala.applyOptions({ autoScale: true })
-  }, [linien])
+  }, [linien, beschriftet])
 
   // ── Trade-Marker ───────────────────────────────────────────────────────────
   useEffect(() => {
@@ -730,7 +753,7 @@ export function HandelsChart({
             position: m.oben ? ('aboveBar' as const) : ('belowBar' as const),
             shape: 'square' as const,
             color: m.farbe ?? '#3B82F6',
-            text: m.text ?? '',
+            text: beschriftet ? (m.text ?? '') : '',
             size: 0.7,
           }
         }
@@ -740,7 +763,7 @@ export function HandelsChart({
             position: 'aboveBar' as const,
             shape: 'circle' as const,
             color: m.gewinn ? CHART_FARBEN.long : CHART_FARBEN.short,
-            text: m.text ?? '',
+            text: beschriftet ? (m.text ?? '') : '',
             size: 0.8,
           }
         }
@@ -750,11 +773,11 @@ export function HandelsChart({
           position: long ? ('belowBar' as const) : ('aboveBar' as const),
           shape: long ? ('arrowUp' as const) : ('arrowDown' as const),
           color: long ? CHART_FARBEN.long : CHART_FARBEN.short,
-          text: m.text ?? '',
+          text: beschriftet ? (m.text ?? '') : '',
         }
       })
     plugin.setMarkers(liste)
-  }, [marker, bucketSek])
+  }, [marker, bucketSek, beschriftet])
 
   // ── Zeichnungen: Linien als Preislinien, Zonen über das Primitive ──────────
   useEffect(() => {
@@ -791,6 +814,8 @@ export function HandelsChart({
   }, [boxen])
 
   const waehltPreis = !!onPick || zeichenModus !== 'aus'
+  const knopf = 'tipp absolute z-[3] rounded-md border border-rand bg-nacht/80 p-1.5 text-gedimmt hover:text-white'
+  const unten = zeitVerdeckt ? 'bottom-2' : 'bottom-9'
 
   return (
     <VollbildRahmen hoehe={hoehe} steuerung={vb} leiste={vollbildLeiste} unten={vollbildUnten}>
@@ -809,19 +834,28 @@ export function HandelsChart({
               />
               <button
                 onClick={() => chartRef.current?.timeScale().scrollToRealTime()}
-                className={`tipp absolute right-[76px] z-[3] rounded-md border border-rand bg-nacht/80 p-1.5 text-gedimmt hover:text-white ${zeitVerdeckt ? 'bottom-2' : 'bottom-9'}`}
+                className={`${knopf} right-2 ${unten}`}
                 title="Zur aktuellen Kerze springen"
               >
                 <Crosshair className="h-3.5 w-3.5" />
               </button>
               <button
                 onClick={() => resetAnsichtRef.current?.()}
-                className={`tipp absolute right-[112px] z-[3] rounded-md border border-rand bg-nacht/80 p-1.5 text-gedimmt hover:text-white ${zeitVerdeckt ? 'bottom-2' : 'bottom-9'}`}
+                className={`${knopf} right-[38px] ${unten}`}
                 title="Ansicht zurücksetzen: Preisachse automatisch, Zeitachse auf die letzten Kerzen (auch per Doppeltipp)"
               >
                 <Maximize2 className="h-3.5 w-3.5" />
               </button>
-              {vollbild && <VollbildKnopf an={imVollbild} onClick={vb.umschalten} className={`absolute right-[148px] ${zeitVerdeckt ? 'bottom-2' : 'bottom-9'}`} />}
+              <button
+                onClick={() => setBeschriftet((b) => !b)}
+                className={`${knopf} right-[74px] ${unten}`}
+                title={beschriftet ? 'Beschriftungen ausblenden (auch per Tipp auf den Chart)' : 'Beschriftungen einblenden (auch per Tipp auf den Chart)'}
+                aria-pressed={beschriftet}
+                aria-label="Beschriftungen"
+              >
+                {beschriftet ? <Captions className="h-3.5 w-3.5" /> : <CaptionsOff className="h-3.5 w-3.5" />}
+              </button>
+              {vollbild && <VollbildKnopf an={imVollbild} onClick={vb.umschalten} className={`absolute right-[110px] ${unten}`} />}
             </>
           )}
         </>

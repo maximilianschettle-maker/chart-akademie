@@ -144,6 +144,7 @@ export function TraderChart({ kerzen, symbol, waehrung, intervall, zinsMarker, h
         marker={zinsMarker.length ? zinsMarker : KEINE_MARKER}
         vollbildLeiste={leiste}
         vollbildUnten={rechner}
+        kompakteBeschriftung
       />
       {rechner && <div className="mt-3">{rechner}</div>}
     </div>
