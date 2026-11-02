@@ -1,7 +1,75 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-02T19:23:31.148Z",
+ "lastUpdated": "2026-11-02T20:23:34.223Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/usa-midterms-alaska-100.html",
+   "titel": "Warum es bei diesen Midterms auch auf Alaska ankommen könnte",
+   "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-alaska-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-02T20:15:15.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Obwohl Alaska traditionell republikanisch wählt, liegt die Demokratin Peltola in Umfragen vorn. Der Ausgang im nördlichsten Bundesstaat könnte die Midterms entscheidend beeinflussen. Den Wahlkampf bestimmen auch hier die hohen Preise. Von T",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c9vgrvpk4l6eo",
+   "titel": "Man guilty of stealing cash from farm owned by South African president",
+   "link": "https://www.bbc.co.uk/news/articles/c9vgrvpk4l6eo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-02T20:08:51.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The case, part of the \"Farmgate\" scandal, has left President Cyril Ramaphosa mired in an impeachment saga.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/wie-die-menschen-in-cherson-die-oleschky-waffenruhe-erlebten/a-79831796",
+   "titel": "Wie die Menschen in Cherson die Oleschky-Waffenruhe erlebten",
+   "link": "https://www.dw.com/de/wie-die-menschen-in-cherson-die-oleschky-waffenruhe-erlebten/a-79831796?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-02T20:08:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Waffenruhe zur Evakuierung von Zivilisten aus dem russisch besetzten Oleschky hat in Cherson am gegenüberliegenden Dnipro-Ufer Freude, aber auch Ängste ausgelöst. Ein DW-Reporter, der aus Cherson stammt, war vor Ort.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/02/business/cyberattack-freezers-europe-us-army.html",
+   "titel": "Are Freezers Being Hacked? Europe and the U.S. Military Are Investigating.",
+   "link": "https://www.nytimes.com/2026/11/02/business/cyberattack-freezers-europe-us-army.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-02T19:49:51.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A wave of disruptions at grocery stores, which some officials blame on cyberattacks, highlight the vulnerability of supply chains. Shops across Europe were affected again on Monday.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo",
+   "titel": "Trump to remove Rwanda and South Africa from US trade deal",
+   "link": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-02T19:33:10.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "The move comes barely a week after Rwanda's defence ministry was hit with sanctions by the US Treasury.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/ukraine-saporischschja-tote-100.html",
+   "titel": "Ukraine meldet mindestens 24 Tote bei Angriff in Region Saporischschja",
+   "link": "https://www.tagesschau.de/ausland/ukraine-saporischschja-tote-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-02T19:26:32.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Bei einem russischen Angriff in der Region Saporischschja sind der Ukraine zufolge mindestens 24 Menschen getötet worden. Präsident Selenskyj warf Moskau gezieltes Bombardement vor - demnach traf die Attacke ein Verteilzentrum für Hilfsgüte",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/02/world/europe/russia-polish-political-turmoil.html",
    "titel": "Russia Senses Opportunity in Polish Political Turmoil",
@@ -956,86 +1024,16 @@
    "maerkte": [],
    "text": "Der Ex-Vizekanzler spricht im Handelsblatt-Interview über Europas Kampf gegen die Supermächte, die anstehenden US-Wahlen – und verrät, wen er aktuell für den größten Europäer hält.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo",
-   "titel": "India's opposition holds mega rally seeking election chief's resignation",
-   "link": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-01T07:00:55.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Thousands gathered in the heart of delhi, calling for the chief election commissioner to step down.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/brasilien-trump-bolsonaro-kann-in-usa-bleiben/100266404.html",
-   "titel": "Außenpolitik: Trump: Bolsonaro kann in USA bleiben",
-   "link": "https://www.handelsblatt.com/politik/international/brasilien-trump-bolsonaro-kann-in-usa-bleiben/100266404.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-01T06:53:24.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der US-Präsident nennt die Wahl in Brasilien „eine Schande“. Wahlverlierer Flavio Bolsonaro dürfe so lange bleiben, wie er wolle. Das könnte die Beziehungen zwischen beiden Ländern belasten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/amerika-trump-brasiliens-wahlverlierer-bolsonaro-kann-in-usa-bleiben/100266404.html",
-   "titel": "US-Außenpolitik: Trump: Brasiliens Wahlverlierer Bolsonaro kann in USA bleiben",
-   "link": "https://www.handelsblatt.com/politik/international/amerika-trump-brasiliens-wahlverlierer-bolsonaro-kann-in-usa-bleiben/100266404.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-01T06:53:24.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der US-Präsident nennt die Wahl in Brasilien „eine Schande“. Die Äußerungen dürften die Beziehungen zwischen den beiden größten Demokratien Amerikas weiter belasten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/netzagentur-haelt-gasversorgung-trotz-verfehlter-speicherziele-fuer-sicher-accg-201640256.html",
-   "titel": "Energieversorgung: Netzagentur hält Gasversorgung trotz verfehlter Speicherziele für sicher",
-   "link": "https://www.faz.net/aktuell/wirtschaft/netzagentur-haelt-gasversorgung-trotz-verfehlter-speicherziele-fuer-sicher-accg-201640256.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-01T05:45:22.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "gas"
-   ],
-   "text": "Deutschlands Gasspeicher sind nur zu gut 61 Prozent gefüllt, Ziel waren rund 70. Die Netzagentur setzt auf Flüssiggas. Speicherbetreiber warnen vor Engpässen bei extremer Kälte.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/polen-eskalation-verfassungsgericht-102.html",
-   "titel": "Polen: Tusk beklagt Angriff auf \"Demokratie und Rechtsstaat\"",
-   "link": "https://www.tagesschau.de/ausland/europa/polen-eskalation-verfassungsgericht-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-01T04:26:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Polens Präsident drängt sich mit Körpereinsatz ins Verfassungsgericht und drückt eine Richterin nach unten. Nun äußert sich Regierungschef Tusk zu dem Vorfall. Der Opposition wirft er einen Angriff auf Demokratie und Rechtsstaat vor.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-iran-beharrt-auf-bedingungen-und-droht-mit-neuen-waffen/100136895.html",
-   "titel": "+++ Iran-Krieg +++: Iran beharrt auf Bedingungen – und droht mit neuen Waffen",
-   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-iran-beharrt-auf-bedingungen-und-droht-mit-neuen-waffen/100136895.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-01T01:36:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Irans Außenminister sieht keine Notwendigkeit für USA-Treffen +++ Rubio: Noch keine Entscheidung zu weiterem US-Militäreinsatz gegen Iran +++ Von Huthi entführter UN-Mitarbeiter tot +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
-  "DW": 6,
+  "tagesschau": 13,
+  "DW": 7,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 4,
-  "BBC World": 15,
-  "NYT World": 13,
+  "BBC World": 17,
+  "NYT World": 14,
   "EIA Today in Energy": 0
  }
 }
