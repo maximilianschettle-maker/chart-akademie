@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Activity, Bell, BellOff, ChevronDown, ChevronUp, Cloud, CloudOff, LoaderCircle, RefreshCw, Settings2, TriangleAlert } from 'lucide-react'
+import { useSchmal } from '../../hooks/useSchmal'
 import { ChartPanel } from '../../components/chart/ChartPanel'
 import type { ChartAnnotation } from '../../types'
 import { useTracker, TRACKER_VERALTET_AB_MS } from '../useTracker'
@@ -13,9 +14,10 @@ import { aktuellerKurs, useLiveKurse, vortagesSchluss, type LiveKurs } from '../
 import { workerKonfiguriert } from '../../aktien/data/client'
 import { DatenStatus } from '../../aktien/components/DatenStatus'
 
-// Markt-Tracker: Instrumente laut Konfiguration, je Instrument Kurs, Lage, Chart mit Marken
-// und die Signale der letzten Wochen. Einstellungen (Instrumente, Muster, Push) gehen
-// in den Worker-KV; die Action liest sie beim nächsten Lauf.
+// Markt-Tracker: Instrumente laut Konfiguration, je Instrument Kurs, Lage und die jüngsten Signale;
+// der Chart mit Marken öffnet erst beim Antippen der Karte (am Handy zählt der Überblick, nicht fünf
+// kleine Charts untereinander). Einstellungen (Instrumente, Muster, Push) gehen in den Worker-KV;
+// die Action liest sie beim nächsten Lauf.
 
 /** Zeitraum-Chips je Ebene: Tagesebene in Kalenderzeit, Stundenebene in Kerzen (Börsen haben ~7 Kerzen je Handelstag, Krypto 24) */
 const BEREICHE: Record<Ebene, { id: string; kerzen: number; titel?: string }[]> = {
@@ -33,7 +35,11 @@ const BEREICHE: Record<Ebene, { id: string; kerzen: number; titel?: string }[]> 
   ],
 }
 const STANDARD_BEREICH: Record<Ebene, string> = { tag: '1J', stunde: '50 K' }
-const CHART_HOEHE = 220
+/** Chart erscheint erst auf Wunsch – dann groß (am Handy fast quadratisch), nicht als Briefmarke */
+const CHART_HOEHE = { schmal: 360, breit: 340 }
+/** Signale in der eingeklappten Karte; aufgeklappt die vollständige Liste */
+const SIGNALE_KOMPAKT = 3
+const SIGNALE_OFFEN = 8
 const EMA_TRACKER = [20, 50]
 
 function ebeneDaten(inst: InstrumentDaten, ebene: Ebene): EbeneDaten | null {
@@ -68,8 +74,10 @@ function SignalZeile({ s, dezimalen, waehrung }: { s: Signal; dezimalen: number;
   )
 }
 
-function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: InstrumentDaten; jetzt: number; live?: LiveKurs; ebene: Ebene; onEbene: (e: Ebene) => void }) {
-  const [offen, setOffen] = useState(true)
+function InstrumentKarte({ inst, jetzt, live, ebene }: { inst: InstrumentDaten; jetzt: number; live?: LiveKurs; ebene: Ebene }) {
+  // Standard eingeklappt: Kurs, Lage, letzte Signale. Antippen öffnet den Chart.
+  const [offen, setOffen] = useState(false)
+  const schmal = useSchmal()
   const [bereiche, setBereiche] = useState<Record<Ebene, string>>({ ...STANDARD_BEREICH })
   const bereich = bereiche[ebene]
   const daten = ebeneDaten(inst, ebene)
@@ -115,6 +123,7 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
   }, [a, daten, kerzen, einheit])
 
   const veraltet = kurs ? jetzt - kurs.zeitMs > TRACKER_VERALTET_AB_MS * 2 : false
+  const weitereSignale = Math.max(0, (daten?.signale.length ?? 0) - SIGNALE_KOMPAKT)
   const trendText = a ? (a.trend === 'auf' ? 'Aufwärtstrend' : a.trend === 'ab' ? 'Abwärtstrend' : 'seitwärts') : ''
   const trendFarbe = a ? (a.trend === 'auf' ? 'text-long' : a.trend === 'ab' ? 'text-short' : 'text-gedimmt') : ''
 
@@ -139,7 +148,13 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
 
   return (
     <section className="rounded-xl border border-rand bg-flaeche p-4">
-      <button type="button" onClick={() => setOffen((o) => !o)} className="flex w-full items-start justify-between gap-3 text-left">
+      <button
+        type="button"
+        onClick={() => setOffen((o) => !o)}
+        aria-expanded={offen}
+        title={offen ? 'Chart einklappen' : 'Chart anzeigen'}
+        className="flex w-full items-start justify-between gap-3 text-left"
+      >
         <div>
           <h2 className="text-base font-bold text-white">{inst.name}</h2>
           <p className="text-[11px] text-gedimmt">
@@ -150,7 +165,7 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
         <div className="flex items-start gap-2">
           {kurs ? (
             <div className="text-right">
-              <div className="tabular-nums text-lg font-bold text-white">{fmtKurs(preis, inst.dezimalen, inst.waehrung)}</div>
+              <div className="whitespace-nowrap tabular-nums text-lg font-bold text-white">{fmtKurs(preis, inst.dezimalen, inst.waehrung)}</div>
               <div className={`tabular-nums text-xs font-semibold ${aenderung > 0 ? 'text-long' : aenderung < 0 ? 'text-short' : 'text-gedimmt'}`}>
                 {fmtProzentVz(aenderung)} heute
               </div>
@@ -158,28 +173,13 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
           ) : (
             <span className="text-xs text-short">{daten?.fehler ?? inst.fehler ?? 'keine Analyse'}</span>
           )}
-          {offen ? <ChevronUp className="mt-1 h-4 w-4 text-gedimmt" /> : <ChevronDown className="mt-1 h-4 w-4 text-gedimmt" />}
+          {offen ? <ChevronUp className="mt-1 h-4 w-4 shrink-0 text-gedimmt" /> : <ChevronDown className="mt-1 h-4 w-4 shrink-0 text-gedimmt" />}
         </div>
       </button>
 
-      {/* Ebene: Tageskerzen (Swing) oder Stundenkerzen (Intraday) */}
-      <div className="mt-2 flex items-center gap-1" role="tablist" aria-label="Zeitebene">
-        {EBENEN.map((e) => (
-          <button
-            key={e.id}
-            type="button"
-            role="tab"
-            aria-selected={e.id === ebene}
-            onClick={() => onEbene(e.id)}
-            disabled={e.id === 'stunde' && !inst.stunde}
-            title={e.id === 'stunde' && !inst.stunde ? 'Stundenkerzen kommen mit dem nächsten Lauf der Action' : e.name}
-            className={`tipp rounded-md px-2.5 py-0.5 text-[11px] font-semibold disabled:opacity-40 ${e.id === ebene ? 'bg-flaeche text-white ring-1 ring-rand' : 'bg-nacht text-gedimmt hover:text-schrift'}`}
-          >
-            {e.name}
-          </button>
-        ))}
-        {ebene === 'stunde' && daten?.signale.length ? <span className="ml-1 text-[11px] text-gedimmt">{daten.signale.length} Signale</span> : null}
-      </div>
+      {ebene === 'stunde' && !inst.stunde && (
+        <p className="mt-2 text-[11px] text-gedimmt">Stundenkerzen kommen mit dem nächsten Lauf der Action.</p>
+      )}
 
       {a && (
         <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[11px]">
@@ -214,7 +214,7 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
           <ChartPanel
             candles={kerzen}
             annotationen={annotationen}
-            hoehe={CHART_HOEHE}
+            hoehe={schmal ? CHART_HOEHE.schmal : CHART_HOEHE.breit}
             zeigeVolumen={false}
             emaPerioden={EMA_TRACKER}
             zeitSichtbar={ebene === 'stunde'}
@@ -224,18 +224,26 @@ function InstrumentKarte({ inst, jetzt, live, ebene, onEbene }: { inst: Instrume
         </div>
       )}
 
-      {offen && daten && (
+      {daten && (
         <div className="mt-2">
           {daten.signale.length === 0 ? (
             <p className="text-xs text-gedimmt">Keine Signale in den letzten 30 Tagen.</p>
           ) : (
             <ul className="divide-y divide-rand">
-              {daten.signale.slice(0, 8).map((s) => (
+              {daten.signale.slice(0, offen ? SIGNALE_OFFEN : SIGNALE_KOMPAKT).map((s) => (
                 <SignalZeile key={s.id} s={s} dezimalen={inst.dezimalen} waehrung={inst.waehrung} />
               ))}
             </ul>
           )}
         </div>
+      )}
+
+      {!offen && kerzen.length > 0 && (
+        <button type="button" onClick={() => setOffen(true)} className="tipp mt-2 inline-flex items-center gap-1 text-xs font-semibold text-akzent hover:underline">
+          Chart anzeigen
+          {weitereSignale > 0 && <span className="font-normal text-gedimmt">· {weitereSignale} weitere {weitereSignale === 1 ? 'Signal' : 'Signale'}</span>}
+          <ChevronDown className="h-3.5 w-3.5" />
+        </button>
       )}
     </section>
   )
@@ -254,6 +262,7 @@ export function TrackerPage() {
   const [frischSignal, setFrischSignal] = useState(0)
   // Eine Ebene für alle Karten – wer die Intraday-Sicht will, will sie überall
   const [ebene, setEbene] = useState<Ebene>('tag')
+  const stundeVorhanden = daten ? daten.instrumente.some((i) => i.stunde) : false
   const musterUmschaltenStunde = useTrackerStore((s) => s.musterUmschaltenStunde)
   const pushStundeSetzen = useTrackerStore((s) => s.pushStundeSetzen)
   const symbole = useMemo(() => (daten ? daten.instrumente.map((i) => i.symbol) : []), [daten])
@@ -400,12 +409,29 @@ export function TrackerPage() {
           {wartend.length > 0 && (
             <p className="mt-2 text-xs text-gedimmt">Erscheint nach dem nächsten Lauf: {wartend.join(', ')}.</p>
           )}
-          <div className="mt-4 space-y-4">
+          {/* Ebene gilt für alle Karten: Tageskerzen (Swing) oder Stundenkerzen (Intraday) */}
+          <div className="mt-4 flex items-center gap-1" role="tablist" aria-label="Zeitebene">
+            {EBENEN.map((e) => (
+              <button
+                key={e.id}
+                type="button"
+                role="tab"
+                aria-selected={e.id === ebene}
+                onClick={() => setEbene(e.id)}
+                disabled={e.id === 'stunde' && !stundeVorhanden}
+                title={e.id === 'stunde' && !stundeVorhanden ? 'Stundenkerzen kommen mit dem nächsten Lauf der Action' : e.name}
+                className={`tipp rounded-md px-2.5 py-1 text-xs font-semibold disabled:opacity-40 ${e.id === ebene ? 'bg-flaeche text-white ring-1 ring-rand' : 'bg-nacht text-gedimmt hover:text-schrift'}`}
+              >
+                {e.name}
+              </button>
+            ))}
+          </div>
+          <div className="mt-3 space-y-3">
             {config.instrumente
               .map((id) => daten.instrumente.find((i) => i.id === id))
               .filter((i): i is InstrumentDaten => Boolean(i))
               .map((inst) => (
-                <InstrumentKarte key={inst.id} inst={inst} jetzt={jetzt} live={liveKurse[inst.symbol]} ebene={ebene} onEbene={setEbene} />
+                <InstrumentKarte key={inst.id} inst={inst} jetzt={jetzt} live={liveKurse[inst.symbol]} ebene={ebene} />
               ))}
             {daten.instrumente.filter((i) => !config.instrumente.includes(i.id)).length > 0 && (
               <p className="text-xs text-gedimmt">
