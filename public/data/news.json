@@ -1,7 +1,73 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T09:23:34.604Z",
+ "lastUpdated": "2026-11-03T10:23:29.871Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/ukraine-krieg-usa-bringen-moskau-und-kyjiw-an-einen-tisch/a-79836253",
+   "titel": "Ukraine-Krieg: USA bringen Moskau und Kyjiw an einen Tisch",
+   "link": "https://www.dw.com/de/ukraine-krieg-usa-bringen-moskau-und-kyjiw-an-einen-tisch/a-79836253?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-03T10:07:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Im zähen diplomatischen Ringen um ein Ende des russischen Angriffskriegs gegen die Ukraine könnte es bald etwas Bewegung geben. Die Multinationale Ukraine-Truppe konzentriert sich bereits auf die Friedenssicherung.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "titel": "Liveblog zu den Midterms: ++ US-Bürger wählen neuen Kongress ++",
+   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-03T10:03:45.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Republikaner oder Demokraten - wer überzeugt mehr? In den USA finden heute die Zwischenwahlen statt, ein wichtiger Gradmesser für Trumps Politik. Weltweit wird der Ausgang der Wahl mit Spannung erwartet - die Entwicklungen hier im Liveblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/03/world/africa/sudan-drone-civilians-nyala.html",
+   "titel": "Drones Emerge as the Top Killer of Civilians in Sudan’s War",
+   "link": "https://www.nytimes.com/2026/11/03/world/africa/sudan-drone-civilians-nyala.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-03T10:03:19.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The weapons have become the No. 1 killer of civilians this year, according to the United Nations, devastating a population already overwhelmed by famine and drought.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/energie/energie-umgeruestete-kohlekraftwerke-verteuern-den-strom-fuer-verbraucher/100266757.html",
+   "titel": "Energie: Umgerüstete Kohlekraftwerke verteuern den Strom für Verbraucher",
+   "link": "https://www.handelsblatt.com/unternehmen/energie/energie-umgeruestete-kohlekraftwerke-verteuern-den-strom-fuer-verbraucher/100266757.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-03T09:45:39.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "Der Staat wollte den Bau neuer Gaskraftwerke fördern und gibt stattdessen nun Geld für die Umrüstung alter Kohlemeiler auf Gas aus. Langfristig dürften dadurch die Strompreise steigen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/usa-midterms-zustand-demokratie-102.html",
+   "titel": "Midterms: \"Entscheidende Wahl für Entwicklung der US-Demokratie\"",
+   "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-zustand-demokratie-102.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-03T09:40:40.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Unter Trump haben die USA eine autoritäre Phase erreicht, sagt der Historiker Manfred Berg. Ob diese Entwicklung weitergehe, hänge von dieser und der Wahl 2028 ab. Doch selbst bei einer Niederlage werde Trump an seinem Politikstil festhalte",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/midterms-usa-deutschland-102.html",
+   "titel": "US-Wahlen: Wie Trumps Kurs die Bundesregierung herausfordert",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/midterms-usa-deutschland-102.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-03T09:22:54.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Bei den Kongresswahlen entscheidet sich, ob Präsident Trump seine Politik weiterhin weitgehend ungehindert durchziehen kann. Das wird auch von der Bundespolitik aufmerksam beobachtet. Von Nicole Markwald.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/02/world/asia/china-us-exports-ai-solar.html",
    "titel": "China’s Message to Its Rivals: You Need What We Make",
@@ -24,17 +90,6 @@
     "aktien"
    ],
    "text": "Die Sorge vor einer erneuten Eskalation im Nahen Osten drückt auf die Stimmung der Anleger. Und vor den US-Zwischenwahlen herrscht ohnehin Nervosität. Der DAX fällt zum Handelsstart weiter zurück.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "titel": "Liveblog zu den Midterms: ++ US-Bürger wählen neuen Kongress ++",
-   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T09:13:20.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Republikaner oder Demokraten - wer überzeugt mehr? In den USA finden heute die Zwischenwahlen statt, ein wichtiger Gradmesser für Trumps Politik. Weltweit wird der Ausgang der Wahl mit Spannung erwartet - die Entwicklungen hier im Liveblog.",
    "sprache": "de"
   },
   {
@@ -69,6 +124,19 @@
    "maerkte": [],
    "text": "A wave of disruptions at grocery stores, which some officials blame on cyberattacks, highlights the vulnerability of supply chains. Shops across Europe were affected again on Monday.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-unter-26.000-punkten-dax-notiert-vor-us-midterms-im-minus/100266854.html",
+   "titel": "Dax aktuell: Unter 26.000 Punkten – Dax notiert vor US-Midterms im Minus",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-unter-26.000-punkten-dax-notiert-vor-us-midterms-im-minus/100266854.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-03T08:32:04.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "In der Nacht blickt die Welt auf die Wahlen in den USA. Anleger halten sich im Vorfeld zurück. Können weitere Quartalszahlen positive Impulse liefern?",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-unter-26.000-punkten-dax-eroeffnet-vor-us-midterms-im-minus/100266854.html",
@@ -253,7 +321,7 @@
    "zeit": "2026-11-03T00:44:25.000Z",
    "kategorie": "handel",
    "maerkte": [],
-   "text": "Vor allem wegen der enormen Preissteigerungen durch Trumps Zölle und den Iran-Krieg könnten die Republikaner bei den heutigen Midterms abgestraft werden. Die Folge wäre ein politisches Patt. Droht den USA der Stillstand? Von Anne Schneider.",
+   "text": "Vor allem wegen der enormen Preissteigerungen durch Trumps Zölle und den Iran-Krieg könnten die Republikaner bei den heutigen Midterms abgestraft werden. Die Folge könnte ein politisches Patt sein. Droht den USA der Stillstand? Von Anne Sch",
    "sprache": "de"
   },
   {
@@ -958,82 +1026,16 @@
    "maerkte": [],
    "text": "Bericht: USA heben Zölle auf bestimmte kanadische Waren auf +++ USA und Kanada verhandeln laut Insidern über Lockerung von Zöllen +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-festnahme-nach-terrorhinweis-russischer-fsb-dankt-usa/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Festnahme nach Terrorhinweis – russischer FSB dankt USA",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-festnahme-nach-terrorhinweis-russischer-fsb-dankt-usa/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-01T21:28:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ukrainische Luftwaffe: Warn-App für Luftangriffe wurde gehackt +++ Selenskyj zu Treffen mit Putin in der Türkei bereit +++ Russische Industrieanlage bei Drohnenangriff beschädigt +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/us-midterms-2026-was-donald-trump-zur-halbzeit-wirklich-erreicht-hat-201625540.html",
-   "titel": "Amerika vor der Wahl: Was Donald Trump wirklich erreicht hat",
-   "link": "https://www.faz.net/aktuell/wirtschaft/us-midterms-2026-was-donald-trump-zur-halbzeit-wirklich-erreicht-hat-201625540.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-01T20:31:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "So unbeliebt war vor den Zwischenwahlen schon lange kein US-Präsident mehr. Ein Blick auf die Wirtschaft zeigt, warum.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/donald-trump-zur-halbzeit-was-er-wirklich-erreicht-hat-201625540.html",
-   "titel": "Amerika vor der Wahl: Was Donald Trump wirklich erreicht hat",
-   "link": "https://www.faz.net/aktuell/wirtschaft/donald-trump-zur-halbzeit-was-er-wirklich-erreicht-hat-201625540.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-01T20:31:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "So unbeliebt war vor den Zwischenwahlen schon lange kein US-Präsident mehr. Ein Blick auf die Wirtschaft zeigt, warum.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-ausschreitungen-100.html",
-   "titel": "Ausschreitungen nach Protesten: Unterwanderung oder spontane Eskalation?",
-   "link": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-ausschreitungen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-01T20:27:02.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Verletzte und geplünderte Geschäfte - die Ausschreitungen nach den Protesten der Gen Z lösen Entsetzen aus. In Köln und Frankfurt wurden die Demos nach Einschätzung der Polizei unterwandert. Innenminister Dobrindt kündigte ein hartes Vorgeh",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/10/31/world/middleeast/syria-saudi-defense-pact.html",
-   "titel": "Syria Weighs Joining Saudi Mutual Defense Pact as Yemen War Rages",
-   "link": "https://www.nytimes.com/2026/10/31/world/middleeast/syria-saudi-defense-pact.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-01T20:08:50.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A move to join Saudi Arabia’s agreement with Turkey and Pakistan could entangle more countries in the kingdom’s escalating conflict between the Iran-backed Houthis.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/nasa-mars-108.html",
-   "titel": "NASA-Experiment: Mars-Simulation nach einem Jahr beendet",
-   "link": "https://www.tagesschau.de/ausland/nasa-mars-108.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-01T19:42:19.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Vier Menschen haben in den USA gemeinsam ein Jahr auf 160 Quadratmetern verbracht - für die Wissenschaft. Nun ist das NASA-Experiment vorbei. Ziel der langen Zeit in Isolation war die Simulation des Lebens auf dem Mars.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 12,
-  "DW": 7,
+  "DW": 8,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 3,
-  "BBC World": 13,
-  "NYT World": 12,
+  "Handelsblatt": 4,
+  "BBC World": 12,
+  "NYT World": 13,
   "EIA Today in Energy": 0
  }
 }
