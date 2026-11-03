@@ -1,7 +1,90 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T10:23:29.871Z",
+ "lastUpdated": "2026-11-03T11:23:45.779Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "titel": "Liveblog zu den Midterms: ++ US-Bürger wählen neuen Kongress ++",
+   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-03T11:15:05.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Republikaner oder Demokraten - wer überzeugt mehr? In den USA haben die Zwischenwahlen begonnen, ein wichtiger Gradmesser für Trumps Politik. Weltweit wird der Ausgang der Wahl mit Spannung erwartet - die Entwicklungen hier im Liveblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/03/world/middleeast/trump-iran-war-midterms-election.html",
+   "titel": "As Trump’s Midterm Deadline Looms, Gulf Countries Brace for Possible Renewal of Iran War",
+   "link": "https://www.nytimes.com/2026/11/03/world/middleeast/trump-iran-war-midterms-election.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-03T10:47:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The energy-rich Gulf Arab countries are engaged in a flurry of mediation efforts to avert war between the U.S. and Iran, as many fear that the fighting will be worse this time around.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/gas-aus-russland-warum-donald-trumps-pipeline-deal-fuer-europa-riskant-waere-a-da9d7824-2301-4b9b-8cc4-42701e1b0003",
+   "titel": "Gas aus Russland: Warum Donald Trumps Pipeline-Deal für Europa riskant wäre",
+   "link": "https://www.spiegel.de/wirtschaft/gas-aus-russland-warum-donald-trumps-pipeline-deal-fuer-europa-riskant-waere-a-da9d7824-2301-4b9b-8cc4-42701e1b0003#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-03T10:44:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Es klingt nach einem Trump-Deal: Wenn wieder Pipelinegas aus Russland durch die Ukraine strömt, soll Energie endlich günstiger werden. Doch Experten warnen: Der Plan wäre nicht nur politisch »verheerend«, sondern auch ökonomisch fragwürdig.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo",
+   "titel": "US strikes Iranian island ahead of midterm elections",
+   "link": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T10:37:13.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "US officials described the attacks on Qeshm Island as limited and defensive, according to CBS, the BBC's US partner.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/deutschland-erw%C3%A4gt-r%C3%BCckgabe-der-eishockey-wm-2027-wegen-russland-teilnahme/a-79828606",
+   "titel": "Deutschland erwägt Rückgabe der Eishockey-WM 2027 wegen Russland-Teilnahme",
+   "link": "https://www.dw.com/de/deutschland-erwägt-rückgabe-der-eishockey-wm-2027-wegen-russland-teilnahme/a-79828606?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-03T10:31:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Nach der Zulassung Russlands durch den CAS zieht der Deutsche Eishockey-Bund eine Rückgabe der WM 2027 in Betracht. Der Verband warnt vor Sicherheitskosten, Visa-Konflikten und möglichen Boykotten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo",
+   "titel": "Trump to remove Rwanda and South Africa from US trade deal",
+   "link": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T10:26:26.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "The move comes barely a week after Rwanda's defence ministry was hit with sanctions by the US Treasury.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-berlin-redet-die-leeren-gasspeicher-schoen/100266472.html",
+   "titel": "Kommentar: Berlin redet die leeren Gasspeicher schön",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-berlin-redet-die-leeren-gasspeicher-schoen/100266472.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-03T10:21:35.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Die deutschen Gasspeicher sind viel leerer als gesetzlich zum 1. November vorgeschrieben. Die Regierung sagt: Die Gasversorgung sei gesichert. Aber sie macht es sich viel zu leicht.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.dw.com/de/ukraine-krieg-usa-bringen-moskau-und-kyjiw-an-einen-tisch/a-79836253",
    "titel": "Ukraine-Krieg: USA bringen Moskau und Kyjiw an einen Tisch",
@@ -11,17 +94,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Im zähen diplomatischen Ringen um ein Ende des russischen Angriffskriegs gegen die Ukraine könnte es bald etwas Bewegung geben. Die Multinationale Ukraine-Truppe konzentriert sich bereits auf die Friedenssicherung.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "titel": "Liveblog zu den Midterms: ++ US-Bürger wählen neuen Kongress ++",
-   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T10:03:45.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Republikaner oder Demokraten - wer überzeugt mehr? In den USA finden heute die Zwischenwahlen statt, ein wichtiger Gradmesser für Trumps Politik. Weltweit wird der Ausgang der Wahl mit Spannung erwartet - die Entwicklungen hier im Liveblog.",
    "sprache": "de"
   },
   {
@@ -124,6 +196,17 @@
    "maerkte": [],
    "text": "A wave of disruptions at grocery stores, which some officials blame on cyberattacks, highlights the vulnerability of supply chains. Shops across Europe were affected again on Monday.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/ukrainekrieg-vor-verhandlungen-selenskyj-besucht-merz-in-berlin/100266875.html",
+   "titel": "Krieg gegen Ukraine: Vor Verhandlungen – Selenskyj besucht Merz in Berlin",
+   "link": "https://www.handelsblatt.com/politik/deutschland/ukrainekrieg-vor-verhandlungen-selenskyj-besucht-merz-in-berlin/100266875.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-03T08:32:19.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Ukrainische Präsident besucht den Bundeskanzler. Bei dem Treffen dürfte es auch um weitere militärische und finanzielle Unterstützung für die Ukraine gehen.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-unter-26.000-punkten-dax-notiert-vor-us-midterms-im-minus/100266854.html",
@@ -257,17 +340,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo",
-   "titel": "US strikes Iranian island ahead of midterm elections",
-   "link": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T03:39:08.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "US officials described the attacks on Qeshm Island as limited and defensive, according to CBS, the BBC's US partner.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/articles/cm5ynekkn5qko",
    "titel": "Supreme Court rejects Trump's request to stop California counting disputed votes",
    "link": "https://www.bbc.co.uk/news/articles/cm5ynekkn5qko?at_medium=RSS&at_campaign=rss",
@@ -287,19 +359,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The incident comes amid growing calls for the temperature of political debate in Australia to be turned down.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo",
-   "titel": "Trump to remove Rwanda and South Africa from US trade deal",
-   "link": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T03:00:36.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "The move comes barely a week after Rwanda's defence ministry was hit with sanctions by the US Treasury.",
    "sprache": "en"
   },
   {
@@ -343,7 +402,7 @@
    "zeit": "2026-11-03T00:01:54.000Z",
    "kategorie": "handel",
    "maerkte": [],
-   "text": "Der Elektronikkonzern leidet unter Engpässen in der Lieferkette, der Gewinn von Apple schwächt sich ab. Das neue faltbaree iPhone verkauft sich aber gut – trotz Berichten über Qualitätsmängel.",
+   "text": "Der Elektronikkonzern leidet unter Engpässen in der Lieferkette, der Gewinn von Apple schwächt sich ab. Das neue faltbare iPhone verkauft sich aber gut – trotz Berichten über Qualitätsmängel.",
    "sprache": "de"
   },
   {
@@ -971,71 +1030,16 @@
    "maerkte": [],
    "text": "Radioaktive Strahlung in Kiew und Angriffe mit chemischen Waffen? Falsche Warnmeldungen in einer offenbar gehackten Notfall-App schrecken Bürger in der Ukraine auf. Es folgt ein Cyberangriff auf Russland.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-zivilisten-aus-cherson-in-sicherheit-gebracht-waffenruhe-in-oleschky-beendet/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Zivilisten aus Cherson in Sicherheit gebracht – Waffenruhe in Oleschky beendet",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-zivilisten-aus-cherson-in-sicherheit-gebracht-waffenruhe-in-oleschky-beendet/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-02T01:18:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ukrainische Luftwaffe: Warn-App für Luftangriffe wurde gehackt +++ Festnahme nach Terrorhinweis – russischer FSB dankt USA +++ Selenskyj zu Treffen mit Putin in der Türkei bereit +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-waffenruhe-cherson-100.html",
-   "titel": "Ukraine: Feuerpause in Oleschky ausgelaufen",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-waffenruhe-cherson-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-02T01:09:27.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Feuerpause in Oleschky ist vorbei. Vor ihrem Ende nutzte das ukrainische Militär noch die Gelegenheit, weitere Menschen aus der Region in Sicherheit zu bringen. Unterdessen melden Ukraine und Russland Cyberattacken auf ihre Warn-Apps.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/usa-streit-zwischen-demokraten-in-michigan-droht-zu-eskalieren/29669594.html",
-   "titel": "+++ US-Midterms +++: Streit zwischen Demokraten in Michigan droht zu eskalieren",
-   "link": "https://www.handelsblatt.com/politik/international/usa-streit-zwischen-demokraten-in-michigan-droht-zu-eskalieren/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-01T23:09:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Trump setzt vor US-Wahlen Regierungshilfen als Druckmittel ein +++ Gericht weist Trump-Klage zu Wahl in Alaska ab +++ Washington D.C. und Virginia klagen gegen Trumps Triumphbogen +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo",
-   "titel": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire ends",
-   "link": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-01T21:55:01.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A rare humanitarian ceasefire allowed civilians to evacuate the Russian-occupied city of Oleshky.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/us-zoelle-carney-zieht-positives-fazit-nach-gespraech-mit-trump/30026990.html",
-   "titel": "+++ US-Zollpolitik +++: Carney zieht positives Fazit nach Gespräch mit Trump",
-   "link": "https://www.handelsblatt.com/politik/international/us-zoelle-carney-zieht-positives-fazit-nach-gespraech-mit-trump/30026990.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-01T21:32:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Bericht: USA heben Zölle auf bestimmte kanadische Waren auf +++ USA und Kanada verhandeln laut Insidern über Lockerung von Zöllen +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 12,
   "DW": 8,
-  "Spiegel Wirtschaft": 5,
+  "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 4,
   "BBC World": 12,
-  "NYT World": 13,
+  "NYT World": 14,
   "EIA Today in Energy": 0
  }
 }
