@@ -1,18 +1,64 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T05:23:40.391Z",
+ "lastUpdated": "2026-11-03T06:23:28.956Z",
  "eintraege": [
   {
+   "id": "https://www.nytimes.com/2026/11/02/world/midterm-elections-questions-trump-fifa.html",
+   "titel": "America Votes",
+   "link": "https://www.nytimes.com/2026/11/02/world/midterm-elections-questions-trump-fifa.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-03T06:17:48.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "We answer your questions about the midterm elections and what they will mean for the world.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/02/business/cyberattack-freezers-europe-us-army.html",
+   "titel": "Are Freezers Being Hacked? Europe and the U.S. Military Investigate.",
+   "link": "https://www.nytimes.com/2026/11/02/business/cyberattack-freezers-europe-us-army.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-03T06:06:32.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A wave of disruptions at grocery stores, which some officials blame on cyberattacks, highlights the vulnerability of supply chains. Shops across Europe were affected again on Monday.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/industrie/quartalszahlen-evonik-steigert-operativen-gewinn-und-wird-optimistischer/100265237.html",
+   "titel": "Quartalszahlen: Evonik steigert operativen Gewinn und wird optimistischer",
+   "link": "https://www.handelsblatt.com/unternehmen/industrie/quartalszahlen-evonik-steigert-operativen-gewinn-und-wird-optimistischer/100265237.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-03T05:58:28.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Evonik geht gestärkt in den Übernahmepoker mit BASF. Das Essener Chemieunternehmen hat am Dienstag positive Zahlen veröffentlicht. Dabei profitiert es von den Folgen des Iran-Kriegs.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.tagesschau.de/ausland/asien/usa-iran-angriffe-126.html",
-   "titel": "USA greifen iranische Ziele in Straße von Hormus an",
+   "titel": "USA greifen offenbar iranische Ziele in Straße von Hormus an",
    "link": "https://www.tagesschau.de/ausland/asien/usa-iran-angriffe-126.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-03T04:05:38.000Z",
+   "zeit": "2026-11-03T05:33:48.000Z",
    "kategorie": "konflikte",
    "maerkte": [
     "oel"
    ],
-   "text": "Kurz vor den Midterms in den USA sollen die USA wieder Iran angegriffen haben. Dabei soll es sich um einzelne Angriffe handeln - und keine vollständige Wiederaufnahme der Kampfhandlungen.",
+   "text": "Kurz vor den Midterms haben die USA Medienberichten zufolge wieder Iran angegriffen. Dabei soll es sich um einzelne Angriffe auf die Insel Qeschm in der Straße von Hormus handeln. Iran meldet den Abschuss einer US-Drohne.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-das-beste-gesetz-das-katherina-reiche-bisher-vorgelegt-hat/100266780.html",
+   "titel": "Morning Briefing: Das beste Gesetz, das Katherina Reiche bisher vorgelegt hat",
+   "link": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-das-beste-gesetz-das-katherina-reiche-bisher-vorgelegt-hat/100266780.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-03T04:52:56.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Wirtschaftsministerin macht eine Forderung des letzten Koalitionsausschusses konkret. Das gewünschte Ziel wird wohl verfehlt – dafür vermeidet Reiche es, sich ökonomisch zu verheddern.",
    "sprache": "de"
   },
   {
@@ -91,7 +137,7 @@
    "zeit": "2026-11-03T00:44:25.000Z",
    "kategorie": "handel",
    "maerkte": [],
-   "text": "Wegen der enormen Preissteigerungen durch Trumps Zölle und den Iran-Krieg könnten die Republikaner bei den Midterms abgestraft werden. Die Folge wäre ein politisches Patt. Droht den USA der Stillstand? Von Anne Schneider.",
+   "text": "Wegen der enormen Preissteigerungen durch Trumps Zölle und den Iran-Krieg könnten die Republikaner bei den heutigen Midterms abgestraft werden. Die Folge wäre ein politisches Patt. Droht den USA der Stillstand? Von Anne Schneider.",
    "sprache": "de"
   },
   {
@@ -128,17 +174,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/02/business/cyberattack-freezers-europe-us-army.html",
-   "titel": "Are Freezers Being Hacked? Europe and the U.S. Military Are Investigating.",
-   "link": "https://www.nytimes.com/2026/11/02/business/cyberattack-freezers-europe-us-army.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-02T21:28:04.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A wave of disruptions at grocery stores, which some officials blame on cyberattacks, highlights the vulnerability of supply chains. Shops across Europe were affected again on Monday.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/politik/international/midterms-trump-nutzt-die-letzte-rede-vor-der-wahl-um-ueber-sein-renovierungsprojekt-zu-reden/100266711.html",
    "titel": "Midterms: „Das Gras ist jetzt wunderschön“ – Trump nutzt die letzte Rede vor der Wahl um über sein Renovierungsprojekt zu reden",
    "link": "https://www.handelsblatt.com/politik/international/midterms-trump-nutzt-die-letzte-rede-vor-der-wahl-um-ueber-sein-renovierungsprojekt-zu-reden/100266711.html",
@@ -159,17 +194,6 @@
    "maerkte": [],
    "text": "Bei einem russischen Angriff in der Region Saporischschja sind der Ukraine zufolge mindestens 26 Menschen getötet worden. Präsident Selenskyj warf Moskau gezieltes Bombardement vor - demnach traf die Attacke ein Verteilzentrum für Hilfsgüte",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/02/world/midterm-elections-questions-trump-fifa.html",
-   "titel": "America Votes",
-   "link": "https://www.nytimes.com/2026/11/02/world/midterm-elections-questions-trump-fifa.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-02T20:46:29.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "We answer your questions about the midterm elections and what they will mean for the world.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/02/world/middleeast/israel-election-prime-minister.html",
@@ -420,7 +444,7 @@
    "maerkte": [
     "oel"
    ],
-   "text": "Iran könnte Straße von Hormus binnen zwei Tagen öffnen +++ Israels Wahlkommission sieht Wahlergebnis nicht gefährdet +++ Israels Armee zieht aus Westjordanland ab +++ Der Newsblog.",
+   "text": "Vance sieht Chancen auf Einigung mit dem Iran +++ China entsendet Sondergesandten in Iran +++ Trump: Kein großer Angriff auf den Iran nach Zwischenwahlen +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -431,7 +455,7 @@
    "zeit": "2026-11-02T14:49:00.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Lettland gibt nach Luftraum-Alarm Entwarnung +++ Selenskyj wirft Moskau „hinterhältigen Terroranschlag“ vor +++ 18 Tote bei Luftangriff auf Saporischschja +++ Der Newsblog.",
+   "text": "Russland meldet massive Angriffe auf Energieanlagen +++ Lettland gibt nach Luftraum-Alarm Entwarnung +++ Selenskyj wirft Moskau „hinterhältigen Terroranschlag“ vor +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -998,36 +1022,14 @@
    "maerkte": [],
    "text": "Ob im Hafen von Triest oder auf einer Bremer Werft: Im Rahmen von Sanktionen konfiszierte russische Megajachten verursachen gigantische Kosten. Die rechtliche Lage ist komplex, zuständige Politiker genervt.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-israelische-opposition-warnt-vor-neuem-krieg-mit-iran/100136895.html",
-   "titel": "+++ Iran-Krieg +++: Israelischer Oppositionspolitiker warnt vor neuem Krieg mit Iran unter Netanjahu",
-   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-israelische-opposition-warnt-vor-neuem-krieg-mit-iran/100136895.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-01T11:55:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Hunderte Festnahmen bei Gaza-Demo in London +++ Israels Präsident kündigt Gespräche zur Regierungsbildung an +++ Iran beharrt auf Bedingungen und droht mit neuen Waffen +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/trump-vs-obama-stilstreit-um-cheesecake-factory-und-das-weisse-haus-accg-201639908.html",
-   "titel": "US-Wahlkampf: Trump im Vergoldungswahn",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/trump-vs-obama-stilstreit-um-cheesecake-factory-und-das-weisse-haus-accg-201639908.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-01T11:42:11.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Was ist schöner? Die Restaurants der Kette Cheesecake Factory oder das Weiße Haus? Plötzlich geht es im US-Wahlkampf um Stil.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 12,
   "DW": 6,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 5,
+  "Handelsblatt": 6,
   "BBC World": 19,
   "NYT World": 12,
   "EIA Today in Energy": 0
