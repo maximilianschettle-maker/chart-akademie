@@ -1,16 +1,64 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T13:23:31.955Z",
+ "lastUpdated": "2026-11-03T14:23:32.163Z",
  "eintraege": [
   {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-will-putin-nicht-nach-kiew-einladen/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Selenskyj will Putin nicht nach Kiew einladen",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-will-putin-nicht-nach-kiew-einladen/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-03T14:10:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Möglicher Gipfel zwischen Trump, Putin und Xi +++ Merz kündigt Selenskyj-Besuch in Berlin an +++ Russland meldet massive Angriffe auf Energieanlagen +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.eia.gov/todayinenergy/detail.php",
+   "titel": "Global refinery inputs fell sharply in the second quarter of 2026 before modest recovery",
+   "link": "https://www.eia.gov/todayinenergy/detail.php?id=68404",
+   "quelle": "EIA Today in Energy",
+   "zeit": "2026-11-03T14:00:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Global crude oil refinery inputs fell by 4.8 million barrels per day (b/d) in the second quarter of 2026 (2Q26), or 6%, following the start of conflict in late February in the Middle East, according to data from Kpler. Throughput then incre",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.bbc.co.uk/news/articles/cwy8lm1m59mvo",
-   "titel": "Europe on alert after supermarket freezers hit by cyber-attacks in nine countries",
+   "titel": "Europe on alert after supermarket freezers hit by cyber-attacks in 10 countries",
    "link": "https://www.bbc.co.uk/news/articles/cwy8lm1m59mvo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-03T13:12:04.000Z",
+   "zeit": "2026-11-03T13:55:47.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Supermarkets have reported problems from Estonia and Sweden to Portugal and Italy and many retainers have been forced to discard food.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo",
+   "titel": "Trump to remove Rwanda and South Africa from US trade deal",
+   "link": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T13:28:30.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "The move comes barely a week after Rwanda's defence ministry was hit with sanctions by the US Treasury.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o",
+   "titel": "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
+   "link": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T13:26:19.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president calls an \"utterly horrific\" attack.",
    "sprache": "en"
   },
   {
@@ -102,19 +150,6 @@
    ],
    "text": "Es klingt nach einem Trump-Deal: Wenn wieder Pipelinegas aus Russland durch die Ukraine strömt, soll Energie endlich günstiger werden. Doch Experten warnen: Der Plan sei nicht nur politisch »verheerend«, sondern auch ökonomisch fragwürdig.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo",
-   "titel": "Trump to remove Rwanda and South Africa from US trade deal",
-   "link": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T10:26:26.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "The move comes barely a week after Rwanda's defence ministry was hit with sanctions by the US Treasury.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-berlin-redet-die-leeren-gasspeicher-schoen/100266472.html",
@@ -266,17 +301,6 @@
    ],
    "text": "In der Nacht blickt die Welt auf die Wahlen in den USA. Anleger halten sich im Vorfeld zurück. Können weitere Quartalszahlen positive Impulse liefern?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o",
-   "titel": "Russian bombing kills 29 people at Ukraine aid centre, Kyiv says",
-   "link": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T07:24:12.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president called an \"utterly horrific\" attack.",
-   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/sport/football/articles/c6y0e79yjg44o",
@@ -1005,41 +1029,16 @@
    "maerkte": [],
    "text": "It’s not just rare earths. China is making it harder for other countries to shed their dependence on its solar, drone and drugmaking technology.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/investigativ/swr/ammoniak-eu-russland-100.html",
-   "titel": "Kritik an Ammoniak-Importen: Die EU, Russland und die Sprengstoffindustrie",
-   "link": "https://www.tagesschau.de/investigativ/swr/ammoniak-eu-russland-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-02T04:33:51.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Trotz aller Sanktionen importiert die EU russisches Ammoniak - aufgrund eines \"EU-Sonderkontingents\" legal. Nach SWR-Recherchen haben die beteiligten Firmen Verbindungen zu Putin-nahen Oligarchen und zur Sprengstoffindustrie. Von Nick Schad",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-asiens-boersen-stabilisieren-sich-oelpreise-geben-nach/100266505.html",
-   "titel": "Nikkei, Yen, Hang Seng: Asiens Börsen stabilisieren sich – Ölpreise geben nach",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-asiens-boersen-stabilisieren-sich-oelpreise-geben-nach/100266505.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-02T04:30:57.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "Nach den jüngsten Verlusten greifen Anleger in Asien wieder zu. Starke Unternehmenszahlen und Hoffnungen auf staatliche Stützungsmaßnahmen in China sorgen für Auftrieb.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 12,
   "DW": 8,
   "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 4,
+  "FAZ Wirtschaft": 3,
   "Handelsblatt": 3,
   "BBC World": 13,
-  "NYT World": 14,
-  "EIA Today in Energy": 0
+  "NYT World": 13,
+  "EIA Today in Energy": 1
  }
 }
