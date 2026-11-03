@@ -1,7 +1,73 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T17:23:35.624Z",
+ "lastUpdated": "2026-11-03T18:23:46.911Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/03/us/politics/trump-venezuela-troop-agreement.html",
+   "titel": "Trump Pushes Venezuela for Agreement Allowing U.S. Troops to Stay",
+   "link": "https://www.nytimes.com/2026/11/03/us/politics/trump-venezuela-troop-agreement.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-03T18:17:14.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The two countries have long been adversaries, and the United States attacked Venezuela this year, but Secretary of State Marco Rubio is starting talks on a legal agreement.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-krieg-russischer-angriff-auf-schulhaus-toetet-dutzende-zivilisten/100267066.html",
+   "titel": "Ukraine-Krieg: Auf die Waffenruhe folgt ein Massaker: Russischer Angriff auf Schulhaus tötet Dutzende Zivilisten",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-krieg-russischer-angriff-auf-schulhaus-toetet-dutzende-zivilisten/100267066.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-03T17:56:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russland attackiert die Ukraine weiterhin ohne Rücksicht auf zivile Opfer. Exemplarisch dafür steht ein besonders blutiger Angriff in der Provinz Saporischschja.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/03/world/middleeast/iran-chemical-weapons-israel-trump.html",
+   "titel": "Israeli Claims of Iranian Chemical Weapons Divide U.S. Officials",
+   "link": "https://www.nytimes.com/2026/11/03/world/middleeast/iran-chemical-weapons-israel-trump.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-03T17:48:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Some administration officials suggested Prime Minister Benjamin Netanyahu is trying to draw President Trump back into military action.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/spanien-sicherheitsmassnahmen-100.html",
+   "titel": "Spanien beschließt nach Zugunglück neue Sicherheitsmaßnahmen im Bahnverkehr",
+   "link": "https://www.tagesschau.de/ausland/spanien-sicherheitsmassnahmen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-03T17:32:23.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "69 Menschen starben vor knapp einer Woche bei der Kollision zweier Hochgeschwindigkeitszüge - es war bereits das zweite schwere Zugunglück in Spanien in diesem Jahr. Nun sollen neue Maßnahmen die Sicherheit verbessern.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/midterms-die-aktuelle-wahl-ist-eine-generalprobe-fuer-2028/100265614.html",
+   "titel": "Midterms: Beleidigungen, üble Nachrede, KI‑Werbung: „Die aktuelle Wahl ist eine Generalprobe für 2028“",
+   "link": "https://www.handelsblatt.com/politik/international/midterms-die-aktuelle-wahl-ist-eine-generalprobe-fuer-2028/100265614.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-03T17:09:52.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Experten registrieren eine ungewohnte Härte im zurückliegenden US‑Wahlkampf. Die Ergebnisse der Midterms werden auch das Rennen um die Trump-Nachfolge entscheiden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c65ynez5y599o",
+   "titel": "Death toll rises in Ukraine after Russia attacks aid centre, hospice and hospital",
+   "link": "https://www.bbc.co.uk/news/articles/c65ynez5y599o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T16:57:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "At least 38 people are killed in 24 hours and Ukraine's Volodymyr Zelensky warns dozens more could be trapped under rubble.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-holt-tagesverluste-teils-auf-oelpreis-auf-ein-monats-tief/100266854.html",
    "titel": "Dax aktuell: Dax holt Tagesverluste auf – Ölpreis fällt auf Ein-Monats-Tief",
@@ -965,82 +1031,16 @@
    "maerkte": [],
    "text": "The attack on Donovan Marx, 50, comes as right-wing groups say there is a genocide of white people - a claim widely discredited.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/katherina-reiche-cdu-formuliert-erste-plaene-fuer-spritpreisdeckel-a-f41e4366-d70a-485a-959b-f5d16256e46a",
-   "titel": "CDU: Katherina Reiche formuliert erste Pläne für Spritpreisdeckel",
-   "link": "https://www.spiegel.de/wirtschaft/katherina-reiche-cdu-formuliert-erste-plaene-fuer-spritpreisdeckel-a-f41e4366-d70a-485a-959b-f5d16256e46a#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-02T09:53:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Spätestens Anfang 2027 soll ein Spritpreisdeckel gelten – als Ersatz für den Tankrabatt, so haben es die Koalitionsspitzen vereinbart. Das Wirtschaftsministerium legt nun erste Pläne vor. Sie sehen einige zusätzliche Hürden vor.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/videos/cjly0p753dxxo",
-   "titel": "What are Americans voting for in this election?",
-   "link": "https://www.bbc.co.uk/news/videos/cjly0p753dxxo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-02T09:22:55.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The BBC's Maddie Gerber explains what's on the ballot in the 2026 midterm elections in the United States.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/w%C3%BCrgt-der-neue-konflikt-%C3%A4thiopiens-wirtschaftswachstum-ab/a-79804678",
-   "titel": "Würgt der neue Konflikt Äthiopiens Wirtschaftswachstum ab?",
-   "link": "https://www.dw.com/de/würgt-der-neue-konflikt-äthiopiens-wirtschaftswachstum-ab/a-79804678?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-02T08:56:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Äthiopiens Wirtschaft wächst kräftig. Doch neue Kämpfe im Norden des BRICS-Mitgliedsstaates könnten Investitionen bremsen, die Staatsfinanzen belasten und die Lebenshaltungskosten weiter in die Höhe treiben.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/us-midterms-verachtenswerter-verrat-schumer-kritisiert-abtruennige-abgeordnete/29669594.html",
-   "titel": "+++ US-Midterms +++: „Verachtenswerter Verrat“ – Schumer kritisiert abtrünnige Abgeordnete",
-   "link": "https://www.handelsblatt.com/politik/international/us-midterms-verachtenswerter-verrat-schumer-kritisiert-abtruennige-abgeordnete/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-02T08:43:41.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Streit zwischen Demokraten in Michigan droht zu eskalieren ++ Trump setzt vor US-Wahlen Regierungshilfen als Druckmittel ein +++ Gericht weist Trump-Klage zu Wahl in Alaska ab +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/usa-verachtenswerter-verrat-schumer-kritisiert-abtruennige-abgeordnete/29669594.html",
-   "titel": "+++ US-Midterms +++: „Verachtenswerter Verrat“ – Schumer kritisiert abtrünnige Abgeordnete",
-   "link": "https://www.handelsblatt.com/politik/international/usa-verachtenswerter-verrat-schumer-kritisiert-abtruennige-abgeordnete/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-02T08:43:41.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Streit zwischen Demokraten in Michigan droht zu eskalieren ++ Trump setzt vor US-Wahlen Regierungshilfen als Druckmittel ein +++ Gericht weist Trump-Klage zu Wahl in Alaska ab +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/us-wahlen-wo-kalifornien-rechter-ist-als-es-scheint/100262695.html",
-   "titel": "US-Wahlen: Wo Kalifornien rechter ist, als es scheint",
-   "link": "https://www.handelsblatt.com/politik/international/us-wahlen-wo-kalifornien-rechter-ist-als-es-scheint/100262695.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-02T07:51:35.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der wichtigste Bundesstaat der USA gilt als linkes Epizentrum, dabei sind viele Regionen erstaunlich konservativ. Bei den Midterms kämpfen Trumps Republikaner an mehreren Fronten.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 12,
   "DW": 7,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 2,
-  "Handelsblatt": 5,
-  "BBC World": 13,
-  "NYT World": 14,
+  "Handelsblatt": 7,
+  "BBC World": 14,
+  "NYT World": 16,
   "EIA Today in Energy": 1
  }
 }
