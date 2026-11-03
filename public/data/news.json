@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T12:23:33.943Z",
+ "lastUpdated": "2026-11-03T13:23:31.955Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cwy8lm1m59mvo",
+   "titel": "Europe on alert after supermarket freezers hit by cyber-attacks in nine countries",
+   "link": "https://www.bbc.co.uk/news/articles/cwy8lm1m59mvo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T13:12:04.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Supermarkets have reported problems from Estonia and Sweden to Portugal and Italy and many retainers have been forced to discard food.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/ukrainekrieg-vor-verhandlungen-selenskyj-besucht-merz-in-berlin/100266875.html",
+   "titel": "Krieg gegen Ukraine: Vor Verhandlungen – Selenskyj besucht Merz in Berlin",
+   "link": "https://www.handelsblatt.com/politik/deutschland/ukrainekrieg-vor-verhandlungen-selenskyj-besucht-merz-in-berlin/100266875.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-03T12:28:23.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der ukrainische Präsident besucht den Bundeskanzler. Bei dem Treffen dürfte es auch um weitere militärische und finanzielle Unterstützung für die Ukraine gehen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/midterms-szenarien-100.html",
+   "titel": "Wahlen in den USA: Wie geht es nach den Midterms weiter? Vier Szenarien",
+   "link": "https://www.tagesschau.de/ausland/amerika/midterms-szenarien-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-03T12:24:53.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Bei den Zwischenwahlen in den USA steht für Trump viel auf dem Spiel: Verlieren seine Republikaner, könnte das Regieren für ihn komplizierter werden. Welche Szenarien sind denkbar? Ein Überblick. Von Jörn Unsöld und Eckart Aretz.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/ukraine-russische-angriffe-118.html",
    "titel": "Krieg gegen die Ukraine: Russland bombardiert Krankenhaus in Charkiw",
@@ -23,17 +56,6 @@
    "maerkte": [],
    "text": "The US secretary of state also discusses laying the groundwork for 'free, fair, and credible elections'.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/ukrainekrieg-vor-verhandlungen-selenskyj-besucht-merz-in-berlin/100266875.html",
-   "titel": "Krieg gegen Ukraine: Vor Verhandlungen – Selenskyj besucht Merz in Berlin",
-   "link": "https://www.handelsblatt.com/politik/deutschland/ukrainekrieg-vor-verhandlungen-selenskyj-besucht-merz-in-berlin/100266875.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T11:37:44.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der ukrainische Präsident besucht den Bundeskanzler. Bei dem Treffen dürfte es auch um weitere militärische und finanzielle Unterstützung für die Ukraine gehen.",
-   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo",
@@ -1008,28 +1030,6 @@
    ],
    "text": "Nach den jüngsten Verlusten greifen Anleger in Asien wieder zu. Starke Unternehmenszahlen und Hoffnungen auf staatliche Stützungsmaßnahmen in China sorgen für Auftrieb.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/steinmeier-nachfolge-spd-nominiert-michel-friedman-fuer-die-bundesversammlung/100266516.html",
-   "titel": "Steinmeier-Nachfolge: SPD nominiert Michel Friedman für die Bundesversammlung",
-   "link": "https://www.handelsblatt.com/politik/deutschland/steinmeier-nachfolge-spd-nominiert-michel-friedman-fuer-die-bundesversammlung/100266516.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-02T04:20:12.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Michel Friedman soll nach dem Willen der Hessen-SPD mitentscheiden, wer auf Frank-Walter Steinmeier als Bundespräsident folgt – aus Sicht des Publizisten eine Wahl „von höchster Bedeutung“.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c3j47gjx29vro",
-   "titel": "Trump makes final campaign push in final weekend before election",
-   "link": "https://www.bbc.co.uk/news/articles/c3j47gjx29vro?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-02T04:04:28.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The US president rallied in states that Republicans previously won - showcasing how tight Tuesday's elections could be in determining control of Congress.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1037,7 +1037,7 @@
   "DW": 8,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 4,
+  "Handelsblatt": 3,
   "BBC World": 13,
   "NYT World": 14,
   "EIA Today in Energy": 0
