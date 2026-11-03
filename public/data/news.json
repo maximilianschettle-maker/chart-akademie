@@ -1,16 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T02:23:31.642Z",
+ "lastUpdated": "2026-11-03T03:23:32.325Z",
  "eintraege": [
   {
    "id": "https://www.bbc.co.uk/news/articles/cwly3jd27m9xo",
    "titel": "Man and boy arrested after allegedly attacking One Nation volunteer with baseball bat in Australia",
    "link": "https://www.bbc.co.uk/news/articles/cwly3jd27m9xo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-03T01:57:46.000Z",
+   "zeit": "2026-11-03T03:11:16.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The incident comes amid growing calls for the temperature of political debate in Australia to be turned down.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo",
+   "titel": "Trump to remove Rwanda and South Africa from US trade deal",
+   "link": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T03:00:36.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "The move comes barely a week after Rwanda's defence ministry was hit with sanctions by the US Treasury.",
    "sprache": "en"
   },
   {
@@ -70,7 +83,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/midterms-trump-nutzt-die-letzte-rede-vor-der-wahl-um-ueber-sein-renovierungsprojekt-zu-reden/100266711.html",
-   "titel": "Midterms: Trump nutzt die letzte Rede vor der Wahl um über sein Renovierungsprojekt zu reden",
+   "titel": "Midterms: „Das Gras ist jetzt wunderschön“ – Trump nutzt die letzte Rede vor der Wahl um über sein Renovierungsprojekt zu reden",
    "link": "https://www.handelsblatt.com/politik/international/midterms-trump-nutzt-die-letzte-rede-vor-der-wahl-um-ueber-sein-renovierungsprojekt-zu-reden/100266711.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-02T21:23:46.000Z",
@@ -157,19 +170,6 @@
    "maerkte": [],
    "text": "Die Waffenruhe zur Evakuierung von Zivilisten aus dem russisch besetzten Oleschky hat in Cherson am gegenüberliegenden Dnipro-Ufer Freude, aber auch Ängste ausgelöst. Ein DW-Reporter, der aus Cherson stammt, war vor Ort.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo",
-   "titel": "Trump to remove Rwanda and South Africa from US trade deal",
-   "link": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-02T19:33:10.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "The move comes barely a week after Rwanda's defence ministry was hit with sanctions by the US Treasury.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/02/world/europe/russia-polish-political-turmoil.html",
@@ -1025,7 +1025,7 @@
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 12,
   "DW": 6,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
