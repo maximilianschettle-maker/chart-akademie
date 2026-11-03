@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T01:23:31.443Z",
+ "lastUpdated": "2026-11-03T02:23:31.642Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cwly3jd27m9xo",
+   "titel": "Man and boy arrested after allegedly attacking One Nation volunteer with baseball bat in Australia",
+   "link": "https://www.bbc.co.uk/news/articles/cwly3jd27m9xo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T01:57:46.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The incident comes amid growing calls for the temperature of political debate in Australia to be turned down.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o",
+   "titel": "Russian bombing kills 26 people at Ukraine aid centre, Kyiv says",
+   "link": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T01:56:27.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president called an \"utterly horrific\" attack.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/midterms-auftakt-100.html",
    "titel": "Zwischenwahlen in den USA: Bleibt das Land regierbar?",
@@ -67,17 +89,6 @@
    "maerkte": [],
    "text": "Bei einem russischen Angriff in der Region Saporischschja sind der Ukraine zufolge mindestens 26 Menschen getötet worden. Präsident Selenskyj warf Moskau gezieltes Bombardement vor - demnach traf die Attacke ein Verteilzentrum für Hilfsgüte",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o",
-   "titel": "Russian bombing kills 26 people at Ukraine aid centre, Kyiv says",
-   "link": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-02T21:10:04.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president called an \"utterly horrific\" attack.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/02/world/midterm-elections-questions-trump-fifa.html",
@@ -292,7 +303,7 @@
    "titel": "Why Orban and Vucic Broke With Trump on Election Denial",
    "link": "https://www.nytimes.com/2026/11/02/world/europe/serbia-hungary-elections-trump.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-02T16:48:12.000Z",
+   "zeit": "2026-11-02T16:48:13.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "Rejecting President Trump’s election denial playbook, nationalist leaders in Serbia and Hungary opted for an orderly retreat.",
@@ -344,7 +355,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/iran-koennte-strasse-von-hormus-binnen-zwei-tagen-oeffnen/100136895.html",
-   "titel": "+++ Iran-Krieg +++: Iran könnte Straße von Hormus binnen zwei Tagen öffnen",
+   "titel": "+++ Iran-Krieg +++: USA greifen offenbar iranische Ziele in Straße von Hormus an",
    "link": "https://www.handelsblatt.com/politik/international/iran-koennte-strasse-von-hormus-binnen-zwei-tagen-oeffnen/100136895.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-02T15:04:00.000Z",
@@ -352,7 +363,7 @@
    "maerkte": [
     "oel"
    ],
-   "text": "Israels Wahlkommission sieht Wahlergebnis nicht gefährdet +++ Israels Armee zieht aus Westjordanland ab +++ Tanker vor Küste Saudi-Arabiens von Geschossen getroffen +++ Der Newsblog.",
+   "text": "Iran könnte Straße von Hormus binnen zwei Tagen öffnen +++ Israels Wahlkommission sieht Wahlergebnis nicht gefährdet +++ Israels Armee zieht aus Westjordanland ab +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -1011,17 +1022,6 @@
    ],
    "text": "Laut Experten war es der bisher größte Hackerangriff auf eine Börse für Digitalwährungen. Am Donnerstag war er bekannt geworden - und schnell geriet Nordkorea ins Visier. Nun macht auch das FBI nordkoreanische Hacker dafür verantwortlich.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/01/world/europe/putin-isolation-breakdown-trump.html",
-   "titel": "Putin Breaks Down His Isolation, With a Big Assist From Trump",
-   "link": "https://www.nytimes.com/2026/11/01/world/europe/putin-isolation-breakdown-trump.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-01T10:04:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Notching wins from Washington, the Russian leader is talking with foreign leaders and could return to diplomatic center stage with possible summit meetings.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1030,7 +1030,7 @@
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 4,
-  "BBC World": 16,
+  "BBC World": 17,
   "NYT World": 13,
   "EIA Today in Energy": 0
  }
