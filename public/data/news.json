@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T19:23:46.184Z",
+ "lastUpdated": "2026-11-03T19:35:48.359Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/ukraine-krieg-bundeskanzler-friedrich-merz-und-der-ukrainische-pr%C3%A4sident-wolodymyr-selenskyj-beraten-in-berlin/a-79846015",
+   "titel": "Ukraine-Krieg: Bundeskanzler Friedrich Merz und der ukrainische Präsident Wolodymyr Selenskyj beraten in Berlin",
+   "link": "https://www.dw.com/de/ukraine-krieg-bundeskanzler-friedrich-merz-und-der-ukrainische-präsident-wolodymyr-selenskyj-beraten-in-berlin/a-79846015?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-03T19:26:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der ukrainische Präsident Wolodymyr Selenskyj sucht vor neuen Verhandlungen mit Russland und den USA Rückhalt bei Bundeskanzler Friedrich Merz in Berlin. Der Kanzler fand deutliche Worte in Richtung Moskau.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/usa-israel-trump-will-militaerhilfe-an-israel-bis-jahresende-stoppen/100267032.html",
    "titel": "USA und Israel: Ankündigung am Wahltag: Trump will Militärhilfe an Israel bis Jahresende stoppen",
@@ -1018,22 +1029,11 @@
    "maerkte": [],
    "text": "The airline says fuel prices may rise by €2bn in 2028 unless there is an end to the US-Israel war with Iran.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c8zxlqxwed4do",
-   "titel": "Uganda begins withdrawing troops from Somalia after 20 years",
-   "link": "https://www.bbc.co.uk/news/articles/c8zxlqxwed4do?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-02T12:05:34.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Uganda has been helping Somalia battle an insurgency led by the al-Shabab militant group since 2007.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 13,
-  "DW": 7,
+  "DW": 8,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 6,
