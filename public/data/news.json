@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T11:23:45.779Z",
+ "lastUpdated": "2026-11-03T12:02:16.513Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/ukrainekrieg-vor-verhandlungen-selenskyj-besucht-merz-in-berlin/100266875.html",
+   "titel": "Krieg gegen Ukraine: Vor Verhandlungen – Selenskyj besucht Merz in Berlin",
+   "link": "https://www.handelsblatt.com/politik/deutschland/ukrainekrieg-vor-verhandlungen-selenskyj-besucht-merz-in-berlin/100266875.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-03T11:37:44.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der ukrainische Präsident besucht den Bundeskanzler. Bei dem Treffen dürfte es auch um weitere militärische und finanzielle Unterstützung für die Ukraine gehen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo",
+   "titel": "US strikes Iranian island ahead of midterm elections",
+   "link": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T11:33:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "US officials described the attacks on Qeshm Island as limited and defensive, according to CBS, the BBC's US partner.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
    "titel": "Liveblog zu den Midterms: ++ US-Bürger wählen neuen Kongress ++",
@@ -18,7 +40,7 @@
    "titel": "As Trump’s Midterm Deadline Looms, Gulf Countries Brace for Possible Renewal of Iran War",
    "link": "https://www.nytimes.com/2026/11/03/world/middleeast/trump-iran-war-midterms-election.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-03T10:47:17.000Z",
+   "zeit": "2026-11-03T10:47:18.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The energy-rich Gulf Arab countries are engaged in a flurry of mediation efforts to avert war between the U.S. and Iran, as many fear that the fighting will be worse this time around.",
@@ -36,17 +58,6 @@
    ],
    "text": "Es klingt nach einem Trump-Deal: Wenn wieder Pipelinegas aus Russland durch die Ukraine strömt, soll Energie endlich günstiger werden. Doch Experten warnen: Der Plan wäre nicht nur politisch »verheerend«, sondern auch ökonomisch fragwürdig.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo",
-   "titel": "US strikes Iranian island ahead of midterm elections",
-   "link": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T10:37:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "US officials described the attacks on Qeshm Island as limited and defensive, according to CBS, the BBC's US partner.",
-   "sprache": "en"
   },
   {
    "id": "https://www.dw.com/de/deutschland-erw%C3%A4gt-r%C3%BCckgabe-der-eishockey-wm-2027-wegen-russland-teilnahme/a-79828606",
@@ -196,17 +207,6 @@
    "maerkte": [],
    "text": "A wave of disruptions at grocery stores, which some officials blame on cyberattacks, highlights the vulnerability of supply chains. Shops across Europe were affected again on Monday.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/ukrainekrieg-vor-verhandlungen-selenskyj-besucht-merz-in-berlin/100266875.html",
-   "titel": "Krieg gegen Ukraine: Vor Verhandlungen – Selenskyj besucht Merz in Berlin",
-   "link": "https://www.handelsblatt.com/politik/deutschland/ukrainekrieg-vor-verhandlungen-selenskyj-besucht-merz-in-berlin/100266875.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T08:32:19.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Ukrainische Präsident besucht den Bundeskanzler. Bei dem Treffen dürfte es auch um weitere militärische und finanzielle Unterstützung für die Ukraine gehen.",
-   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-unter-26.000-punkten-dax-notiert-vor-us-midterms-im-minus/100266854.html",
@@ -1033,7 +1033,7 @@
   }
  ],
  "quellen": {
-  "tagesschau": 12,
+  "tagesschau": 11,
   "DW": 8,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
