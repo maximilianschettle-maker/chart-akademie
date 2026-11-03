@@ -1,17 +1,50 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T07:23:31.535Z",
+ "lastUpdated": "2026-11-03T08:23:28.079Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
    "titel": "Liveblog zu den Midterms: ++ US-Bürger wählen neuen Kongress ++",
    "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-03T07:20:24.000Z",
+   "zeit": "2026-11-03T08:16:05.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "Republikaner oder Demokraten - wer überzeugt mehr? In den USA finden heute die Zwischenwahlen statt, ein wichtiger Gradmesser für Trumps Politik. Weltweit wird der Ausgang der Wahl mit Spannung erwartet - die Entwicklungen hier im Liveblog.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-naechste-woche-laut-usa-verhandlungen-mit-ukraine-und-russland/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Nächste Woche laut USA Verhandlungen mit Ukraine und Russland",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-naechste-woche-laut-usa-verhandlungen-mit-ukraine-und-russland/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-03T08:07:58.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Merz kündigt Selenskyj-Besuch in Berlin an +++ Russland meldet massive Angriffe auf Energieanlagen +++ Lettland gibt nach Luftraum-Alarm Entwarnung +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o",
+   "titel": "Russian bombing kills 29 people at Ukraine aid centre, Kyiv says",
+   "link": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T07:24:12.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president called an \"utterly horrific\" attack.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/sport/football/articles/c6y0e79yjg44o",
+   "titel": "Asian Cup postponed in wake of attacks on Saudi Arabia",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c6y0e79yjg44o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T07:15:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The 2027 Asian Cup in Saudi Arabia is postponed because of a series of deadly attacks on the host country.",
+   "sprache": "en"
   },
   {
    "id": "https://www.dw.com/de/ukraine-iran-und-co-so-k%C3%B6nnten-die-midterms-die-us-au%C3%9Fenpolitik-beeinflussen/a-79833783",
@@ -97,6 +130,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.bbc.co.uk/news/articles/cq2d6k4r5n9ro",
+   "titel": "Americans head to the polls for elections that could define Trump's closing chapter",
+   "link": "https://www.bbc.co.uk/news/articles/cq2d6k4r5n9ro?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T05:00:43.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The midterms will shape Congress for the last years of his presidency, writes Sarah Smith, but they are also a test of what politics may look like without him.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-das-beste-gesetz-das-katherina-reiche-bisher-vorgelegt-hat/100266780.html",
    "titel": "Morning Briefing: Das beste Gesetz, das Katherina Reiche bisher vorgelegt hat",
    "link": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-das-beste-gesetz-das-katherina-reiche-bisher-vorgelegt-hat/100266780.html",
@@ -151,17 +195,6 @@
     "anleihen"
    ],
    "text": "The move comes barely a week after Rwanda's defence ministry was hit with sanctions by the US Treasury.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o",
-   "titel": "Russian bombing kills 26 people at Ukraine aid centre, Kyiv says",
-   "link": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T01:56:27.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president called an \"utterly horrific\" attack.",
    "sprache": "en"
   },
   {
@@ -480,17 +513,6 @@
     "oel"
    ],
    "text": "Vance sieht Chancen auf Einigung mit dem Iran +++ China entsendet Sondergesandten in Iran +++ Trump: Kein großer Angriff auf den Iran nach Zwischenwahlen +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-naechste-woche-laut-usa-verhandlungen-mit-ukraine-und-russland/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Nächste Woche laut USA Verhandlungen mit Ukraine und Russland",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-naechste-woche-laut-usa-verhandlungen-mit-ukraine-und-russland/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-02T14:49:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russland meldet massive Angriffe auf Energieanlagen +++ Lettland gibt nach Luftraum-Alarm Entwarnung +++ Selenskyj wirft Moskau „hinterhältigen Terroranschlag“ vor +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -998,41 +1020,15 @@
    "maerkte": [],
    "text": "Five officers from the Hamas-run police have been killed in Khan Younis and three people, including a child, killed in Gaza City, officials say.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/golfstaaten-midterms-usa-100.html",
-   "titel": "Iran-Krieg: Golfstaaten bereiten sich auf neue Eskalation vor",
-   "link": "https://www.tagesschau.de/ausland/golfstaaten-midterms-usa-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-01T16:24:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Die Sorge vor einer erneuten Eskalation im Iran-Krieg wächst - vor allem in den Golfstaaten. Eine Folge: Aufrüstung. Auf einer Konferenz beraten Politiker aus der Region mit Experten. Auch Deutschland ist vertreten. Von M. Behrendt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/vorgaben-f%C3%BCr-gasspeicher-f%C3%BCllstand-in-deutschland-verfehlt/a-79822308",
-   "titel": "Vorgaben für Gasspeicher-Füllstand in Deutschland verfehlt",
-   "link": "https://www.dw.com/de/vorgaben-für-gasspeicher-füllstand-in-deutschland-verfehlt/a-79822308?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-01T14:26:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "gas"
-   ],
-   "text": "Eigentlich sollten die Gasspeicher am 1. November zu 70 Prozent gefüllt sein. Dieses Ziel wurde nicht erreicht. Das Wirtschaftsministerium beteuert dennoch, die Versorgung im kommenden Winter sei gesichert",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 11,
   "DW": 7,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 5,
-  "BBC World": 19,
+  "BBC World": 12,
   "NYT World": 12,
   "EIA Today in Energy": 0
  }
