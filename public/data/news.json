@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T15:23:35.500Z",
+ "lastUpdated": "2026-11-03T16:23:38.188Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/wissen/kuehlsysteme-schutz-100.html",
+   "titel": "Angriffe auf Kühlsysteme: Warum Supermärkte von Cyberangriffen kalt erwischt werden",
+   "link": "https://www.tagesschau.de/wissen/kuehlsysteme-schutz-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-03T16:10:04.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nun sind auch deutsche Supermärkte von Cyberangriffen auf Kühlsysteme betroffen. Die Vorfälle weisen auf Sicherheitslücken hin - Handelsketten und Hersteller haben es den Angreifern offenbar leicht gemacht. Von Sven Kästner.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/merz-selenskyj-134.html",
+   "titel": "Merz verspricht mehr Hilfe für die Ukraine und appelliert an Europäer",
+   "link": "https://www.tagesschau.de/ausland/europa/merz-selenskyj-134.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-03T16:08:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russische Angriffe auf die Energie-Infrastruktur, Raketeneinschläge in den Städten: Der Ukraine droht ein harter Kriegswinter. Kanzler Merz sagt Unterstützung zu - fordert aber auch mehr Engagement der europäischen Partner.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/03/world/europe/komyshuvakha-zaporizhzhia-attack-ukraine.html",
+   "titel": "Strike on Ukraine Humanitarian Hub Is Feared to Be Among War’s Deadliest",
+   "link": "https://www.nytimes.com/2026/11/03/world/europe/komyshuvakha-zaporizhzhia-attack-ukraine.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-03T15:58:26.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Hours after the Russian attack, which killed at least 31 and left dozens missing, the United States said that peace talks with the two countries would resume after nine months.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/unternehmen/handel-konsumgueter/einzelhandel-hackerangriffe-auf-supermarkt-kuehlsysteme-in-deutschland/100266984.html",
    "titel": "Einzelhandel: Hacker greifen Kühlsysteme mehrerer deutscher Supermärkte an – Experten warnen vor weiteren Attacken",
@@ -22,17 +55,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Der Kanzler empfängt den ukrainischen Präsidenten Selenskyj in Berlin, um ihm weitere Unterstützung zuzusagen. Aber bei geplanten Gesprächen über ein Kriegsende schauen die Europäer nur zu.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/merz-selenskyj-134.html",
-   "titel": "Merz verspricht mehr Hilfe für die Ukraine und appelliert an Europäer",
-   "link": "https://www.tagesschau.de/ausland/europa/merz-selenskyj-134.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T14:44:14.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russische Angriffe auf die Energie-Infrastruktur, Raketeneinschläge in den Städten: Der Ukraine droht ein harter Kriegswinter. Kanzler Merz sagt Unterstützung zu - fordert aber auch mehr Engagement der europäischen Partner.",
    "sprache": "de"
   },
   {
@@ -1006,38 +1028,16 @@
    "maerkte": [],
    "text": "Vor Angriffen warnt die Ukraine die Bevölkerung per App. Doch dabei gibt es nun ein Problem: Die App wurde gehackt, in Kiew wurde fälschlicherweise vor \"Gefahr durch Strahlung\" gewarnt. Auch Russland meldet einen Angriff auf seine Warn-App.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/weg-von-fossilen-energien-diese-chance-bieten-die-hohen-energiepreise-201528233.html",
-   "titel": "Hohe Energiepreise: Weg von fossilen Energien – jetzt oder nie!",
-   "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/weg-von-fossilen-energien-diese-chance-bieten-die-hohen-energiepreise-201528233.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-02T06:32:39.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Die hohen Energiepreise bieten die Chance auf schnellere Elektrifizierung. Doch Berlin und Brüssel verheddern sich in gemischten politischen Signalen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/die-hohen-energiepreise-sind-eine-goldene-gelegenheit-fuer-die-abkehr-von-fossilen-energien-201528233.html",
-   "titel": "Hohe Energiepreise: Weg von fossilen Energien – jetzt oder nie!",
-   "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/die-hohen-energiepreise-sind-eine-goldene-gelegenheit-fuer-die-abkehr-von-fossilen-energien-201528233.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-02T06:32:39.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Die hohen Energiepreise bieten die Chance auf schnellere Elektrifizierung. Doch Berlin und Brüssel verheddern sich in gemischten politischen Signalen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 12,
   "DW": 7,
-  "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 3,
-  "Handelsblatt": 4,
+  "Spiegel Wirtschaft": 3,
+  "FAZ Wirtschaft": 2,
+  "Handelsblatt": 3,
   "BBC World": 13,
-  "NYT World": 13,
+  "NYT World": 14,
   "EIA Today in Energy": 1
  }
 }
