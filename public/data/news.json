@@ -1,13 +1,24 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-02T23:23:34.770Z",
+ "lastUpdated": "2026-11-03T00:23:28.690Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cm3wv085ne6po",
+   "titel": "Thousands of European troops to rehearse Ukraine deployment in event of peace",
+   "link": "https://www.bbc.co.uk/news/articles/cm3wv085ne6po?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-03T00:07:05.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Western officials stress that any force sent to Ukraine would not take part in any offensive operations.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/trotz-faltbarem-iphone-apples-wachstum-schwaecht-sich-ab-201645589.html",
    "titel": "iPhone-Hersteller: Apples Wachstum schwächt sich ab",
    "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/trotz-faltbarem-iphone-apples-wachstum-schwaecht-sich-ab-201645589.html",
    "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-02T22:37:00.000Z",
+   "zeit": "2026-11-03T00:01:54.000Z",
    "kategorie": "handel",
    "maerkte": [],
    "text": "Der Elektronikkonzern leidet unter Engpässen in der Lieferkette. Sein neues faltbares iPhone verkauft sich gut – trotz Berichten über Qualitätsmängel.",
@@ -331,6 +342,17 @@
     "oel"
    ],
    "text": "Israels Wahlkommission sieht Wahlergebnis nicht gefährdet +++ Israels Armee zieht aus Westjordanland ab +++ Tanker vor Küste Saudi-Arabiens von Geschossen getroffen +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-naechste-woche-laut-usa-verhandlungen-mit-ukraine-und-russland/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Nächste Woche laut USA Verhandlungen mit Ukraine und Russland",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-naechste-woche-laut-usa-verhandlungen-mit-ukraine-und-russland/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-02T14:49:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Lettland gibt nach Luftraum-Alarm Entwarnung +++ Selenskyj wirft Moskau „hinterhältigen Terroranschlag“ vor +++ 18 Tote bei Luftangriff auf Saporischschja +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -999,30 +1021,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Randalierer plünderten nach einer Jugenddemo Geschäfte und griffen Polizisten an. In der Nacht beruhigte sich die Lage in Frankfurt, die Polizei blieb mit zahlreichen Einsatzkräften vor Ort.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/midterms-wie-elon-musk-mit-rekordspenden-die-naechste-us-wahl-praegt/100266417.html",
-   "titel": "Midterms: Mehr als 440 Millionen Dollar: So prägte Elon Musk mit Rekordspenden die nächste US-Wahl",
-   "link": "https://www.handelsblatt.com/politik/international/midterms-wie-elon-musk-mit-rekordspenden-die-naechste-us-wahl-praegt/100266417.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-01T08:57:49.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "In der heißen Phase der US-Parlamentswahl wurde der reichste Mann der Welt zum Rekordspender für Donald Trumps Republikaner – vor allem in dem für Musk wichtigen Texas.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-erholung-soldaten-100.html",
-   "titel": "Ukraine: Zehn Tage gegen den Krieg im Kopf",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-erholung-soldaten-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-01T08:43:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "In den ukrainischen Karpaten versuchen Soldatinnen und Soldaten, für ein paar Tage Abstand vom Krieg zu gewinnen. Doch die Erinnerungen lassen sich nicht einfach abschütteln. Von Susanne Petersohn.",
    "sprache": "de"
   }
  ],
