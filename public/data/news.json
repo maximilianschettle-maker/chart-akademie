@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T05:23:34.639Z",
+ "lastUpdated": "2026-11-04T06:23:32.454Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-die-drei-schnellsten-lehren-aus-den-wahlen-in-den-usa/100267106.html",
+   "titel": "Morning Briefing: Die drei schnellsten Lehren aus den Wahlen in den USA",
+   "link": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-die-drei-schnellsten-lehren-aus-den-wahlen-in-den-usa/100267106.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T05:42:07.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die republikanischen Mehrheiten im US-Kongress sind verloren, die Wähler wenden sich von US-Präsident Donald Trump ab. Doch abschreiben sollte man ihn nicht zu früh.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-diese-wahl-ist-eine-abrechnung-mit-donald-trump/100266488.html",
+   "titel": "Kommentar: Diese Wahl ist eine Abrechnung mit Donald Trump",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-diese-wahl-ist-eine-abrechnung-mit-donald-trump/100266488.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T05:33:09.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Mit dem Verlust der Mehrheiten im Kongress und Senat hat der US-Präsident den Zenit seiner Macht überschritten. Doch es ist schwer vorstellbar, dass Trump die Schmach wirklich akzeptiert.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/us-midterms-sieben-staaten-zurueckerobert-demokraten-gewinnen-auch-mehrheit-im-senat/29669594.html",
+   "titel": "+++ US-Midterms +++: Sieben Staaten zurückerobert – Demokraten gewinnen auch Mehrheit im Senat",
+   "link": "https://www.handelsblatt.com/politik/international/us-midterms-sieben-staaten-zurueckerobert-demokraten-gewinnen-auch-mehrheit-im-senat/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T05:26:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Trump gratuliert Demokraten zum Wahlsieg +++ Trump gibt Sender Fox News Mitschuld an Wahlniederlagen +++ Demokrat Crowley wird erster schwarzer Gouverneur von Wisconsin +++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/us-midterms-demokraten-gewinnen-auch-mehrheit-im-senat/29669594.html",
    "titel": "+++ US-Midterms +++: Demokraten gewinnen auch Mehrheit im Senat",
@@ -986,55 +1019,16 @@
    "maerkte": [],
    "text": "In Berlin haben die Koalitionsverhandlungen zwischen Linken, Grünen und SPD begonnen. In der SPD gibt es weiterhin Vorbehalte - unter anderem bei Bundespolitikern wie Boris Pistorius und Karl Lauterbach. Von Anne-Katrin Mellmann.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-plus-oel-und-gaspreise-fallen/100266531.html",
-   "titel": "Dax aktuell: Dax schließt im Plus – Öl- und Gaspreise geben nach",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-plus-oel-und-gaspreise-fallen/100266531.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-02T17:14:58.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "gas",
-    "aktien"
-   ],
-   "text": "Neben den US-Midterms läuft die Berichtssaison großer deutscher Unternehmen weiter. Der Leitindex landete zum Monatsanfang nur knapp unter der 26.000 Punkte-Marke.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/reiche-spritpreisdeckel-entwurf-100.html",
-   "titel": "Ministerin Reiche legt ersten Entwurf für Spritpreisdeckel-Gesetz vor",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/reiche-spritpreisdeckel-entwurf-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-02T17:05:39.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Wirtschaftsministerin Reiche ist keine Befürworterin eines Spritpreisdeckels. Doch die Koalition will das Instrument einführen. Nun liegt ein erster Gesetzentwurf ihres Ministeriums vor. Er beschreibt, wann der Spritpreisdeckel gelten soll ",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/usa-draengen-auf-gaslieferungen-von-russland-an-europa-a-5cdca753-2a11-4099-9dec-9e854489a772",
-   "titel": "Energiekrise: USA drängen auf Gaslieferungen von Russland an Europa",
-   "link": "https://www.spiegel.de/wirtschaft/usa-draengen-auf-gaslieferungen-von-russland-an-europa-a-5cdca753-2a11-4099-9dec-9e854489a772#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-02T17:05:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "gas"
-   ],
-   "text": "Die USA suchen nach Lösungen, um die hohen Energiepreise infolge des Angriffs auf Iran in den Griff zu bekommen. Die Idee: Europa soll Erdgas aus Russland kaufen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 10,
   "DW": 8,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 6,
   "BBC World": 13,
-  "NYT World": 19,
+  "NYT World": 18,
   "EIA Today in Energy": 1
  }
 }
