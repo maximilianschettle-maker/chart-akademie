@@ -1,7 +1,91 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T12:23:29.830Z",
+ "lastUpdated": "2026-11-04T13:23:35.123Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "titel": "Countries Weigh, and Worry About, What Trump Will Do After Midterm Defeat",
+   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T13:19:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Commentators abroad wondered what the president’s electoral losses might mean for oil prices, the war on Iran and the end of the Trump era.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-president-herzog-election-government.html",
+   "titel": "Israel’s President Could Play Key Role in Breaking Post-Election Deadlock",
+   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-president-herzog-election-government.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T13:18:58.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Isaac Herzog has tried to avoid controversy and heal rifts in his largely ceremonial role. But his skills as a savvy mediator could be instrumental after an inconclusive election.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
+   "titel": "More Iranians Call for Nuclear Weapons After War With U.S.",
+   "link": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T13:17:49.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Some Iranian clerics and officials argue the country must rebuild deterrence by dropping its longstanding pledge not to build a nuclear bomb.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "titel": "Liveblog zu den Midterms: ++ Iran erwartet keinen Kurswechsel der US-Politik ++",
+   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-04T13:15:13.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach der Niederlage von Trumps Republikanern äußert sich die iranische Staatsspitze und gibt sich kämpferisch. Der EU-Parlamentarier Lange befürchtet, dass der US-Präsident noch unberechenbarer agieren könnte. Die Entwicklungen im Liveblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/maerkte-die-us-wahlen-koennten-ein-grossrisiko-noch-einmal-verschaerfen/100267187.html",
+   "titel": "Kommentar: Die US-Wahlen könnten ein Großrisiko für die Märkte noch einmal verschärfen",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/maerkte-die-us-wahlen-koennten-ein-grossrisiko-noch-einmal-verschaerfen/100267187.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T12:42:07.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Die direkten Folgen der Midterms für die Börsen werden sich vermutlich in Grenzen halten. Doch ein innenpolitisch gelähmter Präsident könnte für neue Gefahren sorgen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
+   "titel": "Dax aktuell: Dax steigt nach Midterms auf Zwei-Monatshoch – Heidelberg-Aktie springt nach oben",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T12:40:24.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Der deutliche Wahlsieg der Demokraten in den USA übertrifft die Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen zudem Zahlen und Inflationsdaten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/wahlergebnis-in-israel-trotz-netanjahus-vorw%C3%BCrfen-best%C3%A4tigt/a-79853841",
+   "titel": "Wahlergebnis in Israel trotz Netanjahus Vorwürfen bestätigt",
+   "link": "https://www.dw.com/de/wahlergebnis-in-israel-trotz-netanjahus-vorwürfen-bestätigt/a-79853841?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-04T12:36:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der amtierende Regierungschef hatte nach seiner Niederlage noch behauptet, arabische Parteien hätten \"die Wahl gestohlen\". Gegenkandidat Eisenkot zeigte sich empört. Präsident Herzog spricht ein ernstes Wort.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o",
    "titel": "Iran's chief negotiator says Americans voted 'no to war'",
@@ -11,6 +95,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "\"We endorse this message,\" Mohammed Bagher Ghalibaf says, as Donald Trump acknowledges the conflict's role in the Republican Party's defeat.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
+   "titel": "Israel’s President Will Start Talks on Whether Netanyahu or Eisenkot Can Form a Government",
+   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T12:19:26.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Isaac Herzog will meet with party leaders over the next two days to decide whether to give Prime Minister Benjamin Netanyahu or rivals the first chance at forming a coalition.",
    "sprache": "en"
   },
   {
@@ -67,20 +162,6 @@
    "maerkte": [],
    "text": "The US imposed sanctions on Rwanda's army over its role in the conflict in DR Congo.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
-   "titel": "Dax aktuell: Dax steigt nach Midterms auf Zwei-Monatshoch – Heidelberg-Aktie springt nach oben",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T11:35:14.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Der deutliche Wahlsieg der Demokraten in den USA übertrifft die Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen zudem Zahlen und Inflationsdaten.",
-   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/midterms-historische-siege-100.html",
@@ -144,19 +225,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "titel": "Countries Weigh, and Worry About, What Trump Will Do After Midterm Defeat",
-   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T10:18:37.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Commentators abroad wondered what the president’s electoral losses might mean for oil prices, the war on Iran and the end of the Trump era.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/der-anfang-vom-ende-von-trump-und-seiner-politik-was-die-midterms-fuer-europa-bedeuten-accg-201650311.html",
    "titel": "Wahlen in den USA: „Der Anfang vom Ende von Trump und seiner Politik“",
    "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/der-anfang-vom-ende-von-trump-und-seiner-politik-was-die-midterms-fuer-europa-bedeuten-accg-201650311.html",
@@ -190,17 +258,6 @@
    ],
    "text": "Nach dem Wahlsieg der Demokraten in den USA gehen die Anleger schnell zur Tagesordnung über. Der DAX holt vorbörsliche Verluste wieder auf. Im Fokus steht dabei der Fortgang der Berichtssaison.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-president-herzog-election-government.html",
-   "titel": "Israel’s President Could Play Key Role in Breaking Post-Election Deadlock",
-   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-president-herzog-election-government.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T09:43:34.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Isaac Herzog has tried to avoid controversy and heal rifts in his largely ceremonial role. But his skills as a savvy mediator could be instrumental after an inconclusive election.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/asien/israel-wahl-konsultationen-herzog-100.html",
@@ -393,17 +450,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "titel": "Liveblog zu den Midterms: ++ Demokrat erobert Senatssitz in North Carolina ++",
-   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T03:19:04.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Im Bundesstaat North Carolina haben die Demokraten bei der Wahl zum US-Senat Hochrechnungen zufolge einen Sitz hinzugewonnen. Auch für das Repräsentantenhaus gibt es erste Ergebnisse. Die Entwicklungen im Liveblog.",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.handelsblatt.com/politik/international/us-midterms-demokraten-gewinnen-texas-trump-will-wahlergebnisse-anerkennen/29669594.html",
    "titel": "+++ US-Midterms +++: Deutliche Niederlage für Trump: Demokraten erobern Mehrheit im US-Repräsentantenhaus",
    "link": "https://www.handelsblatt.com/politik/international/us-midterms-demokraten-gewinnen-texas-trump-will-wahlergebnisse-anerkennen/29669594.html",
@@ -424,17 +470,6 @@
    "maerkte": [],
    "text": "Erste Analyseergebnisse des Milliardenraubs bei Binance zeigen, dass der Hackerangriff bereits im Juni begann. Auch ein KI-Werkzeug habe dabei eine Rolle gespielt.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
-   "titel": "More Iranians Call for Nuclear Weapons After War With U.S.",
-   "link": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-03T23:04:05.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Some Iranian clerics and officials argue the country must rebuild deterrence by dropping its longstanding pledge not to build a nuclear bomb.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/03/world/americas/us-venezuela-strike-eln-drug-trafficking.html",
@@ -996,51 +1031,16 @@
    ],
    "text": "In der Nacht blickt die Welt auf die Wahlen in den USA. Anleger halten sich im Vorfeld zurück. Können weitere Quartalszahlen positive Impulse liefern?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/sport/football/articles/c6y0e79yjg44o",
-   "titel": "Asian Cup postponed in wake of attacks on Saudi Arabia",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c6y0e79yjg44o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T07:15:17.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The 2027 Asian Cup in Saudi Arabia is postponed because of a series of deadly attacks on the host country.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/ukraine-iran-und-co-so-k%C3%B6nnten-die-midterms-die-us-au%C3%9Fenpolitik-beeinflussen/a-79833783",
-   "titel": "Ukraine, Iran und Co.: So könnten die Midterms die US-Außenpolitik beeinflussen",
-   "link": "https://www.dw.com/de/ukraine-iran-und-co-so-könnten-die-midterms-die-us-außenpolitik-beeinflussen/a-79833783?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-03T07:12:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Donald Trumps Republikaner kontrollieren den US-Kongress, doch nach den Zwischenwahlen könnte sich das ändern. Das hätte nicht nur Einfluss auf die Amerikaner, sondern auch auf Kriegsschauplätze in Europa und Nahost.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/unternehmen/saudi-aramco-oelkonzern-erhoeht-gewinn-trotz-angriffen-im-irankrieg-a-77687919-cb49-4802-abe8-296d589a55ac",
-   "titel": "Iran-Krieg: Aramco steigert Gewinn trotz Angriffen und hoher Ölpreise",
-   "link": "https://www.spiegel.de/wirtschaft/unternehmen/saudi-aramco-oelkonzern-erhoeht-gewinn-trotz-angriffen-im-irankrieg-a-77687919-cb49-4802-abe8-296d589a55ac#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-03T06:59:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Seine Anlagen sind Ziel Irans und dessen Verbündeter. Dennoch nutzt der Konflikt Aramco: Wegen der hohen Ölpreise macht der saudi-arabische Konzern mehr Gewinn.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 11,
-  "DW": 6,
+  "DW": 7,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 7,
   "Handelsblatt": 5,
   "BBC World": 8,
-  "NYT World": 17,
+  "NYT World": 18,
   "EIA Today in Energy": 1
  }
 }
