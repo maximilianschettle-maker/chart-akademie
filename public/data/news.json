@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T00:40:56.597Z",
+ "lastUpdated": "2026-11-04T01:23:31.079Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "titel": "Liveblog zu den Midterms: ++ Erste Wahlen beendet ++ Auszählung beginnt ++",
+   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-04T01:02:55.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die ersten Wahllokale in Teilen von Indiana und Kentucky haben geschlossen. Das US-Justizministerium schickt zahlreiche Wahlbeobachter in alle Bundesstaaten. Die Entwicklungen im Liveblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/midterms-ergebnisse-102.html",
    "titel": "Die Ergebnisse der Midterms in den USA in Zahlen und Karten",
@@ -11,17 +22,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "In immer mehr US-Bundesstaaten haben die Wahllokale geschlossen und die Auszählung läuft. Wie ist der Stand bei den Wahlen zum Senat, zum Repräsentantenhaus und zu den Gouverneuren? Ergebnisse in Zahlen und Karten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "titel": "Liveblog zu den Midterms: ++ Erste Wahlen beendet ++ Auszählung beginnt ++",
-   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T00:36:23.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die ersten Wahllokale in Teilen von Indiana und Kentucky haben geschlossen. Das US-Justizministerium schickt zahlreiche Wahlbeobachter in alle Bundesstaaten. Die Entwicklungen im Liveblog.",
    "sprache": "de"
   },
   {
