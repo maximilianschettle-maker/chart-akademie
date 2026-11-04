@@ -1,17 +1,126 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T16:24:33.435Z",
+ "lastUpdated": "2026-11-04T17:23:32.293Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "titel": "Liveblog zu den Midterms: ++ Berichte: Johnson will nicht Fraktionschef bleiben ++",
+   "titel": "Liveblog zu den Midterms: ++ Vance sieht Iran-Krieg als Grund für Wahlschlappe ++",
    "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-04T16:22:51.000Z",
+   "zeit": "2026-11-04T17:16:46.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Laut Medienberichten will der derzeitige Sprecher des Repräsentantenhauses, Johnson, nicht erneut als Fraktionschef der Republikaner kandidieren. Nach deren Niederlage äußert sich die iranische Staatsspitze und gibt sich kämpferisch.",
+   "text": "US-Vizepräsident Vance führt die Niederlagen der Republikaner auf den Iran-Krieg zurück. Laut Medienberichten will der derzeitige Sprecher des Repräsentantenhauses, Johnson, nicht erneut als Fraktionschef der Republikaner kandidieren.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-cyberangriff-auf-kuehlhaeuser-von-metzgerei-hoher-schaden-faz-200452404.html",
+   "titel": "Business-Ticker: Tesla eröffnet in Berlin Entwicklungszentrum",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-cyberangriff-auf-kuehlhaeuser-von-metzgerei-hoher-schaden-faz-200452404.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-04T17:14:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Deutsche Firmen in USA wieder im Aufwind – trotz Zollschranken +++ Google verlängert Abfindungsangebote für Beschäftigte +++ Cyberangriff auf Kühlhäuser von Metzgerei – hoher Schaden +++ alle Neuigkeiten im Unternehmen-Liveblog",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-midterms-loesenerholungsrally-aus-ki-aktien-fallen-trotzdem/100265439.html",
+   "titel": "Börsen: Midterms lösen Erholungsrally in den USA aus – KI-Aktien fallen trotzdem",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-midterms-loesenerholungsrally-aus-ki-aktien-fallen-trotzdem/100265439.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T17:11:15.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Der deutliche Sieg der Demokraten schürt Ängste vor einem langsameren KI‑Ausbau. Am breiten Markt kommt das Wahlergebnis dennoch gut an. Das liegt auch an Donald Trump.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-beendet-handel-deutlich-ueber-26.000-punkte-marke/100267175.html",
+   "titel": "Dax aktuell: Dax beendet Handel deutlich über 26.000-Punkte-Marke – Ölpreis fällt",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-beendet-handel-deutlich-ueber-26.000-punkte-marke/100267175.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T17:04:54.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Der deutliche Wahlsieg der Demokraten in den USA übertrifft die Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen zudem Quartalszahlen und Inflationsdaten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo",
+   "titel": "US midterm results a 'victory' for Canadians hopeful of tariff relief",
+   "link": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T17:02:44.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "With Canada-US trade talks back on, Tuesday’s midterm Democratic wave puts pressure on the White House to come to a deal.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "titel": "What Trump’s Midterm Defeat Means for Iran and Oil Prices",
+   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T17:02:12.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Commentators abroad wondered what President Trump’s electoral losses might mean for oil prices, the war on Iran and the future of American politics.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o",
+   "titel": "Iran's chief negotiator says Americans voted 'no to war'",
+   "link": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T16:59:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "\"We endorse this message,\" Mohammed Bagher Ghalibaf says, as Donald Trump acknowledges the conflict's role in the Republican Party's defeat.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/us-midterms-vance-sieht-iran-krieg-als-grund-fuer-wahlniederlage/29669594.html",
+   "titel": "+++ US-Midterms +++: Vance: „Der Grund, weshalb wir verloren haben, ist der Krieg“",
+   "link": "https://www.handelsblatt.com/politik/international/us-midterms-vance-sieht-iran-krieg-als-grund-fuer-wahlniederlage/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T16:40:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Mike Johnson will offenbar nicht Fraktionschef der Republikaner bleiben +++ Wahlausgang in Mississippi noch offen +++ Demokraten erringen Mehrheit der Gouverneursposten +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/koalition-bricht-rentenversprechen-beitragszahler-zahlen-die-zeche-201651116.html",
+   "titel": "Schutz der Zahler: Die Koalition bricht ein zentrales Renten-Versprechen",
+   "link": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/koalition-bricht-rentenversprechen-beitragszahler-zahlen-die-zeche-201651116.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-04T16:39:30.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "Wer kommt für die Kosten von „Haltelinie“ und höheren Mütterrenten auf? Nur der Bundeshaushalt, nicht die Beitragszahler – so hatte es die Regierung zugesagt. Nun schauen die Jüngeren in die Röhre.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
+   "titel": "More Iranians Call for Nuclear Weapons After War With U.S.",
+   "link": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T16:26:32.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Some Iranian clerics and officials argue the country must rebuild deterrence by dropping its longstanding pledge not to build a nuclear bomb.",
+   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/c6z98z5z91ppo",
@@ -81,19 +190,6 @@
    "maerkte": [],
    "text": "Der spektakuläre Triumph der US-Demokraten bei den Zwischenwahlen hat weltweit Reaktionen ausgelöst: Russland setzt weiter auf Präsident Trump, China hält sich bedeckt, in der EU und Südafrika macht sich Hoffnung breit.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "titel": "How the World Reacted to Trump’s Midterm Defeat: 5 Things to Know",
-   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T15:21:09.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Commentators abroad wondered what President Trump’s electoral losses might mean for oil prices, the war on Iran and the future of American politics.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-erholungsrally-nach-den-midterms-nur-ki-aktien-fallen/100265439.html",
@@ -211,17 +307,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
-   "titel": "More Iranians Call for Nuclear Weapons After War With U.S.",
-   "link": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T13:17:49.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Some Iranian clerics and officials argue the country must rebuild deterrence by dropping its longstanding pledge not to build a nuclear bomb.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/meinung/kommentare/maerkte-die-us-wahlen-koennten-ein-grossrisiko-noch-einmal-verschaerfen/100267187.html",
    "titel": "Kommentar: Die US-Wahlen könnten ein Großrisiko für die Märkte noch einmal verschärfen",
    "link": "https://www.handelsblatt.com/meinung/kommentare/maerkte-die-us-wahlen-koennten-ein-grossrisiko-noch-einmal-verschaerfen/100267187.html",
@@ -244,17 +329,6 @@
    "maerkte": [],
    "text": "Der amtierende Regierungschef hatte nach seiner Niederlage noch behauptet, arabische Parteien hätten \"die Wahl gestohlen\". Gegenkandidat Eisenkot zeigte sich empört. Präsident Herzog spricht ein ernstes Wort.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o",
-   "titel": "Iran's chief negotiator says Americans voted 'no to war'",
-   "link": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T12:21:21.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "\"We endorse this message,\" Mohammed Bagher Ghalibaf says, as Donald Trump acknowledges the conflict's role in the Republican Party's defeat.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/midterms-demokraten-siegen-in-kalifornien-und-die-milliardaere/100267150.html",
@@ -960,84 +1034,14 @@
    "maerkte": [],
    "text": "Bei den Zwischenwahlen in den USA steht für Trump viel auf dem Spiel: Verlieren seine Republikaner, könnte das Regieren für ihn komplizierter werden. Welche Szenarien sind denkbar? Ein Überblick. Von Jörn Unsöld und Eckart Aretz.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-russische-angriffe-118.html",
-   "titel": "Krieg gegen die Ukraine: Russland bombardiert Krankenhaus in Charkiw",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-russische-angriffe-118.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T12:16:22.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russland setzt seine Angriffe auf die Ukraine fort: Nach einem Hilfsgüter-Verteilzentrum am Montag wurden heute medizinische Einrichtungen und Energieanlagen bombardiert. Präsident Selenskyj ist zu einem Besuch in Berlin eingetroffen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cxg5jln586pno",
-   "titel": "US urges Venezuela to release remaining political prisoners",
-   "link": "https://www.bbc.co.uk/news/articles/cxg5jln586pno?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T12:09:20.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The US secretary of state also discusses laying the groundwork for 'free, fair, and credible elections'.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo",
-   "titel": "US strikes Iranian island ahead of midterm elections",
-   "link": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T11:33:33.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "US officials described the attacks on Qeshm Island as limited and defensive, according to CBS, the BBC's US partner.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/gas-aus-russland-warum-donald-trumps-pipeline-deal-fuer-europa-riskant-waere-a-da9d7824-2301-4b9b-8cc4-42701e1b0003",
-   "titel": "Gas aus Russland: Warum Donald Trumps Pipeline-Deal für Europa riskant wäre",
-   "link": "https://www.spiegel.de/wirtschaft/gas-aus-russland-warum-donald-trumps-pipeline-deal-fuer-europa-riskant-waere-a-da9d7824-2301-4b9b-8cc4-42701e1b0003#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-03T10:44:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "gas"
-   ],
-   "text": "Es klingt nach einem Trump-Deal: Wenn wieder Pipelinegas aus Russland durch die Ukraine strömt, soll Energie endlich günstiger werden. Doch Experten warnen: Der Plan sei nicht nur politisch »verheerend«, sondern auch ökonomisch fragwürdig.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-berlin-redet-die-leeren-gasspeicher-schoen/100266472.html",
-   "titel": "Kommentar: Berlin redet die leeren Gasspeicher schön",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-berlin-redet-die-leeren-gasspeicher-schoen/100266472.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T10:21:35.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "gas"
-   ],
-   "text": "Die deutschen Gasspeicher sind viel leerer als gesetzlich zum 1. November vorgeschrieben. Die Regierung sagt: Die Gasversorgung sei gesichert. Aber sie macht es sich viel zu leicht.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/ukraine-krieg-usa-bringen-moskau-und-kyjiw-an-einen-tisch/a-79836253",
-   "titel": "Ukraine-Krieg: USA bringen Moskau und Kyjiw an einen Tisch",
-   "link": "https://www.dw.com/de/ukraine-krieg-usa-bringen-moskau-und-kyjiw-an-einen-tisch/a-79836253?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-03T10:07:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Im zähen diplomatischen Ringen um ein Ende des russischen Angriffskriegs gegen die Ukraine könnte es bald etwas Bewegung geben. Die Multinationale Ukraine-Truppe konzentriert sich bereits auf die Friedenssicherung.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
+  "tagesschau": 10,
   "DW": 8,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 8,
-  "Handelsblatt": 3,
+  "FAZ Wirtschaft": 9,
+  "Handelsblatt": 4,
   "BBC World": 10,
   "NYT World": 18,
   "EIA Today in Energy": 1
