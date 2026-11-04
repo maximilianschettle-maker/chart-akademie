@@ -1,7 +1,109 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T13:23:35.123Z",
+ "lastUpdated": "2026-11-04T14:23:28.058Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6n8dnn09jg7o",
+   "titel": "James Talarico becomes first Democrat to win Texas Senate seat since 1988",
+   "link": "https://www.bbc.co.uk/news/articles/c6n8dnn09jg7o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T14:17:58.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "\"This wasn't just a tsunami, not just a referendum, but this was a bloodbath,\" one expert told the BBC on Democrats' historic wins in Texas.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po",
+   "titel": "Everything you need to know from the US midterm elections",
+   "link": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T14:05:42.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Democrats secured some big wins - and a few historic firsts - earning congratulations from President Trump.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "titel": "Liveblog zu den Midterms: ++ Iran erwartet keinen Kurswechsel der US-Politik ++",
+   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-04T14:02:08.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach der Niederlage von Trumps Republikanern äußert sich die iranische Staatsspitze und gibt sich kämpferisch. Der EU-Parlamentarier Lange befürchtet, dass der US-Präsident noch unberechenbarer agieren könnte. Die Entwicklungen im Liveblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
+   "titel": "Israel’s President Will Start Talks on Whether Netanyahu or Eisenkot Can Form a Government",
+   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T13:58:52.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Isaac Herzog will meet with party leaders over the next two days to decide whether to give Prime Minister Benjamin Netanyahu or rivals the first chance at forming a coalition.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/usa-ergebnisse-midterms-faq-100.html",
+   "titel": "US-Midterms: Wie Trump abgestraft wurde - und was die Folgen sind",
+   "link": "https://www.tagesschau.de/ausland/amerika/usa-ergebnisse-midterms-faq-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-04T13:44:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ein Teilerfolg für die Demokraten war erwartet worden. Doch die Zwischenwahlen in den USA kommen einem Desaster für Präsident Trump gleich. Was war dafür ausschlaggebend und wie geht es jetzt weiter? Fragen und Antworten zu den Midterms.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/midterms-das-regime-im-iran-jubelt-ueber-das-wahlergebnis-in-den-usa/100267209.html",
+   "titel": "Midterms: Das Regime im Iran jubelt über das Wahlergebnis in den USA",
+   "link": "https://www.handelsblatt.com/politik/international/midterms-das-regime-im-iran-jubelt-ueber-das-wahlergebnis-in-den-usa/100267209.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T13:36:45.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Führung in Teheran feiert die Ergebnisse der Midterms als eigenen Erfolg. Dahinter steckt die Erleichterung, dass es laut Trump zeitnah keine neue US-Militäroffensive geben wird.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
+   "titel": "Dax aktuell: Dax steigt nach Midterms auf Zwei-Monatshoch – Heidelberg-Aktie springt nach oben",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T13:34:54.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Der deutliche Wahlsieg der Demokraten in den USA übertrifft die Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen zudem Zahlen und Inflationsdaten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-audi-chef-doellner-hat-auf-trump-gesetzt-jetzt-kommt-die-rechnung/100267250.html",
+   "titel": "Kommentar: Audi-Chef Döllner hat auf Trump gesetzt – jetzt kommt die Rechnung",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-audi-chef-doellner-hat-auf-trump-gesetzt-jetzt-kommt-die-rechnung/100267250.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T13:23:56.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Audi hat dem US-Präsidenten im Wahlkampf geholfen. Nach der Niederlage seines Kandidaten in Georgia wartet Döllner weiter auf die Gegenleistung. Das kann ihn im Zweifel den Job kosten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/insolvenz-von-havanna-zigarren-importeur-bedroht-deutsches-weihnachtsgeschaeft-accg-201648576.html",
+   "titel": "Angst um Zigarren aus Kuba: Tragische Insolvenz von Zigarren-Importeur zieht Kreise",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/insolvenz-von-havanna-zigarren-importeur-bedroht-deutsches-weihnachtsgeschaeft-accg-201648576.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-04T13:19:52.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Ein exklusiver Lieferant kostbarer Havanna-Zigarren ist Opfer internationaler Sanktionen geworden. Der Insolvenzverwalter hält mit allen rechtlichen Mitteln dagegen und warnt vor Folgeinsolvenzen und Tabaksteuerausfällen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
    "titel": "Countries Weigh, and Worry About, What Trump Will Do After Midterm Defeat",
@@ -38,17 +140,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "titel": "Liveblog zu den Midterms: ++ Iran erwartet keinen Kurswechsel der US-Politik ++",
-   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T13:15:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach der Niederlage von Trumps Republikanern äußert sich die iranische Staatsspitze und gibt sich kämpferisch. Der EU-Parlamentarier Lange befürchtet, dass der US-Präsident noch unberechenbarer agieren könnte. Die Entwicklungen im Liveblog.",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.handelsblatt.com/meinung/kommentare/maerkte-die-us-wahlen-koennten-ein-grossrisiko-noch-einmal-verschaerfen/100267187.html",
    "titel": "Kommentar: Die US-Wahlen könnten ein Großrisiko für die Märkte noch einmal verschärfen",
    "link": "https://www.handelsblatt.com/meinung/kommentare/maerkte-die-us-wahlen-koennten-ein-grossrisiko-noch-einmal-verschaerfen/100267187.html",
@@ -59,20 +150,6 @@
     "aktien"
    ],
    "text": "Die direkten Folgen der Midterms für die Börsen werden sich vermutlich in Grenzen halten. Doch ein innenpolitisch gelähmter Präsident könnte für neue Gefahren sorgen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
-   "titel": "Dax aktuell: Dax steigt nach Midterms auf Zwei-Monatshoch – Heidelberg-Aktie springt nach oben",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T12:40:24.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Der deutliche Wahlsieg der Demokraten in den USA übertrifft die Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen zudem Zahlen und Inflationsdaten.",
    "sprache": "de"
   },
   {
@@ -98,17 +175,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
-   "titel": "Israel’s President Will Start Talks on Whether Netanyahu or Eisenkot Can Form a Government",
-   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T12:19:26.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Isaac Herzog will meet with party leaders over the next two days to decide whether to give Prime Minister Benjamin Netanyahu or rivals the first chance at forming a coalition.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/politik/international/midterms-demokraten-siegen-in-kalifornien-und-die-milliardaere/100267150.html",
    "titel": "US-Wahlen: Demokraten siegen in Kalifornien – und die Milliardäre?",
    "link": "https://www.handelsblatt.com/politik/international/midterms-demokraten-siegen-in-kalifornien-und-die-milliardaere/100267150.html",
@@ -118,17 +184,6 @@
    "maerkte": [],
    "text": "Der Staat wählt einen Latino zum Gouverneur. Zugleich stimmten die Kalifornier über die neue Milliardärssteuer ab. Hinter der rekordteuren Abwehrkampagne steht ein Co-Gründer von Google.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po",
-   "titel": "Everything you need to know from the US midterm elections",
-   "link": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T12:01:07.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Democrats secured some big wins - and a few historic firsts - earning congratulations from President Trump.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/unternehmen/industrie/midterms-wahlergebnis-in-georgia-setzt-audi-unter-zeitdruck/100267137.html",
@@ -371,17 +426,6 @@
    "maerkte": [],
    "text": "Die republikanischen Mehrheiten im US-Kongress sind verloren, die Wähler wenden sich von US-Präsident Donald Trump ab. Doch abschreiben sollte man ihn nicht zu früh.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6n8dnn09jg7o",
-   "titel": "James Talarico becomes first Democrat to win Texas Senate seat since 1988",
-   "link": "https://www.bbc.co.uk/news/articles/c6n8dnn09jg7o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T05:39:36.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "\"This wasn't just a tsunami, not just a referendum, but this was a bloodbath,\" one expert told the BBC on Democrats' historic wins in Texas.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-diese-wahl-ist-eine-abrechnung-mit-donald-trump/100266488.html",
@@ -983,62 +1027,14 @@
    "maerkte": [],
    "text": "Möglicher Gipfel zwischen Trump, Putin und Xi +++ Merz kündigt Selenskyj-Besuch in Berlin an +++ Russland meldet massive Angriffe auf Energieanlagen +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/ukraine-saporischschja-tote-100.html",
-   "titel": "Ukraine meldet mindestens 26 Tote bei Angriff in Region Saporischschja",
-   "link": "https://www.tagesschau.de/ausland/ukraine-saporischschja-tote-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T09:00:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Bei einem russischen Angriff in der Region Saporischschja sind der Ukraine zufolge mindestens 26 Menschen getötet worden. Präsident Selenskyj warf Moskau gezieltes Bombardement vor. Der Staatschef wird heute in Berlin erwartet.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/02/business/cyberattack-freezers-europe-us-army.html",
-   "titel": "Are Freezers Being Hacked? Europe and the U.S. Military Investigate.",
-   "link": "https://www.nytimes.com/2026/11/02/business/cyberattack-freezers-europe-us-army.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-03T08:45:20.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A wave of disruptions at grocery stores, which some officials blame on cyberattacks, highlights the vulnerability of supply chains. Shops across Europe were affected again on Monday.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-unter-26.000-punkten-dax-notiert-vor-us-midterms-im-minus/100266854.html",
-   "titel": "Dax aktuell: Unter 26.000 Punkten – Dax notiert vor US-Midterms im Minus",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-unter-26.000-punkten-dax-notiert-vor-us-midterms-im-minus/100266854.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T08:32:04.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "In der Nacht blickt die Welt auf die Wahlen in den USA. Anleger halten sich im Vorfeld zurück. Können weitere Quartalszahlen positive Impulse liefern?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-unter-26.000-punkten-dax-eroeffnet-vor-us-midterms-im-minus/100266854.html",
-   "titel": "Dax aktuell: Unter 26.000 Punkten – Dax eröffnet vor US-Midterms im Minus",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-unter-26.000-punkten-dax-eroeffnet-vor-us-midterms-im-minus/100266854.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T08:32:04.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "In der Nacht blickt die Welt auf die Wahlen in den USA. Anleger halten sich im Vorfeld zurück. Können weitere Quartalszahlen positive Impulse liefern?",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 12,
   "DW": 7,
   "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 7,
-  "Handelsblatt": 5,
+  "FAZ Wirtschaft": 8,
+  "Handelsblatt": 7,
   "BBC World": 8,
   "NYT World": 18,
   "EIA Today in Energy": 1
