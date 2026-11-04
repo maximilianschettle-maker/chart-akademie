@@ -1,17 +1,39 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T18:23:33.477Z",
+ "lastUpdated": "2026-11-04T19:23:32.942Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
    "titel": "Liveblog zu den Midterms: ++ Vance sieht Iran-Krieg als Grund für Wahlschlappe ++",
    "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-04T18:18:19.000Z",
+   "zeit": "2026-11-04T19:19:15.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "US-Vizepräsident Vance führt die Niederlagen der Republikaner auf den Iran-Krieg zurück. Laut Medienberichten will der derzeitige Sprecher des Repräsentantenhauses, Johnson, nicht erneut als Fraktionschef der Republikaner kandidieren.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/us-midterms-vance-sieht-iran-krieg-als-grund-fuer-wahlniederlage/29669594.html",
+   "titel": "+++ US-Midterms +++: Vance: „Der Grund, weshalb wir verloren haben, ist der Krieg“",
+   "link": "https://www.handelsblatt.com/politik/international/us-midterms-vance-sieht-iran-krieg-als-grund-fuer-wahlniederlage/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T19:15:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Trump räumt Auswirkungen von Iran-Krieg auf Midterms ein +++ Demokrat Schumer rechnet mit Wahl zum Mehrheitsführer im Senat +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-trump-midterm-elections.html",
+   "titel": "For Israelis, U.S. Midterms Show How Far Their Star Has Fallen in America",
+   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-trump-midterm-elections.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T18:46:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Israel once had bipartisan support in the United States, but a strong showing for Democrats, some of whom are deeply critical of the war in Gaza, has left the country with fewer friends in Congress.",
+   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo",
@@ -61,13 +83,15 @@
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-cyberangriff-auf-kuehlhaeuser-von-metzgerei-hoher-schaden-faz-200452404.html",
-   "titel": "Business-Ticker: Tesla eröffnet in Berlin Entwicklungszentrum",
+   "titel": "Business-Ticker: Cyberangriff auf französische Bank verursacht mehr als 100 Millionen Euro Verlust",
    "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-cyberangriff-auf-kuehlhaeuser-von-metzgerei-hoher-schaden-faz-200452404.html",
    "quelle": "FAZ Wirtschaft",
    "zeit": "2026-11-04T17:14:00.000Z",
    "kategorie": "handel",
-   "maerkte": [],
-   "text": "Deutsche Firmen in USA wieder im Aufwind – trotz Zollschranken +++ Google verlängert Abfindungsangebote für Beschäftigte +++ Cyberangriff auf Kühlhäuser von Metzgerei – hoher Schaden +++ alle Neuigkeiten im Unternehmen-Liveblog",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Tesla eröffnet in Berlin Entwicklungszentrum +++ Deutsche Firmen in USA wieder im Aufwind – trotz Zollschranken +++ Google verlängert Abfindungsangebote für Beschäftigte +++ alle Neuigkeiten im Unternehmen-Liveblog",
    "sprache": "de"
   },
   {
@@ -108,17 +132,6 @@
    "maerkte": [],
    "text": "\"We endorse this message,\" Mohammed Bagher Ghalibaf says, as Donald Trump acknowledges the conflict's role in the Republican Party's defeat.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/us-midterms-vance-sieht-iran-krieg-als-grund-fuer-wahlniederlage/29669594.html",
-   "titel": "+++ US-Midterms +++: Vance: „Der Grund, weshalb wir verloren haben, ist der Krieg“",
-   "link": "https://www.handelsblatt.com/politik/international/us-midterms-vance-sieht-iran-krieg-als-grund-fuer-wahlniederlage/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T16:40:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Mike Johnson will offenbar nicht Fraktionschef der Republikaner bleiben +++ Wahlausgang in Mississippi noch offen +++ Demokraten erringen Mehrheit der Gouverneursposten +++ Der Newsblog.",
-   "sprache": "de"
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/koalition-bricht-rentenversprechen-beitragszahler-zahlen-die-zeche-201651116.html",
@@ -1023,17 +1036,6 @@
    ],
    "text": "The move comes barely a week after Rwanda's defence ministry was hit with sanctions by the US Treasury.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o",
-   "titel": "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
-   "link": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T13:26:19.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president calls an \"utterly horrific\" attack.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1043,7 +1045,7 @@
   "FAZ Wirtschaft": 9,
   "Handelsblatt": 7,
   "BBC World": 10,
-  "NYT World": 18,
+  "NYT World": 19,
   "EIA Today in Energy": 1
  }
 }
