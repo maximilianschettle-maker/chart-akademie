@@ -1,7 +1,80 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T10:23:33.957Z",
+ "lastUpdated": "2026-11-04T11:23:40.439Z",
  "eintraege": [
+  {
+   "id": "https://www.spiegel.de/wirtschaft/energiepreise-deutsche-kaufen-38-prozent-weniger-heizoel-a-0eef58fb-5baa-4c21-8938-98aca25e9769",
+   "titel": "Energiepreise: Deutsche kaufen 38 Prozent weniger Heizöl",
+   "link": "https://www.spiegel.de/wirtschaft/energiepreise-deutsche-kaufen-38-prozent-weniger-heizoel-a-0eef58fb-5baa-4c21-8938-98aca25e9769#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-04T11:16:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "Deutschland wird in diesem Jahr wohl weniger Energie verbrauchen als zuvor, auch private Haushalte halten sich zurück. Einige fossile Energieträger finden trotzdem mehr Absatz.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c699zdx9knmpo",
+   "titel": "Rwanda's army team removed from Africa league after US sanctions, NBA says",
+   "link": "https://www.bbc.co.uk/news/articles/c699zdx9knmpo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T11:12:15.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "The US imposed sanctions on Rwanda's army over its role in the conflict in DR Congo.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-eurozone-oktober-102.html",
+   "titel": "Inflation im Euroraum steigt auf 4,0 Prozent",
+   "link": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-eurozone-oktober-102.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-04T11:12:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Die Teuerung in der Eurozone ist im Oktober auf 4,0 Prozent gestiegen. Das ist die höchste Inflationsrate seit September 2023. Besonders die hohen Energiepreise sind Treiber der aktuellen Entwicklung.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po",
+   "titel": "Key moments from a night of midterm election firsts",
+   "link": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T11:04:56.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Democrats have taken control of Congress for the rest of Donald Trump's presidency - proving moments of celebration.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/hohe-energiepreise-inflation-im-euroraum-steigt-auf-vier-prozent-a-6aa49e04-4639-4134-acf6-08d84917b500",
+   "titel": "Hohe Energiepreise: Inflation im Euroraum steigt auf vier Prozent",
+   "link": "https://www.spiegel.de/wirtschaft/hohe-energiepreise-inflation-im-euroraum-steigt-auf-vier-prozent-a-6aa49e04-4639-4134-acf6-08d84917b500#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-04T10:39:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Weil Energie infolge des Irankriegs teurer ist, steigt in der Eurozone auch die Inflation. Im Oktober hat sie den höchsten Stand seit mehr als drei Jahren erreicht.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
+   "titel": "Dax aktuell: Dax steigt nach Midterms auf Zwei-Monatshoch – Heidelberg-Aktie springt nach oben",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T10:27:39.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Der deutliche Wahlsieg der Demokraten in den USA entspricht den Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen zudem Zahlen und Inflationsdaten.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
    "titel": "Countries Weigh, and Worry About, What Trump Will Do After Midterm Defeat",
@@ -14,6 +87,17 @@
    ],
    "text": "Commentators abroad wondered what the president’s electoral losses might mean for oil prices, the war on Iran and the end of the Trump era.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/der-anfang-vom-ende-von-trump-und-seiner-politik-was-die-midterms-fuer-europa-bedeuten-accg-201650311.html",
+   "titel": "Wahlen in den USA: „Der Anfang vom Ende von Trump und seiner Politik“",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/der-anfang-vom-ende-von-trump-und-seiner-politik-was-die-midterms-fuer-europa-bedeuten-accg-201650311.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-04T10:11:48.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach dem Sieg der Demokraten in den USA dürfen die Europäer in der Handelspolitik keine Erleichterungen erwarten, erklären international erfahrene Ökonomen. Sie erwarten keine drastische Änderung der amerikanischen Wirtschaftspolitik.",
+   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o",
@@ -36,20 +120,6 @@
    "maerkte": [],
    "text": "See the maps and charts that show how America voted in the US midterm elections.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
-   "titel": "Dax aktuell: Dax steigt nach Midterms auf Zwei-Monatshoch – Heidelberg-Aktie springt nach oben",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T09:48:48.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Der deutliche Wahlsieg der Demokraten in den USA entspricht den Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen zudem Zahlen und Inflationsdaten.",
-   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-boerse-118.html",
@@ -99,17 +169,6 @@
    ],
    "text": "Der deutliche Wahlsieg der Demokraten in den USA entspricht den Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen dagegen Zahlen und Inflationsdaten.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po",
-   "titel": "Key moments from a night of midterm election firsts",
-   "link": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T09:01:40.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Democrats have taken control of Congress for the rest of Donald Trump's presidency - proving moments of celebration.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/us-wahlen-demokraten-siegen-in-kalifornien-und-die-milliardaere/100267150.html",
@@ -974,72 +1033,15 @@
    ],
    "text": "Evonik geht gestärkt in den Übernahmepoker mit BASF. Das Essener Chemieunternehmen hat am Dienstag positive Zahlen veröffentlicht. Dabei profitiert es von den Folgen des Iran-Kriegs.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/usa-iran-angriffe-126.html",
-   "titel": "USA greifen offenbar iranische Ziele in Straße von Hormus an",
-   "link": "https://www.tagesschau.de/ausland/asien/usa-iran-angriffe-126.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T05:33:48.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Kurz vor den Midterms haben die USA Medienberichten zufolge wieder Iran angegriffen. Dabei soll es sich um einzelne Angriffe auf die Insel Qeschm in der Straße von Hormus handeln. Iran meldet den Abschuss einer US-Drohne.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq2d6k4r5n9ro",
-   "titel": "Americans head to the polls for elections that could define Trump's closing chapter",
-   "link": "https://www.bbc.co.uk/news/articles/cq2d6k4r5n9ro?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T05:00:43.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The midterms will shape Congress for the last years of his presidency, writes Sarah Smith, but they are also a test of what politics may look like without him.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-das-beste-gesetz-das-katherina-reiche-bisher-vorgelegt-hat/100266780.html",
-   "titel": "Morning Briefing: Das beste Gesetz, das Katherina Reiche bisher vorgelegt hat",
-   "link": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-das-beste-gesetz-das-katherina-reiche-bisher-vorgelegt-hat/100266780.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T04:52:56.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Wirtschaftsministerin macht eine Forderung des letzten Koalitionsausschusses konkret. Das gewünschte Ziel wird wohl verfehlt – dafür vermeidet Reiche es, sich ökonomisch zu verheddern.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cm5ynekkn5qko",
-   "titel": "Supreme Court rejects Trump's request to stop California counting disputed votes",
-   "link": "https://www.bbc.co.uk/news/articles/cm5ynekkn5qko?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T03:32:36.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The ruling, which comes on the eve of the midterm elections, essentially ends the Trump administration's bid to disqualify the ballots in the state.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cwly3jd27m9xo",
-   "titel": "Man and boy arrested after allegedly attacking One Nation volunteer with bat",
-   "link": "https://www.bbc.co.uk/news/articles/cwly3jd27m9xo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T03:30:16.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The incident comes amid growing calls for the temperature of political debate in Australia to be turned down.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
+  "tagesschau": 11,
   "DW": 8,
-  "Spiegel Wirtschaft": 2,
-  "FAZ Wirtschaft": 6,
+  "Spiegel Wirtschaft": 4,
+  "FAZ Wirtschaft": 7,
   "Handelsblatt": 6,
-  "BBC World": 7,
+  "BBC World": 8,
   "NYT World": 17,
   "EIA Today in Energy": 1
  }
