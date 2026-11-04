@@ -21,7 +21,8 @@
     "src",
     "../src/aktien/engine",
     "../src/aktien/types.ts",
-    "../src/tracker/types.ts"
+    "../src/tracker/types.ts",
+    "../src/journal/positionTypes.ts"
   ],
   "exclude": [
     "../src/aktien/engine/**/*.test.ts",

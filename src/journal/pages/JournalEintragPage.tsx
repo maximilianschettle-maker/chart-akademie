@@ -304,6 +304,9 @@ export function JournalEintragPage() {
             <Fakt titel="CRV geplant" wert={Number.isFinite(crv) ? `${crv.toFixed(2).replace('.', ',')} : 1` : '–'} />
             <Fakt titel="Risiko" wert={`${e.risikoProzent.toLocaleString('de-DE')} %${e.risikoBetrag ? ` (${fmtKurs(e.risikoBetrag, e.waehrung)})` : ''}`} />
             {e.hebel && <Fakt titel="Hebel" wert={`${e.hebel}×`} />}
+            {e.einsatz !== undefined && <Fakt titel="Einsatz (Marge)" wert={fmtKurs(e.einsatz, e.waehrung)} />}
+            {e.kontrakte !== undefined && <Fakt titel="Kontrakte" wert={e.kontrakte.toLocaleString('de-DE', { maximumFractionDigits: 6 })} />}
+            {e.brokerId && <Fakt titel="Broker-ID" wert={`#${e.brokerId}`} />}
             {e.status === 'geschlossen' && (
               <>
                 <Fakt titel="Ausstieg" wert={`${e.exitPreis !== undefined ? fmtKurs(e.exitPreis, e.waehrung) : '–'} (${GRUENDE.find((g) => g.id === e.exitGrund)?.text ?? '–'})`} />

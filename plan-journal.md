@@ -57,7 +57,15 @@ Ziel: Trades von eToro erfassen, abschließen, auswerten, sichern. Kerzen rund u
 - **Test**: vitest für Engine (R-Multiple, Abbildung, Merge, Tageslimit, CSV, Ausschnitt), Playwright 390 px:
   Eintrag anlegen, abschließen, Kennzahlen, CSV.
 
-## Schritt 2: KI-Prüfung über den Worker (hybrid)
+## Schritt 2a: Claude im Worker, Screenshot → Journal (erledigt 2026-11-04)
+
+- `POST /api/ki/screenshot` in `worker/src/ki.ts` (`@anthropic-ai/sdk`, `claude-opus-5-5`, strukturierte Ausgabe per zod).
+  Secret `ANTHROPIC_API_KEY` per `wrangler secret put`. eToro-Screenshots (Positionsinfo, Portfolio, Historie) → Positionen.
+- `src/journal/import.ts`: Abbildung auf das Journal, Risiko = Kontrakte × Stop-Abstand, Wiederfinden per Broker-ID,
+  Aktionen neu / schließen / aktualisieren. Seite `/training/journal/screenshot` mit Prüfliste.
+- Damit ist Schritt 3 (Sprache) weitgehend überflüssig: der Screenshot ist der schnellere Weg.
+
+## Schritt 2b: KI-Prüfung über den Worker (hybrid)
 
 - Worker-Endpunkt `POST /api/pruefung` (Token wie bisher), Secret `ANTHROPIC_API_KEY`, Modell `claude-haiku-5-5`
   (Kostenrahmen: Cent je Prüfung), Antwort auf Deutsch, max. 250 Wörter, im Eintrag gespeichert (`pruefung`).

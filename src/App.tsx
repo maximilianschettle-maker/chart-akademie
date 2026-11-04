@@ -15,6 +15,7 @@ const SimulatorPage = lazy(() => import('./pages/SimulatorPage').then((m) => ({ 
 const JournalPage = lazy(() => import('./pages/JournalPage').then((m) => ({ default: m.JournalPage })))
 const JournalNeuPage = lazy(() => import('./journal/pages/JournalNeuPage').then((m) => ({ default: m.JournalNeuPage })))
 const JournalEintragPage = lazy(() => import('./journal/pages/JournalEintragPage').then((m) => ({ default: m.JournalEintragPage })))
+const JournalScreenshotPage = lazy(() => import('./journal/pages/JournalScreenshotPage').then((m) => ({ default: m.JournalScreenshotPage })))
 const UebungPage = lazy(() => import('./pages/UebungPage').then((m) => ({ default: m.UebungPage })))
 const WiederholungPage = lazy(() => import('./pages/WiederholungPage').then((m) => ({ default: m.WiederholungPage })))
 // Aktien-Bereich (Fundamentalanalyse): eigenes Modul unter src/aktien
@@ -88,6 +89,7 @@ export default function App() {
                 <Route path="simulator" element={<SimulatorPage />} />
                 <Route path="journal" element={<JournalPage />} />
                 <Route path="journal/neu" element={<JournalNeuPage />} />
+                <Route path="journal/screenshot" element={<JournalScreenshotPage />} />
                 <Route path="journal/:id" element={<JournalEintragPage />} />
               </Route>
               <Route path="/lektion/:lektionId" element={<LektionPage />} />

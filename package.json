@@ -23,12 +23,14 @@
     "board:check": "tsc -p scripts/board"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.5.0",
     "idb": "^8.0.3",
     "lightweight-charts": "^5.2.1",
     "lucide-react": "^1.41.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.3",
+    "zod": "^4.6.7",
     "zustand": "^5.0.15"
   },
   "devDependencies": {

@@ -11,6 +11,7 @@
 //   GET  /api/sec/:symbol?name=&waehrung=&cik=[&frisch=1]   SEC-Abschlüsse (KV 7 Tage), 204 ohne Zuordnung
 //   GET  /api/zustand · PUT /api/zustand   Watchlist + DCF-Annahmen für den Geräte-Sync (KV)
 //   GET  /api/tracker · PUT /api/tracker   Konfiguration des Markt-Trackers (KV); liest auch die GitHub Action
+//   POST /api/ki/screenshot {bild, typ}    Broker-Screenshot → Positionen (Claude, ANTHROPIC_API_KEY als Secret)
 //
 // Außerdem Cron-Trigger (wrangler.toml → src/cron.ts), die die GitHub Actions anstoßen.
 // Jede Antwort trägt CORS-Header, auch Fehler; nach 25 s kommt 504 statt eines Hängers.
@@ -22,6 +23,8 @@ import { CRON_STATUS_KEY, cronLauf, type CronStatus } from './cron'
 import { HttpFehler, corsHeader, fehler, json, mitZeitlimit, pruefeZugang, type Env } from './http'
 import { cikIndex, secTeilLaden } from './sec'
 import { chartKerzen, kurs, suche, wechselkurse, yahooTeil } from './yahoo'
+import { positionenAusBild } from './ki'
+import { BILD_TYPEN, type BildTyp } from '../../src/journal/positionTypes'
 import { bereichDef } from '../../src/aktien/engine/chart'
 
 const VERSION = '0.2.0'
@@ -32,6 +35,10 @@ const KURS_TTL_SEK = 15 * 60
 const KURS_SCHREIB_SEK = 30 * 60
 const SUCHE_TTL_SEK = 24 * 3600
 const ANTWORT_LIMIT_MS = 25_000
+/** KI-Aufrufe brauchen länger (Bild lesen); der Browser wartet bis 90 s */
+const KI_LIMIT_MS = 60_000
+/** Base64-Länge; ~4,5 MB Bild reichen für jeden Screenshot */
+const BILD_MAX_ZEICHEN = 6_000_000
 
 function symbolAus(pfad: string, praefix: string): string {
   const s = decodeURIComponent(pfad.slice(praefix.length)).trim().toUpperCase()
@@ -145,6 +152,14 @@ async function bearbeiten(req: Request, env: Env, url: URL): Promise<Response> {
     }
   }
 
+  if (pfad === '/api/ki/screenshot' && req.method === 'POST') {
+    const body = (await req.json().catch(() => null)) as { bild?: unknown; typ?: unknown } | null
+    const typ = typeof body?.typ === 'string' && (BILD_TYPEN as readonly string[]).includes(body.typ) ? (body.typ as BildTyp) : null
+    if (!body || typeof body.bild !== 'string' || !typ) throw new HttpFehler('Erwartet {bild: Base64, typ: image/jpeg|png|webp|gif}', 400)
+    if (body.bild.length > BILD_MAX_ZEICHEN) throw new HttpFehler('Bild zu groß (max. ~4,5 MB)', 413)
+    return json(req, await positionenAusBild(env, body.bild, typ))
+  }
+
   throw new HttpFehler('Nicht gefunden', 404)
 }
 
@@ -152,7 +167,8 @@ export default {
   async fetch(req: Request, env: Env): Promise<Response> {
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: corsHeader(req) })
     try {
-      return await mitZeitlimit(bearbeiten(req, env, new URL(req.url)), ANTWORT_LIMIT_MS)
+      const url = new URL(req.url)
+      return await mitZeitlimit(bearbeiten(req, env, url), url.pathname.startsWith('/api/ki/') ? KI_LIMIT_MS : ANTWORT_LIMIT_MS)
     } catch (e) {
       return fehler(req, e)
     }

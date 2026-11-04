@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { Download, Plus, TriangleAlert } from 'lucide-react'
+import { Link, useLocation } from 'react-router-dom'
+import { Camera, Download, Plus, TriangleAlert } from 'lucide-react'
 import { useJournalStore } from './store'
 import { eintraegeAlsCsv, ergebnis, filtern, geschlosseneAlsTrades, planAbweichung, rMultiple, setupListe, setupName, tageslimitHinweis, tagVon, zeitKurz, type JournalFilter } from './engine'
 import type { JournalEintrag } from './types'
@@ -52,6 +52,7 @@ export function EintragZeile({ e }: { e: JournalEintrag }) {
 
 export function EchteTrades() {
   const eintraege = useJournalStore((s) => s.eintraege)
+  const meldung = (useLocation().state as { meldung?: string } | null)?.meldung
   const setups = useMemo(() => setupListe(), [])
   // „jetzt“ einmal je Seitenaufruf – Filter und Tageslimit sollen beim Rendern stabil sein
   const [jetzt] = useState(() => Math.floor(Date.now() / 1000))
@@ -99,10 +100,15 @@ export function EchteTrades() {
         <Link to="/training/journal/neu" className={KNOPF_AKZENT}>
           <Plus className="h-3.5 w-3.5" /> Neuer Trade
         </Link>
+        <Link to="/training/journal/screenshot" className={KNOPF} title="Positionen aus einem eToro-Screenshot übernehmen">
+          <Camera className="h-3.5 w-3.5" /> Aus Screenshot
+        </Link>
         <button type="button" onClick={csv} className={KNOPF} disabled={eintraege.length === 0}>
           <Download className="h-3.5 w-3.5" /> CSV
         </button>
       </div>
+
+      {meldung && <p className="text-sm text-long">{meldung}</p>}
 
       {heute && (
         <p className="inline-flex items-start gap-2 rounded-xl border border-short/40 bg-short/10 px-3 py-2 text-sm text-short">
@@ -112,7 +118,7 @@ export function EchteTrades() {
 
       {eintraege.length === 0 && (
         <p className="text-sm text-gedimmt">
-          Noch kein echter Trade. Lege den ersten mit „Neuer Trade“ an oder übernimm Einstieg, Stop und Ziel aus dem Trader-Chart (CRV-Rechner → „Ins Journal“).
+          Noch kein echter Trade. Lege den ersten mit „Neuer Trade“ an, übernimm ihn aus einem eToro-Screenshot oder aus dem Trader-Chart (CRV-Rechner → „Ins Journal“).
         </p>
       )}
 

@@ -10,6 +10,8 @@ export interface Env {
   GITHUB_DISPATCH_TOKEN?: string
   /** owner/repo, Standard siehe cron.ts */
   GITHUB_REPO?: string
+  /** Anthropic-Schlüssel für die KI-Endpunkte (wrangler secret), optional */
+  ANTHROPIC_API_KEY?: string
 }
 
 const ERLAUBTE_ORIGINS = ['https://maximilianschettle-maker.github.io']
@@ -19,7 +21,7 @@ export function corsHeader(req: Request): Record<string, string> {
   const erlaubt = ERLAUBTE_ORIGINS.includes(origin) || /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)
   return {
     'Access-Control-Allow-Origin': erlaubt ? origin : ERLAUBTE_ORIGINS[0],
-    'Access-Control-Allow-Methods': 'GET, PUT, OPTIONS',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, OPTIONS',
     'Access-Control-Allow-Headers': 'Authorization, Content-Type',
     'Access-Control-Max-Age': '86400',
     Vary: 'Origin',

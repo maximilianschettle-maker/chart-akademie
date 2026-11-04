@@ -37,6 +37,11 @@ export interface JournalEintrag {
   /** Risiko in Kontowährung, falls bekannt – Grundlage für Ergebnis in $ ohne Broker-Angabe */
   risikoBetrag?: number
   hebel?: number
+  /** Positions-ID des Brokers (eToro) – Schlüssel für den Screenshot-Import */
+  brokerId?: string
+  /** Kontrakte/Einheiten und Einsatz (Marge) laut Broker */
+  kontrakte?: number
+  einsatz?: number
   /** Setup-Id aus STRATEGIEN oder 'sonstiges' */
   strategieId: string
   setupFrei?: string
