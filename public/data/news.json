@@ -1,16 +1,62 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T17:23:32.293Z",
+ "lastUpdated": "2026-11-04T18:23:33.477Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
    "titel": "Liveblog zu den Midterms: ++ Vance sieht Iran-Krieg als Grund für Wahlschlappe ++",
    "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-04T17:16:46.000Z",
+   "zeit": "2026-11-04T18:18:19.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "US-Vizepräsident Vance führt die Niederlagen der Republikaner auf den Iran-Krieg zurück. Laut Medienberichten will der derzeitige Sprecher des Repräsentantenhauses, Johnson, nicht erneut als Fraktionschef der Republikaner kandidieren.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo",
+   "titel": "US midterm results a 'victory' for Canadians hopeful of tariff relief",
+   "link": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T18:01:31.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "With Canada-US trade talks back on, Tuesday’s midterm Democratic wave puts pressure on the White House to come to a deal.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "titel": "What Trump’s Midterm Defeat Means for Iran and Oil Prices",
+   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T17:51:20.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Commentators abroad wondered what President Trump’s electoral losses might mean for oil prices, the war on Iran and the future of American politics.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c98rz6penv86o",
+   "titel": "Ukraine says bodycam video shows deadly Russian double-tap bombing",
+   "link": "https://www.bbc.co.uk/news/articles/c98rz6penv86o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T17:45:58.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "At least 40 people were killed and another 30 may still be under the rubble after Monday's attack on a Ukrainian village, Kyiv says.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/sicherheit-nrw-will-resilienz-gegen-hybride-angriffe-staerken/100267071.html",
+   "titel": "Sicherheit: „Wir sind nicht vorbereitet“ – NRW will Infrastruktur gegen hybride Angriffe stärken",
+   "link": "https://www.handelsblatt.com/politik/deutschland/sicherheit-nrw-will-resilienz-gegen-hybride-angriffe-staerken/100267071.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T17:31:19.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "NRW sieht sich als Industrieregion besonders bedroht und möchte von abwehrbereiten Ländern lernen. Klare Strategien haben etwa die baltischen Staaten und Polen entwickelt.",
    "sprache": "de"
   },
   {
@@ -51,30 +97,6 @@
    ],
    "text": "Der deutliche Wahlsieg der Demokraten in den USA übertrifft die Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen zudem Quartalszahlen und Inflationsdaten.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo",
-   "titel": "US midterm results a 'victory' for Canadians hopeful of tariff relief",
-   "link": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T17:02:44.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "With Canada-US trade talks back on, Tuesday’s midterm Democratic wave puts pressure on the White House to come to a deal.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "titel": "What Trump’s Midterm Defeat Means for Iran and Oil Prices",
-   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T17:02:12.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Commentators abroad wondered what President Trump’s electoral losses might mean for oil prices, the war on Iran and the future of American politics.",
-   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o",
@@ -1012,36 +1034,14 @@
    "maerkte": [],
    "text": "Officials say at least nine 3,000kg aerial bombs hit a southern Ukrainian village in what the president calls an \"utterly horrific\" attack.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/ukrainekrieg-vor-verhandlungen-selenskyj-besucht-merz-in-berlin/100266875.html",
-   "titel": "Krieg gegen Ukraine: Vor Verhandlungen – Selenskyj besucht Merz in Berlin",
-   "link": "https://www.handelsblatt.com/politik/deutschland/ukrainekrieg-vor-verhandlungen-selenskyj-besucht-merz-in-berlin/100266875.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T12:28:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der ukrainische Präsident besucht den Bundeskanzler. Bei dem Treffen dürfte es auch um weitere militärische und finanzielle Unterstützung für die Ukraine gehen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/midterms-szenarien-100.html",
-   "titel": "Wahlen in den USA: Wie geht es nach den Midterms weiter? Vier Szenarien",
-   "link": "https://www.tagesschau.de/ausland/amerika/midterms-szenarien-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T12:24:53.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Bei den Zwischenwahlen in den USA steht für Trump viel auf dem Spiel: Verlieren seine Republikaner, könnte das Regieren für ihn komplizierter werden. Welche Szenarien sind denkbar? Ein Überblick. Von Jörn Unsöld und Eckart Aretz.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 9,
   "DW": 8,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 9,
-  "Handelsblatt": 4,
+  "Handelsblatt": 7,
   "BBC World": 10,
   "NYT World": 18,
   "EIA Today in Energy": 1
