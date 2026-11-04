@@ -1,17 +1,41 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T21:23:30.451Z",
+ "lastUpdated": "2026-11-04T22:23:34.133Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
    "titel": "Liveblog zu den Midterms: ++ Trump verteidigt Iran-Krieg ++",
    "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-04T21:19:50.000Z",
+   "zeit": "2026-11-04T22:08:00.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "US-Präsident Trump hat trotz des Wahldebakels betont, am Kurs im Iran-Krieg festhalten zu wollen. Außenminister Wadephul erwartet weiterhin eine konstruktive Zusammenarbeit mit der US-Regierung.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-trump-midterm-elections.html",
+   "titel": "For Israelis, U.S. Midterms Show How Far Their Star Has Fallen in America",
+   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-trump-midterm-elections.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T22:04:04.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Israel once had bipartisan support in the United States, but a strong showing for Democrats, some of whom are deeply critical of the war in Gaza, has left the country with fewer friends in Congress.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "titel": "What Trump’s Midterm Defeat Means for Iran and Oil Prices",
+   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T21:20:36.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Commentators abroad wondered what President Trump’s electoral losses might mean for oil prices, the war on Iran and the future of American politics.",
+   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/midterms-vance-irankrieg-100.html",
@@ -71,6 +95,17 @@
    "sprache": "en"
   },
   {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-ehrt-melania-trump-mit-ukrainischem-orden/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Selenskyj ehrt Melania Trump mit ukrainischem Orden",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-ehrt-melania-trump-mit-ukrainischem-orden/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T20:16:11.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russische Angriffe machen ukrainischer Energieversorgung zu schaffen +++ Russische Behörden: Feuer in Ozon-Logistikzentrum nach Angriff +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.faz.net/aktuell/wirtschaft/donald-trump-nach-us-midterms-2026-seine-macht-schwindet-seine-zoelle-bleiben-201651531.html",
    "titel": "Nach den US-Midterms: Trumps Macht schwindet, seine Zölle bleiben",
    "link": "https://www.faz.net/aktuell/wirtschaft/donald-trump-nach-us-midterms-2026-seine-macht-schwindet-seine-zoelle-bleiben-201651531.html",
@@ -93,17 +128,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-trump-midterm-elections.html",
-   "titel": "For Israelis, U.S. Midterms Show How Far Their Star Has Fallen in America",
-   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-trump-midterm-elections.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T18:46:33.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Israel once had bipartisan support in the United States, but a strong showing for Democrats, some of whom are deeply critical of the war in Gaza, has left the country with fewer friends in Congress.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo",
    "titel": "US midterm results a 'victory' for Canadians hopeful of tariff relief",
    "link": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo?at_medium=RSS&at_campaign=rss",
@@ -112,19 +136,6 @@
    "kategorie": "handel",
    "maerkte": [],
    "text": "With Canada-US trade talks back on, Tuesday’s midterm Democratic wave puts pressure on the White House to come to a deal.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "titel": "What Trump’s Midterm Defeat Means for Iran and Oil Prices",
-   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T17:51:20.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Commentators abroad wondered what President Trump’s electoral losses might mean for oil prices, the war on Iran and the future of American politics.",
    "sprache": "en"
   },
   {
@@ -1020,17 +1031,6 @@
     "aktien"
    ],
    "text": "In der Nacht blickt die Welt auf die Midterms in den USA. Im Vorfeld profitiert der Dax davon, dass die Energiepreise nach einem zwischenzeitlichen Anstieg weiter nachgeben.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-will-putin-nicht-nach-kiew-einladen/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Selenskyj will Putin nicht nach Kiew einladen",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-will-putin-nicht-nach-kiew-einladen/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T14:10:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Möglicher Gipfel zwischen Trump, Putin und Xi +++ Merz kündigt Selenskyj-Besuch in Berlin an +++ Russland meldet massive Angriffe auf Energieanlagen +++ Der Newsblog.",
    "sprache": "de"
   }
  ],
