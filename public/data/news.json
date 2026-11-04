@@ -1,7 +1,53 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T20:23:33.424Z",
+ "lastUpdated": "2026-11-04T21:23:30.451Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "titel": "Liveblog zu den Midterms: ++ Trump verteidigt Iran-Krieg ++",
+   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-04T21:19:50.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "US-Präsident Trump hat trotz des Wahldebakels betont, am Kurs im Iran-Krieg festhalten zu wollen. Außenminister Wadephul erwartet weiterhin eine konstruktive Zusammenarbeit mit der US-Regierung.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/midterms-vance-irankrieg-100.html",
+   "titel": "Vance zu den Midterms: \"Der Grund für unsere Niederlage ist der Krieg\"",
+   "link": "https://www.tagesschau.de/ausland/amerika/midterms-vance-irankrieg-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-04T21:15:24.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach der Wahlschlappe der Republikaner geht in der Partei die Spurensuche los, warum sie solche herben Verluste gegen die Demokraten einstecken musste. Für Vizepräsident Vance ist klar: Der Iran-Krieg ist schuld. Von K. Fuß.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-midterms-loesenerholungsrally-aus-ki-aktien-fallen-trotzdem/100265439.html",
+   "titel": "Börsen: Midterms lösen Erholungsrally in den USA aus – KI-Aktien fallen trotzdem",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-midterms-loesenerholungsrally-aus-ki-aktien-fallen-trotzdem/100265439.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T20:37:37.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Der deutliche Sieg der Demokraten schürt Ängste vor einem langsameren KI‑Ausbau. Am breiten Markt kommt das Wahlergebnis dennoch gut an. Das liegt auch an Donald Trump.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/us-midterms-trump-israel.html",
+   "titel": "A Trump Reckoning",
+   "link": "https://www.nytimes.com/2026/11/04/world/us-midterms-trump-israel.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T20:26:57.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The results from the U.S. midterm elections could be the beginning of the end of the Trump era.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c98rz6penv86o",
    "titel": "Ukraine says bodycam video shows deadly Russian double-tap bombing",
@@ -15,7 +61,7 @@
   },
   {
    "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
-   "titel": "Israel’s President Will Start Talks on Whether Netanyahu or Eisenkot Can Form a Government",
+   "titel": "Israel’s President Starts Talks on Whether Netanyahu or Eisenkot Can Form a Government",
    "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
    "quelle": "NYT World",
    "zeit": "2026-11-04T20:17:02.000Z",
@@ -23,17 +69,6 @@
    "maerkte": [],
    "text": "President Isaac Herzog began meeting with party leaders for two days to decide whether to give Prime Minister Benjamin Netanyahu or rivals the first chance at forming a coalition.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "titel": "Liveblog zu den Midterms: ++ Vance sieht Iran-Krieg als Grund für Wahlschlappe ++",
-   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T20:13:05.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "US-Vizepräsident Vance führt die Niederlagen der Republikaner auf den Iran-Krieg zurück. Laut Medienberichten will der derzeitige Sprecher des Repräsentantenhauses, Johnson, nicht erneut als Fraktionschef der Republikaner kandidieren.",
-   "sprache": "de"
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/donald-trump-nach-us-midterms-2026-seine-macht-schwindet-seine-zoelle-bleiben-201651531.html",
@@ -44,19 +79,6 @@
    "kategorie": "handel",
    "maerkte": [],
    "text": "Die Demokraten können den Präsidenten bremsen – aber seine Wirtschaftspolitik kaum umkehren. Der KI-Boom gerät unter Druck. Unternehmen und der Trump-Familie drohen Untersuchungen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-midterms-loesenerholungsrally-aus-ki-aktien-fallen-trotzdem/100265439.html",
-   "titel": "Börsen: Midterms lösen Erholungsrally in den USA aus – KI-Aktien fallen trotzdem",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-midterms-loesenerholungsrally-aus-ki-aktien-fallen-trotzdem/100265439.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T19:30:15.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Der deutliche Sieg der Demokraten schürt Ängste vor einem langsameren KI‑Ausbau. Am breiten Markt kommt das Wahlergebnis dennoch gut an. Das liegt auch an Donald Trump.",
    "sprache": "de"
   },
   {
@@ -1010,40 +1032,16 @@
    "maerkte": [],
    "text": "Möglicher Gipfel zwischen Trump, Putin und Xi +++ Merz kündigt Selenskyj-Besuch in Berlin an +++ Russland meldet massive Angriffe auf Energieanlagen +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.eia.gov/todayinenergy/detail.php",
-   "titel": "Global refinery inputs fell sharply in the second quarter of 2026 before modest recovery",
-   "link": "https://www.eia.gov/todayinenergy/detail.php?id=68404",
-   "quelle": "EIA Today in Energy",
-   "zeit": "2026-11-03T14:00:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Global crude oil refinery inputs fell by 4.8 million barrels per day (b/d) in the second quarter of 2026 (2Q26), or 6%, following the start of conflict in late February in the Middle East, according to data from Kpler. Throughput then incre",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cwy8lm1m59mvo",
-   "titel": "Europe on alert after supermarket freezers hit by cyber-attacks in 10 countries",
-   "link": "https://www.bbc.co.uk/news/articles/cwy8lm1m59mvo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T13:55:47.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Supermarkets have reported problems from Estonia and Sweden to Portugal and Italy and many retainers have been forced to discard food.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 9,
   "DW": 8,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 10,
-  "Handelsblatt": 7,
+  "FAZ Wirtschaft": 9,
+  "Handelsblatt": 6,
   "BBC World": 10,
-  "NYT World": 19,
+  "NYT World": 20,
   "EIA Today in Energy": 1
  }
 }
