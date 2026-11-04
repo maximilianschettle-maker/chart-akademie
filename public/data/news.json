@@ -1,7 +1,91 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T09:23:31.991Z",
+ "lastUpdated": "2026-11-04T10:23:33.957Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "titel": "Countries Weigh, and Worry About, What Trump Will Do After Midterm Defeat",
+   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T10:18:37.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Commentators abroad wondered what the president’s electoral losses might mean for oil prices, the war on Iran and the end of the Trump era.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o",
+   "titel": "Iran's chief negotiator says Americans voted 'no to war'",
+   "link": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T10:11:39.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "\"We endorse this message,\" Mohammed Bagher Ghalibaf says, as Donald Trump acknowledges the conflict's role in the Republican Party's defeat.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo",
+   "titel": "How America voted in maps and charts",
+   "link": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T09:53:18.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "See the maps and charts that show how America voted in the US midterm elections.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
+   "titel": "Dax aktuell: Dax steigt nach Midterms auf Zwei-Monatshoch – Heidelberg-Aktie springt nach oben",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-steigt-nach-midterms-auf-zwei-monatshoch/100267175.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T09:48:48.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Der deutliche Wahlsieg der Demokraten in den USA entspricht den Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen zudem Zahlen und Inflationsdaten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-boerse-118.html",
+   "titel": "Marktbericht: DAX-Anleger reagieren gelassen",
+   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-boerse-118.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-04T09:46:01.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Nach dem Wahlsieg der Demokraten in den USA gehen die Anleger schnell zur Tagesordnung über. Der DAX holt vorbörsliche Verluste wieder auf. Im Fokus steht dabei der Fortgang der Berichtssaison.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-president-herzog-election-government.html",
+   "titel": "Israel’s President Could Play Key Role in Breaking Post-Election Deadlock",
+   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-president-herzog-election-government.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T09:43:34.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Isaac Herzog has tried to avoid controversy and heal rifts in his largely ceremonial role. But his skills as a savvy mediator could be instrumental after an inconclusive election.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/israel-wahl-konsultationen-herzog-100.html",
+   "titel": "Israels Präsident Herzog startet Konsultationen zur Regierungsbildung",
+   "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-konsultationen-herzog-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-04T09:43:26.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In Israel starten heute die entscheidenden Konsultationen über die Bildung einer neuen Regierung. Nach der Parlamentswahl steckt das Land in einer Blockade. Staatspräsident Herzog ruft zu historischen Kompromissen auf. Von Julio Segador.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-midterms-bewegen-dax-kaum-heidelberg-aktie-springt-nach-oben/100267175.html",
    "titel": "Dax aktuell: Midterms bewegen Dax kaum – Heidelberg-Aktie springt nach oben",
@@ -15,19 +99,6 @@
    ],
    "text": "Der deutliche Wahlsieg der Demokraten in den USA entspricht den Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen dagegen Zahlen und Inflationsdaten.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "titel": "Countries Weigh, and Worry About, What Trump Will Do After Midterm Defeat",
-   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T09:02:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Commentators abroad wondered what the president’s electoral losses might mean for oil prices, the war on Iran and the end of the Trump era.",
-   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po",
@@ -86,7 +157,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/us-midterms-erster-muslimischer-senator-demokrat-el-sayed-gewinnt-michigan/29669594.html",
-   "titel": "+++ US-Midterms +++: Erster muslimischer Senator: Demokrat El-Sayed gewinnt Michigan",
+   "titel": "+++ US-Midterms +++: Erster muslimischer Senator: Demokrat El-Sayed gewinnt in Michigan",
    "link": "https://www.handelsblatt.com/politik/international/us-midterms-erster-muslimischer-senator-demokrat-el-sayed-gewinnt-michigan/29669594.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-04T07:38:20.000Z",
@@ -105,30 +176,6 @@
    "maerkte": [],
    "text": "In der Öffentlichkeit war Berthold Wigger vor allem bekannt als Mitglied des liberal gesinnten Kronberger Kreises, des wissenschaftlichen Beirats der Stiftung Marktwirtschaft. Jetzt ist der Finanzwissenschaftler gestorben.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo",
-   "titel": "How America voted in maps and charts",
-   "link": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T07:24:59.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "See the maps and charts that show how America voted in the US midterm elections.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o",
-   "titel": "Four tankers destroyed by naval mines in Strait of Hormuz, Iran's IRGC says",
-   "link": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T07:17:08.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Iran's Islamic Revolutionary Guard Corps says the vessels had hit sea mines while trying to cross a prohibited route.",
-   "sprache": "en"
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/bittere-pleite-fuer-elon-musk-bei-us-midterms-2026-halbe-milliarde-dollar-an-wahlkampfspenden-ohne-erfolg-accg-201649321.html",
@@ -984,60 +1031,16 @@
    "maerkte": [],
    "text": "The incident comes amid growing calls for the temperature of political debate in Australia to be turned down.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/technik/it-internet/tech-ki-datenfirma-palantir-waechst-weiter-schnell/100266800.html",
-   "titel": "Tech: KI-Datenfirma Palantir wächst weiter schnell",
-   "link": "https://www.handelsblatt.com/technik/it-internet/tech-ki-datenfirma-palantir-waechst-weiter-schnell/100266800.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T01:49:49.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach Militär und Behörden suchen auch US-Unternehmen KI-Hilfe bei Palantir. Der Firma beschert das ein stabil hohes Wachstumstempo.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/midterms-auftakt-100.html",
-   "titel": "Zwischenwahlen in den USA: Bleibt das Land regierbar?",
-   "link": "https://www.tagesschau.de/ausland/amerika/midterms-auftakt-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T00:44:25.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Vor allem wegen der enormen Preissteigerungen durch Trumps Zölle und den Iran-Krieg könnten die Republikaner bei den heutigen Midterms abgestraft werden. Die Folge könnte ein politisches Patt sein. Droht den USA der Stillstand? Von Anne Sch",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cm3wv085ne6po",
-   "titel": "Thousands of European troops to rehearse Ukraine deployment in event of peace",
-   "link": "https://www.bbc.co.uk/news/articles/cm3wv085ne6po?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-03T00:07:05.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Western officials stress that any force sent to Ukraine would not take part in any offensive operations.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/trotz-faltbarem-iphone-wachstum-von-apple-schwaecht-sich-ab-201645589.html",
-   "titel": "iPhone-Hersteller: Eine gemischte Premiere für den neuen Apple-Chef",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/trotz-faltbarem-iphone-wachstum-von-apple-schwaecht-sich-ab-201645589.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-03T00:01:54.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Der Elektronikkonzern leidet unter Engpässen in der Lieferkette, der Gewinn von Apple schwächt sich ab. Das neue faltbare iPhone verkauft sich aber gut – trotz Berichten über Qualitätsmängel.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 12,
   "DW": 8,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 6,
   "BBC World": 7,
-  "NYT World": 18,
+  "NYT World": 17,
   "EIA Today in Energy": 1
  }
 }
