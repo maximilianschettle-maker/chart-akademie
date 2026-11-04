@@ -1,19 +1,54 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T08:23:31.536Z",
+ "lastUpdated": "2026-11-04T09:23:31.991Z",
  "eintraege": [
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-midterms-bewegen-dax-kaum-heidelberg-aktie-springt-nach-oben/100267175.html",
    "titel": "Dax aktuell: Midterms bewegen Dax kaum – Heidelberg-Aktie springt nach oben",
    "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-midterms-bewegen-dax-kaum-heidelberg-aktie-springt-nach-oben/100267175.html",
    "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T08:22:44.000Z",
+   "zeit": "2026-11-04T09:06:36.000Z",
    "kategorie": "politik",
    "maerkte": [
     "eurusd",
     "aktien"
    ],
    "text": "Der deutliche Wahlsieg der Demokraten in den USA entspricht den Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen dagegen Zahlen und Inflationsdaten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "titel": "Countries Weigh, and Worry About, What Trump Will Do After Midterm Defeat",
+   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T09:02:38.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Commentators abroad wondered what the president’s electoral losses might mean for oil prices, the war on Iran and the end of the Trump era.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po",
+   "titel": "Key moments from a night of midterm election firsts",
+   "link": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T09:01:40.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Democrats have taken control of Congress for the rest of Donald Trump's presidency - proving moments of celebration.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/us-wahlen-demokraten-siegen-in-kalifornien-und-die-milliardaere/100267150.html",
+   "titel": "US-Wahlen: Demokraten siegen in Kalifornien – und die Milliardäre?",
+   "link": "https://www.handelsblatt.com/politik/international/us-wahlen-demokraten-siegen-in-kalifornien-und-die-milliardaere/100267150.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T08:37:37.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der Staat wählt einen Latino zum Gouverneur. Zugleich stimmten die Kalifornier über die neue Milliardärssteuer ab. Hinter der rekordteuren Abwehrkampagne steht ein Co-Gründer von Google.",
    "sprache": "de"
   },
   {
@@ -50,25 +85,14 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po",
-   "titel": "Key moments from a night of midterm election firsts",
-   "link": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T07:40:12.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Democrats have taken control of Congress for the rest of Donald Trump's presidency - proving moments of celebration.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/politik/international/us-midterms-erster-muslimischer-senator-demokrat-el-sayed-gewinnt-michigan/29669594.html",
-   "titel": "+++ US-Midterms +++: Erster muslimischer Senator – Demokrat El Sayed gewinnt Michigan",
+   "titel": "+++ US-Midterms +++: Erster muslimischer Senator: Demokrat El-Sayed gewinnt Michigan",
    "link": "https://www.handelsblatt.com/politik/international/us-midterms-erster-muslimischer-senator-demokrat-el-sayed-gewinnt-michigan/29669594.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-04T07:38:20.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "Trump gratuliert Demokraten zum Wahlsieg +++ Trump gibt Sender Fox News Mitschuld an Wahlniederlagen +++ Demokrat Crowley wird erster schwarzer Gouverneur von Wisconsin +++ Der Newsblog.",
+   "text": "Demokraten erringen Mehrheit der Gouverneursposten +++ Pistorius gratuliert US-Demokraten zu „historischem Sieg“ +++ Trump gratuliert Demokraten zum Wahlsieg +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -121,7 +145,7 @@
   },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/usa-ergebnisse-midterms-2026-100.html",
-   "titel": "USA: \"Es ist eine Wahl gegen Donald Trump\"",
+   "titel": "Politikexperte: \"Es ist eine Wahl gegen Donald Trump\"",
    "link": "https://www.tagesschau.de/ausland/amerika/usa-ergebnisse-midterms-2026-100.html",
    "quelle": "tagesschau",
    "zeit": "2026-11-04T06:35:46.000Z",
@@ -1004,28 +1028,6 @@
    "maerkte": [],
    "text": "Der Elektronikkonzern leidet unter Engpässen in der Lieferkette, der Gewinn von Apple schwächt sich ab. Das neue faltbare iPhone verkauft sich aber gut – trotz Berichten über Qualitätsmängel.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/trotz-faltbarem-iphone-apples-wachstum-schwaecht-sich-ab-201645589.html",
-   "titel": "iPhone-Hersteller: Apples Wachstum schwächt sich ab",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/trotz-faltbarem-iphone-apples-wachstum-schwaecht-sich-ab-201645589.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-03T00:01:54.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Der Elektronikkonzern leidet unter Engpässen in der Lieferkette. Sein neues faltbares iPhone verkauft sich gut – trotz Berichten über Qualitätsmängel.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/midterms-trump-nutzt-die-letzte-rede-vor-der-wahl-um-ueber-sein-renovierungsprojekt-zu-reden/100266711.html",
-   "titel": "Midterms: „Das Gras ist jetzt wunderschön“ – Trump nutzt die letzte Rede vor der Wahl um über sein Renovierungsprojekt zu reden",
-   "link": "https://www.handelsblatt.com/politik/international/midterms-trump-nutzt-die-letzte-rede-vor-der-wahl-um-ueber-sein-renovierungsprojekt-zu-reden/100266711.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-02T21:23:46.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Amerikaner plagen hohe Preise, teurer Sprit, die Republikaner drohen, die Mehrheit im Kongress zu verlieren – aber ihr Präsident spricht lieber über den Reflecting Pool in Washington.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1033,7 +1035,7 @@
   "DW": 8,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 6,
-  "Handelsblatt": 5,
+  "Handelsblatt": 6,
   "BBC World": 7,
   "NYT World": 18,
   "EIA Today in Energy": 1
