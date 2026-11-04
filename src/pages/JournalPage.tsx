@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react'
 import { Trash2 } from 'lucide-react'
 import { useSimulatorStore, START_KAPITAL } from '../stores/simulatorStore'
+import { useJournalStore } from '../journal/store'
+import { EchteTrades } from '../journal/EchteTrades'
 import { statistik } from '../engine/bewertung'
 import {
   logischeTrades,
@@ -28,7 +30,49 @@ function Kachel({ titel, wert, farbe }: { titel: string; wert: string; farbe?: s
   )
 }
 
+type Reiter = 'echt' | 'simulator'
+const REITER_SCHLUESSEL = 'chartakademie-journal-reiter'
+
+function reiterGespeichert(): Reiter | null {
+  try {
+    const v = localStorage.getItem(REITER_SCHLUESSEL)
+    return v === 'echt' || v === 'simulator' ? v : null
+  } catch {
+    return null
+  }
+}
+
 export function JournalPage() {
+  const anzahlEcht = useJournalStore((s) => s.eintraege.length)
+  // Standard: echte Trades, sobald es welche gibt; die Wahl bleibt gespeichert
+  const [reiter, setReiter] = useState<Reiter>(() => reiterGespeichert() ?? (anzahlEcht > 0 ? 'echt' : 'simulator'))
+  function reiterSetzen(r: Reiter) {
+    setReiter(r)
+    try {
+      localStorage.setItem(REITER_SCHLUESSEL, r)
+    } catch {
+      // nur Komfort
+    }
+  }
+  const tab = (aktiv: boolean) => `tipp rounded-lg px-3 py-1.5 text-xs font-semibold ${aktiv ? 'bg-akzent text-nacht' : 'bg-flaeche text-gedimmt hover:text-schrift'}`
+
+  return (
+    <div className="mx-auto max-w-4xl px-4 py-5 sm:py-8">
+      <h1 className="text-2xl font-bold text-white">Trade-Journal</h1>
+      <div className="mt-3 flex gap-1.5" role="tablist" aria-label="Journal">
+        <button type="button" role="tab" aria-selected={reiter === 'echt'} className={tab(reiter === 'echt')} onClick={() => reiterSetzen('echt')}>
+          Echte Trades{anzahlEcht > 0 ? ` (${anzahlEcht})` : ''}
+        </button>
+        <button type="button" role="tab" aria-selected={reiter === 'simulator'} className={tab(reiter === 'simulator')} onClick={() => reiterSetzen('simulator')}>
+          Simulator
+        </button>
+      </div>
+      {reiter === 'echt' ? <EchteTrades /> : <SimulatorJournal />}
+    </div>
+  )
+}
+
+function SimulatorJournal() {
   const { kontostand, tradeHistorie, rueckblicke, zuruecksetzen } = useSimulatorStore()
   const [bestaetigen, setBestaetigen] = useState(false)
   const gesamtPnl = kontostand - START_KAPITAL
@@ -44,9 +88,8 @@ export function JournalPage() {
   const gebuehren = tradeHistorie.reduce((s, t) => s + (t.gebuehren ?? 0) + (t.funding ?? 0), 0)
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-5 sm:py-8">
-      <h1 className="text-2xl font-bold text-white">Trade-Journal</h1>
-      <p className="mt-1 text-sm text-gedimmt">
+    <div>
+      <p className="mt-3 text-sm text-gedimmt">
         Alle Trades aus deinen Simulator-Sessions — dein wichtigstes Lernwerkzeug.
       </p>
 

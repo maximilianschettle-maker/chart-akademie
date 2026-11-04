@@ -85,3 +85,23 @@ describe('Git-Sync: Dateien', () => {
     expect(f.abgeschlosseneLektionen['l1-01'].quizProzent).toBe(100)
   })
 })
+
+describe('Git-Sync: echte Trades', () => {
+  it('Journal-Datei trägt Einträge, alte Dateien ohne Einträge bleiben lesbar, Merge nimmt den neueren Stand', async () => {
+    const { dateiLesen, dateiText, teilZusammenfuehren, teilUmfang } = await import('./gitSync')
+    const { neuerEintrag } = await import('../journal/engine')
+    const e = neuerEintrag(
+      { markt: 'Gold', symbol: 'GC=F', waehrung: 'USD', richtung: 'short', entryTime: 5, entryPreis: 4000, stopLoss: 4020, takeProfit: 3960, risikoProzent: 1, strategieId: 'range-trading', zeitrahmen: '15m', imPlan: true },
+      3,
+    )
+    const text = dateiText('journal', { tradeHistorie: [], rueckblicke: [], eintraege: [e] })
+    const gelesen = dateiLesen('journal', text)
+    expect(gelesen?.eintraege).toHaveLength(1)
+    const alt = dateiLesen('journal', JSON.stringify({ app: 'chartakademie', art: 'journal', version: 1, tradeHistorie: [], rueckblicke: [] }))
+    expect(alt?.eintraege).toBeUndefined()
+    const neuer = { ...e, geaendertAm: 99, lehre: 'neu' }
+    const m = teilZusammenfuehren('journal', { tradeHistorie: [], rueckblicke: [], eintraege: [e] }, { tradeHistorie: [], rueckblicke: [], eintraege: [neuer] })
+    expect(m.eintraege?.[0].lehre).toBe('neu')
+    expect(teilUmfang('journal', m)).toBe('0 Simulator-Trades, 1 echter Trade')
+  })
+})

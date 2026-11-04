@@ -2,6 +2,8 @@ import type { SzenarioBewertung, Trade } from '../types'
 import type { WiederholungsEintrag } from './wiederholung'
 import type { GespeicherterRueckblick } from './rueckblick'
 import { BEWERTUNG_RANG } from './szenarioGrader'
+import type { JournalEintrag } from '../journal/types'
+import { mergeEintraege } from '../journal/engine'
 
 // Export/Import des kompletten Nutzerstands als JSON-Datei — damit Fortschritt
 // und Journal zwischen PC und Handy wandern können. Import MERGT (statt zu
@@ -25,6 +27,8 @@ export interface Sicherung {
   exportiertAm: string
   /** rueckblicke fehlt in Sicherungen aus älteren Versionen */
   simulator: { tradeHistorie: Trade[]; rueckblicke?: GespeicherterRueckblick[] }
+  /** echte Trades (eToro) – fehlt in Sicherungen vor 2026-11 */
+  journal?: { eintraege: JournalEintrag[] }
   fortschritt: {
     abgeschlosseneLektionen: Record<string, LektionErgebnis>
     szenarioErgebnisse: Record<string, SzenarioErgebnis>
@@ -37,15 +41,24 @@ export function sicherungErstellen(
   fortschritt: Sicherung['fortschritt'],
   jetzt = new Date(),
   rueckblicke: GespeicherterRueckblick[] = [],
+  eintraege: JournalEintrag[] = [],
 ): Sicherung {
   return {
     app: 'chartakademie',
     version: SICHERUNG_VERSION,
     exportiertAm: jetzt.toISOString(),
     simulator: { tradeHistorie, rueckblicke },
+    journal: { eintraege },
     fortschritt,
   }
 }
+
+/** Echte Trades aus einer Sicherung (leer bei älteren Dateien) */
+export function sicherungEintraege(s: Sicherung): JournalEintrag[] {
+  return Array.isArray(s.journal?.eintraege) ? s.journal.eintraege : []
+}
+
+export { mergeEintraege }
 
 /** Prüft grob, ob ein geparstes JSON eine ChartAkademie-Sicherung ist. */
 export function istSicherung(x: unknown): x is Sicherung {

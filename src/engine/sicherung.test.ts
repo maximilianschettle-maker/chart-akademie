@@ -90,3 +90,21 @@ describe('Setup-Rückblicke in der Sicherung', () => {
     expect(r.find((x) => x.sitzungId === 'a')?.trades).toBe(7)
   })
 })
+
+describe('Echte Trades in der Sicherung', () => {
+  it('landen im Export, fehlen in alten Dateien ohne Fehler', async () => {
+    const { sicherungEintraege, sicherungErstellen, istSicherung } = await import('./sicherung')
+    const { neuerEintrag } = await import('../journal/engine')
+    const e = neuerEintrag(
+      { markt: 'Gold', symbol: 'GC=F', waehrung: 'USD', richtung: 'long', entryTime: 1, entryPreis: 4000, stopLoss: 3980, takeProfit: 4040, risikoProzent: 1, strategieId: 'sr-bounce', zeitrahmen: '1h', imPlan: null },
+      7,
+    )
+    const s = sicherungErstellen([], { abgeschlosseneLektionen: {}, szenarioErgebnisse: {}, wiederholungen: {} }, new Date(0), [], [e])
+    const wieder = JSON.parse(JSON.stringify(s))
+    expect(istSicherung(wieder)).toBe(true)
+    expect(sicherungEintraege(wieder)).toHaveLength(1)
+    delete wieder.journal
+    expect(istSicherung(wieder)).toBe(true)
+    expect(sicherungEintraege(wieder)).toEqual([])
+  })
+})

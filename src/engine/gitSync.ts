@@ -1,5 +1,7 @@
 import type { Trade } from '../types'
 import type { GespeicherterRueckblick } from './rueckblick'
+import type { JournalEintrag } from '../journal/types'
+import { mergeEintraege } from '../journal/engine'
 import {
   type Sicherung,
   mergeLektionen,
@@ -33,6 +35,8 @@ export const SYNC_NAME: Record<SyncTeil, string> = {
 export interface JournalStand {
   tradeHistorie: Trade[]
   rueckblicke: GespeicherterRueckblick[]
+  /** echte Trades (eToro); fehlt in Dateien vor 2026-11 */
+  eintraege?: JournalEintrag[]
 }
 export type FortschrittStand = Sicherung['fortschritt']
 
@@ -83,6 +87,7 @@ export function dateiText<T extends SyncTeil>(teil: T, stand: SyncStand[T]): str
       rueckblicke: [...j.rueckblicke].sort(
         (a, b) => a.erstelltAm - b.erstelltAm || (a.sitzungId < b.sitzungId ? -1 : a.sitzungId > b.sitzungId ? 1 : 0),
       ),
+      ...(j.eintraege?.length ? { eintraege: mergeEintraege([], j.eintraege) } : {}),
     }
   }
   return stabil({ app: 'chartakademie', art: teil, version: SYNC_VERSION, ...daten }) + '\n'
@@ -105,6 +110,7 @@ export function dateiLesen<T extends SyncTeil>(teil: T, text: string): SyncStand
     const stand: JournalStand = {
       tradeHistorie: d.tradeHistorie as Trade[],
       rueckblicke: Array.isArray(d.rueckblicke) ? (d.rueckblicke as GespeicherterRueckblick[]) : [],
+      ...(Array.isArray(d.eintraege) && d.eintraege.length ? { eintraege: d.eintraege as JournalEintrag[] } : {}),
     }
     return stand as SyncStand[T]
   }
@@ -124,6 +130,7 @@ export function teilZusammenfuehren<T extends SyncTeil>(teil: T, a: SyncStand[T]
     const stand: JournalStand = {
       tradeHistorie: mergeTrades(x.tradeHistorie, y.tradeHistorie),
       rueckblicke: mergeRueckblicke(x.rueckblicke, y.rueckblicke),
+      ...(x.eintraege?.length || y.eintraege?.length ? { eintraege: mergeEintraege(x.eintraege ?? [], y.eintraege ?? []) } : {}),
     }
     return stand as SyncStand[T]
   }
@@ -140,8 +147,11 @@ export function teilZusammenfuehren<T extends SyncTeil>(teil: T, a: SyncStand[T]
 /** Kurzbeschreibung für Commit-Nachricht und Rückmeldung. */
 export function teilUmfang<T extends SyncTeil>(teil: T, stand: SyncStand[T]): string {
   if (teil === 'journal') {
-    const n = (stand as JournalStand).tradeHistorie.length
-    return `${n} Trade${n === 1 ? '' : 's'}`
+    const j = stand as JournalStand
+    const n = j.tradeHistorie.length
+    const m = j.eintraege?.length ?? 0
+    if (m === 0) return `${n} Trade${n === 1 ? '' : 's'}`
+    return `${n} Simulator-Trade${n === 1 ? '' : 's'}, ${m} echte${m === 1 ? 'r' : ''} Trade${m === 1 ? '' : 's'}`
   }
   const n = Object.keys((stand as FortschrittStand).abgeschlosseneLektionen).length
   return `${n} Lektion${n === 1 ? '' : 'en'}`

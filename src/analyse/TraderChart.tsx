@@ -1,5 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Eraser, Minus, Ruler, Target, TrendingUp, RectangleHorizontal } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { Eraser, Minus, NotebookPen, Ruler, Target, TrendingUp, RectangleHorizontal } from 'lucide-react'
+import { marktListe } from '../journal/engine'
+import type { EintragEntwurf } from '../journal/engine'
+import type { Zeitrahmen } from '../journal/types'
 import { HandelsChart, type ChartLinie, type ChartMarker, type ZeichenModus } from '../components/chart/HandelsChart'
 import type { Candle } from '../types'
 import type { Kerze } from '../aktien/types'
@@ -30,7 +34,14 @@ function startWerte(kurs: number): CrvWerte {
   return { richtung: 'long', entry, stop, ziel: rundePreis(zielAusR(entry, stop, 2, 'long')) }
 }
 
+/** Yahoo-Intervall → Zeitrahmen des Journals */
+function zeitrahmenAus(intervall: string): Zeitrahmen {
+  if (intervall === '5m' || intervall === '15m' || intervall === '1h' || intervall === '4h') return intervall
+  return '1d'
+}
+
 export function TraderChart({ kerzen, symbol, waehrung, intervall, zinsMarker, hoehe }: Props) {
+  const navigate = useNavigate()
   const ema = useAnsichtStore((s) => s.ema)
   const rsi = useAnsichtStore((s) => s.rsi)
   const volumen = useAnsichtStore((s) => s.volumen)
@@ -116,7 +127,30 @@ export function TraderChart({ kerzen, symbol, waehrung, intervall, zinsMarker, h
         </button>
     </div>
   )
-  const rechner = crvAn ? <CrvRechner werte={crv} waehrung={waehrung} onWerte={setCrv} pick={pick} onPick={setPick} /> : null
+  // Einstieg/Stop/Ziel aus dem Rechner als neuen Journal-Eintrag vorbelegen
+  function insJournal() {
+    const markt = marktListe().find((m) => m.symbol === symbol)
+    const start: Partial<EintragEntwurf> = {
+      markt: markt?.name ?? symbol,
+      symbol,
+      waehrung: markt?.waehrung ?? waehrung,
+      richtung: crv.richtung,
+      entryPreis: crv.entry,
+      stopLoss: crv.stop,
+      takeProfit: crv.ziel,
+      zeitrahmen: zeitrahmenAus(intervall),
+      entryTime: Math.floor(Date.now() / 1000),
+    }
+    navigate('/training/journal/neu', { state: start })
+  }
+  const rechner = crvAn ? (
+    <div className="space-y-2">
+      <CrvRechner werte={crv} waehrung={waehrung} onWerte={setCrv} pick={pick} onPick={setPick} />
+      <button type="button" onClick={insJournal} className="tipp inline-flex items-center gap-1.5 rounded-lg bg-akzent px-3 py-1.5 text-xs font-semibold text-nacht hover:brightness-110" title="Einstieg, Stop und Ziel als echten Trade ins Journal übernehmen">
+        <NotebookPen className="h-3.5 w-3.5" /> Ins Journal
+      </button>
+    </div>
+  ) : null
 
   return (
     <div>

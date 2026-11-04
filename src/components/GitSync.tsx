@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { CloudDownload, CloudUpload, GitBranch, RefreshCw } from 'lucide-react'
 import { useSimulatorStore } from '../stores/simulatorStore'
+import { useJournalStore } from '../journal/store'
 import { useProgressStore } from '../stores/progressStore'
 import { useSyncStore } from '../stores/syncStore'
 import { GitFehler, reposAuflisten, standHolen, standPushen, type GitZiel } from '../data/githubClient'
@@ -93,15 +94,23 @@ export function GitSync() {
     const fehlt: SyncTeil[] = teile.filter((t) => !stand[t])
     if (stand.journal) {
       const sim = useSimulatorStore.getState()
+      const jr = useJournalStore.getState()
       const vorher = sim.tradeHistorie.length
-      if (ersetzen) sim.journalErsetzen(stand.journal.tradeHistorie, stand.journal.rueckblicke)
-      else {
+      const vorherEcht = jr.eintraege.length
+      if (ersetzen) {
+        sim.journalErsetzen(stand.journal.tradeHistorie, stand.journal.rueckblicke)
+        jr.ersetzen(stand.journal.eintraege ?? [])
+      } else {
         sim.tradesImportieren(stand.journal.tradeHistorie)
         sim.rueckblickeImportieren(stand.journal.rueckblicke)
+        jr.importieren(stand.journal.eintraege ?? [])
       }
       const jetzt = useSimulatorStore.getState().tradeHistorie.length
+      const jetztEcht = useJournalStore.getState().eintraege.length
       geholt.push(
-        ersetzen ? `Journal (${teilUmfang('journal', stand.journal)})` : `Journal (${jetzt - vorher} neue Trades, jetzt ${jetzt})`,
+        ersetzen
+          ? `Journal (${teilUmfang('journal', stand.journal)})`
+          : `Journal (${jetzt - vorher} neue Simulator-Trades, ${jetztEcht - vorherEcht} neue echte Trades)`,
       )
     }
     if (stand.fortschritt) {
@@ -129,7 +138,7 @@ export function GitSync() {
       z,
       teile,
       {
-        journal: { tradeHistorie: sim.tradeHistorie, rueckblicke: sim.rueckblicke },
+        journal: { tradeHistorie: sim.tradeHistorie, rueckblicke: sim.rueckblicke, eintraege: useJournalStore.getState().eintraege },
         fortschritt: lokalerFortschritt(),
       },
       ersetzen,

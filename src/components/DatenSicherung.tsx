@@ -2,7 +2,8 @@ import { useRef, useState } from 'react'
 import { Download, Upload } from 'lucide-react'
 import { useSimulatorStore } from '../stores/simulatorStore'
 import { useProgressStore } from '../stores/progressStore'
-import { istSicherung, sicherungErstellen, sicherungZusammenfuehren } from '../engine/sicherung'
+import { istSicherung, sicherungEintraege, sicherungErstellen, sicherungZusammenfuehren } from '../engine/sicherung'
+import { useJournalStore } from '../journal/store'
 
 // Export/Import des Nutzerstands als JSON — der Weg zwischen PC und Handy,
 // solange es kein Backend gibt. Import mergt, überschreibt also nichts.
@@ -16,6 +17,8 @@ export function DatenSicherung() {
   const szenarioErgebnisse = useProgressStore((s) => s.szenarioErgebnisse)
   const wiederholungen = useProgressStore((s) => s.wiederholungen)
   const fortschrittImportieren = useProgressStore((s) => s.importieren)
+  const eintraege = useJournalStore((s) => s.eintraege)
+  const eintraegeImportieren = useJournalStore((s) => s.importieren)
   const dateiRef = useRef<HTMLInputElement>(null)
   const [meldung, setMeldung] = useState<{ text: string; fehler?: boolean } | null>(null)
 
@@ -25,6 +28,7 @@ export function DatenSicherung() {
       { abgeschlosseneLektionen, szenarioErgebnisse, wiederholungen },
       new Date(),
       rueckblicke,
+      eintraege,
     )
     const blob = new Blob([JSON.stringify(s, null, 2)], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
@@ -35,7 +39,7 @@ export function DatenSicherung() {
     a.click()
     a.remove()
     setTimeout(() => URL.revokeObjectURL(url), 1000)
-    setMeldung({ text: `Exportiert: ${tradeHistorie.length} Trades, ${Object.keys(abgeschlosseneLektionen).length} Lektionen.` })
+    setMeldung({ text: `Exportiert: ${tradeHistorie.length} Simulator-Trades, ${eintraege.length} echte Trades, ${Object.keys(abgeschlosseneLektionen).length} Lektionen.` })
   }
 
   async function importieren(datei: File) {
@@ -52,8 +56,11 @@ export function DatenSicherung() {
       tradesImportieren(r.tradeHistorie)
       rueckblickeImportieren(daten.simulator.rueckblicke ?? [])
       fortschrittImportieren(r.fortschritt)
+      const vorher = eintraege.length
+      eintraegeImportieren(sicherungEintraege(daten))
+      const neueEintraege = useJournalStore.getState().eintraege.length - vorher
       setMeldung({
-        text: `Importiert und zusammengeführt: ${r.neueTrades} neue Trades, jetzt ${Object.keys(r.fortschritt.abgeschlosseneLektionen).length} abgeschlossene Lektionen.`,
+        text: `Importiert und zusammengeführt: ${r.neueTrades} neue Simulator-Trades, ${neueEintraege} neue echte Trades, jetzt ${Object.keys(r.fortschritt.abgeschlosseneLektionen).length} abgeschlossene Lektionen.`,
       })
     } catch {
       setMeldung({ text: 'Datei konnte nicht gelesen werden.', fehler: true })
