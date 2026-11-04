@@ -1,7 +1,87 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T15:23:32.708Z",
+ "lastUpdated": "2026-11-04T16:23:32.922Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "titel": "Liveblog zu den Midterms: ++ Berichte: Johnson will nicht Fraktionschef bleiben ++",
+   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-04T16:20:31.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Laut Medienberichten will der derzeitige Sprecher des Repräsentantenhauses, Johnson, nicht erneut als Fraktionschef der Republikaner kandidieren. Nach deren Niederlage äußert sich die iranische Staatsspitze und gibt sich kämpferisch.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6z98z5z91ppo",
+   "titel": "Israel's president begins consultations with parties after election deadlock",
+   "link": "https://www.bbc.co.uk/news/articles/c6z98z5z91ppo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T16:18:21.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Herzog warns politicians that \"not every commitment and promise can be fulfilled\" if they want to avoid another election.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/alterssicherung-koalition-verschiebt-die-neue-kapitalrente-ins-naechste-jahr/100267176.html",
+   "titel": "Alterssicherung: Koalition verschiebt die neue Kapitalrente ins nächste Jahr",
+   "link": "https://www.handelsblatt.com/politik/deutschland/alterssicherung-koalition-verschiebt-die-neue-kapitalrente-ins-naechste-jahr/100267176.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T16:16:32.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Bisher versprach der Kanzler die große Rentenreform bis Jahresende. Nun gerät der wichtigste Teil der Pläne ins Stocken. Woran es hinter den Kulissen hakt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
+   "titel": "Israel’s President Will Start Talks on Whether Netanyahu or Eisenkot Can Form a Government",
+   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T16:13:09.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Isaac Herzog began meeting with party leaders for two days to decide whether to give Prime Minister Benjamin Netanyahu or rivals the first chance at forming a coalition.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-ueberwindet-26.000-punkte-marke-und-naehert-sich-rekord/100267175.html",
+   "titel": "Dax aktuell: Dax nähert sich Rekord – Heidelberg-Aktie springt nach oben",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-ueberwindet-26.000-punkte-marke-und-naehert-sich-rekord/100267175.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T16:09:25.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Der deutliche Wahlsieg der Demokraten in den USA übertrifft die Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen zudem Zahlen und Inflationsdaten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/ukraine-oleschky-mission-als-erster-schritt-zum-frieden/a-79843995",
+   "titel": "Ukraine: Oleschky-Mission als erster Schritt zum Frieden?",
+   "link": "https://www.dw.com/de/ukraine-oleschky-mission-als-erster-schritt-zum-frieden/a-79843995?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-04T16:07:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Aus Oleschky wurden Hunderte Zivilisten evakuiert. Manche Beobachter sprechen von einer erfolgreichen humanitären Mission, andere warnen, Russland habe die Waffenruhe genutzt, um seine militärische Position zu stärken.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/midterms-usa-internationale-reaktionen-100.html",
+   "titel": "Reaktionen auf US-Wahlergebnis: Verhaltene Freude, vorsichtige Hoffnung",
+   "link": "https://www.tagesschau.de/ausland/amerika/midterms-usa-internationale-reaktionen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-04T15:42:29.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der spektakuläre Triumph der US-Demokraten bei den Zwischenwahlen hat weltweit Reaktionen ausgelöst: Russland setzt weiter auf Präsident Trump, China hält sich bedeckt, in der EU und Südafrika macht sich Hoffnung breit.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
    "titel": "How the World Reacted to Trump’s Midterm Defeat: 5 Things to Know",
@@ -29,17 +109,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "titel": "Liveblog zu den Midterms: ++ Iran erwartet keinen Kurswechsel der US-Politik ++",
-   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T15:02:43.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach der Niederlage von Trumps Republikanern äußert sich die iranische Staatsspitze und gibt sich kämpferisch. Der EU-Parlamentarier Lange befürchtet, dass der US-Präsident noch unberechenbarer agieren könnte. Die Entwicklungen im Liveblog.",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/articles/cm87zvpzwq0no",
    "titel": "Zelensky gives Melania Trump Ukraine's highest award after Oleshky ceasefire",
    "link": "https://www.bbc.co.uk/news/articles/cm87zvpzwq0no?at_medium=RSS&at_campaign=rss",
@@ -49,20 +118,6 @@
    "maerkte": [],
    "text": "Russian and Ukrainian delegations will meet the US first lady at the White House on Thursday.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-ueberwindet-26.000-punkte-marke-und-naehert-sich-rekord/100267175.html",
-   "titel": "Dax aktuell: Dax nähert sich Rekord – Heidelberg-Aktie springt nach oben",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-ueberwindet-26.000-punkte-marke-und-naehert-sich-rekord/100267175.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T15:01:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Der deutliche Wahlsieg der Demokraten in den USA übertrifft die Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen zudem Zahlen und Inflationsdaten.",
-   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/c6n8dnn09jg7o",
@@ -87,17 +142,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
-   "titel": "Israel’s President Will Start Talks on Whether Netanyahu or Eisenkot Can Form a Government",
-   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T13:58:52.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Isaac Herzog will meet with party leaders over the next two days to decide whether to give Prime Minister Benjamin Netanyahu or rivals the first chance at forming a coalition.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.tagesschau.de/ausland/amerika/usa-ergebnisse-midterms-faq-100.html",
    "titel": "US-Midterms: Wie Trump abgestraft wurde - und was die Folgen sind",
    "link": "https://www.tagesschau.de/ausland/amerika/usa-ergebnisse-midterms-faq-100.html",
@@ -105,7 +149,7 @@
    "zeit": "2026-11-04T13:44:41.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Ein Teilerfolg für die Demokraten war erwartet worden. Doch die Zwischenwahlen in den USA kommen einem Desaster für Präsident Trump gleich. Was war dafür ausschlaggebend und wie geht es jetzt weiter? Fragen und Antworten zu den Midterms von",
+   "text": "Ein Teilerfolg für die Demokraten war erwartet worden. Doch die Zwischenwahlen in den USA kommen einem Desaster für Präsident Trump gleich. Was war dafür ausschlaggebend und wie geht es jetzt weiter? Fragen und Antworten von E. Aretz und C.",
    "sprache": "de"
   },
   {
@@ -986,59 +1030,15 @@
    "maerkte": [],
    "text": "Im zähen diplomatischen Ringen um ein Ende des russischen Angriffskriegs gegen die Ukraine könnte es bald etwas Bewegung geben. Die Multinationale Ukraine-Truppe konzentriert sich bereits auf die Friedenssicherung.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/03/world/africa/sudan-drone-civilians-nyala.html",
-   "titel": "Drones Emerge as the Top Killer of Civilians in Sudan’s War",
-   "link": "https://www.nytimes.com/2026/11/03/world/africa/sudan-drone-civilians-nyala.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-03T10:03:19.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The weapons have become the No. 1 killer of civilians this year, according to the United Nations, devastating a population already overwhelmed by famine and drought.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/energie/energie-umgeruestete-kohlekraftwerke-verteuern-den-strom-fuer-verbraucher/100266757.html",
-   "titel": "Energie: Umgerüstete Kohlekraftwerke verteuern den Strom für Verbraucher",
-   "link": "https://www.handelsblatt.com/unternehmen/energie/energie-umgeruestete-kohlekraftwerke-verteuern-den-strom-fuer-verbraucher/100266757.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T09:45:39.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Der Staat wollte den Bau neuer Gaskraftwerke fördern und gibt stattdessen nun Geld für die Umrüstung alter Kohlemeiler auf Gas aus. Langfristig dürften dadurch die Strompreise steigen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/usa-midterms-zustand-demokratie-102.html",
-   "titel": "Midterms: \"Entscheidende Wahl für Entwicklung der US-Demokratie\"",
-   "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-zustand-demokratie-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T09:40:40.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Unter Trump haben die USA eine autoritäre Phase erreicht, sagt der Historiker Manfred Berg. Ob diese Entwicklung weitergehe, hänge von dieser und der Wahl 2028 ab. Doch selbst bei einer Niederlage werde Trump an seinem Politikstil festhalte",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/midterms-usa-deutschland-102.html",
-   "titel": "US-Wahlen: Wie Trumps Kurs die Bundesregierung herausfordert",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/midterms-usa-deutschland-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T09:22:54.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Bei den Kongresswahlen entscheidet sich, ob Präsident Trump seine Politik weiterhin weitgehend ungehindert durchziehen kann. Das wird auch von der Bundespolitik aufmerksam beobachtet. Von Nicole Markwald.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
-  "DW": 7,
+  "tagesschau": 12,
+  "DW": 8,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 8,
-  "Handelsblatt": 8,
-  "BBC World": 9,
+  "Handelsblatt": 3,
+  "BBC World": 10,
   "NYT World": 18,
   "EIA Today in Energy": 1
  }
