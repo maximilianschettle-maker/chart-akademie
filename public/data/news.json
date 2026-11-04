@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-03T23:23:38.394Z",
+ "lastUpdated": "2026-11-04T00:23:33.945Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "titel": "Liveblog zu den Midterms: ++ Erste Wahlen beendet ++ Auszählung beginnt ++",
+   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-04T00:19:27.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die ersten Wahllokale in Teilen von Indiana und Kentucky haben geschlossen. Das US-Justizministerium schickt zahlreiche Wahlbeobachter in alle Bundesstaaten. Die Entwicklungen im Liveblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo",
+   "titel": "ANC under pressure to reverse South Africa decline",
+   "link": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T00:03:19.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "As South Africans vote in local elections, residents tell the BBC they are tired of the poor quality of services they get.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/milliarden-hack-hacker-nutzten-fingiertes-vorstellungsgespraech-fuer-attacke-auf-binance/100267116.html",
    "titel": "Milliarden-Hack: Hacker nutzten fingiertes Vorstellungsgespräch für Attacke auf Binance",
@@ -11,17 +33,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Erste Analyseergebnisse des Milliardenraubs bei Binance zeigen, dass der Hackerangriff bereits im Juni begann. Auch ein KI-Werkzeug habe dabei eine Rolle gespielt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "titel": "Liveblog zu den Midterms: ++ Erste Wahlen beendet ++ Auszählung beginnt ++",
-   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T23:11:30.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die ersten Wahllokale in Teilen von Indiana und Kentucky haben geschlossen. Das US-Justizministerium schickt zahlreiche Wahlbeobachter in alle Bundesstaaten. Die Entwicklungen im Liveblog.",
    "sprache": "de"
   },
   {
@@ -1016,17 +1027,6 @@
    ],
    "text": "Ölpreise legen in der Folge wieder zu +++ Vance sieht Chancen auf Einigung mit dem Iran +++ Fußballturnier in Saudi-Arabien wird verschoben +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/videos/crq5n6204g20o",
-   "titel": "What we know about the alert app hack in Ukraine and Russia",
-   "link": "https://www.bbc.co.uk/news/videos/crq5n6204g20o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-02T14:24:25.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Both Ukraine and Russia say their air raid alert apps were cyber-attacked - Joe Tidy explains what we know so far.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1035,7 +1035,7 @@
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 6,
-  "BBC World": 13,
+  "BBC World": 14,
   "NYT World": 19,
   "EIA Today in Energy": 1
  }
