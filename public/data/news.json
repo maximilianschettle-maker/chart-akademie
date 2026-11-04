@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T07:23:33.871Z",
+ "lastUpdated": "2026-11-04T07:34:10.749Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo",
+   "titel": "How America voted in maps and charts",
+   "link": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-04T07:24:59.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "See the maps and charts that show how America voted in the US midterm elections.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o",
    "titel": "Four tankers destroyed by naval mines in Strait of Hormuz, Iran's IRGC says",
@@ -82,17 +93,6 @@
    "maerkte": [],
    "text": "Trump gratuliert Demokraten zum Wahlsieg +++ Trump gibt Sender Fox News Mitschuld an Wahlniederlagen +++ Demokrat Crowley wird erster schwarzer Gouverneur von Wisconsin +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo",
-   "titel": "How America voted in maps and charts",
-   "link": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T04:47:08.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "See the maps and charts that show how America voted in the US midterm elections.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/us-midterms-demokraten-gewinnen-auch-mehrheit-im-senat/29669594.html",
@@ -1026,7 +1026,7 @@
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 10,
   "DW": 8,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 4,
