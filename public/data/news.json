@@ -1,7 +1,33 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-05T13:23:32.849Z",
+ "lastUpdated": "2026-11-05T14:23:29.594Z",
  "eintraege": [
+  {
+   "id": "https://www.eia.gov/todayinenergy/detail.php",
+   "titel": "Refineries have shifted production away from gasoline to middle distillates",
+   "link": "https://www.eia.gov/todayinenergy/detail.php?id=68424",
+   "quelle": "EIA Today in Energy",
+   "zeit": "2026-11-05T14:00:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Particularly high refinery margins for distillate fuel oil and jet fuel have contributed to shifts in the refinery yields of major products in 2026. Data from our latest Petroleum Supply Monthly—which includes data through August 2026—indic",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/geldpolitik/bank-of-england-britische-notenbank-hebt-zinsen-erstmals-seit-drei-jahren-an/100266567.html",
+   "titel": "Bank of England: Britische Notenbank hebt Zinsen erstmals seit drei Jahren an – auf 4,0 Prozent",
+   "link": "https://www.handelsblatt.com/finanzen/geldpolitik/bank-of-england-britische-notenbank-hebt-zinsen-erstmals-seit-drei-jahren-an/100266567.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T13:27:49.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Der Energiepreisschock trifft Großbritannien hart, zuletzt stieg die Inflation auf 3,5 Prozent. Nun reagiert die Bank of England und stimmt die Märkte auf weitere Zinserhöhungen ein.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/wirtschaft/finanzen/oelpreise-sinken-100.html",
    "titel": "Ölpreise fallen weiter, DAX steigt auf Rekordhoch",
@@ -118,7 +144,7 @@
    "zeit": "2026-11-05T11:45:00.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Nach den US-Zwischenwahlen erwartet die Führung in Teheran keine Kursänderung von Washington. Andere sehen nach den gewonnenen Wahlen der Demokraten im US-Kongress ein Signal gegen den Krieg.",
+   "text": "Nach den US-Zwischenwahlen erwartet die Führung in Teheran keine Kursänderung von Washington. Andere sehen in den gewonnenen Wahlen der Demokraten im US-Kongress jedoch ein Signal gegen den Krieg.",
    "sprache": "de"
   },
   {
@@ -1024,40 +1050,16 @@
    ],
    "text": "Die Teuerung in der Eurozone ist im Oktober auf 4,0 Prozent gestiegen. Das ist die höchste Inflationsrate seit September 2023. Besonders die hohen Energiepreise sind Treiber der aktuellen Entwicklung.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/hohe-energiepreise-inflation-im-euroraum-steigt-auf-vier-prozent-a-6aa49e04-4639-4134-acf6-08d84917b500",
-   "titel": "Hohe Energiepreise: Inflation im Euroraum steigt auf vier Prozent",
-   "link": "https://www.spiegel.de/wirtschaft/hohe-energiepreise-inflation-im-euroraum-steigt-auf-vier-prozent-a-6aa49e04-4639-4134-acf6-08d84917b500#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-04T10:39:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Weil Energie infolge des Irankriegs teurer ist, steigt in der Eurozone auch die Inflation. Im Oktober hat sie den höchsten Stand seit mehr als drei Jahren erreicht.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/der-anfang-vom-ende-von-trump-und-seiner-politik-was-die-midterms-fuer-europa-bedeuten-accg-201650311.html",
-   "titel": "Wahlen in den USA: „Der Anfang vom Ende von Trump und seiner Politik“",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/der-anfang-vom-ende-von-trump-und-seiner-politik-was-die-midterms-fuer-europa-bedeuten-accg-201650311.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-04T10:11:48.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach dem Sieg der Demokraten in den USA dürfen die Europäer in der Handelspolitik keine Erleichterungen erwarten, erklären international erfahrene Ökonomen. Sie erwarten keine drastische Änderung der amerikanischen Wirtschaftspolitik.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
-  "DW": 6,
+  "tagesschau": 12,
+  "DW": 5,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 6,
+  "Handelsblatt": 5,
   "BBC World": 9,
-  "NYT World": 22,
+  "NYT World": 21,
   "EIA Today in Energy": 1
  }
 }
