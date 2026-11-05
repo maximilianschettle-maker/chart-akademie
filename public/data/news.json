@@ -1,7 +1,54 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-05T16:23:36.306Z",
+ "lastUpdated": "2026-11-05T17:23:35.594Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
+   "titel": "Marktbericht: DAX springt auf Rekordhoch",
+   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T17:16:27.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "aktien"
+   ],
+   "text": "Die Märkte bleiben im Aufwind: Nach den US-Zwischenwahlen erreicht der DAX im frühen Handel einen neuen Höchststand. Rückenwind erhält er von günstigeren Ölpreisen und positiven Signalen aus der Industrie.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6p9g39vln3yo",
+   "titel": "Paraguay President Santiago Peña resigns after bank collapse",
+   "link": "https://www.bbc.co.uk/news/articles/c6p9g39vln3yo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-05T17:14:41.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The move follows a bank collapse and after the lower house of congress voted in favour of pursuing an impeachment trial against him.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/us-midterms-trump-alaska-100.html",
+   "titel": "Trump kritisiert die Midterms-Auszählung im Bundesstaat Alaska",
+   "link": "https://www.tagesschau.de/ausland/amerika/us-midterms-trump-alaska-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T16:58:22.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Noch läuft die Auszählung der Senatoren-Wahl in Alaska. Es zeichnet sich ein knappes Rennen ab. Nun mischt sich US-Präsident Trump ein: Er fordert, die Stimmen für Dan J. Sullivan dem Republikaner Dan S. Sullivan zuzuschlagen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/05/world/middleeast/peace-talks-iran-united-states-qatar-nuclear-program.html",
+   "titel": "Iran is Reviewing ‘Concrete Proposals’ on Nuclear Program, Officials Say",
+   "link": "https://www.nytimes.com/2026/11/05/world/middleeast/peace-talks-iran-united-states-qatar-nuclear-program.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-05T16:34:55.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Iran’s willingness to re-engage on the issue suggests that Qatar-led diplomatic efforts to avert full-blown war between the U.S. and Iran have had some success.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
    "titel": "Israel’s Election Ended With No Clear Winner. These Parties Are Trying to Form a Coalition.",
@@ -216,20 +263,6 @@
    "maerkte": [],
    "text": "The Israeli leader and his allies are alleging that Arab voters last month stole the election. Election officials say that while foul play was being investigated, it could not have affected the result.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
-   "titel": "Marktbericht: DAX springt auf Rekordhoch",
-   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T10:58:48.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "Die Euphorie an den Börsen nach den US-Zwischenwahlen hält an: Der DAX klettert im frühen Handel auf ein neues Rekordhoch. Der sinkende Ölpreis und erfreuliche Industriedaten treiben den Markt zusätzlich an.",
-   "sprache": "de"
   },
   {
    "id": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-herzog-prime-minister.html",
@@ -1015,39 +1048,6 @@
    "maerkte": [],
    "text": "Audi verkündete sein erstes US-Werk auf einer Trump-Kundgebung für den Republikaner Rick Jackson. Der verlor nun überraschend deutlich gegen Keisha Lance Bottoms – mit Konsequenzen für den Autobauer.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo",
-   "titel": "ANC under pressure to reverse South Africa decline",
-   "link": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T11:47:44.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "As South Africans vote in local elections, residents tell the BBC they are tired of the poor quality of services they get.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c699zdx9knmpo",
-   "titel": "Rwanda's army team removed from Africa league after US sanctions, NBA says",
-   "link": "https://www.bbc.co.uk/news/articles/c699zdx9knmpo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T11:46:09.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "The US imposed sanctions on Rwanda's army over its role in the conflict in DR Congo.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/midterms-historische-siege-100.html",
-   "titel": "Midterms: Eine historische Wahl mit vielen Premieren",
-   "link": "https://www.tagesschau.de/ausland/amerika/midterms-historische-siege-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T11:23:58.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die erste schwarze Gouverneurin, eine indigene Senatorin und demokratische Siege in republikanischen Hochburgen wie Kansas oder Texas: Den Demokraten gelang bei den Midterms vielerorts Historisches - eine Auswahl.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1055,8 +1055,8 @@
   "DW": 5,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 6,
-  "Handelsblatt": 4,
-  "BBC World": 4,
+  "Handelsblatt": 3,
+  "BBC World": 5,
   "NYT World": 19,
   "EIA Today in Energy": 1
  }
