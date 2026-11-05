@@ -1,7 +1,79 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-05T11:23:34.753Z",
+ "lastUpdated": "2026-11-05T12:23:36.426Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/finanzen/geldpolitik/bank-of-england-notenbank-hebt-zinsen-erstmals-seit-drei-jahren-an/100266567.html",
+   "titel": "Bank of England: Notenbank hebt Zinsen erstmals seit drei Jahren an",
+   "link": "https://www.handelsblatt.com/finanzen/geldpolitik/bank-of-england-notenbank-hebt-zinsen-erstmals-seit-drei-jahren-an/100266567.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T12:18:21.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Der Energiepreisschock trifft Großbritannien besonders, die Inflation ist zuletzt auf 3,5 Prozent gestiegen. Nun reagiert die Bank of England. Experten erwarten bereits weitere Schritte.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/pete-hegseth-droht-dem-us-verteidigungsminister-ein-impeachment/100267529.html",
+   "titel": "Pete Hegseth: Republikaner wenden sich gegen Verteidigungsminister – droht ein Impeachment?",
+   "link": "https://www.handelsblatt.com/politik/international/pete-hegseth-droht-dem-us-verteidigungsminister-ein-impeachment/100267529.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T12:10:51.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Vor zwanzig Jahren trennte sich George W. Bush nach katastrophalen Midterms von seinem Verteidigungsminister. Trump hält bislang weiter zu Hegseth, doch der Druck auf ihn steigt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/05/world/asia/japan-hokusai-great-wave-midterms.html",
+   "titel": "Everyone’s Talking About the ‘Blue Tsunami.’ In Japan, It’s Complicated.",
+   "link": "https://www.nytimes.com/2026/11/05/world/asia/japan-hokusai-great-wave-midterms.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-05T11:48:56.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The New York Post used a Hokusai work to depict Donald Trump being swept away by Democrats’ midterm election win. Some in Japan were bothered by the imagery.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/iran-hormus-oeltanker-100.html",
+   "titel": "Straße von Hormus: Zwei Öltanker offenbar in Brand geraten",
+   "link": "https://www.tagesschau.de/ausland/asien/iran-hormus-oeltanker-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T11:47:58.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Teheran blockiert die Straße von Hormus seit Beginn des Iran-Krieges weitgehend. Doch immer wieder riskieren Öltanker die Passage durch die Meerenge. Nun sind laut Iran zwei Schiffe in Brand geraten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/iran-zwischen-genugtuung-und-skepsis-nach-den-us-zwischenwahlen/a-79861316",
+   "titel": "Iran: Zwischen Genugtuung und Skepsis nach den US-Zwischenwahlen",
+   "link": "https://www.dw.com/de/iran-zwischen-genugtuung-und-skepsis-nach-den-us-zwischenwahlen/a-79861316?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-05T11:45:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach den US-Zwischenwahlen erwartet die Führung in Teheran keine Kursänderung von Washington. Andere sehen nach den gewonnenen Wahlen der Demokraten im US-Kongress ein Signal gegen den Krieg.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/elon-musk-wollte-die-us-midterms-fuer-donald-trump-retten-das-koennte-sich-jetzt-raechen-a-586c9c11-16d0-45ea-bd6a-62072655ba62",
+   "titel": "Elon Musk wollte die US-Midterms für Donald Trump retten. Das könnte sich jetzt rächen",
+   "link": "https://www.spiegel.de/wirtschaft/elon-musk-wollte-die-us-midterms-fuer-donald-trump-retten-das-koennte-sich-jetzt-raechen-a-586c9c11-16d0-45ea-bd6a-62072655ba62#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-05T11:43:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Der reichste Mensch der Welt hat fast eine halbe Milliarde Dollar in den Midterm-Wahlkampf gesteckt, um republikanische Kandidaten zu unterstützen. Bezahlt gemacht hat sich das nicht. Im Gegenteil: Elon Musk droht nun Ungemach.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.dw.com/de/hongkong-lange-haft-f%C3%BCr-demokratie-aktivist-joshua-wong/a-79863215",
    "titel": "Hongkong: Lange Haft für Demokratie-Aktivist Joshua Wong",
@@ -277,6 +349,17 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "The results from the U.S. midterm elections could be the beginning of the end of the Trump era.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/05/world/europe/voter-turnout-democracy-autocrats-elections.html",
+   "titel": "Voters Are Turning Out in Droves to Cut Autocrats Down to Size",
+   "link": "https://www.nytimes.com/2026/11/05/world/europe/voter-turnout-democracy-autocrats-elections.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-05T05:01:06.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In country after country stricken by democratic decay, overwhelming turnout in elections is making a difference.",
    "sprache": "en"
   },
   {
@@ -965,93 +1048,16 @@
    "maerkte": [],
    "text": "Der Staat wählt einen Latino zum Gouverneur. Zugleich stimmten die Kalifornier über die neue Milliardärssteuer ab. Hinter der rekordteuren Abwehrkampagne steht ein Co-Gründer von Google.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/fast-zwei-drittel-gehen-frueher-in-rente-wer-die-fruehrente-nutzt-accg-201650232.html",
-   "titel": "Ruhestand: Wie viele Ältere nutzen die umstrittene Frührente?",
-   "link": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/fast-zwei-drittel-gehen-frueher-in-rente-wer-die-fruehrente-nutzt-accg-201650232.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-04T08:09:03.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die meisten Menschen gehen laut einer neuen Untersuchung früher in Rente. Wie lange das noch in heutiger Form möglich ist, ist in der Koalition derzeit umstritten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/kultur/80-jahre-lucky-luke-100.html",
-   "titel": "80 Jahre Lucky Luke: Ein Cowboy im Wandel der Zeit",
-   "link": "https://www.tagesschau.de/kultur/80-jahre-lucky-luke-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T07:47:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Lucky Luke soll kein Comic-Held von gestern sein. Autor Jul lässt den Cowboy deshalb gegen Rassismus und Tierquälerei kämpfen. Der neue Band zum 80. Geburtstag spielt mit religiösen Kulten und dem Hype um große Stars. Von Alex Jakubowski.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/us-wahlen-so-weich-gibt-sich-trump-nach-den-midterms/100265441.html",
-   "titel": "US-Wahlen: „Ich habe viele Freunde, die Demokraten sind“: So weich gibt sich Trump nach der Wahl",
-   "link": "https://www.handelsblatt.com/politik/international/us-wahlen-so-weich-gibt-sich-trump-nach-den-midterms/100265441.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T07:44:29.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In mehreren Interviews in der Nacht lässt Donald Trump durchblicken, wie er in den kommenden zwei Jahren regieren will. Es wird sich einiges ändern.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/us-midterms-erster-muslimischer-senator-demokrat-el-sayed-gewinnt-michigan/29669594.html",
-   "titel": "+++ US-Midterms +++: Erster muslimischer Senator: Demokrat El-Sayed gewinnt in Michigan",
-   "link": "https://www.handelsblatt.com/politik/international/us-midterms-erster-muslimischer-senator-demokrat-el-sayed-gewinnt-michigan/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T07:38:20.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Demokraten erringen Mehrheit der Gouverneursposten +++ Pistorius gratuliert US-Demokraten zu „historischem Sieg“ +++ Trump gratuliert Demokraten zum Wahlsieg +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/wirtschaftswissen/finanzwissenschaftler-berthold-wigger-mit-60-jahren-gestorben-accg-201646231.html",
-   "titel": "Renommierter Ökonom: Ökonom Berthold Wigger gestorben",
-   "link": "https://www.faz.net/aktuell/wirtschaft/wirtschaftswissen/finanzwissenschaftler-berthold-wigger-mit-60-jahren-gestorben-accg-201646231.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-04T07:31:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "In der Öffentlichkeit war Berthold Wigger vor allem bekannt als Mitglied des liberal gesinnten Kronberger Kreises, des wissenschaftlichen Beirats der Stiftung Marktwirtschaft. Jetzt ist der Finanzwissenschaftler gestorben.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/usa-ergebnisse-midterms-2026-100.html",
-   "titel": "Politikexperte: \"Es ist eine Wahl gegen Donald Trump\"",
-   "link": "https://www.tagesschau.de/ausland/amerika/usa-ergebnisse-midterms-2026-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T06:35:46.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Mehrheiten in beiden Kammern - der Sieg der Demokraten bei den Midterms ist deutlich. Politikexperte Michael Werz sagt, US-Präsident Trump habe seine Gegner zusammengeschweißt. Der Blick richte sich nun auf die nächste Präsidentenwahl 2028.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-die-drei-schnellsten-lehren-aus-den-wahlen-in-den-usa/100267106.html",
-   "titel": "Morning Briefing: Die drei schnellsten Lehren aus den Wahlen in den USA",
-   "link": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-die-drei-schnellsten-lehren-aus-den-wahlen-in-den-usa/100267106.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T05:42:07.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die republikanischen Mehrheiten im US-Kongress sind verloren, die Wähler wenden sich von US-Präsident Donald Trump ab. Doch abschreiben sollte man ihn nicht zu früh.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 11,
   "DW": 6,
-  "Spiegel Wirtschaft": 4,
+  "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 5,
+  "Handelsblatt": 6,
   "BBC World": 10,
-  "NYT World": 24,
+  "NYT World": 23,
   "EIA Today in Energy": 1
  }
 }
