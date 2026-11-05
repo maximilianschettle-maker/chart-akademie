@@ -1,7 +1,84 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-05T18:23:30.280Z",
+ "lastUpdated": "2026-11-05T19:23:33.454Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
+   "titel": "Israel’s Election Ended With No Clear Winner. These Parties Are Trying to Form a Coalition.",
+   "link": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-05T19:15:03.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Israeli party leaders held discussions with President Isaac Herzog on Thursday about who should get the first chance to form a governing coalition.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/verbraucher/hacker-kuehlsysteme-supermaerkte-100.html",
+   "titel": "Supermärkte: Warum Kühlregale leicht zu hacken sind",
+   "link": "https://www.tagesschau.de/wirtschaft/verbraucher/hacker-kuehlsysteme-supermaerkte-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T19:11:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Angefangen hat es mit Angriffen auf Kühlsysteme in französischen Supermärkten. Inzwischen sind auch deutsche Einzelhändler betroffen. Experten rechnen mit weiteren Attacken auf Kritische Infrastruktur - und Wohnzimmer. Von S. Wolff",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c9p8g085mz07o",
+   "titel": "Melania Trump calls for lasting Ukraine truce as she hosts Russian and Ukrainian officials",
+   "link": "https://www.bbc.co.uk/news/articles/c9p8g085mz07o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-05T19:08:08.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The US first lady was credited by all for playing a key though unspecified role in the ceasefire.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/spritpreisdeckel-klingbeil-ist-unzufrieden-mit-reiches-entwurf-201655524.html",
+   "titel": "Neuer Ärger in der Koalition: Klingbeil will „spürbaren“ Spritpreisdeckel",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/spritpreisdeckel-klingbeil-ist-unzufrieden-mit-reiches-entwurf-201655524.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-05T18:53:08.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Wie stark darf oder muss der Staat in die Preisbildung an den Tankstellen eingreifen? Diese zentrale ordnungspolitische Frage spaltet die Koalition.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-airline-passengers.html",
+   "titel": "Passengers Tell of Fear After Bomb Threats Hit European Flights",
+   "link": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-airline-passengers.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-05T18:42:52.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Passengers recounted landing at a military base and being subjected to security checks and travel delays after threats that turned out to be hoaxes affected planes in Italy, Poland, Spain.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/05/world/middleeast/peace-talks-iran-united-states-qatar-nuclear-program.html",
+   "titel": "Iran is Reviewing ‘Concrete Proposals’ on Nuclear Program, Officials Say",
+   "link": "https://www.nytimes.com/2026/11/05/world/middleeast/peace-talks-iran-united-states-qatar-nuclear-program.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-05T18:27:59.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Iran’s willingness to re-engage on the issue suggests that Qatar-led diplomatic efforts to avert full-blown war between the U.S. and Iran have had some success.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/midterms-wie-die-neue-demokratische-mehrheit-die-usa-veraendern/100266742.html",
+   "titel": "US-Wahlen: Das neue Amerika – Was nun auf die Wirtschaft, Europa und die Welt zukommt",
+   "link": "https://www.handelsblatt.com/politik/international/midterms-wie-die-neue-demokratische-mehrheit-die-usa-veraendern/100266742.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T18:23:52.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Eine neue Riege an Demokraten erobert nach den Zwischenwahlen die USA. Für die Demokratie ist das ein Signal der Hoffnung – für die Wirtschaft nur bedingt. Und was ist mit dem Rest der Welt?",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/05/world/americas/flavio-bolsonaro-florida-brazil.html",
    "titel": "How Did Flávio Bolsonaro Flee Brazil? ‘I’ll Take That to the Grave,’ He Says",
@@ -11,17 +88,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "From Miami, Flávio Bolsonaro is doubling down on unfounded claims of a stolen election and plotting to sway his nation’s politics from afar, even though his party is not challenging the results.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/05/world/middleeast/peace-talks-iran-united-states-qatar-nuclear-program.html",
-   "titel": "Iran is Reviewing ‘Concrete Proposals’ on Nuclear Program, Officials Say",
-   "link": "https://www.nytimes.com/2026/11/05/world/middleeast/peace-talks-iran-united-states-qatar-nuclear-program.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-05T17:44:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Iran’s willingness to re-engage on the issue suggests that Qatar-led diplomatic efforts to avert full-blown war between the U.S. and Iran have had some success.",
    "sprache": "en"
   },
   {
@@ -59,17 +125,6 @@
    "maerkte": [],
    "text": "Noch läuft die Auszählung der Senatoren-Wahl in Alaska. Es zeichnet sich ein knappes Rennen ab. Nun mischt sich US-Präsident Trump ein: Er fordert, die Stimmen für Dan J. Sullivan dem Republikaner Dan S. Sullivan zuzuschlagen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
-   "titel": "Israel’s Election Ended With No Clear Winner. These Parties Are Trying to Form a Coalition.",
-   "link": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-05T16:21:17.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Israeli party leaders were holding discussions with President Isaac Herzog on Thursday about who should get the first chance to form a governing coalition.",
-   "sprache": "en"
   },
   {
    "id": "https://www.dw.com/de/hongkong-lange-haft-f%C3%BCr-demokratie-aktivist-joshua-wong/a-79863215",
@@ -991,73 +1046,16 @@
    "maerkte": [],
    "text": "Audi hat dem US-Präsidenten im Wahlkampf geholfen. Nach der Niederlage seines Kandidaten in Georgia wartet Döllner weiter auf die Gegenleistung. Das kann ihn im Zweifel den Job kosten.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/insolvenz-von-havanna-zigarren-importeur-bedroht-deutsches-weihnachtsgeschaeft-accg-201648576.html",
-   "titel": "Angst um Zigarren aus Kuba: Tragische Insolvenz von Zigarren-Importeur zieht Kreise",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/insolvenz-von-havanna-zigarren-importeur-bedroht-deutsches-weihnachtsgeschaeft-accg-201648576.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-04T13:19:52.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Ein exklusiver Lieferant kostbarer Havanna-Zigarren ist Opfer internationaler Sanktionen geworden. Der Insolvenzverwalter hält mit allen rechtlichen Mitteln dagegen und warnt vor Folgeinsolvenzen und Tabaksteuerausfällen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-president-herzog-election-government.html",
-   "titel": "Israel’s President Could Play Key Role in Breaking Post-Election Deadlock",
-   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-president-herzog-election-government.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T13:18:58.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Isaac Herzog has tried to avoid controversy and heal rifts in his largely ceremonial role. But his skills as a savvy mediator could be instrumental after an inconclusive election.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/maerkte-die-us-wahlen-koennten-ein-grossrisiko-noch-einmal-verschaerfen/100267187.html",
-   "titel": "Kommentar: Die US-Wahlen könnten ein Großrisiko für die Märkte noch einmal verschärfen",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/maerkte-die-us-wahlen-koennten-ein-grossrisiko-noch-einmal-verschaerfen/100267187.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T12:42:07.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Die direkten Folgen der Midterms für die Börsen werden sich vermutlich in Grenzen halten. Doch ein innenpolitisch gelähmter Präsident könnte für neue Gefahren sorgen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/wahlergebnis-in-israel-trotz-netanjahus-vorw%C3%BCrfen-best%C3%A4tigt/a-79853841",
-   "titel": "Wahlergebnis in Israel trotz Netanjahus Vorwürfen bestätigt",
-   "link": "https://www.dw.com/de/wahlergebnis-in-israel-trotz-netanjahus-vorwürfen-bestätigt/a-79853841?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-04T12:36:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der amtierende Regierungschef hatte nach seiner Niederlage noch behauptet, arabische Parteien hätten \"die Wahl gestohlen\". Gegenkandidat Eisenkot zeigte sich empört. Präsident Herzog spricht ein ernstes Wort.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/midterms-demokraten-siegen-in-kalifornien-und-die-milliardaere/100267150.html",
-   "titel": "US-Wahlen: Demokraten siegen in Kalifornien – und die Milliardäre?",
-   "link": "https://www.handelsblatt.com/politik/international/midterms-demokraten-siegen-in-kalifornien-und-die-milliardaere/100267150.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T12:06:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der Staat wählt einen Latino zum Gouverneur. Zugleich stimmten die Kalifornier über die neue Milliardärssteuer ab. Hinter der rekordteuren Abwehrkampagne steht ein Co-Gründer von Google.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 14,
   "DW": 5,
   "Spiegel Wirtschaft": 5,
-  "FAZ Wirtschaft": 6,
-  "Handelsblatt": 2,
-  "BBC World": 4,
-  "NYT World": 20,
+  "FAZ Wirtschaft": 7,
+  "Handelsblatt": 3,
+  "BBC World": 5,
+  "NYT World": 21,
   "EIA Today in Energy": 1
  }
 }
