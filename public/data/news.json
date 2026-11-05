@@ -1,7 +1,64 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-05T14:23:29.594Z",
+ "lastUpdated": "2026-11-05T15:23:36.434Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/hongkong-lange-haft-f%C3%BCr-demokratie-aktivist-joshua-wong/a-79863215",
+   "titel": "Hongkong: Lange Haft für Demokratie-Aktivist Joshua Wong",
+   "link": "https://www.dw.com/de/hongkong-lange-haft-für-demokratie-aktivist-joshua-wong/a-79863215?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-05T15:09:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "2014 erlangte Joshua Wong als ein \"Gesicht der Demokratiebewegung\" in Hongkong internationale Bekanntheit. Nun erhielt der inhaftierte Kämpfer für Menschenrechte eine weitere Gefängnisstrafe.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/usa-trumps-diesel-deal-mit-russland-verpufft-tanker-laufen-usa-nicht-an/100267484.html",
+   "titel": "USA: Trumps Diesel-Deal mit Russland verpufft – Tanker laufen USA nicht an",
+   "link": "https://www.handelsblatt.com/politik/international/usa-trumps-diesel-deal-mit-russland-verpufft-tanker-laufen-usa-nicht-an/100267484.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T15:05:46.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Der US-Präsident erlaubt den Import von russischem Diesel, um die Preise zu drücken. Doch mindestens drei von vier erwarteten Tankern drehen ab, weil potenzielle Käufer Probleme fürchten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/carsten-linnemann-schwaecht-pflegereform-weiter-ab-201655253.html",
+   "titel": "Gesetzentwurf im Bundestag: Linnemann schwächt Pflegereform weiter ab",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/carsten-linnemann-schwaecht-pflegereform-weiter-ab-201655253.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-05T14:34:11.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Minister muss sparen, schont aber pflegende Angehörige: Linnemann will weder bei den Rentenbeiträgen kürzen noch in der Verhinderungspflege. Seine Vorgängerin war radikaler, auch gegenüber den Gewerkschaften.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/daenemark-tv-skandal-100.html",
+   "titel": "Großangelegter TV-Streich sorgt in Dänemark für Skandal",
+   "link": "https://www.tagesschau.de/ausland/daenemark-tv-skandal-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T14:32:28.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ist es in Ordnung, wenn 150 Menschen über Monate einen Freund und Kollegen belügen, um am Ende aufzulösen, dass alles nur ein Spaß fürs Fernsehen war? In Dänemark wird heftig über ein TV-Format diskutiert. Von Arne Bartram.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/05/world/asia/japan-hokusai-great-wave-midterms.html",
+   "titel": "Everyone’s Talking About the ‘Blue Tsunami.’ In Japan, It’s Complicated.",
+   "link": "https://www.nytimes.com/2026/11/05/world/asia/japan-hokusai-great-wave-midterms.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-05T14:31:58.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The New York Post used a Hokusai work to depict Donald Trump being swept away by Democrats’ midterm election win. Some in Japan were bothered by the imagery.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.eia.gov/todayinenergy/detail.php",
    "titel": "Refineries have shifted production away from gasoline to middle distillates",
@@ -113,17 +170,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/05/world/asia/japan-hokusai-great-wave-midterms.html",
-   "titel": "Everyone’s Talking About the ‘Blue Tsunami.’ In Japan, It’s Complicated.",
-   "link": "https://www.nytimes.com/2026/11/05/world/asia/japan-hokusai-great-wave-midterms.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-05T11:48:56.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The New York Post used a Hokusai work to depict Donald Trump being swept away by Democrats’ midterm election win. Some in Japan were bothered by the imagery.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.tagesschau.de/ausland/asien/iran-hormus-oeltanker-100.html",
    "titel": "Straße von Hormus: Zwei Öltanker offenbar in Brand geraten",
    "link": "https://www.tagesschau.de/ausland/asien/iran-hormus-oeltanker-100.html",
@@ -158,17 +204,6 @@
     "eurusd"
    ],
    "text": "Der reichste Mensch der Welt hat fast eine halbe Milliarde Dollar in den Midterm-Wahlkampf gesteckt, um republikanische Kandidaten zu unterstützen. Bezahlt gemacht hat sich das nicht. Im Gegenteil: Elon Musk droht nun Ungemach.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/hongkong-lange-haft-f%C3%BCr-demokratie-aktivist-joshua-wong/a-79863215",
-   "titel": "Hongkong: Lange Haft für Demokratie-Aktivist Joshua Wong",
-   "link": "https://www.dw.com/de/hongkong-lange-haft-für-demokratie-aktivist-joshua-wong/a-79863215?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-05T11:10:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "2014 erlangte Joshua Wong als ein \"Gesicht der Demokratiebewegung\" in Hongkong internationale Bekanntheit. Nun erhielt der inhaftierte Kämpfer für Menschenrechte eine weitere Gefängnisstrafe.",
    "sprache": "de"
   },
   {
@@ -1013,53 +1048,16 @@
    "maerkte": [],
    "text": "Die erste schwarze Gouverneurin, eine indigene Senatorin und demokratische Siege in republikanischen Hochburgen wie Kansas oder Texas: Den Demokraten gelang bei den Midterms vielerorts Historisches - eine Auswahl.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/bittere-pleite-fuer-elon-musk-bei-us-midterms-2026-halbe-milliarde-dollar-an-wahlkampfspenden-ohne-erfolg-accg-201649321.html",
-   "titel": "Kongresswahlen: Das ganze Geld von Musk hat nichts gebracht",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/bittere-pleite-fuer-elon-musk-bei-us-midterms-2026-halbe-milliarde-dollar-an-wahlkampfspenden-ohne-erfolg-accg-201649321.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-04T11:20:56.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Elon Musk hat eine halbe Milliarde Dollar in den US-Wahlkampf gepumpt – und auf breiter Front verloren. Jetzt könnte einiges auf ihn zukommen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/energiepreise-deutsche-kaufen-38-prozent-weniger-heizoel-a-0eef58fb-5baa-4c21-8938-98aca25e9769",
-   "titel": "Energiepreise: Deutsche kaufen 38 Prozent weniger Heizöl",
-   "link": "https://www.spiegel.de/wirtschaft/energiepreise-deutsche-kaufen-38-prozent-weniger-heizoel-a-0eef58fb-5baa-4c21-8938-98aca25e9769#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-04T11:16:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Deutschland wird in diesem Jahr wohl weniger Energie verbrauchen als zuvor, auch private Haushalte halten sich zurück. Einige fossile Energieträger finden trotzdem mehr Absatz.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-eurozone-oktober-102.html",
-   "titel": "Inflation im Euroraum steigt auf 4,0 Prozent",
-   "link": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-eurozone-oktober-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T11:12:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Die Teuerung in der Eurozone ist im Oktober auf 4,0 Prozent gestiegen. Das ist die höchste Inflationsrate seit September 2023. Besonders die hohen Energiepreise sind Treiber der aktuellen Entwicklung.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
+  "tagesschau": 13,
   "DW": 5,
   "Spiegel Wirtschaft": 5,
-  "FAZ Wirtschaft": 5,
+  "FAZ Wirtschaft": 6,
   "Handelsblatt": 5,
-  "BBC World": 9,
-  "NYT World": 21,
+  "BBC World": 8,
+  "NYT World": 20,
   "EIA Today in Energy": 1
  }
 }
