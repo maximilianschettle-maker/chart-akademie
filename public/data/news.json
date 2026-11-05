@@ -1,7 +1,67 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-05T12:23:36.426Z",
+ "lastUpdated": "2026-11-05T13:23:32.849Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/finanzen/oelpreise-sinken-100.html",
+   "titel": "Ölpreise fallen weiter, DAX steigt auf Rekordhoch",
+   "link": "https://www.tagesschau.de/wirtschaft/finanzen/oelpreise-sinken-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T13:18:40.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "aktien"
+   ],
+   "text": "Öl wird günstiger und damit auch Benzin. Diesel allerdings bleibt teuer. Nach den Midterms hoffen Anleger auf Entspannung im Iran-Krieg - aber die Lage bleibt weiter angespannt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
+   "titel": "Israel’s Election Ended With No Clear Winner. These Parties Are Trying to Form a Coalition.",
+   "link": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-05T13:02:20.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Israeli party leaders were holding discussions with President Isaac Herzog on Thursday about who should get the first chance to form a governing coalition.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/usa-trumps-diesel-deal-mit-russland-verpufft-tanker-weichen-aus/100267484.html",
+   "titel": "USA: Trumps Diesel-Deal mit Russland verpufft – Tanker weichen aus",
+   "link": "https://www.handelsblatt.com/politik/international/usa-trumps-diesel-deal-mit-russland-verpufft-tanker-weichen-aus/100267484.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T12:51:54.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Der US-Präsident erlaubt den Import von russischem Diesel, um die Preise zu drücken. Doch mindestens drei von vier erwarteten Tankern drehen ab, weil potenzielle Käufer Probleme fürchten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/freie-waehler-beraten-naechste-schritte-nach-aiwangers-tod-100.html",
+   "titel": "Freie Wähler beraten nach Aiwangers Tod über weiteres Vorgehen",
+   "link": "https://www.tagesschau.de/inland/freie-waehler-beraten-naechste-schritte-nach-aiwangers-tod-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T12:38:28.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach dem plötzlichen Tod von Hubert Aiwanger ist die Bestürzung über Bayerns Grenzen hinaus groß. Die Freien Wähler müssen sich jetzt neu aufstellen - denn Aiwanger war die zentrale Figur seiner Partei.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo",
+   "titel": "How America voted in maps and charts",
+   "link": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-05T12:32:52.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "See the maps and charts that show how America voted in the US midterm elections.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/finanzen/geldpolitik/bank-of-england-notenbank-hebt-zinsen-erstmals-seit-drei-jahren-an/100266567.html",
    "titel": "Bank of England: Notenbank hebt Zinsen erstmals seit drei Jahren an",
@@ -988,76 +1048,16 @@
    "maerkte": [],
    "text": "Nach dem Sieg der Demokraten in den USA dürfen die Europäer in der Handelspolitik keine Erleichterungen erwarten, erklären international erfahrene Ökonomen. Sie erwarten keine drastische Änderung der amerikanischen Wirtschaftspolitik.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo",
-   "titel": "How America voted in maps and charts",
-   "link": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T09:53:18.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "See the maps and charts that show how America voted in the US midterm elections.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-boerse-118.html",
-   "titel": "Marktbericht: DAX-Anleger reagieren gelassen",
-   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-boerse-118.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T09:46:01.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Nach dem Wahlsieg der Demokraten in den USA gehen die Anleger schnell zur Tagesordnung über. Der DAX holt vorbörsliche Verluste wieder auf. Im Fokus steht dabei der Fortgang der Berichtssaison.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/israel-wahl-konsultationen-herzog-100.html",
-   "titel": "Israels Präsident Herzog startet Konsultationen zur Regierungsbildung",
-   "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-konsultationen-herzog-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T09:43:26.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In Israel starten heute die entscheidenden Konsultationen über die Bildung einer neuen Regierung. Nach der Parlamentswahl steckt das Land in einer Blockade. Staatspräsident Herzog ruft zu historischen Kompromissen auf. Von Julio Segador.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-midterms-bewegen-dax-kaum-heidelberg-aktie-springt-nach-oben/100267175.html",
-   "titel": "Dax aktuell: Midterms bewegen Dax kaum – Heidelberg-Aktie springt nach oben",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-midterms-bewegen-dax-kaum-heidelberg-aktie-springt-nach-oben/100267175.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T09:06:36.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Der deutliche Wahlsieg der Demokraten in den USA entspricht den Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen dagegen Zahlen und Inflationsdaten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/us-wahlen-demokraten-siegen-in-kalifornien-und-die-milliardaere/100267150.html",
-   "titel": "US-Wahlen: Demokraten siegen in Kalifornien – und die Milliardäre?",
-   "link": "https://www.handelsblatt.com/politik/international/us-wahlen-demokraten-siegen-in-kalifornien-und-die-milliardaere/100267150.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T08:37:37.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der Staat wählt einen Latino zum Gouverneur. Zugleich stimmten die Kalifornier über die neue Milliardärssteuer ab. Hinter der rekordteuren Abwehrkampagne steht ein Co-Gründer von Google.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 13,
   "DW": 6,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 6,
-  "BBC World": 10,
-  "NYT World": 23,
+  "BBC World": 9,
+  "NYT World": 22,
   "EIA Today in Energy": 1
  }
 }
