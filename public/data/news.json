@@ -1,7 +1,32 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-05T06:23:29.924Z",
+ "lastUpdated": "2026-11-05T07:23:30.628Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-gestorben-reaktionen-100.html",
+   "titel": "Reaktionen auf Tod Aiwangers: Söder spricht von \"absoluter Tragödie\"",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-gestorben-reaktionen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T06:53:46.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der unerwartete Tod von Hubert Aiwanger mit 55 Jahren hat parteiübergreifend Bestürzung ausgelöst. Der Chef der Freien Wähler war leblos in einem Hotel aufgefunden worden. Bayerns Ministerpräsident Söder sprach von einer \"absoluten Tragödie",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/bundeshaushalt-warum-klingbeils-haushaltssorgen-trotz-neuen-geldsegens-bleiben/100266874.html",
+   "titel": "Bundeshaushalt: Klingbeil findet 4,2 Milliarden Euro im Etat – die Haushaltsprobleme ist er aber nicht los",
+   "link": "https://www.handelsblatt.com/politik/deutschland/bundeshaushalt-warum-klingbeils-haushaltssorgen-trotz-neuen-geldsegens-bleiben/100266874.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T06:44:41.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd",
+    "anleihen"
+   ],
+   "text": "Der Finanzminister muss in diesem Jahr vier Milliarden Euro weniger für die Ökostrom-Förderung ausgeben als geplant. Doch das hilft kaum, um die Finanzlöcher im Haushalt 2027 zu stopfen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
    "titel": "Marktbericht: DAX nähert sich dem Rekordhoch",
@@ -1011,36 +1036,14 @@
    "maerkte": [],
    "text": "Der US-Präsident kündigt Milliardenhilfen auf – angeblich im Einvernehmen mit Netanjahu. Israels Finanzministerium ist überrascht, ein Iron-Dome-Entwickler sieht das Bündnis in Gefahr.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/digitalgipfel-ritual-der-absichtserklaerungen-statt-echter-ki-politik-201647041.html",
-   "titel": "Digitalgipfel: Die letzte Warnung",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/digitalgipfel-ritual-der-absichtserklaerungen-statt-echter-ki-politik-201647041.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-03T19:01:28.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Auf dem Digitalgipfel mahnt die KI-Taskforce, Deutschland verliere ohne rasches Handeln den Anschluss. Der Gipfel allein wird daran leider nichts ändern.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/israel-usa-midterms-100.html",
-   "titel": "Die US-Midterms - die nächste wichtige Wahl für Israel",
-   "link": "https://www.tagesschau.de/ausland/asien/israel-usa-midterms-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T18:40:26.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Ein Sieg der Demokraten bei den US-Zwischenwahlen könnte enorme Folgen für die Sicherheitspolitik Israels haben. Doch auch aus einem anderen Grund schauen die Menschen im Nahen Osten auf die Tage nach den Midterms. Von Tim Aßmann.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 11,
   "DW": 8,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 9,
-  "Handelsblatt": 7,
+  "FAZ Wirtschaft": 8,
+  "Handelsblatt": 5,
   "BBC World": 9,
   "NYT World": 21,
   "EIA Today in Energy": 1
