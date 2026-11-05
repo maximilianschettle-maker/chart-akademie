@@ -1,16 +1,84 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-05T07:23:30.628Z",
+ "lastUpdated": "2026-11-05T08:23:26.297Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-anleger-schichten-um-auch-in-asien-brechen-ki-werte-ein/100267457.html",
+   "titel": "Nikkei, Yen, Hang Seng: Anleger schichten um – Auch in Asien brechen KI-Werte ein",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-anleger-schichten-um-auch-in-asien-brechen-ki-werte-ein/100267457.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T08:22:55.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Investoren fürchten, dass der Wahlsieg der Demokraten den Ausbau von KI-Rechenzentren bremsen könnte. In Japan verlagern sie ihre Positionen daraufhin in andere Branchen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-gestorben-reaktionen-100.html",
    "titel": "Reaktionen auf Tod Aiwangers: Söder spricht von \"absoluter Tragödie\"",
    "link": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-gestorben-reaktionen-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-05T06:53:46.000Z",
+   "zeit": "2026-11-05T08:19:53.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Der unerwartete Tod von Hubert Aiwanger mit 55 Jahren hat parteiübergreifend Bestürzung ausgelöst. Der Chef der Freien Wähler war leblos in einem Hotel aufgefunden worden. Bayerns Ministerpräsident Söder sprach von einer \"absoluten Tragödie",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/wissen/technologie/nasa-satellit-swift-100.html",
+   "titel": "Rettungsmission gescheitert - NASA-Satellit stürzt auf Erde",
+   "link": "https://www.tagesschau.de/wissen/technologie/nasa-satellit-swift-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T08:15:29.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Satellit Swift hatte jahrelang gewaltige Energieausbrüche im Universum untersucht, sogenannte Gammablitze. Die Mission war so wichtig, dass die NASA eine Rettungsmission startete, als es Probleme gab - vergeblich.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/05/world/australia/new-zealand-election-polls.html",
+   "titel": "The New Zealand Election That Could ‘Flip the Table’",
+   "link": "https://www.nytimes.com/2026/11/05/world/australia/new-zealand-election-polls.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-05T08:11:46.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Support for the major parties — led by two men called Chris — is cratering, thanks to dissatisfaction with the economy. Minor parties stand to benefit from a desire among voters for change.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cx4g1qy6gq9mo",
+   "titel": "Italian chef fired after refusing to put pineapple on pizza",
+   "link": "https://www.bbc.co.uk/news/articles/cx4g1qy6gq9mo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-05T07:56:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "He had told his employer, an Australian restaurant, that pineapple on pizza was \"offensive\" to Italian culture.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-autozulieferer-bosch-will-in-abstatt-750-stellen-abbauen-faz-200452404.html",
+   "titel": "Business-Ticker: Autozulieferer Bosch will in Abstatt 750 Stellen abbauen",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-autozulieferer-bosch-will-in-abstatt-750-stellen-abbauen-faz-200452404.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-05T07:29:32.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Cyberangriff auf französische Bank verursacht mehr als 100 Millionen Euro Verlust +++ Tesla eröffnet in Berlin Entwicklungszentrum +++ Deutsche Firmen in USA wieder im Aufwind – trotz Zollschranken +++ alle Neuigkeiten im Unternehmen-Livebl",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/israel-usa-wahlen-100.html",
+   "titel": "USA und Israel nach den Wahlen: Beziehungsstatus kompliziert",
+   "link": "https://www.tagesschau.de/ausland/asien/israel-usa-wahlen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T07:28:49.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Sowohl die USA als auch Israel haben wichtige Wahlen hinter sich. Die Ergebnisse werden die Beziehungen beider Staaten nachhaltig bestimmen - und könnten für Premier Netanjahu zum Problem werden. Von Jan-Christoph Kitzler.",
    "sprache": "de"
   },
   {
@@ -87,17 +155,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/05/world/australia/new-zealand-election-polls.html",
-   "titel": "The New Zealand Election That Could ‘Flip the Table’",
-   "link": "https://www.nytimes.com/2026/11/05/world/australia/new-zealand-election-polls.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-05T05:01:12.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Support for the major parties — led by two men called Chris — is cratering, thanks to dissatisfaction with the economy. Minor parties stand to benefit from a desire among voters for change.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.nytimes.com/2026/11/05/world/europe/voters-are-turning-out-in-droves-to-cut-autocrats-down-to-size.html",
    "titel": "Voters Are Turning Out in Droves to Cut Autocrats Down to Size",
    "link": "https://www.nytimes.com/2026/11/05/world/europe/voters-are-turning-out-in-droves-to-cut-autocrats-down-to-size.html",
@@ -107,17 +164,6 @@
    "maerkte": [],
    "text": "In country after country stricken by democratic decay, overwhelming turnout in elections is making a difference.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-anleger-schichten-um-auch-in-asien-brechen-ki-werte-ein/100267457.html",
-   "titel": "Nikkei, Yen, Hang Seng: Anleger schichten um – Auch in Asien brechen KI-Werte ein",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-anleger-schichten-um-auch-in-asien-brechen-ki-werte-ein/100267457.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T04:38:20.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Investoren fürchten, dass der Wahlsieg der Demokraten den Ausbau von KI-Rechenzentren bremsen könnte. In Japan verlagern sie ihre Positionen daraufhin in andere Branchen.",
-   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-boersen-in-asien-nach-us-zwischenwahlen-uneinheitlich-technologiewerte-brechen-ein/100267457.html",
@@ -247,13 +293,13 @@
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/ki-coreweave-faellt-amazon-gewinnt-midterms-spalten-ki-konzerne/100267383.html",
-   "titel": "KI: CoreWeave fällt, Amazon gewinnt: Wie die Midterms den KI-Sektor spalten",
+   "titel": "KI: Coreweave fällt, Amazon gewinnt: Wie die Midterms den KI-Sektor spalten",
    "link": "https://www.handelsblatt.com/finanzen/maerkte/ki-coreweave-faellt-amazon-gewinnt-midterms-spalten-ki-konzerne/100267383.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-04T21:41:09.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "Nach dem demokratischen Wahlsieg droht eine Regulierungswelle für Rechenzentren. Doch während Neocloud-Aktien abstürzen, legen die von Tech-Konzernen kräftig zu. Warum?",
+   "text": "Nach dem Wahlsieg der Demokraten droht eine Regulierungswelle für Rechenzentren. Doch während Neocloud-Aktien abstürzen, legen die von Tech-Konzernen kräftig zu. Warum?",
    "sprache": "de"
   },
   {
@@ -992,54 +1038,10 @@
    "maerkte": [],
    "text": "Some Iranian clerics and officials argue the country must rebuild deterrence by dropping its longstanding pledge not to build a nuclear bomb.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/03/world/us-midterms-trump-iran-ukraine.html",
-   "titel": "Midterm Suspense",
-   "link": "https://www.nytimes.com/2026/11/03/world/us-midterms-trump-iran-ukraine.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-03T20:51:05.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Voters in the U.S. are deciding who will control Congress. The election is also seen as a referendum on Trump’s presidency.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/03/us/politics/trump-venezuela-troop-agreement.html",
-   "titel": "Trump Pushes Venezuela for Agreement Allowing U.S. Troops to Stay",
-   "link": "https://www.nytimes.com/2026/11/03/us/politics/trump-venezuela-troop-agreement.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-03T19:47:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The two countries have long been adversaries, and the United States attacked Venezuela this year, but Secretary of State Marco Rubio is starting talks on a legal agreement.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/ukraine-krieg-bundeskanzler-friedrich-merz-und-der-ukrainische-pr%C3%A4sident-wolodymyr-selenskyj-beraten-in-berlin/a-79846015",
-   "titel": "Ukraine-Krieg: Bundeskanzler Friedrich Merz und der ukrainische Präsident Wolodymyr Selenskyj beraten in Berlin",
-   "link": "https://www.dw.com/de/ukraine-krieg-bundeskanzler-friedrich-merz-und-der-ukrainische-präsident-wolodymyr-selenskyj-beraten-in-berlin/a-79846015?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-03T19:26:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der ukrainische Präsident Wolodymyr Selenskyj sucht vor neuen Verhandlungen mit Russland und den USA Rückhalt bei Bundeskanzler Friedrich Merz in Berlin. Der Kanzler fand deutliche Worte in Richtung Moskau.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/usa-israel-trump-will-militaerhilfe-an-israel-bis-jahresende-stoppen/100267032.html",
-   "titel": "USA und Israel: Ankündigung am Wahltag: Trump will Militärhilfe an Israel bis Jahresende stoppen",
-   "link": "https://www.handelsblatt.com/politik/international/usa-israel-trump-will-militaerhilfe-an-israel-bis-jahresende-stoppen/100267032.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T19:03:20.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der US-Präsident kündigt Milliardenhilfen auf – angeblich im Einvernehmen mit Netanjahu. Israels Finanzministerium ist überrascht, ein Iron-Dome-Entwickler sieht das Bündnis in Gefahr.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 13,
   "DW": 8,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 8,
