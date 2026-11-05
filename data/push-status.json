@@ -39,6 +39,7 @@
     "tracker:nasdaq100:ausbruch:short:2026-11-05": "2026-11-05T14:45:44.162Z",
     "tracker:gold:tunnel:neutral:stunde:2026-11-05T14": "2026-11-05T15:00:44.970Z",
     "tracker:bitcoin:tunnel:long:2026-11-05": "2026-11-05T15:15:46.436Z",
-    "tracker:bitcoin:tunnel:neutral:2026-11-05": "2026-11-05T15:15:46.489Z"
+    "tracker:bitcoin:tunnel:neutral:2026-11-05": "2026-11-05T15:15:46.489Z",
+    "tracker:nasdaq100:ausbruch:short:stunde:2026-11-05T15": "2026-11-05T15:45:40.980Z"
   }
 }
