@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-04T23:23:29.766Z",
+ "lastUpdated": "2026-11-05T00:23:26.429Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-usa-zwischenwahl-100.html",
+   "titel": "Midterms in den USA: Verhaltener Optimismus in der Ukraine nach US-Wahl",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-usa-zwischenwahl-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T00:10:07.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Wahlschlappe von Trumps Republikanern lässt viele in der Ukraine auf einen Kurswechsel der USA hoffen. Doch ob es tatsächlich so schnell zu Veränderungen kommt, daran zweifelt man. Von F. Kellermann.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "titel": "What Trump’s Midterm Defeat Means for Iran and Oil Prices",
+   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-04T23:36:59.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Commentators abroad wondered what President Trump’s electoral losses might mean for oil prices, the war on Iran and the future of American politics.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c98rz6penv86o",
    "titel": "Ukraine says bodycam video shows deadly Russian double-tap bombing",
@@ -33,19 +57,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Israel once had bipartisan support in the United States, but a strong showing for Democrats, some of whom are deeply critical of the war in Gaza, has left the country with fewer friends in Congress.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "titel": "What Trump’s Midterm Defeat Means for Iran and Oil Prices",
-   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T21:20:36.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Commentators abroad wondered what President Trump’s electoral losses might mean for oil prices, the war on Iran and the future of American politics.",
    "sprache": "en"
   },
   {
@@ -114,6 +125,17 @@
    "kategorie": "handel",
    "maerkte": [],
    "text": "Die Demokraten können den Präsidenten bremsen – aber seine Wirtschaftspolitik kaum umkehren. Der KI-Boom gerät unter Druck. Unternehmen und der Trump-Familie drohen Untersuchungen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/us-midterms-desantis-widerspricht-trump-bei-deutung-der-wahlniederlage/29669594.html",
+   "titel": "+++ US-Midterms +++: DeSantis widerspricht Trump bei Deutung der Wahlniederlage",
+   "link": "https://www.handelsblatt.com/politik/international/us-midterms-desantis-widerspricht-trump-bei-deutung-der-wahlniederlage/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T19:15:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Trump räumt Auswirkungen von Iran-Krieg auf Midterms ein +++ Demokrat Schumer rechnet mit Wahl zum Mehrheitsführer im Senat +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -1007,35 +1029,10 @@
    "maerkte": [],
    "text": "Nach Vorfällen in mehreren europäischen Ländern sind nun Filialen von Rewe und Edeka betroffen. Kühlanlagen wurden teils auf 50 Grad plus eingestellt. Die Gefahr wurde offenbar unterschätzt.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/ukraine-merz-sieht-geplante-gespraeche-ueber-waffenstillstand-skeptisch/100266764.html",
-   "titel": "Ukrainekrieg: Selenskyj-Besuch: Merz sieht geplante Gespräche über Waffenstillstand skeptisch",
-   "link": "https://www.handelsblatt.com/politik/deutschland/ukraine-merz-sieht-geplante-gespraeche-ueber-waffenstillstand-skeptisch/100266764.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T14:45:10.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Kanzler empfängt den ukrainischen Präsidenten Selenskyj in Berlin, um ihm weitere Unterstützung zuzusagen. Aber bei geplanten Gesprächen über ein Kriegsende schauen die Europäer nur zu.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-holt-tagesverluste-auf-oelpreis-faellt-auf-ein-monats-tief/100266854.html",
-   "titel": "Dax aktuell: Dax holt Tagesverluste auf – Ölpreis fällt auf Ein-Monats-Tief",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-holt-tagesverluste-auf-oelpreis-faellt-auf-ein-monats-tief/100266854.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T14:37:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "In der Nacht blickt die Welt auf die Midterms in den USA. Im Vorfeld profitiert der Dax davon, dass die Energiepreise nach einem zwischenzeitlichen Anstieg weiter nachgeben.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 10,
   "DW": 8,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 9,
