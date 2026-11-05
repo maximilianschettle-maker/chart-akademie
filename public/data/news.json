@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-05T02:23:30.251Z",
+ "lastUpdated": "2026-11-05T03:23:26.492Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
@@ -68,6 +68,19 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Nach der Wahlschlappe der Republikaner geht in der Partei die Spurensuche los, warum sie solche herben Verluste gegen die Demokraten einstecken musste. Für Vizepräsident Vance ist klar: Der Iran-Krieg ist schuld. Von K. Fuß.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-midterms-loesen-erholungsrally-aus-dow-steigt-mehr-als-1500-punkte/100265439.html",
+   "titel": "Börsen: Midterms lösen Erholungsrally in den USA aus – KI-Aktien fallen trotzdem",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-midterms-loesen-erholungsrally-aus-dow-steigt-mehr-als-1500-punkte/100265439.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T20:37:37.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Der deutliche Sieg der Demokraten könnte einige Sektoren belasten. Am breiten Markt kommt das Ergebnis dennoch gut an. Das liegt auch an Donald Trumps Reaktion auf die Wahl.",
    "sprache": "de"
   },
   {
@@ -1018,17 +1031,6 @@
    "maerkte": [],
    "text": "Hours after the Russian attack, which killed at least 31 and left dozens missing, the United States said that peace talks with the two countries would resume after nine months.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/handel-konsumgueter/einzelhandel-hackerangriffe-auf-supermarkt-kuehlsysteme-in-deutschland/100266984.html",
-   "titel": "Einzelhandel: Hacker greifen Kühlsysteme mehrerer deutscher Supermärkte an – Experten warnen vor weiteren Attacken",
-   "link": "https://www.handelsblatt.com/unternehmen/handel-konsumgueter/einzelhandel-hackerangriffe-auf-supermarkt-kuehlsysteme-in-deutschland/100266984.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T14:47:19.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach Vorfällen in mehreren europäischen Ländern sind nun Filialen von Rewe und Edeka betroffen. Kühlanlagen wurden teils auf 50 Grad plus eingestellt. Die Gefahr wurde offenbar unterschätzt.",
-   "sprache": "de"
   }
  ],
  "quellen": {
