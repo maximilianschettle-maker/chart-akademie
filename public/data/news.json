@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-05T09:23:27.924Z",
+ "lastUpdated": "2026-11-05T10:23:29.691Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-gestorben-reaktionen-100.html",
+   "titel": "Reaktionen auf Tod Aiwangers: Söder spricht von \"absoluter Tragödie\"",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-gestorben-reaktionen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T10:21:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der unerwartete Tod von Hubert Aiwanger hat Bestürzung ausgelöst. Der Chef der Freien Wähler war leblos in einem Hotel aufgefunden worden. Bayerns Ministerpräsident Söder sprach von einer \"absoluten Tragödie\". Er würdigte Aiwanger als \"echt",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/05/us/politics/trump-iran-war-midterm-elections.html",
+   "titel": "Midterm Election Losses Complicate Trump’s Options on Iran War",
+   "link": "https://www.nytimes.com/2026/11/05/us/politics/trump-iran-war-midterm-elections.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-05T10:04:43.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The midterm results laid bare the deep unpopularity of the war of choice that President Trump started and is now struggling to end.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/hubert-aiwanger-er-war-einer-von-ihnen-immer-nah-bei-den-menschen/100267540.html",
+   "titel": "Nachruf: Hubert Aiwanger war einer von ihnen, immer nah bei den Menschen",
+   "link": "https://www.handelsblatt.com/politik/deutschland/hubert-aiwanger-er-war-einer-von-ihnen-immer-nah-bei-den-menschen/100267540.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T10:01:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Bayerns Wirtschaftsminister setzte sich für die „kleinen Leute“ ein. Der Chef der Freien Wähler machte der CSU Konkurrenz – und irritierte mit der Affäre um ein NS-Flugblatt.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
    "titel": "Marktbericht: DAX springt auf Rekordhoch",
@@ -17,14 +50,16 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-gestorben-reaktionen-100.html",
-   "titel": "Reaktionen auf Tod Aiwangers: Söder spricht von \"absoluter Tragödie\"",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-gestorben-reaktionen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T09:14:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der unerwartete Tod von Hubert Aiwanger mit 55 Jahren hat parteiübergreifend Bestürzung ausgelöst. Der Chef der Freien Wähler war leblos in einem Hotel aufgefunden worden. Bayerns Ministerpräsident Söder sprach von einer \"absoluten Tragödie",
+   "id": "https://www.handelsblatt.com/meinung/kolumnen/asia-techonomics-frieren-fuer-pekings-blauen-himmel/100267151.html",
+   "titel": "Asia Techonomics: Frieren für Pekings blauen Himmel",
+   "link": "https://www.handelsblatt.com/meinung/kolumnen/asia-techonomics-frieren-fuer-pekings-blauen-himmel/100267151.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T09:17:25.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Gestiegene Gaspreise könnten die Debatte über Chinas Energiepolitik verschärfen. Die Pekinger klagen über den späten Heizbeginn, manche Landbewohner geraten in finanzielle Not.",
    "sprache": "de"
   },
   {
@@ -49,7 +84,7 @@
     "oel",
     "aktien"
    ],
-   "text": "Der Sieg der ⁠Demokraten bei den US-Zwischenwahlen hat die Börsen weltweit ‌beflügelt, der Dax hat sein ​Rekordhoch von Ende August geknackt. ​Anleger ‌hoffen auf eine Entspannung im Nahen Osten, auch der Ölpreis gab nach.",
+   "text": "Der Sieg der US-⁠Demokraten beflügelt die Börsen weltweit, der Dax knackt deshalb seine bisheige Bestmarke von Ende August. ​Anleger ‌hoffen auf eine Entspannung im Nahen Osten – auch der Ölpreis gab kräftig nach.",
    "sprache": "de"
   },
   {
@@ -84,6 +119,17 @@
    "maerkte": [],
    "text": "Support for the major parties — led by two men called Chris — is cratering, thanks to dissatisfaction with the economy. Minor parties stand to benefit from a desire among voters for change.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/us-midterms-mitt-romney-kritisiert-schlechte-politik-der-republikaner/29669594.html",
+   "titel": "+++ US-Midterms +++: Mitt Romney kritisiert „schlechte Politik“ der Republikaner",
+   "link": "https://www.handelsblatt.com/politik/international/us-midterms-mitt-romney-kritisiert-schlechte-politik-der-republikaner/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T08:11:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Cruz: Republikaner haben Sorgen der Wähler nicht verstanden +++ DeSantis widerspricht Trump bei Deutung der Wahlniederlage +++ Trump räumt Auswirkungen von Iran-Krieg auf Midterms ein +++ Der Newsblog.",
+   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cx4g1qy6gq9mo",
@@ -996,60 +1042,16 @@
    "maerkte": [],
    "text": "Audi verkündete sein erstes US-Werk auf einer Trump-Kundgebung für den Republikaner Rick Jackson. Der verlor nun überraschend deutlich gegen Keisha Lance Bottoms – mit Konsequenzen für den Autobauer.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/03/world/middleeast/trump-iran-war-midterms-election.html",
-   "titel": "As Trump’s Midterm Deadline Looms, Gulf Countries Brace for Possible Renewal of Iran War",
-   "link": "https://www.nytimes.com/2026/11/03/world/middleeast/trump-iran-war-midterms-election.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T03:39:11.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The energy-rich Gulf Arab countries are engaged in a flurry of mediation efforts to avert war between the U.S. and Iran, as many fear that the fighting will be worse this time around.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/us-midterms-demokraten-gewinnen-texas-trump-will-wahlergebnisse-anerkennen/29669594.html",
-   "titel": "+++ US-Midterms +++: Deutliche Niederlage für Trump: Demokraten erobern Mehrheit im US-Repräsentantenhaus",
-   "link": "https://www.handelsblatt.com/politik/international/us-midterms-demokraten-gewinnen-texas-trump-will-wahlergebnisse-anerkennen/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T03:19:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Trump will Wahlergebnis anerkennen +++ Demokraten gewinnen laut CNN auch Senatssitz in Ohio +++ Demokrat James Talarico erobert Senatssitz in Texas +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/milliarden-hack-hacker-nutzten-fingiertes-vorstellungsgespraech-fuer-attacke-auf-binance/100267116.html",
-   "titel": "Milliarden-Hack: Hacker nutzten fingiertes Vorstellungsgespräch für Attacke auf Binance",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/milliarden-hack-hacker-nutzten-fingiertes-vorstellungsgespraech-fuer-attacke-auf-binance/100267116.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T23:18:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Erste Analyseergebnisse des Milliardenraubs bei Binance zeigen, dass der Hackerangriff bereits im Juni begann. Auch ein KI-Werkzeug habe dabei eine Rolle gespielt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/03/world/americas/us-venezuela-strike-eln-drug-trafficking.html",
-   "titel": "U.S. Assisted Venezuela in Deadly Drone Strike, Officials Say",
-   "link": "https://www.nytimes.com/2026/11/03/world/americas/us-venezuela-strike-eln-drug-trafficking.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-03T23:03:45.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The attack on a drug-trafficking group killed about two dozen people, a rights group said. It comes as the United States is militarizing the fight against “narcoterrorism” in Latin America.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 12,
   "DW": 6,
   "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 7,
-  "Handelsblatt": 5,
+  "FAZ Wirtschaft": 6,
+  "Handelsblatt": 6,
   "BBC World": 9,
-  "NYT World": 22,
+  "NYT World": 23,
   "EIA Today in Energy": 1
  }
 }
