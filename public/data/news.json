@@ -1,7 +1,44 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-05T05:23:31.552Z",
+ "lastUpdated": "2026-11-05T06:23:29.924Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
+   "titel": "Marktbericht: DAX nähert sich dem Rekordhoch",
+   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-05T06:20:58.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Nach den US-Zwischenwahlen ist die Euphorie an den Börsen groß: Der DAX robbt sich immer näher an sein Rekordhoch heran. Hilfreich ist auch der sinkende Ölpreis, der den Inflationsdruck senken könnte.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-die-staatsbeteiligung-an-der-telekom-war-nie-so-wichtig-wie-heute/100267192.html",
+   "titel": "Kommentar: Die Staatsbeteiligung an der Telekom war nie so wichtig wie heute",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-die-staatsbeteiligung-an-der-telekom-war-nie-so-wichtig-wie-heute/100267192.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T06:13:24.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Washington und Peking setzen Konzerne gezielt als Machtmittel ein. Deutschland hat mit der Telekom einen Konzern, auf den es Einfluss nehmen kann – noch. Eine Fusion könnte das ändern.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/us-midterms-cruz-republikaner-haben-sorgen-der-waehler-nicht-verstanden/29669594.html",
+   "titel": "+++ US-Midterms +++: Cruz – Republikaner haben Sorgen der Wähler nicht verstanden",
+   "link": "https://www.handelsblatt.com/politik/international/us-midterms-cruz-republikaner-haben-sorgen-der-waehler-nicht-verstanden/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T05:55:22.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "DeSantis widerspricht Trump bei Deutung der Wahlniederlage +++ Trump räumt Auswirkungen von Iran-Krieg auf Midterms ein +++ Trump stellt sich vorerst hinter Verteidigungsminister Hegseth +++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
    "titel": "Liveblog zu den Midterms: ++ Trump verteidigt Iran-Krieg ++",
@@ -47,6 +84,17 @@
    "sprache": "en"
   },
   {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-anleger-schichten-um-auch-in-asien-brechen-ki-werte-ein/100267457.html",
+   "titel": "Nikkei, Yen, Hang Seng: Anleger schichten um – Auch in Asien brechen KI-Werte ein",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-anleger-schichten-um-auch-in-asien-brechen-ki-werte-ein/100267457.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T04:38:20.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Investoren fürchten, dass der Wahlsieg der Demokraten den Ausbau von KI-Rechenzentren bremsen könnte. In Japan verlagern sie ihre Positionen daraufhin in andere Branchen.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-boersen-in-asien-nach-us-zwischenwahlen-uneinheitlich-technologiewerte-brechen-ein/100267457.html",
    "titel": "Nikkei, Yen, Hang Seng: Börsen in Asien nach US-Zwischenwahlen uneinheitlich - Technologiewerte brechen ein",
    "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-boersen-in-asien-nach-us-zwischenwahlen-uneinheitlich-technologiewerte-brechen-ein/100267457.html",
@@ -72,6 +120,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-bei-boehmermann-us-wahlausgang-kann-ukraine-helfen/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Selenskyj bei Böhmermann: US-Wahlausgang kann Ukraine helfen",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-bei-boehmermann-us-wahlausgang-kann-ukraine-helfen/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T04:01:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Selenskyj ehrt Melania Trump mit ukrainischem Orden +++ Russische Angriffe machen ukrainischer Energieversorgung zu schaffen +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-ehrt-melania-trump-mit-ukrainischem-orden/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Selenskyj ehrt Melania Trump mit ukrainischem Orden",
    "link": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-ehrt-melania-trump-mit-ukrainischem-orden/27982126.html",
@@ -80,17 +139,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Selenskyj hofft nach US-Zwischenwahlen auf mehr Unterstützung +++ Russische Angriffe machen ukrainischer Energieversorgung zu schaffen +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/us-midterms-cruz-republikaner-haben-sorgen-der-waehler-nicht-verstanden/29669594.html",
-   "titel": "+++ US-Midterms +++: Cruz – Republikaner haben Sorgen der Wähler nicht verstanden",
-   "link": "https://www.handelsblatt.com/politik/international/us-midterms-cruz-republikaner-haben-sorgen-der-waehler-nicht-verstanden/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T03:54:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "DeSantis widerspricht Trump bei Deutung der Wahlniederlage +++ Trump räumt Auswirkungen von Iran-Krieg auf Midterms ein +++ Schumer rechnet mit Wahl zum Mehrheitsführer im Senat +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -151,6 +199,17 @@
    "sprache": "en"
   },
   {
+   "id": "https://www.handelsblatt.com/politik/international/midterms-vance-sucht-nach-wahldebakel-distanz-zu-trump/100267404.html",
+   "titel": "Midterms: Vance sucht nach Wahldebakel Distanz zu Trump",
+   "link": "https://www.handelsblatt.com/politik/international/midterms-vance-sucht-nach-wahldebakel-distanz-zu-trump/100267404.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T22:41:43.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "US-Wähler haben bei der Parlamentswahl überraschend hart mit der Politik von Donald Trump abgerechnet. Vize JD Vance versucht nun, sich mit Kritik am Iran-Krieg aus dem Schatten des Präsidenten zu lösen.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-trump-midterm-elections.html",
    "titel": "For Israelis, U.S. Midterms Show How Far Their Star Has Fallen in America",
    "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-trump-midterm-elections.html",
@@ -160,6 +219,17 @@
    "maerkte": [],
    "text": "Israel once had bipartisan support in the United States, but a strong showing for Democrats, some of whom are deeply critical of the war in Gaza, has left the country with fewer friends in Congress.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/ki-coreweave-faellt-amazon-gewinnt-midterms-spalten-ki-konzerne/100267383.html",
+   "titel": "KI: CoreWeave fällt, Amazon gewinnt: Wie die Midterms den KI-Sektor spalten",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/ki-coreweave-faellt-amazon-gewinnt-midterms-spalten-ki-konzerne/100267383.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-04T21:41:09.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach dem demokratischen Wahlsieg droht eine Regulierungswelle für Rechenzentren. Doch während Neocloud-Aktien abstürzen, legen die von Tech-Konzernen kräftig zu. Warum?",
+   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/midterms-vance-irankrieg-100.html",
@@ -963,72 +1033,6 @@
    "maerkte": [],
    "text": "Ein Sieg der Demokraten bei den US-Zwischenwahlen könnte enorme Folgen für die Sicherheitspolitik Israels haben. Doch auch aus einem anderen Grund schauen die Menschen im Nahen Osten auf die Tage nach den Midterms. Von Tim Aßmann.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/midterms-wird-el-sayed-der-erste-muslimische-senator-der-us-geschichte/100267021.html",
-   "titel": "Midterms: Entscheidende Wahl in Michigan: Wird El-Sayed der erste muslimische Senator der US-Geschichte?",
-   "link": "https://www.handelsblatt.com/politik/international/midterms-wird-el-sayed-der-erste-muslimische-senator-der-us-geschichte/100267021.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T18:32:52.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Abdul El-Sayed ist charismatisch – und Muslim. Von Trump wird der Kandidat der Demokraten diffamiert. Doch auch in der eigenen Partei ist er umstritten. Kurz vor der Wahl kommt es zum Eklat.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/merz-selenskyj-ukrainehilfe-100.html",
-   "titel": "Selenskyj, Merz und der Kampf gegen die Zweifel",
-   "link": "https://www.tagesschau.de/ausland/europa/merz-selenskyj-ukrainehilfe-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T18:27:43.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Auch vor dem fünften Winter seit Russlands Überfall ist ein Ende des Krieges in der Ukraine nicht in Sicht. Kanzler Merz betont, dass er fest an der Seite des Landes steht. Doch nicht nur er merkt, dass immer mehr Überzeugungsarbeit nötig i",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-krieg-russischer-angriff-auf-schulhaus-toetet-dutzende-zivilisten/100267066.html",
-   "titel": "Ukraine-Krieg: Auf die Waffenruhe folgt ein Massaker: Russischer Angriff auf Schulhaus tötet Dutzende Zivilisten",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-krieg-russischer-angriff-auf-schulhaus-toetet-dutzende-zivilisten/100267066.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T17:56:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russland attackiert die Ukraine weiterhin ohne Rücksicht auf zivile Opfer. Exemplarisch dafür steht ein besonders blutiger Angriff in der Provinz Saporischschja.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/03/world/middleeast/iran-chemical-weapons-israel-trump.html",
-   "titel": "Israeli Claims of Iranian Chemical Weapons Divide U.S. Officials",
-   "link": "https://www.nytimes.com/2026/11/03/world/middleeast/iran-chemical-weapons-israel-trump.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-03T17:48:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Some administration officials suggested Prime Minister Benjamin Netanyahu is trying to draw President Trump back into military action.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/spanien-sicherheitsmassnahmen-100.html",
-   "titel": "Spanien beschließt nach Zugunglück neue Sicherheitsmaßnahmen im Bahnverkehr",
-   "link": "https://www.tagesschau.de/ausland/spanien-sicherheitsmassnahmen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-03T17:32:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "69 Menschen starben vor knapp einer Woche bei der Kollision zweier Hochgeschwindigkeitszüge - es war bereits das zweite schwere Zugunglück in Spanien in diesem Jahr. Nun sollen neue Maßnahmen die Sicherheit verbessern.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/midterms-die-aktuelle-wahl-ist-eine-generalprobe-fuer-2028/100265614.html",
-   "titel": "Midterms: Beleidigungen, üble Nachrede, KI‑Werbung: „Die aktuelle Wahl ist eine Generalprobe für 2028“",
-   "link": "https://www.handelsblatt.com/politik/international/midterms-die-aktuelle-wahl-ist-eine-generalprobe-fuer-2028/100265614.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-03T17:09:52.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Experten registrieren eine ungewohnte Härte im zurückliegenden US‑Wahlkampf. Die Ergebnisse der Midterms werden auch das Rennen um die Trump-Nachfolge entscheiden.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1036,7 +1040,7 @@
   "DW": 8,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 9,
-  "Handelsblatt": 8,
+  "Handelsblatt": 7,
   "BBC World": 9,
   "NYT World": 21,
   "EIA Today in Energy": 1
