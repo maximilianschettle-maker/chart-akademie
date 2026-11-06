@@ -4,10 +4,10 @@ import { EINGABE, KNOPF, KNOPF_AKZENT } from '../aktien/components/ui'
 import { useAnsichtStore } from '../analyse/ansichtStore'
 import { crvBerechnen } from '../analyse/crv'
 import { fmtKurs } from '../aktien/engine/format'
-import type { Richtung } from '../types'
-import { GEFUEHLE, ZEITRAHMEN, type JournalEintrag, type Zeitrahmen } from './types'
+import type { Candle, Richtung } from '../types'
+import { GEFUEHLE, ZEITRAHMEN, type AusstiegGrund, type JournalEintrag, type Zeitrahmen } from './types'
 import { chip } from './ui'
-import { geplantesCrv, marktListe, ortszeitAusUnix, pruefeEintrag, setupListe, SETUP_SONSTIGES, unixAusOrtszeit, type EintragEntwurf } from './engine'
+import { geplantesCrv, marktListe, ortszeitAusUnix, pruefeEintrag, setupListe, SETUP_SONSTIGES, trefferZeit, unixAusOrtszeit, type EintragEntwurf } from './engine'
 
 // Erfassung eines echten Trades in zwei Stufen: oben das, was beim Traden in 20 Sekunden geht
 // (Markt, Richtung, Preise, Setup, Zeitrahmen, Zeit, Risiko); darunter einklappbar der Rest.
@@ -18,8 +18,22 @@ interface Props {
   start?: Partial<EintragEntwurf>
   /** Bearbeiten statt Anlegen */
   vorhanden?: JournalEintrag
+  /** Kerzen des Snapshots – für „Zeit aus den Kerzen“ beim Ausstieg */
+  kerzen?: Candle[]
   onSpeichern: (entwurf: EintragEntwurf) => void
   onAbbrechen?: () => void
+}
+
+const GRUENDE: { id: AusstiegGrund; text: string }[] = [
+  { id: 'ziel', text: 'Ziel erreicht' },
+  { id: 'stop', text: 'Stop' },
+  { id: 'manuell', text: 'Manuell' },
+]
+
+function zahlOderLeer(text: string): number | undefined {
+  if (!text.trim()) return undefined
+  const n = Number(text.replace(/\./g, '').replace(',', '.'))
+  return Number.isFinite(n) ? n : undefined
 }
 
 const ANDERER_MARKT = '__anderer'
@@ -29,7 +43,7 @@ function zahl(text: string): number {
   return Number.isFinite(n) ? n : 0
 }
 
-export function EintragForm({ start, vorhanden, onSpeichern, onAbbrechen }: Props) {
+export function EintragForm({ start, vorhanden, kerzen, onSpeichern, onAbbrechen }: Props) {
   const maerkte = useMemo(() => marktListe(), [])
   const setups = useMemo(() => setupListe(), [])
   const konto = useAnsichtStore((s) => s.konto)
@@ -56,6 +70,16 @@ export function EintragForm({ start, vorhanden, onSpeichern, onAbbrechen }: Prop
   const [gefuehl, setGefuehl] = useState(basis.gefuehlVorher ?? '')
   const [begruendung, setBegruendung] = useState(basis.begruendung ?? '')
   const [fehler, setFehler] = useState<string[]>([])
+  // Ausstieg – nur beim Bearbeiten eines geschlossenen Trades
+  const geschlossen = vorhanden?.status === 'geschlossen'
+  const [exitPreis, setExitPreis] = useState(vorhanden?.exitPreis ? String(vorhanden.exitPreis) : '')
+  const [exitZeit, setExitZeit] = useState(() => (vorhanden?.exitTime ? ortszeitAusUnix(vorhanden.exitTime) : ''))
+  const [exitGrund, setExitGrund] = useState<AusstiegGrund>(vorhanden?.exitGrund ?? 'manuell')
+  const [ergebnisBetrag, setErgebnisBetrag] = useState(vorhanden?.ergebnisBetrag !== undefined ? String(vorhanden.ergebnisBetrag) : '')
+  const [gebuehren, setGebuehren] = useState(vorhanden?.gebuehren !== undefined ? String(vorhanden.gebuehren) : '')
+  const [gefuehlNachher, setGefuehlNachher] = useState(vorhanden?.gefuehlNachher ?? '')
+  const [lehre, setLehre] = useState(vorhanden?.lehre ?? '')
+  const [zeitHinweis, setZeitHinweis] = useState<string | null>(null)
 
   const markt = marktId === ANDERER_MARKT ? null : maerkte.find((m) => m.id === marktId)
   const entwurf = (): EintragEntwurf => ({
@@ -76,20 +100,44 @@ export function EintragForm({ start, vorhanden, onSpeichern, onAbbrechen }: Prop
     imPlan,
     gefuehlVorher: gefuehl || undefined,
     begruendung: begruendung.trim() || undefined,
-    // beim Bearbeiten bleiben die Abschluss-Felder erhalten
+    // beim Bearbeiten eines geschlossenen Trades sind die Ausstiegsfelder editierbar
     ...(vorhanden
-      ? {
-          gefuehlNachher: vorhanden.gefuehlNachher,
-          lehre: vorhanden.lehre,
-          exitTime: vorhanden.exitTime,
-          exitPreis: vorhanden.exitPreis,
-          exitGrund: vorhanden.exitGrund,
-          ergebnisBetrag: vorhanden.ergebnisBetrag,
-          gebuehren: vorhanden.gebuehren,
-          pruefung: vorhanden.pruefung,
-        }
+      ? geschlossen
+        ? {
+            exitPreis: zahlOderLeer(exitPreis),
+            exitTime: unixAusOrtszeit(exitZeit) ?? vorhanden.exitTime,
+            exitGrund,
+            ergebnisBetrag: zahlOderLeer(ergebnisBetrag),
+            gebuehren: zahlOderLeer(gebuehren),
+            gefuehlNachher: gefuehlNachher || undefined,
+            lehre: lehre.trim() || undefined,
+            pruefung: vorhanden.pruefung,
+          }
+        : { pruefung: vorhanden.pruefung }
       : {}),
   })
+
+  // Stop/Ziel als Grund: Preis übernehmen und die Zeit aus den Kerzen holen (erste Berührung nach dem Einstieg)
+  function exitGrundSetzen(g: AusstiegGrund) {
+    setExitGrund(g)
+    if (g === 'manuell') return
+    const preis = g === 'stop' ? zahl(stop) : zahl(ziel)
+    if (!(preis > 0)) return
+    setExitPreis(String(preis))
+    zeitAusKerzen(g, preis)
+  }
+
+  function zeitAusKerzen(g: AusstiegGrund, preis = g === 'stop' ? zahl(stop) : zahl(ziel)) {
+    if (g === 'manuell' || !(preis > 0)) return
+    const startZeit = unixAusOrtszeit(zeit) ?? 0
+    const t = kerzen ? trefferZeit(kerzen, startZeit, richtung, preis, g) : null
+    if (t !== null) {
+      setExitZeit(ortszeitAusUnix(t))
+      setZeitHinweis(`aus den Kerzen: erste Berührung von ${g === 'stop' ? 'Stop' : 'Ziel'}`)
+    } else {
+      setZeitHinweis(kerzen ? 'Kerzen berühren den Preis nicht – Zeit bitte prüfen' : 'keine Kerzen gespeichert – Zeit bitte prüfen')
+    }
+  }
 
   const vorschau = entwurf()
   const crv = geplantesCrv(vorschau)
@@ -98,6 +146,11 @@ export function EintragForm({ start, vorhanden, onSpeichern, onAbbrechen }: Prop
   function speichern() {
     const e = entwurf()
     const f = pruefeEintrag(e)
+    if (geschlossen) {
+      if (!(e.exitPreis && e.exitPreis > 0)) f.push('Ausstiegspreis fehlt.')
+      if (!unixAusOrtszeit(exitZeit)) f.push('Ausstiegszeit fehlt.')
+      else if (e.exitTime !== undefined && e.exitTime < e.entryTime) f.push('Der Ausstieg liegt vor dem Einstieg.')
+    }
     setFehler(f)
     if (f.length === 0) onSpeichern(e)
   }
@@ -256,6 +309,66 @@ export function EintragForm({ start, vorhanden, onSpeichern, onAbbrechen }: Prop
           <label className={`${feld} block`}>
             Begründung (warum dieser Trade, warum jetzt)
             <textarea className={`${eingabe} min-h-20`} value={begruendung} onChange={(ev) => setBegruendung(ev.target.value)} />
+          </label>
+        </div>
+      )}
+
+      {geschlossen && (
+        <div className="space-y-3 rounded-xl border border-rand bg-nacht/40 p-3">
+          <div className="text-sm font-semibold text-white">Ausstieg</div>
+          <div className="flex flex-wrap gap-1.5">
+            {GRUENDE.map((g) => (
+              <button key={g.id} type="button" className={chip(exitGrund === g.id)} onClick={() => exitGrundSetzen(g.id)}>
+                {g.text}
+              </button>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+            <label className={feld}>
+              Ausstieg
+              <input className={eingabe} inputMode="decimal" value={exitPreis} onChange={(ev) => setExitPreis(ev.target.value)} aria-label="Ausstieg" />
+            </label>
+            <label className={feld}>
+              Ausstieg am
+              <input
+                className={eingabe}
+                type="datetime-local"
+                value={exitZeit}
+                onChange={(ev) => {
+                  setExitZeit(ev.target.value)
+                  setZeitHinweis(null)
+                }}
+                aria-label="Ausstieg am"
+              />
+              {zeitHinweis && <span className={`mt-0.5 block text-[10px] ${zeitHinweis.startsWith('aus den Kerzen') ? 'text-long' : 'text-akzent'}`}>{zeitHinweis}</span>}
+              {exitGrund !== 'manuell' && (
+                <button type="button" onClick={() => zeitAusKerzen(exitGrund)} className="mt-1 text-[11px] text-akzent hover:underline">
+                  Zeit aus den Kerzen
+                </button>
+              )}
+            </label>
+            <label className={feld}>
+              Ergebnis laut Broker ({vorschau.waehrung})
+              <input className={eingabe} inputMode="decimal" value={ergebnisBetrag} onChange={(ev) => setErgebnisBetrag(ev.target.value)} aria-label="Ergebnis" />
+            </label>
+            <label className={feld}>
+              Gebühren / Overnight
+              <input className={eingabe} inputMode="decimal" value={gebuehren} onChange={(ev) => setGebuehren(ev.target.value)} aria-label="Gebühren" />
+            </label>
+          </div>
+          <div>
+            <div className={feld}>Gefühl danach</div>
+            <div className="mt-1 flex flex-wrap gap-1.5">
+              {GEFUEHLE.map((g) => (
+                <button key={g} type="button" className={chip(gefuehlNachher === g)} onClick={() => setGefuehlNachher(gefuehlNachher === g ? '' : g)}>
+                  {g}
+                </button>
+              ))}
+            </div>
+          </div>
+          <label className={`${feld} block`}>
+            Was lerne ich daraus?
+            <textarea className={`${eingabe} min-h-20`} value={lehre} onChange={(ev) => setLehre(ev.target.value)} />
           </label>
         </div>
       )}

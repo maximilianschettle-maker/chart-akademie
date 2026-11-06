@@ -43,7 +43,7 @@ function Fakt({ titel, wert, farbe }: { titel: string; wert: string; farbe?: str
 function Abschluss({ e, kerzen, onFertig }: { e: JournalEintrag; kerzen?: Candle[]; onFertig: (teil: Partial<JournalEintrag>) => void }) {
   const [exitPreis, setExitPreis] = useState('')
   const [exitZeit, setExitZeit] = useState(() => ortszeitAusUnix(Math.floor(Date.now() / 1000)))
-  const [zeitQuelle, setZeitQuelle] = useState<'jetzt' | 'kerzen' | 'offen'>('jetzt')
+  const [zeitQuelle, setZeitQuelle] = useState<'jetzt' | 'kerzen' | 'offen' | 'keine'>('jetzt')
   const [grund, setGrund] = useState<AusstiegGrund>('manuell')
   const [betrag, setBetrag] = useState('')
   const [gebuehren, setGebuehren] = useState('')
@@ -67,7 +67,7 @@ function Abschluss({ e, kerzen, onFertig }: { e: JournalEintrag; kerzen?: Candle
       setExitZeit(ortszeitAusUnix(zeit))
       setZeitQuelle('kerzen')
     } else {
-      setZeitQuelle(kerzen ? 'offen' : 'jetzt')
+      setZeitQuelle(kerzen ? 'offen' : 'keine')
     }
   }
 
@@ -121,6 +121,7 @@ function Abschluss({ e, kerzen, onFertig }: { e: JournalEintrag; kerzen?: Candle
           />
           {zeitQuelle === 'kerzen' && <span className="mt-0.5 block text-[10px] text-long">aus den Kerzen: erste Berührung von {grund === 'stop' ? 'Stop' : 'Ziel'}</span>}
           {zeitQuelle === 'offen' && <span className="mt-0.5 block text-[10px] text-akzent">Kerzen berühren den Preis noch nicht – Zeit bitte prüfen</span>}
+          {zeitQuelle === 'keine' && <span className="mt-0.5 block text-[10px] text-akzent">keine Kerzen gespeichert – Zeit bitte prüfen</span>}
         </label>
         <label className={feld}>
           Ergebnis laut Broker ({e.waehrung})
@@ -316,7 +317,7 @@ export function JournalEintragPage() {
       {bearbeiten ? (
         <section className="mt-4 rounded-xl border border-rand bg-flaeche p-4">
           <h2 className="mb-3 text-sm font-semibold text-white">Bearbeiten</h2>
-          <EintragForm vorhanden={e} onSpeichern={speichern} onAbbrechen={() => setBearbeiten(false)} />
+          <EintragForm vorhanden={e} kerzen={kerzen} onSpeichern={speichern} onAbbrechen={() => setBearbeiten(false)} />
         </section>
       ) : (
         <section className="mt-4 rounded-xl border border-rand bg-flaeche p-4">
