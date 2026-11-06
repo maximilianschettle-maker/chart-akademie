@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T05:23:27.522Z",
+ "lastUpdated": "2026-11-06T06:23:30.836Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-us-richterin-stoppt-trumps-triumphbogen-vorerst/29669594.html",
+   "titel": "+++ US-Midterms +++: US-Richterin stoppt Trumps Triumphbogen vorerst",
+   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-us-richterin-stoppt-trumps-triumphbogen-vorerst/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-06T06:20:49.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nationalgarde soll in Washington patrouillieren. +++ Hegseth verteidigt Iran-Krieg und kämpft um sein Amt +++ Rubio zu Rücktrittsgerücht: Ich liebe meinen Job +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/crvg9yyz5437o",
+   "titel": "Did a data centre revolt affect the US mid-term election results?",
+   "link": "https://www.bbc.co.uk/news/articles/crvg9yyz5437o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-06T06:01:13.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "BBC Verify examines whether US voters were influenced by the data centre boom - and the impact anti-AI sentiment could have on the industry.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/koalition-verschiebt-staatliches-tierhaltungslogo-erneut-a-c8dfe463-defa-4c73-80e8-60e1e76ff0db",
+   "titel": "Koalition verschiebt staatliches Tierhaltungslogo erneut",
+   "link": "https://www.spiegel.de/wirtschaft/koalition-verschiebt-staatliches-tierhaltungslogo-erneut-a-c8dfe463-defa-4c73-80e8-60e1e76ff0db#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-06T05:58:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Seit Jahren ringt die Politik um ein amtliches Fleisch-Siegel, das über die Haltungsbedingungen in Ställen informiert. Nun kippt der nächste Termin.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/06/world/europe/france-shooting-trappes.html",
    "titel": "In French City Hit by Terrorist Attack, Residents Blame Far-Right Rhetoric",
@@ -37,13 +70,13 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-nach-treffen-mit-dmitrijew-trump-stellt-grosses-abkommen-in-aussicht/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Nach Treffen mit Dmitrijew – Trump stellt „großes Abkommen“ in Aussicht",
+   "titel": "+++ Ukraine-Krieg +++: Nach Treffen mit Dmitrijew: Trump stellt „großes Abkommen“ in Aussicht",
    "link": "https://www.handelsblatt.com/politik/international/ukraine-nach-treffen-mit-dmitrijew-trump-stellt-grosses-abkommen-in-aussicht/27982126.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-06T03:04:00.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "EU zahlt Ukraine weitere Milliardensumme aus +++ Ukrainischer Callcenterbetrug: Verdächtige in Staatsorganen +++ Putin stellt Tabakunternehmen JTI unter Zwangsverwaltung +++ Der Newsblog.",
+   "text": "Ukraine: Russland bombardiert Kraftwerk bei Sumy und Ziele in Saporischschja +++ Selenskyj kommentiert neue politische Machtverhältnisse in USA +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -570,7 +603,7 @@
     "oel",
     "aktien"
    ],
-   "text": "Der Sieg der US-⁠Demokraten beflügelt die Börsen weltweit, der Dax knackt deshalb seine bisheige Bestmarke von Ende August. ​Anleger ‌hoffen auf eine Entspannung im Nahen Osten – auch der Ölpreis gab kräftig nach.",
+   "text": "Der Sieg der US-⁠Demokraten beflügelt die Börsen weltweit, der Dax knackt deshalb seine bisherige Bestmarke von Ende August. ​Anleger ‌hoffen auf eine Entspannung im Nahen Osten – auch der Ölpreis gab kräftig nach.",
    "sprache": "de"
   },
   {
@@ -1010,50 +1043,15 @@
    "maerkte": [],
    "text": "\"We endorse this message,\" Mohammed Bagher Ghalibaf says, as Donald Trump acknowledges the conflict's role in the Republican Party's defeat.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/koalition-bricht-rentenversprechen-beitragszahler-zahlen-die-zeche-201651116.html",
-   "titel": "Schutz der Zahler: Die Koalition bricht ein zentrales Renten-Versprechen",
-   "link": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/koalition-bricht-rentenversprechen-beitragszahler-zahlen-die-zeche-201651116.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-04T16:39:30.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Wer kommt für die Kosten von „Haltelinie“ und höheren Mütterrenten auf? Nur der Bundeshaushalt, nicht die Beitragszahler – so hatte es die Regierung zugesagt. Nun schauen die Jüngeren in die Röhre.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
-   "titel": "More Iranians Call for Nuclear Weapons After War With U.S.",
-   "link": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T16:26:33.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Some Iranian clerics and officials argue the country must rebuild deterrence by dropping its longstanding pledge not to build a nuclear bomb.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6z98z5z91ppo",
-   "titel": "Israel's president begins consultations with parties after election deadlock",
-   "link": "https://www.bbc.co.uk/news/articles/c6z98z5z91ppo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T16:18:21.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Herzog warns politicians that \"not every commitment and promise can be fulfilled\" if they want to avoid another election.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 12,
   "DW": 4,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 7,
-  "Handelsblatt": 4,
-  "BBC World": 6,
+  "Handelsblatt": 3,
+  "BBC World": 7,
   "NYT World": 20,
   "EIA Today in Energy": 1
  }
