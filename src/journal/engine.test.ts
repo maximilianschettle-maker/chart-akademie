@@ -16,6 +16,7 @@ import {
   setupName,
   tageslimitHinweis,
   tagVon,
+  trefferZeit,
   verlusteJeTag,
   type EintragEntwurf,
 } from './engine'
@@ -161,5 +162,16 @@ describe('Journal: CSV und Snapshot', () => {
     expect(aus![10].time).toBe(1000 + 300 * 60)
     expect(kerzenUmEinstieg(kerzen, 500)).toBeNull()
     expect(kerzenUmEinstieg(kerzen, 1_000_000, 10, 5)!.length).toBe(11)
+  })
+
+  it('Trefferzeit: erste Kerze nach dem Einstieg, die Stop oder Ziel berührt', () => {
+    const k = (time: number, low: number, high: number) => ({ time, open: low, high, low, close: high, volume: 0 })
+    const kerzen = [k(100, 95, 105), k(200, 96, 104), k(300, 89, 103), k(400, 90, 112), k(500, 91, 99)]
+    expect(trefferZeit(kerzen, 150, 'long', 90, 'stop')).toBe(300)
+    expect(trefferZeit(kerzen, 150, 'long', 110, 'ziel')).toBe(400)
+    expect(trefferZeit(kerzen, 150, 'short', 110, 'stop')).toBe(400)
+    expect(trefferZeit(kerzen, 150, 'short', 90, 'ziel')).toBe(300)
+    expect(trefferZeit(kerzen, 450, 'long', 90, 'stop')).toBeNull()
+    expect(trefferZeit(kerzen, 150, 'long', 0, 'stop')).toBeNull()
   })
 })

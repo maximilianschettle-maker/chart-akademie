@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ArrowLeft, Pencil, RefreshCw, Trash2 } from 'lucide-react'
 import { useJournalStore } from '../store'
 import { useAnsichtStore } from '../../analyse/ansichtStore'
-import { ergebnis, geplantesCrv, ortszeitAusUnix, rMultiple, setupName, unixAusOrtszeit, zeitKurz, type EintragEntwurf } from '../engine'
+import { ergebnis, geplantesCrv, ortszeitAusUnix, rMultiple, setupName, trefferZeit, unixAusOrtszeit, zeitKurz, type EintragEntwurf } from '../engine'
 import { GEFUEHLE, type AusstiegGrund, type JournalEintrag, type Snapshot } from '../types'
 import { snapshotEntfernen, snapshotLaden, snapshotLesen, type SnapshotErgebnis } from '../snapshots'
 import { EintragForm } from '../EintragForm'
@@ -40,9 +40,10 @@ function Fakt({ titel, wert, farbe }: { titel: string; wert: string; farbe?: str
   )
 }
 
-function Abschluss({ e, onFertig }: { e: JournalEintrag; onFertig: (teil: Partial<JournalEintrag>) => void }) {
+function Abschluss({ e, kerzen, onFertig }: { e: JournalEintrag; kerzen?: Candle[]; onFertig: (teil: Partial<JournalEintrag>) => void }) {
   const [exitPreis, setExitPreis] = useState('')
   const [exitZeit, setExitZeit] = useState(() => ortszeitAusUnix(Math.floor(Date.now() / 1000)))
+  const [zeitQuelle, setZeitQuelle] = useState<'jetzt' | 'kerzen' | 'offen'>('jetzt')
   const [grund, setGrund] = useState<AusstiegGrund>('manuell')
   const [betrag, setBetrag] = useState('')
   const [gebuehren, setGebuehren] = useState('')
@@ -53,11 +54,21 @@ function Abschluss({ e, onFertig }: { e: JournalEintrag; onFertig: (teil: Partia
   const preis = zahl(exitPreis)
   const r = preis ? rMultiple({ ...e, exitPreis: preis }) : null
 
-  // Schnellwahl: Stop oder Ziel getroffen → Preis übernehmen
+  // Schnellwahl: Stop oder Ziel getroffen → Preis übernehmen und die Zeit aus den Kerzen holen
+  // (die Kerze, die den Preis zuerst berührt hat – nicht „jetzt“, sonst sitzt der Marker am Chartende)
   function grundSetzen(g: AusstiegGrund) {
     setGrund(g)
-    if (g === 'stop') setExitPreis(String(e.stopLoss))
-    if (g === 'ziel' && e.takeProfit > 0) setExitPreis(String(e.takeProfit))
+    if (g === 'manuell') return
+    const preis = g === 'stop' ? e.stopLoss : e.takeProfit
+    if (!(preis > 0)) return
+    setExitPreis(String(preis))
+    const zeit = kerzen ? trefferZeit(kerzen, e.entryTime, e.richtung, preis, g) : null
+    if (zeit !== null) {
+      setExitZeit(ortszeitAusUnix(zeit))
+      setZeitQuelle('kerzen')
+    } else {
+      setZeitQuelle(kerzen ? 'offen' : 'jetzt')
+    }
   }
 
   function fertig() {
@@ -98,7 +109,18 @@ function Abschluss({ e, onFertig }: { e: JournalEintrag; onFertig: (teil: Partia
         </label>
         <label className={feld}>
           Ausstieg am
-          <input className={eingabe} type="datetime-local" value={exitZeit} onChange={(ev) => setExitZeit(ev.target.value)} aria-label="Ausstieg am" />
+          <input
+            className={eingabe}
+            type="datetime-local"
+            value={exitZeit}
+            onChange={(ev) => {
+              setExitZeit(ev.target.value)
+              setZeitQuelle('jetzt')
+            }}
+            aria-label="Ausstieg am"
+          />
+          {zeitQuelle === 'kerzen' && <span className="mt-0.5 block text-[10px] text-long">aus den Kerzen: erste Berührung von {grund === 'stop' ? 'Stop' : 'Ziel'}</span>}
+          {zeitQuelle === 'offen' && <span className="mt-0.5 block text-[10px] text-akzent">Kerzen berühren den Preis noch nicht – Zeit bitte prüfen</span>}
         </label>
         <label className={feld}>
           Ergebnis laut Broker ({e.waehrung})
@@ -206,6 +228,7 @@ export function JournalEintragPage() {
       { id: 'stop', preis: e.stopLoss, farbe: '#EF4444', titel: 'Stop', imBlick: true },
     ]
     if (e.takeProfit > 0) l.push({ id: 'ziel', preis: e.takeProfit, farbe: '#22C55E', titel: 'Ziel', imBlick: true })
+    if (e.status === 'geschlossen' && e.exitPreis) l.push({ id: 'exit', preis: e.exitPreis, farbe: '#8B95A5', titel: 'Ausstieg', stil: 'gepunktet', imBlick: true })
     return l
   }, [e])
   const marker = useMemo((): ChartMarker[] => {
@@ -356,7 +379,7 @@ export function JournalEintragPage() {
 
       {e.status === 'offen' && !bearbeiten && (
         <div className="mt-4">
-          <Abschluss e={e} onFertig={abschliessen} />
+          <Abschluss e={e} kerzen={kerzen} onFertig={abschliessen} />
         </div>
       )}
 

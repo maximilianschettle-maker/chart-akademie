@@ -282,6 +282,20 @@ export function kerzenUmEinstieg(kerzen: Candle[], entryTime: number, vor = SNAP
   return kerzen.slice(Math.max(0, index - vor), Math.min(kerzen.length, index + nach + 1))
 }
 
+/**
+ * Erste Kerze nach dem Einstieg, die den Stop bzw. das Ziel berührt – die Zeit, zu der der Broker
+ * die Position tatsächlich geschlossen hat (nicht „jetzt“). null, wenn keine Kerze den Preis erreicht.
+ */
+export function trefferZeit(kerzen: Candle[], entryTime: number, richtung: 'long' | 'short', preis: number, art: 'stop' | 'ziel'): number | null {
+  if (!(preis > 0)) return null
+  const unten = (richtung === 'long') === (art === 'stop') // Long-Stop und Short-Ziel liegen unter dem Markt
+  for (const k of kerzen) {
+    if (k.time < entryTime) continue
+    if (unten ? k.low <= preis : k.high >= preis) return k.time
+  }
+  return null
+}
+
 /** Datum und Uhrzeit kurz, Berliner Zeit */
 export function zeitKurz(unixSek: number): string {
   return new Date(unixSek * 1000).toLocaleString('de-DE', { timeZone: 'Europe/Berlin', day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit' })
