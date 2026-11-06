@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T14:23:31.603Z",
+ "lastUpdated": "2026-11-06T15:23:31.862Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
+   "titel": "What to Know About the Bomb Threats Disrupting Flights in Europe",
+   "link": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T15:08:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "More threats were reported Friday after dozens of planes were targeted earlier this week. Officials have not reported finding any explosives, but the hoaxes have added to anxiety over hybrid attacks on the continent.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/middleeast/saudi-arabia-bombing-yemen-civilians-houthi-war.html",
+   "titel": "Saudi-Led Forces Bombed Yemeni Home, Killing Nine Family Members, Relatives Say",
+   "link": "https://www.nytimes.com/2026/11/06/world/middleeast/saudi-arabia-bombing-yemen-civilians-houthi-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T14:37:55.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The attack in October cast a spotlight on civilian casualties in the Saudi-led and U.S.-assisted bombing campaign against the Houthis.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.eia.gov/todayinenergy/detail.php",
    "titel": "U.S. crude oil imports from Venezuela in July were highest since 2017",
@@ -16,15 +38,15 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
-   "titel": "What to Know About the Bomb Threats Disrupting Flights in Europe",
-   "link": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-06T13:10:03.000Z",
+   "id": "https://www.tagesschau.de/wissen/klima/copernicus-klimakrise-1komma5-grad-100.html",
+   "titel": "EU-Dienst Copernicus: 1,5-Grad-Marke wird 2026 wohl überschritten",
+   "link": "https://www.tagesschau.de/wissen/klima/copernicus-klimakrise-1komma5-grad-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-06T13:02:07.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "More threats were reported Friday after dozens of planes were targeted earlier this week. Officials have not reported finding any explosives, but the hoaxes have added to anxiety over hybrid attacks on the continent.",
-   "sprache": "en"
+   "text": "Kurz vor der Klimakonferenz COP31 in Antalya gibt es ernüchternde Zahlen: Das 1,5-Grad-Ziel wird 2026 laut EU-Dienst Copernicus höchstwahrscheinlich überschritten. Der Oktober war zudem der wärmste seit Beginn der Aufzeichnungen.",
+   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/ausland/europa/copernicus-klimakrise-1komma5-grad-100.html",
@@ -104,17 +126,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/06/world/middleeast/saudi-arabia-bombing-yemen-civilians-houthi-war.html",
-   "titel": "Saudi-Led Forces Bombed Yemeni Home, Killing Nine Family Members, Relatives Say",
-   "link": "https://www.nytimes.com/2026/11/06/world/middleeast/saudi-arabia-bombing-yemen-civilians-houthi-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-06T10:54:43.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The attack in October cast a spotlight on civilian casualties in the Saudi-led and U.S.-assisted bombing campaign against the Houthis.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.dw.com/de/paraguay-pr%C3%A4sident-droht-amtsenthebung-nach-bankenskandal/a-79873533",
    "titel": "Paraguay: Präsident droht Amtsenthebung nach Bankenskandal",
    "link": "https://www.dw.com/de/paraguay-präsident-droht-amtsenthebung-nach-bankenskandal/a-79873533?maca=de-rss-de-all-1119-xml-mrss",
@@ -192,6 +203,19 @@
     "aktien"
    ],
    "text": "Ein weltweiter Abverkauf von Chip- und Techaktien schickt wichtige Aktienindizes auf Talfahrt. In Seoul wurde der Handel zeitweise ausgesetzt. In den USA war es der schlimmste Einbruch seit 2020. Von Constantin Röse.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-crash-an-der-wall-street-war-kein-unfall/100267813.html",
+   "titel": "Kommentar: Der Crash an der Wall Street war kein Unfall",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-crash-an-der-wall-street-war-kein-unfall/100267813.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-06T09:02:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Binnen 24 Stunden erklärte die Börse zwei gegensätzliche Kursbewegungen mit derselben Wahl. Die eigentliche Ursache liegt im dritten Quartal und die Anleger ahnen, wie es weitergeht.",
    "sprache": "de"
   },
   {
@@ -1011,36 +1035,14 @@
    "maerkte": [],
    "text": "US-Präsident Trump hat trotz des Wahldebakels betont, am Kurs im Iran-Krieg festhalten zu wollen. Außenminister Wadephul erwartet weiterhin eine konstruktive Zusammenarbeit mit der US-Regierung.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/04/world/us-midterms-trump-israel.html",
-   "titel": "A Trump Reckoning",
-   "link": "https://www.nytimes.com/2026/11/04/world/us-midterms-trump-israel.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-05T05:14:54.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The results from the U.S. midterm elections could be the beginning of the end of the Trump era.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/05/world/europe/voter-turnout-democracy-autocrats-elections.html",
-   "titel": "Voters Are Turning Out in Droves to Cut Autocrats Down to Size",
-   "link": "https://www.nytimes.com/2026/11/05/world/europe/voter-turnout-democracy-autocrats-elections.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-05T05:01:06.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In country after country stricken by democratic decay, overwhelming turnout in elections is making a difference.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
+  "tagesschau": 11,
   "DW": 7,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 10,
-  "Handelsblatt": 4,
+  "Handelsblatt": 3,
   "BBC World": 9,
   "NYT World": 19,
   "EIA Today in Energy": 1
