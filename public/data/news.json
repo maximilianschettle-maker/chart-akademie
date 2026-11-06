@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T01:23:33.602Z",
+ "lastUpdated": "2026-11-06T02:23:30.450Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqg7xxg4jdv5o",
+   "titel": "White House denies Hegseth and Rubio to leave jobs after Republican election losses",
+   "link": "https://www.bbc.co.uk/news/articles/cqg7xxg4jdv5o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-06T02:08:57.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The Trump administration has downplayed reports the pair could be on their way out after heavy Republicans election losses.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
    "titel": "Israel’s Election Ended With No Clear Winner. These Parties Are Trying to Form a Coalition.",
@@ -1039,17 +1050,6 @@
    "maerkte": [],
    "text": "Russian and Ukrainian delegations will meet the US first lady at the White House on Thursday.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6n8dnn09jg7o",
-   "titel": "James Talarico becomes first Democrat to win Texas Senate seat since 1988",
-   "link": "https://www.bbc.co.uk/news/articles/c6n8dnn09jg7o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T14:17:58.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "\"This wasn't just a tsunami, not just a referendum, but this was a bloodbath,\" one expert told the BBC on Democrats' historic wins in Texas.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1058,7 +1058,7 @@
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 7,
   "Handelsblatt": 4,
-  "BBC World": 5,
+  "BBC World": 6,
   "NYT World": 19,
   "EIA Today in Energy": 1
  }
