@@ -1,7 +1,20 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T13:23:33.939Z",
+ "lastUpdated": "2026-11-06T14:23:31.603Z",
  "eintraege": [
+  {
+   "id": "https://www.eia.gov/todayinenergy/detail.php",
+   "titel": "U.S. crude oil imports from Venezuela in July were highest since 2017",
+   "link": "https://www.eia.gov/todayinenergy/detail.php?id=68425",
+   "quelle": "EIA Today in Energy",
+   "zeit": "2026-11-06T14:00:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "In July 2026, U.S. imports of crude oil from Venezuela averaged 701,000 barrels per day (b/d), the most since May 2017, before decreasing to 655,000 b/d in August, according to data published in our Petroleum Supply Monthly",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
    "titel": "What to Know About the Bomb Threats Disrupting Flights in Europe",
@@ -636,19 +649,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.eia.gov/todayinenergy/detail.php",
-   "titel": "Refineries have shifted production away from gasoline to middle distillates",
-   "link": "https://www.eia.gov/todayinenergy/detail.php?id=68424",
-   "quelle": "EIA Today in Energy",
-   "zeit": "2026-11-05T14:00:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Particularly high refinery margins for distillate fuel oil and jet fuel have contributed to shifts in the refinery yields of major products in 2026. Data from our latest Petroleum Supply Monthly—which includes data through August 2026—indic",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/finanzen/geldpolitik/bank-of-england-britische-notenbank-hebt-zinsen-erstmals-seit-drei-jahren-an/100266567.html",
    "titel": "Bank of England: Britische Notenbank hebt Zinsen erstmals seit drei Jahren an – auf 4,0 Prozent",
    "link": "https://www.handelsblatt.com/finanzen/geldpolitik/bank-of-england-britische-notenbank-hebt-zinsen-erstmals-seit-drei-jahren-an/100266567.html",
@@ -1036,13 +1036,13 @@
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 12,
   "DW": 7,
-  "Spiegel Wirtschaft": 3,
+  "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 10,
-  "Handelsblatt": 5,
+  "Handelsblatt": 4,
   "BBC World": 9,
-  "NYT World": 20,
+  "NYT World": 19,
   "EIA Today in Energy": 1
  }
 }
