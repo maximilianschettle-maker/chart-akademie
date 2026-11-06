@@ -1,17 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-05T22:23:31.881Z",
+ "lastUpdated": "2026-11-06T00:23:36.195Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
    "titel": "Israel’s Election Ended With No Clear Winner. These Parties Are Trying to Form a Coalition.",
    "link": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-05T20:55:34.000Z",
+   "zeit": "2026-11-05T23:18:21.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "Israeli party leaders held discussions with President Isaac Herzog on Thursday about who should get the first chance to form a governing coalition.",
+   "text": "President Isaac Herzog wrapped up two days of talks with party leaders by saying he will ask one of them on Sunday to try to assemble a governing coalition.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/wall-street-ki-blutbad-an-us-boersen-sp-500-bricht-um-vier-prozent-ein/100267625.html",
+   "titel": "Wall Street: „KI-Blutbad“ an Börse – rund drei Billionen Dollar Börsenwert an einem Tag vernichtet",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/wall-street-ki-blutbad-an-us-boersen-sp-500-bricht-um-vier-prozent-ein/100267625.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T22:40:26.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Zwei Tage nach der US-Wahl bricht die Wall Street ein. Die Sorge vor einer schärferen KI-Regulierung löst einen Ausverkauf aus. Doch ein anderer Faktor verstärkt den Kursrutsch.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-demokraten-kuendigen-korruptionsermittlungen-gegen-trump-an/29669594.html",
@@ -82,6 +96,17 @@
    "maerkte": [],
    "text": "Angefangen hat es mit Angriffen auf Kühlsysteme in französischen Supermärkten. Inzwischen sind auch deutsche Einzelhändler betroffen. Experten rechnen mit weiteren Attacken auf Kritische Infrastruktur - und Wohnzimmer. Von S. Wolff",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/cr86zxe1q5j3o",
+   "titel": "Chris vs Chris: Who's running and what's at stake this New Zealand election",
+   "link": "https://www.bbc.co.uk/news/videos/cr86zxe1q5j3o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-05T19:08:48.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "New Zealanders will head to the polls on 7 November to elect a new government, with rising cost of living a key concern for voters.",
+   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/c9p8g085mz07o",
@@ -1025,32 +1050,10 @@
    "maerkte": [],
    "text": "\"This wasn't just a tsunami, not just a referendum, but this was a bloodbath,\" one expert told the BBC on Democrats' historic wins in Texas.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po",
-   "titel": "Everything you need to know from the US midterm elections",
-   "link": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T14:05:42.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Democrats secured some big wins - and a few historic firsts - earning congratulations from President Trump.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/usa-ergebnisse-midterms-faq-100.html",
-   "titel": "US-Midterms: Wie Trump abgestraft wurde - und was die Folgen sind",
-   "link": "https://www.tagesschau.de/ausland/amerika/usa-ergebnisse-midterms-faq-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T13:44:41.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ein Teilerfolg für die Demokraten war erwartet worden. Doch die Zwischenwahlen in den USA kommen einem Desaster für Präsident Trump gleich. Was war dafür ausschlaggebend und wie geht es jetzt weiter? Fragen und Antworten von E. Aretz und C.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 15,
+  "tagesschau": 14,
   "DW": 4,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 7,
