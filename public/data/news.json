@@ -1,7 +1,62 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T12:23:33.252Z",
+ "lastUpdated": "2026-11-06T13:23:33.939Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
+   "titel": "What to Know About the Bomb Threats Disrupting Flights in Europe",
+   "link": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T13:10:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "More threats were reported Friday after dozens of planes were targeted earlier this week. Officials have not reported finding any explosives, but the hoaxes have added to anxiety over hybrid attacks on the continent.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/copernicus-klimakrise-1komma5-grad-100.html",
+   "titel": "EU-Dienst Copernicus: 1,5-Grad-Marke wird 2026 wohl überschritten",
+   "link": "https://www.tagesschau.de/ausland/europa/copernicus-klimakrise-1komma5-grad-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-06T13:02:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Kurz vor der Klimakonferenz COP31 in Antalya gibt es ernüchternde Zahlen: Das 1,5-Grad-Ziel wird 2026 laut EU-Dienst Copernicus höchstwahrscheinlich überschritten. Der Oktober war zudem der wärmste seit Beginn der Aufzeichnungen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/mali-fast-4-000-vertriebene-nach-angriff-auf-souleye/a-79854085",
+   "titel": "Mali: Fast 4.000 Vertriebene nach Angriff auf Souleye",
+   "link": "https://www.dw.com/de/mali-fast-4-000-vertriebene-nach-angriff-auf-souleye/a-79854085?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-06T12:58:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In Mali sollen fast 4.000 Vertriebene in Macina und Sarro in der Region Ségou im Zentrum des Landes Zuflucht gefunden haben - vor allem Frauen und Kinder, die vor dem Angriff auf das Dorf Souleye geflohen sind.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-maec-geiz-schliesst-rund-60-filialen-faz-200452404.html",
+   "titel": "Business-Ticker: Mäc Geiz schließt rund 60 Filialen",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-maec-geiz-schliesst-rund-60-filialen-faz-200452404.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-06T12:30:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Condor sichert Tariffrieden an Bord +++ Uniper wirbt mit höherer Dividende um Anleger +++ Deutsche Produktion im September überraschend gestiegen +++ alle Neuigkeiten im Unternehmen-Liveblog",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/asia/china-trump-putin-xi-summit.html",
+   "titel": "A Trump-Putin-Xi Summit? That Might Be Awkward for One of Them.",
+   "link": "https://www.nytimes.com/2026/11/06/world/asia/china-trump-putin-xi-summit.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T12:28:55.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "A summit could bolster Xi Jinping’s stature. But talks about Ukraine’s future and limits on nuclear weapons pose uncomfortable choices for China.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.dw.com/de/bankenskandal-in-paraguay-pr%C3%A4sident-pe%C3%B1a-unter-druck/a-79874532",
    "titel": "Bankenskandal in Paraguay: Präsident Peña unter Druck",
@@ -15,7 +70,7 @@
   },
   {
    "id": "https://www.tagesschau.de/wirtschaft/midterms-wirtschaft-handelspolitik-100.html",
-   "titel": "Welche Folgen die US-Zwischenwahlen für die deutsche Wirtschaft haben",
+   "titel": "Welche Folgen die US-Midterms für die deutsche Wirtschaft haben",
    "link": "https://www.tagesschau.de/wirtschaft/midterms-wirtschaft-handelspolitik-100.html",
    "quelle": "tagesschau",
    "zeit": "2026-11-06T11:17:25.000Z",
@@ -32,7 +87,7 @@
    "zeit": "2026-11-06T11:05:16.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Nach Treffen mit Dmitrijew: Trump stellt „großes Abkommen“ in Aussicht – Kreml dämpft Erwartungen +++ Russische Regionen kürzen Zahlungen für Hinterbliebene +++ Der Newsblog.",
+   "text": "Ukraine: Mehr als 50 Tote nach russischem Luftangriff +++ Nach Treffen mit Dmitrijew: Trump stellt „großes Abkommen“ in Aussicht – Kreml dämpft Erwartungen +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -280,17 +335,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "In Trappes, a suburb of Paris with a large immigrant population, residents believe that a shooting rampage was fueled by years of anti-immigrant sentiment.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/06/world/asia/china-trump-putin-xi-summit.html",
-   "titel": "A Summit in China With Trump and Putin? That Might be Awkward for Xi.",
-   "link": "https://www.nytimes.com/2026/11/06/world/asia/china-trump-putin-xi-summit.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-06T05:01:11.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "A summit could bolster Xi Jinping’s stature. But talks about Ukraine’s future and limits on nuclear weapons pose uncomfortable choices for China.",
    "sprache": "en"
   },
   {
@@ -989,62 +1033,15 @@
    "maerkte": [],
    "text": "In country after country stricken by democratic decay, overwhelming turnout in elections is making a difference.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/05/world/europe/voters-are-turning-out-in-droves-to-cut-autocrats-down-to-size.html",
-   "titel": "Voters Are Turning Out in Droves to Cut Autocrats Down to Size",
-   "link": "https://www.nytimes.com/2026/11/05/world/europe/voters-are-turning-out-in-droves-to-cut-autocrats-down-to-size.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-05T05:01:06.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In country after country stricken by democratic decay, overwhelming turnout in elections is making a difference.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-boersen-in-asien-nach-us-zwischenwahlen-uneinheitlich-technologiewerte-brechen-ein/100267457.html",
-   "titel": "Nikkei, Yen, Hang Seng: Börsen in Asien nach US-Zwischenwahlen uneinheitlich - Technologiewerte brechen ein",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-yen-hang-seng-boersen-in-asien-nach-us-zwischenwahlen-uneinheitlich-technologiewerte-brechen-ein/100267457.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T04:38:20.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "Anleger fürchten, dass der Wahlsieg der Demokraten den Ausbau von KI-Rechenzentren bremsen könnte. Während Chipaktien unter Druck sind, profitieren Branchen in Japan von sinkenden Ölpreisen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/serbien-medienaufsicht-strafe-100.html",
-   "titel": "Strafen gegen Vucic-Propagandasendungen bei Informer und Prva in Serbien",
-   "link": "https://www.tagesschau.de/ausland/europa/serbien-medienaufsicht-strafe-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T04:05:08.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach dem Wahlsieg der Studentischen Liste sind erste Veränderungen schon spürbar. Eine serbische Medienaufsichtsbehörde hat Zwangspausen gegen Vucic-Propagandasendungen verhängt. Von Oliver Soos.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-bei-boehmermann-us-wahlausgang-kann-ukraine-helfen/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Selenskyj bei Böhmermann: US-Wahlausgang kann Ukraine helfen",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-bei-boehmermann-us-wahlausgang-kann-ukraine-helfen/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T04:01:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Selenskyj ehrt Melania Trump mit ukrainischem Orden +++ Russische Angriffe machen ukrainischer Energieversorgung zu schaffen +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 13,
-  "DW": 6,
-  "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 9,
+  "DW": 7,
+  "Spiegel Wirtschaft": 3,
+  "FAZ Wirtschaft": 10,
   "Handelsblatt": 5,
-  "BBC World": 10,
+  "BBC World": 9,
   "NYT World": 20,
   "EIA Today in Energy": 1
  }
