@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T22:25:20.120Z",
+ "lastUpdated": "2026-11-06T23:15:44.818Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
+   "titel": "Will New Zealand Join Voters’ Global Revolt Over Soaring Costs?",
+   "link": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T23:05:42.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In the lead-up to an election in which economic concerns dominate, there was no clear front-runner. Minor parties will most likely determine who governs.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
+   "titel": "Paraguay’s President Removed Over Financial Crisis",
+   "link": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T22:55:02.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Millions lost access to their savings, and the nation’s president was impeached and removed from office Friday after a major bank with close ties to his administration went under.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
+   "titel": "After Israel’s Election, Who Will Get the First Chance to Form a Government?",
+   "link": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T22:36:15.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Isaac Herzog is set to task a candidate with trying to form a government, following two days of talks with party leaders and officials after an inconclusive election.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o",
    "titel": "AI stocks climb after trillions wiped from market values",
@@ -100,17 +133,6 @@
    "maerkte": [],
    "text": "Razzia bei der Bayerischen Versorgungskammer wegen US-Geschäft +++ Condor sichert Tariffrieden an Bord +++ Mäc Geiz schließt rund 60 Filialen +++ alle Neuigkeiten im Unternehmen-Liveblog",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
-   "titel": "After Israel’s Election, Who Will Get the First Chance to Form a Government?",
-   "link": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-06T18:36:57.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Isaac Herzog is set to task a candidate with trying to form a government, following two days of talks with party leaders and officials after an inconclusive election.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/06/world/africa/tanzanias-opposition-leader-gets-a-four-year-sentence.html",
@@ -1003,30 +1025,6 @@
    "maerkte": [],
    "text": "The midterm results laid bare the deep unpopularity of the war of choice that President Trump started and is now struggling to end.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/hubert-aiwanger-er-war-einer-von-ihnen-immer-nah-bei-den-menschen/100267540.html",
-   "titel": "Nachruf: Hubert Aiwanger war einer von ihnen, immer nah bei den Menschen",
-   "link": "https://www.handelsblatt.com/politik/deutschland/hubert-aiwanger-er-war-einer-von-ihnen-immer-nah-bei-den-menschen/100267540.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T10:01:53.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Bayerns Wirtschaftsminister setzte sich für die „kleinen Leute“ ein. Der Chef der Freien Wähler machte der CSU Konkurrenz – und irritierte mit der Affäre um ein NS-Flugblatt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kolumnen/asia-techonomics-frieren-fuer-pekings-blauen-himmel/100267151.html",
-   "titel": "Asia Techonomics: Frieren für Pekings blauen Himmel",
-   "link": "https://www.handelsblatt.com/meinung/kolumnen/asia-techonomics-frieren-fuer-pekings-blauen-himmel/100267151.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T09:17:25.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "gas"
-   ],
-   "text": "Gestiegene Gaspreise könnten die Debatte über Chinas Energiepolitik verschärfen. Die Pekinger klagen über den späten Heizbeginn, manche Landbewohner geraten in finanzielle Not.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1036,7 +1034,7 @@
   "FAZ Wirtschaft": 9,
   "Handelsblatt": 1,
   "BBC World": 8,
-  "NYT World": 19,
+  "NYT World": 20,
   "EIA Today in Energy": 1
  }
 }
