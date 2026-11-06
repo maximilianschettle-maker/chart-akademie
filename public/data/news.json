@@ -1,13 +1,24 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T15:23:31.862Z",
+ "lastUpdated": "2026-11-06T16:23:36.015Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o",
+   "titel": "AI stocks climb after trillions wiped from market values",
+   "link": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-06T16:23:16.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
    "titel": "What to Know About the Bomb Threats Disrupting Flights in Europe",
    "link": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-06T15:08:15.000Z",
+   "zeit": "2026-11-06T15:44:28.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "More threats were reported Friday after dozens of planes were targeted earlier this week. Officials have not reported finding any explosives, but the hoaxes have added to anxiety over hybrid attacks on the continent.",
@@ -78,7 +89,7 @@
    "zeit": "2026-11-06T12:30:00.000Z",
    "kategorie": "handel",
    "maerkte": [],
-   "text": "Condor sichert Tariffrieden an Bord +++ Uniper wirbt mit höherer Dividende um Anleger +++ Deutsche Produktion im September überraschend gestiegen +++ alle Neuigkeiten im Unternehmen-Liveblog",
+   "text": "Razzia bei der Bayerischen Versorgungskammer wegen US-Geschäft +++ Condor sichert Tariffrieden an Bord +++ Uniper wirbt mit höherer Dividende um Anleger +++ alle Neuigkeiten im Unternehmen-Liveblog",
    "sprache": "de"
   },
   {
@@ -1024,17 +1035,6 @@
    "maerkte": [],
    "text": "DeSantis widerspricht Trump bei Deutung der Wahlniederlage +++ Trump räumt Auswirkungen von Iran-Krieg auf Midterms ein +++ Trump stellt sich vorerst hinter Verteidigungsminister Hegseth +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "titel": "Liveblog zu den Midterms: ++ Trump verteidigt Iran-Krieg ++",
-   "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T05:16:43.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "US-Präsident Trump hat trotz des Wahldebakels betont, am Kurs im Iran-Krieg festhalten zu wollen. Außenminister Wadephul erwartet weiterhin eine konstruktive Zusammenarbeit mit der US-Regierung.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1043,7 +1043,7 @@
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 10,
   "Handelsblatt": 3,
-  "BBC World": 9,
+  "BBC World": 10,
   "NYT World": 19,
   "EIA Today in Energy": 1
  }

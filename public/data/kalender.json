@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T08:23:27.740Z",
+ "lastUpdated": "2026-11-06T16:23:36.015Z",
  "termine": [
   {
    "id": "us:arbeitsmarkt:2026-11-06",
@@ -245,10 +245,10 @@
    "region": "us",
    "indikator": "arbeitsmarkt",
    "titel": "Arbeitslosenquote USA",
-   "periode": "2026-09",
-   "wert": 4.2,
+   "periode": "2026-10",
+   "wert": 4.1,
    "einheit": "%",
-   "vorher": 4.1,
+   "vorher": 4.2,
    "quelle": "FRED (UNRATE)",
    "link": "https://fred.stlouisfed.org/series/UNRATE"
   },
@@ -256,10 +256,10 @@
    "region": "us",
    "indikator": "arbeitsmarkt",
    "titel": "Neue Stellen USA (Payrolls)",
-   "periode": "2026-09",
-   "wert": 29,
+   "periode": "2026-10",
+   "wert": 165,
    "einheit": "Tsd.",
-   "vorher": 133,
+   "vorher": 60,
    "quelle": "FRED (PAYEMS)",
    "link": "https://fred.stlouisfed.org/series/PAYEMS"
   },
