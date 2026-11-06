@@ -1,17 +1,61 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T10:23:34.510Z",
+ "lastUpdated": "2026-11-06T11:23:27.422Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/midterms-wirtschaft-handelspolitik-100.html",
+   "titel": "Welche Folgen die US-Zwischenwahlen für die deutsche Wirtschaft haben",
+   "link": "https://www.tagesschau.de/wirtschaft/midterms-wirtschaft-handelspolitik-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-06T11:17:25.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Der Machtwechsel im US-Kongress könnte Unternehmen mehr Planbarkeit bringen. Zugleich befürchten Ökonomen, dass sich der Zollstreit fortsetzt. Worauf kann sich die deutsche Wirtschaft einstellen? Von Sebastian Schreiber.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-merz-telefoniert-mit-trump-zur-ukraine/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Merz telefoniert mit Trump zur Ukraine",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-merz-telefoniert-mit-trump-zur-ukraine/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-06T11:05:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach Treffen mit Dmitrijew: Trump stellt „großes Abkommen“ in Aussicht +++ Russische Regionen kürzen Zahlungen für Hinterbliebene +++ Stromausfälle in der Ukraine +++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/06/world/middleeast/saudi-arabia-bombing-yemen-civilians-houthi-war.html",
    "titel": "Saudi-Led Forces Bombed Yemeni Home, Killing Nine Family Members, Relatives Say",
    "link": "https://www.nytimes.com/2026/11/06/world/middleeast/saudi-arabia-bombing-yemen-civilians-houthi-war.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-06T10:22:32.000Z",
+   "zeit": "2026-11-06T10:54:43.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The attack in October cast a spotlight on civilian casualties in the Saudi-led and U.S.-assisted bombing campaign against the Houthis.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/paraguay-pr%C3%A4sident-droht-amtsenthebung-nach-bankenskandal/a-79873533",
+   "titel": "Paraguay: Präsident droht Amtsenthebung nach Bankenskandal",
+   "link": "https://www.dw.com/de/paraguay-präsident-droht-amtsenthebung-nach-bankenskandal/a-79873533?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-06T10:43:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Millionen Menschen fürchten um ihre Ersparnisse, der Druck auf Paraguays Staatschef wächst. Sein Rücktrittsgesuch scheiterte im Parlament. Nun muss sich Santiago Peña einem Amtsenthebungsverfahren stellen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/daron-acemoglu-wir-steuern-mit-volldampf-in-die-falsche-richtung-accg-201269417.html",
+   "titel": "Nobelpreisträger Acemoglu: „Wo es Groll gibt, hat die Identitätspolitik die Spaltung vertieft“",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/daron-acemoglu-wir-steuern-mit-volldampf-in-die-falsche-richtung-accg-201269417.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-06T10:25:13.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Krise der liberalen Demokratie ist nicht vorbei, warnt der Ökonom Daron Acemoglu, auch wenn in den US-Wahlen Donald Trumps Partei verloren hat. Ein Gespräch über KI und linke Parteien, die die Arbeiter vergessen haben.",
+   "sprache": "de"
   },
   {
    "id": "https://www.nytimes.com/2026/11/06/world/europe/russia-ukraine-trump-midterms.html",
@@ -185,7 +229,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/crvg9yyz5437o",
-   "titel": "Did a data centre revolt affect the US mid-term election results?",
+   "titel": "Did a data centre revolt affect the US midterm election results?",
    "link": "https://www.bbc.co.uk/news/articles/crvg9yyz5437o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-06T06:01:13.000Z",
@@ -992,59 +1036,13 @@
    "maerkte": [],
    "text": "Selenskyj hofft nach US-Zwischenwahlen auf mehr Unterstützung +++ Russische Angriffe machen ukrainischer Energieversorgung zu schaffen +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o",
-   "titel": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
-   "link": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-05T03:47:56.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The vice-president's blunt assessment of Republican election defeat marked one of the sharpest breaks with a sitting president in recent memory.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-usa-zwischenwahl-100.html",
-   "titel": "Midterms in den USA: Verhaltener Optimismus in der Ukraine nach US-Wahl",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-usa-zwischenwahl-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T00:10:07.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Wahlschlappe von Trumps Republikanern lässt viele in der Ukraine auf einen Kurswechsel der USA hoffen. Doch ob es tatsächlich so schnell zu Veränderungen kommt, daran zweifelt man. Von F. Kellermann.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqvgry8k5d01o",
-   "titel": "Mother and daughter die after suspected grizzly bear attack in Canada",
-   "link": "https://www.bbc.co.uk/news/articles/cqvgry8k5d01o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T23:50:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Authorities in British Columbia say evidence suggests an animal may have been involved in the women's deaths.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "titel": "What Trump’s Midterm Defeat Means for Iran and Oil Prices",
-   "link": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T23:37:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Commentators abroad wondered what President Trump’s electoral losses might mean for oil prices, the war on Iran and the future of American politics.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
-  "DW": 5,
+  "tagesschau": 13,
+  "DW": 6,
   "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 8,
+  "FAZ Wirtschaft": 9,
   "Handelsblatt": 6,
   "BBC World": 10,
   "NYT World": 20,
