@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T03:23:29.063Z",
+ "lastUpdated": "2026-11-06T04:23:35.794Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-nach-treffen-mit-dmitrijew-trump-stellt-grosses-abkommen-in-aussicht/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Nach Treffen mit Dmitrijew – Trump stellt „großes Abkommen“ in Aussicht",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-nach-treffen-mit-dmitrijew-trump-stellt-grosses-abkommen-in-aussicht/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-06T03:04:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "EU zahlt Ukraine weitere Milliardensumme aus +++ Ukrainischer Callcenterbetrug: Verdächtige in Staatsorganen +++ Putin stellt Tabakunternehmen JTI unter Zwangsverwaltung +++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqg7xxg4jdv5o",
    "titel": "White House denies Hegseth and Rubio to leave jobs after Republican election losses",
@@ -10,7 +21,7 @@
    "zeit": "2026-11-06T02:08:57.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "The Trump administration has downplayed reports the pair could be on their way out after heavy Republicans election losses.",
+   "text": "US media reports there are calls to replace Pete Hegseth, who also faces a possible impeachment vote, while Mark Rubio is rumoured to be eyeing a presidential run.",
    "sprache": "en"
   },
   {
@@ -70,6 +81,17 @@
    "maerkte": [],
    "text": "From Miami, Flávio Bolsonaro is making unfounded claims of a stolen election and plotting to sway his nation’s politics from afar, even though his party is not challenging the results.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/proteste-erneute-massenproteste-in-frankreich-zusammenstoesse-mit-polizei/100267683.html",
+   "titel": "Proteste: Erneute Massenproteste in Frankreich – Zusammenstöße mit Polizei",
+   "link": "https://www.handelsblatt.com/politik/international/proteste-erneute-massenproteste-in-frankreich-zusammenstoesse-mit-polizei/100267683.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-05T19:53:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Frühere Proteste wurden wiederholt von Plünderungen überschattet. Am Donnerstag war die Stimmung zunächst heiter. Doch aus Paris und Lyon wurden Ausschreitungen gemeldet.",
+   "sprache": "de"
   },
   {
    "id": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-airline-passengers.html",
@@ -1026,30 +1048,6 @@
    "maerkte": [],
    "text": "Aus Oleschky wurden Hunderte Zivilisten evakuiert. Manche Beobachter sprechen von einer erfolgreichen humanitären Mission, andere warnen, Russland habe die Waffenruhe genutzt, um seine militärische Position zu stärken.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/midterms-usa-internationale-reaktionen-100.html",
-   "titel": "Reaktionen auf US-Wahlergebnis: Verhaltene Freude, vorsichtige Hoffnung",
-   "link": "https://www.tagesschau.de/ausland/amerika/midterms-usa-internationale-reaktionen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T15:42:29.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der spektakuläre Triumph der US-Demokraten bei den Zwischenwahlen hat weltweit Reaktionen ausgelöst: Russland setzt weiter auf Präsident Trump, China hält sich bedeckt, in der EU und Südafrika macht sich Hoffnung breit.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-erholungsrally-nach-den-midterms-nur-ki-aktien-fallen/100265439.html",
-   "titel": "Börsen: Erholungsrally nach den Midterms in den USA – nur KI-Aktien fallen",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-erholungsrally-nach-den-midterms-nur-ki-aktien-fallen/100265439.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T15:12:02.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Der deutliche Sieg der Demokraten schürt Ängste vor einem langsameren KI‑Ausbau. Am breiten Markt kommt das Wahlergebnis dennoch gut an. Das liegt auch an Donald Trump.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1057,7 +1055,7 @@
   "DW": 4,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 7,
-  "Handelsblatt": 4,
+  "Handelsblatt": 5,
   "BBC World": 6,
   "NYT World": 19,
   "EIA Today in Energy": 1
