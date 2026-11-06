@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T17:23:31.702Z",
+ "lastUpdated": "2026-11-06T18:23:35.592Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
+   "titel": "After Israel’s Election, Who Will Get the First Chance to Form a Government?",
+   "link": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T17:50:02.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Isaac Herzog is set to task a candidate with trying to form a government, following two days of talks with party leaders and officials after an inconclusive election.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/africa/tanzanias-opposition-leader-gets-a-four-year-sentence.html",
+   "titel": "Tanzania’s Opposition Leader Gets a Four-Year Sentence",
+   "link": "https://www.nytimes.com/2026/11/06/world/africa/tanzanias-opposition-leader-gets-a-four-year-sentence.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T17:36:38.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Tundu Lissu was found guilty of incitement for statements he had made ahead of a presidential election in October 2025.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cw8rzzx46jd5o",
+   "titel": "Nigerian court rules opposition candidate cannot stand in elections",
+   "link": "https://www.bbc.co.uk/news/articles/cw8rzzx46jd5o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-06T17:35:55.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The high court has sacked the leadership of the opposition ADC party with only months to go until elections.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
    "titel": "What to Know About the Bomb Threats Disrupting Flights in Europe",
@@ -11,17 +44,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "More threats were reported Friday after dozens of planes were targeted earlier this week. Officials have not reported finding any explosives, but the hoaxes have added to anxiety over hybrid attacks on the continent.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/06/world/africa/tanzanias-opposition-leader-gets-a-four-year-sentence.html",
-   "titel": "Tanzania’s Opposition Leader Gets a Four-Year Sentence",
-   "link": "https://www.nytimes.com/2026/11/06/world/africa/tanzanias-opposition-leader-gets-a-four-year-sentence.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-06T17:08:34.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Tundu Lissu was found guilty of incitement for statements he had made ahead of a presidential election in October 2025.",
    "sprache": "en"
   },
   {
@@ -45,6 +67,17 @@
    "maerkte": [],
    "text": "Nach der Manipulation von Kühlanlagen in europäischen Supermärkten ermitteln deutsche Geheimdienste. Auch US-Behörden sind alarmiert. Wer könnte hinter den Attacken stecken?",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo",
+   "titel": "Four midterms takeaways for 2028 White House race",
+   "link": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-06T16:12:22.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The buzz about the presidential election is already under way - here's what we learned this week.",
+   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/06/world/middleeast/saudi-arabia-bombing-yemen-civilians-houthi-war.html",
@@ -464,17 +497,6 @@
    ],
    "text": "Zwei Tage nach der US-Wahl bricht die Wall Street ein. Die Sorge vor einer schärferen KI-Regulierung löst einen Ausverkauf aus. Doch ein anderer Faktor verstärkt den Kursrutsch.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cw8rzzx46jd5o",
-   "titel": "Nigerian court rules opposition candidate cannot stand in elections",
-   "link": "https://www.bbc.co.uk/news/articles/cw8rzzx46jd5o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-05T22:00:33.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The high court has sacked the leadership of the opposition ADC party with only months to go until elections.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-will-oval-office-als-nationales-denkmal-schuetzen-lassen/29669594.html",
@@ -1010,41 +1032,16 @@
    ],
    "text": "Cyberangriff auf französische Bank verursacht mehr als 100 Millionen Euro Verlust +++ Tesla eröffnet in Berlin Entwicklungszentrum +++ Deutsche Firmen in USA wieder im Aufwind – trotz Zollschranken +++ alle Neuigkeiten im Unternehmen-Livebl",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/israel-usa-wahlen-100.html",
-   "titel": "USA und Israel nach den Wahlen: Beziehungsstatus kompliziert",
-   "link": "https://www.tagesschau.de/ausland/asien/israel-usa-wahlen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T07:28:49.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Sowohl die USA als auch Israel haben wichtige Wahlen hinter sich. Die Ergebnisse werden die Beziehungen beider Staaten nachhaltig bestimmen - und könnten für Premier Netanjahu zum Problem werden. Von Jan-Christoph Kitzler.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/bundeshaushalt-warum-klingbeils-haushaltssorgen-trotz-neuen-geldsegens-bleiben/100266874.html",
-   "titel": "Bundeshaushalt: Klingbeil findet 4,2 Milliarden Euro im Etat – die Haushaltsprobleme ist er aber nicht los",
-   "link": "https://www.handelsblatt.com/politik/deutschland/bundeshaushalt-warum-klingbeils-haushaltssorgen-trotz-neuen-geldsegens-bleiben/100266874.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T06:44:41.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd",
-    "anleihen"
-   ],
-   "text": "Der Finanzminister muss in diesem Jahr vier Milliarden Euro weniger für die Ökostrom-Förderung ausgeben als geplant. Doch das hilft kaum, um die Finanzlöcher im Haushalt 2027 zu stopfen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 9,
   "DW": 7,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 10,
-  "Handelsblatt": 4,
-  "BBC World": 9,
-  "NYT World": 19,
+  "Handelsblatt": 1,
+  "BBC World": 8,
+  "NYT World": 18,
   "EIA Today in Energy": 1
  }
 }
