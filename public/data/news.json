@@ -1,7 +1,62 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T09:29:57.452Z",
+ "lastUpdated": "2026-11-06T10:23:34.510Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/middleeast/saudi-arabia-bombing-yemen-civilians-houthi-war.html",
+   "titel": "Saudi-Led Forces Bombed Yemeni Home, Killing Nine Family Members, Relatives Say",
+   "link": "https://www.nytimes.com/2026/11/06/world/middleeast/saudi-arabia-bombing-yemen-civilians-houthi-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T10:22:32.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The attack in October cast a spotlight on civilian casualties in the Saudi-led and U.S.-assisted bombing campaign against the Houthis.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/europe/russia-ukraine-trump-midterms.html",
+   "titel": "Guarded Optimism, and Some Jokes, in Ukraine Over Trump’s Midterm Wipeout",
+   "link": "https://www.nytimes.com/2026/11/06/world/europe/russia-ukraine-trump-midterms.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T10:22:23.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Victory for Democrats could alter the course of peace negotiations and a war nearing its fifth year.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/donald-trumps-zoelle-wie-ein-verliererthema-den-freihandel-neu-belebt-201654859.html",
+   "titel": "Midterms: Zölle sind ein Verliererthema",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/donald-trumps-zoelle-wie-ein-verliererthema-den-freihandel-neu-belebt-201654859.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-06T09:31:59.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Der Erdrutschsieg der Demokraten in den USA ist auch ein deutliches Zeichen gegen die Zollpolitik des Präsidenten. Am Ende könnte Donald Trump eine neue Ära des freien Handels auslösen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-soeder-analyse-100.html",
+   "titel": "Was Aiwangers Tod für Bayerns Koalition bedeutet",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-soeder-analyse-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-06T09:30:52.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Mit Hubert Aiwanger verlieren die Freien Wähler ihr Zentrum und ihre Anziehungskraft. Das könnte die politischen Verhältnisse in Bayern nachhaltig verändern. Noch sind sie Regierungspartner der CSU. Von J. Wengert.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/paraguay-pena-ruecktritt-ueno-bank-100.html",
+   "titel": "Paraguay: Die Bankenkrise wird zur Staatskrise",
+   "link": "https://www.tagesschau.de/ausland/amerika/paraguay-pena-ruecktritt-ueno-bank-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-06T09:29:54.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In Paraguay zieht die Krise um die Ueno Bank immer weitere Kreise: Weil Präsident Peña die Risiken zu lange ignorierte, leitete das Parlament ein Amtsenthebungsverfahren ein. Auch die Staatsanwaltschaft ermittelt. Von Anne Herrberg.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/wirtschaft/boerse/tech-einbruch-ki-100.html",
    "titel": "Chipaktien an den internationalen Börsen im freien Fall",
@@ -17,6 +72,19 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-crash-an-der-wall-street-ist-kein-unfall/100267813.html",
+   "titel": "Kommentar: Der Crash an der Wall Street ist kein Unfall",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-crash-an-der-wall-street-ist-kein-unfall/100267813.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-06T09:02:53.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Binnen 24 Stunden erklärt die Börse zwei gegensätzliche Kursbewegungen mit derselben Wahl. Die eigentliche Ursache liegt im dritten Quartal und die Anleger ahnen, wie es weitergeht.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.handelsblatt.com/unternehmen/industrie/zoll-rueckzahlungen-gewinn-von-daimler-truck-steigt-um-73-prozent/100267801.html",
    "titel": "Lkw-Hersteller: Hunderte Millionen Zollzurückzahlung – Gewinn von Daimler Truck steigt um 73 Prozent",
    "link": "https://www.handelsblatt.com/unternehmen/industrie/zoll-rueckzahlungen-gewinn-von-daimler-truck-steigt-um-73-prozent/100267801.html",
@@ -25,6 +93,17 @@
    "kategorie": "handel",
    "maerkte": [],
    "text": "Der Lkw-Bauer hat ein gutes Quartal hinter sich. Dafür sorgen allerdings auch Sondereffekte in erheblicher Höhe – und das hat mit Donald Trump zu tun.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/industrie/tesla-musk-stellt-cybertruck-produktion-in-texas-ein/100267844.html",
+   "titel": "Elektromobilität: Tesla stellt Produktion des Cybertrucks in Texas ein",
+   "link": "https://www.handelsblatt.com/unternehmen/industrie/tesla-musk-stellt-cybertruck-produktion-in-texas-ein/100267844.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-06T08:42:37.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Cybertruck war für den Elektroautohersteller bislang eine Enttäuschung. Im Tesla-Werk in Texas soll der Pick-up bald nicht mehr gebaut werden.",
    "sprache": "de"
   },
   {
@@ -114,6 +193,17 @@
    "maerkte": [],
    "text": "BBC Verify examines whether US voters were influenced by the data centre boom - and the impact anti-AI sentiment could have on the industry.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/fleisch-siegel-koalition-verschiebt-staatliches-tierhaltungslogo-erneut-a-c8dfe463-defa-4c73-80e8-60e1e76ff0db",
+   "titel": "Fleisch-Siegel: Koalition verschiebt staatliches Tierhaltungslogo erneut",
+   "link": "https://www.spiegel.de/wirtschaft/fleisch-siegel-koalition-verschiebt-staatliches-tierhaltungslogo-erneut-a-c8dfe463-defa-4c73-80e8-60e1e76ff0db#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-06T05:58:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Seit Jahren ringt die Politik um ein amtliches Fleisch-Siegel, das über die Haltungsbedingungen in Ställen informiert. Nun kippt der nächste Termin.",
+   "sprache": "de"
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/koalition-verschiebt-staatliches-tierhaltungslogo-erneut-a-c8dfe463-defa-4c73-80e8-60e1e76ff0db",
@@ -948,108 +1038,16 @@
    ],
    "text": "Commentators abroad wondered what President Trump’s electoral losses might mean for oil prices, the war on Iran and the future of American politics.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c98rz6penv86o",
-   "titel": "Ukraine says bodycam video shows deadly Russian double-tap bombing",
-   "link": "https://www.bbc.co.uk/news/articles/c98rz6penv86o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-04T22:48:43.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "At least 40 people were killed and another 30 may still be under the rubble after Monday's attack on a Ukrainian village, Kyiv says.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/midterms-vance-sucht-nach-wahldebakel-distanz-zu-trump/100267404.html",
-   "titel": "Midterms: Vance sucht nach Wahldebakel Distanz zu Trump",
-   "link": "https://www.handelsblatt.com/politik/international/midterms-vance-sucht-nach-wahldebakel-distanz-zu-trump/100267404.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T22:41:43.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "US-Wähler haben bei der Parlamentswahl überraschend hart mit der Politik von Donald Trump abgerechnet. Vize JD Vance versucht nun, sich mit Kritik am Iran-Krieg aus dem Schatten des Präsidenten zu lösen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-trump-midterm-elections.html",
-   "titel": "For Israelis, U.S. Midterms Show How Far Their Star Has Fallen in America",
-   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-trump-midterm-elections.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T22:04:04.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Israel once had bipartisan support in the United States, but a strong showing for Democrats, some of whom are deeply critical of the war in Gaza, has left the country with fewer friends in Congress.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/ki-coreweave-faellt-amazon-gewinnt-midterms-spalten-ki-konzerne/100267383.html",
-   "titel": "KI: Coreweave fällt, Amazon gewinnt: Wie die Midterms den KI-Sektor spalten",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/ki-coreweave-faellt-amazon-gewinnt-midterms-spalten-ki-konzerne/100267383.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T21:41:09.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach dem Wahlsieg der Demokraten droht eine Regulierungswelle für Rechenzentren. Doch während Neocloud-Aktien abstürzen, legen die von Tech-Konzernen kräftig zu. Warum?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/midterms-vance-irankrieg-100.html",
-   "titel": "Vance zu den Midterms: \"Der Grund für unsere Niederlage ist der Krieg\"",
-   "link": "https://www.tagesschau.de/ausland/amerika/midterms-vance-irankrieg-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-04T21:15:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach der Wahlschlappe der Republikaner geht in der Partei die Spurensuche los, warum sie solche herben Verluste gegen die Demokraten einstecken musste. Für Vizepräsident Vance ist klar: Der Iran-Krieg ist schuld. Von K. Fuß.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-midterms-loesen-erholungsrally-aus-dow-steigt-mehr-als-1500-punkte/100265439.html",
-   "titel": "Börsen: Midterms lösen Erholungsrally in den USA aus – KI-Aktien fallen trotzdem",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-midterms-loesen-erholungsrally-aus-dow-steigt-mehr-als-1500-punkte/100265439.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T20:37:37.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Der deutliche Sieg der Demokraten könnte einige Sektoren belasten. Am breiten Markt kommt das Ergebnis dennoch gut an. Das liegt auch an Donald Trumps Reaktion auf die Wahl.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-midterms-loesenerholungsrally-aus-ki-aktien-fallen-trotzdem/100265439.html",
-   "titel": "Börsen: Midterms lösen Erholungsrally in den USA aus – KI-Aktien fallen trotzdem",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/boersen-midterms-loesenerholungsrally-aus-ki-aktien-fallen-trotzdem/100265439.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T20:37:37.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Der deutliche Sieg der Demokraten schürt Ängste vor einem langsameren KI‑Ausbau. Am breiten Markt kommt das Wahlergebnis dennoch gut an. Das liegt auch an Donald Trump.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
-   "titel": "Israel’s President Starts Talks on Whether Netanyahu or Eisenkot Can Form a Government",
-   "link": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-04T20:17:02.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Isaac Herzog began meeting with party leaders for two days to decide whether to give Prime Minister Benjamin Netanyahu or rivals the first chance at forming a coalition.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 12,
   "DW": 5,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 8,
-  "Handelsblatt": 4,
+  "Handelsblatt": 6,
   "BBC World": 10,
-  "NYT World": 19,
+  "NYT World": 20,
   "EIA Today in Energy": 1
  }
 }
