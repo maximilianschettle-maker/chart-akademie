@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T04:23:35.794Z",
+ "lastUpdated": "2026-11-06T05:23:27.522Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/europe/france-shooting-trappes.html",
+   "titel": "In French City Hit by Terrorist Attack, Residents Blame Far-Right Rhetoric",
+   "link": "https://www.nytimes.com/2026/11/06/world/europe/france-shooting-trappes.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T05:01:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In Trappes, a suburb of Paris with a large immigrant population, residents believe that a shooting rampage was fueled by years of anti-immigrant sentiment.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/asia/china-trump-putin-xi-summit.html",
+   "titel": "A Summit in China With Trump and Putin? That Might be Awkward for Xi.",
+   "link": "https://www.nytimes.com/2026/11/06/world/asia/china-trump-putin-xi-summit.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T05:01:11.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "A summit could bolster Xi Jinping’s stature. But talks about Ukraine’s future and limits on nuclear weapons pose uncomfortable choices for China.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/paraguay-ruecktritt-abgelehnt-100.html",
+   "titel": "Kongress lehnt Peñas Rücktritt ab - Staatsanwalt ermittelt",
+   "link": "https://www.tagesschau.de/ausland/paraguay-ruecktritt-abgelehnt-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-06T04:28:23.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In Paraguay schaltet sich nun die Staatsanwaltschaft ein. Präsident Peña erklärte zwar seinen Rücktritt - der Kongress nahm diesen aber nicht an und eröffnete ein Amtsenthebungsverfahren.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-nach-treffen-mit-dmitrijew-trump-stellt-grosses-abkommen-in-aussicht/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Nach Treffen mit Dmitrijew – Trump stellt „großes Abkommen“ in Aussicht",
@@ -37,7 +70,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/wall-street-ki-blutbad-an-us-boersen-sp-500-bricht-um-vier-prozent-ein/100267625.html",
-   "titel": "Wall Street: „KI-Blutbad“ an Börse – rund drei Billionen Dollar Börsenwert an einem Tag vernichtet",
+   "titel": "Wall Street: „KI-Blutbad“ an den Märkten: Rund drei Billionen Dollar Börsenwert an einem Tag vernichtet",
    "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/wall-street-ki-blutbad-an-us-boersen-sp-500-bricht-um-vier-prozent-ein/100267625.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-05T22:40:26.000Z",
@@ -1012,52 +1045,16 @@
    "maerkte": [],
    "text": "Herzog warns politicians that \"not every commitment and promise can be fulfilled\" if they want to avoid another election.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/alterssicherung-koalition-verschiebt-die-neue-kapitalrente-ins-naechste-jahr/100267176.html",
-   "titel": "Alterssicherung: Koalition verschiebt die neue Kapitalrente ins nächste Jahr",
-   "link": "https://www.handelsblatt.com/politik/deutschland/alterssicherung-koalition-verschiebt-die-neue-kapitalrente-ins-naechste-jahr/100267176.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T16:16:32.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Bisher versprach der Kanzler die große Rentenreform bis Jahresende. Nun gerät der wichtigste Teil der Pläne ins Stocken. Woran es hinter den Kulissen hakt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-ueberwindet-26.000-punkte-marke-und-naehert-sich-rekord/100267175.html",
-   "titel": "Dax aktuell: Dax nähert sich Rekord – Heidelberg-Aktie springt nach oben",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-ueberwindet-26.000-punkte-marke-und-naehert-sich-rekord/100267175.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-04T16:09:25.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Der deutliche Wahlsieg der Demokraten in den USA übertrifft die Erwartungen der Anlegerinnen und Anleger. Für Bewegung sorgen zudem Zahlen und Inflationsdaten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/ukraine-oleschky-mission-als-erster-schritt-zum-frieden/a-79843995",
-   "titel": "Ukraine: Oleschky-Mission als erster Schritt zum Frieden?",
-   "link": "https://www.dw.com/de/ukraine-oleschky-mission-als-erster-schritt-zum-frieden/a-79843995?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-04T16:07:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Aus Oleschky wurden Hunderte Zivilisten evakuiert. Manche Beobachter sprechen von einer erfolgreichen humanitären Mission, andere warnen, Russland habe die Waffenruhe genutzt, um seine militärische Position zu stärken.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 13,
   "DW": 4,
-  "Spiegel Wirtschaft": 5,
+  "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 7,
-  "Handelsblatt": 5,
+  "Handelsblatt": 4,
   "BBC World": 6,
-  "NYT World": 19,
+  "NYT World": 20,
   "EIA Today in Energy": 1
  }
 }
