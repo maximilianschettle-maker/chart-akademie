@@ -1,7 +1,73 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T12:23:29.783Z",
+ "lastUpdated": "2026-11-07T13:23:31.942Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
+   "titel": "New Zealand’s Election ‘Too Close to Call’ as Voters Turn to Minor Parties",
+   "link": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-07T13:13:40.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Preliminary results showed the right-wing bloc slightly ahead but no clear winner after an election that was dominated by economic concerns.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/ukraine-massive-stromprobleme-nach-russischen-angriffen/a-79884371",
+   "titel": "Ukraine: Massive Stromprobleme nach russischen Angriffen",
+   "link": "https://www.dw.com/de/ukraine-massive-stromprobleme-nach-russischen-angriffen/a-79884371?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-07T13:08:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russische Attacken auf die Energie-und Verkehrsinfrastruktur der Ukraine haben in vielen Landesteilen schwere Schäden verursacht. In Kyjiw musste eine wichtige Brücke wieder gesperrt werden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/georgien-nach-umzug-vieler-kliniken-aus-russland-und-der-ukraine-neues-zentrum-f%C3%BCr-leihmutterschaften/a-79611216",
+   "titel": "Georgien nach Umzug vieler Kliniken aus Russland und der Ukraine neues Zentrum für Leihmutterschaften",
+   "link": "https://www.dw.com/de/georgien-nach-umzug-vieler-kliniken-aus-russland-und-der-ukraine-neues-zentrum-für-leihmutterschaften/a-79611216?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-07T13:03:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Seit 2022 hat sich Georgien zu einer Drehscheibe für Leihmutterschaften entwickelt. Viele Kliniken aus Russland und der Ukraine sind wegen des Krieges dorthin umgezogen. Die DW hat mit Leihmüttern und Kunden gesprochen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/der-franzoesische-luxus-eine-epoche-ohne-ende-accg-201648840.html",
+   "titel": "Luxus in Frankreich: Entwürfe vom besseren Leben",
+   "link": "https://www.faz.net/aktuell/wirtschaft/der-franzoesische-luxus-eine-epoche-ohne-ende-accg-201648840.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-07T12:58:30.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In Frankreich ist der Luxus zu Hause. Die Tradition des verfeinerten Lebensstils begann schon mit Ludwig XIV. Nicht einmal Krisen und Kriege halten ihn auf.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po",
+   "titel": "Ukraine's power network suffers further damage after fresh Russian strikes",
+   "link": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-07T12:49:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The attacks come before Ukrainian and Russian delegations are due to take part in trilateral talks in Abu Dhabi next week.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo",
+   "titel": "Four things we learned this week about 2028 White House race",
+   "link": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-07T12:23:28.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The seismic Democratic gains in Congress could shape the presidential election, so who had a good night and who's making moves?",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/wahlen-regierungsbuendnis-liegt-nach-wahl-in-neuseeland-knapp-in-fuehrung/100268071.html",
    "titel": "Wahlen: Regierungsbündnis liegt nach Wahl in Neuseeland knapp in Führung",
@@ -34,17 +100,6 @@
    "maerkte": [],
    "text": "At least 44 people were killed in a brutal assault by a group loyal to the Islamic State, officials said. The area is a hot spot of the growing Ebola outbreak.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/ukraine-massive-stromprobleme-nach-russischen-angriffen/a-79884371",
-   "titel": "Ukraine: Massive Stromprobleme nach russischen Angriffen",
-   "link": "https://www.dw.com/de/ukraine-massive-stromprobleme-nach-russischen-angriffen/a-79884371?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-07T11:39:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russische Attacken auf die Energie-und Verkehrsinfrastruktur der Ukraine haben in vielen Landesteilen schwere Schäden verursacht. In Kyjiw musste eine wichtige Brücke wieder gesperrt werden.",
-   "sprache": "de"
   },
   {
    "id": "https://www.nytimes.com/2026/11/07/world/canada/carney-trump-canada-us-relations-midterm-elections.html",
@@ -88,17 +143,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "After months of secrecy, Ukrainian commanders let New York Times journalists join them in bunkers and training grounds used to reverse some Russian territorial gains.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
-   "titel": "Will New Zealand Join Voters’ Global Revolt Over Soaring Costs?",
-   "link": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-07T09:44:35.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Preliminary results showed no clear front-runner after an election that was dominated by economic concerns.",
    "sprache": "en"
   },
   {
@@ -366,17 +410,6 @@
    "maerkte": [],
    "text": "Nach der Manipulation von Kühlanlagen in europäischen Supermärkten ermitteln deutsche Geheimdienste. Auch US-Behörden sind alarmiert. Wer könnte hinter den Attacken stecken?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo",
-   "titel": "Four midterms takeaways for 2028 White House race",
-   "link": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-06T16:12:22.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The buzz about the presidential election is already under way - here's what we learned this week.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/06/world/middleeast/saudi-arabia-bombing-yemen-civilians-houthi-war.html",
@@ -981,39 +1014,6 @@
    ],
    "text": "Der US-Präsident erlaubt den Import von russischem Diesel, um die Preise zu drücken. Doch mindestens drei von vier erwarteten Tankern drehen ab, weil potenzielle Käufer Probleme fürchten.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/carsten-linnemann-schwaecht-pflegereform-weiter-ab-201655253.html",
-   "titel": "Gesetzentwurf im Bundestag: Linnemann schwächt Pflegereform weiter ab",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/carsten-linnemann-schwaecht-pflegereform-weiter-ab-201655253.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-05T14:34:11.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Minister muss sparen, schont aber pflegende Angehörige: Linnemann will weder bei den Rentenbeiträgen kürzen noch in der Verhinderungspflege. Seine Vorgängerin war radikaler, auch gegenüber den Gewerkschaften.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/daenemark-tv-skandal-100.html",
-   "titel": "Großangelegter TV-Streich sorgt in Dänemark für Skandal",
-   "link": "https://www.tagesschau.de/ausland/daenemark-tv-skandal-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T14:32:28.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ist es in Ordnung, wenn 150 Menschen über Monate einen Freund und Kollegen belügen, um am Ende aufzulösen, dass alles nur ein Spaß fürs Fernsehen war? In Dänemark wird heftig über ein TV-Format diskutiert. Von Arne Bartram.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/05/world/asia/japan-hokusai-great-wave-midterms.html",
-   "titel": "Everyone’s Talking About the ‘Blue Tsunami.’ In Japan, It’s Complicated.",
-   "link": "https://www.nytimes.com/2026/11/05/world/asia/japan-hokusai-great-wave-midterms.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-05T14:31:58.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The New York Post used a Hokusai work to depict Donald Trump being swept away by Democrats’ midterm election win. Some in Japan were bothered by the imagery.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1022,7 +1022,7 @@
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 3,
-  "BBC World": 5,
+  "BBC World": 6,
   "NYT World": 20,
   "EIA Today in Energy": 1
  }
