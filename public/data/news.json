@@ -1,7 +1,51 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T11:23:34.977Z",
+ "lastUpdated": "2026-11-07T12:23:29.783Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/wahlen-regierungsbuendnis-liegt-nach-wahl-in-neuseeland-knapp-in-fuehrung/100268071.html",
+   "titel": "Wahlen: Regierungsbündnis liegt nach Wahl in Neuseeland knapp in Führung",
+   "link": "https://www.handelsblatt.com/politik/international/wahlen-regierungsbuendnis-liegt-nach-wahl-in-neuseeland-knapp-in-fuehrung/100268071.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-07T12:20:35.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Regierungschef Luxon oder Ex-Premier Hipkins? Nach Schließung der Wahllokale in Neuseeland zeichnet sich ein enges Rennen zwischen Konservativen und Labour ab.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/ukraine-angriffe-kiew-138.html",
+   "titel": "Schwere Schäden nach Raketenangriffen auf Kiew",
+   "link": "https://www.tagesschau.de/ausland/ukraine-angriffe-kiew-138.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-07T12:13:38.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russland hat kurz vor Wintereinbruch erneut die ukrainische Strom- und Wasserversorgung angegriffen. In einigen Teilen des Landes fiel der Strom aus. Präsident Selenskyj und Kiews Bürgermeister Klitschko streiten über die Verteidigung.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/07/world/africa/congo-attack-ebola-isis-adf.html",
+   "titel": "Islamist Militant Attack Forces Patients to Flee Ebola Clinic in Congo",
+   "link": "https://www.nytimes.com/2026/11/07/world/africa/congo-attack-ebola-isis-adf.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-07T12:06:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "At least 44 people were killed in a brutal assault by a group loyal to the Islamic State, officials said. The area is a hot spot of the growing Ebola outbreak.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/ukraine-massive-stromprobleme-nach-russischen-angriffen/a-79884371",
+   "titel": "Ukraine: Massive Stromprobleme nach russischen Angriffen",
+   "link": "https://www.dw.com/de/ukraine-massive-stromprobleme-nach-russischen-angriffen/a-79884371?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-07T11:39:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russische Attacken auf die Energie-und Verkehrsinfrastruktur der Ukraine haben in vielen Landesteilen schwere Schäden verursacht. In Kyjiw musste eine wichtige Brücke wieder gesperrt werden.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/07/world/canada/carney-trump-canada-us-relations-midterm-elections.html",
    "titel": "America’s Rebuke of Trump Won’t Swiftly Restore Canada-U.S. Harmony",
@@ -123,17 +167,6 @@
     "aktien"
    ],
    "text": "Die Demokraten erobern Repräsentantenhaus und Senat. Anleger reagieren mit Verkäufen, vor allem bei Tech-Aktien. Warum die Zweifel an den KI-Investitionen älter sind als das Wahlergebnis.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/ukraine-angriffe-kiew-138.html",
-   "titel": "Schwere Schäden nach Raketenangriffen auf Kiew",
-   "link": "https://www.tagesschau.de/ausland/ukraine-angriffe-kiew-138.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-07T07:40:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Erneut haben russische Raketen die ukrainische Hauptstadt Kiew und das Umland getroffen. Es gab zahlreiche Explosionen, so Bürgermeister Klitschko. Die Strom- und Wasserversorgung seien stark beeinträchtigt.",
    "sprache": "de"
   },
   {
@@ -981,56 +1014,16 @@
    "maerkte": [],
    "text": "The New York Post used a Hokusai work to depict Donald Trump being swept away by Democrats’ midterm election win. Some in Japan were bothered by the imagery.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/geldpolitik/bank-of-england-britische-notenbank-hebt-zinsen-erstmals-seit-drei-jahren-an/100266567.html",
-   "titel": "Bank of England: Britische Notenbank hebt Zinsen erstmals seit drei Jahren an – auf 4,0 Prozent",
-   "link": "https://www.handelsblatt.com/finanzen/geldpolitik/bank-of-england-britische-notenbank-hebt-zinsen-erstmals-seit-drei-jahren-an/100266567.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T13:27:49.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Der Energiepreisschock trifft Großbritannien hart, zuletzt stieg die Inflation auf 3,5 Prozent. Nun reagiert die Bank of England und stimmt die Märkte auf weitere Zinserhöhungen ein.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/finanzen/oelpreise-sinken-100.html",
-   "titel": "Ölpreise fallen weiter, DAX steigt auf Rekordhoch",
-   "link": "https://www.tagesschau.de/wirtschaft/finanzen/oelpreise-sinken-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T13:18:40.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "Öl wird günstiger und damit auch Benzin. Diesel allerdings bleibt teuer. Nach den Midterms hoffen Anleger auf Entspannung im Iran-Krieg - aber die Lage bleibt weiter angespannt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/usa-trumps-diesel-deal-mit-russland-verpufft-tanker-weichen-aus/100267484.html",
-   "titel": "USA: Trumps Diesel-Deal mit Russland verpufft – Tanker weichen aus",
-   "link": "https://www.handelsblatt.com/politik/international/usa-trumps-diesel-deal-mit-russland-verpufft-tanker-weichen-aus/100267484.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T12:51:54.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Der US-Präsident erlaubt den Import von russischem Diesel, um die Preise zu drücken. Doch mindestens drei von vier erwarteten Tankern drehen ab, weil potenzielle Käufer Probleme fürchten.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
-  "DW": 6,
+  "tagesschau": 11,
+  "DW": 7,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 3,
   "BBC World": 5,
-  "NYT World": 19,
+  "NYT World": 20,
   "EIA Today in Energy": 1
  }
 }
