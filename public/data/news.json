@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-06T23:15:44.818Z",
+ "lastUpdated": "2026-11-07T00:23:34.004Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
+   "titel": "Paraguay’s President Removed and Arrested Over Financial Crisis",
+   "link": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-06T23:59:10.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Santiago Peña was impeached, removed from office and placed under house arrest after a bank with close ties to his administration went under.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
    "titel": "Will New Zealand Join Voters’ Global Revolt Over Soaring Costs?",
@@ -11,17 +22,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "In the lead-up to an election in which economic concerns dominate, there was no clear front-runner. Minor parties will most likely determine who governs.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
-   "titel": "Paraguay’s President Removed Over Financial Crisis",
-   "link": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-06T22:55:02.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Millions lost access to their savings, and the nation’s president was impeached and removed from office Friday after a major bank with close ties to his administration went under.",
    "sprache": "en"
   },
   {
