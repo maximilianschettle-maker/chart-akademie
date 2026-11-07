@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T14:23:27.149Z",
+ "lastUpdated": "2026-11-07T15:23:30.835Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o",
+   "titel": "No clear winner after tight New Zealand general election",
+   "link": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-07T15:00:10.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Weeks of coalition talks could follow after preliminary results pointed to a highly divided national parliament.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/brasilien-was-linke-wahlstrategen-von-lulas-sieg-lernen-koennen/100267105.html",
+   "titel": "Brasilien: Was linke Wahlstrategen von Lulas Sieg lernen können",
+   "link": "https://www.handelsblatt.com/politik/international/brasilien-was-linke-wahlstrategen-von-lulas-sieg-lernen-koennen/100267105.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-07T15:00:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Durch den Wahlsieg in den USA fühlen sich linke Parteien weltweit beflügelt. Wollen sie die Stimmung in Wahlergebnisse umwandeln, lohnt sich der Blick auf Brasilien.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/elizabeth-holmes-kann-man-dieser-frau-glauben-accg-201653277.html",
+   "titel": "Elizabeth Holmes: Kann man dieser Frau glauben?",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/elizabeth-holmes-kann-man-dieser-frau-glauben-accg-201653277.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-07T14:30:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Elizabeth Holmes war ein Star im Silicon Valley. Dann flog ihr Betrug auf. In einem spektakulären Dokumentarfilm erscheint sie jetzt in neuem Licht.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
    "titel": "New Zealand’s Election ‘Too Close to Call’ as Voters Turn to Minor Parties",
@@ -976,51 +1009,15 @@
    "maerkte": [],
    "text": "The move follows a bank collapse and after the lower house of congress voted in favour of pursuing an impeachment trial against him.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
-   "titel": "Marktbericht: DAX springt auf Rekordhoch",
-   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T17:16:27.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "Die Märkte bleiben im Aufwind: Nach den US-Zwischenwahlen erreicht der DAX im frühen Handel einen neuen Höchststand. Rückenwind erhält er von günstigeren Ölpreisen und positiven Signalen aus der Industrie.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/us-midterms-trump-alaska-100.html",
-   "titel": "Trump kritisiert die Midterms-Auszählung im Bundesstaat Alaska",
-   "link": "https://www.tagesschau.de/ausland/amerika/us-midterms-trump-alaska-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T16:58:22.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Noch läuft die Auszählung der Senatoren-Wahl in Alaska. Es zeichnet sich ein knappes Rennen ab. Nun mischt sich US-Präsident Trump ein: Er fordert, die Stimmen für Dan J. Sullivan dem Republikaner Dan S. Sullivan zuzuschlagen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/hongkong-lange-haft-f%C3%BCr-demokratie-aktivist-joshua-wong/a-79863215",
-   "titel": "Hongkong: Lange Haft für Demokratie-Aktivist Joshua Wong",
-   "link": "https://www.dw.com/de/hongkong-lange-haft-für-demokratie-aktivist-joshua-wong/a-79863215?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-05T15:09:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "2014 erlangte Joshua Wong als ein \"Gesicht der Demokratiebewegung\" in Hongkong internationale Bekanntheit. Nun erhielt der inhaftierte Kämpfer für Menschenrechte eine weitere Gefängnisstrafe.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 9,
   "DW": 7,
   "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 6,
-  "Handelsblatt": 3,
-  "BBC World": 6,
+  "FAZ Wirtschaft": 7,
+  "Handelsblatt": 4,
+  "BBC World": 7,
   "NYT World": 20,
   "EIA Today in Energy": 1
  }
