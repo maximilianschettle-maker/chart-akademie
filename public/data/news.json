@@ -1,7 +1,51 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T20:23:32.804Z",
+ "lastUpdated": "2026-11-07T20:57:37.617Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/dana-white-trump-will-kampfsport-manager-als-sprecher-des-weissen-hauses/100268144.html",
+   "titel": "Dana White: Trump will Kampfsport-Manager als Sprecher des Weißen Hauses",
+   "link": "https://www.handelsblatt.com/politik/international/dana-white-trump-will-kampfsport-manager-als-sprecher-des-weissen-hauses/100268144.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-07T20:49:25.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Donald Trump sieht in UFC-Präsident Dana White einen „gewalttätigen Kämpfer und Krieger“. Nach seinem Wunsch sollen White auch sechs UFC-Titelträger bei seinem neuen Job begleiten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/ermittlungen-paraguay-pena-100.html",
+   "titel": "Bankenkrise: Anklage gegen Paraguays Ex-Präsidenten",
+   "link": "https://www.tagesschau.de/ausland/amerika/ermittlungen-paraguay-pena-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-07T20:33:23.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nur einen Tag nach seiner Amtsenthebung muss sich Paraguays Ex-Präsident Peña wegen seiner Rolle im Bankenskandal vor der Justiz verantworten. Die Staatsanwaltschaft fordert Untersuchungshaft.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/nahost-netanjahu-rivale-eisenkot-in-israel-mit-regierungsbildung-beauftragt/100268142.html",
+   "titel": "Nahost: Netanjahu-Rivale Eisenkot in Israel mit Regierungsbildung beauftragt",
+   "link": "https://www.handelsblatt.com/politik/international/nahost-netanjahu-rivale-eisenkot-in-israel-mit-regierungsbildung-beauftragt/100268142.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-07T20:32:05.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die jüngsten Wahlen in Israel hatten eine Patt-Situation zwischen Netanjahu und seinem Rivalen Eisenkot hervorgebracht. Nun soll der Oppositionspolitiker versuchen, eine Regierung zu bilden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/regierungsbildung-israel-eisenkot-100.html",
+   "titel": "Oppositionsführer Eisenkot soll Israels neue Regierung bilden",
+   "link": "https://www.tagesschau.de/ausland/asien/regierungsbildung-israel-eisenkot-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-07T20:31:48.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Endet die Ära Netanjahu in Israel? Staatspräsident Herzog beauftragt den Oppositionspolitiker Eisenkot mit der Regierungsbildung. In den kommenden 28 Tagen soll er versuchen, eine Koalition zu schmieden.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo",
    "titel": "What we know so far after Polish gunman opens fire in Krakow main square",
@@ -12,17 +56,6 @@
    "maerkte": [],
    "text": "At least six people were killed by a gunman in military fatigues who opened fire in Poland's second largest city.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/regierungsbildung-israel-eisenkot-100.html",
-   "titel": "Oppositionsführer Eisenkot soll Israels neue Regierung bilden",
-   "link": "https://www.tagesschau.de/ausland/asien/regierungsbildung-israel-eisenkot-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-07T20:17:30.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Endet die Ära Netanjahu in Israel? Staatspräsident Herzog beauftragt den Oppositionspolitiker Eisenkot mit der Regierungsbildung. In den kommenden 28 Tagen soll er versuchen, eine Koalition zu schmieden.",
-   "sprache": "de"
   },
   {
    "id": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
@@ -37,7 +70,7 @@
   },
   {
    "id": "https://www.nytimes.com/2026/11/07/world/middleeast/israel-eisenkot-government.html",
-   "titel": "Israeli Opposition Leader Tapped to Try to Form Government",
+   "titel": "Eisenkot, Netanyahu Rival and Opposition Leader, Tapped to Try to Form Government",
    "link": "https://www.nytimes.com/2026/11/07/world/middleeast/israel-eisenkot-government.html",
    "quelle": "NYT World",
    "zeit": "2026-11-07T19:50:21.000Z",
@@ -972,47 +1005,10 @@
    "maerkte": [],
    "text": "Frühere Proteste wurden wiederholt von Plünderungen überschattet. Am Donnerstag war die Stimmung zunächst heiter. Doch aus Paris und Lyon wurden Ausschreitungen gemeldet.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-airline-passengers.html",
-   "titel": "Bomb Threats Disrupt European Flights and Rattle Passengers",
-   "link": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-airline-passengers.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-05T19:39:19.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Passengers recounted landing at a military base and being subjected to security checks and travel delays after threats that turned out to be hoaxes affected planes in Italy, Poland and Spain.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/wall-street-ki-blutbad-an-boerse-sp-500-dow-und-nasdaq-brechen-ein/100267625.html",
-   "titel": "Wall Street: „KI-Blutbad“ an US-Börsen – S&P 500 bricht um vier Prozent ein",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/wall-street-ki-blutbad-an-boerse-sp-500-dow-und-nasdaq-brechen-ein/100267625.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T19:37:39.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Zwei Tage nach der US-Wahl bricht die Wall Street ein. Die Sorge vor einer schärferen KI-Regulierung löst einen Ausverkauf aus. Doch ein anderer Faktor verstärkt den Kursrutsch.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/fussfessel-schluessel-100.html",
-   "titel": "Häftling auf der Flucht: Fußfessel-Schlüssel gab es im Internet",
-   "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/fussfessel-schluessel-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T19:34:20.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Im Oktober war ein Häftling in Essen während eines Arztbesuchs von Komplizen befreit worden und ist seitdem auf der Flucht. Nun räumte der NRW-Justizminister ein: Den Schlüssel für die Fußfessel gab es für 10 Euro im Internet zu kaufen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 10,
   "DW": 6,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
