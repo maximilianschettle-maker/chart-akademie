@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T21:23:27.450Z",
+ "lastUpdated": "2026-11-07T22:23:35.140Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo",
+   "titel": "What we know so far after Krakow gun attack",
+   "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-07T21:13:24.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at his home.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/katherina-reiche-und-die-leeren-gasspeicher-deutschlands-riskante-wette-201646419.html",
    "titel": "Energieversorgung: Deutschlands riskante Erdgas-Wette",
@@ -58,17 +69,6 @@
    "maerkte": [],
    "text": "Endet die Ära Netanjahu in Israel? Staatspräsident Herzog beauftragt den Oppositionspolitiker Eisenkot mit der Regierungsbildung. In den kommenden 28 Tagen soll er versuchen, eine Koalition zu schmieden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo",
-   "titel": "What we know so far after Polish gunman opens fire in Krakow main square",
-   "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-07T20:23:17.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "At least six people were killed by a gunman in military fatigues who opened fire in Poland's second largest city.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
@@ -1015,7 +1015,7 @@
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 3,
-  "BBC World": 6,
+  "BBC World": 7,
   "NYT World": 19,
   "EIA Today in Energy": 1
  }
