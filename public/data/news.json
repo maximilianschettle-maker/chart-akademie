@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T16:54:11.126Z",
+ "lastUpdated": "2026-11-07T17:23:31.535Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/2026/11/07/world/middleeast/more-than-50-killed-in-yemen.html",
@@ -306,7 +306,7 @@
    "titel": "Paraguay’s President Removed and Arrested Over Financial Crisis",
    "link": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-07T01:29:30.000Z",
+   "zeit": "2026-11-07T01:29:31.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "Santiago Peña was impeached, removed from office and placed under house arrest after a bank with close ties to his administration went under.",
@@ -1016,8 +1016,8 @@
   "DW": 6,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 4,
-  "BBC World": 7,
+  "Handelsblatt": 3,
+  "BBC World": 6,
   "NYT World": 20,
   "EIA Today in Energy": 1
  }
