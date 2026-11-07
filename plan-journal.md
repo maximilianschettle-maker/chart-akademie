@@ -65,7 +65,7 @@ Ziel: Trades von eToro erfassen, abschließen, auswerten, sichern. Kerzen rund u
   Aktionen neu / schließen / aktualisieren. Seite `/training/journal/screenshot` mit Prüfliste.
 - Damit ist Schritt 3 (Sprache) weitgehend überflüssig: der Screenshot ist der schnellere Weg.
 
-## Schritt 2b: KI-Prüfung über den Worker (hybrid)
+## Schritt 2b: KI-Prüfung über den Worker (hybrid) (erledigt 2026-11-07, Live-Qualität offen)
 
 - Worker-Endpunkt `POST /api/pruefung` (Token wie bisher), Secret `ANTHROPIC_API_KEY`, Modell `claude-haiku-5-5`
   (Kostenrahmen: Cent je Prüfung), Antwort auf Deutsch, max. 250 Wörter, im Eintrag gespeichert (`pruefung`).

@@ -1,11 +1,14 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import { ArrowLeft, Pencil, RefreshCw, Trash2 } from 'lucide-react'
+import { ArrowLeft, LoaderCircle, Pencil, RefreshCw, Sparkles, Trash2 } from 'lucide-react'
 import { useJournalStore } from '../store'
 import { useAnsichtStore } from '../../analyse/ansichtStore'
 import { ergebnis, geplantesCrv, ortszeitAusUnix, rMultiple, setupName, trefferZeit, unixAusOrtszeit, zeitKurz, type EintragEntwurf } from '../engine'
-import { GEFUEHLE, type AusstiegGrund, type JournalEintrag, type Snapshot } from '../types'
+import { GEFUEHLE, type AusstiegGrund, type JournalEintrag, type Pruefung, type Snapshot } from '../types'
 import { snapshotEntfernen, snapshotLaden, snapshotLesen, type SnapshotErgebnis } from '../snapshots'
+import { faktenSammeln } from '../fakten'
+import { tradePruefen } from '../pruefung'
+import { workerKonfiguriert } from '../../aktien/data/client'
 import { EintragForm } from '../EintragForm'
 import { chip } from '../ui'
 import { HandelsChart, type ChartLinie, type ChartMarker } from '../../components/chart/HandelsChart'
@@ -29,6 +32,43 @@ function zahl(text: string): number | undefined {
   if (!text.trim()) return undefined
   const n = Number(text.replace(/\./g, '').replace(',', '.'))
   return Number.isFinite(n) ? n : undefined
+}
+
+const URTEIL_FARBE: Record<Pruefung['urteil'], string> = { sauber: 'bg-long/15 text-long', 'mit Abstrichen': 'bg-akzent/15 text-akzent', herbeigesehnt: 'bg-short/15 text-short' }
+
+function PruefungKarte({ p }: { p: Pruefung }) {
+  return (
+    <div className="rounded-xl border border-rand bg-nacht/40 p-3">
+      <div className="flex flex-wrap items-center gap-2">
+        <span className={`rounded px-2 py-0.5 text-xs font-semibold ${URTEIL_FARBE[p.urteil]}`}>{p.urteil}</span>
+        <span className="text-[11px] text-gedimmt">
+          {p.mitErgebnis ? 'mit Ergebnis' : 'Vorher-Blick, ohne Ergebnis'} · {zeitKurz(Math.floor(p.erstelltAm / 1000))}
+        </span>
+      </div>
+      <dl className="mt-2 grid grid-cols-3 gap-2 text-xs">
+        <div>
+          <dt className="text-gedimmt">Setup</dt>
+          <dd className="text-white">{p.setupVorhanden}</dd>
+        </div>
+        <div>
+          <dt className="text-gedimmt">Einstieg</dt>
+          <dd className="text-white">{p.einstieg}</dd>
+        </div>
+        <div>
+          <dt className="text-gedimmt">Stop</dt>
+          <dd className="text-white">{p.stop}</dd>
+        </div>
+      </dl>
+      <p className="mt-2 whitespace-pre-wrap text-sm text-schrift">{p.text}</p>
+      {p.naechstesMal.length > 0 && (
+        <ul className="mt-2 list-disc space-y-0.5 pl-5 text-sm text-schrift">
+          {p.naechstesMal.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )
 }
 
 function Fakt({ titel, wert, farbe }: { titel: string; wert: string; farbe?: string }) {
@@ -184,6 +224,10 @@ export function JournalEintragPage() {
   const [snapshotStatus, setSnapshotStatus] = useState<'laedt' | 'ok' | 'keiner' | 'kein-worker' | 'zu-alt' | 'fehler'>('laedt')
   const [bearbeiten, setBearbeiten] = useState(false)
   const [loeschenFragen, setLoeschenFragen] = useState(false)
+  const alleEintraege = useJournalStore((s) => s.eintraege)
+  const [pruefLaeuft, setPruefLaeuft] = useState<false | 'vorher' | 'nachher'>(false)
+  const [pruefFehler, setPruefFehler] = useState<string | null>(null)
+  const mitWorker = workerKonfiguriert()
 
   async function kerzenHolen(eintrag: JournalEintrag) {
     setSnapshotStatus('laedt')
@@ -265,6 +309,21 @@ export function JournalEintragPage() {
   function abschliessen(teil: Partial<JournalEintrag>) {
     aendern(e!.id, teil)
     void kerzenHolen({ ...e!, ...teil })
+  }
+
+  async function pruefen(mitErgebnis: boolean) {
+    setPruefLaeuft(mitErgebnis ? 'nachher' : 'vorher')
+    setPruefFehler(null)
+    try {
+      const fakten = faktenSammeln(e!, kerzen ?? null, alleEintraege, snapshot?.intervall ?? null, mitErgebnis)
+      const antwort = await tradePruefen(fakten)
+      const neu: Pruefung = { ...antwort, erstelltAm: Date.now(), mitErgebnis }
+      aendern(e!.id, { pruefungen: [...(e!.pruefungen ?? []), neu] })
+    } catch (err) {
+      setPruefFehler(err instanceof Error ? err.message : String(err))
+    } finally {
+      setPruefLaeuft(false)
+    }
   }
 
   function entfernen() {
@@ -384,10 +443,32 @@ export function JournalEintragPage() {
         </div>
       )}
 
-      {e.pruefung && (
+      {!bearbeiten && (
         <section className="mt-4 rounded-xl border border-rand bg-flaeche p-4">
-          <h2 className="text-sm font-semibold text-white">KI-Prüfung ({e.pruefung.mitErgebnis ? 'mit Ergebnis' : 'vor dem Ergebnis'})</h2>
-          <p className="mt-1 whitespace-pre-wrap text-sm text-schrift">{e.pruefung.text}</p>
+          <h2 className="text-sm font-semibold text-white">KI-Prüfung</h2>
+          <p className="mt-1 text-xs text-gedimmt">
+            Fakten aus der Setup-Erkennung auf den gespeicherten Kerzen bis zum Einstieg (kein Blick in die Zukunft) plus deine Angaben; Claude formuliert das Urteil. Ohne Kerzen bleibt das Urteil dünn.
+          </p>
+          <div className="mt-3 flex flex-wrap items-center gap-2">
+            <button type="button" onClick={() => void pruefen(false)} className={KNOPF_AKZENT} disabled={!mitWorker || pruefLaeuft !== false}>
+              {pruefLaeuft === 'vorher' ? <LoaderCircle className="h-3.5 w-3.5 animate-spin" /> : <Sparkles className="h-3.5 w-3.5" />} Vorher-Blick (ohne Ergebnis)
+            </button>
+            {e.status === 'geschlossen' && (
+              <button type="button" onClick={() => void pruefen(true)} className={KNOPF} disabled={!mitWorker || pruefLaeuft !== false}>
+                {pruefLaeuft === 'nachher' ? <LoaderCircle className="h-3.5 w-3.5 animate-spin" /> : <Sparkles className="h-3.5 w-3.5" />} Mit Ergebnis prüfen
+              </button>
+            )}
+            {!mitWorker && <span className="text-[11px] text-gedimmt">Kein Worker eingetragen (Aktien → Einstellungen).</span>}
+            {!kerzen && mitWorker && <span className="text-[11px] text-akzent">Keine Kerzen gespeichert – erst „Kerzen neu laden“.</span>}
+          </div>
+          {pruefFehler && <p className="mt-2 text-xs text-short">{pruefFehler}</p>}
+          {(e.pruefungen ?? []).length > 0 && (
+            <div className="mt-3 space-y-3">
+              {[...(e.pruefungen ?? [])].reverse().map((p) => (
+                <PruefungKarte key={p.erstelltAm} p={p} />
+              ))}
+            </div>
+          )}
         </section>
       )}
     </div>

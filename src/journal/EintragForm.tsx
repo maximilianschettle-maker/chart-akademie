@@ -111,9 +111,9 @@ export function EintragForm({ start, vorhanden, kerzen, onSpeichern, onAbbrechen
             gebuehren: zahlOderLeer(gebuehren),
             gefuehlNachher: gefuehlNachher || undefined,
             lehre: lehre.trim() || undefined,
-            pruefung: vorhanden.pruefung,
+            pruefungen: vorhanden.pruefungen,
           }
-        : { pruefung: vorhanden.pruefung }
+        : { pruefungen: vorhanden.pruefungen }
       : {}),
   })
 

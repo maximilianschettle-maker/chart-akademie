@@ -12,6 +12,7 @@
 //   GET  /api/zustand · PUT /api/zustand   Watchlist + DCF-Annahmen für den Geräte-Sync (KV)
 //   GET  /api/tracker · PUT /api/tracker   Konfiguration des Markt-Trackers (KV); liest auch die GitHub Action
 //   POST /api/ki/screenshot {bild, typ}    Broker-Screenshot → Positionen (Claude, ANTHROPIC_API_KEY als Secret)
+//   POST /api/ki/pruefung {fakten}          Trade-Prüfung aus Fakten (Claude)
 //
 // Außerdem Cron-Trigger (wrangler.toml → src/cron.ts), die die GitHub Actions anstoßen.
 // Jede Antwort trägt CORS-Header, auch Fehler; nach 25 s kommt 504 statt eines Hängers.
@@ -23,7 +24,7 @@ import { CRON_STATUS_KEY, cronLauf, type CronStatus } from './cron'
 import { HttpFehler, corsHeader, fehler, json, mitZeitlimit, pruefeZugang, type Env } from './http'
 import { cikIndex, secTeilLaden } from './sec'
 import { chartKerzen, kurs, suche, wechselkurse, yahooTeil } from './yahoo'
-import { positionenAusBild } from './ki'
+import { positionenAusBild, tradePruefen } from './ki'
 import { BILD_TYPEN, type BildTyp } from '../../src/journal/positionTypes'
 import { bereichDef } from '../../src/aktien/engine/chart'
 
@@ -158,6 +159,13 @@ async function bearbeiten(req: Request, env: Env, url: URL): Promise<Response> {
     if (!body || typeof body.bild !== 'string' || !typ) throw new HttpFehler('Erwartet {bild: Base64, typ: image/jpeg|png|webp|gif}', 400)
     if (body.bild.length > BILD_MAX_ZEICHEN) throw new HttpFehler('Bild zu groß (max. ~4,5 MB)', 413)
     return json(req, await positionenAusBild(env, body.bild, typ))
+  }
+
+  if (pfad === '/api/ki/pruefung' && req.method === 'POST') {
+    const body = (await req.json().catch(() => null)) as { fakten?: unknown } | null
+    if (!body || !body.fakten || typeof body.fakten !== 'object') throw new HttpFehler('Erwartet {fakten: {...}}', 400)
+    if (JSON.stringify(body.fakten).length > 50_000) throw new HttpFehler('Fakten zu groß', 413)
+    return json(req, await tradePruefen(env, body.fakten))
   }
 
   throw new HttpFehler('Nicht gefunden', 404)

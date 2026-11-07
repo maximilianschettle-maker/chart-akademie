@@ -270,7 +270,8 @@ export function bereichFuerZeitrahmen(z: Zeitrahmen): ChartBereich {
   return '6M'
 }
 
-export const SNAPSHOT_VOR = 200
+/** Vorlauf reicht für die Setup-Erkennung (ERKENNUNG_RUECKSCHAU 420) */
+export const SNAPSHOT_VOR = 450
 export const SNAPSHOT_NACH = 60
 
 /** Ausschnitt um den Einstieg; null, wenn der Einstieg vor der ersten Kerze liegt (Daten reichen nicht zurück) */

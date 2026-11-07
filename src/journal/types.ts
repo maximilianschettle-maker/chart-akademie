@@ -1,4 +1,5 @@
 import type { Richtung } from '../types'
+import type { PruefungAntwort } from './pruefungTypes'
 
 // Journal für echte Trades (eToro). Getrennt vom Simulator-Trade (`Trade`), weil ein echter
 // Eintrag einen Lebenszyklus hat (offen → geschlossen), Ergebnis und Gebühren vom Broker kommen
@@ -59,10 +60,15 @@ export interface JournalEintrag {
   /** Netto-Ergebnis laut Broker in Kontowährung (nach Gebühren) */
   ergebnisBetrag?: number
   gebuehren?: number
-  /** KI-Prüfung (Schritt 2) */
-  pruefung?: { text: string; erstelltAm: number; modell: string; mitErgebnis: boolean }
+  /** KI-Prüfungen: „vorher“ (ohne Ergebnis) und „nachher“ (mit Ergebnis), älteste zuerst */
+  pruefungen?: Pruefung[]
   erstelltAm: number
   geaendertAm: number
+}
+
+export interface Pruefung extends PruefungAntwort {
+  erstelltAm: number
+  mitErgebnis: boolean
 }
 
 /** Kerzen rund um den Einstieg, gerätelokal in IndexedDB */

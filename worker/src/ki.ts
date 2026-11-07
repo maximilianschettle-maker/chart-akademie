@@ -3,9 +3,11 @@ import { zodOutputFormat } from '@anthropic-ai/sdk/helpers/zod'
 import { z } from 'zod'
 import { HttpFehler, type Env } from './http'
 import type { BildTyp, ScreenshotErgebnis } from '../../src/journal/positionTypes'
+import type { PruefungAntwort } from '../../src/journal/pruefungTypes'
 
 // Claude im Worker: der API-Schlüssel bleibt hier (wrangler secret ANTHROPIC_API_KEY), die App
-// schickt nur Bilder bzw. Fakten. Erster Nutzer: Broker-Screenshots (eToro) → Positionen fürs Journal.
+// schickt nur Bilder bzw. Fakten. Nutzer: Broker-Screenshots (eToro) → Positionen fürs Journal,
+// und die Trade-Prüfung (Fakten aus der Setup-Erkennung → kritisches Urteil).
 
 export const KI_MODELL = 'claude-opus-5-5'
 
@@ -76,6 +78,55 @@ export async function positionenAusBild(env: Env, bild: string, typ: BildTyp): P
     const daten = antwort.parsed_output
     if (!daten) throw new HttpFehler('Antwort des Modells nicht lesbar.', 502)
     return { positionen: daten.positionen, hinweis: daten.hinweis, modell: antwort.model }
+  } catch (e) {
+    if (e instanceof HttpFehler) throw e
+    if (e instanceof Anthropic.AuthenticationError) throw new HttpFehler('ANTHROPIC_API_KEY wird von Anthropic nicht akzeptiert.', 502)
+    if (e instanceof Anthropic.RateLimitError) throw new HttpFehler('Anthropic: Ratenlimit erreicht, gleich nochmal.', 429)
+    if (e instanceof Anthropic.APIError) throw new HttpFehler(`Anthropic-Fehler ${e.status ?? ''}: ${e.message}`, 502)
+    throw e
+  }
+}
+
+// ── Trade-Prüfung ────────────────────────────────────────────────────────────
+
+const PruefungSchema = z.object({
+  urteil: z.enum(['sauber', 'mit Abstrichen', 'herbeigesehnt']),
+  setupVorhanden: z.enum(['ja', 'teilweise', 'nein', 'unklar']),
+  einstieg: z.enum(['passend', 'zu früh', 'zu spät', 'unklar']),
+  stop: z.enum(['sinnvoll', 'zu eng', 'zu weit', 'ohne Struktur', 'unklar']),
+  text: z.string(),
+  naechstesMal: z.array(z.string()),
+})
+
+const SYSTEM_PRUEFUNG = `Du bist ein strenger, fairer Trading-Coach für einen Privattrader (CFDs auf Nasdaq, Gold, Öl, Bitcoin, Zeitrahmen 5 min bis Tag). Er lernt Setups aus seinem Kurs: Trendfolge-Pullback an die EMA 20, Support/Resistance-Bounce, Breakout + Retest, Range Trading, Liquidity Sweep.
+
+Du bekommst Fakten als JSON. Sie stammen aus einer regelbasierten Erkennung auf den Kerzen bis zur Einstiegskerze (kein Blick in die Zukunft) und aus dem Journal des Traders. Du siehst keine Kerzen.
+
+Regeln:
+- Beurteile nur anhand der Fakten. Erfinde keine Kurse, Muster oder Nachrichten. Fehlt etwas (null), sag, dass du es nicht beurteilen kannst, und setze die Einstufung auf "unklar".
+- "erkanntesSetup" ist das, was die Erkennung gefunden hat; "setupBehauptet" ist, was der Trader angibt. Weichen sie ab oder fehlt ein erkanntes Setup, ist das ein starkes Indiz für einen herbeigesehnten Trade – sag das deutlich, aber benenne auch, was die Erkennung übersehen könnte.
+- "signalVorKerzen" > 3 heißt: der Trader ist spät eingestiegen; "einstiegInZone" false heißt: außerhalb der Zone. Ein Einstieg gegen "trend" braucht eine Begründung.
+- Stop: "stopInAtr" unter 0,8 ist meist Rauschen, über 3 zu weit; "struktur.stopDahinter" false heißt, der Stop liegt vor dem Swing-Tief/-Hoch und wird leicht abgeholt.
+- "heute": ein weiterer Trade nach Verlusten am selben Tag ist ein Warnsignal (Revanche).
+- Fehlt "ergebnis", kennst du den Ausgang nicht: bewerte ausschließlich den Prozess. Ist es da, trenne Prozess und Ergebnis: ein Gewinn macht einen schlechten Einstieg nicht gut, ein Verlust einen sauberen nicht schlecht. "mfeR"/"maeR" zeigen, wie weit es für und gegen ihn lief.
+- Pflicht im Text: eine Gegenthese (was spricht gegen deine Einschätzung bzw. gegen den Trade).
+- Stil: Deutsch, per Du, direkt, ohne Floskeln und ohne Lob zum Einstieg. Höchstens 180 Wörter im Text. naechstesMal: zwei bis drei konkrete, prüfbare Punkte.`
+
+/** Kritische Prüfung eines Trades aus den Fakten (JSON, vom Browser berechnet) */
+export async function tradePruefen(env: Env, fakten: unknown): Promise<PruefungAntwort> {
+  try {
+    const antwort = await client(env).messages.parse({
+      model: KI_MODELL,
+      max_tokens: 2000,
+      system: SYSTEM_PRUEFUNG,
+      output_config: { effort: 'medium', format: zodOutputFormat(PruefungSchema) },
+      messages: [{ role: 'user', content: `Fakten zum Trade:\n${JSON.stringify(fakten, null, 1)}` }],
+    })
+    if (antwort.stop_reason === 'refusal') throw new HttpFehler('Das Modell hat die Prüfung abgelehnt.', 422)
+    if (antwort.stop_reason === 'max_tokens') throw new HttpFehler('Antwort des Modells abgeschnitten.', 502)
+    const daten = antwort.parsed_output
+    if (!daten) throw new HttpFehler('Antwort des Modells nicht lesbar.', 502)
+    return { ...daten, modell: antwort.model }
   } catch (e) {
     if (e instanceof HttpFehler) throw e
     if (e instanceof Anthropic.AuthenticationError) throw new HttpFehler('ANTHROPIC_API_KEY wird von Anthropic nicht akzeptiert.', 502)
