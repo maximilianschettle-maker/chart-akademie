@@ -1,10 +1,45 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T07:23:38.550Z",
+ "lastUpdated": "2026-11-07T08:23:27.571Z",
  "eintraege": [
   {
+   "id": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
+   "titel": "After Israel’s Election, Who Will Get the First Chance to Form a Government?",
+   "link": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-07T08:02:08.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Isaac Herzog is set to task a candidate with trying to form a government, following two days of talks with party leaders and officials after an inconclusive election.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-plus-mein-amerika-ist-zurueck-und-laesst-die-boersen-beben/100267517.html",
+   "titel": "Morning Briefing Plus: Mein Amerika ist zurück – und lässt die Börsen beben",
+   "link": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-plus-mein-amerika-ist-zurueck-und-laesst-die-boersen-beben/100267517.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-07T07:45:17.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Die Demokraten erobern Repräsentantenhaus und Senat. Anleger reagieren mit Verkäufen, vor allem bei Tech-Aktien. Warum die Zweifel an den KI-Investitionen älter sind als das Wahlergebnis.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/ukraine-angriffe-kiew-138.html",
+   "titel": "Schwere Schäden nach Raketenangriffen auf Kiew",
+   "link": "https://www.tagesschau.de/ausland/ukraine-angriffe-kiew-138.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-07T07:40:23.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Erneut haben russische Raketen die ukrainische Hauptstadt Kiew und das Umland getroffen. Es gab zahlreiche Explosionen, so Bürgermeister Klitschko. Die Strom- und Wasserversorgung seien stark beeinträchtigt.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o",
-   "titel": "Paraguay's President Santiago Peña impeached and arrested after bank collapse",
+   "titel": "Paraguay's president impeached and under house arrest after bank collapse",
    "link": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-07T07:20:00.000Z",
@@ -66,17 +101,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Friday's resolution by academic staff is largely symbolic as they do not have the power to remove those in charge of the university.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
-   "titel": "After Israel’s Election, Who Will Get the First Chance to Form a Government?",
-   "link": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-06T22:36:16.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Isaac Herzog is set to task a candidate with trying to form a government, following two days of talks with party leaders and officials after an inconclusive election.",
    "sprache": "en"
   },
   {
@@ -1003,36 +1027,14 @@
    "maerkte": [],
    "text": "The Israeli leader and his allies are alleging that Arab voters last month stole the election. Election officials say that while foul play was being investigated, it could not have affected the result.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-herzog-prime-minister.html",
-   "titel": "Here’s Who Is Meeting Israel’s President to Recommend a Prime Minister",
-   "link": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-herzog-prime-minister.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-05T10:56:11.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Israeli party leaders are in discussions with President Isaac Herzog over who should get the first chance to form a governing coalition.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/videos/cmvg9yy8wpweo",
-   "titel": "Was an Italian chef really fired over refusal to put pineapple on pizza?",
-   "link": "https://www.bbc.co.uk/news/videos/cmvg9yy8wpweo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-05T10:33:21.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The chef had stated that putting pineapple on pizza was \"offensive to his culture\".",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
-  "DW": 7,
+  "tagesschau": 11,
+  "DW": 6,
   "Spiegel Wirtschaft": 2,
-  "FAZ Wirtschaft": 9,
-  "Handelsblatt": 2,
+  "FAZ Wirtschaft": 7,
+  "Handelsblatt": 3,
   "BBC World": 9,
   "NYT World": 19,
   "EIA Today in Energy": 1
