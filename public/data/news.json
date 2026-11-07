@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T02:23:31.531Z",
+ "lastUpdated": "2026-11-07T03:23:37.121Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-berlin-hannover-bauarbeiten-pendler-100.html",
+   "titel": "Sanierung der Bahnstrecke Berlin-Hannover: Massive Probleme für Pendler",
+   "link": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-berlin-hannover-bauarbeiten-pendler-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-07T02:54:24.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Dass die Generalsanierung der Bahnstrecke Berlin-Hannover massive Verspätungen bedeutet, war klar. Doch nun zeigt sich: Die Pünktlichkeit auf der Ausweichstrecke ist selbst für Bahnverhältnisse unterdurchschnittlich. Von Andre Kartschall.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
    "titel": "Will New Zealand Join Voters’ Global Revolt Over Soaring Costs?",
@@ -29,7 +40,7 @@
    "titel": "After Israel’s Election, Who Will Get the First Chance to Form a Government?",
    "link": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-06T22:36:15.000Z",
+   "zeit": "2026-11-06T22:36:16.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "President Isaac Herzog is set to task a candidate with trying to form a government, following two days of talks with party leaders and officials after an inconclusive election.",
@@ -1014,21 +1025,10 @@
    "maerkte": [],
    "text": "Der unerwartete Tod von Hubert Aiwanger hat Bestürzung ausgelöst. Der Chef der Freien Wähler war leblos in einem Hotel aufgefunden worden. Bayerns Ministerpräsident Söder sprach von einer \"absoluten Tragödie\". Er würdigte Aiwanger als \"star",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/05/us/politics/trump-iran-war-midterm-elections.html",
-   "titel": "Midterm Election Losses Complicate Trump’s Options on Iran War",
-   "link": "https://www.nytimes.com/2026/11/05/us/politics/trump-iran-war-midterm-elections.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-05T10:04:44.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The midterm results laid bare the deep unpopularity of the war of choice that President Trump started and is now struggling to end.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 11,
   "DW": 7,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 9,
