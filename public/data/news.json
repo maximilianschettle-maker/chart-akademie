@@ -1,13 +1,35 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T10:23:30.614Z",
+ "lastUpdated": "2026-11-07T11:23:34.977Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/07/world/canada/carney-trump-canada-us-relations-midterm-elections.html",
+   "titel": "America’s Rebuke of Trump Won’t Swiftly Restore Canada-U.S. Harmony",
+   "link": "https://www.nytimes.com/2026/11/07/world/canada/carney-trump-canada-us-relations-midterm-elections.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-07T11:00:07.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "While U.S. voters largely oppose the trade war with Canada, many Democrats and their supporters have protectionist leanings.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/haiti-banden-vereinte-nationen-100.html",
+   "titel": "Bandenchef bittet UN um Vermittlung in Haiti",
+   "link": "https://www.tagesschau.de/ausland/amerika/haiti-banden-vereinte-nationen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-07T10:51:13.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In Haiti werden nach einem Bandenangriff vier salvadorianische Militärangehörige vermisst. Um sie zu retten, schickt Präsident Bukele weitere Soldaten ins Land und droht den Gangs. Ein Bandenchef reagiert nun mit einem Brief an die UN. Von ",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/wahlen-regierung-nach-wahl-in-neuseeland-knapp-unter-der-absoluten-mehrheit/100268071.html",
    "titel": "Wahlen: Regierung nach Wahl in Neuseeland knapp unter der absoluten Mehrheit",
    "link": "https://www.handelsblatt.com/politik/international/wahlen-regierung-nach-wahl-in-neuseeland-knapp-unter-der-absoluten-mehrheit/100268071.html",
    "quelle": "Handelsblatt",
-   "zeit": "2026-11-07T10:15:00.000Z",
+   "zeit": "2026-11-07T10:40:28.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "Regierungschef Luxon oder Ex-Premier Hipkins? Nach Schließung der Wahllokale in Neuseeland zeichnet sich ein enges Rennen zwischen Konservativen und Labour ab.",
@@ -65,7 +87,7 @@
    "zeit": "2026-11-07T08:56:08.000Z",
    "kategorie": "handel",
    "maerkte": [],
-   "text": "Der Handelsstreit zwischen den USA und China droht, wieder aufzubrechen. Kurz vor einem geplanten Treffen von Trump und Xi werfen sich beide Seiten Verstöße gegen ihre Vereinbarungen vor.",
+   "text": "Der Handelsstreit zwischen den USA und China droht, wieder aufzubrechen. Kurz vor dem geplanten Treffen zwischen Trump und Xi beschuldigen beide Seiten einander, Absprachen nicht einzuhalten.",
    "sprache": "de"
   },
   {
@@ -999,38 +1021,16 @@
    ],
    "text": "Der US-Präsident erlaubt den Import von russischem Diesel, um die Preise zu drücken. Doch mindestens drei von vier erwarteten Tankern drehen ab, weil potenzielle Käufer Probleme fürchten.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/freie-waehler-beraten-naechste-schritte-nach-aiwangers-tod-100.html",
-   "titel": "Freie Wähler beraten nach Aiwangers Tod über weiteres Vorgehen",
-   "link": "https://www.tagesschau.de/inland/freie-waehler-beraten-naechste-schritte-nach-aiwangers-tod-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T12:38:28.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach dem plötzlichen Tod von Hubert Aiwanger ist die Bestürzung über Bayerns Grenzen hinaus groß. Die Freien Wähler müssen sich jetzt neu aufstellen - denn Aiwanger war die zentrale Figur seiner Partei.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo",
-   "titel": "How America voted in maps and charts",
-   "link": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-05T12:32:52.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "See the maps and charts that show how America voted in the US midterm elections.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 12,
   "DW": 6,
   "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 7,
+  "FAZ Wirtschaft": 6,
   "Handelsblatt": 3,
   "BBC World": 5,
-  "NYT World": 18,
+  "NYT World": 19,
   "EIA Today in Energy": 1
  }
 }
