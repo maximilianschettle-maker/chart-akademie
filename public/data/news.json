@@ -1,13 +1,13 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T15:23:30.835Z",
+ "lastUpdated": "2026-11-07T16:23:31.764Z",
  "eintraege": [
   {
    "id": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o",
    "titel": "No clear winner after tight New Zealand general election",
    "link": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-07T15:00:10.000Z",
+   "zeit": "2026-11-07T15:56:28.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "Weeks of coalition talks could follow after preliminary results pointed to a highly divided national parliament.",
@@ -1013,7 +1013,7 @@
  ],
  "quellen": {
   "tagesschau": 9,
-  "DW": 7,
+  "DW": 6,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 7,
   "Handelsblatt": 4,
