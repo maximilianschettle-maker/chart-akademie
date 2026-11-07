@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T03:23:37.121Z",
+ "lastUpdated": "2026-11-07T05:23:29.576Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o",
+   "titel": "Paraguay's President Santiago Peña impeached and arrested",
+   "link": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-07T03:25:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Santiago Peña was ousted due to a banking crisis which left millions of people unable to access their money.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-berlin-hannover-bauarbeiten-pendler-100.html",
    "titel": "Sanierung der Bahnstrecke Berlin-Hannover: Massive Probleme für Pendler",
@@ -11,6 +22,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Dass die Generalsanierung der Bahnstrecke Berlin-Hannover massive Verspätungen bedeutet, war klar. Doch nun zeigt sich: Die Pünktlichkeit auf der Ausweichstrecke ist selbst für Bahnverhältnisse unterdurchschnittlich. Von Andre Kartschall.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/staatskrise-in-suedamerika-staatsanwaltschaft-ordnet-festnahme-von-paraguays-ex-praesident-pena-an/100268040.html",
+   "titel": "Staatskrise in Südamerika: Staatsanwaltschaft ordnet Festnahme von Paraguays Ex-Präsident Peña an",
+   "link": "https://www.handelsblatt.com/politik/international/staatskrise-in-suedamerika-staatsanwaltschaft-ordnet-festnahme-von-paraguays-ex-praesident-pena-an/100268040.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-07T02:27:01.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Mit seinem Rücktrittsgesuch konnte Peña das Amtsenthebungsverfahren nicht abwenden. Durch das einstimmige Votum des Senats verliert er den Anspruch auf einen Sitz als Senator auf Lebenszeit.",
    "sprache": "de"
   },
   {
@@ -33,6 +55,17 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Santiago Peña was impeached, removed from office and placed under house arrest after a bank with close ties to his administration went under.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c933xxl8yv0go",
+   "titel": "Cornell faculty pass no-confidence vote over leadership's handling of Jane Doe allegations",
+   "link": "https://www.bbc.co.uk/news/articles/c933xxl8yv0go?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-06T23:46:08.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Friday's resolution by academic staff is largely symbolic as they do not have the power to remove those in charge of the university.",
    "sprache": "en"
   },
   {
@@ -992,49 +1025,16 @@
    "maerkte": [],
    "text": "The chef had stated that putting pineapple on pizza was \"offensive to his culture\".",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/soziales/katherina-reiche-spd-setzt-wirtschaftsministerin-frist-bei-spritpreisdeckel-a-3798c7f9-3ff9-4f47-a946-ab6fdfa06371",
-   "titel": "Katherina Reiche: SPD setzt Wirtschaftsministerin Frist bei Spritpreisdeckel",
-   "link": "https://www.spiegel.de/wirtschaft/soziales/katherina-reiche-spd-setzt-wirtschaftsministerin-frist-bei-spritpreisdeckel-a-3798c7f9-3ff9-4f47-a946-ab6fdfa06371#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-05T10:33:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Viele Autofahrer hoffen auf eine Obergrenze für Spritpreise, in Deutschland hat Wirtschaftsministerin Reiche dazu aber nur einen halbherzigen Gesetzentwurf vorgelegt. Das empört den Koalitionspartner.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo",
-   "titel": "France gears up for strikes and protests as unions promise national mobilisation",
-   "link": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-05T10:26:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Five of France's unions have joined a wave of strikes and protests in a national day of action.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-gestorben-reaktionen-100.html",
-   "titel": "Reaktionen auf Tod Aiwangers: Söder spricht von \"absoluter Tragödie\"",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-gestorben-reaktionen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-05T10:21:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der unerwartete Tod von Hubert Aiwanger hat Bestürzung ausgelöst. Der Chef der Freien Wähler war leblos in einem Hotel aufgefunden worden. Bayerns Ministerpräsident Söder sprach von einer \"absoluten Tragödie\". Er würdigte Aiwanger als \"star",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 10,
   "DW": 7,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 9,
-  "Handelsblatt": 1,
-  "BBC World": 7,
-  "NYT World": 20,
+  "Handelsblatt": 2,
+  "BBC World": 9,
+  "NYT World": 19,
   "EIA Today in Energy": 1
  }
 }
