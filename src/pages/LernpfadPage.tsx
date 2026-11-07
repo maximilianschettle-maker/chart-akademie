@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Lock, CheckCircle2, Circle, Target, RotateCcw, Dices } from 'lucide-react'
+import { Lock, CheckCircle2, Circle, Target, RotateCcw, Dices, Layers } from 'lucide-react'
 import { CURRICULUM, LEKTIONEN_META, istLevelFrei } from '../content/curriculum'
 import { SZENARIEN } from '../content/szenarien'
 import { useProgressStore } from '../stores/progressStore'
@@ -117,6 +117,16 @@ export function LernpfadPage() {
             <div className="mt-2 text-sm font-semibold text-white">Zufalls-Übung</div>
             <div className="mt-1 text-xs text-gedimmt">
               Automatisch erkanntes Setup in einem zufälligen Markt — jedes Mal neu, ohne Ansage.
+            </div>
+          </Link>
+          <Link
+            to="/training/topdown"
+            className="rounded-xl border border-akzent/40 bg-flaeche p-4 transition-colors hover:border-akzent"
+          >
+            <Layers className="h-4 w-4 text-akzent" />
+            <div className="mt-2 text-sm font-semibold text-white">Top-Down-Analyse</div>
+            <div className="mt-1 text-xs text-gedimmt">
+              Richtung auf dem Tageschart, Zonen auf dem Stundenchart — Nasdaq, Gold, Öl, Bitcoin, Markt verdeckt.
             </div>
           </Link>
           {Object.values(SZENARIEN).map((s) => {

@@ -88,7 +88,7 @@ Ziel: Trades von eToro erfassen, abschließen, auswerten, sichern. Kerzen rund u
 
 ## Schritt 4: Übung Top-Down-Analyse (zwei Teilschritte)
 
-- 4a **Richtung und Zonen**: Tageschart-Richtung (Auflösung aus Trend-Analyse des Trackers: höhere Hochs/Tiefs),
+- 4a **Richtung und Zonen** (erledigt 2026-11-07, `src/engine/zonen.ts`, `richtung.ts`, `src/topdown/`): Tageschart-Richtung (Auflösung aus Trend-Analyse des Trackers: höhere Hochs/Tiefs),
   Stundenchart-Zonen als Bänder im bestehenden Zonen-Werkzeug. Neu: `src/engine/zonen.ts` (Swing-Hochs/-Tiefs
   clustern, Range-Kanten, Ausgangspunkte starker Bewegungen) mit Tests; Vergleich Nutzer-Bänder gegen App-Bänder über
   Überlappung, Feedback „fehlt“ / „unwichtig“.
