@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T13:23:31.942Z",
+ "lastUpdated": "2026-11-07T14:23:27.149Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html",
@@ -48,7 +48,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po",
-   "titel": "Ukraine's power network suffers further damage after fresh Russian strikes",
+   "titel": "Russian strikes wound nine and damage Ukraine's power network ahead of talks",
    "link": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-07T12:49:36.000Z",
@@ -56,6 +56,17 @@
    "maerkte": [],
    "text": "The attacks come before Ukrainian and Russian delegations are due to take part in trilateral talks in Abu Dhabi next week.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-nennt-trumps-friedensplan-gefaehrlich/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Selenskyj nennt Trumps Friedensplan gefährlich",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-nennt-trumps-friedensplan-gefaehrlich/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-07T12:29:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Zahl der Toten in ukrainischem Hilfszentrum steigt auf 55 +++ Irischer Regierungschef: Gipfel in Dublin nicht gefährdet +++ Russland schickt hochrangige Delegation nach Abu Dhabi+++ Der Newsblog.",
+   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo",
@@ -364,7 +375,7 @@
    "zeit": "2026-11-06T18:46:00.000Z",
    "kategorie": "handel",
    "maerkte": [],
-   "text": "Razzia bei der Bayerischen Versorgungskammer wegen US-Geschäft +++ Condor sichert Tariffrieden an Bord +++ Mäc Geiz schließt rund 60 Filialen +++ alle Neuigkeiten im Unternehmen-Liveblog",
+   "text": "Laut Bericht will die CDU Klaus Müller für zweite Amtszeit als Netzagenturchef nominieren +++ Razzia bei der Bayerischen Versorgungskammer wegen US-Geschäft +++ Condor sichert Tariffrieden an Bord +++ alle Neuigkeiten im Unternehmen-Liveblo",
    "sprache": "de"
   },
   {
@@ -1001,23 +1012,10 @@
    "maerkte": [],
    "text": "2014 erlangte Joshua Wong als ein \"Gesicht der Demokratiebewegung\" in Hongkong internationale Bekanntheit. Nun erhielt der inhaftierte Kämpfer für Menschenrechte eine weitere Gefängnisstrafe.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/usa-trumps-diesel-deal-mit-russland-verpufft-tanker-laufen-usa-nicht-an/100267484.html",
-   "titel": "USA: Trumps Diesel-Deal mit Russland verpufft – Tanker laufen USA nicht an",
-   "link": "https://www.handelsblatt.com/politik/international/usa-trumps-diesel-deal-mit-russland-verpufft-tanker-laufen-usa-nicht-an/100267484.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T15:05:46.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Der US-Präsident erlaubt den Import von russischem Diesel, um die Preise zu drücken. Doch mindestens drei von vier erwarteten Tankern drehen ab, weil potenzielle Käufer Probleme fürchten.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 10,
   "DW": 7,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 6,

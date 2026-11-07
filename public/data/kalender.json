@@ -1,16 +1,7 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T10:23:30.614Z",
+ "lastUpdated": "2026-11-07T14:23:27.149Z",
  "termine": [
-  {
-   "id": "us:arbeitsmarkt:2026-11-06",
-   "region": "us",
-   "indikator": "arbeitsmarkt",
-   "titel": "Arbeitsmarktbericht (Payrolls, Arbeitslosenquote)",
-   "zeitUtc": "2026-11-06T13:30:00.000Z",
-   "quelle": "FRED",
-   "link": "https://fred.stlouisfed.org/release?rid=50"
-  },
   {
    "id": "us:cpi:2026-11-10",
    "region": "us",
