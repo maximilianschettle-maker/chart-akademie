@@ -12,6 +12,7 @@ import type { Candle } from '../../src/types'
 import type { Ebene, EbeneDaten, Instrument, InstrumentDaten, Signal, TrackerConfig, TrackerDaten } from '../../src/tracker/types'
 import { INSTRUMENT_NACH_ID, normalisiereConfig } from '../../src/tracker/engine/katalog'
 import { analysiere, analysiereHistorie, kerzenAusKompakt, kerzenKompakt, STANDARD_OPTIONEN, STUNDEN_OPTIONEN } from '../../src/tracker/engine/analyse'
+import { archivAktualisieren } from './archiv'
 
 const WURZEL = fileURLToPath(new URL('../../', import.meta.url))
 const AUSGABE = join(WURZEL, 'public', 'data', 'tracker.json')
@@ -129,6 +130,12 @@ async function yahoo(symbol: string, ebene: Ebene) {
   return kerzenAusYahoo(JSON.parse(await hole(url)) as YahooChart, ebene)
 }
 
+/** 15-Minuten-Kerzen der letzten 60 Tage (mehr gibt Yahoo nicht) – fürs Archiv */
+async function yahoo15m(symbol: string): Promise<Candle[]> {
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=60d&interval=15m`
+  return kerzenAusYahoo(JSON.parse(await hole(url)) as YahooChart, 'stunde').kerzen
+}
+
 /** Coinbase: [time, low, high, open, close, volume], neueste zuerst, max. 300 */
 export function kerzenAusCoinbase(json: unknown, ebene: Ebene): Candle[] {
   if (!Array.isArray(json)) throw new Error('Coinbase: unerwartete Antwort')
@@ -181,9 +188,13 @@ function signaleZusammen(alt: Signal[], neu: Signal[], jetzt: Date): Signal[] {
   return [...m.values()].sort((a, b) => (b.kerzeZeit ?? b.datum).localeCompare(a.kerzeZeit ?? a.datum) || b.zeit.localeCompare(a.zeit))
 }
 
+/** Vollständige Stundenkerzen des letzten Laufs je Instrument (Yahoo liefert 730 Tage) – fürs Archiv */
+const stundenVoll = new Map<string, Candle[]>()
+
 async function ebeneLaden(inst: Instrument, ebene: Ebene, alt: EbeneDaten | undefined, muster: TrackerConfig['muster'], jetzt: Date): Promise<EbeneDaten> {
   const geladen = await ladeKerzen(inst, ebene, alt)
   if (!geladen) return { quelle: 'alt', kerzen: [], analyse: null, signale: alt?.signale ?? [], fehler: 'Keine Kursdaten' }
+  if (ebene === 'stunde' && geladen.quelle === 'yahoo') stundenVoll.set(inst.id, geladen.kerzen)
   const live = geladen.kurs !== undefined && geladen.kursZeit ? { kurs: geladen.kurs, zeit: geladen.kursZeit } : undefined
   const opt = ebene === 'tag' ? STANDARD_OPTIONEN : STUNDEN_OPTIONEN
   const ergebnis = analysiere(geladen.kerzen.slice(-KERZEN_ANALYSE), inst.id, muster, jetzt, live, opt)
@@ -252,6 +263,32 @@ async function main() {
     })
   }
 
+  // Archiv für Nicht-Krypto (Krypto hat Binance mit voller Historie): 15-Minuten-Kerzen je Lauf
+  // anhängen, Stundenkerzen (730 Tage) einmal am Tag. Fehler hier sind nie fatal für den Lauf.
+  let archivGeschrieben = false
+  for (const id of config.instrumente) {
+    const inst = INSTRUMENT_NACH_ID[id]
+    if (!inst || inst.markt === 'krypto') continue
+    try {
+      const k15 = await yahoo15m(inst.symbol)
+      const a = archivAktualisieren(WURZEL, id, '15m', k15)
+      if (a.geschrieben) {
+        archivGeschrieben = true
+        log(inst.name, `Archiv 15m: +${a.neue} → ${a.anzahl} Kerzen`)
+      }
+    } catch (e) {
+      log(inst.name, 'Archiv 15m übersprungen:', (e as Error).message)
+    }
+    const voll = stundenVoll.get(id)
+    if (voll && voll.length > 100) {
+      const b = archivAktualisieren(WURZEL, id, '1h', voll, true)
+      if (b.geschrieben) {
+        archivGeschrieben = true
+        log(inst.name, `Archiv 1h: +${b.neue} → ${b.anzahl} Kerzen`)
+      }
+    }
+  }
+
   const daten: TrackerDaten = { version: 1, lastUpdated: alt?.lastUpdated ?? jetzt.toISOString(), config, configQuelle: quelle, instrumente }
   mkdirSync(dirname(AUSGABE), { recursive: true })
 
@@ -269,7 +306,8 @@ async function main() {
   } else {
     log('Keine wesentliche Änderung, nichts geschrieben')
   }
-  if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, `changed=${schreiben}\n`)
+  if (archivGeschrieben) log('Archiv aktualisiert')
+  if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, `changed=${schreiben || archivGeschrieben}\n`)
   if (instrumente.some((i) => i.fehler || i.stunde?.fehler)) process.exitCode = 2
 }
 
