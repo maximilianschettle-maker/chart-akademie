@@ -1,16 +1,49 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-08T07:23:34.068Z",
+ "lastUpdated": "2026-11-08T08:23:30.254Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/grosses-parlament-neuseeland-steht-nach-wahl-vor-wochenlangem-machtspiel/100268182.html",
+   "titel": "Großes Parlament: Neuseeland steht nach Wahl vor wochenlangem Machtspiel",
+   "link": "https://www.handelsblatt.com/politik/international/grosses-parlament-neuseeland-steht-nach-wahl-vor-wochenlangem-machtspiel/100268182.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-08T07:59:02.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nur ein Sitz trennt das Lager von Ministerpräsident Luxon von der Mehrheit. Doch kleinere Parteien und noch nicht ausgezählte Stimmen könnten die Regierungsbildung auf den Kopf stellen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo",
+   "titel": "What we know so far after Krakow gun attack",
+   "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-08T07:52:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Six people were killed in a random shooting in Krakow's main square, and three bodies were later found at the home of the attacker.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/dana-white-trump-will-kampfsport-manager-als-sprecher-des-weissen-hauses/100268144.html",
    "titel": "Dana White: Trump will Kampfsport-Manager als Sprecher des Weißen Hauses",
    "link": "https://www.handelsblatt.com/politik/international/dana-white-trump-will-kampfsport-manager-als-sprecher-des-weissen-hauses/100268144.html",
    "quelle": "Handelsblatt",
-   "zeit": "2026-11-08T07:22:00.000Z",
+   "zeit": "2026-11-08T07:52:00.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Der US-Präsident sieht in UFC-Präsident Dana White einen „gewalttätigen Kämpfer“. White soll nun Sprecher des Weißen Hauses werden. Den Demokraten wirft Trump vor, Drohbriefe zu schreiben.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/japan-erdbeben-aichi-100.html",
+   "titel": "Mehr als 20 Verletzte nach Erdbeben in Zentraljapan",
+   "link": "https://www.tagesschau.de/ausland/asien/japan-erdbeben-aichi-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-08T07:27:58.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Mehrere Regionen in Japan wurden in der Nacht von einem Erdbeben der Stärke 5,7 erschüttert. Am stärksten betroffen war die Präfektur Aichi. Medien berichten über mehr als 20 Verletzte. Laut Behörden könnten weitere Beben folgen.",
    "sprache": "de"
   },
   {
@@ -62,17 +95,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo",
-   "titel": "What we know so far after Krakow gun attack",
-   "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-08T01:47:41.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at the home of the attacker.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-will-ermittlungen-gegen-demokraten-bedrohen-viele-menschen/29669594.html",
    "titel": "+++ US-Midterms +++: Trump will Ermittlungen gegen Demokraten – „bedrohen viele Menschen“",
    "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-will-ermittlungen-gegen-demokraten-bedrohen-viele-menschen/29669594.html",
@@ -82,6 +104,17 @@
    "maerkte": [],
    "text": "US-Justizministerium will Klage zu Kaliforniens Wahl zurückziehen +++ Houston schränkt Zusammenarbeit mit US-Einwanderungsbehörde ein +++ Der Newsblog.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cm3r5gnxqz3jo",
+   "titel": "The Trump coalition is shattered - what will Republicans do now?",
+   "link": "https://www.bbc.co.uk/news/articles/cm3r5gnxqz3jo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-08T00:52:39.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Republicans can stick with Trumpism or chart a new path, writes BBC Washington correspondent Daniel Bush.",
+   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/07/world/middleeast/israel-eisenkot-government.html",
@@ -138,6 +171,17 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Nur einen Tag nach seiner Amtsenthebung muss sich Paraguays Ex-Präsident Peña wegen seiner Rolle im Bankenskandal vor der Justiz verantworten. Die Staatsanwaltschaft fordert Untersuchungshaft.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/israel-netanjahu-rivale-eisenkot-mit-regierungsbildung-beauftragt/100268142.html",
+   "titel": "Nahost: Netanjahu-Rivale Eisenkot in Israel mit Regierungsbildung beauftragt",
+   "link": "https://www.handelsblatt.com/politik/international/israel-netanjahu-rivale-eisenkot-mit-regierungsbildung-beauftragt/100268142.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-07T20:32:05.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die jüngsten Wahlen in Israel hatten ein Patt zwischen Amtsinhaber Netanjahu und Herausforderer Eisenkot ergeben. Der Oppositionspolitiker hat aber mehr Unterstützer in den Fraktionen.",
    "sprache": "de"
   },
   {
@@ -964,60 +1008,16 @@
    "maerkte": [],
    "text": "BBC Verify examines whether US voters were influenced by the data centre boom - and the impact anti-AI sentiment could have on the industry.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/fleisch-siegel-koalition-verschiebt-staatliches-tierhaltungslogo-erneut-a-c8dfe463-defa-4c73-80e8-60e1e76ff0db",
-   "titel": "Fleisch-Siegel: Koalition verschiebt staatliches Tierhaltungslogo erneut",
-   "link": "https://www.spiegel.de/wirtschaft/fleisch-siegel-koalition-verschiebt-staatliches-tierhaltungslogo-erneut-a-c8dfe463-defa-4c73-80e8-60e1e76ff0db#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-06T05:58:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Seit Jahren ringt die Politik um ein amtliches Fleisch-Siegel, das über die Haltungsbedingungen in Ställen informiert. Nun kippt der nächste Termin.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/koalition-verschiebt-staatliches-tierhaltungslogo-erneut-a-c8dfe463-defa-4c73-80e8-60e1e76ff0db",
-   "titel": "Koalition verschiebt staatliches Tierhaltungslogo erneut",
-   "link": "https://www.spiegel.de/wirtschaft/koalition-verschiebt-staatliches-tierhaltungslogo-erneut-a-c8dfe463-defa-4c73-80e8-60e1e76ff0db#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-06T05:58:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Seit Jahren ringt die Politik um ein amtliches Fleisch-Siegel, das über die Haltungsbedingungen in Ställen informiert. Nun kippt der nächste Termin.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/paraguay-ruecktritt-abgelehnt-100.html",
-   "titel": "Kongress lehnt Peñas Rücktritt ab - Staatsanwalt ermittelt",
-   "link": "https://www.tagesschau.de/ausland/paraguay-ruecktritt-abgelehnt-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-06T04:28:23.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Paraguay wird von einem Finanzskandal erschüttert, in den auch Präsident Peña verwickelt ist. Der Staatschef will zurücktreten, doch der Kongress nimmt das Rücktrittsgesuch nicht an - und leitet ein Amtsenthebungsverfahren ein.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-nach-treffen-mit-dmitrijew-trump-stellt-grosses-abkommen-in-aussicht/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Nach Treffen mit Dmitrijew: Trump stellt „großes Abkommen“ in Aussicht",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-nach-treffen-mit-dmitrijew-trump-stellt-grosses-abkommen-in-aussicht/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-06T03:04:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ukraine: Russland bombardiert Kraftwerk bei Sumy und Ziele in Saporischschja +++ Selenskyj kommentiert neue politische Machtverhältnisse in USA +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 12,
   "DW": 5,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 7,
-  "Handelsblatt": 4,
+  "Handelsblatt": 3,
   "BBC World": 8,
-  "NYT World": 18,
+  "NYT World": 19,
   "EIA Today in Energy": 1
  }
 }
