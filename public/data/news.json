@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-08T04:23:27.348Z",
+ "lastUpdated": "2026-11-08T05:23:27.875Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/08/world/africa/south-africa-election-african-national-congress.html",
+   "titel": "South Africa’s Politics May Never Be the Same Again",
+   "link": "https://www.nytimes.com/2026/11/08/world/africa/south-africa-election-african-national-congress.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-08T05:01:23.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The African National Congress lost big in local elections, turning a once-dominant force credited with overturning apartheid into “any other political party.”",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo",
    "titel": "Houthis say at least 33 killed in Saudi air strike",
@@ -996,17 +1007,6 @@
    ],
    "text": "Zwei Tage nach der US-Wahl bricht die Wall Street ein. Die Sorge vor einer schärferen KI-Regulierung löst einen Ausverkauf aus. Doch ein anderer Faktor verstärkt den Kursrutsch.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-will-oval-office-als-nationales-denkmal-schuetzen-lassen/29669594.html",
-   "titel": "+++ US-Midterms +++: Trump will Oval Office als nationales Denkmal schützen lassen",
-   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-will-oval-office-als-nationales-denkmal-schuetzen-lassen/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T20:15:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Hegseth verteidigt Iran-Krieg und kämpft um sein Amt +++ Rubio zu Rücktrittsgerücht: Ich liebe meinen Job +++ Newsom wandelt alle Todesstrafen in Haftstrafen um +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1016,7 +1016,7 @@
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 4,
   "BBC World": 8,
-  "NYT World": 19,
+  "NYT World": 18,
   "EIA Today in Energy": 1
  }
 }
