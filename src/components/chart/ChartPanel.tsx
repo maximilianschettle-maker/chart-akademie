@@ -86,6 +86,8 @@ interface ChartPanelProps {
   vollbildLeiste?: ReactNode
   /** Am Handy ohne Beschriftungen starten (nur Linien); Lektionen lassen das aus, dort sind die Texte Inhalt */
   kompakteBeschriftung?: boolean
+  /** Tipp/Klick auf eine Kerze mit Marker – liefert die Kerzenzeit (Unix-Sekunden) */
+  onMarkerTipp?: (time: number) => void
 }
 
 export function ChartPanel({
@@ -102,6 +104,7 @@ export function ChartPanel({
   vollbild = true,
   vollbildLeiste,
   kompakteBeschriftung = false,
+  onMarkerTipp,
 }: ChartPanelProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const resetRef = useRef<(() => void) | null>(null)
@@ -113,6 +116,12 @@ export function ChartPanel({
   const [beschriftet, setBeschriftet] = useState(() => !(kompakteBeschriftung && schmal))
   const beschriftetRef = useRef(beschriftet)
   const beschriftungRef = useRef<((an: boolean) => void) | null>(null)
+  const onMarkerTippRef = useRef(onMarkerTipp)
+  useEffect(() => {
+    onMarkerTippRef.current = onMarkerTipp
+  }, [onMarkerTipp])
+  // Zeitpunkt des letzten Marker-Tipps: der Finger-Tipp soll dann nicht zusätzlich die Beschriftung umschalten
+  const markerTippAmRef = useRef(0)
 
   useEffect(() => {
     const container = containerRef.current
@@ -244,6 +253,13 @@ export function ChartPanel({
       const plugin: ISeriesMarkersPluginApi<Time> = createSeriesMarkers(kerzenSerie, marker)
       beschriftete.push({ setze: (an) => plugin.setMarkers(an ? marker : marker.map((m) => ({ ...m, text: '' }))) })
     }
+    // Klick/Tipp auf eine Kerze mit Marker → Signal-Info in der Karte
+    const markerZeiten = new Set(marker.map((m) => m.time as number))
+    chart.subscribeClick((param) => {
+      if (typeof param.time !== 'number' || !markerZeiten.has(param.time)) return
+      markerTippAmRef.current = performance.now()
+      onMarkerTippRef.current?.(param.time)
+    })
     const beschriftungAnwenden = (an: boolean) => {
       for (const b of beschriftete) b.setze(an)
     }
@@ -270,8 +286,11 @@ export function ChartPanel({
       achse: PREISACHSE,
       reset: ansichtEinpassen,
       onManuell: setManuell,
-      // Ein Tipp mit dem Finger: Beschriftungen ein-/ausblenden
-      onTipp: () => setBeschriftet((b) => !b),
+      // Ein Tipp mit dem Finger: Beschriftungen ein-/ausblenden – außer der Tipp galt einem Marker
+      onTipp: () => {
+        if (performance.now() - markerTippAmRef.current < 600) return
+        setBeschriftet((b) => !b)
+      },
     })
 
     const beobachter = new ResizeObserver(() => {

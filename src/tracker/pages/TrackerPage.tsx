@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Activity, Bell, BellOff, ChevronDown, ChevronUp, Cloud, CloudOff, LoaderCircle, RefreshCw, Settings2, TriangleAlert } from 'lucide-react'
+import { Activity, Bell, BellOff, BookOpen, ChevronDown, ChevronUp, Cloud, CloudOff, LoaderCircle, RefreshCw, Settings2, TriangleAlert } from 'lucide-react'
+import { signalHinweis } from '../engine/hinweise'
 import { useSchmal } from '../../hooks/useSchmal'
 import { ChartPanel } from '../../components/chart/ChartPanel'
 import type { ChartAnnotation } from '../../types'
@@ -57,19 +58,43 @@ function signalZeitText(s: Signal): string {
   return fmtDatumKurz(s.datum)
 }
 
-function SignalZeile({ s, dezimalen, waehrung }: { s: Signal; dezimalen: number; waehrung: string }) {
+function SignalZeile({ s, dezimalen, waehrung, offen, onTipp }: { s: Signal; dezimalen: number; waehrung: string; offen: boolean; onTipp: () => void }) {
+  const h = offen ? signalHinweis(s) : null
   return (
-    <li className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 py-1.5 text-xs">
-      <span className="tabular-nums text-gedimmt">{signalZeitText(s)}</span>
-      <span className={`font-semibold ${richtungFarbe(s.richtung)}`}>{s.titel}</span>
-      {s.vorlaeufig && (
-        <span className="rounded bg-nacht px-1 py-0.5 text-[10px] uppercase tracking-wide text-gedimmt" title="Kerze war beim Lauf noch offen">
-          vorläufig
+    <li className="py-1.5 text-xs" id={`signal-${s.id}`}>
+      <button type="button" onClick={onTipp} aria-expanded={offen} className="flex w-full flex-wrap items-baseline gap-x-2 gap-y-0.5 text-left" title={offen ? 'Info einklappen' : 'Was heißt das? Antippen'}>
+        <span className="tabular-nums text-gedimmt">{signalZeitText(s)}</span>
+        <span className={`font-semibold ${richtungFarbe(s.richtung)}`}>{s.titel}</span>
+        {s.vorlaeufig && (
+          <span className="rounded bg-nacht px-1 py-0.5 text-[10px] uppercase tracking-wide text-gedimmt" title="Kerze war beim Lauf noch offen">
+            vorläufig
+          </span>
+        )}
+        <span className="basis-full text-gedimmt sm:basis-auto">
+          {s.text} <span className="tabular-nums">({fmtKurs(s.preis, dezimalen, waehrung)})</span>
         </span>
+      </button>
+      {h && (
+        <div className="mt-2 space-y-2 rounded-lg border border-rand bg-nacht/50 p-3 text-xs">
+          <p className="text-schrift">{h.bedeutung}</p>
+          <div>
+            <div className="text-[11px] font-semibold text-white">Das prüfst du jetzt</div>
+            <ul className="mt-1 list-disc space-y-0.5 pl-4 text-schrift">
+              {h.pruefen.map((p) => (
+                <li key={p}>{p}</li>
+              ))}
+            </ul>
+          </div>
+          <p className="text-akzent">
+            <span className="font-semibold">Vorsicht:</span> {h.vorsicht}
+          </p>
+          {h.lektionId && (
+            <Link to={`/lektion/${h.lektionId}`} className="inline-flex items-center gap-1 font-semibold text-akzent hover:underline">
+              <BookOpen className="h-3.5 w-3.5" /> Lektion: {h.lektionText}
+            </Link>
+          )}
+        </div>
       )}
-      <span className="basis-full text-gedimmt sm:basis-auto">
-        {s.text} <span className="tabular-nums">({fmtKurs(s.preis, dezimalen, waehrung)})</span>
-      </span>
     </li>
   )
 }
@@ -77,6 +102,8 @@ function SignalZeile({ s, dezimalen, waehrung }: { s: Signal; dezimalen: number;
 function InstrumentKarte({ inst, jetzt, live, ebene }: { inst: InstrumentDaten; jetzt: number; live?: LiveKurs; ebene: Ebene }) {
   // Standard eingeklappt: Kurs, Lage, letzte Signale. Antippen öffnet den Chart.
   const [offen, setOffen] = useState(false)
+  // Signal, dessen Kurzinfo aufgeklappt ist (per Liste oder Marker im Chart)
+  const [signalOffen, setSignalOffen] = useState<string | null>(null)
   const schmal = useSchmal()
   const [bereiche, setBereiche] = useState<Record<Ebene, string>>({ ...STANDARD_BEREICH })
   const bereich = bereiche[ebene]
@@ -223,6 +250,12 @@ function InstrumentKarte({ inst, jetzt, live, ebene }: { inst: InstrumentDaten; 
               randRechts={6}
               vollbildLeiste={zeitraumLeiste}
               kompakteBeschriftung
+              onMarkerTipp={(time) => {
+                const s = daten?.signale.find((sig) => Math.floor(Date.parse(sig.kerzeZeit ?? sig.datum) / 1000) === time)
+                if (!s) return
+                setSignalOffen(s.id)
+                document.getElementById(`signal-${s.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+              }}
             />
           </div>
         </div>
@@ -235,7 +268,7 @@ function InstrumentKarte({ inst, jetzt, live, ebene }: { inst: InstrumentDaten; 
           ) : (
             <ul className="divide-y divide-rand">
               {daten.signale.slice(0, offen ? SIGNALE_OFFEN : SIGNALE_KOMPAKT).map((s) => (
-                <SignalZeile key={s.id} s={s} dezimalen={inst.dezimalen} waehrung={inst.waehrung} />
+                <SignalZeile key={s.id} s={s} dezimalen={inst.dezimalen} waehrung={inst.waehrung} offen={signalOffen === s.id} onTipp={() => setSignalOffen(signalOffen === s.id ? null : s.id)} />
               ))}
             </ul>
           )}
