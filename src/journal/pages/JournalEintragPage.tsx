@@ -270,8 +270,8 @@ export function JournalEintragPage() {
     if (!e) return []
     const l: ChartLinie[] = [
       { id: 'entry', preis: e.entryPreis, farbe: '#F59E0B', titel: 'Einstieg', fest: true, imBlick: true },
-      { id: 'stop', preis: e.stopLoss, farbe: '#EF4444', titel: 'Stop', imBlick: true },
     ]
+    if (e.stopLoss > 0) l.push({ id: 'stop', preis: e.stopLoss, farbe: '#EF4444', titel: 'Stop', imBlick: true })
     if (e.takeProfit > 0) l.push({ id: 'ziel', preis: e.takeProfit, farbe: '#22C55E', titel: 'Ziel', imBlick: true })
     if (e.status === 'geschlossen' && e.exitPreis) l.push({ id: 'exit', preis: e.exitPreis, farbe: '#8B95A5', titel: 'Ausstieg', stil: 'gepunktet', imBlick: true })
     return l
@@ -382,10 +382,10 @@ export function JournalEintragPage() {
         <section className="mt-4 rounded-xl border border-rand bg-flaeche p-4">
           <dl className="grid grid-cols-2 gap-x-4 gap-y-2 sm:grid-cols-4">
             <Fakt titel="Einstieg" wert={fmtKurs(e.entryPreis, e.waehrung)} />
-            <Fakt titel="Stop" wert={fmtKurs(e.stopLoss, e.waehrung)} farbe="text-short" />
+            <Fakt titel="Stop" wert={e.stopLoss > 0 ? fmtKurs(e.stopLoss, e.waehrung) : 'kein Stop'} farbe="text-short" />
             <Fakt titel="Ziel" wert={e.takeProfit > 0 ? fmtKurs(e.takeProfit, e.waehrung) : '–'} farbe="text-long" />
             <Fakt titel="CRV geplant" wert={Number.isFinite(crv) ? `${crv.toFixed(2).replace('.', ',')} : 1` : '–'} />
-            <Fakt titel="Risiko" wert={`${e.risikoProzent.toLocaleString('de-DE')} %${e.risikoBetrag ? ` (${fmtKurs(e.risikoBetrag, e.waehrung)})` : ''}`} />
+            <Fakt titel="Risiko" wert={e.risikoProzent > 0 ? `${e.risikoProzent.toLocaleString('de-DE')} %${e.risikoBetrag ? ` (${fmtKurs(e.risikoBetrag, e.waehrung)})` : ''}` : 'unbekannt'} />
             {e.hebel && <Fakt titel="Hebel" wert={`${e.hebel}×`} />}
             {e.einsatz !== undefined && <Fakt titel="Einsatz (Marge)" wert={fmtKurs(e.einsatz, e.waehrung)} />}
             {e.kontrakte !== undefined && <Fakt titel="Kontrakte" wert={e.kontrakte.toLocaleString('de-DE', { maximumFractionDigits: 6 })} />}
@@ -394,7 +394,7 @@ export function JournalEintragPage() {
               <>
                 <Fakt titel="Ausstieg" wert={`${e.exitPreis !== undefined ? fmtKurs(e.exitPreis, e.waehrung) : '–'} (${GRUENDE.find((g) => g.id === e.exitGrund)?.text ?? '–'})`} />
                 <Fakt titel="Ausstieg am" wert={e.exitTime ? zeitKurz(e.exitTime) : '–'} />
-                <Fakt titel="R-Multiple" wert={r === null ? '–' : fmtR(r)} farbe={r === null ? undefined : r > 0 ? 'text-long' : r < 0 ? 'text-short' : undefined} />
+                <Fakt titel="R-Multiple" wert={r === null ? (e.stopLoss > 0 ? '–' : 'ohne Stop kein R') : fmtR(r)} farbe={r === null ? undefined : r > 0 ? 'text-long' : r < 0 ? 'text-short' : undefined} />
                 <Fakt titel="Ergebnis" wert={betrag === null ? '–' : `${betrag >= 0 ? '+' : ''}${fmtKurs(betrag, e.waehrung)}`} farbe={betrag === null ? undefined : betrag >= 0 ? 'text-long' : 'text-short'} />
                 {e.gebuehren !== undefined && <Fakt titel="Gebühren" wert={fmtKurs(e.gebuehren, e.waehrung)} />}
               </>
@@ -414,7 +414,8 @@ export function JournalEintragPage() {
               <p className="whitespace-pre-wrap text-sm text-schrift">{e.lehre}</p>
             </div>
           )}
-          {konto > 0 && e.risikoBetrag === undefined && <p className="mt-3 text-[11px] text-gedimmt">Kein Risikobetrag hinterlegt – Konto steht im CRV-Rechner des Trader-Charts.</p>}
+          {!(e.stopLoss > 0) && <p className="mt-3 text-[11px] text-akzent">Ohne Stop keine R-Rechnung: Der Trade zählt in Liste und Ergebnis, aber nicht in Trefferquote und Ø R. Über „Bearbeiten“ lässt sich der Stop nachtragen, den du damals im Kopf hattest.</p>}
+          {konto > 0 && e.risikoBetrag === undefined && e.stopLoss > 0 && <p className="mt-3 text-[11px] text-gedimmt">Kein Risikobetrag hinterlegt – Konto steht im CRV-Rechner des Trader-Charts.</p>}
           <div className="mt-4 flex flex-wrap items-center gap-2">
             <button type="button" onClick={() => setBearbeiten(true)} className={KNOPF}>
               <Pencil className="h-3.5 w-3.5" /> Bearbeiten

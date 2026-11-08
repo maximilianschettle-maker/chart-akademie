@@ -53,7 +53,7 @@ export function pruefeEintrag(e: Partial<EintragEntwurf>): string[] {
   if (!e.markt?.trim()) fehler.push('Markt fehlt.')
   if (!e.symbol?.trim()) fehler.push('Symbol für die Kerzen fehlt.')
   if (!(e.entryPreis && e.entryPreis > 0)) fehler.push('Einstieg fehlt.')
-  if (!(e.stopLoss && e.stopLoss > 0)) fehler.push('Stop fehlt.')
+  if (!(e.stopLoss && e.stopLoss > 0)) fehler.push('Stop fehlt. (Trades aus der Broker-Historie ohne Stop lassen sich nur über den Screenshot-Import anlegen.)')
   if (e.entryPreis && e.stopLoss && e.entryPreis > 0 && e.stopLoss > 0) {
     if (e.richtung === 'long' && e.stopLoss >= e.entryPreis) fehler.push('Long: der Stop muss unter dem Einstieg liegen.')
     if (e.richtung === 'short' && e.stopLoss <= e.entryPreis) fehler.push('Short: der Stop muss über dem Einstieg liegen.')
@@ -77,6 +77,8 @@ export function geplantesCrv(e: Pick<JournalEintrag, 'entryPreis' | 'stopLoss' |
 /** R-Multiple aus Preisen: Ausstieg relativ zum Einstieg, gemessen am Stop-Abstand. null solange offen. */
 export function rMultiple(e: Pick<JournalEintrag, 'richtung' | 'entryPreis' | 'stopLoss' | 'exitPreis'>): number | null {
   if (e.exitPreis === undefined || !(e.exitPreis > 0)) return null
+  // ohne Stop (z.B. Import aus der eToro-Historie) gibt es kein R – sonst käme ein Pseudo-R gegen den Nullpunkt heraus
+  if (!(e.stopLoss > 0)) return null
   const risiko = Math.abs(e.entryPreis - e.stopLoss)
   if (risiko <= 0) return null
   const bewegung = e.richtung === 'long' ? e.exitPreis - e.entryPreis : e.entryPreis - e.exitPreis
@@ -99,7 +101,9 @@ const EXIT_GRUND: Record<AusstiegGrund, ExitGrund> = { ziel: 'tp', stop: 'sl', m
  */
 export function alsTrade(e: JournalEintrag): Trade | null {
   if (e.status !== 'geschlossen' || e.exitPreis === undefined) return null
-  const r = rMultiple(e) ?? 0
+  // ohne Stop kein R → der Trade bleibt in Liste und Ergebnis-Summe, aber nicht in der R-Statistik
+  const r = rMultiple(e)
+  if (r === null) return null
   return {
     id: e.id,
     richtung: e.richtung,

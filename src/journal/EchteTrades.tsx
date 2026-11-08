@@ -41,7 +41,7 @@ export function EintragZeile({ e }: { e: JournalEintrag }) {
         {e.status === 'offen' ? (
           <span className="rounded bg-akzent/15 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-akzent">offen</span>
         ) : (
-          <span className={`tabular-nums font-semibold ${rFarbe(r)}`}>{r === null ? '–' : fmtR(r)}</span>
+          <span className={`tabular-nums font-semibold ${rFarbe(r)}`}>{r === null ? (e.stopLoss > 0 ? '–' : 'ohne Stop') : fmtR(r)}</span>
         )}
         {betrag !== null && <span className={`tabular-nums ${betrag >= 0 ? 'text-long' : 'text-short'}`}>{betrag >= 0 ? '+' : ''}{fmtKurs(betrag, e.waehrung)}</span>}
         {e.imPlan === false && <span className="text-[10px] uppercase tracking-wide text-short">außerhalb Plan</span>}

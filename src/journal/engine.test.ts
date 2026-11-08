@@ -82,6 +82,13 @@ describe('Journal: R und Ergebnis', () => {
     expect(rMultiple({ ...ENTWURF })).toBeNull()
   })
 
+  it('ohne Stop kein R und kein Trade für die R-Statistik, Ergebnis vom Broker bleibt', () => {
+    const ohneStop = geschlossen({ stopLoss: 0, ergebnisBetrag: -68.37, exitPreis: 21_300 })
+    expect(rMultiple(ohneStop)).toBeNull()
+    expect(alsTrade(ohneStop)).toBeNull()
+    expect(ergebnis(ohneStop)).toBe(-68.37)
+  })
+
   it('Ergebnis: Broker-Angabe vor Rechnung, Rechnung aus R × Risikobetrag minus Gebühren', () => {
     expect(ergebnis(geschlossen({ ergebnisBetrag: 187.5 }))).toBe(187.5)
     expect(ergebnis(geschlossen({ gebuehren: 3 }))).toBe(197)

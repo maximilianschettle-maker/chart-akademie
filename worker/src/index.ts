@@ -28,7 +28,7 @@ import { positionenAusBild, tradePruefen } from './ki'
 import { BILD_TYPEN, type BildTyp } from '../../src/journal/positionTypes'
 import { bereichDef } from '../../src/aktien/engine/chart'
 
-const VERSION = '0.2.0'
+const VERSION = '0.3.0'
 const TAG_MS = 86_400_000
 const FRISCHE_ABSCHLUESSE = 7 * TAG_MS
 const KURS_TTL_SEK = 15 * 60

@@ -1,4 +1,4 @@
-import { anfrage } from '../aktien/data/client'
+import { AktienFehler, anfrage } from '../aktien/data/client'
 import type { ScreenshotErgebnis } from './positionTypes'
 
 // Screenshot für den Worker vorbereiten (verkleinern, JPEG, Base64) und erkennen lassen.
@@ -31,11 +31,16 @@ export async function bildVorbereiten(datei: File): Promise<BildDaten> {
 
 /** Erkennung über den Worker (Claude); dauert einige Sekunden */
 export async function positionenErkennen(b: BildDaten): Promise<ScreenshotErgebnis> {
-  const r = await anfrage<ScreenshotErgebnis>('/api/ki/screenshot', {
-    method: 'POST',
-    body: JSON.stringify({ bild: b.bild, typ: b.typ }),
-    signal: AbortSignal.timeout(90_000),
-  })
-  if (!r) throw new Error('Leere Antwort vom Worker.')
-  return r
+  try {
+    const r = await anfrage<ScreenshotErgebnis>('/api/ki/screenshot', {
+      method: 'POST',
+      body: JSON.stringify({ bild: b.bild, typ: b.typ }),
+      signal: AbortSignal.timeout(90_000),
+    })
+    if (!r) throw new Error('Leere Antwort vom Worker.')
+    return r
+  } catch (e) {
+    if (e instanceof AktienFehler && e.status === 404) throw new Error('Der deployte Worker kennt diesen Endpunkt noch nicht – im Projektordner „npm run worker:deploy“ ausführen.')
+    throw e
+  }
 }

@@ -18,7 +18,8 @@ export interface TradeFakten {
   zeitrahmen: string
   einstiegAm: string
   einstieg: number
-  stop: number
+  /** null = kein Stop gesetzt (Import aus der Historie) */
+  stop: number | null
   ziel: number | null
   crv: number | null
   risikoProzent: number
@@ -153,7 +154,7 @@ export function faktenSammeln(e: JournalEintrag, kerzen: Candle[] | null, alle: 
     zeitrahmen: e.zeitrahmen,
     einstiegAm: zeitText(e.entryTime),
     einstieg: e.entryPreis,
-    stop: e.stopLoss,
+    stop: e.stopLoss > 0 ? e.stopLoss : null,
     ziel: e.takeProfit > 0 ? e.takeProfit : null,
     crv: Number.isFinite(crv) ? rund(crv) : null,
     risikoProzent: e.risikoProzent,
@@ -206,11 +207,11 @@ export function faktenSammeln(e: JournalEintrag, kerzen: Candle[] | null, alle: 
     const atr = letzterAtr(bis, index, 14)
     if (atr > 0) {
       fakten.atr = rund(atr, 4)
-      fakten.stopInAtr = rund(Math.abs(e.entryPreis - e.stopLoss) / atr)
+      if (e.stopLoss > 0) fakten.stopInAtr = rund(Math.abs(e.entryPreis - e.stopLoss) / atr)
       if (e.takeProfit > 0) fakten.zielInAtr = rund(Math.abs(e.takeProfit - e.entryPreis) / atr)
     }
     const swing = swingVorEinstieg(bis, index, e.richtung)
-    if (swing !== null) fakten.struktur = { preis: swing, stopDahinter: e.richtung === 'long' ? e.stopLoss < swing : e.stopLoss > swing }
+    if (swing !== null && e.stopLoss > 0) fakten.struktur = { preis: swing, stopDahinter: e.richtung === 'long' ? e.stopLoss < swing : e.stopLoss > swing }
   }
 
   if (mitErgebnis && e.status === 'geschlossen') {
