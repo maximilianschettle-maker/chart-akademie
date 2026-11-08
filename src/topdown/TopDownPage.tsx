@@ -174,7 +174,7 @@ export function TopDownPage() {
       setBewertung(b)
       setSimulation(sim)
       setSchritt('replayAufgeloest')
-      if (rundeAm !== null) replayErgaenzen(rundeAm, { entscheidung: e.typ, bewertung: b.bewertung, r: sim?.r ?? null })
+      if (rundeAm !== null) replayErgaenzen(rundeAm, { entscheidung: e.typ, bewertung: b.bewertung, r: sim?.r ?? null, ...(e.typ === 'trade' ? { setupId: e.setupId } : {}) })
     },
     [replay, richtung, wichtigeZonen, atrReplay, rundeAm, replayErgaenzen],
   )

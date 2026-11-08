@@ -19,7 +19,22 @@ interface SzenarioErgebnis {
   rMultiple: number
 }
 
+/** Ein Übungsdurchlauf – für die Setup-Bilanz zählt jeder, nicht nur das beste Ergebnis je Szenario */
+export interface UebungsLogEintrag {
+  am: number
+  szenarioId: string
+  strategieId: string
+  bewertung: SzenarioBewertung
+  r: number
+  /** false = Kein-Trade-Entscheidung (kein R für die Bilanz) */
+  gehandelt: boolean
+}
+const MAX_LOG = 500
+
 interface ProgressState {
+  /** alle Übungsdurchläufe, älteste zuerst (fehlt in älteren Ständen) */
+  uebungsLog: UebungsLogEintrag[]
+  uebungLoggen: (e: UebungsLogEintrag) => void
   abgeschlosseneLektionen: Record<string, LektionErgebnis>
   szenarioErgebnisse: Record<string, SzenarioErgebnis>
   /** Falsch beantwortete Quizfragen in der Wiederholungs-Box (Spaced Repetition) */
@@ -41,6 +56,8 @@ export const useProgressStore = create<ProgressState>()(
       abgeschlosseneLektionen: {},
       szenarioErgebnisse: {},
       wiederholungen: {},
+      uebungsLog: [],
+      uebungLoggen: (e) => set((s) => ({ uebungsLog: [...(s.uebungsLog ?? []), e].slice(-MAX_LOG) })),
 
       lektionAbschliessen: (lektionId, quizProzent) =>
         set((s) => ({

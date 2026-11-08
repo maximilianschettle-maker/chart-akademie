@@ -13,7 +13,7 @@ export interface TopDownRunde {
   /** Bänder ohne Zone */
   zonenUeberfluessig: number
   /** Teil 2: Replay-Entscheidung (fehlt, wenn die Runde vor dem Replay beendet wurde) */
-  replay?: { entscheidung: 'trade' | 'kein-trade'; bewertung: string; r: number | null }
+  replay?: { entscheidung: 'trade' | 'kein-trade'; bewertung: string; r: number | null; setupId?: string }
 }
 
 const MAX_RUNDEN = 200

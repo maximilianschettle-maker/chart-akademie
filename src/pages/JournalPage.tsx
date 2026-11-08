@@ -3,6 +3,7 @@ import { Trash2 } from 'lucide-react'
 import { useSimulatorStore, START_KAPITAL } from '../stores/simulatorStore'
 import { useJournalStore } from '../journal/store'
 import { EchteTrades } from '../journal/EchteTrades'
+import { SetupBilanzAlles } from '../journal/SetupBilanzAlles'
 import { statistik } from '../engine/bewertung'
 import {
   logischeTrades,
@@ -30,13 +31,13 @@ function Kachel({ titel, wert, farbe }: { titel: string; wert: string; farbe?: s
   )
 }
 
-type Reiter = 'echt' | 'simulator'
+type Reiter = 'echt' | 'simulator' | 'setups'
 const REITER_SCHLUESSEL = 'chartakademie-journal-reiter'
 
 function reiterGespeichert(): Reiter | null {
   try {
     const v = localStorage.getItem(REITER_SCHLUESSEL)
-    return v === 'echt' || v === 'simulator' ? v : null
+    return v === 'echt' || v === 'simulator' || v === 'setups' ? v : null
   } catch {
     return null
   }
@@ -66,8 +67,11 @@ export function JournalPage() {
         <button type="button" role="tab" aria-selected={reiter === 'simulator'} className={tab(reiter === 'simulator')} onClick={() => reiterSetzen('simulator')}>
           Simulator
         </button>
+        <button type="button" role="tab" aria-selected={reiter === 'setups'} className={tab(reiter === 'setups')} onClick={() => reiterSetzen('setups')}>
+          Setups
+        </button>
       </div>
-      {reiter === 'echt' ? <EchteTrades /> : <SimulatorJournal />}
+      {reiter === 'echt' ? <EchteTrades /> : reiter === 'setups' ? <SetupBilanzAlles /> : <SimulatorJournal />}
     </div>
   )
 }

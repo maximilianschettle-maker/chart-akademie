@@ -119,6 +119,7 @@ function UebungSession({
   // Bei Unterkerzen-Anzeige ist das Haupt-Intervall selbst ein höherer Timeframe
   const timeframes = zeigeUnter ? [{ label: szenario.interval, sek: hauptSek }, ...hoehere] : hoehere
   const szenarioAbschliessen = useProgressStore((s) => s.szenarioAbschliessen)
+  const uebungLoggen = useProgressStore((s) => s.uebungLoggen)
   const gespeichertRef = useRef(false)
 
   // Jeder Trade wird einzeln bewertet; das Übungsergebnis ist der beste Trade
@@ -136,9 +137,11 @@ function UebungSession({
           rMultiple: ergebnis.resultat.rMultiple,
         })
       }
+      // Setup-Bilanz: jeder Durchlauf zählt, auch Zufalls-Übungen
+      uebungLoggen({ am: Date.now(), szenarioId: szenario.id, strategieId: szenario.strategieId, bewertung: ergebnis.resultat.bewertung, r: ergebnis.resultat.rMultiple, gehandelt: ergebnis.bewertungen.length > 0 })
       onFertig({ nr: durchlaufNr, bewertungen: ergebnis.bewertungen })
     }
-  }, [ergebnis, szenario.id, szenario.generiert, szenarioAbschliessen, onFertig, durchlaufNr])
+  }, [ergebnis, szenario.id, szenario.generiert, szenario.strategieId, szenarioAbschliessen, uebungLoggen, onFertig, durchlaufNr])
 
   // Angezeigter Trade: Auswahl aus der Liste, sonst der beste
   const gewaehlt = ergebnis ? (ergebnis.bewertungen.find((b) => b.key === auswahl) ?? ergebnis.bester) : undefined
