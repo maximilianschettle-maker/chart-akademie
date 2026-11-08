@@ -1,7 +1,33 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-08T05:23:27.875Z",
+ "lastUpdated": "2026-11-08T06:23:30.730Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/usa-iran-seeblockade-angriff-handelsschiff-100.html",
+   "titel": "US-Militär attackiert Handelsschiff im Golf von Oman",
+   "link": "https://www.tagesschau.de/ausland/asien/usa-iran-seeblockade-angriff-handelsschiff-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-08T06:01:58.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Im Golf von Oman hat das US-Militär auf ein Handelsschiff gefeuert, dass gegen die von den USA aufrecht erhaltene Seeblockade verstoßen haben soll. Iran meldet unterdessen, dass zwei Frachter in der Straße von Hormus in Brand geraten seien.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/was-kostet-die-welt/der-tragische-absturz-von-varta-201655806.html",
+   "titel": "Was kostet die Welt?: Der tragische Absturz von Varta",
+   "link": "https://www.faz.net/aktuell/wirtschaft/was-kostet-die-welt/der-tragische-absturz-von-varta-201655806.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-08T06:00:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Varta war eigentlich auf dem Weg nach ganz oben. Als 2019 öffentlich wird, dass der deutsche Batteriehersteller Knopfzellen für die Airpods von Apple produziert, schießt der Aktienkurs komplett durch die Decke. In Bayern eröffnet Varta eine",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/08/world/africa/south-africa-election-african-national-congress.html",
    "titel": "South Africa’s Politics May Never Be the Same Again",
@@ -982,38 +1008,13 @@
    "maerkte": [],
    "text": "US media reports there are calls to replace Pete Hegseth, who also faces a possible impeachment vote, while Marco Rubio is rumoured to be eyeing a presidential run.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
-   "titel": "Israel’s Election Ended With No Clear Winner. These Parties Are Trying to Form a Coalition.",
-   "link": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-05T23:18:21.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Isaac Herzog wrapped up two days of talks with party leaders by saying he will ask one of them on Sunday to try to assemble a governing coalition.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/wall-street-ki-blutbad-an-us-boersen-sp-500-bricht-um-vier-prozent-ein/100267625.html",
-   "titel": "Wall Street: „KI-Blutbad“ an den Märkten: Rund drei Billionen Dollar Börsenwert an einem Tag vernichtet",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/wall-street-ki-blutbad-an-us-boersen-sp-500-bricht-um-vier-prozent-ein/100267625.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T22:40:26.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Zwei Tage nach der US-Wahl bricht die Wall Street ein. Die Sorge vor einer schärferen KI-Regulierung löst einen Ausverkauf aus. Doch ein anderer Faktor verstärkt den Kursrutsch.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
-  "DW": 6,
+  "tagesschau": 11,
+  "DW": 5,
   "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 6,
+  "FAZ Wirtschaft": 7,
   "Handelsblatt": 4,
   "BBC World": 8,
   "NYT World": 18,
