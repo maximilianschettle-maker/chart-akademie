@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-08T01:23:33.350Z",
+ "lastUpdated": "2026-11-08T02:23:30.852Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo",
+   "titel": "What we know so far after Krakow gun attack",
+   "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-08T01:47:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at the home of the attacker.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-will-ermittlungen-gegen-demokraten-bedrohen-viele-menschen/29669594.html",
    "titel": "+++ US-Midterms +++: Trump will Ermittlungen gegen Demokraten – „bedrohen viele Menschen“",
@@ -22,17 +33,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Gadi Eisenkot, a former military chief, hopes to succeed Benjamin Netanyahu as prime minister by cobbling together a coalition after an inconclusive election.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo",
-   "titel": "What we know so far after Krakow gun attack",
-   "link": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-07T22:58:49.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Six people were killed in a random shooting in the city's main square, and three bodies were later found at his home.",
    "sprache": "en"
   },
   {
