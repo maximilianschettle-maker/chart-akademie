@@ -1,6 +1,11 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, Ban, Check, Eraser, Layers, LoaderCircle, RectangleHorizontal, RotateCcw, Target, X } from 'lucide-react'
+import { ArrowLeft, Ban, Check, Eraser, Layers, LoaderCircle, RectangleHorizontal, RotateCcw, Sparkles, Target, X } from 'lucide-react'
+import { workerKonfiguriert } from '../aktien/data/client'
+import { tradePruefen } from '../journal/pruefung'
+import { PruefungKarte } from '../journal/PruefungKarte'
+import type { Pruefung } from '../journal/types'
+import { uebungsFakten } from './kiCoach'
 import { ChartPanel } from '../components/chart/ChartPanel'
 import { HandelsChart, type ChartBox, type ChartLinie, type ChartMarker } from '../components/chart/HandelsChart'
 import { ReplayControls } from '../components/chart/ReplayControls'
@@ -72,6 +77,11 @@ export function TopDownPage() {
   const [simulation, setSimulation] = useState<Simulation | null>(null)
   const [bewertung, setBewertung] = useState<Entscheidungsbewertung | null>(null)
   const entscheidungRef = useRef<Entscheidung | null>(null)
+  // KI-Coach zur Entscheidung (Sitzungsstand, nicht gespeichert)
+  const [coach, setCoach] = useState<Pruefung | null>(null)
+  const [coachLaeuft, setCoachLaeuft] = useState(false)
+  const [coachFehler, setCoachFehler] = useState<string | null>(null)
+  const mitWorker = workerKonfiguriert()
 
   const starten = useCallback(async () => {
     setSchritt('laedt')
@@ -92,6 +102,8 @@ export function TopDownPage() {
     entscheidungRef.current = null
     setSimulation(null)
     setBewertung(null)
+    setCoach(null)
+    setCoachFehler(null)
     try {
       const r = await neueRunde(tracker.daten)
       setRunde(r)
@@ -186,6 +198,50 @@ export function TopDownPage() {
     const t = setInterval(() => setCursor((c) => Math.min(replay.kerzen.length - 1, c + 1)), TAKT_MS[geschwindigkeit])
     return () => clearInterval(t)
   }, [laufend, replay, fertig, geschwindigkeit, aufloesen, schritt])
+
+  async function coachFragen() {
+    if (!replay || !runde || !entscheidung || !bewertung || !richtung) return
+    setCoachLaeuft(true)
+    setCoachFehler(null)
+    try {
+      const uebung = {
+        art: 'top-down' as const,
+        tagesRichtung: richtung.richtung,
+        kriterien: bewertung.kriterien.map((x) => ({ titel: x.titel, ok: x.ok, text: x.text })),
+        zonen: wichtigeZonen.map((z) => ({ von: rundePreis(z.von), bis: rundePreis(z.bis), text: z.text })),
+        ...(entscheidung.typ === 'kein-trade' ? { keinTrade: { bewertung: bewertung.bewertung, text: bewertung.text } } : {}),
+        setupGewaehlt: entscheidung.typ === 'trade' ? (SETUPS.find((s) => s.id === entscheidung.setupId)?.text ?? null) : null,
+      }
+      const k = replay.kerzen[Math.min(entscheidung.index, replay.kerzen.length - 1)]
+      const tradeWahl = entscheidung.typ === 'trade' ? entscheidung.trade : { richtung: 'long' as const, entry: k.close, stop: 0, ziel: 0 }
+      const fakten = uebungsFakten(
+        {
+          markt: runde.instrumentName,
+          symbol: runde.symbol,
+          waehrung: runde.waehrung,
+          richtung: tradeWahl.richtung,
+          entryTime: k.time,
+          entryPreis: tradeWahl.entry,
+          stopLoss: tradeWahl.stop,
+          takeProfit: tradeWahl.ziel,
+          strategieId: entscheidung.typ === 'trade' ? entscheidung.setupId : 'kein-setup',
+          zeitrahmen: replay.intervall,
+          ...(simulation && simulation.exitIndex !== null && simulation.exitPreis !== null && simulation.ausgang !== 'nicht gefüllt'
+            ? { exitTime: replay.kerzen[simulation.exitIndex].time, exitPreis: simulation.exitPreis, exitGrund: simulation.ausgang === 'ziel' ? ('ziel' as const) : simulation.ausgang === 'stop' ? ('stop' as const) : ('manuell' as const) }
+            : {}),
+        },
+        replay.kerzen,
+        uebung,
+        true,
+      )
+      const antwort = await tradePruefen(fakten)
+      setCoach({ ...antwort, erstelltAm: Date.now(), mitErgebnis: true })
+    } catch (e) {
+      setCoachFehler(e instanceof Error ? e.message : String(e))
+    } finally {
+      setCoachLaeuft(false)
+    }
+  }
 
   const tradeVorbereiten = () => {
     if (!replay) return
@@ -555,6 +611,17 @@ export function TopDownPage() {
                         : `${simulation.ausgang === 'ziel' ? 'Ziel erreicht' : simulation.ausgang === 'stop' ? 'Stop' : 'am Ende noch offen'}, ${simulation.r === null ? '' : fmtR(simulation.r)}`}{' '}
                       – das Ergebnis ist Statistik, bewertet wird der Prozess.
                     </p>
+                  )}
+                  {coach ? (
+                    <PruefungKarte p={coach} kontext="KI-Coach zur Übung" />
+                  ) : (
+                    <div className="flex flex-wrap items-center gap-2">
+                      <button type="button" onClick={() => void coachFragen()} className={KNOPF} disabled={!mitWorker || coachLaeuft}>
+                        {coachLaeuft ? <LoaderCircle className="h-3.5 w-3.5 animate-spin" /> : <Sparkles className="h-3.5 w-3.5" />} KI-Coach fragen
+                      </button>
+                      {!mitWorker && <span className="text-[11px] text-gedimmt">Kein Worker eingetragen (Aktien → Einstellungen).</span>}
+                      {coachFehler && <span className="text-xs text-short">{coachFehler}</span>}
+                    </div>
                   )}
                   <button type="button" onClick={() => void starten()} className={KNOPF_AKZENT}>
                     <RotateCcw className="h-3.5 w-3.5" /> Nächste Runde

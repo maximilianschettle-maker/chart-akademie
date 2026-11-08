@@ -12,7 +12,26 @@ import { geplantesCrv, rMultiple, setupName, tagVon } from './engine'
 // formuliert daraus das Urteil. Kein Blick in die Zukunft: Setup, Trend, Struktur und Stop-Maße
 // nutzen ausschließlich Kerzen bis zur Einstiegskerze; „ergebnis“ kommt nur auf Wunsch dazu.
 
+/** Zusatz für Übungs-Trades (Top-Down-Replay, Simulator): was die Übung selbst schon festgestellt hat */
+export interface UebungsKontext {
+  art: 'top-down' | 'simulator'
+  /** Richtung des Tagescharts laut Übung */
+  tagesRichtung?: 'auf' | 'ab' | 'seitwaerts' | string
+  /** vorberechnete Kriterien der Übung (Richtung, Zone, Bestätigung, Stop, CRV) */
+  kriterien?: { titel: string; ok: boolean; text: string }[]
+  /** wichtige Zonen der Zonen-Erkennung */
+  zonen?: { von: number; bis: number; text: string }[]
+  /** „Kein Trade“-Entscheidung mit Bewertung der Übung */
+  keinTrade?: { bewertung: string; text: string }
+  /** vom Nutzer gewähltes Setup */
+  setupGewaehlt?: string | null
+  /** Abgleich des Simulator-Rückblicks mit der Setup-Erkennung */
+  abgleich?: string
+}
+
 export interface TradeFakten {
+  /** gesetzt bei Übungs-Trades */
+  uebung?: UebungsKontext
   markt: string
   richtung: 'long' | 'short'
   zeitrahmen: string

@@ -16,6 +16,7 @@ import { STRATEGIEN, strategieName } from '../../content/strategien'
 import { fmtPreis, fmtR } from '../../engine/format'
 import { useSimulatorStore } from '../../stores/simulatorStore'
 import { ChartPanel, CHART_FARBEN } from '../chart/ChartPanel'
+import { TradeCoach } from './TradeCoach'
 
 // Setup-Rückblick am Sitzungsende: Was hat der gespielte Abschnitt angeboten,
 // was davon wurde gehandelt, was verpasst — mit Chart zum Moment der
@@ -261,8 +262,11 @@ function FundDetail({
 }
 
 /** Gegenprobe: Hatte jeder eigene Trade ein erkennbares Setup? */
-function EigeneTrades({ abgleich }: { abgleich: TradeAbgleich[] }) {
+function EigeneTrades({ abgleich, trades, candles, sitzung }: { abgleich: TradeAbgleich[]; trades: Trade[]; candles: Candle[]; sitzung: { symbol: string; interval: string } }) {
   if (abgleich.length === 0) return null
+  // Roh-Trade zum logischen Trade (Stop, Ziel, Ausstieg stehen nur dort)
+  const roh = (key: string, entryTime: number, richtung: string, entryPreis: number) =>
+    trades.find((t) => t.entryTime === entryTime && t.richtung === richtung && t.entryPreis === entryPreis) ?? trades.find((t) => t.id.startsWith(key.split('|')[0]))
   const ohne = abgleich.filter((a) => !a.setup).length
   return (
     <div className="border-t border-rand p-4">
@@ -299,6 +303,14 @@ function EigeneTrades({ abgleich }: { abgleich: TradeAbgleich[] }) {
             <span className={`ml-auto ${a.trade.rMultiple >= 0 ? 'text-long' : 'text-short'}`}>
               {fmtR(a.trade.rMultiple)}
             </span>
+            {(() => {
+              const t = roh(a.trade.key, a.trade.entryTime, a.trade.richtung, a.trade.entryPreis)
+              return t ? (
+                <span className="basis-full">
+                  <TradeCoach trade={t} candles={candles} symbol={sitzung.symbol} interval={sitzung.interval} setup={a.setup} />
+                </span>
+              ) : null
+            })()}
           </li>
         ))}
       </ul>
@@ -504,7 +516,7 @@ export function SetupRueckblick({ sitzung, candles, startIndex, endIndex, trades
         </p>
       )}
 
-      <EigeneTrades abgleich={abgleich} />
+      <EigeneTrades abgleich={abgleich} trades={trades} candles={candles} sitzung={sitzung} />
     </div>
   )
 }
