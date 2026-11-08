@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-07T23:23:33.071Z",
+ "lastUpdated": "2026-11-08T01:23:33.350Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-will-ermittlungen-gegen-demokraten-bedrohen-viele-menschen/29669594.html",
+   "titel": "+++ US-Midterms +++: Trump will Ermittlungen gegen Demokraten – „bedrohen viele Menschen“",
+   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-will-ermittlungen-gegen-demokraten-bedrohen-viele-menschen/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-08T01:14:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "US-Justizministerium will Klage zu Kaliforniens Wahl zurückziehen +++ Houston schränkt Zusammenarbeit mit US-Einwanderungsbehörde ein +++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/07/world/middleeast/israel-eisenkot-government.html",
    "titel": "Eisenkot, Netanyahu Rival and Opposition Leader, Tapped to Try to Form Government",
@@ -996,17 +1007,6 @@
    "maerkte": [],
    "text": "Hegseth verteidigt Iran-Krieg und kämpft um sein Amt +++ Rubio zu Rücktrittsgerücht: Ich liebe meinen Job +++ Newsom wandelt alle Todesstrafen in Haftstrafen um +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-demokraten-kuendigen-korruptionsermittlungen-gegen-trump-an/29669594.html",
-   "titel": "+++ US-Midterms +++: Demokraten kündigen Korruptionsermittlungen gegen Trump an",
-   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-demokraten-kuendigen-korruptionsermittlungen-gegen-trump-an/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-05T20:15:57.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Newsom wandelt alle Todesstrafen in Haftstrafen um +++ Demokraten kündigen Korruptionsermittlungen gegen Trump an +++ US-Regierung bringt Sanktionen gegen Kuba auf den Weg +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1014,7 +1014,7 @@
   "DW": 6,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 6,
-  "Handelsblatt": 3,
+  "Handelsblatt": 4,
   "BBC World": 8,
   "NYT World": 19,
   "EIA Today in Energy": 1
