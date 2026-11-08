@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-08T02:23:30.852Z",
+ "lastUpdated": "2026-11-08T04:23:27.348Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo",
+   "titel": "Houthis say at least 33 killed in Saudi air strike",
+   "link": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-08T04:03:12.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo",
    "titel": "What we know so far after Krakow gun attack",
@@ -119,7 +130,7 @@
    "titel": "Islamist Militant Attack Forces Patients to Flee Ebola Clinic in Congo",
    "link": "https://www.nytimes.com/2026/11/07/world/africa/congo-attack-ebola-isis-adf.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-07T18:49:32.000Z",
+   "zeit": "2026-11-07T18:49:33.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "At least 48 people were killed in a brutal assault by a group loyal to the Islamic State, officials said. The area is a hot spot of the growing Ebola outbreak.",
@@ -145,17 +156,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "A mass wedding for Palestinian brides and grooms has taken place in the rubble-strewn streets of Gaza.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo",
-   "titel": "Houthis say at least 25 killed in Saudi air strike",
-   "link": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-07T17:09:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented.",
    "sprache": "en"
   },
   {
