@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect } from 'react'
+import { FehlerGrenze } from './components/ui/FehlerGrenze'
 import { HashRouter, Routes, Route, Link, Navigate, useLocation } from 'react-router-dom'
 import { ChartCandlestick, LoaderCircle } from 'lucide-react'
 import { StartPage } from './pages/StartPage'
@@ -81,6 +82,7 @@ export default function App() {
       </header>
       <div className="pb-16 sm:pb-0">
         <main>
+          <FehlerGrenze>
           <Suspense fallback={<Laedt />}>
             <Routes>
               <Route path="/" element={<StartPage />} />
@@ -117,6 +119,7 @@ export default function App() {
               <Route path="*" element={<Platzhalter titel="Seite nicht gefunden" />} />
             </Routes>
           </Suspense>
+          </FehlerGrenze>
         </main>
         <footer className="mx-auto max-w-3xl px-4 py-8 text-center text-xs text-gedimmt">
           ChartAkademie — Lern-Projekt. Keine Anlageberatung; alle Simulationen mit fiktivem Kapital.
