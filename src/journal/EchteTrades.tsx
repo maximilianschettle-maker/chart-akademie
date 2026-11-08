@@ -46,6 +46,8 @@ export function EintragZeile({ e }: { e: JournalEintrag }) {
         )}
         {betrag !== null && <span className={`tabular-nums ${betrag >= 0 ? 'text-long' : 'text-short'}`}>{betrag >= 0 ? '+' : ''}{fmtKurs(betrag, e.waehrung)}</span>}
         {e.imPlan === false && <span className="text-[10px] uppercase tracking-wide text-short">außerhalb Plan</span>}
+        {e.demo && <span className="rounded bg-nacht px-1 py-0.5 text-[10px] uppercase tracking-wide text-gedimmt">Demo{e.broker ? ` · ${e.broker}` : ''}</span>}
+        {!e.demo && e.broker && e.broker !== 'eToro' && <span className="text-[10px] uppercase tracking-wide text-gedimmt">{e.broker}</span>}
       </Link>
     </li>
   )
@@ -60,11 +62,13 @@ export function EchteTrades() {
   const [markt, setMarkt] = useState('')
   const [strategieId, setStrategieId] = useState('')
   const [zeitraum, setZeitraum] = useState('alle')
+  const [konto, setKonto] = useState<'' | 'echt' | 'demo'>('')
+  const hatDemo = eintraege.some((e) => e.demo)
 
   const filter = useMemo((): JournalFilter => {
     const tage = ZEITRAEUME.find((z) => z.id === zeitraum)?.tage ?? null
-    return { markt: markt || undefined, strategieId: strategieId || undefined, von: tage ? jetzt - tage * 86_400 : undefined }
-  }, [markt, strategieId, zeitraum, jetzt])
+    return { markt: markt || undefined, strategieId: strategieId || undefined, von: tage ? jetzt - tage * 86_400 : undefined, konto: konto || undefined }
+  }, [markt, strategieId, zeitraum, jetzt, konto])
   const gefiltert = useMemo(() => filtern(eintraege, filter), [eintraege, filter])
   const offene = useMemo(() => eintraege.filter((e) => e.status === 'offen').sort((a, b) => b.entryTime - a.entryTime), [eintraege])
   const geschlossene = useMemo(() => gefiltert.filter((e) => e.status === 'geschlossen').sort((a, b) => (b.exitTime ?? b.entryTime) - (a.exitTime ?? a.entryTime)), [gefiltert])
@@ -162,6 +166,13 @@ export function EchteTrades() {
                 </option>
               ))}
             </select>
+            {hatDemo && (
+              <select className={`${EINGABE} w-auto`} value={konto} onChange={(ev) => setKonto(ev.target.value as '' | 'echt' | 'demo')} aria-label="Konto">
+                <option value="">Echt + Demo</option>
+                <option value="echt">Nur echtes Konto</option>
+                <option value="demo">Nur Demo</option>
+              </select>
+            )}
           </div>
 
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">

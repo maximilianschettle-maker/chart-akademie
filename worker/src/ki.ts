@@ -28,6 +28,8 @@ const PositionSchema = z.object({
   status: z.enum(['offen', 'geschlossen']),
   schlusskurs: z.number().nullable(),
   schlussdatum: z.string().nullable(),
+  broker: z.string().nullable(),
+  demo: z.boolean().nullable(),
 })
 
 const AntwortSchema = z.object({
@@ -35,7 +37,7 @@ const AntwortSchema = z.object({
   hinweis: z.string().nullable(),
 })
 
-const SYSTEM = `Du liest Screenshots einer Broker-App (meist eToro, deutsche Oberfläche) und gibst die darauf sichtbaren Positionen als Daten zurück.
+const SYSTEM = `Du liest Screenshots einer Broker-App (eToro, BingX oder andere) und gibst die darauf sichtbaren Positionen als Daten zurück.
 
 Regeln:
 - Nur ablesen, nie schätzen oder ergänzen. Ein Wert, der nicht im Bild steht, ist null.
@@ -48,6 +50,8 @@ Regeln:
 - Datumsangaben wie "04 Nov 2026, 17:02" oder "04.11.2026 17:02" → "2026-11-04T17:02" (Ortszeit wie angezeigt, keine Zeitzonenumrechnung). Monatsnamen können englisch oder deutsch abgekürzt sein.
 - Status: eine offene Position (Positionsinfo mit "Position schließen", Portfolio) = "offen". Eine geschlossene Position (Historie, "Geschlossen", mit Schlusskurs oder Schlussdatum) = "geschlossen"; dann schlusskurs und schlussdatum füllen, gewinnVerlust ist der realisierte Betrag.
 - "Wert" ist der aktuelle Wert der Position, nicht der Einsatz; die Zahl daneben mit Pfeil ist gewinnVerlust.
+- broker: "eToro", "BingX" oder der erkennbare Name, sonst null. demo: true bei "(Demo)", "Virtual USDT", "Paper", "Testnet"; false, wenn erkennbar ein echtes Konto; sonst null.
+- Handelshistorie mit einzelnen Füllungen (BingX "Trade History": Zeilen wie "Open Long 13X", "Close Short 30X", Spalten Filled Time, Futures/Side, Filled, Filled Price, Closed PnL, Fee, Order No.): Füllungen zu Positionen paaren – ein "Open" und das zeitlich nächste "Close" desselben Symbols und derselben Richtung mit gleicher Menge sind eine Position. Dann: eroeffnungskurs und eroeffnungsdatum vom Open, schlusskurs und schlussdatum vom Close, kontrakte = Filled, hebel aus "13X", gewinnVerlust = Closed PnL des Close, uebernachtgebuehren = Summe der Gebühren beider Zeilen (positiv), brokerId = Order No. des Close, status "geschlossen". Ein Open ohne Close ist "offen". Reihenfolge: älteste Position zuerst.
 - hinweis: kurz auf Deutsch, was nicht lesbar oder mehrdeutig war; sonst null.`
 
 function client(env: Env): Anthropic {

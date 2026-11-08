@@ -25,6 +25,10 @@ export interface ErkanntePosition {
   status: 'offen' | 'geschlossen'
   schlusskurs: number | null
   schlussdatum: string | null
+  /** Broker, wenn erkennbar (eToro, BingX …) */
+  broker: string | null
+  /** Demo-/Papierkonto („(Demo)“, „Virtual USDT“) */
+  demo: boolean | null
 }
 
 export interface ScreenshotErgebnis {

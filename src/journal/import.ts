@@ -33,7 +33,11 @@ export function marktAusInstrument(instrument: string, maerkte: MarktDef[] = mar
   const id = ETORO_MARKT[kurz]
   if (id) return maerkte.find((m) => m.id === id) ?? null
   const direkt = maerkte.find((m) => m.symbol.toUpperCase() === instrument.trim().toUpperCase() || m.name.toUpperCase().replace(/\s/g, '') === kurz)
-  return direkt ?? null
+  if (direkt) return direkt
+  // Krypto-Paare (BingX/Binance-Schreibweise): SOLUSDT → SOL-USD bei Yahoo, Kerzen damit ladbar
+  const paar = kurz.match(/^([A-Z]{2,8})(USDT|USDC|USD)$/)
+  if (paar) return { id: `krypto-${paar[1].toLowerCase()}`, name: paar[1], symbol: `${paar[1]}-USD`, waehrung: 'USD' }
+  return null
 }
 
 /** Risiko in Kontowährung = Kontrakte × Abstand Einstieg–Stop (so rechnet auch der Broker) */
@@ -60,6 +64,8 @@ export function entwurfAus(p: ErkanntePosition, konto: number, jetztSek = Math.f
     risikoBetrag,
     hebel: p.hebel ?? undefined,
     brokerId: p.brokerId ?? undefined,
+    broker: p.broker ?? undefined,
+    demo: p.demo ?? undefined,
     kontrakte: p.kontrakte ?? undefined,
     einsatz: p.einsatz ?? undefined,
     imPlan: null,

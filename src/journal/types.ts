@@ -38,8 +38,12 @@ export interface JournalEintrag {
   /** Risiko in Kontowährung, falls bekannt – Grundlage für Ergebnis in $ ohne Broker-Angabe */
   risikoBetrag?: number
   hebel?: number
-  /** Positions-ID des Brokers (eToro) – Schlüssel für den Screenshot-Import */
+  /** Positions-ID des Brokers (eToro, BingX) – Schlüssel für den Screenshot-/CSV-Import */
   brokerId?: string
+  /** Broker-Name, wenn bekannt */
+  broker?: string
+  /** Demo-/Papierkonto: zählt getrennt vom echten Konto */
+  demo?: boolean
   /** Kontrakte/Einheiten und Einsatz (Marge) laut Broker */
   kontrakte?: number
   einsatz?: number

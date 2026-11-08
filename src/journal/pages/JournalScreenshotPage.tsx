@@ -1,12 +1,13 @@
 import { useMemo, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { ArrowLeft, Camera, LoaderCircle, TriangleAlert } from 'lucide-react'
+import { ArrowLeft, Camera, FileSpreadsheet, LoaderCircle, TriangleAlert } from 'lucide-react'
 import { useJournalStore } from '../store'
 import { useAnsichtStore } from '../../analyse/ansichtStore'
 import { workerKonfiguriert } from '../../aktien/data/client'
 import { EINGABE, KNOPF, KNOPF_AKZENT } from '../../aktien/components/ui'
 import { fmtKurs } from '../../aktien/engine/format'
 import { bildVorbereiten, positionenErkennen, type BildDaten } from '../screenshot'
+import { csvZeilen, positionenAusFuellungen } from '../csv'
 import { AKTION_TEXT, vorschlaege, type ImportVorschlag } from '../import'
 import { neuerEintrag, setupListe, zeitKurz, type EintragEntwurf } from '../engine'
 import { snapshotLaden } from '../snapshots'
@@ -32,6 +33,7 @@ export function JournalScreenshotPage() {
   const konto = useAnsichtStore((s) => s.konto)
   const setups = useMemo(() => setupListe(), [])
   const dateiRef = useRef<HTMLInputElement>(null)
+  const csvRef = useRef<HTMLInputElement>(null)
   const [vorschau, setVorschau] = useState<string | null>(null)
   const [bild, setBild] = useState<BildDaten | null>(null)
   const [laeuft, setLaeuft] = useState(false)
@@ -50,6 +52,34 @@ export function JournalScreenshotPage() {
       const b = await bildVorbereiten(datei)
       setBild(b)
       await erkennen(b)
+    } catch (e) {
+      setFehler(e instanceof Error ? e.message : String(e))
+    }
+  }
+
+  /** CSV-Export der Handelshistorie (BingX „Trade History“ u. ä.): Füllungen → Positionen, ohne KI */
+  async function csvGewaehlt(datei: File) {
+    setFehler(null)
+    setErgebnis(null)
+    setZeilen([])
+    if (vorschau) URL.revokeObjectURL(vorschau)
+    setVorschau(null)
+    setBild(null)
+    try {
+      const text = await datei.text()
+      const zeilenCsv = csvZeilen(text)
+      if (zeilenCsv.length === 0) throw new Error('Keine passenden Spalten gefunden (erwartet mindestens Zeit, Symbol und Preis).')
+      const positionen = positionenAusFuellungen(zeilenCsv)
+      const r: ScreenshotErgebnis = { positionen, hinweis: positionen.length ? null : 'Keine Open/Close-Zeilen erkannt.', modell: 'csv' }
+      setErgebnis(r)
+      setZeilen(
+        vorschlaege(r.positionen, eintraege, konto).map((v) => ({
+          v,
+          an: v.aktion !== 'unveraendert',
+          strategieId: v.vorhanden?.strategieId ?? '',
+          zeitrahmen: v.vorhanden?.zeitrahmen ?? '15m',
+        })),
+      )
     } catch (e) {
       setFehler(e instanceof Error ? e.message : String(e))
     }
@@ -111,7 +141,7 @@ export function JournalScreenshotPage() {
       </Link>
       <h1 className="mt-2 text-2xl font-bold text-white">Trades aus Screenshot</h1>
       <p className="mt-1 text-sm text-gedimmt">
-        Screenshot aus eToro (Positionsinfo, Portfolio oder Historie). Der Worker liest Markt, Richtung, Einstieg, Stop, Ziel, Hebel, Datum und Ergebnis aus; du prüfst, wählst Setup und Zeitrahmen und übernimmst.
+        Screenshot aus eToro oder BingX (Positionsinfo, Portfolio, Historie) – der Worker liest Markt, Richtung, Einstieg, Stop, Ziel, Hebel, Datum und Ergebnis aus. Oder die exportierte CSV-Datei der Handelshistorie (BingX: Wolken-Symbol über der Tabelle), die wird ohne KI direkt gelesen. Du prüfst, wählst Setup und Zeitrahmen und übernimmst.
       </p>
 
       {!mitWorker && (
@@ -137,6 +167,20 @@ export function JournalScreenshotPage() {
           onChange={(ev) => {
             const f = ev.target.files?.[0]
             if (f) void dateiGewaehlt(f)
+            ev.target.value = ''
+          }}
+        />
+        <button type="button" onClick={() => csvRef.current?.click()} className={KNOPF} disabled={laeuft} title="CSV-Export der Handelshistorie (z.B. BingX Trade History) – ohne KI, direkt gelesen">
+          <FileSpreadsheet className="h-3.5 w-3.5" /> CSV-Datei
+        </button>
+        <input
+          ref={csvRef}
+          type="file"
+          accept=".csv,text/csv"
+          className="hidden"
+          onChange={(ev) => {
+            const f = ev.target.files?.[0]
+            if (f) void csvGewaehlt(f)
             ev.target.value = ''
           }}
         />
@@ -179,6 +223,7 @@ export function JournalScreenshotPage() {
                       {v.entwurf.risikoBetrag !== undefined && ` · Risiko ${fmtKurs(v.entwurf.risikoBetrag, waehrung)}`}
                       {p.status === 'geschlossen' && ` · geschlossen ${p.schlusskurs ? `bei ${fmtKurs(p.schlusskurs, waehrung)}` : ''}${p.gewinnVerlust !== null ? ` (${p.gewinnVerlust >= 0 ? '+' : ''}${fmtKurs(p.gewinnVerlust, waehrung)})` : ''}`}
                       {p.brokerId && <span className="text-gedimmt"> · #{p.brokerId}</span>}
+                      {(p.broker || p.demo) && <span className="text-gedimmt"> · {p.broker ?? ''}{p.demo ? ' Demo' : ''}</span>}
                     </span>
                     {v.vorhanden && (
                       <span className="mt-0.5 block text-[11px] text-gedimmt">

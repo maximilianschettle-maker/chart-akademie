@@ -215,6 +215,8 @@ export interface JournalFilter {
   von?: number
   bis?: number
   status?: 'offen' | 'geschlossen'
+  /** 'echt' = ohne Demo-Kennung, 'demo' = nur Demo */
+  konto?: 'echt' | 'demo'
 }
 
 export function filtern(eintraege: JournalEintrag[], f: JournalFilter): JournalEintrag[] {
@@ -224,7 +226,8 @@ export function filtern(eintraege: JournalEintrag[], f: JournalFilter): JournalE
       (!f.strategieId || e.strategieId === f.strategieId) &&
       (f.von === undefined || e.entryTime >= f.von) &&
       (f.bis === undefined || e.entryTime <= f.bis) &&
-      (!f.status || e.status === f.status),
+      (!f.status || e.status === f.status) &&
+      (!f.konto || (f.konto === 'demo' ? e.demo === true : !e.demo)),
   )
 }
 

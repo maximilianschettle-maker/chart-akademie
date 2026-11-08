@@ -21,6 +21,8 @@ const POSITION: ErkanntePosition = {
   status: 'offen',
   schlusskurs: null,
   schlussdatum: null,
+  broker: 'eToro',
+  demo: false,
 }
 
 describe('Screenshot-Import: Abbildung', () => {
@@ -32,6 +34,8 @@ describe('Screenshot-Import: Abbildung', () => {
     expect(marktAusInstrument('^NDX')?.id).toBe('nasdaq100')
     expect(marktAusInstrument('Nasdaq 100')?.id).toBe('nasdaq100')
     expect(marktAusInstrument('XYZ123')).toBeNull()
+    expect(marktAusInstrument('SOLUSDT')).toMatchObject({ name: 'SOL', symbol: 'SOL-USD' })
+    expect(marktAusInstrument('BTCUSDT')?.symbol).toBe('BTC-USD')
   })
 
   it('Risiko = Kontrakte × Stop-Abstand, Risiko-% aus dem Konto', () => {
