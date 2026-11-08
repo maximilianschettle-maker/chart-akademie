@@ -7,6 +7,7 @@ import { fmtKurs } from '../aktien/engine/format'
 import type { Candle, Richtung } from '../types'
 import { GEFUEHLE, ZEITRAHMEN, type AusstiegGrund, type JournalEintrag, type Zeitrahmen } from './types'
 import { chip } from './ui'
+import { CHECKLISTE, imPlanAus, type ChecklisteStand } from './checkliste'
 import { geplantesCrv, marktListe, ortszeitAusUnix, pruefeEintrag, setupListe, SETUP_SONSTIGES, trefferZeit, unixAusOrtszeit, zahlAlsText, zahlAusText, type EintragEntwurf } from './engine'
 
 // Erfassung eines echten Trades in zwei Stufen: oben das, was beim Traden in 20 Sekunden geht
@@ -63,7 +64,9 @@ export function EintragForm({ start, vorhanden, kerzen, onSpeichern, onAbbrechen
   const [risiko, setRisiko] = useState(zahlAlsText(basis.risikoProzent ?? risikoStandard))
   const [hebel, setHebel] = useState(basis.hebel ? zahlAlsText(basis.hebel) : '')
   const [mehr, setMehr] = useState(Boolean(vorhanden))
-  const [imPlan, setImPlan] = useState<boolean | null>(basis.imPlan ?? null)
+  const [checkliste, setCheckliste] = useState<ChecklisteStand>(basis.checkliste ?? {})
+  // „Im Plan“ folgt aus der Checkliste; ohne Checkliste bleibt ein alter Wert (z.B. aus dem Abschluss-Dialog) stehen
+  const imPlan = Object.keys(checkliste).length ? imPlanAus(checkliste) : (basis.imPlan ?? null)
   const [gefuehl, setGefuehl] = useState(basis.gefuehlVorher ?? '')
   const [begruendung, setBegruendung] = useState(basis.begruendung ?? '')
   const [fehler, setFehler] = useState<string[]>([])
@@ -95,6 +98,7 @@ export function EintragForm({ start, vorhanden, kerzen, onSpeichern, onAbbrechen
     setupFrei: strategieId === SETUP_SONSTIGES ? setupFrei.trim() || undefined : undefined,
     zeitrahmen,
     imPlan,
+    checkliste: Object.keys(checkliste).length ? checkliste : undefined,
     gefuehlVorher: gefuehl || undefined,
     begruendung: begruendung.trim() || undefined,
     // beim Bearbeiten eines geschlossenen Trades sind die Ausstiegsfelder editierbar
@@ -277,21 +281,38 @@ export function EintragForm({ start, vorhanden, kerzen, onSpeichern, onAbbrechen
       </div>
 
       <button type="button" onClick={() => setMehr((m) => !m)} className="inline-flex items-center gap-1 text-xs font-semibold text-akzent" aria-expanded={mehr}>
-        {mehr ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />} Plan, Gefühl, Begründung {mehr ? '' : '(später ergänzbar)'}
+        {mehr ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />} Checkliste, Gefühl, Begründung {mehr ? '' : '(später ergänzbar)'}
       </button>
 
       {mehr && (
         <div className="space-y-3 rounded-xl border border-rand bg-nacht/40 p-3">
           <div>
-            <div className={feld}>Im Plan? (Setup aus dem Kurs, Zone, Bestätigung, Risiko wie geplant)</div>
-            <div className="mt-1 flex gap-1.5">
-              <button type="button" className={chip(imPlan === true)} onClick={() => setImPlan(imPlan === true ? null : true)}>
-                Ja
-              </button>
-              <button type="button" className={chip(imPlan === false)} onClick={() => setImPlan(imPlan === false ? null : false)}>
-                Nein
-              </button>
+            <div className="flex flex-wrap items-baseline justify-between gap-2">
+              <div className={feld}>Checkliste vor dem Trade</div>
+              <span className={`text-[11px] font-semibold ${imPlan === true ? 'text-long' : imPlan === false ? 'text-short' : 'text-gedimmt'}`}>
+                {imPlan === true ? 'Im Plan' : imPlan === false ? 'Außerhalb des Plans' : 'Im Plan: offen'}
+              </span>
             </div>
+            <ul className="mt-1 space-y-1.5">
+              {CHECKLISTE.map((p) => {
+                const wert = checkliste[p.id]
+                return (
+                  <li key={p.id} className="flex items-start gap-2">
+                    <div className="flex shrink-0 gap-1">
+                      <button type="button" className={`${chip(wert === true)} w-10 text-center`} onClick={() => setCheckliste((c) => ({ ...c, [p.id]: true }))} aria-label={`${p.kurz}: Ja`}>
+                        Ja
+                      </button>
+                      <button type="button" className={`${chip(wert === false)} w-10 text-center`} onClick={() => setCheckliste((c) => ({ ...c, [p.id]: false }))} aria-label={`${p.kurz}: Nein`}>
+                        Nein
+                      </button>
+                    </div>
+                    <span className="pt-1.5 text-xs text-schrift">
+                      <span className="font-semibold text-white">{p.kurz}</span> <span className="text-gedimmt">{p.text}</span>
+                    </span>
+                  </li>
+                )
+              })}
+            </ul>
           </div>
           <div>
             <div className={feld}>Gefühl vor dem Einstieg</div>

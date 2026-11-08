@@ -6,6 +6,7 @@ import { rsi } from '../engine/indikatoren/rsi'
 import { letzterAtr } from '../engine/indikatoren/atr'
 import { strategieName } from '../content/strategien'
 import { geplantesCrv, rMultiple, setupName, tagVon } from './engine'
+import { checklisteFakten } from './checkliste'
 
 // Fakten für die KI-Prüfung: alles, was sich aus den Kerzen bis zum Einstieg und aus dem Journal
 // berechnen lässt. Das Modell sieht keine Kerzen – es bekommt nur diese Zahlen und Aussagen und
@@ -47,6 +48,8 @@ export interface TradeFakten {
   begruendung: string | null
   gefuehlVorher: string | null
   imPlan: boolean | null
+  /** Antworten der Checkliste vor dem Trade (null = nicht ausgefüllt) */
+  checkliste: { text: string; ok: boolean | null }[] | null
   kerzen: { intervall: string; vorEinstieg: number; nachEinstieg: number } | null
   /** Regelbasierte Erkennung an der Einstiegskerze und den 12 Kerzen davor */
   erkanntesSetup: {
@@ -182,6 +185,7 @@ export function faktenSammeln(e: JournalEintrag, kerzen: Candle[] | null, alle: 
     begruendung: e.begruendung ?? null,
     gefuehlVorher: e.gefuehlVorher ?? null,
     imPlan: e.imPlan,
+    checkliste: e.checkliste ? checklisteFakten(e.checkliste) : null,
     kerzen: null,
     erkanntesSetup: null,
     einstiegInZone: null,

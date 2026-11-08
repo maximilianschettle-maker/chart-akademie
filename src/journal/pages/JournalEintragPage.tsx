@@ -7,6 +7,7 @@ import { ergebnis, geplantesCrv, ortszeitAusUnix, rMultiple, setupName, trefferZ
 import { GEFUEHLE, type AusstiegGrund, type JournalEintrag, type Pruefung, type Snapshot } from '../types'
 import { snapshotEntfernen, snapshotLaden, snapshotLesen, type SnapshotErgebnis } from '../snapshots'
 import { PruefungKarte } from '../PruefungKarte'
+import { CHECKLISTE } from '../checkliste'
 import { faktenSammeln } from '../fakten'
 import { tradePruefen } from '../pruefung'
 import { workerKonfiguriert } from '../../aktien/data/client'
@@ -366,6 +367,21 @@ export function JournalEintragPage() {
             <Fakt titel="Im Plan" wert={e.imPlan === null ? 'offen' : e.imPlan ? 'ja' : 'nein'} farbe={e.imPlan === false ? 'text-short' : undefined} />
             {(e.gefuehlVorher || e.gefuehlNachher) && <Fakt titel="Gefühl vorher → nachher" wert={`${e.gefuehlVorher ?? '–'} → ${e.gefuehlNachher ?? '–'}`} />}
           </dl>
+          {e.checkliste && (
+            <div className="mt-3">
+              <div className="text-[11px] text-gedimmt">Checkliste vor dem Trade</div>
+              <ul className="mt-1 flex flex-wrap gap-1.5 text-[11px]">
+                {CHECKLISTE.map((p) => {
+                  const w = e.checkliste![p.id]
+                  return (
+                    <li key={p.id} className={`rounded px-1.5 py-0.5 ${w === true ? 'bg-long/15 text-long' : w === false ? 'bg-short/15 text-short' : 'bg-nacht text-gedimmt'}`} title={p.text}>
+                      {w === true ? '✓' : w === false ? '✗' : '–'} {p.kurz}
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          )}
           {e.begruendung && (
             <div className="mt-3">
               <div className="text-[11px] text-gedimmt">Begründung</div>

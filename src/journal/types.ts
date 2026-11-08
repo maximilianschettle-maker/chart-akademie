@@ -51,8 +51,10 @@ export interface JournalEintrag {
   strategieId: string
   setupFrei?: string
   zeitrahmen: Zeitrahmen
-  /** null = noch nicht beantwortet */
+  /** null = noch nicht beantwortet; folgt aus der Checkliste, sobald sie ausgefüllt ist */
   imPlan: boolean | null
+  /** Checkliste vor dem Trade (CHECKLISTE-Ids → Ja/Nein) */
+  checkliste?: Record<string, boolean>
   gefuehlVorher?: string
   gefuehlNachher?: string
   begruendung?: string

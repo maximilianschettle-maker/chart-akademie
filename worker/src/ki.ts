@@ -112,6 +112,7 @@ Regeln:
 - "signalVorKerzen" > 3 heißt: der Trader ist spät eingestiegen; "einstiegInZone" false heißt: außerhalb der Zone. Ein Einstieg gegen "trend" braucht eine Begründung.
 - Stop: "stopInAtr" unter 0,8 ist meist Rauschen, über 3 zu weit; "struktur.stopDahinter" false heißt, der Stop liegt vor dem Swing-Tief/-Hoch und wird leicht abgeholt.
 - "heute": ein weiterer Trade nach Verlusten am selben Tag ist ein Warnsignal (Revanche).
+- "checkliste": die Antworten des Traders auf seine eigenen Regeln vor dem Trade. Ein "ok: false" ist ein bewusster Regelbruch – sprich ihn direkt an; "null" heißt nicht beantwortet. Vergleiche die Selbsteinschätzung mit den Fakten (z.B. "Bestätigung: Ja", aber signalVorKerzen 0 und Einstieg in der Zone).
 - Fehlt "ergebnis", kennst du den Ausgang nicht: bewerte ausschließlich den Prozess. Ist es da, trenne Prozess und Ergebnis: ein Gewinn macht einen schlechten Einstieg nicht gut, ein Verlust einen sauberen nicht schlecht. "mfeR"/"maeR" zeigen, wie weit es für und gegen ihn lief.
 - Ist "uebung" gesetzt, war es ein Übungs-Trade (Replay oder Simulator, kein echtes Geld): Die Übung hat Kriterien, Zonen oder einen Abgleich mit der Setup-Erkennung vorberechnet – nimm sie als Fakten, wiederhole sie nicht, sondern erkläre, was der Trader daraus über seine Lesart lernt. Bei "keinTrade" bewertest du die Entscheidung, nicht zu handeln.
 - Pflicht im Text: eine Gegenthese (was spricht gegen deine Einschätzung bzw. gegen den Trade).
