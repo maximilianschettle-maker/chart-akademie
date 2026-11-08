@@ -247,7 +247,7 @@ export function TopDownPage() {
     if (!replay || !entscheidung) return []
     const m: ChartMarker[] = [{ time: replay.kerzen[Math.min(entscheidung.index, replay.kerzen.length - 1)].time, art: 'hinweis', text: entscheidung.typ === 'trade' ? 'Entscheidung' : 'Kein Trade', oben: true }]
     if (simulation?.fillIndex !== null && simulation?.fillIndex !== undefined && entscheidung.typ === 'trade') m.push({ time: replay.kerzen[simulation.fillIndex].time, art: entscheidung.trade.richtung, text: 'Fill' })
-    if (simulation?.exitIndex !== null && simulation?.exitIndex !== undefined && simulation.ausgang !== 'offen' && simulation.ausgang !== 'nicht gefüllt') m.push({ time: replay.kerzen[simulation.exitIndex].time, art: 'exit', gewinn: (simulation.r ?? 0) > 0, text: simulation.ausgang === 'ziel' ? 'Ziel' : 'Stop' })
+    if (simulation?.exitIndex !== null && simulation?.exitIndex !== undefined && simulation.ausgang !== 'offen' && simulation.ausgang !== 'nicht gefüllt') m.push({ time: replay.kerzen[simulation.exitIndex].time, art: 'exit', gewinn: (simulation.r ?? 0) > 0, text: simulation.ausgang === 'ziel' ? 'Ziel' : 'Stop', oben: entscheidung.typ === 'trade' && entscheidung.trade.richtung === 'long' })
     return m
   }, [replay, entscheidung, simulation])
 

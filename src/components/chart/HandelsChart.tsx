@@ -58,6 +58,7 @@ export interface ChartMarker {
   art: 'long' | 'short' | 'exit' | 'hinweis'
   text?: string
   gewinn?: boolean
+  /** hinweis: über (true) oder unter der Kerze; exit: false = unter der Kerze */
   /** nur hinweis: Farbe und Lage (oben = über der Kerze) */
   farbe?: string
   oben?: boolean
@@ -743,8 +744,23 @@ export function HandelsChart({
     if (!plugin) return
     // Trade-Zeiten stammen aus Unterkerzen (Intrabar) → auf die Kerze des angezeigten Intervalls einrasten
     const rasterSek = bucketSek ?? intervalSekunden(datenRef.current)
+    // Marker brauchen die Zeit einer vorhandenen Kerze: bei Lücken (Börsenschluss, Yahoo-Ausfall) liegt der
+    // gerundete Zeitpunkt sonst ins Leere und der Marker fehlt → auf die letzte Kerze davor einrasten
+    const d = datenRef.current
+    const kerzenZeit = (t: number): number => {
+      const gerundet = bucketStart(t, rasterSek)
+      if (d.length === 0 || gerundet < d[0].time) return gerundet
+      let lo = 0
+      let hi = d.length - 1
+      while (lo < hi) {
+        const mitte = (lo + hi + 1) >> 1
+        if (d[mitte].time <= t) lo = mitte
+        else hi = mitte - 1
+      }
+      return d[lo].time
+    }
     const liste: SeriesMarker<Time>[] = marker
-      .map((m) => ({ ...m, time: bucketStart(m.time, rasterSek) }))
+      .map((m) => ({ ...m, time: kerzenZeit(m.time) }))
       .sort((a, b) => a.time - b.time)
       .map((m) => {
         if (m.art === 'hinweis') {
@@ -760,7 +776,8 @@ export function HandelsChart({
         if (m.art === 'exit') {
           return {
             time: m.time as UTCTimestamp,
-            position: 'aboveBar' as const,
+            // Standard über der Kerze; `oben: false` legt ihn darunter (Short: Einstieg oben, Ausstieg unten)
+            position: m.oben === false ? ('belowBar' as const) : ('aboveBar' as const),
             shape: 'circle' as const,
             color: m.gewinn ? CHART_FARBEN.long : CHART_FARBEN.short,
             text: beschriftet ? (m.text ?? '') : '',

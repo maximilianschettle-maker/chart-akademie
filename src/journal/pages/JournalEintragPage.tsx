@@ -277,7 +277,8 @@ export function JournalEintragPage() {
   const marker = useMemo((): ChartMarker[] => {
     if (!e) return []
     const m: ChartMarker[] = [{ time: e.entryTime, art: e.richtung, text: 'Einstieg' }]
-    if (e.status === 'geschlossen' && e.exitTime) m.push({ time: e.exitTime, art: 'exit', gewinn: (rMultiple(e) ?? 0) > 0, text: 'Ausstieg' })
+    // Ausstieg auf die Gegenseite des Einstiegs, sonst verdecken sich die Marker bei kurzen Trades
+    if (e.status === 'geschlossen' && e.exitTime) m.push({ time: e.exitTime, art: 'exit', gewinn: (rMultiple(e) ?? 0) > 0, text: 'Ausstieg', oben: e.richtung === 'long' })
     return m
   }, [e])
 
