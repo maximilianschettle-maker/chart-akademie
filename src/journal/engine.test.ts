@@ -17,6 +17,8 @@ import {
   tageslimitHinweis,
   tagVon,
   trefferZeit,
+  zahlAlsText,
+  zahlAusText,
   verlusteJeTag,
   type EintragEntwurf,
 } from './engine'
@@ -180,5 +182,19 @@ describe('Journal: CSV und Snapshot', () => {
     expect(trefferZeit(kerzen, 150, 'short', 90, 'ziel')).toBe(300)
     expect(trefferZeit(kerzen, 450, 'long', 90, 'stop')).toBeNull()
     expect(trefferZeit(kerzen, 150, 'long', 0, 'stop')).toBeNull()
+  })
+
+  it('Zahlen deutsch und englisch: Vorbelegung „26975.4“ darf nicht zu 269754 werden', () => {
+    expect(zahlAusText('26975.4')).toBe(26975.4)
+    expect(zahlAusText('26.975,40')).toBe(26975.4)
+    expect(zahlAusText('26975,4')).toBe(26975.4)
+    expect(zahlAusText('1.234.567')).toBe(1234567)
+    expect(zahlAusText('27175')).toBe(27175)
+    expect(zahlAusText(' -42,5 $')).toBe(-42.5)
+    expect(zahlAusText('')).toBeNull()
+    expect(zahlAusText('abc')).toBeNull()
+    expect(zahlAlsText(26975.4)).toBe('26975,4')
+    expect(zahlAlsText(undefined)).toBe('')
+    expect(zahlAusText(zahlAlsText(0.308699))).toBe(0.308699)
   })
 })

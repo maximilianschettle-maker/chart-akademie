@@ -7,7 +7,7 @@ import { fmtKurs } from '../aktien/engine/format'
 import type { Candle, Richtung } from '../types'
 import { GEFUEHLE, ZEITRAHMEN, type AusstiegGrund, type JournalEintrag, type Zeitrahmen } from './types'
 import { chip } from './ui'
-import { geplantesCrv, marktListe, ortszeitAusUnix, pruefeEintrag, setupListe, SETUP_SONSTIGES, trefferZeit, unixAusOrtszeit, type EintragEntwurf } from './engine'
+import { geplantesCrv, marktListe, ortszeitAusUnix, pruefeEintrag, setupListe, SETUP_SONSTIGES, trefferZeit, unixAusOrtszeit, zahlAlsText, zahlAusText, type EintragEntwurf } from './engine'
 
 // Erfassung eines echten Trades in zwei Stufen: oben das, was beim Traden in 20 Sekunden geht
 // (Markt, Richtung, Preise, Setup, Zeitrahmen, Zeit, Risiko); darunter einklappbar der Rest.
@@ -31,16 +31,13 @@ const GRUENDE: { id: AusstiegGrund; text: string }[] = [
 ]
 
 function zahlOderLeer(text: string): number | undefined {
-  if (!text.trim()) return undefined
-  const n = Number(text.replace(/\./g, '').replace(',', '.'))
-  return Number.isFinite(n) ? n : undefined
+  return zahlAusText(text) ?? undefined
 }
 
 const ANDERER_MARKT = '__anderer'
 
 function zahl(text: string): number {
-  const n = Number(text.replace(/\./g, '').replace(',', '.'))
-  return Number.isFinite(n) ? n : 0
+  return zahlAusText(text) ?? 0
 }
 
 export function EintragForm({ start, vorhanden, kerzen, onSpeichern, onAbbrechen }: Props) {
@@ -56,15 +53,15 @@ export function EintragForm({ start, vorhanden, kerzen, onSpeichern, onAbbrechen
   const [symbol, setSymbol] = useState(basis.symbol ?? '')
   const [waehrung, setWaehrung] = useState(basis.waehrung ?? 'USD')
   const [richtung, setRichtung] = useState<Richtung>(basis.richtung ?? 'long')
-  const [entry, setEntry] = useState(basis.entryPreis ? String(basis.entryPreis) : '')
-  const [stop, setStop] = useState(basis.stopLoss ? String(basis.stopLoss) : '')
-  const [ziel, setZiel] = useState(basis.takeProfit ? String(basis.takeProfit) : '')
+  const [entry, setEntry] = useState(basis.entryPreis ? zahlAlsText(basis.entryPreis) : '')
+  const [stop, setStop] = useState(basis.stopLoss ? zahlAlsText(basis.stopLoss) : '')
+  const [ziel, setZiel] = useState(basis.takeProfit ? zahlAlsText(basis.takeProfit) : '')
   const [strategieId, setStrategieId] = useState(basis.strategieId ?? 'breakout-retest')
   const [setupFrei, setSetupFrei] = useState(basis.setupFrei ?? '')
   const [zeitrahmen, setZeitrahmen] = useState<Zeitrahmen>(basis.zeitrahmen ?? '15m')
   const [zeit, setZeit] = useState(() => ortszeitAusUnix(basis.entryTime ?? Math.floor(Date.now() / 1000)))
-  const [risiko, setRisiko] = useState(String(basis.risikoProzent ?? risikoStandard))
-  const [hebel, setHebel] = useState(basis.hebel ? String(basis.hebel) : '')
+  const [risiko, setRisiko] = useState(zahlAlsText(basis.risikoProzent ?? risikoStandard))
+  const [hebel, setHebel] = useState(basis.hebel ? zahlAlsText(basis.hebel) : '')
   const [mehr, setMehr] = useState(Boolean(vorhanden))
   const [imPlan, setImPlan] = useState<boolean | null>(basis.imPlan ?? null)
   const [gefuehl, setGefuehl] = useState(basis.gefuehlVorher ?? '')
@@ -72,11 +69,11 @@ export function EintragForm({ start, vorhanden, kerzen, onSpeichern, onAbbrechen
   const [fehler, setFehler] = useState<string[]>([])
   // Ausstieg – nur beim Bearbeiten eines geschlossenen Trades
   const geschlossen = vorhanden?.status === 'geschlossen'
-  const [exitPreis, setExitPreis] = useState(vorhanden?.exitPreis ? String(vorhanden.exitPreis) : '')
+  const [exitPreis, setExitPreis] = useState(vorhanden?.exitPreis ? zahlAlsText(vorhanden.exitPreis) : '')
   const [exitZeit, setExitZeit] = useState(() => (vorhanden?.exitTime ? ortszeitAusUnix(vorhanden.exitTime) : ''))
   const [exitGrund, setExitGrund] = useState<AusstiegGrund>(vorhanden?.exitGrund ?? 'manuell')
-  const [ergebnisBetrag, setErgebnisBetrag] = useState(vorhanden?.ergebnisBetrag !== undefined ? String(vorhanden.ergebnisBetrag) : '')
-  const [gebuehren, setGebuehren] = useState(vorhanden?.gebuehren !== undefined ? String(vorhanden.gebuehren) : '')
+  const [ergebnisBetrag, setErgebnisBetrag] = useState(zahlAlsText(vorhanden?.ergebnisBetrag))
+  const [gebuehren, setGebuehren] = useState(zahlAlsText(vorhanden?.gebuehren))
   const [gefuehlNachher, setGefuehlNachher] = useState(vorhanden?.gefuehlNachher ?? '')
   const [lehre, setLehre] = useState(vorhanden?.lehre ?? '')
   const [zeitHinweis, setZeitHinweis] = useState<string | null>(null)
@@ -123,7 +120,7 @@ export function EintragForm({ start, vorhanden, kerzen, onSpeichern, onAbbrechen
     if (g === 'manuell') return
     const preis = g === 'stop' ? zahl(stop) : zahl(ziel)
     if (!(preis > 0)) return
-    setExitPreis(String(preis))
+    setExitPreis(zahlAlsText(preis))
     zeitAusKerzen(g, preis)
   }
 

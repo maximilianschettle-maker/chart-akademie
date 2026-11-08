@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ArrowLeft, LoaderCircle, Pencil, RefreshCw, Sparkles, Trash2 } from 'lucide-react'
 import { useJournalStore } from '../store'
 import { useAnsichtStore } from '../../analyse/ansichtStore'
-import { ergebnis, geplantesCrv, ortszeitAusUnix, rMultiple, setupName, trefferZeit, unixAusOrtszeit, zeitKurz, type EintragEntwurf } from '../engine'
+import { ergebnis, geplantesCrv, ortszeitAusUnix, rMultiple, setupName, trefferZeit, unixAusOrtszeit, zahlAlsText, zahlAusText, zeitKurz, type EintragEntwurf } from '../engine'
 import { GEFUEHLE, type AusstiegGrund, type JournalEintrag, type Pruefung, type Snapshot } from '../types'
 import { snapshotEntfernen, snapshotLaden, snapshotLesen, type SnapshotErgebnis } from '../snapshots'
 import { faktenSammeln } from '../fakten'
@@ -29,9 +29,7 @@ const GRUENDE: { id: AusstiegGrund; text: string }[] = [
 ]
 
 function zahl(text: string): number | undefined {
-  if (!text.trim()) return undefined
-  const n = Number(text.replace(/\./g, '').replace(',', '.'))
-  return Number.isFinite(n) ? n : undefined
+  return zahlAusText(text) ?? undefined
 }
 
 const URTEIL_FARBE: Record<Pruefung['urteil'], string> = { sauber: 'bg-long/15 text-long', 'mit Abstrichen': 'bg-akzent/15 text-akzent', herbeigesehnt: 'bg-short/15 text-short' }
@@ -101,7 +99,7 @@ function Abschluss({ e, kerzen, onFertig }: { e: JournalEintrag; kerzen?: Candle
     if (g === 'manuell') return
     const preis = g === 'stop' ? e.stopLoss : e.takeProfit
     if (!(preis > 0)) return
-    setExitPreis(String(preis))
+    setExitPreis(zahlAlsText(preis))
     const zeit = kerzen ? trefferZeit(kerzen, e.entryTime, e.richtung, preis, g) : null
     if (zeit !== null) {
       setExitZeit(ortszeitAusUnix(zeit))

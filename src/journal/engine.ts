@@ -306,6 +306,28 @@ export function zeitKurz(unixSek: number): string {
   return new Date(unixSek * 1000).toLocaleString('de-DE', { timeZone: 'Europe/Berlin', day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit' })
 }
 
+/**
+ * Zahl aus einer Eingabe, deutsch oder englisch geschrieben: „26.975,40“, „26975,4“, „26975.4“, „1.234.567“.
+ * Punkt und Komma zusammen → Punkt ist Tausendertrenner; nur Komma → Dezimalkomma; nur ein Punkt → Dezimalpunkt;
+ * mehrere Punkte → Tausenderpunkte. null, wenn keine Zahl.
+ */
+export function zahlAusText(text: string): number | null {
+  const t = text.trim().replace(/\s/g, '').replace(/[€$]/g, '')
+  if (!t) return null
+  let norm: string
+  if (t.includes(',')) norm = t.replace(/\./g, '').replace(',', '.')
+  else if ((t.match(/\./g) ?? []).length > 1) norm = t.replace(/\./g, '')
+  else norm = t
+  const n = Number(norm)
+  return Number.isFinite(n) ? n : null
+}
+
+/** Zahl als Eingabetext (deutsches Komma, ohne Tausenderpunkte) */
+export function zahlAlsText(n: number | undefined | null): string {
+  if (n === undefined || n === null || !Number.isFinite(n)) return ''
+  return String(n).replace('.', ',')
+}
+
 /** Zeit-Helfer für datetime-local (Ortszeit des Geräts) */
 export function unixAusOrtszeit(text: string): number | null {
   if (!text) return null
