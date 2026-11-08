@@ -192,6 +192,20 @@ export function planAbweichung(eintraege: JournalEintrag[]): PlanAbweichung {
   return out
 }
 
+/** Kumuliertes Ergebnis in Kontowährung je geschlossenem Trade (Abschlussreihenfolge), Start bei 0 */
+export function ergebnisKurve(eintraege: JournalEintrag[]): { index: number; kontostand: number; eintrag: JournalEintrag | null }[] {
+  const geschlossen = eintraege
+    .filter((e) => e.status === 'geschlossen' && ergebnis(e) !== null)
+    .sort((a, b) => (a.exitTime ?? a.entryTime) - (b.exitTime ?? b.entryTime))
+  const punkte = [{ index: 0, kontostand: 0, eintrag: null as JournalEintrag | null }]
+  let stand = 0
+  geschlossen.forEach((e, i) => {
+    stand += ergebnis(e) ?? 0
+    punkte.push({ index: i + 1, kontostand: Math.round(stand * 100) / 100, eintrag: e })
+  })
+  return punkte
+}
+
 // ── Filter ───────────────────────────────────────────────────────────────────
 
 export interface JournalFilter {

@@ -4,6 +4,7 @@ import {
   bereichFuerZeitrahmen,
   eintraegeAlsCsv,
   ergebnis,
+  ergebnisKurve,
   filtern,
   geplantesCrv,
   kerzenUmEinstieg,
@@ -196,5 +197,14 @@ describe('Journal: CSV und Snapshot', () => {
     expect(zahlAlsText(26975.4)).toBe('26975,4')
     expect(zahlAlsText(undefined)).toBe('')
     expect(zahlAusText(zahlAlsText(0.308699))).toBe(0.308699)
+  })
+
+  it('Ergebniskurve: kumuliert in Abschlussreihenfolge, offene und Trades ohne Ergebnis fehlen', () => {
+    const a = geschlossen({ id: 'a', ergebnisBetrag: 180, exitTime: 2000 })
+    const b = geschlossen({ id: 'b', ergebnisBetrag: -68.37, exitTime: 1000 })
+    const ohne = geschlossen({ id: 'c', stopLoss: 0, risikoBetrag: undefined, exitTime: 3000 })
+    const k = ergebnisKurve([a, b, ohne, neuerEintrag(ENTWURF)])
+    expect(k.map((p) => p.kontostand)).toEqual([0, -68.37, 111.63])
+    expect(k[1].eintrag?.id).toBe('b')
   })
 })

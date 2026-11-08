@@ -2,13 +2,14 @@ import { useMemo, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Camera, Download, Plus, TriangleAlert } from 'lucide-react'
 import { useJournalStore } from './store'
-import { eintraegeAlsCsv, ergebnis, filtern, geschlosseneAlsTrades, planAbweichung, rMultiple, setupListe, setupName, tageslimitHinweis, tagVon, zeitKurz, type JournalFilter } from './engine'
+import { eintraegeAlsCsv, ergebnis, ergebnisKurve, filtern, geschlosseneAlsTrades, planAbweichung, rMultiple, setupListe, setupName, tageslimitHinweis, tagVon, zeitKurz, type JournalFilter } from './engine'
 import type { JournalEintrag } from './types'
 import { logischeTrades, rVerteilung, fehlerMuster, gruppiere, kennzahlen } from '../engine/auswertung'
 import { fmtR } from '../engine/format'
 import { fmtKurs } from '../aktien/engine/format'
 import { EINGABE, KNOPF, KNOPF_AKZENT, Kachel } from '../aktien/components/ui'
 import { RVerteilung } from '../components/journal/RVerteilung'
+import { EquityKurve } from '../components/journal/EquityKurve'
 import { Auswertungstabelle } from '../components/journal/Auswertungstabelle'
 import { Fehlermuster } from '../components/journal/Fehlermuster'
 
@@ -77,6 +78,8 @@ export function EchteTrades() {
   }, [logisch, geschlossene])
   const hinweise = useMemo(() => fehlerMuster(logisch), [logisch])
   const plan = useMemo(() => planAbweichung(geschlossene), [geschlossene])
+  // Ergebniskurve über alle geschlossenen Trades im Filter, Start bei 0 (die EquityKurve erwartet LogischerTrade-Punkte, braucht aber nur kontostand)
+  const kurve = useMemo(() => ergebnisKurve(geschlossene).map((p) => ({ index: p.index, kontostand: p.kontostand, trade: null })), [geschlossene])
   const heute = tageslimitHinweis(eintraege, tagVon(jetzt))
   const maerkte = useMemo(() => [...new Set(eintraege.map((e) => e.markt))].sort(), [eintraege])
   const summeBetrag = geschlossene.reduce((s, e) => s + (ergebnis(e) ?? 0), 0)
@@ -176,6 +179,14 @@ export function EchteTrades() {
             />
             <Kachel titel="Längste Verlustserie" wert={String(stats.laengsteVerlustserie)} />
           </div>
+
+          {kurve.length > 1 && (
+            <div className="rounded-xl border border-rand bg-flaeche p-4">
+              <h2 className="text-sm font-semibold text-white">Ergebnis kumuliert</h2>
+              <p className="mb-2 text-xs text-gedimmt">Broker-Ergebnis je geschlossenem Trade, aufsummiert in Abschlussreihenfolge. Gestrichelt: Null.</p>
+              <EquityKurve punkte={kurve} startKapital={0} />
+            </div>
+          )}
 
           <div className="grid gap-4 md:grid-cols-2">
             <div className="rounded-xl border border-rand bg-flaeche p-4">

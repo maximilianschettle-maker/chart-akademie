@@ -37,13 +37,19 @@ const fmtJahr = new Intl.DateTimeFormat('de-DE', { timeZone: ZONE, year: 'numeri
 const fmtVoll = new Intl.DateTimeFormat('de-DE', { timeZone: ZONE, weekday: 'short', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })
 const alsDatum = (t: Time) => (typeof t === 'number' ? new Date(t * 1000) : null)
 
-function tickBerlin(time: Time, typ: TickMarkType): string | null {
+export function tickBerlin(time: Time, typ: TickMarkType): string | null {
   const d = alsDatum(time)
   if (!d) return null
   if (typ === TickMarkType.Time || typ === TickMarkType.TimeWithSeconds) return fmtUhr.format(d)
   if (typ === TickMarkType.DayOfMonth) return fmtTag.format(d).replace(',', '')
   if (typ === TickMarkType.Month) return fmtMonat.format(d).replace('.', '')
   return fmtJahr.format(d)
+}
+
+/** Zeit im Fadenkreuz/Tooltip, Berliner Zeit („Mi, 06.11., 16:30“) */
+export function zeitBerlin(t: Time): string {
+  const d = alsDatum(t)
+  return d ? fmtVoll.format(d) : String(t)
 }
 
 // Einzige Stelle im Projekt, die lightweight-charts direkt anspricht (v5-API!) — neben HandelsChart.
@@ -144,7 +150,7 @@ export function ChartPanel({
       leftPriceScale: { visible: true, borderColor: CHART_FARBEN.gitter, mode: logSkala ? PriceScaleMode.Logarithmic : PriceScaleMode.Normal },
       timeScale: { borderColor: CHART_FARBEN.gitter, timeVisible: zeitSichtbar, ...(zeitSichtbar ? { tickMarkFormatter: tickBerlin } : {}) },
       ...(zeitSichtbar
-        ? { localization: { locale: 'de-DE', timeFormatter: (t: Time) => (alsDatum(t) ? fmtVoll.format(alsDatum(t) as Date) : String(t)) } }
+        ? { localization: { locale: 'de-DE', timeFormatter: zeitBerlin } }
         : {}),
       crosshair: { mode: 0 },
       // Am Handy soll vertikales Wischen mit einem Finger die Seite scrollen, nicht den Chart;

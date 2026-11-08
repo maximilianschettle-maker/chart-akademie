@@ -23,7 +23,7 @@ import {
   type UTCTimestamp,
 } from 'lightweight-charts'
 import type { Candle, Zeichnung } from '../../types'
-import { CHART_FARBEN, PREISACHSE } from './ChartPanel'
+import { CHART_FARBEN, PREISACHSE, tickBerlin, zeitBerlin } from './ChartPanel'
 import { aggregiere, bucketStart, intervalSekunden } from '../../engine/aggregation'
 import { ema } from '../../engine/indikatoren/ema'
 import { rsi } from '../../engine/indikatoren/rsi'
@@ -261,7 +261,9 @@ export function HandelsChart({
       crosshair: { mode: CrosshairMode.Normal },
       rightPriceScale: { visible: false },
       leftPriceScale: { visible: true, borderColor: CHART_FARBEN.gitter },
-      timeScale: { borderColor: CHART_FARBEN.gitter, rightOffset: 6 },
+      // Zeitachse und Fadenkreuz in Berliner Zeit (lightweight-charts beschriftet sonst in UTC)
+      timeScale: { borderColor: CHART_FARBEN.gitter, rightOffset: 6, tickMarkFormatter: tickBerlin },
+      localization: { locale: 'de-DE', timeFormatter: zeitBerlin },
       handleScroll: SCROLL_AN,
       handleScale: SKALA_AN,
     })
