@@ -16,7 +16,19 @@ export interface Runde {
   endeZeit: number
   tag: Candle[]
   stunde: Candle[]
+  /** Tracker: Stundenkerzen nach T (für das Replay, wenn es keine 15-Minuten-Kerzen gibt) */
+  stundeNach?: Candle[]
 }
+
+export interface ReplayDaten {
+  kerzen: Candle[]
+  /** Index der ersten Kerze nach T (hier startet das Replay) */
+  startIndex: number
+  intervall: '15m' | '1h'
+}
+
+const REPLAY_KONTEXT = 120
+const REPLAY_LAENGE = 200
 
 const KRYPTO = [
   { symbol: 'BTCUSDT', name: 'Bitcoin', ab: Date.UTC(2021, 0, 1) / 1000 },
@@ -49,8 +61,9 @@ export function rundeAusTracker(daten: TrackerDaten, zufall: () => number = Math
   const endeIndex = von + Math.floor(zufall() * (stundeAlle.length - von))
   const endeZeit = stundeAlle[endeIndex].time
   const stunde = stundeAlle.slice(0, endeIndex + 1).slice(-STUNDEN_VORLAUF)
+  const stundeNach = stundeAlle.slice(endeIndex + 1)
   const tag = tagAlle.filter((k) => k.time <= endeZeit).slice(-TAGE_VORLAUF)
-  return { quelle: 'tracker', instrumentName: inst.name, symbol: inst.symbol, waehrung: inst.waehrung, endeZeit, tag, stunde }
+  return { quelle: 'tracker', instrumentName: inst.name, symbol: inst.symbol, waehrung: inst.waehrung, endeZeit, tag, stunde, stundeNach }
 }
 
 /** Runde über Binance: zufälliger Zeitpunkt zwischen Start des Instruments und vor einer Woche */
@@ -82,4 +95,21 @@ export async function neueRunde(tracker: TrackerDaten | null, zufall: () => numb
     if (r) return r
     throw e
   }
+}
+
+/**
+ * Kerzen für das Replay: Krypto 15 Minuten über Binance (Kontext vor T + 200 Kerzen danach),
+ * Tracker-Instrumente die Stundenkerzen (vor und nach T), weil es dort keine 15-Minuten-Historie gibt.
+ */
+export async function ladeReplay(r: Runde): Promise<ReplayDaten> {
+  if (r.quelle === 'binance') {
+    const kerzen = await getCandles(r.symbol, '15m', r.endeZeit - REPLAY_KONTEXT * 900, r.endeZeit + REPLAY_LAENGE * 900)
+    const startIndex = kerzen.findIndex((k) => k.time > r.endeZeit)
+    if (startIndex < 20 || kerzen.length - startIndex < 30) throw new Error('Zu wenige 15-Minuten-Kerzen für das Replay')
+    return { kerzen, startIndex, intervall: '15m' }
+  }
+  const vor = r.stunde.slice(-REPLAY_KONTEXT)
+  const nach = (r.stundeNach ?? []).slice(0, REPLAY_LAENGE)
+  if (nach.length < 20) throw new Error('Zu wenige Stundenkerzen nach dem Zeitpunkt für das Replay')
+  return { kerzen: [...vor, ...nach], startIndex: vor.length, intervall: '1h' }
 }

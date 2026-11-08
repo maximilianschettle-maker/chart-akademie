@@ -128,6 +128,17 @@ Anlass: Korrekte Trades wurden „Daneben“ bewertet, Übersicht zeigte für al
 - Geprüft: Playwright gegen `vite preview` + Prod-Worker, Desktop und 390 px; dabei zog der Geräte-Sync die echte Watchlist des Nutzers (SPCX, 9868.HK) — Tests dürfen die Watchlist nie verändern. Zwei 404-Konsolenmeldungen stammen vom SEC-Endpunkt für Nicht-SEC-Firmen (erwartet, wird als Hinweis angezeigt).
 - Offen: Commit + Push (löst Pages-Deploy aus), danach Test am Handy. Ideen: Währungsumrechnung für Größe-Zeilen, Vergleich als Watchlist-Ansicht speichern, Kurschart mit Vergleichslinie (indexiert) im Vergleich.
 
+## Stand 2026-11-08 — Schritt 4b: Replay an der Zone, Kein-Trade als gültige Antwort (408 Tests grün)
+
+Nutzer: 4a „passt“ → 4b.
+
+- **`src/topdown/replay.ts`** (rein, 8 Tests): `simuliereTrade` (Limit-Fill ab der Kerze nach der Entscheidung, Fill am Open wenn der Markt schon durch ist, Stop vor Ziel in derselben Kerze, R aus Fill-Preis, offen = Mark-to-Market), `bewerteTrade` mit fünf Kriterien: Richtung zum Tageschart (seitwärts erlaubt beides), Einstieg an wichtiger Zone (±0,3 ATR), Bestätigung (Entscheidungskerze schließt in Trade-Richtung und außerhalb der Zone), Stop hinter der Zone und 0,8–4 ATR, CRV ≥ 1,5 → sauber (5/5) / mit Abstrichen (≥3) / falsch; `bewerteKeinTrade`: `erkenneImFenster` über alle gesehenen Kerzen ab T, Treffer in Tagesrichtung an einer wichtigen Zone (±0,5 ATR) → „verpasst“ mit Setup, Richtung, Zone, Abstand; sonst „richtig“.
+- **Daten:** `ladeReplay` – Krypto 15-Minuten-Kerzen über Binance (120 Kontext + 200 danach), Tracker-Instrumente die Stundenkerzen nach T (`Runde.stundeNach`, Fallback-Ebene, weil Yahoo keine 15-Minuten-Historie liefert). Überschrift sagt die Ebene an.
+- **Seite, Schritt 3:** HandelsChart mit `cursor`, eigener Takt (1×/2×/5×/10×, `ReplayControls` aus dem Simulator), Zonen als Boxen, Setup-Chips (Range, Breakout + Retest, Fehlausbruch/Sweep, Trend-Pullback), Long/Short, „Trade vorbereiten“ setzt Einstieg am Schluss, Stop 1,5 ATR, Ziel 3 ATR als ziehbare Linien, „Trade setzen“ oder „Kein Trade“ → Replay läuft mit 10× bis zum Ende, Marker für Entscheidung/Fill/Ziel-Stop, dann Bewertung mit Kriterienliste und Ausgang („das Ergebnis ist Statistik, bewertet wird der Prozess“). Ohne Entscheidung bis zum Ende = Kein Trade. Tageschart wird nach Schritt 1 ausgeblendet (Platz am Handy). Store: `replay` je Runde, Statistik „Entscheidung“ (sauber oder richtig ÷ Replays).
+- **Zonen:** Breite auf 2 ATR gedeckelt (`maxBreiteAtr`), auch beim Verschmelzen – im Replay stand sonst eine Box über 150 $ Gold.
+- **Geprüft (Playwright 390 px, Tracker-Runden Gold):** Replay bereit „Kerze 1 von 155“, 5 Einzelschritte, Trade vorbereitet (CRV 2,00), gesetzt → „mit Abstrichen“ mit korrekter Begründung (Long gegen Abwärtstrend, Zone 14× angelaufen, Stop 1,5 ATR), Ausgang Stop −1R; zweite Runde „Kein Trade“ → richtig; Statistik mit Entscheidung 50 %. 0 Konsolenfehler.
+- **Offen:** Handy-Test 4b. Damit ist `plan-journal.md` bis auf Schritt 3 (Sprache, durch Screenshot ersetzt) umgesetzt. Ideen: 15-Minuten-Archiv der Tracker-Action für Nicht-Krypto-Replays; KI-Prüfung auch für Übungs-Trades; Makro-Ausbau.
+
 ## Stand 2026-11-07 (später) — Schritt 4a: Top-Down-Übung, Richtung und Zonen (400 Tests grün)
 
 Nutzer: Worker deployt, KI-Urteil „passt“ → weiter mit 4a.

@@ -92,7 +92,7 @@ Ziel: Trades von eToro erfassen, abschließen, auswerten, sichern. Kerzen rund u
   Stundenchart-Zonen als Bänder im bestehenden Zonen-Werkzeug. Neu: `src/engine/zonen.ts` (Swing-Hochs/-Tiefs
   clustern, Range-Kanten, Ausgangspunkte starker Bewegungen) mit Tests; Vergleich Nutzer-Bänder gegen App-Bänder über
   Überlappung, Feedback „fehlt“ / „unwichtig“.
-- 4b **15-Minuten-Replay**: Kerze für Kerze an einer Zone, Entscheidung Setup/abwarten, Einstieg/Stop/Ziel, Auflösung
+- 4b **15-Minuten-Replay** (erledigt 2026-11-08, `src/topdown/replay.ts`; Nicht-Krypto auf Stundenkerzen): Kerze für Kerze an einer Zone, Entscheidung Setup/abwarten, Einstieg/Stop/Ziel, Auflösung
   mit Bewertung (Richtung passend, an Zone, Bestätigung, Stop, CRV). Kein-Trade ist richtig, wenn kein Setup an einer
   Zone liegt oder der Trade gegen den Tagestrend liefe. Fortschritt und Trefferquote im `progressStore`.
 - Daten: Bitcoin unbegrenzt (Binance). Nasdaq, Gold, Öl nur 60 Tage Intraday bei Yahoo. Deshalb legt die stündliche

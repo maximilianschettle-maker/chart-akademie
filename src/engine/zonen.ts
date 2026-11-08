@@ -26,8 +26,9 @@ export interface ZonenOptionen {
   fraktal: number
   /** Punkte näher als so viele ATR bilden eine Zone */
   toleranzAtr: number
-  /** Mindestbreite einer Zone in ATR */
+  /** Mindest- und Höchstbreite einer Zone in ATR */
   minBreiteAtr: number
+  maxBreiteAtr: number
   /** so viele Zonen gelten als wichtig */
   maxWichtig: number
   /** so viele Kerzen zurück */
@@ -36,7 +37,7 @@ export interface ZonenOptionen {
   impulsAtr: number
 }
 
-export const STANDARD_ZONEN: ZonenOptionen = { fraktal: 3, toleranzAtr: 0.6, minBreiteAtr: 0.4, maxWichtig: 5, rueckschau: 300, impulsAtr: 2.5 }
+export const STANDARD_ZONEN: ZonenOptionen = { fraktal: 3, toleranzAtr: 0.6, minBreiteAtr: 0.4, maxBreiteAtr: 2, maxWichtig: 5, rueckschau: 300, impulsAtr: 2.5 }
 
 export interface Swing {
   index: number
@@ -164,6 +165,12 @@ export function findeZonen(kerzen: Candle[], opt: ZonenOptionen = STANDARD_ZONEN
       von = mitte - minBreite / 2
       bis = mitte + minBreite / 2
     }
+    // breiter als 2 ATR ist keine Zone mehr, sondern ein Bereich – auf die Mitte eindampfen
+    if (bis - von > opt.maxBreiteAtr * atr) {
+      const mitte = (von + bis) / 2
+      von = mitte - (opt.maxBreiteAtr * atr) / 2
+      bis = mitte + (opt.maxBreiteAtr * atr) / 2
+    }
     const { anzahl, letzterIndex } = anlaeufe(c, von, bis)
     const hatImpuls = g.some((p) => p.art === 'impuls')
     const hatRange = g.some((p) => p.art === 'range')
@@ -185,7 +192,7 @@ export function findeZonen(kerzen: Candle[], opt: ZonenOptionen = STANDARD_ZONEN
   const verschmolzen: Zone[] = []
   for (const z of zonen) {
     const v = verschmolzen[verschmolzen.length - 1]
-    if (v && z.von - v.bis <= 0.5 * atr) {
+    if (v && z.von - v.bis <= 0.5 * atr && Math.max(v.bis, z.bis) - Math.min(v.von, z.von) <= opt.maxBreiteAtr * atr) {
       const von = Math.min(v.von, z.von)
       const bis = Math.max(v.bis, z.bis)
       const { anzahl, letzterIndex } = anlaeufe(c, von, bis)
