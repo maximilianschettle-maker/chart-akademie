@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-08T11:23:34.506Z",
+ "lastUpdated": "2026-11-08T12:23:32.333Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/08/world/middleeast/saudi-aramco-tower-riyadh-hit.html",
+   "titel": "Saudi Aramco Tower Damaged as Yemen’s Houthis Attack Riyadh",
+   "link": "https://www.nytimes.com/2026/11/08/world/middleeast/saudi-aramco-tower-riyadh-hit.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-08T12:16:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Saudi authorities said no one was injured and that “falling shrapnel” from an intercepted missile had hit the building in the capital’s financial district.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-stromausfall-120.html",
+   "titel": "Russische Luftangriffe: Erneut Hunderttausende Ukrainer ohne Strom",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-stromausfall-120.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-08T12:05:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Erneut hat Russland die ukrainische Energieversorgung schwer getroffen. In der Region Dnipropetrowsk haben 600.000 Menschen keinen Strom. Das besetzte Atomkraftwerk Saporischschja muss mit Notstromaggregaten gekühlt werden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/08/world/middleeast/israel-eisenkot-netanyahu-what-to-know.html",
+   "titel": "Who Is Gadi Eisenkot, Israel’s Opposition Leader?",
+   "link": "https://www.nytimes.com/2026/11/08/world/middleeast/israel-eisenkot-netanyahu-what-to-know.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-08T11:33:46.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Mr. Eisenkot, a career general and the leading rival of Prime Minister Benjamin Netanyahu of Israel, will now have up to six weeks to form a coalition.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo",
    "titel": "What we know so far after Krakow gun attack",
@@ -975,44 +1008,11 @@
    "maerkte": [],
    "text": "Der Cybertruck war für den Elektroautohersteller bislang eine Enttäuschung. Im Tesla-Werk in Texas soll der Pick-up bald nicht mehr gebaut werden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c977ppnezep6o",
-   "titel": "Somalia's top court rejects president's term extension amid political crisis",
-   "link": "https://www.bbc.co.uk/news/articles/c977ppnezep6o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-06T08:18:10.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The country's first nationwide elections since 1969 are due next year - a timetable now thrown into doubt.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/kaliforniens-gouverneur-setzt-zeichen-gegen-todesstrafe-news-kompakt-das-wichtigste-kurz-gefasst/a-79871179",
-   "titel": "Kaliforniens Gouverneur setzt Zeichen gegen Todesstrafe - News kompakt: Das Wichtigste kurz gefasst",
-   "link": "https://www.dw.com/de/kaliforniens-gouverneur-setzt-zeichen-gegen-todesstrafe-news-kompakt-das-wichtigste-kurz-gefasst/a-79871179?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-06T08:00:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Staatlich sanktionierte Tötungen seien nicht vereinbar mit kalifornischen Werten, erklärt Gavin Newsom. Trotz seiner Lungen-OP startet Papst Leo einen Reisemarathon durch Südamerika. Der DW-Nachrichtenüberblick.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c9p8g085mz07o",
-   "titel": "Melania Trump calls for lasting Ukraine truce as she hosts Russian and Ukrainian officials",
-   "link": "https://www.bbc.co.uk/news/articles/c9p8g085mz07o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-06T07:56:19.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The US first lady was credited by all for playing a key though unspecified role in the ceasefire.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 12,
-  "DW": 5,
+  "DW": 4,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 6,
