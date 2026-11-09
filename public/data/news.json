@@ -1,19 +1,89 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-09T13:23:31.348Z",
+ "lastUpdated": "2026-11-09T14:23:33.807Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
+   "titel": "G7-Außenminister sprechen über Ukraine und Iran",
+   "link": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-09T14:21:47.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Welche Rolle spielt Europa bei der Lösung des Ukraine-Kriegs? Wie geht es mit Iran weiter? Diese Fragen stehen im Zentrum der G7-Gespräche in Paris. Außenminister Wadephul mahnt Washington und Moskau.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/e-10-benzin-diesel-sinkender-oelpreis-sorgt-fuer-erholung-an-der-zapfsaeule-a-29f929ff-3e9a-4239-8c85-07942e5402ad",
+   "titel": "E 10, Benzin, Diesel: Sinkender Ölpreis sorgt für Erholung an der Zapfsäule",
+   "link": "https://www.spiegel.de/wirtschaft/e-10-benzin-diesel-sinkender-oelpreis-sorgt-fuer-erholung-an-der-zapfsaeule-a-29f929ff-3e9a-4239-8c85-07942e5402ad#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-09T14:16:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Ein Liter E10 im Tagesschnitt für unter zwei Euro, sogar Diesel wird günstiger: Hoffnung auf Fortschritte bei den Iranverhandlungen lässt die Ölpreise sinken. Auch die vom KI-Einbruch gebeutelten Börsen zeigen sich erholt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-hacker-erbeuten-daten-zu-russischen-opferzahlen-seit-kriegsbeginn/100268373.html",
+   "titel": "Ukraine-Krieg: Fast eine halbe Million Gefallene? Hacker erbeuten geheime Daten zu russischen Opferzahlen",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-hacker-erbeuten-daten-zu-russischen-opferzahlen-seit-kriegsbeginn/100268373.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T14:09:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Weder Moskau noch Kiew teilen Informationen über eigene Verluste an der Front. Pro-ukrainische Hacker sollen nun Daten erbeutet haben, die Rückschlüsse auf die Zahl russischer Gefallener erlauben.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ermittlungen-krakau-102.html",
+   "titel": "Krakauer Todesschütze hatte 500 Schuss Munition",
+   "link": "https://www.tagesschau.de/ausland/europa/ermittlungen-krakau-102.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-09T13:55:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Attentäter von Krakau war schwer genug bewaffnet, um noch mehr Menschen zu töten. Die polnische Staatsanwaltschaft hat neue Details zur Tat veröffentlicht - der Attentäter selbst erlag am Morgen seinen Verletzungen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/09/us/politics/us-israel-midterm-elections.html",
+   "titel": "Bipartisan Support for Israel Erodes as Both Sides Push for New Limits",
+   "link": "https://www.nytimes.com/2026/11/09/us/politics/us-israel-midterm-elections.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-09T13:48:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Vice President JD Vance is among Republicans calling for change. Many Democratic lawmakers have been driving a campaign to restrict military aid to Israel.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/unternehmen/start-ups/verteidigung-start-up-tytan-steigt-in-massenfertigung-von-abfangdrohnen-ein/100267694.html",
    "titel": "Verteidigung: Start-up Tytan steigt in Massenfertigung von Abfangdrohnen ein",
    "link": "https://www.handelsblatt.com/unternehmen/start-ups/verteidigung-start-up-tytan-steigt-in-massenfertigung-von-abfangdrohnen-ein/100267694.html",
    "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T12:30:00.000Z",
+   "zeit": "2026-11-09T13:31:13.000Z",
    "kategorie": "konflikte",
    "maerkte": [
     "ruestung"
    ],
    "text": "Das junge Münchener Unternehmen will künftig bis zu 3000 Drohnen im Monat produzieren. Außerdem ist eine Kooperation mit dem Rüstungskonzern KNDS im Bereich mobiler Drohnenabwehr geplant.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
+   "titel": "Ukraine Peace Talks Resume This Week in Abu Dhabi",
+   "link": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-09T13:19:31.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "U.S.-led talks to end the war between Russia and Ukraine will resume this week in Abu Dhabi. A cease-fire won’t be on the table.",
+   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/technik/it-internet/muenchen-telekom-investiert-eine-weitere-viertelmilliarde-in-ki-fabrik/100264498.html",
@@ -49,39 +119,6 @@
    "maerkte": [],
    "text": "Frankreich kündigt an, Vertreter zu den Verhandlungen in Abu Dhabi zu schicken. Moskau sieht dagegen nur Gespräche mit der Ukraine und den USA vor. Im Mittelpunkt stehen Sicherheitsgarantien und ein mögliches Kriegsende.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
-   "titel": "G7-Außenminister sprechen über Ukraine und Iran",
-   "link": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-09T10:05:12.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Welche Rolle spielt Europa bei der Lösung des Ukraine-Kriegs? Wie geht es mit Iran weiter? Diese Fragen stehen im Zentrum der G7-Gespräche in Paris. Außenminister Wadephul mahnt Washington und Moskau.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/09/us/politics/us-israel-midterm-elections.html",
-   "titel": "Bipartisan Support for Israel Erodes as Both Sides Push for New Limits",
-   "link": "https://www.nytimes.com/2026/11/09/us/politics/us-israel-midterm-elections.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-09T10:02:55.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Vice President JD Vance is among Republicans calling for change. Many Democratic lawmakers have been driving a campaign to restrict military aid to Israel.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
-   "titel": "Ukraine Peace Talks Resume This Week in Abu Dhabi",
-   "link": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-09T09:59:53.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "U.S.-led talks to end the war between Russia and Ukraine will resume this week in Abu Dhabi. A cease-fire won’t be on the table.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-betitelt-vorschlag-von-kampfsportboss-als-scherz/29669594.html",
@@ -981,49 +1018,16 @@
    "maerkte": [],
    "text": "While U.S. voters largely oppose the trade war with Canada, many Democrats and their supporters have protectionist leanings.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/haiti-banden-vereinte-nationen-100.html",
-   "titel": "Bandenchef bittet UN um Vermittlung in Haiti",
-   "link": "https://www.tagesschau.de/ausland/amerika/haiti-banden-vereinte-nationen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-07T10:51:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "In Haiti werden nach einem Bandenangriff vier salvadorianische Militärangehörige vermisst. Um sie zu retten, schickt Präsident Bukele weitere Soldaten ins Land und droht den Gangs. Ein Bandenchef reagiert nun mit einem Brief an die UN. Von ",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/wahlen-regierung-nach-wahl-in-neuseeland-knapp-unter-der-absoluten-mehrheit/100268071.html",
-   "titel": "Wahlen: Regierung nach Wahl in Neuseeland knapp unter der absoluten Mehrheit",
-   "link": "https://www.handelsblatt.com/politik/international/wahlen-regierung-nach-wahl-in-neuseeland-knapp-unter-der-absoluten-mehrheit/100268071.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-07T10:40:28.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Regierungschef Luxon oder Ex-Premier Hipkins? Nach Schließung der Wahllokale in Neuseeland zeichnet sich ein enges Rennen zwischen Konservativen und Labour ab.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/denis-labrude-ein-franzose-ueber-sein-leben-in-deutschland-accg-201650223.html",
-   "titel": "Der französische Nachbar: „Das Essen in Deutschland war nicht gut“",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/denis-labrude-ein-franzose-ueber-sein-leben-in-deutschland-accg-201650223.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-07T09:36:50.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Seit 1980 lebt Denis Labrude in Deutschland. Ein Gespräch mit unserem Nachbarn über das Leben zwischen zwei Ländern, die Sorgen um Frankreichs Schulen und das Gefühl, in Europa im selben Boot zu sitzen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
-  "DW": 7,
-  "Spiegel Wirtschaft": 0,
+  "tagesschau": 11,
+  "DW": 5,
+  "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 3,
+  "Handelsblatt": 4,
   "BBC World": 8,
   "NYT World": 17,
-  "EIA Today in Energy": 1
+  "EIA Today in Energy": 0
  }
 }
