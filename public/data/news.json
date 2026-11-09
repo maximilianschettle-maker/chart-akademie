@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-09T11:23:31.884Z",
+ "lastUpdated": "2026-11-09T12:23:33.407Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/technik/it-internet/muenchen-telekom-investiert-eine-weitere-viertelmilliarde-in-ki-fabrik/100264498.html",
+   "titel": "IT-Infrastruktur: Hohe Nachfrage: Telekom investiert eine weitere Viertelmilliarde in KI-Fabrik in München",
+   "link": "https://www.handelsblatt.com/technik/it-internet/muenchen-telekom-investiert-eine-weitere-viertelmilliarde-in-ki-fabrik/100264498.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T11:48:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Nach sieben Monaten war die Münchener KI-Fabrik ausgebucht. Nun verdoppelt die Telekom die Leistung und prüft weitere Investitionen. Unter den Kunden sind auch zwei große Dax-Konzerne.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/gesundheit-so-koennten-krankenkassen-rund-21-milliarden-euro-sparen/100265954.html",
+   "titel": "Gesundheitskosten: Wie Krankenkassen Milliarden sparen könnten – und warum es dabei auch um die freie Arztwahl geht",
+   "link": "https://www.handelsblatt.com/politik/deutschland/gesundheit-so-koennten-krankenkassen-rund-21-milliarden-euro-sparen/100265954.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T11:35:25.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Das arbeitgebernahe IW zeichnet Wege auf, wie sich das Gesundheitswesen entlasten ließe. In dem Papier, das dem Handelsblatt exklusiv vorliegt, schlagen die Ökonomen verschiedene Wahl-Tarife vor.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/russland-lehnt-europas-teilnahme-an-ukraine-gespr%C3%A4chen-ab/a-79897668",
+   "titel": "Russland lehnt Europas Teilnahme an Ukraine-Gesprächen ab",
+   "link": "https://www.dw.com/de/russland-lehnt-europas-teilnahme-an-ukraine-gesprächen-ab/a-79897668?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-09T11:02:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Frankreich kündigt an, Vertreter zu den Verhandlungen in Abu Dhabi zu schicken. Moskau sieht dagegen nur Gespräche mit der Ukraine und den USA vor. Im Mittelpunkt stehen Sicherheitsgarantien und ein mögliches Kriegsende.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
    "titel": "G7-Außenminister sprechen über Ukraine und Iran",
@@ -34,19 +69,6 @@
    "maerkte": [],
    "text": "U.S.-led talks to end the war between Russia and Ukraine will resume this week in Abu Dhabi. A cease-fire won’t be on the table.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/technik/it-internet/muenchen-telekom-investiert-eine-weitere-viertelmilliarde-in-ki-fabrik/100264498.html",
-   "titel": "IT-Infrastruktur: Hohe Nachfrage: Telekom investiert eine weitere Viertelmilliarde in KI-Fabrik in München",
-   "link": "https://www.handelsblatt.com/technik/it-internet/muenchen-telekom-investiert-eine-weitere-viertelmilliarde-in-ki-fabrik/100264498.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T09:59:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Nach sieben Monaten war die Münchner KI-Fabrik ausgebucht. Nun verdoppelt die Telekom die Leistung und prüft weitere Investitionen. Unter den Kunden sind auch zwei große Dax-Konzerne.",
-   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-betitelt-vorschlag-von-kampfsportboss-als-scherz/29669594.html",
@@ -990,35 +1012,13 @@
    "maerkte": [],
    "text": "Justizministerin Hubig wirbt dafür, ein AfD-Verbotsverfahren zu prüfen - gegebenenfalls auch mithilfe der von Hackern veröffentlichten Mails aus den Reihen der Partei. In der schwarz-roten Koalition ist ein Verbotsverfahren jedoch umstritte",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/handelskonflikt-usa-werfen-china-verstoss-gegen-handelsdeal-vor/100268065.html",
-   "titel": "Handelskonflikt: Zu wenig seltene Erden: USA werfen China Verstoß gegen Handelsdeal vor",
-   "link": "https://www.handelsblatt.com/politik/international/handelskonflikt-usa-werfen-china-verstoss-gegen-handelsdeal-vor/100268065.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-07T08:56:08.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Der Handelsstreit zwischen den USA und China droht, wieder aufzubrechen. Kurz vor dem geplanten Treffen zwischen Trump und Xi beschuldigen beide Seiten einander, Absprachen nicht einzuhalten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/wahlen-neuseeland-hat-gewaehlt-knappes-rennen-erwartet/100268071.html",
-   "titel": "Wahlen: Neuseeland hat gewählt – knappes Rennen erwartet",
-   "link": "https://www.handelsblatt.com/politik/international/wahlen-neuseeland-hat-gewaehlt-knappes-rennen-erwartet/100268071.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-07T08:44:55.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Regierungschef Luxon oder Ex-Premier Hipkins? Nach Schließung der Wahllokale in Neuseeland zeichnet sich ein enges Rennen zwischen Konservativen und Labour ab.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
-  "DW": 6,
+  "tagesschau": 11,
+  "DW": 7,
   "Spiegel Wirtschaft": 0,
-  "FAZ Wirtschaft": 4,
+  "FAZ Wirtschaft": 5,
   "Handelsblatt": 3,
   "BBC World": 8,
   "NYT World": 18,
