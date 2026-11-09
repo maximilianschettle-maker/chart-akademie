@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-09T03:23:32.349Z",
+ "lastUpdated": "2026-11-09T04:23:29.098Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/aigner-bundespraesidentin-100.html",
+   "titel": "Bundespräsidenten-Wahl: Merz bricht sein Schweigen und schlägt Aigner vor",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/aigner-bundespraesidentin-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-09T03:34:40.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Lange hatte er darüber nachgedacht und sich zurückgehalten - am Abend sprach sich Kanzler Merz dann für Ilse Aigner als Bundespräsidentin aus. Heute wollen beide offiziell vor die Presse treten. Von Sabine Henkel.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/meinung/gastbeitraege/gastkommentar-neue-us-handelspolitik-gegen-europas-zoelle-gibt-es-keine-lobby/100267018.html",
    "titel": "Gastkommentar: Neue US-Handelspolitik: Gegen Europas Zölle gibt es keine Lobby",
@@ -95,7 +106,7 @@
    "titel": "Who Is Gadi Eisenkot, Israel’s Opposition Leader?",
    "link": "https://www.nytimes.com/2026/11/08/world/middleeast/israel-eisenkot-netanyahu-what-to-know.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-08T21:48:21.000Z",
+   "zeit": "2026-11-08T21:48:22.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "Mr. Eisenkot, a career general and the leading rival of Prime Minister Benjamin Netanyahu of Israel, will now have up to six weeks to form a coalition.",
@@ -994,21 +1005,10 @@
    ],
    "text": "In July 2026, U.S. imports of crude oil from Venezuela averaged 701,000 barrels per day (b/d), the most since May 2017, before decreasing to 655,000 b/d in August, according to data published in our Petroleum Supply Monthly",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/wissen/klima/copernicus-klimakrise-1komma5-grad-100.html",
-   "titel": "EU-Dienst Copernicus: 1,5-Grad-Marke wird 2026 wohl überschritten",
-   "link": "https://www.tagesschau.de/wissen/klima/copernicus-klimakrise-1komma5-grad-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-06T13:02:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Kurz vor der Klimakonferenz COP31 in Antalya gibt es ernüchternde Zahlen: Das 1,5-Grad-Ziel wird 2026 laut EU-Dienst Copernicus höchstwahrscheinlich überschritten. Der Oktober war zudem der wärmste seit Beginn der Aufzeichnungen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 11,
   "DW": 5,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
