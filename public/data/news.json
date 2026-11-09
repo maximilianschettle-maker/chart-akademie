@@ -1,7 +1,53 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-09T09:23:32.193Z",
+ "lastUpdated": "2026-11-09T10:23:32.304Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
+   "titel": "G7-Außenminister sprechen über Ukraine und Iran",
+   "link": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-09T10:05:12.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Welche Rolle spielt Europa bei der Lösung des Ukraine-Kriegs? Wie geht es mit Iran weiter? Diese Fragen stehen im Zentrum der G7-Gespräche in Paris. Außenminister Wadephul mahnt Washington und Moskau.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/09/us/politics/us-israel-midterm-elections.html",
+   "titel": "Bipartisan Support for Israel Erodes as Both Sides Push for New Limits",
+   "link": "https://www.nytimes.com/2026/11/09/us/politics/us-israel-midterm-elections.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-09T10:02:55.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Vice President JD Vance is among Republicans calling for change. Many Democratic lawmakers have been driving a campaign to restrict military aid to Israel.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
+   "titel": "Ukraine Peace Talks Resume This Week in Abu Dhabi",
+   "link": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-09T09:59:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "U.S.-led talks to end the war between Russia and Ukraine will resume this week in Abu Dhabi. A cease-fire won’t be on the table.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/technik/it-internet/muenchen-telekom-investiert-eine-weitere-viertelmilliarde-in-ki-fabrik/100264498.html",
+   "titel": "IT-Infrastruktur: Hohe Nachfrage: Telekom investiert eine weitere Viertelmilliarde in KI-Fabrik in München",
+   "link": "https://www.handelsblatt.com/technik/it-internet/muenchen-telekom-investiert-eine-weitere-viertelmilliarde-in-ki-fabrik/100264498.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T09:59:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Nach sieben Monaten war die Münchner KI-Fabrik ausgebucht. Nun verdoppelt die Telekom die Leistung und prüft weitere Investitionen. Unter den Kunden sind auch zwei große Dax-Konzerne.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/inland/innenpolitik/diskussion-plastiksteuer-100.html",
    "titel": "Schneider fordert Alternative zur Plastiksteuer",
@@ -24,17 +70,6 @@
     "oel"
    ],
    "text": "Wahrzeichen in Riad nach Huthi-Angriff beschädigt +++ Wadephul mahnt Verhandlungen in Iran-Konflikt an +++ Irak – Einigung mit USA über Ölexporte durch Straße von Hormus +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
-   "titel": "G7-Außenminister sprechen über Ukraine und Iran",
-   "link": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-09T09:01:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Welche Rolle spielt Europa bei der Lösung des Ukraine-Kriegs? Wie geht es mit Iran weiter? Diese Fragen stehen im Zentrum der G7-Gespräche in Paris. Außenminister Wadephul mahnt Washington und Moskau.",
    "sprache": "de"
   },
   {
@@ -979,49 +1014,16 @@
    ],
    "text": "Die Demokraten erobern Repräsentantenhaus und Senat. Anleger reagieren mit Verkäufen, vor allem bei Tech-Aktien. Warum die Zweifel an den KI-Investitionen älter sind als das Wahlergebnis.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o",
-   "titel": "Paraguay's president impeached and under house arrest after bank collapse",
-   "link": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-07T07:20:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Santiago Peña was ousted due to a banking crisis which left millions of people unable to access their money.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-berlin-hannover-bauarbeiten-pendler-100.html",
-   "titel": "Sanierung der Bahnstrecke Berlin-Hannover: Massive Probleme für Pendler",
-   "link": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-berlin-hannover-bauarbeiten-pendler-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-07T02:54:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Dass die Generalsanierung der Bahnstrecke Berlin-Hannover massive Verspätungen bedeutet, war klar. Doch nun zeigt sich: Die Pünktlichkeit auf der Ausweichstrecke ist selbst für Bahnverhältnisse unterdurchschnittlich. Von Andre Kartschall.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/staatskrise-in-suedamerika-staatsanwaltschaft-ordnet-festnahme-von-paraguays-ex-praesident-pena-an/100268040.html",
-   "titel": "Staatskrise in Südamerika: Staatsanwaltschaft ordnet Festnahme von Paraguays Ex-Präsident Peña an",
-   "link": "https://www.handelsblatt.com/politik/international/staatskrise-in-suedamerika-staatsanwaltschaft-ordnet-festnahme-von-paraguays-ex-praesident-pena-an/100268040.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-07T02:27:01.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Mit seinem Rücktrittsgesuch konnte Peña das Amtsenthebungsverfahren nicht abwenden. Durch das einstimmige Votum des Senats verliert er den Anspruch auf einen Sitz als Senator auf Lebenszeit.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 12,
   "DW": 7,
   "Spiegel Wirtschaft": 0,
-  "FAZ Wirtschaft": 6,
-  "Handelsblatt": 9,
+  "FAZ Wirtschaft": 5,
+  "Handelsblatt": 8,
   "BBC World": 8,
-  "NYT World": 17,
+  "NYT World": 18,
   "EIA Today in Energy": 1
  }
 }
