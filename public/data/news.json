@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-08T23:23:32.745Z",
+ "lastUpdated": "2026-11-09T00:23:27.870Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/2026/11/08/world/americas/colombia-drone-attack-eln.html",
@@ -33,6 +33,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Strikes show the heavy toll since fighting between the Houthis and the Saudi-backed government reignited in August, with civilians paying a heavy price.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6ly3mjx958eo",
+   "titel": "Aramco Tower hit in heart of Saudi capital as Houthis launch fresh strikes",
+   "link": "https://www.bbc.co.uk/news/articles/c6ly3mjx958eo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-08T21:37:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Footage authenticated by BBC Verify shows damage to the building in the capital's central financial district.",
    "sprache": "en"
   },
   {
@@ -991,17 +1002,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Millionen Menschen fürchten um ihre Ersparnisse, der Druck auf Paraguays Staatschef wächst. Sein Rücktrittsgesuch scheiterte im Parlament. Nun muss sich Santiago Peña einem Amtsenthebungsverfahren stellen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/daron-acemoglu-wir-steuern-mit-volldampf-in-die-falsche-richtung-accg-201269417.html",
-   "titel": "Nobelpreisträger Acemoglu: „Wo es Groll gibt, hat die Identitätspolitik die Spaltung vertieft“",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/daron-acemoglu-wir-steuern-mit-volldampf-in-die-falsche-richtung-accg-201269417.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-06T10:25:13.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Krise der liberalen Demokratie ist nicht vorbei, warnt der Ökonom Daron Acemoglu, auch wenn in den US-Wahlen Donald Trumps Partei verloren hat. Ein Gespräch über KI und linke Parteien, die die Arbeiter vergessen haben.",
    "sprache": "de"
   }
  ],
