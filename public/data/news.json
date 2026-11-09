@@ -1,7 +1,51 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-09T06:49:49.312Z",
+ "lastUpdated": "2026-11-09T07:23:31.980Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-wie-trump-ungewollt-die-energiewende-antreibt-01/100267022.html",
+   "titel": "Kommentar: Wie Trump ungewollt die Energiewende antreibt",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-wie-trump-ungewollt-die-energiewende-antreibt-01/100267022.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T07:09:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Wahlniederlage des US-Präsidenten und der Irankrieg verändern den Ton vor der Weltklimakonferenz. Warum selbst Petrostaaten die grüne Wende nicht mehr zurückdrehen können.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/wer-wenn-nicht-europa-ein-appell-in-zeiten-der-eskalation-201626439.html",
+   "titel": "Geoökonomie: Wer, wenn nicht Europa?",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/wer-wenn-nicht-europa-ein-appell-in-zeiten-der-eskalation-201626439.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-09T07:08:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Wir leben in Zeiten der Eskalation. Politiker brüllen, lügen, lassen sich mit Kettensägen fotografieren. Milliardenschwere Gründer ohne politisches Mandat wollen über Krieg und Frieden entscheiden. Extremisten versprechen das Blaue vom Himm",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/midterms-us-demokraten-nehmen-nach-wahlsieg-musk-und-trump-vertraute-ins-visier-01/100268255.html",
+   "titel": "Midterms: US-Demokraten nehmen nach Wahlsieg Musk und Trump-Vertraute ins Visier",
+   "link": "https://www.handelsblatt.com/politik/international/midterms-us-demokraten-nehmen-nach-wahlsieg-musk-und-trump-vertraute-ins-visier-01/100268255.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T06:54:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Kongressmehrheit will Trumps Einwanderungspolitik und mögliche Verfehlungen von Unternehmen untersuchen. Ein Amtsenthebungsverfahren gegen Verteidigungsminister Hegseth wird unterstützt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
+   "titel": "G7-Außenminister sprechen über Ukraine und Iran",
+   "link": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-09T06:50:09.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Welche Rolle spielt Europa bei der Lösung des Ukraine-Kriegs? Wie geht es mit Iran weiter? Diese Fragen stehen im Zentrum der G7-Gespräche in Paris, an denen auch US-Außenminister Rubio teilnimmt.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/stephen-miller-drei-dinge-die-man-zu-trumps-neuem-stabschef-wissen-muss-01/100268118.html",
    "titel": "Stephen Miller: Drei Dinge, die man zu Trumps neuem Stabschef wissen muss",
@@ -64,7 +108,7 @@
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/cop31-in-antalya-klimakonferenz-startet-mit-streit-um-fossile-energien-accg-201651541.html",
-   "titel": "Klimakonferenz: Die Welt soll zum Stromer werden",
+   "titel": "Klimakonferenz: Welchen Stellenwert hat ein Klimagipfel ohne USA und den Kanzler?",
    "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/cop31-in-antalya-klimakonferenz-startet-mit-streit-um-fossile-energien-accg-201651541.html",
    "quelle": "FAZ Wirtschaft",
    "zeit": "2026-11-09T05:04:30.000Z",
@@ -966,57 +1010,13 @@
    "maerkte": [],
    "text": "Eine Mehrheit der designierten Abgeordneten empfiehlt Gadi Eisenkot. Sein Lager kommt aber nur auf 48 der 120 Sitze – und eine Koalition mit den arabischen Parteien ist nahezu ausgeschlossen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/bombendrohungen-europa-100.html",
-   "titel": "Bombendrohungen in Europa: Anzeichen auf koordinierten Angriff verdichten sich",
-   "link": "https://www.tagesschau.de/ausland/europa/bombendrohungen-europa-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-06T19:39:20.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Erneut hat es in Europa zahlreiche Bombendrohungen gegeben - sowohl im Flugverkehr als auch gegen Medienhäuser. Spanien spricht von einem hybriden Angriff, der \"kein Zufall\" sei. Irland sieht eine \"koordinierte Kampagne\".",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/06/world/europe/france-shooting-trappes.html",
-   "titel": "In French City Hit by Terrorist Attack, Residents Blame Far-Right Rhetoric",
-   "link": "https://www.nytimes.com/2026/11/06/world/europe/france-shooting-trappes.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-06T19:19:56.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "In Trappes, a suburb of Paris with a large immigrant population, residents believe that a shooting was fueled by years of anti-immigrant sentiment.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/eishockey-wm-wie-umgehen-mit-russland-100.html",
-   "titel": "Russland bei Eishockey-WM? Deutschlands sportpolitisches Dilemma",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/eishockey-wm-wie-umgehen-mit-russland-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-06T18:53:38.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Die Eishockey-WM in Deutschland steht wegen der möglichen Teilnahme Russlands vor einem Boykott mehrerer Nationen und Sponsoren. Die Bundesregierung bringt das in ein Dilemma. Von Felix Jakobs.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-trumpf-schafft-ueber-200-stellen-fuer-chipgeschaeft-faz-200452404.html",
-   "titel": "Business-Ticker: Trumpf schafft über 200 Stellen für Chipgeschäft",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-trumpf-schafft-ueber-200-stellen-fuer-chipgeschaeft-faz-200452404.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-06T18:46:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Laut Bericht will die CDU Klaus Müller für zweite Amtszeit als Netzagenturchef nominieren +++ Razzia bei der Bayerischen Versorgungskammer wegen US-Geschäft +++ Condor sichert Tariffrieden an Bord +++ alle Neuigkeiten im Unternehmen-Liveblo",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 12,
   "DW": 6,
   "Spiegel Wirtschaft": 0,
-  "FAZ Wirtschaft": 6,
+  "FAZ Wirtschaft": 7,
   "Handelsblatt": 11,
   "BBC World": 6,
   "NYT World": 17,
