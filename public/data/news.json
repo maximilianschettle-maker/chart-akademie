@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-09T10:23:32.304Z",
+ "lastUpdated": "2026-11-09T11:23:31.884Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
@@ -46,6 +46,17 @@
     "aktien"
    ],
    "text": "Nach sieben Monaten war die Münchner KI-Fabrik ausgebucht. Nun verdoppelt die Telekom die Leistung und prüft weitere Investitionen. Unter den Kunden sind auch zwei große Dax-Konzerne.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-betitelt-vorschlag-von-kampfsportboss-als-scherz/29669594.html",
+   "titel": "+++ US-Midterms +++: Donald Trump betitelt Vorschlag von Kampfsportboss zum neuen Sprecher des Weißen Hauses als Scherz",
+   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-betitelt-vorschlag-von-kampfsportboss-als-scherz/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T09:10:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Trump will Ermittlungen gegen Demokraten – „bedrohen viele Menschen“ +++ US-Justizministerium will Klage zu Kaliforniens Wahl zurückziehen +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -1001,27 +1012,14 @@
    "maerkte": [],
    "text": "Regierungschef Luxon oder Ex-Premier Hipkins? Nach Schließung der Wahllokale in Neuseeland zeichnet sich ein enges Rennen zwischen Konservativen und Labour ab.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-plus-mein-amerika-ist-zurueck-und-laesst-die-boersen-beben/100267517.html",
-   "titel": "Morning Briefing Plus: Mein Amerika ist zurück – und lässt die Börsen beben",
-   "link": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-plus-mein-amerika-ist-zurueck-und-laesst-die-boersen-beben/100267517.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-07T07:45:17.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Die Demokraten erobern Repräsentantenhaus und Senat. Anleger reagieren mit Verkäufen, vor allem bei Tech-Aktien. Warum die Zweifel an den KI-Investitionen älter sind als das Wahlergebnis.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 12,
-  "DW": 7,
+  "DW": 6,
   "Spiegel Wirtschaft": 0,
-  "FAZ Wirtschaft": 5,
-  "Handelsblatt": 8,
+  "FAZ Wirtschaft": 4,
+  "Handelsblatt": 3,
   "BBC World": 8,
   "NYT World": 18,
   "EIA Today in Energy": 1
