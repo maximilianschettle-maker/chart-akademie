@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-09T06:23:31.777Z",
+ "lastUpdated": "2026-11-09T06:49:49.312Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/stephen-miller-drei-dinge-die-man-zu-trumps-neuem-stabschef-wissen-muss-01/100268118.html",
+   "titel": "Stephen Miller: Drei Dinge, die man zu Trumps neuem Stabschef wissen muss",
+   "link": "https://www.handelsblatt.com/politik/international/stephen-miller-drei-dinge-die-man-zu-trumps-neuem-stabschef-wissen-muss-01/100268118.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T06:37:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach der Wahlniederlage der Republikaner verleiht der US-Präsident seinem loyalsten und radikalsten Weggefährten noch mehr Macht. Wer ist der Mann, der seit Jahren US-Politik prägt?",
+   "sprache": "de"
+  },
   {
    "id": "https://www.dw.com/de/weltklimakonferenz-cop31-was-kann-der-gipfel-in-antalya-liefern/a-79670957",
    "titel": "Weltklimakonferenz COP31 - Was kann der Gipfel in Antalya liefern?",
@@ -999,17 +1010,6 @@
    "maerkte": [],
    "text": "Laut Bericht will die CDU Klaus Müller für zweite Amtszeit als Netzagenturchef nominieren +++ Razzia bei der Bayerischen Versorgungskammer wegen US-Geschäft +++ Condor sichert Tariffrieden an Bord +++ alle Neuigkeiten im Unternehmen-Liveblo",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/06/world/africa/tanzanias-opposition-leader-gets-a-four-year-sentence.html",
-   "titel": "Tanzania’s Opposition Leader Gets a Four-Year Sentence",
-   "link": "https://www.nytimes.com/2026/11/06/world/africa/tanzanias-opposition-leader-gets-a-four-year-sentence.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-06T17:36:38.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Tundu Lissu was found guilty of incitement for statements he had made ahead of a presidential election in October 2025.",
-   "sprache": "en"
   }
  ],
  "quellen": {
