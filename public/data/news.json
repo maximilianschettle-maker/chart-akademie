@@ -1,7 +1,73 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-09T01:23:28.871Z",
+ "lastUpdated": "2026-11-09T03:23:32.349Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/meinung/gastbeitraege/gastkommentar-neue-us-handelspolitik-gegen-europas-zoelle-gibt-es-keine-lobby/100267018.html",
+   "titel": "Gastkommentar: Neue US-Handelspolitik: Gegen Europas Zölle gibt es keine Lobby",
+   "link": "https://www.handelsblatt.com/meinung/gastbeitraege/gastkommentar-neue-us-handelspolitik-gegen-europas-zoelle-gibt-es-keine-lobby/100267018.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T02:59:38.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Die Zollpolitik der USA wird sich künftig leicht ändern. Europa steht aber auch bei Demokraten nicht im Fokus, meint Adam Posen, Chef des Peterson Institute for International Economics.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-eine-bundespraesidentin-war-mehr-als-ueberfaellig/100267838.html",
+   "titel": "Kommentar: Eine Bundespräsidentin war mehr als überfällig",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-eine-bundespraesidentin-war-mehr-als-ueberfaellig/100267838.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T02:57:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach zwölf männlichen Bundespräsidenten soll mit Ilse Aigner erstmals eine Frau in Bellevue einziehen – endlich! Einen Orden verdient der Kanzler dafür aber nicht.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-wie-trump-ungewollt-die-energiewende-antreibt/100267022.html",
+   "titel": "Kommentar: Wie Trump ungewollt die Energiewende antreibt",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-wie-trump-ungewollt-die-energiewende-antreibt/100267022.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T02:56:34.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Wahlniederlage des US-Präsidenten und der Irankrieg verändern den Ton vor der Weltklimakonferenz. Warum selbst Petrostaaten die grüne Wende nicht mehr zurückdrehen können.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/regulierung-klaus-mueller-soll-bundesnetzagentur-auch-kuenftig-fuehren/100267984.html",
+   "titel": "Regulierung: Klaus Müller soll Bundesnetzagentur auch künftig führen",
+   "link": "https://www.handelsblatt.com/politik/deutschland/regulierung-klaus-mueller-soll-bundesnetzagentur-auch-kuenftig-fuehren/100267984.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T02:54:48.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Beirat der Regulierungsbehörde will Müller am 23. November wählen. Die Zustimmung der Bundesregierung gilt als sicher. Eine zweite Amtszeit für den Grünen war zuvor umstritten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-bezeichnet-abschiebepolitik-ueberraschend-als-zu-hart/29669594.html",
+   "titel": "+++ US-Midterms +++: Trump bezeichnet Abschiebepolitik überraschend als „zu hart“",
+   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-bezeichnet-abschiebepolitik-ueberraschend-als-zu-hart/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T02:51:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Trump will Ermittlungen gegen Demokraten – „bedrohen viele Menschen“ +++ US-Justizministerium will Klage zu Kaliforniens Wahl zurückziehen +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/trump-sprecher-white-ufc-kampfsport-spekulationen-100.html",
+   "titel": "Trump will Kampfsportunternehmer White als Pressesprecher",
+   "link": "https://www.tagesschau.de/ausland/amerika/trump-sprecher-white-ufc-kampfsport-spekulationen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-09T02:49:02.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "\"Ein gewalttätiger Kämpfer und Krieger\": Mit einem unkonventionellen Vorschlag löst US-Präsident Trump Rätselraten aus: Der Chef der Kampfsportliga UFC soll Pressesprecher werden. Alles nur ein Scherz, rudert Trump später zurück.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/papst-in-argentinien-100.html",
    "titel": "Papst Leo XIV. fordert in Argentinien mehr Rücksicht auf Schwache",
@@ -67,6 +133,19 @@
    "maerkte": [],
    "text": "The midterm elections in the United States and recent votes in Europe show how blowout victories can make results impossible to deny.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-trump-wird-katars-regierungschef-zu-iran-gespraechen-empfangen/100136895.html",
+   "titel": "+++ Iran-Krieg +++: Trump wird Katars Regierungschef zu Iran-Gesprächen empfangen",
+   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-trump-wird-katars-regierungschef-zu-iran-gespraechen-empfangen/100136895.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-08T20:13:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Irak – Einigung mit USA über Ölexporte durch Straße von Hormus +++ Golfstaaten treiben gemeinsames Schienennetz voran +++ Der Newsblog.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/iran-krieg-irak-einigung-mit-usa-ueber-oelexporte-durch-strasse-von-hormus/100136895.html",
@@ -246,17 +325,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Nordkorea stellt nicht nur Soldaten für den Krieg gegen die Ukraine. In Russland sind auch Zehntausende Leiharbeiter tätig. Sie hoffen auf einen besseren Verdienst als in ihrer Heimat - erfüllt sich dieser Wunsch? Von Norbert Hahn.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/trump-sprecher-white-ufc-kampfsport-spekulationen-100.html",
-   "titel": "Trump will Kampfsportunternehmer White als Pressesprecher",
-   "link": "https://www.tagesschau.de/ausland/amerika/trump-sprecher-white-ufc-kampfsport-spekulationen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-08T09:59:49.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "\"Ein gewalttätiger Kämpfer und Krieger\": Mit einem unkonventionellen Vorschlag löst US-Präsident Trump Rätselraten aus: Der Chef der Kampfsportliga UFC soll Pressesprecher werden. Oder gibt es ein Missverständnis?",
    "sprache": "de"
   },
   {
@@ -937,80 +1005,14 @@
    "maerkte": [],
    "text": "Kurz vor der Klimakonferenz COP31 in Antalya gibt es ernüchternde Zahlen: Das 1,5-Grad-Ziel wird 2026 laut EU-Dienst Copernicus höchstwahrscheinlich überschritten. Der Oktober war zudem der wärmste seit Beginn der Aufzeichnungen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/copernicus-klimakrise-1komma5-grad-100.html",
-   "titel": "EU-Dienst Copernicus: 1,5-Grad-Marke wird 2026 wohl überschritten",
-   "link": "https://www.tagesschau.de/ausland/europa/copernicus-klimakrise-1komma5-grad-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-06T13:02:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Kurz vor der Klimakonferenz COP31 in Antalya gibt es ernüchternde Zahlen: Das 1,5-Grad-Ziel wird 2026 laut EU-Dienst Copernicus höchstwahrscheinlich überschritten. Der Oktober war zudem der wärmste seit Beginn der Aufzeichnungen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-maec-geiz-schliesst-rund-60-filialen-faz-200452404.html",
-   "titel": "Business-Ticker: Mäc Geiz schließt rund 60 Filialen",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-maec-geiz-schliesst-rund-60-filialen-faz-200452404.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-06T12:30:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Razzia bei der Bayerischen Versorgungskammer wegen US-Geschäft +++ Condor sichert Tariffrieden an Bord +++ Uniper wirbt mit höherer Dividende um Anleger +++ alle Neuigkeiten im Unternehmen-Liveblog",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/06/world/asia/china-trump-putin-xi-summit.html",
-   "titel": "A Trump-Putin-Xi Summit? That Might Be Awkward for One of Them.",
-   "link": "https://www.nytimes.com/2026/11/06/world/asia/china-trump-putin-xi-summit.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-06T12:28:55.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "A summit could bolster Xi Jinping’s stature. But talks about Ukraine’s future and limits on nuclear weapons pose uncomfortable choices for China.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/bankenskandal-in-paraguay-pr%C3%A4sident-pe%C3%B1a-unter-druck/a-79874532",
-   "titel": "Bankenskandal in Paraguay: Präsident Peña unter Druck",
-   "link": "https://www.dw.com/de/bankenskandal-in-paraguay-präsident-peña-unter-druck/a-79874532?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-06T11:46:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Mutmaßlicher Finanzbetrug, gefährdete öffentliche Gelder und Millionen betroffene Kunden: Der Zusammenbruch der Ueno-Bank stürzt Paraguay in eine schwere Krise. Präsident Santiago Peña droht die Amtsenthebung.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/midterms-wirtschaft-handelspolitik-100.html",
-   "titel": "Welche Folgen die US-Midterms für die deutsche Wirtschaft haben",
-   "link": "https://www.tagesschau.de/wirtschaft/midterms-wirtschaft-handelspolitik-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-06T11:17:25.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Der Machtwechsel im US-Kongress könnte Unternehmen mehr Planbarkeit bringen. Zugleich befürchten Ökonomen, dass sich der Zollstreit fortsetzt. Worauf kann sich die deutsche Wirtschaft einstellen? Von Sebastian Schreiber.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-merz-telefoniert-mit-trump-zur-ukraine/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Merz telefoniert mit Trump zur Ukraine",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-merz-telefoniert-mit-trump-zur-ukraine/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-06T11:05:16.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ukraine: Mehr als 50 Tote nach russischem Luftangriff +++ Nach Treffen mit Dmitrijew: Trump stellt „großes Abkommen“ in Aussicht – Kreml dämpft Erwartungen +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 10,
   "DW": 5,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 5,
+  "Handelsblatt": 9,
   "BBC World": 6,
   "NYT World": 17,
   "EIA Today in Energy": 1
