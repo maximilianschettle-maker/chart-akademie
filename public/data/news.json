@@ -1,19 +1,55 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-09T17:38:50.601Z",
+ "lastUpdated": "2026-11-09T19:23:30.419Z",
  "eintraege": [
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-us-boersen-profitieren-von-sinkenden-oelpreisen/100268441.html",
    "titel": "Wall Street: Nasdaq fast drei Prozent im Plus: US-Börsen steigen stark an",
    "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-us-boersen-profitieren-von-sinkenden-oelpreisen/100268441.html",
    "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T17:21:53.000Z",
+   "zeit": "2026-11-09T19:13:00.000Z",
    "kategorie": "energie",
    "maerkte": [
     "oel",
     "aktien"
    ],
    "text": "Schnäppchenkäufer und fallende Ölpreise sorgen für Erholung an der Wall Street nach den jüngsten Kursverlusten. Auch wenn sich die Indizes stabilisieren – ausgestanden ist die Unruhe nicht.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro",
+   "titel": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
+   "link": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-09T18:19:19.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o",
+   "titel": "Trump questions midterm elections integrity after previously accepting results",
+   "link": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-09T17:47:29.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Trump made the claims, without evidence, on Truth Social on Monday.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/bundeshaushalt-60-prozent-der-geplanten-sozialkuerzungen-treffen-frauen/100268370.html",
+   "titel": "Bundeshaushalt: Studie: 60 Prozent der geplanten Sozialkürzungen treffen Frauen",
+   "link": "https://www.handelsblatt.com/politik/deutschland/bundeshaushalt-60-prozent-der-geplanten-sozialkuerzungen-treffen-frauen/100268370.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T17:40:16.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd",
+    "anleihen"
+   ],
+   "text": "Die schwarz-rote Bundesregierung muss im Bundeshaushalt 2027 eine Lücke von über 20 Milliarden Euro schließen. Ökonomen haben nun die Folgen der Kürzungspolitik für Frauen beziffert.",
    "sprache": "de"
   },
   {
@@ -26,17 +62,6 @@
    "maerkte": [],
    "text": "In Abu Dhabi geht es ab Dienstag um ein mögliches Ende des Ukraine-Kriegs. Sind das ernsthafte Friedensgespräche? Außenminister Wadephul zweifelt am Verhandlungswillen Russlands - und fordert Mitsprache für die Europäer.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o",
-   "titel": "Trump questions midterm elections integrity after previously accepting results",
-   "link": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-09T17:16:42.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Trump made the claims, without evidence, on Truth Social on Monday.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/kuehlanlagen-cyberangriffe-100.html",
@@ -114,6 +139,19 @@
    "maerkte": [],
    "text": "U.S.-led talks to end the war between Russia and Ukraine will resume this week in Abu Dhabi. A cease-fire won’t be on the table.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/spionage-innenministerium-warnt-vor-liebesfallen-durch-geheimdienste/100268414.html",
+   "titel": "Spionage: Innenministerium warnt vor Liebesfallen durch Geheimdienste",
+   "link": "https://www.handelsblatt.com/politik/deutschland/spionage-innenministerium-warnt-vor-liebesfallen-durch-geheimdienste/100268414.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T14:54:13.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Der Fall um Nvidia-Chef Huang rückt eine Spionagemethode in den Fokus: Liebesfallen. Das Innenministerium hält solche Angriffe auch auf deutsche Topmanager für möglich.",
+   "sprache": "de"
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/koalition-verzichtet-auf-sektsteuererhoehung-verschaerft-aber-alkopopsteuer-201665413.html",
@@ -994,49 +1032,16 @@
    "maerkte": [],
    "text": "Santiago Peña was impeached, removed from office, placed under house arrest and charged with using his office to enrich himself after a bank with close ties to his administration went under.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/07/world/africa/congo-attack-ebola-isis-adf.html",
-   "titel": "Islamist Militant Attack Forces Patients to Flee Ebola Clinic in Congo",
-   "link": "https://www.nytimes.com/2026/11/07/world/africa/congo-attack-ebola-isis-adf.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-07T18:49:33.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "At least 48 people were killed in a brutal assault by a group loyal to the Islamic State, officials said. The area is a hot spot of the growing Ebola outbreak.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/07/world/europe/ukraine-russia-war-operation-vivaldi.html",
-   "titel": "Inside the Operation That Helped Ukraine Reverse Some Russian War Gains",
-   "link": "https://www.nytimes.com/2026/11/07/world/europe/ukraine-russia-war-operation-vivaldi.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-07T18:17:34.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "After months of secrecy, Ukrainian commanders let New York Times journalists join them in bunkers and training grounds used to reverse some Russian territorial gains.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/videos/ckr5ygm78j76o",
-   "titel": "Gaza wedding festival sees 250 couples married at the same time",
-   "link": "https://www.bbc.co.uk/news/videos/ckr5ygm78j76o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-07T17:58:41.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "A mass wedding for Palestinian brides and grooms has taken place in the rubble-strewn streets of Gaza.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 9,
   "DW": 6,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 6,
-  "BBC World": 4,
-  "NYT World": 16,
+  "BBC World": 5,
+  "NYT World": 15,
   "EIA Today in Energy": 0
  }
 }
