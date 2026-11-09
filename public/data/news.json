@@ -1,17 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-09T20:23:36.148Z",
+ "lastUpdated": "2026-11-09T21:23:36.054Z",
  "eintraege": [
   {
    "id": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro",
    "titel": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
    "link": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-09T20:23:14.000Z",
+   "zeit": "2026-11-09T21:04:36.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/usa-amtsenthebungsverfahren-hegseth-100.html",
+   "titel": "Republikaner Massie will Hegseth des Amtes entheben",
+   "link": "https://www.tagesschau.de/ausland/amerika/usa-amtsenthebungsverfahren-hegseth-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-09T20:48:39.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Wahlniederlage der US-Republikaner bei den Zwischenwahlen könnte Verteidigungsminister Hegseth seinen Posten kosten: Der Trump-kritische Republikaner Massie brachte ein Amtsenthebungsverfahren gegen seinen Parteikollegen auf den Weg.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-us-boersen-profitieren-von-sinkenden-oelpreisen/100268441.html",
+   "titel": "Wall Street: Nasdaq fast drei Prozent im Plus: US-Börsen steigen stark an",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-us-boersen-profitieren-von-sinkenden-oelpreisen/100268441.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T20:30:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "aktien"
+   ],
+   "text": "Schnäppchenkäufer und fallende Ölpreise sorgen für Erholung an der Wall Street nach den jüngsten Kursverlusten. Auch wenn sich die Indizes stabilisieren – ausgestanden ist die Unruhe nicht.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/us-politik-republikaner-massie-beantragt-amtsenthebung-von-hegseth/100268546.html",
@@ -34,20 +59,6 @@
    "maerkte": [],
    "text": "American forces are helping Colombia and Venezuela hunt the ELN. This weekend, the group attacked a Colombian military base with drones, officials said.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-us-boersen-profitieren-von-sinkenden-oelpreisen/100268441.html",
-   "titel": "Wall Street: Nasdaq fast drei Prozent im Plus: US-Börsen steigen stark an",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-us-boersen-profitieren-von-sinkenden-oelpreisen/100268441.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T19:13:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "Schnäppchenkäufer und fallende Ölpreise sorgen für Erholung an der Wall Street nach den jüngsten Kursverlusten. Auch wenn sich die Indizes stabilisieren – ausgestanden ist die Unruhe nicht.",
-   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o",
@@ -1021,21 +1032,10 @@
    "maerkte": [],
    "text": "Endet die Ära Netanjahu in Israel? Staatspräsident Herzog beauftragt den Oppositionspolitiker Eisenkot mit der Regierungsbildung. In den kommenden 28 Tagen soll er versuchen, eine Koalition zu schmieden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/stephen-miller-drei-dinge-die-man-zu-trumps-neuem-stabschef-wissen-muss/100268118.html",
-   "titel": "Stephen Miller: Drei Dinge, die man zu Trumps neuem Stabschef wissen muss",
-   "link": "https://www.handelsblatt.com/politik/international/stephen-miller-drei-dinge-die-man-zu-trumps-neuem-stabschef-wissen-muss/100268118.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-07T20:25:11.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach der Wahlniederlage der Republikaner verleiht der US-Präsident seinem loyalsten und radikalsten Weggefährten noch mehr Macht. Wer ist der Mann, der seit Jahren US-Politik prägt?",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 10,
   "DW": 6,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
