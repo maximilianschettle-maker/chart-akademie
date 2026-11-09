@@ -1,19 +1,41 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-09T15:23:34.453Z",
+ "lastUpdated": "2026-11-09T16:23:34.828Z",
  "eintraege": [
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-us-boersen-profitieren-von-sinkenden-oelpreisen/100268441.html",
    "titel": "Wall Street: US-Börsen profitieren von sinkenden Ölpreisen – und liegen stark im Plus",
    "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-us-boersen-profitieren-von-sinkenden-oelpreisen/100268441.html",
    "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T15:18:50.000Z",
+   "zeit": "2026-11-09T16:04:36.000Z",
    "kategorie": "energie",
    "maerkte": [
     "oel",
     "aktien"
    ],
    "text": "US-Midterms, Künstliche Intelligenz, Rohölpreise und die Affäre eines CEOs lasteten jüngst auf der Wall Street. Auch wenn sich die Indizes stabilisieren – ausgestanden ist die Unruhe nicht.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/russell-brand-strafmass-100.html",
+   "titel": "Russell Brand zu mehr als zehn Jahren Haft verurteilt",
+   "link": "https://www.tagesschau.de/ausland/russell-brand-strafmass-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-09T15:56:52.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Vor wenigen Tagen war der Ex-Comedian in London wegen Vergewaltigung und sexueller Nötigung verurteilt worden. Nun wurde das Strafmaß verkündet: Er muss zehneinhalb Jahre in Haft. Inzwischen wurden neue Vorwürfe laut.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/verteidigung-koalition-der-willigen-probt-fuer-ukraine-unterstuetzungsmission/100267358.html",
+   "titel": "Verteidigung: „Koalition der Willigen“ probt für Ukraine-Unterstützung – Tusk warnt vor Russlands „wahren Absichten“",
+   "link": "https://www.handelsblatt.com/politik/international/verteidigung-koalition-der-willigen-probt-fuer-ukraine-unterstuetzungsmission/100267358.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-09T15:22:29.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In Polen trainieren Soldatinnen und Soldaten aus elf Ländern, um die Ukraine nach einem Waffenstillstand unterstützen zu können. Polens Premier Tusk warnt vor einer russischen Bedrohung auch für Europa.",
    "sprache": "de"
   },
   {
@@ -60,6 +82,21 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Welche Rolle spielt Europa bei der Lösung des Ukraine-Kriegs? Wie geht es mit Iran weiter? Diese Fragen stehen im Zentrum der G7-Gespräche in Paris. Außenminister Wadephul mahnt Washington und Moskau.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/spritpreise-sinkender-oelpreis-sorgt-fuer-erholung-bei-e10-benzin-und-diesel-a-29f929ff-3e9a-4239-8c85-07942e5402ad",
+   "titel": "Spritpreise: Sinkender Ölpreis sorgt für Erholung bei E10, Benzin und Diesel",
+   "link": "https://www.spiegel.de/wirtschaft/spritpreise-sinkender-oelpreis-sorgt-fuer-erholung-bei-e10-benzin-und-diesel-a-29f929ff-3e9a-4239-8c85-07942e5402ad#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-09T14:16:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Ein Liter E10 im Tagesschnitt für unter zwei Euro, sogar Diesel wird günstiger: Hoffnung auf Fortschritte bei den Iranverhandlungen lässt die Ölpreise sinken. Auch die vom KI-Einbruch gebeutelten Börsen zeigen sich erholt.",
    "sprache": "de"
   },
   {
@@ -990,47 +1027,14 @@
    "maerkte": [],
    "text": "Seit 2022 hat sich Georgien zu einer Drehscheibe für Leihmutterschaften entwickelt. Viele Kliniken aus Russland und der Ukraine sind wegen des Krieges dorthin umgezogen. Die DW hat mit Leihmüttern und Kunden gesprochen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/der-franzoesische-luxus-eine-epoche-ohne-ende-accg-201648840.html",
-   "titel": "Luxus in Frankreich: Entwürfe vom besseren Leben",
-   "link": "https://www.faz.net/aktuell/wirtschaft/der-franzoesische-luxus-eine-epoche-ohne-ende-accg-201648840.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-07T12:58:30.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "In Frankreich ist der Luxus zu Hause. Die Tradition des verfeinerten Lebensstils begann schon mit Ludwig XIV. Nicht einmal Krisen und Kriege halten ihn auf.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po",
-   "titel": "Russian strikes wound nine and damage Ukraine's power network ahead of talks",
-   "link": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-07T12:49:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The attacks come before Ukrainian and Russian delegations are due to take part in trilateral talks in Abu Dhabi next week.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-nennt-trumps-friedensplan-gefaehrlich/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Selenskyj nennt Trumps Friedensplan gefährlich",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-nennt-trumps-friedensplan-gefaehrlich/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-07T12:29:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Zahl der Toten in ukrainischem Hilfszentrum steigt auf 55 +++ Irischer Regierungschef: Gipfel in Dublin nicht gefährdet +++ Russland schickt hochrangige Delegation nach Abu Dhabi+++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 10,
   "DW": 6,
   "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 7,
-  "Handelsblatt": 5,
+  "FAZ Wirtschaft": 5,
+  "Handelsblatt": 6,
   "BBC World": 7,
   "NYT World": 17,
   "EIA Today in Energy": 0
