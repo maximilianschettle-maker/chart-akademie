@@ -1,7 +1,43 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T09:59:18.853Z",
+ "lastUpdated": "2026-11-10T10:23:38.507Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/energie-oelpreis-sinkt-erstmals-seit-august-wieder-unter-90-dollar/100268734.html",
+   "titel": "Energie: Ölpreis sinkt erstmals seit August wieder unter 90 Dollar",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/energie-oelpreis-sinkt-erstmals-seit-august-wieder-unter-90-dollar/100268734.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T10:04:52.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "eurusd"
+   ],
+   "text": "Nach den Midterms hoffen die Anleger auf eine Entspannung im Iran-Krieg und setzen auf Verhandlungen. Das macht sich auch an den Tankstellen bemerkbar.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/10/world/europe/putin-trump-abu-dhabi-talks.html",
+   "titel": "Why U.S. Business Deals Are Unlikely to Get Putin to Give Any Ground",
+   "link": "https://www.nytimes.com/2026/11/10/world/europe/putin-trump-abu-dhabi-talks.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-10T10:04:04.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Vladimir V. Putin of Russia has shown a willingness to endure a high price to get what he wants in Ukraine, and he sees little reason to stop fighting now, analysts say.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/10/world/europe/turkey-erdogan-cop31-climate.html",
+   "titel": "Turkey Promotes Itself as a Climate Champion. Not Everyone Agrees.",
+   "link": "https://www.nytimes.com/2026/11/10/world/europe/turkey-erdogan-cop31-climate.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-10T10:01:42.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Critics say some of the country’s environmental policies run counter to the image it is offering as host of a United Nations climate summit.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.dw.com/de/us-republikaner-will-amtsenthebung-von-pentagon-chef-hegseth/a-79906935",
    "titel": "US-Republikaner will Amtsenthebung von Pentagon-Chef Hegseth",
@@ -23,6 +59,17 @@
    "maerkte": [],
    "text": "The president says the US is keeping \"status quo\" with Iran but remains “locked and loaded” should the situation change.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/wahlkampf-der-radikale-der-frankreichs-wut-in-stimmen-verwandelt/100264935.html",
+   "titel": "Wahlkampf: Der Radikale, der Frankreichs Wut in Stimmen verwandelt",
+   "link": "https://www.handelsblatt.com/politik/international/wahlkampf-der-radikale-der-frankreichs-wut-in-stimmen-verwandelt/100264935.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T09:31:16.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Jede Woche protestieren Hunderttausende gegen hohe Preise und für bessere Bildung. Jean-Luc Mélenchon versteht es, diese Wut zu nutzen. Das könnte ihn sogar ins Präsidentenamt bringen.",
+   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/ausland/asien/ukraine-verhandlungen-abu-dhabi-104.html",
@@ -994,52 +1041,6 @@
    "maerkte": [],
    "text": "In Mali sollen fast 4000 Vertriebene in Macina und Sarro in der Region Ségou im Zentrum des Landes Zuflucht gefunden haben - vor allem Frauen und Kinder, die vor dem Angriff auf das Dorf Souleye geflohen sind.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/mali-fast-4-000-vertriebene-nach-angriff-auf-souleye/a-79854085",
-   "titel": "Mali: Fast 4.000 Vertriebene nach Angriff auf Souleye",
-   "link": "https://www.dw.com/de/mali-fast-4-000-vertriebene-nach-angriff-auf-souleye/a-79854085?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-08T13:37:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "In Mali sollen fast 4000 Vertriebene in Macina und Sarro in der Region Ségou im Zentrum des Landes Zuflucht gefunden haben - vor allem Frauen und Kinder, die vor dem Angriff auf das Dorf Souleye geflohen sind.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-stromausfall-120.html",
-   "titel": "Russische Luftangriffe: Erneut Hunderttausende Ukrainer ohne Strom",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-stromausfall-120.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-08T12:05:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Erneut hat Russland die ukrainische Energieversorgung schwer getroffen. In der Region Dnipropetrowsk haben 600.000 Menschen keinen Strom. Das besetzte Atomkraftwerk Saporischschja muss mit Notstromaggregaten gekühlt werden.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/usa-iran-seeblockade-angriff-handelsschiff-100.html",
-   "titel": "US-Militär attackiert Handelsschiff im Golf von Oman",
-   "link": "https://www.tagesschau.de/ausland/asien/usa-iran-seeblockade-angriff-handelsschiff-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-08T11:04:42.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Im Golf von Oman hat das US-Militär auf ein Handelsschiff gefeuert, das gegen die US-Seeblockade verstoßen haben soll. Iran meldet den Brand zweier Frachter in der Straße von Hormus. Huthis greifen die saudische Hauptstadt Riad an.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/sicherheit-cyberattacke-auf-brennerbasistunnel-firma/100268200.html",
-   "titel": "Sicherheit: Angriff auf Bahnprojekt: Cyberattacke auf Brennerbasistunnel-Firma",
-   "link": "https://www.handelsblatt.com/politik/international/sicherheit-cyberattacke-auf-brennerbasistunnel-firma/100268200.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-08T10:33:11.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Unbekannte Täter greifen auf Daten der Baugesellschaft zu. Auch ein Tunnelprojekt zwischen Deutschland und Dänemark war von einer IT-Attacke betroffen – und Kühlanlagen in Supermärkten.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1047,9 +1048,9 @@
   "DW": 6,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 1,
+  "Handelsblatt": 3,
   "BBC World": 6,
-  "NYT World": 15,
+  "NYT World": 17,
   "EIA Today in Energy": 0
  }
 }
