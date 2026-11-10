@@ -1,7 +1,51 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T14:23:29.782Z",
+ "lastUpdated": "2026-11-10T15:23:28.814Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-friedensgespraeche-in-abu-dhabi-werden-am-mittwoch-fortgesetzt/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Friedensgespräche in Abu Dhabi werden am Mittwoch fortgesetzt – Wadephul fordert Beteiligung Europas",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-friedensgespraeche-in-abu-dhabi-werden-am-mittwoch-fortgesetzt/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T14:50:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Gefangenenaustausch bei Gesprächen erörtert +++ Rubio: Gespräche über Ukraine in Abu Dhabi sehr produktiv +++ Lawrow fordert Folgeregelung vor einem Waffenstillstand +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-206.html",
+   "titel": "Zwei Tote bei russischen Luftangriffen",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-206.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-10T14:42:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russland hat die Ukraine in der Nacht erneut mit Luftangriffen überzogen. Dabei starben ukrainischen Angaben zufolge zwei Menschen. Zudem seien mehrere Umspannwerke getroffen worden, in mehreren Regionen fiel der Strom aus.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/10/world/thomas-massie-impeachment-hegseth.html",
+   "titel": "What to Know About Thomas Massie, Leader of Drive to Impeach Hegseth",
+   "link": "https://www.nytimes.com/2026/11/10/world/thomas-massie-impeachment-hegseth.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-10T14:41:45.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Representative Thomas Massie, Republican of Kentucky, is retiring at the end of his term after losing to a primary challenger backed by President Trump.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o",
+   "titel": "First day of Ukraine peace talks 'very productive', US says",
+   "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-10T14:36:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Delegations from Kyiv, Washington and Moscow are in the United Arab Emirates for the first trilateral talks since February.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-lawrow-fordert-folgeregelung-vor-einem-waffenstillstand/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Lawrow fordert Folgeregelung vor einem Waffenstillstand in der Ukraine",
@@ -15,13 +59,13 @@
   },
   {
    "id": "https://www.tagesschau.de/ausland/europa/ukraine-gespraeche-abu-dhabi-104.html",
-   "titel": "Ukraine-Verhandlungen: \"Beide Seiten stehen unter einem enormen Zugzwang\"",
+   "titel": "Ukraine-Verhandlungen: \"Beide Seiten stehen unter enormem Zugzwang\"",
    "link": "https://www.tagesschau.de/ausland/europa/ukraine-gespraeche-abu-dhabi-104.html",
    "quelle": "tagesschau",
    "zeit": "2026-11-10T14:18:25.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Russland und die Ukraine stehen unter großem Zeitdruck, sagt der Militärexperte Markus Reisner. Doch ohne Zugeständnisse werde es keinen Erfolg bei den Verhandlungen geben. Wichtig seien auch mögliche Gespräche über eine neuer Sicherheitsor",
+   "text": "Russland und die Ukraine stehen unter großem Zeitdruck, sagt der Militärexperte Markus Reisner. Doch ohne Zugeständnisse werde es keinen Erfolg bei den Verhandlungen geben. Wichtig seien auch mögliche Gespräche über eine neue Sicherheitsord",
    "sprache": "de"
   },
   {
@@ -243,17 +287,6 @@
    "maerkte": [],
    "text": "Jede Woche protestieren Hunderttausende gegen hohe Preise und für bessere Bildung. Jean-Luc Mélenchon versteht es, diese Wut zu nutzen. Das könnte ihn sogar ins Präsidentenamt bringen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o",
-   "titel": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
-   "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-10T09:07:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Kyiv, Washington and Moscow have all sent delegations to the United Arab Emirates for the first trilateral talks since February.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
@@ -1014,49 +1047,16 @@
    "maerkte": [],
    "text": "\"Ein gewalttätiger Kämpfer und Krieger\": Mit einem unkonventionellen Vorschlag löst US-Präsident Trump Rätselraten aus: Der Chef der Kampfsportliga UFC soll Pressesprecher werden. Alles nur ein Scherz, rudert Trump später zurück.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/papst-in-argentinien-100.html",
-   "titel": "Papst Leo XIV. fordert in Argentinien mehr Rücksicht auf Schwache",
-   "link": "https://www.tagesschau.de/ausland/amerika/papst-in-argentinien-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-09T00:43:39.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Zu Beginn seines Argentinienbesuchs hat Papst Leo XIV. Kritik an der \"Kettensägen-Politik\" von Präsident Milei geübt und zu mehr Rücksicht aufgerufen. Seit fast vier Jahrzehnten war kein Papst mehr in dem südamerikanischen Land zu Gast.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/08/world/middleeast/israel-eisenkot-netanyahu-what-to-know.html",
-   "titel": "Who Is Gadi Eisenkot, Israel’s Opposition Leader?",
-   "link": "https://www.nytimes.com/2026/11/08/world/middleeast/israel-eisenkot-netanyahu-what-to-know.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-08T21:48:22.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Mr. Eisenkot, a career general and the leading rival of Prime Minister Benjamin Netanyahu of Israel, will now have up to six weeks to form a coalition.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/07/world/middleeast/more-than-50-killed-in-yemen.html",
-   "titel": "More Than 50 Killed in Yemen in One of the Deadliest 24 Hours of the War",
-   "link": "https://www.nytimes.com/2026/11/07/world/middleeast/more-than-50-killed-in-yemen.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-08T21:45:25.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Strikes show the heavy toll since fighting between the Houthis and the Saudi-backed government reignited in August, with civilians paying a heavy price.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 11,
   "DW": 5,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 9,
-  "BBC World": 6,
-  "NYT World": 15,
+  "Handelsblatt": 7,
+  "BBC World": 5,
+  "NYT World": 16,
   "EIA Today in Energy": 0
  }
 }
