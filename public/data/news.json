@@ -1,7 +1,86 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T15:23:28.814Z",
+ "lastUpdated": "2026-11-10T16:23:39.623Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/sudan-krieg-immer-mehr-menschen-in-not-k%C3%BCrzungen-versch%C3%A4rfen-die-lage/a-79908319",
+   "titel": "Sudan-Krieg: Immer mehr Menschen in Not - Kürzungen verschärfen die Lage",
+   "link": "https://www.dw.com/de/sudan-krieg-immer-mehr-menschen-in-not-kürzungen-verschärfen-die-lage/a-79908319?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-10T16:20:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Im Sudan wächst das humanitäre Leid: 33,7 Millionen Menschen sind auf Hilfe angewiesen, doch internationale Hilfe wurde vielerorts gekürzt. Zugleich erschweren Krieg und Drohnenangriffe die Versorgung der Bevölkerung.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/diplomaten-und-geheimdienstler-wer-vertritt-russland-in-abu-dhabi/a-79908948",
+   "titel": "Diplomaten und Geheimdienstler: Wer vertritt Russland in Abu Dhabi?",
+   "link": "https://www.dw.com/de/diplomaten-und-geheimdienstler-wer-vertritt-russland-in-abu-dhabi/a-79908948?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-10T16:14:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Moskau hat Diplomaten und Militärs nach Abu Dhabi geschickt. Sie führen dort Verhandlungen mit Vertretern Kyjiws und Washingtons über ein Ende des Ukraine-Krieges. Was ist über die russischen Unterhändler bekannt?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/auto-verkehr/haushalt-klingbeil-und-die-autobahn-erpressung-201669350.html",
+   "titel": "Haushaltsverhandlungen: Klingbeil und die Autobahn-„Erpressung“",
+   "link": "https://www.faz.net/aktuell/wirtschaft/auto-verkehr/haushalt-klingbeil-und-die-autobahn-erpressung-201669350.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-10T16:09:22.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "Die Verhandlungen für den Bundeshaushalt stehen kurz vor dem Ziel und das Bundesfinanzministerium schichtet noch einmal kräftig um. Die Grünen sind empört.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/aigner-die-kandidatin-und-die-afd-frau-kollegin-ich-beende-das-jetzt/100268633.html",
+   "titel": "Ilse Aigner: „So, Frau Kollegin, ich beende das jetzt“ – wie Aigner der AfD die Grenzen aufzeigt",
+   "link": "https://www.handelsblatt.com/politik/deutschland/aigner-die-kandidatin-und-die-afd-frau-kollegin-ich-beende-das-jetzt/100268633.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T16:07:45.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Als mögliche Bundespräsidentin zieht Ilse Aigner eine klare Grenze zur AfD. Eine Koalition lehnt die CSU-Politikerin ab. Als bayerische Landtagspräsidentin wies sie die Partei deutlich in die Schranken.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/usa-hegseth-amtsenthebungsverfahren-100.html",
+   "titel": "Pentagon-Chef Hegseth sieht in Amtsenthebungsantrag \"Schauprozess\"",
+   "link": "https://www.tagesschau.de/ausland/amerika/usa-hegseth-amtsenthebungsverfahren-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-10T15:51:55.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Machtmissbrauch im Iran-Krieg - unter anderem wegen dieses Vorwurfs könnte ein Amtsenthebungsverfahren gegen Pentagon-Chef Hegseth eingeleitet werden. Auf einer Pressekonferenz wies er die Anschuldigungen zurück und sprach von einer Inszeni",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/maschinenbaugipfel-100.html",
+   "titel": "Maschinenbauer \"fassungslos\" über Bundesregierung",
+   "link": "https://www.tagesschau.de/wirtschaft/maschinenbaugipfel-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-10T15:43:59.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Koalition ringt um Reformen. Viel zu zögerlich, findet der Maschinenbauverband VDMA. Er wirft der Bundesregierung vor, mit internem Streit und Reformstau den Industriestandort Deutschland zu gefährden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/10/us/thomas-massie-impeachment-hegseth.html",
+   "titel": "What to Know About Thomas Massie, Leader of Drive to Impeach Hegseth",
+   "link": "https://www.nytimes.com/2026/11/10/us/thomas-massie-impeachment-hegseth.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-10T15:30:06.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Representative Thomas Massie, Republican of Kentucky, is retiring at the end of his term after losing to a primary challenger backed by President Trump.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-friedensgespraeche-in-abu-dhabi-werden-am-mittwoch-fortgesetzt/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Friedensgespräche in Abu Dhabi werden am Mittwoch fortgesetzt – Wadephul fordert Beteiligung Europas",
@@ -45,6 +124,17 @@
    "maerkte": [],
    "text": "Delegations from Kyiv, Washington and Moscow are in the United Arab Emirates for the first trilateral talks since February.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/regierungsbildung-rot-rot-gruen-einigt-sich-in-schwerin-auf-koalitionsvertrag/100268836.html",
+   "titel": "Regierungsbildung: Rot-Rot-Grün einigt sich in Mecklenburg-Vorpommern auf Koalitionsvertrag",
+   "link": "https://www.handelsblatt.com/politik/deutschland/regierungsbildung-rot-rot-gruen-einigt-sich-in-schwerin-auf-koalitionsvertrag/100268836.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T14:31:09.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach vier Wochen haben sich SPD, Linke und Grüne in Mecklenburg-Vorpommern auf einen Koalitionsvertrag geeinigt und damit die Basis für eine neue Regierung gelegt. Was steht drin?",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-lawrow-fordert-folgeregelung-vor-einem-waffenstillstand/27982126.html",
@@ -215,6 +305,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Unterhändler Russlands und der Ukraine haben ihre Gespräche unter US-Vermittlung in Abu Dhabi aufgenommen. Was wollen die Kriegsparteien? Welche Interessen haben die USA? Und welche Rolle haben die Europäer?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/deutschland-maschinenbauer-werfen-bundesregierung-vor-reformen-zu-blockieren-a-a24b11f7-4700-4a09-9eb6-3dcc1a5732dc",
+   "titel": "Deutschland: Maschinenbauer werfen Bundesregierung vor, Reformen zu blockieren",
+   "link": "https://www.spiegel.de/wirtschaft/deutschland-maschinenbauer-werfen-bundesregierung-vor-reformen-zu-blockieren-a-a24b11f7-4700-4a09-9eb6-3dcc1a5732dc#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-10T10:24:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Fehlende Investitionen, wachsende Bürokratie und unterlassene Reformen, die den Standort Deutschland schwächen. Die Maschinenbauer erheben schwere Vorwürfe gegen die schwarz-rote Koalition.",
    "sprache": "de"
   },
   {
@@ -946,117 +1047,16 @@
    ],
    "text": "US-Midterms, Rohölpreise und Künstliche Intelligenz trieben die Anleger zuletzt um. Nun wird sich zeigen, ob etwa die Bilanzen zweier Dax-Konzerne für einen Stimmungswechsel sorgen können.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/cop31-in-antalya-klimakonferenz-startet-mit-streit-um-fossile-energien-accg-201651541.html",
-   "titel": "Klimakonferenz: Welchen Stellenwert hat ein Klimagipfel ohne USA und den Kanzler?",
-   "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/cop31-in-antalya-klimakonferenz-startet-mit-streit-um-fossile-energien-accg-201651541.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-09T05:04:30.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Von Montag an beraten in Antalya fast 200 Regierungen über den weiteren Kampf gegen die Klimakrise. Eine „Koalition der Willigen“ will den Ausstieg aus fossilen Energieträgern vorantreiben.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/nvidia-chef-war-jensen-huangs-affaere-eine-chinesische-spionin-201664216.html",
-   "titel": "Nvidia-Chef: War Jensen Huangs Affäre eine chinesische Spionin?",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/nvidia-chef-war-jensen-huangs-affaere-eine-chinesische-spionin-201664216.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-09T04:46:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Nvidia-Chef Jensen Huang hat gegenüber seiner Belegschaft eine außereheliche Beziehung eingestanden. US-Behörden vermuten, dass die Frau vom chinesischen Geheimdienst angeworben wurde.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/aigner-bundespraesidentin-100.html",
-   "titel": "Bundespräsidenten-Wahl: Merz bricht sein Schweigen und schlägt Aigner vor",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/aigner-bundespraesidentin-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-09T03:34:40.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Lange hatte er darüber nachgedacht und sich zurückgehalten - am Abend sprach sich Kanzler Merz dann für Ilse Aigner als Bundespräsidentin aus. Heute wollen beide offiziell vor die Presse treten. Von Sabine Henkel.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/gastbeitraege/gastkommentar-neue-us-handelspolitik-gegen-europas-zoelle-gibt-es-keine-lobby/100267018.html",
-   "titel": "Gastkommentar: Neue US-Handelspolitik: Gegen Europas Zölle gibt es keine Lobby",
-   "link": "https://www.handelsblatt.com/meinung/gastbeitraege/gastkommentar-neue-us-handelspolitik-gegen-europas-zoelle-gibt-es-keine-lobby/100267018.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T02:59:38.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Die Zollpolitik der USA wird sich künftig leicht ändern. Europa steht aber auch bei Demokraten nicht im Fokus, meint Adam Posen, Chef des Peterson Institute for International Economics.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-eine-bundespraesidentin-war-mehr-als-ueberfaellig/100267838.html",
-   "titel": "Kommentar: Eine Bundespräsidentin war mehr als überfällig",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-eine-bundespraesidentin-war-mehr-als-ueberfaellig/100267838.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T02:57:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach zwölf männlichen Bundespräsidenten soll mit Ilse Aigner erstmals eine Frau in Bellevue einziehen – endlich! Einen Orden verdient der Kanzler dafür aber nicht.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-wie-trump-ungewollt-die-energiewende-antreibt/100267022.html",
-   "titel": "Kommentar: Wie Trump ungewollt die Energiewende antreibt",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-wie-trump-ungewollt-die-energiewende-antreibt/100267022.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T02:56:34.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Wahlniederlage des US-Präsidenten und der Irankrieg verändern den Ton vor der Weltklimakonferenz. Warum selbst Petrostaaten die grüne Wende nicht mehr zurückdrehen können.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/regulierung-klaus-mueller-soll-bundesnetzagentur-auch-kuenftig-fuehren/100267984.html",
-   "titel": "Regulierung: Klaus Müller soll Bundesnetzagentur auch künftig führen",
-   "link": "https://www.handelsblatt.com/politik/deutschland/regulierung-klaus-mueller-soll-bundesnetzagentur-auch-kuenftig-fuehren/100267984.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T02:54:48.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Beirat der Regulierungsbehörde will Müller am 23. November wählen. Die Zustimmung der Bundesregierung gilt als sicher. Eine zweite Amtszeit für den Grünen war zuvor umstritten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-bezeichnet-abschiebepolitik-ueberraschend-als-zu-hart/29669594.html",
-   "titel": "+++ US-Midterms +++: Trump bezeichnet Abschiebepolitik überraschend als „zu hart“",
-   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-trump-bezeichnet-abschiebepolitik-ueberraschend-als-zu-hart/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T02:51:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Trump will Ermittlungen gegen Demokraten – „bedrohen viele Menschen“ +++ US-Justizministerium will Klage zu Kaliforniens Wahl zurückziehen +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/trump-sprecher-white-ufc-kampfsport-spekulationen-100.html",
-   "titel": "Trump will Kampfsportunternehmer White als Pressesprecher",
-   "link": "https://www.tagesschau.de/ausland/amerika/trump-sprecher-white-ufc-kampfsport-spekulationen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-09T02:49:02.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "\"Ein gewalttätiger Kämpfer und Krieger\": Mit einem unkonventionellen Vorschlag löst US-Präsident Trump Rätselraten aus: Der Chef der Kampfsportliga UFC soll Pressesprecher werden. Alles nur ein Scherz, rudert Trump später zurück.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
-  "DW": 5,
-  "Spiegel Wirtschaft": 5,
-  "FAZ Wirtschaft": 3,
-  "Handelsblatt": 7,
+  "tagesschau": 12,
+  "DW": 6,
+  "Spiegel Wirtschaft": 4,
+  "FAZ Wirtschaft": 4,
+  "Handelsblatt": 6,
   "BBC World": 5,
-  "NYT World": 16,
+  "NYT World": 15,
   "EIA Today in Energy": 0
  }
 }
