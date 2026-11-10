@@ -1,7 +1,53 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T11:23:34.904Z",
+ "lastUpdated": "2026-11-10T12:23:27.499Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-lawrow-fordert-folgeregelung-vor-einem-waffenstillstand/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Lawrow fordert Folgeregelung vor einem Waffenstillstand in der Ukraine",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-lawrow-fordert-folgeregelung-vor-einem-waffenstillstand/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T11:51:08.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ukraine und Russland verhandeln in Abu Dhabi über Kriegsende +++ Zwei Ukrainer in Polen festgenommen +++ Treffen in Abu Dhabi unter Vermittlung der USA hat begonnen +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/neue-partei-nicht-extremistische-mitglieder-der-afd-sind-sehr-willkommen/100268720.html",
+   "titel": "Interview: „Nicht-extremistische Mitglieder und Wähler der AfD sind sehr willkommen“",
+   "link": "https://www.handelsblatt.com/politik/deutschland/neue-partei-nicht-extremistische-mitglieder-der-afd-sind-sehr-willkommen/100268720.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T11:30:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Thomas Sattelberger war Telekom-Vorstand und lange in der FDP. Jetzt will er mit einem Verein die Politik herausfordern. Die „Economisten“ wollen 2029 in den Bundestag.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqpvgv318yyeo",
+   "titel": "Israeli forces kill Palestinian boy in West Bank, health ministry says",
+   "link": "https://www.bbc.co.uk/news/articles/cqpvgv318yyeo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-10T11:23:18.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Israeli military says its soldiers opened fire at individuals “who intended to hurl stones” at a road used by Israelis.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/soziales/bundeshaushalt-2027-union-gegenfinanzierung-fuer-die-stromsteuersenkung-gefunden-haben-a-84521b50-da4c-471c-b043-a833f3d85180",
+   "titel": "Bundeshaushalt 2027: Union will Gegenfinanzierung für Stromsteuersenkung gefunden haben",
+   "link": "https://www.spiegel.de/wirtschaft/soziales/bundeshaushalt-2027-union-gegenfinanzierung-fuer-die-stromsteuersenkung-gefunden-haben-a-84521b50-da4c-471c-b043-a833f3d85180#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-10T11:20:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "Noch ringt die schwarz-rote Koalition, im Haushalt weitere Entlastungen für die Bürger durchzusetzen. Der Kanzler will die Stromsteuer senken. Könnte das Geld ausgerechnet aus den Einnahmen für erneuerbare Energien stammen?",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-und-russland-verhandeln-in-abu-dhabi-ueber-kriegsende/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Erstmals seit acht Monaten: Ukraine und Russland verhandeln über ein Kriegsende",
@@ -999,58 +1045,14 @@
    "maerkte": [],
    "text": "The Saudi authorities said no one was hurt after “falling shrapnel” hit the building in Riyadh’s financial district — one of the highest-profile areas targeted by the Houthis.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/israel-diese-optionen-hat-eisenkot-nun-fuer-die-regierungsbildung/100268201.html",
-   "titel": "Israel: Diese Optionen hat Eisenkot nun für die Regierungsbildung",
-   "link": "https://www.handelsblatt.com/politik/international/israel-diese-optionen-hat-eisenkot-nun-fuer-die-regierungsbildung/100268201.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-08T16:20:23.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Israels Staatspräsident Herzog hat Oppositionspolitiker Gadi Eisenkot mit der Regierungsbildung beauftragt. Dieser hat nun drei Möglichkeiten, die jeweils unterschiedliche Risiken enthalten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-golfstaaten-treiben-gemeinsames-schienennetz-voran/100136895.html",
-   "titel": "+++ Iran-Krieg +++: Golfstaaten treiben gemeinsames Schienennetz voran",
-   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-golfstaaten-treiben-gemeinsames-schienennetz-voran/100136895.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-08T16:18:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "USA bieten Millionen für Informationen zu Irans Atomprogramm +++ Katz: Israels Mission gegen Iran ist noch nicht beendet +++ Iran hebt Reichweitenbeschränkung für Raketen auf +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/israel-auftrag-regierungsbildung-eisenkot-100.html",
-   "titel": "Israel: Oppositionsführer Eisenkot soll neue Regierung bilden",
-   "link": "https://www.tagesschau.de/ausland/asien/israel-auftrag-regierungsbildung-eisenkot-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-08T16:07:41.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nun ist es offiziell: Israels Präsident Herzog hat den Oppositionspolitiker Eisenkot mit der Regierungsbildung beauftragt. Der Ex-Militärchef appellierte an die anderen Parteien, \"unkonventionelle politische Schritte\" zu akzeptieren.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/israel-netanjahu-rivale-eisenkot-mit-regierungsbildung-beauftragt/100268142.html",
-   "titel": "Nahost: Netanjahu-Rivale Eisenkot in Israel mit Regierungsbildung beauftragt",
-   "link": "https://www.handelsblatt.com/politik/international/israel-netanjahu-rivale-eisenkot-mit-regierungsbildung-beauftragt/100268142.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-08T15:12:19.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die jüngsten Wahlen in Israel hatten ein Patt zwischen Amtsinhaber Netanjahu und Herausforderer Eisenkot ergeben. Der Oppositionspolitiker hat aber mehr Unterstützer in den Fraktionen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 9,
   "DW": 6,
-  "Spiegel Wirtschaft": 4,
+  "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 4,
+  "Handelsblatt": 5,
   "BBC World": 6,
   "NYT World": 16,
   "EIA Today in Energy": 0
