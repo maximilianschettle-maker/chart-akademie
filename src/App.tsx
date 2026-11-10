@@ -92,6 +92,7 @@ export default function App() {
                 <Route path="simulator" element={<SimulatorPage />} />
                 <Route path="journal" element={<JournalPage />} />
                 <Route path="journal/neu" element={<JournalNeuPage />} />
+                <Route path="journal/import" element={<JournalScreenshotPage />} />
                 <Route path="journal/screenshot" element={<JournalScreenshotPage />} />
                 <Route path="topdown" element={<TopDownPage />} />
                 <Route path="journal/:id" element={<JournalEintragPage />} />

@@ -7,7 +7,8 @@ import { workerKonfiguriert } from '../../aktien/data/client'
 import { EINGABE, KNOPF, KNOPF_AKZENT } from '../../aktien/components/ui'
 import { fmtKurs } from '../../aktien/engine/format'
 import { bildVorbereiten, positionenErkennen, type BildDaten } from '../screenshot'
-import { csvZeilen, positionenAusFuellungen } from '../csv'
+import { csvZeilen, positionenAusFuellungen, type CsvZeile } from '../csv'
+import { zipLesen } from '../zip'
 import { AKTION_TEXT, vorschlaege, type ImportVorschlag } from '../import'
 import { neuerEintrag, setupListe, zeitKurz, type EintragEntwurf } from '../engine'
 import { snapshotLaden } from '../snapshots'
@@ -57,8 +58,11 @@ export function JournalScreenshotPage() {
     }
   }
 
-  /** CSV-Export der Handelshistorie (BingX „Trade History“ u. ä.): Füllungen → Positionen, ohne KI */
-  async function csvGewaehlt(datei: File) {
+  /**
+   * Export der Handelshistorie: CSV (BingX „Trade History“) oder die ZIP der BingX „Order History“
+   * (mehrere CSVs: Spot, Futures …). Füllungen → Positionen, ohne KI.
+   */
+  async function dateiGewaehltCsv(datei: File) {
     setFehler(null)
     setErgebnis(null)
     setZeilen([])
@@ -67,11 +71,34 @@ export function JournalScreenshotPage() {
     setBild(null)
     try {
       if (/\.xlsx?$/i.test(datei.name) || datei.type.includes('spreadsheetml') || datei.type.includes('ms-excel')) {
-        throw new Error('Das ist eine Excel-Datei. Bitte in BingX als CSV exportieren oder die Datei in Excel/Numbers über „Speichern unter“ als CSV sichern – oder einfach einen Screenshot der Tabelle nehmen.')
+        throw new Error('Das ist eine Excel-Datei. Bitte als CSV exportieren (oder in Excel über „Speichern unter“ als CSV sichern) – oder einen Screenshot der Tabelle nehmen.')
       }
-      const text = await datei.text()
-      const zeilenCsv = csvZeilen(text)
-      if (zeilenCsv.length === 0) throw new Error(`Keine passenden Spalten gefunden (erwartet mindestens Zeit, Symbol und Preis). Erste Zeile der Datei: „${text.split(/\r?\n/)[0].slice(0, 120)}“`)
+      let zeilenCsv: CsvZeile[] = []
+      let ersteZeile = ''
+      let dateien = 0
+      if (/\.zip$/i.test(datei.name) || datei.type.includes('zip')) {
+        const eintraege = await zipLesen(await datei.arrayBuffer())
+        for (const e of eintraege) {
+          if (!/\.(csv|txt|tsv)$/i.test(e.name)) continue
+          dateien += 1
+          const z = csvZeilen(e.text)
+          if (z.length) zeilenCsv.push(...z)
+          else if (!ersteZeile) ersteZeile = `${e.name}: ${e.text.split(/\r?\n/)[0].slice(0, 100)}`
+        }
+        if (dateien === 0) throw new Error('In der ZIP steckt keine CSV-Datei.')
+      } else {
+        const text = await datei.text()
+        zeilenCsv = csvZeilen(text)
+        ersteZeile = text.split(/\r?\n/)[0].slice(0, 120)
+        dateien = 1
+      }
+      if (zeilenCsv.length === 0) {
+        throw new Error(
+          dateien > 1
+            ? `Die ZIP enthält ${dateien} Dateien, aber keine Handelszeilen – nur Kopfzeilen. BingX exportiert das echte Konto; Demo-Trades stehen nicht darin (dafür den Screenshot nehmen).`
+            : `Keine passenden Spalten gefunden (erwartet mindestens Zeit, Symbol und Preis). Erste Zeile: „${ersteZeile}“`,
+        )
+      }
       const positionen = positionenAusFuellungen(zeilenCsv)
       const r: ScreenshotErgebnis = { positionen, hinweis: positionen.length ? null : 'Keine Open/Close-Zeilen erkannt.', modell: 'csv' }
       setErgebnis(r)
@@ -142,20 +169,28 @@ export function JournalScreenshotPage() {
       <Link to="/training/journal" className="inline-flex items-center gap-1 text-xs font-semibold text-gedimmt hover:text-white">
         <ArrowLeft className="h-3.5 w-3.5" /> Journal
       </Link>
-      <h1 className="mt-2 text-2xl font-bold text-white">Trades aus Screenshot</h1>
-      <p className="mt-1 text-sm text-gedimmt">
-        Screenshot aus eToro oder BingX (Positionsinfo, Portfolio, Historie) – der Worker liest Markt, Richtung, Einstieg, Stop, Ziel, Hebel, Datum und Ergebnis aus. Oder die exportierte CSV-Datei der Handelshistorie (BingX: Wolken-Symbol über der Tabelle), die wird ohne KI direkt gelesen. Du prüfst, wählst Setup und Zeitrahmen und übernimmst.
-      </p>
+      <h1 className="mt-2 text-2xl font-bold text-white">Trades importieren</h1>
+      <p className="mt-1 text-sm text-gedimmt">Zwei Wege, danach dieselbe Prüfliste: Setup und Zeitrahmen wählen, übernehmen.</p>
+      <div className="mt-3 grid gap-2 sm:grid-cols-2">
+        <div className="rounded-xl border border-rand bg-flaeche p-3 text-xs text-gedimmt">
+          <div className="text-sm font-semibold text-white">Screenshot</div>
+          eToro oder BingX: Positionsinfo, Portfolio oder Historie. Der Worker liest Markt, Richtung, Einstieg, Stop, Ziel, Hebel, Datum und Ergebnis. Einziger Weg für Demo-Konten.
+        </div>
+        <div className="rounded-xl border border-rand bg-flaeche p-3 text-xs text-gedimmt">
+          <div className="text-sm font-semibold text-white">Datei (CSV oder ZIP)</div>
+          Export der Handelshistorie, z.B. BingX „Trade History“ (CSV) oder „Order History“ (ZIP mit mehreren CSVs). Wird ohne KI direkt gelesen, braucht keinen Worker.
+        </div>
+      </div>
 
       {!mitWorker && (
         <p className="mt-4 inline-flex items-start gap-2 rounded-xl border border-akzent/40 bg-akzent/10 px-3 py-2 text-sm text-akzent">
-          <TriangleAlert className="mt-0.5 h-4 w-4 shrink-0" /> Kein Worker eingetragen (Aktien → Einstellungen). Ohne ihn gibt es keine Erkennung.
+          <TriangleAlert className="mt-0.5 h-4 w-4 shrink-0" /> Kein Worker eingetragen (Aktien → Einstellungen) – der Screenshot-Weg ist damit aus, die Datei geht trotzdem.
         </p>
       )}
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
         <button type="button" onClick={() => dateiRef.current?.click()} className={KNOPF_AKZENT} disabled={!mitWorker || laeuft}>
-          <Camera className="h-3.5 w-3.5" /> Screenshot wählen
+          <Camera className="h-3.5 w-3.5" /> Screenshot
         </button>
         {bild && !laeuft && (
           <button type="button" onClick={() => void erkennen(bild)} className={KNOPF}>
@@ -173,17 +208,17 @@ export function JournalScreenshotPage() {
             ev.target.value = ''
           }}
         />
-        <button type="button" onClick={() => csvRef.current?.click()} className={KNOPF} disabled={laeuft} title="CSV-Export der Handelshistorie (z.B. BingX Trade History) – ohne KI, direkt gelesen">
-          <FileSpreadsheet className="h-3.5 w-3.5" /> CSV-Datei
+        <button type="button" onClick={() => csvRef.current?.click()} className={KNOPF_AKZENT} disabled={laeuft} title="CSV oder ZIP der Handelshistorie – ohne KI, direkt gelesen">
+          <FileSpreadsheet className="h-3.5 w-3.5" /> Datei (CSV / ZIP)
         </button>
         <input
           ref={csvRef}
           type="file"
-          accept=".csv,.txt,.tsv,text/csv,text/plain,.xlsx,.xls"
+          accept=".csv,.txt,.tsv,.zip,text/csv,text/plain,application/zip,application/x-zip-compressed,.xlsx,.xls"
           className="hidden"
           onChange={(ev) => {
             const f = ev.target.files?.[0]
-            if (f) void csvGewaehlt(f)
+            if (f) void dateiGewaehltCsv(f)
             ev.target.value = ''
           }}
         />

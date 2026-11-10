@@ -27,7 +27,13 @@ export function JournalNeuPage() {
         <ArrowLeft className="h-3.5 w-3.5" /> Journal
       </Link>
       <h1 className="mt-2 text-2xl font-bold text-white">Neuer Trade</h1>
-      <p className="mt-1 text-sm text-gedimmt">Erst das Nötige, der Rest lässt sich später ergänzen. Alles in R, der Dollar-Betrag kommt beim Abschließen vom Broker.</p>
+      <p className="mt-1 text-sm text-gedimmt">
+        Erst das Nötige, der Rest lässt sich später ergänzen. Alles in R, der Dollar-Betrag kommt beim Abschließen vom Broker. Trades vom Broker gehen schneller über{' '}
+        <Link to="/training/journal/import" className="text-akzent underline">
+          Trades importieren
+        </Link>
+        .
+      </p>
       <div className="mt-5 rounded-xl border border-rand bg-flaeche p-4">
         <EintragForm start={start} onSpeichern={speichern} onAbbrechen={() => navigate('/training/journal')} />
       </div>

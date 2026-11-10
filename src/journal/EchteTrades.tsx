@@ -107,8 +107,8 @@ export function EchteTrades() {
         <Link to="/training/journal/neu" className={KNOPF_AKZENT}>
           <Plus className="h-3.5 w-3.5" /> Neuer Trade
         </Link>
-        <Link to="/training/journal/screenshot" className={KNOPF} title="Positionen aus einem eToro-Screenshot übernehmen">
-          <Camera className="h-3.5 w-3.5" /> Aus Screenshot
+        <Link to="/training/journal/import" className={KNOPF} title="Positionen aus Screenshot (eToro, BingX) oder Datei (CSV, ZIP) übernehmen">
+          <Camera className="h-3.5 w-3.5" /> Trades importieren
         </Link>
         <button type="button" onClick={csv} className={KNOPF} disabled={eintraege.length === 0}>
           <Download className="h-3.5 w-3.5" /> CSV
@@ -125,7 +125,7 @@ export function EchteTrades() {
 
       {eintraege.length === 0 && (
         <p className="text-sm text-gedimmt">
-          Noch kein echter Trade. Lege den ersten mit „Neuer Trade“ an, übernimm ihn aus einem eToro-Screenshot oder aus dem Trader-Chart (CRV-Rechner → „Ins Journal“).
+          Noch kein echter Trade. Lege den ersten mit „Neuer Trade“ an, importiere ihn per Screenshot oder Datei, oder übernimm ihn aus dem Trader-Chart (CRV-Rechner → „Ins Journal“).
         </p>
       )}
 

@@ -59,7 +59,7 @@ export function parseCsv(text: string): string[][] {
 }
 
 const SPALTEN: Record<keyof Omit<CsvZeile, 'aktion' | 'richtung' | 'demo'> | 'seite', RegExp> = {
-  zeit: /filled time|^time$|date|zeit|datum/i,
+  zeit: /time|date|zeit|datum/i,
   symbol: /futures|symbol|pair|instrument|contract|markt/i,
   seite: /side|direction|richtung|type/i,
   menge: /^filled$|filled qty|quantity|qty|amount|size|menge/i,
@@ -128,7 +128,8 @@ export function csvZeilen(text: string): CsvZeile[] {
       pnl: i.pnl >= 0 ? zahl(z[i.pnl]) : null,
       gebuehr: i.gebuehr >= 0 ? zahl(z[i.gebuehr]) : null,
       order: i.order >= 0 ? (z[i.order] ?? '').replace(/\D/g, '') || null : null,
-      hebel: hebelText ? Number(hebelText[1]) : null,
+      // eigene Leverage-Spalte (BingX-Export: „13“) vor dem Chip „13X“ in Seite/Symbol
+      hebel: (i.hebel >= 0 && zahl(z[i.hebel])) || (hebelText ? Number(hebelText[1]) : null),
       demo: /demo|virtual|paper/i.test(`${symbolRoh} ${z.join(' ')}`),
     }
   })
