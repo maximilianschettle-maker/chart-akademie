@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T09:23:35.506Z",
+ "lastUpdated": "2026-11-10T09:59:18.853Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/us-republikaner-will-amtsenthebung-von-pentagon-chef-hegseth/a-79906935",
+   "titel": "US-Republikaner will Amtsenthebung von Pentagon-Chef Hegseth",
+   "link": "https://www.dw.com/de/us-republikaner-will-amtsenthebung-von-pentagon-chef-hegseth/a-79906935?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-10T09:46:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der Abgeordnete Massie, dem US-Präsident Trump die Wiederwahl verdorben hatte, appelliert an den Kongress, Verteidigungsminister Pete Hegseth vor die Tür zu setzen. Doch die Erfolgsaussichten sind minimal.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o",
+   "titel": "Trump says more US attacks on Iran 'highly unlikely'",
+   "link": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-10T09:40:31.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The president says the US is keeping \"status quo\" with Iran but remains “locked and loaded” should the situation change.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/asien/ukraine-verhandlungen-abu-dhabi-104.html",
    "titel": "Was von den Ukraine-Gesprächen in Abu Dhabi zu erwarten ist",
@@ -130,17 +152,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Fiercely proud of its reputation for safety, Poland has been profoundly shaken by Saturday's attack, writes Sarah Rainsford.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o",
-   "titel": "Trump says more US attacks on Iran 'highly unlikely'",
-   "link": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-10T05:33:25.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The president says the US is keeping \"status quo\" with Iran but remains “locked and loaded” should the situation change.",
    "sprache": "en"
   },
   {
@@ -1029,25 +1040,14 @@
    "maerkte": [],
    "text": "Unbekannte Täter greifen auf Daten der Baugesellschaft zu. Auch ein Tunnelprojekt zwischen Deutschland und Dänemark war von einer IT-Attacke betroffen – und Kühlanlagen in Supermärkten.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/russland-nordkorea-104.html",
-   "titel": "Leiharbeiter: Nordkoreas Geldquelle in Russland",
-   "link": "https://www.tagesschau.de/ausland/europa/russland-nordkorea-104.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-08T10:32:46.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nordkorea stellt nicht nur Soldaten für den Krieg gegen die Ukraine. In Russland sind auch Zehntausende Leiharbeiter tätig. Sie hoffen auf einen besseren Verdienst als in ihrer Heimat. Erfüllt sich dieser Wunsch? Von Norbert Hahn.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
-  "DW": 5,
+  "tagesschau": 9,
+  "DW": 6,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 4,
-  "Handelsblatt": 3,
+  "FAZ Wirtschaft": 3,
+  "Handelsblatt": 1,
   "BBC World": 6,
   "NYT World": 15,
   "EIA Today in Energy": 0
