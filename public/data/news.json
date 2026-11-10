@@ -1,7 +1,21 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T06:23:27.917Z",
+ "lastUpdated": "2026-11-10T07:23:27.027Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
+   "titel": "Marktbericht: DAX nähert sich wieder dem Rekordhoch",
+   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-10T06:26:27.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "aktien"
+   ],
+   "text": "Nach dem Kursrutsch folgt die Erholungsrally: Der DAX dürfte auch heute deutlich zulegen, der Sprung bis zum Allzeithoch ist nicht mehr weit. Vor allem die gesunkenen Ölpreise stützen den Markt.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/usa-amtsenthebungsverfahren-hegseth-100.html",
    "titel": "Republikaner Massie will Hegseth des Amtes entheben",
@@ -1025,17 +1039,6 @@
    "maerkte": [],
    "text": "The African National Congress lost big in local elections, turning a once-dominant force credited with overturning apartheid into “any other political party.”",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo",
-   "titel": "Houthis say at least 33 killed in Saudi air strike",
-   "link": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-08T04:03:12.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1043,7 +1046,7 @@
   "DW": 6,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 5,
+  "Handelsblatt": 3,
   "BBC World": 7,
   "NYT World": 15,
   "EIA Today in Energy": 0
