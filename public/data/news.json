@@ -1,7 +1,80 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T08:23:36.073Z",
+ "lastUpdated": "2026-11-10T09:23:35.506Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/ukraine-verhandlungen-abu-dhabi-104.html",
+   "titel": "Was von den Ukraine-Gesprächen in Abu Dhabi zu erwarten ist",
+   "link": "https://www.tagesschau.de/ausland/asien/ukraine-verhandlungen-abu-dhabi-104.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-10T09:18:35.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Unterhändler Russlands und der Ukraine haben ihre Gespräche unter US-Vermittlung in Abu Dhabi aufgenommen. Was wollen die Kriegsparteien? Welche Interessen haben die USA? Und welche Rolle haben die Europäer?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o",
+   "titel": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
+   "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-10T09:07:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Kyiv, Washington and Moscow have all sent delegations to the United Arab Emirates for the first trilateral talks since February.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
+   "titel": "Marktbericht: Kursverluste nach KI-Crash fast aufgeholt",
+   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-10T09:06:52.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "halbleiter",
+    "aktien"
+   ],
+   "text": "Die Kauflaune der Anleger hält an: Die Erholungsrally treibt den DAX wieder zurück in die Nähe seines Rekords. Die sinkenden Ölpreise locken die Investoren in den Markt, auch die Zahlen von Infineon gefallen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/service/immobilien-mieten-ziehen-deutlich-an-lage-spitzt-sich-laut-banken-zu-a-e867587b-e01c-4898-94e4-81961204d4d4",
+   "titel": "Immobilien: Mieten ziehen deutlich an, Lage spitzt sich laut Banken zu",
+   "link": "https://www.spiegel.de/wirtschaft/service/immobilien-mieten-ziehen-deutlich-an-lage-spitzt-sich-laut-banken-zu-a-e867587b-e01c-4898-94e4-81961204d4d4#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-10T09:02:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Wer einen neuen Mietvertrag für eine Wohnung abschließt, muss dafür laut einer Auswertung des Verbands Deutscher Pfandbriefbanken immer mehr bezahlen. Immobilienkäufer wiederum haben mit immer höheren Zinsen zu kämpfen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-und-russland-verhandeln-in-abu-dhabi-ueber-kriegsende/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Erstmals seit acht Monaten: Ukraine und Russland verhandeln über ein Kriegsende",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-und-russland-verhandeln-in-abu-dhabi-ueber-kriegsende/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T08:44:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Treffen in Abu Dhabi unter Vermittlung der USA +++ Vertreter der EU sind offenbar anwesend +++ Großbritannien wünscht sich Militärkontakte zu Russland +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-kopsi-topix-asiatische-boersen-auf-erholungskurs-ki-werte-treiben-nikkei-an/100268587.html",
+   "titel": "Nikkei, Kopsi, Topix: Asiatische Börsen auf Erholungskurs – KI-Werte treiben Nikkei an",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-kopsi-topix-asiatische-boersen-auf-erholungskurs-ki-werte-treiben-nikkei-an/100268587.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T08:31:21.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter",
+    "aktien"
+   ],
+   "text": "Die Hoffnung auf eine Entspannung im Iran-Krieg sorgte an den asiatischen Märkten für Zuversicht. Trotz der Nvidia-Kontroverse erzielten Technologie-Werte Gewinne.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/dreiergespraeche-usa-russland-ukraine-100.html",
    "titel": "Verhandlungen in Abu Dhabi über Ende des Ukraine-Krieges haben begonnen",
@@ -25,17 +98,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o",
-   "titel": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
-   "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-10T07:58:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Kyiv, Washington and Moscow are all sending delegation to the United Arab Emirates for the first trilateral talks since February.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.spiegel.de/wirtschaft/service/gas-betreiber-von-speichern-warnen-vor-engpaessen-bei-extremer-kaelte-a-036cd1fc-eb5e-4092-8112-14360e310bb1",
    "titel": "Gas: Betreiber von Speichern warnen vor Engpässen bei extremer Kälte",
    "link": "https://www.spiegel.de/wirtschaft/service/gas-betreiber-von-speichern-warnen-vor-engpaessen-bei-extremer-kaelte-a-036cd1fc-eb5e-4092-8112-14360e310bb1#ref=rss",
@@ -46,20 +108,6 @@
     "gas"
    ],
    "text": "Die Gasspeicher in Deutschland hatten laut Betreibern zuletzt einen »historisch niedrigen Füllstand«. Sollte der Winter hart werden, müssen Menschen womöglich frieren.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
-   "titel": "Marktbericht: DAX nähert sich wieder dem Rekordhoch",
-   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-10T06:26:27.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "Nach dem Kursrutsch folgt die Erholungsrally: Der DAX dürfte auch heute deutlich zulegen, der Sprung bis zum Allzeithoch ist nicht mehr weit. Vor allem die gesunkenen Ölpreise stützen den Markt.",
    "sprache": "de"
   },
   {
@@ -75,7 +123,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqkg5gm4nr4no",
-   "titel": "Polish unity on show in silent march to honour Krakow shooting victims",
+   "titel": "Polish unity on show as thousands join silent march for Krakow shooting victims",
    "link": "https://www.bbc.co.uk/news/articles/cqkg5gm4nr4no?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-10T05:38:53.000Z",
@@ -104,20 +152,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Der Maschinenbau soll die krisengeplagte deutsche Industrie stützen. Aber vor dem Gipfeltreffen der Branche sieht VDMA-Präsident Bertram Kawlath den Standort nahe dem Kipppunkt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-kopsi-topix-asiatische-boersen-auf-erholungskurs-ki-werte-treiben-nikkei-an/100268587.html",
-   "titel": "Nikkei, Kopsi, Topix: Asiatische Börsen auf Erholungskurs – KI-Werte treiben Nikkei an",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-kopsi-topix-asiatische-boersen-auf-erholungskurs-ki-werte-treiben-nikkei-an/100268587.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-10T04:21:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Die Hoffnung auf eine Entspannung im Iran-Krieg sorgt für Zuversicht. Im Fokus der Anleger stehen die US-Inflationsdaten, die Aufschluss über den künftigen Zinskurs geben könnten.",
    "sprache": "de"
   },
   {
@@ -1006,48 +1040,15 @@
    "maerkte": [],
    "text": "Nordkorea stellt nicht nur Soldaten für den Krieg gegen die Ukraine. In Russland sind auch Zehntausende Leiharbeiter tätig. Sie hoffen auf einen besseren Verdienst als in ihrer Heimat. Erfüllt sich dieser Wunsch? Von Norbert Hahn.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/07/world/middleeast/israel-eisenkot-government.html",
-   "titel": "Eisenkot, Netanyahu Rival and Opposition Leader, Tapped to Try to Form Government",
-   "link": "https://www.nytimes.com/2026/11/07/world/middleeast/israel-eisenkot-government.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-08T09:41:56.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Gadi Eisenkot, a former military chief, hopes to succeed Benjamin Netanyahu as prime minister by cobbling together a coalition after an inconclusive election.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-mehr-als-600.000-ukrainer-nach-russischem-angriff-ohne-strom/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Mehr als 600.000 Menschen in Ukraine nach russischem Angriff ohne Strom",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-mehr-als-600.000-ukrainer-nach-russischem-angriff-ohne-strom/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-08T08:43:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ein Toter bei ukrainischem Angriff auf Russland +++ Selenskyj nennt Trumps Friedensplan gefährlich +++ Zahl der Toten in ukrainischem Hilfszentrum steigt auf 55 +++Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/grosses-parlament-neuseeland-steht-nach-wahl-vor-wochenlangem-machtspiel/100268182.html",
-   "titel": "Großes Parlament: Neuseeland steht nach Wahl vor wochenlangem Machtspiel",
-   "link": "https://www.handelsblatt.com/politik/international/grosses-parlament-neuseeland-steht-nach-wahl-vor-wochenlangem-machtspiel/100268182.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-08T07:59:02.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nur ein Sitz trennt das Lager von Ministerpräsident Luxon von der Mehrheit. Doch kleinere Parteien und noch nicht ausgezählte Stimmen könnten die Regierungsbildung auf den Kopf stellen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 10,
   "DW": 5,
-  "Spiegel Wirtschaft": 2,
-  "FAZ Wirtschaft": 5,
-  "Handelsblatt": 2,
-  "BBC World": 7,
+  "Spiegel Wirtschaft": 3,
+  "FAZ Wirtschaft": 4,
+  "Handelsblatt": 3,
+  "BBC World": 6,
   "NYT World": 15,
   "EIA Today in Energy": 0
  }
