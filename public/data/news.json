@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T17:23:35.320Z",
+ "lastUpdated": "2026-11-10T17:56:47.770Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o",
+   "titel": "First day of Ukraine peace talks constructive, Zelensky says",
+   "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-10T17:29:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Delegations from Kyiv, Washington and Moscow are in the United Arab Emirates for the first trilateral talks since February.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/technik/ki/nvidia-affaere-wie-chinas-tech-firmen-das-us-embargo-umgehen/100268658.html",
+   "titel": "Künstliche Intelligenz: Die Nvidia-Affäre: So umgehen Chinas Tech-Firmen das US-Embargo",
+   "link": "https://www.handelsblatt.com/technik/ki/nvidia-affaere-wie-chinas-tech-firmen-das-us-embargo-umgehen/100268658.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T17:26:59.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Mit einem Embargo auf Hightech-Chips wollen die USA den Rivalen China bei KI auf Abstand halten. Geschäftsverbindungen in Asien zeigen, wie die Chinesen längst auf die Technologie zugreifen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq0memrywvzro",
+   "titel": "Inside devastated front-line city that Russia wants Ukraine to give up",
+   "link": "https://www.bbc.co.uk/news/articles/cq0memrywvzro?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-10T17:00:11.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The BBC gains rare access to a specialist drone unit defending the eastern city of Slovyansk from heavy Russian fire.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/wadephul-iran-102.html",
    "titel": "Wadephul warnt Iran vor hybriden Angriffen",
@@ -141,6 +176,17 @@
    "sprache": "en"
   },
   {
+   "id": "https://www.bbc.co.uk/news/articles/cw4g1g4ll5m1o",
+   "titel": "Board of Peace says Israel's aid response after Gaza floods 'insufficent'",
+   "link": "https://www.bbc.co.uk/news/articles/cw4g1g4ll5m1o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-10T15:21:18.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The group, formed by Trump, issues rare criticism of Israel, while also blaming Hamas for the suffering of civilians in Gaza.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-friedensgespraeche-in-abu-dhabi-werden-am-mittwoch-fortgesetzt/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Friedensgespräche in Abu Dhabi werden am Mittwoch fortgesetzt – Wadephul fordert Beteiligung Europas",
    "link": "https://www.handelsblatt.com/politik/international/ukraine-friedensgespraeche-in-abu-dhabi-werden-am-mittwoch-fortgesetzt/27982126.html",
@@ -171,17 +217,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Representative Thomas Massie, Republican of Kentucky, is retiring at the end of his term after losing to a primary challenger backed by President Trump.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o",
-   "titel": "First day of Ukraine peace talks 'very productive', US says",
-   "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-10T14:36:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Delegations from Kyiv, Washington and Moscow are in the United Arab Emirates for the first trilateral talks since February.",
    "sprache": "en"
   },
   {
@@ -1013,39 +1048,6 @@
    "maerkte": [],
    "text": "Die Verbündeten der Ukraine bauen eine Truppe auf, um einen möglichen Waffenstillstand mit Russland abzusichern. Der Todesschütze von Krakau ist gestorben. Der DW-Nachrichtenüberblick",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/usa-trump-raeumt-nach-midterms-zu-harte-abschiebepolitik-ein/100268336.html",
-   "titel": "USA: Trump räumt nach Midterms „zu harte Abschiebepolitik“ ein",
-   "link": "https://www.handelsblatt.com/politik/international/usa-trump-raeumt-nach-midterms-zu-harte-abschiebepolitik-ein/100268336.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T07:28:59.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "In einem TV-Interview macht der US-Präsident den Krieg im Iran und die hohen Energiepreise für die republikanische Wahlniederlage verantwortlich – und gibt überraschend eigene Fehler zu.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-wie-trump-ungewollt-die-energiewende-antreibt-01/100267022.html",
-   "titel": "Kommentar: Wie Trump ungewollt die Energiewende antreibt",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-wie-trump-ungewollt-die-energiewende-antreibt-01/100267022.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T07:09:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Wahlniederlage des US-Präsidenten und der Irankrieg verändern den Ton vor der Weltklimakonferenz. Warum selbst Petrostaaten die grüne Wende nicht mehr zurückdrehen können.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/wer-wenn-nicht-europa-ein-appell-in-zeiten-der-eskalation-201626439.html",
-   "titel": "Geoökonomie: Wer, wenn nicht Europa?",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/wer-wenn-nicht-europa-ein-appell-in-zeiten-der-eskalation-201626439.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-09T07:08:53.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Wir leben in Zeiten der Eskalation. Politiker brüllen, lügen, lassen sich mit Kettensägen fotografieren. Milliardenschwere Gründer ohne politisches Mandat wollen über Krieg und Frieden entscheiden. Extremisten versprechen das Blaue vom Himm",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1053,8 +1055,8 @@
   "DW": 6,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 6,
-  "BBC World": 6,
+  "Handelsblatt": 7,
+  "BBC World": 8,
   "NYT World": 16,
   "EIA Today in Energy": 0
  }
