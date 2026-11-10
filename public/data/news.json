@@ -1,7 +1,54 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T03:23:32.348Z",
+ "lastUpdated": "2026-11-10T04:23:31.507Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-kopsi-topix-asiatische-boersen-auf-erholungskurs-ki-werte-treiben-nikkei-an/100268587.html",
+   "titel": "Nikkei, Kopsi, Topix: Asiatische Börsen auf Erholungskurs – KI-Werte treiben Nikkei an",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-kopsi-topix-asiatische-boersen-auf-erholungskurs-ki-werte-treiben-nikkei-an/100268587.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T04:21:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Die Hoffnung auf eine Entspannung im Iran-Krieg sorgt für Zuversicht. Im Fokus der Anleger stehen die US-Inflationsdaten, die Aufschluss über den künftigen Zinskurs geben könnten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o",
+   "titel": "Trump says more US attacks on Iran 'highly unlikely'",
+   "link": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-10T04:09:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The president says the US is keeping \"status quo\" with Iran but remains “locked and loaded” should the situation in the Middle East change.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
+   "titel": "How Israel’s Opposition Could Unseat Netanyahu (or Not)",
+   "link": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-10T03:55:42.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Gadi Eisenkot, the leading rival of Prime Minister Benjamin Netanyahu, now has a chance to form Israel’s governing coalition. Here are three routes he could try.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
+   "titel": "Ukraine Peace Talks Resume This Week in Abu Dhabi",
+   "link": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-10T03:39:35.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "U.S.-led talks to end the war between Russia and Ukraine will resume this week in Abu Dhabi. A cease-fire won’t be on the table.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro",
    "titel": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
@@ -208,17 +255,6 @@
    "maerkte": [],
    "text": "In Polen trainieren Soldatinnen und Soldaten aus elf Ländern, um die Ukraine nach einem Waffenstillstand unterstützen zu können. Polens Premier Tusk warnt vor einer russischen Bedrohung auch für Europa.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
-   "titel": "Ukraine Peace Talks Resume This Week in Abu Dhabi",
-   "link": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-09T15:08:54.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "U.S.-led talks to end the war between Russia and Ukraine will resume this week in Abu Dhabi. A cease-fire won’t be on the table.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/spionage-innenministerium-warnt-vor-liebesfallen-durch-geheimdienste/100268414.html",
@@ -756,17 +792,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
-   "titel": "How Israel’s Opposition Could Unseat Netanyahu (or Not)",
-   "link": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-08T17:31:14.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Gadi Eisenkot, the leading rival of Prime Minister Benjamin Netanyahu, now has a chance to form Israel’s governing coalition. Here are three routes he could try.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.tagesschau.de/ausland/europa/demonstration-amsterdam-israel-100.html",
    "titel": "Amsterdam: Zehntausende demonstrieren gegen Israels Gaza-Politik",
    "link": "https://www.tagesschau.de/ausland/europa/demonstration-amsterdam-israel-100.html",
@@ -1011,37 +1036,15 @@
    "maerkte": [],
    "text": "Republicans can stick with Trumpism or chart a new path, writes BBC Washington correspondent Daniel Bush.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo",
-   "titel": "Israel's president tasks opposition leader Eisenkot with forming government",
-   "link": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-07T22:19:59.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Neither PM Benjamin Netanyahu's bloc nor that of his rival secured a majority in last week's election.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cxr5yyg2nj9eo",
-   "titel": "'Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest election in years",
-   "link": "https://www.bbc.co.uk/news/articles/cxr5yyg2nj9eo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-07T21:36:16.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The national mood is low, and faith in politics even lower - with voters deserting the major parties at the polls.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 9,
   "DW": 6,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 6,
-  "BBC World": 5,
+  "BBC World": 6,
   "NYT World": 15,
   "EIA Today in Energy": 0
  }
