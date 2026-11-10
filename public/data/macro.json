@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "lastUpdated": "2026-11-09T15:59:37.111Z",
+  "lastUpdated": "2026-11-10T06:00:45.412Z",
   "quellen": {
     "fedZins": "live",
     "fedTermine": "live",
     "fedMeldungen": "live",
-    "ezbZins": "alt",
+    "ezbZins": "live",
     "ezbTermine": "live",
     "ezbMeldungen": "live"
   },
