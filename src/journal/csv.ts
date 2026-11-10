@@ -23,7 +23,9 @@ export interface CsvZeile {
 export function parseCsv(text: string): string[][] {
   const t = text.replace(/^﻿/, '')
   const erste = t.split(/\r?\n/)[0] ?? ''
-  const trenner = (erste.match(/;/g) ?? []).length > (erste.match(/,/g) ?? []).length ? ';' : ','
+  const anzahl = (z: string) => (erste.match(new RegExp(z, 'g')) ?? []).length
+  // Tab (Export aus Tabellen), Semikolon (deutsches Excel) oder Komma – das häufigste Zeichen der Kopfzeile gewinnt
+  const trenner = anzahl('\\t') > Math.max(anzahl(';'), anzahl(',')) ? '\t' : anzahl(';') > anzahl(',') ? ';' : ','
   const zeilen: string[][] = []
   let feld = ''
   let zeile: string[] = []

@@ -18,6 +18,7 @@ describe('CSV-Import: Bausteine', () => {
     const z = parseCsv('a,b,c\n1,"x,y",3\n')
     expect(z).toEqual([['a', 'b', 'c'], ['1', 'x,y', '3']])
     expect(parseCsv('a;b\n1;2')[1]).toEqual(['1', '2'])
+    expect(parseCsv('a\tb\n1\t2,5')[1]).toEqual(['1', '2,5'])
   })
 
   it('Zahlen in US- und DE-Schreibweise, mit Einheit', () => {

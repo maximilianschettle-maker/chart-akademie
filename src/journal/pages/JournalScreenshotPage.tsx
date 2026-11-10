@@ -66,9 +66,12 @@ export function JournalScreenshotPage() {
     setVorschau(null)
     setBild(null)
     try {
+      if (/\.xlsx?$/i.test(datei.name) || datei.type.includes('spreadsheetml') || datei.type.includes('ms-excel')) {
+        throw new Error('Das ist eine Excel-Datei. Bitte in BingX als CSV exportieren oder die Datei in Excel/Numbers über „Speichern unter“ als CSV sichern – oder einfach einen Screenshot der Tabelle nehmen.')
+      }
       const text = await datei.text()
       const zeilenCsv = csvZeilen(text)
-      if (zeilenCsv.length === 0) throw new Error('Keine passenden Spalten gefunden (erwartet mindestens Zeit, Symbol und Preis).')
+      if (zeilenCsv.length === 0) throw new Error(`Keine passenden Spalten gefunden (erwartet mindestens Zeit, Symbol und Preis). Erste Zeile der Datei: „${text.split(/\r?\n/)[0].slice(0, 120)}“`)
       const positionen = positionenAusFuellungen(zeilenCsv)
       const r: ScreenshotErgebnis = { positionen, hinweis: positionen.length ? null : 'Keine Open/Close-Zeilen erkannt.', modell: 'csv' }
       setErgebnis(r)
@@ -176,7 +179,7 @@ export function JournalScreenshotPage() {
         <input
           ref={csvRef}
           type="file"
-          accept=".csv,text/csv"
+          accept=".csv,.txt,.tsv,text/csv,text/plain,.xlsx,.xls"
           className="hidden"
           onChange={(ev) => {
             const f = ev.target.files?.[0]
