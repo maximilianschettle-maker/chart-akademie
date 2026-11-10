@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T21:23:34.098Z",
+ "lastUpdated": "2026-11-10T22:23:29.128Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-us-soldat-in-grossbritannien-wegen-spionageverdachts-fuer-russland-festgenommen/29669594.html",
+   "titel": "+++ US-Midterms +++: US-Soldat in Großbritannien wegen Spionageverdachts für Russland festgenommen",
+   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-us-soldat-in-grossbritannien-wegen-spionageverdachts-fuer-russland-festgenommen/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T21:48:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "US-Justiz klagt Männer wegen Terrorplänen gegen Juden in Europa an +++ Hegseth bezeichnet Amtsenthebungsverfahren als „Sabotage“ +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/10/world/europe/uk-us-army-arrest-espionage-russia.html",
+   "titel": "US Soldier Is Arrested in UK on Suspicion of Spying for Russia",
+   "link": "https://www.nytimes.com/2026/11/10/world/europe/uk-us-army-arrest-espionage-russia.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-10T21:26:19.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The 41-year-old man, who was not named, was in custody pending possible charges after a joint investigation with the F.B.I. and U.S. military intelligence.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o",
    "titel": "First day of Ukraine peace talks constructive, Zelensky says",
@@ -34,17 +56,6 @@
    "maerkte": [],
    "text": "Friedrich Merz hat die Senkung der Stromsteuer für alle nicht nur als wünschenswert, sondern auch als finanzierbar bezeichnet. Wenn der Kanzler so etwas so ankündigt, sollte es auch kommen. Alles andere wäre „trumpig“.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/10/world/europe/uk-us-army-arrest-espionage-russia.html",
-   "titel": "US Soldier Is Arrested in UK on Suspicion of Spying for Russia",
-   "link": "https://www.nytimes.com/2026/11/10/world/europe/uk-us-army-arrest-espionage-russia.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-10T20:33:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The 41-year-old man, who was not named, was in custody pending possible charges after a joint investigation with the F.B.I. and U.S. military intelligence.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-hegseth-bezeichnet-amtsenthebungsverfahren-als-sabotage/29669594.html",
@@ -1032,17 +1043,6 @@
     "aktien"
    ],
    "text": "Nach sieben Monaten war die Münchener KI-Fabrik ausgebucht. Nun verdoppelt die Telekom die Leistung und prüft weitere Investitionen. Unter den Kunden sind auch zwei große Dax-Konzerne.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/gesundheit-so-koennten-krankenkassen-rund-21-milliarden-euro-sparen/100265954.html",
-   "titel": "Gesundheitskosten: Wie Krankenkassen Milliarden sparen könnten – und warum es dabei auch um die freie Arztwahl geht",
-   "link": "https://www.handelsblatt.com/politik/deutschland/gesundheit-so-koennten-krankenkassen-rund-21-milliarden-euro-sparen/100265954.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T11:35:25.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Das arbeitgebernahe IW zeichnet Wege auf, wie sich das Gesundheitswesen entlasten ließe. In dem Papier, das dem Handelsblatt exklusiv vorliegt, schlagen die Ökonomen verschiedene Wahl-Tarife vor.",
    "sprache": "de"
   }
  ],
