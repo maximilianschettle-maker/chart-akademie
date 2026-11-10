@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T01:38:26.033Z",
+ "lastUpdated": "2026-11-10T02:23:39.227Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro",
+   "titel": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
+   "link": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-10T01:38:49.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process next year.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o",
    "titel": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
@@ -22,17 +33,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "A tug-of-war between China and the US could have a big impact on energy costs, but who will win?",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro",
-   "titel": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
-   "link": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-09T23:45:14.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process next year.",
    "sprache": "en"
   },
   {
