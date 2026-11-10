@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T02:23:39.227Z",
+ "lastUpdated": "2026-11-10T14:23:29.782Z",
  "termine": [
   {
    "id": "us:cpi:2026-11-10",
@@ -269,10 +269,10 @@
    "region": "us",
    "indikator": "cpi",
    "titel": "Inflation USA (CPI)",
-   "periode": "2026-09",
-   "wert": 3.7,
+   "periode": "2026-10",
+   "wert": null,
    "einheit": "% J/J",
-   "vorher": 3.4,
+   "vorher": 3.7,
    "quelle": "FRED (CPIAUCSL)",
    "link": "https://fred.stlouisfed.org/series/CPIAUCSL"
   }

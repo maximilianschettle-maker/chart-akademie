@@ -1,18 +1,108 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T13:23:33.627Z",
+ "lastUpdated": "2026-11-10T14:23:29.782Z",
  "eintraege": [
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-lawrow-fordert-folgeregelung-vor-einem-waffenstillstand/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Lawrow fordert Folgeregelung vor einem Waffenstillstand in der Ukraine",
    "link": "https://www.handelsblatt.com/politik/international/ukraine-lawrow-fordert-folgeregelung-vor-einem-waffenstillstand/27982126.html",
    "quelle": "Handelsblatt",
-   "zeit": "2026-11-10T12:58:00.000Z",
+   "zeit": "2026-11-10T14:20:47.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Wadephul: Europa bei weiteren Ukraine-Treffen an den Tisch +++ Rubio: Gespräche über Ukraine sehr produktiv +++ Friedensgespräche werden morgen fortgesetzt +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-gespraeche-abu-dhabi-104.html",
+   "titel": "Ukraine-Verhandlungen: \"Beide Seiten stehen unter einem enormen Zugzwang\"",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-gespraeche-abu-dhabi-104.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-10T14:18:25.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russland und die Ukraine stehen unter großem Zeitdruck, sagt der Militärexperte Markus Reisner. Doch ohne Zugeständnisse werde es keinen Erfolg bei den Verhandlungen geben. Wichtig seien auch mögliche Gespräche über eine neuer Sicherheitsor",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/deutschland-rolle-ukraine-gespraeche-100.html",
+   "titel": "Warum sitzt Deutschland in Abu Dhabi nicht am Verhandlungstisch?",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/deutschland-rolle-ukraine-gespraeche-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-10T14:15:52.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Derzeit treffen sich in Abu Dhabi Vertreter der Ukraine, Russlands und der USA, um Gespräche über ein Ende des Krieges wieder aufzunehmen. Europa scheint im Abseits, obwohl Deutschland der größte Unterstützer der Ukraine ist. Von N. Markwal",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/us-republikaner-will-amtsenthebung-von-pentagon-chef-hegseth/a-79906935",
+   "titel": "US-Republikaner will Amtsenthebung von Pentagon-Chef Hegseth",
+   "link": "https://www.dw.com/de/us-republikaner-will-amtsenthebung-von-pentagon-chef-hegseth/a-79906935?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-10T14:12:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der Abgeordnete Massie, dem US-Präsident Trump die Wiederwahl verdorben hatte, appelliert an den Kongress, Verteidigungsminister Pete Hegseth vor die Tür zu setzen. Doch die Erfolgsaussichten sind minimal.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-krieg-verhandlungen-in-abu-dhabi-ein-abkommen-ist-nicht-in-sicht/100268662.html",
+   "titel": "Ukraine-Krieg: Ukraine und Russland verhandeln wieder – ein „großes, schönes Abkommen“ ist nicht in Sicht",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-krieg-verhandlungen-in-abu-dhabi-ein-abkommen-ist-nicht-in-sicht/100268662.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T13:56:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russland fordert eine neue „europäische Sicherheitsarchitektur“ und beharrt auf Maximalforderungen. Trumps Schwiegersohn Kushner betont die angebliche Entschlossenheit des US-Präsidenten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-hegseth-bezeichnet-amtsenthebungsverfahren-als-sabotage/29669594.html",
+   "titel": "+++ US-Midterms +++: Hegseth bezeichnet Amtsenthebungsverfahren als „Sabotage“",
+   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-hegseth-bezeichnet-amtsenthebungsverfahren-als-sabotage/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T13:39:59.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "US-Republikaner Massie beantragt Amtsenthebung von Hegseth +++ Vierter ranghoher Rücktritt im US-Justizministerium nach Zwischenwahlen +++ Erdgasbedarf von US-Flüssigerdgasanlagen erreicht Rekordwert +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/technik/ki/japan-softbanks-ki-wette-der-konzern-schreibt-rote-zahlen/100267196.html",
+   "titel": "Japan: Softbanks KI-Wette – der Konzern schreibt rote Zahlen",
+   "link": "https://www.handelsblatt.com/technik/ki/japan-softbanks-ki-wette-der-konzern-schreibt-rote-zahlen/100267196.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T13:29:51.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Hohes Risiko, hoher Gewinn, so war es gedacht. Softbank-Gründer Son hat alles auf KI und Roboter gesetzt – nun trifft ihn der Abwärtstrend hart. Ein weiteres Risiko ist der Konzernchef selbst.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/ilse-aigner-die-kandidatin-und-die-afd-frau-kollegin-ich-beende-das-jetzt/100268633.html",
+   "titel": "Ilse Aigner: Die Kandidatin und die AfD: „So, Frau Kollegin, ich beende das jetzt“",
+   "link": "https://www.handelsblatt.com/politik/deutschland/ilse-aigner-die-kandidatin-und-die-afd-frau-kollegin-ich-beende-das-jetzt/100268633.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T13:25:50.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Als mögliche Bundespräsidentin zieht Ilse Aigner eine klare Grenze zur AfD. Eine Koalition lehnt die CSU-Politikerin ab. Als bayerische Landtagspräsidentin wies sie die Partei deutlich in die Schranken.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/verteidigung-polens-groesste-private-ruestungsfirma-expandiert-nach-deutschland/100268433.html",
+   "titel": "Verteidigung: Polens größte private Rüstungsfirma expandiert nach Deutschland",
+   "link": "https://www.handelsblatt.com/politik/international/verteidigung-polens-groesste-private-ruestungsfirma-expandiert-nach-deutschland/100268433.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T13:14:33.000Z",
    "kategorie": "konflikte",
    "maerkte": [
-    "oel"
+    "ruestung"
    ],
-   "text": "Friedensgespräche werden morgen fortgesetzt +++ Insider: Drohnenangriffe legen ein Drittel der Raffineriekapazität Russlands lahm +++ Zwei Ukrainer in Polen festgenommen +++ Der Newsblog.",
+   "text": "Mit einem Büro in Berlin will die WB Group künftig auch um Bundeswehraufträge mitbieten. Der Elektronik- und Drohnenspezialist hat jahrelange Ukraine-Erfahrung.",
    "sprache": "de"
   },
   {
@@ -28,7 +118,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/neue-partei-nicht-extremistische-mitglieder-der-afd-sind-sehr-willkommen/100268720.html",
-   "titel": "Interview: „Nicht-extremistische Mitglieder und Wähler der AfD sind sehr willkommen“",
+   "titel": "Interview: Sattelberger plant neue Partei: „Nicht-extremistische Mitglieder und Wähler der AfD sind sehr willkommen“",
    "link": "https://www.handelsblatt.com/politik/deutschland/neue-partei-nicht-extremistische-mitglieder-der-afd-sind-sehr-willkommen/100268720.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-10T11:30:00.000Z",
@@ -131,17 +221,6 @@
    "maerkte": [],
    "text": "Critics say some of the country’s environmental policies run counter to the image it is offering as host of a United Nations climate summit.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/us-republikaner-will-amtsenthebung-von-pentagon-chef-hegseth/a-79906935",
-   "titel": "US-Republikaner will Amtsenthebung von Pentagon-Chef Hegseth",
-   "link": "https://www.dw.com/de/us-republikaner-will-amtsenthebung-von-pentagon-chef-hegseth/a-79906935?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-10T09:46:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der Abgeordnete Massie, dem US-Präsident Trump die Wiederwahl verdorben hatte, appelliert an den Kongress, Verteidigungsminister Pete Hegseth vor die Tür zu setzen. Doch die Erfolgsaussichten sind minimal.",
-   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o",
@@ -968,93 +1047,14 @@
    "maerkte": [],
    "text": "Strikes show the heavy toll since fighting between the Houthis and the Saudi-backed government reignited in August, with civilians paying a heavy price.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6ly3mjx958eo",
-   "titel": "Aramco Tower hit in heart of Saudi capital as Houthis launch fresh strikes",
-   "link": "https://www.bbc.co.uk/news/articles/c6ly3mjx958eo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-08T21:37:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Footage authenticated by BBC Verify shows damage to the building in the capital's central financial district.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-irak-einigung-mit-usa-ueber-oelexporte-durch-strasse-von-hormus/100136895.html",
-   "titel": "+++ Iran-Krieg +++: Irak – Einigung mit USA über Ölexporte durch Straße von Hormus",
-   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-irak-einigung-mit-usa-ueber-oelexporte-durch-strasse-von-hormus/100136895.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-08T20:13:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Golfstaaten treiben gemeinsames Schienennetz voran +++ USA bieten Millionen für Informationen zu Irans Atomprogramm +++ Katz: Israels Mission gegen Iran ist noch nicht beendet +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/die-csu-politikerin-ilse-aigner-ist-als-erste-bundespr%C3%A4sidentin-nun-favoritin/a-79873744",
-   "titel": "Die CSU-Politikerin Ilse Aigner ist als erste Bundespräsidentin nun Favoritin",
-   "link": "https://www.dw.com/de/die-csu-politikerin-ilse-aigner-ist-als-erste-bundespräsidentin-nun-favoritin/a-79873744?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-08T19:34:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Sie wäre die erste Bundespräsidentin, auch die erste CSU-Politikerin im höchsten deutschen Staatsamt. Ilse Aigner ist nun bis zur Wahl in der Bundesversammlung am 30. Januar die Kandidatin und Favoritin.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/midterms-us-demokraten-nehmen-nach-wahlsieg-musk-und-trump-vertraute-ins-visier/100268255.html",
-   "titel": "Midterms: US-Demokraten nehmen nach Wahlsieg Musk und Trump-Vertraute ins Visier",
-   "link": "https://www.handelsblatt.com/politik/international/midterms-us-demokraten-nehmen-nach-wahlsieg-musk-und-trump-vertraute-ins-visier/100268255.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-08T19:07:26.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Kongressmehrheit will Trumps Einwanderungspolitik und mögliche Verfehlungen von Unternehmen untersuchen. Ein Amtsenthebungsverfahren gegen Verteidigungsminister Hegseth wird unterstützt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cwrkygrxp11mo",
-   "titel": "'Devastating message' as ANC records worst-ever result in South Africa election",
-   "link": "https://www.bbc.co.uk/news/articles/cwrkygrxp11mo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-08T17:51:03.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Cyril Ramaphosa says the verdict must be respected, while the party's secretary-general calls the outcome \"catastrophic\".",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/demonstration-amsterdam-israel-100.html",
-   "titel": "Amsterdam: Zehntausende demonstrieren gegen Israels Gaza-Politik",
-   "link": "https://www.tagesschau.de/ausland/europa/demonstration-amsterdam-israel-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-08T17:02:14.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Amsterdam ist erneut Schauplatz einer Großdemonstration gegen das israelische Vorgehen im Gazastreifen geworden. Der Protest verlief laut Polizei friedlich. Ministerpräsident Jetten war dieses Mal nicht dabei.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/08/world/middleeast/saudi-aramco-tower-riyadh-hit.html",
-   "titel": "Saudi Aramco Tower Damaged as Yemen’s Houthis Attack Riyadh",
-   "link": "https://www.nytimes.com/2026/11/08/world/middleeast/saudi-aramco-tower-riyadh-hit.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-08T16:52:42.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Saudi authorities said no one was hurt after “falling shrapnel” hit the building in Riyadh’s financial district — one of the highest-profile areas targeted by the Houthis.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 10,
   "DW": 5,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 5,
+  "Handelsblatt": 9,
   "BBC World": 6,
   "NYT World": 15,
   "EIA Today in Energy": 0
