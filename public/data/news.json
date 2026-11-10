@@ -1,7 +1,55 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T16:23:39.623Z",
+ "lastUpdated": "2026-11-10T17:23:35.320Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/wadephul-iran-102.html",
+   "titel": "Wadephul warnt Iran vor hybriden Angriffen",
+   "link": "https://www.tagesschau.de/ausland/wadephul-iran-102.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-10T16:51:08.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Frankreich sieht Iran hinter den Cyberangriffen auf Kühlanlagen - doch das Land dementiert. Die deutschen Behörden haben sich noch nicht festgelegt, Außenminister Wadephul warnte Teheran nun aber vor hybriden Attacken.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-trumps-unterhaendler-und-putins-oel-warum-abu-dhabi-scheitern-wird/100268694.html",
+   "titel": "Kommentar: Trumps Unterhändler und Putins Öl – warum Abu Dhabi scheitern wird",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-trumps-unterhaendler-und-putins-oel-warum-abu-dhabi-scheitern-wird/100268694.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T16:47:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Es gäbe einen einfachen Weg, den Krieg in der Ukraine zu beenden. Leider gehen die US-Unterhändler Kushner und Witkoff einen anderen Weg.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/10/world/middleeast/syria-weighs-sending-troops-to-aid-saudi-war-with-houthis.html",
+   "titel": "Syria Weighs Sending Troops to Aid Saudi War With Houthis",
+   "link": "https://www.nytimes.com/2026/11/10/world/middleeast/syria-weighs-sending-troops-to-aid-saudi-war-with-houthis.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-10T16:43:59.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Syrian reconnaissance teams have visited Saudi Arabia and Yemen ahead of a potential deployment, but a final decision has not been made, officials said.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/industrie/nvidia-affaere-mercedes-haelt-an-zusammenarbeit-mit-us-chiphersteller-fest/100268445.html",
+   "titel": "Chiphersteller: Mercedes hält an Zusammenarbeit mit Nvidia fest – hat aber auch keine andere Wahl",
+   "link": "https://www.handelsblatt.com/unternehmen/industrie/nvidia-affaere-mercedes-haelt-an-zusammenarbeit-mit-us-chiphersteller-fest/100268445.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T16:30:06.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Trotz der umstrittenen Affäre des Chefs will Mercedes weiter mit Nvidia zusammenarbeiten. Zwar versuchen die Schwaben, unabhängiger von dem US-Konzern zu werden – doch das ist kaum möglich.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.dw.com/de/sudan-krieg-immer-mehr-menschen-in-not-k%C3%BCrzungen-versch%C3%A4rfen-die-lage/a-79908319",
    "titel": "Sudan-Krieg: Immer mehr Menschen in Not - Kürzungen verschärfen die Lage",
@@ -69,6 +117,17 @@
    "maerkte": [],
    "text": "Die Koalition ringt um Reformen. Viel zu zögerlich, findet der Maschinenbauverband VDMA. Er wirft der Bundesregierung vor, mit internem Streit und Reformstau den Industriestandort Deutschland zu gefährden.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/cwm24249dezmo",
+   "titel": "'It's a farce': Hegseth's defiant response to impeachment effort",
+   "link": "https://www.bbc.co.uk/news/videos/cwm24249dezmo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-10T15:40:43.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The BBC’s Gary O’Donoghue breaks down how the US defence secretary defended his record after a Republican congressman launched an attempt to impeach him.",
+   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/10/us/thomas-massie-impeachment-hegseth.html",
@@ -987,76 +1046,16 @@
    "maerkte": [],
    "text": "Wir leben in Zeiten der Eskalation. Politiker brüllen, lügen, lassen sich mit Kettensägen fotografieren. Milliardenschwere Gründer ohne politisches Mandat wollen über Krieg und Frieden entscheiden. Extremisten versprechen das Blaue vom Himm",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/midterms-us-demokraten-nehmen-nach-wahlsieg-musk-und-trump-vertraute-ins-visier-01/100268255.html",
-   "titel": "Midterms: US-Demokraten nehmen nach Wahlsieg Musk und Trump-Vertraute ins Visier",
-   "link": "https://www.handelsblatt.com/politik/international/midterms-us-demokraten-nehmen-nach-wahlsieg-musk-und-trump-vertraute-ins-visier-01/100268255.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T06:54:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Kongressmehrheit will Trumps Einwanderungspolitik und mögliche Verfehlungen von Unternehmen untersuchen. Ein Amtsenthebungsverfahren gegen Verteidigungsminister Hegseth wird unterstützt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/stephen-miller-drei-dinge-die-man-zu-trumps-neuem-stabschef-wissen-muss-01/100268118.html",
-   "titel": "Stephen Miller: Drei Dinge, die man zu Trumps neuem Stabschef wissen muss",
-   "link": "https://www.handelsblatt.com/politik/international/stephen-miller-drei-dinge-die-man-zu-trumps-neuem-stabschef-wissen-muss-01/100268118.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T06:37:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach der Wahlniederlage der Republikaner verleiht der US-Präsident seinem loyalsten und radikalsten Weggefährten noch mehr Macht. Wer ist der Mann, der seit Jahren US-Politik prägt?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/weltklimakonferenz-cop31-was-kann-der-gipfel-in-antalya-liefern/a-79670957",
-   "titel": "Weltklimakonferenz COP31 - Was kann der Gipfel in Antalya liefern?",
-   "link": "https://www.dw.com/de/weltklimakonferenz-cop31-was-kann-der-gipfel-in-antalya-liefern/a-79670957?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-09T06:15:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In Antalya steht viel auf der Agenda, doch nicht alle Länder sind sich einig. Kleinere Bündnisse könnten künftig Elektrifizierung, Klimafinanzierung und den Ausstieg aus fossilen Energien vorantreiben.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-war-es-verrat-der-nvidia-chef-und-die-spionin-aus-china/100268271.html",
-   "titel": "Morning Briefing: War es Verrat? Der Nvidia-Chef und die Spionin aus China",
-   "link": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-war-es-verrat-der-nvidia-chef-und-die-spionin-aus-china/100268271.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T05:19:09.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Jensen Huang räumt eine Affäre mit einer Managerin aus Singapur ein. Hatte sie Kontakt zum chinesischen Geheimdienst – und was heißt das für den wertvollsten Konzern der Welt?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sechs-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html",
-   "titel": "Börse am 9. November: Sechs Punkte, die für Anleger heute wichtig sind",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sechs-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T05:19:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "US-Midterms, Rohölpreise und Künstliche Intelligenz trieben die Anleger zuletzt um. Nun wird sich zeigen, ob etwa die Bilanzen zweier Dax-Konzerne für einen Stimmungswechsel sorgen können.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
+  "tagesschau": 11,
   "DW": 6,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 6,
-  "BBC World": 5,
-  "NYT World": 15,
+  "BBC World": 6,
+  "NYT World": 16,
   "EIA Today in Energy": 0
  }
 }
