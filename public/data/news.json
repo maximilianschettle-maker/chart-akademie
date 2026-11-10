@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T18:23:28.015Z",
+ "lastUpdated": "2026-11-10T19:23:30.200Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-hegseth-bezeichnet-amtsenthebungsverfahren-als-sabotage/29669594.html",
+   "titel": "+++ US-Midterms +++: Hegseth bezeichnet Amtsenthebungsverfahren als „Sabotage“",
+   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-hegseth-bezeichnet-amtsenthebungsverfahren-als-sabotage/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T19:22:24.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Rubio zu Nvidia: USA und China verfolgen bei KI eigene Interessen +++ US-Republikaner Massie beantragt Amtsenthebung von Hegseth +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/soziales/maschinenbau-gipfel-katherina-reiche-kritisiert-eigene-regierung-a-207e0fe5-9058-450f-b83c-f102fcbc7236",
+   "titel": "Maschinenbau-Gipfel: Katherina Reiche kritisiert eigene Regierung",
+   "link": "https://www.spiegel.de/wirtschaft/soziales/maschinenbau-gipfel-katherina-reiche-kritisiert-eigene-regierung-a-207e0fe5-9058-450f-b83c-f102fcbc7236#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-10T18:39:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der Maschinenbau steckt seit Jahren in der Krise, die schwarz-rote Koalition hat viele Hoffnungen auf Reformen enttäuscht. Beim Branchentreff bekam Wirtschaftsministerin Katherina Reiche den Frust der Branche zu spüren.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/cm2l4l59gjp7o",
+   "titel": "Meet the Peaky Blinders, Ukraine's drone unit protecting a devastated front-line city",
+   "link": "https://www.bbc.co.uk/news/videos/cm2l4l59gjp7o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-10T18:35:35.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Slovyansk continues to be bombarded by Russian forces, making it almost uninhabitable with less than 10% of it's pre-war population remaining.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o",
    "titel": "First day of Ukraine peace talks constructive, Zelensky says",
@@ -294,19 +329,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Russland fordert eine neue „europäische Sicherheitsarchitektur“ und beharrt auf Maximalforderungen. Trumps Schwiegersohn Kushner betont die angebliche Entschlossenheit des US-Präsidenten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-hegseth-bezeichnet-amtsenthebungsverfahren-als-sabotage/29669594.html",
-   "titel": "+++ US-Midterms +++: Hegseth bezeichnet Amtsenthebungsverfahren als „Sabotage“",
-   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-hegseth-bezeichnet-amtsenthebungsverfahren-als-sabotage/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-10T13:39:59.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "gas"
-   ],
-   "text": "US-Republikaner Massie beantragt Amtsenthebung von Hegseth +++ Vierter ranghoher Rücktritt im US-Justizministerium nach Zwischenwahlen +++ Erdgasbedarf von US-Flüssigerdgasanlagen erreicht Rekordwert +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -1026,38 +1048,16 @@
    ],
    "text": "Noch ist kein Abkommen unterzeichnet - doch Anleger glauben an ein Ende des US-Iran-Krieges. Das zeigt sich an den Ölpreisen. Und auch an der Tankstelle sinken die Spritpreise weiter.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ck0j0j87959eo",
-   "titel": "Trump says he was 'kidding' about Dana White press secretary offer",
-   "link": "https://www.bbc.co.uk/news/articles/ck0j0j87959eo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-09T08:49:17.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The president told the Ultimate Fighting Championship boss to \"please take the job\" in a Truth Social post on Saturday.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/08/world/election-win-pete-hegseth-poland.html",
-   "titel": "Why Winning Big Matters",
-   "link": "https://www.nytimes.com/2026/11/08/world/election-win-pete-hegseth-poland.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-09T08:05:16.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The midterm elections in the United States and recent votes in Europe show how blowout victories can make results impossible to deny.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 11,
   "DW": 6,
-  "Spiegel Wirtschaft": 5,
+  "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 7,
-  "BBC World": 8,
-  "NYT World": 14,
+  "BBC World": 9,
+  "NYT World": 13,
   "EIA Today in Energy": 0
  }
 }
