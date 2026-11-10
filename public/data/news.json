@@ -1,7 +1,53 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T07:23:27.027Z",
+ "lastUpdated": "2026-11-10T08:23:36.073Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/dreiergespraeche-usa-russland-ukraine-100.html",
+   "titel": "Verhandlungen in Abu Dhabi über Ende des Ukraine-Krieges haben begonnen",
+   "link": "https://www.tagesschau.de/ausland/amerika/dreiergespraeche-usa-russland-ukraine-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-10T08:18:50.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In Abu Dhabi haben die Gespräche über ein Ende des Krieges in der Ukraine begonnen. Zuletzt hatte US-Präsident Trump eine \"große Übereinkunft\" versprochen. Aber was meinte er damit? Und was hieße das für Europa? Von Carsten Kühntopp.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/knesset-eisenkot-regierung-100.html",
+   "titel": "Israels neu gewähltes Parlament kommt erstmals zusammen",
+   "link": "https://www.tagesschau.de/ausland/asien/knesset-eisenkot-regierung-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-10T08:13:27.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach der Wahl tritt Israels neues Parlament heute erstmals zusammen - inmitten der schwierigen Regierungsbildung. Netanjahu-Rivale Eisenkot hat dafür den Auftrag erhalten. Er hält auch eine Minderheitsregierung für möglich.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o",
+   "titel": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
+   "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-10T07:58:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Kyiv, Washington and Moscow are all sending delegation to the United Arab Emirates for the first trilateral talks since February.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/service/gas-betreiber-von-speichern-warnen-vor-engpaessen-bei-extremer-kaelte-a-036cd1fc-eb5e-4092-8112-14360e310bb1",
+   "titel": "Gas: Betreiber von Speichern warnen vor Engpässen bei extremer Kälte",
+   "link": "https://www.spiegel.de/wirtschaft/service/gas-betreiber-von-speichern-warnen-vor-engpaessen-bei-extremer-kaelte-a-036cd1fc-eb5e-4092-8112-14360e310bb1#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-10T07:20:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Die Gasspeicher in Deutschland hatten laut Betreibern zuletzt einen »historisch niedrigen Füllstand«. Sollte der Winter hart werden, müssen Menschen womöglich frieren.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
    "titel": "Marktbericht: DAX nähert sich wieder dem Rekordhoch",
@@ -105,17 +151,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process next year.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o",
-   "titel": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
-   "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-10T00:09:49.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Kyiv, Washington and Moscow are all sending delegation to the United Arab Emirates for the first trilateral talks since February.",
    "sprache": "en"
   },
   {
@@ -905,6 +940,17 @@
    "sprache": "en"
   },
   {
+   "id": "https://www.dw.com/de/mali-fast-4000-vertriebene-nach-angriff-auf-souleye/a-79854085",
+   "titel": "Mali: Fast 4000 Vertriebene nach Angriff auf Souleye",
+   "link": "https://www.dw.com/de/mali-fast-4000-vertriebene-nach-angriff-auf-souleye/a-79854085?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-08T13:37:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In Mali sollen fast 4000 Vertriebene in Macina und Sarro in der Region Ségou im Zentrum des Landes Zuflucht gefunden haben - vor allem Frauen und Kinder, die vor dem Angriff auf das Dorf Souleye geflohen sind.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.dw.com/de/mali-fast-4-000-vertriebene-nach-angriff-auf-souleye/a-79854085",
    "titel": "Mali: Fast 4.000 Vertriebene nach Angriff auf Souleye",
    "link": "https://www.dw.com/de/mali-fast-4-000-vertriebene-nach-angriff-auf-souleye/a-79854085?maca=de-rss-de-all-1119-xml-mrss",
@@ -993,60 +1039,14 @@
    "maerkte": [],
    "text": "Nur ein Sitz trennt das Lager von Ministerpräsident Luxon von der Mehrheit. Doch kleinere Parteien und noch nicht ausgezählte Stimmen könnten die Regierungsbildung auf den Kopf stellen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/dana-white-trump-will-kampfsport-manager-als-sprecher-des-weissen-hauses/100268144.html",
-   "titel": "Dana White: Trump will Kampfsport-Manager als Sprecher des Weißen Hauses",
-   "link": "https://www.handelsblatt.com/politik/international/dana-white-trump-will-kampfsport-manager-als-sprecher-des-weissen-hauses/100268144.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-08T07:52:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der US-Präsident sieht in UFC-Präsident Dana White einen „gewalttätigen Kämpfer“. White soll nun Sprecher des Weißen Hauses werden. Den Demokraten wirft Trump vor, Drohbriefe zu schreiben.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/japan-erdbeben-aichi-100.html",
-   "titel": "Mehr als 20 Verletzte nach Erdbeben in Zentraljapan",
-   "link": "https://www.tagesschau.de/ausland/asien/japan-erdbeben-aichi-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-08T07:27:58.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Mehrere Regionen in Japan wurden in der Nacht von einem Erdbeben der Stärke 5,7 erschüttert. Am stärksten betroffen war die Präfektur Aichi. Medien berichten über mehr als 20 Verletzte. Laut Behörden könnten weitere Beben folgen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/was-kostet-die-welt/der-tragische-absturz-von-varta-201655806.html",
-   "titel": "Was kostet die Welt?: Der tragische Absturz von Varta",
-   "link": "https://www.faz.net/aktuell/wirtschaft/was-kostet-die-welt/der-tragische-absturz-von-varta-201655806.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-08T06:00:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Varta war eigentlich auf dem Weg nach ganz oben. Als 2019 öffentlich wird, dass der deutsche Batteriehersteller Knopfzellen für die Airpods von Apple produziert, schießt der Aktienkurs komplett durch die Decke. In Bayern eröffnet Varta eine",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/08/world/africa/south-africa-election-african-national-congress.html",
-   "titel": "South Africa’s Politics May Never Be the Same Again",
-   "link": "https://www.nytimes.com/2026/11/08/world/africa/south-africa-election-african-national-congress.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-08T05:01:24.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The African National Congress lost big in local elections, turning a once-dominant force credited with overturning apartheid into “any other political party.”",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
-  "DW": 6,
-  "Spiegel Wirtschaft": 1,
+  "tagesschau": 11,
+  "DW": 5,
+  "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 3,
+  "Handelsblatt": 2,
   "BBC World": 7,
   "NYT World": 15,
   "EIA Today in Energy": 0
