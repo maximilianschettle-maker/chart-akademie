@@ -1,7 +1,67 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T16:23:35.174Z",
+ "lastUpdated": "2026-11-11T17:23:36.603Z",
  "eintraege": [
+  {
+   "id": "https://www.spiegel.de/wirtschaft/soziales/russlands-lng-exporte-eu-zahlte-2026-schon-rund-8-7-milliarden-euro-a-7dad7d60-31c6-4076-aa1b-3583b472013c",
+   "titel": "Russlands LNG-Exporte: EU zahlte 2026 schon rund 8,7 Milliarden Euro",
+   "link": "https://www.spiegel.de/wirtschaft/soziales/russlands-lng-exporte-eu-zahlte-2026-schon-rund-8-7-milliarden-euro-a-7dad7d60-31c6-4076-aa1b-3583b472013c#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-11T17:09:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas",
+    "eurusd"
+   ],
+   "text": "EU-Konzerne haben 2026 schon geschätzt 8,7 Milliarden Euro für russisches LNG aus dem Jamal-Projekt ausgegeben. Das zeigen neue Berechnungen, die dem SPIEGEL vorliegen. Das Geld hilft Russland im Ukrainekrieg.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/netzagentur-begrenzt-umruestung-von-kohlemeilern-201670091.html",
+   "titel": "Gaskraftwerke: Netzagentur begrenzt Umrüstung von Kohlemeilern",
+   "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/netzagentur-begrenzt-umruestung-von-kohlemeilern-201670091.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-11T17:03:12.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach dem Coup der LEAG eröffnet die Behörde die zweite Ausschreibungsrunde für Gaskraftwerke. Bei den Förderbedingungen bessert sie nach – stößt damit aber weiter auf Kritik.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo",
+   "titel": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
+   "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-11T16:59:34.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o",
+   "titel": "US Treasury Secretary Scott Bessent relocated after alleged Iranian threats",
+   "link": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-11T16:45:11.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "Bessent is now one of several Trump administration officials to live on military bases due to safety concerns.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/helsing-stellt-ki-software-clarity-vor-konkurrenz-fuer-palantir-201673620.html",
+   "titel": "Alternative zu Palantir?: Helsing prescht mit militärischer KI vor",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/helsing-stellt-ki-software-clarity-vor-konkurrenz-fuer-palantir-201673620.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-11T16:37:44.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Deutschen versprechen Durchbrüche auf dem Gefechtsfeld und Souveränität für Europa. US-Konkurrent Palantir hat darauf eine klare Antwort.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/wirtschaftsweise-warnen-merz-und-klingbeil-heilige-kuehe-opfern-201673025.html",
    "titel": "Sachverständigenrat: Heilige Kühe opfern",
@@ -57,17 +117,6 @@
     "halbleiter"
    ],
    "text": "That the United States suspected Nvidia’s leader was a Chinese spy target underscores the deep distrust between the two powers, even as their leaders try to stabilize ties.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo",
-   "titel": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
-   "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-11T14:51:26.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces.",
    "sprache": "en"
   },
   {
@@ -973,63 +1022,16 @@
    ],
    "text": "Steuerstreit und lahmende Wirtschaft. Diese Woche wird es ernst für den Etat. Dabei schafften zwei Politiker schon einmal, was die Koalition jetzt braucht. Ein Gastbeitrag.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/energie-oelpreis-sinkt-erstmals-seit-august-wieder-unter-90-dollar/100268734.html",
-   "titel": "Energie: Ölpreis sinkt erstmals seit August wieder unter 90 Dollar",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/energie-oelpreis-sinkt-erstmals-seit-august-wieder-unter-90-dollar/100268734.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-10T10:04:52.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "eurusd"
-   ],
-   "text": "Nach den Midterms hoffen die Anleger auf eine Entspannung im Iran-Krieg und setzen auf Verhandlungen. Das macht sich auch an den Tankstellen bemerkbar.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/10/world/europe/turkey-erdogan-cop31-climate.html",
-   "titel": "Turkey Promotes Itself as a Climate Champion. Not Everyone Agrees.",
-   "link": "https://www.nytimes.com/2026/11/10/world/europe/turkey-erdogan-cop31-climate.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-10T10:01:42.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Critics say some of the country’s environmental policies run counter to the image it is offering as host of a United Nations climate summit.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o",
-   "titel": "Trump says more US attacks on Iran 'highly unlikely'",
-   "link": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-10T09:40:31.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The president says the US is keeping \"status quo\" with Iran but remains “locked and loaded” should the situation change.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/wahlkampf-der-radikale-der-frankreichs-wut-in-stimmen-verwandelt/100264935.html",
-   "titel": "Wahlkampf: Der Radikale, der Frankreichs Wut in Stimmen verwandelt",
-   "link": "https://www.handelsblatt.com/politik/international/wahlkampf-der-radikale-der-frankreichs-wut-in-stimmen-verwandelt/100264935.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-10T09:31:16.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Jede Woche protestieren Hunderttausende gegen hohe Preise und für bessere Bildung. Jean-Luc Mélenchon versteht es, diese Wut zu nutzen. Das könnte ihn sogar ins Präsidentenamt bringen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 8,
   "DW": 8,
-  "Spiegel Wirtschaft": 2,
-  "FAZ Wirtschaft": 5,
-  "Handelsblatt": 6,
+  "Spiegel Wirtschaft": 3,
+  "FAZ Wirtschaft": 7,
+  "Handelsblatt": 4,
   "BBC World": 11,
-  "NYT World": 19,
+  "NYT World": 18,
   "EIA Today in Energy": 0
  }
 }
