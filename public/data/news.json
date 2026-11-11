@@ -1,7 +1,86 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T11:23:36.026Z",
+ "lastUpdated": "2026-11-11T12:23:32.419Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo",
+   "titel": "Haitian PM praises El Salvador after joint strike on alleged home of gang leader",
+   "link": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-11T12:14:12.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The 400 Mawozo gang was targeted by El Salvador's military, which has deployed thousands of troops to combat Haiti's gang violence crisis.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/zeitung-zahl-der-kriegsdienstverweigerer-in-deutschland-steigt-stark/a-79918041",
+   "titel": "Zeitung: Zahl der Kriegsdienstverweigerer in Deutschland steigt stark",
+   "link": "https://www.dw.com/de/zeitung-zahl-der-kriegsdienstverweigerer-in-deutschland-steigt-stark/a-79918041?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-11T12:05:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Kommt die deutsche Wehrpflicht zurück? Viele junge Männer befürchten dies offenbar. Die Zahl der Bundesbürger, die den Dienst an der Waffe vorsorglich verweigern, schießt in die Höhe.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/eu-eigenmittel-europa-abgaben-als-ausweg-aus-dem-haushaltsstreit/100268650.html",
+   "titel": "EU-Eigenmittel: Neue EU-Abgaben gelten als Ausweg aus dem Haushaltsstreit – doch die meisten verteilen nur um",
+   "link": "https://www.handelsblatt.com/politik/international/eu-eigenmittel-europa-abgaben-als-ausweg-aus-dem-haushaltsstreit/100268650.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-11T11:56:21.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "Zwei Abgaben dürften kommen. Sie ändern am Streit über den nächsten EU-Haushalt wenig. Wer sich bei Ukraine-Hilfen und Agrarmitteln querstellt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-us-gesandte-witkoff-und-kushner-reisen-womoeglich-nach-russland/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: US-Gesandte Witkoff und Kushner reisen womöglich nach Russland",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-us-gesandte-witkoff-und-kushner-reisen-womoeglich-nach-russland/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-11T11:50:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Gespräche in Abu Dhabi wohl beendet +++ Russischer Chefunterhändler: Austausch von Kriegsgefangenen vereinbart+++ Russland meldet Festnahmen wegen angeblicher Spionage +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo",
+   "titel": "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
+   "link": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-11T11:47:22.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/drei-verd%C3%A4chtige-sollen-iranischen-terror-unterst%C3%BCtzt-haben/a-79917360",
+   "titel": "Drei Verdächtige sollen iranischen Terror unterstützt haben",
+   "link": "https://www.dw.com/de/drei-verdächtige-sollen-iranischen-terror-unterstützt-haben/a-79917360?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-11T11:30:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Männer sollen der irakischen Miliz Kataib Hisbollah und den iranischen Revolutionsgarden zu Diensten gewesen sein - mit Verbindungen bis nach Europa. Die US-Behörden haben nun Anklage gegen sie erhoben.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/ukraine-russland-abu-dhabi-eu-100.html",
+   "titel": "Ukraine-Verhandlungen: Russland plant kein Treffen mit Europäern",
+   "link": "https://www.tagesschau.de/ausland/asien/ukraine-russland-abu-dhabi-eu-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-11T11:27:20.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In Abu Dhabi gehen die von den USA vermittelten Gespräche über ein Ende des Kriegs gegen die Ukraine weiter. Auch die Europäer sind vor Ort, doch die russische Delegation zeigt wenig Interesse an einem Austausch.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-gespraeche-in-abu-dhabi-wohl-beendet/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Gespräche in Abu Dhabi wohl beendet– konkrete Ergebnisse bisher nicht bekannt",
@@ -38,17 +117,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo",
-   "titel": "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
-   "link": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-11T10:15:12.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.nytimes.com/2026/11/11/world/europe/france-art-wanted-poster.html",
    "titel": "A Museum’s ‘Wanted’ Poster Campaign Brings Looted Painting Back to France",
    "link": "https://www.nytimes.com/2026/11/11/world/europe/france-art-wanted-poster.html",
@@ -79,6 +147,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Hezbollah’s conflict with Israel and the U.S.-Israel war with Iran have made systemic problems worse, causing the cost of living to soar and driving many Lebanese to despair.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/cm894wg251pzo",
+   "titel": "Watch: Vinícius Jr's surprise message to boy who received prosthetic legs after Sudan drone strike",
+   "link": "https://www.bbc.co.uk/news/videos/cm894wg251pzo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-11T09:28:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Real Madrid player Vinícius Jr sent a surprise message to 13-year-old fan Zaher who lost both his legs after being hit by a drone in Khartoum, in 2024.",
    "sprache": "en"
   },
   {
@@ -161,17 +240,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo",
-   "titel": "Headquarters of Haitian gang destroyed, El Salvador's president says",
-   "link": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-11T02:47:59.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The infamous 400 Mawozo gang was targeted by the El Salvador military which has deployed thousands of troops to combat Haiti's gang violence crisis.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo",
    "titel": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
    "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
@@ -210,9 +278,9 @@
    "link": "https://www.tagesschau.de/ausland/amerika/hegseth-amtsenthebungsverfahren-gestoppt-100.html",
    "quelle": "tagesschau",
    "zeit": "2026-11-11T00:19:26.000Z",
-   "kategorie": "politik",
+   "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Die Republikaner im US-Repräsentantenhaus haben einen Vorstoß zur Amtsenthebung von Verteidigungsminister Pete Hegseth abgewehrt. Sie stimmten nahezu geschlossen gegen eine entsprechende Resolution.",
+   "text": "Ein Parteikollege hatte die Amtsenthebung von US-Verteidigungsminister Hegseth angestrebt - vor allem wegen des Iran-Kriegs. Nun haben die Republikaner im US-Repräsentantenhaus den Vorstoß beendet. Sie stimmten nahezu geschlossen dagegen.",
    "sprache": "de"
   },
   {
@@ -957,84 +1025,15 @@
    "maerkte": [],
    "text": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process next year.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cw62y2z53pg1o",
-   "titel": "The superpower battle over energy – and what it means for your bills",
-   "link": "https://www.bbc.co.uk/news/articles/cw62y2z53pg1o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-10T00:08:28.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A tug-of-war between China and the US could have a big impact on energy costs, but who will win?",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-laut-trump-ist-iran-krieg-militaerisch-praktisch-beendet/100136895.html",
-   "titel": "+++ Iran-Krieg +++: Laut Trump ist Iran-Krieg militärisch „praktisch beendet“",
-   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-laut-trump-ist-iran-krieg-militaerisch-praktisch-beendet/100136895.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T22:14:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Katar und Saudi-Arabien setzen laut Trump auf friedliche Lösungen +++ Syrien dementiert Pläne für Militäreinsatz gegen Huthi-Miliz +++ US-Verteidigungsminister Hegseth verteidigt Iran-Krieg +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-us-boersen-profitieren-von-sinkenden-oelpreisen/100268441.html",
-   "titel": "Wall Street: Nasdaq fast drei Prozent im Plus: US-Börsen steigen stark an",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-us-boersen-profitieren-von-sinkenden-oelpreisen/100268441.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T20:30:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "Schnäppchenkäufer und fallende Ölpreise sorgen für Erholung an der Wall Street nach den jüngsten Kursverlusten. Auch wenn sich die Indizes stabilisieren – ausgestanden ist die Unruhe nicht.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/us-politik-republikaner-massie-beantragt-amtsenthebung-von-hegseth/100268546.html",
-   "titel": "US-Politik: Republikaner Massie beantragt Amtsenthebung von Hegseth",
-   "link": "https://www.handelsblatt.com/politik/international/us-politik-republikaner-massie-beantragt-amtsenthebung-von-hegseth/100268546.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T20:22:17.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach der Wahlniederlage der Republikaner wächst der Druck auf Trumps Verteidigungsminister. Eine Abstimmung über seine Absetzung könnte bald folgen. Trump sichert ihm seine Unterstützung zu.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/08/world/americas/colombia-drone-attack-eln.html",
-   "titel": "Targeted by U.S., Armed Group Strikes Back in Colombia",
-   "link": "https://www.nytimes.com/2026/11/08/world/americas/colombia-drone-attack-eln.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-09T20:14:08.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "American forces are helping Colombia and Venezuela hunt the ELN. This weekend, the group attacked a Colombian military base with drones, officials said.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o",
-   "titel": "Trump questions midterm elections integrity after previously accepting results",
-   "link": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-09T17:47:29.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Trump made the claims, without evidence, on Truth Social on Monday.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 11,
-  "DW": 8,
+  "DW": 9,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 2,
-  "BBC World": 7,
+  "Handelsblatt": 3,
+  "BBC World": 8,
   "NYT World": 18,
   "EIA Today in Energy": 0
  }
