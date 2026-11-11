@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T23:23:38.751Z",
+ "lastUpdated": "2026-11-11T00:23:31.804Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/hegseth-amtsenthebungsverfahren-gestoppt-100.html",
+   "titel": "US-Repräsentantenhaus lehnt Amtsenthebungsverfahren gegen Hegseth ab",
+   "link": "https://www.tagesschau.de/ausland/amerika/hegseth-amtsenthebungsverfahren-gestoppt-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-11T00:19:26.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Republikaner im US-Repräsentantenhaus haben einen Vorstoß zur Amtsenthebung von Verteidigungsminister Pete Hegseth abgewehrt. Sie stimmten nahezu geschlossen gegen eine entsprechende Resolution.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-us-soldat-in-grossbritannien-wegen-spionageverdachts-fuer-russland-festgenommen/29669594.html",
+   "titel": "+++ US-Midterms +++: US-Soldat in Großbritannien wegen Spionageverdachts für Russland festgenommen",
+   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-us-soldat-in-grossbritannien-wegen-spionageverdachts-fuer-russland-festgenommen/29669594.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-10T23:18:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "US-Justiz klagt Männer wegen Terrorplänen gegen Juden in Europa an +++ Hegseth bezeichnet Amtsenthebungsverfahren als „Sabotage“ +++ Republikaner Jordan wird Minderheitsführer im Repräsentantenhaus +++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-us-repraesentantenhaus-lehnt-amtsenthebungsverfahren-gegen-hegseth-ab/29669594.html",
    "titel": "+++ US-Midterms +++: US-Repräsentantenhaus lehnt Amtsenthebungsverfahren gegen Hegseth ab",
@@ -23,17 +45,6 @@
    "maerkte": [],
    "text": "The 41-year-old man, who was not named, was in custody pending possible charges after a joint investigation with the F.B.I. and U.S. military intelligence.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-us-soldat-in-grossbritannien-wegen-spionageverdachts-fuer-russland-festgenommen/29669594.html",
-   "titel": "+++ US-Midterms +++: US-Soldat in Großbritannien wegen Spionageverdachts für Russland festgenommen",
-   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-us-soldat-in-grossbritannien-wegen-spionageverdachts-fuer-russland-festgenommen/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-10T21:48:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "US-Justiz klagt Männer wegen Terrorplänen gegen Juden in Europa an +++ Hegseth bezeichnet Amtsenthebungsverfahren als „Sabotage“ +++ Der Newsblog.",
-   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o",
@@ -1029,23 +1040,10 @@
    "maerkte": [],
    "text": "Vice President JD Vance is among Republicans calling for change. Many Democratic lawmakers have been driving a campaign to restrict military aid to Israel.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/start-ups/verteidigung-start-up-tytan-steigt-in-massenfertigung-von-abfangdrohnen-ein/100267694.html",
-   "titel": "Verteidigung: Start-up Tytan steigt in Massenfertigung von Abfangdrohnen ein",
-   "link": "https://www.handelsblatt.com/unternehmen/start-ups/verteidigung-start-up-tytan-steigt-in-massenfertigung-von-abfangdrohnen-ein/100267694.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T13:31:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Das junge Münchener Unternehmen will künftig bis zu 3000 Drohnen im Monat produzieren. Außerdem ist eine Kooperation mit dem Rüstungskonzern KNDS im Bereich mobiler Drohnenabwehr geplant.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 12,
   "DW": 7,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 5,
