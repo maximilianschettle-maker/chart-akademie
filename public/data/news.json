@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T21:23:34.065Z",
+ "lastUpdated": "2026-11-11T22:23:35.087Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/koalition-haushalt-kompromiss-100.html",
+   "titel": "Schwarz-Rot verschiebt Zuckersteuer - keine Einigung bei Stromsteuer",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/koalition-haushalt-kompromiss-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-11T21:30:05.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Im Ringen um den Haushalt hat sich die Koalition nach ARD-Informationen auf einen Kompromiss geeinigt. So soll etwa die Einführung einer Zuckersteuer verschoben werden - zudem wird die Stromsteuer wohl vorerst nicht für alle gesenkt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/11/world/asia/china-us-nvidia.html",
+   "titel": "Nvidia Scandal Unveils a Fierce Spy War Raging Behind Trump and Xi’s Diplomacy",
+   "link": "https://www.nytimes.com/2026/11/11/world/asia/china-us-nvidia.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-11T21:24:12.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "That the United States suspected Nvidia’s leader was a Chinese spy target underscores the deep distrust between the two powers, even as their leaders try to stabilize ties.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/11/world/europe/ukraine-lima-electronic-warefare-gps.html",
    "titel": "This Defense Makes Drones (and GPS) Think They’re in Peru",
@@ -12,17 +36,6 @@
    "maerkte": [],
    "text": "GPS-linked devices have been insisting that Ukrainians are in Lima, the Peruvian capital. The culprit is a jamming system built to thwart Russian airstrikes.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/koalition-haushalt-kompromiss-100.html",
-   "titel": "Schwarz-Rot verschiebt Zuckersteuer - vorerst keine Stromsteuersenkung für alle",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/koalition-haushalt-kompromiss-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-11T21:04:41.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Im Ringen um den Haushalt hat sich die Koalition nach ARD-Informationen auf einen Kompromiss geeinigt. So soll etwa die Einführung einer Zuckersteuer verschoben werden - zudem wird die Stromsteuer wohl vorerst nicht für alle gesenkt.",
-   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/haushalt-stromsteuer-wird-vorerst-nicht-gesenkt-zuckersteuer-verschoben/100267083.html",
@@ -208,19 +221,6 @@
    "maerkte": [],
    "text": "Mehr Befristungen, weniger Kündigungsschutz für Hochverdiener und mehr Spielraum für Bäckereien am Sonntag: Die Regierung will das Arbeitsrecht reformieren. Was sich ändern soll und was noch offen ist.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/11/world/asia/china-us-nvidia.html",
-   "titel": "Nvidia Scandal Unveils a Fierce Spy War Raging Behind Trump and Xi’s Diplomacy",
-   "link": "https://www.nytimes.com/2026/11/11/world/asia/china-us-nvidia.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-11T14:57:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "That the United States suspected Nvidia’s leader was a Chinese spy target underscores the deep distrust between the two powers, even as their leaders try to stabilize ties.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/neuwahl-generalstreik-in-spanien-die-wirtschaft-waechst-die-wut-auch/100267405.html",
