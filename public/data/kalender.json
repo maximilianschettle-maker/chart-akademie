@@ -1,16 +1,7 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T10:23:35.201Z",
+ "lastUpdated": "2026-11-11T14:23:32.606Z",
  "termine": [
-  {
-   "id": "us:cpi:2026-11-10",
-   "region": "us",
-   "indikator": "cpi",
-   "titel": "Verbraucherpreise (CPI)",
-   "zeitUtc": "2026-11-10T13:30:00.000Z",
-   "quelle": "FRED",
-   "link": "https://fred.stlouisfed.org/release?rid=10"
-  },
   {
    "id": "ez:bip:2026-11-13:47",
    "region": "ez",
