@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T06:23:35.679Z",
+ "lastUpdated": "2026-11-11T07:23:32.804Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/inland/kriegsdienstverweigerer-steigend-100.html",
@@ -1034,7 +1034,7 @@
  ],
  "quellen": {
   "tagesschau": 12,
-  "DW": 7,
+  "DW": 6,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 3,
