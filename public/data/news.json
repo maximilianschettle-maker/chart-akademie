@@ -1,7 +1,62 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T09:23:31.637Z",
+ "lastUpdated": "2026-11-11T10:23:35.201Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/us-republikaner-stoppen-impeachment-gegen-hegseth/a-79916312",
+   "titel": "US-Republikaner stoppen Impeachment gegen Hegseth",
+   "link": "https://www.dw.com/de/us-republikaner-stoppen-impeachment-gegen-hegseth/a-79916312?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-11T10:21:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "US-Präsident Donald Trump zeigt sich hocherfreut: Vorerst gibt es kein Parlamentsverfahren, Verteidigungsminister Pete Hegseth aus dem Amt zu drängen. Ein entsprechender Versuch scheiterte bereits im Anfangsstadium.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo",
+   "titel": "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
+   "link": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-11T10:15:12.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/11/world/europe/france-art-wanted-poster.html",
+   "titel": "A Museum’s ‘Wanted’ Poster Campaign Brings Looted Painting Back to France",
+   "link": "https://www.nytimes.com/2026/11/11/world/europe/france-art-wanted-poster.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-11T10:03:50.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Orléans Fine Arts Museum is on a quest to recover hundreds of works stolen during World War II — and the director wants your help.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/11/world/europe/ukraine-lima-electronic-warefare-gps.html",
+   "titel": "They’re in Ukraine. Why Do Their Phones Say They’re in Peru?",
+   "link": "https://www.nytimes.com/2026/11/11/world/europe/ukraine-lima-electronic-warefare-gps.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-11T10:00:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "GPS-linked devices have been insisting that Ukrainians are in Lima, the Peruvian capital. The culprit is a jamming system built to thwart Russian airstrikes.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/11/world/middleeast/lebanon-economy-crisis-corruption-war.html",
+   "titel": "Lebanon Faces Economic ‘Catastrophe’ After War and Years of Mismanagement",
+   "link": "https://www.nytimes.com/2026/11/11/world/middleeast/lebanon-economy-crisis-corruption-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-11T09:31:18.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Hezbollah’s conflict with Israel and the U.S.-Israel war with Iran have made systemic problems worse, causing the cost of living to soar and driving many Lebanese to despair.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.dw.com/de/selenskyj-sieht-fortschritte-bei-ukraine-gespr%C3%A4chen-in-abu-dhabi-news-kompakt-das-wichtigste-kurz-gefasst/a-79914261",
    "titel": "Selenskyj sieht Fortschritte bei Ukraine-Gesprächen in Abu Dhabi - News kompakt: Das Wichtigste kurz gefasst",
@@ -22,6 +77,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Wildlife authorities said evidence, including animal DNA, conclusively linked a sow and her three cubs to the deaths of two women along a hiking trail in British Columbia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/crkgv58pknyeo",
+   "titel": "US warns Madagascar over growing military ties with Russia",
+   "link": "https://www.bbc.co.uk/news/articles/crkgv58pknyeo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-11T07:30:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "US general warns the Sahel model-like security deal with Russia could lead to greater instability in Africa.",
    "sprache": "en"
   },
   {
@@ -69,17 +135,6 @@
    ],
    "text": "Sie denken, Sprit ist teuer? Der eigentliche Energiepreisschock kommt aber erst noch – zumindest wenn Sie mit Gas heizen. Die drastisch gestiegenen Großhandelspreise kommen nach und nach bei den Verbrauchern an.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo",
-   "titel": "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
-   "link": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-11T03:26:42.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year.",
-   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo",
@@ -975,71 +1030,16 @@
    ],
    "text": "Schnäppchenkäufer und fallende Ölpreise sorgen für Erholung an der Wall Street nach den jüngsten Kursverlusten. Auch wenn sich die Indizes stabilisieren – ausgestanden ist die Unruhe nicht.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-verhandlungen-abu-dhabi-102.html",
-   "titel": "Wadephul zweifelt an Russlands Verhandlungswillen",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-verhandlungen-abu-dhabi-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-09T17:19:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "In Abu Dhabi geht es ab Dienstag um ein mögliches Ende des Ukraine-Kriegs. Sind das ernsthafte Friedensgespräche? Außenminister Wadephul zweifelt am Verhandlungswillen Russlands - und fordert Mitsprache für die Europäer.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/kuehlanlagen-cyberangriffe-100.html",
-   "titel": "Frankreich macht Iran für Cyberangriffe auf Supermarkt-Kühltruhen verantwortlich",
-   "link": "https://www.tagesschau.de/ausland/kuehlanlagen-cyberangriffe-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-09T17:12:59.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Mehrere Länder in Europa hatten zuletzt Cyberangriffe auf Supermarkt-Kühlanlagen gemeldet. Der französische Außenminister macht nun die iranische Revolutionsgarde für die Vorfälle in Frankreich verantwortlich. Er kündigte Sanktionen an.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/cyberangriff-frankreich-sieht-iran-hinter-angriff-auf-supermarkt-kuehlschraenke/100268525.html",
-   "titel": "Cyberangriff: „Beispielloses Ausmaß“ – Frankreich sieht Iran hinter Angriff auf Supermarkt-Kühlschränke",
-   "link": "https://www.handelsblatt.com/politik/international/cyberangriff-frankreich-sieht-iran-hinter-angriff-auf-supermarkt-kuehlschraenke/100268525.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T17:11:18.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Paris bestellt den iranischen Botschafter ein, weil Frankreich das Regime hinter den Hackerangriffen sieht. Außenminister Barrot spricht von einer beispiellosen Attacke.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo",
-   "titel": "France accuses Iran of supermarket fridge hacking",
-   "link": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-09T16:55:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The cyber-attack last month saw fridges and freezers in hundreds of supermarkets across France heated up.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/haushalt-steuerplaene-bundesregierung-100.html",
-   "titel": "Zucker-, Plastik- und Stromsteuer: Die offenen Baustellen im Haushalt",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/haushalt-steuerplaene-bundesregierung-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-09T16:24:36.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nachdem Finanzminister Klingbeil die Plastiksteuer angekündigt hatte, scheint jetzt wieder alles offen. Auch bei der Krypto- und Zuckersteuer ist offenbar alles im Fluss. Worüber die Koalition diskutiert. Von Lissy Kaufmann.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 12,
-  "DW": 7,
-  "Spiegel Wirtschaft": 4,
+  "DW": 8,
+  "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 3,
+  "Handelsblatt": 2,
   "BBC World": 7,
-  "NYT World": 17,
+  "NYT World": 18,
   "EIA Today in Energy": 0
  }
 }
