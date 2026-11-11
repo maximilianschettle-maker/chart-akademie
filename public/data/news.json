@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T14:23:32.606Z",
+ "lastUpdated": "2026-11-11T15:23:31.889Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/11/world/asia/china-us-nvidia.html",
+   "titel": "Behind the Trump-Xi Bonhomie, a Fierce Spy War Rages",
+   "link": "https://www.nytimes.com/2026/11/11/world/asia/china-us-nvidia.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-11T14:57:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "That the United States suspected Nvidia’s leader was a Chinese spy target underscores the deep distrust between the two powers, even as their leaders try to stabilize ties.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo",
+   "titel": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
+   "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-11T14:51:26.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/neuwahl-generalstreik-in-spanien-die-wirtschaft-waechst-die-wut-auch/100267405.html",
+   "titel": "Neuwahl: Generalstreik in Spanien – Die Wirtschaft wächst, die Wut auch",
+   "link": "https://www.handelsblatt.com/politik/international/neuwahl-generalstreik-in-spanien-die-wirtschaft-waechst-die-wut-auch/100267405.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-11T14:50:32.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Das starke Wachstum kommt bei vielen Spaniern nicht an. Dabei entsteht die Hälfte aller neuen Jobs in den Bereichen mit den höchsten Gehältern. Doch das Land hat ein anderes Problem.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/erdgas-reiche-will-gaslieferanten-zur-einspeicherung-verpflichten/100269078.html",
    "titel": "Versorgungssicherheit: Reiche will Gaslieferanten zur Einspeicherung verpflichten",
@@ -14,6 +49,17 @@
    ],
    "text": "Die Bundeswirtschaftsministerin erhöht den Druck auf Gashändler. Zugleich will sie die Industrie bei den Gaspreisen entlasten. Für den anstehenden Winter kommt das aber zu spät.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo",
+   "titel": "Spain sees widespread disruption in first general strike for 14 years",
+   "link": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-11T14:06:27.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections.",
+   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-krieg-russland-und-ukraine-vereinbaren-gefangenenaustausch/100269015.html",
@@ -295,17 +341,6 @@
    ],
    "text": "Sie denken, Sprit ist teuer? Der wahre Preissprung kommt erst noch, vor allem wenn Sie mit Gas heizen. Aber Sie sind nicht wehrlos.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo",
-   "titel": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
-   "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-11T01:01:20.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-lettland-und-litauen-warnen-vor-drohnen-im-luftraum/27982126.html",
@@ -992,41 +1027,6 @@
    "maerkte": [],
    "text": "In Abu Dhabi haben die Gespräche über ein Ende des Krieges in der Ukraine begonnen. Zuletzt hatte US-Präsident Trump eine \"große Übereinkunft\" versprochen. Aber was meinte er damit? Und was hieße das für Europa? Von Carsten Kühntopp.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/knesset-eisenkot-regierung-100.html",
-   "titel": "Israels neu gewähltes Parlament kommt erstmals zusammen",
-   "link": "https://www.tagesschau.de/ausland/asien/knesset-eisenkot-regierung-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-10T08:13:27.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach der Wahl tritt Israels neues Parlament heute erstmals zusammen - inmitten der schwierigen Regierungsbildung. Netanjahu-Rivale Eisenkot hat dafür den Auftrag erhalten. Er hält auch eine Minderheitsregierung für möglich.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/service/gas-betreiber-von-speichern-warnen-vor-engpaessen-bei-extremer-kaelte-a-036cd1fc-eb5e-4092-8112-14360e310bb1",
-   "titel": "Gas: Betreiber von Speichern warnen vor Engpässen bei extremer Kälte",
-   "link": "https://www.spiegel.de/wirtschaft/service/gas-betreiber-von-speichern-warnen-vor-engpaessen-bei-extremer-kaelte-a-036cd1fc-eb5e-4092-8112-14360e310bb1#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-10T07:20:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "gas"
-   ],
-   "text": "Die Gasspeicher in Deutschland hatten laut Betreibern zuletzt einen »historisch niedrigen Füllstand«. Sollte der Winter hart werden, müssen Menschen womöglich frieren.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/usa-amtsenthebungsverfahren-hegseth-100.html",
-   "titel": "Republikaner Massie will Hegseth des Amtes entheben",
-   "link": "https://www.tagesschau.de/ausland/amerika/usa-amtsenthebungsverfahren-hegseth-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-10T06:12:18.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach dem Wahldebakel der Republikaner sehen Gegner von US-Verteidigungsminister Hegseth eine neue Gelegenheit, ihn loszuwerden. Ob es tatsächlich zur Amtsenthebung kommt, ist aber fraglich. Präsident Trump stellte sich hinter seinen Ministe",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1034,9 +1034,9 @@
   "DW": 8,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 5,
-  "BBC World": 9,
-  "NYT World": 18,
+  "Handelsblatt": 6,
+  "BBC World": 10,
+  "NYT World": 19,
   "EIA Today in Energy": 0
  }
 }
