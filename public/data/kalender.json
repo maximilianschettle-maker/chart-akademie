@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-10T14:23:29.782Z",
+ "lastUpdated": "2026-11-11T09:23:31.637Z",
  "termine": [
   {
    "id": "us:cpi:2026-11-10",
@@ -287,8 +287,8 @@
   "fred-UNRATE": "live",
   "fred-PAYEMS": "live",
   "fred-A191RL1Q225SBEA": "live",
-  "eurostat-prc_hicp_manr": "live",
-  "eurostat-une_rt_m": "live",
-  "eurostat-namq_10_gdp": "live"
+  "eurostat-prc_hicp_manr": "alt",
+  "eurostat-une_rt_m": "alt",
+  "eurostat-namq_10_gdp": "alt"
  }
 }

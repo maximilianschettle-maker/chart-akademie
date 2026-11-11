@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T08:23:35.157Z",
+ "lastUpdated": "2026-11-11T09:23:31.637Z",
  "eintraege": [
   {
    "id": "https://www.dw.com/de/selenskyj-sieht-fortschritte-bei-ukraine-gespr%C3%A4chen-in-abu-dhabi-news-kompakt-das-wichtigste-kurz-gefasst/a-79914261",
@@ -261,7 +261,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/videos/cm2l4l59gjp7o",
-   "titel": "'If I tell you to run, run': How a Ukrainian drone unit protects a front-line city",
+   "titel": "'If I tell you to run, run': BBC joins a Ukrainian drone unit as it protects a front-line city",
    "link": "https://www.bbc.co.uk/news/videos/cm2l4l59gjp7o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-10T18:35:35.000Z",
@@ -1035,10 +1035,10 @@
  "quellen": {
   "tagesschau": 12,
   "DW": 7,
-  "Spiegel Wirtschaft": 5,
+  "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 3,
-  "BBC World": 9,
+  "BBC World": 7,
   "NYT World": 17,
   "EIA Today in Energy": 0
  }
