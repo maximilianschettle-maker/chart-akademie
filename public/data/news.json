@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T19:23:32.503Z",
+ "lastUpdated": "2026-11-11T21:23:34.065Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/11/world/europe/ukraine-lima-electronic-warefare-gps.html",
+   "titel": "This Defense Makes Drones (and GPS) Think They’re in Peru",
+   "link": "https://www.nytimes.com/2026/11/11/world/europe/ukraine-lima-electronic-warefare-gps.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-11T21:20:06.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "GPS-linked devices have been insisting that Ukrainians are in Lima, the Peruvian capital. The culprit is a jamming system built to thwart Russian airstrikes.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/koalition-haushalt-kompromiss-100.html",
+   "titel": "Schwarz-Rot verschiebt Zuckersteuer - vorerst keine Stromsteuersenkung für alle",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/koalition-haushalt-kompromiss-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-11T21:04:41.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Im Ringen um den Haushalt hat sich die Koalition nach ARD-Informationen auf einen Kompromiss geeinigt. So soll etwa die Einführung einer Zuckersteuer verschoben werden - zudem wird die Stromsteuer wohl vorerst nicht für alle gesenkt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/haushalt-stromsteuer-wird-vorerst-nicht-gesenkt-zuckersteuer-verschoben/100267083.html",
+   "titel": "Haushalt: Koalition erzielt Teileinigung: Stromsteuer wird vorerst nicht gesenkt, Zuckersteuer wird verschoben",
+   "link": "https://www.handelsblatt.com/politik/deutschland/haushalt-stromsteuer-wird-vorerst-nicht-gesenkt-zuckersteuer-verschoben/100267083.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-11T21:02:25.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Kurz vor Beginn der finalen Haushaltsberatungen einigt sich die Koalition: Die Union wehrt einige Steuererhöhungen ab, die SPD weicht Einsparungen auf. Doch ein Streitpunkt bleibt.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-russischer-botschafter-in-den-usa-gestorben/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Russischer Botschafter in den USA gestorben",
@@ -380,17 +413,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The Orléans Fine Arts Museum is on a quest to recover hundreds of works stolen during World War II — and the director wants your help.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/11/world/europe/ukraine-lima-electronic-warefare-gps.html",
-   "titel": "They’re in Ukraine. Why Do Their Phones Say They’re in Peru?",
-   "link": "https://www.nytimes.com/2026/11/11/world/europe/ukraine-lima-electronic-warefare-gps.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-11T10:00:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "GPS-linked devices have been insisting that Ukrainians are in Lima, the Peruvian capital. The culprit is a jamming system built to thwart Russian airstrikes.",
    "sprache": "en"
   },
   {
@@ -1000,39 +1022,15 @@
    "maerkte": [],
    "text": "Thomas Sattelberger war Telekom-Vorstand und lange in der FDP. Jetzt will er mit einem Verein die Politik herausfordern. Die „Economisten“ wollen 2029 in den Bundestag.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqpvgv318yyeo",
-   "titel": "Israeli forces kill Palestinian boy in West Bank, health ministry says",
-   "link": "https://www.bbc.co.uk/news/articles/cqpvgv318yyeo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-10T11:23:18.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Israeli military says its soldiers opened fire at individuals “who intended to hurl stones” at a road used by Israelis.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/soziales/bundeshaushalt-2027-union-gegenfinanzierung-fuer-die-stromsteuersenkung-gefunden-haben-a-84521b50-da4c-471c-b043-a833f3d85180",
-   "titel": "Bundeshaushalt 2027: Union will Gegenfinanzierung für Stromsteuersenkung gefunden haben",
-   "link": "https://www.spiegel.de/wirtschaft/soziales/bundeshaushalt-2027-union-gegenfinanzierung-fuer-die-stromsteuersenkung-gefunden-haben-a-84521b50-da4c-471c-b043-a833f3d85180#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-10T11:20:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Noch ringt die schwarz-rote Koalition, im Haushalt weitere Entlastungen für die Bürger durchzusetzen. Der Kanzler will die Stromsteuer senken. Könnte das Geld ausgerechnet aus den Einnahmen für erneuerbare Energien stammen?",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 7,
+  "tagesschau": 6,
   "DW": 8,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 9,
   "Handelsblatt": 6,
-  "BBC World": 11,
+  "BBC World": 10,
   "NYT World": 17,
   "EIA Today in Energy": 0
  }
