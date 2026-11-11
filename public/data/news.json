@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T10:23:35.201Z",
+ "lastUpdated": "2026-11-11T11:23:36.026Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-gespraeche-in-abu-dhabi-wohl-beendet/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Gespräche in Abu Dhabi wohl beendet– konkrete Ergebnisse bisher nicht bekannt",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-gespraeche-in-abu-dhabi-wohl-beendet/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-11T11:17:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russland meldet Festnahmen wegen angeblicher Spionage +++ Lettland und Litauen warnen vor Drohnen im Luftraum +++ Russland: 92 Drohnen über Leningrader Gebiet abgeschossen +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/start-ups/ruestung-helsing-will-zum-palantir-fuer-europas-streitkraefte-werden/100268520.html",
+   "titel": "Rüstung: Helsing greift Palantir mit neuem Produkt auf dem Software-Markt an",
+   "link": "https://www.handelsblatt.com/unternehmen/start-ups/ruestung-helsing-will-zum-palantir-fuer-europas-streitkraefte-werden/100268520.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-11T11:07:50.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Die Rüstungsfirma bringt eine agentenbasierte KI-Plattform auf den Markt. Sie soll bei der Auswertung von militärischen Daten helfen. Damit könnte Helsing bei der Bundeswehr punkten.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.dw.com/de/us-republikaner-stoppen-impeachment-gegen-hegseth/a-79916312",
    "titel": "US-Republikaner stoppen Impeachment gegen Hegseth",
@@ -133,7 +157,7 @@
    "maerkte": [
     "gas"
    ],
-   "text": "Sie denken, Sprit ist teuer? Der eigentliche Energiepreisschock kommt aber erst noch – zumindest wenn Sie mit Gas heizen. Die drastisch gestiegenen Großhandelspreise kommen nach und nach bei den Verbrauchern an.",
+   "text": "Sie denken, Sprit ist teuer? Der wahre Preissprung kommt erst noch, vor allem wenn Sie mit Gas heizen. Aber Sie sind nicht wehrlos.",
    "sprache": "de"
   },
   {
@@ -1002,38 +1026,10 @@
    "maerkte": [],
    "text": "Trump made the claims, without evidence, on Truth Social on Monday.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/bundeshaushalt-60-prozent-der-geplanten-sozialkuerzungen-treffen-frauen/100268370.html",
-   "titel": "Bundeshaushalt: Studie: 60 Prozent der geplanten Sozialkürzungen treffen Frauen",
-   "link": "https://www.handelsblatt.com/politik/deutschland/bundeshaushalt-60-prozent-der-geplanten-sozialkuerzungen-treffen-frauen/100268370.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T17:40:16.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd",
-    "anleihen"
-   ],
-   "text": "Die schwarz-rote Bundesregierung muss im Bundeshaushalt 2027 eine Lücke von über 20 Milliarden Euro schließen. Ökonomen haben nun die Folgen der Kürzungspolitik für Frauen beziffert.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-us-boersen-profitieren-von-sinkenden-oelpreisen-und-schliessen-im-plus/100268441.html",
-   "titel": "Wall Street: US-Börsen profitieren von sinkenden Ölpreisen und schließen im Plus",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-us-boersen-profitieren-von-sinkenden-oelpreisen-und-schliessen-im-plus/100268441.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T17:21:53.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "Schnäppchenkäufer und fallende Ölpreise sorgen für Erholung an der Wall Street nach den jüngsten Kursverlusten. Auch wenn sich die Indizes stabilisieren – ausgestanden ist die Unruhe nicht.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
+  "tagesschau": 11,
   "DW": 8,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 4,
