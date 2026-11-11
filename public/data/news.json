@@ -1,10 +1,54 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T15:23:31.889Z",
+ "lastUpdated": "2026-11-11T16:23:35.174Z",
  "eintraege": [
   {
+   "id": "https://www.faz.net/aktuell/wirtschaft/wirtschaftsweise-warnen-merz-und-klingbeil-heilige-kuehe-opfern-201673025.html",
+   "titel": "Sachverständigenrat: Heilige Kühe opfern",
+   "link": "https://www.faz.net/aktuell/wirtschaft/wirtschaftsweise-warnen-merz-und-klingbeil-heilige-kuehe-opfern-201673025.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-11T16:03:25.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Wirtschaftsweisen präsentieren eine Rechnung für die Schuldentürme auch der schwarz-roten Koalition. Doch Steuererhöhungen sind tunlichst zu vermeiden. Besser wäre etwas anderes.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/energiewende-strafen-fuer-netzbetreiber-so-soll-der-ausbau-schneller-werden/100268508.html",
+   "titel": "Energiewende: Strafen für Netzbetreiber? So soll der Ausbau schneller werden",
+   "link": "https://www.handelsblatt.com/politik/deutschland/energiewende-strafen-fuer-netzbetreiber-so-soll-der-ausbau-schneller-werden/100268508.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-11T15:48:21.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Netzengpässe bremsen die Energiewende. Die Bundesregierung will daher den Druck auf die Betreiber der Stromverteilnetze erhöhen. Drohen zusätzliche Sanktionen?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/arbeitsrecht-kuendigungsschutz-befristungen-reform-100.html",
+   "titel": "Weniger Kündigungsschutz, mehr Befristungen - das plant die Koalition",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/arbeitsrecht-kuendigungsschutz-befristungen-reform-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-11T15:44:40.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Mehr Befristungen, weniger Kündigungsschutz für Hochverdiener und mehr Spielraum für Bäckereien am Sonntag: Die Regierung will das Arbeitsrecht reformieren. Was sich ändern soll und was noch offen ist.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o",
+   "titel": "Russia-Ukraine talks turn to post-war security but end without breakthrough",
+   "link": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-11T15:05:11.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Talks in Abu Dhabi centred around Europe's security framework, with US envoys due to meet Putin and Zelensky on Thursday.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.nytimes.com/2026/11/11/world/asia/china-us-nvidia.html",
-   "titel": "Behind the Trump-Xi Bonhomie, a Fierce Spy War Rages",
+   "titel": "Nvidia Scandal Unveils a Fierce Spy War Raging Behind Trump and Xi’s Diplomacy",
    "link": "https://www.nytimes.com/2026/11/11/world/asia/china-us-nvidia.html",
    "quelle": "NYT World",
    "zeit": "2026-11-11T14:57:07.000Z",
@@ -976,66 +1020,15 @@
    "maerkte": [],
    "text": "Jede Woche protestieren Hunderttausende gegen hohe Preise und für bessere Bildung. Jean-Luc Mélenchon versteht es, diese Wut zu nutzen. Das könnte ihn sogar ins Präsidentenamt bringen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
-   "titel": "Marktbericht: Kursverluste nach KI-Crash fast aufgeholt",
-   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-10T09:06:52.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "halbleiter",
-    "aktien"
-   ],
-   "text": "Die Kauflaune der Anleger hält an: Die Erholungsrally treibt den DAX wieder zurück in die Nähe seines Rekords. Die sinkenden Ölpreise locken die Investoren in den Markt, auch die Zahlen von Infineon gefallen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/service/immobilien-mieten-ziehen-deutlich-an-lage-spitzt-sich-laut-banken-zu-a-e867587b-e01c-4898-94e4-81961204d4d4",
-   "titel": "Immobilien: Mieten ziehen deutlich an, Lage spitzt sich laut Banken zu",
-   "link": "https://www.spiegel.de/wirtschaft/service/immobilien-mieten-ziehen-deutlich-an-lage-spitzt-sich-laut-banken-zu-a-e867587b-e01c-4898-94e4-81961204d4d4#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-10T09:02:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Wer einen neuen Mietvertrag für eine Wohnung abschließt, muss dafür laut einer Auswertung des Verbands Deutscher Pfandbriefbanken immer mehr bezahlen. Immobilienkäufer wiederum haben mit immer höheren Zinsen zu kämpfen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-kopsi-topix-asiatische-boersen-auf-erholungskurs-ki-werte-treiben-nikkei-an/100268587.html",
-   "titel": "Nikkei, Kopsi, Topix: Asiatische Börsen auf Erholungskurs – KI-Werte treiben Nikkei an",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-kopsi-topix-asiatische-boersen-auf-erholungskurs-ki-werte-treiben-nikkei-an/100268587.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-10T08:31:21.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter",
-    "aktien"
-   ],
-   "text": "Die Hoffnung auf eine Entspannung im Iran-Krieg sorgte an den asiatischen Märkten für Zuversicht. Trotz der Nvidia-Kontroverse erzielten Technologie-Werte Gewinne.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/dreiergespraeche-usa-russland-ukraine-100.html",
-   "titel": "Verhandlungen in Abu Dhabi über Ende des Ukraine-Krieges haben begonnen",
-   "link": "https://www.tagesschau.de/ausland/amerika/dreiergespraeche-usa-russland-ukraine-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-10T08:18:50.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "In Abu Dhabi haben die Gespräche über ein Ende des Krieges in der Ukraine begonnen. Zuletzt hatte US-Präsident Trump eine \"große Übereinkunft\" versprochen. Aber was meinte er damit? Und was hieße das für Europa? Von Carsten Kühntopp.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 10,
   "DW": 8,
-  "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 4,
+  "Spiegel Wirtschaft": 2,
+  "FAZ Wirtschaft": 5,
   "Handelsblatt": 6,
-  "BBC World": 10,
+  "BBC World": 11,
   "NYT World": 19,
   "EIA Today in Energy": 0
  }
