@@ -1,7 +1,53 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T04:23:34.581Z",
+ "lastUpdated": "2026-11-11T05:23:34.799Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/spanien-generalstreik-mieterbewegung-100.html",
+   "titel": "Wie Spaniens Mieterbewegung für den Generalstreik mobilisiert",
+   "link": "https://www.tagesschau.de/ausland/europa/spanien-generalstreik-mieterbewegung-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-11T05:16:33.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Zum ersten Mal seit 2012 findet in Spanien heute ein Generalstreik statt. Die Idee dazu stammt nicht von Arbeitnehmervertretern, sondern von einem Mieterverbund. Das dürfte auch den anstehenden Wahlkampf beeinflussen. Von J. Macher.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/10/world/canada/british-columbia-bear-attack.html",
+   "titel": "Canadian Authorities Kill 4 Bears Involved in Deadly Attack on Hikers",
+   "link": "https://www.nytimes.com/2026/11/10/world/canada/british-columbia-bear-attack.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-11T04:59:45.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Wildlife authorities said evidence, including animal DNA, conclusively linked a sow and her three cubs to the deaths of two women along a hiking trail in British Columbia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/service/heizen-mit-erdgas-vielen-haushalten-droht-der-gaspreisschock-wie-sie-jetzt-reagieren-sollten-a-109b64ef-6e31-4299-b89d-18eedc314783",
+   "titel": "Heizen mit Erdgas: Vielen Haushalten droht der Gaspreisschock – wie Sie jetzt reagieren sollten",
+   "link": "https://www.spiegel.de/wirtschaft/service/heizen-mit-erdgas-vielen-haushalten-droht-der-gaspreisschock-wie-sie-jetzt-reagieren-sollten-a-109b64ef-6e31-4299-b89d-18eedc314783#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-11T04:30:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Sie denken, Sprit ist teuer? Der eigentliche Energiepreisschock kommt aber erst noch – zumindest wenn Sie mit Gas heizen. Die drastisch gestiegenen Großhandelspreise kommen nach und nach bei den Verbrauchern an.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/kriegsdienstverweigerer-steigend-100.html",
+   "titel": "Zahl der Kriegsdienstverweigerer steigt weiter deutlich",
+   "link": "https://www.tagesschau.de/inland/kriegsdienstverweigerer-steigend-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-11T04:22:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Wehrdienst bleibt weiterhin freiwillig. Die Musterung bei Männern ist allerdings verpflichtend. Die Zahl der Kriegsdienstverweigerungen steigt in diesem Jahr deutlich an.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo",
    "titel": "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
@@ -984,62 +1030,14 @@
    "maerkte": [],
    "text": "In Polen trainieren Soldatinnen und Soldaten aus elf Ländern, um die Ukraine nach einem Waffenstillstand unterstützen zu können. Polens Premier Tusk warnt vor einer russischen Bedrohung auch für Europa.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/spionage-innenministerium-warnt-vor-liebesfallen-durch-geheimdienste/100268414.html",
-   "titel": "Spionage: Innenministerium warnt vor Liebesfallen durch Geheimdienste",
-   "link": "https://www.handelsblatt.com/politik/deutschland/spionage-innenministerium-warnt-vor-liebesfallen-durch-geheimdienste/100268414.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-09T14:54:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Der Fall um Nvidia-Chef Huang rückt eine Spionagemethode in den Fokus: Liebesfallen. Das Innenministerium hält solche Angriffe auch auf deutsche Topmanager für möglich.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/koalition-verzichtet-auf-sektsteuererhoehung-verschaerft-aber-alkopopsteuer-201665413.html",
-   "titel": "Haushaltsberatungen: Noch kann die Koalition nicht die Korken knallen lassen",
-   "link": "https://www.faz.net/aktuell/wirtschaft/koalition-verzichtet-auf-sektsteuererhoehung-verschaerft-aber-alkopopsteuer-201665413.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-09T14:49:55.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In der heißen Phase der Haushaltsberatung beschäftigen mehrere Steuerpläne die Koalition. Eine Entscheidung ist schon gefallen, die Sekttrinker freuen dürfte.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/von-panik-keine-spur-deutschland-und-seine-gasvorr%C3%A4te/a-79872731",
-   "titel": "Von Panik keine Spur: Deutschland und seine Gasvorräte",
-   "link": "https://www.dw.com/de/von-panik-keine-spur-deutschland-und-seine-gasvorräte/a-79872731?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-09T14:40:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "gas"
-   ],
-   "text": "Die deutschen Gasspeicher sind zwar nicht nach Plan gefüllt, aber die Politik scheint das nicht zu sorgen. Die italienische Regierung wirft der Bundesregierung vor, durch Untätigkeit den Preis hochgetrieben zu haben.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
-   "titel": "G7-Außenminister sprechen über Ukraine und Iran",
-   "link": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-09T14:21:47.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Welche Rolle spielt Europa bei der Lösung des Ukraine-Kriegs? Wie geht es mit Iran weiter? Diese Fragen stehen im Zentrum der G7-Gespräche in Paris. Außenminister Wadephul mahnt Washington und Moskau.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 13,
   "DW": 7,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 5,
+  "Handelsblatt": 3,
   "BBC World": 10,
   "NYT World": 17,
   "EIA Today in Energy": 0
