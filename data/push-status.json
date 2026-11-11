@@ -69,6 +69,8 @@
     "tracker:nasdaq100:tunnel:neutral:stunde:2026-11-11T14": "2026-11-11T14:45:55.946Z",
     "tracker:nasdaq100:tunnel:short:stunde:2026-11-11T14": "2026-11-11T14:45:55.999Z",
     "tracker:nasdaq100:tunnel:neutral:stunde:2026-11-11T15": "2026-11-11T15:00:44.975Z",
-    "tracker:nasdaq100:tunnel:short:stunde:2026-11-11T15": "2026-11-11T15:00:45.023Z"
+    "tracker:nasdaq100:tunnel:short:stunde:2026-11-11T15": "2026-11-11T15:00:45.023Z",
+    "tracker:bitcoin:tunnel:short:stunde:2026-11-11T18": "2026-11-11T18:15:44.355Z",
+    "tracker:gold:ema-kreuz:short:stunde:2026-11-11T18": "2026-11-11T18:15:44.453Z"
   }
 }
