@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T12:23:32.419Z",
+ "lastUpdated": "2026-11-11T13:23:28.479Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/management/softwarehersteller-sap-aufsichtsrat-legt-nach-us-sanktionen-mandat-nieder/100268895.html",
+   "titel": "Softwarehersteller: Nach Sanktionen der USA: SAP-Aufsichtsrat legt Mandat nieder",
+   "link": "https://www.handelsblatt.com/unternehmen/management/softwarehersteller-sap-aufsichtsrat-legt-nach-us-sanktionen-mandat-nieder/100268895.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-11T12:27:17.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Er investiert in chinesische Start-ups: Der Technologiekenner Qi Lu tritt von seinem Amt im Aufsichtsrat von SAP zurück. Hintergrund sind offenbar Sanktionen der amerikanischen Regierung.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo",
    "titel": "Haitian PM praises El Salvador after joint strike on alleged home of gang leader",
@@ -35,6 +46,17 @@
     "anleihen"
    ],
    "text": "Zwei Abgaben dürften kommen. Sie ändern am Streit über den nächsten EU-Haushalt wenig. Wer sich bei Ukraine-Hilfen und Agrarmitteln querstellt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-us-gesandte-witkoff-und-kushner-reisen-nach-russland/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: US-Gesandte Witkoff und Kushner reisen nach Russland",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-us-gesandte-witkoff-und-kushner-reisen-nach-russland/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-11T11:50:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Gespräche in Abu Dhabi wohl beendet +++ Russischer Chefunterhändler: Austausch von Kriegsgefangenen vereinbart+++ Russland meldet Festnahmen wegen angeblicher Spionage +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -1003,36 +1025,14 @@
    "maerkte": [],
    "text": "Gadi Eisenkot, the leading rival of Prime Minister Benjamin Netanyahu, now has a chance to form Israel’s governing coalition. Here are three routes he could try.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
-   "titel": "Ukraine Peace Talks Resume This Week in Abu Dhabi",
-   "link": "https://www.nytimes.com/2026/11/09/world/europe/ukraine-russia-peace-talks.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-10T03:39:35.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "U.S.-led talks to end the war between Russia and Ukraine will resume this week in Abu Dhabi. A cease-fire won’t be on the table.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro",
-   "titel": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
-   "link": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-10T01:38:49.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The effort will likely fail, but Representative Thomas Massie wants to push Trump to fire Hegseth before Democrats can launch their own impeachment process next year.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 10,
   "DW": 9,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 3,
+  "Handelsblatt": 4,
   "BBC World": 8,
   "NYT World": 18,
   "EIA Today in Energy": 0
