@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-11T07:23:32.804Z",
+ "lastUpdated": "2026-11-11T08:23:35.157Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/selenskyj-sieht-fortschritte-bei-ukraine-gespr%C3%A4chen-in-abu-dhabi-news-kompakt-das-wichtigste-kurz-gefasst/a-79914261",
+   "titel": "Selenskyj sieht Fortschritte bei Ukraine-Gesprächen in Abu Dhabi - News kompakt: Das Wichtigste kurz gefasst",
+   "link": "https://www.dw.com/de/selenskyj-sieht-fortschritte-bei-ukraine-gesprächen-in-abu-dhabi-news-kompakt-das-wichtigste-kurz-gefasst/a-79914261?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-11T08:09:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Bei Gesprächen in Abu Dhabi wird wohl ein großer Gefangenenaustausch zwischen Ukraine und Russland vorbereitet. US-Verteidigungsminister Hegseth entgeht vorerst einem Amtsenthebungsverfahren. Der DW-Nachrichtenüberblick.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/10/world/canada/british-columbia-bear-attack.html",
+   "titel": "Canadian Authorities Kill 4 Bears Involved in Deadly Attack on Hikers",
+   "link": "https://www.nytimes.com/2026/11/10/world/canada/british-columbia-bear-attack.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-11T07:32:18.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Wildlife authorities said evidence, including animal DNA, conclusively linked a sow and her three cubs to the deaths of two women along a hiking trail in British Columbia.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/inland/kriegsdienstverweigerer-steigend-100.html",
    "titel": "Zahl der Kriegsdienstverweigerer steigt weiter deutlich",
@@ -34,17 +56,6 @@
    "maerkte": [],
    "text": "Zum ersten Mal seit 2012 findet in Spanien heute ein Generalstreik statt. Die Idee dazu stammt nicht von Arbeitnehmervertretern, sondern von einem Mieterverbund. Das dürfte auch den anstehenden Wahlkampf beeinflussen. Von J. Macher.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/10/world/canada/british-columbia-bear-attack.html",
-   "titel": "Canadian Authorities Kill 4 Bears Involved in Deadly Attack on Hikers",
-   "link": "https://www.nytimes.com/2026/11/10/world/canada/british-columbia-bear-attack.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-11T04:59:45.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Wildlife authorities said evidence, including animal DNA, conclusively linked a sow and her three cubs to the deaths of two women along a hiking trail in British Columbia.",
-   "sprache": "en"
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/service/heizen-mit-erdgas-vielen-haushalten-droht-der-gaspreisschock-wie-sie-jetzt-reagieren-sollten-a-109b64ef-6e31-4299-b89d-18eedc314783",
@@ -250,7 +261,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/videos/cm2l4l59gjp7o",
-   "titel": "Meet the Peaky Blinders, Ukraine's drone unit protecting a devastated front-line city",
+   "titel": "'If I tell you to run, run': How a Ukrainian drone unit protects a front-line city",
    "link": "https://www.bbc.co.uk/news/videos/cm2l4l59gjp7o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-10T18:35:35.000Z",
@@ -1019,26 +1030,15 @@
    "maerkte": [],
    "text": "Nachdem Finanzminister Klingbeil die Plastiksteuer angekündigt hatte, scheint jetzt wieder alles offen. Auch bei der Krypto- und Zuckersteuer ist offenbar alles im Fluss. Worüber die Koalition diskutiert. Von Lissy Kaufmann.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/russell-brand-strafmass-100.html",
-   "titel": "Russell Brand zu mehr als zehn Jahren Haft verurteilt",
-   "link": "https://www.tagesschau.de/ausland/russell-brand-strafmass-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-09T15:56:52.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Vor wenigen Tagen war der Ex-Comedian in London wegen Vergewaltigung und sexueller Nötigung verurteilt worden. Nun wurde das Strafmaß verkündet: Er muss zehneinhalb Jahre in Haft. Inzwischen wurden neue Vorwürfe laut.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 12,
-  "DW": 6,
+  "DW": 7,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 3,
-  "BBC World": 10,
+  "BBC World": 9,
   "NYT World": 17,
   "EIA Today in Energy": 0
  }
