@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-12T05:23:38.970Z",
+ "lastUpdated": "2026-11-12T06:23:33.539Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/2026/11/12/world/asia/yamamoto-pearl-harbor-plane-bougainville-tourism.html",
@@ -22,6 +22,17 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Die Stromsteuersenkung kommt nicht, dafür aber auch weder Zucker- noch Plastiksteuer: Die Koalition geht mit einem Kompromiss in den entscheidenden Haushaltstag. Ein Problem bleibt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/usa-mississippi-schwarzer-senator-100.html",
+   "titel": "Historischer Sieg in Mississippi: \"Hatte den Mut, an Mississippi zu glauben\"",
+   "link": "https://www.tagesschau.de/ausland/amerika/usa-mississippi-schwarzer-senator-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-12T04:37:34.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Seit 145 Jahren zieht erstmals ein schwarzer Demokrat für Mississippi in den US-Senat. Im Wahlkampf setzte Scott Colom auf die Mobilisierung von Nicht-Wählern - und Gespräche mit Trump-Unterstützern. Von Sandra Ratzow.",
    "sprache": "de"
   },
   {
@@ -1009,25 +1020,14 @@
    "maerkte": [],
    "text": "Derzeit treffen sich in Abu Dhabi Vertreter der Ukraine, Russlands und der USA, um Gespräche über ein Ende des Krieges wieder aufzunehmen. Europa scheint im Abseits, obwohl Deutschland der größte Unterstützer der Ukraine ist. Von N. Markwal",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/us-republikaner-will-amtsenthebung-von-pentagon-chef-hegseth/a-79906935",
-   "titel": "US-Republikaner will Amtsenthebung von Pentagon-Chef Hegseth",
-   "link": "https://www.dw.com/de/us-republikaner-will-amtsenthebung-von-pentagon-chef-hegseth/a-79906935?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-10T14:12:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der Abgeordnete Massie, dem US-Präsident Trump die Wiederwahl verdorben hatte, appelliert an den Kongress, Verteidigungsminister Pete Hegseth vor die Tür zu setzen. Doch die Erfolgsaussichten sind minimal.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 6,
+  "tagesschau": 7,
   "DW": 8,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 9,
-  "Handelsblatt": 5,
+  "Handelsblatt": 4,
   "BBC World": 9,
   "NYT World": 17,
   "EIA Today in Energy": 0
