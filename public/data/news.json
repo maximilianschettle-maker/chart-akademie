@@ -1,7 +1,73 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-12T14:23:36.407Z",
+ "lastUpdated": "2026-11-12T15:23:29.352Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo",
+   "titel": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
+   "link": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-12T15:16:39.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Later on Thursday, Jared Kushner and Steve Witkoff will travel to Dublin to meet Ukraine's Volodymyr Zelensky.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/11/world/middleeast/nasser-hospital-gaza-strike-israel.html",
+   "titel": "Israeli Strikes on Gaza Hospital Kill 6 and Injure Dozens, Health Officials Say",
+   "link": "https://www.nytimes.com/2026/11/11/world/middleeast/nasser-hospital-gaza-strike-israel.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-12T15:16:37.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Israeli authorities said that Hamas had established a command center at the hospital complex. Hamas said the attack was “a heinous crime targeting a civilian medical facility.”",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-krieg-europaeer-suchen-ihren-platz-am-verhandlungstisch/100268983.html",
+   "titel": "Ukraine-Krieg: Europa drängt an den Verhandlungstisch – und Putin spielt auf Zeit",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-krieg-europaeer-suchen-ihren-platz-am-verhandlungstisch/100268983.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-12T15:03:14.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die US-Sondergesandten beraten mit Putin und Selenskyj, wie die Friedensgespräche weitergehen. Europas Regierungschefs warnen vor russischen Ablenkungsmanövern.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/eisenkot-netanjahu-100.html",
+   "titel": "Iran-Krieg: Eisenkot ruft Netanjahu zu Zurückhaltung auf",
+   "link": "https://www.tagesschau.de/ausland/asien/eisenkot-netanjahu-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-12T14:28:14.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Seit Tagen wird spekuliert, dass Israels Premier Netanjahu neue Angriffe auf Iran planen könnte. Oppositionschef Eisenkot, der derzeit versucht, eine Regierung ohne Netanjahu zu bilden, warnt diesen jetzt vor \"gefährlichen Schritten\".",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo",
+   "titel": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
+   "link": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-12T14:27:30.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Witnesses say a missile hit a building containing the surgical wards and intensive care units at Nasser hospital, the largest in southern Gaza.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/alice-huang-journalistin-bankerin-spionin-201677181.html",
+   "titel": "Mutmassliche Spionin: Die vielen Karrieren der Alice Huang",
+   "link": "https://www.faz.net/aktuell/wirtschaft/alice-huang-journalistin-bankerin-spionin-201677181.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-12T14:20:29.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Alice Huang war Journalistin, Bankerin, Videospiel-Investorin und Cloud-Betreiberin. Auf Wechat prahlte sie mit ihrer Beziehung zu Jensen Huang. War sie auch Spionin?",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/haushalt-frust-in-der-union-dafuer-habe-ich-keinen-wahlkampf-gemacht/100269337.html",
    "titel": "Haushalt 2027: Frust in der Union – „Dafür habe ich keinen Wahlkampf gemacht“",
@@ -51,17 +117,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/11/world/middleeast/nasser-hospital-gaza-strike-israel.html",
-   "titel": "Strike on Gaza Hospital Kills at Least 6 and Injures 20, Rescuers Say",
-   "link": "https://www.nytimes.com/2026/11/11/world/middleeast/nasser-hospital-gaza-strike-israel.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-12T13:07:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Israeli authorities said that Hamas had established a command center at the hospital complex. Hamas said the attack was “a heinous crime targeting a civilian medical facility.”",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/videos/cm93rp3gxn6qo",
    "titel": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
    "link": "https://www.bbc.co.uk/news/videos/cm93rp3gxn6qo?at_medium=RSS&at_campaign=rss",
@@ -104,28 +159,6 @@
    "maerkte": [],
    "text": "Die \"Fit for 55\" genannten Klimaregeln sollen Europa bis Mitte des Jahrhunderts klimaneutral machen. Polen war gegen das Gesetzespaket aus dem Jahr 2023 mit sieben Klagen vorgegangen - alle wurden nun vom Europäischen Gerichtshof abgewiesen",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo",
-   "titel": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
-   "link": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-12T12:26:01.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Witnesses say a missile hit a building containing the surgical wards and intensive care units at Nasser hospital, the largest in southern Gaza.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo",
-   "titel": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
-   "link": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-12T12:14:51.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Later on Thursday, Jared Kushner and Steve Witkoff will travel to Dublin to meet Ukraine's Volodymyr Zelensky.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/12/world/asia/yamamoto-pearl-harbor-plane-bougainville-tourism.html",
@@ -999,49 +1032,14 @@
    "maerkte": [],
    "text": "Delegations from Kyiv, Washington and Moscow are in the United Arab Emirates for the first trilateral talks since February.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/knackpunkt-fuer-die-koalition-und-den-kanzler-201669108.html",
-   "titel": "Ringen um den Haushalt 2027: Knackpunkt für die Koalition – und den Kanzler",
-   "link": "https://www.faz.net/aktuell/wirtschaft/knackpunkt-fuer-die-koalition-und-den-kanzler-201669108.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-10T20:56:16.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Friedrich Merz hat die Senkung der Stromsteuer für alle nicht nur als wünschenswert, sondern auch als finanzierbar bezeichnet. Wenn der Kanzler so etwas so ankündigt, sollte es auch kommen. Alles andere wäre „trumpig“.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/nach-us-midterms-hegseth-bezeichnet-amtsenthebungsverfahren-als-sabotage/29669594.html",
-   "titel": "+++ US-Midterms +++: Hegseth bezeichnet Amtsenthebungsverfahren als „Sabotage“",
-   "link": "https://www.handelsblatt.com/politik/international/nach-us-midterms-hegseth-bezeichnet-amtsenthebungsverfahren-als-sabotage/29669594.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-10T20:23:38.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Republikaner Jordan wird Minderheitsführer im Repräsentantenhaus +++ Rubio zu Nvidia: USA und China verfolgen bei KI eigene Interessen +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/10/us/politics/rubio-iran-war.html",
-   "titel": "Rubio Says ‘Major Combat Operations’ in Iran War Are No Longer Needed",
-   "link": "https://www.nytimes.com/2026/11/10/us/politics/rubio-iran-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-10T19:33:48.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The U.S. secretary of state said that American economic pressure is doing sufficient damage to the leadership in Tehran.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 7,
-  "DW": 9,
+  "tagesschau": 8,
+  "DW": 8,
   "Spiegel Wirtschaft": 5,
-  "FAZ Wirtschaft": 7,
-  "Handelsblatt": 5,
+  "FAZ Wirtschaft": 8,
+  "Handelsblatt": 6,
   "BBC World": 6,
   "NYT World": 15,
   "EIA Today in Energy": 1
