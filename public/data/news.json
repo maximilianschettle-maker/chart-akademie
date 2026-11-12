@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-12T18:23:37.508Z",
+ "lastUpdated": "2026-11-12T19:23:35.987Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-megastreik-der-ig-metall-bringt-nur-vertrauensverlust/100269353.html",
+   "titel": "Kommentar: Der Megastreik der IG Metall bringt nur Vertrauensverlust",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-megastreik-der-ig-metall-bringt-nur-vertrauensverlust/100269353.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-12T19:03:47.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Gewerkschaft setzt auf Eskalation und fordert Garantien für Werke am Standort Deutschland. Doch Firmen, die um ihre Existenz kämpfen, kann man nicht erpressen – dafür weiter schädigen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmvg2r3dq7xno",
+   "titel": "Hegseth awards medal to war memorial guard who reprimanded him and group",
+   "link": "https://www.bbc.co.uk/news/articles/cmvg2r3dq7xno?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-12T18:47:35.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Specialist Thomas Iglesias was given a Joint Service Commendation Medal for the execution of his duties after Wednesday's incident.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html",
+   "titel": "In Moscow, Witkoff and Kushner Ask Putin to Include Europe in Peace Talks",
+   "link": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-12T18:40:46.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Kremlin, taking a hard line, is pushing to widen negotiations to overhaul European security structures.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/jensen-huang-geht-ein-schock-fuer-nvidia-aber-keine-katastrophe-201677508.html",
    "titel": "Nvidia-Affäre: Der jähe Fall von Jensen Huang",
@@ -27,17 +60,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html",
-   "titel": "In Moscow, Witkoff and Kushner Ask Putin to Include Europe in Peace Talks",
-   "link": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-12T16:54:22.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Kremlin, taking a hard line, is pushing to widen negotiations to overhaul European security structures.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo",
    "titel": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
    "link": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
@@ -46,17 +68,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Witnesses say a missile hit a building containing the surgical wards and intensive care units at Nasser hospital, the largest in southern Gaza.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmvg2r3dq7xno",
-   "titel": "Pentagon backs war memorial guard who reprimanded Hegseth's group",
-   "link": "https://www.bbc.co.uk/news/articles/cmvg2r3dq7xno?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-12T16:52:53.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The defence secretary on Thursday awarded the soldier, Specialist Thomas Iglesias, a Joint Service Commendation Medal for the execution of his duties.",
    "sprache": "en"
   },
   {
@@ -1025,19 +1036,6 @@
    "maerkte": [],
    "text": "Zum ersten Mal seit 2012 findet in Spanien heute ein Generalstreik statt. Die Idee dazu stammt nicht von Arbeitnehmervertretern, sondern von einem Mieterverbund. Das dürfte auch den anstehenden Wahlkampf beeinflussen. Von J. Macher.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/service/heizen-mit-erdgas-vielen-haushalten-droht-der-gaspreisschock-wie-sie-jetzt-reagieren-sollten-a-109b64ef-6e31-4299-b89d-18eedc314783",
-   "titel": "Heizen mit Erdgas: Vielen Haushalten droht der Gaspreisschock – wie Sie jetzt reagieren sollten",
-   "link": "https://www.spiegel.de/wirtschaft/service/heizen-mit-erdgas-vielen-haushalten-droht-der-gaspreisschock-wie-sie-jetzt-reagieren-sollten-a-109b64ef-6e31-4299-b89d-18eedc314783#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-11T04:30:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "gas"
-   ],
-   "text": "Sie denken, Sprit ist teuer? Der wahre Preissprung kommt erst noch, vor allem wenn Sie mit Gas heizen. Aber Sie sind nicht wehrlos.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1045,8 +1043,8 @@
   "DW": 7,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 9,
-  "Handelsblatt": 3,
-  "BBC World": 8,
+  "Handelsblatt": 4,
+  "BBC World": 7,
   "NYT World": 16,
   "EIA Today in Energy": 1
  }

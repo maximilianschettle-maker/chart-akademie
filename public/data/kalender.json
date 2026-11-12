@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-12T10:23:33.296Z",
+ "lastUpdated": "2026-11-12T19:23:35.987Z",
  "termine": [
   {
    "id": "ez:bip:2026-11-13:47",
@@ -272,7 +272,7 @@
   "fred-termine-cpi": "live",
   "fred-termine-arbeitsmarkt": "live",
   "fred-termine-bip": "live",
-  "bea": "live",
+  "bea": "alt",
   "eurostat-termine": "live",
   "fred-CPIAUCSL": "live",
   "fred-UNRATE": "live",
