@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-12T07:23:39.166Z",
+ "lastUpdated": "2026-11-12T08:23:37.176Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/finanzen/banken-versicherungen/versicherung-allianz-erhoeht-prognose-rekordgewinn-nach-neun-monaten/100266550.html",
+   "titel": "Versicherer: Allianz erhöht Prognose – Rekordgewinn nach neun Monaten",
+   "link": "https://www.handelsblatt.com/finanzen/banken-versicherungen/versicherung-allianz-erhoeht-prognose-rekordgewinn-nach-neun-monaten/100266550.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-12T08:20:49.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Versicherer profitierte von starken Geschäften in der Vermögensverwaltung. Die Schaden- und Unfallversicherung war dagegen von höheren Schäden aus Naturkatastrophen belastet.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/news-kompakt-us-unterh%C3%A4ndler-sprechen-erneut-mit-putin/a-79925501",
+   "titel": "News kompakt: US-Unterhändler sprechen erneut mit Putin",
+   "link": "https://www.dw.com/de/news-kompakt-us-unterhändler-sprechen-erneut-mit-putin/a-79925501?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-12T08:01:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "US-Unterhändler wollen Putin von einer Beteiligung Europas an künftigen Friedensgesprächen überzeugen. In Mississippi gewinnt erstmals seit mehr als 40 Jahren ein Demokrat eine Senatswahl. Der DW-Nachrichtenüberblick.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/unternehmen/industrie/autobauer-angriffe-in-der-ukraine-stoeren-die-lieferketten-bei-bmw-und-skoda/100268739.html",
    "titel": "BMW & Skoda: Nach Angriffen in der Ukraine – Autoindustrie fehlen erneut Kabelbäume",
@@ -18,7 +40,7 @@
    "titel": "Tourists Brave a Muddy Jungle Trek to See a Famed World War II Wreck",
    "link": "https://www.nytimes.com/2026/11/12/world/asia/yamamoto-pearl-harbor-plane-bougainville-tourism.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-12T06:52:24.000Z",
+   "zeit": "2026-11-12T06:52:25.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Seven Chinese tourists, a dozen villagers and a couple of journalists forded streams and bushwhacked to the downed plane of Isoroku Yamamoto, the Japanese admiral. Machetes proved handy.",
@@ -1004,37 +1026,15 @@
    "maerkte": [],
    "text": "Representative Thomas Massie, Republican of Kentucky, is retiring at the end of his term after losing to a primary challenger backed by President Trump.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/regierungsbildung-rot-rot-gruen-einigt-sich-in-schwerin-auf-koalitionsvertrag/100268836.html",
-   "titel": "Regierungsbildung: Rot-Rot-Grün einigt sich in Mecklenburg-Vorpommern auf Koalitionsvertrag",
-   "link": "https://www.handelsblatt.com/politik/deutschland/regierungsbildung-rot-rot-gruen-einigt-sich-in-schwerin-auf-koalitionsvertrag/100268836.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-10T14:31:09.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach vier Wochen haben sich SPD, Linke und Grüne in Mecklenburg-Vorpommern auf einen Koalitionsvertrag geeinigt und damit die Basis für eine neue Regierung gelegt. Was steht drin?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/patricia-schlesinger-verteidiger-nennt-ex-rbb-intendantin-suendenbock-a-ee426ceb-4949-429c-a65a-75cb824a2423",
-   "titel": "Patricia Schlesinger: Verteidiger nennt Ex-RBB-Intendantin »Sündenbock«",
-   "link": "https://www.spiegel.de/wirtschaft/patricia-schlesinger-verteidiger-nennt-ex-rbb-intendantin-suendenbock-a-ee426ceb-4949-429c-a65a-75cb824a2423#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-10T14:23:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Angriffslustige Anwälte, prominente Fans im Publikum: So lief der erste Tag im Strafprozess gegen die frühere RBB-Intendantin Patricia Schlesinger.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 7,
-  "DW": 8,
+  "tagesschau": 6,
+  "DW": 9,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 8,
   "Handelsblatt": 4,
-  "BBC World": 9,
+  "BBC World": 8,
   "NYT World": 17,
   "EIA Today in Energy": 0
  }
