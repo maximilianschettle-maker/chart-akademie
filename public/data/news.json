@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-12T22:23:30.980Z",
+ "lastUpdated": "2026-11-12T23:23:37.144Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html",
+   "titel": "In Moscow, Witkoff and Kushner Ask Putin to Include Europe in Peace Talks",
+   "link": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-12T23:15:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In Dublin, President Volodymyr Zelensky of Ukraine said Europeans would join the next round of talks. Russia has not confirmed that.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/12/world/europe/army-britain-arrest-spy-russia.html",
    "titel": "Army Officer Accused of Trying to Spy for Russia Is Afghan War Veteran",
@@ -42,6 +53,19 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.handelsblatt.com/technik/forschung-innovation/quantum-systems-drohnenhersteller-meldet-massiven-cyberangriff/100269533.html",
+   "titel": "Rüstungs-Start-up: Drohnenhersteller Quantum Systems meldet massiven Cyberangriff",
+   "link": "https://www.handelsblatt.com/technik/forschung-innovation/quantum-systems-drohnenhersteller-meldet-massiven-cyberangriff/100269533.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-12T20:46:19.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Die Rüstungsfirma aus Bayern meldet einen Angriff durch „feindliche Akteure“. Die Bundeswehr hat den Einsatz der Drohnen des Unternehmens zunächst ausgesetzt.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.handelsblatt.com/politik/deutschland/quantum-systems-drohnenhersteller-meldet-massiven-cyberangriff/100269533.html",
    "titel": "Rüstungs-Start-up: Drohnenhersteller Quantum Systems meldet massiven Cyberangriff",
    "link": "https://www.handelsblatt.com/politik/deutschland/quantum-systems-drohnenhersteller-meldet-massiven-cyberangriff/100269533.html",
@@ -66,17 +90,6 @@
    ],
    "text": "Der deutsche Drohnenhersteller Quantum Systems ist Opfer eines Cyberangriffs geworden. Die Bundeswehr soll umgehend reagiert haben.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html",
-   "titel": "In Moscow, Witkoff and Kushner Ask Putin to Include Europe in Peace Talks",
-   "link": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-12T20:30:48.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Kremlin, taking a hard line, is pushing to widen negotiations to overhaul European security structures.",
-   "sprache": "en"
   },
   {
    "id": "https://www.dw.com/de/zeitenwende-bei-polizei-und-geheimdiensten-aber-wie/a-79934681",
@@ -1034,17 +1047,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The Orléans Fine Arts Museum is on a quest to recover hundreds of works stolen during World War II — and the director wants your help.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/11/world/middleeast/lebanon-economy-crisis-corruption-war.html",
-   "titel": "Lebanon Faces Economic ‘Catastrophe’ After War and Years of Mismanagement",
-   "link": "https://www.nytimes.com/2026/11/11/world/middleeast/lebanon-economy-crisis-corruption-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-11T09:31:18.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Hezbollah’s conflict with Israel and the U.S.-Israel war with Iran have made systemic problems worse, causing the cost of living to soar and driving many Lebanese to despair.",
    "sprache": "en"
   }
  ],
