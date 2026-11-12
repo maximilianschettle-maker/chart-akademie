@@ -1,16 +1,66 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-12T06:23:33.539Z",
+ "lastUpdated": "2026-11-12T07:23:39.166Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/industrie/autobauer-angriffe-in-der-ukraine-stoeren-die-lieferketten-bei-bmw-und-skoda/100268739.html",
+   "titel": "BMW & Skoda: Nach Angriffen in der Ukraine – Autoindustrie fehlen erneut Kabelbäume",
+   "link": "https://www.handelsblatt.com/unternehmen/industrie/autobauer-angriffe-in-der-ukraine-stoeren-die-lieferketten-bei-bmw-und-skoda/100268739.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-12T07:17:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russische Angriffe treffen Werke eines deutschen Zulieferers und unterbrechen die Lieferkette, BMW muss Schichten ausfallen lassen. Auch Ausweichstandorte scheinen nur bedingt sicher.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/12/world/asia/yamamoto-pearl-harbor-plane-bougainville-tourism.html",
    "titel": "Tourists Brave a Muddy Jungle Trek to See a Famed World War II Wreck",
    "link": "https://www.nytimes.com/2026/11/12/world/asia/yamamoto-pearl-harbor-plane-bougainville-tourism.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-12T05:01:15.000Z",
+   "zeit": "2026-11-12T06:52:24.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Seven Chinese tourists, a dozen villagers and a couple of journalists forded streams and bushwhacked to the downed plane of Isoroku Yamamoto, the Japanese admiral. Machetes proved handy.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/jensen-huang-bei-nvidia-er-war-das-perfekte-ziel-kippt-jetzt-der-visionaer-und-mit-ihm-der-ki-boom-a-a60b24c9-72d6-4eab-a8ec-684a1f965c48",
+   "titel": "Jensen Huang bei Nvidia: Er war das perfekte Ziel. Kippt jetzt der Visionär – und mit ihm der KI-Boom?",
+   "link": "https://www.spiegel.de/wirtschaft/jensen-huang-bei-nvidia-er-war-das-perfekte-ziel-kippt-jetzt-der-visionaer-und-mit-ihm-der-ki-boom-a-a60b24c9-72d6-4eab-a8ec-684a1f965c48#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-12T06:50:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Jensen Huang ist als Nvidia-Chef die zentrale Figur für die zentrale Technologie unserer Zeit. Mit dem Skandal könnte nicht nur seine Karriere enden, sondern auch der einzigartige Status des Unternehmens.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-106.html",
+   "titel": "Marktbericht: DAX könnte mit Rekordhoch starten",
+   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-106.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-12T06:33:29.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "halbleiter",
+    "aktien"
+   ],
+   "text": "Sinkende Ölpreise und die Erholungsrally bei US-Techkonzernen könnten den DAX heute gleich zum Handelsbeginn auf ein neues Allzeithoch treiben. Bei Nvidia scheint sich die Führungskrise derweil zuzuspitzen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/11/world/middleeast/nasser-hospital-gaza-strike-israel.html",
+   "titel": "Strike on Gaza Hospital Kills at Least 6 and Injures 20, Rescuers Say",
+   "link": "https://www.nytimes.com/2026/11/11/world/middleeast/nasser-hospital-gaza-strike-israel.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-12T06:20:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A surgeon, an official and a disabled patient were among the victims at Nasser Hospital in Khan Younis, a witness said. Israel said it had targeted a “senior Hamas terrorist.”",
    "sprache": "en"
   },
   {
@@ -34,17 +84,6 @@
    "maerkte": [],
    "text": "Seit 145 Jahren zieht erstmals ein schwarzer Demokrat für Mississippi in den US-Senat. Im Wahlkampf setzte Scott Colom auf die Mobilisierung von Nicht-Wählern - und Gespräche mit Trump-Unterstützern. Von Sandra Ratzow.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/11/world/middleeast/nasser-hospital-gaza-strike-israel.html",
-   "titel": "Strike on Gaza Hospital Kills at Least 6 and Injures 20, Rescuers Say",
-   "link": "https://www.nytimes.com/2026/11/11/world/middleeast/nasser-hospital-gaza-strike-israel.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-12T03:26:06.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nasser Hospital in Khan Younis was attacked despite the 2025 cease-fire. A surgeon, an official and a disabled patient were among the victims, a witness said.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/11/world/asia/china-us-nvidia.html",
@@ -219,7 +258,7 @@
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/soziales/russlands-lng-exporte-eu-zahlte-2026-schon-rund-8-7-milliarden-euro-a-7dad7d60-31c6-4076-aa1b-3583b472013c",
-   "titel": "Russlands LNG-Exporte: EU zahlte 2026 schon rund 8,7 Milliarden Euro",
+   "titel": "LNG-Importe aus Russland: EU zahlte 2026 schon rund 8,7 Milliarden Euro",
    "link": "https://www.spiegel.de/wirtschaft/soziales/russlands-lng-exporte-eu-zahlte-2026-schon-rund-8-7-milliarden-euro-a-7dad7d60-31c6-4076-aa1b-3583b472013c#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-11-11T17:09:00.000Z",
@@ -987,46 +1026,13 @@
    "maerkte": [],
    "text": "Angriffslustige Anwälte, prominente Fans im Publikum: So lief der erste Tag im Strafprozess gegen die frühere RBB-Intendantin Patricia Schlesinger.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-lawrow-fordert-folgeregelung-vor-einem-waffenstillstand/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Lawrow fordert Folgeregelung vor einem Waffenstillstand in der Ukraine",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-lawrow-fordert-folgeregelung-vor-einem-waffenstillstand/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-10T14:20:47.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Wadephul: Europa bei weiteren Ukraine-Treffen an den Tisch +++ Rubio: Gespräche über Ukraine sehr produktiv +++ Friedensgespräche werden morgen fortgesetzt +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-gespraeche-abu-dhabi-104.html",
-   "titel": "Ukraine-Verhandlungen: \"Beide Seiten stehen unter enormem Zugzwang\"",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-gespraeche-abu-dhabi-104.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-10T14:18:25.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russland und die Ukraine stehen unter großem Zeitdruck, sagt der Militärexperte Markus Reisner. Doch ohne Zugeständnisse werde es keinen Erfolg bei den Verhandlungen geben. Wichtig seien auch mögliche Gespräche über eine neue Sicherheitsord",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/deutschland-rolle-ukraine-gespraeche-100.html",
-   "titel": "Warum sitzt Deutschland in Abu Dhabi nicht am Verhandlungstisch?",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/deutschland-rolle-ukraine-gespraeche-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-10T14:15:52.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Derzeit treffen sich in Abu Dhabi Vertreter der Ukraine, Russlands und der USA, um Gespräche über ein Ende des Krieges wieder aufzunehmen. Europa scheint im Abseits, obwohl Deutschland der größte Unterstützer der Ukraine ist. Von N. Markwal",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 7,
   "DW": 8,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 9,
+  "FAZ Wirtschaft": 8,
   "Handelsblatt": 4,
   "BBC World": 9,
   "NYT World": 17,
