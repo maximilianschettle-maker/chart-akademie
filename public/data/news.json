@@ -1,7 +1,46 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-12T20:55:10.987Z",
+ "lastUpdated": "2026-11-12T21:23:28.756Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/quantum-systems-cyberangriff-100.html",
+   "titel": "Bayerischer Drohnenhersteller Quantum Systems meldet Cyberangriff",
+   "link": "https://www.tagesschau.de/inland/quantum-systems-cyberangriff-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-12T21:09:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Der bayerische Rüstungskonzern Quantum Systems ist nach eigenen Angaben Opfer eines Cyberangriffs geworden. Der Vorfall fand im Oktober statt. Laut einem Medienbericht hat die Bundeswehr bereits reagiert.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/12/world/europe/army-britain-arrest-spy-russia.html",
+   "titel": "Army Officer Accused of Trying to Spy for Russia Is Afghan War Veteran",
+   "link": "https://www.nytimes.com/2026/11/12/world/europe/army-britain-arrest-spy-russia.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-12T21:00:52.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "The officer, who served at a NATO base in Britain, is expected to be charged in the coming days, two officials said.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/quantum-systems-drohnenhersteller-meldet-massiven-cyberangriff/100269533.html",
+   "titel": "Rüstungs-Start-up: Drohnenhersteller Quantum Systems meldet massiven Cyberangriff",
+   "link": "https://www.handelsblatt.com/politik/deutschland/quantum-systems-drohnenhersteller-meldet-massiven-cyberangriff/100269533.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-12T20:46:19.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Der Drohnenhersteller aus Bayern meldet einen Angriff durch „feindliche Akteure“. Laut einem Medienbericht hat die Bundeswehr Drohnen des Unternehmens vorsorglich aus dem Verkehr gezogen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/quantum-systems-cyberangriff-auf-deutschen-drohnenhersteller-201678896.html",
    "titel": "Drohnenhersteller: Cyberangriff auf Quantum Systems",
@@ -34,7 +73,7 @@
    "zeit": "2026-11-12T20:11:00.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Drohnen auf Flughäfen, Cyber-Angriffe im Internet - die Sicherheitslage ist angespannt. Wie wappnet sich die Polizei? Und wie wollen Geheimdienste Gefahren aus dem In- und Ausland abwehren?",
+   "text": "Drohnen auf Flughäfen, Cyber-Angriffe im Internet - die Sicherheitslage ist angespannt. Wie wappnet sich Deutschlands Polizei? Und wie wollen Geheimdienste Gefahren aus dem In- und Ausland abwehren?",
    "sprache": "de"
   },
   {
@@ -1005,49 +1044,16 @@
    "maerkte": [],
    "text": "Real Madrid player Vinícius Jr sent a surprise message to 13-year-old fan Zaher who lost both his legs after being hit by a drone in Khartoum, in 2024.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/selenskyj-sieht-fortschritte-bei-ukraine-gespr%C3%A4chen-in-abu-dhabi-news-kompakt-das-wichtigste-kurz-gefasst/a-79914261",
-   "titel": "Selenskyj sieht Fortschritte bei Ukraine-Gesprächen in Abu Dhabi - News kompakt: Das Wichtigste kurz gefasst",
-   "link": "https://www.dw.com/de/selenskyj-sieht-fortschritte-bei-ukraine-gesprächen-in-abu-dhabi-news-kompakt-das-wichtigste-kurz-gefasst/a-79914261?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-11T08:09:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Bei Gesprächen in Abu Dhabi wird wohl ein großer Gefangenenaustausch zwischen Ukraine und Russland vorbereitet. US-Verteidigungsminister Hegseth entgeht vorerst einem Amtsenthebungsverfahren. Der DW-Nachrichtenüberblick.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/10/world/canada/british-columbia-bear-attack.html",
-   "titel": "Canadian Authorities Kill 4 Bears Involved in Deadly Attack on Hikers",
-   "link": "https://www.nytimes.com/2026/11/10/world/canada/british-columbia-bear-attack.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-11T07:32:18.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Wildlife authorities said evidence, including animal DNA, conclusively linked a sow and her three cubs to the deaths of two women along a hiking trail in British Columbia.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/crkgv58pknyeo",
-   "titel": "US warns Madagascar over growing military ties with Russia",
-   "link": "https://www.bbc.co.uk/news/articles/crkgv58pknyeo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-11T07:30:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "US general warns the Sahel model-like security deal with Russia could lead to greater instability in Africa.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 10,
   "DW": 8,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 10,
   "Handelsblatt": 4,
   "BBC World": 8,
-  "NYT World": 16,
+  "NYT World": 17,
   "EIA Today in Energy": 1
  }
 }
