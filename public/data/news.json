@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T23:23:33.544Z",
+ "lastUpdated": "2026-11-13T23:40:14.089Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
@@ -1061,7 +1061,7 @@
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 9,
   "Handelsblatt": 4,
-  "BBC World": 4,
+  "BBC World": 3,
   "NYT World": 15,
   "EIA Today in Energy": 1
  }
