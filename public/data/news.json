@@ -1,13 +1,24 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T21:23:34.236Z",
+ "lastUpdated": "2026-11-13T22:23:28.892Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/13/world/middleeast/eisenkot-netanyahu-racism-arabs.html",
+   "titel": "Eisenkot Accuses Netanyahu of Fueling ‘Racist’ Hostility Against Arabs",
+   "link": "https://www.nytimes.com/2026/11/13/world/middleeast/eisenkot-netanyahu-racism-arabs.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-13T21:50:12.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Gadi Eisenkot sharply criticized Prime Minister Benjamin Netanyahu days after the Israeli leader attacked Arab lawmakers in a divisive speech.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
    "titel": "US-Flusskreuzfahrtschiff kentert nach Zusammenprall in New Orleans",
    "link": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-13T21:19:32.000Z",
+   "zeit": "2026-11-13T21:37:39.000Z",
    "kategorie": "konflikte",
    "maerkte": [
     "oel"
@@ -60,17 +71,6 @@
    "maerkte": [],
    "text": "Lange wurde diskutiert, wer Europa bei Gesprächen mit Russland über ein Ende des Kriegs gegen die Ukraine vertreten soll. Nun gibt es eine Einigung: Das Team bilden Vertreter der EU-Institutionen und aus fünf Ländern - darunter auch Deutsch",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/13/world/middleeast/eisenkot-netanyahu-racism-arabs.html",
-   "titel": "Eisenkot Accuses Netanyahu of Fueling ‘Racist’ Hostility Against Arabs",
-   "link": "https://www.nytimes.com/2026/11/13/world/middleeast/eisenkot-netanyahu-racism-arabs.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-13T18:26:47.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Gadi Eisenkot sharply criticized Prime Minister Benjamin Netanyahu days after the Israeli leader attacked Arab lawmakers in a divisive speech.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/putin-gespraeche-eu-bildet-ukraine-team-deutschland-ist-dabei/100268657.html",
