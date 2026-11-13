@@ -1,7 +1,20 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T03:23:35.566Z",
+ "lastUpdated": "2026-11-13T05:23:32.928Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/13/world/europe/france-riner-judo-lagarde-election.html",
+   "titel": "In French Election, Centrists Eye a Judo Star and a Central Banker",
+   "link": "https://www.nytimes.com/2026/11/13/world/europe/france-riner-judo-lagarde-election.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-13T05:01:06.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Centrists want alternatives to a matchup between the far right and far left in the 2027 presidential election. Teddy Riner, the judo champion, is in, while Christine Lagarde is less likely.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/venezuela-praesidentin-rodriguez-spielt-auf-zeit-machado-draengt-auf-wahlen/100268820.html",
    "titel": "Venezuela: Präsidentin Rodríguez spielt auf Zeit, Machado drängt auf Wahlen",
@@ -1035,27 +1048,16 @@
    "maerkte": [],
    "text": "Gespräche in Abu Dhabi wohl beendet +++ Russischer Chefunterhändler: Austausch von Kriegsgefangenen vereinbart+++ Russland meldet Festnahmen wegen angeblicher Spionage +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo",
-   "titel": "US House blocks bid to impeach Defence Secretary Pete Hegseth",
-   "link": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-11T11:47:22.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 9,
   "DW": 8,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 10,
   "Handelsblatt": 5,
   "BBC World": 11,
-  "NYT World": 17,
+  "NYT World": 18,
   "EIA Today in Energy": 1
  }
 }
