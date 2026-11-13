@@ -1,7 +1,33 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T09:42:03.424Z",
+ "lastUpdated": "2026-11-13T10:23:33.680Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/technik/forschung-innovation/quantum-systems-drohnenhersteller-meldet-massiven-cyberangriff/100269533.html",
+   "titel": "Rüstungs-Start-up: Drohnenhersteller Quantum Systems meldet massiven Cyberangriff",
+   "link": "https://www.handelsblatt.com/technik/forschung-innovation/quantum-systems-drohnenhersteller-meldet-massiven-cyberangriff/100269533.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-13T10:21:35.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Die Rüstungsfirma aus Bayern meldet einen Angriff durch „feindliche Akteure“. Die Bundeswehr hat den Einsatz der Drohnen des Unternehmens zwischenzeitlich ausgesetzt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/13/world/asia/china-military-purge-zhang-shengmin-taiwan.html",
+   "titel": "After Xi Purges China’s Generals, a Military Inquisitor Rises",
+   "link": "https://www.nytimes.com/2026/11/13/world/asia/china-military-purge-zhang-shengmin-taiwan.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-13T10:02:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "The rise of Zhang Shengmin suggests that China’s top brass remains embroiled in investigations, potentially complicating preparations for war over Taiwan.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/13/world/europe/france-riner-judo-lagarde-election.html",
    "titel": "In French Election, Centrists Eye a Judo Star and a Central Banker",
@@ -307,19 +333,6 @@
     "ruestung"
    ],
    "text": "Der bayerische Rüstungskonzern Quantum Systems ist nach eigenen Angaben Opfer eines Cyberangriffs geworden. Der Vorfall fand im Oktober statt. Laut einem Medienbericht hat die Bundeswehr bereits reagiert.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/technik/forschung-innovation/quantum-systems-drohnenhersteller-meldet-massiven-cyberangriff/100269533.html",
-   "titel": "Rüstungs-Start-up: Drohnenhersteller Quantum Systems meldet massiven Cyberangriff",
-   "link": "https://www.handelsblatt.com/technik/forschung-innovation/quantum-systems-drohnenhersteller-meldet-massiven-cyberangriff/100269533.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-12T20:46:19.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Die Rüstungsfirma aus Bayern meldet einen Angriff durch „feindliche Akteure“. Die Bundeswehr hat den Einsatz der Drohnen des Unternehmens zwischenzeitlich ausgesetzt.",
    "sprache": "de"
   },
   {
@@ -1046,26 +1059,15 @@
    "maerkte": [],
    "text": "Nach dem Coup der LEAG eröffnet die Behörde die zweite Ausschreibungsrunde für Gaskraftwerke. Bei den Förderbedingungen bessert sie nach – stößt damit aber weiter auf Kritik.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo",
-   "titel": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
-   "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-11T16:59:34.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 9,
   "DW": 8,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 8,
-  "Handelsblatt": 6,
-  "BBC World": 11,
+  "Handelsblatt": 4,
+  "BBC World": 7,
   "NYT World": 17,
   "EIA Today in Energy": 1
  }
