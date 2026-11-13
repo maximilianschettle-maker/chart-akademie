@@ -1,7 +1,79 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T12:23:36.423Z",
+ "lastUpdated": "2026-11-13T13:23:34.203Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/nachrichtendienst-reform-beschlossen-100.html",
+   "titel": "Bundestag beschließt Reform: Mehr Befugnisse für die Nachrichtendienste",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/nachrichtendienst-reform-beschlossen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-13T13:11:16.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Heimlich Wohnungen betreten, Hackerangriffe, Falschinformationen: Deutsche Nachrichtendienste bekommen mehr Befugnisse. Der Bundestag hat die Reform nun beschlossen. Damit reagiert die Koalition auf die verschärfte Bedrohung.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/bundeshaushalt-2027-der-etat-steht-doch-die-eigentlichen-probleme-kommen-erst-a-ac30c525-9525-4432-96c9-7d0053f94c0c",
+   "titel": "Bundeshaushalt 2027: Der Etat steht – doch die eigentlichen Probleme kommen erst",
+   "link": "https://www.spiegel.de/wirtschaft/bundeshaushalt-2027-der-etat-steht-doch-die-eigentlichen-probleme-kommen-erst-a-ac30c525-9525-4432-96c9-7d0053f94c0c#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-13T12:55:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "Der Haushalt 2027 steht – es ist der größte in der Geschichte der Bundesrepublik. Doch die wahren Probleme drohen erst in den kommenden Jahren. Experten schlagen Alternativen zu Kürzungen vor.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/verkehr-maut-affaere-um-andreas-scheuer-kostet-mehr-als-300-millionen-euro/100269727.html",
+   "titel": "Verkehr: Maut-Affäre kostet mehr als 300 Millionen Euro",
+   "link": "https://www.handelsblatt.com/politik/deutschland/verkehr-maut-affaere-um-andreas-scheuer-kostet-mehr-als-300-millionen-euro/100269727.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-13T12:53:38.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Die gescheiterte Pkw-Maut war noch teurer als bisher bekannt. Das Bundesverkehrsministerium gibt jetzt preis, wie hoch der Auftragswert für externe Rechtsberatung lag.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
+   "titel": "Europe Haggles Over Who Will Represent It in Talks With Russia",
+   "link": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-13T12:33:19.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "After coveting a seat in the Ukraine war discussions, Europe is poised to get one. Deciding who should speak for the continent is its own negotiation.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/katherina-reiche-plant-reaktivierung-alter-kohlekraftwerke-accg-201676862.html",
+   "titel": "Zum Gassparen: Zur Not Kohle",
+   "link": "https://www.faz.net/aktuell/wirtschaft/katherina-reiche-plant-reaktivierung-alter-kohlekraftwerke-accg-201676862.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-13T12:30:03.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Erdgas könnte knapp und teuer werden. Ministerin Reiche überlegt daher, alte Kohlekraftwerke zu reaktivieren. Das gab es schon einmal. Die Steag und die Importeure begrüßen das.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cm75261e3pdko",
+   "titel": "UN watchdog 'increasingly concerned' over Iran nuclear site",
+   "link": "https://www.bbc.co.uk/news/articles/cm75261e3pdko?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-13T12:28:28.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "It says it has never been able to inspect a uranium enrichment plant at Isfahan which Iran announced over a year ago.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-china-hat-jahrelang-deutsche-auto-arbeitsplaetze-quersubventioniert/100269638.html",
    "titel": "Kommentar: China hat jahrelang deutsche Auto-Arbeitsplätze quersubventioniert – jetzt kommt die Rechnung",
@@ -12,17 +84,6 @@
    "maerkte": [],
    "text": "Deutschland war immer stolz darauf, eine Ingenieursnation zu sein. Genau diese Stärke ist vielleicht die einzige Chance, um die Abhängigkeit von China zu verringern.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
-   "titel": "Europe Haggles Over Who Will Represent It in Talks With Russia",
-   "link": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-13T11:49:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "After coveting a seat in the Ukraine war discussions, Europe is poised to get one. Deciding who should speak for the continent is its own negotiation.",
-   "sprache": "en"
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/soziales/gasspeicher-in-deutschland-reiche-setzt-auf-alte-kohle-und-oelkraftwerke-a-27a31085-5bb0-4460-8bb5-0024af1d419e",
@@ -999,72 +1060,15 @@
    "maerkte": [],
    "text": "Kurz vor Beginn der finalen Haushaltsberatungen einigt sich die Koalition: Die Union wehrt einige Steuererhöhungen ab, die SPD weicht Einsparungen auf. Doch ein Streitpunkt bleibt.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/kraftwerksstrategie-peinliche-schlamperei-im-ministerium-von-katherina-reiche-201672918.html",
-   "titel": "Neue Kraftwerke: Peinliche Erdgas-Flickschusterei",
-   "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/kraftwerksstrategie-peinliche-schlamperei-im-ministerium-von-katherina-reiche-201672918.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-11T18:41:43.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "gas"
-   ],
-   "text": "Es wäre unentschuldbar, wenn die wichtige Kraftwerksstrategie und Reiches an sich vernünftige Energiepolitik wegen der Schlamperei bei den Ausschreibungen Schaden nähmen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/arbeitsmarkt-metalltarifrunde-steht-vor-weiterer-eskalationsstufe/100269129.html",
-   "titel": "Arbeitsmarkt: „Keine Grundlage für ernsthaften Kompromiss“: Metalltarifrunde steht vor weiterer Eskalationsstufe",
-   "link": "https://www.handelsblatt.com/politik/deutschland/arbeitsmarkt-metalltarifrunde-steht-vor-weiterer-eskalationsstufe/100269129.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-11T18:25:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Am Donnerstag will der IG-Metall-Vorstand über ganztägige Warnstreiks entscheiden. Die Arbeitgeber haben keinen Zweifel, dass es so kommt – und protestieren schon vorab lautstark.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o",
-   "titel": "Russia-Ukraine talks turn to post-war security but end without breakthrough",
-   "link": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-11T18:04:58.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Talks in Abu Dhabi centred around Europe's security framework, with US envoys due to meet Putin and Zelensky on Thursday.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo",
-   "titel": "Spain sees widespread disruption in first general strike for 14 years",
-   "link": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-11T17:44:32.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-trump-sieht-keinen-bedarf-fuer-ein-iran-abkommen/100136895.html",
-   "titel": "+++ Iran-Krieg +++: Trump: „Wir brauchen kein Abkommen mit dem Iran“",
-   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-trump-sieht-keinen-bedarf-fuer-ein-iran-abkommen/100136895.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-11T17:28:46.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Iran fordert Entschädigung für Kriegsschäden an Umwelt +++ Netanjahu will US-Militärhilfe schrittweise auslaufen lassen +++ Irans Militärführung droht Israel mit Vernichtung +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
-  "DW": 8,
+  "tagesschau": 10,
+  "DW": 7,
   "Spiegel Wirtschaft": 5,
-  "FAZ Wirtschaft": 9,
+  "FAZ Wirtschaft": 8,
   "Handelsblatt": 4,
-  "BBC World": 7,
+  "BBC World": 8,
   "NYT World": 18,
   "EIA Today in Energy": 1
  }
