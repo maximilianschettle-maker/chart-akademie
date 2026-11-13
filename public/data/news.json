@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T09:23:43.712Z",
+ "lastUpdated": "2026-11-13T09:42:03.424Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/2026/11/13/world/europe/france-riner-judo-lagarde-election.html",
@@ -24,6 +24,19 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Ein Jahr Vorbereitung, 300 Menschen vor Ort und das Bühnenbild kam in Schiffscontainern: Die Berliner Staatsoper war zu Gast im neu eröffneten Opernhaus in Shanghai. Das spektakuläre Gebäude soll internationale Kultur anlocken. Von E. Lamby",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kolumnen/kommentar-der-fall-nvidia-hinterlaesst-fast-nur-verlierer/100269327.html",
+   "titel": "Editorial: Der Fall Nvidia hinterlässt fast nur Verlierer",
+   "link": "https://www.handelsblatt.com/meinung/kolumnen/kommentar-der-fall-nvidia-hinterlaesst-fast-nur-verlierer/100269327.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-13T08:35:34.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Nvidia-Chef Jensen Huang war nicht mehr zu halten. Nun drohen dem Konzern, der nur auf ihn zugeschnitten war, heftige Turbulenzen. Aber der Fall bietet auch eine Lehre für Europa.",
    "sprache": "de"
   },
   {
@@ -1043,19 +1056,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o",
-   "titel": "US Treasury Secretary Scott Bessent relocated after alleged Iranian threats",
-   "link": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-11T16:45:11.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Bessent is now one of several Trump administration officials to live on military bases due to safety concerns.",
    "sprache": "en"
   }
  ],
