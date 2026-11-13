@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T11:23:33.001Z",
+ "lastUpdated": "2026-11-13T12:23:36.423Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-china-hat-jahrelang-deutsche-auto-arbeitsplaetze-quersubventioniert/100269638.html",
+   "titel": "Kommentar: China hat jahrelang deutsche Auto-Arbeitsplätze quersubventioniert – jetzt kommt die Rechnung",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-china-hat-jahrelang-deutsche-auto-arbeitsplaetze-quersubventioniert/100269638.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-13T11:57:45.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Deutschland war immer stolz darauf, eine Ingenieursnation zu sein. Genau diese Stärke ist vielleicht die einzige Chance, um die Abhängigkeit von China zu verringern.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
+   "titel": "Europe Haggles Over Who Will Represent It in Talks With Russia",
+   "link": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-13T11:49:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "After coveting a seat in the Ukraine war discussions, Europe is poised to get one. Deciding who should speak for the continent is its own negotiation.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.spiegel.de/wirtschaft/soziales/gasspeicher-in-deutschland-reiche-setzt-auf-alte-kohle-und-oelkraftwerke-a-27a31085-5bb0-4460-8bb5-0024af1d419e",
    "titel": "Gasspeicher in Deutschland: Reiche setzt auf alte Kohle- und Ölkraftwerke",
@@ -27,17 +49,6 @@
    ],
    "text": "Die Rüstungsfirma aus Bayern meldet einen Angriff durch „feindliche Akteure“. Die Bundeswehr hat den Einsatz der Drohnen des Unternehmens zwischenzeitlich ausgesetzt.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
-   "titel": "Europe Haggles Over Who Will Represent It in Talks With Russia",
-   "link": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-13T10:21:16.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "After coveting a seat in the Ukraine war discussions, Europe is poised to get one. Deciding who should speak for the continent is its own negotiation.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/13/world/asia/china-military-purge-zhang-shengmin-taiwan.html",
@@ -192,6 +203,17 @@
     "eurusd"
    ],
    "text": "Nach über 15 Stunden beendete der Haushaltsausschuss seine Beratungen - jetzt steht der Etat für das kommende Jahr. Insgesamt sind Ausgaben in Höhe von 560,9 Milliarden Euro geplant - mehr als ursprünglich vorgesehen war.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/so-enttaeuscht-ist-die-wirtschaft-von-der-merz-regierung-elite-panel-von-allensbach-accg-201668594.html",
+   "titel": "Elite-Panel von Allensbach: So enttäuscht ist die Wirtschaft von der Merz-Regierung",
+   "link": "https://www.faz.net/aktuell/wirtschaft/so-enttaeuscht-ist-die-wirtschaft-von-der-merz-regierung-elite-panel-von-allensbach-accg-201668594.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-13T05:54:48.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die große Mehrheit der Entscheider hält die schwarz-rote Koalition für schwach. Der Glaube an grundlegende Reformen schwindet. Im neuen Elite-Panel von Allensbach kommt ein Politiker besonders schlecht weg.",
    "sprache": "de"
   },
   {
@@ -1034,37 +1056,13 @@
    "maerkte": [],
    "text": "Iran fordert Entschädigung für Kriegsschäden an Umwelt +++ Netanjahu will US-Militärhilfe schrittweise auslaufen lassen +++ Irans Militärführung droht Israel mit Vernichtung +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kolumnen/asia-techonomics-entscheidet-elon-musk-in-myanmar-ueber-leben-und-tod/100268624.html",
-   "titel": "Asia Techonomics: Entscheidet Elon Musk in Myanmar über Leben und Tod?",
-   "link": "https://www.handelsblatt.com/meinung/kolumnen/asia-techonomics-entscheidet-elon-musk-in-myanmar-ueber-leben-und-tod/100268624.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-11T17:24:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nicht nur im Ukrainekrieg ist Starlink unverzichtbar: In Myanmar warnen Helfer über das Satelliteninternet vor Luftangriffen. Doch immer mehr Nutzer verlieren den Zugang. Es ist Zeit für Wettbewerb.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/china-und-nvidia-sex-spionage-ist-ein-uebliches-vorgehen-201672334.html",
-   "titel": "Chinas Geheimdienst: „Sex-Spionage ist eine Methode, die wir schon lange kennen“",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/china-und-nvidia-sex-spionage-ist-ein-uebliches-vorgehen-201672334.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-11T17:24:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Wie werden Honigfallen aufgestellt? China-Experte Ralph Weber sagt: Mit seiner Nähe zu Donald Trump war Nvidia-Chef Jensen Huang für den chinesischen Geheimdienst ein absolutes Topziel.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 9,
   "DW": 8,
   "Spiegel Wirtschaft": 5,
-  "FAZ Wirtschaft": 8,
+  "FAZ Wirtschaft": 9,
   "Handelsblatt": 4,
   "BBC World": 7,
   "NYT World": 18,
