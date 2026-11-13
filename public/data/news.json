@@ -1,7 +1,53 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T18:23:32.602Z",
+ "lastUpdated": "2026-11-13T19:23:34.765Z",
  "eintraege": [
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/bessent-gegen-lutnick-nvidia-wird-zur-us-regierungskrise-201681651.html",
+   "titel": "Chips Nach China: Die Nvidia-Affäre wird zur Regierungskrise",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/bessent-gegen-lutnick-nvidia-wird-zur-us-regierungskrise-201681651.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-13T19:01:02.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Der vermutete Schmuggel amerikanischer KI-Chips nach China bringt Handelsminister Howard Lutnick in Bedrängnis. Finanzminister Scott Bessent erhebt schwere Vorwürfe.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
+   "titel": "Europe Agrees on a Team to Represent It in Talks With Russia",
+   "link": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-13T18:52:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "After coveting a seat in the Ukraine war discussions, Europe is poised to get one. The continent wants to fill it with a six-member team.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/eu-vertreter-ukraine-gespraeche-100.html",
+   "titel": "EU einigt sich auf europäisches Team für Ukraine-Verhandlungen",
+   "link": "https://www.tagesschau.de/ausland/eu-vertreter-ukraine-gespraeche-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-13T18:44:23.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Lange wurde diskutiert, wer Europa bei Gesprächen mit Russland über ein Ende des Kriegs gegen die Ukraine vertreten soll. Nun gibt es eine Einigung: Das Team bilden Vertreter der EU-Institutionen und aus fünf Ländern - darunter auch Deutsch",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/13/world/middleeast/eisenkot-netanyahu-racism-arabs.html",
+   "titel": "Eisenkot Accuses Netanyahu of Fueling ‘Racist’ Hostility Against Arabs",
+   "link": "https://www.nytimes.com/2026/11/13/world/middleeast/eisenkot-netanyahu-racism-arabs.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-13T18:26:47.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Gadi Eisenkot sharply criticized Prime Minister Benjamin Netanyahu days after the Israeli leader attacked Arab lawmakers in a divisive speech.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/putin-gespraeche-die-eu-hat-sich-fuer-ein-ukraine-team-entschieden-deutschland-ist-dabei/100268657.html",
    "titel": "Putin-Gespräche: Die EU hat sich für ein Ukraine-Team entschieden – Deutschland ist dabei",
@@ -236,17 +282,6 @@
    ],
    "text": "Die gescheiterte Pkw-Maut war noch teurer als bisher bekannt. Das Bundesverkehrsministerium gibt jetzt preis, wie hoch der Auftragswert für externe Rechtsberatung lag.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
-   "titel": "Europe Haggles Over Who Will Represent It in Talks With Russia",
-   "link": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-13T12:33:19.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "After coveting a seat in the Ukraine war discussions, Europe is poised to get one. Deciding who should speak for the continent is its own negotiation.",
-   "sprache": "en"
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/katherina-reiche-plant-reaktivierung-alter-kohlekraftwerke-accg-201676862.html",
@@ -1021,53 +1056,16 @@
    "maerkte": [],
    "text": "Der IG-Metall-Vorstand hat am Donnerstag über ganztägige Warnstreiks entschieden. Die Arbeitgeber pochen auf Lösungen am Verhandlungstisch und protestieren lautstark.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/streit-in-union-ueber-haushalt-eskaliert-hat-ordentlich-geknallt-accg-201674937.html",
-   "titel": "Streit über Haushalt: Hessens Ministerpräsident Rhein verlangt, dass die Stromsteuer doch noch sinkt",
-   "link": "https://www.faz.net/aktuell/wirtschaft/streit-in-union-ueber-haushalt-eskaliert-hat-ordentlich-geknallt-accg-201674937.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-12T08:54:17.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "In der Union eskaliert der Streit über die Haushaltspolitik. „Wir verlieren jede Glaubwürdigkeit“, sagt ein früherer CDU-Generalsekretär. „Es hat ordentlich geknallt“, sagt ein Finanzfachmann der Fraktion.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/cdu-finanzfachmann-middelberg-es-hat-ordentlich-geknallt-accg-201674937.html",
-   "titel": "Haushaltsstreit in der regierung: CDU-Finanzfachmann: „Es hat ordentlich geknallt“",
-   "link": "https://www.faz.net/aktuell/wirtschaft/cdu-finanzfachmann-middelberg-es-hat-ordentlich-geknallt-accg-201674937.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-12T08:54:17.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "In der Union eskaliert der Streit über die Haushaltspolitik. „Wir verlieren jede Glaubwürdigkeit“, sagt ein früherer CDU-Generalsekretär. Es geht nicht nur um die Stromsteuer.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/interview-die-angst-vor-ki-befeuerte-den-wahlkampf-der-demokraten/100267009.html",
-   "titel": "Interview: „Die Angst vor KI befeuerte den Wahlkampf der Demokraten“",
-   "link": "https://www.handelsblatt.com/politik/international/interview-die-angst-vor-ki-befeuerte-den-wahlkampf-der-demokraten/100267009.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-12T08:52:23.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der Wahlkampfstratege von US-Demokrat Zohran Mamdani erklärt, warum die Midterms der Anfang vom Ende Trumps sein können und was Berlins nächste Regierung sich von New York abschauen kann.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 11,
   "DW": 9,
   "Spiegel Wirtschaft": 6,
-  "FAZ Wirtschaft": 9,
+  "FAZ Wirtschaft": 10,
   "Handelsblatt": 7,
-  "BBC World": 6,
-  "NYT World": 15,
+  "BBC World": 5,
+  "NYT World": 16,
   "EIA Today in Energy": 1
  }
 }
