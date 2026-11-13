@@ -1,7 +1,20 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T20:23:31.890Z",
+ "lastUpdated": "2026-11-13T21:23:34.236Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
+   "titel": "US-Flusskreuzfahrtschiff kentert nach Zusammenprall in New Orleans",
+   "link": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-13T21:19:32.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Das Flusskreuzfahrtschiff \"American Heritage\" ist im Hafen der US-Stadt New Orleans gekentert. Zuvor war es von einem Tanker gerammt worden. An Bord des Schiffes befanden sich mehr als 130 Menschen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/13/world/europe/iran-attacks-europe-britain.html",
    "titel": "‘Get Focused on London’: How Iran’s Agents Attacked European Targets",
@@ -1040,24 +1053,10 @@
    "maerkte": [],
    "text": "In den Haushaltsverhandlungen setzt sich die SPD wieder einmal durch. Die Sozialausgaben bleiben hoch, Entlastungen für Fachkräfte und Unternehmen gibt es keine. Zerbricht auch diese Koalition an einer Geldfrage?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/neuer-rekord-dax-knackt-erstmals-marke-von-27-000-punkten-a-dc114850-1845-407a-9ed4-981f12b936db",
-   "titel": "Börse: Neuer Rekord – Dax knackt erstmals Marke von 27.000 Punkten",
-   "link": "https://www.spiegel.de/wirtschaft/neuer-rekord-dax-knackt-erstmals-marke-von-27-000-punkten-a-dc114850-1845-407a-9ed4-981f12b936db#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-12T09:54:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "Gute Stimmung am deutschen Aktienmarkt: Der Dax hat eine neue Rekordmarke erreicht. Der Höhenflug liegt unter anderem an zuletzt positiven Firmenbilanzen ​und ‌den rückläufigen Ölpreisen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 12,
   "DW": 9,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 9,
