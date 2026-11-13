@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T02:23:35.370Z",
+ "lastUpdated": "2026-11-13T03:23:35.566Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/venezuela-praesidentin-rodriguez-spielt-auf-zeit-machado-draengt-auf-wahlen/100268820.html",
+   "titel": "Venezuela: Präsidentin Rodríguez spielt auf Zeit, Machado drängt auf Wahlen",
+   "link": "https://www.handelsblatt.com/politik/international/venezuela-praesidentin-rodriguez-spielt-auf-zeit-machado-draengt-auf-wahlen/100268820.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-13T03:15:30.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Oppositionsführerin Machado ist unter Jubel nach Venezuela zurückgekehrt. Doch Delcy Rodríguez will ihre Macht festigen. Und die USA verfolgen eigene Pläne. Wann es Wahlen gibt, ist unklar.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/12/world/asia/yamamoto-pearl-harbor-plane-bougainville-tourism.html",
    "titel": "Tourists Brave a Muddy Jungle Trek to See a Famed World War II Wreck",
@@ -1035,17 +1046,6 @@
    "maerkte": [],
    "text": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/drei-verd%C3%A4chtige-sollen-iranischen-terror-unterst%C3%BCtzt-haben/a-79917360",
-   "titel": "Drei Verdächtige sollen iranischen Terror unterstützt haben",
-   "link": "https://www.dw.com/de/drei-verdächtige-sollen-iranischen-terror-unterstützt-haben/a-79917360?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-11T11:30:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Männer sollen der irakischen Miliz Kataib Hisbollah und den iranischen Revolutionsgarden zu Diensten gewesen sein - mit Verbindungen bis nach Europa. Die US-Behörden haben nun Anklage gegen sie erhoben.",
-   "sprache": "de"
   }
  ],
  "quellen": {
