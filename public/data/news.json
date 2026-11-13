@@ -1,7 +1,20 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T10:23:33.680Z",
+ "lastUpdated": "2026-11-13T11:23:33.001Z",
  "eintraege": [
+  {
+   "id": "https://www.spiegel.de/wirtschaft/soziales/gasspeicher-in-deutschland-reiche-setzt-auf-alte-kohle-und-oelkraftwerke-a-27a31085-5bb0-4460-8bb5-0024af1d419e",
+   "titel": "Gasspeicher in Deutschland: Reiche setzt auf alte Kohle- und Ölkraftwerke",
+   "link": "https://www.spiegel.de/wirtschaft/soziales/gasspeicher-in-deutschland-reiche-setzt-auf-alte-kohle-und-oelkraftwerke-a-27a31085-5bb0-4460-8bb5-0024af1d419e#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-13T11:05:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Die Gasspeicher sind so leer wie selten, im Winter drohen hohe Preise. Das Ministerium von Katherina Reiche hat monatelang wenig dagegen getan. Nun bereitet die CDU-Politikerin ein Notfallgesetz vor.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/technik/forschung-innovation/quantum-systems-drohnenhersteller-meldet-massiven-cyberangriff/100269533.html",
    "titel": "Rüstungs-Start-up: Drohnenhersteller Quantum Systems meldet massiven Cyberangriff",
@@ -14,6 +27,17 @@
    ],
    "text": "Die Rüstungsfirma aus Bayern meldet einen Angriff durch „feindliche Akteure“. Die Bundeswehr hat den Einsatz der Drohnen des Unternehmens zwischenzeitlich ausgesetzt.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
+   "titel": "Europe Haggles Over Who Will Represent It in Talks With Russia",
+   "link": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-13T10:21:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "After coveting a seat in the Ukraine war discussions, Europe is poised to get one. Deciding who should speak for the continent is its own negotiation.",
+   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/13/world/asia/china-military-purge-zhang-shengmin-taiwan.html",
@@ -1034,31 +1058,6 @@
    ],
    "text": "Wie werden Honigfallen aufgestellt? China-Experte Ralph Weber sagt: Mit seiner Nähe zu Donald Trump war Nvidia-Chef Jensen Huang für den chinesischen Geheimdienst ein absolutes Topziel.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/soziales/russlands-lng-exporte-eu-zahlte-2026-schon-rund-8-7-milliarden-euro-a-7dad7d60-31c6-4076-aa1b-3583b472013c",
-   "titel": "LNG-Importe aus Russland: EU zahlte 2026 schon rund 8,7 Milliarden Euro",
-   "link": "https://www.spiegel.de/wirtschaft/soziales/russlands-lng-exporte-eu-zahlte-2026-schon-rund-8-7-milliarden-euro-a-7dad7d60-31c6-4076-aa1b-3583b472013c#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-11T17:09:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "gas",
-    "eurusd"
-   ],
-   "text": "EU-Konzerne haben 2026 schon geschätzt 8,7 Milliarden Euro für russisches LNG aus dem Jamal-Projekt ausgegeben. Das zeigen neue Berechnungen, die dem SPIEGEL vorliegen. Das Geld hilft Russland im Ukrainekrieg.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/netzagentur-begrenzt-umruestung-von-kohlemeilern-201670091.html",
-   "titel": "Gaskraftwerke: Netzagentur begrenzt Umrüstung von Kohlemeilern",
-   "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/netzagentur-begrenzt-umruestung-von-kohlemeilern-201670091.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-11T17:03:12.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach dem Coup der LEAG eröffnet die Behörde die zweite Ausschreibungsrunde für Gaskraftwerke. Bei den Förderbedingungen bessert sie nach – stößt damit aber weiter auf Kritik.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1068,7 +1067,7 @@
   "FAZ Wirtschaft": 8,
   "Handelsblatt": 4,
   "BBC World": 7,
-  "NYT World": 17,
+  "NYT World": 18,
   "EIA Today in Energy": 1
  }
 }
