@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T19:23:34.765Z",
+ "lastUpdated": "2026-11-13T20:23:31.890Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/13/world/europe/iran-attacks-europe-britain.html",
+   "titel": "‘Get Focused on London’: How Iran’s Agents Attacked European Targets",
+   "link": "https://www.nytimes.com/2026/11/13/world/europe/iran-attacks-europe-britain.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-13T20:10:37.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A wave of assaults in Britain and elsewhere in the spring sowed fear across Europe. Prosecutors shed new light on how Iran took aim at U.S. allies.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/bessent-gegen-lutnick-nvidia-wird-zur-us-regierungskrise-201681651.html",
    "titel": "Chips Nach China: Die Nvidia-Affäre wird zur Regierungskrise",
@@ -47,6 +58,17 @@
    "maerkte": [],
    "text": "Gadi Eisenkot sharply criticized Prime Minister Benjamin Netanyahu days after the Israeli leader attacked Arab lawmakers in a divisive speech.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/putin-gespraeche-eu-bildet-ukraine-team-deutschland-ist-dabei/100268657.html",
+   "titel": "Putin-Gespräche: Die EU hat sich für ein Ukraine-Team entschieden – Deutschland ist dabei",
+   "link": "https://www.handelsblatt.com/politik/international/putin-gespraeche-eu-bildet-ukraine-team-deutschland-ist-dabei/100268657.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-13T18:20:56.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Spott aus Washington, tagelanger Streit in Brüssel, dann die Lösung in Dublin: Die EU hat entschieden, wer sie bei möglichen Verhandlungen über den Krieg in der Ukraine vertritt.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/putin-gespraeche-die-eu-hat-sich-fuer-ein-ukraine-team-entschieden-deutschland-ist-dabei/100268657.html",
@@ -1032,40 +1054,16 @@
    ],
    "text": "Gute Stimmung am deutschen Aktienmarkt: Der Dax hat eine neue Rekordmarke erreicht. Der Höhenflug liegt unter anderem an zuletzt positiven Firmenbilanzen ​und ‌den rückläufigen Ölpreisen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/autobahn-gmbh-experten-warnen-vor-risiken-eigener-verschuldung-a-615f1c60-95ee-4a6b-8efb-359ae69265a1",
-   "titel": "Autobahn GmbH: Experten warnen vor Risiken eigener Verschuldung",
-   "link": "https://www.spiegel.de/wirtschaft/autobahn-gmbh-experten-warnen-vor-risiken-eigener-verschuldung-a-615f1c60-95ee-4a6b-8efb-359ae69265a1#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-12T09:52:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Die Betreibergesellschaft der Autobahnen soll sich künftig selbst verschulden und so den Bundeshaushalt entlasten. Experten befürchten: Diese Rechnung geht nicht auf.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/arbeitsmarkt-ig-metall-ruft-zu-ganztaegigen-warnstreiks-in-metalltarifrunde-auf/100269129.html",
-   "titel": "Arbeitsmarkt: „Keine Grundlage für ernsthaften Kompromiss“: Metalltarifrunde steht vor weiterer Eskalationsstufe",
-   "link": "https://www.handelsblatt.com/politik/deutschland/arbeitsmarkt-ig-metall-ruft-zu-ganztaegigen-warnstreiks-in-metalltarifrunde-auf/100269129.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-12T09:01:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der IG-Metall-Vorstand hat am Donnerstag über ganztägige Warnstreiks entschieden. Die Arbeitgeber pochen auf Lösungen am Verhandlungstisch und protestieren lautstark.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 11,
   "DW": 9,
   "Spiegel Wirtschaft": 6,
-  "FAZ Wirtschaft": 10,
-  "Handelsblatt": 7,
-  "BBC World": 5,
-  "NYT World": 16,
+  "FAZ Wirtschaft": 9,
+  "Handelsblatt": 4,
+  "BBC World": 4,
+  "NYT World": 15,
   "EIA Today in Energy": 1
  }
 }
