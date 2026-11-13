@@ -1,16 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T16:23:32.474Z",
+ "lastUpdated": "2026-11-13T17:23:30.000Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-russland-krieg-angriffe-autobomben-100.html",
+   "titel": "Ukraine und Russland greifen sich trotz Verhandlungen weiter an",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-krieg-angriffe-autobomben-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-13T17:15:20.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Trotz intensiver Verhandlungen über ein Ende des Ukraine-Krieges dauern die gegenseitigen Angriffe zwischen Kiew und Moskau an. Russland meldet sieben Tote, in der Ukraine wurden mindestens zwei Menschen getötet.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/ukraine-gipfel-eu-dublin-merz-100.html",
    "titel": "Merz beansprucht Teilnahme an künftigen Ukraine-Gesprächen",
    "link": "https://www.tagesschau.de/ausland/europa/ukraine-gipfel-eu-dublin-merz-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-13T16:13:23.000Z",
+   "zeit": "2026-11-13T16:36:49.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Der Krieg gegen die Ukraine steht im Fokus des EU-Treffens in Dublin. Kanzler Merz erhält für seinen Vorstoß zur Finanzierung neuer Ukraine-Hilfen Rückendeckung - bei Gesprächen über ein Kriegsende sieht er Deutschland als \"gesetzt\" an.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/andreas-mattfeldt-fuehrender-cdu-haushaltspolitiker-schickt-brandbrief-an-merz-a-93b08f3d-2bc3-4f2f-b0c4-2e6c8149d98f",
+   "titel": "Andreas Mattfeldt: Führender CDU-Haushaltspolitiker schickt Brandbrief an Merz",
+   "link": "https://www.spiegel.de/wirtschaft/andreas-mattfeldt-fuehrender-cdu-haushaltspolitiker-schickt-brandbrief-an-merz-a-93b08f3d-2bc3-4f2f-b0c4-2e6c8149d98f#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-13T16:26:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "In ungewöhnlich scharfen Worten rechnet der Abgeordnete Andreas Mattfeldt nach dem schwarz-roten Kompromiss über einen Bundesetat mit dem Prozedere ab. Aus seiner Sicht trägt der gesamte Haushalt eine sozialdemokratische Handschrift.",
    "sprache": "de"
   },
   {
@@ -1034,40 +1058,16 @@
    "maerkte": [],
    "text": "Der Versicherer profitierte von starken Geschäften in der Vermögensverwaltung. Die Schaden- und Unfallversicherung war dagegen von höheren Schäden aus Naturkatastrophen belastet.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/news-kompakt-us-unterh%C3%A4ndler-sprechen-erneut-mit-putin/a-79925501",
-   "titel": "News kompakt: US-Unterhändler sprechen erneut mit Putin",
-   "link": "https://www.dw.com/de/news-kompakt-us-unterhändler-sprechen-erneut-mit-putin/a-79925501?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-12T08:01:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "US-Unterhändler wollen Putin von einer Beteiligung Europas an künftigen Friedensgesprächen überzeugen. In Mississippi gewinnt erstmals seit mehr als 40 Jahren ein Demokrat eine Senatswahl. Der DW-Nachrichtenüberblick.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/jensen-huang-bei-nvidia-er-war-das-perfekte-ziel-kippt-jetzt-der-visionaer-und-mit-ihm-der-ki-boom-a-a60b24c9-72d6-4eab-a8ec-684a1f965c48",
-   "titel": "Nvidia: Jensen Huang war das perfekte Ziel - kippt jetzt der Visionär?",
-   "link": "https://www.spiegel.de/wirtschaft/jensen-huang-bei-nvidia-er-war-das-perfekte-ziel-kippt-jetzt-der-visionaer-und-mit-ihm-der-ki-boom-a-a60b24c9-72d6-4eab-a8ec-684a1f965c48#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-12T06:50:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Jensen Huang ist als Nvidia-Chef die zentrale Figur für die zentrale Technologie unserer Zeit. Mit dem Skandal könnte nicht nur seine Karriere enden, sondern auch der einzigartige Status des Unternehmens.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 11,
   "DW": 9,
-  "Spiegel Wirtschaft": 5,
+  "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 8,
   "Handelsblatt": 6,
-  "BBC World": 8,
-  "NYT World": 16,
+  "BBC World": 6,
+  "NYT World": 15,
   "EIA Today in Energy": 1
  }
 }
