@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-14T09:23:32.289Z",
+ "lastUpdated": "2026-11-14T10:23:30.208Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selnskyj-donbass-rueckzug-gegen-nato-beitritt-vor/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: USA schlagen laut Selnskyj Donbass-Rückzug gegen Nato-Beitritt vor",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selnskyj-donbass-rueckzug-gegen-nato-beitritt-vor/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-14T10:17:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Russland: Haben ukrainischen Orts Tersjanka eingenommen +++ Starlink-Störungen: Senatoren fordern Unterlagen von Musk +++ Dreiertreffen Trumps mit Xi und Putin angekündigt +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/der-liedermacher-wolf-biermann-wird-90-jahre-alt/a-79902741",
+   "titel": "Der Liedermacher Wolf Biermann wird 90 Jahre alt",
+   "link": "https://www.dw.com/de/der-liedermacher-wolf-biermann-wird-90-jahre-alt/a-79902741?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-14T09:59:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Sein Leben ist ein Spiegel deutsch-deutscher Zeitgeschichte. Mit Gitarre und frechem Mundwerk hat Wolf Biermann sie kommentiert, und mit 90 ist er kämpferisch wie eh und je.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.dw.com/de/baut-china-milit%C3%A4rpr%C3%A4senz-in-s%C3%BCdostasien-aus/a-79939477",
    "titel": "Baut China Militärpräsenz in Südostasien aus?",
@@ -15,7 +39,7 @@
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/service/iran-meldet-zwei-brennende-oel-tanker-in-der-strasse-von-hormus-a-872ff571-83d5-4520-9cd2-bdbdf570b95e",
-   "titel": "Iran meldet drei brennende Öltanker in der Straße von Hormus",
+   "titel": "Straße von Hormus: Iran meldet drei brennende Öltanker in Meerenge",
    "link": "https://www.spiegel.de/wirtschaft/service/iran-meldet-zwei-brennende-oel-tanker-in-der-strasse-von-hormus-a-872ff571-83d5-4520-9cd2-bdbdf570b95e#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-11-14T07:49:00.000Z",
@@ -1033,40 +1057,16 @@
    "maerkte": [],
    "text": "Die Haushaltsverhandlungen sind aus Sicht von CDU und CSU schlecht gelaufen: Statt Aufbruchshoffnung geht das Gefühl um, allenfalls das Schlimmste verhindert zu haben. Wackelt die Koalition?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/energiepolitik-neue-debatte-ueber-atomenergie-entbrannt/100268806.html",
-   "titel": "Energiepolitik: Verheißung Kernkraft: Neue Debatte über Atomenergie entbrannt",
-   "link": "https://www.handelsblatt.com/politik/deutschland/energiepolitik-neue-debatte-ueber-atomenergie-entbrannt/100268806.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-12T14:11:38.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Hohe Strompreise entfachen die Debatte über die umstrittene Technologie neu. Selbst Grünen-Politiker räumen preisdämpfende Effekte ein.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.eia.gov/todayinenergy/detail.php",
-   "titel": "EIA forecasts Alaskan crude oil production to grow 13% in 2027",
-   "link": "https://www.eia.gov/todayinenergy/detail.php?id=68444",
-   "quelle": "EIA Today in Energy",
-   "zeit": "2026-11-12T14:00:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "After decades of decline, crude oil production in Alaska is growing, driven by two projects on Alaska's North Slope. In our latest Short-Term Energy Outlook, we expect a 23,000 barrels per day (b/d) (6%) increase in 2026, followed by a 60,0",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 12,
-  "DW": 9,
+  "DW": 8,
   "Spiegel Wirtschaft": 6,
-  "FAZ Wirtschaft": 10,
-  "Handelsblatt": 2,
+  "FAZ Wirtschaft": 9,
+  "Handelsblatt": 3,
   "BBC World": 5,
-  "NYT World": 13,
+  "NYT World": 11,
   "EIA Today in Energy": 1
  }
 }
