@@ -1,10 +1,21 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-14T08:23:32.472Z",
+ "lastUpdated": "2026-11-14T09:23:32.289Z",
  "eintraege": [
   {
+   "id": "https://www.dw.com/de/baut-china-milit%C3%A4rpr%C3%A4senz-in-s%C3%BCdostasien-aus/a-79939477",
+   "titel": "Baut China Militärpräsenz in Südostasien aus?",
+   "link": "https://www.dw.com/de/baut-china-militärpräsenz-in-südostasien-aus/a-79939477?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-14T08:53:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "China intensiviert seine wirtschaftlichen Beziehungen in Südostasien. Neue Einrichtungen in Laos und Kambodscha werfen die Frage auf, ob Peking zugleich seinen militärischen Zugriff auf die Region erweitert.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.spiegel.de/wirtschaft/service/iran-meldet-zwei-brennende-oel-tanker-in-der-strasse-von-hormus-a-872ff571-83d5-4520-9cd2-bdbdf570b95e",
-   "titel": "Iran meldet zwei brennende Öl-Tanker in der Straße von Hormus",
+   "titel": "Iran meldet drei brennende Öltanker in der Straße von Hormus",
    "link": "https://www.spiegel.de/wirtschaft/service/iran-meldet-zwei-brennende-oel-tanker-in-der-strasse-von-hormus-a-872ff571-83d5-4520-9cd2-bdbdf570b95e#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-11-14T07:49:00.000Z",
@@ -12,12 +23,12 @@
    "maerkte": [
     "oel"
    ],
-   "text": "Es fließt wieder Öl durch die Straße von Hormus, doch die Passage gilt als teuer und riskant. Nun berichtet Iran über Feuer auf zwei Tankern – angeblich verursacht durch Seeminen.",
+   "text": "Es fließt wieder Öl durch die Straße von Hormus, doch die Passage gilt als teuer und riskant. Nun berichtet Iran über Feuer auf mehreren Tankern – angeblich verursacht durch Seeminen.",
    "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo",
-   "titel": "What we know about the longest ground stop since 9/11",
+   "titel": "What we know about the ground stop and what to do if you're affected",
    "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-14T07:42:11.000Z",
@@ -187,6 +198,17 @@
    "maerkte": [],
    "text": "Spott aus Washington, tagelanger Streit in Brüssel, dann die Lösung in Dublin: Die EU hat entschieden, wer sie bei möglichen Verhandlungen über den Krieg in der Ukraine vertritt.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/sport/articles/cm4gn9lvlgy2o",
+   "titel": "Estonia bans Russian athletes as backlash intensifies",
+   "link": "https://www.bbc.co.uk/sport/articles/cm4gn9lvlgy2o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-13T17:54:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Estonia is the latest country to say it will not allow Russian or Belarusian athletes to compete on its territory as a result of the ongoing war in Ukraine.",
+   "sprache": "en"
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/stromsteuer-schafft-die-koalition-doch-noch-eine-loesung-201680033.html",
@@ -1035,39 +1057,15 @@
    ],
    "text": "After decades of decline, crude oil production in Alaska is growing, driven by two projects on Alaska's North Slope. In our latest Short-Term Energy Outlook, we expect a 23,000 barrels per day (b/d) (6%) increase in 2026, followed by a 60,0",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/crgj3v3z10dno",
-   "titel": "Eight killed in Colombian air strike targeting Gulf Clan gang",
-   "link": "https://www.bbc.co.uk/news/articles/crgj3v3z10dno?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-12T13:58:49.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A suspected gang leader considered a \"priority target\" was among those killed, the Colombian president says.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/zoll-soll-schlagkraeftiger-werden-bundestag-beschliesst-neue-befugnisse-a-60710faa-d41e-4228-9e70-93f77bb5d02d",
-   "titel": "Finanzkriminalität: Zoll soll schlagkräftiger werden – Bundestag beschließt neue Befugnisse",
-   "link": "https://www.spiegel.de/wirtschaft/zoll-soll-schlagkraeftiger-werden-bundestag-beschliesst-neue-befugnisse-a-60710faa-d41e-4228-9e70-93f77bb5d02d#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-12T13:39:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Schätzungen zufolge werden jedes Jahr rund 100 ​Milliarden Euro an Schwarzgeld in ‌Deutschland gewaschen. Jetzt soll der Kampf gegen Organisierte Kriminalität forciert werden.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 12,
-  "DW": 8,
-  "Spiegel Wirtschaft": 7,
+  "DW": 9,
+  "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 10,
-  "Handelsblatt": 3,
-  "BBC World": 4,
+  "Handelsblatt": 2,
+  "BBC World": 5,
   "NYT World": 13,
   "EIA Today in Energy": 1
  }
