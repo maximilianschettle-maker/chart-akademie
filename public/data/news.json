@@ -1,7 +1,75 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-14T12:23:32.281Z",
+ "lastUpdated": "2026-11-14T13:23:34.536Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/aiwanger-trauerfeier-100.html",
+   "titel": "Trauerakt in München: Große Anteilnahme bei Abschied von Aiwanger",
+   "link": "https://www.tagesschau.de/inland/aiwanger-trauerfeier-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-14T13:22:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der bayerische Vize-Ministerpräsident und Freie-Wähler-Chef Aiwanger ist mit einem Trauerstaatsakt gewürdigt worden. Die Anteilnahme war groß. Zu der Zeremonie in der Frauenkirche kamen mehr als 1.000 Trauergäste.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/einspeiseverguetung-fuer-solaranlagen-koalition-einigt-sich-accg-201683300.html",
+   "titel": "Kehrtwende: Koalition will Einspeisevergütung für kleine Solaranlagen erhalten",
+   "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/einspeiseverguetung-fuer-solaranlagen-koalition-einigt-sich-accg-201683300.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-14T12:58:02.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Bundeswirtschaftsministerin Katherina Reiche wollte eigentlich die feste Einspeisevergütung für neue Solaranlagen abschaffen. Doch nun hat sich die Koalition offenbar auf einen Erhalt geeinigt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-usa-nato-gebietsverzicht-100.html",
+   "titel": "USA bieten Ukraine laut Selenskyj NATO-Beitritt bei Gebietsverzicht",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-usa-nato-gebietsverzicht-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-14T12:42:12.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Ein Rückzug aus dem Donbass im Tausch für einen NATO-Beitritt - das haben die USA der Ukraine nach Angaben Selenskyjs nahegelegt. Unter bestimmten Bedingungen würde er diese Frage in einem Referendum zur Abstimmung stellen, so der Präsident",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/industrie/logistik-der-3d-druck-feiert-ein-ungeahntes-comeback/100265611.html",
+   "titel": "Logistik: Weltweiter Umsatz steigt um 31 Prozent: 3D-Druck feiert ein ungeahntes Comeback",
+   "link": "https://www.handelsblatt.com/unternehmen/industrie/logistik-der-3d-druck-feiert-ein-ungeahntes-comeback/100265611.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-14T12:30:14.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Das Geschäft mit der Technologie legt kräftiger zu als vermutet. Neben anfälligen Lieferketten und Künstlicher Intelligenz gibt es einen weiteren Grund.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/koalition-spd-stimmt-koalitionsvertrag-in-mecklenburg-vorpommern-zu/100269890.html",
+   "titel": "Koalition: Rot-Rot-Grün in Mecklenburg-Vorpommern steht – SPD stimmt Koalitionsvertrag zu",
+   "link": "https://www.handelsblatt.com/politik/deutschland/koalition-spd-stimmt-koalitionsvertrag-in-mecklenburg-vorpommern-zu/100269890.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-14T12:24:36.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der Weg für die erste rot-rot-grüne Landesregierung in Mecklenburg-Vorpommern ist frei. Alle Parteien stimmten dem Vertrag zu. Am Abend soll das Bündnis per Unterschrift besiegelt werden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/14/world/europe/ukraine-starshield-zelensky.html",
+   "titel": "Ukraine’s Starshield Access Is Being Restricted Again, Zelensky Says",
+   "link": "https://www.nytimes.com/2026/11/14/world/europe/ukraine-starshield-zelensky.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-14T12:24:35.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Volodymyr Zelensky said the system, which Ukraine uses to guide drones, was being throttled over Russian-occupied territory. SpaceX, its developer, has denied the claim.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo",
    "titel": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
@@ -61,6 +129,19 @@
     "oel"
    ],
    "text": "Guinea geht gegen den illegalen Goldabbau vor. Begründet wird das mit Gefahren für die Umwelt. Es gibt Berichte über Gewalt und Abschiebung. In Conakry eröffnet zeitgleich die erste eigene Goldraffinerie.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selenskyj-donbass-rueckzug-gegen-nato-beitritt-vor/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: USA schlagen laut Selenskyj Donbass-Rückzug gegen Nato-Beitritt vor",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selenskyj-donbass-rueckzug-gegen-nato-beitritt-vor/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-14T10:17:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Russland: Haben ukrainischen Orts Tersjanka eingenommen +++ Starlink-Störungen: Senatoren fordern Unterlagen von Musk +++ Dreiertreffen Trumps mit Xi und Putin angekündigt +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -980,97 +1061,14 @@
    "maerkte": [],
    "text": "Specialist Thomas Iglesias had shouted at Hegseth's group to be quiet after they could be heard talking and laughing at the Tomb of the Unknown Soldier.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/jensen-huang-geht-ein-schock-fuer-nvidia-aber-keine-katastrophe-201677508.html",
-   "titel": "Nvidia-Affäre: Der jähe Fall des Jensen Huang",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/jensen-huang-geht-ein-schock-fuer-nvidia-aber-keine-katastrophe-201677508.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-12T17:39:58.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Der Nvidia-Chef war offenbar von seiner vermeintlichen Unantastbarkeit verblendet. Seine Ablösung war unvermeidlich. Für das Unternehmen ist das ein Schock – aber es muss keine Katastrophe sein.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/11/world/middleeast/nasser-hospital-gaza-strike-israel.html",
-   "titel": "Israeli Strikes on Gaza Hospital Kill 6 and Injure Dozens, Health Officials Say",
-   "link": "https://www.nytimes.com/2026/11/11/world/middleeast/nasser-hospital-gaza-strike-israel.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-12T17:38:28.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Israeli authorities said that Hamas had established a command center at the hospital complex. Hamas said the attack was “a heinous crime targeting a civilian medical facility.”",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo",
-   "titel": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
-   "link": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-12T16:54:12.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Witnesses say a missile hit a building containing the surgical wards and intensive care units at Nasser hospital, the largest in southern Gaza.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo",
-   "titel": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
-   "link": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-12T16:31:12.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Later on Thursday, Jared Kushner and Steve Witkoff will travel to Dublin to meet Ukraine's Volodymyr Zelensky.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-russland-putin-witkoff-kushner-100.html",
-   "titel": "Krieg gegen die Ukraine: Putin beharrt auf Gebietsansprüchen",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-putin-witkoff-kushner-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-12T16:29:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Bei einem Treffen mit den US-Unterhändlern Witkoff und Kushner hat der russische Präsident Putin seinen Anspruch auf ukrainische Gebiete erneuert. Eine mögliche Beteiligung Europas an Friedensgesprächen schloss er nicht aus.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-rolle-100.html",
-   "titel": "Rücktritt von Nvidia-Chef Huang: Vom Sympathieträger zum Sicherheitsrisiko",
-   "link": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-rolle-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-12T16:17:54.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Er war nicht nur Chef, sondern auch Gesicht von Nvidia: Jensen Huang formte den Chip-Riesen maßgeblich - als \"sympathischer Tech-Bro\" mit guten Kontakten zur Trump-Regierung. Bis er zum Risiko wurde. Von Gabi Biesinger.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/nvidia-huang-rolle-100.html",
-   "titel": "Rücktritt von Nvidia-Chef Huang: Vom Sympathieträger zum Sicherheitsrisiko",
-   "link": "https://www.tagesschau.de/ausland/amerika/nvidia-huang-rolle-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-12T16:17:54.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Er war nicht nur Chef, sondern auch Gesicht von Nvidia: Jensen Huang formte den Chip-Riesen maßgeblich - als \"sympathischer Tech-Bro\" mit guten Kontakten zur Trump-Regierung. Bis er zum Risiko wurde. Von Gabi Biesinger.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 13,
   "DW": 9,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 10,
-  "Handelsblatt": 2,
+  "Handelsblatt": 3,
   "BBC World": 7,
   "NYT World": 11,
   "EIA Today in Energy": 1
