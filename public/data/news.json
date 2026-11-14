@@ -1,7 +1,20 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-14T00:23:31.778Z",
+ "lastUpdated": "2026-11-14T01:23:33.258Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
+   "titel": "US-Flusskreuzfahrtschiff kentert nach Zusammenprall in New Orleans",
+   "link": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-14T00:51:37.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Das Flusskreuzfahrtschiff \"American Heritage\" ist im Hafen der US-Stadt New Orleans gekentert. Zuvor war es von einem Tanker gerammt worden. An Bord des Schiffes befanden sich mehr als 130 Menschen. Vermisst wird niemand.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo",
    "titel": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
@@ -12,19 +25,6 @@
    "maerkte": [],
    "text": "The 52-year-old general’s provocative posts and military threats have fuelled rumours of a dynastic succession.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
-   "titel": "US-Flusskreuzfahrtschiff kentert nach Zusammenprall in New Orleans",
-   "link": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-14T00:02:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Das Flusskreuzfahrtschiff \"American Heritage\" ist im Hafen der US-Stadt New Orleans gekentert. Zuvor war es von einem Tanker gerammt worden. An Bord des Schiffes befanden sich mehr als 130 Menschen. Vermisst wird niemand.",
-   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo",
@@ -1063,7 +1063,7 @@
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 9,
   "Handelsblatt": 4,
-  "BBC World": 4,
+  "BBC World": 3,
   "NYT World": 15,
   "EIA Today in Energy": 1
  }
