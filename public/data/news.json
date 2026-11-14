@@ -1,7 +1,20 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-14T14:23:32.786Z",
+ "lastUpdated": "2026-11-14T15:23:31.085Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo",
+   "titel": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+   "link": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-14T15:15:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo",
    "titel": "What we know about the ground stop and what to do if you're affected",
@@ -106,19 +119,6 @@
    "maerkte": [],
    "text": "Der Weg für die erste rot-rot-grüne Landesregierung in Mecklenburg-Vorpommern ist frei. Alle Parteien stimmten dem Vertrag zu. Am Abend soll das Bündnis per Unterschrift besiegelt werden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo",
-   "titel": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-   "link": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-14T11:41:20.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia.",
-   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o",
