@@ -1,7 +1,44 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-13T23:40:14.089Z",
+ "lastUpdated": "2026-11-14T00:23:31.778Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo",
+   "titel": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
+   "link": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-14T00:03:52.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The 52-year-old general’s provocative posts and military threats have fuelled rumours of a dynastic succession.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
+   "titel": "US-Flusskreuzfahrtschiff kentert nach Zusammenprall in New Orleans",
+   "link": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-14T00:02:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Das Flusskreuzfahrtschiff \"American Heritage\" ist im Hafen der US-Stadt New Orleans gekentert. Zuvor war es von einem Tanker gerammt worden. An Bord des Schiffes befanden sich mehr als 130 Menschen. Vermisst wird niemand.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo",
+   "titel": "'Miracle on Mississippi' - All rescued after cruise ship hit by tanker in New Orleans",
+   "link": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-13T23:40:45.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
    "titel": "Europe Agrees on a Team to Represent It in Talks With Russia",
@@ -23,19 +60,6 @@
    "maerkte": [],
    "text": "Gadi Eisenkot sharply criticized Prime Minister Benjamin Netanyahu days after the Israeli leader attacked Arab lawmakers in a divisive speech.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
-   "titel": "US-Flusskreuzfahrtschiff kentert nach Zusammenprall in New Orleans",
-   "link": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-13T21:37:39.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Das Flusskreuzfahrtschiff \"American Heritage\" ist im Hafen der US-Stadt New Orleans gekentert. Zuvor war es von einem Tanker gerammt worden. An Bord des Schiffes befanden sich mehr als 130 Menschen.",
-   "sprache": "de"
   },
   {
    "id": "https://www.nytimes.com/2026/11/13/world/europe/iran-attacks-europe-britain.html",
@@ -1031,28 +1055,6 @@
    "maerkte": [],
    "text": "Die Union blockiert kleine Steuererhöhungen, die SPD schwächt Kürzungen im Sozialbereich ab. Von Klingbeils Sparliste bleibt wenig übrig. Bald droht der Koalition ein böses Erwachen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/industrie/autobauer-angriffe-in-der-ukraine-stoeren-die-lieferketten-bei-bmw-und-skoda/100268739.html",
-   "titel": "BMW & Skoda: Nach Angriffen in der Ukraine – Autoindustrie fehlen erneut Kabelbäume",
-   "link": "https://www.handelsblatt.com/unternehmen/industrie/autobauer-angriffe-in-der-ukraine-stoeren-die-lieferketten-bei-bmw-und-skoda/100268739.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-12T10:53:33.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russische Angriffe treffen Werke eines deutschen Zulieferers und unterbrechen die Lieferkette, BMW muss Schichten ausfallen lassen. Auch Ausweichstandorte scheinen nur bedingt sicher.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/streit-um-den-haushalt-fuer-die-cdu-ist-dieses-ergebnis-ein-desaster-201676036.html",
-   "titel": "Beratungen zum Haushalt: Für die CDU ist dieses Ergebnis ein Desaster",
-   "link": "https://www.faz.net/aktuell/wirtschaft/streit-um-den-haushalt-fuer-die-cdu-ist-dieses-ergebnis-ein-desaster-201676036.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-12T10:46:43.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In den Haushaltsverhandlungen setzt sich die SPD wieder einmal durch. Die Sozialausgaben bleiben hoch, Entlastungen für Fachkräfte und Unternehmen gibt es keine. Zerbricht auch diese Koalition an einer Geldfrage?",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1061,7 +1063,7 @@
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 9,
   "Handelsblatt": 4,
-  "BBC World": 3,
+  "BBC World": 4,
   "NYT World": 15,
   "EIA Today in Energy": 1
  }
