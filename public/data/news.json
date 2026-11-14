@@ -1,7 +1,44 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-14T07:23:31.884Z",
+ "lastUpdated": "2026-11-14T08:23:32.472Z",
  "eintraege": [
+  {
+   "id": "https://www.spiegel.de/wirtschaft/service/iran-meldet-zwei-brennende-oel-tanker-in-der-strasse-von-hormus-a-872ff571-83d5-4520-9cd2-bdbdf570b95e",
+   "titel": "Iran meldet zwei brennende Öl-Tanker in der Straße von Hormus",
+   "link": "https://www.spiegel.de/wirtschaft/service/iran-meldet-zwei-brennende-oel-tanker-in-der-strasse-von-hormus-a-872ff571-83d5-4520-9cd2-bdbdf570b95e#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-14T07:49:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Es fließt wieder Öl durch die Straße von Hormus, doch die Passage gilt als teuer und riskant. Nun berichtet Iran über Feuer auf zwei Tankern – angeblich verursacht durch Seeminen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo",
+   "titel": "What we know about the longest ground stop since 9/11",
+   "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-14T07:42:11.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-plus-eine-dramatische-warnung-auf-458-seiten/100269685.html",
+   "titel": "Morning Briefing Plus: Eine dramatische Warnung auf 458 Seiten",
+   "link": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-plus-eine-dramatische-warnung-auf-458-seiten/100269685.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-14T07:35:08.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "Die Wirtschaftsweisen sehen eine Staatsschuldenkrise aufziehen und machen kluge Vorschläge, um sie zu vermeiden. Der Haushalt der Koalition sendet eine ganz andere Botschaft – leider.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/inland/gesellschaft/klimaschutz-klimaziele-deutschland-100.html",
    "titel": "Keine Priorität für Klimaschutz in der Koalition",
@@ -12,17 +49,6 @@
    "maerkte": [],
    "text": "Deutschland wird die selbst gesteckten Klimaziele für 2030 und 2040 verfehlen. Umwelt- und Naturschutzverbände werfen vor allem Kanzler Merz und Wirtschaftsministerin Reiche einen Rollback beim Klimaschutz vor. Von Susanne Henn.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo",
-   "titel": "What we know about the longest ground stop since 9/11",
-   "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-14T03:45:21.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack or a Microsoft outage.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/treffen-trump-putin-xi-100.html",
@@ -1033,38 +1059,16 @@
    ],
    "text": "Schätzungen zufolge werden jedes Jahr rund 100 ​Milliarden Euro an Schwarzgeld in ‌Deutschland gewaschen. Jetzt soll der Kampf gegen Organisierte Kriminalität forciert werden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/videos/cm93rp3gxn6qo",
-   "titel": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
-   "link": "https://www.bbc.co.uk/news/videos/cm93rp3gxn6qo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-12T13:02:46.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Dan Johnson visits one of the country's largest power stations, barely left standing after a ballistic missile strike by Russia.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/bundeszentrale-fuer-politische-bildung-ausrichtung-100.html",
-   "titel": "Neuausrichtung der Bundeszentrale für politische Bildung sorgt für Streit",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/bundeszentrale-fuer-politische-bildung-ausrichtung-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-12T12:52:24.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Bundeszentrale für politische Bildung ist bekannt für den Wahl-O-Mat, Bildungsveranstaltungen und Info-Broschüren. Auf Weisung des Innenministeriums richtet sie sich neu aus. Doch darüber ist jetzt ein Streit ausgebrochen. Von D. K. Mäu",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 12,
-  "DW": 9,
-  "Spiegel Wirtschaft": 6,
+  "DW": 8,
+  "Spiegel Wirtschaft": 7,
   "FAZ Wirtschaft": 10,
-  "Handelsblatt": 4,
+  "Handelsblatt": 3,
   "BBC World": 4,
-  "NYT World": 14,
+  "NYT World": 13,
   "EIA Today in Energy": 1
  }
 }
