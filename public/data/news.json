@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-14T22:23:36.178Z",
+ "lastUpdated": "2026-11-14T23:23:33.569Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/space-x-rakete-rueckkehr-100.html",
+   "titel": "Erfolg für SpaceX: \"Starship\"-Rakete kehrt zur Startrampe zurück",
+   "link": "https://www.tagesschau.de/ausland/amerika/space-x-rakete-rueckkehr-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-14T23:12:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Eine Rakete, die wie ein ziviles Flugzeug eingesetzt werden kann, das ist das Ziel von SpaceX. Nun kann das \"Starship\"-System einen Erfolg verbuchen: Erstmals landete die etwa 50 Meter große obere Raketenstufe wieder auf der Erde.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo",
+   "titel": "How telecoms upgrade work sparked US flight chaos",
+   "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-14T23:11:27.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/technik/raumfahrt-spacex-faengt-riesen-rakete-starship-erstmals-wieder-auf/100269941.html",
    "titel": "Raumfahrt: SpaceX fängt Riesen-Rakete Starship erstmals wieder auf",
@@ -23,17 +45,6 @@
    "maerkte": [],
    "text": "Heftige Regenfälle haben in Gaza Tausende Zelte überflutet, mehrere Menschen starben. Kann Trumps Friedensgremium mit Druck auf Israel und die Hamas die humanitäre Not lindern?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo",
-   "titel": "How telecoms upgrade work sparked US flight chaos",
-   "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-14T20:03:48.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/13/world/europe/iran-attacks-europe-britain.html",
@@ -1046,21 +1057,10 @@
    "maerkte": [],
    "text": "BBC's Bernd Debusmann breaks down why Defence Secretary Hegseth's group was reprimanded at Arlington National Cemetery and the history behind its strict rules of conduct.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-krieg-putin-soll-bereit-sein-europa-bei-verhandlungen-zu-akzeptieren/100269545.html",
-   "titel": "Ukraine-Krieg: Putin soll bereit sein, Europäer am Verhandlungstisch zu akzeptieren",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-krieg-putin-soll-bereit-sein-europa-bei-verhandlungen-zu-akzeptieren/100269545.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-12T23:34:42.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Im Ringen um ein Ende des Ukraine-Kriegs reisen die US-Unterhändler Kushner und Witkoff von Kremlchef Putin weiter zu Selenskyj – mit einer Ankündigung.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 14,
+  "tagesschau": 15,
   "DW": 10,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 7,
