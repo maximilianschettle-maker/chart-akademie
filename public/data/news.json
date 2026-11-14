@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-14T15:23:31.085Z",
+ "lastUpdated": "2026-11-14T16:23:28.841Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selenskyj-donbass-rueckzug-gegen-nato-beitritt-vor/100269908.html",
+   "titel": "Ukraine: USA schlagen laut Selenskyj Donbass-Rückzug gegen Nato-Beitritt vor",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selenskyj-donbass-rueckzug-gegen-nato-beitritt-vor/100269908.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-14T15:38:32.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "US-Unterhändler haben laut Selenskyj einen Nato-Beitritt gegen einen Rückzug aus dem Donbass ins Spiel gebracht. Ob ein Referendum stattfindet, hängt von umfassenden Sicherheitshilfen ab.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/usa-flughaefen-startverbot-100.html",
+   "titel": "Was über das Startverbot für Flugzeuge in den USA bekannt ist",
+   "link": "https://www.tagesschau.de/ausland/amerika/usa-flughaefen-startverbot-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-14T15:22:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Es war der längste Ausfall des US-Flugbetriebs seit Jahrzehnten. Vier Stunden lang galt ein Startverbot. Warum - und mit welchen Folgen? Könnte in Deutschland Ähnliches geschehen? Ein Überblick.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo",
    "titel": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
@@ -1043,35 +1067,13 @@
    ],
    "text": "Der deutsche Drohnenhersteller Quantum Systems ist Opfer eines Cyberangriffs geworden. Die Bundeswehr soll umgehend reagiert haben.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/zeitenwende-bei-polizei-und-geheimdiensten-aber-wie/a-79934681",
-   "titel": "Zeitenwende bei Polizei und Geheimdiensten - aber wie?",
-   "link": "https://www.dw.com/de/zeitenwende-bei-polizei-und-geheimdiensten-aber-wie/a-79934681?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-12T20:11:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Drohnen auf Flughäfen, Cyber-Angriffe im Internet - die Sicherheitslage ist angespannt. Wie wappnet sich Deutschlands Polizei? Und wie wollen Geheimdienste Gefahren aus dem In- und Ausland abwehren?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo",
-   "titel": "Russian warship hit by Ukrainian drone in Gulf of Finland",
-   "link": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-12T20:09:16.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The attack is thought to be the first time Ukrainian drones have attacked a Russian ship in an open stretch of the Baltic Sea.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 14,
   "DW": 9,
   "Spiegel Wirtschaft": 6,
-  "FAZ Wirtschaft": 10,
+  "FAZ Wirtschaft": 9,
   "Handelsblatt": 4,
   "BBC World": 7,
   "NYT World": 11,
