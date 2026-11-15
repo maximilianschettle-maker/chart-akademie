@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-14T23:23:33.569Z",
+ "lastUpdated": "2026-11-15T01:23:34.593Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/ausland/amerika/space-x-rakete-rueckkehr-100.html",
@@ -23,6 +23,19 @@
    "maerkte": [],
    "text": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-drei-oeltanker-in-strasse-von-hormus-nach-minenkontakt-in-brand/100136895.html",
+   "titel": "+++ Iran-Krieg +++: Drei Öltanker in Straße von Hormus nach Minenkontakt in Brand",
+   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-drei-oeltanker-in-strasse-von-hormus-nach-minenkontakt-in-brand/100136895.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-14T22:36:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Hamas-Kommandeur bei israelischem Luftangriff im Gazastreifen getötet +++ Iran lehnt Gespräche zu Atominspektionen ab +++ IAEA besorgt über iranische Urananreicherungsanlage in Isfahan +++ Der Newsblog.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/technik/raumfahrt-spacex-faengt-riesen-rakete-starship-erstmals-wieder-auf/100269941.html",
@@ -1046,17 +1059,6 @@
    "maerkte": [],
    "text": "Kushner: USA arbeiten an größtem Gefangenenaustausch im Ukraine-Krieg +++ Selenskyj: Waffenruhe soll Thema bei nächsten Friedensgesprächen sein +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/videos/cv5y1309dg3go",
-   "titel": "Military cemetery decorum: The tradition behind Hegseth's Veterans Day reprimand",
-   "link": "https://www.bbc.co.uk/news/videos/cv5y1309dg3go?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-12T23:42:52.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "BBC's Bernd Debusmann breaks down why Defence Secretary Hegseth's group was reprimanded at Arlington National Cemetery and the history behind its strict rules of conduct.",
-   "sprache": "en"
   }
  ],
  "quellen": {
