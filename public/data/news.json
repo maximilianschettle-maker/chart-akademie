@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-15T04:23:38.588Z",
+ "lastUpdated": "2026-11-15T06:23:30.315Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/nobelpreistr%C3%A4gerin-mohammadi-memoiren-aus-dem-gef%C3%A4ngnis-ein-leben-im-kampf-f%C3%BCr-freiheit-im-iran/a-79875768",
+   "titel": "Nobelpreisträgerin Mohammadi: Memoiren aus dem Gefängnis - Ein Leben im Kampf für Freiheit im Iran",
+   "link": "https://www.dw.com/de/nobelpreisträgerin-mohammadi-memoiren-aus-dem-gefängnis-ein-leben-im-kampf-für-freiheit-im-iran/a-79875768?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-15T05:35:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Im Gefängnis geschrieben und herausgeschmuggelt: Das Buch von Narges Mohammadi, Friedensnobelpreisträgerin von 2023, zeigt, welchen Preis es haben kann, sich dem Regime im Iran zu widersetzen und für Freiheit zu kämpfen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/spanien-wahlkampf-108.html",
    "titel": "Europamagazin: Ein Aufschwung, den die Spanier nicht spüren",
@@ -918,17 +929,6 @@
    "maerkte": [],
    "text": "In Dublin, President Volodymyr Zelensky of Ukraine said Europeans would join the next round of talks. Russia has not confirmed that.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/nobelpreistr%C3%A4gerin-mohammadi-memoiren-aus-dem-gef%C3%A4ngnis-ein-leben-im-kampf-f%C3%BCr-freiheit-im-iran/a-79875768",
-   "titel": "Nobelpreisträgerin Mohammadi: Memoiren aus dem Gefängnis - Ein Leben im Kampf für Freiheit im Iran",
-   "link": "https://www.dw.com/de/nobelpreisträgerin-mohammadi-memoiren-aus-dem-gefängnis-ein-leben-im-kampf-für-freiheit-im-iran/a-79875768?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-13T07:45:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Im Gefängnis geschrieben und herausgeschmuggelt: Das Buch von Narges Mohammadi, Friedensnobelpreisträgerin von 2023, zeigt, welchen Preis es haben kann, sich dem Regime im Iran zu widersetzen und für Freiheit zu kämpfen.",
-   "sprache": "de"
   },
   {
    "id": "https://www.nytimes.com/2026/11/12/world/asia/yamamoto-pearl-harbor-plane-bougainville-tourism.html",
