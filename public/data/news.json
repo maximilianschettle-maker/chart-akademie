@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-15T06:23:30.315Z",
+ "lastUpdated": "2026-11-15T07:23:28.876Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno",
+   "titel": "Copper wire upgrade behind US flight suspension, transport secretary says",
+   "link": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-15T07:10:31.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-revolutionsgarden-greifen-us-stuetzpunkt-in-bahrain-an/100136895.html",
+   "titel": "+++ Iran-Krieg +++: Iran: Revolutionsgarden greifen US-Stützpunkt in Bahrain an",
+   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-revolutionsgarden-greifen-us-stuetzpunkt-in-bahrain-an/100136895.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-15T06:25:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Drei Öltanker in Straße von Hormus nach Minenkontakt in Brand +++ Koalition fängt Huthi-Raketen ab +++ Hamas-Kommandeur bei israelischem Luftangriff im Gazastreifen getötet +++ Der Newsblog.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.dw.com/de/nobelpreistr%C3%A4gerin-mohammadi-memoiren-aus-dem-gef%C3%A4ngnis-ein-leben-im-kampf-f%C3%BCr-freiheit-im-iran/a-79875768",
    "titel": "Nobelpreisträgerin Mohammadi: Memoiren aus dem Gefängnis - Ein Leben im Kampf für Freiheit im Iran",
@@ -116,17 +140,6 @@
     "oel"
    ],
    "text": "Around 130 people were rescued from a cruise ship after it was struck by a tanker while docked in New Orleans, Louisiana on Friday.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno",
-   "titel": "Copper wire upgrade caused nationwide flight suspension, US transport secretary says",
-   "link": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-14T19:12:25.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment.",
    "sprache": "en"
   },
   {
@@ -1047,17 +1060,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The Ukrainian president says it makes sense for European leaders to be involved as Ukraine hopes to eventually join the EU.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cm3egjgvp794o",
-   "titel": "Neither war nor peace in Tigray - is Ethiopia's latest conflict really over?",
-   "link": "https://www.bbc.co.uk/news/articles/cm3egjgvp794o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-13T00:20:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The army has taken control of most of Tigray's main towns - it is unclear if the TPLF is capable of fighting back.",
    "sprache": "en"
   }
  ],
