@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-15T11:11:25.454Z",
+ "lastUpdated": "2026-11-15T11:23:40.776Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/iran-revolutionsgarde-angriff-bahrain-100.html",
+   "titel": "Iran greift erneut US-Stützpunkt in Bahrain an",
+   "link": "https://www.tagesschau.de/ausland/asien/iran-revolutionsgarde-angriff-bahrain-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-15T11:21:27.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Iran hat nach eigenen Angaben einen US-Stützpunkt in Bahrain angegriffen. Die Revolutionsgarde habe eine Radaranlage attackiert, meldeten Staatsmedien. Bahrain wehrte offenbar auch mehrere Angriffe ab.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c3rrg9xgqlwpo",
    "titel": "Three men sentenced to death in Jordan over fatal church mass shooting",
@@ -1044,17 +1055,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "In Dublin, President Volodymyr Zelensky of Ukraine said Europeans would join the next round of talks. Russia has not confirmed that.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/12/world/asia/yamamoto-pearl-harbor-plane-bougainville-tourism.html",
-   "titel": "Tourists Brave a Muddy Jungle Trek to See a Famed World War II Wreck",
-   "link": "https://www.nytimes.com/2026/11/12/world/asia/yamamoto-pearl-harbor-plane-bougainville-tourism.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-13T06:47:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Seven Chinese tourists, a dozen villagers and a couple of journalists forded streams and bushwhacked to the downed plane of Isoroku Yamamoto, the Japanese admiral. Machetes proved handy.",
    "sprache": "en"
   }
  ],
