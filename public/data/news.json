@@ -1,7 +1,20 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-15T22:57:03.818Z",
+ "lastUpdated": "2026-11-15T23:23:38.677Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c65y131w1534o",
+   "titel": "'Steering casualty' preceded New Orleans cruise ship collision, says NTSB",
+   "link": "https://www.bbc.co.uk/news/articles/c65y131w1534o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-15T22:57:27.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Preliminary findings by National Transportation Safety Board investigators suggest the tanker suffered a steering failure before colliding with the cruise ship on Friday.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/15/world/middleeast/jordan-church-attack-death-sentence.html",
    "titel": "Jordan Sentences 3 to Death Over Greek Orthodox Church Attack",
@@ -1028,19 +1041,6 @@
    "maerkte": [],
    "text": "Klingbeil: Senkung der Stromsteuer nur mit seriöser Gegenfinanzierung +++ SPD schickt offenbar Petra Köpping in den Koalitionsausschuss +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/oel-versorgung-erholt-sich-erstmals-seit-beginn-des-irankriegs-etwas-a-115c8f18-2361-4368-8f4e-6b1462aa4652",
-   "titel": "Iran: Öl-Versorgung erholt sich erstmals seit Beginn des Kriegs etwas",
-   "link": "https://www.spiegel.de/wirtschaft/oel-versorgung-erholt-sich-erstmals-seit-beginn-des-irankriegs-etwas-a-115c8f18-2361-4368-8f4e-6b1462aa4652#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-13T13:47:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Auf den Ölmärkten herrscht seit dem Ausbruch des Irankrieges Ausnahmezustand. Nun übersteigt das weltweite Angebot laut IEA erstmals wieder die Nachfrage.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1049,7 +1049,7 @@
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 4,
-  "BBC World": 5,
+  "BBC World": 6,
   "NYT World": 11,
   "EIA Today in Energy": 0
  }
