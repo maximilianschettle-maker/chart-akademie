@@ -1,7 +1,53 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-15T12:23:29.442Z",
+ "lastUpdated": "2026-11-15T13:23:27.669Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-210.html",
+   "titel": "Angriffe auf beiden Seiten: Ukraine und Russland melden Tote und Verletzte",
+   "link": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-210.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-15T13:19:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Erneut hat Russland mehrere Ziele in der Ukraine angegriffen. Dabei wurden am Abend drei Menschen getötet, allein aus Saporischschja wurden zuvor 22 Verletzte gemeldet, darunter Kinder. Russland meldete einen Toten durch ukrainische Angriff",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-revolutionsgarden-greifen-us-stuetzpunkt-in-bahrain-an/100136895.html",
+   "titel": "+++ Iran-Krieg +++: Iran: Revolutionsgarden greifen US-Stützpunkt in Bahrain an",
+   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-revolutionsgarden-greifen-us-stuetzpunkt-in-bahrain-an/100136895.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-15T13:16:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Jemen: Regierungstruppen ziehen sich von strategischer Meerenge zurück +++ Bahrain wehrt iranische Luftangriffe ab +++ Drei Öltanker in Straße von Hormus in Brand +++ Der Newsblog.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-fordert-usa-zur-aufhebung-der-starshield-drosselung-auf/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Selenskyj fordert USA zur Aufhebung der Starshield-Drosselung auf",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-fordert-usa-zur-aufhebung-der-starshield-drosselung-auf/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-15T12:53:42.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Drei Handelsschiffe im Schwarzen Meer von Drohnen getroffen +++ Ukraine attackiert russische Industrieanlagen +++ USA: Direkter Kontakt zwischen Russland und Europa angestrebt +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/hamas-kommandeur-gazastreifen-getoetet-100.html",
+   "titel": "Israelischer Angriff im Gazastreifen: Ranghoher Hamas-Kommandeur tot",
+   "link": "https://www.tagesschau.de/ausland/asien/hamas-kommandeur-gazastreifen-getoetet-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-15T12:46:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die israelische Armee hat im Gazastreifen einen ranghohen Kommandeur der Hamas getötet. Samir Abu Junis soll einer der wichtigsten Köpfe bei der Planung der Attacke auf Israel am 7.Oktober 2023 gewesen sein. Die Hamas bestätigte seinen Tod.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/15/world/middleeast/bahrain-iran-israel.html",
    "titel": "Iran Attacks Bahrain for the Second Time in Days",
@@ -58,17 +104,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-210.html",
-   "titel": "Angriffe auf beiden Seiten: Ukraine und Russland melden Tote und Verletzte",
-   "link": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-210.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-15T09:42:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Erneut hat Russland mehrere Ziele in der Ukraine angegriffen. Dabei wurden am Abend drei Menschen getötet, allein aus Saporischschja wurden zuvor 22 Verletzte gemeldet, darunter Kinder. Russland meldete einen Toten durch ukrainische Angriff",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.nytimes.com/2026/11/15/world/europe/ron-arad-missing-israel-iran-asgari-hunt.html",
    "titel": "After Decades of Blood and Mistrust, Doubts Over Who’s to Blame for an Israeli Hostage",
    "link": "https://www.nytimes.com/2026/11/15/world/europe/ron-arad-missing-israel-iran-asgari-hunt.html",
@@ -99,19 +134,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Pte William Douglas Dal Bianco died from his injuries on Friday, a month after a fire that tore through CFB Wainwright.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-revolutionsgarden-greifen-us-stuetzpunkt-in-bahrain-an/100136895.html",
-   "titel": "+++ Iran-Krieg +++: Iran: Revolutionsgarden greifen US-Stützpunkt in Bahrain an",
-   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-revolutionsgarden-greifen-us-stuetzpunkt-in-bahrain-an/100136895.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-15T08:54:06.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Regierungstruppen ziehen sich von strategischer Meerenge zurück +++ Bahrain wehrt iranische Luftangriffe ab +++ Drei Öltanker in Straße von Hormus nach Minenkontakt in Brand +++ Der Newsblog.",
    "sprache": "en"
   },
   {
@@ -1033,28 +1055,6 @@
     "halbleiter"
    ],
    "text": "Nvidia-Chef Jensen Huang ist nicht mehr zu halten. Nun drohen dem Konzern, der nur auf ihn zugeschnitten war, heftige Turbulenzen. Aber der Fall Nvidia bietet auch eine Lehre für Europa.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/usa-mississippi-senator-scott-colom-100.html",
-   "titel": "Scott Colom: Wie ein schwarzer Demokrat Mississippi erobert",
-   "link": "https://www.tagesschau.de/ausland/amerika/usa-mississippi-senator-scott-colom-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-13T08:22:34.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der Demokrat Colom hat Historisches geschafft: Erstmals seit mehr als 140 Jahren hat Mississippi einen schwarzen Senator. Im Wahlkampf hat sich Colom als Politiker präsentiert, der den Menschen zuhört, egal welche Ansichten sie haben. Von S",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/news-kompakt-microsoft-st%C3%B6rung-trifft-nutzer-weltweit/a-79936498",
-   "titel": "News kompakt: Microsoft-Störung trifft Nutzer weltweit",
-   "link": "https://www.dw.com/de/news-kompakt-microsoft-störung-trifft-nutzer-weltweit/a-79936498?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-13T08:00:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach weltweiten Ausfällen kämpft Microsoft weiter mit Problemen bei seinen Cloud-Diensten. Bei den Verhandlungen über ein Ende des Ukraine-Kriegs sollen auch die Europäer mit am Tisch sitzen. Der DW-Nachrichtenüberblick.",
    "sprache": "de"
   }
  ],
