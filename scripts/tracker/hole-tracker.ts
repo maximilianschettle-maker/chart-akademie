@@ -50,23 +50,26 @@ function liesJson<T>(pfad: string): T | null {
 
 // ── Konfiguration ─────────────────────────────────────────────────────────────
 
+const STANDARD_WORKER_URL = 'https://chart-akademie-aktien.chart-akademie.workers.dev'
+
+/** Vereinigung der Tracker-Konfigurationen aller Nutzer (Worker: GET /api/dienst/tracker, Dienst-Token). */
 async function ladeConfig(): Promise<{ config: TrackerConfig; quelle: TrackerDaten['configQuelle'] }> {
-  const url = process.env.AKTIEN_WORKER_URL?.trim().replace(/\/+$/, '')
+  const url = (process.env.AKTIEN_WORKER_URL?.trim() || STANDARD_WORKER_URL).replace(/\/+$/, '')
   const secret = process.env.AKTIEN_SECRET?.trim()
-  if (url && secret) {
+  if (secret) {
     try {
-      const text = await hole(`${url}/api/tracker`, { Authorization: `Bearer ${secret}` })
-      const roh: unknown = text ? JSON.parse(text) : null
-      if (roh && typeof roh === 'object' && Array.isArray((roh as TrackerConfig).instrumente)) {
-        log('Konfiguration aus dem Worker-KV')
-        return { config: normalisiereConfig(roh), quelle: 'worker' }
+      const text = await hole(`${url}/api/dienst/tracker`, { Authorization: `Bearer ${secret}` })
+      const roh = (text ? JSON.parse(text) : null) as { config?: TrackerConfig; nutzer?: number } | null
+      if (roh?.config && Array.isArray(roh.config.instrumente) && roh.config.instrumente.length > 0) {
+        log(`Konfiguration aus dem Worker: Union aus ${roh.nutzer ?? '?'} Nutzer(n), ${roh.config.instrumente.length} Instrumente`)
+        return { config: normalisiereConfig(roh.config), quelle: 'worker' }
       }
-      log('Worker-KV hat noch keine Tracker-Konfiguration')
+      log('Worker kennt noch keine Tracker-Konfiguration')
     } catch (e) {
       log('Worker nicht erreichbar:', (e as Error).message)
     }
   } else {
-    log('AKTIEN_WORKER_URL/AKTIEN_SECRET nicht gesetzt – Konfiguration aus der Datei')
+    log('AKTIEN_SECRET nicht gesetzt – Konfiguration aus der Datei')
   }
   const datei = liesJson<unknown>(CONFIG_DATEI)
   if (datei) return { config: normalisiereConfig(datei), quelle: 'datei' }
