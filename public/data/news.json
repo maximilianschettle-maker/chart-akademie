@@ -1,13 +1,24 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-16T11:23:42.477Z",
+ "lastUpdated": "2026-11-16T11:41:21.602Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/mobilitaet/elektromobilitaet/audi-a2-so-faehrt-sich-die-neuauflage-des-sparsamen-kleinwagens/100270219.html",
+   "titel": "Elektromobilität: So fährt sich die Neuauflage des Audi A2",
+   "link": "https://www.handelsblatt.com/mobilitaet/elektromobilitaet/audi-a2-so-faehrt-sich-die-neuauflage-des-sparsamen-kleinwagens/100270219.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-16T11:33:38.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Audi A2 war seiner Zeit voraus – und scheiterte trotzdem am Markt. Jetzt kehrt das Effizienzwunder zurück. Mit hoher Reichweite und niedrigem Verbrauch. Reicht das diesmal?",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/16/world/asia/trump-asia-china-xi-putin.html",
    "titel": "What to Know About Trump’s Trip to Asia",
    "link": "https://www.nytimes.com/2026/11/16/world/asia/trump-asia-china-xi-putin.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-16T11:18:27.000Z",
+   "zeit": "2026-11-16T11:26:58.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "President Trump will also meet with regional leaders, including Australia’s prime minister, who said “we want to see a de-escalation in the conflicts.”",
@@ -1031,19 +1042,6 @@
    ],
    "text": "Russland: Haben ukrainischen Orts Tersjanka eingenommen +++ Starlink-Störungen: Senatoren fordern Unterlagen von Musk +++ Dreiertreffen Trumps mit Xi und Putin angekündigt +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selnskyj-donbass-rueckzug-gegen-nato-beitritt-vor/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: USA schlagen laut Selnskyj Donbass-Rückzug gegen Nato-Beitritt vor",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selnskyj-donbass-rueckzug-gegen-nato-beitritt-vor/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-14T10:17:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Russland: Haben ukrainischen Orts Tersjanka eingenommen +++ Starlink-Störungen: Senatoren fordern Unterlagen von Musk +++ Dreiertreffen Trumps mit Xi und Putin angekündigt +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1051,7 +1049,7 @@
   "DW": 13,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 8,
-  "Handelsblatt": 3,
+  "Handelsblatt": 4,
   "BBC World": 8,
   "NYT World": 12,
   "EIA Today in Energy": 0
