@@ -1,13 +1,50 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-16T07:23:31.615Z",
+ "lastUpdated": "2026-11-16T08:23:32.959Z",
  "eintraege": [
   {
+   "id": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-chefposten-100.html",
+   "titel": "Ex-Nvidia-Chef Huang arbeitet offenbar bereits an seinem Comeback",
+   "link": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-chefposten-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-16T08:07:28.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd",
+    "halbleiter",
+    "aktien"
+   ],
+   "text": "Seine Affären - auch mit einer mutmaßlichen chinesischen Spionin - haben mehr als eine Billion Dollar Börsenwert vernichtet. Damit war der Rücktritt des Nvidia-Chefs unvermeidlich. Nun plant Huang offenbar bereits sein Comeback.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/cyberangriffe-abwehr-bka-100.html",
+   "titel": "Immer mehr Angriffe: BKA-Chef Münch fordert Ausbau der Cyberabwehr",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/cyberangriffe-abwehr-bka-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-16T08:05:48.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Deutschland sollte nach Auffassung von BKA-Chef Münch Schwachstellen bei der Abwehr von Cyberangriffen schnell schließen. Die Attacken würden mehr, schneller und professioneller, sagte er im ARD-Morgenmagazin.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/news-kompakt-dritter-us-flugzeugtr%C3%A4ger-erreicht-nahen-osten/a-79954671",
+   "titel": "News kompakt: Dritter US-Flugzeugträger erreicht Nahen Osten",
+   "link": "https://www.dw.com/de/news-kompakt-dritter-us-flugzeugträger-erreicht-nahen-osten/a-79954671?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-16T08:00:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Entsendung des dritten US-Flugzeugträgers in den Nahen Osten war seit Wochen bekannt. Nun soll er eingetroffen sein. Bei der UN-Klimakonferenz in Antalya beginnt die entscheidende Woche. Der DW-Nachrichtenüberblick.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.bbc.co.uk/news/articles/cqvg2xgyvnjpo",
-   "titel": "Yemeni forces' retreat leaves Houthis in control of key Red Sea waterway",
+   "titel": "Yemeni forces' retreat leaves Houthis in control of key area on coast of Red Sea waterway",
    "link": "https://www.bbc.co.uk/news/articles/cqvg2xgyvnjpo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-16T07:19:52.000Z",
+   "zeit": "2026-11-16T07:23:23.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Saudi-backed forces say they are moving troops from the Bab al-Mandab Strait to defend the interim capital Aden.",
@@ -203,7 +240,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/c60evn992jq8o",
-   "titel": "Prince Harry praises war veterans on surprise visit to Ukraine",
+   "titel": "'You're going to win the war': Harry praises war veterans on surprise Ukraine visit",
    "link": "https://www.bbc.co.uk/news/articles/c60evn992jq8o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-15T22:00:13.000Z",
@@ -1010,51 +1047,16 @@
    "maerkte": [],
    "text": "After coveting a seat in the Ukraine war discussions, Europe is poised to get one. The continent wants to fill it with a six-member team.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/13/world/middleeast/eisenkot-netanyahu-racism-arabs.html",
-   "titel": "Eisenkot Accuses Netanyahu of Fueling ‘Racist’ Hostility Against Arabs",
-   "link": "https://www.nytimes.com/2026/11/13/world/middleeast/eisenkot-netanyahu-racism-arabs.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-13T21:50:12.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Gadi Eisenkot sharply criticized Prime Minister Benjamin Netanyahu days after the Israeli leader attacked Arab lawmakers in a divisive speech.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/bessent-gegen-lutnick-nvidia-wird-zur-us-regierungskrise-201681651.html",
-   "titel": "Chips Nach China: Die Nvidia-Affäre wird zur Regierungskrise",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/bessent-gegen-lutnick-nvidia-wird-zur-us-regierungskrise-201681651.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-13T19:01:02.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Der vermutete Schmuggel amerikanischer KI-Chips nach China bringt Handelsminister Howard Lutnick in Bedrängnis. Finanzminister Scott Bessent erhebt schwere Vorwürfe.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/eu-vertreter-ukraine-gespraeche-100.html",
-   "titel": "EU einigt sich auf europäisches Team für Ukraine-Verhandlungen",
-   "link": "https://www.tagesschau.de/ausland/eu-vertreter-ukraine-gespraeche-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-13T18:44:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Lange wurde diskutiert, wer Europa bei Gesprächen mit Russland über ein Ende des Kriegs gegen die Ukraine vertreten soll. Nun gibt es eine Einigung: Das Team bilden Vertreter der EU-Institutionen und aus fünf Ländern - darunter auch Deutsch",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 15,
-  "DW": 9,
+  "tagesschau": 17,
+  "DW": 10,
   "Spiegel Wirtschaft": 7,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 2,
   "BBC World": 9,
-  "NYT World": 11,
+  "NYT World": 10,
   "EIA Today in Energy": 0
  }
 }
