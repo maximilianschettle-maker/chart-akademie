@@ -1,7 +1,73 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-16T15:23:33.150Z",
+ "lastUpdated": "2026-11-16T16:23:34.379Z",
  "eintraege": [
+  {
+   "id": "https://www.spiegel.de/wirtschaft/service/donald-trump-koennen-die-demokraten-nach-den-us-midterms-die-zoelle-wirklich-stoppen-a-93d3e5c2-9594-424c-bf96-cb2f925e009b",
+   "titel": "Donald Trump: Können die Demokraten nach den US-Midterms die Zölle wirklich stoppen?",
+   "link": "https://www.spiegel.de/wirtschaft/service/donald-trump-koennen-die-demokraten-nach-den-us-midterms-die-zoelle-wirklich-stoppen-a-93d3e5c2-9594-424c-bf96-cb2f925e009b#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-16T16:14:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Die Demokraten übernehmen ab Januar die Mehrheit im US-Kongress und könnten Donald Trumps Zöllen den Kampf ansagen. Doch Experten sind skeptisch, ob sie dazu auch die Befugnisse haben – und ob sie überhaupt wollen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/eu-sanktionen-russland-propaganda-banken-100.html",
+   "titel": "EU sanktioniert russische Propagandisten, Hacker, Unternehmer",
+   "link": "https://www.tagesschau.de/ausland/europa/eu-sanktionen-russland-propaganda-banken-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-16T16:06:44.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Russlands reichste Unternehmerin, eine Propaganda-Fabrik, Hackergruppen, Medien-Promis und Banken: Die EU hat eine große Bandbreite von Akteuren mit weiteren Sanktionen belegt. Auch Unternehmen aus China und den Emiraten sind betroffen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/humanit%C3%A4re-mission-f%C3%BCr-kostjantyniwka-eine-falle-putins/a-79958575",
+   "titel": "\"Humanitäre Mission\" für Kostjantyniwka eine Falle Putins?",
+   "link": "https://www.dw.com/de/humanitäre-mission-für-kostjantyniwka-eine-falle-putins/a-79958575?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-16T15:51:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Putin hat eine Evakuierung für Kostjantyniwka nach dem Vorbild von Oleschky vorgeschlagen. Experten warnen jedoch, dass diese eher militärischen als humanitären Zwecken dienen könnte. Was sollte Kyjiw jetzt tun?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-greift-krim-bruecke-mit-drohnen-an-kreml-meldet-geringe-schaeden/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Ukraine greift Krim-Brücke mit Drohnen an – Kreml meldet geringe Schäden",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-greift-krim-bruecke-mit-drohnen-an-kreml-meldet-geringe-schaeden/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-16T15:46:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "EU setzt 145 weitere Personen und Organisationen auf Sanktionsliste +++ Russland meldet Festnahme nach Autobombenanschlag +++ Zahlreiche russische Raffinierien beschädigt +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/16/world/europe/iran-dams-missile-sites-environmentalists.html",
+   "titel": "Airstrikes on Iran Missile Sites May Shed Light on Justification for Dams",
+   "link": "https://www.nytimes.com/2026/11/16/world/europe/iran-dams-missile-sites-environmentalists.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-16T15:39:09.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Environmentalists have long puzzled over a wide network of water projects lacking any obvious justification. Then their areas were targeted in airstrikes.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/fifa-wahl-findet-europa-noch-einen-herausforderer-f%C3%BCr-infantino/a-79961195",
+   "titel": "FIFA-Wahl: Findet Europa noch einen Herausforderer für Infantino?",
+   "link": "https://www.dw.com/de/fifa-wahl-findet-europa-noch-einen-herausforderer-für-infantino/a-79961195?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-16T15:22:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Gianni Infantino sammelt weltweit Unterstützung für eine vierte Amtszeit als FIFA-Präsident. Für Europa steigt kurz vor Fristende der Druck, einen starken Gegenkandidaten zu finden. Jetzt fällt der Name Philippe Diallo.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/ckx27v6dpjz0o",
    "titel": "Landmark Crimea bridge hit as Russia reports biggest Ukrainian drone attack of war",
@@ -33,17 +99,6 @@
    "kategorie": "energie",
    "maerkte": [],
    "text": "Strom ist für die Stahlindustrie ein entscheidender Faktor: Beim Stahlgipfel in Salzgitter forderte die Branche deshalb einen verlässlichen Strompreis. Bundeswirtschaftsministerin Reiche verwies auf bereits Erreichtes.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-greift-krim-bruecke-mit-drohnen-an-kreml-meldet-geringe-schaeden/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Ukraine greift Krim-Brücke mit Drohnen an – Kreml meldet geringe Schäden",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-greift-krim-bruecke-mit-drohnen-an-kreml-meldet-geringe-schaeden/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-16T14:48:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "EU setzt 145 weitere Personen und Organisationen auf Sanktionsliste +++ Russland meldet Festnahme nach Autobombenanschlag +++ Zahlreiche russische Raffinierien beschädigt +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -168,17 +223,6 @@
    ],
    "text": "Selenskyj: Gut 55 Prozent der russischen Raffinerien sind kaputt +++ Kreml meldet geringe Schäden an Krim-Brücke +++ Wadephul wirbt für gleichmäßigere Unterstützung +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/16/world/europe/iran-dams-missile-sites-environmentalists.html",
-   "titel": "Airstrikes on Iran Missile Sites May Shed Light on Justification for Dams",
-   "link": "https://www.nytimes.com/2026/11/16/world/europe/iran-dams-missile-sites-environmentalists.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-16T10:10:58.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Environmentalists have long puzzled over a wide network of water projects lacking any obvious justification. Then their areas were targeted in airstrikes.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/16/world/europe/russia-ukraine-winter-campaign.html",
@@ -988,61 +1032,11 @@
    ],
    "text": "Die Lage der Bundesfinanzen ist ohnehin dramatisch. Und jetzt wird die Haushaltspolitik auch noch handwerklich schlecht gemacht. Ob das gut geht?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selenskyj-donbass-rueckzug-gegen-nato-beitritt-vor/100269908.html",
-   "titel": "Ukraine: USA schlagen laut Selenskyj Donbass-Rückzug gegen Nato-Beitritt vor",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selenskyj-donbass-rueckzug-gegen-nato-beitritt-vor/100269908.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-14T15:38:32.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "US-Unterhändler haben laut Selenskyj einen Nato-Beitritt gegen einen Rückzug aus dem Donbass ins Spiel gebracht. Ob ein Referendum stattfindet, hängt von umfassenden Sicherheitshilfen ab.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/it-medien/gta-6-die-euphorie-um-ein-videospiel-das-zum-popkultur-phaenomen-wurde/100266627.html",
-   "titel": "GTA 6: Die Euphorie um ein Videospiel, das zum Popkultur-Phänomen wurde",
-   "link": "https://www.handelsblatt.com/unternehmen/it-medien/gta-6-die-euphorie-um-ein-videospiel-das-zum-popkultur-phaenomen-wurde/100266627.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-14T14:15:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Selten war Erfolg in der Entertainment-Branche so planbar wie bei GTA 6. Das Gangsterspiel ist zum Popkultur-Phänomen geworden – und weckt Vergleiche mit „Wetten dass..?“ und James Bond.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/14/world/europe/ukraine-starshield-zelensky.html",
-   "titel": "Ukraine’s Starshield Access Is Being Restricted Again, Zelensky Says",
-   "link": "https://www.nytimes.com/2026/11/14/world/europe/ukraine-starshield-zelensky.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-14T13:57:37.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "President Volodymyr Zelensky said the system, which Ukraine uses to guide drones, was being throttled over Russian-occupied territory. SpaceX, its developer, has denied the claim.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/kreuzfahrtschiff-unfall-new-orleans-102.html",
-   "titel": "Mississippi: 32 Verletzte nach Kollision von Dampfer und Tanker",
-   "link": "https://www.tagesschau.de/ausland/amerika/kreuzfahrtschiff-unfall-new-orleans-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-14T13:48:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Ein Kreuzfahrtschiff ist auf dem Mississippi in New Orleans von einem Tanker gerammt worden. Der Flussdampfer kenterte. Alle Passagiere an Bord überlebten. Die Bürgermeisterin spricht von einem Wunder.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 14,
-  "DW": 11,
+  "DW": 13,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 2,
