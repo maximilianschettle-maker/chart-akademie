@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-16T03:23:27.446Z",
+ "lastUpdated": "2026-11-16T04:23:36.489Z",
  "eintraege": [
   {
    "id": "https://www.bbc.co.uk/news/articles/cmpqr9j81888o",
@@ -59,6 +59,17 @@
     "oel"
    ],
    "text": "Preliminary findings by National Transportation Safety Board investigators suggest the tanker suffered a \"steering casualty\" before colliding with the cruise ship on Friday.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/sport/ice-hockey/articles/cqkgm0jgv4mdo",
+   "titel": "Canada bars Russia from Junior World Championships",
+   "link": "https://www.bbc.co.uk/sport/ice-hockey/articles/cqkgm0jgv4mdo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-15T22:01:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Canada says it will not allow Russian athletes to compete in the Junior Ice Hockey World Championships because of the war in Ukraine.",
    "sprache": "en"
   },
   {
@@ -1030,25 +1041,14 @@
    "maerkte": [],
    "text": "Richard Posner war der Richter, der das ökonomische Denken in die Jurisprudenz hineintrug. Jetzt ist er im Alter von 87 Jahren gestorben.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-krieg-wieder-stoerung-an-starlink-kiew-nutzt-alternative-aus-israel/100269609.html",
-   "titel": "Ukraine-Krieg: Wieder Störung an Starlink – Kiew nutzt Alternative aus Israel",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-krieg-wieder-stoerung-an-starlink-kiew-nutzt-alternative-aus-israel/100269609.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-13T14:33:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Ukraine will unabhängiger vom US-Satellitenbetreiber SpaceX werden. Die israelische Firma HiSky hat eine Lösung mit einigen Vorteilen – aber einem deutlichen Nachteil.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 16,
+  "tagesschau": 15,
   "DW": 9,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 7,
-  "Handelsblatt": 3,
+  "Handelsblatt": 2,
   "BBC World": 8,
   "NYT World": 11,
   "EIA Today in Energy": 0
