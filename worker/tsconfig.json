@@ -23,9 +23,14 @@
     "../src/aktien/types.ts",
     "../src/tracker/types.ts",
     "../src/journal/positionTypes.ts",
-    "../src/journal/pruefungTypes.ts"
+    "../src/journal/pruefungTypes.ts",
+    "../src/engine/mergen.ts",
+    "../src/zugang/code.ts",
+    "../src/tracker/engine/katalog.ts",
+    "../src/tracker/engine/union.ts"
   ],
   "exclude": [
+    "src/**/*.test.ts",
     "../src/aktien/engine/**/*.test.ts",
     "../src/aktien/engine/fixtures"
   ]
