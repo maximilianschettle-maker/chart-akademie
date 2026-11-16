@@ -87,6 +87,7 @@
     "tracker:nasdaq100:ema-kreuz:short:stunde:2026-11-13T17": "2026-11-13T17:00:42.356Z",
     "tracker:nasdaq100:ema-kreuz:short:stunde:2026-11-13T18": "2026-11-13T18:00:45.284Z",
     "tracker:nasdaq100:ema-kreuz:short:stunde:2026-11-13T19": "2026-11-13T19:30:47.983Z",
-    "tracker:bitcoin:ausbruch:short:stunde:2026-11-15T00": "2026-11-15T00:00:52.330Z"
+    "tracker:bitcoin:ausbruch:short:stunde:2026-11-15T00": "2026-11-15T00:00:52.330Z",
+    "tracker:gold:ausbruch:short:2026-11-16": "2026-11-16T07:00:51.629Z"
   }
 }
