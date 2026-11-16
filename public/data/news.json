@@ -1,7 +1,54 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-16T12:23:27.193Z",
+ "lastUpdated": "2026-11-16T13:23:34.423Z",
  "eintraege": [
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/sonderkuendigungsrecht-fuer-kabelvertraege-netzbetreiber-scheitern-in-karlsruhe-accg-201687232.html",
+   "titel": "Telekommunikationsrecht: Netzbetreiber scheitern in Karlsruhe",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/sonderkuendigungsrecht-fuer-kabelvertraege-netzbetreiber-scheitern-in-karlsruhe-accg-201687232.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-16T13:02:11.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Gesetzgeber hat die Lasten eines Sonderkündigungsrechts für Kabelverträge einseitig auf die Netzbetreiber abgewälzt. Das war „noch“ gerechtfertigt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/merz-stromsteuer-100.html",
+   "titel": "Merz erwartet Einigung zur Stromsteuer im Koalitionsausschuss",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/merz-stromsteuer-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-16T12:46:45.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Bundesregierung will die Stromsteuer senken - bislang war jedoch unklar, wie das gegenfinanziert werden soll. Jetzt gibt es offenbar eine Möglichkeit: Kanzler Merz zeigte sich sicher, dass sich SPD und Union morgen einigen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-greift-krim-bruecke-mit-drohnen-an-kreml-meldet-geringe-schaeden/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Ukraine greift Krim-Brücke mit Drohnen an – Kreml meldet geringe Schäden",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-greift-krim-bruecke-mit-drohnen-an-kreml-meldet-geringe-schaeden/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-16T12:33:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel",
+    "eurusd"
+   ],
+   "text": "Selenskyj: 55 Prozent der russischen Raffinerien lahmgelegt +++ Russland: Fast 1350 ukrainische Drohnen abgeschossen +++ EU: Weitere 1,7 Milliarden Euro an Ukraine ausgezahlt +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/eu-aussenminister-ukraine-nahost-100.html",
+   "titel": "EU-Außenminister wollen Ukraine-Strategie ausarbeiten",
+   "link": "https://www.tagesschau.de/ausland/europa/eu-aussenminister-ukraine-nahost-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-16T12:23:50.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Erstmals könnten EU-Staaten die Chance haben, aktiv über ein Kriegsende in der Ukraine mit zu verhandeln. Doch auch eine andere Region verlieren die EU-Außenminister nicht aus dem Blick: den Gazastreifen. Von Sabrina Fritz.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/mobilitaet/elektromobilitaet/audi-a2-so-faehrt-sich-die-neuauflage-des-sparsamen-kleinwagens/100270219.html",
    "titel": "Elektromobilität: So fährt sich die Neuauflage des Audi A2",
@@ -994,54 +1041,6 @@
    "maerkte": [],
    "text": "Der Weg für die erste rot-rot-grüne Landesregierung in Mecklenburg-Vorpommern ist frei. Alle Parteien stimmten dem Vertrag zu. Am Abend soll das Bündnis per Unterschrift besiegelt werden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/papst-leo-xiv-zu-besuch-in-seinem-fr%C3%BCheren-bistum-in-peru/a-79947665",
-   "titel": "Papst Leo XIV. zu Besuch in seinem früheren Bistum in Peru",
-   "link": "https://www.dw.com/de/papst-leo-xiv-zu-besuch-in-seinem-früheren-bistum-in-peru/a-79947665?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-14T11:28:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Gut sieben Jahre war der heutige Papst Leo XIV. Bischof von Chiclayo in Peru. Im Rahmen seiner Südamerikareise kehrte er nun an seine alte Wirkungsstätte zurück - und wurde dort wie ein Popstar empfangen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/csu-bestimmt-berliner-sozialpolitik-wie-markus-soeder-die-koalition-lenkt-accg-201678995.html",
-   "titel": "Reformen: Die Macht aus Bayern",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/csu-bestimmt-berliner-sozialpolitik-wie-markus-soeder-die-koalition-lenkt-accg-201678995.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-14T11:24:57.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Über die Wirtschafts- und Sozialpolitik der Regierung bestimmt in weiten Teilen die CSU. Der Unmut über den kleinsten Koalitionspartner wächst.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/guineas-goldboom-neue-raffinerie-und-vertriebene-goldsch%C3%BCrfer/a-79922802",
-   "titel": "Guineas Goldboom: Neue Raffinerie und vertriebene Goldschürfer",
-   "link": "https://www.dw.com/de/guineas-goldboom-neue-raffinerie-und-vertriebene-goldschürfer/a-79922802?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-14T10:45:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Guinea geht gegen den illegalen Goldabbau vor. Begründet wird das mit Gefahren für die Umwelt. Es gibt Berichte über Gewalt und Abschiebung. In Conakry eröffnet zeitgleich die erste eigene Goldraffinerie.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selenskyj-donbass-rueckzug-gegen-nato-beitritt-vor/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: USA schlagen laut Selenskyj Donbass-Rückzug gegen Nato-Beitritt vor",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-schlagen-laut-selenskyj-donbass-rueckzug-gegen-nato-beitritt-vor/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-14T10:17:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Russland: Haben ukrainischen Orts Tersjanka eingenommen +++ Starlink-Störungen: Senatoren fordern Unterlagen von Musk +++ Dreiertreffen Trumps mit Xi und Putin angekündigt +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1050,8 +1049,8 @@
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 8,
   "Handelsblatt": 3,
-  "BBC World": 7,
-  "NYT World": 12,
+  "BBC World": 5,
+  "NYT World": 11,
   "EIA Today in Energy": 0
  }
 }
