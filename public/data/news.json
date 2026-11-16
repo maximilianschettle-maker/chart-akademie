@@ -1,7 +1,75 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-16T08:23:32.959Z",
+ "lastUpdated": "2026-11-16T09:23:45.426Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c60evn992jq8o",
+   "titel": "'You're going to win the war': Harry praises war veterans on surprise Ukraine visit",
+   "link": "https://www.bbc.co.uk/news/articles/c60evn992jq8o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-16T09:21:31.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "He has been showing support for injured veterans in Ukraine and praising the country's resilience.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-eu-kommission-plant-offenbar-45-milliarden-kredit-fuer-ukraine/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: EU-Kommission plant offenbar 45-Milliarden-Kredit für Ukraine",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-eu-kommission-plant-offenbar-45-milliarden-kredit-fuer-ukraine/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-16T09:17:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ukraine greift offenbar Brücke zur Krim an +++ Russland meldet massiven ukrainischen Drohnenangriff +++ Drei Handelsschiffe im Schwarzen Meer von Drohnen getroffen +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/donald-trump-beim-apec-gipfel-in-shenzhen-chinas-chipskandal-belastet-die-reise-accg-201682846.html",
+   "titel": "Nach Nvidia-Skandal: Trump in Chinas Chiphochburg",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/donald-trump-beim-apec-gipfel-in-shenzhen-chinas-chipskandal-belastet-die-reise-accg-201682846.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-16T09:00:31.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Der US-Präsident reist in dieser Woche zum APEC-Gipfel nach Shenzhen. In seiner Heimat scheint sich dagegen nun die China-Politik zu drehen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/estland-schlie%C3%9Ft-nach-sabotageversuch-grenze-zu-russland/a-79955003",
+   "titel": "Estland schließt nach Sabotageversuch Grenze zu Russland",
+   "link": "https://www.dw.com/de/estland-schließt-nach-sabotageversuch-grenze-zu-russland/a-79955003?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-16T08:55:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach einem versuchten Brandanschlag auf eine Drohnenfabrik macht Estland den russischen Militärgeheimdienst verantwortlich. Tallinn kündigt eine vollständige Grenzschließung an. Moskau reagiert empört.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/16/world/canada/carney-china-xi-trump-putin-trade.html",
+   "titel": "A Year On, Mark Carney of Canada Returns to China a Political Star",
+   "link": "https://www.nytimes.com/2026/11/16/world/canada/carney-china-xi-trump-putin-trade.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-16T08:31:01.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Canada’s leader is courting Europe, but the bigger payoff might be in Asia, where he will share summit stages with Xi Jinping, Vladimir Putin and President Trump.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/haushalt-soeder-stromsteuer-moeglich-koalition-muetterrente-100.html",
+   "titel": "Söder hält Stromsteuersenkung doch noch für möglich",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/haushalt-soeder-stromsteuer-moeglich-koalition-muetterrente-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-16T08:24:05.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Morgen ist die umstrittene Stromsteuer Thema im Koalitionsausschuss. CSU-Chef Söder glaubt noch an eine Einigung und nennt Möglichkeiten, die Milliarden für eine Senkung aufzutreiben. An ein Thema will er aber nicht ran.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-chefposten-100.html",
    "titel": "Ex-Nvidia-Chef Huang arbeitet offenbar bereits an seinem Comeback",
@@ -63,14 +131,12 @@
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/bundeshaushalt-rechnungshof-praesident-ansgar-heveling-sieht-bei-subventionen-viel-sparpotenzial-a-288a2b18-a2fb-4f3b-a484-e638d21040ee",
-   "titel": "Bundeshaushalt: Rechnungshof-Präsident Ansgar Heveling sieht bei Subventionen viel Sparpotenzial",
+   "titel": "Haushalt: Rechnungshof-Präsident Ansgar Heveling sieht bei Subventionen viel Sparpotenzial",
    "link": "https://www.spiegel.de/wirtschaft/bundeshaushalt-rechnungshof-praesident-ansgar-heveling-sieht-bei-subventionen-viel-sparpotenzial-a-288a2b18-a2fb-4f3b-a484-e638d21040ee#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-11-16T07:06:00.000Z",
    "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
+   "maerkte": [],
    "text": "Die Diskussion über die Finanzierung von Steuersenkungen belastet die Koalition. Bundesrechnungshof-Präsident Heveling sieht dagegen durchaus Möglichkeiten, die notwendigen Milliarden zu beschaffen.",
    "sprache": "de"
   },
@@ -99,9 +165,9 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.spiegel.de/wirtschaft/vulcan-rakete-absturz-kostet-amazon-40-satelliten-fuer-internetdienst-leo-a-8bd0dc5f-699c-493e-a188-437d49521bcb",
-   "titel": "Vulcan-Rakete: Absturz kostet Amazon 40 Satelliten für Internetdienst Leo",
-   "link": "https://www.spiegel.de/wirtschaft/vulcan-rakete-absturz-kostet-amazon-40-satelliten-fuer-internetdienst-leo-a-8bd0dc5f-699c-493e-a188-437d49521bcb#ref=rss",
+   "id": "https://www.spiegel.de/wirtschaft/amazon-absturz-der-vulcan-rakete-kostet-us-konzern-40-satelliten-a-8bd0dc5f-699c-493e-a188-437d49521bcb",
+   "titel": "Amazon: Absturz der Vulcan-Rakete kostet US-Konzern 40 Satelliten",
+   "link": "https://www.spiegel.de/wirtschaft/amazon-absturz-der-vulcan-rakete-kostet-us-konzern-40-satelliten-a-8bd0dc5f-699c-493e-a188-437d49521bcb#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-11-16T06:16:00.000Z",
    "kategorie": "konflikte",
@@ -110,14 +176,14 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-eu-kommission-plant-offenbar-45-milliarden-kredit-fuer-ukraine/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: EU-Kommission plant offenbar 45-Milliarden-Kredit für Ukraine",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-eu-kommission-plant-offenbar-45-milliarden-kredit-fuer-ukraine/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-16T06:15:29.000Z",
+   "id": "https://www.spiegel.de/wirtschaft/vulcan-rakete-absturz-kostet-amazon-40-satelliten-fuer-internetdienst-leo-a-8bd0dc5f-699c-493e-a188-437d49521bcb",
+   "titel": "Vulcan-Rakete: Absturz kostet Amazon 40 Satelliten für Internetdienst Leo",
+   "link": "https://www.spiegel.de/wirtschaft/vulcan-rakete-absturz-kostet-amazon-40-satelliten-fuer-internetdienst-leo-a-8bd0dc5f-699c-493e-a188-437d49521bcb#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-16T06:16:00.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Russland meldet massiven ukrainischen Drohnenangriff +++ Drei Handelsschiffe im Schwarzen Meer von Drohnen getroffen +++ Ukraine attackiert russische Industrieanlagen +++ Der Newsblog.",
+   "text": "Der missglückte Start einer Rakete am Sonntag ist ein schwerer Schlag für den US-Internetriesen Amazon. Denn damit gingen 40 Satelliten verloren, die für den Internetdienst Amazon Leo bestimmt waren.",
    "sprache": "de"
   },
   {
@@ -153,17 +219,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "There has not been an election in Haiti since before the death of Jovenel Moise in 2021.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/16/world/canada/carney-china-xi-trump-putin-trade.html",
-   "titel": "A Year On, Canada’s Mark Carney Returns to China a Political Star",
-   "link": "https://www.nytimes.com/2026/11/16/world/canada/carney-china-xi-trump-putin-trade.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-16T05:01:22.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Canada’s leader is courting Europe, but the bigger payoff might be in Asia, where he will share summit stages with Xi Jinping, Vladimir Putin and President Trump.",
    "sprache": "en"
   },
   {
@@ -236,17 +291,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Canada says it will not allow Russian athletes to compete in the Junior Ice Hockey World Championships because of the war in Ukraine.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c60evn992jq8o",
-   "titel": "'You're going to win the war': Harry praises war veterans on surprise Ukraine visit",
-   "link": "https://www.bbc.co.uk/news/articles/c60evn992jq8o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-15T22:00:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "He has been showing support for injured veterans in Ukraine and praising the country's resilience.",
    "sprache": "en"
   },
   {
@@ -999,61 +1043,13 @@
    "maerkte": [],
    "text": "Mit dem größten je gebauten Raketensystem der Raumfahrtgeschichte will Elon Musk den Mars erschließen. Jetzt ist das Starship erneut zu einem Testflug aufgebrochen – und es kommt zu Komplikationen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
-   "titel": "US-Flusskreuzfahrtschiff kentert nach Zusammenprall in New Orleans",
-   "link": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-14T00:51:37.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Das Flusskreuzfahrtschiff \"American Heritage\" ist im Hafen der US-Stadt New Orleans gekentert. Zuvor war es von einem Tanker gerammt worden. An Bord des Schiffes befanden sich mehr als 130 Menschen. Vermisst wird niemand.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo",
-   "titel": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
-   "link": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-14T00:03:52.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The 52-year-old general’s provocative posts and military threats have fuelled rumours of a dynastic succession.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo",
-   "titel": "'Miracle on Mississippi' - All rescued after cruise ship hit by tanker in New Orleans",
-   "link": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-13T23:40:45.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
-   "titel": "Europe Agrees on a Team to Represent It in Talks With Russia",
-   "link": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-13T22:47:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "After coveting a seat in the Ukraine war discussions, Europe is poised to get one. The continent wants to fill it with a six-member team.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 17,
-  "DW": 10,
+  "DW": 11,
   "Spiegel Wirtschaft": 7,
-  "FAZ Wirtschaft": 6,
+  "FAZ Wirtschaft": 7,
   "Handelsblatt": 2,
   "BBC World": 9,
   "NYT World": 10,
