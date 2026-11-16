@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-16T19:23:37.417Z",
+ "lastUpdated": "2026-11-16T20:23:35.145Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-die-finanzen-sind-in-dieser-koalition-laengst-zur-waffe-geworden/100270324.html",
+   "titel": "Kommentar: Die Finanzen sind in dieser Koalition längst zur Waffe geworden",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-die-finanzen-sind-in-dieser-koalition-laengst-zur-waffe-geworden/100270324.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-16T19:53:44.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Seit Wochen streiten Kanzler Merz und Finanzminister Klingbeil über die Stromsteuer. Der politische Schaden ist bereits erheblich. Und der nächste Konflikt steht schon bevor.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/16/world/asia/trump-asia-china-xi-putin.html",
    "titel": "Trump’s Asia Trip Will Bring Him to the Table With Xi and Putin: What to Know",
@@ -556,6 +567,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.bbc.co.uk/news/articles/c8ly0yr7wv1no",
+   "titel": "Is India rethinking its short-term military recruitment scheme?",
+   "link": "https://www.bbc.co.uk/news/articles/c8ly0yr7wv1no?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-16T00:41:42.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "India has softened its recruitment scheme, giving young soldiers a longer military stint and another shot at permanent service.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.bbc.co.uk/news/articles/c65y131w1534o",
    "titel": "Steering failure preceded New Orleans cruise ship collision, says NTSB",
    "link": "https://www.bbc.co.uk/news/articles/c65y131w1534o?at_medium=RSS&at_campaign=rss",
@@ -1010,30 +1032,6 @@
    ],
    "text": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o",
-   "titel": "Watch: Cruise ship overturns after collision with tanker in New Orleans",
-   "link": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-14T19:14:33.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Around 130 people were rescued from a cruise ship after it was struck by a tanker while docked in New Orleans, Louisiana on Friday.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/usa-flughaefen-startverbot-100.html",
-   "titel": "Was über das Startverbot für Flugzeuge in den USA bekannt ist",
-   "link": "https://www.tagesschau.de/ausland/amerika/usa-flughaefen-startverbot-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-14T18:49:48.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Es war der längste Ausfall des US-Flugbetriebs seit Jahrzehnten. Vier Stunden lang galt ein Startverbot. Warum - und mit welchen Folgen? Könnte in Deutschland Ähnliches geschehen? Ein Überblick.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1041,8 +1039,8 @@
   "DW": 13,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 2,
-  "BBC World": 6,
+  "Handelsblatt": 3,
+  "BBC World": 4,
   "NYT World": 12,
   "EIA Today in Energy": 0
  }
