@@ -1,7 +1,62 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-16T14:23:35.559Z",
+ "lastUpdated": "2026-11-16T15:23:33.150Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ckx27v6dpjz0o",
+   "titel": "Landmark Crimea bridge hit as Russia reports biggest Ukrainian drone attack of war",
+   "link": "https://www.bbc.co.uk/news/articles/ckx27v6dpjz0o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-16T14:58:12.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russia said Ukraine had launched over 2,000 drones over the course of a day, while Kyiv came under a record 17 air raid alerts.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/16/world/asia/roosters-cockfighting-philippines.html",
+   "titel": "American Roosters Fight in the Philippines Despite U.S. Crackdown",
+   "link": "https://www.nytimes.com/2026/11/16/world/asia/roosters-cockfighting-philippines.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-16T14:56:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "It’s illegal in the United States to transport game fowl for fighting. But investigators say breeders are sending birds to the Philippines, where cockfighting is legal and lucrative.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/stahlgipfel-klimawandel-produktion-100.html",
+   "titel": "Stahlgipfel in Salzgitter: Unternehmen fordern Entlastung beim Strompreis",
+   "link": "https://www.tagesschau.de/wirtschaft/stahlgipfel-klimawandel-produktion-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-16T14:52:36.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "Strom ist für die Stahlindustrie ein entscheidender Faktor: Beim Stahlgipfel in Salzgitter forderte die Branche deshalb einen verlässlichen Strompreis. Bundeswirtschaftsministerin Reiche verwies auf bereits Erreichtes.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-greift-krim-bruecke-mit-drohnen-an-kreml-meldet-geringe-schaeden/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Ukraine greift Krim-Brücke mit Drohnen an – Kreml meldet geringe Schäden",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-greift-krim-bruecke-mit-drohnen-an-kreml-meldet-geringe-schaeden/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-16T14:48:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "EU setzt 145 weitere Personen und Organisationen auf Sanktionsliste +++ Russland meldet Festnahme nach Autobombenanschlag +++ Zahlreiche russische Raffinierien beschädigt +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqp83nk673reo",
+   "titel": "Estonia to close Russia border crossings after attempted drone factory arson attack",
+   "link": "https://www.bbc.co.uk/news/articles/cqp83nk673reo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-16T14:22:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Estonian government says Russia was behind the attempted sabotage, which the Kremlin denies.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/16/world/canada/carney-china-xi-trump-putin-trade.html",
    "titel": "Canada’s Leader, Once a Curiosity at Asia Summits, Is Now a Star",
@@ -36,20 +91,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-greift-krim-bruecke-mit-drohnen-an-kreml-meldet-geringe-schaeden/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Ukraine greift Krim-Brücke mit Drohnen an – Kreml meldet geringe Schäden",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-ukraine-greift-krim-bruecke-mit-drohnen-an-kreml-meldet-geringe-schaeden/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-16T12:33:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel",
-    "eurusd"
-   ],
-   "text": "Selenskyj: 55 Prozent der russischen Raffinerien lahmgelegt +++ Russland: Fast 1350 ukrainische Drohnen abgeschossen +++ EU: Weitere 1,7 Milliarden Euro an Ukraine ausgezahlt +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.tagesschau.de/ausland/europa/eu-aussenminister-ukraine-nahost-100.html",
    "titel": "EU-Außenminister wollen Ukraine-Strategie ausarbeiten",
    "link": "https://www.tagesschau.de/ausland/europa/eu-aussenminister-ukraine-nahost-100.html",
@@ -73,7 +114,7 @@
   },
   {
    "id": "https://www.nytimes.com/2026/11/16/world/asia/trump-asia-china-xi-putin.html",
-   "titel": "What to Know About Trump’s Trip to Asia",
+   "titel": "Trump’s Asia Trip Will Bring Him to the Table With Xi and Putin: What to Know",
    "link": "https://www.nytimes.com/2026/11/16/world/asia/trump-asia-china-xi-putin.html",
    "quelle": "NYT World",
    "zeit": "2026-11-16T11:26:59.000Z",
@@ -997,60 +1038,16 @@
    ],
    "text": "Ein Kreuzfahrtschiff ist auf dem Mississippi in New Orleans von einem Tanker gerammt worden. Der Flussdampfer kenterte. Alle Passagiere an Bord überlebten. Die Bürgermeisterin spricht von einem Wunder.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/aiwanger-trauerfeier-100.html",
-   "titel": "Trauerakt in München: Große Anteilnahme bei Abschied von Aiwanger",
-   "link": "https://www.tagesschau.de/inland/aiwanger-trauerfeier-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-14T13:22:33.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der bayerische Vize-Ministerpräsident und Freie-Wähler-Chef Aiwanger ist mit einem Trauerstaatsakt gewürdigt worden. Die Anteilnahme war groß. Zu der Zeremonie in der Frauenkirche kamen mehr als 1.000 Trauergäste.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/einspeiseverguetung-fuer-solaranlagen-koalition-einigt-sich-accg-201683300.html",
-   "titel": "Kehrtwende: Koalition will Einspeisevergütung für kleine Solaranlagen erhalten",
-   "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/einspeiseverguetung-fuer-solaranlagen-koalition-einigt-sich-accg-201683300.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-14T12:58:02.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Bundeswirtschaftsministerin Katherina Reiche wollte eigentlich die feste Einspeisevergütung für neue Solaranlagen abschaffen. Doch nun hat sich die Koalition offenbar auf einen Erhalt geeinigt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/industrie/logistik-der-3d-druck-feiert-ein-ungeahntes-comeback/100265611.html",
-   "titel": "Logistik: Weltweiter Umsatz steigt um 31 Prozent: 3D-Druck feiert ein ungeahntes Comeback",
-   "link": "https://www.handelsblatt.com/unternehmen/industrie/logistik-der-3d-druck-feiert-ein-ungeahntes-comeback/100265611.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-14T12:30:14.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Das Geschäft mit der Technologie legt kräftiger zu als vermutet. Neben anfälligen Lieferketten und Künstlicher Intelligenz gibt es einen weiteren Grund.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/koalition-spd-stimmt-koalitionsvertrag-in-mecklenburg-vorpommern-zu/100269890.html",
-   "titel": "Koalition: Rot-Rot-Grün in Mecklenburg-Vorpommern steht – SPD stimmt Koalitionsvertrag zu",
-   "link": "https://www.handelsblatt.com/politik/deutschland/koalition-spd-stimmt-koalitionsvertrag-in-mecklenburg-vorpommern-zu/100269890.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-14T12:24:36.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der Weg für die erste rot-rot-grüne Landesregierung in Mecklenburg-Vorpommern ist frei. Alle Parteien stimmten dem Vertrag zu. Am Abend soll das Bündnis per Unterschrift besiegelt werden.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 16,
+  "tagesschau": 14,
   "DW": 11,
   "Spiegel Wirtschaft": 6,
-  "FAZ Wirtschaft": 7,
-  "Handelsblatt": 3,
-  "BBC World": 5,
-  "NYT World": 11,
+  "FAZ Wirtschaft": 4,
+  "Handelsblatt": 2,
+  "BBC World": 6,
+  "NYT World": 12,
   "EIA Today in Energy": 0
  }
 }
