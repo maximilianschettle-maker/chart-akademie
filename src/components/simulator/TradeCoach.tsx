@@ -3,7 +3,8 @@ import { LoaderCircle, Sparkles } from 'lucide-react'
 import type { Candle, Trade } from '../../types'
 import type { ErkanntesSetup } from '../../engine/setupErkennung'
 import { strategieName } from '../../content/strategien'
-import { workerKonfiguriert } from '../../aktien/data/client'
+import { codeVorhanden } from '../../aktien/data/client'
+import { TEXT_ZUGANG_KURZ } from '../../zugang/ZugangHinweis'
 import { tradePruefen } from '../../journal/pruefung'
 import { PruefungKarte } from '../../journal/PruefungKarte'
 import type { Pruefung } from '../../journal/types'
@@ -25,7 +26,7 @@ export function TradeCoach({ trade, candles, symbol, interval, setup }: Props) {
   const [laeuft, setLaeuft] = useState(false)
   const [fehler, setFehler] = useState<string | null>(null)
   const [urteil, setUrteil] = useState<Pruefung | null>(null)
-  const mitWorker = workerKonfiguriert()
+  const mitWorker = codeVorhanden()
 
   async function fragen() {
     setLaeuft(true)
@@ -67,7 +68,7 @@ export function TradeCoach({ trade, candles, symbol, interval, setup }: Props) {
   if (urteil) return <PruefungKarte p={urteil} kontext="KI-Coach zum Simulator-Trade" />
   return (
     <div className="flex flex-wrap items-center gap-2">
-      <button type="button" onClick={() => void fragen()} disabled={!mitWorker || laeuft} className="tipp inline-flex items-center gap-1 rounded-md bg-nacht px-2 py-1 text-[11px] font-semibold text-akzent disabled:opacity-40" title={mitWorker ? 'Urteil des KI-Coachs zu diesem Trade' : 'Kein Worker eingetragen (Aktien → Einstellungen)'}>
+      <button type="button" onClick={() => void fragen()} disabled={!mitWorker || laeuft} className="tipp inline-flex items-center gap-1 rounded-md bg-nacht px-2 py-1 text-[11px] font-semibold text-akzent disabled:opacity-40" title={mitWorker ? 'Urteil des KI-Coachs zu diesem Trade' : TEXT_ZUGANG_KURZ}>
         {laeuft ? <LoaderCircle className="h-3 w-3 animate-spin" /> : <Sparkles className="h-3 w-3" />} KI-Coach
       </button>
       {fehler && <span className="text-[11px] text-short">{fehler}</span>}

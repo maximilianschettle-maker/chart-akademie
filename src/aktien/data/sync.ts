@@ -3,7 +3,7 @@
 // jede lokale Änderung wird verzögert geschrieben — auch wenn die Seite inzwischen gewechselt hat.
 import { useSyncExternalStore } from 'react'
 import { syncZustandAus, useAktienStore } from '../store'
-import { workerKonfiguriert } from './client'
+import { codeVorhanden } from './client'
 import { zustandHolen, zustandSchreiben } from './service'
 
 const VERZOEGERUNG_MS = 1500
@@ -21,12 +21,11 @@ function melde(f: string | null) {
 }
 
 function schluessel(): string {
-  const s = useAktienStore.getState()
-  return `${s.workerUrl}|${s.secret}`
+  return useAktienStore.getState().code.trim()
 }
 
 async function holen(): Promise<void> {
-  if (!workerKonfiguriert()) return
+  if (!codeVorhanden()) return
   const key = schluessel()
   if (geholtFuer === key) return
   try {
@@ -51,7 +50,7 @@ function planeSchreiben() {
 
 async function schreiben(): Promise<void> {
   timer = null
-  if (!workerKonfiguriert() || geholtFuer !== schluessel()) return
+  if (!codeVorhanden() || geholtFuer !== schluessel()) return
   const z = syncZustandAus(useAktienStore.getState())
   if (z.aktualisiertAm === 0 || z.aktualisiertAm === zuletztGeschrieben) return
   try {
@@ -77,7 +76,7 @@ export function syncStarten(): void {
     abonniert = true
     useAktienStore.subscribe((s, vorher) => {
       if (s.aktualisiertAm !== vorher.aktualisiertAm) planeSchreiben()
-      if (s.workerUrl !== vorher.workerUrl || s.secret !== vorher.secret) {
+      if (s.code !== vorher.code) {
         geholtFuer = ''
         void holen()
       }

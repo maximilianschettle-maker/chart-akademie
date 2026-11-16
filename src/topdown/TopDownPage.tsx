@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Ban, Check, Eraser, Layers, LoaderCircle, RectangleHorizontal, RotateCcw, Sparkles, Target, X } from 'lucide-react'
-import { workerKonfiguriert } from '../aktien/data/client'
+import { codeVorhanden } from '../aktien/data/client'
+import { ZugangHinweis } from '../zugang/ZugangHinweis'
 import { tradePruefen } from '../journal/pruefung'
 import { PruefungKarte } from '../journal/PruefungKarte'
 import type { Pruefung } from '../journal/types'
@@ -81,7 +82,7 @@ export function TopDownPage() {
   const [coach, setCoach] = useState<Pruefung | null>(null)
   const [coachLaeuft, setCoachLaeuft] = useState(false)
   const [coachFehler, setCoachFehler] = useState<string | null>(null)
-  const mitWorker = workerKonfiguriert()
+  const mitWorker = codeVorhanden()
 
   const starten = useCallback(async () => {
     setSchritt('laedt')
@@ -619,7 +620,7 @@ export function TopDownPage() {
                       <button type="button" onClick={() => void coachFragen()} className={KNOPF} disabled={!mitWorker || coachLaeuft}>
                         {coachLaeuft ? <LoaderCircle className="h-3.5 w-3.5 animate-spin" /> : <Sparkles className="h-3.5 w-3.5" />} KI-Coach fragen
                       </button>
-                      {!mitWorker && <span className="text-[11px] text-gedimmt">Kein Worker eingetragen (Aktien → Einstellungen).</span>}
+                      {!mitWorker && <ZugangHinweis klein />}
                       {coachFehler && <span className="text-xs text-short">{coachFehler}</span>}
                     </div>
                   )}

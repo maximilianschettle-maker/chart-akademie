@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { Candle } from '../types'
-import { workerKonfiguriert } from '../aktien/data/client'
+import { codeVorhanden } from '../aktien/data/client'
 import { ladeKurs } from '../aktien/data/service'
 
 // Live-Kurse über den Aktien-Worker (/api/kurs, Yahoo-Quote, Cache 15 min), damit die
@@ -20,7 +20,7 @@ export function useLiveKurse(symbole: string[], frischSignal = 0): Record<string
   const schluessel = symbole.join(',')
 
   useEffect(() => {
-    if (!schluessel || !workerKonfiguriert()) return
+    if (!schluessel || !codeVorhanden()) return
     let aktiv = true
     const laden = async (frisch: boolean) => {
       const liste = schluessel.split(',')

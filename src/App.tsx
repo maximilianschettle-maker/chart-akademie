@@ -6,6 +6,7 @@ import { StartPage } from './pages/StartPage'
 import { BereichLayout } from './pages/BereichLayout'
 import { TabLeisteOben, TabLeisteUnten } from './components/ui/TabLeiste'
 import { ANALYSE_TABS, TRAINING_TABS, neuerPfad } from './navigation'
+import { zugangStarten } from './zugang/ich'
 
 // Struktur siehe src/navigation.ts: Start · Training (Lernpfad, Simulator, Journal) · Analyse
 // (Aktien, Tracker, Makro, News). Route-Splitting: Simulator/Übung ziehen lightweight-charts
@@ -20,6 +21,8 @@ const JournalScreenshotPage = lazy(() => import('./journal/pages/JournalScreensh
 const TopDownPage = lazy(() => import('./topdown/TopDownPage').then((m) => ({ default: m.TopDownPage })))
 const UebungPage = lazy(() => import('./pages/UebungPage').then((m) => ({ default: m.UebungPage })))
 const WiederholungPage = lazy(() => import('./pages/WiederholungPage').then((m) => ({ default: m.WiederholungPage })))
+// Zugang (Einladungscode): src/zugang
+const ZugangPage = lazy(() => import('./zugang/ZugangPage').then((m) => ({ default: m.ZugangPage })))
 // Aktien-Bereich (Fundamentalanalyse): eigenes Modul unter src/aktien
 const AktienPage = lazy(() => import('./aktien/pages/AktienPage').then((m) => ({ default: m.AktienPage })))
 const FirmaPage = lazy(() => import('./aktien/pages/FirmaPage').then((m) => ({ default: m.FirmaPage })))
@@ -67,6 +70,7 @@ function NachObenBeiWechsel() {
 }
 
 export default function App() {
+  useEffect(() => zugangStarten(), [])
   return (
     <HashRouter>
       <NachObenBeiWechsel />
@@ -100,6 +104,7 @@ export default function App() {
               <Route path="/lektion/:lektionId" element={<LektionPage />} />
               <Route path="/uebung/:szenarioId" element={<UebungPage />} />
               <Route path="/wiederholung" element={<WiederholungPage />} />
+              <Route path="/zugang" element={<ZugangPage />} />
 
               <Route path="/analyse" element={<BereichLayout tabs={ANALYSE_TABS} label="Analyse" />}>
                 <Route index element={<Navigate to="/analyse/aktien" replace />} />

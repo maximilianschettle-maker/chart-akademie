@@ -2,7 +2,7 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import type { MusterId, TrackerConfig } from './types'
 import { normalisiereConfig, STANDARD_CONFIG } from './engine/katalog'
-import { AktienFehler, anfrage, workerKonfiguriert } from '../aktien/data/client'
+import { AktienFehler, anfrage, codeVorhanden } from '../aktien/data/client'
 
 // Konfiguration des Markt-Trackers: lokal (persist) und im Worker-KV (/api/tracker),
 // von dort liest die GitHub Action. Neuerer Stand (aktualisiertAm) gewinnt.
@@ -25,7 +25,7 @@ interface TrackerState {
 let schreibTimer: ReturnType<typeof setTimeout> | null = null
 
 async function schreiben(config: TrackerConfig, set: (s: Partial<TrackerState>) => void) {
-  if (!workerKonfiguriert()) return
+  if (!codeVorhanden()) return
   try {
     await anfrage<TrackerConfig>('/api/tracker', { method: 'PUT', body: JSON.stringify(config) })
     set({ sync: 'synchron', syncFehler: null })
@@ -63,7 +63,7 @@ export const useTrackerStore = create<TrackerState>()(
         musterUmschaltenStunde: (id) => aendern({ musterStunde: { ...get().config.musterStunde, [id]: !get().config.musterStunde[id] } }),
         pushStundeSetzen: (an) => aendern({ pushStunde: an }),
         abgleichen: async () => {
-          if (!workerKonfiguriert()) {
+          if (!codeVorhanden()) {
             set({ sync: 'kein-worker' })
             return
           }
