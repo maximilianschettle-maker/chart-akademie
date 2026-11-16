@@ -1,7 +1,33 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-16T16:23:34.379Z",
+ "lastUpdated": "2026-11-16T17:23:32.712Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/usa-und-china-die-nvidia-affaere-ueberschattet-trumps-asienreise/100269704.html",
+   "titel": "Chip-Exporte: Nvidia-Affäre überschattet Trumps Asienreise – Handelskonflikt mit China könnte neu aufflammen",
+   "link": "https://www.handelsblatt.com/politik/international/usa-und-china-die-nvidia-affaere-ueberschattet-trumps-asienreise/100269704.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-16T16:44:26.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Eine mögliche Verschärfung der Tech-Exportkontrollen gefährdet den Handelsdeal mit Peking – und den Versuch der USA, den Einfluss chinesischer KI in Südostasien zurückzudrängen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/kultur/james-bond-robert-pattinson-100.html",
+   "titel": "Robert Pattinson wird neuer James Bond - Nachfolge von Daniel Craig",
+   "link": "https://www.tagesschau.de/kultur/james-bond-robert-pattinson-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-16T16:33:42.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "Unter Experten war er als heißer Favorit gehandelt worden. Nun steht es auch offiziell fest: Robert Pattinson wird neuer 007. Der nächste James-Bond-Film wird der erste unter der Federführung von Amazon.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.spiegel.de/wirtschaft/service/donald-trump-koennen-die-demokraten-nach-den-us-midterms-die-zoelle-wirklich-stoppen-a-93d3e5c2-9594-424c-bf96-cb2f925e009b",
    "titel": "Donald Trump: Können die Demokraten nach den US-Midterms die Zölle wirklich stoppen?",
@@ -26,13 +52,13 @@
   },
   {
    "id": "https://www.dw.com/de/humanit%C3%A4re-mission-f%C3%BCr-kostjantyniwka-eine-falle-putins/a-79958575",
-   "titel": "\"Humanitäre Mission\" für Kostjantyniwka eine Falle Putins?",
+   "titel": "\"Humanitäre Mission\" für Kostjantyniwka - eine Falle Putins?",
    "link": "https://www.dw.com/de/humanitäre-mission-für-kostjantyniwka-eine-falle-putins/a-79958575?maca=de-rss-de-all-1119-xml-mrss",
    "quelle": "DW",
    "zeit": "2026-11-16T15:51:00.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Putin hat eine Evakuierung für Kostjantyniwka nach dem Vorbild von Oleschky vorgeschlagen. Experten warnen jedoch, dass diese eher militärischen als humanitären Zwecken dienen könnte. Was sollte Kyjiw jetzt tun?",
+   "text": "Russlands Präsident schlägt eine Evakuierung der ukrainischen Stadt Kostjantyniwka ähnlich wie im Fall Oleschky vor. Experten warnen: Diese könnte eher militärischen als humanitären Zwecken dienen. Was sollte Kyjiw tun?",
    "sprache": "de"
   },
   {
@@ -56,6 +82,17 @@
    "maerkte": [],
    "text": "Environmentalists have long puzzled over a wide network of water projects lacking any obvious justification. Then their areas were targeted in airstrikes.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/fifa-wahl-fff-chef-philippe-diallo-wird-europas-gegenkandidat-zu-gianni-infantino/a-79961195",
+   "titel": "FIFA-Wahl: FFF-Chef Philippe Diallo wird Europas Gegenkandidat zu Gianni Infantino",
+   "link": "https://www.dw.com/de/fifa-wahl-fff-chef-philippe-diallo-wird-europas-gegenkandidat-zu-gianni-infantino/a-79961195?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-16T15:22:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Gianni Infantino sammelt weltweit Unterstützung für eine vierte Amtszeit als FIFA-Präsident. Nun hat Europa kurz vor Fristende einen Gegenkandidaten aufgestellt. Sein Name: Philippe Diallo.",
+   "sprache": "de"
   },
   {
    "id": "https://www.dw.com/de/fifa-wahl-findet-europa-noch-einen-herausforderer-f%C3%BCr-infantino/a-79961195",
@@ -997,49 +1034,14 @@
    ],
    "text": "Ein Rückzug aus dem Donbass im Tausch für einen NATO-Beitritt - das haben die USA der Ukraine nach Angaben Selenskyjs nahegelegt. Unter bestimmten Bedingungen würde er diese Frage in einem Referendum zur Abstimmung stellen, so der Präsident",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/verletzte-phantasialand-chlor-100.html",
-   "titel": "Zu viel Chlor im Pool: 15 Gäste im Phantasialand verletzt",
-   "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/verletzte-phantasialand-chlor-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-14T17:01:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Durch die Microsoft-Störung bekam die Belegschaft im Freizeitpark Phantasialand nicht mit, dass zu viel Chlor im Schwimmbecken eines Hotels auf dem Gelände war. 15 Gäste wurden verletzt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/14/world/africa/south-sudan-election.html",
-   "titel": "South Sudan’s National Election, Its First, Will Be Delayed",
-   "link": "https://www.nytimes.com/2026/11/14/world/africa/south-sudan-election.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-14T16:51:55.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Analysts had warned that the vote, originally set for December, faced a legitimacy crisis. South Sudan has not held a national election since gaining independence in 2011.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/bundeshaushalt-spd-und-union-scheitern-an-eigenen-anspruechen-201680428.html",
-   "titel": "Nach Bereinigungssitzung: Der Haushalt passt zur Koalition – alles läuft auseinander",
-   "link": "https://www.faz.net/aktuell/wirtschaft/bundeshaushalt-spd-und-union-scheitern-an-eigenen-anspruechen-201680428.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-14T16:26:54.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Die Lage der Bundesfinanzen ist ohnehin dramatisch. Und jetzt wird die Haushaltspolitik auch noch handwerklich schlecht gemacht. Ob das gut geht?",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 14,
+  "tagesschau": 15,
   "DW": 13,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 2,
+  "Handelsblatt": 3,
   "BBC World": 6,
   "NYT World": 12,
   "EIA Today in Energy": 0
