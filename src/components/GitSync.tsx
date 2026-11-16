@@ -185,8 +185,8 @@ export function GitSync() {
         <GitBranch className="h-4 w-4 text-akzent" /> Git-Sync
       </h2>
       <p className="mt-1 text-xs text-gedimmt">
-        Journal und Lernfortschritt in einem GitHub-Repository sichern und auf anderen Geräten wieder holen.
-        Beides führt zusammen — es geht nichts verloren.
+        Alternativ zum Geräte-Sync: Journal und Lernfortschritt in einem GitHub-Repository sichern und auf anderen
+        Geräten wieder holen. Beides führt zusammen — es geht nichts verloren.
       </p>
 
       {offen ? (

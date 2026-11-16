@@ -4,12 +4,11 @@ import type { DcfAnnahmen, SyncZustand } from './types'
 
 // Eigener Store für den Aktien-Bereich (chartakademie-aktien). Bewusst getrennt von
 // Fortschritt, Journal und Git-Sync: nichts davon landet in Export/Import oder im Repo.
-// Das Worker-Geheimnis bleibt wie das GitHub-Token nur im Browser-Speicher.
+// Der Einladungscode bleibt wie das GitHub-Token nur im Browser-Speicher.
 
 export interface AktienEinstellungen {
-  /** Basis-URL des Cloudflare Workers, z.B. https://chart-akademie-aktien.xyz.workers.dev */
-  workerUrl: string
-  secret: string
+  /** Einladungscode (CA-XXXX-XXXX-XXXX); die Worker-Adresse ist fest (config.ts) */
+  code: string
   /** Firmenvergleich: Beträge in dieser Währung anzeigen; '' = jeweilige Originalwährung */
   vergleichsWaehrung: string
 }
@@ -28,14 +27,28 @@ interface AktienState extends AktienEinstellungen, Omit<SyncZustand, 'aktualisie
   syncMarkieren: () => void
 }
 
-const STANDARD_URL = import.meta.env.DEV ? 'http://localhost:8787' : ''
-const STANDARD_SECRET = import.meta.env.DEV ? 'test' : ''
+/** Im Dev-Server ist „test“ das Dienst-Token aus worker/.dev.vars */
+const STANDARD_CODE = import.meta.env.DEV ? 'test' : ''
+
+export const AKTIEN_STORE_VERSION = 2
+
+/**
+ * Version 1 hatte workerUrl + secret. Das alte Geheimnis ist jetzt das Dienst-Token des Workers
+ * und wird als Code weitergereicht, damit die Geräte des Owners nach dem Update ohne Eingabe
+ * weiterlaufen (die Zugang-Karte bittet dann, es durch den Admin-Code zu ersetzen).
+ */
+export function migriereAktienStand(gespeichert: unknown, version: number): Partial<AktienState> {
+  const g = (gespeichert && typeof gespeichert === 'object' ? gespeichert : {}) as Record<string, unknown>
+  if (version >= AKTIEN_STORE_VERSION) return g as Partial<AktienState>
+  const { workerUrl: _url, secret, ...rest } = g
+  void _url
+  return { ...rest, code: typeof secret === 'string' ? secret.trim() : '' } as Partial<AktienState>
+}
 
 export const useAktienStore = create<AktienState>()(
   persist(
     (set) => ({
-      workerUrl: STANDARD_URL,
-      secret: STANDARD_SECRET,
+      code: STANDARD_CODE,
       vergleichsWaehrung: '',
       watchlist: [],
       dcfAnnahmen: {},
@@ -87,9 +100,11 @@ export const useAktienStore = create<AktienState>()(
     }),
     {
       name: 'chartakademie-aktien',
+      version: AKTIEN_STORE_VERSION,
+      migrate: (gespeichert, version) => migriereAktienStand(gespeichert, version) as AktienState,
       merge: (gespeichert, aktuell) => {
         const g = (gespeichert ?? {}) as Partial<AktienState>
-        return { ...aktuell, ...g, watchlist: g.watchlist ?? [], dcfAnnahmen: g.dcfAnnahmen ?? {}, cikManuell: g.cikManuell ?? {} }
+        return { ...aktuell, ...g, code: typeof g.code === 'string' ? g.code : aktuell.code, watchlist: g.watchlist ?? [], dcfAnnahmen: g.dcfAnnahmen ?? {}, cikManuell: g.cikManuell ?? {} }
       },
     },
   ),

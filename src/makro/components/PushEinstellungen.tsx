@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react'
-import { Bell, BellOff, CalendarPlus, Copy, Check, Smartphone, TriangleAlert } from 'lucide-react'
+import { Bell, BellOff, CalendarPlus, Check, Smartphone, TriangleAlert } from 'lucide-react'
 import { icsUrl } from '../laden'
+import { abosLaden, aboLoeschen, aboSchreiben, geraeteName } from '../push'
+import { codeVorhanden } from '../../aktien/data/client'
+import { useAktienStore } from '../../aktien/store'
+import { ZugangHinweis } from '../../zugang/ZugangHinweis'
 
-// Web Push ohne Backend: Die App abonniert beim Push-Dienst des Browsers (VAPID Public Key
-// aus macro.json) und zeigt die Subscription als JSON. Der Nutzer legt sie als GitHub-Secret
-// PUSH_SUBSCRIPTION ab; die GitHub Action schickt die Nachrichten von dort.
+// Web Push: Die App abonniert beim Push-Dienst des Browsers (VAPID Public Key aus macro.json)
+// und meldet das Abo an den Worker (je Einladungscode, mehrere Geräte). Die GitHub Actions holen
+// alle Abos vom Worker und schicken die Nachrichten.
 
 interface PushEinstellungenProps {
   publicKey: string | null
@@ -34,10 +38,12 @@ function istInstalliert(): boolean {
 
 export function PushEinstellungen({ publicKey }: PushEinstellungenProps) {
   const [zustand, setZustand] = useState<Zustand>('prueft')
-  const [subscription, setSubscription] = useState<string | null>(null)
+  const [endpoint, setEndpoint] = useState<string | null>(null)
+  const [geraete, setGeraete] = useState<number | null>(null)
   const [meldung, setMeldung] = useState<{ text: string; fehler?: boolean } | null>(null)
-  const [kopiert, setKopiert] = useState(false)
   const [laeuft, setLaeuft] = useState(false)
+  const code = useAktienStore((s) => s.code)
+  const mitCode = codeVorhanden()
   const ios = istIos()
   const installiert = istInstalliert()
 
@@ -57,8 +63,19 @@ export function PushEinstellungen({ publicKey }: PushEinstellungenProps) {
       const sub = await reg.pushManager.getSubscription()
       if (!aktiv) return
       if (sub) {
-        setSubscription(JSON.stringify(sub.toJSON()))
+        setEndpoint(sub.endpoint)
         setZustand('an')
+        // Abo im Worker nachtragen, falls es dort fehlt (z.B. abonniert vor dem Umbau)
+        if (codeVorhanden()) {
+          try {
+            const abos = await abosLaden()
+            if (!aktiv) return
+            if (!abos.some((a) => a.endpoint === sub.endpoint)) setGeraete(await aboSchreiben(sub.toJSON(), geraeteName()))
+            else setGeraete(abos.length)
+          } catch {
+            // Worker gerade nicht erreichbar – beim nächsten Besuch
+          }
+        }
       } else {
         setZustand(Notification.permission === 'denied' ? 'verweigert' : 'aus')
       }
@@ -66,7 +83,7 @@ export function PushEinstellungen({ publicKey }: PushEinstellungenProps) {
     return () => {
       aktiv = false
     }
-  }, [])
+  }, [code])
 
   async function aktivieren() {
     if (!publicKey) return
@@ -84,9 +101,11 @@ export function PushEinstellungen({ publicKey }: PushEinstellungenProps) {
         userVisibleOnly: true,
         applicationServerKey: base64ZuUint8(publicKey) as BufferSource,
       })
-      setSubscription(JSON.stringify(sub.toJSON()))
+      setEndpoint(sub.endpoint)
       setZustand('an')
-      setMeldung({ text: 'Abonniert. Jetzt die Subscription unten kopieren und als GitHub-Secret PUSH_SUBSCRIPTION hinterlegen.' })
+      const anzahl = await aboSchreiben(sub.toJSON(), geraeteName())
+      setGeraete(anzahl)
+      setMeldung({ text: `Abonniert – dieses Gerät bekommt ab jetzt Push-Nachrichten (${anzahl} Gerät${anzahl === 1 ? '' : 'e'} insgesamt).` })
     } catch (e) {
       setMeldung({ text: `Abonnieren fehlgeschlagen: ${e instanceof Error ? e.message : String(e)}`, fehler: true })
     } finally {
@@ -96,26 +115,24 @@ export function PushEinstellungen({ publicKey }: PushEinstellungenProps) {
 
   async function deaktivieren() {
     setLaeuft(true)
+    setMeldung(null)
     try {
       const reg = await navigator.serviceWorker.getRegistration()
       const sub = await reg?.pushManager.getSubscription()
+      if (sub && codeVorhanden()) {
+        try {
+          await aboLoeschen(sub.endpoint)
+        } catch (e) {
+          setMeldung({ text: `Abo im Worker nicht entfernt: ${e instanceof Error ? e.message : String(e)}`, fehler: true })
+        }
+      }
       await sub?.unsubscribe()
-      setSubscription(null)
+      setEndpoint(null)
+      setGeraete(null)
       setZustand('aus')
-      setMeldung({ text: 'Abonnement beendet. Das Secret PUSH_SUBSCRIPTION in GitHub ist damit ungültig.' })
+      setMeldung((m) => m ?? { text: 'Abonnement beendet.' })
     } finally {
       setLaeuft(false)
-    }
-  }
-
-  async function kopieren() {
-    if (!subscription) return
-    try {
-      await navigator.clipboard.writeText(subscription)
-      setKopiert(true)
-      setTimeout(() => setKopiert(false), 2000)
-    } catch {
-      setMeldung({ text: 'Kopieren nicht möglich – Text bitte markieren und von Hand kopieren.', fehler: true })
     }
   }
 
@@ -141,8 +158,8 @@ export function PushEinstellungen({ publicKey }: PushEinstellungenProps) {
         <Bell className="h-4 w-4 text-akzent" /> Benachrichtigungen
       </h2>
       <p className="mt-1 text-sm text-gedimmt">
-        Push am Vortag, eine Stunde vorher und sobald die Entscheidung veröffentlicht ist (mit Ergebnis). Verschickt von der GitHub
-        Action, ohne eigenen Server.
+        Push am Vortag, eine Stunde vorher und sobald die Entscheidung veröffentlicht ist (mit Ergebnis), dazu neue Tracker-Signale. Das
+        Abo gehört zu deinem Einladungscode; mehrere Geräte sind möglich.
       </p>
 
       {ios && !installiert && (
@@ -180,7 +197,12 @@ export function PushEinstellungen({ publicKey }: PushEinstellungenProps) {
             und die Action einmal laufen lassen).
           </p>
         )}
-        {zustand === 'aus' && publicKey && (
+        {zustand === 'aus' && publicKey && !mitCode && (
+          <p className="text-gedimmt">
+            <ZugangHinweis nachsatz=" – Push braucht ihn, damit die Nachrichten dein Gerät finden." />
+          </p>
+        )}
+        {zustand === 'aus' && publicKey && mitCode && (
           <button
             onClick={aktivieren}
             disabled={laeuft}
@@ -192,26 +214,14 @@ export function PushEinstellungen({ publicKey }: PushEinstellungenProps) {
         {zustand === 'an' && (
           <div className="space-y-2">
             <p className="inline-flex items-center gap-1.5 text-long">
-              <Check className="h-4 w-4" /> Auf diesem Gerät abonniert.
+              <Check className="h-4 w-4" /> Auf diesem Gerät abonniert{geraete !== null && ` · ${geraete} Gerät${geraete === 1 ? '' : 'e'} insgesamt`}.
             </p>
-            <p className="text-gedimmt">
-              Diese Subscription einmalig als GitHub-Secret <code className="rounded bg-nacht px-1 text-akzent">PUSH_SUBSCRIPTION</code>{' '}
-              hinterlegen (Repo → Settings → Secrets and variables → Actions). Bei Gerätewechsel oder nach „Deaktivieren“ neu setzen.
-            </p>
-            <textarea
-              readOnly
-              value={subscription ?? ''}
-              onFocus={(e) => e.currentTarget.select()}
-              rows={4}
-              className="w-full rounded-lg border border-rand bg-nacht p-2 font-mono text-[11px] text-schrift"
-            />
+            {!mitCode && (
+              <p className="text-gedimmt">
+                <ZugangHinweis nachsatz=" – sonst erreichen die Nachrichten dieses Gerät nicht." />
+              </p>
+            )}
             <div className="flex flex-wrap gap-2">
-              <button
-                onClick={kopieren}
-                className="inline-flex items-center gap-1.5 rounded-lg bg-akzent px-3 py-1.5 text-xs font-semibold text-nacht"
-              >
-                {kopiert ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />} {kopiert ? 'Kopiert' : 'Kopieren'}
-              </button>
               <button
                 onClick={lokalTesten}
                 className="inline-flex items-center gap-1.5 rounded-lg bg-nacht px-3 py-1.5 text-xs font-semibold text-schrift hover:text-white"
@@ -222,6 +232,7 @@ export function PushEinstellungen({ publicKey }: PushEinstellungenProps) {
                 onClick={deaktivieren}
                 disabled={laeuft}
                 className="inline-flex items-center gap-1.5 rounded-lg bg-nacht px-3 py-1.5 text-xs font-semibold text-gedimmt hover:text-short"
+                title={endpoint ?? undefined}
               >
                 <BellOff className="h-3.5 w-3.5" /> Deaktivieren
               </button>

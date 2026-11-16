@@ -7,6 +7,7 @@ import { useProgressStore } from '../stores/progressStore'
 import { ProgressRing } from '../components/ui/ProgressRing'
 import { DatenSicherung } from '../components/DatenSicherung'
 import { GitSync } from '../components/GitSync'
+import { WorkerSync } from '../components/WorkerSync'
 import { BewertungsBadge } from '../components/ui/BewertungsBadge'
 import { WeiterLernen } from '../components/start/WeiterLernen'
 
@@ -151,6 +152,10 @@ export function LernpfadPage() {
 
       <div className="mt-10">
         <DatenSicherung />
+      </div>
+
+      <div className="mt-4">
+        <WorkerSync />
       </div>
 
       <div className="mt-4">

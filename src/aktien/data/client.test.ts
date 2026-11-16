@@ -2,6 +2,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { _pauseSetzen, AktienFehler, anfrage, RETRY_PAUSEN_MS, TEXT_NICHT_ERREICHBAR } from './client'
 import { useDatenStatus } from './status'
 import { useAktienStore } from '../store'
+import { WORKER_URL } from '../config'
 
 function antwort(status: number, body: unknown): Response {
   return new Response(body === null ? null : JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } })
@@ -10,7 +11,7 @@ function antwort(status: number, body: unknown): Response {
 describe('anfrage (Worker-Client)', () => {
   const pausen: number[] = []
   beforeEach(() => {
-    useAktienStore.setState({ workerUrl: 'https://w.test', secret: 'geheim' })
+    useAktienStore.setState({ code: 'geheim' })
     useDatenStatus.setState({ lage: 'unbekannt', letzterErfolg: null, standVeraltet: null, letzterFehler: null, fehlerSeit: null })
     pausen.length = 0
     _pauseSetzen(async (ms) => {
@@ -33,7 +34,7 @@ describe('anfrage (Worker-Client)', () => {
     expect(pausen).toHaveLength(2)
     expect(pausen[0]).toBeGreaterThanOrEqual(RETRY_PAUSEN_MS[0])
     expect(pausen[1]).toBeGreaterThanOrEqual(RETRY_PAUSEN_MS[1])
-    expect(fetchMock.mock.calls[0][0]).toBe('https://w.test/api/kurs/AAPL')
+    expect(fetchMock.mock.calls[0][0]).toBe(`${WORKER_URL}/api/kurs/AAPL`)
     expect(useDatenStatus.getState().lage).toBe('live')
   })
 
@@ -66,5 +67,17 @@ describe('anfrage (Worker-Client)', () => {
   it('liefert null bei 204', async () => {
     vi.stubGlobal('fetch', vi.fn<typeof fetch>().mockResolvedValue(new Response(null, { status: 204 })))
     await expect(anfrage('/api/sec/X')).resolves.toBeNull()
+  })
+})
+
+describe('anfrage mit eigenem Token', () => {
+  it('schickt genau einen Authorization-Header mit dem übergebenen Code', async () => {
+    useAktienStore.setState({ code: 'gespeichert' })
+    const fetchMock = vi.fn<typeof fetch>().mockResolvedValueOnce(antwort(200, { ok: 1 }))
+    vi.stubGlobal('fetch', fetchMock)
+    await anfrage('/api/ich', { headers: { Authorization: 'Bearer CA-AAAA-BBBB-CCCC' } })
+    const h = new Headers(fetchMock.mock.calls[0][1]?.headers)
+    expect(h.get('Authorization')).toBe('Bearer CA-AAAA-BBBB-CCCC')
+    vi.unstubAllGlobals()
   })
 })

@@ -1,9 +1,15 @@
 import type { SzenarioBewertung, Trade } from '../types'
 import type { WiederholungsEintrag } from './wiederholung'
 import type { GespeicherterRueckblick } from './rueckblick'
-import { BEWERTUNG_RANG } from './szenarioGrader'
 import type { JournalEintrag } from '../journal/types'
-import { mergeEintraege } from '../journal/engine'
+import {
+  mergeEintraege,
+  mergeLektionen,
+  mergeRueckblicke,
+  mergeSzenarien,
+  mergeTrades,
+  mergeWiederholungen,
+} from './mergen'
 
 // Export/Import des kompletten Nutzerstands als JSON-Datei — damit Fortschritt
 // und Journal zwischen PC und Handy wandern können. Import MERGT (statt zu
@@ -58,7 +64,8 @@ export function sicherungEintraege(s: Sicherung): JournalEintrag[] {
   return Array.isArray(s.journal?.eintraege) ? s.journal.eintraege : []
 }
 
-export { mergeEintraege }
+// Merge-Regeln liegen importfrei in mergen.ts (auch der Worker nutzt sie); hier nur re-exportiert.
+export { mergeEintraege, mergeLektionen, mergeRueckblicke, mergeSzenarien, mergeTrades, mergeWiederholungen }
 
 /** Prüft grob, ob ein geparstes JSON eine ChartAkademie-Sicherung ist. */
 export function istSicherung(x: unknown): x is Sicherung {
@@ -74,62 +81,6 @@ export function istSicherung(x: unknown): x is Sicherung {
   )
 }
 
-
-export function mergeTrades(vorhanden: Trade[], neue: Trade[]): Trade[] {
-  const ids = new Set(vorhanden.map((t) => t.id))
-  const frisch = neue.filter((t) => !ids.has(t.id))
-  return [...vorhanden, ...frisch].sort((a, b) => a.exitTime - b.exitTime || a.entryTime - b.entryTime)
-}
-
-/** Setup-Rückblicke zusammenführen: je Sitzung einer, der neuere Stand gewinnt. */
-export function mergeRueckblicke(
-  vorhanden: GespeicherterRueckblick[],
-  neue: GespeicherterRueckblick[],
-): GespeicherterRueckblick[] {
-  const map = new Map(vorhanden.map((r) => [r.sitzungId, r]))
-  for (const r of neue) {
-    const alt = map.get(r.sitzungId)
-    if (!alt || r.erstelltAm > alt.erstelltAm) map.set(r.sitzungId, r)
-  }
-  return [...map.values()].sort((a, b) => a.erstelltAm - b.erstelltAm)
-}
-
-export function mergeLektionen(
-  a: Record<string, LektionErgebnis>,
-  b: Record<string, LektionErgebnis>,
-): Record<string, LektionErgebnis> {
-  const out = { ...a }
-  for (const [id, e] of Object.entries(b)) {
-    const alt = out[id]
-    if (!alt || e.quizProzent > alt.quizProzent) out[id] = e
-  }
-  return out
-}
-
-export function mergeSzenarien(
-  a: Record<string, SzenarioErgebnis>,
-  b: Record<string, SzenarioErgebnis>,
-): Record<string, SzenarioErgebnis> {
-  const out = { ...a }
-  for (const [id, e] of Object.entries(b)) {
-    const alt = out[id]
-    if (!alt || BEWERTUNG_RANG[e.bewertung] > BEWERTUNG_RANG[alt.bewertung]) out[id] = e
-  }
-  return out
-}
-
-export function mergeWiederholungen(
-  a: Record<string, WiederholungsEintrag>,
-  b: Record<string, WiederholungsEintrag>,
-): Record<string, WiederholungsEintrag> {
-  const out = { ...a }
-  for (const [key, e] of Object.entries(b)) {
-    const alt = out[key]
-    // höherer Lernstand gewinnt; bei Gleichstand die frühere Fälligkeit
-    if (!alt || e.stufe > alt.stufe || (e.stufe === alt.stufe && e.faelligAm < alt.faelligAm)) out[key] = e
-  }
-  return out
-}
 
 export function sicherungZusammenfuehren(
   aktuell: { tradeHistorie: Trade[]; fortschritt: Sicherung['fortschritt'] },

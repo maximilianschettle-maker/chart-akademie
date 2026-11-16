@@ -3,7 +3,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import { ArrowLeft, Camera, FileSpreadsheet, LoaderCircle, TriangleAlert } from 'lucide-react'
 import { useJournalStore } from '../store'
 import { useAnsichtStore } from '../../analyse/ansichtStore'
-import { workerKonfiguriert } from '../../aktien/data/client'
+import { codeVorhanden } from '../../aktien/data/client'
+import { ZugangHinweis } from '../../zugang/ZugangHinweis'
 import { EINGABE, KNOPF, KNOPF_AKZENT } from '../../aktien/components/ui'
 import { fmtKurs } from '../../aktien/engine/format'
 import { bildVorbereiten, positionenErkennen, type BildDaten } from '../screenshot'
@@ -41,7 +42,7 @@ export function JournalScreenshotPage() {
   const [fehler, setFehler] = useState<string | null>(null)
   const [ergebnis, setErgebnis] = useState<ScreenshotErgebnis | null>(null)
   const [zeilen, setZeilen] = useState<Zeile[]>([])
-  const mitWorker = workerKonfiguriert()
+  const mitWorker = codeVorhanden()
 
   async function dateiGewaehlt(datei: File) {
     setFehler(null)
@@ -184,7 +185,7 @@ export function JournalScreenshotPage() {
 
       {!mitWorker && (
         <p className="mt-4 inline-flex items-start gap-2 rounded-xl border border-akzent/40 bg-akzent/10 px-3 py-2 text-sm text-akzent">
-          <TriangleAlert className="mt-0.5 h-4 w-4 shrink-0" /> Kein Worker eingetragen (Aktien → Einstellungen) – der Screenshot-Weg ist damit aus, die Datei geht trotzdem.
+          <TriangleAlert className="mt-0.5 h-4 w-4 shrink-0" /> <ZugangHinweis nachsatz=" – der Screenshot-Weg ist damit aus, die Datei geht trotzdem." />
         </p>
       )}
 

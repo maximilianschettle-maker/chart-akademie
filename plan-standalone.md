@@ -197,6 +197,14 @@ Tracker, Push. Keine Worker-URL, kein Geheimnis, kein GitHub-Repo mehr in der Ap
 - **CORS:** Origin-Liste unverändert; eine spätere Capacitor-Hülle braucht `capacitor://localhost` in
   `ERLAUBTE_ORIGINS`. PWA/TWA ändert nichts.
 
+## Umsetzung (Stand 2026-11-16)
+
+Phasen 0–6 sind auf dem Branch `standalone` umgesetzt und committet (Tag `vor-standalone` = Stand davor).
+Geprüft: 473 Tests, Typprüfung App/Worker/Skripte, Lint, Produktions-Build; lokal mit `wrangler dev`
+per Playwright (Code-Eingabe, Teilen-Link, Reload, zwei Geräte mit Journal-/Fortschritt-Sync), CLI und
+`sende-push --test`. Offen ist der Rollout (siehe oben): Worker deployen, Admin-Code anlegen, Branch nach
+`main` mergen, Push am Handy neu aktivieren, Actions per `workflow_dispatch` prüfen.
+
 ## Folgeschritte (nicht in Schritt 1)
 
 Top-Down-Runden, Zeichnungen und Ansicht in den Sync; Tombstones; Ratenlimit; Install-Hinweis

@@ -1,7 +1,7 @@
 import { openDB, type IDBPDatabase } from 'idb'
 import type { JournalEintrag, Snapshot } from './types'
 import { ladeChart } from '../aktien/data/service'
-import { workerKonfiguriert } from '../aktien/data/client'
+import { codeVorhanden } from '../aktien/data/client'
 import { bereichDef } from '../aktien/engine/chart'
 import { bereichFuerZeitrahmen, kerzenUmEinstieg, SNAPSHOT_NACH, SNAPSHOT_VOR } from './engine'
 
@@ -55,7 +55,7 @@ export type SnapshotErgebnis = { art: 'ok'; snapshot: Snapshot } | { art: 'kein-
  * lange her ist mit Tageskerzen. Bei geschlossenen Trades reicht der Ausschnitt bis hinter den Ausstieg.
  */
 export async function snapshotLaden(e: JournalEintrag): Promise<SnapshotErgebnis> {
-  if (!workerKonfiguriert()) return { art: 'kein-worker' }
+  if (!codeVorhanden()) return { art: 'kein-worker' }
   const bereiche = [bereichFuerZeitrahmen(e.zeitrahmen), '6M' as const]
   try {
     for (const bereich of bereiche) {

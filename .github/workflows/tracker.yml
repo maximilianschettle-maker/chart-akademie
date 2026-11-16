@@ -2,8 +2,8 @@ name: Markt-Tracker
 
 # Holt Tageskerzen der konfigurierten Instrumente (S&P 500, Nasdaq, Gold, Bitcoin …),
 # erkennt Muster (Breakout, Tunnel, EMA-Kreuz, RSI, Lehrbuch-Setups) und verschickt
-# Push-Nachrichten bei neuen Signalen. Konfiguration kommt aus dem Worker-KV
-# (App → Tracker → Einstellungen), sonst aus data/tracker-config.json.
+# Push-Nachrichten bei neuen Signalen. Konfiguration ist die Vereinigung aller Nutzer aus dem
+# Worker (App → Tracker → Einstellungen je Einladungscode), sonst data/tracker-config.json.
 # Werktags alle 15 Minuten (Börsen- und Krypto-Zeiten), am Wochenende alle zwei Stunden (Krypto).
 # Committet wird nur bei neuen Signalen/Kerzen oder deutlicher Kursbewegung; Live-Kurse holt
 # die App selbst über den Worker, deshalb muss nicht jeder Lauf deployen.
@@ -49,6 +49,9 @@ jobs:
           VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
           VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
+          AKTIEN_WORKER_URL: ${{ secrets.AKTIEN_WORKER_URL }}
+          AKTIEN_SECRET: ${{ secrets.AKTIEN_SECRET }}
+          # Übergang: altes Einzel-Abo; nach dem Umzug der Geräte in die App löschen
           PUSH_SUBSCRIPTION: ${{ secrets.PUSH_SUBSCRIPTION }}
           APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/#/makro
         run: node scripts/macro/sende-push.ts

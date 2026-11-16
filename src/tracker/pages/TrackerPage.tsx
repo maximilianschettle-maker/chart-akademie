@@ -12,7 +12,7 @@ import { kerzenAusKompakt } from '../engine/analyse'
 import type { Ebene, EbeneDaten, InstrumentDaten, MusterId, Signal } from '../types'
 import { fmtDatumKurz, fmtKurs, fmtProzentVz, fmtStand, richtungFarbe, richtungText } from '../format'
 import { aktuellerKurs, useLiveKurse, vortagesSchluss, type LiveKurs } from '../liveKurse'
-import { workerKonfiguriert } from '../../aktien/data/client'
+import { codeVorhanden } from '../../aktien/data/client'
 import { DatenStatus } from '../../aktien/components/DatenStatus'
 
 // Markt-Tracker: Instrumente laut Konfiguration, je Instrument Kurs, Lage und die jüngsten Signale;
@@ -304,7 +304,7 @@ export function TrackerPage() {
   const pushStundeSetzen = useTrackerStore((s) => s.pushStundeSetzen)
   const symbole = useMemo(() => (daten ? daten.instrumente.map((i) => i.symbol) : []), [daten])
   const liveKurse = useLiveKurse(symbole, frischSignal)
-  const mitWorker = workerKonfiguriert()
+  const mitWorker = codeVorhanden()
 
   useEffect(() => {
     abgleichen()
@@ -403,7 +403,7 @@ export function TrackerPage() {
               )}
               {sync === 'kein-worker' && (
                 <>
-                  <CloudOff className="h-3.5 w-3.5" /> Kein Worker eingetragen (<Link to="/analyse/aktien" className="text-akzent underline">Aktien → Einstellungen</Link>) – Action nutzt die Datei im Repo
+                  <CloudOff className="h-3.5 w-3.5" /> Kein Einladungscode (<Link to="/zugang" className="text-akzent underline">Zugang einrichten</Link>) – Auswahl gilt nur in diesem Browser
                 </>
               )}
               {sync === 'fehler' && (

@@ -1,5 +1,6 @@
 import type { Candle, ExitGrund, Order, Richtung, Scenario, SzenarioBewertung, Trade } from '../types'
 import { fmtR, preisStellen } from './format'
+import { BEWERTUNG_RANG } from './mergen'
 
 // Gemeinsame Bewertung aller geführten Übungen. Zone, Zeitfenster, Trigger,
 // Stop-Regel und Ideal-Trade kommen ausschließlich aus der Szenario-Config
@@ -16,7 +17,7 @@ import { fmtR, preisStellen } from './format'
 export const KRITERIEN = { minCrv: 1.5, toleranz: 0.01, pauseAbstand: 0.005, minErreichbareKerzen: 2 } as const
 
 /** Rang für „bester Versuch“ (Lernpfad-Anzeige, Import, Git-Sync). */
-export const BEWERTUNG_RANG: Record<SzenarioBewertung, number> = { falsch: 0, verpasst: 1, ok: 2, gut: 3, perfekt: 4 }
+export { BEWERTUNG_RANG }
 
 /** Liefert das bessere von zwei Ergebnissen; bei gleichem Rang das neue (aktuelleres R). */
 export function besseresErgebnis<T extends { bewertung: SzenarioBewertung }>(alt: T | undefined, neu: T): T {

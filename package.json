@@ -20,7 +20,9 @@
     "tracker:holen": "tsx scripts/tracker/hole-tracker.ts",
     "tracker:check": "tsc -p scripts/tracker",
     "board:holen": "tsx scripts/board/hole-board.ts",
-    "board:check": "tsc -p scripts/board"
+    "board:check": "tsc -p scripts/board",
+    "codes": "tsx scripts/codes/codes.ts",
+    "codes:check": "tsc -p scripts/codes"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.5.0",

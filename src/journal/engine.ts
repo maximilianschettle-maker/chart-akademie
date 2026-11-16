@@ -131,15 +131,8 @@ export function geschlosseneAlsTrades(eintraege: JournalEintrag[]): Trade[] {
   return eintraege.map(alsTrade).filter((t): t is Trade => t !== null)
 }
 
-/** Zusammenführen per Id; bei gleicher Id gewinnt der neuere Änderungsstand */
-export function mergeEintraege(vorhanden: JournalEintrag[], neue: JournalEintrag[]): JournalEintrag[] {
-  const map = new Map(vorhanden.map((e) => [e.id, e]))
-  for (const e of neue) {
-    const alt = map.get(e.id)
-    if (!alt || e.geaendertAm > alt.geaendertAm) map.set(e.id, e)
-  }
-  return [...map.values()].sort((a, b) => a.entryTime - b.entryTime || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
-}
+// Merge-Regel liegt importfrei in ../engine/mergen.ts (auch der Worker nutzt sie).
+export { mergeEintraege } from '../engine/mergen'
 
 /** Tageschlüssel in Berliner Zeit (Handelstag des Nutzers) */
 export function tagVon(unixSek: number): string {

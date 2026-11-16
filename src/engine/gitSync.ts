@@ -1,15 +1,16 @@
 import type { Trade } from '../types'
 import type { GespeicherterRueckblick } from './rueckblick'
 import type { JournalEintrag } from '../journal/types'
-import { mergeEintraege } from '../journal/engine'
+import type { Sicherung } from './sicherung'
 import {
-  type Sicherung,
+  mergeEintraege,
   mergeLektionen,
   mergeRueckblicke,
   mergeSzenarien,
   mergeTrades,
   mergeWiederholungen,
-} from './sicherung'
+  stabilJson,
+} from './mergen'
 
 // Git-Sync: Journal und Lernfortschritt liegen als zwei JSON-Dateien in einem
 // GitHub-Repository. Hier nur das Format und das Zusammenführen (pur, testbar);
@@ -64,16 +65,7 @@ export function ordnerNormalisieren(eingabe: string): string {
     .join('/')
 }
 
-function stabil(wert: unknown): string {
-  return JSON.stringify(
-    wert,
-    (_k, v: unknown) =>
-      v && typeof v === 'object' && !Array.isArray(v)
-        ? Object.fromEntries(Object.entries(v).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0)))
-        : v,
-    2,
-  )
-}
+const stabil = (wert: unknown) => stabilJson(wert, 2)
 
 /** Dateiinhalt für einen Teil — deterministisch, mit abschließendem Zeilenumbruch. */
 export function dateiText<T extends SyncTeil>(teil: T, stand: SyncStand[T]): string {

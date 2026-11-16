@@ -1,7 +1,10 @@
-# Cloudflare Worker: Proxy + Cache für den Aktien-Bereich (SEC EDGAR + Yahoo Finance).
+# Cloudflare Worker der ChartAkademie: Proxy + Cache (SEC EDGAR + Yahoo Finance), KI-Endpunkte,
+# Geräte-Sync und Push-Abos je Nutzer (Einladungscodes), Admin, Cron-Wecker für die GitHub Actions.
 # Deploy: npm run worker:deploy  ·  lokal: npm run worker:dev (Port 8787)
-# Secrets (nie hier eintragen): AKTIEN_SECRET, SEC_USER_AGENT → `npx wrangler secret put NAME --config worker/wrangler.toml`
-# Lokal liegen die Secrets in worker/.dev.vars (gitignored).
+# Secrets (nie hier eintragen) → `npx wrangler secret put NAME --config worker/wrangler.toml`:
+#   AKTIEN_SECRET (Dienst-Token für Actions und `npm run codes`), SEC_USER_AGENT (Pflicht bei der SEC),
+#   ANTHROPIC_API_KEY (KI, optional), GITHUB_DISPATCH_TOKEN (Cron-Wecker, optional)
+# Lokal liegen die Secrets in worker/.dev.vars (gitignored); dort ist AKTIEN_SECRET=test das Dienst-Token.
 
 name = "chart-akademie-aktien"
 main = "src/index.ts"
@@ -11,7 +14,7 @@ compatibility_flags = ["nodejs_compat"]
 [observability]
 enabled = true
 
-# KV-Namespace für den Cache und den Geräte-Sync (Watchlist, DCF-Annahmen).
+# KV-Namespace für Cache, Einladungscodes (code:<sha256>) und alle Nutzerdaten (<art>:<nutzerId>).
 # Anlegen: npx wrangler kv namespace create AKTIEN_KV --config worker/wrangler.toml
 # und die ausgegebene id hier eintragen.
 [[kv_namespaces]]

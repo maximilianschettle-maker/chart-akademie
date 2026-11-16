@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Star } from 'lucide-react'
 import { useAktienStore } from '../../aktien/store'
-import { workerKonfiguriert } from '../../aktien/data/client'
+import { codeVorhanden } from '../../aktien/data/client'
 import { ladeFirma, ladeKurs } from '../../aktien/data/service'
 import { fmtBetrag, fmtKurs, fmtZeitpunkt } from '../../aktien/engine/format'
 import type { Kurs } from '../../aktien/types'
@@ -33,7 +33,7 @@ export function WatchlistKompakt() {
       }
       if (!aktiv) return
       setZeilen(basis)
-      if (!workerKonfiguriert()) return
+      if (!codeVorhanden()) return
       const kurse = await Promise.all(watchlist.map((w) => ladeKurs(w.symbol).catch(() => null)))
       if (!aktiv) return
       setZeilen(basis.map((z, i) => (kurse[i] ? { ...z, kurs: kurse[i], marktkap: kurse[i]?.marktkap ?? z.marktkap, waehrung: kurse[i]?.waehrung ?? z.waehrung } : z)))

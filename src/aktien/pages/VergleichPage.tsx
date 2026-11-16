@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowLeft, Plus, X } from 'lucide-react'
 import { EINGABE, KNOPF, Meldung } from '../components/ui'
-import { workerKonfiguriert } from '../data/client'
+import { codeVorhanden } from '../data/client'
 import { ladeFirma, ladeWechselkurse } from '../data/service'
 import { syncStarten } from '../data/sync'
 import { fmtZeitpunkt } from '../engine/format'
@@ -27,7 +27,7 @@ export function VergleichPage() {
   const watchlist = useAktienStore((s) => s.watchlist)
   const [spalten, setSpalten] = useState<Record<string, Spalte>>({})
   const [eingabe, setEingabe] = useState('')
-  const konfiguriert = workerKonfiguriert()
+  const konfiguriert = codeVorhanden()
   const anzeigeWaehrung = useAktienStore((s) => s.vergleichsWaehrung)
   const einstellungenSetzen = useAktienStore((s) => s.einstellungenSetzen)
   const [wechselkurse, setWechselkurse] = useState<Record<string, number>>({})
@@ -113,7 +113,7 @@ export function VergleichPage() {
       <h1 className="mt-3 text-2xl font-bold text-white">Firmenvergleich</h1>
       <p className="mt-1 text-sm text-gedimmt">Bis zu {MAX_FIRMEN} Firmen nebeneinander. Die beste Spalte je Zeile ist grün markiert. Beträge wahlweise in der Originalwährung oder mit Yahoo-Wechselkursen in EUR oder USD umgerechnet.</p>
 
-      {!konfiguriert && <Meldung text="Worker-URL und Geheimnis fehlen — auf der Aktien-Seite eintragen." fehler />}
+      {!konfiguriert && <Meldung text="Kein Einladungscode — unter Start → Zugang eintragen." fehler />}
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
         {symbole.map((s) => (

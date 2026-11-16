@@ -10,7 +10,8 @@ import { PruefungKarte } from '../PruefungKarte'
 import { CHECKLISTE } from '../checkliste'
 import { faktenSammeln } from '../fakten'
 import { tradePruefen } from '../pruefung'
-import { workerKonfiguriert } from '../../aktien/data/client'
+import { codeVorhanden } from '../../aktien/data/client'
+import { ZugangHinweis } from '../../zugang/ZugangHinweis'
 import { EintragForm } from '../EintragForm'
 import { chip } from '../ui'
 import { HandelsChart, type ChartLinie, type ChartMarker } from '../../components/chart/HandelsChart'
@@ -190,7 +191,7 @@ export function JournalEintragPage() {
   const alleEintraege = useJournalStore((s) => s.eintraege)
   const [pruefLaeuft, setPruefLaeuft] = useState<false | 'vorher' | 'nachher'>(false)
   const [pruefFehler, setPruefFehler] = useState<string | null>(null)
-  const mitWorker = workerKonfiguriert()
+  const mitWorker = codeVorhanden()
 
   async function kerzenHolen(eintrag: JournalEintrag) {
     setSnapshotStatus('laedt')
@@ -320,7 +321,7 @@ export function JournalEintragPage() {
           <div className="flex items-center justify-center rounded-lg bg-nacht text-xs text-gedimmt" style={{ height: schmal ? 200 : 260 }}>
             {snapshotStatus === 'laedt' && 'Kerzen werden geladen …'}
             {snapshotStatus === 'keiner' && 'Noch keine Kerzen gespeichert.'}
-            {snapshotStatus === 'kein-worker' && 'Kein Worker eingetragen (Aktien → Einstellungen) – ohne ihn gibt es keine Kerzen.'}
+            {snapshotStatus === 'kein-worker' && <ZugangHinweis nachsatz=" – ohne ihn gibt es keine Kerzen." />}
             {snapshotStatus === 'zu-alt' && 'Der Einstieg liegt zu lange zurück: Yahoo liefert Intraday-Kerzen nur für wenige Tage, Tageskerzen für sechs Monate.'}
             {snapshotStatus === 'fehler' && 'Kerzen konnten nicht geladen werden.'}
           </div>
@@ -439,7 +440,7 @@ export function JournalEintragPage() {
                 {pruefLaeuft === 'nachher' ? <LoaderCircle className="h-3.5 w-3.5 animate-spin" /> : <Sparkles className="h-3.5 w-3.5" />} Mit Ergebnis prüfen
               </button>
             )}
-            {!mitWorker && <span className="text-[11px] text-gedimmt">Kein Worker eingetragen (Aktien → Einstellungen).</span>}
+            {!mitWorker && <ZugangHinweis klein />}
             {!kerzen && mitWorker && <span className="text-[11px] text-akzent">Keine Kerzen gespeichert – erst „Kerzen neu laden“.</span>}
           </div>
           {pruefFehler && <p className="mt-2 text-xs text-short">{pruefFehler}</p>}
