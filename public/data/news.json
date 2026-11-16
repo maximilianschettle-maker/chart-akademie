@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-16T20:23:35.145Z",
+ "lastUpdated": "2026-11-16T21:23:32.668Z",
  "eintraege": [
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kalifornien-verklagt-openai-wegen-ki-hacking-attacken-201689398.html",
+   "titel": "Cyberangriffe: Kalifornien verklagt OpenAI wegen Hacking-Attacken",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kalifornien-verklagt-openai-wegen-ki-hacking-attacken-201689398.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-16T21:04:11.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Hacking-Attacke von KI-Software des ChatGPT-Entwicklers OpenAI hat Sorgen um Risiken der Technologie befeuert. Jetzt gibt es auch eine Klage des Bundesstaats, in dem OpenAI zu Hause ist.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/chatgpt-entwickler-kalifornien-verklagt-openai-wegen-hacking-attacken/100270358.html",
+   "titel": "ChatGPT-Entwickler: Kalifornien verklagt OpenAI wegen Hacking-Attacken",
+   "link": "https://www.handelsblatt.com/politik/international/chatgpt-entwickler-kalifornien-verklagt-openai-wegen-hacking-attacken/100270358.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-16T20:33:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Hacking-Attacke von KI-Software des ChatGPT-Entwicklers OpenAI hat Sorgen um Risiken der Technologie befeuert. Jetzt gibt es auch eine Klage des Bundesstaats, in dem OpenAI zu Hause ist.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/16/world/europe/austria-karin-kneissl-citizenship.html",
+   "titel": "Austria May Strip Former Foreign Minister Karin Kneissl of Citizenship",
+   "link": "https://www.nytimes.com/2026/11/16/world/europe/austria-karin-kneissl-citizenship.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-16T20:29:22.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The onetime foreign minister, Karin Kneissl, has lauded her new home for its “genuine freedom” and used it as a perch to attack her old one.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-die-finanzen-sind-in-dieser-koalition-laengst-zur-waffe-geworden/100270324.html",
    "titel": "Kommentar: Die Finanzen sind in dieser Koalition längst zur Waffe geworden",
@@ -997,51 +1030,16 @@
    "maerkte": [],
    "text": "Mit dem größten je gebauten Raketensystem der Raumfahrtgeschichte will Elon Musk den Mars erschließen. Jetzt hat das Starship erneut einen Testflug absolviert – mit einem Rückschlag und einem Erfolg.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/gaza-humanit%C3%A4re-lage-versch%C3%A4rft-sich-politische-l%C3%B6sung-bleibt-aus/a-79946973",
-   "titel": "Gaza: Humanitäre Lage verschärft sich, politische Lösung bleibt aus",
-   "link": "https://www.dw.com/de/gaza-humanitäre-lage-verschärft-sich-politische-lösung-bleibt-aus/a-79946973?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-14T20:23:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Heftige Regenfälle haben in Gaza Tausende Zelte überflutet, mehrere Menschen starben. Kann Trumps Friedensgremium mit Druck auf Israel und die Hamas die humanitäre Not lindern?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/13/world/europe/iran-attacks-europe-britain.html",
-   "titel": "‘Get Focused on London’: How Iran’s Agents Attacked European Targets",
-   "link": "https://www.nytimes.com/2026/11/13/world/europe/iran-attacks-europe-britain.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-14T19:23:20.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A wave of assaults in Britain and elsewhere in the spring sowed fear across Europe. Prosecutors shed new light on how Iran took aim at U.S. allies.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo",
-   "titel": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-   "link": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-14T19:21:10.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 14,
   "DW": 13,
   "Spiegel Wirtschaft": 6,
-  "FAZ Wirtschaft": 4,
+  "FAZ Wirtschaft": 5,
   "Handelsblatt": 3,
   "BBC World": 4,
-  "NYT World": 12,
+  "NYT World": 13,
   "EIA Today in Energy": 0
  }
 }
