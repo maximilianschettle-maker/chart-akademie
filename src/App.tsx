@@ -7,6 +7,8 @@ import { BereichLayout } from './pages/BereichLayout'
 import { TabLeisteOben, TabLeisteUnten } from './components/ui/TabLeiste'
 import { ANALYSE_TABS, TRAINING_TABS, neuerPfad } from './navigation'
 import { zugangStarten } from './zugang/ich'
+import { workerSyncStarten } from './data/workerSync'
+import { syncStarten as aktienSyncStarten } from './aktien/data/sync'
 
 // Struktur siehe src/navigation.ts: Start · Training (Lernpfad, Simulator, Journal) · Analyse
 // (Aktien, Tracker, Makro, News). Route-Splitting: Simulator/Übung ziehen lightweight-charts
@@ -70,7 +72,11 @@ function NachObenBeiWechsel() {
 }
 
 export default function App() {
-  useEffect(() => zugangStarten(), [])
+  useEffect(() => {
+    zugangStarten()
+    workerSyncStarten()
+    aktienSyncStarten()
+  }, [])
   return (
     <HashRouter>
       <NachObenBeiWechsel />

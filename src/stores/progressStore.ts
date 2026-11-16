@@ -8,6 +8,7 @@ import {
   schluessel,
 } from '../engine/wiederholung'
 import { besseresErgebnis } from '../engine/szenarioGrader'
+import { mergeUebungsLog } from '../engine/mergen'
 
 interface LektionErgebnis {
   quizProzent: number
@@ -35,6 +36,8 @@ interface ProgressState {
   /** alle Übungsdurchläufe, älteste zuerst (fehlt in älteren Ständen) */
   uebungsLog: UebungsLogEintrag[]
   uebungLoggen: (e: UebungsLogEintrag) => void
+  /** Geräte-Sync: Durchläufe anderer Geräte dazunehmen (Union, älteste zuerst) */
+  uebungsLogImportieren: (neue: UebungsLogEintrag[]) => void
   abgeschlosseneLektionen: Record<string, LektionErgebnis>
   szenarioErgebnisse: Record<string, SzenarioErgebnis>
   /** Falsch beantwortete Quizfragen in der Wiederholungs-Box (Spaced Repetition) */
@@ -58,6 +61,12 @@ export const useProgressStore = create<ProgressState>()(
       wiederholungen: {},
       uebungsLog: [],
       uebungLoggen: (e) => set((s) => ({ uebungsLog: [...(s.uebungsLog ?? []), e].slice(-MAX_LOG) })),
+      uebungsLogImportieren: (neue) =>
+        set((s) => {
+          if (neue.length === 0) return s
+          const log = mergeUebungsLog(s.uebungsLog ?? [], neue, MAX_LOG)
+          return log.length === (s.uebungsLog ?? []).length && log.every((e, i) => e === s.uebungsLog[i]) ? s : { uebungsLog: log }
+        }),
 
       lektionAbschliessen: (lektionId, quizProzent) =>
         set((s) => ({

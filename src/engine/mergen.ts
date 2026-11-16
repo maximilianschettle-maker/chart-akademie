@@ -107,13 +107,14 @@ export function stabilJson(wert: unknown, einzug: number = 2): string {
 export const RUECKBLICKE_MAX = 200
 
 type Rest = { [k: string]: unknown }
-export type TradeMin = { id: string; exitTime: number; entryTime: number } & Rest
-export type RueckblickMin = { sitzungId: string; erstelltAm: number } & Rest
-export type EintragMin = { id: string; geaendertAm: number; entryTime: number } & Rest
-export type LektionMin = { quizProzent: number } & Rest
-export type SzenarioMin = { bewertung: Bewertung } & Rest
-export type WiederholungMin = { stufe: number; faelligAm: number } & Rest
-export type UebungMin = { am: number; szenarioId: string; strategieId: string } & Rest
+// Nur die Schlüsselfelder; alles Weitere reicht der Merge unverändert durch (strukturelle Typisierung).
+export type TradeMin = { id: string; exitTime: number; entryTime: number }
+export type RueckblickMin = { sitzungId: string; erstelltAm: number }
+export type EintragMin = { id: string; geaendertAm: number; entryTime: number }
+export type LektionMin = { quizProzent: number }
+export type SzenarioMin = { bewertung: Bewertung }
+export type WiederholungMin = { stufe: number; faelligAm: number }
+export type UebungMin = { am: number; szenarioId: string; strategieId: string }
 
 export interface JournalSyncStand {
   tradeHistorie: TradeMin[]
