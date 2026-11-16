@@ -1,34 +1,46 @@
-// Cloudflare Worker: Proxy + Cache für den Aktien-Bereich der ChartAkademie.
-// Quellen: SEC EDGAR (XBRL) und Yahoo Finance. Kein Anbieter-Schlüssel nötig;
-// der Worker selbst ist mit AKTIEN_SECRET (Bearer) geschützt.
+// Cloudflare Worker der ChartAkademie: Proxy + Cache für Aktien (SEC EDGAR, Yahoo Finance),
+// KI-Endpunkte, Geräte-Sync und Push-Abos je Nutzer, Admin für Einladungscodes.
+// Zugang: Einladungscode je Person (zugang.ts) oder das Dienst-Token AKTIEN_SECRET (GitHub Actions, CLI).
 //
 //   GET  /api/status[?pruefen=1]          Version, Cron-Status; mit pruefen: Erreichbarkeit beider Quellen
+//   GET  /api/ich                          Wer bin ich: Name, Rolle, KI-Verbrauch heute und Limit
 //   GET  /api/suche?q=                     Yahoo-Suche (Aktien)
 //   GET  /api/yahoo/:symbol[?frisch=1]     Firma + Abschlüsse von Yahoo (KV 7 Tage)
 //   GET  /api/kurs/:symbol[?frisch=1]      Kurs + Bewertung (15 min; bei Yahoo-Ausfall letzter Stand, veraltet=true)
 //   GET  /api/wechselkurse?paare=HKDCNY,USDEUR   Wechselkurse (1 h je Paar)
 //   GET  /api/chart/:symbol?bereich=1T|5T|1M|6M|1J|5J|MAX[&frisch=1]   Kursverlauf als Kerzen (5 min – 1 Tag)
 //   GET  /api/sec/:symbol?name=&waehrung=&cik=[&frisch=1]   SEC-Abschlüsse (KV 7 Tage), 204 ohne Zuordnung
-//   GET  /api/zustand · PUT /api/zustand   Watchlist + DCF-Annahmen für den Geräte-Sync (KV)
-//   GET  /api/tracker · PUT /api/tracker   Konfiguration des Markt-Trackers (KV); liest auch die GitHub Action
-//   POST /api/ki/screenshot {bild, typ}    Broker-Screenshot → Positionen (Claude, ANTHROPIC_API_KEY als Secret)
-//   POST /api/ki/pruefung {fakten}          Trade-Prüfung aus Fakten (Claude)
+//   GET  /api/zustand · PUT /api/zustand   Watchlist + DCF-Annahmen je Nutzer (409: Server-Stand ist neuer)
+//   GET  /api/tracker · PUT /api/tracker   Tracker-Konfiguration je Nutzer (409 wie oben)
+//   GET/PUT /api/sync/journal|fortschritt  Journal und Lernfortschritt je Nutzer, serverseitig gemergt (sync.ts)
+//   GET/PUT/DELETE /api/push/abo           Push-Abos je Nutzer (push.ts)
+//   POST /api/ki/screenshot {bild, typ}    Broker-Screenshot → Positionen (Claude; Tageslimit je Nutzer)
+//   POST /api/ki/pruefung {fakten}          Trade-Prüfung aus Fakten (Claude; Tageslimit je Nutzer)
+//   /api/dienst/*                          GitHub Actions: Tracker-Union, alle Push-Abos (dienst.ts)
+//   /api/admin/*                           Einladungscodes verwalten (admin.ts)
 //
 // Außerdem Cron-Trigger (wrangler.toml → src/cron.ts), die die GitHub Actions anstoßen.
 // Jede Antwort trägt CORS-Header, auch Fehler; nach 25 s kommt 504 statt eines Hängers.
 
 import type { SyncZustand } from '../../src/aktien/types'
 import type { TrackerConfig } from '../../src/tracker/types'
-import { kvLesen, kvSchreiben, mitCache, mitKv } from './cache'
+import { kvLesen, mitCache, mitKv } from './cache'
 import { CRON_STATUS_KEY, cronLauf, type CronStatus } from './cron'
-import { HttpFehler, corsHeader, fehler, json, mitZeitlimit, pruefeZugang, type Env } from './http'
+import { HttpFehler, corsHeader, fehler, json, mitZeitlimit, type Env } from './http'
 import { cikIndex, secTeilLaden } from './sec'
 import { chartKerzen, kurs, suche, wechselkurse, yahooTeil } from './yahoo'
 import { positionenAusBild, tradePruefen } from './ki'
 import { BILD_TYPEN, type BildTyp } from '../../src/journal/positionTypes'
 import { bereichDef } from '../../src/aktien/engine/chart'
+import { zugangPruefen, zuletztMerken, type Zugang } from './zugang'
+import { kiPruefen, kiVerbrauch, kiZaehlen } from './kiLimit'
+import { nutzerLesen, nutzerSchreiben, type DatenArt } from './nutzerDaten'
+import { adminRoute } from './admin'
+import { syncRoute } from './sync'
+import { pushRoute } from './push'
+import { dienstRoute } from './dienst'
 
-const VERSION = '0.3.0'
+const VERSION = '0.4.0'
 const TAG_MS = 86_400_000
 const FRISCHE_ABSCHLUESSE = 7 * TAG_MS
 const KURS_TTL_SEK = 15 * 60
@@ -47,12 +59,36 @@ function symbolAus(pfad: string, praefix: string): string {
   return s
 }
 
-async function bearbeiten(req: Request, env: Env, url: URL): Promise<Response> {
+/** GET/PUT eines Nutzer-Stands mit „neuerer Stand gewinnt“ (409 liefert den Server-Stand). */
+async function standRoute<T extends { aktualisiertAm: number }>(
+  req: Request,
+  env: Env,
+  art: DatenArt,
+  zugang: Zugang,
+  pruefen: (neu: T) => boolean,
+): Promise<Response> {
+  if (req.method === 'GET') {
+    const alt = await nutzerLesen<T>(env, art, zugang.nutzerId)
+    return json(req, alt?.daten ?? null)
+  }
+  if (req.method === 'PUT') {
+    const neu = (await req.json().catch(() => null)) as T | null
+    if (!neu || typeof neu.aktualisiertAm !== 'number' || !pruefen(neu)) throw new HttpFehler(`Ungültiger ${art}-Stand`, 400)
+    const alt = await nutzerLesen<T>(env, art, zugang.nutzerId)
+    if (alt && alt.daten.aktualisiertAm > neu.aktualisiertAm) return json(req, alt.daten, 409)
+    await nutzerSchreiben(env, art, zugang.nutzerId, neu)
+    return json(req, neu)
+  }
+  throw new HttpFehler('Nicht gefunden', 404)
+}
+
+async function bearbeiten(req: Request, env: Env, url: URL, ctx: ExecutionContext): Promise<Response> {
   const pfad = url.pathname
   const frisch = url.searchParams.get('frisch') === '1'
 
   if (!pfad.startsWith('/api/')) throw new HttpFehler('Nicht gefunden', 404)
-  pruefeZugang(req, env)
+  const zugang = await zugangPruefen(req, env)
+  zuletztMerken(env, ctx, zugang)
 
   if (pfad === '/api/status' && req.method === 'GET') {
     const antwort: Record<string, unknown> = { version: VERSION, zeit: Date.now() }
@@ -66,6 +102,16 @@ async function bearbeiten(req: Request, env: Env, url: URL): Promise<Response> {
       antwort.sec = s.status === 'fulfilled' ? 'ok' : (s.reason as Error).message
     }
     return json(req, antwort)
+  }
+
+  if (pfad === '/api/ich' && req.method === 'GET') {
+    const heute = zugang.rolle === 'dienst' ? 0 : await kiVerbrauch(env, zugang.nutzerId)
+    return json(req, { nutzerId: zugang.nutzerId, name: zugang.name, rolle: zugang.rolle, ki: { heute, limit: zugang.kiLimitTag }, version: VERSION })
+  }
+
+  for (const route of [adminRoute, dienstRoute, syncRoute, pushRoute]) {
+    const antwort = await route(req, env, url, zugang)
+    if (antwort) return antwort
   }
 
   if (pfad === '/api/wechselkurse' && req.method === 'GET') {
@@ -123,34 +169,11 @@ async function bearbeiten(req: Request, env: Env, url: URL): Promise<Response> {
   }
 
   if (pfad === '/api/zustand') {
-    if (req.method === 'GET') {
-      const alt = await kvLesen<SyncZustand>(env, 'zustand')
-      return json(req, alt?.daten ?? null)
-    }
-    if (req.method === 'PUT') {
-      const neu = (await req.json()) as SyncZustand
-      if (!neu || !Array.isArray(neu.watchlist) || typeof neu.aktualisiertAm !== 'number') throw new HttpFehler('Ungültiger Zustand', 400)
-      const alt = await kvLesen<SyncZustand>(env, 'zustand')
-      if (alt && alt.daten.aktualisiertAm > neu.aktualisiertAm) return json(req, alt.daten, 409)
-      await kvSchreiben(env, 'zustand', neu)
-      return json(req, neu)
-    }
+    return standRoute<SyncZustand>(req, env, 'zustand', zugang, (neu) => Array.isArray(neu.watchlist))
   }
 
   if (pfad === '/api/tracker') {
-    if (req.method === 'GET') {
-      const alt = await kvLesen<TrackerConfig>(env, 'tracker')
-      return json(req, alt?.daten ?? null)
-    }
-    if (req.method === 'PUT') {
-      const neu = (await req.json()) as TrackerConfig
-      if (!neu || !Array.isArray(neu.instrumente) || typeof neu.aktualisiertAm !== 'number' || typeof neu.muster !== 'object')
-        throw new HttpFehler('Ungültige Tracker-Konfiguration', 400)
-      const alt = await kvLesen<TrackerConfig>(env, 'tracker')
-      if (alt && alt.daten.aktualisiertAm > neu.aktualisiertAm) return json(req, alt.daten, 409)
-      await kvSchreiben(env, 'tracker', neu)
-      return json(req, neu)
-    }
+    return standRoute<TrackerConfig>(req, env, 'tracker', zugang, (neu) => Array.isArray(neu.instrumente) && typeof neu.muster === 'object')
   }
 
   if (pfad === '/api/ki/screenshot' && req.method === 'POST') {
@@ -158,25 +181,31 @@ async function bearbeiten(req: Request, env: Env, url: URL): Promise<Response> {
     const typ = typeof body?.typ === 'string' && (BILD_TYPEN as readonly string[]).includes(body.typ) ? (body.typ as BildTyp) : null
     if (!body || typeof body.bild !== 'string' || !typ) throw new HttpFehler('Erwartet {bild: Base64, typ: image/jpeg|png|webp|gif}', 400)
     if (body.bild.length > BILD_MAX_ZEICHEN) throw new HttpFehler('Bild zu groß (max. ~4,5 MB)', 413)
-    return json(req, await positionenAusBild(env, body.bild, typ))
+    await kiPruefen(env, zugang)
+    const ergebnis = await positionenAusBild(env, body.bild, typ)
+    ctx.waitUntil(kiZaehlen(env, zugang.nutzerId))
+    return json(req, ergebnis)
   }
 
   if (pfad === '/api/ki/pruefung' && req.method === 'POST') {
     const body = (await req.json().catch(() => null)) as { fakten?: unknown } | null
     if (!body || !body.fakten || typeof body.fakten !== 'object') throw new HttpFehler('Erwartet {fakten: {...}}', 400)
     if (JSON.stringify(body.fakten).length > 50_000) throw new HttpFehler('Fakten zu groß', 413)
-    return json(req, await tradePruefen(env, body.fakten))
+    await kiPruefen(env, zugang)
+    const ergebnis = await tradePruefen(env, body.fakten)
+    ctx.waitUntil(kiZaehlen(env, zugang.nutzerId))
+    return json(req, ergebnis)
   }
 
   throw new HttpFehler('Nicht gefunden', 404)
 }
 
 export default {
-  async fetch(req: Request, env: Env): Promise<Response> {
+  async fetch(req: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: corsHeader(req) })
     try {
       const url = new URL(req.url)
-      return await mitZeitlimit(bearbeiten(req, env, url), url.pathname.startsWith('/api/ki/') ? KI_LIMIT_MS : ANTWORT_LIMIT_MS)
+      return await mitZeitlimit(bearbeiten(req, env, url, ctx), url.pathname.startsWith('/api/ki/') ? KI_LIMIT_MS : ANTWORT_LIMIT_MS)
     } catch (e) {
       return fehler(req, e)
     }

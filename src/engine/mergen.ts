@@ -98,3 +98,98 @@ export function stabilJson(wert: unknown, einzug: number = 2): string {
     einzug,
   )
 }
+
+// ---------------------------------------------------------------------------
+// Sync-Stände (Journal, Lernfortschritt): Minimal-Typen, Prüfung und Merge.
+// Der Worker kennt die vollen Typen nicht und braucht sie auch nicht — er mergt
+// anhand der Schlüsselfelder und reicht alles andere unverändert durch.
+
+export const RUECKBLICKE_MAX = 200
+
+type Rest = { [k: string]: unknown }
+export type TradeMin = { id: string; exitTime: number; entryTime: number } & Rest
+export type RueckblickMin = { sitzungId: string; erstelltAm: number } & Rest
+export type EintragMin = { id: string; geaendertAm: number; entryTime: number } & Rest
+export type LektionMin = { quizProzent: number } & Rest
+export type SzenarioMin = { bewertung: Bewertung } & Rest
+export type WiederholungMin = { stufe: number; faelligAm: number } & Rest
+export type UebungMin = { am: number; szenarioId: string; strategieId: string } & Rest
+
+export interface JournalSyncStand {
+  tradeHistorie: TradeMin[]
+  rueckblicke: RueckblickMin[]
+  eintraege: EintragMin[]
+}
+export interface FortschrittSyncStand {
+  abgeschlosseneLektionen: Record<string, LektionMin>
+  szenarioErgebnisse: Record<string, SzenarioMin>
+  wiederholungen: Record<string, WiederholungMin>
+  uebungsLog: UebungMin[]
+}
+export type SyncTeilW = 'journal' | 'fortschritt'
+export type SyncStandW = { journal: JournalSyncStand; fortschritt: FortschrittSyncStand }
+
+const liste = (v: unknown): Rest[] => (Array.isArray(v) ? v.filter((x): x is Rest => !!x && typeof x === 'object') : [])
+const objekt = (v: unknown): Record<string, Rest> =>
+  v && typeof v === 'object' && !Array.isArray(v)
+    ? Object.fromEntries(Object.entries(v as Record<string, unknown>).filter(([, x]) => !!x && typeof x === 'object')) as Record<string, Rest>
+    : {}
+const hat = (x: Rest, ...felder: string[]) => felder.every((f) => f in x)
+
+/** Liest einen Stand aus unbekanntem JSON; fehlende Teile werden leer, Einträge ohne Schlüsselfelder fallen raus. */
+export function syncStandLesen<T extends SyncTeilW>(teil: T, roh: unknown): SyncStandW[T] | null {
+  if (!roh || typeof roh !== 'object' || Array.isArray(roh)) return null
+  const d = roh as Rest
+  if (teil === 'journal') {
+    const stand: JournalSyncStand = {
+      tradeHistorie: liste(d.tradeHistorie).filter((x): x is TradeMin => hat(x, 'id', 'exitTime', 'entryTime')),
+      rueckblicke: liste(d.rueckblicke).filter((x): x is RueckblickMin => hat(x, 'sitzungId', 'erstelltAm')),
+      eintraege: liste(d.eintraege).filter((x): x is EintragMin => hat(x, 'id', 'geaendertAm', 'entryTime')),
+    }
+    return stand as SyncStandW[T]
+  }
+  const stand: FortschrittSyncStand = {
+    abgeschlosseneLektionen: objekt(d.abgeschlosseneLektionen) as Record<string, LektionMin>,
+    szenarioErgebnisse: objekt(d.szenarioErgebnisse) as Record<string, SzenarioMin>,
+    wiederholungen: objekt(d.wiederholungen) as Record<string, WiederholungMin>,
+    uebungsLog: liste(d.uebungsLog).filter((x): x is UebungMin => hat(x, 'am', 'szenarioId', 'strategieId')),
+  }
+  return stand as SyncStandW[T]
+}
+
+export function syncStandLeer<T extends SyncTeilW>(teil: T): SyncStandW[T] {
+  const leer: SyncStandW = {
+    journal: { tradeHistorie: [], rueckblicke: [], eintraege: [] },
+    fortschritt: { abgeschlosseneLektionen: {}, szenarioErgebnisse: {}, wiederholungen: {}, uebungsLog: [] },
+  }
+  return leer[teil]
+}
+
+/** Zwei Stände eines Teils zusammenführen; Rückblicke und Übungs-Log werden auf ihr Maximum gekürzt (die neuesten bleiben). */
+export function syncStandMergen<T extends SyncTeilW>(teil: T, a: SyncStandW[T], b: SyncStandW[T]): SyncStandW[T] {
+  if (teil === 'journal') {
+    const x = a as JournalSyncStand
+    const y = b as JournalSyncStand
+    const rueckblicke = mergeRueckblicke(x.rueckblicke, y.rueckblicke)
+    const stand: JournalSyncStand = {
+      tradeHistorie: mergeTrades(x.tradeHistorie, y.tradeHistorie),
+      rueckblicke: rueckblicke.length > RUECKBLICKE_MAX ? rueckblicke.slice(rueckblicke.length - RUECKBLICKE_MAX) : rueckblicke,
+      eintraege: mergeEintraege(x.eintraege, y.eintraege),
+    }
+    return stand as SyncStandW[T]
+  }
+  const x = a as FortschrittSyncStand
+  const y = b as FortschrittSyncStand
+  const stand: FortschrittSyncStand = {
+    abgeschlosseneLektionen: mergeLektionen(x.abgeschlosseneLektionen, y.abgeschlosseneLektionen),
+    szenarioErgebnisse: mergeSzenarien(x.szenarioErgebnisse, y.szenarioErgebnisse),
+    wiederholungen: mergeWiederholungen(x.wiederholungen, y.wiederholungen),
+    uebungsLog: mergeUebungsLog(x.uebungsLog, y.uebungsLog),
+  }
+  return stand as SyncStandW[T]
+}
+
+/** Deterministischer Text eines Stands (Listen in fester Reihenfolge) — zum Vergleich „hat sich etwas geändert?“. */
+export function syncStandText<T extends SyncTeilW>(teil: T, stand: SyncStandW[T]): string {
+  return stabilJson(syncStandMergen(teil, syncStandLeer(teil), stand), 0)
+}
