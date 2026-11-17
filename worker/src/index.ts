@@ -12,6 +12,7 @@
 //   GET  /api/sec/:symbol?name=&waehrung=&cik=[&frisch=1]   SEC-Abschlüsse (KV 7 Tage), 204 ohne Zuordnung
 //   GET  /api/zustand · PUT /api/zustand   Watchlist + DCF-Annahmen je Nutzer (409: Server-Stand ist neuer)
 //   GET  /api/tracker · PUT /api/tracker   Tracker-Konfiguration je Nutzer (409 wie oben)
+//   GET /api/zonen · PUT /api/zonen · GET /api/zonen/status   Preiszonen je Nutzer + Alarm-Status (zonen.ts)
 //   GET/PUT /api/sync/journal|fortschritt  Journal und Lernfortschritt je Nutzer, serverseitig gemergt (sync.ts)
 //   GET/PUT/DELETE /api/push/abo           Push-Abos je Nutzer (push.ts)
 //   POST /api/ki/screenshot {bild, typ}    Broker-Screenshot → Positionen (Claude; Tageslimit je Nutzer)
@@ -39,8 +40,9 @@ import { adminRoute } from './admin'
 import { syncRoute } from './sync'
 import { pushRoute } from './push'
 import { dienstRoute } from './dienst'
+import { zonenRoute } from './zonen'
 
-const VERSION = '0.4.0'
+const VERSION = '0.5.0'
 const TAG_MS = 86_400_000
 const FRISCHE_ABSCHLUESSE = 7 * TAG_MS
 const KURS_TTL_SEK = 15 * 60
@@ -109,7 +111,7 @@ async function bearbeiten(req: Request, env: Env, url: URL, ctx: ExecutionContex
     return json(req, { nutzerId: zugang.nutzerId, name: zugang.name, rolle: zugang.rolle, ki: { heute, limit: zugang.kiLimitTag }, version: VERSION })
   }
 
-  for (const route of [adminRoute, dienstRoute, syncRoute, pushRoute]) {
+  for (const route of [adminRoute, dienstRoute, syncRoute, pushRoute, zonenRoute]) {
     const antwort = await route(req, env, url, zugang)
     if (antwort) return antwort
   }
@@ -212,6 +214,6 @@ export default {
   },
 
   async scheduled(controller: ScheduledController, env: Env, ctx: ExecutionContext): Promise<void> {
-    ctx.waitUntil(cronLauf(controller.cron, env))
+    ctx.waitUntil(cronLauf(controller.cron, env, controller.scheduledTime))
   },
 } satisfies ExportedHandler<Env>

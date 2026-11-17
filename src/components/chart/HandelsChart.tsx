@@ -75,6 +75,18 @@ export interface ChartBox {
   rand: string
 }
 
+/** Preisband über die ganze Breite (Preiszonen mit Alarm): farbig, beschriftet, antippbar */
+export interface ChartBand {
+  id: string
+  von: number
+  bis: number
+  fuellung: string
+  rand: string
+  titel?: string
+  /** ausgewählt: kräftigere Kanten */
+  aktiv?: boolean
+}
+
 export interface IndikatorWahl {
   ema: number[]
   rsi: boolean
@@ -102,6 +114,12 @@ interface HandelsChartProps {
   onPick?: ((preis: number) => void) | null
   marker?: ChartMarker[]
   boxen?: ChartBox[]
+  baender?: ChartBand[]
+  /** an → Ziehen im Chart (Maus oder Finger) spannt ein Band auf, statt den Chart zu verschieben */
+  bandZeichnen?: boolean
+  onBandNeu?: (von: number, bis: number) => void
+  /** Tipp auf ein Band (nur wenn weder gezeichnet noch ein Preis gewählt wird) */
+  onBandTipp?: (id: string) => void
   indikatoren?: IndikatorWahl
   /** Vollbild-Knopf anbieten (Standard ja, außer kompakt) */
   vollbild?: boolean
@@ -118,6 +136,11 @@ const KEINE_ZEICHNUNGEN: Zeichnung[] = []
 const KEINE_LINIEN: ChartLinie[] = []
 const KEINE_MARKER: ChartMarker[] = []
 const KEINE_BOXEN: ChartBox[] = []
+const KEINE_BAENDER: ChartBand[] = []
+const VORSCHAU_FUELLUNG = 'rgba(245, 158, 11, 0.18)'
+const VORSCHAU_RAND = 'rgba(245, 158, 11, 0.9)'
+/** kürzere Züge gelten als Tipp, nicht als Band */
+const BAND_MIN_PX = 8
 const STANDARD_INDIKATOREN: IndikatorWahl = { ema: [], rsi: false, volumen: true }
 
 const SCROLL_AN = { mouseWheel: true, pressedMouseMove: true, horzTouchDrag: true, vertTouchDrag: false }
@@ -181,6 +204,10 @@ export function HandelsChart({
   onPick = null,
   marker = KEINE_MARKER,
   boxen = KEINE_BOXEN,
+  baender = KEINE_BAENDER,
+  bandZeichnen = false,
+  onBandNeu,
+  onBandTipp,
   indikatoren = STANDARD_INDIKATOREN,
   vollbild = !kompakt,
   vollbildLeiste,
@@ -215,9 +242,9 @@ export function HandelsChart({
   const legendeRueckenRef = useRef<(() => void) | null>(null)
   const resetAnsichtRef = useRef<(() => void) | null>(null)
   // Immer aktuelle Props für die DOM-Listener, die nur einmal registriert werden
-  const propsRef = useRef({ zeichenModus, onZeichnung, onLinieZiehen, onLinieLos, onPick })
+  const propsRef = useRef({ zeichenModus, onZeichnung, onLinieZiehen, onLinieLos, onPick, baender, bandZeichnen, onBandNeu, onBandTipp })
   useEffect(() => {
-    propsRef.current = { zeichenModus, onZeichnung, onLinieZiehen, onLinieLos, onPick }
+    propsRef.current = { zeichenModus, onZeichnung, onLinieZiehen, onLinieLos, onPick, baender, bandZeichnen, onBandNeu, onBandTipp }
   })
 
   // Moduswechsel bricht halb Gezeichnetes ab und räumt die Messung weg
@@ -348,10 +375,12 @@ export function HandelsChart({
       serie: kerzen,
       achse: PREISACHSE,
       reset: ansichtZuruecksetzen,
-      resetErlaubt: () => propsRef.current.zeichenModus === 'aus' && !propsRef.current.onPick,
+      resetErlaubt: () => propsRef.current.zeichenModus === 'aus' && !propsRef.current.onPick && !propsRef.current.bandZeichnen,
       // Ein Finger-Tipp blendet Beschriftungen ein/aus – außer beim Zeichnen oder Preiswählen, da setzt der Tipp etwas
       onTipp: () => {
-        if (propsRef.current.zeichenModus === 'aus' && !propsRef.current.onPick) setBeschriftet((b) => !b)
+        // mit antippbaren Bändern wählt der Tipp eine Zone aus (Beschriftung dann nur über den Knopf)
+        const p = propsRef.current
+        if (p.zeichenModus === 'aus' && !p.onPick && !p.bandZeichnen && !p.onBandTipp) setBeschriftet((b) => !b)
       },
     })
     zonenRef.current = zonen
@@ -383,6 +412,9 @@ export function HandelsChart({
     // Tipp-Erkennung über Pointer-Events statt „click“: Der Chart ruft bei Touch
     // preventDefault auf, dann feuert am Handy gar kein click mehr.
     let tipp: { pointerId: number; x: number; y: number; zeit: number } | null = null
+    // Band aufziehen (bandZeichnen): Startpunkt und aktueller Preis
+    let bandZug: { pointerId: number; y0: number; p0: number; p1: number } | null = null
+    const imDiagramm = (x: number, y: number, rect: DOMRect) => x >= chart.priceScale(PREISACHSE).width() && y <= rect.height - chart.timeScale().height()
 
     const yVon = (e: { clientY: number }) => e.clientY - container.getBoundingClientRect().top
 
@@ -404,6 +436,17 @@ export function HandelsChart({
       const def = id ? linienMap.get(id)?.def : undefined
       if (!id || !def) {
         tipp = { pointerId: e.pointerId, x: e.clientX, y: e.clientY, zeit: performance.now() }
+        if (!propsRef.current.bandZeichnen) return
+        const rect = container.getBoundingClientRect()
+        const y = e.clientY - rect.top
+        const roh = imDiagramm(e.clientX - rect.left, y, rect) ? kerzen.coordinateToPrice(y) : null
+        if (roh === null || roh <= 0) return
+        const p = rundePreis(roh)
+        bandZug = { pointerId: e.pointerId, y0: y, p0: p, p1: p }
+        e.stopPropagation()
+        e.preventDefault()
+        container.setPointerCapture(e.pointerId)
+        chart.applyOptions({ handleScroll: SCROLL_AUS, handleScale: SKALA_AUS })
         return
       }
       tipp = null
@@ -415,6 +458,24 @@ export function HandelsChart({
     }
 
     const onPointerMove = (e: PointerEvent) => {
+      if (bandZug) {
+        if (e.pointerId !== bandZug.pointerId) return
+        e.stopPropagation()
+        const y = yVon(e)
+        const roh = kerzen.coordinateToPrice(y)
+        if (roh === null || roh <= 0) return
+        bandZug.p1 = rundePreis(roh)
+        if (Math.abs(y - bandZug.y0) >= BAND_MIN_PX) {
+          zonen.setVorschau({
+            preisVon: Math.min(bandZug.p0, bandZug.p1),
+            preisBis: Math.max(bandZug.p0, bandZug.p1),
+            fuellung: VORSCHAU_FUELLUNG,
+            rand: VORSCHAU_RAND,
+            stark: true,
+          })
+        }
+        return
+      }
       if (!zug) {
         if (e.pointerType === 'mouse') {
           container.classList.toggle('linie-greifbar', trefferLinie(yVon(e), 7) !== null)
@@ -440,6 +501,18 @@ export function HandelsChart({
     }
 
     const onPointerEnde = (e: PointerEvent) => {
+      if (bandZug) {
+        if (e.pointerId !== bandZug.pointerId) return
+        const { y0, p0, p1 } = bandZug
+        bandZug = null
+        tipp = null
+        e.stopPropagation()
+        if (container.hasPointerCapture(e.pointerId)) container.releasePointerCapture(e.pointerId)
+        chart.applyOptions({ handleScroll: SCROLL_AN, handleScale: SKALA_AN })
+        zonen.setVorschau(null)
+        if (e.type === 'pointerup' && Math.abs(yVon(e) - y0) >= BAND_MIN_PX && p0 !== p1) propsRef.current.onBandNeu?.(Math.min(p0, p1), Math.max(p0, p1))
+        return
+      }
       if (!zug) {
         const t = tipp
         tipp = null
@@ -463,7 +536,7 @@ export function HandelsChart({
 
     // Maus-/Touch-Ereignisse des Charts unterdrücken, solange gezogen wird
     const schlucken = (e: Event) => {
-      if (!zug) return
+      if (!zug && !bandZug) return
       e.stopPropagation()
       if (e.cancelable) e.preventDefault()
     }
@@ -472,16 +545,30 @@ export function HandelsChart({
     // chart.subscribeClick: der Chart verschluckt den zweiten von zwei schnellen Klicks
     // als Doppelklick — am Handy wäre die Zone damit kaum zu zeichnen.
     const tippen = (clientX: number, clientY: number) => {
-      const { zeichenModus: modus, onPick: pick, onZeichnung: melden } = propsRef.current
-      if (!pick && modus === 'aus') return
+      const { zeichenModus: modus, onPick: pick, onZeichnung: melden, baender: bandListe, onBandTipp: bandTipp, bandZeichnen: zeichnetBand } = propsRef.current
+      const waehltBand = !pick && modus === 'aus' && !zeichnetBand && !!bandTipp && bandListe.length > 0
+      if (!pick && modus === 'aus' && !waehltBand) return
       const rect = container.getBoundingClientRect()
       const x = clientX - rect.left
       const y = clientY - rect.top
       // Klicks auf Preis-/Zeitachse ignorieren
-      if (x < chart.priceScale(PREISACHSE).width()) return
-      if (y > rect.height - chart.timeScale().height()) return
+      if (!imDiagramm(x, y, rect)) return
       const roh = kerzen.coordinateToPrice(y)
       if (roh === null || roh <= 0) return
+      if (waehltBand) {
+        // schmale Bänder bekommen etwas Luft (Finger); bei Überlappung gewinnt das schmalste
+        let bestes: { id: string; hoehe: number } | null = null
+        for (const b of bandListe) {
+          const y1 = kerzen.priceToCoordinate(b.bis)
+          const y2 = kerzen.priceToCoordinate(b.von)
+          if (y1 === null || y2 === null) continue
+          const oben = Math.min(y1, y2) - 6
+          const unten = Math.max(y1, y2) + 6
+          if (y >= oben && y <= unten && (!bestes || unten - oben < bestes.hoehe)) bestes = { id: b.id, hoehe: unten - oben }
+        }
+        if (bestes) bandTipp?.(bestes.id)
+        return
+      }
       const preis = rundePreis(roh)
       if (pick) {
         pick(preis)
@@ -817,22 +904,23 @@ export function HandelsChart({
         }),
       )
     }
-    zonenRef.current?.setZonen(
-      zeichnungen.flatMap((z) => (z.typ === 'zone' ? [{ preisVon: z.preisVon, preisBis: z.preisBis }] : [])),
-    )
+    zonenRef.current?.setZonen([
+      ...zeichnungen.flatMap((z) => (z.typ === 'zone' ? [{ preisVon: z.preisVon, preisBis: z.preisBis }] : [])),
+      ...baender.map((b) => ({ preisVon: b.von, preisBis: b.bis, fuellung: b.fuellung, rand: b.rand, titel: beschriftet ? b.titel : undefined, stark: b.aktiv })),
+    ])
     zonenRef.current?.setTrendlinien(
       zeichnungen.flatMap((z) =>
         z.typ === 'trend' ? [{ a: { zeit: z.t1, preis: z.p1 }, b: { zeit: z.t2, preis: z.p2 } }] : [],
       ),
     )
-  }, [zeichnungen])
+  }, [zeichnungen, baender, beschriftet])
 
   // ── Boxen (Entry-Fenster der Review) über das Primitive ───────────────────
   useEffect(() => {
     zonenRef.current?.setBoxen(boxen)
   }, [boxen])
 
-  const waehltPreis = !!onPick || zeichenModus !== 'aus'
+  const waehltPreis = !!onPick || zeichenModus !== 'aus' || bandZeichnen
   const knopf = 'tipp absolute z-[3] rounded-md border border-rand bg-nacht/80 p-1.5 text-gedimmt hover:text-white'
   const unten = zeitVerdeckt ? 'bottom-2' : 'bottom-9'
 

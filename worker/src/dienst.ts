@@ -3,6 +3,8 @@
 //   GET  /api/dienst/tracker          → { config: Union aller Nutzer, nutzer, quellen }
 //   GET  /api/dienst/push             → { nutzer: [{ nutzerId, abos, tracker }] }
 //   POST /api/dienst/push/abgelaufen  {abgelaufen: [{nutzerId, endpoint}]} → { entfernt }
+//   GET  /api/dienst/zonen            → { nutzer: [{ nutzerId, stand, status, abos }] }  (nur Nutzer mit Alarm-Zonen)
+//   POST /api/dienst/zonen/status     {nutzer: [{nutzerId, status}]} → { gespeichert }
 
 import { normalisiereConfig } from '../../src/tracker/engine/katalog'
 import { trackerUnion } from '../../src/tracker/engine/union'
@@ -11,6 +13,10 @@ import { HttpFehler, json, type Env } from './http'
 import { nutzerIdsMit, nutzerLesen } from './nutzerDaten'
 import { abosEntfernen, abosLesen, type PushAbo } from './push'
 import { ADMIN_ID, istAdmin, type Zugang } from './zugang'
+import { normalisiereStatus, type ZonenStatus } from '../../src/zonen/alarm'
+import type { ZonenStand } from '../../src/zonen/types'
+import { nutzerSchreiben } from './nutzerDaten'
+import { statusLesen, zonenLesen } from './zonen'
 
 interface TrackerQuelle {
   nutzerId: string
@@ -68,6 +74,27 @@ export async function dienstRoute(req: Request, env: Env, url: URL, zugang: Zuga
       entfernt += vorher - (await abosEntfernen(env, nutzerId, endpoints))
     }
     return json(req, { entfernt })
+  }
+
+  if (url.pathname === '/api/dienst/zonen' && req.method === 'GET') {
+    const nutzer: { nutzerId: string; stand: ZonenStand; status: ZonenStatus | null; abos: PushAbo[] }[] = []
+    for (const nutzerId of await nutzerIdsMit(env, 'zonen')) {
+      const stand = await zonenLesen(env, nutzerId)
+      if (!stand || !stand.zonen.some((z) => z.alarm)) continue
+      nutzer.push({ nutzerId, stand, status: await statusLesen(env, nutzerId), abos: await abosLesen(env, nutzerId) })
+    }
+    return json(req, { nutzer })
+  }
+
+  if (url.pathname === '/api/dienst/zonen/status' && req.method === 'POST') {
+    const body = (await req.json().catch(() => null)) as { nutzer?: unknown } | null
+    let gespeichert = 0
+    for (const x of (Array.isArray(body?.nutzer) ? body.nutzer : []) as { nutzerId?: unknown; status?: unknown }[]) {
+      if (typeof x?.nutzerId !== 'string' || !/^[\w-]{1,60}$/.test(x.nutzerId) || !x.status || typeof x.status !== 'object') continue
+      await nutzerSchreiben(env, 'zonenstatus', x.nutzerId, normalisiereStatus(x.status))
+      gespeichert++
+    }
+    return json(req, { gespeichert })
   }
 
   throw new HttpFehler('Nicht gefunden', 404)

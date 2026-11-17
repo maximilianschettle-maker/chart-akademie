@@ -19,6 +19,13 @@ import type { CanvasRenderingTarget2D } from 'fancy-canvas'
 export interface Zone {
   preisVon: number
   preisBis: number
+  /** eigene Farben (z.B. Support grün, Resistance rot); sonst das Standard-Orange */
+  fuellung?: string
+  rand?: string
+  /** Beschriftung rechts über dem Band */
+  titel?: string
+  /** hervorgehoben (ausgewählte Zone): kräftigere Kanten */
+  stark?: boolean
 }
 
 /** Rechteck Preiszone × Zeitraum (z.B. Entry-Fenster in der Übungs-Review) */
@@ -63,7 +70,8 @@ class ZonenRenderer implements IPrimitivePaneRenderer {
   }
 
   draw(target: CanvasRenderingTarget2D): void {
-    const { serie, zonen, boxen, zeitZuX } = this.eigner
+    const { serie, boxen, zeitZuX, vorschau } = this.eigner
+    const zonen = vorschau ? [...this.eigner.zonen, vorschau] : this.eigner.zonen
     if (!serie || (zonen.length === 0 && boxen.length === 0)) return
     target.useMediaCoordinateSpace(({ context, mediaSize }) => {
       for (const b of boxen) {
@@ -91,16 +99,25 @@ class ZonenRenderer implements IPrimitivePaneRenderer {
         if (y1 === null || y2 === null) continue
         const oben = Math.min(y1, y2)
         const hoehe = Math.max(1, Math.abs(y2 - y1))
-        context.fillStyle = ZONE_FUELLUNG
+        context.fillStyle = z.fuellung ?? ZONE_FUELLUNG
         context.fillRect(0, oben, mediaSize.width, hoehe)
-        context.strokeStyle = ZONE_RAND
-        context.lineWidth = 1
+        context.strokeStyle = z.rand ?? ZONE_RAND
+        context.lineWidth = z.stark ? 2 : 1
         context.beginPath()
         context.moveTo(0, oben)
         context.lineTo(mediaSize.width, oben)
         context.moveTo(0, oben + hoehe)
         context.lineTo(mediaSize.width, oben + hoehe)
         context.stroke()
+        if (z.titel) {
+          context.font = '600 10px Inter, system-ui, sans-serif'
+          context.fillStyle = z.rand ?? ZONE_RAND
+          context.textBaseline = 'bottom'
+          context.textAlign = 'right'
+          // über dem Band, damit die Schrift auch bei schmalen Zonen lesbar bleibt
+          context.fillText(z.titel, mediaSize.width - 6, Math.max(11, oben - 2))
+          context.textAlign = 'left'
+        }
       }
     })
   }
@@ -222,6 +239,8 @@ class PaneView implements IPrimitivePaneView {
 export class ZeichenPrimitive implements ISeriesPrimitive<Time> {
   zonen: Zone[] = []
   boxen: Box[] = []
+  /** Zone, die gerade aufgezogen wird */
+  vorschau: Zone | null = null
   trendlinien: TrendLinie[] = []
   messung: Messung | null = null
   anker: Punkt | null = null
@@ -246,6 +265,11 @@ export class ZeichenPrimitive implements ISeriesPrimitive<Time> {
 
   setZonen(zonen: Zone[]): void {
     this.zonen = zonen
+    this.requestUpdate?.()
+  }
+
+  setVorschau(zone: Zone | null): void {
+    this.vorschau = zone
     this.requestUpdate?.()
   }
 

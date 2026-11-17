@@ -2,13 +2,13 @@
 // Reine Funktionen ohne Netz — laufen im Worker (Umwandlung) und im Browser (Anzeige).
 import type { Kerze } from '../types'
 
-export type ChartBereich = '1T' | '5T' | '1M' | '6M' | '1J' | '5J' | 'MAX'
+export type ChartBereich = '1T' | '5T' | '1M' | '6M' | '1J' | '5J' | 'MAX' | 'Z15' | 'Z1H' | 'Z1D'
 
 export interface BereichDef {
   bereich: ChartBereich
   titel: string
   /** Yahoo-Intervall */
-  intervall: '5m' | '15m' | '1d' | '1wk' | '1mo'
+  intervall: '5m' | '15m' | '1h' | '1d' | '1wk' | '1mo'
   /** Kerzen innerhalb eines Tages: Zeitstempel bleiben minutengenau, Uhrzeit an der Achse */
   intraday?: boolean
   /** Länge des Zeitraums in Tagen; null = so weit die Daten reichen */
@@ -29,8 +29,16 @@ export const BEREICHE: BereichDef[] = [
   { bereich: 'MAX', titel: 'Max', intervall: '1mo', tage: null, ttlSek: 24 * STUNDE },
 ]
 
+/** Bereiche für die Preiszonen (src/zonen): mehr Historie je Kerzenintervall, nicht in der Aktien-Ansicht wählbar */
+export const ZONEN_BEREICHE: BereichDef[] = [
+  { bereich: 'Z15', titel: '15m', intervall: '15m', tage: 30, intraday: true, ttlSek: 5 * 60 },
+  { bereich: 'Z1H', titel: '1h', intervall: '1h', tage: 180, intraday: true, ttlSek: 15 * 60 },
+  { bereich: 'Z1D', titel: 'Tag', intervall: '1d', tage: 730, ttlSek: STUNDE },
+]
+
 export function bereichDef(bereich: string): BereichDef | null {
-  return BEREICHE.find((b) => b.bereich === bereich.toUpperCase()) ?? null
+  const b = bereich.toUpperCase()
+  return BEREICHE.find((x) => x.bereich === b) ?? ZONEN_BEREICHE.find((x) => x.bereich === b) ?? null
 }
 
 /** Startdatum (ISO, UTC) für die Yahoo-Anfrage. */

@@ -5,6 +5,9 @@ name: Markt-Tracker
 # Push-Nachrichten bei neuen Signalen. Konfiguration ist die Vereinigung aller Nutzer aus dem
 # Worker (App → Tracker → Einstellungen je Einladungscode), sonst data/tracker-config.json.
 # Werktags alle 15 Minuten (Börsen- und Krypto-Zeiten), am Wochenende alle zwei Stunden (Krypto).
+# Im selben Lauf werden die Preiszonen der Nutzer geprüft (scripts/tracker/zonen-alarm.ts, Zustand im Worker).
+# Außerhalb der Tracker-Zeiten startet der Worker-Cron den Lauf mit nur=zonen: dann nur die Zonen der Märkte,
+# die rund um die Uhr handeln (Bitcoin), ohne Tracker, ohne Commit.
 # Committet wird nur bei neuen Signalen/Kerzen oder deutlicher Kursbewegung; Live-Kurse holt
 # die App selbst über den Worker, deshalb muss nicht jeder Lauf deployen.
 
@@ -14,6 +17,11 @@ on:
     - cron: '4,19,34,49 7-22 * * 1-5' # Mo–Fr alle 15 Minuten, 07:04–22:49 UTC
     - cron: '4 */2 * * 0,6' # Sa/So alle zwei Stunden
   workflow_dispatch:
+    inputs:
+      nur:
+        description: 'zonen = nur die Preiszonen prüfen (Lauf außerhalb der Tracker-Zeiten)'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -38,13 +46,29 @@ jobs:
       - run: npm ci --ignore-scripts
 
       - name: Kurse holen und analysieren
+        if: inputs.nur != 'zonen'
         id: daten
         env:
           AKTIEN_WORKER_URL: ${{ secrets.AKTIEN_WORKER_URL }}
           AKTIEN_SECRET: ${{ secrets.AKTIEN_SECRET }}
         run: npx tsx scripts/tracker/hole-tracker.ts
 
+      # läuft auch, wenn der Tracker-Schritt wegen einer Kursquelle rot ist
+      - name: Preiszonen prüfen und Alarme verschicken
+        continue-on-error: true
+        if: ${{ !cancelled() }}
+        env:
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
+          AKTIEN_WORKER_URL: ${{ secrets.AKTIEN_WORKER_URL }}
+          AKTIEN_SECRET: ${{ secrets.AKTIEN_SECRET }}
+          APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          ZONEN_LAUF: ${{ inputs.nur == 'zonen' && 'nur' || '' }}
+        run: npx tsx scripts/tracker/zonen-alarm.ts
+
       - name: Push verschicken
+        if: inputs.nur != 'zonen'
         env:
           VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
@@ -57,6 +81,7 @@ jobs:
         run: node scripts/macro/sende-push.ts
 
       - name: Committen, wenn sich etwas geändert hat
+        if: inputs.nur != 'zonen'
         id: commit
         run: |
           git add public/data
@@ -80,7 +105,7 @@ jobs:
           done
 
       - name: Pages-Deploy anstoßen
-        if: steps.commit.outputs.deploy == 'true'
+        if: inputs.nur != 'zonen' && steps.commit.outputs.deploy == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main

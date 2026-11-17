@@ -8,6 +8,8 @@
 
 import { kvLesen, kvSchreiben } from './cache'
 import type { Env } from './http'
+import { RUND_UM_DIE_UHR } from '../../src/zonen/types'
+import { zonenAktiv } from './zonen'
 
 export const REPO_STANDARD = 'maximilianschettle-maker/chart-akademie'
 
@@ -19,13 +21,31 @@ interface Auftrag {
   inputs?: Record<string, string>
 }
 
-/** Cron-Ausdrücke aus wrangler.toml → Workflow. Unbekannte Ausdrücke werden geloggt und ignoriert. */
+/** Cron-Ausdrücke aus wrangler.toml → Workflow (der Tracker-Cron: siehe trackerLauf). Unbekannte Ausdrücke werden geloggt und ignoriert. */
 export const AUFTRAEGE: Record<string, Auftrag> = {
-  '*/15 7-22 * * MON-FRI': { workflow: 'tracker.yml' },
-  '0 */2 * * SAT,SUN': { workflow: 'tracker.yml' },
   '0 6 * * *': { workflow: 'macro.yml' },
   '*/10 11-22 * * TUE-THU': { workflow: 'macro.yml', inputs: { anlass: MAKRO_RASTER } },
   '23 * * * *': { workflow: 'board.yml' },
+}
+
+/**
+ * Ein Cron für den Tracker (Cloudflare erlaubt im freien Tarif nur fünf Trigger): alle 15 Minuten,
+ * was läuft, entscheidet die Uhrzeit. „voll“ = Tracker + Zonen wie bisher (Mo–Fr 07–22 Uhr UTC alle
+ * 15 Minuten, Sa/So alle zwei Stunden), sonst „zonen“ = nur die Preiszonen der Märkte, die rund um
+ * die Uhr handeln (Bitcoin) – und auch das nur, wenn jemand dort eine Zone mit Alarm hat.
+ */
+export const TRACKER_CRON = '*/15 * * * *'
+
+export function trackerLauf(zeit: Date): 'voll' | 'zonen' {
+  const tag = zeit.getUTCDay()
+  const stunde = zeit.getUTCHours()
+  if (tag >= 1 && tag <= 5) return stunde >= 7 && stunde <= 22 ? 'voll' : 'zonen'
+  return zeit.getUTCMinutes() === 0 && stunde % 2 === 0 ? 'voll' : 'zonen'
+}
+
+async function trackerAuftrag(env: Env, zeit: Date): Promise<Auftrag | null> {
+  if (trackerLauf(zeit) === 'voll') return { workflow: 'tracker.yml' }
+  return (await zonenAktiv(env, RUND_UM_DIE_UHR)) ? { workflow: 'tracker.yml', inputs: { nur: 'zonen' } } : null
 }
 
 export interface CronStatus {
@@ -57,10 +77,11 @@ export async function workflowStarten(env: Env, auftrag: Auftrag): Promise<void>
   }
 }
 
-export async function cronLauf(cron: string, env: Env): Promise<void> {
-  const auftrag = AUFTRAEGE[cron]
+export async function cronLauf(cron: string, env: Env, zeitMs = Date.now()): Promise<void> {
+  const auftrag = cron === TRACKER_CRON ? await trackerAuftrag(env, new Date(zeitMs)) : AUFTRAEGE[cron]
   if (!auftrag) {
-    console.warn(`Cron „${cron}“ hat keinen Auftrag`)
+    // Tracker-Cron außerhalb der Tracker-Zeiten ohne Rund-um-die-Uhr-Zone: nichts zu tun
+    if (cron !== TRACKER_CRON) console.warn(`Cron „${cron}“ hat keinen Auftrag`)
     return
   }
   if (!env.GITHUB_DISPATCH_TOKEN) {

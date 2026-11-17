@@ -7,7 +7,7 @@ import { kvLesen, kvSchreiben, type KvEintrag } from './cache'
 import type { Env } from './http'
 import { ADMIN_ID } from './zugang'
 
-export type DatenArt = 'zustand' | 'tracker' | 'journal' | 'fortschritt' | 'push'
+export type DatenArt = 'zustand' | 'tracker' | 'journal' | 'fortschritt' | 'push' | 'zonen' | 'zonenstatus'
 const MIT_LEGACY: DatenArt[] = ['zustand', 'tracker']
 
 export const nutzerKey = (art: DatenArt, nutzerId: string) => `${art}:${nutzerId}`

@@ -33,6 +33,8 @@ const VergleichPage = lazy(() => import('./aktien/pages/VergleichPage').then((m)
 const MakroPage = lazy(() => import('./makro/pages/MakroPage').then((m) => ({ default: m.MakroPage })))
 // Markt-Tracker (Tages- und Stundenkerzen + Muster aus public/data/tracker.json): src/tracker
 const NewsPage = lazy(() => import('./board/NewsPage').then((m) => ({ default: m.NewsPage })))
+// Preiszonen mit Alarm (eigene Zonen im Chart einzeichnen): src/zonen
+const ZonenPage = lazy(() => import('./zonen/ZonenPage').then((m) => ({ default: m.ZonenPage })))
 const TrackerPage = lazy(() => import('./tracker/pages/TrackerPage').then((m) => ({ default: m.TrackerPage })))
 
 function Platzhalter({ titel }: { titel: string }) {
@@ -118,6 +120,7 @@ export default function App() {
                 <Route path="aktien/vergleich" element={<VergleichPage />} />
                 <Route path="aktien/:symbol" element={<FirmaPage />} />
                 <Route path="tracker" element={<TrackerPage />} />
+                <Route path="zonen" element={<ZonenPage />} />
                 <Route path="makro" element={<MakroPage />} />
                 <Route path="news" element={<NewsPage />} />
               </Route>
