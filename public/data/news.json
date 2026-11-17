@@ -1,17 +1,74 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-17T16:23:30.376Z",
+ "lastUpdated": "2026-11-17T17:23:34.735Z",
  "eintraege": [
   {
+   "id": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-kyiv-russia-kerch-bridge-crimea.html",
+   "titel": "Ukraine Attacks Kerch Bridge Linking Russia to Occupied Crimea",
+   "link": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-kyiv-russia-kerch-bridge-crimea.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-17T17:11:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Destroying the structure, the only one connecting Russia to the occupied Crimean Peninsula, has long been a top objective for Kyiv.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo",
-   "titel": "Putin's Crimea bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+   "titel": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
    "link": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-17T16:07:41.000Z",
+   "zeit": "2026-11-17T16:56:38.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Ukraine says the missile and drone attack on the strategic bridge in the Russian-annexed Crimea took weeks to plan.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/koalitionsausschuss-stromsteuer-merz-100.html",
+   "titel": "Showdown im Koalitionsausschuss: Bekommt der Kanzler seinen Willen?",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/koalitionsausschuss-stromsteuer-merz-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-17T16:52:59.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Bei einem Koalitionsausschuss wird nach Milliarden gesucht, um die Stromsteuer senken zu können. Zuvor hatte sich Kanzler Merz weit aus dem Fenster gelehnt. Setzt er sein Versprechen durch? Von N. Kohnert.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo",
+   "titel": "Trump says US taking 'very seriously' any Iranian plot against Washington",
+   "link": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-17T16:42:11.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Tehran rejects any suggestion it was plotting a so-called dirty bomb attack on the US capital as \"baseless\".",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/jemen-saudi-arabiens-verb%C3%BCndete-geraten-ins-wanken/a-79971660",
+   "titel": "Jemen: Saudi-Arabiens Verbündete geraten ins Wanken",
+   "link": "https://www.dw.com/de/jemen-saudi-arabiens-verbündete-geraten-ins-wanken/a-79971660?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-17T16:40:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Saudi-Arabiens Militärkoalition steckt im Jemen in der Krise. Während die Huthi vorrücken, zerfällt das Bündnis ihrer Gegner. Auch die Sicherheit einer wichtigen Handelsroute steht auf dem Spiel.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/geldpolitik/ezb-lob-fuer-nominierung-von-markus-brunnermeier-zum-chefvolkswirt/100270602.html",
+   "titel": "EZB: Bundesregierung erhält Lob für Brunnermeier-Nominierung – doch ein Detail sorgt für Erstaunen",
+   "link": "https://www.handelsblatt.com/finanzen/geldpolitik/ezb-lob-fuer-nominierung-von-markus-brunnermeier-zum-chefvolkswirt/100270602.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-17T16:02:19.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Die Bundesregierung hat ihre Wahl für den wichtigen Posten im EZB-Direktorium getroffen und die Resonanz könnte positiver kaum sein. Dabei zeichnet sich eine brisante Konstellation ab.",
+   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o",
@@ -25,14 +82,14 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-kyiv-russia-kerch-bridge-crimea.html",
-   "titel": "Ukraine Attacks Kerch Bridge Linking Russia to Occupied Crimea",
-   "link": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-kyiv-russia-kerch-bridge-crimea.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T15:54:39.000Z",
+   "id": "https://www.bbc.co.uk/news/videos/cmlywvww3pzlo",
+   "titel": "BBC reports from Kyiv bridge hit by Russian attack",
+   "link": "https://www.bbc.co.uk/news/videos/cmlywvww3pzlo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-17T15:54:15.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Destroying the structure, the only one connecting Russia to the occupied Crimean Peninsula, has long been a top objective for Kyiv.",
+   "text": "The BBC's Sarah Rainsford spoke to residents near the site of the overnight strike.",
    "sprache": "en"
   },
   {
@@ -962,76 +1019,16 @@
    "maerkte": [],
    "text": "Saudi-backed forces say they are moving troops from the Bab al-Mandab Strait to protect the interim capital, Aden.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/folge-des-krieges-neue-auswanderungswelle-im-iran/a-79955831",
-   "titel": "Folge des Krieges: Neue Auswanderungswelle im Iran",
-   "link": "https://www.dw.com/de/folge-des-krieges-neue-auswanderungswelle-im-iran/a-79955831?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-16T11:09:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Iran-Krieg beschleunigt den Brain Drain aus dem Iran. Immer mehr gut ausgebildete junge Menschen kehren ihrer Heimat den Rücken. Akademiker und Fachkräfte sehen im eigenen Land kaum noch eine Zukunftsperspektive.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/iran-neue-auswanderungswelle-unter-akademikern/a-79955831",
-   "titel": "Iran: Neue Auswanderungswelle unter Akademikern",
-   "link": "https://www.dw.com/de/iran-neue-auswanderungswelle-unter-akademikern/a-79955831?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-16T11:09:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Iran-Krieg beschleunigt die Abwanderung gut ausgebildeter junger Menschen aus dem Iran. Immer mehr junge Menschen zweifeln daran, im eigenen Land eine Zukunft aufbauen zu können.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-eu-kommission-plant-offenbar-45-milliarden-kredit-fuer-ukraine/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: EU-Kommission plant offenbar 45-Milliarden-Kredit für Ukraine",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-eu-kommission-plant-offenbar-45-milliarden-kredit-fuer-ukraine/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-16T10:41:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Selenskyj: Gut 55 Prozent der russischen Raffinerien sind kaputt +++ Kreml meldet geringe Schäden an Krim-Brücke +++ Wadephul wirbt für gleichmäßigere Unterstützung +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/16/world/europe/russia-ukraine-winter-campaign.html",
-   "titel": "Relentless Attacks on Ukraine’s Power Grid Threaten to Make Cities Unlivable",
-   "link": "https://www.nytimes.com/2026/11/16/world/europe/russia-ukraine-winter-campaign.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-16T10:03:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Even as it talks peace, Russia has opened a bombing campaign intended to strip Kyiv and other cities of heat, running water and sanitation this winter.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/oelmaerkte-goldman-sachs-rechnet-mit-einem-erheblichen-oelmarktueberschuss/100270158.html",
-   "titel": "Goldman Sachs: Ölmarkt steuert auf Überschuss zu – Trotz Lieferrisiken dürfte der Preis deutlich fallen",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/oelmaerkte-goldman-sachs-rechnet-mit-einem-erheblichen-oelmarktueberschuss/100270158.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-16T09:30:50.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "gas"
-   ],
-   "text": "Trotz Lieferrisiken dürfte der Ölpreis im kommenden Jahr fallen, weil neue Pipelines mehr Öl auf den Markt bringen. Und auch an anderer Stelle steigt der Druck auf den Preis.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 15,
-  "DW": 9,
+  "DW": 10,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 6,
+  "FAZ Wirtschaft": 5,
   "Handelsblatt": 4,
-  "BBC World": 7,
-  "NYT World": 19,
+  "BBC World": 8,
+  "NYT World": 18,
   "EIA Today in Energy": 0
  }
 }
