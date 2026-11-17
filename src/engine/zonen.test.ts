@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { anlaeufe, findeZonen, impulsUrspruenge, rangeKanten, swings, vergleicheZonen, type Zone } from './zonen'
+import { anlaeufe, findeZonen, impulsUrspruenge, kontakte, kontaktText, rangeKanten, swings, vergleicheZonen, zonenFazit, type Zone } from './zonen'
 import { richtungAus } from './richtung'
 import type { Candle } from '../types'
 
@@ -65,6 +65,49 @@ describe('Zonen: Bausteine', () => {
   })
 })
 
+describe('Zonen: Kontakte', () => {
+  // flache Kerze auf einem Preis
+  const auf = (t: number, p: number) => k(t, p, p + 0.4, p - 0.4, p)
+  const folge = (preise: number[]) => preise.map((p, i) => auf(i, p))
+
+  it('von oben angelaufen und wieder hoch → gehalten, Marker am Tief', () => {
+    const r = kontakte(folge([105, 104, 102, 100.2, 99.8, 102, 104, 105]), 99, 100.5)
+    expect(r).toHaveLength(1)
+    expect(r[0].art).toBe('gehalten')
+    expect(r[0].index).toBe(4)
+  })
+
+  it('von unten angelaufen und wieder runter → abgewiesen', () => {
+    const r = kontakte(folge([95, 97, 99.5, 97, 95, 94]), 99, 100.5)
+    expect(r.map((x) => x.art)).toEqual(['abgewiesen'])
+  })
+
+  it('durchgelaufen zählt nicht als Reaktion', () => {
+    const r = kontakte(folge([95, 97, 99.8, 102, 104, 106, 104, 102, 99.8, 97, 95]), 99, 100.5)
+    expect(r.map((x) => x.art)).toEqual(['durchlauf', 'durchlauf'])
+  })
+
+  it('kurze Lücke gehört zum selben Kontakt, lange trennt', () => {
+    // berührt, zwei Kerzen knapp darüber, berührt wieder → ein Kontakt
+    expect(kontakte(folge([105, 100, 101.5, 101.5, 100, 105, 106]), 99, 100.5)).toHaveLength(1)
+    // drei Kerzen Abstand → zwei Kontakte
+    expect(kontakte(folge([105, 100, 103, 103, 103, 100, 105, 106]), 99, 100.5).map((x) => x.art)).toEqual(['gehalten', 'gehalten'])
+  })
+
+  it('Kurs steht am Ende noch in der Zone → offen', () => {
+    expect(kontakte(folge([105, 103, 100]), 99, 100.5).map((x) => x.art)).toEqual(['offen'])
+  })
+
+  it('Texte', () => {
+    expect(kontaktText(4, 9)).toBe('4× gedreht, 9× durchlaufen')
+    expect(kontaktText(3, 0)).toBe('3× gedreht')
+    expect(zonenFazit({ reaktionen: 2, durchlaeufe: 9, art: 'impuls' })).toMatch(/Mitte der Bewegung/)
+    expect(zonenFazit({ reaktionen: 4, durchlaeufe: 1, art: 'unterstuetzung' })).toMatch(/saubere Zone/)
+    expect(zonenFazit({ reaktionen: 0, durchlaeufe: 3, art: 'impuls' })).toMatch(/Kandidat/)
+    expect(zonenFazit({ reaktionen: 10, durchlaeufe: 6, art: 'range' })).toMatch(/kein sicheres Level/)
+  })
+})
+
 describe('Zonen: Erkennung und Vergleich', () => {
   const c = rangeDannImpuls()
   const zonen = findeZonen(c)
@@ -75,10 +118,12 @@ describe('Zonen: Erkennung und Vergleich', () => {
     const um100 = zonen.find((z) => z.von <= 99.5 && z.bis >= 99.5)
     expect(um110).toBeDefined()
     expect(um100).toBeDefined()
-    expect(um110!.beruehrungen).toBeGreaterThanOrEqual(3)
+    expect(um110!.reaktionen).toBeGreaterThanOrEqual(3)
+    expect(um110!.herkunft.some((h) => h.art === 'hoch')).toBe(true)
+    expect(um110!.kontakte.length).toBe(um110!.beruehrungen)
     expect(zonen.filter((z) => z.wichtig).length).toBeGreaterThanOrEqual(2)
     expect(zonen.filter((z) => z.wichtig).length).toBeLessThanOrEqual(6)
-    expect(um110!.text).toMatch(/angelaufen/)
+    expect(um110!.text).toMatch(/gedreht/)
   })
 
   it('zu wenige Kerzen → keine Zonen', () => {
@@ -86,7 +131,7 @@ describe('Zonen: Erkennung und Vergleich', () => {
   })
 
   it('Vergleich: getroffen, verfehlt, nebensächlich, überflüssig', () => {
-    const z = (id: string, von: number, bis: number, wichtig: boolean): Zone => ({ id, von, bis, art: 'widerstand', beruehrungen: 2, letzterIndex: 1, staerke: 1, wichtig, text: '' })
+    const z = (id: string, von: number, bis: number, wichtig: boolean): Zone => ({ id, von, bis, art: 'widerstand', reaktionen: 2, durchlaeufe: 0, kontakte: [], herkunft: [], beruehrungen: 2, letzterIndex: 1, staerke: 1, wichtig, text: '' })
     const liste = [z('a', 109, 111, true), z('b', 99, 101, true), z('c', 104, 105, false)]
     const v = vergleicheZonen(liste, [{ preisVon: 110, preisBis: 112 }, { preisVon: 104.2, preisBis: 104.8 }, { preisVon: 120, preisBis: 121 }], 0.5)
     expect(v.getroffen.map((g) => g.zone.id)).toEqual(['a'])

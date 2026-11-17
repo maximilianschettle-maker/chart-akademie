@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, Ban, Check, Eraser, Layers, LoaderCircle, RectangleHorizontal, RotateCcw, Sparkles, Target, X } from 'lucide-react'
+import { ArrowLeft, Ban, Check, Eraser, Info, Layers, LoaderCircle, RectangleHorizontal, RotateCcw, Sparkles, Target, X } from 'lucide-react'
 import { codeVorhanden } from '../aktien/data/client'
 import { ZugangHinweis } from '../zugang/ZugangHinweis'
 import { tradePruefen } from '../journal/pruefung'
@@ -22,6 +22,8 @@ import { letzterAtr } from '../engine/indikatoren/atr'
 import { rundePreis } from '../engine/format'
 import { ladeReplay, neueRunde, type ReplayDaten, type Runde } from './daten'
 import { topDownStatistik, useTopDownStore } from './store'
+import { ZonenErklaerung } from './ZonenErklaerung'
+import { zonenMarker } from './zonenMarker'
 import { bewerteKeinTrade, bewerteTrade, simuliereTrade, type Entscheidungsbewertung, type Simulation, type TradeWahl } from './replay'
 
 // Top-Down-Übung: 1. Tageschart → Richtung, 2. Stundenchart → Zonen als Bänder, Vergleich mit der
@@ -66,6 +68,9 @@ export function TopDownPage() {
   const [modus, setModus] = useState<'zone' | 'aus'>('zone')
   const [zonen, setZonen] = useState<Zone[]>([])
   const [vergleich, setVergleich] = useState<ZonenVergleich | null>(null)
+  /** Zone, die gerade erklärt wird (Marker im Stundenchart, Text darunter) */
+  const [erklaertId, setErklaertId] = useState<string | null>(null)
+  const stundenChartRef = useRef<HTMLDivElement | null>(null)
   // Replay
   const [replay, setReplay] = useState<ReplayDaten | null>(null)
   const [cursor, setCursor] = useState(0)
@@ -94,6 +99,7 @@ export function TopDownPage() {
     setZeichnungen([])
     setZonen([])
     setVergleich(null)
+    setErklaertId(null)
     setModus('zone')
     setReplay(null)
     setCursor(0)
@@ -278,11 +284,33 @@ export function TopDownPage() {
   const stundeKerzen = useMemo(() => runde?.stunde ?? [], [runde])
   const zonenBoxen = (zeitVon: number, zeitBis: number): ChartBox[] =>
     wichtigeZonen.map((z) => ({ id: z.id, zeitVon, zeitBis, preisVon: z.von, preisBis: z.bis, fuellung: 'rgba(34,197,94,0.12)', rand: 'rgba(34,197,94,0.6)' }))
+  const erklaert = useMemo(() => zonen.find((z) => z.id === erklaertId) ?? null, [zonen, erklaertId])
   const boxenStunde = useMemo((): ChartBox[] => {
     if (!runde || zonen.length === 0) return []
-    return zonenBoxen(runde.stunde[Math.max(0, runde.stunde.length - 300)].time, runde.endeZeit + 3600 * 12)
+    const von = runde.stunde[Math.max(0, runde.stunde.length - 300)].time
+    const bis = runde.endeZeit + 3600 * 12
+    const boxen = zonenBoxen(von, bis).filter((b) => b.id !== erklaert?.id)
+    // die erklärte Zone hervorgehoben – auch wenn sie nicht zu den wichtigen gehört
+    if (erklaert) boxen.push({ id: erklaert.id, zeitVon: von, zeitBis: bis, preisVon: erklaert.von, preisBis: erklaert.bis, fuellung: 'rgba(245,158,11,0.22)', rand: 'rgba(245,158,11,0.95)' })
+    return boxen
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [runde, zonen])
+  }, [runde, zonen, erklaert])
+  const markerStunde = useMemo((): ChartMarker[] => (erklaert ? zonenMarker(erklaert) : []), [erklaert])
+  const erklaeren = (id: string) => {
+    setErklaertId((alt) => (alt === id ? null : id))
+    stundenChartRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+  /** Knopf „Warum?“ hinter einer Zone der Auflösung */
+  const warum = (zone: Zone) => (
+    <button
+      type="button"
+      onClick={() => erklaeren(zone.id)}
+      aria-pressed={erklaertId === zone.id}
+      className={`tipp ml-1 inline-flex items-center gap-1 rounded-md px-2 align-middle text-[11px] font-semibold ${erklaertId === zone.id ? 'bg-akzent text-nacht' : 'bg-nacht text-akzent hover:text-white'}`}
+    >
+      <Info className="h-3.5 w-3.5" /> Warum?
+    </button>
+  )
   const boxenReplay = useMemo((): ChartBox[] => {
     if (!replay) return []
     const sek = replay.intervall === '15m' ? 900 : 3600
@@ -407,7 +435,7 @@ export function TopDownPage() {
                       </span>
                     </div>
                   )}
-                  <div className="-mx-3 mt-3 sm:-mx-2">
+                  <div ref={stundenChartRef} className="-mx-3 mt-3 scroll-mt-16 sm:-mx-2">
                     <HandelsChart
                       candles={stundeKerzen}
                       cursor={stundeKerzen.length - 1}
@@ -417,9 +445,15 @@ export function TopDownPage() {
                       zeichenModus={modus}
                       onZeichnung={(z) => setZeichnungen((alt) => [...alt, z])}
                       boxen={boxenStunde}
+                      marker={markerStunde}
                       kompakteBeschriftung
                     />
                   </div>
+                  {schritt === 'zonenAufgeloest' && erklaert && (
+                    <div className="mt-3">
+                      <ZonenErklaerung zone={erklaert} waehrung={runde.waehrung} onZu={() => setErklaertId(null)} />
+                    </div>
+                  )}
                 </>
               )}
               {schritt === 'zonen' && (
@@ -439,15 +473,18 @@ export function TopDownPage() {
                   </div>
                   {schritt === 'zonenAufgeloest' && (
                     <>
-                      <p className="text-xs text-gedimmt">Grüne Boxen im Chart: die wichtigen Zonen der Erkennung. Deine Bänder bleiben sichtbar.</p>
+                      <p className="text-xs text-gedimmt">
+                        Grüne Boxen im Chart: die wichtigen Zonen der Erkennung. Deine Bänder bleiben sichtbar. „Warum?“ zeigt, woraus eine Zone entstanden ist und wo der Kurs an ihr gedreht hat oder durchgelaufen ist.
+                      </p>
                       {vergleich.getroffen.length > 0 && (
                         <div>
                           <div className="text-xs font-semibold text-long">Getroffen</div>
-                          <ul className="mt-1 space-y-0.5 text-xs text-schrift">
+                          <ul className="mt-1 space-y-1 text-xs text-schrift">
                             {vergleich.getroffen.map(({ zone }) => (
                               <li key={zone.id}>
                                 <Check className="mr-1 inline h-3.5 w-3.5 text-long" />
                                 {fmtKurs(zone.von, runde.waehrung)} – {fmtKurs(zone.bis, runde.waehrung)}: {zone.text}
+                                {warum(zone)}
                               </li>
                             ))}
                           </ul>
@@ -456,11 +493,12 @@ export function TopDownPage() {
                       {vergleich.verfehlt.length > 0 && (
                         <div>
                           <div className="text-xs font-semibold text-short">Fehlt bei dir</div>
-                          <ul className="mt-1 space-y-0.5 text-xs text-schrift">
+                          <ul className="mt-1 space-y-1 text-xs text-schrift">
                             {vergleich.verfehlt.map((zone) => (
                               <li key={zone.id}>
                                 <X className="mr-1 inline h-3.5 w-3.5 text-short" />
                                 {fmtKurs(zone.von, runde.waehrung)} – {fmtKurs(zone.bis, runde.waehrung)}: {zone.text}
+                                {warum(zone)}
                               </li>
                             ))}
                           </ul>
@@ -469,10 +507,11 @@ export function TopDownPage() {
                       {(vergleich.nebensaechlich.length > 0 || vergleich.ueberfluessig.length > 0) && (
                         <div>
                           <div className="text-xs font-semibold text-akzent">Unwichtig oder ohne Zone</div>
-                          <ul className="mt-1 space-y-0.5 text-xs text-schrift">
+                          <ul className="mt-1 space-y-1 text-xs text-schrift">
                             {vergleich.nebensaechlich.map(({ zone, band }, i) => (
                               <li key={`n${i}`}>
                                 {fmtKurs(Math.min(band.preisVon, band.preisBis), runde.waehrung)} – {fmtKurs(Math.max(band.preisVon, band.preisBis), runde.waehrung)}: trifft nur eine schwache Zone ({zone.text})
+                                {warum(zone)}
                               </li>
                             ))}
                             {vergleich.ueberfluessig.map((band, i) => (

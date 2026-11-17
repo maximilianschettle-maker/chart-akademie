@@ -4,7 +4,7 @@ import type { Zone } from '../engine/zonen'
 import type { Candle } from '../types'
 
 const k = (time: number, open: number, high: number, low: number, close: number): Candle => ({ time, open, high, low, close, volume: 1 })
-const zone = (von: number, bis: number, text = 'Unterstützung'): Zone => ({ id: `${von}`, von, bis, art: 'unterstuetzung', beruehrungen: 3, letzterIndex: 1, staerke: 3, wichtig: true, text })
+const zone = (von: number, bis: number, text = 'Unterstützung'): Zone => ({ id: `${von}`, von, bis, art: 'unterstuetzung', reaktionen: 3, durchlaeufe: 0, kontakte: [], herkunft: [], beruehrungen: 3, letzterIndex: 1, staerke: 3, wichtig: true, text })
 
 describe('Replay: Simulation', () => {
   const kerzen = [k(0, 100, 101, 99, 100), k(1, 100, 102, 99.5, 101.5), k(2, 101.5, 103, 101, 102.5), k(3, 102.5, 104, 102, 103.5), k(4, 103.5, 106, 103, 105.5)]

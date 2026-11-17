@@ -7,12 +7,42 @@ import { letzterAtr } from './indikatoren/atr'
 
 export type ZonenArt = 'widerstand' | 'unterstuetzung' | 'range' | 'impuls'
 
+/** Ein Kontakt des Kurses mit der Zone: gedreht (gehalten/abgewiesen) oder durchgelaufen */
+export interface Kontakt {
+  /** erste und letzte Kerze des Kontakts */
+  vonIndex: number
+  bisIndex: number
+  /** Kerze mit dem Extrem in der Zone (Tief bei „gehalten“, Hoch bei „abgewiesen“), sonst die erste */
+  index: number
+  time: number
+  /** gehalten: von oben gekommen, wieder nach oben · abgewiesen: von unten, wieder nach unten ·
+   *  durchlauf: auf der anderen Seite herausgekommen · offen: Kurs steht noch in der Zone oder Anfang unbekannt */
+  art: 'gehalten' | 'abgewiesen' | 'durchlauf' | 'offen'
+}
+
+/** Woraus die Erkennung eine Zone gebildet hat */
+export interface Herkunft {
+  art: 'hoch' | 'tief' | 'impuls' | 'range'
+  index: number
+  time: number
+  preis: number
+  /** nur impuls: Richtung und Größe der Bewegung in ATR */
+  auf?: boolean
+  bewegungAtr?: number
+}
+
 export interface Zone {
   id: string
   von: number
   bis: number
   art: ZonenArt
-  /** Anläufe an die Zone (Kerzen, die sie berühren, nach einer Kerze ohne Berührung) */
+  /** Kontakte, an denen der Kurs gedreht hat (gehalten oder abgewiesen) */
+  reaktionen: number
+  /** Kontakte, bei denen der Kurs durch die Zone gelaufen ist */
+  durchlaeufe: number
+  kontakte: Kontakt[]
+  herkunft: Herkunft[]
+  /** alle Kontakte (Reaktionen + Durchläufe + offene) */
   beruehrungen: number
   /** Index der letzten Berührung */
   letzterIndex: number
@@ -69,6 +99,11 @@ interface Punkt {
   /** eigene Bandbreite (Impuls, Range) */
   von?: number
   bis?: number
+  /** swing: Hoch oder Tief */
+  swing?: 'hoch' | 'tief'
+  /** impuls: Richtung und Größe in ATR */
+  auf?: boolean
+  bewegungAtr?: number
 }
 
 /** Ausgangspunkte starker Bewegungen: drei Kerzen in eine Richtung über ≥ impulsAtr; die Basis davor ist die Zone */
@@ -84,7 +119,7 @@ export function impulsUrspruenge(c: Candle[], atr: number, impulsAtr: number): P
     const basis = c[i - 3]
     const von = auf ? Math.min(basis.low, a.low) : Math.min(a.open, basis.close)
     const bis = auf ? Math.max(a.open, basis.close) : Math.max(basis.high, a.high)
-    out.push({ preis: (von + bis) / 2, index: i - 3, gewicht: 1.5, art: 'impuls', von, bis })
+    out.push({ preis: (von + bis) / 2, index: i - 3, gewicht: 1.5, art: 'impuls', von, bis, auf, bewegungAtr: Math.abs(bewegung) / atr })
     i += 2 // dieselbe Bewegung nicht mehrfach zählen
   }
   return out
@@ -130,6 +165,66 @@ export function anlaeufe(c: Candle[], von: number, bis: number): { anzahl: numbe
   return { anzahl, letzterIndex }
 }
 
+/** So viele Kerzen ohne Berührung trennen zwei Kontakte; kürzere Lücken gehören zum selben Kontakt */
+export const KONTAKT_LUECKE = 3
+
+/**
+ * Kontakte des Kurses mit einem Band, je Kontakt mit Ausgang: Kommt der Kurs auf der Seite wieder heraus,
+ * von der er kam, hat die Zone reagiert (gehalten/abgewiesen); kommt er auf der anderen heraus, ist er durchgelaufen.
+ */
+export function kontakte(c: Candle[], von: number, bis: number): Kontakt[] {
+  const beruehrt = (i: number) => c[i].low <= bis && c[i].high >= von
+  const seite = (i: number): 'oben' | 'unten' => (c[i].low > bis ? 'oben' : 'unten')
+  const out: Kontakt[] = []
+  let i = 0
+  while (i < c.length) {
+    if (!beruehrt(i)) {
+      i++
+      continue
+    }
+    const start = i
+    let ende = i
+    for (let j = i + 1; j < c.length && j - ende <= KONTAKT_LUECKE; j++) if (beruehrt(j)) ende = j
+    const davor = start > 0 ? seite(start - 1) : null
+    const danach = ende < c.length - 1 ? seite(ende + 1) : null
+    let art: Kontakt['art'] = 'offen'
+    if (davor && danach) art = davor !== danach ? 'durchlauf' : davor === 'oben' ? 'gehalten' : 'abgewiesen'
+    let index = start
+    if (art === 'gehalten') for (let k = start; k <= ende; k++) if (c[k].low < c[index].low) index = k
+    if (art === 'abgewiesen') for (let k = start; k <= ende; k++) if (c[k].high > c[index].high) index = k
+    out.push({ vonIndex: start, bisIndex: ende, index, time: c[index].time, art })
+    i = ende + 1
+  }
+  return out
+}
+
+function zaehle(k: Kontakt[]): { reaktionen: number; durchlaeufe: number; letzterIndex: number } {
+  return {
+    reaktionen: k.filter((x) => x.art === 'gehalten' || x.art === 'abgewiesen').length,
+    durchlaeufe: k.filter((x) => x.art === 'durchlauf').length,
+    letzterIndex: k.length ? k[k.length - 1].bisIndex : -1,
+  }
+}
+
+/** „4× gedreht, 9× durchlaufen“ */
+export function kontaktText(reaktionen: number, durchlaeufe: number): string {
+  return `${reaktionen}× gedreht${durchlaeufe ? `, ${durchlaeufe}× durchlaufen` : ''}`
+}
+
+/** Ein Satz zur Einordnung: trägt die Zone, oder läuft der Kurs meist durch? */
+export function zonenFazit(z: Pick<Zone, 'reaktionen' | 'durchlaeufe' | 'art'>): string {
+  const { reaktionen: r, durchlaeufe: d } = z
+  if (r === 0)
+    return z.art === 'impuls'
+      ? 'Der Kurs hat hier noch nie gedreht. Die Zone steht nur, weil hier eine starke Bewegung begann – ein Kandidat, kein bewährtes Level.'
+      : 'Der Kurs hat hier noch nie gedreht – als Zone schwach.'
+  if (d > 2 * r) return `Der Kurs läuft hier viel öfter durch (${d}×), als er dreht (${r}×). Das ist eher die Mitte der Bewegung als eine Kante – mit Vorsicht behandeln.`
+  if (d > r) return `Mehr Durchläufe (${d}×) als Reaktionen (${r}×): Die Zone wirkt, aber nicht verlässlich.`
+  if (r >= 3 && d * 3 <= r) return `Der Kurs hat hier ${r}× gedreht und ist ${d ? `nur ${d}×` : 'nie'} durchgelaufen – eine saubere Zone.`
+  if (r >= 3) return `${r}× gedreht, ${d}× durchgelaufen: Die Zone hält öfter, als sie bricht – brauchbar, aber kein sicheres Level.`
+  return `${r}× gedreht, ${d ? `${d}×` : 'nie'} durchgelaufen – brauchbar, aber noch wenig bestätigt.`
+}
+
 export function findeZonen(kerzen: Candle[], opt: ZonenOptionen = STANDARD_ZONEN): Zone[] {
   const c = kerzen.slice(-opt.rueckschau)
   const n = c.length
@@ -138,7 +233,7 @@ export function findeZonen(kerzen: Candle[], opt: ZonenOptionen = STANDARD_ZONEN
   if (!(atr > 0)) return []
   const close = c[n - 1].close
 
-  const punkte: Punkt[] = swings(c, opt.fraktal).map((s) => ({ preis: s.preis, index: s.index, gewicht: 1, art: 'swing' as const }))
+  const punkte: Punkt[] = swings(c, opt.fraktal).map((s) => ({ preis: s.preis, index: s.index, gewicht: 1, art: 'swing' as const, swing: s.art }))
   punkte.push(...impulsUrspruenge(c, atr, opt.impulsAtr))
   const range = rangeKanten(c, atr)
   if (range) {
@@ -171,20 +266,29 @@ export function findeZonen(kerzen: Candle[], opt: ZonenOptionen = STANDARD_ZONEN
       von = mitte - (opt.maxBreiteAtr * atr) / 2
       bis = mitte + (opt.maxBreiteAtr * atr) / 2
     }
-    const { anzahl, letzterIndex } = anlaeufe(c, von, bis)
-    const hatImpuls = g.some((p) => p.art === 'impuls')
-    const hatRange = g.some((p) => p.art === 'range')
+    const liste = kontakte(c, von, bis)
+    const { reaktionen, durchlaeufe, letzterIndex } = zaehle(liste)
+    // Nur die Punkte der Gruppe, die im (ggf. eingedampften) Band liegen, tragen die Zone – eine lange Kette
+    // von Hochs und Tiefs in der Mitte der Bewegung soll das Band nicht stärker machen, als es ist
+    const imBand = g.filter((p) => (p.bis ?? p.preis) >= von - 1e-9 && (p.von ?? p.preis) <= bis + 1e-9)
+    const herkunft: Herkunft[] = imBand
+      .map((p) => ({ art: p.art === 'swing' ? p.swing! : p.art, index: p.index, time: c[p.index].time, preis: p.preis, ...(p.art === 'impuls' ? { auf: p.auf, bewegungAtr: p.bewegungAtr } : {}) }))
+      .sort((a, b) => a.index - b.index)
+    const hatImpuls = imBand.some((p) => p.art === 'impuls')
+    const hatRange = imBand.some((p) => p.art === 'range')
     const art: ZonenArt = hatRange ? 'range' : hatImpuls ? 'impuls' : bis < close ? 'unterstuetzung' : 'widerstand'
     const abstandAtr = Math.abs((von + bis) / 2 - close) / atr
     const frische = 1 - (n - 1 - letzterIndex) / n
-    const staerke = anzahl + g.reduce((s, p) => s + p.gewicht, 0) * 0.5 + (hatImpuls ? 1.5 : 0) + (hatRange ? 1 : 0) + frische + (abstandAtr <= 3 ? 1 : abstandAtr <= 8 ? 0.5 : 0)
+    // Reaktionen zählen, Durchläufe schwächen (höchstens 2 Punkte Abzug)
+    const staerke = reaktionen - Math.min(2, 0.25 * durchlaeufe) + imBand.reduce((s, p) => s + p.gewicht, 0) * 0.5 + (hatImpuls ? 1.5 : 0) + (hatRange ? 1 : 0) + frische + (abstandAtr <= 3 ? 1 : abstandAtr <= 8 ? 0.5 : 0)
     const lage = bis < close ? 'Unterstützung' : von > close ? 'Widerstand' : 'am Kurs'
+    const kt = kontaktText(reaktionen, durchlaeufe)
     const text = hatRange
-      ? `Range-${(von + bis) / 2 > close ? 'Oberkante' : 'Unterkante'}, ${anzahl}× angelaufen`
+      ? `Range-${(von + bis) / 2 > close ? 'Oberkante' : 'Unterkante'}, ${kt}`
       : hatImpuls
-        ? `Ausgangspunkt einer starken Bewegung (${lage}), ${anzahl}× angelaufen`
-        : `${lage}, ${anzahl}× angelaufen, zuletzt vor ${n - 1 - letzterIndex} Kerzen`
-    return { id: `z${nr}`, von, bis, art, beruehrungen: anzahl, letzterIndex, staerke: Math.round(staerke * 100) / 100, wichtig: false, text }
+        ? `Ausgangspunkt einer starken Bewegung (${lage}), ${kt}`
+        : `${lage}, ${kt}, zuletzt vor ${n - 1 - letzterIndex} Kerzen`
+    return { id: `z${nr}`, von, bis, art, reaktionen, durchlaeufe, kontakte: liste, herkunft, beruehrungen: liste.length, letzterIndex, staerke: Math.round(staerke * 100) / 100, wichtig: false, text }
   })
 
   // Nachbarn verschmelzen: Zonen mit Lücke unter einer halben ATR sind eine Zone (sonst drei Bänder für ein Level)
@@ -195,18 +299,26 @@ export function findeZonen(kerzen: Candle[], opt: ZonenOptionen = STANDARD_ZONEN
     if (v && z.von - v.bis <= 0.5 * atr && Math.max(v.bis, z.bis) - Math.min(v.von, z.von) <= opt.maxBreiteAtr * atr) {
       const von = Math.min(v.von, z.von)
       const bis = Math.max(v.bis, z.bis)
-      const { anzahl, letzterIndex } = anlaeufe(c, von, bis)
+      const liste = kontakte(c, von, bis)
+      const { reaktionen, durchlaeufe, letzterIndex } = zaehle(liste)
+      const kt = kontaktText(reaktionen, durchlaeufe)
+      const herkunft = [...v.herkunft, ...z.herkunft].sort((a, b) => a.index - b.index)
       const art: ZonenArt = v.art === 'range' || z.art === 'range' ? 'range' : v.art === 'impuls' || z.art === 'impuls' ? 'impuls' : bis < close ? 'unterstuetzung' : 'widerstand'
       const lage = bis < close ? 'Unterstützung' : von > close ? 'Widerstand' : 'am Kurs'
-      const text = art === 'range' ? (v.art === 'range' ? v.text : z.text) : art === 'impuls' ? `Ausgangspunkt einer starken Bewegung (${lage}), ${anzahl}× angelaufen` : `${lage}, ${anzahl}× angelaufen, zuletzt vor ${n - 1 - letzterIndex} Kerzen`
-      verschmolzen[verschmolzen.length - 1] = { ...v, von, bis, art, beruehrungen: anzahl, letzterIndex, staerke: Math.max(v.staerke, z.staerke) + 0.5, text }
+      const text =
+        art === 'range'
+          ? `Range-${(von + bis) / 2 > close ? 'Oberkante' : 'Unterkante'}, ${kt}`
+          : art === 'impuls'
+            ? `Ausgangspunkt einer starken Bewegung (${lage}), ${kt}`
+            : `${lage}, ${kt}, zuletzt vor ${n - 1 - letzterIndex} Kerzen`
+      verschmolzen[verschmolzen.length - 1] = { ...v, von, bis, art, reaktionen, durchlaeufe, kontakte: liste, herkunft, beruehrungen: liste.length, letzterIndex, staerke: Math.max(v.staerke, z.staerke) + 0.5, text }
     } else verschmolzen.push(z)
   }
 
-  // wichtig: die stärksten mit mindestens zwei Anläufen (oder Impuls/Range); eine Zone, in der der Kurs gerade
+  // wichtig: die stärksten mit mindestens zwei Reaktionen (oder Impuls/Range); eine Zone, in der der Kurs gerade
   // steht, ist keine Zone zum Einzeichnen – sie wird ständig „angelaufen“
   const kandidaten = verschmolzen
-    .filter((z) => (z.beruehrungen >= 2 || z.art === 'impuls' || z.art === 'range') && !(close >= z.von && close <= z.bis))
+    .filter((z) => (z.reaktionen >= 2 || z.art === 'impuls' || z.art === 'range') && !(close >= z.von && close <= z.bis))
     .sort((a, b) => b.staerke - a.staerke)
   for (const z of kandidaten.slice(0, opt.maxWichtig)) z.wichtig = true
   return verschmolzen.sort((a, b) => b.von - a.von)
