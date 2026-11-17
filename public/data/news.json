@@ -1,7 +1,51 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-17T06:23:42.673Z",
+ "lastUpdated": "2026-11-17T07:23:29.827Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/guatemala-drogen-militaer-100.html",
+   "titel": "Ausnahmezustand in Guatemala - Regierung setzt Militär gegen Drogenbanden ein",
+   "link": "https://www.tagesschau.de/ausland/amerika/guatemala-drogen-militaer-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-17T06:45:47.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Teile Guatemalas sind zunehmend im Griff von Drogenbanden. Die Regierung verhängte den Ausnahmezustand und schickte das Militär in die betroffene Region. Die USA setzten ein Millionen-Kopfgeld aus.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/kanada-und-china-unterlaufen-trumps-zollpolitik-mit-zollerleichterungen-a-3eeca7f4-6869-4bce-a9e0-58a8a9f5c309",
+   "titel": "Kanada und China unterlaufen Trumps Zollpolitik mit Zollerleichterungen",
+   "link": "https://www.spiegel.de/wirtschaft/kanada-und-china-unterlaufen-trumps-zollpolitik-mit-zollerleichterungen-a-3eeca7f4-6869-4bce-a9e0-58a8a9f5c309#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-17T06:44:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Mit Zollerleichterungen auf Produkte wie Lebensmittel und Stahl wollen China und Kanada ihre Zusammenarbeit vertiefen. Den beiden Ländern geht es auch darum, die US-Zollpolitik zu unterlaufen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-212.html",
+   "titel": "Angriffe auf die Ukraine: Zwei wichtige Brücken in Kiew getroffen",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-212.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-17T06:36:47.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Trotz US-Vermittlungen gehen die Angriffe weiter: Russland meldet einen Angriff auf die Krim-Brücke, auch in Kiew wurden zwei Brücken getroffen. In der Region Saporischschja sind die Rettungsarbeiten nach einem der folgenschwersten Angriffe",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/mobilitaet/motor/l03-powerx-xpeng-zeigt-den-kompakten-reichweitenmeister/100270439.html",
+   "titel": "L03 PowerX: Xpeng zeigt den kompakten Reichweitenmeister",
+   "link": "https://www.handelsblatt.com/mobilitaet/motor/l03-powerx-xpeng-zeigt-den-kompakten-reichweitenmeister/100270439.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-17T06:24:13.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Sein kleinstes Elektromodell bietet Xpeng demnächst auch mit einem Range Extender an. Das L03 PowerX genannte SUV-Coupé soll so auf eine Gesamtreichweite von über 1.000 Kilometern kommen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/serbien-parlament-konstituierung-100.html",
    "titel": "Serbisches Parlament konstituiert sich nach Sieg der Studentenliste",
@@ -21,11 +65,20 @@
    "zeit": "2026-11-17T06:08:18.000Z",
    "kategorie": "handel",
    "maerkte": [
-    "eurusd",
-    "halbleiter",
-    "aktien"
+    "halbleiter"
    ],
-   "text": "Die US-Justiz untersucht mögliche Verstöße des Nvidia-Partners Megaspeed gegen Exportkontrollen. Seit Bekanntwerden der Affäre hat Nvidia rund 800 Milliarden Dollar an Börsenwert eingebüßt.",
+   "text": "Die US-Justiz untersucht mögliche Verstöße des Nvidia-Partners Megaspeed gegen Exportkontrollen. Die Ermittlungen laufen demnach bereits seit 2024.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/unternehmen/donald-trumps-geschaefte-mit-der-deutschen-bank-podcast-karrierekiller-a-18d7118d-1ffe-4816-bfd1-22a46efb6f84",
+   "titel": "Donald Trumps Geschäfte mit der Deutschen Bank - Podcast Karrierekiller",
+   "link": "https://www.spiegel.de/wirtschaft/unternehmen/donald-trumps-geschaefte-mit-der-deutschen-bank-podcast-karrierekiller-a-18d7118d-1ffe-4816-bfd1-22a46efb6f84#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-17T06:01:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Lange war die Deutsche Bank die Hausbank von Donald Trump. Dann zieht er ins Weiße Haus ein und die Beziehung wird toxisch.",
    "sprache": "de"
   },
   {
@@ -158,13 +211,13 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/c6wy4xv2mxglo",
-   "titel": "California sues OpenAI over Hugging Face attack",
+   "titel": "OpenAI sued by California over Hugging Face attack",
    "link": "https://www.bbc.co.uk/news/articles/c6wy4xv2mxglo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-16T23:12:24.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Attorney General Rob Bonta alleges OpenAI misled and endangered the public",
+   "text": "Attorney General Rob Bonta alleges that the artificial intelligence misled and endangered the public.",
    "sprache": "en"
   },
   {
@@ -445,7 +498,7 @@
    "zeit": "2026-11-16T12:23:50.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Erstmals könnten EU-Staaten die Chance haben, aktiv über ein Kriegsende in der Ukraine mit zu verhandeln. Doch auch eine andere Region verlieren die EU-Außenminister nicht aus dem Blick: den Gazastreifen. Von Sabrina Fritz.",
+   "text": "Erstmals könnten EU-Staaten die Chance haben, aktiv über ein Kriegsende in der Ukraine mitzuverhandeln. Doch auch eine andere Region verlieren die EU-Außenminister nicht aus dem Blick: den Gazastreifen. Von Sabrina Fritz.",
    "sprache": "de"
   },
   {
@@ -978,73 +1031,14 @@
    "maerkte": [],
    "text": "In Berlin ist am Freitag das Auto von Nius-Chefredakteur Reichelt angezündet worden. Nun prüft die Polizei ein im Internet veröffentlichtes Bekennerschreiben. Unklar ist, ob das Schreiben authentisch ist.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/iran-krieg-revolutionsgarden-greifen-us-stuetzpunkt-in-bahrain-an/100136895.html",
-   "titel": "+++ Iran-Krieg +++: Iran: Revolutionsgarden greifen US-Stützpunkt in Bahrain an",
-   "link": "https://www.handelsblatt.com/politik/international/iran-krieg-revolutionsgarden-greifen-us-stuetzpunkt-in-bahrain-an/100136895.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-15T13:56:54.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Zwei Tanker in Straße von Hormus auf Minen gelaufen +++ Jemen: Regierungstruppen ziehen sich von strategischer Meerenge zurück +++ Bahrain wehrt iranische Luftangriffe ab +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqn4e2py48kwo",
-   "titel": "Iran targets US military base in Bahrain with drone attack",
-   "link": "https://www.bbc.co.uk/news/articles/cqn4e2py48kwo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-15T13:42:58.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "It marks the second attack on the country in three days and comes as the US and Iran remain locked in a stand-off over the Strait of Hormuz.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-estland-schliesst-ab-dezember-alle-grenzuebergaenge-zu-russland/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Estland schließt ab Dezember alle Grenzübergänge zu Russland",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-estland-schliesst-ab-dezember-alle-grenzuebergaenge-zu-russland/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-15T12:53:42.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Drei Handelsschiffe im Schwarzen Meer von Drohnen getroffen +++ Ukraine attackiert russische Industrieanlagen +++ USA: Direkter Kontakt zwischen Russland und Europa angestrebt +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-fordert-usa-zur-aufhebung-der-starshield-drosselung-auf/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Selenskyj fordert USA zur Aufhebung der Starshield-Drosselung auf",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-selenskyj-fordert-usa-zur-aufhebung-der-starshield-drosselung-auf/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-15T12:53:42.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Drei Handelsschiffe im Schwarzen Meer von Drohnen getroffen +++ Ukraine attackiert russische Industrieanlagen +++ USA: Direkter Kontakt zwischen Russland und Europa angestrebt +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/hamas-kommandeur-gazastreifen-getoetet-100.html",
-   "titel": "Israelischer Angriff im Gazastreifen: Ranghoher Hamas-Kommandeur tot",
-   "link": "https://www.tagesschau.de/ausland/asien/hamas-kommandeur-gazastreifen-getoetet-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-15T12:46:16.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die israelische Armee hat im Gazastreifen einen ranghohen Kommandeur der Hamas getötet. Samir Abu Junis soll einer der wichtigsten Köpfe bei der Planung der Attacke auf Israel am 7. Oktober 2023 gewesen sein. Die Hamas bestätigte seinen Tod",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 15,
+  "tagesschau": 17,
   "DW": 13,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 5,
+  "Handelsblatt": 6,
   "BBC World": 3,
   "NYT World": 13,
   "EIA Today in Energy": 0
