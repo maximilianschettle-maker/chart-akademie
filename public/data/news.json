@@ -1,13 +1,13 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-16T23:23:28.780Z",
+ "lastUpdated": "2026-11-17T01:23:34.882Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/2026/11/16/world/asia/trump-asia-china-xi-putin.html",
    "titel": "Trump’s Asia Trip Will Bring Him to the Table With Xi and Putin: What to Know",
    "link": "https://www.nytimes.com/2026/11/16/world/asia/trump-asia-china-xi-putin.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-16T21:42:51.000Z",
+   "zeit": "2026-11-16T21:42:52.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "President Trump will also meet with regional leaders, including Australia’s prime minister, who said “we want to see a de-escalation in the conflicts.”",
@@ -1033,7 +1033,7 @@
   }
  ],
  "quellen": {
-  "tagesschau": 14,
+  "tagesschau": 13,
   "DW": 13,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 5,
