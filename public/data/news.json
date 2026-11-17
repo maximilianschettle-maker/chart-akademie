@@ -1,7 +1,73 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-17T17:23:34.735Z",
+ "lastUpdated": "2026-11-17T18:23:28.270Z",
  "eintraege": [
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kalifornien-klagt-openai-wegen-cyberangriffen-an-201691086.html",
+   "titel": "Open AI in Kalifornien angeklagt: „Wir können nicht den Maschinen die Schuld geben“",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kalifornien-klagt-openai-wegen-cyberangriffen-an-201691086.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-17T17:53:38.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Kalifornien verklagt Open AI wegen Cybervorfällen wie der Attacke auf Hugging Face. Das Unternehmen wird als „Gefahr für die Öffentlichkeit“ beschrieben.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
+   "titel": "Trump Will Miss Most of the ASEAN Summit",
+   "link": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-17T17:51:27.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Trump arrived in Manila as the meeting was wrapping up, a sign of how U.S. policy has left the region balancing between Washington and Beijing.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/17/world/americas/trump-us-boat-strikes-lawsuit-ecuador-fishermen.html",
+   "titel": "Ecuadorean Fishermen Who Survived U.S. Boat Strike Sue Trump Administration",
+   "link": "https://www.nytimes.com/2026/11/17/world/americas/trump-us-boat-strikes-lawsuit-ecuador-fishermen.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-17T17:49:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The first lawsuit by strike survivors targets a secretive U.S. military campaign that has killed more than 240 people.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o",
+   "titel": "UK sanctions firms over Israeli West Bank settlements",
+   "link": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-17T17:41:49.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "It marks the first sanctions since the UK announced a tougher approach to Israeli actions in the territory.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo",
+   "titel": "Trump says US taking 'very seriously' any Iranian plot against Washington",
+   "link": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-17T17:37:04.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Tehran rejects any suggestion it was plotting a so-called dirty bomb attack on the US capital as \"baseless\".",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/serbien-parlament-studentische-liste-100.html",
+   "titel": "\"Zum ersten Mal nach 14 Jahren echte Vertreter des Volkes\"",
+   "link": "https://www.tagesschau.de/ausland/europa/serbien-parlament-studentische-liste-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-17T17:35:34.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach dem historischen Wahlsieg der Studentenbewegung ist das serbische Parlament erstmals zusammengetreten. Doch nach einer reibungslosen Machtübergabe durch die Partei von Ex-Präsident Vucic sieht es nicht aus. Von Silke Hahne.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-kyiv-russia-kerch-bridge-crimea.html",
    "titel": "Ukraine Attacks Kerch Bridge Linking Russia to Occupied Crimea",
@@ -32,19 +98,8 @@
    "zeit": "2026-11-17T16:52:59.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "Bei einem Koalitionsausschuss wird nach Milliarden gesucht, um die Stromsteuer senken zu können. Zuvor hatte sich Kanzler Merz weit aus dem Fenster gelehnt. Setzt er sein Versprechen durch? Von N. Kohnert.",
+   "text": "Bei einem Koalitionsausschuss wird zurzeit nach Milliarden gesucht, um die Stromsteuer senken zu können. Zuvor hatte sich Kanzler Merz weit aus dem Fenster gelehnt. Setzt er sein Versprechen durch? Von N. Kohnert.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo",
-   "titel": "Trump says US taking 'very seriously' any Iranian plot against Washington",
-   "link": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T16:42:11.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Tehran rejects any suggestion it was plotting a so-called dirty bomb attack on the US capital as \"baseless\".",
-   "sprache": "en"
   },
   {
    "id": "https://www.dw.com/de/jemen-saudi-arabiens-verb%C3%BCndete-geraten-ins-wanken/a-79971660",
@@ -69,17 +124,6 @@
    ],
    "text": "Die Bundesregierung hat ihre Wahl für den wichtigen Posten im EZB-Direktorium getroffen und die Resonanz könnte positiver kaum sein. Dabei zeichnet sich eine brisante Konstellation ab.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o",
-   "titel": "UK sanctions firms over Israeli West Bank settlements",
-   "link": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T15:59:47.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "It marks the first sanctions since the UK announced a tougher approach to Israeli actions in the territory.",
-   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/videos/cmlywvww3pzlo",
@@ -148,15 +192,15 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/17/world/americas/trump-us-boat-strikes-lawsuit-ecuador-fishermen.html",
-   "titel": "Ecuadorean Fishermen Who Survived U.S. Boat Strike Sue Trump Administration",
-   "link": "https://www.nytimes.com/2026/11/17/world/americas/trump-us-boat-strikes-lawsuit-ecuador-fishermen.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T15:14:47.000Z",
-   "kategorie": "konflikte",
+   "id": "https://www.dw.com/de/xi-trump-putin-drei-pr%C3%A4sidenten-drei-agenden/a-79971939",
+   "titel": "Xi, Trump, Putin - drei Präsidenten, drei Agenden",
+   "link": "https://www.dw.com/de/xi-trump-putin-drei-präsidenten-drei-agenden/a-79971939?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-17T15:04:00.000Z",
+   "kategorie": "handel",
    "maerkte": [],
-   "text": "The first lawsuit by strike survivors targets a secretive U.S. military campaign that has killed more than 240 people.",
-   "sprache": "en"
+   "text": "Zwei der drei Großnationen führen aktuell einen Krieg. Ob sie jetzt mit China ein Konzept für den Weltfrieden finden? Es war bisher nie leicht, dass die USA und China im Handelskonflikt einen gemeinsamen Nenner fanden.",
+   "sprache": "de"
   },
   {
    "id": "https://www.dw.com/de/trump-xi-putin-drei-pr%C3%A4sidenten-drei-agenden/a-79971939",
@@ -334,17 +378,6 @@
    "maerkte": [],
    "text": "Das ukrainische Militär hat offenbar einen Teil der Krim-Brücke zerstört. Fotos und Videos zeigen, dass einer der beiden Brückenbögen eingestürzt ist. Die Verbindung auf die Krim war stets ein Prestigeprojekt Putins.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
-   "titel": "Trump Will Miss Most of the ASEAN Summit",
-   "link": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T10:51:03.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Trump arrived in Manila as the meeting was wrapping up, a sign of how U.S. policy has left the region balancing between Washington and Beijing.",
-   "sprache": "en"
   },
   {
    "id": "https://www.dw.com/de/moskau-beruft-krisensitzung-nach-angriff-auf-krim-br%C3%BCcke-ein/a-79966896",
@@ -986,47 +1019,14 @@
    "maerkte": [],
    "text": "Erstmals könnten EU-Staaten die Chance haben, aktiv über ein Kriegsende in der Ukraine mitzuverhandeln. Doch auch eine andere Region verlieren die EU-Außenminister nicht aus dem Blick: den Gazastreifen. Von Sabrina Fritz.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/mobilitaet/elektromobilitaet/audi-a2-so-faehrt-sich-die-neuauflage-des-sparsamen-kleinwagens/100270219.html",
-   "titel": "Elektromobilität: So fährt sich die Neuauflage des Audi A2",
-   "link": "https://www.handelsblatt.com/mobilitaet/elektromobilitaet/audi-a2-so-faehrt-sich-die-neuauflage-des-sparsamen-kleinwagens/100270219.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-16T11:33:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Audi A2 war seiner Zeit voraus – und scheiterte trotzdem am Markt. Jetzt kehrt das Effizienzwunder zurück. Mit hoher Reichweite und niedrigem Verbrauch. Reicht das diesmal?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/40-satelliten-zerst%C3%B6rt-r%C3%BCckschlag-f%C3%BCr-amazons-internetpl%C3%A4ne/a-79956967",
-   "titel": "40 Satelliten zerstört: Rückschlag für Amazons Internetpläne",
-   "link": "https://www.dw.com/de/40-satelliten-zerstört-rückschlag-für-amazons-internetpläne/a-79956967?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-16T11:17:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Rückschlag im Wettlauf mit Elon Musks Starlink: Eine US-Rakete sollte Satelliten für Amazons geplanten Internetdienst ins All bringen. Doch kurz nach dem Start kam es zu einer Panne. Die Folgen könnten weitreichend sein.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqvg2xgyvnjpo",
-   "titel": "Yemeni forces retreat to defend port city from Houthis",
-   "link": "https://www.bbc.co.uk/news/articles/cqvg2xgyvnjpo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-16T11:09:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Saudi-backed forces say they are moving troops from the Bab al-Mandab Strait to protect the interim capital, Aden.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 15,
+  "tagesschau": 16,
   "DW": 10,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 5,
-  "Handelsblatt": 4,
+  "FAZ Wirtschaft": 6,
+  "Handelsblatt": 3,
   "BBC World": 8,
   "NYT World": 18,
   "EIA Today in Energy": 0
