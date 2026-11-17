@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-17T22:24:15.589Z",
+ "lastUpdated": "2026-11-17T22:58:26.307Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6x284ez38vdo",
+   "titel": "American soldier arrested by UK police on suspicion of spying taken into US military custody",
+   "link": "https://www.bbc.co.uk/news/articles/c6x284ez38vdo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-17T22:46:30.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Metropolitan Police say he has been taken into custody by the US Military over suspected national security and espionage allegations.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo",
    "titel": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
@@ -37,7 +48,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo",
-   "titel": "Russian military plane crashes killing all 19 on board",
+   "titel": "Russian military plane crashes, killing all 19 on board",
    "link": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-17T21:06:11.000Z",
@@ -46,17 +57,6 @@
     "aktien"
    ],
    "text": "Russia's defence ministry says it preliminarily believes a technical malfunction was the cause of the crash in the Kemerovo region.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6x284ez38vdo",
-   "titel": "American soldier arrested by UK police on suspicion of spying taken into US military custody",
-   "link": "https://www.bbc.co.uk/news/articles/c6x284ez38vdo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T20:44:54.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Metropolitan Police say he has been taken into custody by the US Military over suspected national security and espionage allegations.",
    "sprache": "en"
   },
   {
