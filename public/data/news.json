@@ -1,16 +1,48 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-17T11:23:42.131Z",
+ "lastUpdated": "2026-11-17T12:23:34.855Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/live/2026/11/17/world/trump-asean-summit/trumps-trade-deal-with-thailand-is-not-a-done-deal",
+   "titel": "Trump’s ‘trade deal’ with Thailand is not a done deal.",
+   "link": "https://www.nytimes.com/live/2026/11/17/world/trump-asean-summit/trumps-trade-deal-with-thailand-is-not-a-done-deal",
+   "quelle": "NYT World",
+   "zeit": "2026-11-17T12:07:45.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/limoges-nach-rathausbrand-100.html",
+   "titel": "Verwüstetes Rathaus von Limoges: Ein Schock wie der Brand von Notre-Dame",
+   "link": "https://www.tagesschau.de/ausland/europa/limoges-nach-rathausbrand-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-17T12:07:43.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Vor einem Monat legten Randalierer das Rathaus im französischen Limoges in Flammen. Die Stadt ist noch immer gezeichnet von den Unruhen. Für die Menschen in der Region war es ein Schock wie der Brand von Notre-Dame. Von Cai Rienäcker.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/selenskyj-teilzerstoerung-krim-bruecke-100.html",
    "titel": "Selenskyj bestätigt teilweise Zerstörung der Krim-Brücke",
    "link": "https://www.tagesschau.de/ausland/europa/selenskyj-teilzerstoerung-krim-bruecke-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-17T11:13:20.000Z",
+   "zeit": "2026-11-17T11:48:59.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Das ukrainische Militär hat offenbar einen Teil der Krim-Brücke zerstört. Fotos und Videos zeigen, dass einer der beiden Brückenbögen eingestürzt ist. Die Verbindung auf die Krim war stets ein Prestigeprojekt Putins.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-diese-folgen-hat-der-einsturz-der-krimbruecke-fuer-russland/100270451.html",
+   "titel": "Ukraine: Schwerer Schlag und Blamage für Putin: Diese Folgen hat der Einsturz der Krimbrücke",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-diese-folgen-hat-der-einsturz-der-krimbruecke-fuer-russland/100270451.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-17T11:35:27.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Mehrere Angriffe waren vergeblich, nun hat die Ukraine die Krimbrücke zum Einsturz gebracht. Es ist eine schwere Niederlage für das russische Militär und die politische Führung des Landes.",
    "sprache": "de"
   },
   {
@@ -29,7 +61,7 @@
    "titel": "Trump Will Miss Most of the ASEAN Summit",
    "link": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-17T10:51:02.000Z",
+   "zeit": "2026-11-17T10:51:03.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "President Trump arrived in Manila as the meeting was wrapping up, a sign of how U.S. policy has left the region balancing between Washington and Beijing.",
@@ -59,7 +91,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo",
-   "titel": "Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+   "titel": "Putin's Crimea bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
    "link": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-17T10:45:55.000Z",
@@ -286,6 +318,17 @@
    "maerkte": [],
    "text": "Sein kleinstes Elektromodell bietet Xpeng demnächst auch mit einem Range Extender an. Das L03 PowerX genannte SUV-Coupé soll so auf eine Gesamtreichweite von über 1.000 Kilometern kommen.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/ckjwjl6ywgn9o",
+   "titel": "Inside the Chinese 'AI wonderland' where Xi will host Trump",
+   "link": "https://www.bbc.co.uk/news/videos/ckjwjl6ywgn9o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-17T06:23:51.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The meeting will take place as Trump attends the Asia-Pacific Economic Co-operation (Apec) summit in the southern city of Shenzhen.",
+   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/europa/serbien-parlament-konstituierung-100.html",
@@ -743,6 +786,17 @@
    "sprache": "en"
   },
   {
+   "id": "https://www.dw.com/de/folge-des-krieges-neue-auswanderungswelle-im-iran/a-79955831",
+   "titel": "Folge des Krieges: Neue Auswanderungswelle im Iran",
+   "link": "https://www.dw.com/de/folge-des-krieges-neue-auswanderungswelle-im-iran/a-79955831?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-16T11:09:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Iran-Krieg beschleunigt den Brain Drain aus dem Iran. Immer mehr gut ausgebildete junge Menschen kehren ihrer Heimat den Rücken. Akademiker und Fachkräfte sehen im eigenen Land kaum noch eine Zukunftsperspektive.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.dw.com/de/iran-neue-auswanderungswelle-unter-akademikern/a-79955831",
    "titel": "Iran: Neue Auswanderungswelle unter Akademikern",
    "link": "https://www.dw.com/de/iran-neue-auswanderungswelle-unter-akademikern/a-79955831?maca=de-rss-de-all-1119-xml-mrss",
@@ -976,70 +1030,11 @@
    "maerkte": [],
    "text": "Die von Iran unterstützte Huthi-Miliz rückt im Jemen offenbar auf den Regierungssitz Aden vor. Gleichzeitig ziehen sich regierungstreue Truppen weiter von der für den Welthandel wichtigen Meerenge Bab al-Mandab zurück.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmwy83432q1jo",
-   "titel": "Wife of assassinated ex-Haitian leader registers for presidential election",
-   "link": "https://www.bbc.co.uk/news/articles/cmwy83432q1jo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-16T05:06:59.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "There has not been an election in Haiti since before the death of Jovenel Moise in 2021.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cmpqr9j81888o",
-   "titel": "Australian MP 'full of gratitude' upon leaving hospital after alleged car attack",
-   "link": "https://www.bbc.co.uk/news/articles/cmpqr9j81888o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-16T03:09:49.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The MP lost both of her legs after the alleged attack outside her electorate office four weeks ago.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/technik/forschung-innovation/raumfahrt-boeing-lockheed-rakete-stuerzt-ab-amazon-verliert-40-satelliten/100270060.html",
-   "titel": "Raumfahrt: Boeing/Lockheed-Rakete stürzt ab – Amazon verliert 40 Satelliten",
-   "link": "https://www.handelsblatt.com/technik/forschung-innovation/raumfahrt-boeing-lockheed-rakete-stuerzt-ab-amazon-verliert-40-satelliten/100270060.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-16T01:22:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Es ist die erste missglückte Mission des Gemeinschaftsunternehmens United Launch Alliance (ULA). Vor allem für Amazons Internetdienst Leo könnte der Fehlschlag Konsequenzen haben.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/technik/forschung-innovation/raumfahrt-absturz-von-boeing-lockheed-rakete-amazon-verliert-40-satelliten/100270060.html",
-   "titel": "Raumfahrt: Absturz von Boeing/Lockheed-Rakete – Amazon verliert 40 Satelliten",
-   "link": "https://www.handelsblatt.com/technik/forschung-innovation/raumfahrt-absturz-von-boeing-lockheed-rakete-amazon-verliert-40-satelliten/100270060.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-16T01:22:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Es ist die erste missglückte Mission des Gemeinschaftsunternehmens von Boeing und Lockheed Martin. Vor allem für Amazons Internetdienst Leo könnte der Fehlschlag Konsequenzen haben.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/40-amazon-satelliten-bei-absturz-von-vulcan-rakete-zerstoert-accg-201686018.html",
-   "titel": "Wettlauf mit Starlink: 40 Amazon-Satelliten bei Absturz von Vulcan-Rakete zerstört",
-   "link": "https://www.faz.net/aktuell/wirtschaft/40-amazon-satelliten-bei-absturz-von-vulcan-rakete-zerstoert-accg-201686018.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-16T00:57:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Zehn Minuten nach dem Abheben in Florida versagt die Vulcan-Rakete. 40 Satelliten für Amazons Internetdienst Leo werden zerstört. Der Aufbau des Starlink-Wettbewerbers verzögert sich damit abermals.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 14,
-  "DW": 10,
+  "tagesschau": 15,
+  "DW": 9,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 5,
