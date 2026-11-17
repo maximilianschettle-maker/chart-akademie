@@ -1,10 +1,43 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-17T08:23:36.555Z",
+ "lastUpdated": "2026-11-17T09:23:34.044Z",
  "eintraege": [
   {
+   "id": "https://www.bbc.co.uk/news/articles/crq5vl1l6z2po",
+   "titel": "Mozambique opposition leader faces trial over deadly 2024 election unrest",
+   "link": "https://www.bbc.co.uk/news/articles/crq5vl1l6z2po?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-17T09:20:29.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Venâncio Mondlane faces several charges over 2024 post-election protests that left hundreds of people dead.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/rente-stromsteuer-wahlrecht-knackpunkte-koalition-100.html",
+   "titel": "Koalitionsausschuss: Schwarz-Rot sucht nach Milliarden für Entlastungen",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/rente-stromsteuer-wahlrecht-knackpunkte-koalition-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-17T09:07:23.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Stromsteuersenkung, Rentenreform, Ausgleich der Kalten Progression: Die Spitzen der schwarz-roten Koalition wollen heute Abend über viele Knackpunkte entscheiden. Es geht um viel Geld, aber auch um die Glaubwürdigkeit des Kanzlers. Von M. U",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/verteidigung-deutschland-unterstuetzt-ukraine-mit-neuem-luftabwehrpaket/100270478.html",
+   "titel": "Verteidigung: Deutschland unterstützt Ukraine mit neuem Luftabwehrpaket",
+   "link": "https://www.handelsblatt.com/politik/international/verteidigung-deutschland-unterstuetzt-ukraine-mit-neuem-luftabwehrpaket/100270478.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-17T08:34:06.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russland attackiert die Ukrainer derzeit vor allem aus der Luft. Deutschland will darum mehr Munition für Patriot-Abwehrsysteme und Kampfjets liefern, kündigt Pistorius an.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/deutsche-bank-datenleak-von-millionen-dokumenten-belastet-das-institut/100270448.html",
-   "titel": "Banken: Datenleak von Millionen Dokumenten belastet Deutsche Bank – Aktie reagiert vorbörslich",
+   "titel": "Banken: Datenleak von Millionen Dokumenten belastet Deutsche Bank – Aktie reagiert deutlich",
    "link": "https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/deutsche-bank-datenleak-von-millionen-dokumenten-belastet-das-institut/100270448.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-17T08:22:15.000Z",
@@ -25,15 +58,17 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/rente-stromsteuer-wahlrecht-knackpunkte-koalition-100.html",
-   "titel": "Koalitionsausschuss: Schwarz-Rot sucht nach Milliarden für Entlastungen",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/rente-stromsteuer-wahlrecht-knackpunkte-koalition-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T07:49:35.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Stromsteuersenkung, Rentenreform, Ausgleich der Kalten Progression: Die Spitzen der schwarz-roten Koalition wollen heute Abend über viele Knackpunkte entscheiden. Es geht um viel Geld, aber auch um die Glaubwürdigkeit des Kanzlers. Von M. U",
-   "sprache": "de"
+   "id": "https://www.bbc.co.uk/news/articles/c60evw20qe47o",
+   "titel": "Japan sends up jets after alleged Russian incursion of its airspace",
+   "link": "https://www.bbc.co.uk/news/articles/c60evw20qe47o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-17T07:44:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Taiwan and South Korea also responded to Russian military aircraft detected near their airspaces.",
+   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-krim-bruecke-nach-zweitem-angriff-offenbar-teilweise-eingestuerzt/27982126.html",
@@ -996,48 +1031,15 @@
    "maerkte": [],
    "text": "Mit Bildern von einem Wolf im Schafspelz hatte der Verfassungsschutz vor Islamisten gewarnt. Bremens Innensenatorin sagt nun: Das Ziel der Kampagne war richtig, die Umsetzung aber nicht.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/15/world/middleeast/bahrain-iran-israel.html",
-   "titel": "Iran Attacks Bahrain for the Second Time in Days",
-   "link": "https://www.nytimes.com/2026/11/15/world/middleeast/bahrain-iran-israel.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-15T15:55:09.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The resumption of attacks after a two-month lull comes as peace talks between the U.S. and Iran appear to have stalled.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/gesellschaft/volkstrauertag-bundestag-104.html",
-   "titel": "Bundesweites Gedenken zum Volkstrauertag - auch im Bundestag",
-   "link": "https://www.tagesschau.de/inland/gesellschaft/volkstrauertag-bundestag-104.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-15T15:24:11.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Volkstrauertag ist kein gesetzlicher Feiertag, aber ein staatlicher Gedenktag. Im ganzen Land wird heute an Kriegsopfer erinnert. In diesem Jahr zusammen mit dem österreichischem Bundespräsidenten Van der Bellen. Er rief zu mehr Mitgefü",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo",
-   "titel": "How telecoms upgrade work sparked US flight chaos",
-   "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-15T14:57:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 15,
-  "DW": 12,
-  "Spiegel Wirtschaft": 6,
+  "DW": 11,
+  "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 6,
-  "BBC World": 2,
+  "Handelsblatt": 7,
+  "BBC World": 4,
   "NYT World": 13,
   "EIA Today in Energy": 0
  }
