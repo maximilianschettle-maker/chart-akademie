@@ -1,7 +1,62 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-17T13:23:32.207Z",
+ "lastUpdated": "2026-11-17T14:23:54.349Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-kyiv-russia-kerch-bridge-crimea.html",
+   "titel": "Ukraine Attacks Kerch Bridge Linking Russia to Occupied Crimea",
+   "link": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-kyiv-russia-kerch-bridge-crimea.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-17T13:46:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Destroying the structure, the only one connecting Russia to the occupied Crimean Peninsula, has long been a top objective for Kyiv.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/regional/berlin/razzia-sohn-ibrahim-ibrahim-kriegswaffen-100.html",
+   "titel": "Offenbar Razzia bei Sohn von Ibrahim Ibrahim wegen Kriegswaffen-Verdacht",
+   "link": "https://www.tagesschau.de/inland/regional/berlin/razzia-sohn-ibrahim-ibrahim-kriegswaffen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-17T13:41:02.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In Berlin hat die Polizei eine Wohnung durchsucht - sie vermutete einen Verstoß gegen das Kriegswaffenkontrollgesetz. Einem Medienbericht zufolge ist der Verdächtige der Sohn des mutmaßlichen Terrorunterstützers Ibrahim Ibrahim.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/immobilien-wohnen/mieten-vermieten/auszug-entbindet-mitmieter-nicht-von-wohnungsrueckgabe-accg-201298412.html",
+   "titel": "Immobilien vor Gericht: Auszug entbindet Mitmieter nicht von Rückgabe der Wohnung",
+   "link": "https://www.faz.net/aktuell/wirtschaft/immobilien-wohnen/mieten-vermieten/auszug-entbindet-mitmieter-nicht-von-wohnungsrueckgabe-accg-201298412.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-17T13:41:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Vermieter klagte auf Räumung. Da war die Frau aus der gemeinsamen Wohnung schon lange ausgezogen. Welche Pflichten hat sie aber noch?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/afd-remigration-streit-100.html",
+   "titel": "Die AfD entzweit sich am Begriff \"Remigration\"",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/afd-remigration-streit-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-17T13:39:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Lange war sich die AfD zumindest bei ihrem Kernthema einig. Doch jetzt gibt es Streit über den Migrationskurs der Partei. Prominente Politiker fordern eine Mäßigung, andere warnen genau davor. Von Julie Kurz.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/haushalt-showdown-im-streit-um-die-senkung-der-stromsteuer/100270456.html",
+   "titel": "Haushalt: Showdown im Stromsteuer-Streit – um diese Optionen zur Finanzierung ringen Union und SPD",
+   "link": "https://www.handelsblatt.com/politik/deutschland/haushalt-showdown-im-streit-um-die-senkung-der-stromsteuer/100270456.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-17T13:36:44.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Kanzler Merz verkündet eine Einigung bei der Senkung der Stromsteuer, das Finanzministerium widerspricht. Heute Abend soll der Koalitionsausschuss eine Lösung finden. Was im Gespräch ist.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/abschiebungen-koalition-streitet-ueber-dobrindts-ruanda-plan/100270572.html",
    "titel": "Abschiebungen: „Europäische Überheblichkeit ist unangebracht“ – Koalition streitet über Dobrindts Ruanda-Plan",
@@ -43,7 +98,7 @@
    "zeit": "2026-11-17T13:01:11.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Ukraine says the attack took weeks to plan, while the Kremlin vows to rebuild the strategic bridge.",
+   "text": "Ukraine says the missile and drone attack on the strategic bridge in the Russian-annexed Crimea took weeks to plan.",
    "sprache": "en"
   },
   {
@@ -56,17 +111,6 @@
    "maerkte": [],
    "text": "Der Ukraine droht angesichts massiver russischer Angriffe ein harter Winter. Die Bundesregierung will Kiew helfen - vor allem bei der Flugabwehr. Sie kauft dafür Waffen aus den USA.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-kyiv-russia-kerch-bridge-crimea.html",
-   "titel": "Ukraine Attacks Kerch Bridge Linking Russia to Occupied Crimea",
-   "link": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-kyiv-russia-kerch-bridge-crimea.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T12:53:27.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Destroying the structure, the only one connecting Russia to the occupied Crimean Peninsula, has long been a top objective for Kyiv.",
-   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/crq5vl1l6z2po",
@@ -208,7 +252,7 @@
    "titel": "What to Know About APEC, ASEAN and the Quad",
    "link": "https://www.nytimes.com/2026/11/17/world/asia/apec-asean-quad.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-17T10:33:54.000Z",
+   "zeit": "2026-11-17T10:33:55.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "President Trump’s trip to Asia is filled with acronyms. Here is a primer on what those terms mean, and some highlights from previous summits.",
@@ -984,60 +1028,16 @@
    "maerkte": [],
    "text": "Deutschland sollte nach Auffassung von BKA-Chef Münch Schwachstellen bei der Abwehr von Cyberangriffen schnell schließen. Die Attacken würden mehr, schneller und professioneller, sagte er im ARD-Morgenmagazin.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/news-kompakt-dritter-us-flugzeugtr%C3%A4ger-erreicht-nahen-osten/a-79954671",
-   "titel": "News kompakt: Dritter US-Flugzeugträger erreicht Nahen Osten",
-   "link": "https://www.dw.com/de/news-kompakt-dritter-us-flugzeugträger-erreicht-nahen-osten/a-79954671?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-16T08:00:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Entsendung des dritten US-Flugzeugträgers in den Nahen Osten war seit Wochen bekannt. Nun soll er eingetroffen sein. Bei der UN-Klimakonferenz in Antalya beginnt die entscheidende Woche. Der DW-Nachrichtenüberblick.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/usa-flugzeugtraeger-nahost-102.html",
-   "titel": "Dritter US-Flugzeugträger erreicht laut Medienberichten Nahen Osten",
-   "link": "https://www.tagesschau.de/ausland/amerika/usa-flugzeugtraeger-nahost-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-16T07:11:37.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Das US-Militär hat seine Flotte im Nahen Osten um einen dritten Flugzeugträger ergänzt. Ob die USA dauerhaft ihre Präsenz verstärken oder einen anderen Flugzeugträger ablösen, ist unklar. Die Lage bleibt angespannt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/bundeshaushalt-rechnungshof-praesident-ansgar-heveling-sieht-bei-subventionen-viel-sparpotenzial-a-288a2b18-a2fb-4f3b-a484-e638d21040ee",
-   "titel": "Haushalt: Rechnungshof-Präsident Ansgar Heveling sieht bei Subventionen viel Sparpotenzial",
-   "link": "https://www.spiegel.de/wirtschaft/bundeshaushalt-rechnungshof-praesident-ansgar-heveling-sieht-bei-subventionen-viel-sparpotenzial-a-288a2b18-a2fb-4f3b-a484-e638d21040ee#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-16T07:06:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Diskussion über die Finanzierung von Steuersenkungen belastet die Koalition. Bundesrechnungshof-Präsident Heveling sieht dagegen durchaus Möglichkeiten, die notwendigen Milliarden zu beschaffen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/technologie/rakete-amazon-satelliten-100.html",
-   "titel": "Missglückter Raketenstart: Amazon verliert 40 Satelliten",
-   "link": "https://www.tagesschau.de/wirtschaft/technologie/rakete-amazon-satelliten-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-16T06:48:12.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Techmilliardär Musks Starlink-Netzwerk dominiert, aber Amazon will ihm Konkurrenz machen. Nun muss das Unternehmen von Jeff Bezos aber einen Rückschlag hinnehmen - und der könnte langfristige Folgen haben.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 15,
+  "tagesschau": 16,
   "DW": 9,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 6,
-  "Handelsblatt": 5,
+  "Handelsblatt": 6,
   "BBC World": 6,
-  "NYT World": 18,
+  "NYT World": 17,
   "EIA Today in Energy": 0
  }
 }
