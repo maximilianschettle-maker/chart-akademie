@@ -1,19 +1,107 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-17T10:23:32.956Z",
+ "lastUpdated": "2026-11-17T11:23:42.131Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/selenskyj-teilzerstoerung-krim-bruecke-100.html",
+   "titel": "Selenskyj bestätigt teilweise Zerstörung der Krim-Brücke",
+   "link": "https://www.tagesschau.de/ausland/europa/selenskyj-teilzerstoerung-krim-bruecke-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-17T11:13:20.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Das ukrainische Militär hat offenbar einen Teil der Krim-Brücke zerstört. Fotos und Videos zeigen, dass einer der beiden Brückenbögen eingestürzt ist. Die Verbindung auf die Krim war stets ein Prestigeprojekt Putins.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/17/world/asia/china-japan-propaganda-xi-takaichi.html",
+   "titel": "Tracking China’s War of Words Against Japan",
+   "link": "https://www.nytimes.com/2026/11/17/world/asia/china-japan-propaganda-xi-takaichi.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-17T11:00:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Beijing is running a concerted campaign to paint Japan as an aggressor and resurgent military threat, according to a Times analysis.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
+   "titel": "Trump Will Miss Most of the ASEAN Summit",
+   "link": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-17T10:51:02.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Trump arrived in Manila as the meeting was wrapping up, a sign of how U.S. policy has left the region balancing between Washington and Beijing.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-war-civilians.html",
+   "titel": "These Ukrainians Aren’t in Combat. But They Deal With War Every Day.",
+   "link": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-war-civilians.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-17T10:48:38.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A doctor, a gravedigger, a therapist and a pathologist share their war experiences.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/moskau-beruft-krisensitzung-nach-angriff-auf-krim-br%C3%BCcke-ein/a-79966896",
+   "titel": "Moskau beruft Krisensitzung nach Angriff auf Krim-Brücke ein",
+   "link": "https://www.dw.com/de/moskau-beruft-krisensitzung-nach-angriff-auf-krim-brücke-ein/a-79966896?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-17T10:48:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Folgen der ukrainischen Attacke müssten bewältigt werden, heißt es kurz vor der von Vize-Regierungschef Marat Chusnullin geleiteten Sondersitzung. In Agenturberichten ist von schweren Schäden an der Brücke die Rede.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo",
+   "titel": "Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+   "link": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-17T10:45:55.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ukraine says the attack took weeks to plan, while the Kremlin vows to rebuild the strategic bridge.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/horst-dieter-esch-der-ibh-gruender-erzaehlt-seine-version-accg-201683281.html",
+   "titel": "Horst-Dieter Esch: Der gefallene Baumaschinenkönig erzählt seine Wahrheit",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/horst-dieter-esch-der-ibh-gruender-erzaehlt-seine-version-accg-201683281.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-17T10:39:59.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Es war einer der größten Wirtschaftsprozesse der alten Bundesrepublik. Jetzt erzählt Horst-Dieter Esch in „All-in“ vom tiefen Fall, dem Comeback mit einer US-Modellagentur und seinen Beziehungen zu Trump und Epstein.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-krim-bruecke-nach-zweitem-angriff-teilweise-eingestuerzt/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Russland bestätigt Beschädigungen an Krim-Brücke – Selenskyj postet Video von Angriff",
    "link": "https://www.handelsblatt.com/politik/international/ukraine-krim-bruecke-nach-zweitem-angriff-teilweise-eingestuerzt/27982126.html",
    "quelle": "Handelsblatt",
-   "zeit": "2026-11-17T10:10:00.000Z",
+   "zeit": "2026-11-17T10:39:00.000Z",
    "kategorie": "konflikte",
    "maerkte": [
     "ruestung"
    ],
    "text": "Moskau lehnt Nato-Beitritt der Ukraine kategorisch ab +++ Ukraine: Rund 700.000 Haushalte nach Angriffen ohne Strom +++ Finnland fordert direkte Gespräche mit Putin +++ Der Newsblog.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/17/world/asia/apec-asean-quad.html",
+   "titel": "What to Know About APEC, ASEAN and the Quad",
+   "link": "https://www.nytimes.com/2026/11/17/world/asia/apec-asean-quad.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-17T10:33:54.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Trump’s trip to Asia is filled with acronyms. Here is a primer on what those terms mean, and some highlights from previous summits.",
+   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-212.html",
@@ -37,17 +125,6 @@
     "oel"
    ],
    "text": "With war squeezing global oil and gas supplies, leaders at COP31 are backing a plan that would mirror China’s rapid grid expansion.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-war-civilians.html",
-   "titel": "These Ukrainians Aren’t in Combat. But They Deal With War Every Day.",
-   "link": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-war-civilians.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T10:00:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A doctor, a gravedigger, a therapist and a pathologist share their war experiences.",
    "sprache": "en"
   },
   {
@@ -290,28 +367,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo",
-   "titel": "Two major Kyiv bridges hit in Russian attack, mayor says",
-   "link": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T05:57:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The reported strikes come a day after Ukraine launched its largest recorded drone attack on Russia since the start of the war, according to Moscow.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
-   "titel": "Trump Will Miss Most of the ASEAN Summit",
-   "link": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T05:00:14.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Trump will arrive in Manila as the meeting is wrapping up, a sign of how U.S. policy has left the region balancing between Washington and Beijing.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-topix-csi-300-asiens-boersen-geben-nach-us-chip-sanktionen-und-nvidia-belasten/100270404.html",
    "titel": "Nikkei, Topix, CSI 300: Asiens Börsen geben nach – US-Chip-Sanktionen und Nvidia belasten",
    "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-topix-csi-300-asiens-boersen-geben-nach-us-chip-sanktionen-und-nvidia-belasten/100270404.html",
@@ -375,7 +430,7 @@
   },
   {
    "id": "https://www.nytimes.com/2026/11/16/world/asia/trump-asia-china-xi-putin.html",
-   "titel": "Trump’s Asia Trip Will Bring Him to the Table With Xi and Putin: What to Know",
+   "titel": "Trump to Hold Meeting with Xi and Putin During Asia Trip: What to Know",
    "link": "https://www.nytimes.com/2026/11/16/world/asia/trump-asia-china-xi-putin.html",
    "quelle": "NYT World",
    "zeit": "2026-11-16T21:42:52.000Z",
@@ -980,73 +1035,16 @@
    "maerkte": [],
    "text": "Zehn Minuten nach dem Abheben in Florida versagt die Vulcan-Rakete. 40 Satelliten für Amazons Internetdienst Leo werden zerstört. Der Aufbau des Starlink-Wettbewerbers verzögert sich damit abermals.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c8ly0yr7wv1no",
-   "titel": "Is India rethinking its short-term military recruitment scheme?",
-   "link": "https://www.bbc.co.uk/news/articles/c8ly0yr7wv1no?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-16T00:41:42.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "India has softened its recruitment scheme, giving young soldiers a longer military stint and another shot at permanent service.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c65y131w1534o",
-   "titel": "Steering failure preceded New Orleans cruise ship collision, says NTSB",
-   "link": "https://www.bbc.co.uk/news/articles/c65y131w1534o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-15T22:57:27.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Preliminary findings by National Transportation Safety Board investigators suggest the tanker suffered a \"steering casualty\" before colliding with the cruise ship on Friday.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/sport/ice-hockey/articles/cqkgm0jgv4mdo",
-   "titel": "Canada bars Russia from Junior World Championships",
-   "link": "https://www.bbc.co.uk/sport/ice-hockey/articles/cqkgm0jgv4mdo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-15T22:01:16.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Canada says it will not allow Russian athletes to compete in the Junior Ice Hockey World Championships because of the war in Ukraine.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/15/world/middleeast/jordan-church-attack-death-sentence.html",
-   "titel": "Jordan Sentences 3 to Death Over Greek Orthodox Church Attack",
-   "link": "https://www.nytimes.com/2026/11/15/world/middleeast/jordan-church-attack-death-sentence.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-15T21:33:59.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Jordanian military said that the men, who were arrested after a shooting at a Greek Orthodox church last month, had been convicted of terrorism charges.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/15/world/middleeast/saudi-houthis-yemen-red-sea.html",
-   "titel": "Saudi-Backed Forces Retreat in Yemen, Leaving Key Strait in Houthi Control",
-   "link": "https://www.nytimes.com/2026/11/15/world/middleeast/saudi-houthis-yemen-red-sea.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-15T21:26:19.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "It’s a setback for the Yemeni government and its ally Saudi Arabia, as analysts said the momentum in country’s civil war was tilting toward the Iran-backed Houthis.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 14,
   "DW": 10,
-  "Spiegel Wirtschaft": 5,
+  "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 6,
-  "BBC World": 4,
-  "NYT World": 16,
+  "Handelsblatt": 5,
+  "BBC World": 5,
+  "NYT World": 18,
   "EIA Today in Energy": 0
  }
 }
