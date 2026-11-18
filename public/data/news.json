@@ -1,7 +1,62 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T05:24:18.982Z",
+ "lastUpdated": "2026-11-18T06:24:11.597Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/koalition-beendet-verhandlungen-100.html",
+   "titel": "Mögliche Stromsteuersenkung: Verhandlung beendet - Verkündung am Morgen",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/koalition-beendet-verhandlungen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-18T06:20:31.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach acht Stunden haben die Spitzen von CDU, CSU und SPD ihre Beratungen in der Nacht beendet - haben sie sich auf eine Stromsteuersenkung geeinigt? Die Details aus dem Koalitionsausschuss sollen am Morgen bekannt gegeben werden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/bundid-cyberangriff-betraf-mindestens-10.000-buergerkonten/100270721.html",
+   "titel": "BundID: Cyberangriff betraf mindestens 10.000 Bürgerkonten",
+   "link": "https://www.handelsblatt.com/politik/deutschland/bundid-cyberangriff-betraf-mindestens-10.000-buergerkonten/100270721.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T06:13:51.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach der Hackerattacke auf das digitale Bürgerkonto des Bundes nennt die Regierung erstmals Zahlen. Der Angriff hat nun dauerhafte Folgen für Millionen Nutzer.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/apec-gipfel-in-shenzen-applaus-fuer-wladimir-putin-von-westlichen-wirtschaftsbossen-accg-201693370.html",
+   "titel": "APEC-Gipfel in Shenzhen: Westliche Wirtschaftsbosse applaudieren Putin",
+   "link": "https://www.faz.net/aktuell/wirtschaft/apec-gipfel-in-shenzen-applaus-fuer-wladimir-putin-von-westlichen-wirtschaftsbossen-accg-201693370.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-18T06:10:18.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In Shenzhen feiert Russlands Präsident sein Comeback auf der internationalen Wirtschaftsbühne. Er spricht unter anderem vor den Konzernchefs von Visa, UPS und PWC. Inhaltlich sorgt seine Rede für Stirnrunzeln.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec/a-tropical-chinese-city-is-half-empty-and-ready-for-the-summit",
+   "titel": "A tropical Chinese city is half-empty and ready for the summit.",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec/a-tropical-chinese-city-is-half-empty-and-ready-for-the-summit",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T06:08:26.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "From lush landscaping to extensive surveillance, Shenzhen has made elaborate efforts to prepare for this week’s Asia-Pacific Economic Cooperation summit.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/haushalt-showdown-im-streit-um-die-senkung-der-stromsteuer/100270456.html",
+   "titel": "Stromsteuer-Streit: Verhandlungen bis tief in die Nacht – um diese Optionen zur Finanzierung ringen Union und SPD",
+   "link": "https://www.handelsblatt.com/politik/deutschland/haushalt-showdown-im-streit-um-die-senkung-der-stromsteuer/100270456.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T05:56:48.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Kanzler Merz hatte eine Einigung bei der Senkung der Stromsteuer verkündet, das Finanzministerium widersprach. Dann verhandelte der Koalitionsausschuss bis tief in die Nacht.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/18/world/europe/liepzig-airport-drone-attack-russia-ukraine-war.html",
    "titel": "These Villagers Wonder if They’re on the Front Line of Russia’s Shadow War",
@@ -422,17 +477,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Lange war sich die AfD zumindest bei ihrem Kernthema einig. Doch jetzt gibt es Streit über den Migrationskurs der Partei. Prominente Politiker fordern eine Mäßigung, andere warnen genau davor. Von Julie Kurz.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/haushalt-showdown-im-streit-um-die-senkung-der-stromsteuer/100270456.html",
-   "titel": "Stromsteuer-Streit: Verhandlungen bis tief in die Nacht – um diese Optionen zur Finanzierung ringen Union und SPD",
-   "link": "https://www.handelsblatt.com/politik/deutschland/haushalt-showdown-im-streit-um-die-senkung-der-stromsteuer/100270456.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-17T13:36:44.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Kanzler Merz verkündet eine Einigung bei der Senkung der Stromsteuer, das Finanzministerium widerspricht. Dann verhandelt der Koalitionsausschuss bis tief in die Nacht.",
    "sprache": "de"
   },
   {
@@ -975,62 +1019,16 @@
    ],
    "text": "Eine mögliche Verschärfung der Tech-Exportkontrollen gefährdet den Handelsdeal mit Peking – und den Versuch der USA, den Einfluss chinesischer KI in Südostasien zurückzudrängen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/kultur/james-bond-robert-pattinson-100.html",
-   "titel": "Robert Pattinson wird neuer James Bond - Nachfolge von Daniel Craig",
-   "link": "https://www.tagesschau.de/kultur/james-bond-robert-pattinson-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-16T16:33:42.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Unter Experten war er als heißer Favorit gehandelt worden. Nun steht es auch offiziell fest: Robert Pattinson wird neuer 007. Der nächste James-Bond-Film wird der erste unter der Federführung von Amazon.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/service/donald-trump-koennen-die-demokraten-nach-den-us-midterms-die-zoelle-wirklich-stoppen-a-93d3e5c2-9594-424c-bf96-cb2f925e009b",
-   "titel": "Donald Trump: Können die Demokraten nach den US-Midterms die Zölle wirklich stoppen?",
-   "link": "https://www.spiegel.de/wirtschaft/service/donald-trump-koennen-die-demokraten-nach-den-us-midterms-die-zoelle-wirklich-stoppen-a-93d3e5c2-9594-424c-bf96-cb2f925e009b#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-16T16:14:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Die Demokraten übernehmen ab Januar die Mehrheit im US-Kongress und könnten Donald Trumps Zöllen den Kampf ansagen. Doch Experten sind skeptisch, ob sie dazu auch die Befugnisse haben – und ob sie überhaupt wollen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/eu-sanktionen-russland-propaganda-banken-100.html",
-   "titel": "EU sanktioniert russische Propagandisten, Hacker, Unternehmer",
-   "link": "https://www.tagesschau.de/ausland/europa/eu-sanktionen-russland-propaganda-banken-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-16T16:06:44.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Russlands reichste Unternehmerin, eine Propaganda-Fabrik, Hackergruppen, Medien-Promis und Banken: Die EU hat eine große Bandbreite von Akteuren mit weiteren Sanktionen belegt. Auch Unternehmen aus China und den Emiraten sind betroffen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/humanit%C3%A4re-mission-f%C3%BCr-kostjantyniwka-eine-falle-putins/a-79958575",
-   "titel": "\"Humanitäre Mission\" für Kostjantyniwka - eine Falle Putins?",
-   "link": "https://www.dw.com/de/humanitäre-mission-für-kostjantyniwka-eine-falle-putins/a-79958575?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-16T15:51:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russlands Präsident schlägt eine Evakuierung der ukrainischen Stadt Kostjantyniwka ähnlich wie im Fall Oleschky vor. Experten warnen: Diese könnte eher militärischen als humanitären Zwecken dienen. Was sollte Kyjiw tun?",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
-  "DW": 9,
-  "Spiegel Wirtschaft": 2,
-  "FAZ Wirtschaft": 4,
-  "Handelsblatt": 5,
+  "tagesschau": 11,
+  "DW": 8,
+  "Spiegel Wirtschaft": 0,
+  "FAZ Wirtschaft": 5,
+  "Handelsblatt": 4,
   "BBC World": 12,
-  "NYT World": 21,
+  "NYT World": 22,
   "EIA Today in Energy": 0
  }
 }
