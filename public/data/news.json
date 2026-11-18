@@ -1,17 +1,50 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T19:24:13.619Z",
+ "lastUpdated": "2026-11-18T20:24:27.936Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cw8r7510degno",
+   "titel": "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
+   "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T20:14:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Hamas condemns the incursion, which the Israeli military says is dismantling a \"terror tunnel\", as a \"flagrant\" ceasefire violation.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
    "titel": "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
    "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
    "quelle": "NYT World",
-   "zeit": "2026-11-18T19:20:23.000Z",
+   "zeit": "2026-11-18T20:13:01.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o",
+   "titel": "William and Kate meet PM Modi as they wrap up India tour",
+   "link": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T20:07:08.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The meeting in New Delhi was a late addition to the royal couple's India visit, which also included their appearance at the annual Earthshot Prize",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/apec-treffen-xi-putin-trump-themen-100.html",
+   "titel": "Xi, Trump und Putin: Drei Perspektiven, viele Differenzen",
+   "link": "https://www.tagesschau.de/ausland/asien/apec-treffen-xi-putin-trump-themen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-18T19:43:17.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Es gilt schon vorab als historisch - das erste Dreier-Treffen von Xi, Trump und Putin auf dem APEC-Gipfel in Shenzhen. Doch die Positionen der drei Präsidenten bei den Themen atomare Abrüstung, Iran oder Ukraine klaffen teils auseinander.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
@@ -24,6 +57,17 @@
     "oel"
    ],
    "text": "Russland plante blutige Provokation an Grenze zu Polen +++ Merz empfängt zum Ukraine-Gegengipfel zum Treffen Trump, Xi und Putin +++ Trump plant separates Treffen mit Putin am Donnerstag +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-und-putin-planen-bilaterales-treffen-in-china/100270890.html",
+   "titel": "Apec-Gipfel: Treffen bestätigt: Trump und Putin planen für Donnerstag bilaterales Gespäch in China",
+   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-und-putin-planen-bilaterales-treffen-in-china/100270890.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T18:47:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Putin und Trump begrüßen sich mit Handschlag +++ Xi und Putin kritisieren vor Treffen mit Trump den Westen +++ Der Apec-Gipfel in Bildern +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -57,17 +101,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "A 1945 meeting of Churchill, Stalin and Franklin Roosevelt set Europe’s course for decades. Here’s what happened.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o",
-   "titel": "William and Kate reflect on 'enduring' UK-India ties with Modi",
-   "link": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-18T17:51:47.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The meeting in New Delhi was a late addition to the royal couple's India visit, which has also included their appearance at the annual Earthshot Prize",
    "sprache": "en"
   },
   {
@@ -575,6 +608,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.nytimes.com/2026/11/18/world/asia/xi-trump-china-arrival.html",
+   "titel": "Xi Greets Trump on the Tarmac as He Lands in China for APEC Summit",
+   "link": "https://www.nytimes.com/2026/11/18/world/asia/xi-trump-china-arrival.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T11:14:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The appearance was the first time Xi Jinping had personally received a foreign dignitary at an airport during more than a decade as China’s leader.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.nytimes.com/2026/11/18/world/asia/putin-taiwan-japan-korea-vietnam-bombers.html",
    "titel": "Putin Arrives in Asia With a Show of Force: Nuclear Bombers",
    "link": "https://www.nytimes.com/2026/11/18/world/asia/putin-taiwan-japan-korea-vietnam-bombers.html",
@@ -993,62 +1037,16 @@
    "maerkte": [],
    "text": "Ukraine says the missile and drone attack on the strategic bridge in the Russian-annexed Crimea took weeks to plan.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/middleeast/nabeel-rajab-bahrain-dies.html",
-   "titel": "Nabeel Rajab, Bahraini Human Rights Activist, Dies at 62",
-   "link": "https://www.nytimes.com/2026/11/17/world/middleeast/nabeel-rajab-bahrain-dies.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T21:22:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Mr. Rajab spent his life fighting for greater political freedoms in his home country, undeterred by years in prison. He died in exile.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/pistorius-ukraine-angriffe-usa-kritik-100.html",
-   "titel": "\"Ziemlich dumm\": Pistorius reagiert auf US-Kritik an ukrainischen Angriffen",
-   "link": "https://www.tagesschau.de/ausland/europa/pistorius-ukraine-angriffe-usa-kritik-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T21:20:52.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach der ukrainischen Attacke auf die Krim-Brücke kritisierten die USA Kiews Angriffe - ohne Russlands Zerstörung ziviler Ziele in der Ukraine zu erwähnen. Verteidigungsminister Pistorius reagierte mit deutlichen Worten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo",
-   "titel": "Russian military plane crashes, killing all 19 on board",
-   "link": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T21:06:11.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Russia's defence ministry says it preliminarily believes a technical malfunction was the cause of the crash in the Kemerovo region.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqrlg377638yo",
-   "titel": "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
-   "link": "https://www.bbc.co.uk/news/articles/cqrlg377638yo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T20:30:20.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Palestinians say there was an attack by settlers in al-Duyuk al-Tahta, while the Israeli military says the settlers fired after being attacked.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
-  "DW": 13,
+  "tagesschau": 11,
+  "DW": 12,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 7,
+  "FAZ Wirtschaft": 6,
   "Handelsblatt": 7,
-  "BBC World": 13,
-  "NYT World": 23,
+  "BBC World": 14,
+  "NYT World": 24,
   "EIA Today in Energy": 1
  }
 }
