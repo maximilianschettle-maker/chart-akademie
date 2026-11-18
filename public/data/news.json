@@ -1,7 +1,119 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T13:24:15.754Z",
+ "lastUpdated": "2026-11-18T14:14:32.050Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/nach-dem-ende-der-16-j%C3%A4hrigen-regierungszeit-von-premier-viktor-orban-und-dem-wahlsieg-peter-magyars-worum-unabh%C3%A4ngige-medien-in-ungarn-jetzt-k%C3%A4mpfen/a-79979918",
+   "titel": "Nach dem Ende der 16-jährigen Regierungszeit von Premier Viktor Orban und dem Wahlsieg Peter Magyars: Worum unabhängige Medien in Ungarn jetzt kämpfen",
+   "link": "https://www.dw.com/de/nach-dem-ende-der-16-jährigen-regierungszeit-von-premier-viktor-orban-und-dem-wahlsieg-peter-magyars-worum-unabhängige-medien-in-ungarn-jetzt-kämpfen/a-79979918?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-18T14:11:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Seit dem Regierungswechsel können unabhängige Medien in Ungarn wieder frei arbeiten. Doch sie verlieren auch Aufmerksamkeit und Spenden. Ein tragfähiger neuer Medienmarkt fehlt noch. Ein Besuch in zwei Redaktionen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
+   "titel": "Live Updates: Trump, Xi and Putin Shake Hands as Leaders Gather in China",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T14:07:20.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/middleeast/iran-attacks-bahrain-kuwait-ships-hormuz.html",
+   "titel": "Iran Fires Missiles and Drones at Gulf Arab States as Peace Talks Falter",
+   "link": "https://www.nytimes.com/2026/11/18/world/middleeast/iran-attacks-bahrain-kuwait-ships-hormuz.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T14:01:31.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Kuwait and Bahrain said they were targeted on Wednesday, a sign of how the Middle East is stuck in limbo between peace and full-blown war.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/soziales/stromsteuer-runter-spritpreisdeckel-ab-2027-das-bringen-ihnen-die-neuen-entlastungen-a-7a13da31-0fe1-40ea-a60c-457fef341154",
+   "titel": "Stromsteuer runter, Spritpreisdeckel ab 2027 – das bringen Ihnen die neuen Entlastungen",
+   "link": "https://www.spiegel.de/wirtschaft/soziales/stromsteuer-runter-spritpreisdeckel-ab-2027-das-bringen-ihnen-die-neuen-entlastungen-a-7a13da31-0fe1-40ea-a60c-457fef341154#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-18T14:01:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Stromsteuer sinkt, und Sprit bekommt vorläufig eine Obergrenze. Was bedeuten die Beschlüsse der Koalition für die Verbraucherinnen und Verbraucher? Und wie gerecht sind sie?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/europe/man-charged-ireland-shannon-us-military-plane.html",
+   "titel": "Irish Man Sabotaged U.S. Military Plane With Ax and Chemicals, Prosecutors Say",
+   "link": "https://www.nytimes.com/2026/11/18/world/europe/man-charged-ireland-shannon-us-military-plane.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T14:00:39.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Daithi O’Corrain sealed himself inside a National Guard C-130 at Ireland’s Shannon Airport in April for hours, causing so much damage that the aircraft was retired from service, prosecutors said.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.eia.gov/todayinenergy/detail.php",
+   "titel": "U.S. natural gas inventories end injection season above normal levels",
+   "link": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
+   "quelle": "EIA Today in Energy",
+   "zeit": "2026-11-18T14:00:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Working natural gas in storage in the Lower 48 states ended the natural gas injection season at 3,810 billion cubic feet (Bcf), exceeding the five-year average by almost 2%, according to estimates based on data from our Weekly Natural Gas S",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/jobbefristungen-kabinett-100.html",
+   "titel": "Regierung erleichtert Befristungen von Jobs",
+   "link": "https://www.tagesschau.de/wirtschaft/jobbefristungen-kabinett-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-18T13:44:31.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Leichtere Befristungen, weniger Kündigungsschutz für Hochverdiener: Bereits im Juli hatte sich die Koalition grundsätzlich auf mehrere Änderungen im Arbeitsrecht verständigt. Nun hat das Kabinett das Gesetz auf den Weg gebracht.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/industrie/shortseller-attacke-deutz-prueft-vorwuerfe-zu-ffg-uebernahme/100270958.html",
+   "titel": "FFG-Übernahme: Deutz prüft Vorwürfe nach Shortseller-Attacke – Aktie bricht ein",
+   "link": "https://www.handelsblatt.com/unternehmen/industrie/shortseller-attacke-deutz-prueft-vorwuerfe-zu-ffg-uebernahme/100270958.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T13:35:20.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ein kritischer Bericht zur Übernahme von FFG lässt die Deutz-Aktie zweistellig nachgeben. Der Konzern untersucht die Vorwürfe. Im Mittelpunkt steht eine ungewöhnliche Eigentümerstruktur.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
+   "titel": "Carney and Trump Hold Unscheduled Trade Meeting at Asia Summit",
+   "link": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T13:33:41.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The bilateral meeting between the neighbors follows trade gains for Canada’s prime minister this week with China and the Philippines.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/apec-gipfel-shenzen-trump-xi-putin-100.html",
+   "titel": "APEC-Gipfel in Shenzen: Xi umarmt Trump - Putin schon da",
+   "link": "https://www.tagesschau.de/ausland/asien/apec-gipfel-shenzen-trump-xi-putin-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-18T13:23:23.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Staatschefs der drei Großmächte China, USA und Russland - Xi, Trump und Putin - sind zum APEC-Gipfel in Shenzen eingetroffen. Dabei stach eine besondere Geste hervor.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-notiert-im-minus-oelpreis-sinkt/100270820.html",
    "titel": "Dax aktuell: Dax notiert im Minus – Ölpreis sinkt",
@@ -18,15 +130,26 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
-   "titel": "Live Updates: In a Rare Gesture, Xi Greets Trump as He Lands in China",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T13:19:55.000Z",
+   "id": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o",
+   "titel": "Kuwait says it repelled first Iranian attack in two months after US strikes island",
+   "link": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T13:04:48.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Bahrain says it was also attacked by Iran following a US air strike on the Iranian island of Qeshm in the Gulf on Tuesday.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/stromsteuer-gegen-mitternacht-verlaesst-der-kanzler-veraergert-den-saal/100270830.html",
+   "titel": "Koalitionsgipfel: Ein Schal, eine Aktentasche und „Schweinkram“: So lief die Einigung zur Stromsteuer im Kanzleramt",
+   "link": "https://www.handelsblatt.com/politik/deutschland/stromsteuer-gegen-mitternacht-verlaesst-der-kanzler-veraergert-den-saal/100270830.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T13:03:48.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "The Chinese leader hugged President Trump on the tarmac in Shenzhen. They are expected to hold a summit on Thursday with President Vladimir V. Putin of Russia.",
-   "sprache": "en"
+   "text": "Acht Stunden ringen Union und SPD um die Entlastung. Als Klingbeil eine brisante Gegenfinanzierung ins Spiel bringt, hat Merz offenbar genug. Rekonstruktion einer langen Nacht.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/stromsteuer-gegen-mitternacht-verlaesst-der-kanzler-den-saal/100270830.html",
@@ -143,17 +266,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
-   "titel": "Carney and Trump to Hold Unscheduled Trade Meeting at Asia Summit",
-   "link": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T11:33:37.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The bilateral meeting between the neighbors follows trade gains for Canada’s prime minister this week with China and the Philippines.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-darf-sich-beim-treffen-mit-trump-und-xi-als-gewinner-sehen/100270075.html",
    "titel": "Apec-Gipfel: „Putin wird sich als dritte Weltmacht fühlen“: So nutzt Russland das Treffen mit Trump und Xi",
    "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-darf-sich-beim-treffen-mit-trump-und-xi-als-gewinner-sehen/100270075.html",
@@ -186,6 +298,17 @@
     "halbleiter"
    ],
    "text": "Russian military planes flew through the region, prompting Japan and South Korea to scramble jets in response, and drawing complaints from Taiwan.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c9n70gd320mpo",
+   "titel": "Steve Rosenberg: Historic talks with Xi and Trump are a coup for Putin",
+   "link": "https://www.bbc.co.uk/news/articles/c9n70gd320mpo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T10:53:21.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Thursday's meeting between the leaders of US, China and Russia will give Vladimir Putin a big stage - but it does not bring him closer to winning the war in Ukraine.",
    "sprache": "en"
   },
   {
@@ -906,138 +1029,16 @@
    "maerkte": [],
    "text": "Der Vermieter klagte auf Räumung. Da war die Frau aus der gemeinsamen Wohnung schon lange ausgezogen. Welche Pflichten hat sie aber noch?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/afd-remigration-streit-100.html",
-   "titel": "Die AfD entzweit sich am Begriff \"Remigration\"",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/afd-remigration-streit-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T13:39:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Lange war sich die AfD zumindest bei ihrem Kernthema einig. Doch jetzt gibt es Streit über den Migrationskurs der Partei. Prominente Politiker fordern eine Mäßigung, andere warnen genau davor. Von Julie Kurz.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/abschiebungen-koalition-streitet-ueber-dobrindts-ruanda-plan/100270572.html",
-   "titel": "Abschiebungen: „Europäische Überheblichkeit ist unangebracht“ – Koalition streitet über Dobrindts Ruanda-Plan",
-   "link": "https://www.handelsblatt.com/politik/deutschland/abschiebungen-koalition-streitet-ueber-dobrindts-ruanda-plan/100270572.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-17T13:10:50.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Union unterstützt das geplante Abschiebezentrum mehrerer EU-Staaten in Ruanda, die SPD warnt vor Menschenrechtsverletzungen. Auch über die Kosten für das Projekt ist ein Streit entbrannt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-war-civilians.html",
-   "titel": "These Ukrainians Aren’t in Combat. But They Deal With War Every Day.",
-   "link": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-war-civilians.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T13:09:11.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A doctor, a gravedigger, a therapist and a pathologist share their war experiences.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/deutschland-ukraine-hilfe-flugabwehr-100.html",
-   "titel": "Deutschland kauft neue Flugabwehrraketen für Ukraine",
-   "link": "https://www.tagesschau.de/ausland/europa/deutschland-ukraine-hilfe-flugabwehr-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T12:57:56.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Ukraine droht angesichts massiver russischer Angriffe ein harter Winter. Die Bundesregierung will Kiew helfen - vor allem bei der Flugabwehr. Sie kauft dafür Waffen aus den USA.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/niederlande-minderheitsregierung-in-den-haag-wendet-kollaps-ab-accg-201690254.html",
-   "titel": "Koalitionskrise in den Niederlanden: Minderheitsregierung in Den Haag wendet Kollaps ab",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/niederlande-minderheitsregierung-in-den-haag-wendet-kollaps-ab-accg-201690254.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-17T12:26:50.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach tagelangen Krisengesprächen beschließen die drei Partner des Mitte-links-rechts-Bündnisses: Sie machen weiter. Ein Externer soll helfen, Mehrheiten zu organisieren – und der Mittelstand Unterstützung erhalten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-mit-brunnermeier-hat-berlin-kuenftig-eine-starke-stimme-im-ezbrat/100270524.html",
-   "titel": "Kommentar: Mit Brunnermeier hat Deutschland künftig einen Fels in der Brandung im EZB‑Rat",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-mit-brunnermeier-hat-berlin-kuenftig-eine-starke-stimme-im-ezbrat/100270524.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-17T12:21:36.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Der Ökonom Markus Brunnermeier wird neuer EZB‑Chefvolkswirt. Eine bessere Wahl hätte die Bundesregierung nicht treffen können. Denn auf die EZB drohen unruhige Zeiten zuzukommen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/17/world/trump-asean-summit/trumps-trade-deal-with-thailand-is-not-a-done-deal",
-   "titel": "Trump’s ‘trade deal’ with Thailand is not a done deal.",
-   "link": "https://www.nytimes.com/live/2026/11/17/world/trump-asean-summit/trumps-trade-deal-with-thailand-is-not-a-done-deal",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T12:07:45.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/limoges-nach-rathausbrand-100.html",
-   "titel": "Verwüstetes Rathaus von Limoges: Ein Schock wie der Brand von Notre-Dame",
-   "link": "https://www.tagesschau.de/ausland/europa/limoges-nach-rathausbrand-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T12:07:43.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Vor einem Monat legten Randalierer das Rathaus im französischen Limoges in Flammen. Die Stadt ist noch immer gezeichnet von den Unruhen. Für die Menschen in der Region war es ein Schock wie der Brand von Notre-Dame. Von Cai Rienäcker.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/selenskyj-teilzerstoerung-krim-bruecke-100.html",
-   "titel": "Selenskyj bestätigt teilweise Zerstörung der Krim-Brücke",
-   "link": "https://www.tagesschau.de/ausland/europa/selenskyj-teilzerstoerung-krim-bruecke-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T11:48:59.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Das ukrainische Militär hat offenbar einen Teil der Krim-Brücke zerstört. Fotos und Videos zeigen, dass einer der beiden Brückenbögen eingestürzt ist. Die Verbindung auf die Krim war stets ein Prestigeprojekt Putins.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/moskau-beruft-krisensitzung-nach-angriff-auf-krim-br%C3%BCcke-ein/a-79966896",
-   "titel": "Moskau beruft Krisensitzung nach Angriff auf Krim-Brücke ein",
-   "link": "https://www.dw.com/de/moskau-beruft-krisensitzung-nach-angriff-auf-krim-brücke-ein/a-79966896?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-17T10:48:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Folgen der ukrainischen Attacke müssten bewältigt werden, heißt es kurz vor der von Vize-Regierungschef Marat Chusnullin geleiteten Sondersitzung. In Agenturberichten ist von schweren Schäden an der Brücke die Rede.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/horst-dieter-esch-der-ibh-gruender-erzaehlt-seine-version-accg-201683281.html",
-   "titel": "Horst-Dieter Esch: Der gefallene Baumaschinenkönig erzählt seine Wahrheit",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/horst-dieter-esch-der-ibh-gruender-erzaehlt-seine-version-accg-201683281.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-17T10:39:59.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Es war einer der größten Wirtschaftsprozesse der alten Bundesrepublik. Horst-Dieter Esch über den tiefen Fall, das Comeback und seine Beziehungen zu Trump und Epstein.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
-  "DW": 8,
-  "Spiegel Wirtschaft": 1,
+  "tagesschau": 12,
+  "DW": 9,
+  "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 11,
-  "BBC World": 13,
-  "NYT World": 21,
-  "EIA Today in Energy": 0
+  "Handelsblatt": 12,
+  "BBC World": 15,
+  "NYT World": 22,
+  "EIA Today in Energy": 1
  }
 }
