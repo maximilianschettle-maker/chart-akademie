@@ -1,7 +1,90 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T09:24:15.280Z",
+ "lastUpdated": "2026-11-18T10:24:11.704Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqev3v2ygzlvo",
+   "titel": "Democrats win Alaska Senate race two weeks after midterms counting began",
+   "link": "https://www.bbc.co.uk/news/articles/cqev3v2ygzlvo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T10:23:57.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Confirmation of Mary Peltola's victory caps of the party's rout of the Republicans in the midterms Senate election.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/was-die-niedrigere-stromsteuer-fuer-sie-im-alltag-bedeutet-accg-201694284.html",
+   "titel": "Strom, Tanken, Einkommensteuer: Was die Stromsteuer-Einigung für Sie im Alltag bedeutet",
+   "link": "https://www.faz.net/aktuell/wirtschaft/was-die-niedrigere-stromsteuer-fuer-sie-im-alltag-bedeutet-accg-201694284.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-18T10:17:29.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die schwarz-rote Koalition hat sich auf eine niedrigere Stromsteuer und einen Spritpreisdeckel geeinigt. Doch was heißt das konkret? Hier kommen Antworten auf die wichtigsten Fragen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-xi-empfaengt-trump-am-flughafen-vor-dreiergipfel-mit-putin/100270890.html",
+   "titel": "Apec-Gipfel: Xi empfängt Trump am Flughafen vor Dreiergipfel mit Putin",
+   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-xi-empfaengt-trump-am-flughafen-vor-dreiergipfel-mit-putin/100270890.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T10:15:37.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Xi und Putin kritisieren vor Treffen mit Trump den Westen +++ Wadephul zu Dreiergipfel: Bei Ukraine Europa an den Tisch +++ Apec-Gipfel mit Xi, Trump und Putin startet +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/us/politics/trump-putin-ukraine-war.html",
+   "titel": "Putin Will Continue Ukraine War Despite Plans to Meet Trump, Intelligence Says",
+   "link": "https://www.nytimes.com/2026/11/18/us/politics/trump-putin-ukraine-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T10:03:56.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Trump plans to discuss Ukraine with the leaders of Russia and China. He has halted some sanctions on Russia and announced that the United States will buy Russian diesel.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-notiert-im-plus-oelpreis-sinkt/100270820.html",
+   "titel": "Dax aktuell: Dax notiert im Plus – Ölpreis sinkt",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-notiert-im-plus-oelpreis-sinkt/100270820.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T09:59:26.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Nach den deutlichen Verlusten vom Dienstag verzeichnet der deutsche Leitindex leichte Erholung. Im Fokus stehen neue Inflationsdaten und die geopolitischen Gespräche am Rande des Apec-Gipfels.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/nvidia-affaere-wie-stark-haengt-chinas-tech-industrie-von-us-chips-ab/100268366.html",
+   "titel": "Nvidia-Affäre: „Höhere Rechenkosten, stärkerer Druck“: Was die verschärften US-Techkontrollen für Chinas KI-Konzerne bedeuten",
+   "link": "https://www.handelsblatt.com/politik/international/nvidia-affaere-wie-stark-haengt-chinas-tech-industrie-von-us-chips-ab/100268366.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T09:56:01.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "China inszeniert sich beim Apec-Gipfel in Shenzhen als Tech-Supermacht. Doch die schärferen US-Exportkontrollen werfen die Frage auf, wie stark Chinas Tech-Erfolge auf US-Chips basieren.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/angriff-aus-russland-cyberattacke-auf-eishockey-weltverband/a-79977795",
+   "titel": "Angriff aus Russland? Cyberattacke auf Eishockey-Weltverband",
+   "link": "https://www.dw.com/de/angriff-aus-russland-cyberattacke-auf-eishockey-weltverband/a-79977795?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-18T09:25:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Mitten im Streit um Russlands Rückkehr wird der Eishockey-Weltverband IIHF gezielt gehackt. Auf seiner Website erscheint russische Propaganda. WM-Gastgeber Deutschland drängt nun auf Suspendierung der russischen Teams.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/stromsteuer-und-tankdeckel-erfolg-fuer-friedrich-merz-201693627.html",
    "titel": "Einigung zum Strompreis: Ein in jeder Hinsicht teurer Kompromiss",
@@ -22,6 +105,17 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Die Spitzen von Union und SPD haben sich im Koalitionsausschuss auf eine Senkung der Stromsteuer für alle geeinigt. Die Finanzierung steht allerdings nur für 2027. Auch ein Spritpreisdeckel soll zeitlich begrenzt kommen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/bsw-wahlpruefung-100.html",
+   "titel": "Bundesverfassungsgericht: BSW scheitert mit Wahlbeschwerde",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/bsw-wahlpruefung-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-18T08:55:02.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Das BSW war bei der Bundestagswahl sehr knapp gescheitert und wollte, dass neu ausgezählt wird. Damit scheiterte die Partei nun auch endgültig vor dem Bundesverfassungsgericht. BSW-Politiker kritisierten das scharf.",
    "sprache": "de"
   },
   {
@@ -106,17 +200,6 @@
    "maerkte": [],
    "text": "Nach wochenlangem Streit haben sich Union und SPD auf eine Senkung der Stromsteuer auch für private Haushalte verständigt. Außerdem soll der Spritpreisdeckel ab Januar aktiv werden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqev3v2ygzlvo",
-   "titel": "Democrats win Alaska Senate race two weeks after midterms counting began",
-   "link": "https://www.bbc.co.uk/news/articles/cqev3v2ygzlvo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-18T07:00:25.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Confirmation of Mary Peltola's victory caps of the party's rout of the Republicans in the midterms Senate election.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/china-xi-warnt-vor-treffen-mit-trump-vor-grassierendem-protektionismus/100270796.html",
@@ -939,96 +1022,14 @@
    "maerkte": [],
    "text": "Lange war die Deutsche Bank die Hausbank von Donald Trump. Dann zieht er ins Weiße Haus ein und die Beziehung wird toxisch.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/europe/deutsche-bank-russia-oligarchs-leaked-documents.html",
-   "titel": "Leaked Records Show Deutsche Bank Courting Russian Oligarchs",
-   "link": "https://www.nytimes.com/2026/11/17/world/europe/deutsche-bank-russia-oligarchs-leaked-documents.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T06:00:12.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "“As you know we have a large Russian Oligarchs client population,” an analyst wrote as the bank braced for sanctions against wealthy clients.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/unternehmen/deutsche-bank-wie-donald-trump-fuer-das-geldhaus-zum-toxischen-kunden-wurde-a-097e000b-733c-4f40-94d2-2f46931cc20d",
-   "titel": "Deutsche Bank: Wie Donald Trump für das Geldhaus zum toxischen Kunden wurde",
-   "link": "https://www.spiegel.de/wirtschaft/unternehmen/deutsche-bank-wie-donald-trump-fuer-das-geldhaus-zum-toxischen-kunden-wurde-a-097e000b-733c-4f40-94d2-2f46931cc20d#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-17T06:00:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Deutsche Bank war lange Donald Trumps wichtigster Kreditgeber. Als Unternehmer war er ein Risiko. Als Präsident wurde er zum Problem.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/unternehmen/wie-die-deutsche-bank-vor-ukraine-invasion-ihr-russlandgeschaeft-ankurbelte-a-d24d8143-c9b3-4d8f-9993-cf45f98fdbcc",
-   "titel": "Wie die Deutsche Bank vor der Ukraine-Invasion ihr Russlandgeschäft ankurbelte",
-   "link": "https://www.spiegel.de/wirtschaft/unternehmen/wie-die-deutsche-bank-vor-ukraine-invasion-ihr-russlandgeschaeft-ankurbelte-a-d24d8143-c9b3-4d8f-9993-cf45f98fdbcc#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-17T06:00:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Von der Krimannexion bis zum Angriff auf die Ukraine: Interne Unterlagen zeigen, dass die Deutsche Bank trotz massiver Warnsignale nicht von ihrem Russlandgeschäft lassen wollte. Die Aussicht auf Millionengewinne war zu verlockend.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c30rk8x5g80qo",
-   "titel": "Ukraine accuses Russia of targeting rescue operation after 'double-tap' strike kills 72",
-   "link": "https://www.bbc.co.uk/news/articles/c30rk8x5g80qo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T05:59:01.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Efforts to recover bodies after a “double-tap” attack in southern Ukraine are being hampered by continuing Russian strikes, officials say.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-topix-csi-300-asiens-boersen-geben-nach-us-chip-sanktionen-und-nvidia-belasten/100270404.html",
-   "titel": "Nikkei, Topix, CSI 300: Asiens Börsen geben nach – US-Chip-Sanktionen und Nvidia belasten",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-topix-csi-300-asiens-boersen-geben-nach-us-chip-sanktionen-und-nvidia-belasten/100270404.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-17T04:49:45.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "halbleiter",
-    "aktien"
-   ],
-   "text": "Kurz vor der Ankunft von US-Präsident Donald Trump in Asien verschärft die US-Regierung die Auflagen für den Export fortschrittlichster KI-Chips. Nikkei und Topix geben nach.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/europa-ukraine-usa-100.html",
-   "titel": "Krieg gegen die Ukraine: Erste Vorgespräche mit Europas Unterhändlern",
-   "link": "https://www.tagesschau.de/ausland/europa/europa-ukraine-usa-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T03:28:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Europäische Unterhändler haben erste Vorgespräche mit den USA und der Ukraine über eine Beendigung des Kriegs geführt - und dabei die Vertreter instruiert, die später mit Russland verhandeln.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/nvidia-affaere-schaerfere-chip-exportkontrollen-ueberschatten-trumps-asienreise/100269704.html",
-   "titel": "Nvidia-Affäre: Schärfere Chip-Exportkontrollen überschatten Trumps Asienreise",
-   "link": "https://www.handelsblatt.com/politik/international/nvidia-affaere-schaerfere-chip-exportkontrollen-ueberschatten-trumps-asienreise/100269704.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-17T03:01:15.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Die Verschärfung der Tech-Exportkontrollen gefährdet den Handelsdeal mit Peking – und den Versuch der USA, den Einfluss chinesischer KI in Südostasien zurückzudrängen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 11,
   "DW": 7,
   "Spiegel Wirtschaft": 0,
-  "FAZ Wirtschaft": 5,
-  "Handelsblatt": 6,
+  "FAZ Wirtschaft": 6,
+  "Handelsblatt": 7,
   "BBC World": 12,
   "NYT World": 20,
   "EIA Today in Energy": 0
