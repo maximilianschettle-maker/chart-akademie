@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T02:24:15.210Z",
+ "lastUpdated": "2026-11-18T03:24:12.321Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/pflegeversicherung-ich-bezweifle-stark-dass-ein-pflege-soli-rechtmaessig-waere/100267670.html",
+   "titel": "Pflegeversicherung: Gesundheitspolitiker Streek: „Ich bezweifle stark, dass ein Pflege-Soli rechtmäßig wäre“",
+   "link": "https://www.handelsblatt.com/politik/deutschland/pflegeversicherung-ich-bezweifle-stark-dass-ein-pflege-soli-rechtmaessig-waere/100267670.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T03:13:48.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In der Koalition gibt es Streit über einen Finanzausgleich in der Pflegeversicherung. CDU-Gesundheitspolitiker Hendrik Streeck sagt im Interview, dass sich verfassungsrechtliche Probleme abzeichnen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/17/world/asia/xi-apec.html",
    "titel": "Will a Spy Scandal, Trade Friction and a Surprise Guest Ruin Xi’s Big Moment?",
@@ -18,7 +29,7 @@
    "titel": "Tracking China’s Intensifying War of Words Against Japan",
    "link": "https://www.nytimes.com/2026/11/17/world/asia/china-japan-propaganda-xi-takaichi.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-18T01:02:38.000Z",
+   "zeit": "2026-11-18T01:02:39.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Beijing is running a concerted campaign to paint Japan as an aggressor and resurgent military threat, according to a Times analysis.",
@@ -393,13 +404,13 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/haushalt-showdown-im-streit-um-die-senkung-der-stromsteuer/100270456.html",
-   "titel": "Haushalt: Showdown im Stromsteuer-Streit – um diese Optionen zur Finanzierung ringen Union und SPD",
+   "titel": "Stromsteuer-Streit: Verhandlungen bis tief in die Nacht – um diese Optionen zur Finanzierung ringen Union und SPD",
    "link": "https://www.handelsblatt.com/politik/deutschland/haushalt-showdown-im-streit-um-die-senkung-der-stromsteuer/100270456.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-17T13:36:44.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "Kanzler Merz verkündet eine Einigung bei der Senkung der Stromsteuer, das Finanzministerium widerspricht. Heute Abend soll der Koalitionsausschuss eine Lösung finden. Was im Gespräch ist.",
+   "text": "Kanzler Merz verkündet eine Einigung bei der Senkung der Stromsteuer, das Finanzministerium widerspricht. Dann verhandelt der Koalitionsausschuss bis tief in die Nacht.",
    "sprache": "de"
   },
   {
@@ -1010,25 +1021,14 @@
    "maerkte": [],
    "text": "Environmentalists have long puzzled over a wide network of water projects lacking any obvious justification. Then their areas were targeted in airstrikes.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/fifa-wahl-fff-chef-philippe-diallo-wird-europas-gegenkandidat-zu-gianni-infantino/a-79961195",
-   "titel": "FIFA-Wahl: FFF-Chef Philippe Diallo wird Europas Gegenkandidat zu Gianni Infantino",
-   "link": "https://www.dw.com/de/fifa-wahl-fff-chef-philippe-diallo-wird-europas-gegenkandidat-zu-gianni-infantino/a-79961195?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-16T15:22:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Gianni Infantino sammelt weltweit Unterstützung für eine vierte Amtszeit als FIFA-Präsident. Nun hat Europa kurz vor Fristende einen Gegenkandidaten aufgestellt. Sein Name: Philippe Diallo.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 14,
+  "tagesschau": 13,
   "DW": 9,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 3,
+  "Handelsblatt": 4,
   "BBC World": 12,
   "NYT World": 20,
   "EIA Today in Energy": 0
