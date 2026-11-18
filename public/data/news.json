@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T01:24:20.320Z",
+ "lastUpdated": "2026-11-18T02:24:15.210Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/17/world/asia/xi-apec.html",
+   "titel": "Will a Spy Scandal, Trade Friction and a Surprise Guest Ruin Xi’s Big Moment?",
+   "link": "https://www.nytimes.com/2026/11/17/world/asia/xi-apec.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T02:11:26.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The leader wants the APEC summit to showcase China’s strengths, but he faces export worries and an unpredictable Trump, who has floated meeting Kim Jong-un.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/17/world/asia/china-japan-propaganda-xi-takaichi.html",
    "titel": "Tracking China’s Intensifying War of Words Against Japan",
@@ -11,17 +22,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Beijing is running a concerted campaign to paint Japan as an aggressor and resurgent military threat, according to a Times analysis.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/asia/xi-apec.html",
-   "titel": "Will a Spy Scandal, Trade Friction and a Surprise Guest Ruin Xi’s Big Moment?",
-   "link": "https://www.nytimes.com/2026/11/17/world/asia/xi-apec.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T00:12:06.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The leader wants the APEC summit to showcase China’s strengths, but he faces export worries and an unpredictable Trump, who has floated meeting Kim Jong-un.",
    "sprache": "en"
   },
   {
@@ -1024,7 +1024,7 @@
   }
  ],
  "quellen": {
-  "tagesschau": 16,
+  "tagesschau": 14,
   "DW": 9,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 4,
