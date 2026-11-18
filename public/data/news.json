@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T18:24:17.721Z",
+ "lastUpdated": "2026-11-18T19:24:13.619Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
+   "titel": "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T19:20:23.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Ukrainische Angriffe auf Raffinerien – Russland importiert offenbar Rekordmengen an Benzin",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T18:49:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Russland plante blutige Provokation an Grenze zu Polen +++ Merz empfängt zum Ukraine-Gegengipfel zum Treffen Trump, Xi und Putin +++ Trump plant separates Treffen mit Putin am Donnerstag +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-und-putin-sprechen-zu-zweit/100270890.html",
+   "titel": "Apec-Gipfel: Trump und Putin sprechen zu zweit",
+   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-und-putin-sprechen-zu-zweit/100270890.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T18:47:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der Apec-Gipfel in Bildern +++ Kreml rechnet mit separatem Treffen zwischen Putin und Trump +++ Trump vor Treffen mit Xi und Putin in China eingetroffen+++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/gruenheide-amtsgericht-erlaesst-strafbefehl-gegen-tesla-werkleiter-201696191.html",
    "titel": "Streit mit der IG Metall: Amtsgericht erlässt Strafbefehl gegen Werkleiter von Tesla",
@@ -12,17 +47,6 @@
    "maerkte": [],
    "text": "André Thierig, der das Tesla-Werk in Grünheide leitet, wird üble Nachrede vorgeworfen. Nach einer Betriebsratssitzung im Februar war ein Streit mit der Gewerkschaft eskaliert. Gegen den Strafbefehl wurde Einspruch eingelegt.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
-   "titel": "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T17:52:34.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/18/world/asia/trump-xi-putin-summit-yalta.html",
@@ -59,12 +83,14 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/steuern-kompromiss-der-koalition-bringt-familien-bis-zu-552-euro-entlastung/100270934.html",
-   "titel": "Koalitionsausschuss: Nach der Einigung der Koalition: So stark werden die Steuerzahler 2027 entlastet",
+   "titel": "Koalitionsausschuss: Bis zu 552 Euro für Familien: So stark werden die Steuerzahler 2027 entlastet",
    "link": "https://www.handelsblatt.com/politik/deutschland/steuern-kompromiss-der-koalition-bringt-familien-bis-zu-552-euro-entlastung/100270934.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-18T17:32:42.000Z",
    "kategorie": "politik",
-   "maerkte": [],
+   "maerkte": [
+    "eurusd"
+   ],
    "text": "Union und SPD haben sich im Steuerstreit geeinigt. Berechnungen für das Handelsblatt zeigen, wie sich die Beschlüsse für Steuerzahler und Stromverbraucher auswirken.",
    "sprache": "de"
   },
@@ -171,19 +197,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Im Norden Äthiopiens nehmen die Spannungen abermals zu: Die Kämpfe verlagern sich an die Grenze zu Eritrea. Unterdessen verschärfen sich die Spannungen mit dem Sudan.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Ukrainische Angriffe auf Raffinerien – Russland importiert offenbar Rekordmengen an Benzin",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T16:20:05.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Bericht: Russland plante blutige Provokation an Grenze zu Polen +++ Von der Leyen präsentiert Plan für neuen Ukraine-Kredit +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -1025,17 +1038,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Palestinians say there was an attack by settlers in al-Duyuk al-Tahta, while the Israeli military says the settlers fired after being attacked.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-kyiv-russia-kerch-bridge-crimea.html",
-   "titel": "Ukraine Attacks Kerch Bridge Linking Russia to Occupied Crimea",
-   "link": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-kyiv-russia-kerch-bridge-crimea.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T19:41:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Destroying the structure, the only one connecting Russia to the occupied Crimean Peninsula, has long been a top objective for Kyiv.",
    "sprache": "en"
   }
  ],
