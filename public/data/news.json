@@ -1,17 +1,124 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T12:24:12.160Z",
+ "lastUpdated": "2026-11-18T13:24:15.754Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-notiert-im-minus-oelpreis-sinkt/100270820.html",
+   "titel": "Dax aktuell: Dax notiert im Minus – Ölpreis sinkt",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-notiert-im-minus-oelpreis-sinkt/100270820.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T13:21:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Nach den deutlichen Verlusten vom Dienstag schwächelt der deutsche Leitindex erneut. Im Fokus stehen neue Inflationsdaten und die geopolitischen Gespräche am Rande des Apec-Gipfels.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
    "titel": "Live Updates: In a Rare Gesture, Xi Greets Trump as He Lands in China",
    "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
    "quelle": "NYT World",
-   "zeit": "2026-11-18T12:15:08.000Z",
+   "zeit": "2026-11-18T13:19:55.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "The Chinese leader hugged President Trump on the tarmac in Shenzhen. They are expected to hold a summit on Thursday with President Vladimir V. Putin of Russia.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/stromsteuer-gegen-mitternacht-verlaesst-der-kanzler-den-saal/100270830.html",
+   "titel": "Koalitionsausschuss: Gegen Mitternacht verlässt der Kanzler genervt den Saal – wie es zur Einigung um die Stromsteuer kam",
+   "link": "https://www.handelsblatt.com/politik/deutschland/stromsteuer-gegen-mitternacht-verlaesst-der-kanzler-den-saal/100270830.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T13:03:48.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Acht Stunden ringen Union und SPD um die Stromsteuer. Als Klingbeil eine brisante Gegenfinanzierung ins Spiel bringt, hat Merz genug. Rekonstruktion einer langen Nacht.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/gesellschaft/sturm-deutschland-106.html",
+   "titel": "Sturm und Regen in Deutschland - viele Einsätze von Polizei und Feuerwehr",
+   "link": "https://www.tagesschau.de/inland/gesellschaft/sturm-deutschland-106.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-18T12:59:46.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Mancherorts sind bereits 50 Liter Regen binnen 24 Stunden runtergekommen - kombiniert mit heftigem Wind. Das bleibt zunächst auch so. Für fast ganz Deutschland gelten Unwetterwarnungen. Bislang war vor allem NRW betroffen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/cyberangriff-auf-equinor-deutschlands-wichtigster-gaslieferant-im-visier-201694711.html",
+   "titel": "Equinor: Cyberangriff auf Deutschlands wichtigsten Gaslieferanten",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/cyberangriff-auf-equinor-deutschlands-wichtigster-gaslieferant-im-visier-201694711.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-18T12:46:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Europas größter Gasversorger gerät ins Visier von Cyberkriminellen. Die hybride Kriegsführung nimmt zu: Norwegen hat schon die Sicherheitsstufe erhöht.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo",
+   "titel": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
+   "link": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T12:39:24.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The three leaders will meet together for the first time on Thursday during a closely-watched summit.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-xi-moechte-sich-auf-apec-gipfel-als-ruhepol-inszenieren/100270385.html",
+   "titel": "Kommentar: Xi möchte sich auf Apec-Gipfel als Ruhepol inszenieren – doch es kommt anders",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-xi-moechte-sich-auf-apec-gipfel-als-ruhepol-inszenieren/100270385.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T12:37:21.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Chinas Staatschef empfängt die Welt in Shenzhen, der Hightech-Stadt, die Peking gern als Zukunft zeigt. Doch die Gegenwart dürfte ihn dort einholen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/deutsche-bank-hat-christian-sewing-die-kultur-wirklich-verbessert-201693184.html",
+   "titel": "Deutsche Bank: Sewings Crashtest mit der Vergangenheit",
+   "link": "https://www.faz.net/aktuell/wirtschaft/deutsche-bank-hat-christian-sewing-die-kultur-wirklich-verbessert-201693184.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-18T12:32:24.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Die Deutsche Bank wollte den Kulturwandel. Die Enthüllungen aus den Datenlecks sind ein Rückschlag. War Vorstandschef Christian Sewing hier wirklich erfolgreich?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-trump-und-xi-treffen-vor-gruppenfoto-aufeinander/100270890.html",
+   "titel": "Apec-Gipfel: Putin, Trump und Xi treffen vor Gruppenfoto aufeinander",
+   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-trump-und-xi-treffen-vor-gruppenfoto-aufeinander/100270890.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T12:29:54.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Xi und Putin kritisieren vor Treffen mit Trump den Westen +++ Wadephul zu Dreiergipfel: Bei Ukraine Europa an den Tisch +++ Apec-Gipfel beginnt +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/ukraine-krieg-warum-die-eu-ueber-weitere-45-milliarden-euro-fuer-kyjiw-streitet-a-b8ec6864-59d7-4bb8-9cbf-1f31d61632cb",
+   "titel": "Ukraine-Krieg: Warum die EU über weitere 45 Milliarden Euro für Kyjiw streitet",
+   "link": "https://www.spiegel.de/wirtschaft/ukraine-krieg-warum-die-eu-ueber-weitere-45-milliarden-euro-fuer-kyjiw-streitet-a-b8ec6864-59d7-4bb8-9cbf-1f31d61632cb#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-18T12:29:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Die EU will der Ukraine frisches Geld leihen, damit das Land im Abwehrkampf gegen Putins Truppen bestehen kann. Doch das 45-Milliarden-Paket ist umstritten. Wo nun neuer Ärger droht.",
+   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/ausland/asien/cop31-krieg-emissionen-100.html",
@@ -921,123 +1028,16 @@
    "maerkte": [],
    "text": "Es war einer der größten Wirtschaftsprozesse der alten Bundesrepublik. Horst-Dieter Esch über den tiefen Fall, das Comeback und seine Beziehungen zu Trump und Epstein.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-krim-bruecke-nach-zweitem-angriff-teilweise-eingestuerzt/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Russland bestätigt Beschädigungen an Krim-Brücke – Selenskyj postet Video von Angriff",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-krim-bruecke-nach-zweitem-angriff-teilweise-eingestuerzt/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-17T10:39:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Moskau lehnt Nato-Beitritt der Ukraine kategorisch ab +++ Ukraine: Rund 700.000 Haushalte nach Angriffen ohne Strom +++ Finnland fordert direkte Gespräche mit Putin +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/asia/apec-asean-quad.html",
-   "titel": "What to Know About APEC, ASEAN and the Quad",
-   "link": "https://www.nytimes.com/2026/11/17/world/asia/apec-asean-quad.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T10:33:55.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Trump’s trip to Asia is filled with acronyms. Here is a primer on what those terms mean, and some highlights from previous summits.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-212.html",
-   "titel": "Angriffe auf die Ukraine: Zwei wichtige Brücken in Kiew getroffen",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-212.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T10:05:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Trotz US-Vermittlungen gehen die Angriffe weiter: Russland meldet einen Angriff auf die Krim-Brücke, auch in Kiew wurden zwei Brücken getroffen. In der Region Saporischschja sind die Rettungsarbeiten nach einem der folgenschwersten Angriffe",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/climate/cop31-turkey-electrification.html",
-   "titel": "There’s a New Push at COP31 in Turkey: Electrification",
-   "link": "https://www.nytimes.com/2026/11/17/climate/cop31-turkey-electrification.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T10:03:56.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "With war squeezing global oil and gas supplies, leaders at COP31 are backing a plan that would mirror China’s rapid grid expansion.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/japan-russland-luftraumverletzung-100.html",
-   "titel": "Protest Tokios in Moskau - Mutmaßlich russische Jets im japanischen Luftraum",
-   "link": "https://www.tagesschau.de/ausland/asien/japan-russland-luftraumverletzung-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T09:54:08.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Japan hat das Eindringen zweier mutmaßlich russischer Flugzeuge in den Luftraum des Landes gemeldet. Das Militär ließ Abfangjäger aufsteigen. Auch Südkorea und Taiwan meldeten Zwischenfälle mit russischen Jets.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/trump-asien-reise-100.html",
-   "titel": "Trump auf Gipfel-Marathon in Asien - Symbolik statt Substanz?",
-   "link": "https://www.tagesschau.de/ausland/asien/trump-asien-reise-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T09:49:58.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nur wenige Minuten pro Gipfel - viel Zeit nimmt sich US-Präsident Trump bei seinen Treffen in Asien nicht. Vor allem Verbündete müssen sich mit engen Zeitfenstern begnügen. Xi und Putin dürften mehr Aufmerksamkeit bekommen. Von S. Jackisch.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/wirtschaftsforum/lars-felds-ordnungsruf-cdu-csu-legen-mit-dem-haushalt-einen-offenbarungseid-ab/100270121.html",
-   "titel": "Lars Feld: CDU/CSU legen mit dem Bundeshaushalt einen Offenbarungseid ab",
-   "link": "https://www.handelsblatt.com/meinung/wirtschaftsforum/lars-felds-ordnungsruf-cdu-csu-legen-mit-dem-haushalt-einen-offenbarungseid-ab/100270121.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-17T09:23:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Bei Subventionen und Sozialtransfers ist kein einziger nennenswerter Schritt der Konsolidierung gelungen. Auch die Bürgerlichen geben liebgewonnene Zuwendungen nicht gern auf. Ein Gastbeitrag.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/rente-stromsteuer-wahlrecht-knackpunkte-koalition-100.html",
-   "titel": "Koalitionsausschuss: Schwarz-Rot sucht nach Milliarden für Entlastungen",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/rente-stromsteuer-wahlrecht-knackpunkte-koalition-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T09:07:23.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Stromsteuersenkung, Rentenreform, Ausgleich der Kalten Progression: Die Spitzen der schwarz-roten Koalition wollen heute Abend über viele Knackpunkte entscheiden. Es geht um viel Geld, aber auch um die Glaubwürdigkeit des Kanzlers. Von M. U",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/verteidigung-deutschland-unterstuetzt-ukraine-mit-neuem-luftabwehrpaket/100270478.html",
-   "titel": "Verteidigung: Deutschland unterstützt Ukraine mit neuem Luftabwehrpaket",
-   "link": "https://www.handelsblatt.com/politik/international/verteidigung-deutschland-unterstuetzt-ukraine-mit-neuem-luftabwehrpaket/100270478.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-17T08:34:06.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russland attackiert die Ukrainer derzeit vor allem aus der Luft. Deutschland will darum mehr Munition für Patriot-Abwehrsysteme und Kampfjets liefern, kündigt Pistorius an.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
-  "DW": 7,
-  "Spiegel Wirtschaft": 0,
+  "tagesschau": 10,
+  "DW": 8,
+  "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 11,
-  "BBC World": 12,
-  "NYT World": 22,
+  "BBC World": 13,
+  "NYT World": 21,
   "EIA Today in Energy": 0
  }
 }
