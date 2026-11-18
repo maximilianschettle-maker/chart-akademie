@@ -1,7 +1,101 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T16:24:16.868Z",
+ "lastUpdated": "2026-11-18T17:24:18.359Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/middleeast/israeli-tanks-advance-across-gaza-cease-fire-line-in-rare-incursion.html",
+   "titel": "Israeli Tanks Advance Across Gaza Cease-Fire Line in Rare Incursion",
+   "link": "https://www.nytimes.com/2026/11/18/world/middleeast/israeli-tanks-advance-across-gaza-cease-fire-line-in-rare-incursion.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T17:03:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Israeli military said it was conducting a limited raid into territory controlled by Hamas to address a threat. The militant group accused Israel of violating the truce.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo",
+   "titel": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
+   "link": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T17:00:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Watch: The BBC's Jonathan Beale joins Ukrainian forces who have taken the battle below ground and out of sight of Russian drones.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c32l507ev4v4o",
+   "titel": "'The drones don't fly here' - BBC reports from Ukraine's new front line",
+   "link": "https://www.bbc.co.uk/news/articles/c32l507ev4v4o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T17:00:04.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ukrainian forces are fighting Russian troops in an old Soviet tunnel in the Kharkiv region.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/die-koalition-der-willigen-bei-der-ukraine-unterst%C3%BCtzung-trifft-sich-in-berlin-europa-will-k%C3%BCnftig-%C3%BCber-einen-frieden-mitreden/a-79960717",
+   "titel": "Die \"Koalition der Willigen\" bei der Ukraine-Unterstützung trifft sich in Berlin. Europa will künftig über einen Frieden mitreden",
+   "link": "https://www.dw.com/de/die-koalition-der-willigen-bei-der-ukraine-unterstützung-trifft-sich-in-berlin-europa-will-künftig-über-einen-frieden-mitreden/a-79960717?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-18T16:51:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die \"Koalition der Willigen\" bei der Ukraine-Unterstützung trifft sich in Berlin. Es geht auch darum, ob Europa über die Zukunft des Landes künftig mit verhandeln kann.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-minus-oelpreis-sinkt/100270820.html",
+   "titel": "Dax aktuell: Dax schließt im Minus – Ölpreis sinkt",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-minus-oelpreis-sinkt/100270820.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T16:51:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel",
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Nach den deutlichen Verlusten vom Dienstag schwächelte der deutsche Leitindex erneut. Im Fokus standen neue Inflationsdaten und die geopolitischen Gespräche am Rande des Apec-Gipfels.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o",
+   "titel": "William and Kate reflect on 'enduring' UK-India ties with Modi",
+   "link": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T16:44:23.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The meeting in New Delhi was a late addition to the royal couple's India visit, which has also included their appearance at the annual Earthshot Prize",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
+   "titel": "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T16:41:06.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/tigray-der-schwelbrand-am-horn-von-afrika-lodert-wieder-auf/a-79979704",
+   "titel": "Tigray: Der Schwelbrand am Horn von Afrika lodert wieder auf",
+   "link": "https://www.dw.com/de/tigray-der-schwelbrand-am-horn-von-afrika-lodert-wieder-auf/a-79979704?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-18T16:38:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Im Norden Äthiopiens nehmen die Spannungen abermals zu: Die Kämpfe verlagern sich an die Grenze zu Eritrea. Unterdessen verschärfen sich die Spannungen mit dem Sudan.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Ukrainische Angriffe auf Raffinerien – Russland importiert offenbar Rekordmengen an Benzin",
@@ -16,15 +110,15 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
-   "titel": "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T16:18:17.000Z",
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/koalitionseinigung-wer-von-stromsteuer-und-spritpreisdeckel-profitiert-201694358.html",
+   "titel": "Kompromiss der Koalition: Wer von der Einigung im Kanzleramt profitiert",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/koalitionseinigung-wer-von-stromsteuer-und-spritpreisdeckel-profitiert-201694358.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-18T16:19:32.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
-   "sprache": "en"
+   "text": "Die Koalition senkt die Stromsteuer, verzichtet aber darauf, die Einkommensteuer den gestiegenen Preisen entsprechend anzupassen. Für Singles dürfte das ein schlechtes Geschäft sein.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-notiert-im-minus-oelpreis-sinkt/100270820.html",
@@ -72,17 +166,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Union und SPD haben sich auf eine Senkung der Stromsteuer geeinigt. Doch die Verhandlungen liefen Teilnehmern zufolge teils ruppig. Wie es zur Einigung kam und warum sie ein Vorgeschmack auf die kommenden Monate sein könnte. Von Tina Handel",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/tigray-der-schwelbrand-am-horn-von-afrika-lodert-wieder-auf/a-79979704",
-   "titel": "Tigray: Der Schwelbrand am Horn von Afrika lodert wieder auf",
-   "link": "https://www.dw.com/de/tigray-der-schwelbrand-am-horn-von-afrika-lodert-wieder-auf/a-79979704?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-18T15:42:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Im Norden Äthiopiens nehmen die Spannungen abermals zu: Die Kämpfe verlagern sich an die Grenze zu Eritrea. Unterdessen verschärfen sich die Spannungen mit dem Sudan.",
    "sprache": "de"
   },
   {
@@ -183,17 +266,6 @@
    "maerkte": [],
    "text": "Die Chefs der Paketdienste der französischen und britischen Post erläutern im Interview ihren Angriff auf Marktführer DHL und verraten, welche Rolle ein tschechischer Milliardär dabei spielt.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o",
-   "titel": "William and Kate meet Indian Prime Minister Modi in New Delhi",
-   "link": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-18T14:30:33.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The meeting in New Delhi was a late addition to the royal couple's India visit, which has also included their appearance at the annual Earthshot Prize",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec/putin-renews-his-warm-bond-with-xi",
@@ -369,6 +441,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.handelsblatt.com/technik/ki/ki-summit-2026-robotik-start-ups-sehen-chatgpt-moment-schon-da-nur-anders/100268696.html",
+   "titel": "KI-Summit 2026: Robotik-Start-ups sehen den ChatGPT-Moment schon gekommen – doch eine Ressource fehlt",
+   "link": "https://www.handelsblatt.com/technik/ki/ki-summit-2026-robotik-start-ups-sehen-chatgpt-moment-schon-da-nur-anders/100268696.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T12:26:04.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Micro-AGI will seine Roboter-KI in der KI-Fabrik der Telekom trainieren und sich als souveräner Partner der Industrie positionieren. Andere Robotik-Start-ups setzen ihre Modelle dort bereits ein.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.tagesschau.de/ausland/asien/cop31-krieg-emissionen-100.html",
    "titel": "\"Keine Klimagerechtigkeit ohne Entmilitarisierung\"",
    "link": "https://www.tagesschau.de/ausland/asien/cop31-krieg-emissionen-100.html",
@@ -399,6 +482,17 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Das Dreiertreffen auf dem Apec-Gipfel kommt einem Ritterschlag für Putin gleich. Doch es zeigt sich auch, wie ungleich die Abhängigkeiten zwischen Moskau und Peking inzwischen sind.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/us-senat-mary-peltola-gewinnt-f%C3%BCr-demokraten-in-alaska/a-79979852",
+   "titel": "US-Senat: Mary Peltola gewinnt für Demokraten in Alaska",
+   "link": "https://www.dw.com/de/us-senat-mary-peltola-gewinnt-für-demokraten-in-alaska/a-79979852?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-18T11:22:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Historische Überraschung bei der US-Wahl: Im traditionell republikanischen Bundesstaat Alaska gewinnt die Demokratin Mary Peltola den letzten offenen Senatssitz – als erste indigene US-Senatorin des Landes.",
    "sprache": "de"
   },
   {
@@ -943,106 +1037,16 @@
    "maerkte": [],
    "text": "It marks the first sanctions since the UK announced a tougher approach to Israeli actions in the territory.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/americas/trump-us-boat-strikes-lawsuit-ecuador-fishermen.html",
-   "titel": "Ecuadorean Fishermen Who Survived U.S. Boat Strike Sue Trump Administration",
-   "link": "https://www.nytimes.com/2026/11/17/world/americas/trump-us-boat-strikes-lawsuit-ecuador-fishermen.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T18:26:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The first lawsuit by strike survivors targets a secretive U.S. military campaign that has killed more than 240 people.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kalifornien-klagt-openai-wegen-cyberangriffen-an-201691086.html",
-   "titel": "Open AI in Kalifornien angeklagt: „Wir können nicht den Maschinen die Schuld geben“",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kalifornien-klagt-openai-wegen-cyberangriffen-an-201691086.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-17T17:53:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Kalifornien verklagt Open AI wegen Cybervorfällen wie der Attacke auf Hugging Face. Das Unternehmen wird als „Gefahr für die Öffentlichkeit“ beschrieben.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
-   "titel": "Trump Will Miss Most of the ASEAN Summit",
-   "link": "https://www.nytimes.com/2026/11/17/world/asia/trump-manila-asean-late.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T17:51:27.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Trump arrived in Manila as the meeting was wrapping up, a sign of how U.S. policy has left the region balancing between Washington and Beijing.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo",
-   "titel": "Trump says US taking 'very seriously' any Iranian plot against Washington",
-   "link": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T17:37:04.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Tehran rejects any suggestion it was plotting a so-called dirty bomb attack on the US capital as \"baseless\".",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/serbien-parlament-studentische-liste-100.html",
-   "titel": "\"Zum ersten Mal nach 14 Jahren echte Vertreter des Volkes\"",
-   "link": "https://www.tagesschau.de/ausland/europa/serbien-parlament-studentische-liste-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T17:35:34.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach dem historischen Wahlsieg der Studentenbewegung ist das serbische Parlament erstmals zusammengetreten. Doch nach einer reibungslosen Machtübergabe durch die Partei von Ex-Präsident Vucic sieht es nicht aus. Von Silke Hahne.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/koalitionsausschuss-stromsteuer-merz-100.html",
-   "titel": "Showdown im Koalitionsausschuss: Bekommt der Kanzler seinen Willen?",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/koalitionsausschuss-stromsteuer-merz-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T16:52:59.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Bei einem Koalitionsausschuss wird zurzeit nach Milliarden gesucht, um die Stromsteuer senken zu können. Zuvor hatte sich Kanzler Merz weit aus dem Fenster gelehnt. Setzt er sein Versprechen durch? Von N. Kohnert.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/jemen-saudi-arabiens-verb%C3%BCndete-geraten-ins-wanken/a-79971660",
-   "titel": "Jemen: Saudi-Arabiens Verbündete geraten ins Wanken",
-   "link": "https://www.dw.com/de/jemen-saudi-arabiens-verbündete-geraten-ins-wanken/a-79971660?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-17T16:40:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Saudi-Arabiens Militärkoalition steckt im Jemen in der Krise. Während die Huthi vorrücken, zerfällt das Bündnis ihrer Gegner. Auch die Sicherheit einer wichtigen Handelsroute steht auf dem Spiel.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/geldpolitik/ezb-lob-fuer-nominierung-von-markus-brunnermeier-zum-chefvolkswirt/100270602.html",
-   "titel": "EZB: Bundesregierung erhält Lob für Brunnermeier-Nominierung – doch ein Detail sorgt für Erstaunen",
-   "link": "https://www.handelsblatt.com/finanzen/geldpolitik/ezb-lob-fuer-nominierung-von-markus-brunnermeier-zum-chefvolkswirt/100270602.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-17T16:02:19.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Die Bundesregierung hat ihre Wahl für den wichtigen Posten im EZB-Direktorium getroffen und die Resonanz könnte positiver kaum sein. Dabei zeichnet sich eine brisante Konstellation ab.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
-  "DW": 10,
+  "tagesschau": 11,
+  "DW": 12,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 4,
-  "Handelsblatt": 9,
+  "FAZ Wirtschaft": 5,
+  "Handelsblatt": 8,
   "BBC World": 13,
-  "NYT World": 23,
+  "NYT World": 24,
   "EIA Today in Energy": 1
  }
 }
