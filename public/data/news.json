@@ -1,7 +1,106 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T17:24:18.359Z",
+ "lastUpdated": "2026-11-18T18:24:17.721Z",
  "eintraege": [
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/gruenheide-amtsgericht-erlaesst-strafbefehl-gegen-tesla-werkleiter-201696191.html",
+   "titel": "Streit mit der IG Metall: Amtsgericht erlässt Strafbefehl gegen Werkleiter von Tesla",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/gruenheide-amtsgericht-erlaesst-strafbefehl-gegen-tesla-werkleiter-201696191.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-18T17:54:10.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "André Thierig, der das Tesla-Werk in Grünheide leitet, wird üble Nachrede vorgeworfen. Nach einer Betriebsratssitzung im Februar war ein Streit mit der Gewerkschaft eskaliert. Gegen den Strafbefehl wurde Einspruch eingelegt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
+   "titel": "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T17:52:34.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/asia/trump-xi-putin-summit-yalta.html",
+   "titel": "The Shadow of Yalta Hangs Over Trump’s Summit in China",
+   "link": "https://www.nytimes.com/2026/11/18/world/asia/trump-xi-putin-summit-yalta.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T17:52:32.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "A 1945 meeting of Churchill, Stalin and Franklin Roosevelt set Europe’s course for decades. Here’s what happened.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o",
+   "titel": "William and Kate reflect on 'enduring' UK-India ties with Modi",
+   "link": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T17:51:47.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The meeting in New Delhi was a late addition to the royal couple's India visit, which has also included their appearance at the annual Earthshot Prize",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/middleeast/israel-gaza-war-ground-operation.html",
+   "titel": "Israeli Tanks Advance Across Gaza Cease-Fire Line in Rare Incursion",
+   "link": "https://www.nytimes.com/2026/11/18/world/middleeast/israel-gaza-war-ground-operation.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T17:47:13.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Israeli military said it was conducting a limited raid into territory controlled by Hamas to address a threat. The militant group accused Israel of violating the truce.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/steuern-kompromiss-der-koalition-bringt-familien-bis-zu-552-euro-entlastung/100270934.html",
+   "titel": "Koalitionsausschuss: Nach der Einigung der Koalition: So stark werden die Steuerzahler 2027 entlastet",
+   "link": "https://www.handelsblatt.com/politik/deutschland/steuern-kompromiss-der-koalition-bringt-familien-bis-zu-552-euro-entlastung/100270934.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T17:32:42.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Union und SPD haben sich im Steuerstreit geeinigt. Berechnungen für das Handelsblatt zeigen, wie sich die Beschlüsse für Steuerzahler und Stromverbraucher auswirken.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/iceye-will-avio-uebernehmen-europas-antwort-auf-spacex-201694727.html",
+   "titel": "Überraschendes Angebot: Finnen wollen mit Italienern Europas SpaceX schmieden",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/iceye-will-avio-uebernehmen-europas-antwort-auf-spacex-201694727.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-18T17:29:55.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Das Satelliten-Start-up Iceye will den italienischen Raketenhersteller Avio übernehmen. Die Regierung in Rom äußert sich bisher nicht, aber die Avio-Aktionäre sind begeistert. Die Übernahme hätte weitreichende Folgen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
+   "titel": "Carney and Trump Hold Unscheduled Trade Meeting at Asia Summit",
+   "link": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T17:23:46.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The bilateral meeting between the neighbors follows trade gains for Canada’s prime minister this week with China and the Philippines.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/17/world/americas/trump-us-boat-strikes-lawsuit-ecuador-fishermen.html",
+   "titel": "Ecuadorean Fishermen Who Survived U.S. Boat Strike Sue Trump Administration",
+   "link": "https://www.nytimes.com/2026/11/17/world/americas/trump-us-boat-strikes-lawsuit-ecuador-fishermen.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T17:21:50.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The first lawsuit by strike survivors targets a secretive U.S. military campaign that has killed more than 240 people.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/18/world/middleeast/israeli-tanks-advance-across-gaza-cease-fire-line-in-rare-incursion.html",
    "titel": "Israeli Tanks Advance Across Gaza Cease-Fire Line in Rare Incursion",
@@ -23,7 +122,7 @@
    "maerkte": [
     "gas"
    ],
-   "text": "Watch: The BBC's Jonathan Beale joins Ukrainian forces who have taken the battle below ground and out of sight of Russian drones.",
+   "text": "Watch: The BBC's Jonathan Beale joins Ukrainian forces taking the battle below ground and out of sight of Russian drones.",
    "sprache": "en"
   },
   {
@@ -62,28 +161,6 @@
    ],
    "text": "Nach den deutlichen Verlusten vom Dienstag schwächelte der deutsche Leitindex erneut. Im Fokus standen neue Inflationsdaten und die geopolitischen Gespräche am Rande des Apec-Gipfels.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o",
-   "titel": "William and Kate reflect on 'enduring' UK-India ties with Modi",
-   "link": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-18T16:44:23.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The meeting in New Delhi was a late addition to the royal couple's India visit, which has also included their appearance at the annual Earthshot Prize",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
-   "titel": "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T16:41:06.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
-   "sprache": "en"
   },
   {
    "id": "https://www.dw.com/de/tigray-der-schwelbrand-am-horn-von-afrika-lodert-wieder-auf/a-79979704",
@@ -191,17 +268,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
-   "titel": "Carney and Trump Hold Unscheduled Trade Meeting at Asia Summit",
-   "link": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T15:22:16.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The bilateral meeting between the neighbors follows trade gains for Canada’s prime minister this week with China and the Philippines.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-trump-und-xi-treffen-vor-gruppenfoto-aufeinander/100270890.html",
    "titel": "Apec-Gipfel: Putin, Trump und Xi treffen vor Gruppenfoto aufeinander",
    "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-trump-und-xi-treffen-vor-gruppenfoto-aufeinander/100270890.html",
@@ -211,17 +277,6 @@
    "maerkte": [],
    "text": "Treffen bestätigt: Trump und Putin sprechen auch zu zweit +++ Wadephul zu Dreiergipfel: Bei Ukraine Europa an den Tisch +++ Apec-Gipfel mit Xi, Trump und Putin startet +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/18/world/asia/trump-xi-putin-summit-yalta.html",
-   "titel": "The Shadow of Yalta Hangs Over Trump’s Summit in China",
-   "link": "https://www.nytimes.com/2026/11/18/world/asia/trump-xi-putin-summit-yalta.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T15:15:37.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "A 1945 meeting of Churchill, Stalin and Franklin Roosevelt set Europe’s course for decades. Here’s what happened.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/wissen/copsy-studie-2026-100.html",
@@ -345,7 +400,7 @@
    "zeit": "2026-11-18T13:23:23.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "Die Staatschefs der drei Großmächte China, USA und Russland - Xi, Trump und Putin - sind zum APEC-Gipfel in Shenzhen eingetroffen. Dabei stach eine besondere Geste hervor.",
+   "text": "Die Staatschefs der drei Großmächte China, USA und Russland - Xi, Trump und Putin - sind zum APEC-Gipfel in Shenzhen eingetroffen. Dabei stach die herzliche Begrüßung hervor.",
    "sprache": "de"
   },
   {
@@ -982,71 +1037,16 @@
    "maerkte": [],
    "text": "Destroying the structure, the only one connecting Russia to the occupied Crimean Peninsula, has long been a top objective for Kyiv.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/russland-mit-diesen-waffen-zerstoerte-die-ukraine-die-krimbruecke/100270654.html",
-   "titel": "Russland: Mit diesen Waffen zerstörte die Ukraine die Krimbrücke",
-   "link": "https://www.handelsblatt.com/politik/international/russland-mit-diesen-waffen-zerstoerte-die-ukraine-die-krimbruecke/100270654.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-17T19:21:45.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Ukraine hat eigene militärische Technologien für große Reichweiten entwickelt. Beim Angriff auf die Krimbrücke kamen ein Dutzend verschiedene Lenkwaffen zum Einsatz.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/krim-bruecke-152.html",
-   "titel": "Krieg gegen die Ukraine: Wie schwer ist die Krim-Brücke getroffen?",
-   "link": "https://www.tagesschau.de/ausland/europa/krim-bruecke-152.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-17T18:59:39.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Krim-Brücke ist nicht nur eine wichtige Verbindung zwischen Russland und der annektierten Krim. Sie ist auch ein Symbol für Russlands Herrschaft. Nun hat die Ukraine die Brücke mit einem Großangriff schwer beschädigt. Was bedeutet das?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq98xlz09ye0o",
-   "titel": "Carney looks to China as Trump tariffs squeeze Canada's car industry",
-   "link": "https://www.bbc.co.uk/news/articles/cq98xlz09ye0o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T18:58:57.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "The PM has suggested Chinese automakers could replace American ones in Canada - but some say that would not be easy.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/16/world/middleeast/iran-dams-missile-sites-environmentalists.html",
-   "titel": "Airstrikes on Iran Missile Sites May Shed Light on Justification for Dams",
-   "link": "https://www.nytimes.com/2026/11/16/world/middleeast/iran-dams-missile-sites-environmentalists.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T18:44:48.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Environmentalists have long puzzled over a wide network of water projects lacking any obvious justification. Then their areas were targeted in airstrikes.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o",
-   "titel": "UK sanctions firms over Israeli West Bank settlements",
-   "link": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T18:27:27.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "It marks the first sanctions since the UK announced a tougher approach to Israeli actions in the territory.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
-  "DW": 12,
+  "tagesschau": 10,
+  "DW": 13,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 5,
-  "Handelsblatt": 8,
+  "FAZ Wirtschaft": 7,
+  "Handelsblatt": 7,
   "BBC World": 13,
-  "NYT World": 24,
+  "NYT World": 23,
   "EIA Today in Energy": 1
  }
 }
