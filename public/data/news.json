@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T21:24:14.390Z",
+ "lastUpdated": "2026-11-18T23:24:11.005Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cw8r7510degno",
+   "titel": "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
+   "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T22:34:56.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Hamas condemns the incursion, which the Israeli military says is dismantling a \"terror tunnel\", as a \"flagrant\" ceasefire violation.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/asien/israel-gaza-bodenoffensive-104.html",
    "titel": "Israels Armee startet Einsatz in von Hamas kontrolliertem Gebiet",
@@ -22,17 +33,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The Israeli military said it was conducting a limited raid into territory controlled by Hamas to address a threat. The militant group accused Israel of violating the truce.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cw8r7510degno",
-   "titel": "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
-   "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-18T20:14:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Hamas condemns the incursion, which the Israeli military says is dismantling a \"terror tunnel\", as a \"flagrant\" ceasefire violation.",
    "sprache": "en"
   },
   {
@@ -1044,7 +1044,7 @@
   "DW": 12,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 7,
-  "Handelsblatt": 7,
+  "Handelsblatt": 6,
   "BBC World": 14,
   "NYT World": 23,
   "EIA Today in Energy": 1
