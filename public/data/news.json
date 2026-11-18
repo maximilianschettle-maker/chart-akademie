@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T20:24:27.936Z",
+ "lastUpdated": "2026-11-18T21:24:14.390Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/israel-gaza-bodenoffensive-104.html",
+   "titel": "Israels Armee startet Einsatz in von Hamas kontrolliertem Gebiet",
+   "link": "https://www.tagesschau.de/ausland/asien/israel-gaza-bodenoffensive-104.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-18T21:04:52.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Trotz der Waffenruhe hat Israels Armee nach eigenen Angaben einen neuen Einsatz im Zentrum des Gazastreifens begonnen. Ziel des Angriffs sei Infrastruktur der Terrororganisation Hamas. Die Islamisten werfen Israel Eskalation vor.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/middleeast/israel-gaza-war-ground-operation.html",
+   "titel": "Israeli Tanks Advance Across Gaza Cease-Fire Line in Rare Incursion",
+   "link": "https://www.nytimes.com/2026/11/18/world/middleeast/israel-gaza-war-ground-operation.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T20:29:31.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Israeli military said it was conducting a limited raid into territory controlled by Hamas to address a threat. The militant group accused Israel of violating the truce.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cw8r7510degno",
    "titel": "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
@@ -61,7 +83,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-und-putin-planen-bilaterales-treffen-in-china/100270890.html",
-   "titel": "Apec-Gipfel: Treffen bestätigt: Trump und Putin planen für Donnerstag bilaterales Gespäch in China",
+   "titel": "+++ Apec-Gipfel +++: Treffen bestätigt: Trump und Putin planen für Donnerstag bilaterales Gespäch in China",
    "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-und-putin-planen-bilaterales-treffen-in-china/100270890.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-18T18:47:00.000Z",
@@ -101,17 +123,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "A 1945 meeting of Churchill, Stalin and Franklin Roosevelt set Europe’s course for decades. Here’s what happened.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/18/world/middleeast/israel-gaza-war-ground-operation.html",
-   "titel": "Israeli Tanks Advance Across Gaza Cease-Fire Line in Rare Incursion",
-   "link": "https://www.nytimes.com/2026/11/18/world/middleeast/israel-gaza-war-ground-operation.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T17:47:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Israeli military said it was conducting a limited raid into territory controlled by Hamas to address a threat. The militant group accused Israel of violating the truce.",
    "sprache": "en"
   },
   {
@@ -1026,27 +1037,16 @@
    "maerkte": [],
    "text": "The Metropolitan Police say he has been taken into custody by the US Military over suspected national security and espionage allegations.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo",
-   "titel": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-   "link": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T21:24:35.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ukraine says the missile and drone attack on the strategic bridge in the Russian-annexed Crimea took weeks to plan.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 12,
   "DW": 12,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 6,
+  "FAZ Wirtschaft": 7,
   "Handelsblatt": 7,
   "BBC World": 14,
-  "NYT World": 24,
+  "NYT World": 23,
   "EIA Today in Energy": 1
  }
 }
