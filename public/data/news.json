@@ -1,16 +1,117 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T14:24:13.295Z",
+ "lastUpdated": "2026-11-18T15:24:14.600Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
    "titel": "Live Updates: Trump, Xi and Putin Shake Hands as Leaders Gather in China",
    "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
    "quelle": "NYT World",
-   "zeit": "2026-11-18T14:14:36.000Z",
+   "zeit": "2026-11-18T15:22:18.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
+   "titel": "Carney and Trump Hold Unscheduled Trade Meeting at Asia Summit",
+   "link": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T15:22:16.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The bilateral meeting between the neighbors follows trade gains for Canada’s prime minister this week with China and the Philippines.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-trump-und-xi-treffen-vor-gruppenfoto-aufeinander/100270890.html",
+   "titel": "Apec-Gipfel: Putin, Trump und Xi treffen vor Gruppenfoto aufeinander",
+   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-trump-und-xi-treffen-vor-gruppenfoto-aufeinander/100270890.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T15:15:58.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Treffen bestätigt: Trump und Putin sprechen auch zu zweit +++ Wadephul zu Dreiergipfel: Bei Ukraine Europa an den Tisch +++ Apec-Gipfel mit Xi, Trump und Putin startet +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/asia/trump-xi-putin-summit-yalta.html",
+   "titel": "The Shadow of Yalta Hangs Over Trump’s Summit in China",
+   "link": "https://www.nytimes.com/2026/11/18/world/asia/trump-xi-putin-summit-yalta.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T15:15:37.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "A 1945 meeting of Churchill, Stalin and Franklin Roosevelt set Europe’s course for decades. Here’s what happened.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/wissen/copsy-studie-2026-100.html",
+   "titel": "Studie: Diese Themen machen Kindern und Jugendlichen Angst",
+   "link": "https://www.tagesschau.de/wissen/copsy-studie-2026-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-18T15:06:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Kriege, Wirtschaftskrisen, Wohnungsnot: Viele Jugendliche sorgen sich um ihre Zukunft. Das zeigt die neue COPSY-Studie. Ob Kinder dauerhaft psychisch belastet sind, hängt aber von etwas anderem ab. Von Melanie Stinn.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Ukrainische Angriffe auf Raffinerien – Russland importiert offenbar Rekordmengen an Benzin",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T15:06:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Von der Leyen präsentiert Plan für neuen Ukraine-Kredit +++ Ukraine fordert von Xi und Trump Druck auf Putin +++ Russland: Putin sprach mit Xi über Ukraine-Krieg +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/russland-sanktionen-studie-des-iw-koeln-zeigt-wachsende-skepsis-in-deutschland-a-8e426c7b-4b4b-4574-a4bf-a3475b7920eb",
+   "titel": "Russland-Sanktionen: Studie des IW Köln zeigt wachsende Skepsis in Deutschland",
+   "link": "https://www.spiegel.de/wirtschaft/russland-sanktionen-studie-des-iw-koeln-zeigt-wachsende-skepsis-in-deutschland-a-8e426c7b-4b4b-4574-a4bf-a3475b7920eb#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-18T15:05:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Beim Treffen von US-Präsident Trump und Kremlchef Putin in China könnte auch die Zukunft der Ukraine verhandelt werden. Die Mehrheit der Deutschen ist für einen harten Kurs gegen den Aggressor. Aber der Rückhalt schwindet.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/europe/man-charged-ireland-shannon-us-military-plane.html",
+   "titel": "Irish Man Sabotaged U.S. Military Plane With Ax and Chemicals, Prosecutors Say",
+   "link": "https://www.nytimes.com/2026/11/18/world/europe/man-charged-ireland-shannon-us-military-plane.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-18T14:59:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Daithi O’Corrain sealed himself inside a National Guard C-130 at Ireland’s Shannon Airport in April for hours, causing so much damage that the aircraft was retired from service, prosecutors said.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/dienstleister/paketdienste-dpd-und-gls-legen-ihr-geschaeft-in-deutschland-zusammen/100269674.html",
+   "titel": "Paketdienste: „Eines der breitesten Angebote im deutschen Paketmarkt“: DPD und GLS schließen sich zusammen",
+   "link": "https://www.handelsblatt.com/unternehmen/dienstleister/paketdienste-dpd-und-gls-legen-ihr-geschaeft-in-deutschland-zusammen/100269674.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-18T14:37:43.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Chefs der Paketdienste der französischen und britischen Post erläutern im Interview ihren Angriff auf Marktführer DHL und verraten, welche Rolle ein tschechischer Milliardär dabei spielt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o",
+   "titel": "William and Kate meet Indian Prime Minister Modi in New Delhi",
+   "link": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T14:30:33.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The meeting in New Delhi was a late addition to the royal couple's India visit, which has also included their appearance at the annual Earthshot Prize",
    "sprache": "en"
   },
   {
@@ -60,17 +161,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/18/world/europe/man-charged-ireland-shannon-us-military-plane.html",
-   "titel": "Irish Man Sabotaged U.S. Military Plane With Ax and Chemicals, Prosecutors Say",
-   "link": "https://www.nytimes.com/2026/11/18/world/europe/man-charged-ireland-shannon-us-military-plane.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T14:00:39.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Daithi O’Corrain sealed himself inside a National Guard C-130 at Ireland’s Shannon Airport in April for hours, causing so much damage that the aircraft was retired from service, prosecutors said.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.eia.gov/todayinenergy/detail.php",
    "titel": "U.S. natural gas inventories end injection season above normal levels",
    "link": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
@@ -104,17 +194,6 @@
    "maerkte": [],
    "text": "Ein kritischer Bericht zur Übernahme von FFG lässt die Deutz-Aktie zweistellig nachgeben. Der Konzern untersucht die Vorwürfe. Im Mittelpunkt steht eine ungewöhnliche Eigentümerstruktur.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
-   "titel": "Carney and Trump Hold Unscheduled Trade Meeting at Asia Summit",
-   "link": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T13:33:41.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The bilateral meeting between the neighbors follows trade gains for Canada’s prime minister this week with China and the Philippines.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/asien/apec-gipfel-shenzen-trump-xi-putin-100.html",
@@ -230,17 +309,6 @@
     "aktien"
    ],
    "text": "Die Deutsche Bank wollte den Kulturwandel. Die Enthüllungen aus den Datenlecks sind ein Rückschlag. War Vorstandschef Christian Sewing hier wirklich erfolgreich?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-trump-und-xi-treffen-vor-gruppenfoto-aufeinander/100270890.html",
-   "titel": "Apec-Gipfel: Putin, Trump und Xi treffen vor Gruppenfoto aufeinander",
-   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-trump-und-xi-treffen-vor-gruppenfoto-aufeinander/100270890.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T12:29:54.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Xi und Putin kritisieren vor Treffen mit Trump den Westen +++ Wadephul zu Dreiergipfel: Bei Ukraine Europa an den Tisch +++ Apec-Gipfel beginnt +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -965,81 +1033,15 @@
    "maerkte": [],
    "text": "One of the key symbols of Russia's occupation of Ukraine has suffered major damage after a seven-stage attack by Kyiv.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/crq5vl1l6z2po",
-   "titel": "Mozambique opposition leader goes on trial for terrorism over deadly election protests",
-   "link": "https://www.bbc.co.uk/news/articles/crq5vl1l6z2po?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T15:19:19.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Venâncio Mondlane faces several charges over 2024 post-election protests that left hundreds of people dead.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/gipfel-der-gro%C3%9Fm%C3%A4chte-xi-trump-und-putin-an-einem-tisch/a-79971939",
-   "titel": "Gipfel der Großmächte: Xi, Trump und Putin an einem Tisch",
-   "link": "https://www.dw.com/de/gipfel-der-großmächte-xi-trump-und-putin-an-einem-tisch/a-79971939?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-17T15:04:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Während zwei Staaten Kriege führen, schwelt zwischen den USA und China der Handelskonflikt. Was vom Treffen zwischen Xi Jinping, Donald Trump und Wladimir Putin zu erwarten ist.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/xi-trump-putin-drei-pr%C3%A4sidenten-drei-agenden/a-79971939",
-   "titel": "Xi, Trump, Putin - drei Präsidenten, drei Agenden",
-   "link": "https://www.dw.com/de/xi-trump-putin-drei-präsidenten-drei-agenden/a-79971939?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-17T15:04:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Zwei der drei Großnationen führen aktuell einen Krieg. Ob sie jetzt mit China ein Konzept für den Weltfrieden finden? Es war bisher nie leicht, dass die USA und China im Handelskonflikt einen gemeinsamen Nenner fanden.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/trump-xi-putin-drei-pr%C3%A4sidenten-drei-agenden/a-79971939",
-   "titel": "Trump, Xi, Putin - drei Präsidenten, drei Agenden",
-   "link": "https://www.dw.com/de/trump-xi-putin-drei-präsidenten-drei-agenden/a-79971939?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-17T15:04:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Zwei der drei Großnationen führen aktuell einen Krieg. Ob sie jetzt mit China ein Konzept für den Weltfrieden finden? Es war bisher nie leicht, dass die USA und China im Handelskonflikt einen gemeinsamen Nenner fanden.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-diese-folgen-hat-der-einsturz-der-krimbruecke-fuer-russland/100270451.html",
-   "titel": "Ukraine: Schwerer Schlag und Blamage für Putin: Diese Folgen hat der Einsturz der Krimbrücke",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-diese-folgen-hat-der-einsturz-der-krimbruecke-fuer-russland/100270451.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-17T14:53:10.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Mehrere Angriffe waren vergeblich, nun hat die Ukraine die Krimbrücke zum Einsturz gebracht. Es ist eine schwere Niederlage für das russische Militär und die politische Führung des Landes.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/asia/putin-kim-jong-un-north-korea-china-meeting.html",
-   "titel": "Putin Is Open to Meeting With North Korea’s Leader in China, Kremlin Says",
-   "link": "https://www.nytimes.com/2026/11/17/world/asia/putin-kim-jong-un-north-korea-china-meeting.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-17T14:37:57.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Vladimir V. Putin of Russia could meet with Kim Jong-un if he travels to Shenzhen for the APEC summit this week. North Korea has not confirmed whether Mr. Kim will attend.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 12,
   "DW": 9,
-  "Spiegel Wirtschaft": 2,
+  "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 12,
-  "BBC World": 12,
+  "Handelsblatt": 11,
+  "BBC World": 13,
   "NYT World": 23,
   "EIA Today in Energy": 1
  }
