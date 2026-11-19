@@ -1,7 +1,75 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T12:24:14.025Z",
+ "lastUpdated": "2026-11-19T13:24:15.501Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
+   "titel": "Liveticker zu Gipfeln: ++ Kushner und Witkoff in Berlin angekommen ++",
+   "link": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-19T13:22:35.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "US-Unterhändler Kushner und Witkoff sind zum Ukraine-Gipfel in Berlin eingetroffen. Russland ist laut Präsident Putin zu Gesprächen mit Europäern über den Krieg gegen die Ukraine bereit.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "titel": "Live Updates: Trump Departs China After First-Ever Summit With Xi and Putin",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T13:13:18.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Trump said before the meeting that he wanted to discuss nuclear weapons and the wars in Ukraine and Iran. But the three leaders appeared to refer to the topics only in vague terms.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/business/cop31-energy-iea.html",
+   "titel": "How the War in Iran Will Remake the Global Energy Order",
+   "link": "https://www.nytimes.com/2026/11/19/business/cop31-energy-iea.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T12:51:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "The International Energy Agency, in its most comprehensive analysis of the war’s fallout, found the oil shock could accelerate adoption of alternative power sources.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/urteil-voelkermord-rohingya-myanmar-100.html",
+   "titel": "Internationaler Gerichtshof: Vorgehen Myanmars gegen Rohingya war Völkermord",
+   "link": "https://www.tagesschau.de/ausland/asien/urteil-voelkermord-rohingya-myanmar-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-19T12:42:10.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Myanmar wollte einen \"wesentlichen Teil\" der Minderheit der Rohingya vernichten: Zu dieser Einschätzung kommt der Internationale Gerichtshof. Das Land sei daher verantwortlich für einen Völkermord, urteilte das höchste UN-Gericht.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/asia/xi-putin-trump-meeting-china-russia.html",
+   "titel": "Behind Trump Meeting, Xi and Putin Share a Vision of Usurping U.S. Power",
+   "link": "https://www.nytimes.com/2026/11/19/world/asia/xi-putin-trump-meeting-china-russia.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T12:41:50.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Trump joined the Chinese and Russian leaders for a summit in Shenzhen, even though the two autocrats are trying to reverse America’s victory in the Cold War.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-gipfel-von-shenzhen-keine-substanz-dafuer-verheerende-symbolik/100270181.html",
+   "titel": "Kommentar: Der Gipfel von Shenzhen – keine Substanz, dafür verheerende Symbolik",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-gipfel-von-shenzhen-keine-substanz-dafuer-verheerende-symbolik/100270181.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T12:26:57.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Putin aufgewertet, Trump abgewertet, und Xi darf sich als großer Krisendiplomat inszenieren: Der Gipfel von Shenzhen offenbart eine Trilateralisierung und Infantilisierung von Weltpolitik.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html",
    "titel": "Saudi Sovereign Wealth Fund Tower Damaged as Houthis Attack Riyadh",
@@ -23,39 +91,6 @@
    "maerkte": [],
    "text": "After a historic result for Israel’s Arab-led parties, Prime Minister Benjamin Netanyahu said the vote was rigged, pointing to the detention of three opposition activists. His chief of staff has admitted being involved with the initial outr",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "titel": "Live Updates: Trump Departs China After First-Ever Summit With Xi and Putin",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T12:16:24.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Trump said before the meeting that he wanted to discuss nuclear weapons and the wars in Ukraine and Iran. But the three leaders appeared to refer to the topics only in vague terms.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
-   "titel": "Liveticker zum APEC-Gipfel: ++ Trump, Xi und Putin beenden Gespräch nach eineinhalb Stunden ++",
-   "link": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-19T12:10:32.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Das Dreiertreffen zwischen Chinas Präsident Xi, US-Präsident Trump und Russlands Präsident Putin am Rande des APEC-Gipfels ist beendet. Es war das erste Treffen dieser Art überhaupt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/urteil-voelkermord-rohingya-myanmar-100.html",
-   "titel": "Internationaler Gerichtshof: Vorgehen Myanmars gegen Rohingya war Völkermord",
-   "link": "https://www.tagesschau.de/ausland/asien/urteil-voelkermord-rohingya-myanmar-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-19T12:01:02.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Myanmar wollte einen \"wesentlichen Teil\" der Minderheit der Rohingya vernichten: Zu dieser Einschätzung kommt der Internationale Gerichtshof. Das Land sei daher verantwortlich für einen Völkermord, urteilte das höchste UN-Gericht.",
-   "sprache": "de"
   },
   {
    "id": "https://www.dw.com/de/trump-xi-putin-gipfel-in-china-mit-hochtrabenden-worten/a-79988021",
@@ -122,19 +157,6 @@
    "maerkte": [],
    "text": "Unicredit macht Zusagen zum Standort Deutschland. Der Bund gibt seine Forderung nach Sitzen im Aufsichtsrat auf. Betriebsratschef Uebel sieht eine Basis, „jahrelange Gefechte“ zu vermeiden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/business/cop31-energy-iea.html",
-   "titel": "How the War in Iran Will Remake the Global Energy Order",
-   "link": "https://www.nytimes.com/2026/11/19/business/cop31-energy-iea.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T10:27:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "The International Energy Agency, in its most comprehensive analysis of the war’s fallout, found the oil shock could accelerate adoption of alternative power sources.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/bsi-cyberbehoerde-sieht-verschaerfte-bedrohungslage-durch-ki-angriffe/100271163.html",
@@ -1007,38 +1029,16 @@
    "maerkte": [],
    "text": "Militär verursacht geschätzt fünfeinhalb Prozent des globalen CO2-Ausstoßes. Auch der Wiederaufbau nach einem Krieg belastet das Klima. Experten auf der Weltklimakonferenz fordern deshalb Entmilitarisierung. Von D. K. Mäurer.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cxr5g4lyp94no",
-   "titel": "Who to watch in Spain's election race",
-   "link": "https://www.bbc.co.uk/news/articles/cxr5g4lyp94no?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-18T11:44:25.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Spain votes on 29 November, with the conservatives leading most polls after eight years of Socialist-led rule.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-darf-sich-beim-treffen-mit-trump-und-xi-als-gewinner-sehen/100270075.html",
-   "titel": "Apec-Gipfel: „Putin wird sich als dritte Weltmacht fühlen“: So nutzt Russland das Treffen mit Trump und Xi",
-   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-darf-sich-beim-treffen-mit-trump-und-xi-als-gewinner-sehen/100270075.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T11:28:56.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Das Dreiertreffen auf dem Apec-Gipfel kommt einem Ritterschlag für Putin gleich. Doch es zeigt sich auch, wie ungleich die Abhängigkeiten zwischen Moskau und Peking inzwischen sind.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 16,
+  "tagesschau": 15,
   "DW": 12,
-  "Spiegel Wirtschaft": 3,
+  "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 6,
   "Handelsblatt": 4,
-  "BBC World": 9,
-  "NYT World": 20,
+  "BBC World": 8,
+  "NYT World": 21,
   "EIA Today in Energy": 1
  }
 }
