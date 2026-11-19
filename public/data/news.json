@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T21:24:06.781Z",
+ "lastUpdated": "2026-11-19T22:15:22.054Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "titel": "Trump, Xi and Putin Seek to Project Power at Their First Summit",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T22:04:42.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/climate/iea-energy-transition-electric-cars.html",
+   "titel": "Unexpected Fallout From the Iran War",
+   "link": "https://www.nytimes.com/2026/11/19/climate/iea-energy-transition-electric-cars.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T21:40:38.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Global oil shocks are accelerating the shift to electric vehicles and renewable energy, a new report finds.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go",
    "titel": "Europe ready for talks with Russia on ending war in Ukraine, leaders say",
@@ -11,17 +35,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "European allies of Ukraine say they have a \"united\" negotiating position at a summit in Berlin.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "titel": "Trump, Xi and Putin Seek to Project Power at Their First Summit",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T20:47:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
    "sprache": "en"
   },
   {
@@ -1007,17 +1020,6 @@
    ],
    "text": "Nach den deutlichen Verlusten vom Dienstag schwächelte der deutsche Leitindex erneut. Im Fokus standen neue Inflationsdaten und die geopolitischen Gespräche am Rande des Apec-Gipfels.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/tigray-der-schwelbrand-am-horn-von-afrika-lodert-wieder-auf/a-79979704",
-   "titel": "Tigray: Der Schwelbrand am Horn von Afrika lodert wieder auf",
-   "link": "https://www.dw.com/de/tigray-der-schwelbrand-am-horn-von-afrika-lodert-wieder-auf/a-79979704?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-18T16:38:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Im Norden Äthiopiens nehmen die Spannungen abermals zu: Die Kämpfe verlagern sich an die Grenze zu Eritrea. Unterdessen verschärfen sich die Spannungen mit dem Sudan.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1025,9 +1027,9 @@
   "DW": 12,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 6,
+  "Handelsblatt": 5,
   "BBC World": 9,
-  "NYT World": 23,
+  "NYT World": 24,
   "EIA Today in Energy": 1
  }
 }
