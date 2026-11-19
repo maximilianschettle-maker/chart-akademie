@@ -1,17 +1,50 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T03:24:15.150Z",
+ "lastUpdated": "2026-11-19T03:39:05.535Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
    "titel": "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
    "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
    "quelle": "NYT World",
-   "zeit": "2026-11-19T03:05:11.000Z",
+   "zeit": "2026-11-19T03:32:41.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/17/world/asia/china-japan-propaganda-xi-takaichi.html",
+   "titel": "Tracking China’s Intensifying War of Words Against Japan",
+   "link": "https://www.nytimes.com/2026/11/17/world/asia/china-japan-propaganda-xi-takaichi.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T03:32:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Beijing is running a concerted campaign to paint Japan as an aggressor and resurgent military threat, according to a Times analysis.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/americas/colombia-us-joint-military.html",
+   "titel": "Colombia Rejects Joint Plan With U.S. to Target Drug Gangs",
+   "link": "https://www.nytimes.com/2026/11/18/world/americas/colombia-us-joint-military.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T03:23:24.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Colombian president said his nation would not allow American forces to take part in anti-cartel military operations on its soil, according to U.S. officials. He later denied that his government had rejected a cooperation plan.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/tech-milliardaer-musk-habe-ukraine-geholfen-wie-kein-anderer/100271103.html",
+   "titel": "Tech-Milliardär: Musk – Habe Ukraine geholfen wie kein anderer",
+   "link": "https://www.handelsblatt.com/politik/international/tech-milliardaer-musk-habe-ukraine-geholfen-wie-kein-anderer/100271103.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T03:08:45.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Zum russischen Angriffskrieg gebe es oft die Einstellung „Ukraine gut, Russland böse“. Man müsse aber auch Mitleid mit den russischen Soldaten haben, sagt er in einem Interview.",
+   "sprache": "de"
   },
   {
    "id": "https://www.nytimes.com/2026/11/18/world/asia/japan-china-takaichi-song-sukiyaki-apec.html",
@@ -23,6 +56,17 @@
    "maerkte": [],
    "text": "A song chosen to welcome Sanae Takaichi at the APEC summit in Shenzhen grew out of protests against the American military presence in Japan.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/technik/ki/kuenstliche-intelligenz-wie-ki-tausende-moegliche-schwachstellen-in-fritzbox-routern-findet/100268502.html",
+   "titel": "Künstliche Intelligenz: Wie KI Tausende mögliche Schwachstellen in Fritzbox-Routern findet",
+   "link": "https://www.handelsblatt.com/technik/ki/kuenstliche-intelligenz-wie-ki-tausende-moegliche-schwachstellen-in-fritzbox-routern-findet/100268502.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T03:01:05.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In 25 Millionen Wohnzimmern in Europa sorgen Fritzbox-Router für Internetempfang. Mit KI macht der Hersteller die Geräte nun widerstandsfähiger gegen Angriffe – aber es gibt ein Problem.",
+   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/hegseth-usa-venezuela-100.html",
@@ -953,17 +997,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/17/world/asia/china-japan-propaganda-xi-takaichi.html",
-   "titel": "Tracking China’s Intensifying War of Words Against Japan",
-   "link": "https://www.nytimes.com/2026/11/17/world/asia/china-japan-propaganda-xi-takaichi.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T08:14:28.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Beijing is running a concerted campaign to paint Japan as an aggressor and resurgent military threat, according to a Times analysis.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec/a-tropical-chinese-city-is-half-empty-and-ready-for-the-summit",
    "titel": "A tropical Chinese city is half-empty and ready for the summit.",
    "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec/a-tropical-chinese-city-is-half-empty-and-ready-for-the-summit",
@@ -1008,39 +1041,6 @@
    "maerkte": [],
    "text": "Nach acht Stunden haben die Spitzen von CDU, CSU und SPD ihre Beratungen in der Nacht beendet - haben sie sich auf eine Stromsteuersenkung geeinigt? Die Details aus dem Koalitionsausschuss sollen am Morgen bekannt gegeben werden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/bundid-cyberangriff-betraf-mindestens-10.000-buergerkonten/100270721.html",
-   "titel": "BundID: Cyberangriff betraf mindestens 10.000 Bürgerkonten",
-   "link": "https://www.handelsblatt.com/politik/deutschland/bundid-cyberangriff-betraf-mindestens-10.000-buergerkonten/100270721.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T06:13:51.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach der Hackerattacke auf das digitale Bürgerkonto des Bundes nennt die Regierung erstmals Zahlen. Der Angriff hat nun dauerhafte Folgen für Millionen Nutzer.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/apec-gipfel-in-shenzen-applaus-fuer-wladimir-putin-von-westlichen-wirtschaftsbossen-accg-201693370.html",
-   "titel": "APEC-Gipfel in Shenzhen: Langer Applaus für Putin",
-   "link": "https://www.faz.net/aktuell/wirtschaft/apec-gipfel-in-shenzen-applaus-fuer-wladimir-putin-von-westlichen-wirtschaftsbossen-accg-201693370.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-18T06:10:18.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In Shenzhen feiert Russlands Präsident sein Comeback auf der internationalen Wirtschaftsbühne. Er spricht unter anderem vor den Konzernchefs von Visa, UPS und PWC. Inhaltlich sorgt seine Rede für Stirnrunzeln.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/haushalt-showdown-im-streit-um-die-senkung-der-stromsteuer/100270456.html",
-   "titel": "Stromsteuer-Streit: Verhandlungen bis tief in die Nacht – um diese Optionen zur Finanzierung ringen Union und SPD",
-   "link": "https://www.handelsblatt.com/politik/deutschland/haushalt-showdown-im-streit-um-die-senkung-der-stromsteuer/100270456.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T05:56:48.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Kanzler Merz hatte eine Einigung bei der Senkung der Stromsteuer verkündet, das Finanzministerium widersprach. Dann verhandelte der Koalitionsausschuss bis tief in die Nacht.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1048,9 +1048,9 @@
   "DW": 12,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 7,
-  "Handelsblatt": 5,
+  "Handelsblatt": 6,
   "BBC World": 11,
-  "NYT World": 21,
+  "NYT World": 22,
   "EIA Today in Energy": 1
  }
 }
