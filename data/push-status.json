@@ -113,6 +113,8 @@
     "tracker:bitcoin:tunnel:short:stunde:2026-11-19T08|780b2fafac": "2026-11-19T08:00:32.134Z",
     "tracker:nasdaq100:ausbruch:long:stunde:2026-11-19T14|780b2fafac": "2026-11-19T14:30:47.347Z",
     "tracker:nasdaq100:tunnel:neutral:2026-11-19|780b2fafac": "2026-11-19T14:30:47.397Z",
-    "tracker:nasdaq100:tunnel:long:2026-11-19|780b2fafac": "2026-11-19T17:00:33.698Z"
+    "tracker:nasdaq100:tunnel:long:2026-11-19|780b2fafac": "2026-11-19T17:00:33.698Z",
+    "tracker:nasdaq100:ausbruch:short:2026-11-19|780b2fafac": "2026-11-19T20:00:35.363Z",
+    "tracker:nasdaq100:ausbruch:short:stunde:2026-11-19T20|780b2fafac": "2026-11-19T20:00:35.412Z"
   }
 }
