@@ -1,16 +1,49 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T03:39:05.535Z",
+ "lastUpdated": "2026-11-19T04:24:08.862Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-koalition-stimmung-100.html",
+   "titel": "\"Koalition der Willigen\": Ukrainer fordern Einheit und Entschlossenheit",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-koalition-stimmung-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-19T04:19:46.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In Kiew ist die Stimmung vor den beiden Treffen heute - in Berlin und in China - eher zurückhaltend. Risiken sehen sie insbesondere bei dem Dreigipfel in Shenzhen. Sie fordern Einheit und Entschlossenheit. Von R. Barth.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-unterstuetzung-treffen-berlin-100.html",
+   "titel": "Ukraine-Gipfel in Berlin: Mit Diplomatie und Druck",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-unterstuetzung-treffen-berlin-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-19T04:05:32.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Heute kommen knapp 30 Staats- und Regierungschefs nach Berlin, sie gehören zu den wichtigsten Unterstützern der Ukraine. Vom Treffen soll ein klares Signal ausgehen: Die Ukraine kann weiter auf Hilfe zählen. Von Christina Nagel.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
    "titel": "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
    "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
    "quelle": "NYT World",
-   "zeit": "2026-11-19T03:32:41.000Z",
+   "zeit": "2026-11-19T03:58:59.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
+   "titel": "Carney and Trump Hold Unscheduled Trade Meeting at Asia Summit",
+   "link": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T03:58:57.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The bilateral meeting between the neighbors follows trade gains for Canada’s prime minister this week with China and the Philippines.",
    "sprache": "en"
   },
   {
@@ -119,7 +152,7 @@
    "titel": "The Shadow of Yalta Hangs Over Trump’s Summit in China",
    "link": "https://www.nytimes.com/2026/11/18/world/asia/trump-xi-putin-summit-yalta.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-19T00:52:52.000Z",
+   "zeit": "2026-11-19T00:52:53.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "A 1945 meeting of Churchill, Stalin and Franklin Roosevelt set Europe’s course for decades. Here’s what happened.",
@@ -260,17 +293,6 @@
    "maerkte": [],
    "text": "Das Satelliten-Start-up Iceye will den italienischen Raketenhersteller Avio übernehmen. Die Regierung in Rom äußert sich bisher nicht, aber die Avio-Aktionäre sind begeistert. Die Übernahme hätte weitreichende Folgen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
-   "titel": "Carney and Trump Hold Unscheduled Trade Meeting at Asia Summit",
-   "link": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T17:23:46.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The bilateral meeting between the neighbors follows trade gains for Canada’s prime minister this week with China and the Philippines.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/17/world/americas/trump-us-boat-strikes-lawsuit-ecuador-fishermen.html",
@@ -1017,34 +1039,10 @@
    "maerkte": [],
    "text": "Nach wochenlangem Streit haben sich Union und SPD auf eine Senkung der Stromsteuer auch für private Haushalte verständigt. Außerdem soll der Spritpreisdeckel ab Januar aktiv werden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/china-xi-warnt-vor-treffen-mit-trump-vor-grassierendem-protektionismus/100270796.html",
-   "titel": "Apec-Gipfel: Xi warnt vor Treffen mit Trump vor „grassierendem Protektionismus“",
-   "link": "https://www.handelsblatt.com/politik/international/china-xi-warnt-vor-treffen-mit-trump-vor-grassierendem-protektionismus/100270796.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T06:30:19.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "China droht nach der Verschärfung der US‑Exportkontrollen für Chips mit Gegenmaßnahmen. Am Donnerstag wollen sich Trump und Xi in Shenzhen treffen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/koalition-beendet-verhandlungen-100.html",
-   "titel": "Mögliche Stromsteuersenkung: Verhandlung beendet - Verkündung am Morgen",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/koalition-beendet-verhandlungen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-18T06:20:31.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach acht Stunden haben die Spitzen von CDU, CSU und SPD ihre Beratungen in der Nacht beendet - haben sie sich auf eine Stromsteuersenkung geeinigt? Die Details aus dem Koalitionsausschuss sollen am Morgen bekannt gegeben werden.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 15,
   "DW": 12,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 7,
