@@ -1,27 +1,93 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T13:24:15.501Z",
+ "lastUpdated": "2026-11-19T14:24:11.617Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
    "titel": "Liveticker zu Gipfeln: ++ Kushner und Witkoff in Berlin angekommen ++",
    "link": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-19T13:22:35.000Z",
+   "zeit": "2026-11-19T14:18:29.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "US-Unterhändler Kushner und Witkoff sind zum Ukraine-Gipfel in Berlin eingetroffen. Russland ist laut Präsident Putin zu Gesprächen mit Europäern über den Krieg gegen die Ukraine bereit.",
+   "text": "Die US-Unterhändler Kushner und Witkoff sind zum Ukraine-Gipfel in Berlin eingetroffen. Russland ist laut Präsident Putin zu Gesprächen mit Europäern über den Krieg gegen die Ukraine bereit.",
    "sprache": "de"
   },
   {
    "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "titel": "Live Updates: Trump Departs China After First-Ever Summit With Xi and Putin",
+   "titel": "Live Updates: Trump, Xi and Putin Seek to Project Power at Their First Summit",
    "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
    "quelle": "NYT World",
-   "zeit": "2026-11-19T13:13:18.000Z",
+   "zeit": "2026-11-19T14:17:08.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-putin-kuendigt-vergeltung-fuer-angriff-auf-krim-bruecke-an/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Putin kündigt Vergeltung für Angriff auf Krim-Brücke an",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-putin-kuendigt-vergeltung-fuer-angriff-auf-krim-bruecke-an/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T14:12:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Putin zu Fortsetzung der Ukraine-Gespräche bereit +++ Selenskyj zu Treffen mit Koalition der Willigen eingetroffen +++ Zugverkehr über die Krim-Brücke soll bald starten +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/18/world/europe/russia-kerch-strait-crimean-bridge.html",
+   "titel": "Putin Vows to Retaliate After Crimea Bridge Attacks",
+   "link": "https://www.nytimes.com/2026/11/18/world/europe/russia-kerch-strait-crimean-bridge.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T14:09:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russia has vowed to quickly restore the structure, but engineering specialists say the work could take years.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html",
+   "titel": "Saudi Sovereign Wealth Fund Tower Damaged as Houthis Attack Riyadh",
+   "link": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T14:01:32.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Windows were blown out of a skyscraper that is home to the Public Investment Fund after the Yemeni militia fired missiles at the Saudi capital.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/technik/ki/ki-briefing/ki-briefing-warum-es-nicht-immer-ki-von-anthropic-oder-openai-sein-muss/100271001.html",
+   "titel": "KI-Briefing: Warum es nicht immer KI von Anthropic oder OpenAI sein muss",
+   "link": "https://www.handelsblatt.com/technik/ki/ki-briefing/ki-briefing-warum-es-nicht-immer-ki-von-anthropic-oder-openai-sein-muss/100271001.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T14:00:00.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "President Trump said before the meeting that he wanted to discuss nuclear weapons and the wars in Ukraine and Iran. But the three leaders appeared to refer to the topics only in vague terms.",
+   "text": "In den USA geht es um Milliarden für Anthropic, beim KI Summit in München um Alternativen zu US‑Anbietern. Welche Chancen deutsche Unternehmen für sich sehen. Die KI-News der Woche.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec/claudia-sheinbaum-mexico-flight-china-apec",
+   "titel": "Some leaders flew private to the APEC summit in Manila, but not Mexico’s president.",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec/claudia-sheinbaum-mexico-flight-china-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T13:37:50.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Claudia Sheinbaum flew commercial, a journey that involved a 15-hour leg. It was a symbol of her government’s commitment to austerity.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmwy8pyqlq5vo",
+   "titel": "Venezuela signs military deal with US less than a year after Maduro's removal",
+   "link": "https://www.bbc.co.uk/news/articles/cmwy8pyqlq5vo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-19T13:31:23.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The US Secretary of Defence says Venezuela has 'gone from our most aggressive regional threat to a compliant security partner'.",
    "sprache": "en"
   },
   {
@@ -69,17 +135,6 @@
    "maerkte": [],
    "text": "Putin aufgewertet, Trump abgewertet, und Xi darf sich als großer Krisendiplomat inszenieren: Der Gipfel von Shenzhen offenbart eine Trilateralisierung und Infantilisierung von Weltpolitik.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html",
-   "titel": "Saudi Sovereign Wealth Fund Tower Damaged as Houthis Attack Riyadh",
-   "link": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T12:16:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Windows were blown out of a skyscraper that is home to the Public Investment Fund after the Yemeni militia fired missiles at the Saudi capital.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/19/world/middleeast/netanyahu-arab-activists-arrests-israel-election.html",
@@ -171,7 +226,7 @@
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/unternehmen/iran-meldet-explosionen-an-drei-schiffen-internationale-energieagentur-rechnet-mit-anhaltender-krise-a-232e76ef-9491-4ff4-8b9e-cc7f431c5168",
-   "titel": "Iran meldet Explosionen an drei Schiffen, Internationale Energieagentur rechnet mit anhaltender Krise",
+   "titel": "Straße von Hormus: Iran meldet Explosionen an drei Schiffen",
    "link": "https://www.spiegel.de/wirtschaft/unternehmen/iran-meldet-explosionen-an-drei-schiffen-internationale-energieagentur-rechnet-mit-anhaltender-krise-a-232e76ef-9491-4ff4-8b9e-cc7f431c5168#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-11-19T10:11:00.000Z",
@@ -205,17 +260,6 @@
    ],
    "text": "Trump zum Ukraine-Krieg: „Ich denke, dass sich etwas bewegt“ +++ Chinas Staatschef Xi warnt Trump wegen Taiwan +++ Trump wirbt für mehr Agrarkäufe +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/18/world/europe/russia-kerch-strait-crimean-bridge.html",
-   "titel": "After Crippling Crimea Bridge, Ukraine Attacks It Again",
-   "link": "https://www.nytimes.com/2026/11/18/world/europe/russia-kerch-strait-crimean-bridge.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T09:24:04.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russia has vowed to quickly restore the structure, but engineering specialists say the work could take years.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-historisches-gipfeltreffen-von-trump-xi-und-putin-hat-begonnen/100270890.html",
@@ -981,61 +1025,13 @@
    "maerkte": [],
    "text": "Chinas Staatschef empfängt die Welt in Shenzhen, der Hightech-Stadt, die Peking gern als Zukunft zeigt. Doch die Gegenwart dürfte ihn dort einholen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/deutsche-bank-hat-christian-sewing-die-kultur-wirklich-verbessert-201693184.html",
-   "titel": "Deutsche Bank: Sewings Crashtest mit der Vergangenheit",
-   "link": "https://www.faz.net/aktuell/wirtschaft/deutsche-bank-hat-christian-sewing-die-kultur-wirklich-verbessert-201693184.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-18T12:32:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Die Deutsche Bank wollte den Kulturwandel. Die Enthüllungen aus den Datenlecks sind ein Rückschlag. War Vorstandschef Christian Sewing hier wirklich erfolgreich?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/ukraine-krieg-warum-die-eu-ueber-weitere-45-milliarden-euro-fuer-kyjiw-streitet-a-b8ec6864-59d7-4bb8-9cbf-1f31d61632cb",
-   "titel": "Ukraine-Krieg: Warum die EU über weitere 45 Milliarden Euro für Kyjiw streitet",
-   "link": "https://www.spiegel.de/wirtschaft/ukraine-krieg-warum-die-eu-ueber-weitere-45-milliarden-euro-fuer-kyjiw-streitet-a-b8ec6864-59d7-4bb8-9cbf-1f31d61632cb#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-18T12:29:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Die EU will der Ukraine frisches Geld leihen, damit das Land im Abwehrkampf gegen Putins Truppen bestehen kann. Doch das 45-Milliarden-Paket ist umstritten. Wo nun neuer Ärger droht.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/technik/ki/ki-summit-2026-robotik-start-ups-sehen-chatgpt-moment-schon-da-nur-anders/100268696.html",
-   "titel": "KI-Summit 2026: Robotik-Start-ups sehen den ChatGPT-Moment schon gekommen – doch eine Ressource fehlt",
-   "link": "https://www.handelsblatt.com/technik/ki/ki-summit-2026-robotik-start-ups-sehen-chatgpt-moment-schon-da-nur-anders/100268696.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T12:26:04.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Micro-AGI will seine Roboter-KI in der KI-Fabrik der Telekom trainieren und sich als souveräner Partner der Industrie positionieren. Andere Robotik-Start-ups setzen ihre Modelle dort bereits ein.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/cop31-krieg-emissionen-100.html",
-   "titel": "\"Keine Klimagerechtigkeit ohne Entmilitarisierung\"",
-   "link": "https://www.tagesschau.de/ausland/asien/cop31-krieg-emissionen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-18T12:13:49.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Militär verursacht geschätzt fünfeinhalb Prozent des globalen CO2-Ausstoßes. Auch der Wiederaufbau nach einem Krieg belastet das Klima. Experten auf der Weltklimakonferenz fordern deshalb Entmilitarisierung. Von D. K. Mäurer.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 15,
+  "tagesschau": 14,
   "DW": 12,
   "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 6,
+  "FAZ Wirtschaft": 5,
   "Handelsblatt": 4,
   "BBC World": 8,
   "NYT World": 21,
