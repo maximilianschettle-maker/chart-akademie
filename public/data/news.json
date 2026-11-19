@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T05:24:11.653Z",
+ "lastUpdated": "2026-11-19T06:24:11.106Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
+   "titel": "Liveblog zum APEC-Gipfel: ++ Trump und Xi loben sich gegenseitig ++",
+   "link": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-19T06:20:25.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Beim Gipfel der Asiatisch-Pazifischen Wirtschaftsgemeinschaft (APEC) hat das Treffen von Chinas Präsident Xi und US-Präsident Trump begonnen. Zuvor war Trump mit Russlands Präsident Putin zusammengekommen. Die Entwicklungen im Liveblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/save-the-children-staaten-versagen-beim-schutz-von-kindern/a-79981688",
+   "titel": "Save the Children: Staaten versagen beim Schutz von Kindern",
+   "link": "https://www.dw.com/de/save-the-children-staaten-versagen-beim-schutz-von-kindern/a-79981688?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-19T06:02:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Zahl der Jungen und Mädchen, die in Kriegs- und Konfliktgebieten leben, nimmt zu, sagt die Kinderrechtsorganisation Save the Children. Der neueste Jahresbericht ist auch eine Anklageschrift.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sieben-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html",
+   "titel": "Börse am 19. November: Sieben Punkte, die für Anleger heute wichtig sind",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sieben-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T05:23:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Der Dax fällt wieder unter die Marke von 26.000 Punkten. Anleger schauen auf den historischen Dreiergipfel zwischen Trump, Xi und Putin. In Berlin findet ein Ukraine-Gipfel statt.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-begruesst-putin-mit-wer-ist-er/100270890.html",
    "titel": "+++ Apec-Gipfel +++: Trump begrüßt Putin mit der Frage: „Wer ist er?“",
@@ -69,7 +104,7 @@
    "zeit": "2026-11-19T04:28:24.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Nach einem erneuten Angriff auf die Krim-Brücke ist der Verkehr örtlichen Behörden zufolge vorübergehend eingestellt worden. Die russische Armee transportiert über die Brücke unter anderem militärische Ausrüstung auf die Krim.",
+   "text": "Nach einem erneuten Angriff auf die Krim-Brücke ist der Verkehr laut Behörden eingestellt worden. Russland transportiert über die Brücke unter anderem militärische Ausrüstung für den Krieg gegen die Ukraine.",
    "sprache": "de"
   },
   {
@@ -80,7 +115,7 @@
    "zeit": "2026-11-19T04:19:46.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "In Kiew ist die Stimmung vor den beiden Treffen heute - in Berlin und in China - eher zurückhaltend. Risiken sehen sie insbesondere bei dem Dreigipfel in Shenzhen. Sie fordern Einheit und Entschlossenheit. Von R. Barth.",
+   "text": "In der Ukraine ist die Stimmung vor den beiden Treffen heute - in Berlin und in China - eher zurückhaltend. Risiken sehen sie insbesondere bei dem Dreigipfel in Shenzhen. Sie fordern Einheit und Entschlossenheit. Von R. Barth.",
    "sprache": "de"
   },
   {
@@ -137,6 +172,17 @@
    "maerkte": [],
    "text": "The Colombian president said his nation would not allow American forces to take part in anti-cartel military operations on its soil, according to U.S. officials. He later denied that his government had rejected a cooperation plan.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/elon-musk-habe-ukraine-geholfen-wie-kein-anderer/100271103.html",
+   "titel": "Tech-Milliardär: Musk: Habe Ukraine geholfen wie kein anderer",
+   "link": "https://www.handelsblatt.com/politik/international/elon-musk-habe-ukraine-geholfen-wie-kein-anderer/100271103.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T03:08:45.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Zum russischen Angriffskrieg gebe es oft die Einstellung „Ukraine gut, Russland böse“. Man müsse aber auch Mitleid mit den russischen Soldaten haben, sagt Elon Musk in einem Interview.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/tech-milliardaer-musk-habe-ukraine-geholfen-wie-kein-anderer/100271103.html",
@@ -993,57 +1039,11 @@
    ],
    "text": "Das US-Unternehmen bietet der deutschen Luftwaffe eine völlig neue Generation von Drohnen an. Die Konkurrenten Helsing, Airbus und Rheinmetall müssen sich sputen, um zum Zuge zu kommen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/stromsteuer-und-tankdeckel-erfolg-fuer-friedrich-merz-201693627.html",
-   "titel": "Einigung zum Strompreis: Ein in jeder Hinsicht teurer Kompromiss",
-   "link": "https://www.faz.net/aktuell/wirtschaft/stromsteuer-und-tankdeckel-erfolg-fuer-friedrich-merz-201693627.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-18T09:16:56.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Die Spitzenpolitiker von CDU, CSU und SPD tagen bis tief in die Nacht, dann steht das Ergebnis: Sie senken die Stromsteuer und ziehen der Koalition nicht den Stecker. Doch so darf es nicht weitergehen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/koalitionsausschuss-einigung-stromsteuer-spritpreisdeckel-100.html",
-   "titel": "Stromsteuersenkung und Spritpreisdeckel - zeitlich begrenzt",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/koalitionsausschuss-einigung-stromsteuer-spritpreisdeckel-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-18T08:55:03.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Spitzen von Union und SPD haben sich im Koalitionsausschuss auf eine Senkung der Stromsteuer für alle geeinigt. Die Finanzierung steht allerdings nur für 2027. Auch ein Spritpreisdeckel soll zeitlich begrenzt kommen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/bsw-wahlpruefung-100.html",
-   "titel": "Bundesverfassungsgericht: BSW scheitert mit Wahlbeschwerde",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/bsw-wahlpruefung-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-18T08:55:02.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Das BSW war bei der Bundestagswahl sehr knapp gescheitert und wollte, dass neu ausgezählt wird. Damit scheiterte die Partei nun auch endgültig vor dem Bundesverfassungsgericht. BSW-Politiker kritisierten das scharf.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-stromsteuersenkung-drei-currywuerste-im-monat-retten-koalition/100270730.html",
-   "titel": "Kommentar: Gesenkte Stromsteuer – warum drei Currywürste im Monat die Koalition retten",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-stromsteuersenkung-drei-currywuerste-im-monat-retten-koalition/100270730.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T08:30:04.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Schwarz-Rot senkt für ein Jahr die Stromsteuer für Privathaushalte, was einer vierköpfigen Familie acht Euro im Monat bringt. Erstaunlich, dass der Streit fast die Regierung entzweit hätte.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 16,
-  "DW": 12,
+  "DW": 13,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 7,
   "Handelsblatt": 6,
