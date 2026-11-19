@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "lastUpdated": "2026-11-19T06:00:42.829Z",
+  "lastUpdated": "2026-11-19T15:38:34.578Z",
   "quellen": {
-    "fedZins": "alt",
+    "fedZins": "live",
     "fedTermine": "live",
     "fedMeldungen": "live",
     "ezbZins": "live",
