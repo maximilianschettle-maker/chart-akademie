@@ -1,7 +1,53 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T17:24:14.431Z",
+ "lastUpdated": "2026-11-19T18:24:12.159Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/gipfel-koalition-willige-ukraine-100.html",
+   "titel": "Merz will baldige Gespräche mit Russland auf neutralem Boden",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/gipfel-koalition-willige-ukraine-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-19T18:22:57.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die \"Koalition der Willigen\" verspricht, der Ukraine \"so lange wie nötig\" zu helfen. Nach dem Gipfel in Berlin rief Kanzler Merz Russlands Präsident Putin auf, die Waffen niederzulegen. Einen Frieden könne es nur mit Beteiligung Europas geb",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-merz-kritisiert-gipfel-in-china-wird-frieden-nicht-bringen/100270859.html",
+   "titel": "Ukraine-Koalition: Merz kritisiert Dreiergipfel von Shenzhen: „Wird den Frieden nicht bringen“",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-merz-kritisiert-gipfel-in-china-wird-frieden-nicht-bringen/100270859.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T18:20:34.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach dem Treffen von Trump, Putin und Xi in China versammelt der Kanzler die Ukraine-Unterstützer in Berlin zum Gegengipfel. Die Botschaft an Putin und Trump war klar.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "titel": "Trump, Xi and Putin Seek to Project Power at Their First Summit",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T18:06:02.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/asia/russia-china-united-states-oil-joint-statement.html",
+   "titel": "At APEC Summit, U.S., China and Russia Vow to Increase Oil Supply Amid Global Energy Transition",
+   "link": "https://www.nytimes.com/2026/11/19/world/asia/russia-china-united-states-oil-joint-statement.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T17:25:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "The United States, China and Russia agreed to boost the supply of refined petroleum products, as oil prices spike because of the Iran war.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-merz-bezeichnet-dreier-gipfel-in-china-als-bildtermin/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Merz bezeichnet Gipfel von Trump, Xi und Putin in China als „Bildtermin“",
@@ -15,7 +61,7 @@
   },
   {
    "id": "https://www.nytimes.com/2026/11/19/us/politics/trump-summit-power.html",
-   "titel": "Trump Seeks to Project Power Abroad While Forced to Share It at Home",
+   "titel": "At Summit With Xi and Putin, Trump Seeks to Project Power Abroad While Sharing It at Home",
    "link": "https://www.nytimes.com/2026/11/19/us/politics/trump-summit-power.html",
    "quelle": "NYT World",
    "zeit": "2026-11-19T17:05:18.000Z",
@@ -79,30 +125,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The Russian leader invited European representatives to Moscow to discuss giving them a role in negotiations. It was unclear how serious the offer was.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "titel": "Trump, Xi and Putin Seek to Project Power at Their First Summit",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T16:46:54.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/asia/russia-china-united-states-oil-joint-statement.html",
-   "titel": "Major Powers Vow to Increase Oil Supply Amid Global Energy Transition",
-   "link": "https://www.nytimes.com/2026/11/19/world/asia/russia-china-united-states-oil-joint-statement.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T16:44:53.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "The United States, China and Russia agreed to boost the supply of refined petroleum products, as oil prices spike because of the Iran war.",
    "sprache": "en"
   },
   {
@@ -1000,37 +1022,15 @@
    "maerkte": [],
    "text": "Union und SPD haben sich auf eine Senkung der Stromsteuer geeinigt. Doch die Verhandlungen liefen Teilnehmern zufolge teils ruppig. Wie es zur Einigung kam und warum sie ein Vorgeschmack auf die kommenden Monate sein könnte. Von Tina Handel",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/18/world/middleeast/iran-attacks-bahrain-kuwait-ships-hormuz.html",
-   "titel": "Iran Fires Missiles and Drones at Gulf Arab States as Peace Talks Falter",
-   "link": "https://www.nytimes.com/2026/11/18/world/middleeast/iran-attacks-bahrain-kuwait-ships-hormuz.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T15:37:11.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Kuwait and Bahrain said they were targeted on Wednesday, a sign of how the Middle East is stuck in limbo between peace and full-blown war.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/angriff-auf-die-krim-br%C3%BCcke-welche-folgen-kyjiws-operation-hat/a-79979350",
-   "titel": "Angriff auf die Krim-Brücke: Welche Folgen Kyjiws Operation hat",
-   "link": "https://www.dw.com/de/angriff-auf-die-krim-brücke-welche-folgen-kyjiws-operation-hat/a-79979350?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-18T15:26:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Ukraine hat der Krim-Brücke schwere Schäden zufügen können. Was bedeutet das für Russland - militärisch und wirtschaftlich? Und was für das politische Ansehen von Wladimir Putin?",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 14,
+  "tagesschau": 13,
   "DW": 11,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 7,
-  "BBC World": 9,
+  "BBC World": 8,
   "NYT World": 26,
   "EIA Today in Energy": 1
  }
