@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-18T23:24:11.005Z",
+ "lastUpdated": "2026-11-19T00:24:05.351Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
+   "titel": "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T00:10:27.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/apec-treffen-xi-putin-trump-themen-100.html",
+   "titel": "Xi, Trump und Putin: Drei Perspektiven, viele Differenzen",
+   "link": "https://www.tagesschau.de/ausland/asien/apec-treffen-xi-putin-trump-themen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-18T23:33:32.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Es gilt schon vorab als historisch - das erste Dreier-Treffen von Xi, Trump und Putin auf dem APEC-Gipfel in Shenzhen. Doch die Positionen der drei Präsidenten bei den Themen atomare Abrüstung, Iran oder Ukraine klaffen teils auseinander.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cw8r7510degno",
    "titel": "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
@@ -11,6 +33,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Hamas condemns the incursion, which the Israeli military says is dismantling a \"terror tunnel\", as a \"flagrant\" ceasefire violation.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/c9gkljpgdn1lo",
+   "titel": "Catherine visits Mumbai maternity hospital on the last day of royal trip",
+   "link": "https://www.bbc.co.uk/news/videos/c9gkljpgdn1lo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-18T22:32:47.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The Prince and Princess of Wales ended their three-day trip to India on Wednesday, the couple's first international tour since 2022.",
    "sprache": "en"
   },
   {
@@ -36,17 +69,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
-   "titel": "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T20:13:01.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o",
    "titel": "William and Kate meet PM Modi as they wrap up India tour",
    "link": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o?at_medium=RSS&at_campaign=rss",
@@ -56,17 +78,6 @@
    "maerkte": [],
    "text": "The meeting in New Delhi was a late addition to the royal couple's India visit, which also included their appearance at the annual Earthshot Prize",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/apec-treffen-xi-putin-trump-themen-100.html",
-   "titel": "Xi, Trump und Putin: Drei Perspektiven, viele Differenzen",
-   "link": "https://www.tagesschau.de/ausland/asien/apec-treffen-xi-putin-trump-themen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-18T19:43:17.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Es gilt schon vorab als historisch - das erste Dreier-Treffen von Xi, Trump und Putin auf dem APEC-Gipfel in Shenzhen. Doch die Positionen der drei Präsidenten bei den Themen atomare Abrüstung, Iran oder Ukraine klaffen teils auseinander.",
-   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
@@ -1026,17 +1037,6 @@
    "maerkte": [],
    "text": "The $60m (£45m) plane was destroyed in an hours-long raid by an anti-war protester, according to the FBI.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6x284ez38vdo",
-   "titel": "American soldier arrested by UK police on suspicion of spying taken into US military custody",
-   "link": "https://www.bbc.co.uk/news/articles/c6x284ez38vdo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-17T22:46:30.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Metropolitan Police say he has been taken into custody by the US Military over suspected national security and espionage allegations.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1045,8 +1045,8 @@
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 7,
   "Handelsblatt": 6,
-  "BBC World": 14,
-  "NYT World": 23,
+  "BBC World": 13,
+  "NYT World": 22,
   "EIA Today in Energy": 1
  }
 }
