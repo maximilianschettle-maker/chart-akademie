@@ -1,7 +1,145 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T16:24:28.167Z",
+ "lastUpdated": "2026-11-19T17:24:14.431Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-merz-bezeichnet-dreier-gipfel-in-china-als-bildtermin/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Merz bezeichnet Gipfel von Trump, Xi und Putin in China als „Bildtermin“",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-merz-bezeichnet-dreier-gipfel-in-china-als-bildtermin/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T17:18:49.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Putin kündigt Vergeltung für Angriff auf Krim-Brücke an +++ Putin zu Fortsetzung der Ukraine-Gespräche bereit +++ Selenskyj zu Treffen mit Koalition der Willigen eingetroffen +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/us/politics/trump-summit-power.html",
+   "titel": "Trump Seeks to Project Power Abroad While Forced to Share It at Home",
+   "link": "https://www.nytimes.com/2026/11/19/us/politics/trump-summit-power.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T17:05:18.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Weakened by the midterm elections, President Trump offered hugs, arm pats and smiles to autocrats from Russia and China in contrast to the threats he is making to ascendant Democrats in Washington.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cw8r7510degno",
+   "titel": "Israeli military completes ground operation in Gaza beyond Yellow Line",
+   "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-19T17:03:23.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Hamas condemned the incursion, which the Israeli military said was to dismantle a \"terror tunnel\", as a \"flagrant\" ceasefire violation.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
+   "titel": "Liveticker zu Gipfeln ++ Merz: Große Unterstützung für Ukraine ++",
+   "link": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-19T17:00:47.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die \"Koalition der Willigen\" wird die Ukraine nach den Worten von Bundeskanzler Merz so lange unterstützen, wie es nötig ist. Russland ist laut Präsident Putin zu Gesprächen mit den Europäern bereit.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/europe/spain-trains-infrastructure.html",
+   "titel": "After Deadly Train Crash, Spain Asks: Did It Grow Too Much, Too Quickly?",
+   "link": "https://www.nytimes.com/2026/11/19/world/europe/spain-trains-infrastructure.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T16:56:13.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "As an election nears, a railway disaster in Spain has set off debate over whether maintenance of its infrastructure kept pace with its booming population.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo",
+   "titel": "Myanmar committed genocide against Rohingya minority, top UN court rules",
+   "link": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-19T16:55:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The unprecedented International Court of Justice verdict concerns a 2017 military crackdown that killed thousands.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/europe/putin-shenzhen-crimea-bridge.html",
+   "titel": "After Bridge Attack, Putin Says He Will ‘Not Be Negotiating’ Ukraine Cease-Fire",
+   "link": "https://www.nytimes.com/2026/11/19/world/europe/putin-shenzhen-crimea-bridge.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T16:51:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Russian leader invited European representatives to Moscow to discuss giving them a role in negotiations. It was unclear how serious the offer was.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "titel": "Trump, Xi and Putin Seek to Project Power at Their First Summit",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T16:46:54.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/asia/russia-china-united-states-oil-joint-statement.html",
+   "titel": "Major Powers Vow to Increase Oil Supply Amid Global Energy Transition",
+   "link": "https://www.nytimes.com/2026/11/19/world/asia/russia-china-united-states-oil-joint-statement.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T16:44:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "The United States, China and Russia agreed to boost the supply of refined petroleum products, as oil prices spike because of the Iran war.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/anlagestrategie/kolumnen/geldanlage-indische-aktien-werden-als-ki-hedge-zu-gewinnern-der-tech-sorgen/100269738.html",
+   "titel": "Märkte Insight: Gewinner der Tech-Sorgen: Indische Aktien werden zum KI-Hedge",
+   "link": "https://www.handelsblatt.com/finanzen/anlagestrategie/kolumnen/geldanlage-indische-aktien-werden-als-ki-hedge-zu-gewinnern-der-tech-sorgen/100269738.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T16:32:14.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Für den indischen Aktienmarkt war 2026 ein schwaches Jahr – bis zum jüngsten Tech-Abverkauf an der Wall Street. Die Erholung könnte noch weitergehen, meint Martin Müller.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/asia/rohingya-camps-photos-bangladesh.html",
+   "titel": "The Rohingya Crisis Over the Years",
+   "link": "https://www.nytimes.com/2026/11/19/world/asia/rohingya-camps-photos-bangladesh.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T16:27:27.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "After government troops and mobs rampaged through Rohingya communities in Myanmar in 2017, refugees fled to to Bangladesh.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/cyber-sicherheit-wie-verwundbar-ist-deutschland-antworten-stehen-im-lagebericht-des-bundesamtes-f%C3%BCr-sicherheit-in-der-informationstechnik-bsi/a-79984323",
+   "titel": "Cyber-Sicherheit: Wie verwundbar ist Deutschland? Antworten stehen im Lagebericht des Bundesamtes für Sicherheit in der Informationstechnik (BSI)",
+   "link": "https://www.dw.com/de/cyber-sicherheit-wie-verwundbar-ist-deutschland-antworten-stehen-im-lagebericht-des-bundesamtes-für-sicherheit-in-der-informationstechnik-bsi/a-79984323?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-19T16:24:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Angriffe auf Privatpersonen, Wirtschaft oder öffentliche Verwaltungen nehmen zu und verunsichern die Bevölkerung. Wie reagieren Politik und Sicherheitsbehörden?",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/19/world/europe/ukraine-dutch-embassy.html",
    "titel": "Drone Hits Dutch Embassy Compound in Kyiv, Ukrainian Officials Say",
@@ -25,39 +163,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "titel": "Live Updates: Trump, Xi and Putin Seek to Project Power at Their First Summit",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T15:58:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/europe/putin-shenzhen-crimea-bridge.html",
-   "titel": "After Bridge Attack, Putin Says He Will ‘Not Be Negotiating’ Ukraine Cease-Fires",
-   "link": "https://www.nytimes.com/2026/11/19/world/europe/putin-shenzhen-crimea-bridge.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T15:54:42.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Russian leader invited European representatives to Moscow to discuss giving them a role in negotiations. It was unclear how serious the offer was.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/asia/rohingya-camps-photos-bangladesh.html",
-   "titel": "The Rohingya Crisis Over the Years",
-   "link": "https://www.nytimes.com/2026/11/19/world/asia/rohingya-camps-photos-bangladesh.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T15:25:01.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "After government troops and mobs rampaged through Rohingya communities in Myanmar in 2017, refugees fled to to Bangladesh.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/strafbefehl-gegen-tesla-werkleiter-andre-thierig-wegen-uebler-nachrede-201696475.html",
    "titel": "Strafbefehl gegen Werkleitung: Üble Nachrede in Grünheide",
    "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/strafbefehl-gegen-tesla-werkleiter-andre-thierig-wegen-uebler-nachrede-201696475.html",
@@ -77,6 +182,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/industrie/chemieindustrie-basf-zieht-angebot-fuer-evonik-zurueck/100271324.html",
+   "titel": "Chemiekonzern: BASF zieht Angebot zurück, Evonik-Aktie stürzt ab – Woran der Deal zerbrach",
+   "link": "https://www.handelsblatt.com/unternehmen/industrie/chemieindustrie-basf-zieht-angebot-fuer-evonik-zurueck/100271324.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T15:05:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "BASF war bereit, sein Milliardenangebot für Evonik noch einmal zu erhöhen. Trotzdem ist die Übernahme gescheitert. Warum der Deal nicht zustande kam.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/unternehmen/industrie/basf-chemiekonzern-zieht-angebot-fuer-evonik-zurueck/100271324.html",
@@ -112,6 +228,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.handelsblatt.com/unternehmen/industrie/volkswagen-das-ist-vws-neue-giftliste/100271239.html",
+   "titel": "Volkswagen: Längere Arbeitszeiten, Bonus-Aus, weniger freie Tage: Das ist VWs neue „Giftliste“",
+   "link": "https://www.handelsblatt.com/unternehmen/industrie/volkswagen-das-ist-vws-neue-giftliste/100271239.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T14:45:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "VW legt seine Tarifforderungen vor. Selbst für Heiligabend und Silvester sollen Beschäftigte Urlaub nehmen. Die IG Metall spricht von einem „Katalog des Grauens“ – und droht mit Streik.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.nytimes.com/2026/11/19/world/europe/trump-xi-putin-nuclear-weapons-ukraine.html",
    "titel": "Putin, Trump and Xi Condemn Nuclear War as Europe Watches Closely",
    "link": "https://www.nytimes.com/2026/11/19/world/europe/trump-xi-putin-nuclear-weapons-ukraine.html",
@@ -121,17 +248,6 @@
    "maerkte": [],
    "text": "After their summit, the leaders of Russia, the United States and China agreed that “a nuclear war cannot be won and must never be fought.” Some analysts are skeptical that real change will result.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
-   "titel": "Liveticker zu Gipfeln: ++ Kushner und Witkoff in Berlin angekommen ++",
-   "link": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-19T14:18:29.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die US-Unterhändler Kushner und Witkoff sind zum Ukraine-Gipfel in Berlin eingetroffen. Russland ist laut Präsident Putin zu Gesprächen mit Europäern über den Krieg gegen die Ukraine bereit.",
-   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/russland-so-schlecht-laeuft-der-krieg-fuer-putin/100271204.html",
@@ -301,17 +417,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/cw8r7510degno",
-   "titel": "Israeli military completes ground operation in Gaza beyond Yellow Line",
-   "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-19T11:07:37.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Hamas condemned the incursion, which the Israeli military said was to dismantle a \"terror tunnel\", as a \"flagrant\" ceasefire violation.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.tagesschau.de/inland/bsi-sicherheitslage-bericht-100.html",
    "titel": "BSI warnt vor erhöhter Gefahrenlage durch KI-Angriffe",
    "link": "https://www.tagesschau.de/inland/bsi-sicherheitslage-bericht-100.html",
@@ -461,19 +566,6 @@
    "maerkte": [],
    "text": "Dreiergipfel zwischen Trump, Xi und Putin soll demnächst starten +++ Chinas Staatschef Xi wirbt für Freihandel und ruft Apec-Länder zu mehr Zusammenarbeit auf +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/europe/spain-trains-infrastructure.html",
-   "titel": "After Train Crash, Spain Asks if High-Speed Rail Grew Too Fast",
-   "link": "https://www.nytimes.com/2026/11/19/world/europe/spain-trains-infrastructure.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T05:01:08.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "As an election nears, a railway disaster in Spain has set off debate over whether maintenance of its infrastructure kept pace with its booming population.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/europa/krim-bruecke-zug-100.html",
@@ -698,6 +790,17 @@
    "sprache": "en"
   },
   {
+   "id": "https://www.dw.com/de/die-koalition-der-willigen-bei-der-ukraine-unterst%C3%BCtzung-trifft-sich-in-berlin-europa-will-k%C3%BCnftig-%C3%BCber-einen-frieden-mitreden/a-79960717",
+   "titel": "Die \"Koalition der Willigen\" bei der Ukraine-Unterstützung trifft sich in Berlin. Europa will künftig über einen Frieden mitreden",
+   "link": "https://www.dw.com/de/die-koalition-der-willigen-bei-der-ukraine-unterstützung-trifft-sich-in-berlin-europa-will-künftig-über-einen-frieden-mitreden/a-79960717?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-18T19:24:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die \"Koalition der Willigen\" bei der Ukraine-Unterstützung trifft sich in Berlin. Es geht auch darum, ob Europa über die Zukunft des Landes künftig mit verhandeln kann.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Ukrainische Angriffe auf Raffinerien – Russland importiert offenbar Rekordmengen an Benzin",
    "link": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
@@ -814,17 +917,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.dw.com/de/die-koalition-der-willigen-bei-der-ukraine-unterst%C3%BCtzung-trifft-sich-in-berlin-europa-will-k%C3%BCnftig-%C3%BCber-einen-frieden-mitreden/a-79960717",
-   "titel": "Die \"Koalition der Willigen\" bei der Ukraine-Unterstützung trifft sich in Berlin. Europa will künftig über einen Frieden mitreden",
-   "link": "https://www.dw.com/de/die-koalition-der-willigen-bei-der-ukraine-unterstützung-trifft-sich-in-berlin-europa-will-künftig-über-einen-frieden-mitreden/a-79960717?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-18T16:51:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die \"Koalition der Willigen\" bei der Ukraine-Unterstützung trifft sich in Berlin. Es geht auch darum, ob Europa über die Zukunft des Landes künftig mit verhandeln kann.",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-minus-oelpreis-sinkt/100270820.html",
    "titel": "Dax aktuell: Dax schließt im Minus – Ölpreis sinkt",
    "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-minus-oelpreis-sinkt/100270820.html",
@@ -930,108 +1022,16 @@
    "maerkte": [],
    "text": "Die Ukraine hat der Krim-Brücke schwere Schäden zufügen können. Was bedeutet das für Russland - militärisch und wirtschaftlich? Und was für das politische Ansehen von Wladimir Putin?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-trump-und-xi-treffen-vor-gruppenfoto-aufeinander/100270890.html",
-   "titel": "Apec-Gipfel: Putin, Trump und Xi treffen vor Gruppenfoto aufeinander",
-   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-putin-trump-und-xi-treffen-vor-gruppenfoto-aufeinander/100270890.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T15:15:58.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Treffen bestätigt: Trump und Putin sprechen auch zu zweit +++ Wadephul zu Dreiergipfel: Bei Ukraine Europa an den Tisch +++ Apec-Gipfel mit Xi, Trump und Putin startet +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wissen/copsy-studie-2026-100.html",
-   "titel": "Studie: Diese Themen machen Kindern und Jugendlichen Angst",
-   "link": "https://www.tagesschau.de/wissen/copsy-studie-2026-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-18T15:06:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Kriege, Wirtschaftskrisen, Wohnungsnot: Viele Jugendliche sorgen sich um ihre Zukunft. Das zeigt die neue COPSY-Studie. Ob Kinder dauerhaft psychisch belastet sind, hängt aber von etwas anderem ab. Von Melanie Stinn.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/russland-sanktionen-studie-des-iw-koeln-zeigt-wachsende-skepsis-in-deutschland-a-8e426c7b-4b4b-4574-a4bf-a3475b7920eb",
-   "titel": "Russland-Sanktionen: Studie des IW Köln zeigt wachsende Skepsis in Deutschland",
-   "link": "https://www.spiegel.de/wirtschaft/russland-sanktionen-studie-des-iw-koeln-zeigt-wachsende-skepsis-in-deutschland-a-8e426c7b-4b4b-4574-a4bf-a3475b7920eb#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-18T15:05:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Beim Treffen von US-Präsident Trump und Kremlchef Putin in China könnte auch die Zukunft der Ukraine verhandelt werden. Die Mehrheit der Deutschen ist für einen harten Kurs gegen den Aggressor. Aber der Rückhalt schwindet.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/18/world/europe/man-charged-ireland-shannon-us-military-plane.html",
-   "titel": "Irish Man Sabotaged U.S. Military Plane With Ax and Chemicals, Prosecutors Say",
-   "link": "https://www.nytimes.com/2026/11/18/world/europe/man-charged-ireland-shannon-us-military-plane.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T14:59:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Daithi O’Corrain sealed himself inside a National Guard C-130 at Ireland’s Shannon Airport in April for hours, causing so much damage that the aircraft was retired from service, prosecutors said.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/dienstleister/paketdienste-dpd-und-gls-legen-ihr-geschaeft-in-deutschland-zusammen/100269674.html",
-   "titel": "Paketdienste: „Eines der breitesten Angebote im deutschen Paketmarkt“: DPD und GLS schließen sich zusammen",
-   "link": "https://www.handelsblatt.com/unternehmen/dienstleister/paketdienste-dpd-und-gls-legen-ihr-geschaeft-in-deutschland-zusammen/100269674.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T14:37:43.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Chefs der Paketdienste der französischen und britischen Post erläutern im Interview ihren Angriff auf Marktführer DHL und verraten, welche Rolle ein tschechischer Milliardär dabei spielt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec/putin-renews-his-warm-bond-with-xi",
-   "titel": "Putin renews his warm bond with Xi.",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec/putin-renews-his-warm-bond-with-xi",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T14:14:34.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "The Russian leader demonstrated that despite his isolation from many Western nations over the war in Ukraine, he remains on good terms with much of the rest of the world.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec/putin-renews-his-warm-bond-with-xi",
-   "titel": "Putin renews his warm bond with Xi.",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec/putin-renews-his-warm-bond-with-xi",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T14:14:34.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "The Russian leader demonstrated that despite his isolation from many Western nations over the war in Ukraine, he remains on good terms with much of the rest of the world.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/soziales/stromsteuer-runter-spritpreisdeckel-ab-2027-das-bringen-ihnen-die-neuen-entlastungen-a-7a13da31-0fe1-40ea-a60c-457fef341154",
-   "titel": "Stromsteuer runter, Spritpreisdeckel ab 2027 – das bringen Ihnen die neuen Entlastungen",
-   "link": "https://www.spiegel.de/wirtschaft/soziales/stromsteuer-runter-spritpreisdeckel-ab-2027-das-bringen-ihnen-die-neuen-entlastungen-a-7a13da31-0fe1-40ea-a60c-457fef341154#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-18T14:01:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Stromsteuer sinkt, und Sprit bekommt vorläufig eine Obergrenze. Was bedeuten die Beschlüsse der Koalition für die Verbraucherinnen und Verbraucher? Und wie gerecht sind sie?",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 14,
   "DW": 11,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 5,
-  "BBC World": 8,
-  "NYT World": 24,
+  "Handelsblatt": 7,
+  "BBC World": 9,
+  "NYT World": 26,
   "EIA Today in Energy": 1
  }
 }
