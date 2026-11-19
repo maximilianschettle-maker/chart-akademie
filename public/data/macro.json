@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "lastUpdated": "2026-11-18T06:00:38.005Z",
+  "lastUpdated": "2026-11-19T06:00:42.829Z",
   "quellen": {
-    "fedZins": "live",
+    "fedZins": "alt",
     "fedTermine": "live",
     "fedMeldungen": "live",
     "ezbZins": "live",
@@ -578,6 +578,11 @@
     ],
     "meldungen": [
       {
+        "titel": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+        "datum": "2026-11-18T19:00:00.000Z",
+        "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
+      },
+      {
         "titel": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
         "datum": "2026-11-12T17:45:00.000Z",
         "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
@@ -631,11 +636,6 @@
         "titel": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
         "datum": "2026-07-09T19:00:00.000Z",
         "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"
-      },
-      {
-        "titel": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
-        "datum": "2026-07-08T18:00:00.000Z",
-        "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm"
       }
     ],
     "letzteEntscheidung": {
