@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T19:24:13.300Z",
+ "lastUpdated": "2026-11-19T20:24:09.719Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo",
+   "titel": "Myanmar committed genocide against Rohingya minority, top UN court rules",
+   "link": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-19T20:07:02.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The unprecedented International Court of Justice verdict concerns a 2017 military crackdown that killed thousands.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/inland/innenpolitik/gipfel-koalition-willige-ukraine-100.html",
    "titel": "Merz will baldige Gespräche mit Russland auf neutralem Boden",
@@ -180,17 +191,6 @@
     "aktien"
    ],
    "text": "As an election nears, a railway disaster in Spain has set off debate over whether maintenance of its infrastructure kept pace with its booming population.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo",
-   "titel": "Myanmar committed genocide against Rohingya minority, top UN court rules",
-   "link": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-19T16:55:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The unprecedented International Court of Justice verdict concerns a 2017 military crackdown that killed thousands.",
    "sprache": "en"
   },
   {
@@ -408,7 +408,7 @@
    "titel": "How the War in Iran Will Remake the Global Energy Order",
    "link": "https://www.nytimes.com/2026/11/19/business/cop31-energy-iea.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-19T12:51:17.000Z",
+   "zeit": "2026-11-19T12:51:18.000Z",
    "kategorie": "konflikte",
    "maerkte": [
     "oel"
@@ -1025,9 +1025,9 @@
   "DW": 12,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 7,
+  "Handelsblatt": 6,
   "BBC World": 9,
-  "NYT World": 26,
+  "NYT World": 23,
   "EIA Today in Energy": 1
  }
 }
