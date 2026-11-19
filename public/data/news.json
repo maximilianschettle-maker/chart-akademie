@@ -1,16 +1,104 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T18:24:12.159Z",
+ "lastUpdated": "2026-11-19T19:24:13.300Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/inland/innenpolitik/gipfel-koalition-willige-ukraine-100.html",
    "titel": "Merz will baldige Gespräche mit Russland auf neutralem Boden",
    "link": "https://www.tagesschau.de/inland/innenpolitik/gipfel-koalition-willige-ukraine-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-19T18:22:57.000Z",
+   "zeit": "2026-11-19T19:22:45.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "Die \"Koalition der Willigen\" verspricht, der Ukraine \"so lange wie nötig\" zu helfen. Nach dem Gipfel in Berlin rief Kanzler Merz Russlands Präsident Putin auf, die Waffen niederzulegen. Einen Frieden könne es nur mit Beteiligung Europas geb",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go",
+   "titel": "Europe ready for talks with Russia on ending war in Ukraine, leaders say",
+   "link": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-19T19:16:21.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "European allies of Ukraine say they have a \"united\" negotiating position at a summit in Berlin.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
+   "titel": "Trump Flaunts Camaraderie With Xi and Putin but Has Little to Show for It",
+   "link": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T19:07:18.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Trump called Russia’s leader his “friend” and marveled at China’s warm welcome for his first-ever trilateral summit. But there were no breakthroughs on nuclear control, the war in Ukraine or A.I.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "titel": "Trump, Xi and Putin Seek to Project Power at Their First Summit",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T19:06:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html",
+   "titel": "Saudi Sovereign Wealth Fund Tower Damaged as Houthis Attack Riyadh",
+   "link": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T18:55:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "An aerial attack by the Yemeni militia affected several floors of a skyscraper that is home to the Public Investment Fund, without causing injuries, according to Saudi authorities.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec/claudia-sheinbaum-mexico-flight-china-apec",
+   "titel": "Some leaders flew private to the APEC summit, but not Mexico’s president.",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec/claudia-sheinbaum-mexico-flight-china-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T18:48:51.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "President Claudia Sheinbaum flew commercial, a journey that involved a 15-hour leg. It was a symbol of her government’s commitment to austerity.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/europe/ukraine-dutch-embassy.html",
+   "titel": "Dutch and Austrian Embassies Are Damaged as Russian Drones Swarm Kyiv",
+   "link": "https://www.nytimes.com/2026/11/19/world/europe/ukraine-dutch-embassy.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T18:47:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Foreign ministers for Austria and the Netherlands said no one was harmed at their embassy compounds, and the European Union’s ambassador said a drone “exploded right above my head\" by her hotel.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/koalition-der-willigen-in-berlin-wir-halten-zur-ukraine/a-79990134",
+   "titel": "Koalition der Willigen in Berlin: \"Wir halten zur Ukraine\"",
+   "link": "https://www.dw.com/de/koalition-der-willigen-in-berlin-wir-halten-zur-ukraine/a-79990134?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-19T18:46:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die sogenannte Koalition der Willigen stärkt der Ukraine in Berlin den Rücken. Und alle blicken zum Treffen der USA, Russlands und China in Shenzhen. Von dort aus lädt Präsident Putin die Europäer nach Moskau ein.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/dreiergipfel-xi-trump-putin-100.html",
+   "titel": "Dreiergipfel in Shenzhen: Xis Choreografie - assistiert von Trump und Putin",
+   "link": "https://www.tagesschau.de/ausland/asien/dreiergipfel-xi-trump-putin-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-19T18:30:48.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Beim Gipfel von Xi, Trump und Putin ging es um schöne Bilder und Schmeicheleien. Konkrete Politik? Fehlanzeige. Doch China gelang es, ein Thema zu setzen, das vor allem seinen Interessen und denen Russlands dient. Von Marie von Mallinckrodt",
    "sprache": "de"
   },
   {
@@ -23,17 +111,6 @@
    "maerkte": [],
    "text": "Nach dem Treffen von Trump, Putin und Xi in China versammelt der Kanzler die Ukraine-Unterstützer in Berlin zum Gegengipfel. Die Botschaft an Putin und Trump war klar.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "titel": "Trump, Xi and Putin Seek to Project Power at Their First Summit",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T18:06:02.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/19/world/asia/russia-china-united-states-oil-joint-statement.html",
@@ -163,28 +240,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/19/world/europe/ukraine-dutch-embassy.html",
-   "titel": "Drone Hits Dutch Embassy Compound in Kyiv, Ukrainian Officials Say",
-   "link": "https://www.nytimes.com/2026/11/19/world/europe/ukraine-dutch-embassy.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T16:21:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Dutch officials said a projectile hit just behind the embassy compound, and that no one was harmed. Russia launched a wave of attacks into Ukraine’s capital on Thursday.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html",
-   "titel": "Saudi Sovereign Wealth Fund Tower Damaged as Houthis Attack Riyadh",
-   "link": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T16:17:54.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "An aerial attack by the Yemeni militia affected several floors of a skyscraper that is home to the Public Investment Fund, without causing injuries, according to Saudi authorities.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/strafbefehl-gegen-tesla-werkleiter-andre-thierig-wegen-uebler-nachrede-201696475.html",
    "titel": "Strafbefehl gegen Werkleitung: Üble Nachrede in Grünheide",
    "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/strafbefehl-gegen-tesla-werkleiter-andre-thierig-wegen-uebler-nachrede-201696475.html",
@@ -204,6 +259,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/industrie/chemieindustrie-basf-zieht-angebot-zurueck-evonik-aktie-stuerzt-ab/100271324.html",
+   "titel": "Chemiekonzern: BASF zieht Angebot zurück, Evonik-Aktie stürzt ab – Woran der Deal zerbrach",
+   "link": "https://www.handelsblatt.com/unternehmen/industrie/chemieindustrie-basf-zieht-angebot-zurueck-evonik-aktie-stuerzt-ab/100271324.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T15:05:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "BASF war bereit, sein Milliardenangebot für Evonik noch einmal zu erhöhen. Trotzdem ist die Übernahme gescheitert. Evonik reagiert zurückhaltend auf die Absage.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/unternehmen/industrie/chemieindustrie-basf-zieht-angebot-fuer-evonik-zurueck/100271324.html",
@@ -314,17 +380,6 @@
    "maerkte": [],
    "text": "In den USA geht es um Milliarden für Anthropic, beim KI Summit in München um Alternativen zu US‑Anbietern. Welche Chancen deutsche Unternehmen für sich sehen. Die KI-News der Woche.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec/claudia-sheinbaum-mexico-flight-china-apec",
-   "titel": "Some leaders flew private to the APEC summit in Manila, but not Mexico’s president.",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec/claudia-sheinbaum-mexico-flight-china-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T13:37:50.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Claudia Sheinbaum flew commercial, a journey that involved a 15-hour leg. It was a symbol of her government’s commitment to austerity.",
-   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cmwy8pyqlq5vo",
@@ -963,74 +1018,15 @@
    "maerkte": [],
    "text": "Im Norden Äthiopiens nehmen die Spannungen abermals zu: Die Kämpfe verlagern sich an die Grenze zu Eritrea. Unterdessen verschärfen sich die Spannungen mit dem Sudan.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/koalitionseinigung-wer-von-stromsteuer-und-spritpreisdeckel-profitiert-201694358.html",
-   "titel": "Kompromiss der Koalition: Wer von der Einigung im Kanzleramt profitiert",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/koalitionseinigung-wer-von-stromsteuer-und-spritpreisdeckel-profitiert-201694358.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-18T16:19:32.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Koalition senkt die Stromsteuer, verzichtet aber darauf, die Einkommensteuer den gestiegenen Preisen entsprechend anzupassen. Für Singles dürfte das ein schlechtes Geschäft sein.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-notiert-im-minus-oelpreis-sinkt/100270820.html",
-   "titel": "Dax aktuell: Dax notiert im Minus – Ölpreis sinkt",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-notiert-im-minus-oelpreis-sinkt/100270820.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T16:17:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Nach den deutlichen Verlusten vom Dienstag schwächelt der deutsche Leitindex erneut. Im Fokus stehen neue Inflationsdaten und die geopolitischen Gespräche am Rande des Apec-Gipfels.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo",
-   "titel": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
-   "link": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-18T16:10:44.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The three leaders will meet together for the first time on Thursday during a closely-watched summit.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/kommentar/koalitionsausschuss-merz-stromsteuersenkung-100.html",
-   "titel": "Kommentar zur Stromsteuer-Einigung: Fahren auf Sicht - aber wer sitzt eigentlich am Steuer?",
-   "link": "https://www.tagesschau.de/kommentar/koalitionsausschuss-merz-stromsteuersenkung-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-18T15:47:07.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Kanzler Merz hat die Stromsteuer zur Schicksalsfrage erklärt - und dann acht Stunden lang das kleinstmögliche Ergebnis verhandelt, meint Georg Schwarte. Der Koalitionsausschuss liefert eine Doku-Soap statt Politik. Und niemand wundert sich ",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/stromsteuer-spritpreisdeckel-einigung-koalition-100.html",
-   "titel": "Einigung über Stromsteuersenkung: Die Koalition ist in eine neue Phase eingetreten",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/stromsteuer-spritpreisdeckel-einigung-koalition-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-18T15:45:55.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Union und SPD haben sich auf eine Senkung der Stromsteuer geeinigt. Doch die Verhandlungen liefen Teilnehmern zufolge teils ruppig. Wie es zur Einigung kam und warum sie ein Vorgeschmack auf die kommenden Monate sein könnte. Von Tina Handel",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 13,
-  "DW": 11,
+  "DW": 12,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 7,
-  "BBC World": 8,
+  "BBC World": 9,
   "NYT World": 26,
   "EIA Today in Energy": 1
  }
