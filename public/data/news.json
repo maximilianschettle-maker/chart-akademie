@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T01:24:08.934Z",
+ "lastUpdated": "2026-11-19T02:24:23.721Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/hegseth-usa-venezuela-100.html",
+   "titel": "Militärabkommen zwischen Venezuela und USA unterzeichnet",
+   "link": "https://www.tagesschau.de/ausland/amerika/hegseth-usa-venezuela-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-19T02:10:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Die USA und Venezuela haben ein Militärabkommen unterzeichnet, wie US-Verteidigungsminister Hegseth mitteilte. Mit dem bereits angekündigten Ölabkommen werde die Straße von Hormus zudem \"irrelevant\".",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-daempft-erwartungen-vor-treffen-mit-xi-und-putin/100270890.html",
+   "titel": "+++ Apec-Gipfel +++: Trump dämpft Erwartungen vor Treffen mit Xi und Putin",
+   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-daempft-erwartungen-vor-treffen-mit-xi-und-putin/100270890.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T01:48:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Trump und Putin planen bilaterales Treffen in China +++ Putin und Trump begrüßen sich mit Handschlag +++ Xi und Putin kritisieren vor Treffen mit Trump den Westen +++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/17/world/middleeast/nabeel-rajab-bahrain-dies.html",
    "titel": "Nabeel Rajab, Bahraini Human Rights Activist, Dies at 62",
@@ -1017,37 +1041,15 @@
    "maerkte": [],
    "text": "Russia is accused of clandestine attacks on Ukraine’s allies in Europe, most notably at Leipzig/Halle airport in eastern Germany. That has changed life for villagers nearby.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/crkgvxxwpwz2o",
-   "titel": "Rubio says US not 'under systemic attack' after series of tech outages",
-   "link": "https://www.bbc.co.uk/news/articles/crkgvxxwpwz2o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-18T04:57:06.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Secretary of State Marco Rubio said there was \"zero evidence\" supporting theories online that recent disruptions affecting Microsoft, banks and flights are connected.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/asienreise-xi-warnt-vor-trumps-ankunft-vor-handelsschranken/100270796.html",
-   "titel": "Asienreise: Xi warnt vor Trumps Ankunft vor Handelsschranken",
-   "link": "https://www.handelsblatt.com/politik/international/asienreise-xi-warnt-vor-trumps-ankunft-vor-handelsschranken/100270796.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T04:09:02.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Chinas Staatschef warnt vor einer zunehmenden Abschottung der Weltwirtschaft. Beim Apec-Gipfel stellt er China als Partner für freien Handel dar.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
+  "tagesschau": 13,
   "DW": 12,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 7,
   "Handelsblatt": 6,
-  "BBC World": 12,
+  "BBC World": 11,
   "NYT World": 22,
   "EIA Today in Energy": 1
  }
