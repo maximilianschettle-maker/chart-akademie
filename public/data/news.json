@@ -1,7 +1,77 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T04:24:08.862Z",
+ "lastUpdated": "2026-11-19T05:24:11.653Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-begruesst-putin-mit-wer-ist-er/100270890.html",
+   "titel": "+++ Apec-Gipfel +++: Trump begrüßt Putin mit der Frage: „Wer ist er?“",
+   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-begruesst-putin-mit-wer-ist-er/100270890.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T05:12:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Dreiergipfel zwischen Trump, Xi und Putin soll um 7.30 Uhr starten +++ Chinas Staatschef Xi wirbt für Freihandel und ruft Apec-Länder zu mehr Zusammenarbeit auf +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/europe/spain-trains-infrastructure.html",
+   "titel": "After Train Crash, Spain Asks if High-Speed Rail Grew Too Fast",
+   "link": "https://www.nytimes.com/2026/11/19/world/europe/spain-trains-infrastructure.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T05:01:07.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "As an election nears, a railway disaster in Spain has set off debate over whether maintenance of its infrastructure kept pace with its booming population.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/middleeast/netanyahu-arab-activists-arrests-israel-election.html",
+   "titel": "Netanyahu Associates Acknowledge Role in Setting Off Election Day Arrests",
+   "link": "https://www.nytimes.com/2026/11/19/world/middleeast/netanyahu-arab-activists-arrests-israel-election.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T05:01:06.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Prime Minister Benjamin Netanyahu of Israel had claimed the detention of three opposition activists from an Arab-led party was evidence of vote rigging. His chief of staff has admitted being involved with the initial outreach to police.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/business/cop31-energy-iea.html",
+   "titel": "How the War in Iran Will Remake the Global Energy Order",
+   "link": "https://www.nytimes.com/2026/11/19/business/cop31-energy-iea.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T05:00:06.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "The International Energy Agency, in its most comprehensive analysis of the war’s fallout, found the oil shock could accelerate adoption of alternative power sources.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo",
+   "titel": "Crimean Bridge attacked again, Russian official says",
+   "link": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-19T04:37:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The head of Crimea said traffic was suspended after another attack on the link between Russia and the occupied territory.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/krim-bruecke-zug-100.html",
+   "titel": "Krim-Brücke nach drittem Angriff in einer Woche erneut gesperrt",
+   "link": "https://www.tagesschau.de/ausland/europa/krim-bruecke-zug-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-19T04:28:24.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach einem erneuten Angriff auf die Krim-Brücke ist der Verkehr örtlichen Behörden zufolge vorübergehend eingestellt worden. Die russische Armee transportiert über die Brücke unter anderem militärische Ausrüstung auf die Krim.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/ukraine-koalition-stimmung-100.html",
    "titel": "\"Koalition der Willigen\": Ukrainer fordern Einheit und Entschlossenheit",
@@ -134,17 +204,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Mr. Rajab spent his life fighting for greater political freedoms in his home country, undeterred by years in prison. He died in exile.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo",
-   "titel": "Crimean Bridge attacked again, Russian official says",
-   "link": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-19T01:05:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The head of Crimea said traffic was suspended after another attack on the link between Russia and the occupied territory.",
    "sprache": "en"
   },
   {
@@ -980,75 +1039,16 @@
    ],
    "text": "Schwarz-Rot senkt für ein Jahr die Stromsteuer für Privathaushalte, was einer vierköpfigen Familie acht Euro im Monat bringt. Erstaunlich, dass der Streit fast die Regierung entzweit hätte.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-startet-mit-gewinnen-oelpreis-sinkt/100270820.html",
-   "titel": "Dax aktuell: Dax startet mit Gewinnen – Ölpreis sinkt",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-startet-mit-gewinnen-oelpreis-sinkt/100270820.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T08:22:49.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Nach den deutlichen Verlusten vom Dienstag legt der deutsche Leitindex etwas zu. Im Fokus stehen neue Inflationsdaten und die geopolitischen Gespräche am Rande des Apec-Gipfels.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/eilmeldung-koalitionsausschuss-einigung-100.html",
-   "titel": "Stromsteuersenkung und Spritpreisdeckel - zeitlich begrenzt",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/eilmeldung-koalitionsausschuss-einigung-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-18T08:20:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Spitzen von Union und SPD haben sich im Koalitionsausschuss auf eine Senkung der Stromsteuer für alle geeinigt. Die Finanzierung steht allerdings nur für 2027. Auch ein Spritpreisdeckel soll zeitlich begrenzt kommen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/friedrich-merz-und-die-stromsteuer-was-der-koalitionsausschuss-beschlossen-hat-accg-201693703.html",
-   "titel": "Erleichterung bei Merz: Stromsteuer und Spritpreisdeckel: Das hat die Koalition beschlossen",
-   "link": "https://www.faz.net/aktuell/wirtschaft/friedrich-merz-und-die-stromsteuer-was-der-koalitionsausschuss-beschlossen-hat-accg-201693703.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-18T08:17:07.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Im zweiten Anlauf setzt der Kanzler die Strompreissenkung durch. Doch sie kommt erst einmal befristet. Auch beim Spritpreisdeckel gibt es offene Fragen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec/a-tropical-chinese-city-is-half-empty-and-ready-for-the-summit",
-   "titel": "A tropical Chinese city is half-empty and ready for the summit.",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec/a-tropical-chinese-city-is-half-empty-and-ready-for-the-summit",
-   "quelle": "NYT World",
-   "zeit": "2026-11-18T08:04:02.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "From lush landscaping to extensive surveillance, Shenzhen has made elaborate efforts to prepare for this week’s Asia-Pacific Economic Cooperation summit.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/bundesregierung-koalition-einigt-sich-auf-senkung-der-stromsteuer/100270667.html",
-   "titel": "Bundesregierung: Verhandlungen bis 2 Uhr nachts: Koalition beschließt Senkung der Stromsteuer und Spritpreisdeckel",
-   "link": "https://www.handelsblatt.com/politik/deutschland/bundesregierung-koalition-einigt-sich-auf-senkung-der-stromsteuer/100270667.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T08:03:55.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Nach wochenlangem Streit haben sich Union und SPD auf eine Senkung der Stromsteuer auch für private Haushalte verständigt. Außerdem soll der Spritpreisdeckel ab Januar aktiv werden.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 15,
+  "tagesschau": 16,
   "DW": 12,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 7,
   "Handelsblatt": 6,
   "BBC World": 11,
-  "NYT World": 22,
+  "NYT World": 23,
   "EIA Today in Energy": 1
  }
 }
