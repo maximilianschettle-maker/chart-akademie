@@ -1,7 +1,72 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T14:24:11.617Z",
+ "lastUpdated": "2026-11-19T15:24:08.242Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "titel": "Live Updates: Trump, Xi and Putin Seek to Project Power at Their First Summit",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T15:15:23.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/live/2026/11/19/world/myanmar-icj-ruling-genocide/see-how-new-york-times-photographers-covered-myanmars-2017-attacks-on-the-rohingya",
+   "titel": "See how New York Times photographers covered the aftermath of Myanmar’s 2017 attacks on the Rohingya.",
+   "link": "https://www.nytimes.com/live/2026/11/19/world/myanmar-icj-ruling-genocide/see-how-new-york-times-photographers-covered-myanmars-2017-attacks-on-the-rohingya",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T15:08:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/industrie/basf-chemiekonzern-zieht-angebot-fuer-evonik-zurueck/100271324.html",
+   "titel": "Chemiekonzern: BASF zieht Angebot für Konkurrenten zurück – Evonik-Papiere verlieren 20 Prozent",
+   "link": "https://www.handelsblatt.com/unternehmen/industrie/basf-chemiekonzern-zieht-angebot-fuer-evonik-zurueck/100271324.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T15:05:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Konzern war auch mit einem nachgebesserten Angebot beim Konkurrenten abgeblitzt. Nun will BASF-Chef Kamieth die Pläne für die Milliarden-Übernahme nicht weiter verfolgen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/unternehmen/vw-legt-tarifforderungen-vor-konzern-setzt-auf-mehr-arbeit-fuer-weniger-geld-a-a1adc456-4b16-441b-b7a8-81d08ad1d3f0",
+   "titel": "VW legt Tarifforderungen vor – Konzern setzt auf mehr Arbeit für weniger Geld",
+   "link": "https://www.spiegel.de/wirtschaft/unternehmen/vw-legt-tarifforderungen-vor-konzern-setzt-auf-mehr-arbeit-fuer-weniger-geld-a-a1adc456-4b16-441b-b7a8-81d08ad1d3f0#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-19T15:03:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Volkswagen steckt in der Krise, will seine Wettbewerbsfähigkeit stärken. In den anstehenden Tarifverhandlungen verlangt der deutsche Autobauer Nullrunden und Einschnitte bei der 35-Stunden-Woche.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/verbraucher/energieverbrauch-weltweit-heizen-kuehlen-100.html",
+   "titel": "Erstmals weltweit mehr Energie zum Kühlen als zum Heizen verbraucht",
+   "link": "https://www.tagesschau.de/wirtschaft/verbraucher/energieverbrauch-weltweit-heizen-kuehlen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-19T14:51:14.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Aufgrund der steigenden Temperaturen auf der Erde wurde laut Internationaler Energieagentur weltweit erstmals mehr Energie zum Kühlen als zum Heizen verbraucht. Der \"World Energy Outlook\" geht auch auf die Auswirkungen des Iran-Kriegs ein.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/europe/trump-xi-putin-nuclear-weapons-ukraine.html",
+   "titel": "Putin, Trump and Xi Condemn Nuclear War as Europe Watches Closely",
+   "link": "https://www.nytimes.com/2026/11/19/world/europe/trump-xi-putin-nuclear-weapons-ukraine.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T14:23:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "After their summit, the leaders of Russia, the United States and China agreed that “a nuclear war cannot be won and must never be fought.” Some analysts are skeptical that real change will result.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
    "titel": "Liveticker zu Gipfeln: ++ Kushner und Witkoff in Berlin angekommen ++",
@@ -14,15 +79,15 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "titel": "Live Updates: Trump, Xi and Putin Seek to Project Power at Their First Summit",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T14:17:08.000Z",
+   "id": "https://www.handelsblatt.com/politik/international/russland-so-schlecht-laeuft-der-krieg-fuer-putin/100271204.html",
+   "titel": "Russland: Und jetzt auch noch ein ernstes Krim-Problem: So schlecht läuft der Krieg für Putin",
+   "link": "https://www.handelsblatt.com/politik/international/russland-so-schlecht-laeuft-der-krieg-fuer-putin/100271204.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T14:15:16.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
-   "sprache": "en"
+   "text": "In Shenzhen sonnt Putin sich im Licht von Xi und Trump – aber daheim sieht es düster aus. Die Verluste im Krieg steigen, Benzin muss importiert werden. Und nun droht noch eine weitere Krise.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-putin-kuendigt-vergeltung-fuer-angriff-auf-krim-bruecke-an/27982126.html",
@@ -87,7 +152,7 @@
    "zeit": "2026-11-19T13:31:23.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "The US Secretary of Defence says Venezuela has 'gone from our most aggressive regional threat to a compliant security partner'.",
+   "text": "The US Secretary of Defence says Venezuela has \"gone from our most aggressive regional threat to a compliant security partner\".",
    "sprache": "en"
   },
   {
@@ -959,82 +1024,16 @@
    "maerkte": [],
    "text": "Die Staatschefs der drei Großmächte China, USA und Russland - Xi, Trump und Putin - sind zum APEC-Gipfel in Shenzhen eingetroffen. Dabei stach die herzliche Begrüßung hervor.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o",
-   "titel": "Kuwait says it repelled first Iranian attack in two months after US strikes island",
-   "link": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-18T13:04:48.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Bahrain says it was also attacked by Iran following a US air strike on the Iranian island of Qeshm in the Gulf on Tuesday.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/stromsteuer-gegen-mitternacht-verlaesst-der-kanzler-veraergert-den-saal/100270830.html",
-   "titel": "Koalitionsgipfel: Ein Schal, eine Aktentasche und „Schweinkram“: So lief die Einigung zur Stromsteuer im Kanzleramt",
-   "link": "https://www.handelsblatt.com/politik/deutschland/stromsteuer-gegen-mitternacht-verlaesst-der-kanzler-veraergert-den-saal/100270830.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T13:03:48.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Acht Stunden ringen Union und SPD um die Entlastung. Als Klingbeil eine brisante Gegenfinanzierung ins Spiel bringt, hat Merz offenbar genug. Rekonstruktion einer langen Nacht.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/stromsteuer-gegen-mitternacht-verlaesst-der-kanzler-den-saal/100270830.html",
-   "titel": "Koalitionsausschuss: Gegen Mitternacht verlässt der Kanzler genervt den Saal – wie es zur Einigung um die Stromsteuer kam",
-   "link": "https://www.handelsblatt.com/politik/deutschland/stromsteuer-gegen-mitternacht-verlaesst-der-kanzler-den-saal/100270830.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T13:03:48.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Acht Stunden ringen Union und SPD um die Stromsteuer. Als Klingbeil eine brisante Gegenfinanzierung ins Spiel bringt, hat Merz genug. Rekonstruktion einer langen Nacht.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/gesellschaft/sturm-deutschland-106.html",
-   "titel": "Sturm und Regen in Deutschland - viele Einsätze von Polizei und Feuerwehr",
-   "link": "https://www.tagesschau.de/inland/gesellschaft/sturm-deutschland-106.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-18T12:59:46.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Mancherorts sind bereits 50 Liter Regen binnen 24 Stunden runtergekommen - kombiniert mit heftigem Wind. Das bleibt zunächst auch so. Für fast ganz Deutschland gelten Unwetterwarnungen. Bislang war vor allem NRW betroffen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/cyberangriff-auf-equinor-deutschlands-wichtigster-gaslieferant-im-visier-201694711.html",
-   "titel": "Equinor: Cyberangriff auf Deutschlands wichtigsten Gaslieferanten",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/cyberangriff-auf-equinor-deutschlands-wichtigster-gaslieferant-im-visier-201694711.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-18T12:46:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Europas größter Gasversorger gerät ins Visier von Cyberkriminellen. Die hybride Kriegsführung nimmt zu: Norwegen hat schon die Sicherheitsstufe erhöht.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-xi-moechte-sich-auf-apec-gipfel-als-ruhepol-inszenieren/100270385.html",
-   "titel": "Kommentar: Xi möchte sich auf Apec-Gipfel als Ruhepol inszenieren – doch es kommt anders",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-xi-moechte-sich-auf-apec-gipfel-als-ruhepol-inszenieren/100270385.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T12:37:21.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Chinas Staatschef empfängt die Welt in Shenzhen, der Hightech-Stadt, die Peking gern als Zukunft zeigt. Doch die Gegenwart dürfte ihn dort einholen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 14,
-  "DW": 12,
-  "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 5,
-  "Handelsblatt": 4,
-  "BBC World": 8,
-  "NYT World": 21,
+  "DW": 11,
+  "Spiegel Wirtschaft": 2,
+  "FAZ Wirtschaft": 4,
+  "Handelsblatt": 5,
+  "BBC World": 7,
+  "NYT World": 22,
   "EIA Today in Energy": 1
  }
 }
