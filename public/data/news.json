@@ -1,16 +1,60 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T07:24:12.416Z",
+ "lastUpdated": "2026-11-19T08:24:13.953Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "titel": "Live Updates: Trump, Xi and Putin to Meet for Their First Summit",
+   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
+   "quelle": "NYT World",
+   "zeit": "2026-11-19T08:21:09.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "It is the first three-way meeting of leaders from the United States, China and Russia. President Trump said he would push for an agreement to end the war in Ukraine.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/eu-verschiebt-klimaschutzregeln-wegen-energiekrise-news-kompakt-das-wichtigste-kurz-gefasst/a-79987535",
+   "titel": "EU verschiebt Klimaschutzregeln wegen Energiekrise - News kompakt: Das Wichtigste kurz gefasst",
+   "link": "https://www.dw.com/de/eu-verschiebt-klimaschutzregeln-wegen-energiekrise-news-kompakt-das-wichtigste-kurz-gefasst/a-79987535?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-19T08:11:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Strengere Regelungen für das Treibhausgas Methan sollen in der EU erst zwei Jahre später in Kraft treten. Trump, Putin und Xi kommen zu einem historischen Gipfel-Treffen zusammen. Der DW-Nachrichtenüberblick.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
    "titel": "Liveblog zum APEC-Gipfel: ++ Trump und Xi loben sich gegenseitig ++",
    "link": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-19T07:00:53.000Z",
+   "zeit": "2026-11-19T08:07:52.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Beim Gipfel der Asiatisch-Pazifischen Wirtschaftsgemeinschaft (APEC) hat das Treffen von Chinas Präsident Xi und US-Präsident Trump begonnen. Zuvor war Trump mit Russlands Präsident Putin zusammengekommen. Die Entwicklungen im Liveblog.",
+   "text": "Beim Gipfel der Asiatisch-Pazifischen Wirtschaftsgemeinschaft (APEC) hat das Treffen von Chinas Präsident Xi und US-Präsident Trump begonnen. Zuvor war Trump mit Russlands Staatschef Putin zusammengekommen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo",
+   "titel": "Crimean Bridge attacked again, Russia says",
+   "link": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-19T07:32:06.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The head of Crimea said traffic was suspended after another attack on the link between Russia and the occupied territory.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/banken-bundesregierung-und-unicredit-einigen-sich-bei-commerzbank-uebernahme/100271077.html",
+   "titel": "Banken: Bundesregierung und Unicredit einigen sich bei Commerzbank-Übernahme",
+   "link": "https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/banken-bundesregierung-und-unicredit-einigen-sich-bei-commerzbank-uebernahme/100271077.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-19T07:17:39.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Unicredit macht Zusagen zum Standort Deutschland. Der Bund gibt seine Forderung nach Sitzen im Aufsichtsrat auf. Betriebsratschef Uebel sieht eine Basis, „jahrelange Gefechte“ zu vermeiden.",
    "sprache": "de"
   },
   {
@@ -53,7 +97,7 @@
    "titel": "After Train Crash, Spain Asks if High-Speed Rail Grew Too Fast",
    "link": "https://www.nytimes.com/2026/11/19/world/europe/spain-trains-infrastructure.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-19T05:01:07.000Z",
+   "zeit": "2026-11-19T05:01:08.000Z",
    "kategorie": "politik",
    "maerkte": [
     "aktien"
@@ -77,23 +121,12 @@
    "titel": "How the War in Iran Will Remake the Global Energy Order",
    "link": "https://www.nytimes.com/2026/11/19/business/cop31-energy-iea.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-19T05:00:06.000Z",
+   "zeit": "2026-11-19T05:00:07.000Z",
    "kategorie": "konflikte",
    "maerkte": [
     "oel"
    ],
    "text": "The International Energy Agency, in its most comprehensive analysis of the war’s fallout, found the oil shock could accelerate adoption of alternative power sources.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo",
-   "titel": "Crimean Bridge attacked again, Russian official says",
-   "link": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-19T04:37:17.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The head of Crimea said traffic was suspended after another attack on the link between Russia and the occupied territory.",
    "sprache": "en"
   },
   {
@@ -315,7 +348,7 @@
    "zeit": "2026-11-18T21:04:52.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Trotz der Waffenruhe hat Israels Armee nach eigenen Angaben einen neuen Einsatz im Zentrum des Gazastreifens begonnen. Ziel des Angriffs sei Infrastruktur der Terrororganisation Hamas. Die Islamisten werfen Israel Eskalation vor.",
+   "text": "Die israelische Armee hat eigenen Angaben zufolge eine Bodenoffensive mit Panzern im Zentrum des Gazastreifens begonnen. Das Land kontrolliert inzwischen rund 60 bis 70 Prozent des Gazastreifens militärisch.",
    "sprache": "de"
   },
   {
@@ -1002,49 +1035,14 @@
    ],
    "text": "Nach den deutlichen Verlusten vom Dienstag verzeichnet der deutsche Leitindex leichte Erholung. Im Fokus stehen neue Inflationsdaten und die geopolitischen Gespräche am Rande des Apec-Gipfels.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/nvidia-affaere-wie-stark-haengt-chinas-tech-industrie-von-us-chips-ab/100268366.html",
-   "titel": "Nvidia-Affäre: „Dunkelste Stunde für Chinas große KI-Modelle“: Welche Folgen die neuen US-Techkontrollen haben",
-   "link": "https://www.handelsblatt.com/politik/international/nvidia-affaere-wie-stark-haengt-chinas-tech-industrie-von-us-chips-ab/100268366.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T09:56:01.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "China inszeniert sich beim Apec-Gipfel in Shenzhen als Tech-Supermacht. Doch die schärferen US-Exportkontrollen werfen die Frage auf, wie stark Chinas Tech-Erfolge auf US-Chips basieren.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/bundespolitik-klingbeil-wir-machen-was-wir-serioes-bezahlen-koennen/100137034.html",
-   "titel": "+++ Bundespolitik +++: Klingbeil zur Senkung der Strompreissteuer: „Wir machen das, was wir auch seriös finanzieren können“",
-   "link": "https://www.handelsblatt.com/politik/deutschland/bundespolitik-klingbeil-wir-machen-was-wir-serioes-bezahlen-koennen/100137034.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T09:49:39.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "IW-Chef Hüther zweifelt an Finanzierung der Stromsteuersenkung +++ Grüne kritisieren Befristung der Stromsteuersenkung +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/angriff-aus-russland-cyberattacke-auf-eishockey-weltverband/a-79977795",
-   "titel": "Angriff aus Russland? Cyberattacke auf Eishockey-Weltverband",
-   "link": "https://www.dw.com/de/angriff-aus-russland-cyberattacke-auf-eishockey-weltverband/a-79977795?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-18T09:25:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Mitten im Streit um Russlands Rückkehr wird der Eishockey-Weltverband IIHF gezielt gehackt. Auf seiner Website erscheint russische Propaganda. WM-Gastgeber Deutschland drängt nun auf Suspendierung der russischen Teams.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 16,
+  "tagesschau": 15,
   "DW": 13,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 6,
-  "Handelsblatt": 6,
+  "FAZ Wirtschaft": 7,
+  "Handelsblatt": 5,
   "BBC World": 11,
   "NYT World": 22,
   "EIA Today in Energy": 1
