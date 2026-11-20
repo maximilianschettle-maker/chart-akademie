@@ -1,7 +1,54 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-20T08:24:09.401Z",
+ "lastUpdated": "2026-11-20T09:24:11.370Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-bruecken-100.html",
+   "titel": "Tote bei russischen Angriffen auf mehrere Brücken in Kiew",
+   "link": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-bruecken-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-20T09:11:51.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Es ist eine Attacke ins Herz der ukrainischen Hauptstadt: Russland hat in Kiew erneut Brücken beschossen und beschädigt. Mehrere Menschen wurden getötet. In Polen musste wegen des Angriffs zeitweise ein Flughafen den Betrieb einstellen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o",
+   "titel": "Three Kyiv bridges hit during major Russian missile attack",
+   "link": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-20T09:01:06.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Five people were killed in a wave of strikes which follow Ukraine's successful targeting of the Crimean Bridge.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/ostasiens-boersen-brechen-nach-anthropics-boersengang-ein/100271416.html",
+   "titel": "Nikkei, Kospi & Co.: Ostasiens Börsen trotz Anthropics Börsengang im Minus – Nikkei sackt um 4,5 Prozent ab",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/ostasiens-boersen-brechen-nach-anthropics-boersengang-ein/100271416.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-20T08:57:39.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "halbleiter",
+    "aktien"
+   ],
+   "text": "Der Verkauf von Chipaktien in Japan, Südkorea und Taiwan geht weiter. Sorgen um neue Exportkontrollen der USA für KI-Chips belasten die Märkte zusätzlich, auch in China.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/20/world/australia/shipwreck-warship-spitfire-great-barrier-reef.html",
+   "titel": "Wreck of First Australian-Built Warship Is Revealed 128 Years After It Sank",
+   "link": "https://www.nytimes.com/2026/11/20/world/australia/shipwreck-warship-spitfire-great-barrier-reef.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T08:13:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The wooden gunboat Spitfire was entombed in waters near the Great Barrier Reef after it went down in a cyclone in 1898.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/20/world/australia/wreck-of-first-australian-built-warship-is-revealed-128-years-after-it-sank.html",
    "titel": "Wreck of First Australian-Built Warship Is Revealed 128 Years After It Sank",
@@ -33,17 +80,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Der britische Premier Burnham lässt keinen Zweifel aufkommen: Er will London wieder näher an die EU führen, denn er hält den Brexit für gescheitert. Wie weit kann er dabei gehen? Ein EU-UK-Gipfel soll den Prozess beschleunigen. Von C. Pröss",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-bruecken-100.html",
-   "titel": "Tote bei russischen Angriffen auf mehrere Brücken in Kiew",
-   "link": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-bruecken-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-20T07:23:42.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Es ist eine Attacke ins Herz der ukrainischen Hauptstadt: Russland hat in Kiew erneut Brücken beschossen und beschädigt. Mehrere Menschen wurden getötet. In Polen musste wegen des Angriffs zeitweise ein Flughafen den Betrieb einstellen.",
    "sprache": "de"
   },
   {
@@ -124,20 +160,6 @@
    "maerkte": [],
    "text": "A decade after Britain voted to leave the European Union, it is creeping back toward the 27-nation bloc amid global pressure.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/ostasiens-boersen-brechen-nach-anthropics-boersengang-ein/100271416.html",
-   "titel": "Nikkei, Kospi & Co.: Ostasiens Börsen trotz Anthropics Börsengang im Minus – Nikkei sackt um 4,5 Prozent ab",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/ostasiens-boersen-brechen-nach-anthropics-boersengang-ein/100271416.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-20T03:55:22.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "halbleiter",
-    "aktien"
-   ],
-   "text": "Der Verkauf von Chipaktien in Japan, Südkorea und Taiwan geht weiter. Sorgen um neue Exportkontrollen der USA für KI-Chips belasten die Märkte zusätzlich, auch in China.",
-   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/ausland/europa/polen-deutschland-militaer-100.html",
@@ -478,7 +500,7 @@
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/unternehmen/vw-legt-tarifforderungen-vor-konzern-setzt-auf-mehr-arbeit-fuer-weniger-geld-a-a1adc456-4b16-441b-b7a8-81d08ad1d3f0",
-   "titel": "VW legt Tarifforderungen vor – Konzern setzt auf mehr Arbeit für weniger Geld",
+   "titel": "Volkswagen: VW legt Tarifforderungen vor – Konzern setzt auf mehr Arbeit für weniger Geld",
    "link": "https://www.spiegel.de/wirtschaft/unternehmen/vw-legt-tarifforderungen-vor-konzern-setzt-auf-mehr-arbeit-fuer-weniger-geld-a-a1adc456-4b16-441b-b7a8-81d08ad1d3f0#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-11-19T15:03:00.000Z",
@@ -993,38 +1015,16 @@
    "maerkte": [],
    "text": "A 1945 meeting of Churchill, Stalin and Franklin Roosevelt set Europe’s course for decades. Here’s what happened.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/apec-treffen-xi-putin-trump-themen-100.html",
-   "titel": "Xi, Trump und Putin: Drei Perspektiven, viele Differenzen",
-   "link": "https://www.tagesschau.de/ausland/asien/apec-treffen-xi-putin-trump-themen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-18T23:33:32.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Es gilt schon vorab als historisch - das erste Dreier-Treffen von Xi, Trump und Putin auf dem APEC-Gipfel in Shenzhen. Doch die Positionen der drei Präsidenten bei den Themen atomare Abrüstung, Iran oder Ukraine klaffen teils auseinander.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/videos/c9gkljpgdn1lo",
-   "titel": "Catherine visits Mumbai maternity hospital on the last day of royal trip",
-   "link": "https://www.bbc.co.uk/news/videos/c9gkljpgdn1lo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-18T22:32:47.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The Prince and Princess of Wales ended their three-day trip to India on Wednesday, the couple's first international tour since 2022.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 14,
-  "DW": 11,
+  "DW": 10,
   "Spiegel Wirtschaft": 2,
-  "FAZ Wirtschaft": 2,
+  "FAZ Wirtschaft": 3,
   "Handelsblatt": 6,
-  "BBC World": 11,
-  "NYT World": 25,
+  "BBC World": 10,
+  "NYT World": 24,
   "EIA Today in Energy": 1
  }
 }
