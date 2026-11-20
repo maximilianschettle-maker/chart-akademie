@@ -1,7 +1,51 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-20T16:24:08.528Z",
+ "lastUpdated": "2026-11-20T17:24:12.797Z",
  "eintraege": [
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/scheidungsprozess-gegen-wladimir-potanin-ex-frau-fordert-2-6-milliarden-euro-201702072.html",
+   "titel": "Nickel-Milliardär: Spektakulärer Scheidungsprozess um russischen Oligarchen",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/scheidungsprozess-gegen-wladimir-potanin-ex-frau-fordert-2-6-milliarden-euro-201702072.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-20T17:17:10.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Die Ex-Frau von Wladimir Potanin fordert 2,2 Milliarden Pfund, er will ihr nur 25 Millionen Pfund geben. Russlands zweitreichster Oligarch sagt aber auch, dass es wegen der Sanktionen schwierig werden könnte.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro",
+   "titel": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+   "link": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-20T16:54:29.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nobody was hurt and no damage has been reported, but Warsaw described the incident as a \"provocation\" from Moscow.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/20/world/europe/uk-eu-summit-brexit.html",
+   "titel": "Britain Announces Brexit Reset Deal at E.U. Summit: What to Know",
+   "link": "https://www.nytimes.com/2026/11/20/world/europe/uk-eu-summit-brexit.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T16:50:16.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Prime Minister Andy Burnham and European leaders said they had agreed to remove some of the barriers created when Britain left the European Union.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/tuerkei-imamoglu-104.html",
+   "titel": "Urteil hindert İmamoğlu an Präsidentschaftskandidatur in der Türkei",
+   "link": "https://www.tagesschau.de/ausland/europa/tuerkei-imamoglu-104.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-20T16:30:28.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der größte Rivale von Präsident Erdoğan sitzt bereits im Gefängnis. Nun verhindert ein weiteres Gerichtsurteil, dass İmamoğlu bei der nächsten Wahl kandidieren darf. Es geht dabei um seinen Hochschulabschluss.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/wirtschaft/deutsch-ukrainisches-wirtschaftsforum-104.html",
    "titel": "Merz: Unterstützung der Ukraine bringt uns Dividende",
@@ -20,7 +64,7 @@
    "titel": "Iraqi Forces Enter Stronghold of Powerful Iran-Backed Militia",
    "link": "https://www.nytimes.com/2026/11/20/world/middleeast/iraq-militia-iran-kataib-hezbollah.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-20T16:18:20.000Z",
+   "zeit": "2026-11-20T16:18:21.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "For the first time in over a decade, army and police units were deployed in territory controlled by the group, Kataib Hezbollah. But it was unclear if it would withdraw its forces.",
@@ -42,7 +86,7 @@
    "titel": "‘Russian Objects’ Crashed in Poland, Officials Say. Here’s What We Can See.",
    "link": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-20T15:49:29.000Z",
+   "zeit": "2026-11-20T15:49:30.000Z",
    "kategorie": "konflikte",
    "maerkte": [
     "aktien"
@@ -75,6 +119,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.bbc.co.uk/news/videos/c65y19wy3xl8o",
+   "titel": "What we know about the latest Russian missile strikes on Ukraine",
+   "link": "https://www.bbc.co.uk/news/videos/c65y19wy3xl8o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-20T15:14:01.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "What we know about the latest Russian missile strikes on Ukraine.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.handelsblatt.com/politik/international/eu-uk-gipfel-eu-und-grossbritannien-oeffnen-grenzen-fuer-die-junge-generation/100270861.html",
    "titel": "EU-Großbritannien-Gipfel: EU und Großbritannien öffnen Grenzen für die junge Generation",
    "link": "https://www.handelsblatt.com/politik/international/eu-uk-gipfel-eu-und-grossbritannien-oeffnen-grenzen-fuer-die-junge-generation/100270861.html",
@@ -84,17 +139,6 @@
    "maerkte": [],
    "text": "Knapp sieben Jahre nach dem Brexit wollen Brüssel und London wieder eine engere Beziehung aufnehmen. Die Vereinbarung könnte den Briten sogar den Weg zurück in die EU bahnen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/20/world/europe/uk-eu-summit-brexit.html",
-   "titel": "Britain Announces Brexit Reset Deal at E.U. Summit: What to Know",
-   "link": "https://www.nytimes.com/2026/11/20/world/europe/uk-eu-summit-brexit.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T14:57:33.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Prime Minister Andy Burnham and European leaders announced a deal to remove some barriers introduced by Brexit, a decade after Britain voted to leave the European Union.",
-   "sprache": "en"
   },
   {
    "id": "https://www.dw.com/de/kinderraub-als-kriegswaffe-hitlers-erbe-putins-system-und-das-schicksal-der-geraubten-kinder-zwischen-umerziehung-propaganda-und-identit%C3%A4tsverlust/a-80001588",
@@ -138,17 +182,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Standing alongside the U.S. and Chinese leaders, President Vladimir V. Putin secured a symbolic triumph in his long quest to restore Russia’s place as a global power.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro",
-   "titel": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
-   "link": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-20T13:52:04.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nobody was hurt and no damage has been reported, but Warsaw described the incident as a \"provocation\" from Moscow.",
    "sprache": "en"
   },
   {
@@ -270,17 +303,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Knapp sieben Jahre nach dem Brexit rücken Brüssel und London wieder näher zusammen. Die Vereinbarung soll bei einem Gipfeltreffen in Brüssel vorgestellt werden.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/tuerkei-imamoglu-104.html",
-   "titel": "Urteil hindert İmamoğlu an Präsidentschaftskandidatur in der Türkei",
-   "link": "https://www.tagesschau.de/ausland/europa/tuerkei-imamoglu-104.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-20T10:41:07.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der größte Rivale von Präsident Erdoğan sitzt bereits im Gefängnis. Nun verhindert ein weiteres Gerichtsurteil, dass İmamoğlu bei der nächsten Wahl kandidieren darf. Es geht dabei um seinen Hochschulabschluss.",
    "sprache": "de"
   },
   {
@@ -991,39 +1013,15 @@
    ],
    "text": "Der Konflikt am Persischen Golf prägt den Energiemarkt laut Internationaler Energieagentur noch lange. Öl bleibt im Westen Mangelware. Derweil soll es laut Iran erneut Explosionen an Tankern gegeben haben.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/verbraucher/heizkosten-anstieg-100.html",
-   "titel": "Heizen wird wegen steigender Energiepreise immer teurer",
-   "link": "https://www.tagesschau.de/wirtschaft/verbraucher/heizkosten-anstieg-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-19T10:10:08.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Ein warmes Zuhause ist bei Weitem nicht für alle Menschen selbstverständlich. Nach Berechnungen des Statistischen Bundesamts konnten im vergangenen Jahr rund 4,7 Millionen Menschen ihre Wohnung nicht richtig heizen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-xi-atomwaffen-sollten-verboten-und-vollstaendig-vernichtet-werden/100270890.html",
-   "titel": "+++ Apec-Gipfel +++: Xi: Atomwaffen sollten verboten und vollständig vernichtet werden",
-   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-xi-atomwaffen-sollten-verboten-und-vollstaendig-vernichtet-werden/100270890.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-19T09:59:45.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Trump zum Ukraine-Krieg: „Ich denke, dass sich etwas bewegt“ +++ Chinas Staatschef Xi warnt Trump wegen Taiwan +++ Trump wirbt für mehr Agrarkäufe +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 9,
-  "DW": 10,
+  "DW": 9,
   "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 3,
+  "FAZ Wirtschaft": 4,
   "Handelsblatt": 4,
-  "BBC World": 9,
+  "BBC World": 6,
   "NYT World": 24,
   "EIA Today in Energy": 1
  }
