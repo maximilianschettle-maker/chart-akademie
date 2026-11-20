@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-20T20:24:13.046Z",
+ "lastUpdated": "2026-11-20T21:16:06.749Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
+   "titel": "‘Russian Objects’ Crashed in Poland, Officials Say. Here’s What We Can See.",
+   "link": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T20:30:59.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "There were no injuries or damage from three incidents that the Polish authorities called a likely “provocation” from Russia during military exercises by Ukraine’s allies.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
+   "titel": "Trump Flaunts Camaraderie With Xi and Putin but Has Little to Show for It",
+   "link": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T20:20:51.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Trump called Russia’s leader his “friend” and marveled at China’s warm welcome for his first-ever trilateral summit. But there were no breakthroughs on nuclear control, the war in Ukraine or A.I.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/19/world/middleeast/netanyahu-arab-activists-arrests-israel-election.html",
    "titel": "Netanyahu Associates Acknowledge Role in Setting Off Election Day Arrests",
@@ -23,17 +47,6 @@
    "maerkte": [],
    "text": "Rechenzentren waren im US-Wahlkampf ein umstrittenes Thema: Die Demokraten wollen sie stärker regulieren. Der US-Präsident hingegen setzt sich für den Bau ein – aber nur im Inland.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
-   "titel": "Trump Flaunts Camaraderie With Xi and Putin but Has Little to Show for It",
-   "link": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T18:21:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "President Trump called Russia’s leader his “friend” and marveled at China’s warm welcome for his first-ever trilateral summit. But there were no breakthroughs on nuclear control, the war in Ukraine or A.I.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/19/world/asia/russia-china-united-states-oil-joint-statement.html",
@@ -160,19 +173,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The war in Ukraine has had untold consequences for dolphins, moose, storks and a huge range of other wildlife whose habitats are now rife with anti-drone netting, minefields or in the direct line of fire.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
-   "titel": "‘Russian Objects’ Crashed in Poland, Officials Say. Here’s What We Can See.",
-   "link": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T15:49:30.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "There were no injuries or damage from three incidents that the Polish authorities called a likely “provocation” from Russia during military exercises by Ukraine’s allies.",
    "sprache": "en"
   },
   {
