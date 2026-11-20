@@ -1,7 +1,51 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-20T12:24:07.376Z",
+ "lastUpdated": "2026-11-20T13:08:23.039Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o",
+   "titel": "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge",
+   "link": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-20T13:01:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russia launched one of its biggest air attacks yet as it rejected the prospect of security guarantees for Ukraine.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro",
+   "titel": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+   "link": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-20T12:56:48.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nobody was hurt and no damage has been reported, but Warsaw described the incident as a \"provocation\" from Moscow.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/ig-metall-erstmals-seit-2018-wieder-24-stunden-streiks-accg-201701268.html",
+   "titel": "24-StunDen-Warnstreiks: Stillstand in der Metallindustrie",
+   "link": "https://www.faz.net/aktuell/wirtschaft/ig-metall-erstmals-seit-2018-wieder-24-stunden-streiks-accg-201701268.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-20T12:28:49.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Erstmals seit acht Jahren kommt es zu 24-Stunden-Warnstreiks in der Metall-Industrie. Die Arbeitgeber sind empört und fordern, die Gewerkschaften sollten an den Verhandlungstisch zurückkommen. Bei VW geht die Eskalation gerade erst los.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/bundeskanzler-merz-wirbt-fuer-investitionen-in-die-ukraine-accg-201702143.html",
+   "titel": "Geld für die Ukraine: Merz: „Was wir investieren, werden wir durch Stabilität zurückerhalten“",
+   "link": "https://www.faz.net/aktuell/wirtschaft/bundeskanzler-merz-wirbt-fuer-investitionen-in-die-ukraine-accg-201702143.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-20T12:25:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Kein deutsches Unternehmen hat nach Angaben des Kanzlers sein Engagement in der von Krieg überzogenen Ukraine aufgegeben. Merz stellt eine „Dividende“ in Aussicht, mahnt aber auch Reformen an.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/eu-uk-gipfel-eu-einigt-sich-mit-briten-auf-projekte-fuer-eine-wiederannaeherung/100270861.html",
    "titel": "EU-Großbritannien-Gipfel: EU einigt sich mit Briten auf Projekte für eine Wiederannäherung",
@@ -12,17 +56,6 @@
    "maerkte": [],
    "text": "Knapp sieben Jahre nach dem Brexit wollen Brüssel und London wieder eine engere Beziehung aufnehmen. Die Vereinbarung könnte den Briten den Weg zurück in die EU bahnen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o",
-   "titel": "Three Kyiv bridges hit during major Russian missile attack",
-   "link": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-20T12:09:55.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russia launched one of its biggest air attacks yet as it rejected the prospect of security guarantees for Ukraine.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/20/world/europe/putin-trump-xi-summit-apec.html",
@@ -65,7 +98,7 @@
    "zeit": "2026-11-20T11:40:13.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Von Kriegen bis Klimawandel - Jugendliche sehen sich stärker als frühere Generationen von einem Mix aus Dauerkrisen bedroht. Von der Politik fühlen sie sich im Stich gelassen und fürchten um ihre Zukunft. Von Sven Kästner.",
+   "text": "Von Kriegen bis Klimawandel - Jugendliche sehen sich stärker als frühere Generationen durch einen Mix aus Dauerkrisen bedroht. Von der Politik fühlen sie sich im Stich gelassen und fürchten um ihre Zukunft. Von Sven Kästner.",
    "sprache": "de"
   },
   {
@@ -222,7 +255,7 @@
    "zeit": "2026-11-20T05:48:01.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Erstmals in der Geschichte saß ein US-Präsident allein mit dem chinesischen und dem russischen Staatschef an einem Tisch. Große Deals blieben offenbar aus, die Debatte zu Hause ist groß: War das Diplomatie - oder Inszenierung? Von S. Jackis",
+   "text": "Erstmals in der Geschichte saß ein US-Präsident allein mit dem chinesischen und dem russischen Staatschef an einem Tisch. Große Deals blieben offenbar aus, die Debatte zu Hause in den USA ist groß: War das Diplomatie - oder Inszenierung? Vo",
    "sprache": "de"
   },
   {
@@ -980,48 +1013,15 @@
    "maerkte": [],
    "text": "Heute kommen knapp 30 Staats- und Regierungschefs nach Berlin, sie gehören zu den wichtigsten Unterstützern der Ukraine. Vom Treffen soll ein klares Signal ausgehen: Die Ukraine kann weiter auf Hilfe zählen. Von Christina Nagel.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
-   "titel": "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T03:58:59.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "China’s leader, Xi Jinping, earlier hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen. They are expected to hold a trilateral meeting on Thursday with President Vladimir V. Putin of Russia.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
-   "titel": "Carney and Trump Hold Unscheduled Trade Meeting at Asia Summit",
-   "link": "https://www.nytimes.com/2026/11/18/world/canada/trump-carney-meeting-asia-us-canada-trade.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T03:58:57.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The bilateral meeting between the neighbors follows trade gains for Canada’s prime minister this week with China and the Philippines.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/17/world/asia/china-japan-propaganda-xi-takaichi.html",
-   "titel": "Tracking China’s Intensifying War of Words Against Japan",
-   "link": "https://www.nytimes.com/2026/11/17/world/asia/china-japan-propaganda-xi-takaichi.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T03:32:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Beijing is running a concerted campaign to paint Japan as an aggressor and resurgent military threat, according to a Times analysis.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 13,
   "DW": 9,
   "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 3,
+  "FAZ Wirtschaft": 5,
   "Handelsblatt": 4,
-  "BBC World": 9,
+  "BBC World": 10,
   "NYT World": 23,
   "EIA Today in Energy": 1
  }
