@@ -1,7 +1,66 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-20T15:24:12.289Z",
+ "lastUpdated": "2026-11-20T16:24:08.528Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/deutsch-ukrainisches-wirtschaftsforum-104.html",
+   "titel": "Merz: Unterstützung der Ukraine bringt uns Dividende",
+   "link": "https://www.tagesschau.de/wirtschaft/deutsch-ukrainisches-wirtschaftsforum-104.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-20T16:22:30.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Seit dem Angriff Russlands unterstützt Deutschland die Ukraine - insgesamt mit mehr als 100 Milliarden Euro. Ausgaben, die sich auszahlen könnten. Kanzler Merz sieht - trotz des Krieges - positive Effekte für die deutsche Wirtschaft.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/20/world/middleeast/iraq-militia-iran-kataib-hezbollah.html",
+   "titel": "Iraqi Forces Enter Stronghold of Powerful Iran-Backed Militia",
+   "link": "https://www.nytimes.com/2026/11/20/world/middleeast/iraq-militia-iran-kataib-hezbollah.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T16:18:20.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "For the first time in over a decade, army and police units were deployed in territory controlled by the group, Kataib Hezbollah. But it was unclear if it would withdraw its forces.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
+   "titel": "The War Is Ravaging Ukraine’s Wildlife, Too",
+   "link": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T16:05:55.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The war in Ukraine has had untold consequences for dolphins, moose, storks and a huge range of other wildlife whose habitats are now rife with anti-drone netting, minefields or in the direct line of fire.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
+   "titel": "‘Russian Objects’ Crashed in Poland, Officials Say. Here’s What We Can See.",
+   "link": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T15:49:29.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "There were no injuries or damage from three incidents that the Polish authorities called a likely “provocation” from Russia during military exercises by Ukraine’s allies.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/verteidigung-russische-raketen-gehen-waehrend-pistorius-besuch-in-polen-nieder/100271592.html",
+   "titel": "Verteidigung: Während Pistorius-Besuch: Russische Raketen gehen in Polen nieder – Warschau glaubt nicht an Zufall",
+   "link": "https://www.handelsblatt.com/politik/international/verteidigung-russische-raketen-gehen-waehrend-pistorius-besuch-in-polen-nieder/100271592.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-20T15:34:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der militärische Schulterschluss Deutschlands und Polens gefällt nicht allen. Der Bundesverteidigungsminister kämpft gegen die Gespenster der Vergangenheit – und hat eine Botschaft für Moskau.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.dw.com/de/raketeneinschlag-nato-generalsekret%C3%A4r-sagt-polen-unterst%C3%BCtzung-zu/a-80004889",
    "titel": "Raketeneinschlag: NATO-Generalsekretär sagt Polen Unterstützung zu",
@@ -25,19 +84,6 @@
    "maerkte": [],
    "text": "Knapp sieben Jahre nach dem Brexit wollen Brüssel und London wieder eine engere Beziehung aufnehmen. Die Vereinbarung könnte den Briten sogar den Weg zurück in die EU bahnen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
-   "titel": "‘Russian Objects’ Crashed in Poland, Officials Say. Here’s What We Can See.",
-   "link": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T15:03:34.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "There were no injuries or damage from three incidents that the Polish authorities called a likely “provocation” from Russia during military exercises by Ukraine’s allies.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/20/world/europe/uk-eu-summit-brexit.html",
@@ -103,17 +149,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Nobody was hurt and no damage has been reported, but Warsaw described the incident as a \"provocation\" from Moscow.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
-   "titel": "The War Is Ravaging Ukraine’s Wildlife, Too",
-   "link": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T13:36:04.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The war in Ukraine has had untold consequences for dolphins, moose, storks and a huge range of other wildlife whose habitats are now rife with anti-drone netting, minefields or in the direct line of fire.",
    "sprache": "en"
   },
   {
@@ -980,48 +1015,13 @@
    ],
    "text": "Trump zum Ukraine-Krieg: „Ich denke, dass sich etwas bewegt“ +++ Chinas Staatschef Xi warnt Trump wegen Taiwan +++ Trump wirbt für mehr Agrarkäufe +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-historisches-gipfeltreffen-von-trump-xi-und-putin-hat-begonnen/100270890.html",
-   "titel": "+++ Apec-Gipfel +++: Historisches Gipfeltreffen von Trump, Xi und Putin hat begonnen",
-   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-historisches-gipfeltreffen-von-trump-xi-und-putin-hat-begonnen/100270890.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-19T08:48:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Trump begrüßt Putin mit „Wer ist er?“ +++ Chinas Staatschef Xi warnt Trump wegen Taiwan +++ Xi wirbt für Freihandel +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/nach-dem-ende-der-16-j%C3%A4hrigen-regierungszeit-von-premier-viktor-orban-und-dem-wahlsieg-peter-magyars-worum-unabh%C3%A4ngige-medien-in-ungarn-jetzt-k%C3%A4mpfen/a-79979918",
-   "titel": "Nach dem Ende der 16-jährigen Regierungszeit von Premier Viktor Orban und dem Wahlsieg Peter Magyars: Worum unabhängige Medien in Ungarn jetzt kämpfen",
-   "link": "https://www.dw.com/de/nach-dem-ende-der-16-jährigen-regierungszeit-von-premier-viktor-orban-und-dem-wahlsieg-peter-magyars-worum-unabhängige-medien-in-ungarn-jetzt-kämpfen/a-79979918?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-19T08:45:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Seit dem Regierungswechsel können unabhängige Medien in Ungarn wieder frei arbeiten. Doch sie verlieren auch Aufmerksamkeit und Spenden. Ein tragfähiger neuer Medienmarkt fehlt noch. Ein Besuch in zwei Redaktionen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/eu-verschiebt-klimaschutzregeln-wegen-energiekrise-news-kompakt-das-wichtigste-kurz-gefasst/a-79987535",
-   "titel": "EU verschiebt Klimaschutzregeln wegen Energiekrise - News kompakt: Das Wichtigste kurz gefasst",
-   "link": "https://www.dw.com/de/eu-verschiebt-klimaschutzregeln-wegen-energiekrise-news-kompakt-das-wichtigste-kurz-gefasst/a-79987535?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-19T08:11:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Strengere Regelungen für das Treibhausgas Methan sollen in der EU erst zwei Jahre später in Kraft treten. Trump, Putin und Xi kommen zu einem historischen Gipfel-Treffen zusammen. Der DW-Nachrichtenüberblick.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 9,
   "DW": 10,
   "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 4,
+  "FAZ Wirtschaft": 3,
   "Handelsblatt": 4,
   "BBC World": 9,
   "NYT World": 24,
