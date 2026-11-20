@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-20T22:24:10.708Z",
+ "lastUpdated": "2026-11-20T23:24:22.874Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
+   "titel": "The War Is Ravaging Ukraine’s Wildlife, Too",
+   "link": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T23:05:46.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The war in Ukraine has had untold consequences for dolphins, moose, storks and a huge range of other wildlife whose habitats are now rife with anti-drone netting, minefields or in the direct line of fire.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
+   "titel": "Trump Flaunts Camaraderie With Xi and Putin but Has Little to Show for It",
+   "link": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T22:34:05.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Trump called Russia’s leader his “friend” and marveled at China’s warm welcome for his first-ever trilateral summit. But there were no breakthroughs on nuclear control, the war in Ukraine or A.I.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo",
    "titel": "'I tell my son it's just fireworks': Life inside Yemeni city besieged by Houthis",
@@ -24,17 +46,6 @@
     "aktien"
    ],
    "text": "There were no injuries or damage from three incidents that the Polish authorities called a likely “provocation” from Russia during military exercises by Ukraine’s allies.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
-   "titel": "Trump Flaunts Camaraderie With Xi and Putin but Has Little to Show for It",
-   "link": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T20:20:51.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "President Trump called Russia’s leader his “friend” and marveled at China’s warm welcome for his first-ever trilateral summit. But there were no breakthroughs on nuclear control, the war in Ukraine or A.I.",
    "sprache": "en"
   },
   {
@@ -173,17 +184,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "For the first time in over a decade, army and police units were deployed in territory controlled by the group, Kataib Hezbollah. But it was unclear if it would withdraw its forces.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
-   "titel": "The War Is Ravaging Ukraine’s Wildlife, Too",
-   "link": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T16:05:55.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The war in Ukraine has had untold consequences for dolphins, moose, storks and a huge range of other wildlife whose habitats are now rife with anti-drone netting, minefields or in the direct line of fire.",
    "sprache": "en"
   },
   {
@@ -1020,7 +1020,7 @@
   "DW": 9,
   "Spiegel Wirtschaft": 0,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 5,
+  "Handelsblatt": 4,
   "BBC World": 5,
   "NYT World": 23,
   "EIA Today in Energy": 1
