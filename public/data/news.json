@@ -1,17 +1,72 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-20T11:24:11.505Z",
+ "lastUpdated": "2026-11-20T12:24:07.376Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/eu-uk-gipfel-eu-einigt-sich-mit-briten-auf-projekte-fuer-eine-wiederannaeherung/100270861.html",
+   "titel": "EU-Großbritannien-Gipfel: EU einigt sich mit Briten auf Projekte für eine Wiederannäherung",
+   "link": "https://www.handelsblatt.com/politik/international/eu-uk-gipfel-eu-einigt-sich-mit-briten-auf-projekte-fuer-eine-wiederannaeherung/100270861.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-20T12:13:01.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Knapp sieben Jahre nach dem Brexit wollen Brüssel und London wieder eine engere Beziehung aufnehmen. Die Vereinbarung könnte den Briten den Weg zurück in die EU bahnen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o",
    "titel": "Three Kyiv bridges hit during major Russian missile attack",
    "link": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-20T11:12:57.000Z",
+   "zeit": "2026-11-20T12:09:55.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Five people were killed in a wave of strikes which follow Ukraine's successful targeting of the Crimean Bridge.",
+   "text": "Russia launched one of its biggest air attacks yet as it rejected the prospect of security guarantees for Ukraine.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/20/world/europe/putin-trump-xi-summit-apec.html",
+   "titel": "A Summit Gives Putin the Win He Craves: Equal Stature With Superpowers",
+   "link": "https://www.nytimes.com/2026/11/20/world/europe/putin-trump-xi-summit-apec.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T12:00:41.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Standing alongside the U.S. and Chinese leaders, President Vladimir V. Putin secured a symbolic triumph in his long quest to restore Russia’s place as a global power.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-bruecken-100.html",
+   "titel": "Tote bei russischen Angriffen auf mehrere Brücken in Kiew",
+   "link": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-bruecken-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-20T11:47:44.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Es ist eine Attacke ins Herz der ukrainischen Hauptstadt: Russland hat in Kiew erneut Brücken beschossen und beschädigt. Mehrere Menschen wurden getötet. Im Nachbarland Polen stürzten drei russische Flugobjekte ab.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/acht-tote-bei-neuen-russischen-angriffen-auf-die-ukraine/a-80001040",
+   "titel": "Acht Tote bei neuen russischen Angriffen auf die Ukraine",
+   "link": "https://www.dw.com/de/acht-tote-bei-neuen-russischen-angriffen-auf-die-ukraine/a-80001040?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-20T11:46:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nach den spektakulären Angriffen auf die Krim-Brücke hatte Russlands Präsident Putin der Ukraine mit massiver Vergeltung gedroht. Nun nahm die russische Armee ihrerseits Brücken in Kyjiw ins Visier.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/wissen/forschung/jugendliche-in-der-dauerkrise-100.html",
+   "titel": "Warum die Jugend der Gen Z im Dauerkrisenmodus steckt",
+   "link": "https://www.tagesschau.de/wissen/forschung/jugendliche-in-der-dauerkrise-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-20T11:40:13.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Von Kriegen bis Klimawandel - Jugendliche sehen sich stärker als frühere Generationen von einem Mix aus Dauerkrisen bedroht. Von der Politik fühlen sie sich im Stich gelassen und fürchten um ihre Zukunft. Von Sven Kästner.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/polen-drei-russische-flugobjekte-abgestuerzt/100271566.html",
@@ -23,17 +78,6 @@
    "maerkte": [],
    "text": "Zwei mutmaßliche Raketen und eine Drohne: Während Russland die Ukraine angreift, stürzen Flugobjekte in Polen ab. Der polnische Verteidigungsminister spricht von einer Provokation.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/20/world/europe/putin-trump-xi-summit-apec.html",
-   "titel": "A Summit Gives Putin the Win He Craves: Equal Stature With Superpowers",
-   "link": "https://www.nytimes.com/2026/11/20/world/europe/putin-trump-xi-summit-apec.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T11:04:47.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Standing alongside the U.S. and Chinese leaders, President Vladimir V. Putin secured a symbolic triumph in his long quest to restore Russia’s place as a global power.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/eu-uk-gipfel-eu-einigt-sich-mit-briten-auf-projekte-fuer-wiederannaeherung/100270861.html",
@@ -100,17 +144,6 @@
    "maerkte": [],
    "text": "The war in Ukraine has had untold consequences for dolphins, moose, storks and a huge range of other wildlife whose habitats are now rife with anti-drone netting, minefields or in the direct line of fire.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-bruecken-100.html",
-   "titel": "Tote bei russischen Angriffen auf mehrere Brücken in Kiew",
-   "link": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-bruecken-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-20T09:34:09.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Es ist eine Attacke ins Herz der ukrainischen Hauptstadt: Russland hat in Kiew erneut Brücken beschossen und beschädigt. Mehrere Menschen wurden getötet. In Polen musste wegen des Angriffs zeitweise ein Flughafen den Betrieb einstellen.",
-   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/ostasiens-boersen-brechen-nach-anthropics-boersengang-ein/100271416.html",
@@ -980,48 +1013,15 @@
    "maerkte": [],
    "text": "Beijing is running a concerted campaign to paint Japan as an aggressor and resurgent military threat, according to a Times analysis.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/18/world/americas/colombia-us-joint-military.html",
-   "titel": "Colombia Rejects Joint Plan With U.S. to Target Drug Gangs",
-   "link": "https://www.nytimes.com/2026/11/18/world/americas/colombia-us-joint-military.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T03:23:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Colombian president said his nation would not allow American forces to take part in anti-cartel military operations on its soil, according to U.S. officials. He later denied that his government had rejected a cooperation plan.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/elon-musk-habe-ukraine-geholfen-wie-kein-anderer/100271103.html",
-   "titel": "Tech-Milliardär: Musk: Habe Ukraine geholfen wie kein anderer",
-   "link": "https://www.handelsblatt.com/politik/international/elon-musk-habe-ukraine-geholfen-wie-kein-anderer/100271103.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-19T03:08:45.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Zum russischen Angriffskrieg gebe es oft die Einstellung „Ukraine gut, Russland böse“. Man müsse aber auch Mitleid mit den russischen Soldaten haben, sagt Elon Musk in einem Interview.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/tech-milliardaer-musk-habe-ukraine-geholfen-wie-kein-anderer/100271103.html",
-   "titel": "Tech-Milliardär: Musk – Habe Ukraine geholfen wie kein anderer",
-   "link": "https://www.handelsblatt.com/politik/international/tech-milliardaer-musk-habe-ukraine-geholfen-wie-kein-anderer/100271103.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-19T03:08:45.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Zum russischen Angriffskrieg gebe es oft die Einstellung „Ukraine gut, Russland böse“. Man müsse aber auch Mitleid mit den russischen Soldaten haben, sagt er in einem Interview.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 13,
-  "DW": 10,
+  "DW": 9,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 4,
-  "BBC World": 10,
+  "BBC World": 9,
   "NYT World": 23,
   "EIA Today in Energy": 1
  }
