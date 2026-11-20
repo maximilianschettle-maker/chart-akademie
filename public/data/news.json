@@ -1,7 +1,66 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-20T14:24:13.917Z",
+ "lastUpdated": "2026-11-20T15:24:12.289Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/raketeneinschlag-nato-generalsekret%C3%A4r-sagt-polen-unterst%C3%BCtzung-zu/a-80004889",
+   "titel": "Raketeneinschlag: NATO-Generalsekretär sagt Polen Unterstützung zu",
+   "link": "https://www.dw.com/de/raketeneinschlag-nato-generalsekretär-sagt-polen-unterstützung-zu/a-80004889?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-20T15:16:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Die Ukraine wurde in der Nacht erneut heftig von Russland attackiert. Dabei wurde auch Polen getroffen, wie die Regierung in Warschau mitteilte. Die NATO steht ihrem Mitglied zur Seite.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/eu-uk-gipfel-eu-und-grossbritannien-oeffnen-grenzen-fuer-die-junge-generation/100270861.html",
+   "titel": "EU-Großbritannien-Gipfel: EU und Großbritannien öffnen Grenzen für die junge Generation",
+   "link": "https://www.handelsblatt.com/politik/international/eu-uk-gipfel-eu-und-grossbritannien-oeffnen-grenzen-fuer-die-junge-generation/100270861.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-20T15:05:24.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Knapp sieben Jahre nach dem Brexit wollen Brüssel und London wieder eine engere Beziehung aufnehmen. Die Vereinbarung könnte den Briten sogar den Weg zurück in die EU bahnen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
+   "titel": "‘Russian Objects’ Crashed in Poland, Officials Say. Here’s What We Can See.",
+   "link": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T15:03:34.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "There were no injuries or damage from three incidents that the Polish authorities called a likely “provocation” from Russia during military exercises by Ukraine’s allies.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/20/world/europe/uk-eu-summit-brexit.html",
+   "titel": "Britain Announces Brexit Reset Deal at E.U. Summit: What to Know",
+   "link": "https://www.nytimes.com/2026/11/20/world/europe/uk-eu-summit-brexit.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T14:57:33.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Prime Minister Andy Burnham and European leaders announced a deal to remove some barriers introduced by Brexit, a decade after Britain voted to leave the European Union.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/kinderraub-als-kriegswaffe-hitlers-erbe-putins-system-und-das-schicksal-der-geraubten-kinder-zwischen-umerziehung-propaganda-und-identit%C3%A4tsverlust/a-80001588",
+   "titel": "Kinderraub als Kriegswaffe: Hitlers Erbe, Putins System und das Schicksal der geraubten Kinder zwischen Umerziehung, Propaganda und Identitätsverlust",
+   "link": "https://www.dw.com/de/kinderraub-als-kriegswaffe-hitlers-erbe-putins-system-und-das-schicksal-der-geraubten-kinder-zwischen-umerziehung-propaganda-und-identitätsverlust/a-80001588?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-20T14:18:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Als Kind von den Nazis verschleppt, als junge Frau mit dem Kinderraub durch Russland konfrontiert: Barbara Paciorkiewicz und Ksenija Koldin erzählen von Verlust, gewaltsamer Trennung und schwieriger Heimkehr.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/20/world/europe/youth-protests-far-right-left.html",
    "titel": "Gen Z Is Driving Global Political Change, Aiding Far Left and Far Right",
@@ -36,17 +95,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/20/world/europe/uk-eu-summit-brexit.html",
-   "titel": "Britain Announces Brexit Reset Deal at E.U. Summit: What to Know",
-   "link": "https://www.nytimes.com/2026/11/20/world/europe/uk-eu-summit-brexit.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T13:55:06.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Prime Minister Andy Burnham and European leaders announced a deal to remove some barriers introduced by Brexit, a decade after Britain left the European Union.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro",
    "titel": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
    "link": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
@@ -62,7 +110,7 @@
    "titel": "The War Is Ravaging Ukraine’s Wildlife, Too",
    "link": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-20T13:36:03.000Z",
+   "zeit": "2026-11-20T13:36:04.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The war in Ukraine has had untold consequences for dolphins, moose, storks and a huge range of other wildlife whose habitats are now rife with anti-drone netting, minefields or in the direct line of fire.",
@@ -588,6 +636,17 @@
    "sprache": "en"
   },
   {
+   "id": "https://www.dw.com/de/cyber-sicherheit-wie-verwundbar-ist-deutschland/a-79984323",
+   "titel": "Cyber-Sicherheit: Wie verwundbar ist Deutschland?",
+   "link": "https://www.dw.com/de/cyber-sicherheit-wie-verwundbar-ist-deutschland/a-79984323?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-19T16:24:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Angriffe auf Privatpersonen, Wirtschaft oder öffentliche Verwaltungen nehmen zu und verunsichern die Bevölkerung. Wie reagieren Politik und Sicherheitsbehörden?",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.dw.com/de/cyber-sicherheit-wie-verwundbar-ist-deutschland-antworten-stehen-im-lagebericht-des-bundesamtes-f%C3%BCr-sicherheit-in-der-informationstechnik-bsi/a-79984323",
    "titel": "Cyber-Sicherheit: Wie verwundbar ist Deutschland? Antworten stehen im Lagebericht des Bundesamtes für Sicherheit in der Informationstechnik (BSI)",
    "link": "https://www.dw.com/de/cyber-sicherheit-wie-verwundbar-ist-deutschland-antworten-stehen-im-lagebericht-des-bundesamtes-für-sicherheit-in-der-informationstechnik-bsi/a-79984323?maca=de-rss-de-all-1119-xml-mrss",
@@ -956,73 +1015,16 @@
    "maerkte": [],
    "text": "Strengere Regelungen für das Treibhausgas Methan sollen in der EU erst zwei Jahre später in Kraft treten. Trump, Putin und Xi kommen zu einem historischen Gipfel-Treffen zusammen. Der DW-Nachrichtenüberblick.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/banken-bundesregierung-und-unicredit-einigen-sich-bei-commerzbank-uebernahme/100271077.html",
-   "titel": "Banken: Bundesregierung und Unicredit einigen sich bei Commerzbank-Übernahme",
-   "link": "https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/banken-bundesregierung-und-unicredit-einigen-sich-bei-commerzbank-uebernahme/100271077.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-19T07:17:39.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Unicredit macht Zusagen zum Standort Deutschland. Der Bund gibt seine Forderung nach Sitzen im Aufsichtsrat auf. Betriebsratschef Uebel sieht eine Basis, „jahrelange Gefechte“ zu vermeiden.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/save-the-children-staaten-versagen-beim-schutz-von-kindern/a-79981688",
-   "titel": "Save the Children: Staaten versagen beim Schutz von Kindern",
-   "link": "https://www.dw.com/de/save-the-children-staaten-versagen-beim-schutz-von-kindern/a-79981688?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-19T06:02:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Zahl der Jungen und Mädchen, die in Kriegs- und Konfliktgebieten leben, nimmt zu, sagt die Kinderrechtsorganisation Save the Children. Der neueste Jahresbericht ist auch eine Anklageschrift.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sieben-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html",
-   "titel": "Börse am 19. November: Sieben Punkte, die für Anleger heute wichtig sind",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sieben-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-19T05:23:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Der Dax fällt wieder unter die Marke von 26.000 Punkten. Anleger schauen auf den historischen Dreiergipfel zwischen Trump, Xi und Putin. In Berlin findet ein Ukraine-Gipfel statt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-begruesst-putin-mit-wer-ist-er/100270890.html",
-   "titel": "+++ Apec-Gipfel +++: Trump begrüßt Putin mit der Frage: „Wer ist er?“",
-   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-begruesst-putin-mit-wer-ist-er/100270890.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-19T05:12:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Dreiergipfel zwischen Trump, Xi und Putin soll demnächst starten +++ Chinas Staatschef Xi wirbt für Freihandel und ruft Apec-Länder zu mehr Zusammenarbeit auf +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/krim-bruecke-zug-100.html",
-   "titel": "Krim-Brücke nach drittem Angriff in einer Woche erneut gesperrt",
-   "link": "https://www.tagesschau.de/ausland/europa/krim-bruecke-zug-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-19T04:28:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach einem erneuten Angriff auf die Krim-Brücke ist der Verkehr laut Behörden eingestellt worden. Russland transportiert über die Brücke unter anderem militärische Ausrüstung für den Krieg gegen die Ukraine.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
-  "DW": 8,
+  "tagesschau": 10,
+  "DW": 10,
   "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 3,
-  "Handelsblatt": 5,
+  "FAZ Wirtschaft": 4,
+  "Handelsblatt": 4,
   "BBC World": 9,
-  "NYT World": 23,
+  "NYT World": 24,
   "EIA Today in Energy": 1
  }
 }
