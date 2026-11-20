@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-20T06:24:09.472Z",
+ "lastUpdated": "2026-11-20T07:24:11.367Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c623j4kpg94go",
+   "titel": "UK and EU to agree youth mobility scheme, BBC understands",
+   "link": "https://www.bbc.co.uk/news/articles/c623j4kpg94go?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-20T07:14:46.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The scheme is expected to be approved at Friday's UK-EU summit, with new deals on food trade and carbon emissions also on the table.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/us-reaktionen-dreiergipfel-100.html",
    "titel": "Kritik aus den USA nach Treffen Trumps mit Xi und Putin",
@@ -71,19 +82,8 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/c623j4kpg94go",
-   "titel": "UK and EU to agree youth mobility scheme, BBC understands",
-   "link": "https://www.bbc.co.uk/news/articles/c623j4kpg94go?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-20T04:35:51.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The scheme is expected to be approved at Friday's UK-EU summit, with new deals on food trade and carbon emissions also on the table.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/ostasiens-boersen-brechen-nach-anthropics-boersengang-ein/100271416.html",
-   "titel": "Nikkei, Kospi & Co.: Ostasiens Börsen brechen nach Anthropics Börsengang ein",
+   "titel": "Nikkei, Kospi & Co.: Ostasiens Börsen trotz Anthropics Börsengang im Minus",
    "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/ostasiens-boersen-brechen-nach-anthropics-boersengang-ein/100271416.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-20T03:55:22.000Z",
@@ -92,7 +92,7 @@
     "halbleiter",
     "aktien"
    ],
-   "text": "Der Verkauf von Chipaktien in Ostasien geht weiter. Sorgen um neue Exportkontrollen der USA für KI-Chips belasten die Märkte zusätzlich, auch in China.",
+   "text": "Der Verkauf von Chipaktien in Japan, Südkorea und Taiwan geht weiter. Sorgen um neue Exportkontrollen der USA für KI-Chips belasten die Märkte zusätzlich, auch in China.",
    "sprache": "de"
   },
   {
@@ -152,13 +152,13 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo",
-   "titel": "'I tell my son it's just fireworks': People inside besieged Yemeni city speak to BBC",
+   "titel": "'I tell my son it's just fireworks': Life inside Yemeni city besieged by Houthis",
    "link": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-20T00:13:21.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Orla Guerin speaks to seven people trapped in Taiz by the Houthis who reveal what life is like under siege.",
+   "text": "Orla Guerin speaks to seven people trapped in the key city of Taiz, cut off from the outside world for weeks.",
    "sprache": "en"
   },
   {
@@ -1018,10 +1018,10 @@
   }
  ],
  "quellen": {
-  "tagesschau": 15,
+  "tagesschau": 14,
   "DW": 11,
   "Spiegel Wirtschaft": 2,
-  "FAZ Wirtschaft": 3,
+  "FAZ Wirtschaft": 2,
   "Handelsblatt": 5,
   "BBC World": 11,
   "NYT World": 26,
