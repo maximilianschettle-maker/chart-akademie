@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-19T22:15:22.054Z",
+ "lastUpdated": "2026-11-20T00:24:13.864Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
+   "titel": "Trump Flaunts Camaraderie With Xi and Putin but Has Little to Show for It",
+   "link": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T00:14:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Trump called Russia’s leader his “friend” and marveled at China’s warm welcome for his first-ever trilateral summit. But there were no breakthroughs on nuclear control, the war in Ukraine or A.I.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo",
+   "titel": "'I tell my son it's just fireworks': People inside besieged Yemeni city speak to BBC",
+   "link": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-20T00:13:21.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Orla Guerin speaks to seven people trapped in Taiz by the Houthis who reveal what life is like under siege.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
    "titel": "Trump, Xi and Putin Seek to Project Power at Their First Summit",
@@ -58,17 +80,6 @@
    "maerkte": [],
    "text": "Die \"Koalition der Willigen\" verspricht, der Ukraine \"so lange wie nötig\" zu helfen. Nach dem Gipfel in Berlin rief Kanzler Merz Russlands Präsident Putin auf, die Waffen niederzulegen. Einen Frieden könne es nur mit Beteiligung Europas geb",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
-   "titel": "Trump Flaunts Camaraderie With Xi and Putin but Has Little to Show for It",
-   "link": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T19:07:18.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "President Trump called Russia’s leader his “friend” and marveled at China’s warm welcome for his first-ever trilateral summit. But there were no breakthroughs on nuclear control, the war in Ukraine or A.I.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html",
@@ -1005,21 +1016,6 @@
    "maerkte": [],
    "text": "Ukrainian forces are fighting Russian troops in an old Soviet tunnel in the Kharkiv region.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-minus-oelpreis-sinkt/100270820.html",
-   "titel": "Dax aktuell: Dax schließt im Minus – Ölpreis sinkt",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-minus-oelpreis-sinkt/100270820.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T16:51:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Nach den deutlichen Verlusten vom Dienstag schwächelte der deutsche Leitindex erneut. Im Fokus standen neue Inflationsdaten und die geopolitischen Gespräche am Rande des Apec-Gipfels.",
-   "sprache": "de"
   }
  ],
  "quellen": {
