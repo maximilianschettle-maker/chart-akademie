@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-20T01:24:16.875Z",
+ "lastUpdated": "2026-11-20T02:24:12.984Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
+   "titel": "Trump Flaunts Camaraderie With Xi and Putin but Has Little to Show for It",
+   "link": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-20T02:10:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Trump called Russia’s leader his “friend” and marveled at China’s warm welcome for his first-ever trilateral summit. But there were no breakthroughs on nuclear control, the war in Ukraine or A.I.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c6074k5jjrzko",
    "titel": "More climate money for Africa? Europe says use what's already pledged",
@@ -44,17 +55,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Beim Besuch des früheren Konzentrationslagers Auschwitz zeigt der Verteidigungsminister Kanzlerformat. Auch sonst meldet er sich auffällig häufig zu Wort. Stehen dahinter höhere Ambitionen?",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
-   "titel": "Trump Flaunts Camaraderie With Xi and Putin but Has Little to Show for It",
-   "link": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T00:14:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "President Trump called Russia’s leader his “friend” and marveled at China’s warm welcome for his first-ever trilateral summit. But there were no breakthroughs on nuclear control, the war in Ukraine or A.I.",
    "sprache": "en"
   },
   {
