@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-20T05:24:22.742Z",
+ "lastUpdated": "2026-11-20T06:24:09.472Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/us-reaktionen-dreiergipfel-100.html",
+   "titel": "Kritik aus den USA nach Treffen Trumps mit Xi und Putin",
+   "link": "https://www.tagesschau.de/ausland/us-reaktionen-dreiergipfel-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-20T05:48:01.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Erstmals in der Geschichte saß ein US-Präsident allein mit dem chinesischen und dem russischen Staatschef an einem Tisch. Große Deals blieben offenbar aus, die Debatte zu Hause ist groß: War das Diplomatie - oder Inszenierung? Von S. Jackis",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/technik/ki/amd-und-nvidia-us-regierung-geraet-wegen-chipexporten-nach-china-unter-druck/100271465.html",
+   "titel": "AMD und Nvidia: US-Regierung gerät wegen Chipexporten nach China unter Druck",
+   "link": "https://www.handelsblatt.com/technik/ki/amd-und-nvidia-us-regierung-geraet-wegen-chipexporten-nach-china-unter-druck/100271465.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-20T05:46:52.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Nvidia und AMD durften laut neuen Dokumenten KI-Chips an Kunden liefern, die später auf einer Liste mutmaßlicher Unterstützer des chinesischen Militärs landeten. Das wirft Fragen auf.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c6074k5jjrzko",
    "titel": "More climate money for Africa? Europe says use what's already pledged",
@@ -991,35 +1015,11 @@
    "maerkte": [],
    "text": "Die \"Koalition der Willigen\" bei der Ukraine-Unterstützung trifft sich in Berlin. Es geht auch darum, ob Europa über die Zukunft des Landes künftig mit verhandeln kann.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Ukrainische Angriffe auf Raffinerien – Russland importiert offenbar Rekordmengen an Benzin",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-russland-importiert-offenbar-rekordmengen-an-benzin/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T18:49:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Russland plante blutige Provokation an Grenze zu Polen +++ Merz empfängt zum Ukraine-Gegengipfel +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-und-putin-planen-bilaterales-treffen-in-china/100270890.html",
-   "titel": "+++ Apec-Gipfel +++: Treffen bestätigt: Trump und Putin planen für Donnerstag bilaterales Gespräch in China",
-   "link": "https://www.handelsblatt.com/politik/international/apec-gipfel-trump-und-putin-planen-bilaterales-treffen-in-china/100270890.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-18T18:47:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Putin und Trump begrüßen sich mit Handschlag +++ Xi und Putin kritisieren vor Treffen mit Trump den Westen +++ Der Apec-Gipfel in Bildern +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 14,
-  "DW": 12,
+  "tagesschau": 15,
+  "DW": 11,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 5,
