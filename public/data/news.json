@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-21T03:24:19.504Z",
+ "lastUpdated": "2026-11-21T05:24:09.467Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cxnv4zvmdy0jo",
+   "titel": "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
+   "link": "https://www.bbc.co.uk/news/articles/cxnv4zvmdy0jo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-21T05:15:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Trump's comments came as Russia launched \"biggest attacks this year\" against Ukraine.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/saudi-arabien-versch%C3%A4rft-vorgehen-gegen-regimekritiker/a-80006017",
+   "titel": "Saudi-Arabien verschärft Vorgehen gegen Regimekritiker",
+   "link": "https://www.dw.com/de/saudi-arabien-verschärft-vorgehen-gegen-regimekritiker/a-80006017?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-21T05:14:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Menschenrechtslage in Saudi-Arabien bleibt düster. Allein 2026 fanden bisher 211 Hinrichtungen statt. Nutzt Saudi-Arabien den Iran-Krieg, um politischen Dissens zu unterdrücken?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/21/world/europe/spain-sanchez-interview-election-basketball.html",
+   "titel": "On the Trail With Spain’s Prime Minister, as He Tries to Pull Out a Win",
+   "link": "https://www.nytimes.com/2026/11/21/world/europe/spain-sanchez-interview-election-basketball.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-21T05:01:09.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Pedro Sánchez, Europe’s most prominent left-wing leader, seems set to lose power in an election next week. Our reporter trailed his last-ditch effort to turn his campaign around.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/ukraine-krieg-russland-krywyj-rih-100.html",
    "titel": "Tote und Verletzte bei Raketenangriff auf Krywyj Rih",
@@ -978,51 +1011,16 @@
    "maerkte": [],
    "text": "The bridge - a symbol of Russia's occupation of the Crimean Peninsula - suffered major damaged following a combined attack by Ukraine earlier this week.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/business/cop31-energy-iea.html",
-   "titel": "How the War in Iran Will Remake the Global Energy Order",
-   "link": "https://www.nytimes.com/2026/11/19/business/cop31-energy-iea.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T12:51:18.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "The International Energy Agency, in its most comprehensive analysis of the war’s fallout, found the oil shock could accelerate adoption of alternative power sources.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/urteil-voelkermord-rohingya-myanmar-100.html",
-   "titel": "Internationaler Gerichtshof: Vorgehen Myanmars gegen Rohingya war Völkermord",
-   "link": "https://www.tagesschau.de/ausland/asien/urteil-voelkermord-rohingya-myanmar-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-19T12:42:10.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Myanmar wollte einen \"wesentlichen Teil\" der Minderheit der Rohingya vernichten: Zu dieser Einschätzung kommt der Internationale Gerichtshof. Das Land sei daher verantwortlich für einen Völkermord, urteilte das höchste UN-Gericht.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/asia/xi-putin-trump-meeting-china-russia.html",
-   "titel": "Behind Trump Meeting, Xi and Putin Share a Vision of Usurping U.S. Power",
-   "link": "https://www.nytimes.com/2026/11/19/world/asia/xi-putin-trump-meeting-china-russia.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T12:41:50.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "President Trump joined the Chinese and Russian leaders for a summit in Shenzhen, even though the two autocrats are trying to reverse America’s victory in the Cold War.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 12,
-  "DW": 9,
+  "DW": 10,
   "Spiegel Wirtschaft": 0,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 4,
-  "BBC World": 5,
-  "NYT World": 23,
+  "BBC World": 4,
+  "NYT World": 24,
   "EIA Today in Energy": 1
  }
 }
