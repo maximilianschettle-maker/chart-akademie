@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-21T02:24:17.785Z",
+ "lastUpdated": "2026-11-21T03:24:19.504Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-krieg-russland-krywyj-rih-100.html",
+   "titel": "Tote und Verletzte bei Raketenangriff auf Krywyj Rih",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-krieg-russland-krywyj-rih-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-21T02:39:59.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Krywyj Rih ist die Heimatstadt des ukrainischen Präsidenten Selenskyj. Nun wurde die Industriestadt erneut mit ballistischen Raketen beschossen. Eine Rakete schlug demnach nahe Wohnhäusern und einem Restaurant ein.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-krawalle-gen-z-100.html",
+   "titel": "Jugendliche erneut zu Tausenden auf den Straßen",
+   "link": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-krawalle-gen-z-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-21T02:38:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Zehntausende junge Menschen haben am Freitag friedlich für die Anliegen ihrer Generation demonstriert. Nach dem Ende der \"Gen Z regelt\"-Demos gab es mancherorts zwar doch noch Krawalle, eine Eskalation wie an Halloween blieb aber aus.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro",
    "titel": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
@@ -991,32 +1013,10 @@
    "maerkte": [],
    "text": "President Trump joined the Chinese and Russian leaders for a summit in Shenzhen, even though the two autocrats are trying to reverse America’s victory in the Cold War.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-gipfel-von-shenzhen-keine-substanz-dafuer-verheerende-symbolik/100270181.html",
-   "titel": "Kommentar: Der Gipfel von Shenzhen – keine Substanz, dafür verheerende Symbolik",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-gipfel-von-shenzhen-keine-substanz-dafuer-verheerende-symbolik/100270181.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-19T12:26:57.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Putin aufgewertet, Trump abgewertet, und Xi darf sich als großer Krisendiplomat inszenieren: Der Gipfel von Shenzhen offenbart eine Trilateralisierung und Infantilisierung von Weltpolitik.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/trump-xi-putin-gipfel-in-china-mit-hochtrabenden-worten/a-79988021",
-   "titel": "Trump, Xi, Putin: Gipfel in China mit hochtrabenden Worten",
-   "link": "https://www.dw.com/de/trump-xi-putin-gipfel-in-china-mit-hochtrabenden-worten/a-79988021?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-19T11:53:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Es ist ein historischer Tag: Erstmals saßen die Präsidenten der Atommächte USA, China und Russland an einem Tisch. Die Staatschefs sprachen unter anderem von einer gemeinsamen Verantwortung zur Friedenssicherung.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 12,
   "DW": 9,
   "Spiegel Wirtschaft": 0,
   "FAZ Wirtschaft": 4,
