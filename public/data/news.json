@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-21T01:24:13.337Z",
+ "lastUpdated": "2026-11-21T02:24:17.785Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro",
+   "titel": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+   "link": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-21T02:09:46.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nobody was hurt and no damage has been reported, but Warsaw described the incident as a \"provocation\" from Moscow.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqpv94d10rwpo",
    "titel": "ANC fights to keep control of South Africa's key cities after election setback",
@@ -139,17 +150,6 @@
    "maerkte": [],
    "text": "Die Ex-Frau von Wladimir Potanin fordert 2,2 Milliarden Pfund, er will ihr nur 25 Millionen Pfund geben - und sagt, dass es wegen der Sanktionen schwierig werden könnte.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro",
-   "titel": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
-   "link": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-20T16:54:29.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nobody was hurt and no damage has been reported, but Warsaw described the incident as a \"provocation\" from Moscow.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/20/world/europe/uk-eu-summit-brexit.html",
