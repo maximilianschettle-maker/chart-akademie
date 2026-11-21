@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-21T20:24:14.666Z",
+ "lastUpdated": "2026-11-21T21:24:11.075Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/21/world/canada/defense-department-canada-military-trump.html",
+   "titel": "Pentagon Issued Memo Limiting ‘Social Activities’ With Canadian Military",
+   "link": "https://www.nytimes.com/2026/11/21/world/canada/defense-department-canada-military-trump.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-21T20:35:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The latest salvo in the fraught U.S. relationship with Canada has not affected their vast joint military operation, including the shared airspace command, NORAD.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/eu-indonesien-handelsabkommen-102.html",
    "titel": "EU und Indonesien unterzeichnen Freihandelsabkommen",
@@ -45,17 +56,6 @@
    "maerkte": [],
    "text": "Vor Finnland ist in internationalen Gewässern ein russisches Handelsschiff von Drohnen getroffen worden. Es brach ein Feuer aus, zur Besatzung gibt es widersprüchliche Angaben.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/21/world/canada/defense-department-canada-military-trump.html",
-   "titel": "Pentagon Issued Memo Limiting ‘Social Activities’ With Canadian Military",
-   "link": "https://www.nytimes.com/2026/11/21/world/canada/defense-department-canada-military-trump.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-21T18:53:42.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The latest salvo in the fraught U.S. relationship with Canada has not affected their vast joint military operation, including the shared airspace command, NORAD.",
-   "sprache": "en"
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/eu-und-indonesien-unterzeichnen-weitreichenden-handelspakt-a-169be32d-6dd7-4308-8329-005d9e97b0bc",
