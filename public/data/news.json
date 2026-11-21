@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-21T10:24:09.137Z",
+ "lastUpdated": "2026-11-21T11:22:26.845Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/21/world/canada/carney-china-electric-vehicles-tariffs.html",
+   "titel": "A Chinese Tech Hub Offers a Peek at the Electric Cars Headed for Canada",
+   "link": "https://www.nytimes.com/2026/11/21/world/canada/carney-china-electric-vehicles-tariffs.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-21T11:00:08.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Prime Minister Mark Carney attended an economic summit in the city of Shenzhen, where electric vehicles rule the hectic, but largely silent, road.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/service/strom-und-gas-verivox-rechnet-mit-steigenden-kosten-a-d6900d1e-e5cd-4399-a6ac-ca93f756be7b",
+   "titel": "Strom und Gas: Verivox rechnet mit steigenden Kosten",
+   "link": "https://www.spiegel.de/wirtschaft/service/strom-und-gas-verivox-rechnet-mit-steigenden-kosten-a-d6900d1e-e5cd-4399-a6ac-ca93f756be7b#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-21T10:50:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Gerade hat die Koalition die Senkung der Stromsteuer beschlossen – doch einer Auswertung zufolge dürfte das nicht ausreichen, um den Kostenanstieg zu stoppen. Noch drastischer dürfte die Teuerung beim Gas sein.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/lateinamerika-so-dreht-kolumbiens-neuer-praesident-sein-land-auf-rechts/100270159.html",
+   "titel": "Lateinamerika: Kettensägenpolitik trifft Kulturkampf: So dreht Kolumbiens neuer Präsident sein Land auf rechts",
+   "link": "https://www.handelsblatt.com/politik/international/lateinamerika-so-dreht-kolumbiens-neuer-praesident-sein-land-auf-rechts/100270159.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-21T10:42:49.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Abelardo de la Espriella setzt Drohnen gegen Feinde ein, vor getöteten Aufständischen lässt er sich in Uniform fotografieren. Ex-Präsident Santos ist entsetzt, Analysten sind besorgt.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/abschiebungen-bundestagsjuristen-sehen-rechtliche-huerden-fuer-abschiebezentren/100271379.html",
    "titel": "Abschiebungen: Bundestagsjuristen sehen rechtliche Hürden für Abschiebezentren",
@@ -272,7 +305,7 @@
    "zeit": "2026-11-20T17:24:00.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Trump: Ohne Deal keine Sicherheitsgarantien seitens der USA für die Ukraine +++ Russland soll Dänen für Mord an ukrainischem Rapper angeheuert haben +++ Der Newsblog.",
+   "text": "Umfrage: Fast jeder Zweite für Kürzung der Ukraine-Hilfen +++ Trump: Ohne Deal keine Sicherheitsgarantien seitens der USA für die Ukraine +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -981,49 +1014,16 @@
    "maerkte": [],
    "text": "Volkswagen steckt in der Krise, will seine Wettbewerbsfähigkeit stärken. In den anstehenden Tarifverhandlungen verlangt der deutsche Autobauer Nullrunden und Einschnitte bei der 35-Stunden-Woche.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/verbraucher/energieverbrauch-weltweit-heizen-kuehlen-100.html",
-   "titel": "Erstmals weltweit mehr Energie zum Kühlen als zum Heizen verbraucht",
-   "link": "https://www.tagesschau.de/wirtschaft/verbraucher/energieverbrauch-weltweit-heizen-kuehlen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-19T14:51:14.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Aufgrund der steigenden Temperaturen auf der Erde wurde laut Internationaler Energieagentur weltweit erstmals mehr Energie zum Kühlen als zum Heizen verbraucht. Der \"World Energy Outlook\" geht auch auf die Auswirkungen des Iran-Kriegs ein.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/industrie/volkswagen-das-ist-vws-neue-giftliste/100271239.html",
-   "titel": "Volkswagen: Längere Arbeitszeiten, Bonus-Aus, weniger freie Tage: Das ist VWs neue „Giftliste“",
-   "link": "https://www.handelsblatt.com/unternehmen/industrie/volkswagen-das-ist-vws-neue-giftliste/100271239.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-19T14:45:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "VW legt seine Tarifforderungen vor. Selbst für Heiligabend und Silvester sollen Beschäftigte Urlaub nehmen. Die IG Metall spricht von einem „Katalog des Grauens“ – und droht mit Streik.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/europe/trump-xi-putin-nuclear-weapons-ukraine.html",
-   "titel": "Putin, Trump and Xi Condemn Nuclear War as Europe Watches Closely",
-   "link": "https://www.nytimes.com/2026/11/19/world/europe/trump-xi-putin-nuclear-weapons-ukraine.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T14:23:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "After their summit, the leaders of Russia, the United States and China agreed that “a nuclear war cannot be won and must never be fought.” Some analysts are skeptical that real change will result.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
-  "DW": 10,
-  "Spiegel Wirtschaft": 0,
+  "tagesschau": 9,
+  "DW": 9,
+  "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 2,
-  "Handelsblatt": 5,
+  "Handelsblatt": 6,
   "BBC World": 4,
-  "NYT World": 22,
+  "NYT World": 23,
   "EIA Today in Energy": 1
  }
 }
