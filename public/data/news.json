@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-21T16:24:13.644Z",
+ "lastUpdated": "2026-11-21T17:24:10.235Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-drohnenangriff-russland-frachter-100.html",
+   "titel": "Finnland meldet Drohnenangriff auf russischen Frachter in der Ostsee",
+   "link": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-drohnenangriff-russland-frachter-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-21T16:29:37.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Vor Finnland ist in internationalen Gewässern ein russisches Handelsschiff von Drohnen getroffen worden. Es brach ein Feuer aus, zur Besatzung gibt es widersprüchliche Angaben.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-rutte-spricht-sich-nach-vorfall-fuer-verteidigung-polens-aus/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Rutte spricht sich nach Vorfall für Verteidigung Polens aus",
@@ -33,17 +44,6 @@
    "kategorie": "energie",
    "maerkte": [],
    "text": "Der Pakt soll das schwache Geschäft mit Südostasiens größter Volkswirtschaft beleben. Doch Rohstoffnationalismus, eine politische Krise und die rekordschwache Rupiah belasten das Land.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-drohnenangriff-russland-frachter-100.html",
-   "titel": "Finnland meldet Drohnenangriff auf russischen Frachter in der Ostsee",
-   "link": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-drohnenangriff-russland-frachter-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-21T14:15:27.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Vor Finnland ist in internationalen Gewässern ein russisches Handelsschiff von Drohnen getroffen worden. Es brach ein Feuer aus, die Besatzung wurde nach russischen Angaben gerettet. Finnland schickte Helfer.",
    "sprache": "de"
   },
   {
@@ -1021,7 +1021,7 @@
  ],
  "quellen": {
   "tagesschau": 9,
-  "DW": 10,
+  "DW": 9,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 1,
   "Handelsblatt": 5,
