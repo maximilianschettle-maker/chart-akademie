@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-21T21:24:11.075Z",
+ "lastUpdated": "2026-11-21T22:24:10.527Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/2026/11/21/world/canada/defense-department-canada-military-trump.html",
@@ -66,6 +66,17 @@
    "kategorie": "handel",
    "maerkte": [],
    "text": "Die EU gewinnt die drittgrößte Demokratie der Welt als Partner: Indonesien. Schon bald sollen dadurch etwa Zölle auf europäische Autos entfallen, das ostasiatische Land will mehr wichtige Batterierohstoffe liefern.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/unternehmen/tatjana-kim-chefin-von-russischem-onlinehaendler-wildberries-tritt-zurueck-a-c7075012-6bff-4f8e-8bc0-f8c3e9ac6d53",
+   "titel": "Tatjana Kim: Chefin von russischem Onlinehändler Wildberries tritt zurück",
+   "link": "https://www.spiegel.de/wirtschaft/unternehmen/tatjana-kim-chefin-von-russischem-onlinehaendler-wildberries-tritt-zurueck-a-c7075012-6bff-4f8e-8bc0-f8c3e9ac6d53#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-21T17:33:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Die Sanktionen der EU gegen die russische Unternehmerin Tatjana Kim zeigen Wirkung. Die Gründerin des »russischen Amazon« räumt ihren Führungsposten.",
    "sprache": "de"
   },
   {
@@ -1001,17 +1012,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Nach dem Treffen von Trump, Putin und Xi in China versammelt der Kanzler die Ukraine-Unterstützer in Berlin zum Gegengipfel. Die Botschaft an Putin und Trump war klar.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-merz-bezeichnet-dreier-gipfel-in-china-als-bildtermin/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Merz bezeichnet Gipfel von Trump, Xi und Putin in China als „Bildtermin“",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-merz-bezeichnet-dreier-gipfel-in-china-als-bildtermin/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-19T17:18:49.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Putin kündigt Vergeltung für Angriff auf Krim-Brücke an +++ Putin zu Fortsetzung der Ukraine-Gespräche bereit +++ Selenskyj zu Treffen mit Koalition der Willigen eingetroffen +++ Der Newsblog.",
    "sprache": "de"
   }
  ],
