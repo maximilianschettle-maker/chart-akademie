@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-21T05:24:09.467Z",
+ "lastUpdated": "2026-11-21T06:24:11.283Z",
  "eintraege": [
   {
    "id": "https://www.bbc.co.uk/news/articles/cxnv4zvmdy0jo",
@@ -10,7 +10,7 @@
    "zeit": "2026-11-21T05:15:41.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Trump's comments came as Russia launched \"biggest attacks this year\" against Ukraine.",
+   "text": "Trump's comments came after Russia launched \"biggest attacks this year\" against Ukraine.",
    "sprache": "en"
   },
   {
@@ -1017,7 +1017,7 @@
   "tagesschau": 12,
   "DW": 10,
   "Spiegel Wirtschaft": 0,
-  "FAZ Wirtschaft": 4,
+  "FAZ Wirtschaft": 3,
   "Handelsblatt": 4,
   "BBC World": 4,
   "NYT World": 24,
