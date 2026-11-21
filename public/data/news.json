@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-21T09:24:17.805Z",
+ "lastUpdated": "2026-11-21T10:24:09.137Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/abschiebungen-bundestagsjuristen-sehen-rechtliche-huerden-fuer-abschiebezentren/100271379.html",
+   "titel": "Abschiebungen: Bundestagsjuristen sehen rechtliche Hürden für Abschiebezentren",
+   "link": "https://www.handelsblatt.com/politik/deutschland/abschiebungen-bundestagsjuristen-sehen-rechtliche-huerden-fuer-abschiebezentren/100271379.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-21T09:29:35.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Bundesregierung könnte für Abschiebungen nach Ruanda die Zustimmung des Parlaments benötigen. In der Koalition formiert sich bereits Widerstand gegen ein geplantes Rückkehrzentrum.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cx8dv4327dnpo",
    "titel": "Trafalgar Square Christmas tree felled in Norway",
@@ -21,7 +32,7 @@
    "zeit": "2026-11-21T07:57:28.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "\"Killerroboter\" können Ziele auswählen und Angriffe auslösen - ohne menschliche Beteiligung. Die UN sollten dafür Schranken erarbeiten. Das Wann und Wie bleibt aber unter auch wegen des Widerstands aus Russland und den USA ungeklärt.",
+   "text": "\"Killerroboter\" können Ziele auswählen und Angriffe auslösen - ohne menschliche Beteiligung. Die UN sollten dafür Schranken erarbeiten. Das Wann und Wie bleibt aber auch wegen des Widerstands aus Russland und den USA ungeklärt.",
    "sprache": "de"
   },
   {
@@ -1003,27 +1014,16 @@
    "maerkte": [],
    "text": "After their summit, the leaders of Russia, the United States and China agreed that “a nuclear war cannot be won and must never be fought.” Some analysts are skeptical that real change will result.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/russland-so-schlecht-laeuft-der-krieg-fuer-putin/100271204.html",
-   "titel": "Russland: Und jetzt auch noch ein ernstes Krim-Problem: So schlecht läuft der Krieg für Putin",
-   "link": "https://www.handelsblatt.com/politik/international/russland-so-schlecht-laeuft-der-krieg-fuer-putin/100271204.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-19T14:15:16.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "In Shenzhen sonnt Putin sich im Licht von Xi und Trump – aber daheim sieht es düster aus. Die Verluste im Krieg steigen, Benzin muss importiert werden. Und nun droht noch eine weitere Krise.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 10,
   "DW": 10,
   "Spiegel Wirtschaft": 0,
   "FAZ Wirtschaft": 2,
   "Handelsblatt": 5,
   "BBC World": 4,
-  "NYT World": 24,
+  "NYT World": 22,
   "EIA Today in Energy": 1
  }
 }
