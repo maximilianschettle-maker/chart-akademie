@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-21T19:24:14.932Z",
+ "lastUpdated": "2026-11-21T20:24:14.666Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/eu-indonesien-handelsabkommen-102.html",
+   "titel": "EU und Indonesien unterzeichnen Freihandelsabkommen",
+   "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/eu-indonesien-handelsabkommen-102.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-21T20:17:57.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Fast zehn Jahre haben die Verhandlungen gedauert: Nun haben die EU und Indonesien ein Freihandelsabkommen unterzeichnet, mit dem die Zölle auf fast alle Waren wegfallen sollen. Davon könnte auch die Autobranche profitieren.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ostsee-russisches-frachtschiff-nach-drohnenangriff-vor-finnland-in-brand/100271784.html",
+   "titel": "Ostsee: Russisches Frachtschiff nach Drohnenangriff vor Finnland in Brand",
+   "link": "https://www.handelsblatt.com/politik/international/ostsee-russisches-frachtschiff-nach-drohnenangriff-vor-finnland-in-brand/100271784.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-21T19:46:09.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Finnland vermutet die Ukraine hinter dem Angriff. Der Frachter trieb in finnische Gewässer, wo die Behörden den Luft- und Seeverkehr einschränkten.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cj752ddve27ko",
    "titel": "Russia-bound ship attacked in Gulf of Finland",
@@ -991,32 +1013,10 @@
    "maerkte": [],
    "text": "Putin kündigt Vergeltung für Angriff auf Krim-Brücke an +++ Putin zu Fortsetzung der Ukraine-Gespräche bereit +++ Selenskyj zu Treffen mit Koalition der Willigen eingetroffen +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/us/politics/trump-summit-power.html",
-   "titel": "At Summit With Xi and Putin, Trump Seeks to Project Power Abroad While Sharing It at Home",
-   "link": "https://www.nytimes.com/2026/11/19/us/politics/trump-summit-power.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T17:05:18.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Weakened by the midterm elections, President Trump offered hugs, arm pats and smiles to autocrats from Russia and China in contrast to the threats he is making to ascendant Democrats in Washington.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cw8r7510degno",
-   "titel": "Israeli military completes ground operation in Gaza beyond Yellow Line",
-   "link": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-19T17:03:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Hamas condemned the incursion, which the Israeli military said was to dismantle a \"terror tunnel\", as a \"flagrant\" ceasefire violation.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 10,
   "DW": 9,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 1,
