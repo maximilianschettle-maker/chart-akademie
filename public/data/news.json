@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-21T00:24:11.564Z",
+ "lastUpdated": "2026-11-21T01:24:13.337Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqpv94d10rwpo",
+   "titel": "ANC fights to keep control of South Africa's key cities after election setback",
+   "link": "https://www.bbc.co.uk/news/articles/cqpv94d10rwpo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-21T00:34:51.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The ANC appears reluctant to replicate its national power-sharing deal with the pro-business DA at the local level.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
    "titel": "The War Is Ravaging Ukraine’s Wildlife, Too",
@@ -1002,17 +1013,6 @@
    "maerkte": [],
    "text": "Es ist ein historischer Tag: Erstmals saßen die Präsidenten der Atommächte USA, China und Russland an einem Tisch. Die Staatschefs sprachen unter anderem von einer gemeinsamen Verantwortung zur Friedenssicherung.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/frankreich-unterstuetzung-ukraine-militaer-100.html",
-   "titel": "Französische Soldaten in der Ukraine - aber nicht zum Kampf",
-   "link": "https://www.tagesschau.de/ausland/europa/frankreich-unterstuetzung-ukraine-militaer-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-19T11:38:46.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russland wirft Frankreich vor, sich mit Soldaten in der Ukraine direkt am Krieg zu beteiligen. Die französische Regierung weist das zurück, bestätigt aber die Anwesenheit von Militärpersonal. Was ist ihre Aufgabe? Von C. Rienäcker.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1021,7 +1021,7 @@
   "Spiegel Wirtschaft": 0,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 4,
-  "BBC World": 4,
+  "BBC World": 5,
   "NYT World": 23,
   "EIA Today in Energy": 1
  }
