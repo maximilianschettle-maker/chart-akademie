@@ -1,10 +1,32 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-22T07:24:06.946Z",
+ "lastUpdated": "2026-11-22T08:24:12.802Z",
  "eintraege": [
   {
+   "id": "https://www.dw.com/de/eu-und-indonesien-besiegeln-handelsabkommen/a-80012521",
+   "titel": "EU und Indonesien besiegeln Handelsabkommen",
+   "link": "https://www.dw.com/de/eu-und-indonesien-besiegeln-handelsabkommen/a-80012521?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-22T08:18:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Mit einem neuen Abkommen wollen EU und Indonesien Handel und Investitionen ausbauen. Besonders wichtig für Europa: der Zugang zu Rohstoffen wie Nickel und Kobalt für die Batterieindustrie.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/ozeanien/australien-social-media-108.html",
+   "titel": "Australien: Social-Media-Verbot mit Lücken und Mängeln",
+   "link": "https://www.tagesschau.de/ausland/ozeanien/australien-social-media-108.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-22T07:26:24.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Jugendliche vor den Folgen von Social Media zu schützen, das war die Idee hinter dem Social-Media-Verbot in Australien. Ein Jahr danach zeigt sich, wo es bei der Umsetzung hakt. Von C. Justus und P. Nöhr.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.bbc.co.uk/news/articles/cq7827z2841zo",
-   "titel": "New draft deal aims to avert collapse of talks at climate summit",
+   "titel": "New draft deal aims to avert collapse of talks at COP31 climate summit",
    "link": "https://www.bbc.co.uk/news/articles/cq7827z2841zo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-22T06:54:06.000Z",
@@ -994,38 +1016,14 @@
    "maerkte": [],
    "text": "Beim Besuch des früheren Konzentrationslagers Auschwitz zeigt der Verteidigungsminister Kanzlerformat. Auch sonst meldet er sich auffällig häufig zu Wort. Stehen dahinter höhere Ambitionen?",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/climate/iea-energy-transition-electric-cars.html",
-   "titel": "Unexpected Fallout From the Iran War",
-   "link": "https://www.nytimes.com/2026/11/19/climate/iea-energy-transition-electric-cars.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T21:40:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Global oil shocks are accelerating the shift to electric vehicles and renewable energy, a new report finds.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo",
-   "titel": "Myanmar committed genocide against Rohingya minority, top UN court rules",
-   "link": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-19T20:07:02.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The unprecedented International Court of Justice verdict concerns a 2017 military crackdown that killed thousands.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
-  "DW": 10,
+  "tagesschau": 12,
+  "DW": 11,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 1,
-  "Handelsblatt": 3,
+  "Handelsblatt": 2,
   "BBC World": 7,
   "NYT World": 24,
   "EIA Today in Energy": 0
