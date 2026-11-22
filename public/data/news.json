@@ -1,16 +1,27 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-22T16:24:13.601Z",
+ "lastUpdated": "2026-11-22T17:24:13.875Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cj752ddve27ko",
+   "titel": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
+   "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-22T17:18:26.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Finnish defence forces say that Ukraine was likely behind the drone strike on Saturday. Kyiv has yet to comment.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
    "titel": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
    "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-22T16:05:25.000Z",
+   "zeit": "2026-11-22T17:16:47.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Libya's eastern rival government says it is working with Russia to investigate the incident.",
+   "text": "Libya's eastern government says the ship had stopped for fuel and supplies on its way back to Russia.",
    "sprache": "en"
   },
   {
@@ -45,17 +56,6 @@
    "maerkte": [],
    "text": "Noch immer laufen die Löscharbeiten an dem russischen Frachter in der Ostsee vor Finnland. Was das Schiff geladen hat, ist weiterhin unklar. Es war von einer Drohne getroffen worden - vermutlich aus der Ukraine.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cj752ddve27ko",
-   "titel": "Russia-bound ship still on fire after attack in Gulf of Finland",
-   "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-22T11:25:14.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/ostsee-russisches-frachtschiff-nach-drohnenangriff-vor-finnland-in-brand/100271784.html",
@@ -1018,13 +1018,13 @@
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 12,
   "DW": 5,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 1,
   "Handelsblatt": 3,
   "BBC World": 7,
-  "NYT World": 20,
+  "NYT World": 17,
   "EIA Today in Energy": 0
  }
 }
