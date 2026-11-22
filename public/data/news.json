@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-22T12:24:10.779Z",
+ "lastUpdated": "2026-11-22T13:24:11.090Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/cop31-einigung-bei-weltklimakonferenz-gescheitert/100270720.html",
+   "titel": "COP31: Abschlusserklärung „nicht zustimmungsfähig“: Einigung bei Weltklimakonferenz gescheitert",
+   "link": "https://www.handelsblatt.com/politik/deutschland/cop31-einigung-bei-weltklimakonferenz-gescheitert/100270720.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-22T13:22:06.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der Streit um den Ausstieg aus fossilen Energien bringt das Gipfeltreffen in Antalya zum Scheitern. Nach zwei Wochen endet die Konferenz ohne Abschlusserklärung.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-frachter-drohne-100.html",
    "titel": "Nach Drohnenangriff: Löscharbeiten an der \"Sparta II\" dauern an",
@@ -1004,27 +1015,16 @@
    "maerkte": [],
    "text": "Patriot-Systeme und Eurofighter-Kampfjets sowie eine Zusammenarbeit der Armeen beim Aufbau von gemeinsamen Verteidigungsstellungen: Polen und Deutschland arbeiten bereits militärisch zusammen. Das möchten beide Länder nun intensivieren.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "titel": "Trump, Xi and Putin Seek to Project Power at Their First Summit",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T00:51:01.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 13,
-  "DW": 9,
+  "DW": 8,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 1,
-  "Handelsblatt": 2,
+  "Handelsblatt": 3,
   "BBC World": 6,
-  "NYT World": 24,
+  "NYT World": 22,
   "EIA Today in Energy": 0
  }
 }
