@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-22T19:24:09.639Z",
+ "lastUpdated": "2026-11-22T20:24:06.537Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-frachter-drohne-102.html",
+   "titel": "Nach Drohnenangriff: \"Sparta II\" wird in russische Gewässer geschleppt",
+   "link": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-frachter-drohne-102.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-22T19:53:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Am Samstag war der russische Frachter \"Sparta II\" in der Ostsee von einer Drohne getroffen worden und in Brand geraten. Laut finnischem Grenzschutz hat das Schiff Schlagseite, kann aber in russische Gewässer geschleppt werden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
+   "titel": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+   "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-22T19:52:50.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Libya's eastern government says the ship had stopped for fuel and supplies on its way back to Russia.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo",
    "titel": "What's next after no deal at COP31 climate talks?",
@@ -55,17 +77,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Finnish defence forces say that Ukraine was likely behind the drone strike on Saturday. Kyiv has yet to comment.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
-   "titel": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
-   "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-22T17:16:47.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Libya's eastern government says the ship had stopped for fuel and supplies on its way back to Russia.",
    "sprache": "en"
   },
   {
@@ -1002,24 +1013,13 @@
    "maerkte": [],
    "text": "The wooden gunboat Spitfire was entombed in waters near the Great Barrier Reef after it went down in a cyclone in 1898.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/20/world/australia/wreck-of-first-australian-built-warship-is-revealed-128-years-after-it-sank.html",
-   "titel": "Wreck of First Australian-Built Warship Is Revealed 128 Years After It Sank",
-   "link": "https://www.nytimes.com/2026/11/20/world/australia/wreck-of-first-australian-built-warship-is-revealed-128-years-after-it-sank.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T08:13:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The wooden gunboat Spitfire was entombed in waters near the Great Barrier Reef after it went down in a cyclone in 1898.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 12,
   "DW": 5,
   "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 1,
+  "FAZ Wirtschaft": 0,
   "Handelsblatt": 3,
   "BBC World": 8,
   "NYT World": 16,
