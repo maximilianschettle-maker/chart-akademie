@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-22T17:24:13.875Z",
+ "lastUpdated": "2026-11-22T18:24:16.916Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/22/us/politics/melania-trump-ukraine-diplomacy.html",
+   "titel": "How Melania Trump Found a Diplomatic Opening in the War in Ukraine",
+   "link": "https://www.nytimes.com/2026/11/22/us/politics/melania-trump-ukraine-diplomacy.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-22T18:12:18.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The first lady, who has little experience in international affairs, developed back channels to key figures on both sides of the conflict through her longtime agent.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/prien-angriff-preisler-100.html",
+   "titel": "Prien verurteilt Angriff auf FDP-Politikerin Preisler bei Demo",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/prien-angriff-preisler-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-22T17:36:50.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Zwei Frauen sollen die Berliner FDP-Politikerin Preisler am Rande einer pro-palästinensischen Demonstration geschubst und getreten haben. Bundesfamilienministerin Prien kritisiert das scharf. Von Mario Kubina.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cj752ddve27ko",
    "titel": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
@@ -991,30 +1013,6 @@
    "maerkte": [],
    "text": "The scheme is expected to be approved at Friday's UK-EU summit, with new deals on food trade and carbon emissions also on the table.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/us-reaktionen-dreiergipfel-100.html",
-   "titel": "Kritik aus den USA nach Treffen Trumps mit Xi und Putin",
-   "link": "https://www.tagesschau.de/ausland/us-reaktionen-dreiergipfel-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-20T05:48:01.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Erstmals in der Geschichte saß ein US-Präsident allein mit dem chinesischen und dem russischen Staatschef an einem Tisch. Große Deals blieben offenbar aus, die Debatte zu Hause in den USA ist groß: War das Diplomatie - oder Inszenierung? Vo",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/technik/ki/amd-und-nvidia-us-regierung-geraet-wegen-chipexporten-nach-china-unter-druck/100271465.html",
-   "titel": "AMD und Nvidia: US-Regierung gerät wegen Chipexporten nach China unter Druck",
-   "link": "https://www.handelsblatt.com/technik/ki/amd-und-nvidia-us-regierung-geraet-wegen-chipexporten-nach-china-unter-druck/100271465.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-20T05:46:52.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Nvidia und AMD durften laut neuen Dokumenten KI-Chips an Kunden liefern, die später auf einer Liste mutmaßlicher Unterstützer des chinesischen Militärs landeten. Das wirft Fragen auf.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1023,8 +1021,8 @@
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 1,
   "Handelsblatt": 3,
-  "BBC World": 7,
-  "NYT World": 17,
+  "BBC World": 6,
+  "NYT World": 18,
   "EIA Today in Energy": 0
  }
 }
