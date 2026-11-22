@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-22T11:24:10.449Z",
+ "lastUpdated": "2026-11-22T12:24:10.779Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-frachter-drohne-100.html",
+   "titel": "Nach Drohnenangriff: Löscharbeiten an der \"Sparta II\" dauern an",
+   "link": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-frachter-drohne-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-22T11:41:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Noch immer laufen die Löscharbeiten an dem russischen Frachter in der Ostsee vor Finnland. Was das Schiff geladen hat, ist weiterhin unklar. Es war von einer Drohne getroffen worden - vermutlich aus der Ukraine.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cj752ddve27ko",
+   "titel": "Russia-bound ship still on fire after attack in Gulf of Finland",
+   "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-22T11:25:14.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/unternehmen/energie/heizen-333-gasanbieter-erhoehen-zum-1.-januar-tarife-wie-teuer-es-wird/100270528.html",
    "titel": "Interaktiver Rechner: 333 Gasanbieter erhöhen zum 1. Januar ihr Tarife – so viel teurer kann es für Sie werden",
@@ -162,17 +184,6 @@
    "maerkte": [],
    "text": "Finnland vermutet die Ukraine hinter dem Angriff. Estland schickte ein Marineschiff zur Unterstützung der Löscharbeiten. Diese dauerten offenbar die ganze Nacht an.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cj752ddve27ko",
-   "titel": "Russia-bound ship attacked in Gulf of Finland",
-   "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-21T19:20:22.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Finnish defence forces say that Ukraine was likely behind the drone attack on the vessel.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-drohnenangriff-russland-frachter-100.html",
@@ -1004,22 +1015,11 @@
    "maerkte": [],
    "text": "The meeting in China appeared to be largely symbolic. After President Trump departed, President Vladimir V. Putin said that Russia would not negotiate with Ukraine on a cease-fire.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go",
-   "titel": "Europe ready for talks with Russia on ending war in Ukraine, leaders say",
-   "link": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-20T00:50:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "European allies of Ukraine say they have a \"united\" negotiating position at a summit in Berlin.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
-  "DW": 11,
+  "tagesschau": 13,
+  "DW": 9,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 1,
   "Handelsblatt": 2,
