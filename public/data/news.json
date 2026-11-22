@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-22T00:24:11.806Z",
+ "lastUpdated": "2026-11-22T01:24:18.013Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/21/world/americas/mexico-captures-drug-kingpin.html",
+   "titel": "Drones, Texts and Diversions: How Mexico Captured a Most Wanted Man",
+   "link": "https://www.nytimes.com/2026/11/21/world/americas/mexico-captures-drug-kingpin.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-22T01:02:29.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "U.S. and Mexican authorities shared intelligence for weeks to track Fausto Isidro Meza Flores, a drug cartel leader that a U.S. official called the most dangerous man in Mexico.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/ck4g174n020eo",
    "titel": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
@@ -11,17 +22,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Fewer young people have registered to vote in next year's election than in 2023 - are young people losing faith in democracy?",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/21/world/americas/mexico-captures-drug-kingpin.html",
-   "titel": "Drones, Texts and Diversions: How Mexico Captured a Most Wanted Man",
-   "link": "https://www.nytimes.com/2026/11/21/world/americas/mexico-captures-drug-kingpin.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-22T00:01:08.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "U.S. and Mexican authorities shared intelligence for weeks to track Fausto Isidro Meza Flores, a drug cartel leader the F.B.I. had sought for years.",
    "sprache": "en"
   },
   {
