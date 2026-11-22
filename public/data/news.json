@@ -1,20 +1,55 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-22T05:24:13.622Z",
+ "lastUpdated": "2026-11-22T06:24:11.229Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/gesellschaft/antisemitismusbeauftragte-102.html",
+   "titel": "Antisemitismusbeauftragte fordert mehr Engagement gegen Judenhass",
+   "link": "https://www.tagesschau.de/inland/gesellschaft/antisemitismusbeauftragte-102.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-22T05:47:26.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Antisemitismus so offen wie seit dem Holocaust nicht mehr: Bundesbeauftragte Schnurbein warnt vor wachsendem Judenhass in Deutschland. Die AfD-Ideologie sei ein gefährlicher Angriff auf die Erinnerungskultur. Ihr Appell ist eindringlich.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq7827z2841zo",
+   "titel": "New draft deal aims to avert collapse of talks at climate summit",
+   "link": "https://www.bbc.co.uk/news/articles/cq7827z2841zo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-22T05:26:10.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The UN COP31 meeting in Turkey enters a second day of overtime as countries struggle to reach an agreement.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/22/world/asia/china-taiwan-comedian-xi-jinping.html",
    "titel": "Taiwanese Comedian Targeted for Mocking Xi Jinping Is Drawing Sellout Crowds",
    "link": "https://www.nytimes.com/2026/11/22/world/asia/china-taiwan-comedian-xi-jinping.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-22T05:01:09.000Z",
+   "zeit": "2026-11-22T05:21:00.000Z",
    "kategorie": "konflikte",
    "maerkte": [
     "halbleiter",
     "aktien"
    ],
-   "text": "“Xi Jinping is my comedy muse,” said Huang Yi-hao, who survived a staged car crash meant to silence him and says he has no hatred for his attacker.",
+   "text": "“Xi Jinping is my comedy muse,” said Huang Yi-hao, who survived a car crash meant to silence him and says he has no hatred for his attacker.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/spende-an-nawalny-russische-ornithologin-sitzt-in-haft/a-80009856",
+   "titel": "Spende an Nawalny: Russische Ornithologin sitzt in Haft",
+   "link": "https://www.dw.com/de/spende-an-nawalny-russische-ornithologin-sitzt-in-haft/a-80009856?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-22T05:19:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Sofia Rosenfeld hat ihr Leben der Erforschung arktischer Wasservögel gewidmet. Wegen Spenden im Wert von 22 Euro muss sie für dreieinhalb Jahre in Haft. Freunde und Familie kämpfen für ihre Freilassung.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-ukrainische-drohnen-werden-in-grossbritannien-gebaut/27982126.html",
@@ -983,48 +1018,15 @@
    "maerkte": [],
    "text": "The unprecedented International Court of Justice verdict concerns a 2017 military crackdown that killed thousands.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/gipfel-koalition-willige-ukraine-100.html",
-   "titel": "Merz will baldige Gespräche mit Russland auf neutralem Boden",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/gipfel-koalition-willige-ukraine-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-19T19:22:45.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die \"Koalition der Willigen\" verspricht, der Ukraine \"so lange wie nötig\" zu helfen. Nach dem Gipfel in Berlin rief Kanzler Merz Russlands Präsidenten Putin auf, die Waffen niederzulegen. Einen Frieden könne es nur mit Beteiligung Europas g",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html",
-   "titel": "Saudi Sovereign Wealth Fund Tower Damaged as Houthis Attack Riyadh",
-   "link": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T18:55:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "An aerial attack by the Yemeni militia affected several floors of a skyscraper that is home to the Public Investment Fund, without causing injuries, according to Saudi authorities.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec/claudia-sheinbaum-mexico-flight-china-apec",
-   "titel": "Some leaders flew private to the APEC summit, but not Mexico’s president.",
-   "link": "https://www.nytimes.com/live/2026/11/18/world/trump-xi-putin-apec/claudia-sheinbaum-mexico-flight-china-apec",
-   "quelle": "NYT World",
-   "zeit": "2026-11-19T18:48:51.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "President Claudia Sheinbaum flew commercial, a journey that involved a 15-hour leg. It was a symbol of her government’s commitment to austerity.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
-  "DW": 9,
+  "tagesschau": 11,
+  "DW": 10,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 1,
   "Handelsblatt": 3,
-  "BBC World": 6,
+  "BBC World": 7,
   "NYT World": 25,
   "EIA Today in Energy": 0
  }
