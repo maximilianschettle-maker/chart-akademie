@@ -125,6 +125,7 @@
     "tracker:nasdaq100:rsi:long:2026-11-20|780b2fafac": "2026-11-20T15:45:33.757Z",
     "tracker:gold:rsi:long:stunde:2026-11-20T17|780b2fafac": "2026-11-20T17:15:37.007Z",
     "tracker:gold:tunnel:long:stunde:2026-11-20T20|780b2fafac": "2026-11-20T21:00:36.162Z",
-    "tracker:gold:tunnel:long:stunde:2026-11-20T21|780b2fafac": "2026-11-21T10:00:32.244Z"
+    "tracker:gold:tunnel:long:stunde:2026-11-20T21|780b2fafac": "2026-11-21T10:00:32.244Z",
+    "tracker:bitcoin:tunnel:short:stunde:2026-11-22T09|780b2fafac": "2026-11-22T09:40:37.719Z"
   }
 }
