@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-22T15:24:13.666Z",
+ "lastUpdated": "2026-11-22T16:24:13.601Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
+   "titel": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+   "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-22T16:05:25.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Libya's eastern rival government says it is working with Russia to investigate the incident.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/cop31-einigung-bei-weltklimakonferenz-gescheitert/100270720.html",
+   "titel": "COP31: Abschlusserklärung „nicht zustimmungsfähig“: Einigung bei Weltklimakonferenz gescheitert",
+   "link": "https://www.handelsblatt.com/politik/deutschland/cop31-einigung-bei-weltklimakonferenz-gescheitert/100270720.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-22T16:04:59.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der Streit um den Ausstieg aus fossilen Energien bringt das Gipfeltreffen in Antalya zum Scheitern. Nach zwei Wochen endet die Konferenz ohne Abschlusserklärung.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/asien/tuerkei-sender-soezcue-zwangsverwaltung-100.html",
    "titel": "Türkischer Sender Sözcü TV: Journalismus unter Zwangsverwaltung",
@@ -11,17 +33,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Der regierungskritische türkische Sender Sözcü steht seit wenigen Tagen unter Zwangsverwaltung. Für die Journalisten war die Razzia ein Schock - wie hat sich seitdem ihre Arbeit verändert? Von Isabel Gotovac.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/cop31-einigung-bei-weltklimakonferenz-gescheitert/100270720.html",
-   "titel": "COP31: Abschlusserklärung „nicht zustimmungsfähig“: Einigung bei Weltklimakonferenz gescheitert",
-   "link": "https://www.handelsblatt.com/politik/deutschland/cop31-einigung-bei-weltklimakonferenz-gescheitert/100270720.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-22T13:22:06.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der Streit um den Ausstieg aus fossilen Energien bringt das Gipfeltreffen in Antalya zum Scheitern. Nach zwei Wochen endet die Konferenz ohne Abschlusserklärung.",
    "sprache": "de"
   },
   {
@@ -1004,26 +1015,15 @@
    ],
    "text": "Nvidia und AMD durften laut neuen Dokumenten KI-Chips an Kunden liefern, die später auf einer Liste mutmaßlicher Unterstützer des chinesischen Militärs landeten. Das wirft Fragen auf.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6074k5jjrzko",
-   "titel": "More climate money for Africa? Europe says use what's already pledged",
-   "link": "https://www.bbc.co.uk/news/articles/c6074k5jjrzko?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-20T05:03:43.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "African countries at the UN climate summit in Turkey are demanding more funding from developed nations to help them cope with climate change.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 13,
-  "DW": 7,
+  "DW": 5,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 1,
   "Handelsblatt": 3,
-  "BBC World": 6,
+  "BBC World": 7,
   "NYT World": 20,
   "EIA Today in Energy": 0
  }
