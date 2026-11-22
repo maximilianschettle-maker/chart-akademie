@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-22T10:24:14.126Z",
+ "lastUpdated": "2026-11-22T11:24:10.449Z",
  "eintraege": [
   {
    "id": "https://www.handelsblatt.com/unternehmen/energie/heizen-333-gasanbieter-erhoehen-zum-1.-januar-tarife-wie-teuer-es-wird/100270528.html",
@@ -160,7 +160,7 @@
    "zeit": "2026-11-21T19:46:09.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Finnland vermutet die Ukraine hinter dem Angriff. Estland schickt ein Marineschiff, um Finnland bei den Löscharbeiten zu unterstützen.",
+   "text": "Finnland vermutet die Ukraine hinter dem Angriff. Estland schickte ein Marineschiff zur Unterstützung der Löscharbeiten. Diese dauerten offenbar die ganze Nacht an.",
    "sprache": "de"
   },
   {
@@ -1018,7 +1018,7 @@
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 12,
   "DW": 11,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 1,
