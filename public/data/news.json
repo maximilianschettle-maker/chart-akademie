@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-23T11:24:11.588Z",
+ "lastUpdated": "2026-11-23T12:24:10.371Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c8r4gzzxvxl3o",
+   "titel": "Israeli attacks have turned Gaza into 'toxic wasteland', Oxfam says",
+   "link": "https://www.bbc.co.uk/news/articles/c8r4gzzxvxl3o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-23T11:57:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The report says there are signs of possible contamination across almost all of Gaza as a result of Israel's actions.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
+   "titel": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+   "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-23T11:40:01.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Kremlin warns of an \"escalation of tensions in the region\", but declines to comment directly on the attacks in Libya.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/23/world/middleeast/netanyahu-israel-iran.html",
+   "titel": "Netanyahu Wants to Attack Iran. Does That Serve Israel or Him?",
+   "link": "https://www.nytimes.com/2026/11/23/world/middleeast/netanyahu-israel-iran.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-23T11:33:01.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Israeli prime minister, Benjamin Netanyahu calls renewing strikes a matter of national security. Military analysts and opposition leaders say he’s prioritizing his own interests.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
    "titel": "Is Mexico Stepping Up in the War on Drugs?",
@@ -11,17 +44,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "With several powerful drug kingpins recently taken down by Mexican forces, some experts see what may be a new chapter beginning in Mexico.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/23/world/middleeast/netanyahu-israel-iran.html",
-   "titel": "Netanyahu Wants to Attack Iran. Does That Serve Israel or Him?",
-   "link": "https://www.nytimes.com/2026/11/23/world/middleeast/netanyahu-israel-iran.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T11:09:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Israeli prime minister, Benjamin Netanyahu calls renewing strikes a matter of national security. Military analysts and opposition leaders say he’s prioritizing his own interests.",
    "sprache": "en"
   },
   {
@@ -115,17 +137,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
-   "titel": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
-   "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-23T08:36:57.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Libya's eastern government says a sunken warship had stopped for fuel and supplies on its way back to Russia.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.tagesschau.de/ausland/afrika/russisches-kriegsschiff-zerstoert-100.html",
    "titel": "Ukraine bekennt sich zu Zerstörung von russischem Kriegsschiff",
    "link": "https://www.tagesschau.de/ausland/afrika/russisches-kriegsschiff-zerstoert-100.html",
@@ -199,7 +210,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/kalte-progression-soeders-vorstoss-laut-wuest-nicht-machbar/100271942.html",
-   "titel": "Kalte Progression: Widerstand gegen Söders Vorstoß zur kalten Progression",
+   "titel": "Steuerpolitik: Auch Wüst meldet Widerstand gegen Söders Vorstoß zur kalten Progression an",
    "link": "https://www.handelsblatt.com/politik/deutschland/kalte-progression-soeders-vorstoss-laut-wuest-nicht-machbar/100271942.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-23T06:43:08.000Z",
@@ -226,7 +237,7 @@
    "titel": "Behind China’s A.I. Anxieties, Fear of a Nuclear Checkmate",
    "link": "https://www.nytimes.com/2026/11/23/world/asia/china-us-nuclear-ai.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-23T05:49:03.000Z",
+   "zeit": "2026-11-23T05:49:04.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Chinese military researchers are studying how to harness A.I., but they worry the technology makes their country’s nuclear forces more vulnerable to attack.",
@@ -1004,17 +1015,6 @@
     "ruestung"
    ],
    "text": "Rutte: Nato wird jeden Zentimeter von Polen verteidigen +++ Umfrage: Fast jeder Zweite für Kürzung der Ukraine-Hilfen +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/scheidungsprozess-gegen-wladimir-potanin-ex-frau-fordert-2-6-milliarden-euro-201702072.html",
-   "titel": "Nickel-Milliardär: Spektakulärer Scheidungsprozess um russischen Oligarchen",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/scheidungsprozess-gegen-wladimir-potanin-ex-frau-fordert-2-6-milliarden-euro-201702072.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-20T17:17:10.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Die Ex-Frau von Wladimir Potanin fordert 2,2 Milliarden Pfund, er will ihr nur 25 Millionen Pfund geben - und sagt, dass es wegen der Sanktionen schwierig werden könnte.",
    "sprache": "de"
   }
  ],
