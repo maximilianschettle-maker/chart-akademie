@@ -1,13 +1,94 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-23T14:24:12.343Z",
+ "lastUpdated": "2026-11-23T15:24:11.016Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/huang-wieder-nvidia-chef-100.html",
+   "titel": "Nvidia setzt Jensen Huang wieder als Chef ein",
+   "link": "https://www.tagesschau.de/wirtschaft/huang-wieder-nvidia-chef-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-23T15:18:29.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Spekulationen gab es bereits, jetzt ist es offiziell: Jensen Huang kehrt an die Spitze des US-Techkonzerns Nvidia zurück. Er war erst vor wenigen Wochen wegen eines Spionageskandals zurückgetreten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html",
+   "titel": "How Homeowners Are Powering Vietnam’s E-Bike Surge",
+   "link": "https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-23T15:15:19.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The war in Iran has brought on a rapid switch from motorbikes to electric two-wheelers in Vietnam, creating an informal charging economy led by entrepreneurial homeowners.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/technik/ki/nvidia-jensen-huang-kehrt-als-konzernchef-zurueck-aktie-springt-30-prozent/100272106.html",
+   "titel": "Chipkonzern: Jensen Huang kehrt als Nvidia-Chef zurück – Aktie steigt um 30 Prozent",
+   "link": "https://www.handelsblatt.com/technik/ki/nvidia-jensen-huang-kehrt-als-konzernchef-zurueck-aktie-springt-30-prozent/100272106.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T14:58:34.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Nach Berichten über mehrere außereheliche Affären war Jensen Huang als Nvidia-Chef zurückgetreten. Nun kehrt er an die Spitze des Unternehmens zurück. Die Aktie springt deutlich nach oben.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/energie/stromlieferant-tibber-steht-mit-neuem-deutschlandchef-vor-kurswechsel/100271004.html",
+   "titel": "Energie: Tibber vor Kurswechsel – das plant der neue Deutschlandchef des Stromanbieters",
+   "link": "https://www.handelsblatt.com/unternehmen/energie/stromlieferant-tibber-steht-mit-neuem-deutschlandchef-vor-kurswechsel/100271004.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T14:54:29.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "Das Unternehmen will es Haushalten ermöglichen, von schwankenden Strompreisen zu profitieren. Doch jetzt verabschiedet es sich von dynamischen Tarifen ohne Smart Meter.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c5rmgkv2lk73o",
+   "titel": "Mexican soldiers attacked in wake of drug lord's arrest",
+   "link": "https://www.bbc.co.uk/news/articles/c5rmgkv2lk73o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-23T14:54:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Eight suspects are arrested after firing on soldiers trying to re-establish order following the arrest of 'El Chapo Isidro'.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-krieg-krieg-ueber-grenzen-hinaus-baut-putin-die-atomwaffe-im-all/100271957.html",
+   "titel": "Ukraine-Krieg: Russland und Ukraine weiten Krieg aus: Baut Putin die Atomwaffe im All?",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-krieg-krieg-ueber-grenzen-hinaus-baut-putin-die-atomwaffe-im-all/100271957.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T14:41:30.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die ukrainischen Drohnenangriffe in Mittelmeer und Ostsee zeigen die Verwundbarkeit Russlands. Der Kremlherrscher plant angeblich die nächste Eskalation.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/deutsche-experten-vor-dem-eu-westbalkan-gipfel-unter-der-regierung-der-studentenliste-muss-sich-serbien-zwischen-aufbruch-und-kontinuit%C3%A4t-entscheiden/a-80019985",
+   "titel": "Deutsche Experten vor dem EU-Westbalkan-Gipfel: Unter der Regierung der Studentenliste muss sich Serbien zwischen Aufbruch und Kontinuität entscheiden",
+   "link": "https://www.dw.com/de/deutsche-experten-vor-dem-eu-westbalkan-gipfel-unter-der-regierung-der-studentenliste-muss-sich-serbien-zwischen-aufbruch-und-kontinuität-entscheiden/a-80019985?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-23T14:31:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Serbiens neue Führung sorgt in der Europäischen Union für Hoffnung und Skepsis zugleich. Deutsche Westbalkan-Experten sehen Chancen für Reformen, aber offene Fragen bei EU-Kurs, Kosovo und Russland.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
    "titel": "Is Mexico Stepping Up in the War on Drugs?",
    "link": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-23T14:20:20.000Z",
+   "zeit": "2026-11-23T14:20:21.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "With several powerful drug kingpins recently taken down by Mexican forces, some experts see what may be a new chapter beginning in Mexico.",
@@ -60,6 +141,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-soeder-sichert-sich-den-trumpf-fuer-den-fall-einer-vorgezogenen-wahl/100272017.html",
+   "titel": "Kommentar: Söder sichert sich den Trumpf für den Fall einer vorgezogenen Bundestagswahl",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-soeder-sichert-sich-den-trumpf-fuer-den-fall-einer-vorgezogenen-wahl/100272017.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T13:31:20.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Bayerns Ministerpräsident hat recht, wenn er den Ausgleich der kalten Progression fordert. Doch der Vorstoß ist auch ein Machtspiel. Der Koalition bleibt nur eine Möglichkeit, zu reagieren.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-soeders-vorstoss-zur-steuersenkung-erwischt-spd-und-cdu-kalt/100272017.html",
    "titel": "Kommentar: Söders Vorstoß zur Steuersenkung erwischt SPD und CDU kalt",
    "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-soeders-vorstoss-zur-steuersenkung-erwischt-spd-und-cdu-kalt/100272017.html",
@@ -69,17 +161,6 @@
    "maerkte": [],
    "text": "Bayerns Ministerpräsident hat recht, wenn er den Ausgleich der kalten Progression fordert. Doch der Vorstoß ist auch ein Machtspiel. Der Koalition bleibt nur eine Möglichkeit, zu reagieren.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c5rmgkv2lk73o",
-   "titel": "Mexican soldiers attacked in wake of drug lord's arrest",
-   "link": "https://www.bbc.co.uk/news/articles/c5rmgkv2lk73o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-23T13:26:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Eight suspects are arrested after firing on soldiers trying to re-establish order following the arrest of 'El Chapo Isidro'.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-die-politik-bekaempft-hohe-energiepreise-mit-falschen-massnahmen/100271019.html",
@@ -331,17 +412,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "The talks have been the longest-running in the summit's history, with negotiations breaking down two days after they had been due to end.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html",
-   "titel": "How Homeowners Are Powering Vietnam’s E-Bike Surge",
-   "link": "https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T05:33:31.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The war in Iran has brought on a rapid switch from motorbikes to electric two-wheelers in Vietnam, creating an informal charging economy led by entrepreneurial homeowners.",
    "sprache": "en"
   },
   {
@@ -944,80 +1014,14 @@
    "maerkte": [],
    "text": "Krywyj Rih ist die Heimatstadt des ukrainischen Präsidenten Selenskyj. Nun wurde die Industriestadt erneut mit ballistischen Raketen beschossen. Eine Rakete schlug demnach nahe Wohnhäusern und einem Restaurant ein.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-krawalle-gen-z-100.html",
-   "titel": "\"Gen Z regelt\": Jugendliche erneut zu Tausenden auf den Straßen",
-   "link": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-krawalle-gen-z-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-21T02:38:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Zehntausende junge Menschen haben friedlich für die Anliegen ihrer Generation demonstriert. Nach dem Ende der \"Gen Z regelt\"-Demos gab es mancherorts zwar doch noch Krawalle, eine Eskalation wie an Halloween blieb aber aus.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro",
-   "titel": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
-   "link": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-21T02:09:46.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nobody was hurt and no damage has been reported, but Warsaw described the incident as a \"provocation\" from Moscow.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqpv94d10rwpo",
-   "titel": "ANC fights to keep control of South Africa's key cities after election setback",
-   "link": "https://www.bbc.co.uk/news/articles/cqpv94d10rwpo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-21T00:34:51.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The ANC appears reluctant to replicate its national power-sharing deal with the pro-business DA at the local level.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
-   "titel": "The War Is Ravaging Ukraine’s Wildlife, Too",
-   "link": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T23:05:46.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The war in Ukraine has had untold consequences for dolphins, moose, storks and a huge range of other wildlife whose habitats are now rife with anti-drone netting, minefields or in the direct line of fire.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
-   "titel": "Trump Flaunts Camaraderie With Xi and Putin but Has Little to Show for It",
-   "link": "https://www.nytimes.com/2026/11/19/world/asia/trump-xi-putin.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T22:34:05.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "President Trump called Russia’s leader his “friend” and marveled at China’s warm welcome for his first-ever trilateral summit. But there were no breakthroughs on nuclear control, the war in Ukraine or A.I.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo",
-   "titel": "'I tell my son it's just fireworks': Life inside Yemeni city besieged by Houthis",
-   "link": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-20T22:14:17.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Orla Guerin speaks to seven people trapped in the key city of Taiz, cut off from the outside world for weeks.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 10,
-  "DW": 8,
+  "DW": 9,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 5,
+  "Handelsblatt": 6,
   "BBC World": 11,
   "NYT World": 18,
   "EIA Today in Energy": 0
