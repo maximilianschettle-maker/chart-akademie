@@ -1,7 +1,97 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-23T13:09:26.249Z",
+ "lastUpdated": "2026-11-23T14:24:12.343Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
+   "titel": "Is Mexico Stepping Up in the War on Drugs?",
+   "link": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-23T14:20:20.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "With several powerful drug kingpins recently taken down by Mexican forces, some experts see what may be a new chapter beginning in Mexico.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/technik/ki/nvidia-jensen-huang-kehrt-als-konzernchef-zurueck/100272106.html",
+   "titel": "Chipkonzern: Jensen Huang kehrt als Konzernchef von Nvidia zurück",
+   "link": "https://www.handelsblatt.com/technik/ki/nvidia-jensen-huang-kehrt-als-konzernchef-zurueck/100272106.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T14:16:21.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Nach Berichten über mehrere außereheliche Affären war Jensen Huang als Nvidia-Chef zurückgetreten. Nun kehrt er an die Spitze des Unternehmens zurück. Die Aktie springt deutlich nach oben.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kadewe-trotzt-der-krise-warum-deutschlands-groesstes-kaufhaus-boomt-accg-201679037.html",
+   "titel": "Luxuskaufhäuser: Überall Krise – nur nicht im KaDeWe",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kadewe-trotzt-der-krise-warum-deutschlands-groesstes-kaufhaus-boomt-accg-201679037.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-23T13:56:21.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Warenhäuser schließen, Einzelhändler kämpfen ums Überleben, und Innenstädte fürchten die Verödung. Doch in den Häusern der KaDeWe-Gruppe ist die Welt noch in Ordnung. Was macht die Luxuskaufhäuser so besonders?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-older-soldiers.html",
+   "titel": "They Were Too Old to Enlist, but Not to Fight. Meet the Steppe Wolves of Ukraine.",
+   "link": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-older-soldiers.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-23T13:53:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "When the military refused to let them sign up, a band of aging men found their own way to wage war against Russia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/afrika/angriff-russisches-kriegsschiff-libyen-100.html",
+   "titel": "Russisches Kriegsschiff versenkt: \"Für Russland ist Libyen eine Art Rückzugsort\"",
+   "link": "https://www.tagesschau.de/ausland/afrika/angriff-russisches-kriegsschiff-libyen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-23T13:34:43.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Ukraine hat ein russisches Kriegsschiff in Libyen versenkt. Damit ist in dem Krieg zum ersten Mal ein Hafen im Mittelmeer betroffen. In Libyen wächst die Sorge, in den Konflikt hineingezogen zu werden. Von M. Behrendt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-soeders-vorstoss-zur-steuersenkung-erwischt-spd-und-cdu-kalt/100272017.html",
+   "titel": "Kommentar: Söders Vorstoß zur Steuersenkung erwischt SPD und CDU kalt",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-soeders-vorstoss-zur-steuersenkung-erwischt-spd-und-cdu-kalt/100272017.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T13:31:20.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Bayerns Ministerpräsident hat recht, wenn er den Ausgleich der kalten Progression fordert. Doch der Vorstoß ist auch ein Machtspiel. Der Koalition bleibt nur eine Möglichkeit, zu reagieren.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c5rmgkv2lk73o",
+   "titel": "Mexican soldiers attacked in wake of drug lord's arrest",
+   "link": "https://www.bbc.co.uk/news/articles/c5rmgkv2lk73o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-23T13:26:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Eight suspects are arrested after firing on soldiers trying to re-establish order following the arrest of 'El Chapo Isidro'.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-die-politik-bekaempft-hohe-energiepreise-mit-falschen-massnahmen/100271019.html",
+   "titel": "Kommentar: Die Politik bekämpft hohe Energiepreise mit falschen Maßnahmen",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-die-politik-bekaempft-hohe-energiepreise-mit-falschen-massnahmen/100271019.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T13:20:36.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "Stromsteuersenkung und Spritpreisdeckel sehen erst mal gut aus – sind aber reine Symptombehandlung. Für die Problemursachen nimmt sich das Wirtschaftsministerium zu wenig Zeit.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
    "titel": "Ukrainian Attack Off Coast of Libya Shows Reach of Kyiv’s Naval Drones",
@@ -58,17 +148,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
-   "titel": "Is Mexico Stepping Up in the War on Drugs?",
-   "link": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T11:14:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "With several powerful drug kingpins recently taken down by Mexican forces, some experts see what may be a new chapter beginning in Mexico.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/thyssenkrupp-alfried-krupp-half-nazi-taetern-noch-lange-nach-kriegsende-accg-201708275.html",
    "titel": "Neue Studie: Alfried Krupp half Nazi-Tätern noch lange nach Kriegsende",
    "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/thyssenkrupp-alfried-krupp-half-nazi-taetern-noch-lange-nach-kriegsende-accg-201708275.html",
@@ -100,17 +179,6 @@
    "maerkte": [],
    "text": "Es war die erste militärische Übung der \"Koalition der Willigen\": Hunderte Soldaten haben in Polen getestet, wie in der Ukraine Frieden gesichert werden kann. Zum Ende schlugen nahe dem Gelände russische Raketen ein. Von P. Milling.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-older-soldiers.html",
-   "titel": "They Were Too Old to Enlist, but Not to Fight. Meet the Steppe Wolves of Ukraine.",
-   "link": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-older-soldiers.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T10:26:17.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "When the military refused to let them sign up, a band of aging men found their own way to wage war against Russia.",
-   "sprache": "en"
   },
   {
    "id": "https://www.dw.com/de/wie-die-ddr-den-kaffeeanbau-in-vietnam-ankurbelte/a-79960594",
@@ -942,88 +1010,16 @@
    "maerkte": [],
    "text": "Orla Guerin speaks to seven people trapped in the key city of Taiz, cut off from the outside world for weeks.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
-   "titel": "‘Russian Objects’ Crashed in Poland, Officials Say. Here’s What We Can See.",
-   "link": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T20:31:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "There were no injuries or damage from three incidents that the Polish authorities called a likely “provocation” from Russia during military exercises by Ukraine’s allies.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/middleeast/netanyahu-arab-activists-arrests-israel-election.html",
-   "titel": "Netanyahu Associates Acknowledge Role in Setting Off Election Day Arrests",
-   "link": "https://www.nytimes.com/2026/11/19/world/middleeast/netanyahu-arab-activists-arrests-israel-election.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T19:53:41.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "After a historic result for Israel’s Arab-led parties, Prime Minister Benjamin Netanyahu said the vote was rigged, pointing to the detention of three opposition activists. His chief of staff has admitted being involved with the initial outr",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ki-industrie-trump-warnt-us-konzerne-vor-bau-von-ki-rechenzentren-im-ausland/100271667.html",
-   "titel": "KI-Industrie: Trump warnt US-Konzerne vor Bau von KI-Rechenzentren im Ausland und droht mit „enormen Strafen“",
-   "link": "https://www.handelsblatt.com/politik/international/ki-industrie-trump-warnt-us-konzerne-vor-bau-von-ki-rechenzentren-im-ausland/100271667.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-20T19:15:12.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Rechenzentren waren im US-Wahlkampf ein umstrittenes Thema: Die Demokraten wollen sie stärker regulieren. Der US-Präsident hingegen setzt sich für den Bau ein – aber nur im Inland.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/19/world/asia/russia-china-united-states-oil-joint-statement.html",
-   "titel": "At APEC Summit, U.S., China and Russia Vow to Increase Oil Supply Amid Global Energy Transition",
-   "link": "https://www.nytimes.com/2026/11/19/world/asia/russia-china-united-states-oil-joint-statement.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T17:45:55.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "The United States, China and Russia agreed to boost the supply of refined petroleum products, as oil prices spike because of the Iran war.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/eu-uk-gipfel-102.html",
-   "titel": "Gipfel in Brüssel: Annäherung zwischen Großbritannien und EU",
-   "link": "https://www.tagesschau.de/ausland/eu-uk-gipfel-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-20T17:44:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Sechs Jahre nach dem Brexit rücken Großbritannien und die EU wieder näher zusammen. Das war beim gemeinsamen Gipfel in Brüssel deutlich spürbar. Manche träumen sogar schon von einer Rückkehr Großbritanniens in die EU. Von Sarah López.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-verliert-660-punkte-und-schliesst-weit-unter-26.000-punkten/100271464.html",
-   "titel": "Dax aktuell: Dax verliert 660 Zähler und schließt weit unter 26.000 Punkten – „Stimmung nähert sich Panik an“",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-verliert-660-punkte-und-schliesst-weit-unter-26.000-punkten/100271464.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-20T17:40:41.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Die schlechte Börsenstimmung hat auch den Dax belastet. Innerhalb kurzer Zeit verlor er in den vergangenen Tagen mehr als 2000 Punkte – es war die schwächste Woche seit mehr als einem Jahr.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 10,
   "DW": 8,
   "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 2,
-  "Handelsblatt": 4,
+  "FAZ Wirtschaft": 3,
+  "Handelsblatt": 5,
   "BBC World": 11,
-  "NYT World": 21,
+  "NYT World": 18,
   "EIA Today in Energy": 0
  }
 }
