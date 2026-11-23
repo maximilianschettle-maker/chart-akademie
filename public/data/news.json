@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-23T12:24:10.371Z",
+ "lastUpdated": "2026-11-23T13:09:26.249Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+   "titel": "Ukrainian Attack Off Coast of Libya Shows Reach of Kyiv’s Naval Drones",
+   "link": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-23T12:33:09.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Volodymyr Zelensky said that Ukrainian drones sank a corvette and hit a dry cargo vessel, in attacks that involved special operations forces.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c8r4gzzxvxl3o",
    "titel": "Israeli attacks have turned Gaza into 'toxic wasteland', Oxfam says",
@@ -22,6 +33,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The Kremlin warns of an \"escalation of tensions in the region\", but declines to comment directly on the attacks in Libya.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/c6wy93q5wwqvo",
+   "titel": "Ukraine shares video of strikes on Russian ships off Libya",
+   "link": "https://www.bbc.co.uk/news/videos/c6wy93q5wwqvo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-23T11:34:10.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Zelensky said a Russia warship was sunk, with a Russian cargo ship also hit.",
    "sprache": "en"
   },
   {
@@ -100,17 +122,6 @@
    "maerkte": [],
    "text": "Weil sich die DDR den Kaffee-Import nicht mehr leisten konnte, führte sie 1977 ein Mixprodukt mit Roggen und Zichorie ein. Der Aufschrei war groß. Die Lösung für das Problem lag 9000 Kilometer entfernt: in Vietnam.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-   "titel": "Ukraine Claims Strikes on Russian Ships Near Libya",
-   "link": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T09:59:08.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "President Volodymyr Zelensky said that Ukrainian naval drones sank a corvette and hit a dry cargo vessel, demonstrating Kyiv’s reach in the seas.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/drohnenangriff-selenskyj-bestaetigt-versenkung-russischen-kriegsschiffs-durch-ukraine/100271954.html",
@@ -1003,28 +1014,15 @@
    ],
    "text": "Die schlechte Börsenstimmung hat auch den Dax belastet. Innerhalb kurzer Zeit verlor er in den vergangenen Tagen mehr als 2000 Punkte – es war die schwächste Woche seit mehr als einem Jahr.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-trump-fordert-wohl-von-kiew-frieden-mit-russland-bis-anfang-januar/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Trump fordert wohl von Kiew Frieden mit Russland bis Anfang Januar",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-trump-fordert-wohl-von-kiew-frieden-mit-russland-bis-anfang-januar/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-20T17:24:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Rutte: Nato wird jeden Zentimeter von Polen verteidigen +++ Umfrage: Fast jeder Zweite für Kürzung der Ukraine-Hilfen +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 10,
   "DW": 8,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 2,
   "Handelsblatt": 4,
-  "BBC World": 10,
+  "BBC World": 11,
   "NYT World": 21,
   "EIA Today in Energy": 0
  }
