@@ -1,7 +1,33 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-23T19:24:06.979Z",
+ "lastUpdated": "2026-11-23T20:24:10.769Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/technik/ki/nvidia-huang-kehrt-als-konzernchef-zurueck-aktie-legt-um-30-prozent-zu/100272106.html",
+   "titel": "Chipkonzern: Jensen Huang kehrt als Nvidia-Chef zurück – Aktie steigt um 30 Prozent",
+   "link": "https://www.handelsblatt.com/technik/ki/nvidia-huang-kehrt-als-konzernchef-zurueck-aktie-legt-um-30-prozent-zu/100272106.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T20:22:39.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Nach Berichten über außereheliche Affären war Jensen Huang als Nvidia-Chef zurückgetreten, nun übernimmt er die Konzernführung wieder. Welche Rolle spielte dabei Donald Trump?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/unternehmen/industrie/industrie-bmw-und-rheinmetall-planen-handelshaus-fuer-rohstoffe/100271875.html",
+   "titel": "Industrie: „Müssen Abhängigkeit schnell reduzieren“: BMW und Rheinmetall planen Handelshaus für Rohstoffe",
+   "link": "https://www.handelsblatt.com/unternehmen/industrie/industrie-bmw-und-rheinmetall-planen-handelshaus-fuer-rohstoffe/100271875.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T19:33:06.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Um sich unabhängiger von China zu machen, schließen sich mehrere Unternehmen zusammen, um gemeinsam Rohstoffe zu kaufen. Auch die Bundesregierung soll eine Rolle spielen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/23/world/europe/russia-ukraine-war-deaths.html",
    "titel": "Over 700,000 Russian Soldiers Have Died in Ukraine, Analysis Indicates",
@@ -57,19 +83,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Schäden in Millionenhöhe, unsichere Energieversorgung und Fachkräftemangel: Deutsche Unternehmen bleiben dennoch in der Ukraine. Sie hoffen auf neue Märkte und langfristige Wachstumschancen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/technik/ki/nvidia-huang-kehrt-als-konzernchef-zurueck-aktie-legt-um-30-prozent-zu/100272106.html",
-   "titel": "Chipkonzern: Jensen Huang kehrt als Nvidia-Chef zurück – Aktie steigt um 30 Prozent",
-   "link": "https://www.handelsblatt.com/technik/ki/nvidia-huang-kehrt-als-konzernchef-zurueck-aktie-legt-um-30-prozent-zu/100272106.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T18:14:41.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Nach Berichten über außereheliche Affären war Jensen Huang als Nvidia-Chef zurückgetreten, nun übernimmt er die Konzernführung wieder. Welche Rolle spielte dabei Donald Trump?",
    "sprache": "de"
   },
   {
@@ -161,19 +174,6 @@
    "maerkte": [],
    "text": "Extremist settlers carried out a spate of violent raids in Palestinian villages over the weekend, spurring opponents of the Netanyahu government to demand a forceful response.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/industrie/industrie-bmw-und-rheinmetall-planen-handelshaus-fuer-rohstoffe/100271875.html",
-   "titel": "Industrie: BMW und Rheinmetall planen Handelshaus für Rohstoffe",
-   "link": "https://www.handelsblatt.com/unternehmen/industrie/industrie-bmw-und-rheinmetall-planen-handelshaus-fuer-rohstoffe/100271875.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T17:15:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Um sich unabhängiger von China zu machen, schließen sich mehrere Unternehmen zusammen, um gemeinsam Rohstoffe zu kaufen. Auch die Bundesregierung soll eine Rolle spielen.",
-   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cr930y92dyx4o",
@@ -1029,7 +1029,7 @@
   "DW": 10,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 7,
+  "Handelsblatt": 6,
   "BBC World": 11,
   "NYT World": 18,
   "EIA Today in Energy": 0
