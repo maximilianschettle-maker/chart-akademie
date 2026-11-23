@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-23T15:24:11.016Z",
+ "lastUpdated": "2026-11-23T16:24:10.861Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/technik/ki/nvidia-huang-kehrt-als-konzernchef-zurueck-aktie-legt-um-30-prozent-zu/100272106.html",
+   "titel": "Chipkonzern: Jensen Huang kehrt als Nvidia-Chef zurück – Aktie steigt um 30 Prozent",
+   "link": "https://www.handelsblatt.com/technik/ki/nvidia-huang-kehrt-als-konzernchef-zurueck-aktie-legt-um-30-prozent-zu/100272106.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T16:20:59.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Nach Berichten über außereheliche Affären war Jensen Huang als Nvidia-Chef zurückgetreten, nun übernimmt er die Konzernführung wieder. Welche Rolle spielte dabei Donald Trump?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+   "titel": "Ukraine’s Attack Off Coast of Libya Shows Reach of Its Naval Drones",
+   "link": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-23T16:08:22.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Volodymyr Zelensky said that Ukrainian drones had sunk a corvette and hit a dry cargo vessel, in attacks that involved special operations forces.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
+   "titel": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+   "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-23T15:41:23.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Kremlin warns of an \"escalation of tensions in the region\", but declines to comment directly on the attacks in Libya.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/wirtschaft/huang-wieder-nvidia-chef-100.html",
    "titel": "Nvidia setzt Jensen Huang wieder als Chef ein",
@@ -174,17 +209,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-   "titel": "Ukrainian Attack Off Coast of Libya Shows Reach of Kyiv’s Naval Drones",
-   "link": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T12:33:09.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "President Volodymyr Zelensky said that Ukrainian drones sank a corvette and hit a dry cargo vessel, in attacks that involved special operations forces.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/articles/c8r4gzzxvxl3o",
    "titel": "Israeli attacks have turned Gaza into 'toxic wasteland', Oxfam says",
    "link": "https://www.bbc.co.uk/news/articles/c8r4gzzxvxl3o?at_medium=RSS&at_campaign=rss",
@@ -193,17 +217,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The report says there are signs of possible contamination across almost all of Gaza as a result of Israel's actions.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
-   "titel": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
-   "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-23T11:40:01.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Kremlin warns of an \"escalation of tensions in the region\", but declines to comment directly on the attacks in Libya.",
    "sprache": "en"
   },
   {
@@ -1003,25 +1016,14 @@
    "maerkte": [],
    "text": "Die Menschenrechtslage in Saudi-Arabien bleibt düster. Allein 2026 fanden bisher 211 Hinrichtungen statt. Nutzt Saudi-Arabien den Iran-Krieg, um politischen Dissens zu unterdrücken?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-krieg-russland-krywyj-rih-100.html",
-   "titel": "Tote und Verletzte bei Raketenangriff auf Krywyj Rih",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-krieg-russland-krywyj-rih-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-21T02:39:59.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Krywyj Rih ist die Heimatstadt des ukrainischen Präsidenten Selenskyj. Nun wurde die Industriestadt erneut mit ballistischen Raketen beschossen. Eine Rakete schlug demnach nahe Wohnhäusern und einem Restaurant ein.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 10,
   "DW": 9,
-  "Spiegel Wirtschaft": 4,
+  "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 6,
+  "Handelsblatt": 5,
   "BBC World": 11,
   "NYT World": 18,
   "EIA Today in Energy": 0
