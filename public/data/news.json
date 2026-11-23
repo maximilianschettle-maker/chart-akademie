@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-23T20:24:10.769Z",
+ "lastUpdated": "2026-11-23T21:24:11.751Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo",
+   "titel": "What strike on Russian ship in Libya says about spread of Ukraine war",
+   "link": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-23T20:48:35.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ukraine's sinking of a Russian battleship at a port in Libya raises the stakes of the war a notch, writes Frank Gardner.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/technik/ki/nvidia-huang-kehrt-als-konzernchef-zurueck-aktie-legt-um-30-prozent-zu/100272106.html",
    "titel": "Chipkonzern: Jensen Huang kehrt als Nvidia-Chef zurück – Aktie steigt um 30 Prozent",
@@ -1011,27 +1022,16 @@
    "maerkte": [],
    "text": "Der im Sommer verstorbene Klaus-Michael Kühne war einer der prägendsten Unternehmer der deutschen Nachkriegsgeschichte. Sein Umgang mit der Vergangenheit seines Imperiums war umstritten. Was wird daraus? Von Sandra Biegger.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/us-berichte-wieder-hackerangriff-auf-fbi/a-80009259",
-   "titel": "US-Berichte: Wieder Hackerangriff auf FBI",
-   "link": "https://www.dw.com/de/us-berichte-wieder-hackerangriff-auf-fbi/a-80009259?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-21T11:40:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Behörde war erst im September Opfer einer Cyberattacke geworden. Auch das Landwirtschaftsministerium soll diesmal im Visier von Hackern gestanden haben.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 12,
   "DW": 10,
-  "Spiegel Wirtschaft": 3,
+  "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 6,
-  "BBC World": 11,
-  "NYT World": 18,
+  "BBC World": 12,
+  "NYT World": 17,
   "EIA Today in Energy": 0
  }
 }
