@@ -1,7 +1,84 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-23T10:24:14.313Z",
+ "lastUpdated": "2026-11-23T11:24:11.588Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
+   "titel": "Is Mexico Stepping Up in the War on Drugs?",
+   "link": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-23T11:14:24.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "With several powerful drug kingpins recently taken down by Mexican forces, some experts see what may be a new chapter beginning in Mexico.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/23/world/middleeast/netanyahu-israel-iran.html",
+   "titel": "Netanyahu Wants to Attack Iran. Does That Serve Israel or Him?",
+   "link": "https://www.nytimes.com/2026/11/23/world/middleeast/netanyahu-israel-iran.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-23T11:09:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Israeli prime minister, Benjamin Netanyahu calls renewing strikes a matter of national security. Military analysts and opposition leaders say he’s prioritizing his own interests.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/thyssenkrupp-alfried-krupp-half-nazi-taetern-noch-lange-nach-kriegsende-accg-201708275.html",
+   "titel": "Neue Studie: Alfried Krupp half Nazi-Tätern noch lange nach Kriegsende",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/thyssenkrupp-alfried-krupp-half-nazi-taetern-noch-lange-nach-kriegsende-accg-201708275.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-23T10:57:14.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Eine neue Studie liefert Belege für die klare Mitverantwortung für Zwangsarbeit und Kriegswirtschaft des Industriellen Alfried Krupp. Warum die gleichnamige Stiftung dennoch ihren Namen behält.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/ukraine-best%C3%A4tigt-angriffe-auf-russische-schiffe-vor-libyen/a-80018005",
+   "titel": "Ukraine bestätigt Angriffe auf russische Schiffe vor Libyen",
+   "link": "https://www.dw.com/de/ukraine-bestätigt-angriffe-auf-russische-schiffe-vor-libyen/a-80018005?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-23T10:42:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die ukrainischen Streitkräfte hätten \"Seedrohnen\" eingesetzt, erklärte Präsident Selenskyj. \"Trotz aller Bemühungen des Feindes, den Angriff abzuwehren\", sei die russische Korvette 'Merkury' versenkt worden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/militaeruebung-polen-100.html",
+   "titel": "\"Koalition der Willigen\" absolviert Militärübung in Polen",
+   "link": "https://www.tagesschau.de/ausland/europa/militaeruebung-polen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-23T10:30:31.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Es war die erste militärische Übung der \"Koalition der Willigen\": Hunderte Soldaten haben in Polen getestet, wie in der Ukraine Frieden gesichert werden kann. Zum Ende schlugen nahe dem Gelände russische Raketen ein. Von P. Milling.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-older-soldiers.html",
+   "titel": "They Were Too Old to Enlist, but Not to Fight. Meet the Steppe Wolves of Ukraine.",
+   "link": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-older-soldiers.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-23T10:26:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "When the military refused to let them sign up, a band of aging men found their own way to wage war against Russia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/wie-die-ddr-den-kaffeeanbau-in-vietnam-ankurbelte/a-79960594",
+   "titel": "Wie die DDR den Kaffeeanbau in Vietnam ankurbelte",
+   "link": "https://www.dw.com/de/wie-die-ddr-den-kaffeeanbau-in-vietnam-ankurbelte/a-79960594?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-23T10:25:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Weil sich die DDR den Kaffee-Import nicht mehr leisten konnte, führte sie 1977 ein Mixprodukt mit Roggen und Zichorie ein. Der Aufschrei war groß. Die Lösung für das Problem lag 9000 Kilometer entfernt: in Vietnam.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
    "titel": "Ukraine Claims Strikes on Russian Ships Near Libya",
@@ -39,7 +116,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
-   "titel": "Russian ships hit by Ukrainian drones off Libya coast, Zelensky says",
+   "titel": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
    "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-23T08:36:57.000Z",
@@ -241,17 +318,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Extremist settlers carried out a spate of violent raids in Palestinian villages over the weekend, spurring opponents of the Netanyahu government to demand a forceful response.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
-   "titel": "Is Mexico Stepping Up in the War on Drugs?",
-   "link": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T01:26:59.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "With several powerful drug kingpins recently taken down by Mexican forces, some experts see what may be a new chapter beginning in Mexico.",
    "sprache": "en"
   },
   {
@@ -950,86 +1016,16 @@
    "maerkte": [],
    "text": "Die Ex-Frau von Wladimir Potanin fordert 2,2 Milliarden Pfund, er will ihr nur 25 Millionen Pfund geben - und sagt, dass es wegen der Sanktionen schwierig werden könnte.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/20/world/europe/uk-eu-summit-brexit.html",
-   "titel": "Britain Announces Brexit Reset Deal at E.U. Summit: What to Know",
-   "link": "https://www.nytimes.com/2026/11/20/world/europe/uk-eu-summit-brexit.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-20T16:50:16.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Prime Minister Andy Burnham and European leaders said they had agreed to remove some of the barriers created when Britain left the European Union.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/tuerkei-imamoglu-104.html",
-   "titel": "Urteil hindert İmamoğlu an Präsidentschaftskandidatur in der Türkei",
-   "link": "https://www.tagesschau.de/ausland/europa/tuerkei-imamoglu-104.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-20T16:30:28.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der größte Rivale von Präsident Erdoğan sitzt bereits im Gefängnis. Nun verhindert ein weiteres Gerichtsurteil, dass İmamoğlu bei der nächsten Wahl kandidieren darf. Es geht dabei um seinen Hochschulabschluss.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/deutsch-ukrainisches-wirtschaftsforum-104.html",
-   "titel": "Merz: Unterstützung der Ukraine bringt uns Dividende",
-   "link": "https://www.tagesschau.de/wirtschaft/deutsch-ukrainisches-wirtschaftsforum-104.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-20T16:22:30.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Seit dem Angriff Russlands unterstützt Deutschland die Ukraine - insgesamt mit mehr als 100 Milliarden Euro. Ausgaben, die sich auszahlen könnten. Kanzler Merz sieht - trotz des Krieges - positive Effekte für die deutsche Wirtschaft.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/verteidigung-russische-raketen-gehen-waehrend-pistorius-besuch-in-polen-nieder/100271592.html",
-   "titel": "Verteidigung: Russische Rakete geht in Polen nieder – Pistorius beschwört den Zusammenhalt",
-   "link": "https://www.handelsblatt.com/politik/international/verteidigung-russische-raketen-gehen-waehrend-pistorius-besuch-in-polen-nieder/100271592.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-20T15:34:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der militärische Schulterschluss Deutschlands und Polens gefällt nicht allen. Der Bundesverteidigungsminister kämpft gegen die Gespenster der Vergangenheit – und hat eine Botschaft für Moskau.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/raketeneinschlag-nato-generalsekret%C3%A4r-sagt-polen-unterst%C3%BCtzung-zu/a-80004889",
-   "titel": "Raketeneinschlag: NATO-Generalsekretär sagt Polen Unterstützung zu",
-   "link": "https://www.dw.com/de/raketeneinschlag-nato-generalsekretär-sagt-polen-unterstützung-zu/a-80004889?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-20T15:16:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Die Ukraine wurde in der Nacht erneut heftig von Russland attackiert. Dabei wurde auch Polen getroffen, wie die Regierung in Warschau mitteilte. Die NATO steht ihrem Mitglied zur Seite.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/videos/c65y19wy3xl8o",
-   "titel": "What we know about the latest Russian missile strikes on Ukraine",
-   "link": "https://www.bbc.co.uk/news/videos/c65y19wy3xl8o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-20T15:14:01.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russia struck bridges and railway stations in the capital Kyiv in a major attack.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 11,
-  "DW": 6,
+  "DW": 8,
   "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 1,
+  "FAZ Wirtschaft": 2,
   "Handelsblatt": 4,
   "BBC World": 10,
-  "NYT World": 19,
+  "NYT World": 21,
   "EIA Today in Energy": 0
  }
 }
