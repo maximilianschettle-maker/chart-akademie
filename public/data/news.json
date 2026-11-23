@@ -1,7 +1,20 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-23T21:24:11.751Z",
+ "lastUpdated": "2026-11-23T23:24:09.611Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/nvidia-skandal-usa-setzen-chip-firma-megaspeed-wegen-spionageverdachts-auf-sperrliste/100272205.html",
+   "titel": "Nvidia-Skandal: USA setzen Chip-Firma Megaspeed wegen Spionageverdachts auf Sperrliste",
+   "link": "https://www.handelsblatt.com/politik/international/nvidia-skandal-usa-setzen-chip-firma-megaspeed-wegen-spionageverdachts-auf-sperrliste/100272205.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T23:16:27.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Die mutmaßliche Spionin Alice Huang war Mehrheitsaktionärin bei Megaspeed. Der singapurische Konzern steht nun auf einer Handelssperrliste.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo",
    "titel": "What strike on Russian ship in Libya says about spread of Ukraine war",
@@ -1011,17 +1024,6 @@
    "maerkte": [],
    "text": "Gianni De Gennaro bekleidete lange Schlüsselpositionen im italienischen Sicherheitsapparat - sei es im Kampf gegen die Mafia, beim G8-Gipfel in Genua oder für die Geheimdienste. Kurz vor einer Gerichtsanhörung tötete er sich selbst.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/unternehmen/klaus-michael-kuehne-unternehmer-vergangenheit-schindellegi-schweiz-100.html",
-   "titel": "Nach Kühnes Tod: Kontinuität und Aufarbeitung bei Kühne+Nagel",
-   "link": "https://www.tagesschau.de/wirtschaft/unternehmen/klaus-michael-kuehne-unternehmer-vergangenheit-schindellegi-schweiz-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-21T12:36:54.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der im Sommer verstorbene Klaus-Michael Kühne war einer der prägendsten Unternehmer der deutschen Nachkriegsgeschichte. Sein Umgang mit der Vergangenheit seines Imperiums war umstritten. Was wird daraus? Von Sandra Biegger.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1029,9 +1031,9 @@
   "DW": 10,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 6,
+  "Handelsblatt": 7,
   "BBC World": 12,
-  "NYT World": 17,
+  "NYT World": 16,
   "EIA Today in Energy": 0
  }
 }
