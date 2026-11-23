@@ -1,7 +1,62 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-23T03:24:16.832Z",
+ "lastUpdated": "2026-11-23T05:24:11.613Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/riskantes-man%C3%B6ver-irak-will-hisbollah-brigaden-entwaffnen/a-80003629",
+   "titel": "Riskantes Manöver: Irak will Hisbollah-Brigaden entwaffnen",
+   "link": "https://www.dw.com/de/riskantes-manöver-irak-will-hisbollah-brigaden-entwaffnen/a-80003629?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-23T05:11:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Es ist die gefährlichste Auseinandersetzung zwischen dem irakischen Staat und den mit dem Iran verbündeten Milizen seit Jahrzehnten: Irakische Sicherheitskräfte wollen gegen die Miliz Kataib Hisbollah vorgehen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/23/world/asia/china-us-nuclear-ai.html",
+   "titel": "China Fears A.I. Could Give the U.S. an Edge in Nuclear Rivalry",
+   "link": "https://www.nytimes.com/2026/11/23/world/asia/china-us-nuclear-ai.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-23T05:00:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Chinese military researchers are studying how to harness A.I., but they worry the technology makes their country’s nuclear forces more vulnerable to attack.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go",
+   "titel": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
+   "link": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-23T04:44:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ten people are dead in the attack on Dymer, with rescue efforts ongoing to find those still missing from the residential building.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-angriffe-wohnhaeuser-104.html",
+   "titel": "Krieg gegen die Ukraine: Tote nach Angriff auf Mehrfamilienhaus",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-angriffe-wohnhaeuser-104.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-23T04:43:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Das russische Militär geht weiter unvermindert gegen die Zivilbevölkerung in der Ukraine vor. Mindestens zehn Menschen wurden getötet, als in der Nacht zu Sonntag ein Wohnhaus in der Region Kiew angegriffen wurde.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html",
+   "titel": "How Homeowners Are Powering Vietnam’s E-Bike Surge",
+   "link": "https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-23T04:35:25.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The war in Iran has brought on a rapid switch from motorbikes to electric two-wheelers in Vietnam, creating an informal charging economy led by entrepreneurial homeowners.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/kommentar-dieser-haushalt-ist-fuer-die-demokratie-brandgefaehrlich/100271477.html",
    "titel": "Kommentar: Dieser Haushalt ist für die Demokratie brandgefährlich",
@@ -22,17 +77,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Libya's eastern government says the ship had stopped for fuel and supplies on its way back to Russia.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go",
-   "titel": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
-   "link": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-23T02:37:02.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nine people are dead in the attack, with rescue efforts ongoing to find those still missing from the residential building.",
    "sprache": "en"
   },
   {
@@ -176,6 +220,19 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Noch immer laufen die Löscharbeiten an dem russischen Frachter in der Ostsee vor Finnland. Was das Schiff geladen hat, ist weiterhin unklar. Es war von einer Drohne getroffen worden - vermutlich aus der Ukraine.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-russisches-kriegsschiff-sinkt-nach-explosion-in-libyschem-hafen/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Russisches Kriegsschiff sinkt nach Explosion in libyschem Hafen",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-russisches-kriegsschiff-sinkt-nach-explosion-in-libyschem-hafen/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-22T11:23:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Nato berät über russische Luftraumverletzungen in Polen +++ Polen: Abgestürztes Flugobjekt war russische Rakete +++ Selenskyj: Erneut Lieferverzögerung bei Flugabwehr +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -955,71 +1012,16 @@
    "maerkte": [],
    "text": "Kein deutsches Unternehmen hat nach Angaben des Kanzlers sein Engagement in der von Krieg überzogenen Ukraine aufgegeben. Merz stellt eine „Dividende“ in Aussicht, mahnt aber auch Reformen an.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/eu-uk-gipfel-eu-einigt-sich-mit-briten-auf-projekte-fuer-eine-wiederannaeherung/100270861.html",
-   "titel": "EU-Großbritannien-Gipfel: EU einigt sich mit Briten auf Projekte für eine Wiederannäherung",
-   "link": "https://www.handelsblatt.com/politik/international/eu-uk-gipfel-eu-einigt-sich-mit-briten-auf-projekte-fuer-eine-wiederannaeherung/100270861.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-20T12:13:01.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Knapp sieben Jahre nach dem Brexit wollen Brüssel und London wieder eine engere Beziehung aufnehmen. Die Vereinbarung könnte den Briten den Weg zurück in die EU bahnen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-bruecken-100.html",
-   "titel": "Tote bei russischen Angriffen auf mehrere Brücken in Kiew",
-   "link": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-bruecken-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-20T11:47:44.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Es ist eine Attacke ins Herz der ukrainischen Hauptstadt: Russland hat in Kiew erneut Brücken beschossen und beschädigt. Mehrere Menschen wurden getötet. Im Nachbarland Polen stürzten drei russische Flugobjekte ab.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/acht-tote-bei-neuen-russischen-angriffen-auf-die-ukraine/a-80001040",
-   "titel": "Acht Tote bei neuen russischen Angriffen auf die Ukraine",
-   "link": "https://www.dw.com/de/acht-tote-bei-neuen-russischen-angriffen-auf-die-ukraine/a-80001040?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-20T11:46:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Nach den spektakulären Angriffen auf die Krim-Brücke hatte Russlands Präsident Putin der Ukraine mit massiver Vergeltung gedroht. Nun nahm die russische Armee ihrerseits Brücken in Kyjiw ins Visier.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wissen/forschung/jugendliche-in-der-dauerkrise-100.html",
-   "titel": "Warum die Jugend der Gen Z im Dauerkrisenmodus steckt",
-   "link": "https://www.tagesschau.de/wissen/forschung/jugendliche-in-der-dauerkrise-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-20T11:40:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Von Kriegen bis Klimawandel - Jugendliche sehen sich stärker als frühere Generationen durch einen Mix aus Dauerkrisen bedroht. Von der Politik fühlen sie sich im Stich gelassen und fürchten um ihre Zukunft. Von Sven Kästner.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/polen-drei-russische-flugobjekte-abgestuerzt/100271566.html",
-   "titel": "Ukraine-Krieg: Drei russische Flugobjekte in Polen abgestürzt",
-   "link": "https://www.handelsblatt.com/politik/international/polen-drei-russische-flugobjekte-abgestuerzt/100271566.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-20T11:07:02.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Zwei mutmaßliche Raketen und eine Drohne: Während Russland die Ukraine angreift, stürzen Flugobjekte in Polen ab. Der polnische Verteidigungsminister spricht von einer Provokation.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
-  "DW": 5,
+  "tagesschau": 13,
+  "DW": 6,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 0,
-  "Handelsblatt": 3,
+  "Handelsblatt": 4,
   "BBC World": 9,
-  "NYT World": 17,
+  "NYT World": 19,
   "EIA Today in Energy": 0
  }
 }
