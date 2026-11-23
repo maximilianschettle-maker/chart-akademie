@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-23T09:24:09.676Z",
+ "lastUpdated": "2026-11-23T10:24:14.313Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+   "titel": "Ukraine Claims Strikes on Russian Ships Near Libya",
+   "link": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-23T09:59:08.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "President Volodymyr Zelensky said that Ukrainian naval drones sank a corvette and hit a dry cargo vessel, demonstrating Kyiv’s reach in the seas.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/drohnenangriff-selenskyj-bestaetigt-versenkung-russischen-kriegsschiffs-durch-ukraine/100271954.html",
+   "titel": "Drohnenangriff: Selenskyj bestätigt Versenkung russischen Kriegsschiffs durch Ukraine",
+   "link": "https://www.handelsblatt.com/politik/international/drohnenangriff-selenskyj-bestaetigt-versenkung-russischen-kriegsschiffs-durch-ukraine/100271954.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T09:54:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Im Hafen von Bengasi in Libyen ist nach Satellitenaufnahmen die russische Korvette „Merkury“ gesunken. Die ostlibysche Regierung spricht von einer Verletzung der nationalen Souveränität.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/oekonom-ruediger-bachmann-inflation-zerstoert-den-gesellschaftlichen-zusammenhalt-accg-201700848.html",
+   "titel": "Ökonom Bachmann: „Inflation zerstört den gesellschaftlichen Zusammenhalt“",
+   "link": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/oekonom-ruediger-bachmann-inflation-zerstoert-den-gesellschaftlichen-zusammenhalt-accg-201700848.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-23T09:03:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Der Ökonom Rüdiger Bachmann rechnet perspektivisch mit Steuererhöhungen, Inflation und finanzieller Repression. Die wütende Stimmung im Netz hält er für schädlich – seine Angriffe auf Kollegen in sozialen Netzwerken verteidigt er aber.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
    "titel": "Russian ships hit by Ukrainian drones off Libya coast, Zelensky says",
@@ -35,17 +70,6 @@
     "ruestung"
    ],
    "text": "Selenskyj: Haben russisches Kriegsschiff vor Libyen versenkt ++++ Nato berät über russische Luftraumverletzungen in Polen +++ Polen: Abgestürztes Flugobjekt war russische Rakete +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/drohnenangriff-selenskyj-bestaetigt-versenkung-russischen-kriegsschiffs-durch-ukraine/100271954.html",
-   "titel": "Drohnenangriff: Selenskyj bestätigt Versenkung russischen Kriegsschiffs durch Ukraine",
-   "link": "https://www.handelsblatt.com/politik/international/drohnenangriff-selenskyj-bestaetigt-versenkung-russischen-kriegsschiffs-durch-ukraine/100271954.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T08:12:50.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Im Hafen von Bengasi in Libyen ist nach Satellitenaufnahmen die russische Korvette „Merkury“ gesunken. Die ostlibysche Regierung spricht von einer Verletzung der nationalen Souveränität.",
    "sprache": "de"
   },
   {
@@ -996,38 +1020,16 @@
    "maerkte": [],
    "text": "Russia struck bridges and railway stations in the capital Kyiv in a major attack.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/eu-uk-gipfel-eu-und-grossbritannien-oeffnen-grenzen-fuer-die-junge-generation/100270861.html",
-   "titel": "EU-Großbritannien-Gipfel: EU und Großbritannien öffnen Grenzen für die junge Generation",
-   "link": "https://www.handelsblatt.com/politik/international/eu-uk-gipfel-eu-und-grossbritannien-oeffnen-grenzen-fuer-die-junge-generation/100270861.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-20T15:05:24.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Knapp sieben Jahre nach dem Brexit wollen Brüssel und London wieder eine engere Beziehung aufnehmen. Die Vereinbarung könnte den Briten sogar den Weg zurück in die EU bahnen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/kinderraub-als-kriegswaffe-hitlers-erbe-putins-system-und-das-schicksal-der-geraubten-kinder-zwischen-umerziehung-propaganda-und-identit%C3%A4tsverlust/a-80001588",
-   "titel": "Kinderraub als Kriegswaffe: Hitlers Erbe, Putins System und das Schicksal der geraubten Kinder zwischen Umerziehung, Propaganda und Identitätsverlust",
-   "link": "https://www.dw.com/de/kinderraub-als-kriegswaffe-hitlers-erbe-putins-system-und-das-schicksal-der-geraubten-kinder-zwischen-umerziehung-propaganda-und-identitätsverlust/a-80001588?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-20T14:18:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Als Kind von den Nazis verschleppt, als junge Frau mit dem Kinderraub durch Russland konfrontiert: Barbara Paciorkiewicz und Ksenija Koldin erzählen von Verlust, gewaltsamer Trennung und schwieriger Heimkehr.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
+  "tagesschau": 11,
   "DW": 6,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 1,
-  "Handelsblatt": 5,
+  "Handelsblatt": 4,
   "BBC World": 10,
-  "NYT World": 18,
+  "NYT World": 19,
   "EIA Today in Energy": 0
  }
 }
