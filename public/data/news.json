@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T01:00:11.029Z",
+ "lastUpdated": "2026-11-24T02:24:06.886Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/ukraine-pistorius-104.html",
+   "titel": "Deutschland baut künftig ukrainische Drohnen",
+   "link": "https://www.tagesschau.de/ausland/europa/ukraine-pistorius-104.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-24T01:46:30.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Bereits im April hatten Deutschland und die Ukraine vereinbart, militärisch enger zusammenzuarbeiten - etwa beim Drohnenbau. Verteidigungsminister Pistorius wurde nun konkreter. Mit Blick auf mögliche russische Angriffspläne im All mahnte e",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/el-salvador-haiti-100.html",
    "titel": "Haiti: El Salvadors Präsident Bukele wegen Militäreinsatz gefeiert",
@@ -79,7 +90,7 @@
    "titel": "Is Mexico Stepping Up in the War on Drugs?",
    "link": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-23T19:15:22.000Z",
+   "zeit": "2026-11-23T19:15:23.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "With several powerful drug kingpins recently taken down by Mexican forces, some experts see what may be a new chapter beginning in Mexico.",
@@ -103,7 +114,7 @@
    "titel": "Netanyahu Wants to Attack Iran. Does That Serve Israel or Him?",
    "link": "https://www.nytimes.com/2026/11/23/world/middleeast/netanyahu-israel-iran.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-23T18:54:41.000Z",
+   "zeit": "2026-11-23T18:54:42.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The Israeli prime minister, Benjamin Netanyahu, calls renewing strikes a matter of national security. Military analysts and opposition leaders say he’s prioritizing his own interests.",
@@ -138,7 +149,7 @@
    "titel": "Ukraine Attack Off Coast of Libya Shows Reach of Its Naval Drones",
    "link": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-23T18:09:45.000Z",
+   "zeit": "2026-11-23T18:09:46.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "President Volodymyr Zelensky said that Ukrainian drones had sunk a corvette and hit a dry cargo vessel, in attacks that involved special operations forces.",
@@ -1013,21 +1024,10 @@
    "maerkte": [],
    "text": "Ukraine's president says Kyiv acted after 109 separate Russian aerial attacks on bridges in Ukraine.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/21/world/europe/spain-sanchez-interview-election-basketball.html",
-   "titel": "On the Trail With Spain’s Prime Minister, as He Tries to Pull Out a Win",
-   "link": "https://www.nytimes.com/2026/11/21/world/europe/spain-sanchez-interview-election-basketball.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-21T12:54:44.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Pedro Sánchez, Europe’s most prominent left-wing leader, seems set to lose power in an election next week. Our reporter trailed his last-ditch effort to turn his campaign around.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 13,
+  "tagesschau": 14,
   "DW": 10,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 3,
