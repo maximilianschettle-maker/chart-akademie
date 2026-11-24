@@ -1,7 +1,75 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T15:24:11.881Z",
+ "lastUpdated": "2026-11-24T16:24:14.287Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
+   "titel": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
+   "link": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-24T16:13:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Presidents before him have bailed out companies in times of national crisis. Mr. Trump went further: He staked the fortunes of the United States on those of a favored chief executive.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-raus-aus-china-endlich-hat-es-die-wirtschaft-verstanden/100272305.html",
+   "titel": "Kommentar: Raus aus China – endlich hat es die Wirtschaft verstanden",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-raus-aus-china-endlich-hat-es-die-wirtschaft-verstanden/100272305.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-24T16:01:16.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "Lange Zeit haben die deutschen Unternehmen so getan, als wäre ihre Rohstoffversorgung kein Problem. Jetzt leiten sie den Kurswechsel ein. Und auch die Bundesregierung steuert um.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/koalition-union-droht-spd-mit-blockade-der-reichensteuer/100272431.html",
+   "titel": "Koalition: Streit um Reform – Union droht SPD mit Blockade der Reichensteuer",
+   "link": "https://www.handelsblatt.com/politik/deutschland/koalition-union-droht-spd-mit-blockade-der-reichensteuer/100272431.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-24T15:48:54.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In der Koalition bahnt sich ein neuer Konflikt an. Die Union will der Einkommensteuerreform nicht zustimmen, solange das Paket zum Arbeitsmarkt nicht beschlossen ist.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kolumnen/kolumne-out-of-the-box-die-jungen-high-potentials-sehen-alt-aus/100272375.html",
+   "titel": "Kolumne „Out of the box“: Die jungen High Potentials sehen alt aus",
+   "link": "https://www.handelsblatt.com/meinung/kolumnen/kolumne-out-of-the-box-die-jungen-high-potentials-sehen-alt-aus/100272375.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-24T15:36:14.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Noch nie war der Nachwuchs so gut ausgebildet, noch nie fand er so schwer einen Job. Unternehmen sparen mit KI-Agenten kurzfristig, doch verlieren langfristig etwas Wichtiges.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o",
+   "titel": "Israeli air strike kills Hamas internal security chief in Gaza",
+   "link": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-24T15:35:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Naeem Abu Nahel, who had been in the post for two months, is among seven Palestinians reportedly killed in Israeli strikes on Tuesday.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/24/world/europe/ukraine-russia-psyops-radio-izium.html",
+   "titel": "Radio Offers Russian Troops Classic Rock, Nostalgia — and Pleas to Surrender",
+   "link": "https://www.nytimes.com/2026/11/24/world/europe/ukraine-russia-psyops-radio-izium.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-24T15:22:10.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "What seem like frontline Russian radio stations are actually a Ukrainian psychological operation, hoping to sow despair among the Kremlin’s soldiers.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c893rl37ywdgo",
    "titel": "Land mine casualties soar in Syria, two years after war",
@@ -12,6 +80,19 @@
    "maerkte": [],
    "text": "Nearly 1,000 children are among those killed or injured by explosives left over from the conflict, figures show.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/oel-preise-stabilisieren-sich-sich-nach-vortagsverlusten-a-bc31a2d2-29a0-493f-990a-53971fb94289",
+   "titel": "Öl: Preise stabilisieren sich sich nach Vortagsverlusten",
+   "link": "https://www.spiegel.de/wirtschaft/oel-preise-stabilisieren-sich-sich-nach-vortagsverlusten-a-bc31a2d2-29a0-493f-990a-53971fb94289#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-24T15:08:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Vorsichtiger Optimismus bei den Verhandlungen zwischen den USA und Iran hat die Ölpreise zuletzt fallen lassen. Nun zeichnet sich ein erneuter Anstieg beim Brent-Preis ab – die Lage bleibt unsicher.",
+   "sprache": "de"
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/oel-brent-peise-stabilisiert-sich-nach-vortagsverlusten-a-bc31a2d2-29a0-493f-990a-53971fb94289",
@@ -144,17 +225,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o",
-   "titel": "Israeli air strike kills Hamas internal security chief in Gaza",
-   "link": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-24T12:12:48.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Naeem Abu Nahel, who had only been in the position for two months, was targeted in western Gaza City, Gaza's interior ministry says.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/articles/cjqlq2n4np7do",
    "titel": "Car bomb tears through Colombian city wounding more than 20",
    "link": "https://www.bbc.co.uk/news/articles/cjqlq2n4np7do?at_medium=RSS&at_campaign=rss",
@@ -210,17 +280,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Newly-released bodycam footage shows the moment troops detained 'El Chapo Isidro', who had managed to evade capture for years.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/24/world/europe/ukraine-russia-psyops-radio-izium.html",
-   "titel": "Radio Offers Russian Troops Classic Rock, Nostalgia — and Pleas to Surrender",
-   "link": "https://www.nytimes.com/2026/11/24/world/europe/ukraine-russia-psyops-radio-izium.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-24T09:08:32.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "What seem like frontline Russian radio stations are actually a Ukrainian psychological operation, hoping to sow despair among the Kremlin’s soldiers.",
    "sprache": "en"
   },
   {
@@ -990,71 +1049,16 @@
    "maerkte": [],
    "text": "The talks have been the longest-running in the summit's history, with negotiations breaking down two days after they had been due to end.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go",
-   "titel": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
-   "link": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-23T05:33:17.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Eleven people are dead in the attack on Dymer, with rescue efforts ongoing to find those still missing from the residential building.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/riskantes-man%C3%B6ver-irak-will-hisbollah-brigaden-entwaffnen/a-80003629",
-   "titel": "Riskantes Manöver: Irak will Hisbollah-Brigaden entwaffnen",
-   "link": "https://www.dw.com/de/riskantes-manöver-irak-will-hisbollah-brigaden-entwaffnen/a-80003629?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-23T05:11:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Es ist die gefährlichste Auseinandersetzung zwischen dem irakischen Staat und den mit dem Iran verbündeten Milizen seit Jahrzehnten: Irakische Sicherheitskräfte wollen gegen die Miliz Kataib Hisbollah vorgehen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-angriffe-wohnhaeuser-104.html",
-   "titel": "Krieg gegen die Ukraine: Tote nach Angriff auf Mehrfamilienhaus",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-angriffe-wohnhaeuser-104.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-23T04:43:07.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Das russische Militär geht weiter unvermindert gegen die Zivilbevölkerung in der Ukraine vor. Mindestens zehn Menschen wurden getötet, als in der Nacht zu Sonntag ein Wohnhaus in der Region Kiew angegriffen wurde.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-dieser-haushalt-ist-fuer-die-demokratie-brandgefaehrlich/100271477.html",
-   "titel": "Kommentar: Dieser Haushalt ist für die Demokratie brandgefährlich",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-dieser-haushalt-ist-fuer-die-demokratie-brandgefaehrlich/100271477.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T03:08:08.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Koalition zerstört eingeübte demokratische Verfahren: Die CDU beschädigt den Prozess der Budgetaufstellung, Lars Klingbeil das Amt des Finanzministers. Freuen darf sich die AfD.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/kommentar-dieser-haushalt-ist-fuer-die-demokratie-brandgefaehrlich/100271477.html",
-   "titel": "Kommentar: Dieser Haushalt ist für die Demokratie brandgefährlich",
-   "link": "https://www.handelsblatt.com/politik/deutschland/kommentar-dieser-haushalt-ist-fuer-die-demokratie-brandgefaehrlich/100271477.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T03:08:08.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Koalition zerstört eingeübte demokratische Verfahren: Die CDU beschädigt den Prozess der Budgetaufstellung, Lars Klingbeil das Amt des Finanzministers. Freuen darf sich die AfD.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 14,
+  "tagesschau": 12,
   "DW": 9,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 1,
-  "Handelsblatt": 3,
-  "BBC World": 10,
-  "NYT World": 14,
+  "Handelsblatt": 6,
+  "BBC World": 9,
+  "NYT World": 15,
   "EIA Today in Energy": 0
  }
 }
