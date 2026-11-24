@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T21:21:46.086Z",
+ "lastUpdated": "2026-11-24T22:24:13.663Z",
  "eintraege": [
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kleinlaut-und-kaempferisch-nvidia-chef-jensen-huang-entschuldigt-sich-bei-mitarbeitern-201714458.html",
+   "titel": "Jensen Huang: „Ich mache täglich eineinhalb Stunden Therapie“",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kleinlaut-und-kaempferisch-nvidia-chef-jensen-huang-entschuldigt-sich-bei-mitarbeitern-201714458.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-24T22:16:43.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Der alte und neue Nvidia-Vorstandschef hält die erste Mitarbeiterversammlung seit seiner Rückkehr. Er gibt sich dabei kleinlaut und kämpferisch zugleich.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/usa-us-gericht-spricht-huawei-wegen-betrugs-schuldig/100272531.html",
+   "titel": "USA: US-Gericht spricht Huawei wegen Betrugs schuldig",
+   "link": "https://www.handelsblatt.com/politik/international/usa-us-gericht-spricht-huawei-wegen-betrugs-schuldig/100272531.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-24T21:36:32.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Das chinesische Unternehmen wurde unter anderem wegen Bankbetrugs, Verstößen gegen Sanktionen und Diebstahl von Geschäftsgeheimnissen schuldig gesprochen. Huawei weist die Vorwürfe zurück.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.dw.com/de/russisches-starlink-wie-kann-rasswet-den-ukraine-krieg-ver%C3%A4ndern/a-80033063",
    "titel": "\"Russisches Starlink\" - Wie kann Rasswet den Ukraine-Krieg verändern?",
@@ -166,7 +190,7 @@
    "zeit": "2026-11-24T16:43:05.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "Dass die Opposition die Arbeit der Regierung kritisiert, ist normal. Wenn aber der haushaltspolitische Sprecher der SPD die Regierung kritisiert, lässt das aufhorchen. Parteifreund Klingbeil verteidigt das Vorgehen.",
+   "text": "Dass die Opposition die Arbeit der Regierung kritisiert, ist normal. Wenn aber der haushaltspolitische Sprecher der SPD die Regierung kritisiert, lässt das aufhorchen.",
    "sprache": "de"
   },
   {
@@ -1015,36 +1039,14 @@
    "maerkte": [],
    "text": "Die ukrainischen Streitkräfte hätten \"Seedrohnen\" eingesetzt, erklärte Präsident Selenskyj. \"Trotz aller Bemühungen des Feindes, den Angriff abzuwehren\", sei die russische Korvette 'Merkury' versenkt worden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/militaeruebung-polen-100.html",
-   "titel": "\"Koalition der Willigen\" absolviert Militärübung in Polen",
-   "link": "https://www.tagesschau.de/ausland/europa/militaeruebung-polen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-23T10:30:31.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Es war die erste militärische Übung der \"Koalition der Willigen\": Hunderte Soldaten haben in Polen getestet, wie in der Ukraine Frieden gesichert werden kann. Zum Ende schlugen nahe dem Gelände russische Raketen ein. Von P. Milling.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/wie-die-ddr-den-kaffeeanbau-in-vietnam-ankurbelte/a-79960594",
-   "titel": "Wie die DDR den Kaffeeanbau in Vietnam ankurbelte",
-   "link": "https://www.dw.com/de/wie-die-ddr-den-kaffeeanbau-in-vietnam-ankurbelte/a-79960594?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-23T10:25:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Weil sich die DDR den Kaffee-Import nicht mehr leisten konnte, führte sie 1977 ein Mixprodukt mit Roggen und Zichorie ein. Der Aufschrei war groß. Die Lösung für das Problem lag 9000 Kilometer entfernt: in Vietnam.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 8,
   "DW": 10,
   "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 4,
-  "Handelsblatt": 9,
+  "FAZ Wirtschaft": 5,
+  "Handelsblatt": 10,
   "BBC World": 9,
   "NYT World": 15,
   "EIA Today in Energy": 0
