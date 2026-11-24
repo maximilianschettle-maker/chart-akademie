@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T10:24:11.595Z",
+ "lastUpdated": "2026-11-24T11:05:42.990Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/gruene-angriff-nrw-schwerte-100.html",
+   "titel": "Nordrhein-Westfalen: Angriff auf Grünen-Politiker während Fraktionssitzung",
+   "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/gruene-angriff-nrw-schwerte-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-24T10:54:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In Schwerte in Nordrhein-Westfalen hat nach Informationen des WDR eine maskierte Person eine Fraktionssitzung der Grünen gestürmt. Drei Menschen wurden dabei verletzt. Der Staatsschutz ermittelt.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o",
+   "titel": "DR Congo says military aircraft missing as rebels claim to shoot down plane",
+   "link": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-24T10:48:27.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A South African fighter pilot and a Ugandan officer are reportedly among those aboard the downed plane.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-102.html",
    "titel": "Marktbericht: DAX nach Kursrausch zurück im Alltag",
@@ -14,17 +36,6 @@
     "aktien"
    ],
    "text": "Nach der Euphorie zum Wochenstart fällt der DAX im frühen Handel zurück. War der Nvidia-Rausch nur ein Strohfeuer? Positive Konjunktursignale kommen heute vom ifo-Geschäftsklimaindex.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/gruene-angriff-nrw-schwerte-100.html",
-   "titel": "Nordrhein-Westfalen: Angriff auf Grünen-Politiker während Fraktionssitzung",
-   "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/gruene-angriff-nrw-schwerte-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-24T09:25:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "In Schwerte in Nordrhein-Westfalen hat nach Informationen des WDR eine maskierte Person eine Fraktionssitzung der Grünen gestürmt. Drei Menschen wurden dabei verletzt. Der Staatsschutz ermittelt.",
    "sprache": "de"
   },
   {
@@ -1025,17 +1036,6 @@
    "maerkte": [],
    "text": "The UN COP31 meeting in Turkey enters a second day of overtime as countries struggle to reach an agreement.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/gesellschaft/antisemitismusbeauftragte-102.html",
-   "titel": "Antisemitismusbeauftragte fordert mehr Engagement gegen Judenhass",
-   "link": "https://www.tagesschau.de/inland/gesellschaft/antisemitismusbeauftragte-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-22T05:47:26.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Antisemitismus so offen wie seit dem Holocaust nicht mehr: Bundesbeauftragte von Schnurbein warnt vor wachsendem Judenhass in Deutschland. Die \"AfD-Ideologie\" sei ein gefährlicher Angriff auf die Erinnerungskultur.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1044,8 +1044,8 @@
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 2,
-  "BBC World": 7,
-  "NYT World": 16,
+  "BBC World": 8,
+  "NYT World": 15,
   "EIA Today in Energy": 0
  }
 }
