@@ -1,7 +1,53 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T19:24:22.904Z",
+ "lastUpdated": "2026-11-24T20:24:11.855Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
+   "titel": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
+   "link": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-24T19:54:58.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Presidents before him have bailed out companies in times of national crisis. Mr. Trump went further: He staked the fortunes of the United States on those of a favored chief executive.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/technik/it-internet/cyberattacken-was-ein-hackerangriff-aufs-handelsblatt-ueber-it-sicherheit-lehrt/100269783.html",
+   "titel": "Deep Read: „KI hackt besser als ich“: Was eine Cyberattacke aufs Handelsblatt über IT-Sicherheit lehrt",
+   "link": "https://www.handelsblatt.com/technik/it-internet/cyberattacken-was-ein-hackerangriff-aufs-handelsblatt-ueber-it-sicherheit-lehrt/100269783.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-24T19:51:30.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Angriff auf die Redaktion läuft über Nacht ohne menschliche Hilfe: Eine Plattform sucht mit KI nach Sicherheitslücken und wird fündig. Ein Szenario, das jedes Unternehmen treffen kann.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/eu-neue-russland-sanktionen-treffen-altkanzler-gerhard-schroeder/100272497.html",
+   "titel": "EU: Neue Russland-Sanktionen treffen Altkanzler Gerhard Schröder",
+   "link": "https://www.handelsblatt.com/politik/international/eu-neue-russland-sanktionen-treffen-altkanzler-gerhard-schroeder/100272497.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-24T19:45:19.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Die EU will Europäern Führungsjobs in russischen Unternehmen verbieten. Putin-Freund Schröder müsste sein jüngstes Aufsichtsratsmandat niederlegen. Auch andere deutsche Manager sind betroffen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o",
+   "titel": "DR Congo says military aircraft missing as rebels claim to shoot down plane",
+   "link": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-24T19:27:23.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A South African fighter pilot and a Ugandan officer are reportedly among those aboard the downed plane.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/24/world/middleeast/saudi-skyscraper-houthi-strike.html",
    "titel": "Houthi Attack on Skyscraper in Saudi Capital Wounds 11, Officials Say",
@@ -34,19 +80,6 @@
    "maerkte": [],
    "text": "Die deutsche Wirtschaft will mit einem eigenen Handelshaus ihre Position gegenüber China stärken. Doch die wichtigen Rohstoffe könnten auch für den Staat teuer werden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
-   "titel": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
-   "link": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-24T18:34:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Presidents before him have bailed out companies in times of national crisis. Mr. Trump went further: He staked the fortunes of the United States on those of a favored chief executive.",
-   "sprache": "en"
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/deutsche-arznei-nicht-fuer-den-deutschen-markt-bayer-probt-den-medikamenten-boykott-201712417.html",
@@ -93,6 +126,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.handelsblatt.com/politik/deutschland/vanessa-emde-berliner-linken-fraktion-schliesst-umstrittene-abgeordnete-aus/100271178.html",
+   "titel": "Abgeordnetenhaus: „Wir vertrauen ihr nicht mehr“: Berliner Linke schließt umstrittene Abgeordnete Emde aus Fraktion aus",
+   "link": "https://www.handelsblatt.com/politik/deutschland/vanessa-emde-berliner-linken-fraktion-schliesst-umstrittene-abgeordnete-aus/100271178.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-24T16:43:17.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Fraktion der Linken in Berlin hat nach langen Debatten für einen Ausschluss der Neuköllner Abgeordneten gestimmt. Das hat auch Auswirkungen auf die laufenden Koalitionsverhandlungen.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.handelsblatt.com/politik/deutschland/vanessa-emde-berliner-linke-fraktion-schliesst-umstrittene-abgeordnete-aus/100271178.html",
    "titel": "Abgeordnetenhaus: Berliner Linke schließt umstrittene Abgeordnete Emde aus Fraktion aus",
    "link": "https://www.handelsblatt.com/politik/deutschland/vanessa-emde-berliner-linke-fraktion-schliesst-umstrittene-abgeordnete-aus/100271178.html",
@@ -113,17 +157,6 @@
    "maerkte": [],
    "text": "Dass die Opposition die Arbeit der Regierung kritisiert, ist normal. Wenn aber der haushaltspolitische Sprecher der SPD die Regierung kritisiert, lässt das aufhorchen. Parteifreund Klingbeil verteidigt das Vorgehen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o",
-   "titel": "DR Congo says military aircraft missing as rebels claim to shoot down plane",
-   "link": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-24T16:31:26.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A South African fighter pilot and a Ugandan officer are reportedly among those aboard the downed plane.",
-   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/24/world/europe/prince-william-kate-home-break-in-anmer-hall-uk.html",
@@ -1004,51 +1037,14 @@
    "maerkte": [],
    "text": "Im Hafen von Bengasi in Libyen ist nach Satellitenaufnahmen die russische Korvette „Merkury“ gesunken. Die ostlibysche Regierung spricht von einer Verletzung der nationalen Souveränität.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/inflation-zerstoert-den-gesellschaftlichen-zusammenhalt-oekonom-ruediger-bachmann-im-gespraech-accg-201700848.html",
-   "titel": "Ökonom Bachmann: „Inflation zerstört den gesellschaftlichen Zusammenhalt“",
-   "link": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/inflation-zerstoert-den-gesellschaftlichen-zusammenhalt-oekonom-ruediger-bachmann-im-gespraech-accg-201700848.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-23T09:03:41.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Der Ökonom Rüdiger Bachmann rechnet perspektivisch mit Steuererhöhungen, Inflation und finanzieller Repression. Die wütende Stimmung im Netz hält er für schädlich – seine Angriffe auf Kollegen in sozialen Netzwerken verteidigt er aber.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/oekonom-ruediger-bachmann-inflation-zerstoert-den-gesellschaftlichen-zusammenhalt-accg-201700848.html",
-   "titel": "Ökonom Bachmann: „Inflation zerstört den gesellschaftlichen Zusammenhalt“",
-   "link": "https://www.faz.net/aktuell/wirtschaft/arm-und-reich/oekonom-ruediger-bachmann-inflation-zerstoert-den-gesellschaftlichen-zusammenhalt-accg-201700848.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-23T09:03:41.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Der Ökonom Rüdiger Bachmann rechnet perspektivisch mit Steuererhöhungen, Inflation und finanzieller Repression. Die wütende Stimmung im Netz hält er für schädlich – seine Angriffe auf Kollegen in sozialen Netzwerken verteidigt er aber.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/afrika/russisches-kriegsschiff-zerstoert-100.html",
-   "titel": "Ukraine bekennt sich zu Zerstörung von russischem Kriegsschiff",
-   "link": "https://www.tagesschau.de/ausland/afrika/russisches-kriegsschiff-zerstoert-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-23T08:24:41.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die russische Korvette \"Merkury\" ging erst vor drei Jahren in Betrieb, nun wurde sie bei einem Angriff in einem libyschen Hafen versenkt. Präsident Selenskyj erklärte, die Ukraine habe die Attacke mit Seedrohnen durchgeführt.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 8,
   "DW": 10,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 8,
+  "Handelsblatt": 9,
   "BBC World": 9,
   "NYT World": 16,
   "EIA Today in Energy": 0
