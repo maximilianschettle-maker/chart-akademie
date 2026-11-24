@@ -1,19 +1,63 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T18:24:17.045Z",
+ "lastUpdated": "2026-11-24T19:24:22.904Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/24/world/middleeast/saudi-skyscraper-houthi-strike.html",
+   "titel": "Houthi Attack on Skyscraper in Saudi Capital Wounds 11, Officials Say",
+   "link": "https://www.nytimes.com/2026/11/24/world/middleeast/saudi-skyscraper-houthi-strike.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-24T19:18:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The people were wounded in the strike on a building in Riyadh, the Saudi authorities said. The Iran-backed militia and Saudi Arabia have been exchanging escalating attacks for weeks.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.dw.com/de/deutsche-experten-vor-dem-eu-westbalkan-gipfel-unter-der-regierung-der-studentenliste-muss-sich-serbien-zwischen-aufbruch-und-kontinuit%C3%A4t-entscheiden/a-80019985",
+   "titel": "Deutsche Experten vor dem EU-Westbalkan-Gipfel: Unter der Regierung der Studentenliste muss sich Serbien zwischen Aufbruch und Kontinuität entscheiden",
+   "link": "https://www.dw.com/de/deutsche-experten-vor-dem-eu-westbalkan-gipfel-unter-der-regierung-der-studentenliste-muss-sich-serbien-zwischen-aufbruch-und-kontinuität-entscheiden/a-80019985?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-24T18:55:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Serbiens neue Führung sorgt in der Europäischen Union für Hoffnung und Skepsis zugleich. Deutsche Westbalkan-Experten sehen Chancen für Reformen, aber offene Fragen bei EU-Kurs, Kosovo und Russland.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/deutsches-rohstoffhandelshaus-wie-die-industrie-unabhaengiger-von-china-werden-will-201713017.html",
+   "titel": "Rohstoffe für die Industrie: Mit dem Edeka-Modell von China unabhängiger werden",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/deutsches-rohstoffhandelshaus-wie-die-industrie-unabhaengiger-von-china-werden-will-201713017.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-24T18:54:39.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "Die deutsche Wirtschaft will mit einem eigenen Handelshaus ihre Position gegenüber China stärken. Doch die wichtigen Rohstoffe könnten auch für den Staat teuer werden.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
    "titel": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
    "link": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-24T18:11:56.000Z",
+   "zeit": "2026-11-24T18:34:38.000Z",
    "kategorie": "konflikte",
    "maerkte": [
     "halbleiter"
    ],
    "text": "Presidents before him have bailed out companies in times of national crisis. Mr. Trump went further: He staked the fortunes of the United States on those of a favored chief executive.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/deutsche-arznei-nicht-fuer-den-deutschen-markt-bayer-probt-den-medikamenten-boykott-201712417.html",
+   "titel": "Deutsche Arznei: Bayer probt den Medikamenten-Boykott",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/deutsche-arznei-nicht-fuer-den-deutschen-markt-bayer-probt-den-medikamenten-boykott-201712417.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-24T18:26:03.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Den Wirkstoff Finerenon hat Bayer in Deutschland entwickelt und produziert sein Medikament Kerendia auch hierzulande. Warum deutsche Patienten trotzdem darauf verzichten müssen.",
+   "sprache": "de"
   },
   {
    "id": "https://www.dw.com/de/kurden-in-nahost-ende-aller-politischen-hoffnungen/a-80033437",
@@ -817,17 +861,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.dw.com/de/deutsche-experten-vor-dem-eu-westbalkan-gipfel-unter-der-regierung-der-studentenliste-muss-sich-serbien-zwischen-aufbruch-und-kontinuit%C3%A4t-entscheiden/a-80019985",
-   "titel": "Deutsche Experten vor dem EU-Westbalkan-Gipfel: Unter der Regierung der Studentenliste muss sich Serbien zwischen Aufbruch und Kontinuität entscheiden",
-   "link": "https://www.dw.com/de/deutsche-experten-vor-dem-eu-westbalkan-gipfel-unter-der-regierung-der-studentenliste-muss-sich-serbien-zwischen-aufbruch-und-kontinuität-entscheiden/a-80019985?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-23T14:31:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Serbiens neue Führung sorgt in der Europäischen Union für Hoffnung und Skepsis zugleich. Deutsche Westbalkan-Experten sehen Chancen für Reformen, aber offene Fragen bei EU-Kurs, Kosovo und Russland.",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.handelsblatt.com/technik/ki/nvidia-jensen-huang-kehrt-als-konzernchef-zurueck/100272106.html",
    "titel": "Chipkonzern: Jensen Huang kehrt als Konzernchef von Nvidia zurück",
    "link": "https://www.handelsblatt.com/technik/ki/nvidia-jensen-huang-kehrt-als-konzernchef-zurueck/100272106.html",
@@ -1008,51 +1041,16 @@
    "maerkte": [],
    "text": "Die russische Korvette \"Merkury\" ging erst vor drei Jahren in Betrieb, nun wurde sie bei einem Angriff in einem libyschen Hafen versenkt. Präsident Selenskyj erklärte, die Ukraine habe die Attacke mit Seedrohnen durchgeführt.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-russisches-kriegsschiff-sinkt-nach-explosion-in-libyschem-hafen/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Russisches Kriegsschiff sinkt nach Explosion in libyschem Hafen",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-russisches-kriegsschiff-sinkt-nach-explosion-in-libyschem-hafen/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T08:23:47.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Selenskyj: Haben russisches Kriegsschiff vor Libyen versenkt ++++ Nato berät über russische Luftraumverletzungen in Polen +++ Polen: Abgestürztes Flugobjekt war russische Rakete +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/energie-gruene-wollen-kosten-des-netzausbaus-ueber-generationen-verteilen/100271054.html",
-   "titel": "Energie: Grüne wollen Kosten des Netzausbaus über Generationen verteilen",
-   "link": "https://www.handelsblatt.com/politik/deutschland/energie-gruene-wollen-kosten-des-netzausbaus-ueber-generationen-verteilen/100271054.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T07:40:58.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Der Grünen-Vorstand will Industrie und Verbraucher entlasten, indem die Netzentgelte über ein Investitionskonto zeitlich verteilt werden. Wäre das eine Lösung, um die Strompreise zu senken?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/afrika/russisches-schiff-libyen-100.html",
-   "titel": "Russisches Kriegsschiff nach Explosion in Libyen gesunken",
-   "link": "https://www.tagesschau.de/ausland/afrika/russisches-schiff-libyen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-23T07:20:04.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "In einem Hafen der libyschen Stadt Bengasi ist ein russisches Kriegsschiff versenkt worden - mutmaßlich durch einen Drohnenangriff. Berichten zufolge soll die Ukraine hinter dem Vorfall stecken.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 9,
   "DW": 10,
   "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 2,
+  "FAZ Wirtschaft": 4,
   "Handelsblatt": 8,
   "BBC World": 9,
-  "NYT World": 15,
+  "NYT World": 16,
   "EIA Today in Energy": 0
  }
 }
