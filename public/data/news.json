@@ -1,18 +1,84 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T16:24:14.287Z",
+ "lastUpdated": "2026-11-24T17:24:14.005Z",
  "eintraege": [
   {
    "id": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
    "titel": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
    "link": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-24T16:13:40.000Z",
+   "zeit": "2026-11-24T17:05:38.000Z",
    "kategorie": "konflikte",
    "maerkte": [
     "halbleiter"
    ],
    "text": "Presidents before him have bailed out companies in times of national crisis. Mr. Trump went further: He staked the fortunes of the United States on those of a favored chief executive.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/china-xi-laesst-den-maechtigen-parteichef-von-shanghai-fallen/100272476.html",
+   "titel": "China: Xi lässt gegen Parteichef von Shanghai ermitteln",
+   "link": "https://www.handelsblatt.com/politik/international/china-xi-laesst-den-maechtigen-parteichef-von-shanghai-fallen/100272476.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-24T16:43:56.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Chen Jining ist das vierte Politbüro-Mitglied, gegen das ermittelt wird. Die Säuberungen unter Xi Jinping erreichen ein Ausmaß, wie es seit der Kulturrevolution nicht mehr zu beobachten war.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/vanessa-emde-berliner-linke-fraktion-schliesst-umstrittene-abgeordnete-aus/100271178.html",
+   "titel": "Abgeordnetenhaus: Berliner Linke schließt umstrittene Abgeordnete Emde aus Fraktion aus",
+   "link": "https://www.handelsblatt.com/politik/deutschland/vanessa-emde-berliner-linke-fraktion-schliesst-umstrittene-abgeordnete-aus/100271178.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-24T16:43:17.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Vanessa Emde steht wegen umstrittener Äußerungen in der Kritik. Nach wochenlangen Debatten, die auch die Regierungsbildung in Berlin belasteten, haben die Abgeordneten eine Wahl getroffen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/stromsteuer-spd-haushaltssprecher-rudolph-wirft-koalition-missachtung-des-parlaments-vor-201712522.html",
+   "titel": "Etat 2027 im Bundestag: SPD-Haushaltssprecher wirft Koalition „Missachtung des Parlaments“ vor",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/stromsteuer-spd-haushaltssprecher-rudolph-wirft-koalition-missachtung-des-parlaments-vor-201712522.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-24T16:43:05.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Dass die Opposition die Arbeit der Regierung kritisiert, ist normal. Wenn aber der haushaltspolitische Sprecher der SPD die Regierung kritisiert, lässt das aufhorchen. Parteifreund Klingbeil verteidigt das Vorgehen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o",
+   "titel": "DR Congo says military aircraft missing as rebels claim to shoot down plane",
+   "link": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-24T16:31:26.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A South African fighter pilot and a Ugandan officer are reportedly among those aboard the downed plane.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/24/world/europe/prince-william-kate-home-break-in-anmer-hall-uk.html",
+   "titel": "2 Men Arrested on Suspicion of Breaking Into Prince William and Kate’s Country Home",
+   "link": "https://www.nytimes.com/2026/11/24/world/europe/prince-william-kate-home-break-in-anmer-hall-uk.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-24T16:31:07.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The men were arrested near Anmer Hall, the couple’s country retreat in Norfolk, on Monday night.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/24/world/europe/ukraine-russia-psyops-radio-izium.html",
+   "titel": "Radio Offers Russian Troops Classic Rock, Nostalgia — and Pleas to Surrender",
+   "link": "https://www.nytimes.com/2026/11/24/world/europe/ukraine-russia-psyops-radio-izium.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-24T16:27:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "What seem like frontline Russian radio stations are actually a Ukrainian psychological operation, hoping to sow despair among the Kremlin’s soldiers.",
    "sprache": "en"
   },
   {
@@ -60,17 +126,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/24/world/europe/ukraine-russia-psyops-radio-izium.html",
-   "titel": "Radio Offers Russian Troops Classic Rock, Nostalgia — and Pleas to Surrender",
-   "link": "https://www.nytimes.com/2026/11/24/world/europe/ukraine-russia-psyops-radio-izium.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-24T15:22:10.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "What seem like frontline Russian radio stations are actually a Ukrainian psychological operation, hoping to sow despair among the Kremlin’s soldiers.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/articles/c893rl37ywdgo",
    "titel": "Land mine casualties soar in Syria, two years after war",
    "link": "https://www.bbc.co.uk/news/articles/c893rl37ywdgo?at_medium=RSS&at_campaign=rss",
@@ -80,6 +135,17 @@
    "maerkte": [],
    "text": "Nearly 1,000 children are among those killed or injured by explosives left over from the conflict, figures show.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/bundesregierung-wie-die-cdu-weiter-aktive-industriepolitik-betreibt/100271878.html",
+   "titel": "Bundesregierung: Keine Milliarden für Intel, dafür für Rohstoff und Strom: Wie die CDU weiter Industriepolitik betreibt",
+   "link": "https://www.handelsblatt.com/politik/deutschland/bundesregierung-wie-die-cdu-weiter-aktive-industriepolitik-betreibt/100271878.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-24T15:12:13.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "Friedrich Merz hatte das Ende der Industriepolitik angekündigt. Die Regierung betreibt diese aber weiter – vor allem in drei Bereichen. Aber zur Ampel gibt es einen wichtigen Unterschied.",
+   "sprache": "de"
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/oel-preise-stabilisieren-sich-sich-nach-vortagsverlusten-a-bc31a2d2-29a0-493f-990a-53971fb94289",
@@ -142,17 +208,6 @@
    "maerkte": [],
    "text": "Sowohl die Islamistenorganisation als auch der amtierende israelische Premier Netanjahu bestätigten die Attacke. Bei dem Getöteten soll es sich um den Chef des internen Sicherheitsapparats der Terrororganisation handeln.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/24/world/europe/prince-william-kate-home-break-in-anmer-hall-uk.html",
-   "titel": "Prince William and Catherine’s Country Home Broken Into, Police Say",
-   "link": "https://www.nytimes.com/2026/11/24/world/europe/prince-william-kate-home-break-in-anmer-hall-uk.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-24T13:48:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The men were arrested at Anmer Hall, the couple’s retreat in Norfolk, on Monday night.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/us-zoelle-berichte-usa-bereiten-neue-zoelle-gegen-zahlreiche-staaten-vor/30026990.html",
@@ -245,17 +300,6 @@
    "maerkte": [],
    "text": "Das Bundesland war einer der ersten Kunden Palantirs in Deutschland. Jetzt will NRW den deutschen Anbieter Celonis nutzen. Der Auftrag hat Signalwirkung.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o",
-   "titel": "DR Congo says military aircraft missing as rebels claim to shoot down plane",
-   "link": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-24T10:48:27.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A South African fighter pilot and a Ugandan officer are reportedly among those aboard the downed plane.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-102.html",
@@ -1003,60 +1047,14 @@
    ],
    "text": "Söders Ruf nach raschem Ausgleich der kalten Progression stößt sogar in CDU-geführten Ländern auf Skepsis. Wüst warnt vor den Kosten. Am Freitag soll der Bundeshaushalt beschlossen werden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/kalte-progression-soeders-vorstoss-laut-wuest-nicht-machbar/100271942.html",
-   "titel": "Steuerpolitik: Auch Wüst meldet Widerstand gegen Söders Vorstoß zur kalten Progression an",
-   "link": "https://www.handelsblatt.com/politik/deutschland/kalte-progression-soeders-vorstoss-laut-wuest-nicht-machbar/100271942.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T06:43:08.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Für einen Ausgleich der kalten Progression war im Bundeshaushalt kein Geld da. CSU-Chef Söder lässt bei dem Thema dennoch nicht locker. Nicht nur aus NRW kommt Widerstand.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cm75237wlp3lo",
-   "titel": "Five takeaways from the failed climate talks COP31",
-   "link": "https://www.bbc.co.uk/news/articles/cm75237wlp3lo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-23T06:33:50.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The COP31 summit in Antalya was the longest-running climate talks in UN history.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/23/world/asia/china-us-nuclear-ai.html",
-   "titel": "Behind China’s A.I. Anxieties, Fear of a Nuclear Checkmate",
-   "link": "https://www.nytimes.com/2026/11/23/world/asia/china-us-nuclear-ai.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T05:49:04.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Chinese military researchers are studying how to harness A.I., but they worry the technology makes their country’s nuclear forces more vulnerable to attack.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo",
-   "titel": "What's next after no deal at COP31 climate talks?",
-   "link": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-23T05:34:39.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The talks have been the longest-running in the summit's history, with negotiations breaking down two days after they had been due to end.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 12,
   "DW": 9,
   "Spiegel Wirtschaft": 1,
-  "FAZ Wirtschaft": 1,
-  "Handelsblatt": 6,
+  "FAZ Wirtschaft": 2,
+  "Handelsblatt": 8,
   "BBC World": 9,
   "NYT World": 15,
   "EIA Today in Energy": 0
