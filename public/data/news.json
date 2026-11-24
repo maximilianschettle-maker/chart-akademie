@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T00:24:19.791Z",
+ "lastUpdated": "2026-11-24T01:00:11.029Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/el-salvador-haiti-100.html",
+   "titel": "Haiti: El Salvadors Präsident Bukele wegen Militäreinsatz gefeiert",
+   "link": "https://www.tagesschau.de/ausland/amerika/el-salvador-haiti-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-24T00:53:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "In Haiti konnten auch internationale Missionen wenig an der grassierenden Gewalt ändern. Jetzt griff El Salvadors Präsident Bukele ein - mit mehreren Tausend Soldaten, ohne UN-Mandat. Und wird wie ein Volksheld gefeiert. Von J. Barke.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/nvidia-skandal-usa-setzen-chip-firma-megaspeed-wegen-spionageverdachts-auf-sperrliste/100272205.html",
    "titel": "Nvidia-Skandal: USA setzen Chip-Firma Megaspeed wegen Spionageverdachts auf Sperrliste",
@@ -1013,21 +1024,10 @@
    "maerkte": [],
    "text": "Pedro Sánchez, Europe’s most prominent left-wing leader, seems set to lose power in an election next week. Our reporter trailed his last-ditch effort to turn his campaign around.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/italien-polizeichef-de-gennaro-tot-100.html",
-   "titel": "Italiens Ex-Polizeichef De Gennaro nimmt sich das Leben",
-   "link": "https://www.tagesschau.de/ausland/europa/italien-polizeichef-de-gennaro-tot-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-21T12:48:02.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Gianni De Gennaro bekleidete lange Schlüsselpositionen im italienischen Sicherheitsapparat - sei es im Kampf gegen die Mafia, beim G8-Gipfel in Genua oder für die Geheimdienste. Kurz vor einer Gerichtsanhörung tötete er sich selbst.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
+  "tagesschau": 13,
   "DW": 10,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 3,
