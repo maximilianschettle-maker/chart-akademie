@@ -1,7 +1,20 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T02:24:06.886Z",
+ "lastUpdated": "2026-11-24T03:24:13.644Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/bundeshaushalt-beim-haushalt-2027-wird-klingbeil-zum-schulden-trickser/100270651.html",
+   "titel": "Bundeshaushalt: Rechnung mit Risiken: Beim Haushalt 2027 wird Klingbeil zum Schulden-Trickser",
+   "link": "https://www.handelsblatt.com/politik/deutschland/bundeshaushalt-beim-haushalt-2027-wird-klingbeil-zum-schulden-trickser/100270651.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-24T03:07:35.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "Der Finanzminister nutzt neue Kreditausnahmen, fragwürdige Darlehen und Schattenposten. Die Lasten wandern so in die Zukunft. Das Handelsblatt analysiert Klingbeils finanzpolitische Kunstgriffe.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/ukraine-pistorius-104.html",
    "titel": "Deutschland baut künftig ukrainische Drohnen",
@@ -38,6 +51,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.bbc.co.uk/news/articles/c6wy4ng1rznxo",
+   "titel": "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
+   "link": "https://www.bbc.co.uk/news/articles/c6wy4ng1rznxo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-23T21:03:34.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "The UK is joined by several other nations in recognising an ICJ ruling that Myanmar carried out genocide.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo",
    "titel": "What strike on Russian ship in Libya says about spread of Ukraine war",
    "link": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&at_campaign=rss",
@@ -59,6 +83,17 @@
     "halbleiter"
    ],
    "text": "Nach Berichten über außereheliche Affären war Jensen Huang als Nvidia-Chef zurückgetreten, nun übernimmt er die Konzernführung wieder. Welche Rolle spielte dabei Donald Trump?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-polen-wendet-sich-nach-raketenvorfaellen-an-visegrad-gruppe/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Polen wendet sich nach Raketenvorfällen an Visegrad-Gruppe",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-polen-wendet-sich-nach-raketenvorfaellen-an-visegrad-gruppe/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-23T19:39:38.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Luftalarm in Polen – Anwohner sollen Schutzräume aufsuchen +++ Deutschland und Ukraine vereinbaren Weiterentwicklung von Gefechtssystem Delta +++ Pistorius mahnt nach Berichten über russische Weltraumwaffe zur Besonnenheit +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -991,39 +1026,6 @@
    "maerkte": [],
    "text": "Weniger Zölle auf Autos, besserer Zugang zu wichtigen Rohstoffen: Neue Abkommen mit dem weltgrößten Inselstaat sollen europäischen Unternehmen neue Chancen eröffnen. Vielleicht sogar schon 2027?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/indonesien-eu-besiegelt-freihandelsabkommen-mit-indonesien/100271180.html",
-   "titel": "Indonesien: EU besiegelt Freihandelsabkommen mit Indonesien – doch Präsident Prabowo verunsichert Investoren",
-   "link": "https://www.handelsblatt.com/politik/international/indonesien-eu-besiegelt-freihandelsabkommen-mit-indonesien/100271180.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-21T14:39:40.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Der Pakt soll das schwache Geschäft mit Südostasiens größter Volkswirtschaft beleben. Doch Rohstoffnationalismus, eine politische Krise und die rekordschwache Rupiah belasten das Land.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/21/world/europe/un-lethal-autonomous-weapons.html",
-   "titel": "U.N. Fails to Regulate Lethal Autonomous Weapons, but Plans to Try Again",
-   "link": "https://www.nytimes.com/2026/11/21/world/europe/un-lethal-autonomous-weapons.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-21T13:35:19.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Major military powers like the United States and Russia expressed strong resistance to binding restrictions.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo",
-   "titel": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-   "link": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-21T13:17:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ukraine's president says Kyiv acted after 109 separate Russian aerial attacks on bridges in Ukraine.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1032,7 +1034,7 @@
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 6,
-  "BBC World": 12,
+  "BBC World": 6,
   "NYT World": 16,
   "EIA Today in Energy": 0
  }
