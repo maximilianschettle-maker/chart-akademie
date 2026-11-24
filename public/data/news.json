@@ -1,7 +1,67 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T14:24:16.225Z",
+ "lastUpdated": "2026-11-24T15:24:11.881Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c893rl37ywdgo",
+   "titel": "Land mine casualties soar in Syria, two years after war",
+   "link": "https://www.bbc.co.uk/news/articles/c893rl37ywdgo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-24T15:17:28.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Nearly 1,000 children are among those killed or injured by explosives left over from the conflict, figures show.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/oel-brent-peise-stabilisiert-sich-nach-vortagsverlusten-a-bc31a2d2-29a0-493f-990a-53971fb94289",
+   "titel": "Öl: Brent-Peise stabilisiert sich nach Vortagsverlusten",
+   "link": "https://www.spiegel.de/wirtschaft/oel-brent-peise-stabilisiert-sich-nach-vortagsverlusten-a-bc31a2d2-29a0-493f-990a-53971fb94289#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-24T15:08:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Vorsichtiger Optimismus bei den Verhandlungen zwischen den USA und Iran hat die Ölpreise zuletzt fallen lassen. Nun zeichnet sich ein erneuter Anstieg beim Brent-Preis ab – die Lage bleibt unsicher.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/brexit-in-grossbritannien-eskaliert-der-streit-um-den-eu-wiedereintritt/100272064.html",
+   "titel": "Brexit: Ex-Premiers und andere „Zombies“ – Im Königreich eskaliert der Streit um den EU-Wiedereintritt",
+   "link": "https://www.handelsblatt.com/politik/international/brexit-in-grossbritannien-eskaliert-der-streit-um-den-eu-wiedereintritt/100272064.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-24T14:59:20.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Premier Burnham stellt für eine Rückkehr in die EU ein neues Referendum in Aussicht und legt sich mit seinen konservativen Vorgängern an. Droht dem Land ein neuer lähmender Dauerkonflikt?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/finanzen/trump-nvidia-aktien-100.html",
+   "titel": "Wie Trump an Huangs Rückkehr zu Nvidia verdiente",
+   "link": "https://www.tagesschau.de/wirtschaft/finanzen/trump-nvidia-aktien-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-24T14:51:13.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter",
+    "aktien"
+   ],
+   "text": "Die Rückkehr des Nvidia-Chefs ließ den Aktienkurs des Chipunternehmens in die Höhe schnellen. Profiteur dessen war offenbar auch US-Präsident Donald Trump - der sich zuvor für den Huang eingesetzt hatte.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/hamas-anf%C3%BChrer-bei-angriff-israels-im-gazastreifen-get%C3%B6tet/a-80034053",
+   "titel": "Hamas-Anführer bei Angriff Israels im Gazastreifen getötet",
+   "link": "https://www.dw.com/de/hamas-anführer-bei-angriff-israels-im-gazastreifen-getötet/a-80034053?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-24T14:36:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Sowohl die Islamistenorganisation als auch der amtierende israelische Premier Netanjahu bestätigten die Attacke. Bei dem Getöteten soll es sich um den Chef des internen Sicherheitsapparats der Terrororganisation handeln.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/24/world/europe/prince-william-kate-home-break-in-anmer-hall-uk.html",
    "titel": "Prince William and Catherine’s Country Home Broken Into, Police Say",
@@ -37,7 +97,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/autoindustrie-schularick-bringt-verkauf-von-volkswagen-an-china-ins-spiel/100272422.html",
-   "titel": "Autoindustrie: „Solange wir noch was für die kriegen“ – Schularick bringt Verkauf von Volkswagen an China ins Spiel",
+   "titel": "Autoindustrie: „Solange wir noch was für die kriegen“: Schularick bringt Verkauf von VW an China ins Spiel",
    "link": "https://www.handelsblatt.com/politik/deutschland/autoindustrie-schularick-bringt-verkauf-von-volkswagen-an-china-ins-spiel/100272422.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-24T13:24:24.000Z",
@@ -985,70 +1045,15 @@
    "maerkte": [],
    "text": "Die Koalition zerstört eingeübte demokratische Verfahren: Die CDU beschädigt den Prozess der Budgetaufstellung, Lars Klingbeil das Amt des Finanzministers. Freuen darf sich die AfD.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq8e0p87l89lo",
-   "titel": "Miley Cyrus marries Maxx Morando in California ceremony",
-   "link": "https://www.bbc.co.uk/news/articles/cq8e0p87l89lo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-22T21:22:40.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The couple have been together for four years and were engaged in 2025.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/kinderraub-als-kriegswaffe-hitlers-erbe-putins-system/a-80001588",
-   "titel": "Kinderraub als Kriegswaffe: Hitlers Erbe, Putins System",
-   "link": "https://www.dw.com/de/kinderraub-als-kriegswaffe-hitlers-erbe-putins-system/a-80001588?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-22T20:30:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Als Kind von den Nazis verschleppt, als junge Frau mit dem Kinderraub durch Russland konfrontiert: Barbara Paciorkiewicz und Ksenija Koldin erzählen von Verlust, gewaltsamer Trennung und schwieriger Heimkehr.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-frachter-drohne-102.html",
-   "titel": "Nach Drohnenangriff: \"Sparta II\" wird in russische Gewässer geschleppt",
-   "link": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-frachter-drohne-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-22T19:53:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Am Samstag war der russische Frachter \"Sparta II\" in der Ostsee von einer Drohne getroffen worden und in Brand geraten. Laut finnischem Grenzschutz hat das Schiff Schlagseite, kann aber in russische Gewässer geschleppt werden.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/22/us/politics/melania-trump-ukraine-diplomacy.html",
-   "titel": "How Melania Trump Found a Diplomatic Opening in the War in Ukraine",
-   "link": "https://www.nytimes.com/2026/11/22/us/politics/melania-trump-ukraine-diplomacy.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-22T18:12:18.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The first lady, who has little experience in international affairs, developed back channels to key figures on both sides of the conflict through her longtime agent.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/prien-angriff-preisler-100.html",
-   "titel": "Prien verurteilt Angriff auf FDP-Politikerin Preisler bei Demo",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/prien-angriff-preisler-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-22T17:36:50.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Zwei Frauen sollen die Berliner FDP-Politikerin Preisler am Rande einer pro-palästinensischen Demonstration geschubst und getreten haben. Bundesfamilienministerin Prien kritisiert das scharf. Von Mario Kubina.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 14,
-  "DW": 8,
-  "Spiegel Wirtschaft": 0,
+  "DW": 9,
+  "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 1,
-  "Handelsblatt": 4,
-  "BBC World": 9,
+  "Handelsblatt": 3,
+  "BBC World": 10,
   "NYT World": 14,
   "EIA Today in Energy": 0
  }
