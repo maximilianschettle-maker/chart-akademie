@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T03:24:13.644Z",
+ "lastUpdated": "2026-11-24T04:24:14.566Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/israel-gazastreifen-162.html",
+   "titel": "Kriegsfolgen im Gazastreifen: Verseuchtes Wasser, Gift in den Trümmern",
+   "link": "https://www.tagesschau.de/ausland/asien/israel-gazastreifen-162.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-24T04:09:27.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Auf den Straßen sammelt sich der Müll, in den zerstörten Gebäuden steckt Asbest: Im Gazastreifen leidet die Bevölkerung. Die Folgen des Krieges könnten noch Jahrzehnte spürbar sein, so Oxfam. Von Julio Segador.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/bundeshaushalt-beim-haushalt-2027-wird-klingbeil-zum-schulden-trickser/100270651.html",
    "titel": "Bundeshaushalt: Rechnung mit Risiken: Beim Haushalt 2027 wird Klingbeil zum Schulden-Trickser",
@@ -1015,21 +1026,10 @@
    "maerkte": [],
    "text": "Selenskyj nennt Dreiergipfel Misserfolg für Putin +++ Wildberries-Chefin Kim tritt nach EU-Sanktionen zurück +++ Umfrage: Fast jeder Zweite für Kürzung der Ukraine-Hilfen +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/eu-und-indonesien-unterzeichnen-weitreichendes-freihandelsabkommen-accg-201704887.html",
-   "titel": "Freihandelsabkommen: EU und Indonesien unterzeichnen weitreichenden Handelsdeal",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/eu-und-indonesien-unterzeichnen-weitreichendes-freihandelsabkommen-accg-201704887.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-21T14:53:11.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Weniger Zölle auf Autos, besserer Zugang zu wichtigen Rohstoffen: Neue Abkommen mit dem weltgrößten Inselstaat sollen europäischen Unternehmen neue Chancen eröffnen. Vielleicht sogar schon 2027?",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 14,
+  "tagesschau": 13,
   "DW": 10,
   "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 3,
