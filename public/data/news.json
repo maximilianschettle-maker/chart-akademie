@@ -1,13 +1,24 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T20:24:11.855Z",
+ "lastUpdated": "2026-11-24T21:21:46.086Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/russisches-starlink-wie-kann-rasswet-den-ukraine-krieg-ver%C3%A4ndern/a-80033063",
+   "titel": "\"Russisches Starlink\" - Wie kann Rasswet den Ukraine-Krieg verändern?",
+   "link": "https://www.dw.com/de/russisches-starlink-wie-kann-rasswet-den-ukraine-krieg-verändern/a-80033063?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-24T20:59:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Das US-Starlink-System von SpaceX spielt in der Ukraine eine wichtige Rolle bei der Abwehr der militärischen Aggression Russlands. Der Kreml hat nun beschlossen, ein Pendant dazu aufzubauen. Welche Gefahr birgt das?",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
    "titel": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
    "link": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-24T19:54:58.000Z",
+   "zeit": "2026-11-24T19:54:59.000Z",
    "kategorie": "konflikte",
    "maerkte": [
     "halbleiter"
@@ -1026,17 +1037,6 @@
    "maerkte": [],
    "text": "Weil sich die DDR den Kaffee-Import nicht mehr leisten konnte, führte sie 1977 ein Mixprodukt mit Roggen und Zichorie ein. Der Aufschrei war groß. Die Lösung für das Problem lag 9000 Kilometer entfernt: in Vietnam.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/drohnenangriff-selenskyj-bestaetigt-versenkung-russischen-kriegsschiffs-durch-ukraine/100271954.html",
-   "titel": "Drohnenangriff: Selenskyj bestätigt Versenkung russischen Kriegsschiffs durch Ukraine",
-   "link": "https://www.handelsblatt.com/politik/international/drohnenangriff-selenskyj-bestaetigt-versenkung-russischen-kriegsschiffs-durch-ukraine/100271954.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T09:54:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Im Hafen von Bengasi in Libyen ist nach Satellitenaufnahmen die russische Korvette „Merkury“ gesunken. Die ostlibysche Regierung spricht von einer Verletzung der nationalen Souveränität.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1046,7 +1046,7 @@
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 9,
   "BBC World": 9,
-  "NYT World": 16,
+  "NYT World": 15,
   "EIA Today in Energy": 0
  }
 }
