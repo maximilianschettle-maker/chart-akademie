@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T06:24:12.620Z",
+ "lastUpdated": "2026-11-24T07:24:11.540Z",
  "eintraege": [
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/lula-zoegert-brasiliens-maerkte-warten-auf-den-neuen-finanzminister-und-klare-zeichen-accg-201703313.html",
@@ -38,6 +38,17 @@
    "sprache": "en"
   },
   {
+   "id": "https://www.bbc.co.uk/news/articles/cr2klqzqx1qvo",
+   "titel": "US Army to detonate toxic explosives in Iowa after Trump paused plan",
+   "link": "https://www.bbc.co.uk/news/articles/cr2klqzqx1qvo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-24T04:42:06.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The US military plans to detonate five tonnes of expired explosives on Wednesday, after appeals court decision.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.tagesschau.de/ausland/asien/suedkorea-russland-100.html",
    "titel": "Südkorea meldet russische Militärflugzeuge vor seiner Küste",
    "link": "https://www.tagesschau.de/ausland/asien/suedkorea-russland-100.html",
@@ -58,7 +69,7 @@
    "zeit": "2026-11-24T04:09:27.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Auf den Straßen sammelt sich der Müll, in den zerstörten Gebäuden steckt Asbest: Im Gazastreifen leidet die Bevölkerung. Die Folgen des Krieges könnten noch Jahrzehnte spürbar sein, so Oxfam. Von Julio Segador.",
+   "text": "Auf den Straßen sammelt sich der Müll, in den zerstörten Gebäuden steckt Asbest: Im Gazastreifen leidet die Bevölkerung. Die Folgen des Krieges könnten noch Jahrzehnte spürbar sein, so die Hilfsorganisation Oxfam. Von Julio Segador.",
    "sprache": "de"
   },
   {
@@ -165,7 +176,7 @@
    "zeit": "2026-11-23T19:39:38.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Luftalarm in Polen – Anwohner sollen Schutzräume aufsuchen +++ Deutschland und Ukraine vereinbaren Weiterentwicklung von Gefechtssystem Delta +++ Pistorius mahnt nach Berichten über russische Weltraumwaffe zur Besonnenheit +++ Der Newsblog.",
+   "text": "Russische Flieger lösen Evakuierungswarnung in Südkorea aus +++ Luftalarm in Polen – Anwohner sollen Schutzräume aufsuchen +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -1021,17 +1032,6 @@
    "maerkte": [],
    "text": "The latest salvo in the fraught U.S. relationship with Canada has not affected their vast joint military operation, including the shared airspace command, NORAD.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/eu-indonesien-handelsabkommen-102.html",
-   "titel": "EU und Indonesien unterzeichnen Freihandelsabkommen",
-   "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/eu-indonesien-handelsabkommen-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-21T20:17:57.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Fast zehn Jahre haben die Verhandlungen gedauert: Nun haben die EU und Indonesien ein Freihandelsabkommen unterzeichnet, mit dem die Zölle auf fast alle Waren wegfallen sollen. Davon könnte auch die Autobranche profitieren.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1039,9 +1039,9 @@
   "DW": 9,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 5,
+  "Handelsblatt": 4,
   "BBC World": 6,
-  "NYT World": 17,
+  "NYT World": 16,
   "EIA Today in Energy": 0
  }
 }
