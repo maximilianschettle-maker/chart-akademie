@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T14:24:12.528Z",
+ "lastUpdated": "2026-11-25T14:39:58.218Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-124.html",
+   "titel": "USA kündigen neue Zölle an - auch gegen EU und China",
+   "link": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-124.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-25T14:26:17.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Die USA haben neue Sonderzölle gegen die EU und weitere Handelspartner angekündigt. Für betroffene EU-Produkte ist ein Zollsatz von 15 Prozent vorgesehen, auf chinesische Waren soll eine Abgabe von 20 Prozent fällig werden.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.dw.com/de/durch-die-hintert%C3%BCr-ex-mossad-chef-sorgt-im-bundestag-f%C3%BCr-wirbel/a-80045432",
    "titel": "Durch die Hintertür: Ex-Mossad-Chef sorgt im Bundestag für Wirbel",
@@ -98,7 +109,7 @@
    "zeit": "2026-11-25T13:21:31.000Z",
    "kategorie": "handel",
    "maerkte": [],
-   "text": "Die Vereinigten Staaten haben eine neue Begründung für neue Zölle gefunden. Den höchsten Aufschlag soll ⁠China erhalten.",
+   "text": "Die Vereinigten Staaten haben eine neue Begründung für neue Zölle gefunden. Den höchsten Aufschlag soll ⁠China erhalten – wegen Überkapazitäten.",
    "sprache": "de"
   },
   {
@@ -1030,21 +1041,10 @@
    ],
    "text": "Mehrere russische Militärflugzeuge sind südkoreanischen Sicherheitsbehörden zufolge am Dienstagmorgen in Südkoreas Luftverteidigungszone eingedrungen. Erst kürzlich meldeten Taiwan und Japan ähnliche Vorfälle.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/israel-gazastreifen-162.html",
-   "titel": "Kriegsfolgen im Gazastreifen: Verschmutztes Wasser, Asbest in den Trümmern",
-   "link": "https://www.tagesschau.de/ausland/asien/israel-gazastreifen-162.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-24T04:09:27.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Auf den Straßen sammelt sich der Müll, in den zerstörten Gebäuden steckt Asbest: Im Gazastreifen leidet die Bevölkerung. Die Folgen des Krieges könnten noch Jahrzehnte spürbar sein, so die Hilfsorganisation Oxfam. Von Julio Segador.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 10,
   "DW": 12,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 4,
