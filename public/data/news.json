@@ -1,7 +1,55 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T06:24:06.707Z",
+ "lastUpdated": "2026-11-25T07:24:11.040Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Bericht: USA ändert laut Kushner Strategie zu Geschäften mit Russland",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-25T07:05:42.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ukraine verteidigt Angriffe auf russische Schiffe in Libyen +++ Russische Flieger lösen Evakuierungswarnung in Südkorea aus +++ Luftalarm in Polen – Anwohner sollen in Schutzräume +++ Der Newsblog.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/25/world/asia/north-korea-switzerland-diplomats.html",
+   "titel": "North Korea Kicks Out Swiss Diplomats in Spat Linked to Ukraine War",
+   "link": "https://www.nytimes.com/2026/11/25/world/asia/north-korea-switzerland-diplomats.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T07:03:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The move followed Switzerland’s decision to sanction an international youth camp in North Korea, which is accused of hosting Ukrainian children for indoctrination.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/unternehmen/cdu-politiker-yannick-bury-verlangt-ueberpruefung-aller-weiterbildungsangebote-der-arbeitsagentur-a-7caaff16-dd87-4349-b543-746921abb548",
+   "titel": "CDU-Politiker Yannick Bury verlangt Überprüfung aller Weiterbildungsangebote der Arbeitsagentur",
+   "link": "https://www.spiegel.de/wirtschaft/unternehmen/cdu-politiker-yannick-bury-verlangt-ueberpruefung-aller-weiterbildungsangebote-der-arbeitsagentur-a-7caaff16-dd87-4349-b543-746921abb548#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-25T06:39:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "Milliarden gibt der Staat für Weiterbildungen von Arbeitslosen aus, oft für teure und nutzlose Kurse. CDU-Haushaltspolitiker Yannick Bury spricht von einer »Sauerei« und warnt vor kostspieligen Folgen – auch für Beitragszahler.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nikkei-dax-nasdaq-100.html",
+   "titel": "Marktbericht: DAX vor holprigem Start",
+   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nikkei-dax-nasdaq-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-25T06:28:06.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Das Beben in der Technologiebranche ist noch nicht ausgestanden. In Asien fallen die Kurse, auch wegen neuer Zollsorgen. Diese könnten auch dem DAX zum Handelsstart zusetzen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-donald-trumps-naechster-schlag-gegen-die-deutsche-wirtschaft/100272532.html",
    "titel": "Morning Briefing: Donald Trumps nächster Schlag gegen die deutsche Wirtschaft",
@@ -991,64 +1039,16 @@
    "maerkte": [],
    "text": "Die ukrainischen Drohnenangriffe in Mittelmeer und Ostsee zeigen die Verwundbarkeit Russlands. Der Kremlherrscher plant angeblich die nächste Eskalation.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/raumfahrt-der-traum-von-der-ersten-deutschen-mondmission/100270215.html",
-   "titel": "Raumfahrt: Neue Weltraumpläne: Der Traum von der ersten deutschen Mondmission im All",
-   "link": "https://www.handelsblatt.com/politik/deutschland/raumfahrt-der-traum-von-der-ersten-deutschen-mondmission/100270215.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T16:14:09.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Koalition will wieder nationale Missionen in der Raumfahrt finanzieren. Zugleich soll Europa das Weltall eigenständig erkunden können. Einen Namen gibt es schon, doch es fehlt Geld.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
-   "titel": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
-   "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-23T15:41:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Kremlin warns of an \"escalation of tensions in the region\", but declines to comment directly on the attacks in Libya.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/huang-wieder-nvidia-chef-100.html",
-   "titel": "Nvidia setzt Jensen Huang wieder als Chef ein",
-   "link": "https://www.tagesschau.de/wirtschaft/huang-wieder-nvidia-chef-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-23T15:18:29.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Spekulationen gab es bereits, jetzt ist es offiziell: Jensen Huang kehrt an die Spitze des US-Techkonzerns Nvidia zurück. Er war erst vor wenigen Tagen wegen eines Spionageskandals zurückgetreten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/technik/ki/nvidia-jensen-huang-kehrt-als-konzernchef-zurueck-aktie-springt-30-prozent/100272106.html",
-   "titel": "Chipkonzern: Jensen Huang kehrt als Nvidia-Chef zurück – Aktie steigt um 30 Prozent",
-   "link": "https://www.handelsblatt.com/technik/ki/nvidia-jensen-huang-kehrt-als-konzernchef-zurueck-aktie-springt-30-prozent/100272106.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T14:58:34.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Nach Berichten über mehrere außereheliche Affären war Jensen Huang als Nvidia-Chef zurückgetreten. Nun kehrt er an die Spitze des Unternehmens zurück. Die Aktie springt deutlich nach oben.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 8,
+  "tagesschau": 9,
   "DW": 9,
-  "Spiegel Wirtschaft": 1,
+  "Spiegel Wirtschaft": 2,
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 6,
-  "BBC World": 10,
-  "NYT World": 16,
+  "BBC World": 9,
+  "NYT World": 17,
   "EIA Today in Energy": 0
  }
 }
