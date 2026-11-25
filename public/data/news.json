@@ -1,7 +1,86 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T18:24:12.004Z",
+ "lastUpdated": "2026-11-25T19:24:15.257Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o",
+   "titel": "North Korea expels Swiss diplomat in sanctions row",
+   "link": "https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-25T19:19:06.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Swiss officials said relations would be kept through North Korea's embassy in Bern, and its own embassy in Beijing.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/neue-regeln-fuer-prostituition-empfehlungen-100.html",
+   "titel": "Expertenkommission fordert schärfere Regeln für Prostitution",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/neue-regeln-fuer-prostituition-empfehlungen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-25T19:14:28.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Mehr Schutz vor Gewalt und Ausbeutung - Zwangsprostitution und Menschenhandel wirksamer bekämpfen: Die schwarz-rote Koalition will Prostitution neu regeln. Eine Expertenkommission empfiehlt nun strengere Regeln.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/25/world/middleeast/libya-ukraine-russia-haftar.html",
+   "titel": "Libyan Forces Threaten Retaliation Over Ukraine’s Attack on Russian Ships",
+   "link": "https://www.nytimes.com/2026/11/25/world/middleeast/libya-ukraine-russia-haftar.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T19:02:50.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Ukrainian drone strike off Libya’s coast killed two Libyan naval officers, according to the forces controlling the country’s east.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-verstaerkt-sich-die-flucht-aus-risikoanlagen/100272767.html",
+   "titel": "Börsen: Neue Flucht aus Risikoanlagen: Warum sich der Ausverkauf nun beschleunigt",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-verstaerkt-sich-die-flucht-aus-risikoanlagen/100272767.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-25T19:01:06.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Am Mittwoch sind die US-Märkte erneut mit hohen Kursverlusten gestartet. Nicht nur Sorgen vor steigenden Zinsen und neue Zölle machen Anleger nervös.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Ukraine: Drei russische Kampfjets und zwei Bomber beschädigt",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-25T18:52:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russland rechnet mit Rückgang der Getreideexporte +++ Libyen meldete Tote nach ukrainischen Angriffen +++ Neun weitere ukrainische Kinder zurück bei Familien +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo",
+   "titel": "Colombian police storm supermarket to free 76 held hostage for 17 hours",
+   "link": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-25T18:41:33.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "One gunman was killed after what the country's president described as a robbery of a cash-laden armoured car gone wrong.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/25/world/middleeast/israel-opposition-netanyahu-new-government.html",
+   "titel": "Opposition Makes Progress Toward Ousting Netanyahu, Party Leader Says",
+   "link": "https://www.nytimes.com/2026/11/25/world/middleeast/israel-opposition-netanyahu-new-government.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T18:12:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Gadi Eisenkot, a former military chief, has set Dec. 6 as the deadline to form a new Israeli government. His ally, Avigdor Liberman, said Mr. Eisenkot was on track.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/25/world/middleeast/opposition-makes-progress-toward-ousting-netanyahu-party-leader-says.html",
    "titel": "Opposition Makes Progress Toward Ousting Netanyahu, Party Leader Says",
@@ -12,19 +91,6 @@
    "maerkte": [],
    "text": "Gadi Eisenkot, a former military chief, has set Dec. 6 as the deadline to form a new Israeli government. His ally, Avigdor Liberman, said Mr. Eisenkot was on track.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-verstaerkt-sich-die-flucht-aus-risikoanlagen/100272767.html",
-   "titel": "Börsen: Neue Flucht aus Risikoanlagen: Warum sich der Ausverkauf nun beschleunigt",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-verstaerkt-sich-die-flucht-aus-risikoanlagen/100272767.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T18:02:30.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Am Mittwoch sind die US-Märkte erneut mit hohen Kursverlusten gestartet. Nicht nur Sorgen vor steigenden Zinsen und neue Zölle machen Anleger nervös.",
-   "sprache": "de"
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/pforzheimer-bergwerk-kaefersteige-flussspat-fuer-europas-energiewende-201715929.html",
@@ -112,14 +178,14 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo",
-   "titel": "Colombian police storm supermarket to free 20 held hostage for 17 hours",
-   "link": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss",
+   "id": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o",
+   "titel": "US announces new tariffs on host of countries including China",
+   "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-25T16:20:14.000Z",
-   "kategorie": "konflikte",
+   "zeit": "2026-11-25T16:21:34.000Z",
+   "kategorie": "handel",
    "maerkte": [],
-   "text": "One gunman was killed in the operation to free around 20 shoppers and employees after a 17-hour hostage ordeal.",
+   "text": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
    "sprache": "en"
   },
   {
@@ -303,17 +369,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/25/world/middleeast/libya-ukraine-russia-haftar.html",
-   "titel": "Libyan Forces Threaten Retaliation Over Ukraine’s Attack on Russian Ships",
-   "link": "https://www.nytimes.com/2026/11/25/world/middleeast/libya-ukraine-russia-haftar.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-25T13:25:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Ukrainian drone strike off Libya’s coast killed two Libyan naval officers, according to the forces controlling the country’s east.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.faz.net/aktuell/wirtschaft/usa-planen-neue-zoelle-gegen-eu-und-13-weitere-handelspartner-201716698.html",
    "titel": "Handelsstreit: USA planen neue Zölle gegen EU und 13 weitere Handelspartner",
    "link": "https://www.faz.net/aktuell/wirtschaft/usa-planen-neue-zoelle-gegen-eu-und-13-weitere-handelspartner-201716698.html",
@@ -323,17 +378,6 @@
    "maerkte": [],
    "text": "Die Vereinigten Staaten haben eine neue Begründung für neue Zölle gefunden. Den höchsten Aufschlag soll ⁠China erhalten – wegen Überkapazitäten.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o",
-   "titel": "US announces new tariffs on host of countries including China",
-   "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-25T13:19:41.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/immobilien/immobilien-aroundtown-bekommt-nach-leg-einstieg-neue-fuehrungsspitze/100272387.html",
@@ -346,6 +390,17 @@
     "aktien"
    ],
    "text": "Ende Oktober war der Gewerbeimmobilien-Spezialist unerwartet beim zweitgrößten börsennotierten Vermieter eingestiegen. Bei der Vorlage der Quartalszahlen folgt die nächste Überraschung.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/unternehmen/bmw-gesamtbetriebsratschef-martin-kimmich-attackiert-konzernchefs-in-tarifkonflikt-a-2241c461-f01e-4162-b33c-1dd68cb2544f",
+   "titel": "BMW: Gesamtbetriebsratschef Martin Kimmich attackiert Konzernchefs in Tarifkonflikt",
+   "link": "https://www.spiegel.de/wirtschaft/unternehmen/bmw-gesamtbetriebsratschef-martin-kimmich-attackiert-konzernchefs-in-tarifkonflikt-a-2241c461-f01e-4162-b33c-1dd68cb2544f#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-25T12:29:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Arbeitgeber und IG Metall ringen um Jobs, Gehälter und Arbeitszeiten. BMW-Gesamtbetriebsratschef Martin Kimmich greift die Autokonzernchefs hart an.",
    "sprache": "de"
   },
   {
@@ -369,17 +424,6 @@
    "maerkte": [],
    "text": "Leaked data reveal how the full-scale invasion of Ukraine has fundamentally changed mortality patterns in Russia.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Ukraine: Drei russische Kampfjets und zwei Bomber beschädigt",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T12:15:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "USA ändern angeblich Strategie zu Geschäften mit Russland +++ Russischer Angriff stoppt Gasförderung in Region Poltawa +++ Der Newsblog.",
-   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/unternehmen/start-ups/ruestung-das-teuerste-britische-defense-start-up-kommt-nach-deutschland/100270312.html",
@@ -986,62 +1030,15 @@
    ],
    "text": "Vorsichtiger Optimismus bei den Verhandlungen zwischen den USA und Iran hat die Ölpreise zuletzt fallen lassen. Nun zeichnet sich ein erneuter Anstieg beim Brent-Preis ab – die Lage bleibt unsicher.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/brexit-in-grossbritannien-eskaliert-der-streit-um-den-eu-wiedereintritt/100272064.html",
-   "titel": "Brexit: Ex-Premiers und andere „Zombies“ – Im Königreich eskaliert der Streit um den EU-Wiedereintritt",
-   "link": "https://www.handelsblatt.com/politik/international/brexit-in-grossbritannien-eskaliert-der-streit-um-den-eu-wiedereintritt/100272064.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T14:59:20.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Premier Burnham stellt für eine Rückkehr in die EU ein neues Referendum in Aussicht und legt sich mit seinen konservativen Vorgängern an. Droht dem Land ein neuer lähmender Dauerkonflikt?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/finanzen/trump-nvidia-aktien-100.html",
-   "titel": "Wie Trump an Huangs Rückkehr zu Nvidia verdiente",
-   "link": "https://www.tagesschau.de/wirtschaft/finanzen/trump-nvidia-aktien-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-24T14:51:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter",
-    "aktien"
-   ],
-   "text": "Die Rückkehr des Nvidia-Chefs ließ den Aktienkurs des Chipunternehmens in die Höhe schnellen. Profiteur dessen war offenbar auch US-Präsident Donald Trump - der sich zuvor für den Huang eingesetzt hatte.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/hamas-anf%C3%BChrer-bei-angriff-israels-im-gazastreifen-get%C3%B6tet/a-80034053",
-   "titel": "Hamas-Anführer bei Angriff Israels im Gazastreifen getötet",
-   "link": "https://www.dw.com/de/hamas-anführer-bei-angriff-israels-im-gazastreifen-getötet/a-80034053?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-24T14:36:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Sowohl die Islamistenorganisation als auch der amtierende israelische Premier Netanjahu bestätigten die Attacke. Bei dem Getöteten soll es sich um den Chef des internen Sicherheitsapparats der Terrororganisation handeln.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/us-zoelle-berichte-usa-bereiten-neue-zoelle-gegen-zahlreiche-staaten-vor/30026990.html",
-   "titel": "+++ US-Zollpolitik +++: Berichte: USA bereiten neue Zölle gegen zahlreiche Staaten vor",
-   "link": "https://www.handelsblatt.com/politik/international/us-zoelle-berichte-usa-bereiten-neue-zoelle-gegen-zahlreiche-staaten-vor/30026990.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T13:40:24.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Trump droht Mexiko mit Verdopplung der Zölle +++ Carney: Gutes Gespräch mit Trump über Handel zwischen Kanada und USA +++ Der Newsblog.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 12,
   "DW": 12,
   "Spiegel Wirtschaft": 8,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 8,
-  "BBC World": 10,
+  "BBC World": 12,
   "NYT World": 23,
   "EIA Today in Energy": 0
  }
