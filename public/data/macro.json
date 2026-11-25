@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-11-24T17:28:46.192Z",
+  "lastUpdated": "2026-11-25T06:00:28.123Z",
   "quellen": {
     "fedZins": "live",
     "fedTermine": "live",
@@ -578,6 +578,11 @@
     ],
     "meldungen": [
       {
+        "titel": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+        "datum": "2026-11-24T19:00:00.000Z",
+        "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm"
+      },
+      {
         "titel": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
         "datum": "2026-11-18T19:00:00.000Z",
         "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
@@ -631,11 +636,6 @@
         "titel": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
         "datum": "2026-07-14T18:00:00.000Z",
         "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm"
-      },
-      {
-        "titel": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
-        "datum": "2026-07-09T19:00:00.000Z",
-        "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"
       }
     ],
     "letzteEntscheidung": {
