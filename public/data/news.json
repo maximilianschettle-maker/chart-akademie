@@ -1,16 +1,49 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T14:39:58.218Z",
+ "lastUpdated": "2026-11-25T15:24:08.565Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-124.html",
    "titel": "USA kündigen neue Zölle an - auch gegen EU und China",
    "link": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-124.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-25T14:26:17.000Z",
+   "zeit": "2026-11-25T15:18:25.000Z",
    "kategorie": "handel",
    "maerkte": [],
    "text": "Die USA haben neue Sonderzölle gegen die EU und weitere Handelspartner angekündigt. Für betroffene EU-Produkte ist ein Zollsatz von 15 Prozent vorgesehen, auf chinesische Waren soll eine Abgabe von 20 Prozent fällig werden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo",
+   "titel": "Five Russian military jets hit in airfield strike, says Ukraine",
+   "link": "https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-25T14:46:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Savasleyka airfield hosts aircraft used by Russia to launch hypersonic missiles and glide bombs at Ukraine.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/unternehmen/hamburg-alte-sternbruecke-mit-asbest-und-blei-belastet-a-4868dddd-47e4-4654-861e-e69e6d2f47ff",
+   "titel": "Hamburg: Alte Sternbrücke mit Asbest und Blei belastet",
+   "link": "https://www.spiegel.de/wirtschaft/unternehmen/hamburg-alte-sternbruecke-mit-asbest-und-blei-belastet-a-4868dddd-47e4-4654-861e-e69e6d2f47ff#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-25T14:42:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Austausch der Sternbrücke in Hamburg bewegte diesen Sommer viele Menschen. Die alte Konstruktion war nach SPIEGEL-Informationen mit Asbest und Blei belastet. Wurden die Schadstoffe beim Abriss zur Gefahr?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/satelliteninternet-hier-startet-die-starlink-konkurrenz-von-amazon-201714333.html",
+   "titel": "Satelliteninternet: Hier startet Amazons Starlink-Konkurrenz",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/satelliteninternet-hier-startet-die-starlink-konkurrenz-von-amazon-201714333.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-25T14:32:10.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Amazon ist für seine großen Satelliten-Pläne erst mal auf die europäische Rakete Ariane 6 angewiesen. Das geopolitisch brisante Rennen ums Satelliteninternet entscheidet sich damit auch im südamerikanischen Regenwald. Ein Ortsbesuch.",
    "sprache": "de"
   },
   {
@@ -87,7 +120,7 @@
    "zeit": "2026-11-25T13:35:00.000Z",
    "kategorie": "handel",
    "maerkte": [],
-   "text": "Die USA haben neue Sonderzölle gegen die Europäische Union, China und weitere Handelspartner angekündigt. Die Sätze reichen bis zu 20 Prozent.",
+   "text": "Die USA haben neue Sonderzölle gegen die Europäische Union, China und weitere Handelspartner angekündigt. Die Sätze reichen bis zu 20 Prozent. Die EU-Kommission weist die Begründung für die neuen Zölle scharf zurück.",
    "sprache": "de"
   },
   {
@@ -1004,51 +1037,14 @@
    ],
    "text": "Die Firma Megaspeed erlangte innerhalb kurzer Zeit weltweite Aufmerksamkeit. Grund war die Affäre von Nvidia-Chef Huang mit einer früheren Managerin des Unternehmens, die der Spionage verdächtigt wird. Nun landete Megaspeed auf einer US-Spe",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/lula-zoegert-brasiliens-maerkte-warten-auf-den-neuen-finanzminister-und-klare-zeichen-accg-201703313.html",
-   "titel": "Brasiliens Wirtschaft: Lula lässt die Märkte zappeln",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/lula-zoegert-brasiliens-maerkte-warten-auf-den-neuen-finanzminister-und-klare-zeichen-accg-201703313.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-24T06:15:29.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Ein Sparpaket sollte die Finanzmärkte beruhigen. Doch die Zweifel an Brasiliens Haushaltspolitik wachsen, während Präsident Lula die Besetzung der Schlüsselposten in der neuen Regierung hinauszögert.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cr2klqzqx1qvo",
-   "titel": "US Army to detonate toxic explosives in Iowa after Trump paused plan",
-   "link": "https://www.bbc.co.uk/news/articles/cr2klqzqx1qvo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-24T04:42:06.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The US military plans to detonate five tonnes of expired explosives on Wednesday, after appeals court decision.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/suedkorea-russland-100.html",
-   "titel": "Südkorea meldet russische Militärflugzeuge vor seiner Küste",
-   "link": "https://www.tagesschau.de/ausland/asien/suedkorea-russland-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-24T04:23:38.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Mehrere russische Militärflugzeuge sind südkoreanischen Sicherheitsbehörden zufolge am Dienstagmorgen in Südkoreas Luftverteidigungszone eingedrungen. Erst kürzlich meldeten Taiwan und Japan ähnliche Vorfälle.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 10,
   "DW": 12,
-  "Spiegel Wirtschaft": 6,
-  "FAZ Wirtschaft": 4,
-  "Handelsblatt": 5,
+  "Spiegel Wirtschaft": 7,
+  "FAZ Wirtschaft": 5,
+  "Handelsblatt": 4,
   "BBC World": 10,
   "NYT World": 22,
   "EIA Today in Energy": 0
