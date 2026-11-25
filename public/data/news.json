@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T00:24:12.849Z",
+ "lastUpdated": "2026-11-25T01:24:06.263Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/24/world/americas/ecuador-us-military-operations-trump.html",
+   "titel": "Trump Administration Pauses Joint Operations With Ecuador",
+   "link": "https://www.nytimes.com/2026/11/24/world/americas/ecuador-us-military-operations-trump.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T00:42:52.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The administration has halted military operations while it investigates an operation by Ecuadorean forces that killed an accused gang leader.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/kuba-lebenserwartungen-who-100.html",
    "titel": "WHO: Lebenserwartung in Kuba erstmals seit Beginn der Aufzeichnungen gesunken",
@@ -1028,17 +1039,6 @@
    "maerkte": [],
    "text": "President Zelensky said a Russia warship was sunk, with a Russian cargo ship also hit.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/thyssenkrupp-alfried-krupp-half-nazi-taetern-noch-lange-nach-kriegsende-accg-201708275.html",
-   "titel": "Neue Studie: Alfried Krupp half Nazi-Tätern noch lange nach Kriegsende",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/thyssenkrupp-alfried-krupp-half-nazi-taetern-noch-lange-nach-kriegsende-accg-201708275.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-23T10:57:14.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Eine neue Studie liefert Belege für die klare Mitverantwortung für Zwangsarbeit und Kriegswirtschaft des Industriellen Alfried Krupp. Warum die gleichnamige Stiftung dennoch ihren Namen behält.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1048,7 +1048,7 @@
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 9,
   "BBC World": 9,
-  "NYT World": 15,
+  "NYT World": 16,
   "EIA Today in Energy": 0
  }
 }
