@@ -1,13 +1,24 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T04:24:12.397Z",
+ "lastUpdated": "2026-11-25T05:24:13.116Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/israel-eisenkot-netanjahu-100.html",
+   "titel": "Israel nach der Wahl: Schwierige Sondierungen zwischen Rivalen",
+   "link": "https://www.tagesschau.de/ausland/asien/israel-eisenkot-netanjahu-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-25T05:18:30.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "In Israel bleibt Gadi Eisenkot nicht mehr viel Zeit, eine Regierung zu bilden. Aktuell laufen die Gespräche mit Netanjahus Likud-Partei. Dabei gibt es große Differenzen - und kaum Alternativen. Von J. Segador.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html",
    "titel": "Solomon Islands Enters Security Treaty With Australia, in a Blow to China",
    "link": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-25T04:22:18.000Z",
+   "zeit": "2026-11-25T04:31:18.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "A 2022 Solomon Islands agreement with China had raised concerns it would enable Beijing to establish a military presence on the Pacific island. The new accord precludes such bases.",
@@ -1028,24 +1039,11 @@
    "maerkte": [],
    "text": "Eight suspects are arrested after firing on soldiers trying to re-establish order following the arrest of 'El Chapo Isidro'.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/technik/ki/nvidia-jensen-huang-kehrt-als-konzernchef-zurueck/100272106.html",
-   "titel": "Chipkonzern: Jensen Huang kehrt als Konzernchef von Nvidia zurück",
-   "link": "https://www.handelsblatt.com/technik/ki/nvidia-jensen-huang-kehrt-als-konzernchef-zurueck/100272106.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T14:16:21.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Nach Berichten über mehrere außereheliche Affären war Jensen Huang als Nvidia-Chef zurückgetreten. Nun kehrt er an die Spitze des Unternehmens zurück. Die Aktie springt deutlich nach oben.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 9,
-  "DW": 10,
+  "DW": 9,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 7,
