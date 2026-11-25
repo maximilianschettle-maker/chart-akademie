@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T05:24:13.116Z",
+ "lastUpdated": "2026-11-25T06:24:06.707Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-donald-trumps-naechster-schlag-gegen-die-deutsche-wirtschaft/100272532.html",
+   "titel": "Morning Briefing: Donald Trumps nächster Schlag gegen die deutsche Wirtschaft",
+   "link": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-donald-trumps-naechster-schlag-gegen-die-deutsche-wirtschaft/100272532.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-25T05:32:38.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Der US-Präsident könnte noch diese Woche neue Zölle gegen die EU und weitere Länder verkünden. Offiziell geht es ihm um Dumping-Importe. Auch der neue Kongress kann ihn nur schwer stoppen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/konjunktur/wirtschaftswachstum-branchen-100.html",
+   "titel": "Deutsche Industrie: Wo es hakt und wo es rund läuft",
+   "link": "https://www.tagesschau.de/wirtschaft/konjunktur/wirtschaftswachstum-branchen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-25T05:28:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Aussichten für die Wirtschaft haben sich zuletzt verbessert. Doch es gibt große Unterschiede: Während in manchen Branchen Firmen ums Überleben kämpfen, läuft das Geschäft anderswo prächtig. Ein Überblick von Axel John.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html",
+   "titel": "Solomon Islands Enters Security Treaty With Australia, in a Blow to China",
+   "link": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T05:24:35.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A 2022 Solomon Islands agreement with China had raised concerns it would enable Beijing to establish a military presence on the Pacific island. The new accord precludes such bases.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/asien/israel-eisenkot-netanjahu-100.html",
    "titel": "Israel nach der Wahl: Schwierige Sondierungen zwischen Rivalen",
@@ -12,17 +45,6 @@
    "maerkte": [],
    "text": "In Israel bleibt Gadi Eisenkot nicht mehr viel Zeit, eine Regierung zu bilden. Aktuell laufen die Gespräche mit Netanjahus Likud-Partei. Dabei gibt es große Differenzen - und kaum Alternativen. Von J. Segador.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html",
-   "titel": "Solomon Islands Enters Security Treaty With Australia, in a Blow to China",
-   "link": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-25T04:31:18.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A 2022 Solomon Islands agreement with China had raised concerns it would enable Beijing to establish a military presence on the Pacific island. The new accord precludes such bases.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-122.html",
@@ -1017,37 +1039,15 @@
    ],
    "text": "Nach Berichten über mehrere außereheliche Affären war Jensen Huang als Nvidia-Chef zurückgetreten. Nun kehrt er an die Spitze des Unternehmens zurück. Die Aktie springt deutlich nach oben.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/energie/stromlieferant-tibber-steht-mit-neuem-deutschlandchef-vor-kurswechsel/100271004.html",
-   "titel": "Energie: Tibber vor Kurswechsel – das plant der neue Deutschlandchef des Stromanbieters",
-   "link": "https://www.handelsblatt.com/unternehmen/energie/stromlieferant-tibber-steht-mit-neuem-deutschlandchef-vor-kurswechsel/100271004.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T14:54:29.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Das Unternehmen will es Haushalten ermöglichen, von schwankenden Strompreisen zu profitieren. Doch jetzt verabschiedet es sich von dynamischen Tarifen ohne Smart Meter.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c5rmgkv2lk73o",
-   "titel": "Mexican soldiers attacked in wake of drug lord's arrest",
-   "link": "https://www.bbc.co.uk/news/articles/c5rmgkv2lk73o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-23T14:54:03.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Eight suspects are arrested after firing on soldiers trying to re-establish order following the arrest of 'El Chapo Isidro'.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 8,
   "DW": 9,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 7,
-  "BBC World": 11,
+  "Handelsblatt": 6,
+  "BBC World": 10,
   "NYT World": 16,
   "EIA Today in Energy": 0
  }
