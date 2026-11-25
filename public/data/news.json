@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T03:24:14.026Z",
+ "lastUpdated": "2026-11-25T04:21:43.643Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-122.html",
+   "titel": "US-Medienberichte: Trump plant wohl neue Zölle - auch gegen die EU",
+   "link": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-122.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-25T04:08:29.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Die US-Regierung bereitet offenbar neue Zölle gegenüber China, der EU und weiteren Ländern vor. Der Schritt erfolgt, nachdem die Zölle vom Supreme Court als illegal eingestuft wurden.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/ukraine-russland-bruecken-krieg-100.html",
    "titel": "Brücken-Krieg: Gefahr für Kiew, Probleme für Russlands Logistik",
@@ -12,6 +23,39 @@
    "maerkte": [],
    "text": "Kiew, Saporischschja, Odessa - immer wieder greift Russland ukrainische Brücken an. Im Gegenzug schießt die Ukraine vermehrt zurück - auch auf die Krim-Brücke. Dabei geht es beiden Seiten nicht immer nur um militärische Ziele. Von R. Barth.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq5y1212y4pwo",
+   "titel": "Clashing political visions reflect a divided Spain ahead of election",
+   "link": "https://www.bbc.co.uk/news/articles/cq5y1212y4pwo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-25T00:58:34.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Sunday’s election could see a far-right party enter the Spanish government for first time.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo",
+   "titel": "Russia's own figures show almost 500,000 deaths in war in Ukraine",
+   "link": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-25T00:56:51.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Leaked data reveal how the full-scale invasion of Ukraine has fundamentally changed mortality patterns in Russia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cw24e17v9e51o",
+   "titel": "My family died in Ukraine. My mum blamed Zelensky's troops - the truth is complicated",
+   "link": "https://www.bbc.co.uk/news/articles/cw24e17v9e51o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-25T00:54:13.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "BBC journalist Anastasiya Gribanova investigates who killed her father and grandparents in the war.",
+   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/24/world/americas/ecuador-us-military-operations-trump.html",
@@ -34,6 +78,19 @@
    "maerkte": [],
    "text": "Die Lebenserwartung in Kuba ist laut der WHO erstmals in der Geschichte gesunken, die Säuglingssterblichkeit hat sich mehr als verdoppelt. WHO-Chef Tedros macht dafür auch US-Sanktionen verantwortlich - und fordert deren sofortiges Ende.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cv702rw7dzx5o",
+   "titel": "China-linked network using AI fakes to smear Taiwan election candidates, BBC Verify finds",
+   "link": "https://www.bbc.co.uk/news/articles/cv702rw7dzx5o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-24T23:05:11.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "The network attacked key figures in the ruling DPP, including President Lai and mayoral candidate Shen.",
+   "sprache": "en"
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kleinlaut-und-kaempferisch-nvidia-chef-jensen-huang-entschuldigt-sich-bei-mitarbeitern-201714458.html",
@@ -984,61 +1041,6 @@
    "maerkte": [],
    "text": "Warenhäuser schließen, Einzelhändler kämpfen ums Überleben, und Innenstädte fürchten die Verödung. Doch in den Häusern der KaDeWe-Gruppe ist die Welt noch in Ordnung. Was macht die Luxuskaufhäuser so besonders?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-older-soldiers.html",
-   "titel": "They Were Too Old to Enlist, but Not to Fight. Meet the Steppe Wolves of Ukraine.",
-   "link": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-older-soldiers.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T13:53:33.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "When the military refused to let them sign up, a band of aging men found their own way to wage war against Russia.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/afrika/angriff-russisches-kriegsschiff-libyen-100.html",
-   "titel": "Russisches Kriegsschiff versenkt: \"Für Russland ist Libyen eine Art Rückzugsort\"",
-   "link": "https://www.tagesschau.de/ausland/afrika/angriff-russisches-kriegsschiff-libyen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-23T13:34:43.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Ukraine hat ein russisches Kriegsschiff in Libyen versenkt. Damit ist in dem Krieg zum ersten Mal ein Hafen im Mittelmeer betroffen. In Libyen wächst die Sorge, in den Konflikt hineingezogen zu werden. Von M. Behrendt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-soeder-sichert-sich-den-trumpf-fuer-den-fall-einer-vorgezogenen-wahl/100272017.html",
-   "titel": "Kommentar: Söder sichert sich den Trumpf für den Fall einer vorgezogenen Bundestagswahl",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-soeder-sichert-sich-den-trumpf-fuer-den-fall-einer-vorgezogenen-wahl/100272017.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T13:31:20.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Bayerns Ministerpräsident hat recht, wenn er den Ausgleich der kalten Progression fordert. Doch der Vorstoß ist auch ein Machtspiel. Der Koalition bleibt nur eine Möglichkeit, zu reagieren.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-soeders-vorstoss-zur-steuersenkung-erwischt-spd-und-cdu-kalt/100272017.html",
-   "titel": "Kommentar: Söders Vorstoß zur Steuersenkung erwischt SPD und CDU kalt",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-soeders-vorstoss-zur-steuersenkung-erwischt-spd-und-cdu-kalt/100272017.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T13:31:20.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Bayerns Ministerpräsident hat recht, wenn er den Ausgleich der kalten Progression fordert. Doch der Vorstoß ist auch ein Machtspiel. Der Koalition bleibt nur eine Möglichkeit, zu reagieren.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-die-politik-bekaempft-hohe-energiepreise-mit-falschen-massnahmen/100271019.html",
-   "titel": "Kommentar: Die Politik bekämpft hohe Energiepreise mit falschen Maßnahmen",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-die-politik-bekaempft-hohe-energiepreise-mit-falschen-massnahmen/100271019.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-23T13:20:36.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Stromsteuersenkung und Spritpreisdeckel sehen erst mal gut aus – sind aber reine Symptombehandlung. Für die Problemursachen nimmt sich das Wirtschaftsministerium zu wenig Zeit.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1046,8 +1048,8 @@
   "DW": 10,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 9,
-  "BBC World": 9,
+  "Handelsblatt": 7,
+  "BBC World": 11,
   "NYT World": 15,
   "EIA Today in Energy": 0
  }
