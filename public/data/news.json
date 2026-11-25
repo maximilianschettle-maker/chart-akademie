@@ -1,7 +1,101 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T15:24:08.565Z",
+ "lastUpdated": "2026-11-25T16:24:08.335Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo",
+   "titel": "Colombian police storm supermarket to free 20 held hostage for 17 hours",
+   "link": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-25T16:20:14.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "One gunman was killed in the operation to free around 20 shoppers and employees after a 17-hour hostage ordeal.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/haushalt-generaldebatte-merz-100.html",
+   "titel": "Generaldebatte im Bundestag: Nachdenkliche Töne und ein Zugeständnis",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/haushalt-generaldebatte-merz-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-25T16:10:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Selbstkritisch hat Bundeskanzler Merz im Bundestag den Kurs seiner Regierung verteidigt. Bei der Rede war es ungewöhnlich leise im Saal. Merz führte aus, wessen Kanzler er sein will - ein Zugeständnis an die SPD ging beinahe unter. Von S. H",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/kupferschiefer-kupfer-aus-deutschland-bergbau-koennte-vor-comeback-stehen/100255103.html",
+   "titel": "Deep Read: Kupfer aus Deutschland? Warum der Bergbau vor einem Comeback stehen könnte",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/kupferschiefer-kupfer-aus-deutschland-bergbau-koennte-vor-comeback-stehen/100255103.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-25T16:05:33.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "Die Kupfernachfrage steigt, die Erzgehalte der südamerikanischen Vorkommen sinken – plötzlich werden auch Vorkommen in Deutschland für Bergbaukonzerne interessant. Ein Ortstermin.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/usa-wollen-neuen-15-prozent-zoll-f%C3%BCr-eu-importe/a-80045806",
+   "titel": "USA wollen neuen 15-Prozent-Zoll für EU-Importe",
+   "link": "https://www.dw.com/de/usa-wollen-neuen-15-prozent-zoll-für-eu-importe/a-80045806?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-25T15:57:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Der US-Handelsbeauftragte bestätigt Berichte, wonach der Zollkonflikt zwischen den USA und deren wichtigsten Handelspartnern in die nächste Runde geht. Für etliche Länder könnte es teuer werden.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/25/world/africa/south-africa-ramaphosa-farmgate.html",
+   "titel": "South African President Wins Reprieve From ‘Farmgate’ Impeachment Investigation",
+   "link": "https://www.nytimes.com/2026/11/25/world/africa/south-africa-ramaphosa-farmgate.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T15:55:55.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "A court threw out a report suggesting that Cyril Ramaphosa may have tried to conceal the theft of more than half a million dollars of U.S. currency.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-trump-wahnsinn-geht-ungebremst-weiter/100272596.html",
+   "titel": "Kommentar: Der Trump-Wahnsinn geht ungebremst weiter",
+   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-trump-wahnsinn-geht-ungebremst-weiter/100272596.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-25T15:54:48.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Erst macht der US‑Präsident Stephen Miller zum Stabschef, dann setzt er Jensen Huang wieder an die Nvidia-Spitze – und jetzt die nächste Zollrunde. Das Konzept Lame Duck ist inkompatibel mit Trump.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq4gn6gj3z37o",
+   "titel": "South Africa's Ramaphosa wins court battle over impeachment threat",
+   "link": "https://www.bbc.co.uk/news/articles/cq4gn6gj3z37o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-25T15:42:50.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "The break-in happened in 2020, when thieves allegedly stole bundles of US dollar bills hidden inside a sofa at the farm.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/usa-neue-zoelle-gegen-eu-und-13-weitere-handelspartner/100272736.html",
+   "titel": "Handel: USA kündigen neue Zölle gegen EU und 13 weitere Handelspartner an",
+   "link": "https://www.handelsblatt.com/politik/international/usa-neue-zoelle-gegen-eu-und-13-weitere-handelspartner/100272736.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-25T15:30:26.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Washington wirft anderen Ländern vor, den US-Handel strukturell zu belasten. Der Deal mit der EU soll aber vorerst Bestand haben. China treffen die neuen Abgaben besonders hart.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-124.html",
    "titel": "USA kündigen neue Zölle an - auch gegen EU und China",
@@ -77,17 +171,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Union und SPD blockieren sich. Die Erhöhung der Reichensteuer und geplante Entlastungen könnten erst 2027 beschlossen werden. Für die Steuerzahler sind das keine guten Nachrichten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/usa-neue-zoelle-gegen-eu-und-13-weitere-handelspartner/100272736.html",
-   "titel": "Handel: USA kündigen neue Zölle gegen EU und 13 weitere Handelspartner an",
-   "link": "https://www.handelsblatt.com/politik/international/usa-neue-zoelle-gegen-eu-und-13-weitere-handelspartner/100272736.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T13:50:01.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Washington wirft anderen Ländern vor, den US-Handel strukturell zu belasten. Der Deal mit der EU hat aber Bestand.",
    "sprache": "de"
   },
   {
@@ -192,19 +275,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/cq4gn6gj3z37o",
-   "titel": "South Africa's Ramaphosa wins court battle over impeachment threat",
-   "link": "https://www.bbc.co.uk/news/articles/cq4gn6gj3z37o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-25T12:20:17.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "The break-in happened in 2020, when thieves allegedly stole bundles of US dollar bills hidden inside a sofa at the farm.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Ukraine: Drei russische Kampfjets und zwei Bomber beschädigt",
    "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
@@ -227,17 +297,6 @@
    ],
    "text": "Das Start-up Cambridge Aerospace will um Bundeswehraufträge konkurrieren und investiert daher stark in Deutschland. Es arbeitet wie Konkurrent Helsing an Abwehrsystemen mit Raketenantrieb.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo",
-   "titel": "Colombian police storm supermarket to free 20 held hostage for 17 hours",
-   "link": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-25T11:45:16.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "One gunman was killed in the operation to free around 20 shoppers and employees after a 17-hour hostage ordeal.",
-   "sprache": "en"
   },
   {
    "id": "https://www.dw.com/de/medien-usa-stehen-kurz-vor-verh%C3%A4ngung-neuer-z%C3%B6lle/a-80045806",
@@ -973,80 +1032,16 @@
    "maerkte": [],
    "text": "Das Bundesland war einer der ersten Kunden Palantirs in Deutschland. Jetzt will NRW den deutschen Anbieter Celonis nutzen. Der Auftrag hat Signalwirkung.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-102.html",
-   "titel": "Marktbericht: DAX nach Kursrausch zurück im Alltag",
-   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-102.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-24T09:31:50.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter",
-    "aktien"
-   ],
-   "text": "Nach der Euphorie zum Wochenstart fällt der DAX im frühen Handel zurück. War der Nvidia-Rausch nur ein Strohfeuer? Positive Konjunktursignale kommen heute vom ifo-Geschäftsklimaindex.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/videos/cm62p9y3y04qo",
-   "titel": "Watch: Moment troops raid home and capture Mexican drug lord",
-   "link": "https://www.bbc.co.uk/news/videos/cm62p9y3y04qo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-24T09:09:41.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Newly-released bodycam footage shows the moment troops detained 'El Chapo Isidro', who had managed to evade capture for years.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/unternehmen/industrie/deutsch-ukrainische-ruestungsfirmen-das-steckt-hinter-dem-boom/100272103.html",
-   "titel": "Ukraine-Krieg: Das steckt hinter dem Boom deutsch-ukrainischer Rüstungsfirmen",
-   "link": "https://www.handelsblatt.com/unternehmen/industrie/deutsch-ukrainische-ruestungsfirmen-das-steckt-hinter-dem-boom/100272103.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T08:52:47.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Statt nur Geld nach Kiew zu schicken, lässt Deutschland ukrainische Waffen zunehmend hierzulande bauen. Welche Start-ups und Industriekonzerne dabei die zentrale Rolle spielen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/trump-wertet-r%C3%BCckkehr-des-nvidia-chefs-als-eigenen-verdienst-news-kompakt-das-wichtigste-kurz-gefasst/a-80027604",
-   "titel": "Trump wertet Rückkehr des Nvidia-Chefs als eigenen Verdienst - News kompakt: Das Wichtigste kurz gefasst",
-   "link": "https://www.dw.com/de/trump-wertet-rückkehr-des-nvidia-chefs-als-eigenen-verdienst-news-kompakt-das-wichtigste-kurz-gefasst/a-80027604?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-24T08:01:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "US-Präsident Trump sieht sich als Wegbereiter für die Rückkehr des Nvidia-Chefs Jensen Huang. Südkorea hat wegen russischer Militärflugzeuge zeitweise eine Evakuierungswarnung herausgegeben. Der DW-Nachrichtenüberblick.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/unternehmen/megaspeed-us-regierung-sperrliste-100.html",
-   "titel": "Nvidia-Skandal: US-Regierung setzt Megaspeed auf schwarze Liste",
-   "link": "https://www.tagesschau.de/wirtschaft/unternehmen/megaspeed-us-regierung-sperrliste-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-24T07:42:34.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Die Firma Megaspeed erlangte innerhalb kurzer Zeit weltweite Aufmerksamkeit. Grund war die Affäre von Nvidia-Chef Huang mit einer früheren Managerin des Unternehmens, die der Spionage verdächtigt wird. Nun landete Megaspeed auf einer US-Spe",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 11,
   "DW": 12,
   "Spiegel Wirtschaft": 7,
-  "FAZ Wirtschaft": 5,
-  "Handelsblatt": 4,
+  "FAZ Wirtschaft": 4,
+  "Handelsblatt": 6,
   "BBC World": 10,
-  "NYT World": 22,
+  "NYT World": 23,
   "EIA Today in Energy": 0
  }
 }
