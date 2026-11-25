@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T04:21:43.643Z",
+ "lastUpdated": "2026-11-25T04:24:12.397Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html",
+   "titel": "Solomon Islands Enters Security Treaty With Australia, in a Blow to China",
+   "link": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T04:22:18.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A 2022 Solomon Islands agreement with China had raised concerns it would enable Beijing to establish a military presence on the Pacific island. The new accord precludes such bases.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-122.html",
    "titel": "US-Medienberichte: Trump plant wohl neue Zölle - auch gegen die EU",
@@ -1030,17 +1041,6 @@
    ],
    "text": "Nach Berichten über mehrere außereheliche Affären war Jensen Huang als Nvidia-Chef zurückgetreten. Nun kehrt er an die Spitze des Unternehmens zurück. Die Aktie springt deutlich nach oben.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kadewe-trotzt-der-krise-warum-deutschlands-groesstes-kaufhaus-boomt-accg-201679037.html",
-   "titel": "Luxuskaufhäuser: Überall Krise – nur nicht im KaDeWe",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kadewe-trotzt-der-krise-warum-deutschlands-groesstes-kaufhaus-boomt-accg-201679037.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-23T13:56:21.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Warenhäuser schließen, Einzelhändler kämpfen ums Überleben, und Innenstädte fürchten die Verödung. Doch in den Häusern der KaDeWe-Gruppe ist die Welt noch in Ordnung. Was macht die Luxuskaufhäuser so besonders?",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1050,7 +1050,7 @@
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 7,
   "BBC World": 11,
-  "NYT World": 15,
+  "NYT World": 16,
   "EIA Today in Energy": 0
  }
 }
