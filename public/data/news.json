@@ -1,7 +1,80 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T09:24:17.278Z",
+ "lastUpdated": "2026-11-25T10:24:12.979Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-154.html",
+   "titel": "AfD fordert Klage gegen Haushalt - Merz nennt Etat \"vertretbar\"",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-154.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-25T10:15:04.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die Aufstellung des Haushalts habe \"keinen Schönheitspreis verdient“, räumte der Kanzler ein. Doch er sei in der gegenwärtigen Lage vertretbar. Zuvor war er von AfD-Chef Chrupalla scharf kritisiert worden - auch in Sachen Ukraine.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/25/world/middleeast/yemen-houthis-war-government-losses.html",
+   "titel": "Losses Mount for Yemeni Government as Houthi Militia Advances",
+   "link": "https://www.nytimes.com/2026/11/25/world/middleeast/yemen-houthis-war-government-losses.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T10:04:06.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Iran-backed Houthis in Yemen are on a winning streak, securing strategic territory as they fight Saudi Arabia and its Yemeni allies in an asymmetrical war of attrition.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/25/world/africa/maritius-stray-dogs.html",
+   "titel": "Island Paradise of Mauritius Has Sun, Beaches and Too Many Dogs",
+   "link": "https://www.nytimes.com/2026/11/25/world/africa/maritius-stray-dogs.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T10:00:48.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Mauritius, a popular tourist destination off southern Africa, has become overrun with strays. With more and more residents chased and attacked, many are fed up.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/service/kerzen-duerften-deutlich-teurer-werden-a-516a9c19-aedb-4161-bd4f-2471951052cf",
+   "titel": "Kerzen dürften deutlich teurer werden",
+   "link": "https://www.spiegel.de/wirtschaft/service/kerzen-duerften-deutlich-teurer-werden-a-516a9c19-aedb-4161-bd4f-2471951052cf#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-25T09:38:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Weihnachtsfreunde müssen jetzt stark sein: Kerzen werden wohl spürbar mehr kosten. Hintergrund ist unter anderem die Entwicklung des Ölpreises.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/chinesische-rakete-startet-mit-premiere-zur-raumstation-tiangong/a-80043558",
+   "titel": "Chinesische Rakete startet mit Premiere zur Raumstation Tiangong",
+   "link": "https://www.dw.com/de/chinesische-rakete-startet-mit-premiere-zur-raumstation-tiangong/a-80043558?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-25T09:37:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Diese Mission ist eine Neuheit: Erstmals schickt China mit einem Raumfahrer aus Pakistan einen Ausländer zu seiner Station Tiangong im Weltall.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nikkei-dax-nasdaq-100.html",
+   "titel": "Marktbericht: Neuer Aufreger am Horizont",
+   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nikkei-dax-nasdaq-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-25T09:22:54.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "halbleiter",
+    "aktien"
+   ],
+   "text": "Kaum hat sich die Aufregung um Nvidia etwas gelegt, trüben neue Zollsorgen das Bild am Aktienmarkt. Der DAX kann sich dennoch knapp im Plus halten.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Bericht: USA ändert laut Kushner Strategie zu Geschäften mit Russland",
@@ -86,19 +159,6 @@
     "anleihen"
    ],
    "text": "Milliarden gibt der Staat für Weiterbildungen von Arbeitslosen aus, oft für teure und nutzlose Kurse. CDU-Haushaltspolitiker Yannick Bury spricht von einer »Sauerei« und warnt vor kostspieligen Folgen – auch für Beitragszahler.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nikkei-dax-nasdaq-100.html",
-   "titel": "Marktbericht: DAX vor holprigem Start",
-   "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nikkei-dax-nasdaq-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-25T06:28:06.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Das Beben in der Technologiebranche ist noch nicht ausgestanden. In Asien fallen die Kurse, auch wegen neuer Zollsorgen. Diese könnten auch dem DAX zum Handelsstart zusetzen.",
    "sprache": "de"
   },
   {
@@ -991,71 +1051,16 @@
    "maerkte": [],
    "text": "At least three people were injured. The United Nations has reported a 445 percent increase in drone bombings in the country.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-angriffe-ostsee-libyen-100.html",
-   "titel": "Angriffe auf russische Schiffe: \"Das kann brandgefährlich für uns alle werden\"",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-angriffe-ostsee-libyen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-23T17:59:22.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Angriffe auf russische Schiffe sind für die Ukraine ein Erfolg, sagt der Sicherheitsexperte Joachim Weber. Aber sie stellten auch eine Eskalation dar, die Russland zu Gegenmaßnahmen provozieren könnte. Ein Kalkül von Kiew?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ukraine-angriffe-ostsee-libyen-100.html",
-   "titel": "Angriffe auf russische Schiffe: \"Das kann brandgefährlich für uns alle werden\"",
-   "link": "https://www.tagesschau.de/ukraine-angriffe-ostsee-libyen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-23T17:59:22.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Angriffe auf russische Schiffe sind für die Ukraine ein Erfolg, sagt der Sicherheitsexperte Joachim Weber. Aber sie stellten auch eine Eskalation dar, die Russland zu Gegenmaßnahmen provozieren könnte. Ein Kalkül von Kiew?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-nachfolge-freie-waehler-100.html",
-   "titel": "Nachfolge von Hubert Aiwanger: Freie Wähler stellen sich breiter auf",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-nachfolge-freie-waehler-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-23T17:47:10.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Hubert Aiwanger war die zentrale Führungsfigur der Freien Wähler: Landes- und Bundeschef, bayerischer Wirtschaftsminister und Vize-Ministerpräsident. Nach seinem Tod verteilt die Partei die Posten auf mehrere Schultern. Von P. Jerabek und R",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html",
-   "titel": "How Homeowners Are Powering Vietnam’s E-Bike Surge",
-   "link": "https://www.nytimes.com/video/world/asia/100000011212632/vietnam-electric-bike-ebikes-charging-stations.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T17:44:58.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The war in Iran has brought on a rapid switch from motorbikes to electric two-wheelers in Vietnam, creating an informal charging economy led by entrepreneurial homeowners.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/russische-mannschaften-sportler-eu-100.html",
-   "titel": "Sanktionspaket: Keine Athleten mehr unter russischer Flagge",
-   "link": "https://www.tagesschau.de/ausland/europa/russische-mannschaften-sportler-eu-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-23T17:23:33.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Russische Sportlerinnen und Sportler sollen bei europäischen Wettkämpfen nicht mehr für ihr Land antreten dürfen - das hat die EU-Kommission vorgeschlagen. Weitere Sanktionen soll es in der Wirtschaft und im Energiesektor geben.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 8,
-  "DW": 8,
-  "Spiegel Wirtschaft": 3,
-  "FAZ Wirtschaft": 5,
-  "Handelsblatt": 6,
+  "DW": 9,
+  "Spiegel Wirtschaft": 4,
+  "FAZ Wirtschaft": 4,
+  "Handelsblatt": 4,
   "BBC World": 9,
-  "NYT World": 18,
+  "NYT World": 20,
   "EIA Today in Energy": 0
  }
 }
