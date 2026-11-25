@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T17:24:10.047Z",
+ "lastUpdated": "2026-11-25T18:24:12.004Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/25/world/middleeast/opposition-makes-progress-toward-ousting-netanyahu-party-leader-says.html",
+   "titel": "Opposition Makes Progress Toward Ousting Netanyahu, Party Leader Says",
+   "link": "https://www.nytimes.com/2026/11/25/world/middleeast/opposition-makes-progress-toward-ousting-netanyahu-party-leader-says.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T18:12:36.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Gadi Eisenkot, a former military chief, has set Dec. 6 as the deadline to form a new Israeli government. His ally, Avigdor Liberman, said Mr. Eisenkot was on track.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-verstaerkt-sich-die-flucht-aus-risikoanlagen/100272767.html",
+   "titel": "Börsen: Neue Flucht aus Risikoanlagen: Warum sich der Ausverkauf nun beschleunigt",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-verstaerkt-sich-die-flucht-aus-risikoanlagen/100272767.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-25T18:02:30.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Am Mittwoch sind die US-Märkte erneut mit hohen Kursverlusten gestartet. Nicht nur Sorgen vor steigenden Zinsen und neue Zölle machen Anleger nervös.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/pforzheimer-bergwerk-kaefersteige-flussspat-fuer-europas-energiewende-201715929.html",
+   "titel": "Flussspat-Förderung: Das Energiewende-Kristall liegt im Berg südlich von Pforzheim",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/pforzheimer-bergwerk-kaefersteige-flussspat-fuer-europas-energiewende-201715929.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-25T17:51:31.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Das Bergwerk Käfersteige war jahrzehntelang ein Relikt – jetzt wird es zum Hoffnungsträger. Die Grube in Baden-Württemberg soll perspektivisch 20 Prozent des europäischen Bedarfs an Flussspat decken.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nikkei-dax-nasdaq-100.html",
    "titel": "Marktbericht: DAX fällt unter 25.000 Punkte-Marke",
@@ -122,7 +157,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-trump-wahnsinn-geht-ungebremst-weiter/100272596.html",
-   "titel": "Kommentar: Der Trump-Wahnsinn geht ungebremst weiter",
+   "titel": "Kommentar: Trumps selbstschädigender Zollwahnsinn geht weiter",
    "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-trump-wahnsinn-geht-ungebremst-weiter/100272596.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-25T15:54:48.000Z",
@@ -998,41 +1033,6 @@
    "maerkte": [],
    "text": "Trump droht Mexiko mit Verdopplung der Zölle +++ Carney: Gutes Gespräch mit Trump über Handel zwischen Kanada und USA +++ Der Newsblog.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-dieser-etat-ist-so-beklagenswert-wie-der-zustand-der-koalition/100272130.html",
-   "titel": "Kommentar: Dieser Etat ist so beklagenswert wie der Zustand der Koalition",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-dieser-etat-ist-so-beklagenswert-wie-der-zustand-der-koalition/100272130.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T13:29:01.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Mit dem Haushalt 2027 zeigen Union und SPD vor allem eines: Sie haben keinen Plan, wie sie die Verschuldung wieder in den Griff bekommen wollen. Das geht nicht mehr lange gut.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/autoindustrie-schularick-bringt-verkauf-von-volkswagen-an-china-ins-spiel/100272422.html",
-   "titel": "Autoindustrie: „Solange wir noch was für die kriegen“: Schularick bringt Verkauf von VW an China ins Spiel",
-   "link": "https://www.handelsblatt.com/politik/deutschland/autoindustrie-schularick-bringt-verkauf-von-volkswagen-an-china-ins-spiel/100272422.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T13:24:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Präsident des Kiel-Instituts provoziert erneut in Richtung Wolfsburg: Ein Verkauf von Volkswagen an China sei richtig. Deutschland sei in dem Markt jetzt „Entwicklungsland“.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/bundeshaushalt-2027-klingbeil-100.html",
-   "titel": "Bundeshaushalt 2027: Klingbeil sieht \"wichtige Zukunftsinvestitionen\"",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/bundeshaushalt-2027-klingbeil-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-24T13:10:35.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Zu Beginn der Haushaltsberatungen im Bundestag hat Finanzminister Klingbeil den geplanten Rekordetat verteidigt. Es gehe um Spielräume für eine \"gute Zukunft\". Harsche Kritik kommt von der Opposition.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1040,7 +1040,7 @@
   "DW": 12,
   "Spiegel Wirtschaft": 8,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 7,
+  "Handelsblatt": 8,
   "BBC World": 10,
   "NYT World": 23,
   "EIA Today in Energy": 0
