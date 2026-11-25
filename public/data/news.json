@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T19:24:15.257Z",
+ "lastUpdated": "2026-11-25T20:24:16.050Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/haushalt-2027-rekordschulden-versch%C3%A4rfen-den-streit-in-der-koalition/a-80048368",
+   "titel": "Haushalt 2027: Rekordschulden verschärfen den Streit in der Koalition",
+   "link": "https://www.dw.com/de/haushalt-2027-rekordschulden-verschärfen-den-streit-in-der-koalition/a-80048368?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-25T20:02:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "Der Bundeshaushalt erreicht neue Höchststände, während Rentenkassen, Verteidigung und schwache Konjunktur den Druck erhöhen. Zugleich wachsen die Spannungen zwischen Union und SPD über den künftigen Kurs.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/us-zoelle-welche-folgen-donald-trumps-neue-strafmassnahmen-fuer-die-eu-haben-a-e8098dd8-1e2e-4161-bd76-0310a466a835",
+   "titel": "US-Zölle: Welche Folgen Donald Trumps neue Strafmaßnahmen für die EU haben",
+   "link": "https://www.spiegel.de/wirtschaft/us-zoelle-welche-folgen-donald-trumps-neue-strafmassnahmen-fuer-die-eu-haben-a-e8098dd8-1e2e-4161-bd76-0310a466a835#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-25T19:34:00.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Die USA kündigen neue Zölle gegen mehrere Handelspartner an, darunter die EU. Trotz der jüngsten Niederlage bei den Midterms setzt der US-Präsident seine Lieblingsprojekte durch. Wie weit kann er damit kommen?",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o",
    "titel": "North Korea expels Swiss diplomat in sanctions row",
@@ -34,6 +58,19 @@
    "maerkte": [],
    "text": "The Ukrainian drone strike off Libya’s coast killed two Libyan naval officers, according to the forces controlling the country’s east.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-will-furcht-vor-einem-ki-crash-nicht-weichen/100272767.html",
+   "titel": "Börsen: Die Furcht vor einem KI-Crash will nicht weichen: Was kann die Angst der Anleger jetzt stoppen?",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-will-furcht-vor-einem-ki-crash-nicht-weichen/100272767.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-25T19:01:06.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Am Mittwoch sind die US-Märkte erneut mit hohen Verlusten gestartet. Zwar konnten sie sich im Handelsverlauf fangen. Doch nicht nur Sorgen vor steigenden Zinsen und neue Zölle machen Anleger nervös.",
+   "sprache": "de"
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-verstaerkt-sich-die-flucht-aus-risikoanlagen/100272767.html",
@@ -993,49 +1030,12 @@
    "maerkte": [],
    "text": "Nearly 1,000 children are among those killed or injured by explosives left over from the conflict, figures show.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/bundesregierung-wie-die-cdu-weiter-aktive-industriepolitik-betreibt/100271878.html",
-   "titel": "Bundesregierung: Keine Milliarden für Intel, dafür für Rohstoff und Strom: Wie die CDU weiter Industriepolitik betreibt",
-   "link": "https://www.handelsblatt.com/politik/deutschland/bundesregierung-wie-die-cdu-weiter-aktive-industriepolitik-betreibt/100271878.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T15:12:13.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Friedrich Merz hatte das Ende der Industriepolitik angekündigt. Die Regierung betreibt diese aber weiter – vor allem in drei Bereichen. Aber zur Ampel gibt es einen wichtigen Unterschied.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/oel-preise-stabilisieren-sich-sich-nach-vortagsverlusten-a-bc31a2d2-29a0-493f-990a-53971fb94289",
-   "titel": "Öl: Preise stabilisieren sich sich nach Vortagsverlusten",
-   "link": "https://www.spiegel.de/wirtschaft/oel-preise-stabilisieren-sich-sich-nach-vortagsverlusten-a-bc31a2d2-29a0-493f-990a-53971fb94289#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-24T15:08:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Vorsichtiger Optimismus bei den Verhandlungen zwischen den USA und Iran hat die Ölpreise zuletzt fallen lassen. Nun zeichnet sich ein erneuter Anstieg beim Brent-Preis ab – die Lage bleibt unsicher.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/oel-brent-peise-stabilisiert-sich-nach-vortagsverlusten-a-bc31a2d2-29a0-493f-990a-53971fb94289",
-   "titel": "Öl: Brent-Peise stabilisiert sich nach Vortagsverlusten",
-   "link": "https://www.spiegel.de/wirtschaft/oel-brent-peise-stabilisiert-sich-nach-vortagsverlusten-a-bc31a2d2-29a0-493f-990a-53971fb94289#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-24T15:08:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Vorsichtiger Optimismus bei den Verhandlungen zwischen den USA und Iran hat die Ölpreise zuletzt fallen lassen. Nun zeichnet sich ein erneuter Anstieg beim Brent-Preis ab – die Lage bleibt unsicher.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 12,
-  "DW": 12,
-  "Spiegel Wirtschaft": 8,
+  "tagesschau": 10,
+  "DW": 13,
+  "Spiegel Wirtschaft": 9,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 8,
   "BBC World": 12,
