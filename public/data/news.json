@@ -1,28 +1,83 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T10:24:12.979Z",
+ "lastUpdated": "2026-11-25T11:24:13.486Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/25/world/middleeast/yemen-houthis-war-government-losses.html",
+   "titel": "Losses Mount for Yemeni Government as Houthi Militia Advances",
+   "link": "https://www.nytimes.com/2026/11/25/world/middleeast/yemen-houthis-war-government-losses.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T11:24:10.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Iran-backed Houthis in Yemen are on a winning streak, securing strategic territory as they fight Saudi Arabia and its Yemeni allies in an asymmetrical war of attrition.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/video/world/middleeast/100000011300541/defending-aden-yemens-holdout-against-the-houthis.html",
+   "titel": "Defending Aden, Yemen’s Holdout Against the Houthis",
+   "link": "https://www.nytimes.com/video/world/middleeast/100000011300541/defending-aden-yemens-holdout-against-the-houthis.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T11:20:25.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The war in Iran has reignited Yemen’s decade-old civil war. Saudi-backed troops are scrambling to defend against advancing Houthi fighters as the wounded are taken to the port city of Aden, the government’s provisional capital.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/usa-abschiebepolitik-trump-garcia-100.html",
+   "titel": "Umstrittener Abschiebefall: Salvadorianer Abrego García hat USA verlassen",
+   "link": "https://www.tagesschau.de/ausland/amerika/usa-abschiebepolitik-trump-garcia-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-25T11:19:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "2025 war der Salvadorianer Abrego Garcia aus den USA abgeschoben worden - rechtswidrig. Er landete in einem berüchtigten Gefängnis und wurde so zum Symbol für Trumps umstrittene Politik. Nun eine neue Wendung: Abrego Garcia ist in Spanien.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/ukrainische-angriffe-auf-russische-schiffe-weitet-der-konflikt-sich-aus/a-80043488",
+   "titel": "Ukrainische Angriffe auf russische Schiffe: Weitet der Konflikt sich aus?",
+   "link": "https://www.dw.com/de/ukrainische-angriffe-auf-russische-schiffe-weitet-der-konflikt-sich-aus/a-80043488?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-25T11:19:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Attacken auf russische Schiffe reichen inzwischen bis ins Mittelmeer. Kiew setzt Moskau global unter Druck - mit möglichen Folgen für Europa und den Handel auf den Weltmeeren. Wie groß ist die Gefahr einer Eskalation?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/bundestag-orange-day-100.html",
+   "titel": "Bundestag legt Schweigeminute für Opfer von Femiziden ein",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/bundestag-orange-day-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-25T10:55:47.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Dass Bundestagspräsidentin Klöckner und viele andere bei der Generaldebatte Orange als Kleidungsfarbe gewählt hatten, war kein Zufall. Grund ist der Orange Day, an dem an Frauen erinnert wird, die Opfer von Gewalt wurden.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-154.html",
    "titel": "AfD fordert Klage gegen Haushalt - Merz nennt Etat \"vertretbar\"",
    "link": "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-154.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-25T10:15:04.000Z",
+   "zeit": "2026-11-25T10:44:12.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Die Aufstellung des Haushalts habe \"keinen Schönheitspreis verdient“, räumte der Kanzler ein. Doch er sei in der gegenwärtigen Lage vertretbar. Zuvor war er von AfD-Chef Chrupalla scharf kritisiert worden - auch in Sachen Ukraine.",
    "sprache": "de"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/25/world/middleeast/yemen-houthis-war-government-losses.html",
-   "titel": "Losses Mount for Yemeni Government as Houthi Militia Advances",
-   "link": "https://www.nytimes.com/2026/11/25/world/middleeast/yemen-houthis-war-government-losses.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-25T10:04:06.000Z",
-   "kategorie": "konflikte",
+   "id": "https://www.dw.com/de/mit-%C3%A4xten-und-macheten-gewalt-auf-nigerias-wahlkampfb%C3%BChnen/a-80030713",
+   "titel": "Mit Äxten und Macheten: Gewalt auf Nigerias Wahlkampfbühnen",
+   "link": "https://www.dw.com/de/mit-äxten-und-macheten-gewalt-auf-nigerias-wahlkampfbühnen/a-80030713?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-25T10:34:00.000Z",
+   "kategorie": "politik",
    "maerkte": [],
-   "text": "The Iran-backed Houthis in Yemen are on a winning streak, securing strategic territory as they fight Saudi Arabia and its Yemeni allies in an asymmetrical war of attrition.",
-   "sprache": "en"
+   "text": "Während Nigeria den Wahlen im Januar 2027 entgegengeht, wächst die Sorge um die Sicherheit der Wähler. Bei Wahlkampfveranstaltungen kommt es immer häufiger zu Gewalt und Einschüchterung.",
+   "sprache": "de"
   },
   {
    "id": "https://www.nytimes.com/2026/11/25/world/africa/maritius-stray-dogs.html",
@@ -35,6 +90,17 @@
     "eurusd"
    ],
    "text": "Mauritius, a popular tourist destination off southern Africa, has become overrun with strays. With more and more residents chased and attacked, many are fed up.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo",
+   "titel": "Colombian police storm supermarket to free 20 held hostage for 17 hours",
+   "link": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-25T09:56:19.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "One gunman was killed in the operation to free around 20 shoppers and employees after a 17-hour hostage ordeal.",
    "sprache": "en"
   },
   {
@@ -87,6 +153,19 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.bbc.co.uk/news/articles/cq4gn6gj3z37o",
+   "titel": "South Africa's Ramaphosa wins court battle over impeachment threat",
+   "link": "https://www.bbc.co.uk/news/articles/cq4gn6gj3z37o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-25T09:06:02.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "The break-in happened in 2020, when thieves allegedly stole bundles of US dollar bills hidden inside a sofa at the farm.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.spiegel.de/wirtschaft/unternehmen/nvidia-chuck-schumer-sieht-im-fall-jensen-huang-parallele-zum-kalten-krieg-a-dfac792c-c53a-467e-a831-dc90ad777985",
    "titel": "Nvidia: Chuck Schumer sieht im Fall Jensen Huang Parallele zum Kalten Krieg",
    "link": "https://www.spiegel.de/wirtschaft/unternehmen/nvidia-chuck-schumer-sieht-im-fall-jensen-huang-parallele-zum-kalten-krieg-a-dfac792c-c53a-467e-a831-dc90ad777985#ref=rss",
@@ -112,7 +191,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/finanzen/immobilien/immobilien-aroundtown-bekommt-nach-leg-einstieg-neue-fuehrungsspitze/100272387.html",
-   "titel": "Immobilien: Nach LEG-Einstieg: Aroundtown bekommt überraschend eine neue Führungsspitze",
+   "titel": "Immobilien: Nach Einstieg bei LEG: Aroundtown-Chef hört überraschend zum Jahresende auf",
    "link": "https://www.handelsblatt.com/finanzen/immobilien/immobilien-aroundtown-bekommt-nach-leg-einstieg-neue-fuehrungsspitze/100272387.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-25T08:00:12.000Z",
@@ -150,7 +229,7 @@
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/unternehmen/cdu-politiker-yannick-bury-verlangt-ueberpruefung-aller-weiterbildungsangebote-der-arbeitsagentur-a-7caaff16-dd87-4349-b543-746921abb548",
-   "titel": "CDU-Politiker Yannick Bury verlangt Überprüfung aller Weiterbildungsangebote der Arbeitsagentur",
+   "titel": "CDU-Politiker verlangt Überprüfung aller Weiterbildungsangebote der Arbeitsagentur",
    "link": "https://www.spiegel.de/wirtschaft/unternehmen/cdu-politiker-yannick-bury-verlangt-ueberpruefung-aller-weiterbildungsangebote-der-arbeitsagentur-a-7caaff16-dd87-4349-b543-746921abb548#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-11-25T06:39:00.000Z",
@@ -269,6 +348,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The administration has halted military operations while it investigates an operation by Ecuadorean forces that killed an accused gang leader.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o",
+   "titel": "US preparing to unveil plan for new tariffs on global trading partners",
+   "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-25T00:38:01.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
    "sprache": "en"
   },
   {
@@ -488,7 +578,7 @@
   },
   {
    "id": "https://www.nytimes.com/2026/11/24/world/europe/prince-william-kate-home-break-in-anmer-hall-uk.html",
-   "titel": "2 Men Arrested on Suspicion of Breaking Into Prince William and Kate’s Country Home",
+   "titel": "Prince William and Kate’s Country Home Is Broken Into; 2 Men Arrested",
    "link": "https://www.nytimes.com/2026/11/24/world/europe/prince-william-kate-home-break-in-anmer-hall-uk.html",
    "quelle": "NYT World",
    "zeit": "2026-11-24T16:31:07.000Z",
@@ -959,108 +1049,16 @@
    ],
    "text": "Um sich unabhängiger von China zu machen, schließen sich mehrere Unternehmen zusammen, um gemeinsam Rohstoffe zu kaufen. Auch die Bundesregierung soll eine Rolle spielen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/23/world/europe/russia-ukraine-war-deaths.html",
-   "titel": "Over 700,000 Russian Soldiers Have Died in Ukraine, Analysis Indicates",
-   "link": "https://www.nytimes.com/2026/11/23/world/europe/russia-ukraine-war-deaths.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T19:19:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Hacked government data underscores the immense human cost of President Vladimir V. Putin’s war of attrition.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
-   "titel": "Is Mexico Stepping Up in the War on Drugs?",
-   "link": "https://www.nytimes.com/2026/11/22/world/americas/mexico-us-cartel-arrests.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T19:15:23.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "With several powerful drug kingpins recently taken down by Mexican forces, some experts see what may be a new chapter beginning in Mexico.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/huang-nvidia-chef-trump-demokraten-100.html",
-   "titel": "Nvidia setzt Jensen Huang wieder als Chef ein - auf Druck Trumps?",
-   "link": "https://www.tagesschau.de/wirtschaft/huang-nvidia-chef-trump-demokraten-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-23T19:07:24.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Dieser Rücktritt war von kurzer Dauer: Jensen Huang soll zurück an die Spitze des US-Konzerns Nvidia. Präsident Trump rühmt sich damit, Einfluss genommen zu haben. Doch das könnte noch Ärger geben.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/23/world/middleeast/netanyahu-israel-iran.html",
-   "titel": "Netanyahu Wants to Attack Iran. Does That Serve Israel or Him?",
-   "link": "https://www.nytimes.com/2026/11/23/world/middleeast/netanyahu-israel-iran.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T18:54:42.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Israeli prime minister, Benjamin Netanyahu, calls renewing strikes a matter of national security. Military analysts and opposition leaders say he’s prioritizing his own interests.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/russische-angriffe-verursachen-hohe-sch%C3%A4den-dennoch-investieren-deutsche-unternehmen-weiter-in-der-ukraine-und-setzen-auf-den-wiederaufbau/a-80019538",
-   "titel": "Russische Angriffe verursachen hohe Schäden. Dennoch investieren deutsche Unternehmen weiter in der Ukraine und setzen auf den Wiederaufbau",
-   "link": "https://www.dw.com/de/russische-angriffe-verursachen-hohe-schäden-dennoch-investieren-deutsche-unternehmen-weiter-in-der-ukraine-und-setzen-auf-den-wiederaufbau/a-80019538?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-23T18:23:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Schäden in Millionenhöhe, unsichere Energieversorgung und Fachkräftemangel: Deutsche Unternehmen bleiben dennoch in der Ukraine. Sie hoffen auf neue Märkte und langfristige Wachstumschancen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/macron-plant-schuldenbremse-fuer-frankreich-nach-deutschem-vorbild-201708541.html",
-   "titel": "Schuldenkrise: Kann eine Schuldenbremse Frankreich retten?",
-   "link": "https://www.faz.net/aktuell/wirtschaft/macron-plant-schuldenbremse-fuer-frankreich-nach-deutschem-vorbild-201708541.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-23T18:13:41.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "2011 beschloss das Parlament in Paris eine Schuldenbremse, aber es kam nie zur Verfassungsänderung. Jetzt will Macron das Projekt zu Ende führen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-   "titel": "Ukraine Attack Off Coast of Libya Shows Reach of Its Naval Drones",
-   "link": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T18:09:46.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "President Volodymyr Zelensky said that Ukrainian drones had sunk a corvette and hit a dry cargo vessel, in attacks that involved special operations forces.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/23/world/americas/colombia-drone-attack-cucuta.html",
-   "titel": "Drone Attack Hits Colombian City as Unmanned Explosives Transform Conflict",
-   "link": "https://www.nytimes.com/2026/11/23/world/americas/colombia-drone-attack-cucuta.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T18:05:31.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "At least three people were injured. The United Nations has reported a 445 percent increase in drone bombings in the country.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 8,
-  "DW": 9,
+  "tagesschau": 10,
+  "DW": 10,
   "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 4,
-  "Handelsblatt": 4,
-  "BBC World": 9,
-  "NYT World": 20,
+  "FAZ Wirtschaft": 3,
+  "Handelsblatt": 3,
+  "BBC World": 11,
+  "NYT World": 21,
   "EIA Today in Energy": 0
  }
 }
