@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-25T08:24:06.650Z",
+ "lastUpdated": "2026-11-25T09:24:17.278Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Bericht: USA ändert laut Kushner Strategie zu Geschäften mit Russland",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-25T09:07:48.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russischer Angriff stoppt Gasförderung in Region Poltawa +++ Selenskyj weist Lukaschenkos Begleitschutz-Angebot für Moskau-Reise zurück +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/unternehmen/nvidia-chuck-schumer-sieht-im-fall-jensen-huang-parallele-zum-kalten-krieg-a-dfac792c-c53a-467e-a831-dc90ad777985",
+   "titel": "Nvidia: Chuck Schumer sieht im Fall Jensen Huang Parallele zum Kalten Krieg",
+   "link": "https://www.spiegel.de/wirtschaft/unternehmen/nvidia-chuck-schumer-sieht-im-fall-jensen-huang-parallele-zum-kalten-krieg-a-dfac792c-c53a-467e-a831-dc90ad777985#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-25T08:59:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "»Vergleichbar mit dem Verkauf von Raketentriebwerken an die Sowjets«: Mit Chuck Schumer greift ein führender Politiker der US-Demokraten den zurückgekehrten Nvidia-Chef an. Dieser habe gegen Exportkontrollrecht verstoßen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/25/world/americas/colombia-blackout-terrorist-attack.html",
    "titel": "Colombia’s Leader Blames ‘Terrorist Attack’ for Power Outages",
@@ -41,22 +65,11 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Bericht: USA ändert laut Kushner Strategie zu Geschäften mit Russland",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T07:41:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Selenskyj weist Lukaschenkos Begleitschutz-Angebot für Moskau-Reise zurück +++ Lukaschenko: Selenskyj und ich könnten zu Gesprächen nach Moskau fliegen +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.nytimes.com/2026/11/25/world/asia/north-korea-switzerland-diplomats.html",
    "titel": "North Korea Kicks Out Swiss Diplomats in Spat Linked to Ukraine War",
    "link": "https://www.nytimes.com/2026/11/25/world/asia/north-korea-switzerland-diplomats.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-25T07:29:43.000Z",
+   "zeit": "2026-11-25T07:29:44.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The move followed Switzerland’s decision to impose sanctions on an international youth camp in North Korea, which is accused of hosting Ukrainian children for indoctrination.",
@@ -115,7 +128,7 @@
    "titel": "Solomon Islands Enters Security Treaty With Australia, in a Blow to China",
    "link": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-25T05:24:35.000Z",
+   "zeit": "2026-11-25T05:24:36.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "A 2022 Solomon Islands agreement with China had raised concerns it would enable Beijing to establish a military presence on the Pacific island. The new accord precludes such bases.",
@@ -167,7 +180,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo",
-   "titel": "Russia's own figures show almost 500,000 deaths in war in Ukraine",
+   "titel": "Russia's own figures show it has lost almost 500,000 people in Ukraine war",
    "link": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-25T00:56:51.000Z",
@@ -1033,25 +1046,14 @@
    "maerkte": [],
    "text": "Russische Sportlerinnen und Sportler sollen bei europäischen Wettkämpfen nicht mehr für ihr Land antreten dürfen - das hat die EU-Kommission vorgeschlagen. Weitere Sanktionen soll es in der Wirtschaft und im Energiesektor geben.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/22/world/middleeast/israeli-political-leaders-decry-jewish-terrorism-after-west-bank-attacks.html",
-   "titel": "Israeli Political Leaders Denounce ‘Jewish Terrorism’ After West Bank Attacks",
-   "link": "https://www.nytimes.com/2026/11/22/world/middleeast/israeli-political-leaders-decry-jewish-terrorism-after-west-bank-attacks.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-23T17:15:17.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Extremist settlers carried out a spate of violent raids in Palestinian villages over the weekend, spurring opponents of the Netanyahu government to demand a forceful response.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 8,
   "DW": 8,
-  "Spiegel Wirtschaft": 2,
+  "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 7,
+  "Handelsblatt": 6,
   "BBC World": 9,
   "NYT World": 18,
   "EIA Today in Energy": 0
