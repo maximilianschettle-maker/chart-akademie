@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-24T23:24:11.398Z",
+ "lastUpdated": "2026-11-25T00:24:12.849Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/kuba-lebenserwartungen-who-100.html",
+   "titel": "WHO: Lebenserwartung in Kuba erstmals seit Beginn der Aufzeichnungen gesunken",
+   "link": "https://www.tagesschau.de/ausland/amerika/kuba-lebenserwartungen-who-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-25T00:06:58.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Die Lebenserwartung in Kuba ist laut der WHO erstmals in der Geschichte gesunken, die Säuglingssterblichkeit hat sich mehr als verdoppelt. WHO-Chef Tedros macht dafür auch US-Sanktionen verantwortlich - und fordert deren sofortiges Ende.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/kleinlaut-und-kaempferisch-nvidia-chef-jensen-huang-entschuldigt-sich-bei-mitarbeitern-201714458.html",
    "titel": "Jensen Huang: „Ich mache täglich eineinhalb Stunden Therapie“",
@@ -1028,21 +1039,10 @@
    "maerkte": [],
    "text": "Eine neue Studie liefert Belege für die klare Mitverantwortung für Zwangsarbeit und Kriegswirtschaft des Industriellen Alfried Krupp. Warum die gleichnamige Stiftung dennoch ihren Namen behält.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/ukraine-best%C3%A4tigt-angriffe-auf-russische-schiffe-vor-libyen/a-80018005",
-   "titel": "Ukraine bestätigt Angriffe auf russische Schiffe vor Libyen",
-   "link": "https://www.dw.com/de/ukraine-bestätigt-angriffe-auf-russische-schiffe-vor-libyen/a-80018005?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-23T10:42:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die ukrainischen Streitkräfte hätten \"Seedrohnen\" eingesetzt, erklärte Präsident Selenskyj. \"Trotz aller Bemühungen des Feindes, den Angriff abzuwehren\", sei die russische Korvette 'Merkury' versenkt worden.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 8,
+  "tagesschau": 9,
   "DW": 10,
   "Spiegel Wirtschaft": 1,
   "FAZ Wirtschaft": 5,
