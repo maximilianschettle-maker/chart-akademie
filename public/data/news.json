@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T19:07:44.369Z",
+ "lastUpdated": "2026-11-26T19:24:14.342Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/abschlagsfreie-rente-100.html",
+   "titel": "FAQ zur \"Rente mit 63\": Was wird gerade diskutiert?",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/abschlagsfreie-rente-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-26T19:16:09.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Debatte über die \"Rente mit 63\" wird zunehmend unübersichtlich: Welche Vorschläge werden aktuell diskutiert? Was deutet auf Bewegung innerhalb der Koalition hin? Und warum ist das Thema so umstritten? Ein Überblick.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
    "titel": "Two Italians Killed in Iranian Drone Attack on Kuwait, Officials Say",
@@ -1056,21 +1067,10 @@
    "maerkte": [],
    "text": "Union und SPD blockieren sich. Die Erhöhung der Reichensteuer und geplante Entlastungen könnten erst 2027 beschlossen werden. Für die Steuerzahler sind das keine guten Nachrichten.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/video/world/middleeast/100000011300541/defending-aden-yemens-holdout-against-the-houthis.html",
-   "titel": "Defending Aden, Yemen’s Holdout Against the Houthis",
-   "link": "https://www.nytimes.com/video/world/middleeast/100000011300541/defending-aden-yemens-holdout-against-the-houthis.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-25T13:39:46.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The war in Iran has reignited Yemen’s decade-old civil war. Saudi-backed troops are scrambling to defend against advancing Houthi fighters as the wounded are taken to the port city of Aden, the government’s provisional capital.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 8,
+  "tagesschau": 9,
   "DW": 12,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 3,
