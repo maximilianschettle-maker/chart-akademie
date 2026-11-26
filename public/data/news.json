@@ -1,7 +1,44 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T17:24:09.577Z",
+ "lastUpdated": "2026-11-26T18:24:11.330Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
+   "titel": "Two Italians Killed in Iranian Drone Attack on Kuwait, Officials Say",
+   "link": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-26T18:18:21.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The deaths follow a series of strikes on Gulf Arab states that host U.S. military facilities in recent weeks as talks to end the war continue to stall.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/kuwait-tote-angriff-kuwait-100.html",
+   "titel": "Rheinmetall-Arbeiter bei Angriff in Kuwait getötet",
+   "link": "https://www.tagesschau.de/ausland/asien/kuwait-tote-angriff-kuwait-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-26T18:08:12.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "In Kuwait sind bei einem Drohnenangriff zwei Italiener getötet worden, die bei dem deutschen Rüstungskonzern Rheinmetall beschäftigt waren. Italien weist Iran die Verantwortung zu, doch Teheran dementiert den Angriff.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/krieg-inflation-migration-warum-dauerkrisen-den-ruf-nach-starken-f%C3%BChrern-f%C3%B6rdern-und-was-dagegen-hilft/a-80063863",
+   "titel": "Krieg, Inflation, Migration: Warum Dauerkrisen den Ruf nach starken Führern fördern – und was dagegen hilft",
+   "link": "https://www.dw.com/de/krieg-inflation-migration-warum-dauerkrisen-den-ruf-nach-starken-führern-fördern-und-was-dagegen-hilft/a-80063863?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-26T17:56:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Nicht die Krisen selbst gefährden die Demokratie, sondern die Gefühle von Ohnmacht und Verlust sowie die Sehnsucht nach einfachen Lösungen. Die Forschung kennt aber auch Wege aus dem destruktiven Krisenmodus.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.spiegel.de/wirtschaft/eu-gipfel-agrarsubventionen-treiben-merz-macron-und-meloni-auseinander-a-ceae53ab-e73d-40f0-8b3e-f93864547653",
    "titel": "EU-Gipfel: Agrarsubventionen treiben Merz, Macron und Meloni auseinander",
@@ -25,6 +62,19 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-deutlich-im-plus-tech-aktien-erholen-sich/100272884.html",
+   "titel": "Dax aktuell: Dax schließt im Plus – Tech-Aktien erholen sich",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-deutlich-im-plus-tech-aktien-erholen-sich/100272884.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-26T16:49:15.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "aktien"
+   ],
+   "text": "Nachlassende Zollsorgen bescheren dem deutschen Leitindex Gewinne. Der Dax schafft es wieder über die 25.000‑Punkte-Marke. Anleger haben bei zuletzt stark fallenden Aktien zugegriffen.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-plus-tech-aktien-erholen-sich/100272884.html",
    "titel": "Dax aktuell: Dax schließt im Plus – Tech-Aktien erholen sich",
    "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-schliesst-im-plus-tech-aktien-erholen-sich/100272884.html",
@@ -38,19 +88,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.tagesschau.de/ausland/asien/kuwait-tote-angriff-kuwait-100.html",
-   "titel": "Rheinmetall-Arbeiter bei Angriff in Kuwait getötet",
-   "link": "https://www.tagesschau.de/ausland/asien/kuwait-tote-angriff-kuwait-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-26T16:42:32.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "In Kuwait sind bei einem iranischen Drohnenangriff zwei Italiener getötet worden, die bei dem deutschen Rüstungskonzern Rheinmetall beschäftigt waren. EU-Kommissionspräsidentin von der Leyen will den Druck auf Iran erhöhen, die Angriffe zu ",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.tagesschau.de/kommentar/respekt-rente-kommentar-schwarte-100.html",
    "titel": "Rentenreform: Vom Gesamtkunstwerk zum Trümmerhaufen",
    "link": "https://www.tagesschau.de/kommentar/respekt-rente-kommentar-schwarte-100.html",
@@ -58,7 +95,7 @@
    "zeit": "2026-11-26T16:29:47.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "Die \"Respekt-Rente\" ist der nächste Versuch der Regierung, die Rente zu reformieren. Auch sie wird wohl zerredet, weil die Koalitionäre lieber übereinander, statt miteinander reden. Das macht auf Dauer ziemlich schlechte Laune, meint Georg ",
+   "text": "Die \"Respekt-Rente\" ist der nächste Versuch der Regierung, die Rente zu reformieren. Auch sie wird wohl zerredet, weil die Koalitionäre lieber übereinander statt miteinander sprechen. Das macht auf Dauer ziemlich schlechte Laune, meint Geor",
    "sprache": "de"
   },
   {
@@ -597,6 +634,19 @@
    "sprache": "en"
   },
   {
+   "id": "https://www.nytimes.com/2026/11/25/world/africa/mauritius-stray-dogs.html",
+   "titel": "Island Paradise of Mauritius Has Sun, Beaches and Too Many Dogs",
+   "link": "https://www.nytimes.com/2026/11/25/world/africa/mauritius-stray-dogs.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-25T20:40:27.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Mauritius, a popular tourist destination off southern Africa, has become overrun with strays. With more and more residents chased and attacked, many are fed up.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.nytimes.com/2026/11/25/world/africa/maritius-stray-dogs.html",
    "titel": "Island Paradise of Mauritius Has Sun, Beaches and Too Many Dogs",
    "link": "https://www.nytimes.com/2026/11/25/world/africa/maritius-stray-dogs.html",
@@ -1017,62 +1067,16 @@
    "maerkte": [],
    "text": "The war in Iran has reignited Yemen’s decade-old civil war. Saudi-backed troops are scrambling to defend against advancing Houthi fighters as the wounded are taken to the port city of Aden, the government’s provisional capital.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/usa-planen-neue-zoelle-gegen-eu-china-und-13-weitere-handelspartner-a-7ef83cdc-c400-43be-afd1-e5ab1a246e7d",
-   "titel": "USA planen neue Zölle gegen EU, China und 13 weitere Handelspartner",
-   "link": "https://www.spiegel.de/wirtschaft/usa-planen-neue-zoelle-gegen-eu-china-und-13-weitere-handelspartner-a-7ef83cdc-c400-43be-afd1-e5ab1a246e7d#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-25T13:35:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Die USA haben neue Sonderzölle gegen die Europäische Union, China und weitere Handelspartner angekündigt. Die Sätze reichen bis zu 20 Prozent. Die EU-Kommission weist die Begründung für die neuen Zölle scharf zurück.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/usa-planen-neue-zoelle-gegen-eu-und-13-weitere-handelspartner-201716698.html",
-   "titel": "Handelsstreit: USA planen neue Zölle gegen EU und 13 weitere Handelspartner",
-   "link": "https://www.faz.net/aktuell/wirtschaft/usa-planen-neue-zoelle-gegen-eu-und-13-weitere-handelspartner-201716698.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-25T13:21:31.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Die Vereinigten Staaten haben eine neue Begründung für neue Zölle gefunden. Den höchsten Aufschlag soll ⁠China erhalten – wegen Überkapazitäten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/immobilien/immobilien-aroundtown-bekommt-nach-leg-einstieg-neue-fuehrungsspitze/100272387.html",
-   "titel": "Immobilien: Nach Einstieg bei LEG: Aroundtown-Chef hört überraschend zum Jahresende auf",
-   "link": "https://www.handelsblatt.com/finanzen/immobilien/immobilien-aroundtown-bekommt-nach-leg-einstieg-neue-fuehrungsspitze/100272387.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T12:38:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Ende Oktober war der Gewerbeimmobilien-Spezialist unerwartet beim zweitgrößten börsennotierten Vermieter eingestiegen. Bei der Vorlage der Quartalszahlen folgt die nächste Überraschung.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/unternehmen/bmw-gesamtbetriebsratschef-martin-kimmich-attackiert-konzernchefs-in-tarifkonflikt-a-2241c461-f01e-4162-b33c-1dd68cb2544f",
-   "titel": "BMW: Gesamtbetriebsratschef Martin Kimmich attackiert Konzernchefs in Tarifkonflikt",
-   "link": "https://www.spiegel.de/wirtschaft/unternehmen/bmw-gesamtbetriebsratschef-martin-kimmich-attackiert-konzernchefs-in-tarifkonflikt-a-2241c461-f01e-4162-b33c-1dd68cb2544f#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-25T12:29:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Arbeitgeber und IG Metall ringen um Jobs, Gehälter und Arbeitszeiten. BMW-Gesamtbetriebsratschef Martin Kimmich greift die Autokonzernchefs hart an.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 8,
-  "DW": 13,
+  "DW": 12,
   "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 5,
+  "Handelsblatt": 4,
   "BBC World": 6,
-  "NYT World": 19,
+  "NYT World": 20,
   "EIA Today in Energy": 0
  }
 }
