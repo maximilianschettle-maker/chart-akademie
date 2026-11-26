@@ -1,7 +1,43 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T04:24:09.532Z",
+ "lastUpdated": "2026-11-26T05:24:09.012Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sieben-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html",
+   "titel": "Börse am 26. November: Sieben Punkte, die für Anleger heute wichtig sind",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sieben-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-26T05:18:41.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "ruestung",
+    "aktien"
+   ],
+   "text": "Der Dax fällt auf den tiefsten Stand seit Juli. Sorgen um KI-Aktien und neue US-Zölle belasten den deutschen Leitindex. Am Donnerstag stehen Konjunkturdaten und Rheinmetall im Fokus.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/26/world/europe/pasolini-house-eviction-court.html",
+   "titel": "They Bought Their Dream Home. Their Neighbors Want to Evict Them.",
+   "link": "https://www.nytimes.com/2026/11/26/world/europe/pasolini-house-eviction-court.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-26T05:01:11.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "After an Italian couple bought a house built by Pier Paolo Pasolini, one of the country’s greatest film directors, local villagers claimed the property.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/26/world/asia/japan-china-takaichi-snubbed.html",
+   "titel": "Was Japan Prime Minister Takaichi Snubbed at China’s Big Summit?",
+   "link": "https://www.nytimes.com/2026/11/26/world/asia/japan-china-takaichi-snubbed.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-26T05:01:04.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Images show the differences between the welcomes afforded to Sanae Takaichi and other world leaders in Shenzhen, as some officials in Japan cry foul.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o",
    "titel": "US announces new tariffs on host of countries including China",
@@ -120,6 +156,19 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Trump und Nato-Chef mahnen Russland zur Zurückhaltung im Ukraine-Krieg",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-25T19:20:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Russland wehrt Drohnenangriff auf Industriegebiet ab +++ Kushner: Putin versichert, keine Atomwaffen einzusetzen +++ Libyen meldet Tote nach ukrainischen Angriffen +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.tagesschau.de/inland/innenpolitik/neue-regeln-fuer-prostituition-empfehlungen-100.html",
    "titel": "Expertenkommission fordert schärfere Regeln für Prostitution",
    "link": "https://www.tagesschau.de/inland/innenpolitik/neue-regeln-fuer-prostituition-empfehlungen-100.html",
@@ -178,17 +227,6 @@
     "aktien"
    ],
    "text": "Am Mittwoch sind die US-Märkte erneut mit hohen Kursverlusten gestartet. Nicht nur Sorgen vor steigenden Zinsen und neue Zölle machen Anleger nervös.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Ukraine: Drei russische Kampfjets und zwei Bomber beschädigt",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T18:52:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russland rechnet mit Rückgang der Getreideexporte +++ Libyen meldete Tote nach ukrainischen Angriffen +++ Neun weitere ukrainische Kinder zurück bei Familien +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -1004,49 +1042,16 @@
    "maerkte": [],
    "text": "Chen Jining ist das vierte Politbüro-Mitglied, das in Ungnade fällt. Die Säuberungen unter Xi Jinping erreichen ein Ausmaß, wie es seit der Kulturrevolution nicht mehr zu beobachten war.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/vanessa-emde-berliner-linken-fraktion-schliesst-umstrittene-abgeordnete-aus/100271178.html",
-   "titel": "Abgeordnetenhaus: „Wir vertrauen ihr nicht mehr“: Berliner Linke schließt umstrittene Abgeordnete Emde aus Fraktion aus",
-   "link": "https://www.handelsblatt.com/politik/deutschland/vanessa-emde-berliner-linken-fraktion-schliesst-umstrittene-abgeordnete-aus/100271178.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T16:43:17.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Fraktion der Linken in Berlin hat nach langen Debatten für einen Ausschluss der Neuköllner Abgeordneten gestimmt. Das hat auch Auswirkungen auf die laufenden Koalitionsverhandlungen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/vanessa-emde-berliner-linke-fraktion-schliesst-umstrittene-abgeordnete-aus/100271178.html",
-   "titel": "Abgeordnetenhaus: Berliner Linke schließt umstrittene Abgeordnete Emde aus Fraktion aus",
-   "link": "https://www.handelsblatt.com/politik/deutschland/vanessa-emde-berliner-linke-fraktion-schliesst-umstrittene-abgeordnete-aus/100271178.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T16:43:17.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Vanessa Emde steht wegen umstrittener Äußerungen in der Kritik. Nach wochenlangen Debatten, die auch die Regierungsbildung in Berlin belasteten, haben die Abgeordneten eine Wahl getroffen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/stromsteuer-spd-haushaltssprecher-rudolph-wirft-koalition-missachtung-des-parlaments-vor-201712522.html",
-   "titel": "Etat 2027 im Bundestag: SPD-Haushaltssprecher wirft Koalition „Missachtung des Parlaments“ vor",
-   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/stromsteuer-spd-haushaltssprecher-rudolph-wirft-koalition-missachtung-des-parlaments-vor-201712522.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-24T16:43:05.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Dass die Opposition die Arbeit der Regierung kritisiert, ist normal. Wenn aber der haushaltspolitische Sprecher der SPD die Regierung kritisiert, lässt das aufhorchen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 8,
-  "DW": 13,
+  "tagesschau": 7,
+  "DW": 12,
   "Spiegel Wirtschaft": 8,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 7,
+  "Handelsblatt": 8,
   "BBC World": 13,
-  "NYT World": 22,
+  "NYT World": 20,
   "EIA Today in Energy": 0
  }
 }
