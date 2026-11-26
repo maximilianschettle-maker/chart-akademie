@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T00:24:11.666Z",
+ "lastUpdated": "2026-11-26T01:24:11.786Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o",
+   "titel": "US announces new tariffs on host of countries including China",
+   "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-26T01:20:14.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6wy4ejnyvdyo",
+   "titel": "Spanish elections: What you need to know and what's at stake",
+   "link": "https://www.bbc.co.uk/news/articles/c6wy4ejnyvdyo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-26T00:23:49.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "After eight years of Socialist-led rule, snap elections are taking place on Sunday with conservative Alberto Núñez Feijóo vying to win office.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq772vedgepro",
+   "titel": "France's political mainstream risks presidential vote debacle with no clear candidate",
+   "link": "https://www.bbc.co.uk/news/articles/cq772vedgepro?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-26T00:23:27.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Hard-right and hard-left candidates dominate the polls ahead of next year's presidential election.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqy7rn30v314o",
    "titel": "Thirty-one killed in massive fire as fuel tanker crashes on Cairo highway",
@@ -52,6 +85,17 @@
    ],
    "text": "Der Bundeshaushalt erreicht neue Höchststände, während Rentenkassen, Verteidigung und schwache Konjunktur den Druck erhöhen. Zugleich wachsen die Spannungen zwischen Union und SPD über den künftigen Kurs.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/c3x29v11ed1xo",
+   "titel": "What we know about Trump's Thanksgiving tariffs",
+   "link": "https://www.bbc.co.uk/news/videos/c3x29v11ed1xo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-25T19:38:05.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "Donald Trump is targeting China, the European Union and 12 other jurisdictions in a new round of tariffs.",
+   "sprache": "en"
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/us-zoelle-welche-folgen-donald-trumps-neue-strafmassnahmen-fuer-die-eu-haben-a-e8098dd8-1e2e-4161-bd76-0310a466a835",
@@ -252,17 +296,6 @@
     "eurusd"
    ],
    "text": "A court threw out a report suggesting that Cyril Ramaphosa may have tried to conceal the theft of more than half a million dollars of U.S. currency.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o",
-   "titel": "US announces new tariffs on host of countries including China",
-   "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-25T16:21:34.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
    "sprache": "en"
   },
   {
@@ -1004,39 +1037,6 @@
    "maerkte": [],
    "text": "The men were arrested near Anmer Hall, the couple’s country retreat in Norfolk, on Monday night.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/24/world/europe/ukraine-russia-psyops-radio-izium.html",
-   "titel": "Radio Offers Russian Troops Classic Rock, Nostalgia — and Pleas to Surrender",
-   "link": "https://www.nytimes.com/2026/11/24/world/europe/ukraine-russia-psyops-radio-izium.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-24T16:27:04.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "What seem like frontline Russian radio stations are actually a Ukrainian psychological operation, hoping to sow despair among the Kremlin’s soldiers.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-raus-aus-china-endlich-hat-es-die-wirtschaft-verstanden/100272305.html",
-   "titel": "Kommentar: Raus aus China – endlich hat es die Wirtschaft verstanden",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-raus-aus-china-endlich-hat-es-die-wirtschaft-verstanden/100272305.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T16:01:16.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Lange Zeit haben die deutschen Unternehmen so getan, als wäre ihre Rohstoffversorgung kein Problem. Jetzt leiten sie den Kurswechsel ein. Und auch die Bundesregierung steuert um.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/koalition-union-droht-spd-mit-blockade-der-reichensteuer/100272431.html",
-   "titel": "Koalition: Streit um Reform – Union droht SPD mit Blockade der Reichensteuer",
-   "link": "https://www.handelsblatt.com/politik/deutschland/koalition-union-droht-spd-mit-blockade-der-reichensteuer/100272431.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T15:48:54.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In der Koalition bahnt sich ein neuer Konflikt an. Die Union will der Einkommensteuerreform nicht zustimmen, solange das Paket zum Arbeitsmarkt nicht beschlossen ist.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1045,7 +1045,7 @@
   "Spiegel Wirtschaft": 8,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 7,
-  "BBC World": 13,
+  "BBC World": 12,
   "NYT World": 22,
   "EIA Today in Energy": 0
  }
