@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T19:24:14.342Z",
+ "lastUpdated": "2026-11-26T20:24:11.070Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
+   "titel": "Two Italians Killed in Iranian Drone Attack on Kuwait, Officials Say",
+   "link": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-26T19:33:06.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The deaths follow a series of strikes on Gulf Arab states that host U.S. military facilities in recent weeks as talks to end the war continue to stall.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/inland/innenpolitik/abschlagsfreie-rente-100.html",
    "titel": "FAQ zur \"Rente mit 63\": Was wird gerade diskutiert?",
@@ -12,17 +23,6 @@
    "maerkte": [],
    "text": "Die Debatte über die \"Rente mit 63\" wird zunehmend unübersichtlich: Welche Vorschläge werden aktuell diskutiert? Was deutet auf Bewegung innerhalb der Koalition hin? Und warum ist das Thema so umstritten? Ein Überblick.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
-   "titel": "Two Italians Killed in Iranian Drone Attack on Kuwait, Officials Say",
-   "link": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-26T19:06:39.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The deaths follow a series of strikes on Gulf Arab states that host U.S. military facilities in recent weeks as talks to end the war continue to stall.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/asien/kuwait-tote-angriff-kuwait-100.html",
@@ -253,7 +253,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/russland-vier-szenarien-fuer-putins-schattenkrieg-bis-2029/100272728.html",
-   "titel": "Russland: Sabotage, Spionage, Attentate, Ablenkung: Vier Szenarien für Putins Schattenkrieg bis 2029",
+   "titel": "Russland: Wie Putins Schattenkrieg weitergehen könnte – vier Szenarien",
    "link": "https://www.handelsblatt.com/politik/international/russland-vier-szenarien-fuer-putins-schattenkrieg-bis-2029/100272728.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-26T14:00:00.000Z",
@@ -1072,7 +1072,7 @@
  "quellen": {
   "tagesschau": 9,
   "DW": 12,
-  "Spiegel Wirtschaft": 6,
+  "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 4,
   "BBC World": 6,
