@@ -1,7 +1,56 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T09:24:09.410Z",
+ "lastUpdated": "2026-11-26T10:24:13.435Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-folgt-erholung-an-der-wall-street-und-oeffnet-im-plus/100272884.html",
+   "titel": "Dax aktuell: Dax folgt Erholung an der Wall Street und öffnet im Plus",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-folgt-erholung-an-der-wall-street-und-oeffnet-im-plus/100272884.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-26T10:07:07.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Anleger greifen bei zuletzt stark gefallenen Aktien zu. Im Tagesverlauf richten sich die Blicke auf das EZB-Protokoll und den EU-Gipfel.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/26/world/americas/brazil-recruiting-russia-army.html",
+   "titel": "Lured by High Salaries, Some Brazilians Were Duped Into Fighting for Russia",
+   "link": "https://www.nytimes.com/2026/11/26/world/americas/brazil-recruiting-russia-army.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-26T10:00:12.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Dozens of Brazilians were sent to the front lines with little training, and the high salaries they were promised, they say, turned out to be illusory.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/26/world/americas/brazil-soldier-ukraine-war.html",
+   "titel": "Brazilian Duped Into Fighting for Russia: ‘War Is Hell’",
+   "link": "https://www.nytimes.com/2026/11/26/world/americas/brazil-soldier-ukraine-war.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-26T10:00:09.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Dozens of Brazilians have joined the Russian army, some say lured by a pair of recruiters promising money and adventure. Here is one soldier’s story.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/tote-nach-russischen-angriffen-ukraine-100.html",
+   "titel": "Krieg gegen die Ukraine: Angriffe auf Kiew - Tote in Saporischschja",
+   "link": "https://www.tagesschau.de/ausland/europa/tote-nach-russischen-angriffen-ukraine-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-26T09:54:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Russland hat die Ukraine nach eigenen Angaben wieder massiv angegriffen. Auch bei einem ukrainischen Drohnenangriff im russisch besetzten Teil von Saporischschja gab es Tote. Die NATO und US-Präsident Trump warnen vor einer weiteren Eskalat",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/26/world/asia/japan-china-takaichi-snubbed.html",
    "titel": "Was Japan Prime Minister Takaichi Snubbed at China’s Big Summit?",
@@ -22,20 +71,6 @@
    "kategorie": "energie",
    "maerkte": [],
    "text": "Die Bundesregierung hilft der Industrie, doch die Effekte sind begrenzt. Grundlegende Verbesserungen sind nicht in Sicht.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-folgt-erholung-an-der-wall-street-und-oeffnet-im-plus/100272884.html",
-   "titel": "Dax aktuell: Dax folgt Erholung an der Wall Street und öffnet im Plus",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-folgt-erholung-an-der-wall-street-und-oeffnet-im-plus/100272884.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-26T08:47:09.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd",
-    "aktien"
-   ],
-   "text": "Anleger greifen bei zuletzt stark gefallenen Aktien zu. Im Tagesverlauf richten sich die Blicke auf das EZB-Protokoll und den EU-Gipfel.",
    "sprache": "de"
   },
   {
@@ -73,7 +108,7 @@
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/eu-gipfel-merz-pocht-auf-einsparungen-aber-an-die-landwirte-traut-sich-niemand-ran-a-b27412c3-5ed6-4552-b25b-378180c243a9",
-   "titel": "EU-Gipfel: Merz pocht auf Einsparungen – aber an die Landwirte traut sich niemand ran",
+   "titel": "EU-Gipfel: Friedrich Merz pocht auf Einsparungen – an die Landwirte traut sich niemand ran",
    "link": "https://www.spiegel.de/wirtschaft/eu-gipfel-merz-pocht-auf-einsparungen-aber-an-die-landwirte-traut-sich-niemand-ran-a-b27412c3-5ed6-4552-b25b-378180c243a9#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-11-26T07:29:00.000Z",
@@ -1012,51 +1047,16 @@
    "maerkte": [],
    "text": "Das chinesische Unternehmen wurde unter anderem wegen Bankbetrugs, Verstößen gegen Sanktionen und Diebstahl von Geschäftsgeheimnissen schuldig gesprochen. Huawei weist die Vorwürfe zurück.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/russisches-starlink-wie-kann-rasswet-den-ukraine-krieg-ver%C3%A4ndern/a-80033063",
-   "titel": "\"Russisches Starlink\" - Wie kann Rasswet den Ukraine-Krieg verändern?",
-   "link": "https://www.dw.com/de/russisches-starlink-wie-kann-rasswet-den-ukraine-krieg-verändern/a-80033063?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-24T20:59:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Das US-Starlink-System von SpaceX spielt in der Ukraine eine wichtige Rolle bei der Abwehr der militärischen Aggression Russlands. Der Kreml hat nun beschlossen, ein Pendant dazu aufzubauen. Welche Gefahr birgt das?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
-   "titel": "Trump’s Nvidia Push Shows Companies’ Importance in Global Economic War",
-   "link": "https://www.nytimes.com/2026/11/24/business/economy/trump-nvidia-national-security-us-economics.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-24T19:54:59.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Presidents before him have bailed out companies in times of national crisis. Mr. Trump went further: He staked the fortunes of the United States on those of a favored chief executive.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/technik/it-internet/cyberattacken-was-ein-hackerangriff-aufs-handelsblatt-ueber-it-sicherheit-lehrt/100269783.html",
-   "titel": "Deep Read: „KI hackt besser als ich“: Was eine Cyberattacke aufs Handelsblatt über IT-Sicherheit lehrt",
-   "link": "https://www.handelsblatt.com/technik/it-internet/cyberattacken-was-ein-hackerangriff-aufs-handelsblatt-ueber-it-sicherheit-lehrt/100269783.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T19:51:30.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Angriff auf die Redaktion läuft über Nacht ohne menschliche Hilfe: Eine Plattform sucht mit KI nach Sicherheitslücken und wird fündig. Ein Szenario, das jedes Unternehmen treffen kann.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 6,
-  "DW": 12,
-  "Spiegel Wirtschaft": 8,
+  "DW": 11,
+  "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 2,
   "Handelsblatt": 7,
-  "BBC World": 6,
-  "NYT World": 19,
+  "BBC World": 7,
+  "NYT World": 21,
   "EIA Today in Energy": 0
  }
 }
