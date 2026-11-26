@@ -1,7 +1,60 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T11:24:11.231Z",
+ "lastUpdated": "2026-11-26T12:24:12.556Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-folgt-erholung-an-der-wall-street-und-notiert-im-plus/100272884.html",
+   "titel": "Dax aktuell: Dax folgt Erholung an der Wall Street und notiert im Plus",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-folgt-erholung-an-der-wall-street-und-notiert-im-plus/100272884.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-26T12:06:52.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "eurusd",
+    "aktien"
+   ],
+   "text": "Anleger greifen bei zuletzt stark gefallenen Aktien zu. Im Tagesverlauf richten sich die Blicke auf das EZB-Protokoll und den EU-Gipfel.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c9gklryvj24do",
+   "titel": "Diesel tanker carrying up to 7,000 tonnes sinks near Ibiza, killing one",
+   "link": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-26T11:27:42.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "The possible environmental damage is still being assessed by Spain's sea rescue service.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.spiegel.de/wirtschaft/unternehmen/lululemon-chip-wilson-kritisiert-kanadas-frauen-fuer-niedrige-geburtenrate-a-7c6a208b-8462-43df-afb8-c82338e36a3b",
+   "titel": "Lululemon: Chip Wilson kritisiert Kanadas Frauen für niedrige Geburtenrate",
+   "link": "https://www.spiegel.de/wirtschaft/unternehmen/lululemon-chip-wilson-kritisiert-kanadas-frauen-fuer-niedrige-geburtenrate-a-7c6a208b-8462-43df-afb8-c82338e36a3b#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-26T11:26:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Angekündigt war ein »intimes Kamingespräch«, heraus kam offenbar eine Schuldzuweisung an kanadische Frauen. Chip Wilson, Chef der Yoga-Firma Lululemon, hat auf einer Konferenz für Aufsehen gesorgt. Es war nicht das erste Mal.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/crx209kwk4kzo",
+   "titel": "Seven injured, four critically, after Bangkok oil refinery explosion",
+   "link": "https://www.bbc.co.uk/news/articles/crx209kwk4kzo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-26T11:21:50.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Black smoke could be seen across Bangkok's skyline after the blast, while officials urged residents to leave the area.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/26/world/middleeast/isis-attack-syria.html",
    "titel": "Attack Blamed on ISIS Kills 2 Syrian Security Force Members",
@@ -78,6 +131,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.bbc.co.uk/news/articles/cqvg2n4mzl1jo",
+   "titel": "Hamas political official and wife among eight Palestinians killed in Israeli strikes on Gaza",
+   "link": "https://www.bbc.co.uk/news/articles/cqvg2n4mzl1jo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-26T10:14:08.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The killings are the latest from a series of near daily attacks by Israel against what it says are Hamas targets.",
+   "sprache": "en"
+  },
+  {
    "id": "https://www.nytimes.com/2026/11/26/world/americas/brazil-recruiting-russia-army.html",
    "titel": "Lured by High Salaries, Some Brazilians Were Duped Into Fighting for Russia",
    "link": "https://www.nytimes.com/2026/11/26/world/americas/brazil-recruiting-russia-army.html",
@@ -121,6 +185,19 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Images show the differences between the welcomes afforded to Sanae Takaichi and other world leaders in Shenzhen, as some officials in Japan cry foul.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/videos/c52e8ndplvemo",
+   "titel": "Deadly fire erupts near Cairo killing dozens of people",
+   "link": "https://www.bbc.co.uk/news/videos/c52e8ndplvemo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-26T09:09:49.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "At least 31 people have died in a large fire on a busy highway in Cairo, after a fuel tanker overturned, says Egypt's health ministry.",
    "sprache": "en"
   },
   {
@@ -520,7 +597,7 @@
    "maerkte": [
     "eurusd"
    ],
-   "text": "Der erste Anlauf war gescheitert. Nun will Jagdfeld das Berliner Hotel Adlon wieder ins Schaufenster stellen. Was ist nun anders?",
+   "text": "Der erste Anlauf war gescheitert. Nun will Jagdfeld das Berliner Hotel Adlon wieder ins Schaufenster stellen. Was ist anders?",
    "sprache": "de"
   },
   {
@@ -983,81 +1060,15 @@
    "maerkte": [],
    "text": "A 2022 Solomon Islands agreement with China had raised concerns it would enable Beijing to establish a military presence on the Pacific island. The new accord precludes such bases.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/israel-eisenkot-netanjahu-100.html",
-   "titel": "Israel nach der Wahl: Schwierige Sondierungen zwischen Rivalen",
-   "link": "https://www.tagesschau.de/ausland/asien/israel-eisenkot-netanjahu-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-25T05:18:30.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "In Israel bleibt Gadi Eisenkot nicht mehr viel Zeit, eine Regierung zu bilden. Aktuell laufen die Gespräche mit Netanjahus Likud-Partei. Dabei gibt es große Differenzen - und kaum Alternativen. Von J. Segador.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-122.html",
-   "titel": "US-Medienberichte: Trump plant wohl neue Zölle - auch gegen die EU",
-   "link": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-122.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-25T04:08:29.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Die US-Regierung bereitet offenbar neue Zölle gegenüber China, der EU und weiteren Ländern vor. Der Schritt erfolgt, nachdem die Zölle vom Supreme Court als illegal eingestuft wurden.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/ukraine-russland-bruecken-krieg-100.html",
-   "titel": "Brücken-Krieg: Gefahr für Kiew, Probleme für Russlands Logistik",
-   "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-bruecken-krieg-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-25T01:40:52.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Kiew, Saporischschja, Odessa - immer wieder greift Russland ukrainische Brücken an. Im Gegenzug schießt die Ukraine vermehrt zurück - auch auf die Krim-Brücke. Dabei geht es beiden Seiten nicht immer nur um militärische Ziele. Von R. Barth.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq5y1212y4pwo",
-   "titel": "Clashing political visions reflect a divided Spain ahead of election",
-   "link": "https://www.bbc.co.uk/news/articles/cq5y1212y4pwo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-25T00:58:34.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Sunday’s election could see a far-right party enter the Spanish government for first time.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cw24e17v9e51o",
-   "titel": "My family were killed in Ukraine. My mum blamed Zelensky's troops - the truth is complicated",
-   "link": "https://www.bbc.co.uk/news/articles/cw24e17v9e51o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-25T00:54:13.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "BBC journalist Anastasiya Gribanova investigates who killed her father and grandparents in the war.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/24/world/americas/ecuador-us-military-operations-trump.html",
-   "titel": "Trump Administration Pauses Joint Operations With Ecuador",
-   "link": "https://www.nytimes.com/2026/11/24/world/americas/ecuador-us-military-operations-trump.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-25T00:42:52.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The administration has halted military operations while it investigates an operation by Ecuadorean forces that killed an accused gang leader.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 7,
   "DW": 11,
-  "Spiegel Wirtschaft": 6,
+  "Spiegel Wirtschaft": 7,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 7,
-  "BBC World": 7,
+  "Handelsblatt": 6,
+  "BBC World": 11,
   "NYT World": 21,
   "EIA Today in Energy": 0
  }
