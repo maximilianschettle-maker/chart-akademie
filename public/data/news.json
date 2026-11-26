@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T22:24:07.070Z",
+ "lastUpdated": "2026-11-26T23:24:10.196Z",
  "eintraege": [
   {
    "id": "https://www.bbc.co.uk/news/articles/c9gklryvj24do",
@@ -17,13 +17,13 @@
   },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/eu-haushaltsgipfel-abgebrochen-merz-bleibt-zuversichtlich-201721642.html",
-   "titel": "EU-Sondergipfel: Gipfel zum EU-Haushalt vorzeitig beendet",
+   "titel": "Ohne Einigung: Gipfel zum EU-Haushalt vorzeitig beendet",
    "link": "https://www.faz.net/aktuell/wirtschaft/eu-haushaltsgipfel-abgebrochen-merz-bleibt-zuversichtlich-201721642.html",
    "quelle": "FAZ Wirtschaft",
    "zeit": "2026-11-26T21:42:26.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "Die Spitzen der EU-Staaten brechen ihre Verhandlungen über den nächsten EU-Haushalt vorzeitig ab. Merz zeigt sich dennoch optimistisch, dass eine Einigung vor Jahresende gelingt.",
+   "text": "Die Spitzen der EU-Staaten brechen ihre Verhandlungen über den nächsten EU-Haushalt vorzeitig ab. Bundeskanzler Merz glaubt dennoch an eine Einigung vor Jahresende.",
    "sprache": "de"
   },
   {
@@ -1074,7 +1074,7 @@
   "DW": 12,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 5,
+  "Handelsblatt": 4,
   "BBC World": 6,
   "NYT World": 20,
   "EIA Today in Energy": 0
