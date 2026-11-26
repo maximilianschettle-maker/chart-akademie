@@ -1,16 +1,27 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T02:24:08.696Z",
+ "lastUpdated": "2026-11-26T03:24:09.395Z",
  "eintraege": [
   {
    "id": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o",
    "titel": "US announces new tariffs on host of countries including China",
    "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-26T01:20:14.000Z",
+   "zeit": "2026-11-26T03:01:40.000Z",
    "kategorie": "handel",
    "maerkte": [],
    "text": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ck62y23z58yeo",
+   "titel": "As foreign troops withdraw from Somalia, could al-Shabab take over?",
+   "link": "https://www.bbc.co.uk/news/articles/ck62y23z58yeo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-26T02:06:10.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Somalia relies heavily on foreign funding and military support for its very survival.",
    "sprache": "en"
   },
   {
@@ -1026,17 +1037,6 @@
    "maerkte": [],
    "text": "Dass die Opposition die Arbeit der Regierung kritisiert, ist normal. Wenn aber der haushaltspolitische Sprecher der SPD die Regierung kritisiert, lässt das aufhorchen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/24/world/europe/prince-william-kate-home-break-in-anmer-hall-uk.html",
-   "titel": "Prince William and Kate’s Country Home Is Broken Into; 2 Men Arrested",
-   "link": "https://www.nytimes.com/2026/11/24/world/europe/prince-william-kate-home-break-in-anmer-hall-uk.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-24T16:31:07.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The men were arrested near Anmer Hall, the couple’s country retreat in Norfolk, on Monday night.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1045,7 +1045,7 @@
   "Spiegel Wirtschaft": 8,
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 7,
-  "BBC World": 12,
+  "BBC World": 13,
   "NYT World": 22,
   "EIA Today in Energy": 0
  }
