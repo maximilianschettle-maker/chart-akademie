@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T06:24:07.399Z",
+ "lastUpdated": "2026-11-26T07:24:10.308Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/26/world/asia/japan-china-takaichi-snubbed.html",
+   "titel": "Was Japan Prime Minister Takaichi Snubbed at China’s Big Summit?",
+   "link": "https://www.nytimes.com/2026/11/26/world/asia/japan-china-takaichi-snubbed.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-26T07:14:18.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Images show the differences between the welcomes afforded to Sanae Takaichi and other world leaders in Shenzhen, as some officials in Japan cry foul.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/technik/ki/ki-nvidia-stoppt-offenbar-chiplieferungen-nach-suedostasien/100272868.html",
+   "titel": "KI: US-Verbote: Nvidia stoppt offenbar Chiplieferungen nach Südostasien",
+   "link": "https://www.handelsblatt.com/technik/ki/ki-nvidia-stoppt-offenbar-chiplieferungen-nach-suedostasien/100272868.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-26T06:48:08.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Die USA verschärfen ihre Exportkontrollen, um China den Zugang zu KI-Chips zu erschweren. Nun treffen die Beschränkungen laut einem Bericht auch Lieferungen in südostasiatische Länder.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/kupfer-steht-der-bergbau-in-deutschland-vor-einem-comeback/100255103.html",
    "titel": "Deep Read: Kupfer aus Deutschland? Warum der Bergbau vor einem Comeback stehen könnte",
@@ -39,17 +63,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/26/world/asia/japan-china-takaichi-snubbed.html",
-   "titel": "Was Japan Prime Minister Takaichi Snubbed at China’s Big Summit?",
-   "link": "https://www.nytimes.com/2026/11/26/world/asia/japan-china-takaichi-snubbed.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-26T05:01:04.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Images show the differences between the welcomes afforded to Sanae Takaichi and other world leaders in Shenzhen, as some officials in Japan cry foul.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o",
    "titel": "US announces new tariffs on host of countries including China",
    "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
@@ -59,6 +72,17 @@
    "maerkte": [],
    "text": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
    "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/energie-so-teuer-sind-strom-und-gas-in-deutschland-im-weltweiten-vergleich/100272128.html",
+   "titel": "Energie: Nur eine ähnlich große Volkswirtschaft hat höhere Strompreise als Deutschland",
+   "link": "https://www.handelsblatt.com/politik/deutschland/energie-so-teuer-sind-strom-und-gas-in-deutschland-im-weltweiten-vergleich/100272128.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-26T03:00:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "Im internationalen Vergleich bleibt Energie für die deutsche Industrie teuer. Gelingt es der Politik, diesen massiven Wettbewerbsnachteil zu beseitigen? Was aktuelle Zahlen verraten.",
+   "sprache": "de"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/ck62y23z58yeo",
@@ -393,7 +417,7 @@
   },
   {
    "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-trumps-selbstschaedigender-zollwahnsinn-geht-weiter/100272596.html",
-   "titel": "Kommentar: Trumps selbstschädigender Zollwahnsinn geht weiter",
+   "titel": "Kommentar: Trumps selbstschädigender Zollwahnsinn geht weiter – und sein Aktionismus wird sich nicht darauf beschränken",
    "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-trumps-selbstschaedigender-zollwahnsinn-geht-weiter/100272596.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-25T15:54:48.000Z",
@@ -1020,36 +1044,14 @@
    "maerkte": [],
    "text": "Den Wirkstoff Finerenon hat Bayer in Deutschland entwickelt und produziert sein Medikament Kerendia auch hierzulande. Warum deutsche Patienten trotzdem darauf verzichten müssen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/kurden-in-nahost-ende-aller-politischen-hoffnungen/a-80033437",
-   "titel": "Kurden in Nahost: Ende aller politischen Hoffnungen?",
-   "link": "https://www.dw.com/de/kurden-in-nahost-ende-aller-politischen-hoffnungen/a-80033437?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-24T18:02:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "2026 war für die Kurden in ihren traditionellen Siedlungsgebieten ein Jahr der politischen Rückschläge. Auch im Irak stehen sie nun zunehmend unter Druck.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/handelskonflikt-usa-planen-offenbar-neue-zoelle-gegen-die-eu-und-china/100272509.html",
-   "titel": "Handelskonflikt: USA planen offenbar neue Zölle gegen die EU und China",
-   "link": "https://www.handelsblatt.com/politik/international/handelskonflikt-usa-planen-offenbar-neue-zoelle-gegen-die-eu-und-china/100272509.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T17:28:11.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Die US-Regierung will Medienberichten zufolge wegen mutmaßlicher industrieller Überkapazitäten neue Zölle gegen 16 wichtige Handelspartner verhängen. Auch die EU ist betroffen.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 7,
+  "tagesschau": 6,
   "DW": 12,
-  "Spiegel Wirtschaft": 8,
+  "Spiegel Wirtschaft": 7,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 7,
+  "Handelsblatt": 9,
   "BBC World": 13,
   "NYT World": 20,
   "EIA Today in Energy": 0
