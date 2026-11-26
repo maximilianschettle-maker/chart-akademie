@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T05:24:09.012Z",
+ "lastUpdated": "2026-11-26T06:24:07.399Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/kupfer-steht-der-bergbau-in-deutschland-vor-einem-comeback/100255103.html",
+   "titel": "Deep Read: Kupfer aus Deutschland? Warum der Bergbau vor einem Comeback stehen könnte",
+   "link": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/kupfer-steht-der-bergbau-in-deutschland-vor-einem-comeback/100255103.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-26T06:11:00.000Z",
+   "kategorie": "energie",
+   "maerkte": [],
+   "text": "Die Kupfernachfrage steigt, die Erzgehalte der südamerikanischen Vorkommen sinken – plötzlich werden auch Vorkommen in Deutschland für Bergbaukonzerne interessant. Ein Ortstermin.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sieben-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html",
    "titel": "Börse am 26. November: Sieben Punkte, die für Anleger heute wichtig sind",
@@ -1031,17 +1042,6 @@
    "maerkte": [],
    "text": "Die US-Regierung will Medienberichten zufolge wegen mutmaßlicher industrieller Überkapazitäten neue Zölle gegen 16 wichtige Handelspartner verhängen. Auch die EU ist betroffen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/china-xi-laesst-den-maechtigen-parteichef-von-shanghai-fallen/100272476.html",
-   "titel": "China: Korruptionsverdacht – Xi lässt gegen den Parteichef von Shanghai ermitteln",
-   "link": "https://www.handelsblatt.com/politik/international/china-xi-laesst-den-maechtigen-parteichef-von-shanghai-fallen/100272476.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-24T16:43:56.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Chen Jining ist das vierte Politbüro-Mitglied, das in Ungnade fällt. Die Säuberungen unter Xi Jinping erreichen ein Ausmaß, wie es seit der Kulturrevolution nicht mehr zu beobachten war.",
-   "sprache": "de"
   }
  ],
  "quellen": {
@@ -1049,7 +1049,7 @@
   "DW": 12,
   "Spiegel Wirtschaft": 8,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 8,
+  "Handelsblatt": 7,
   "BBC World": 13,
   "NYT World": 20,
   "EIA Today in Energy": 0
