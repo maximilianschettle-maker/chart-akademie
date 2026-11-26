@@ -1,7 +1,79 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T13:24:04.924Z",
+ "lastUpdated": "2026-11-26T14:24:12.912Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/26/world/americas/brazil-recruiting-russia-army.html",
+   "titel": "Lured by High Salaries, Some Brazilians Were Duped Into Fighting for Russia",
+   "link": "https://www.nytimes.com/2026/11/26/world/americas/brazil-recruiting-russia-army.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-26T14:01:45.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Dozens of Brazilians were sent to the front lines with little training, and the high salaries they were promised, they say, turned out to be illusory.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c9gklryvj24do",
+   "titel": "Diesel tanker carrying up to 7,000 tonnes sinks near Ibiza, killing one",
+   "link": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-26T14:00:42.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "The possible environmental damage is still being assessed by Spain's sea rescue service.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/russland-vier-szenarien-fuer-putins-schattenkrieg-bis-2029/100272728.html",
+   "titel": "Russland: Sabotage, Spionage, Attentate, Ablenkung: Vier Szenarien für Putins Schattenkrieg bis 2029",
+   "link": "https://www.handelsblatt.com/politik/international/russland-vier-szenarien-fuer-putins-schattenkrieg-bis-2029/100272728.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-26T14:00:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Einer neuen Studie zufolge konzentriert Russland seine hybriden Angriffe auf Deutschland und Polen. Die Experten haben durchgespielt, wie dieser Konflikt weitergehen könnte.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/tanker-ibiza-100.html",
+   "titel": "Schiffsunglück vor Ibiza: Tanker mit 7.000 Tonnen Diesel gekentert",
+   "link": "https://www.tagesschau.de/ausland/europa/tanker-ibiza-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-26T13:51:28.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Wegen möglicher Umweltgefahren aktivierten die spanischen Behörden einen Notfallplan: Vor der Küste Ibizas ist ein Tanker mit 7.000 Tonnen Diesel gekentert. Bei dem Unglück kam ein Seemann ums Leben.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/tanker-vor-ibiza-gekentert-ein-besatzungsmitglied-tot/a-80062333",
+   "titel": "Tanker vor Ibiza gekentert: Ein Besatzungsmitglied tot",
+   "link": "https://www.dw.com/de/tanker-vor-ibiza-gekentert-ein-besatzungsmitglied-tot/a-80062333?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-26T13:43:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Mit 8,2 Millionen Litern Dieseltreibstoff in den Tanks geriet die \"Med Emre\" vor der spanischen Insel Ibiza in Seenot. Dann kenterte das Schiff. Wird es sinken?",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/mehr-frauen-in-russland-sterben-durch-gewalt-100.html",
+   "titel": "Russland: Sieben von zehn ermordeten Frauen Opfer häuslicher Gewalt",
+   "link": "https://www.tagesschau.de/ausland/asien/mehr-frauen-in-russland-sterben-durch-gewalt-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-26T13:40:55.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Der Krieg gegen die Ukraine hinterlässt auch in der Statistik zu häuslicher Gewalt in Russland Spuren. Eine Studie zeigt: Viele Täter sind Kriegsteilnehmer. Und Verfahren können ausgesetzt werden, wenn Beschuldigte in den Krieg ziehen. Von ",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/tote-nach-russischen-angriffen-ukraine-100.html",
    "titel": "Krieg gegen die Ukraine: Angriffe auf Kiew - Tote in Saporischschja",
@@ -30,26 +102,25 @@
    "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-folgt-erholung-an-der-wall-street-und-notiert-im-plus/100272884.html",
    "quelle": "Handelsblatt",
    "zeit": "2026-11-26T12:06:52.000Z",
-   "kategorie": "politik",
+   "kategorie": "handel",
    "maerkte": [
-    "eurusd",
     "aktien"
    ],
-   "text": "Anleger greifen bei zuletzt stark gefallenen Aktien zu. Im Tagesverlauf richten sich die Blicke auf das EZB-Protokoll und den EU-Gipfel.",
+   "text": "Nachlassende Zollsorgen bescheren der deutschen Börse Gewinne. Der Leitindex schafft es wieder über die Marke von 25.000 Punkten. Anleger greifen bei zuletzt stark gefallenen Aktien zu.",
    "sprache": "de"
   },
   {
-   "id": "https://www.bbc.co.uk/news/articles/c9gklryvj24do",
-   "titel": "Diesel tanker carrying up to 7,000 tonnes sinks near Ibiza, killing one",
-   "link": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-26T11:27:42.000Z",
-   "kategorie": "energie",
+   "id": "https://www.spiegel.de/wirtschaft/unternehmen/lululemon-gruender-chip-wilson-soll-sich-auf-frauenkonferenz-sexistisch-geaeussert-haben-a-7c6a208b-8462-43df-afb8-c82338e36a3b",
+   "titel": "Lululemon-Gründer Chip Wilson soll sich auf Frauenkonferenz sexistisch geäußert haben",
+   "link": "https://www.spiegel.de/wirtschaft/unternehmen/lululemon-gruender-chip-wilson-soll-sich-auf-frauenkonferenz-sexistisch-geaeussert-haben-a-7c6a208b-8462-43df-afb8-c82338e36a3b#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-26T11:26:00.000Z",
+   "kategorie": "konflikte",
    "maerkte": [
-    "oel"
+    "halbleiter"
    ],
-   "text": "The possible environmental damage is still being assessed by Spain's sea rescue service.",
-   "sprache": "en"
+   "text": "Angekündigt war ein »intimes Kamingespräch«, heraus kam offenbar eine Schuldzuweisung an kanadische Frauen. Chip Wilson, Chef der Yoga-Firma Lululemon, hat auf einer Konferenz für Aufsehen gesorgt. Es war nicht das erste Mal.",
+   "sprache": "de"
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/unternehmen/lululemon-chip-wilson-kritisiert-kanadas-frauen-fuer-niedrige-geburtenrate-a-7c6a208b-8462-43df-afb8-c82338e36a3b",
@@ -74,7 +145,7 @@
    "maerkte": [
     "oel"
    ],
-   "text": "Black smoke could be seen across Bangkok's skyline after the blast, while officials urged residents to leave the area.",
+   "text": "Black smoke could be seen across Bangkok's skyline after the blast, as officials urged residents to leave the area.",
    "sprache": "en"
   },
   {
@@ -126,19 +197,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.tagesschau.de/ausland/europa/tanker-ibiza-100.html",
-   "titel": "Schiffsunglück vor Ibiza: Tanker mit 7.000 Tonnen Diesel gesunken",
-   "link": "https://www.tagesschau.de/ausland/europa/tanker-ibiza-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-26T10:33:57.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Wegen möglicher Umweltgefahren aktivierten die spanischen Behörden einen Notfallplan: Vor der Küste Ibizas ist ein Tanker mit 7.000 Tonnen Diesel gesunken. Bei dem Unglück kam ein Seemann ums Leben.",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-folgt-erholung-an-der-wall-street-und-oeffnet-im-plus/100272884.html",
    "titel": "Dax aktuell: Dax folgt Erholung an der Wall Street und öffnet im Plus",
    "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-folgt-erholung-an-der-wall-street-und-oeffnet-im-plus/100272884.html",
@@ -161,17 +219,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The killings are the latest from a series of near daily attacks by Israel against what it says are Hamas targets.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/26/world/americas/brazil-recruiting-russia-army.html",
-   "titel": "Lured by High Salaries, Some Brazilians Were Duped Into Fighting for Russia",
-   "link": "https://www.nytimes.com/2026/11/26/world/americas/brazil-recruiting-russia-army.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-26T10:00:12.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Dozens of Brazilians were sent to the front lines with little training, and the high salaries they were promised, they say, turned out to be illusory.",
    "sprache": "en"
   },
   {
@@ -1009,65 +1056,16 @@
    "maerkte": [],
    "text": "The blackouts follow a string of violent episodes attributed to Colombia’s armed traffickers, as the country’s new president cracks down on the groups.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/bundespolitik-jetzt-live-merz-spricht-bei-generaldebatte-im-bundestag/100137034.html",
-   "titel": "+++ Bundespolitik +++: Jetzt live – Merz spricht bei Generaldebatte im Bundestag",
-   "link": "https://www.handelsblatt.com/politik/deutschland/bundespolitik-jetzt-live-merz-spricht-bei-generaldebatte-im-bundestag/100137034.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T07:51:10.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "eurusd",
-    "anleihen"
-   ],
-   "text": "Koalition rechnet für Stromsteuer-Senkung mit Kosten von fünf Milliarden Euro +++ EU-Kommission besorgt über deutschen Bundeshaushalt +++ Klingbeil verteidigt Haushalt im Bundestag +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/unternehmen/cdu-politiker-yannick-bury-verlangt-ueberpruefung-aller-weiterbildungsangebote-der-arbeitsagentur-a-7caaff16-dd87-4349-b543-746921abb548",
-   "titel": "CDU-Politiker verlangt Überprüfung aller Weiterbildungsangebote der Arbeitsagentur",
-   "link": "https://www.spiegel.de/wirtschaft/unternehmen/cdu-politiker-yannick-bury-verlangt-ueberpruefung-aller-weiterbildungsangebote-der-arbeitsagentur-a-7caaff16-dd87-4349-b543-746921abb548#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-25T06:39:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Milliarden gibt der Staat für Weiterbildungen von Arbeitslosen aus, oft für teure und nutzlose Kurse. CDU-Haushaltspolitiker Yannick Bury spricht von einer »Sauerei« und warnt vor kostspieligen Folgen – auch für Beitragszahler.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-donald-trumps-naechster-schlag-gegen-die-deutsche-wirtschaft/100272532.html",
-   "titel": "Morning Briefing: Donald Trumps nächster Schlag gegen die deutsche Wirtschaft",
-   "link": "https://www.handelsblatt.com/meinung/morningbriefing/morning-briefing-donald-trumps-naechster-schlag-gegen-die-deutsche-wirtschaft/100272532.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T05:32:38.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Der US-Präsident könnte noch diese Woche neue Zölle gegen die EU und weitere Länder verkünden. Offiziell geht es ihm um Dumping-Importe. Auch der neue Kongress kann ihn nur schwer stoppen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/konjunktur/wirtschaftswachstum-branchen-100.html",
-   "titel": "Deutsche Industrie: Wo es hakt und wo es rund läuft",
-   "link": "https://www.tagesschau.de/wirtschaft/konjunktur/wirtschaftswachstum-branchen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-25T05:28:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Die Aussichten für die Wirtschaft haben sich zuletzt verbessert. Doch es gibt große Unterschiede: Während in manchen Branchen Firmen ums Überleben kämpfen, läuft das Geschäft anderswo prächtig. Ein Überblick von Axel John.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 7,
-  "DW": 11,
-  "Spiegel Wirtschaft": 7,
+  "tagesschau": 8,
+  "DW": 12,
+  "Spiegel Wirtschaft": 6,
   "FAZ Wirtschaft": 3,
-  "Handelsblatt": 6,
-  "BBC World": 11,
-  "NYT World": 21,
+  "Handelsblatt": 7,
+  "BBC World": 9,
+  "NYT World": 19,
   "EIA Today in Energy": 0
  }
 }
