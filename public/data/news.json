@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T12:24:12.556Z",
+ "lastUpdated": "2026-11-26T13:24:04.924Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/tote-nach-russischen-angriffen-ukraine-100.html",
+   "titel": "Krieg gegen die Ukraine: Angriffe auf Kiew - Tote in Saporischschja",
+   "link": "https://www.tagesschau.de/ausland/europa/tote-nach-russischen-angriffen-ukraine-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-26T13:20:47.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russland hat die Ukraine wieder massiv angegriffen. Auch bei einem ukrainischen Drohnenangriff im russisch besetzten Teil von Saporischschja gab es Tote. Beide Seiten tauschten die Leichen gefallener Soldaten aus.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/rentenreform-warum-diese-reform-zur-existenzfrage-fuer-die-koalition-wird/100272907.html",
+   "titel": "Bundesregierung: „Wie lange lassen wir uns noch für blöd verkaufen?“: Rentenreform wird zur Existenzfrage der Koalition",
+   "link": "https://www.handelsblatt.com/politik/deutschland/rentenreform-warum-diese-reform-zur-existenzfrage-fuer-die-koalition-wird/100272907.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-26T12:49:30.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Rente wird zeigen, ob die Koalition noch Reformen zustande bringt. Am Abend treffen sich die Verhandlungsführer. Ein Vorschlag der CDU sorgt für Unruhe – und beschreibt das Dilemma.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-folgt-erholung-an-der-wall-street-und-notiert-im-plus/100272884.html",
    "titel": "Dax aktuell: Dax folgt Erholung an der Wall Street und notiert im Plus",
@@ -164,19 +186,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.tagesschau.de/ausland/europa/tote-nach-russischen-angriffen-ukraine-100.html",
-   "titel": "Krieg gegen die Ukraine: Angriffe auf Kiew - Tote in Saporischschja",
-   "link": "https://www.tagesschau.de/ausland/europa/tote-nach-russischen-angriffen-ukraine-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-26T09:54:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Russland hat die Ukraine nach eigenen Angaben wieder massiv angegriffen. Auch bei einem ukrainischen Drohnenangriff im russisch besetzten Teil von Saporischschja gab es Tote. Die NATO und US-Präsident Trump warnen vor einer weiteren Eskalat",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.nytimes.com/2026/11/26/world/asia/japan-china-takaichi-snubbed.html",
    "titel": "Was Japan Prime Minister Takaichi Snubbed at China’s Big Summit?",
    "link": "https://www.nytimes.com/2026/11/26/world/asia/japan-china-takaichi-snubbed.html",
@@ -219,7 +228,7 @@
    "zeit": "2026-11-26T07:56:00.000Z",
    "kategorie": "handel",
    "maerkte": [],
-   "text": "USA kündigt neue Zölle an – unter anderem Schweiz, China, Japan und Südkorea betroffen +++ USA führen erneut strukturelle Überkapazitäten in der Industrie an +++ Der Newsblog.",
+   "text": "USA kündigt neue Zölle an – unter anderem Schweiz, China, Japan und Südkorea betroffen +++ Wadephul kritisiert US-Zölle und erinnert an bestehende Abkommen +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -1049,17 +1058,6 @@
    "maerkte": [],
    "text": "Die Aussichten für die Wirtschaft haben sich zuletzt verbessert. Doch es gibt große Unterschiede: Während in manchen Branchen Firmen ums Überleben kämpfen, läuft das Geschäft anderswo prächtig. Ein Überblick von Axel John.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html",
-   "titel": "Solomon Islands Enters Security Treaty With Australia, in a Blow to China",
-   "link": "https://www.nytimes.com/2026/11/24/world/asia/solomon-islands-security-treaty-australia-china.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-25T05:24:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A 2022 Solomon Islands agreement with China had raised concerns it would enable Beijing to establish a military presence on the Pacific island. The new accord precludes such bases.",
-   "sprache": "en"
   }
  ],
  "quellen": {
