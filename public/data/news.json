@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T08:24:12.502Z",
+ "lastUpdated": "2026-11-26T08:34:47.090Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/26/world/middleeast/isis-attack-syria.html",
+   "titel": "Attack Blamed on ISIS Kills 2 Syrian Security Force Members",
+   "link": "https://www.nytimes.com/2026/11/26/world/middleeast/isis-attack-syria.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-26T08:31:47.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The assault on a security headquarters in the northeastern city of Hasakah was carried out by four militants who local officials linked to the Islamic State.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/us-zoelle-china-kritisiert-us-zollankuendigungen-scharf/30026990.html",
    "titel": "+++ US-Zollpolitik +++: China kritisiert US-Zollankündigung scharf – und droht mit Gegenmaßnahmen",
@@ -1033,17 +1044,6 @@
    "maerkte": [],
    "text": "A South African fighter pilot and a Ugandan officer are reportedly among those aboard the downed plane.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/24/world/middleeast/saudi-skyscraper-houthi-strike.html",
-   "titel": "Houthi Attack on Skyscraper in Saudi Capital Wounds 11, Officials Say",
-   "link": "https://www.nytimes.com/2026/11/24/world/middleeast/saudi-skyscraper-houthi-strike.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-24T19:18:16.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The people were wounded in the strike on a building in Riyadh, the Saudi authorities said. The Iran-backed militia and Saudi Arabia have been exchanging escalating attacks for weeks.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1053,7 +1053,7 @@
   "FAZ Wirtschaft": 3,
   "Handelsblatt": 9,
   "BBC World": 13,
-  "NYT World": 19,
+  "NYT World": 20,
   "EIA Today in Energy": 0
  }
 }
