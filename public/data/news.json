@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T12:24:19.410Z",
+ "lastUpdated": "2026-11-27T13:24:12.076Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/afd-weidel-bremst-nord-stream-initiative-ihrer-partei-mit-russland/100273238.html",
+   "titel": "AfD: Weidel bremst Nord-Stream-Initiative ihrer Partei mit Russland",
+   "link": "https://www.handelsblatt.com/politik/deutschland/afd-weidel-bremst-nord-stream-initiative-ihrer-partei-mit-russland/100273238.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-27T12:58:06.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Außenpolitiker der AfD planen einen Energiegipfel mit Russland und den USA, um wieder Gas über die Nord-Stream-Pipelines zu beziehen. Parteichefin Weidel warnt vor „Schattendiplomatie“.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/eu-gipfel-mit-merz-und-macron-scheitern-nach-plan-201722832.html",
+   "titel": "EU-Haushalt: Zu denken gibt, wie dieser Gipfel gescheitert ist",
+   "link": "https://www.faz.net/aktuell/wirtschaft/eu-gipfel-mit-merz-und-macron-scheitern-nach-plan-201722832.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-27T12:36:57.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der abgebrochene Sondergipfel zum EU-Haushalt ist kein Drama. Ob sich die Staaten bis zum Jahresende einigen, ist leider nicht ausgemacht.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/usa-hacker-dringen-offenbar-in-cloud-plattform-der-us-luftwaffe-ein/100273299.html",
+   "titel": "USA: Hacker dringen offenbar in zentrale Cloud-Plattform der US-Luftwaffe ein",
+   "link": "https://www.handelsblatt.com/politik/international/usa-hacker-dringen-offenbar-in-cloud-plattform-der-us-luftwaffe-ein/100273299.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-27T12:10:43.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ein Angriff auf das System „Cloud One“ könnte sensible Militärdaten gefährden. Die Ermittler ziehen das Cyber Command hinzu. Das Ausmaß des möglichen Datenabflusses ist unklar.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/afrika/vereinte-nationen-hunger-hotspots-100.html",
    "titel": "UN sieht fünf \"Hunger-Hotspots\": Ernährungskrisen verschärfen sich",
@@ -11,19 +46,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Krieg, Dürre und Budgetkürzungen bei Hilfsorganisationen. Die UN sehen fünf Länder auf eine gefährliche Hungerkrise zusteuern und warnen vor den Auswirkungen. Die Welt müsse nun schnell handeln. Von Tilman Kleinjung.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/afd-weidel-bremst-nord-stream-initiative-ihrer-partei-mit-russland/100273238.html",
-   "titel": "AfD: Weidel bremst Nord-Stream-Initiative ihrer Partei mit Russland",
-   "link": "https://www.handelsblatt.com/politik/deutschland/afd-weidel-bremst-nord-stream-initiative-ihrer-partei-mit-russland/100273238.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-27T11:25:57.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "gas"
-   ],
-   "text": "Außenpolitiker der AfD planen einen Energiegipfel mit Russland und den USA, um wieder Gas über die Nord-Stream-Pipelines zu beziehen. Parteichefin Weidel warnt vor „Schattendiplomatie“.",
    "sprache": "de"
   },
   {
@@ -58,7 +80,7 @@
    "zeit": "2026-11-27T11:07:08.000Z",
    "kategorie": "politik",
    "maerkte": [],
-   "text": "Die Koalition ringt weiter um die Rentenreform. Arbeitsminister Schweitzer ist optimistisch, dass es bald zu einer Einigung kommt. Es lägen gute Vorschläge auf dem Tisch, sagte er im Bundestag. Dort wurde des Etat seines Ministeriums debatt",
+   "text": "Die Koalition ringt weiter um die Rentenreform. Arbeitsminister Schweitzer ist optimistisch, dass es bald zu einer Einigung kommt. Es lägen gute Vorschläge auf dem Tisch, sagte er im Bundestag. Dort wurde der Etat seines Ministeriums debatt",
    "sprache": "de"
   },
   {
@@ -1031,38 +1053,14 @@
    "maerkte": [],
    "text": "Die USA kündigen neue Zölle gegen mehrere Handelspartner an, darunter die EU. Trotz der jüngsten Niederlage bei den Midterms setzt der US-Präsident seine Lieblingsprojekte durch. Wie weit kann er damit kommen?",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Trump und Nato-Chef mahnen Russland zur Zurückhaltung im Ukraine-Krieg",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-usa-aendert-wohl-strategie-zu-geschaeftsabschluessen-mit-russland/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T19:20:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Russland wehrt Drohnenangriff auf Industriegebiet ab +++ Kushner: Putin versichert, keine Atomwaffen einzusetzen +++ Libyen meldet Tote nach ukrainischen Angriffen +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/neue-regeln-fuer-prostituition-empfehlungen-100.html",
-   "titel": "Expertenkommission fordert schärfere Regeln für Prostitution",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/neue-regeln-fuer-prostituition-empfehlungen-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-25T19:14:28.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Mehr Schutz vor Gewalt und Ausbeutung - Zwangsprostitution und Menschenhandel wirksamer bekämpfen: Die schwarz-rote Koalition will Prostitution neu regeln. Eine Expertenkommission empfiehlt nun strengere Regeln.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 11,
+  "tagesschau": 8,
   "DW": 13,
-  "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 3,
-  "Handelsblatt": 3,
+  "Spiegel Wirtschaft": 3,
+  "FAZ Wirtschaft": 5,
+  "Handelsblatt": 4,
   "BBC World": 12,
   "NYT World": 23,
   "EIA Today in Energy": 0
