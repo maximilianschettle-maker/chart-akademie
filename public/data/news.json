@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-26T23:24:10.196Z",
+ "lastUpdated": "2026-11-27T00:24:10.618Z",
  "eintraege": [
   {
    "id": "https://www.bbc.co.uk/news/articles/c9gklryvj24do",
@@ -485,7 +485,7 @@
    "titel": "Was Japan Prime Minister Takaichi Snubbed at China’s Big Summit?",
    "link": "https://www.nytimes.com/2026/11/26/world/asia/japan-china-takaichi-snubbed.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-26T09:14:29.000Z",
+   "zeit": "2026-11-26T09:14:30.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "Images show the differences between the welcomes afforded to Sanae Takaichi and other world leaders in Shenzhen, as some officials in Japan cry foul.",
@@ -1070,12 +1070,12 @@
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 8,
   "DW": 12,
   "Spiegel Wirtschaft": 5,
   "FAZ Wirtschaft": 4,
-  "Handelsblatt": 4,
-  "BBC World": 6,
+  "Handelsblatt": 3,
+  "BBC World": 5,
   "NYT World": 20,
   "EIA Today in Energy": 0
  }
