@@ -1,7 +1,40 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T17:24:43.233Z",
+ "lastUpdated": "2026-11-27T18:24:06.583Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/27/world/europe/russia-ai-journey-conference.html",
+   "titel": "With Dancing Robots, Russia Projects a Future Shaped by A.I., Not War",
+   "link": "https://www.nytimes.com/2026/11/27/world/europe/russia-ai-journey-conference.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-27T18:01:19.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russian officials see artificial intelligence as a way to solve the country’s pressing problems. But Russia’s technological development has been constrained.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo",
+   "titel": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+   "link": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-27T18:00:40.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ukraine's president voices frustration with US and says it is not pushing Russia hard enough in peace talks to end the war.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/oelfeld-rosebank-spaltet-labour-rebellion-gegen-andy-burnham-201723867.html",
+   "titel": "Großbritannien: Streit um das Ölfeld Rosebank wird zur Zerreißprobe für Labour",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/oelfeld-rosebank-spaltet-labour-rebellion-gegen-andy-burnham-201723867.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-27T17:35:03.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Die britische Regierungspartei ist tief gespalten, ob das große Ölfeld Rosebank genehmigt werden soll. Klimaschützer kämpfen gegen Gewerkschaften. Den Haushalten droht im Januar ein Energiepreisschock.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/deutschland/russland-warnungen-vor-eu-sanktionen-gegen-gerhard-schroeder-und-manager/100273308.html",
    "titel": "EU-Sanktionen: Wirtschaft warnt vor „Lex Schröder“ gegen Altkanzler und andere Manager in Russland",
@@ -253,17 +286,6 @@
    "maerkte": [],
    "text": "Man sei noch \"Lichtjahre\" von einer Einigung entfernt, sagt Italiens Ministerpräsidentin Meloni. Jetzt wächst der Druck auf die Staats- und Regierungschefs vor dem nächsten Gipfel im Dezember.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo",
-   "titel": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
-   "link": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-27T09:07:48.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ukraine's president voices frustration with US and says it is not pushing Russia hard enough in peace talks to end the war.",
-   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cm879e5yxjq5o",
@@ -1026,38 +1048,16 @@
    "maerkte": [],
    "text": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/energie-so-teuer-sind-strom-und-gas-in-deutschland-im-weltweiten-vergleich/100272128.html",
-   "titel": "Energie: Nur eine ähnlich große Volkswirtschaft hat höhere Strompreise als Deutschland",
-   "link": "https://www.handelsblatt.com/politik/deutschland/energie-so-teuer-sind-strom-und-gas-in-deutschland-im-weltweiten-vergleich/100272128.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-26T03:00:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Im internationalen Vergleich bleibt Energie für die deutsche Industrie teuer. Gelingt es der Politik, diesen massiven Wettbewerbsnachteil zu beseitigen? Was aktuelle Zahlen verraten.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ck62y23z58yeo",
-   "titel": "As foreign troops withdraw from Somalia, could al-Shabab take over?",
-   "link": "https://www.bbc.co.uk/news/articles/ck62y23z58yeo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-26T02:06:10.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Somalia relies heavily on foreign funding and military support for its very survival.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 9,
-  "DW": 12,
+  "DW": 11,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 4,
   "BBC World": 9,
-  "NYT World": 22,
+  "NYT World": 23,
   "EIA Today in Energy": 0
  }
 }
