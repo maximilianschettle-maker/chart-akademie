@@ -1,7 +1,42 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T10:59:53.613Z",
+ "lastUpdated": "2026-11-27T11:24:14.826Z",
  "eintraege": [
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-rheinmetall-mitarbeiter-durch-drohnenangriff-in-kuwait-getoetet-faz-200452404.html",
+   "titel": "Business-Ticker: Rheinmetall-Mitarbeiter durch Drohnenangriff in Kuwait getötet",
+   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-rheinmetall-mitarbeiter-durch-drohnenangriff-in-kuwait-getoetet-faz-200452404.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-27T11:12:53.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "IG-Metall über Industrietarifabschluss: „Volkswagen sollte sich daran ein Beispiel nehmen“ +++ Ramona Pop verlässt Verbraucherzentrale Bundesverband +++ alle Neuigkeiten im Unternehmen-Liveblog",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/abschlagsfreie-rente-100.html",
+   "titel": "FAQ zur \"Rente mit 63\": Was wird gerade diskutiert?",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/abschlagsfreie-rente-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-27T11:09:55.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Debatte über die \"Rente mit 63\" wird zunehmend unübersichtlich: Welche Vorschläge werden aktuell diskutiert? Was deutet auf Bewegung innerhalb der Koalition hin? Und warum ist das Thema so umstritten? Ein Überblick.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/bundestag-haushalt-rentenreform-schweitzer-100.html",
+   "titel": "Streit um Rentenreform: Arbeitsminister Schweitzer optimistisch",
+   "link": "https://www.tagesschau.de/inland/bundestag-haushalt-rentenreform-schweitzer-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-27T11:07:08.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die Koalition ringt weiter um die Rentenreform. Arbeitsminister Schweitzer ist optimistisch, dass es bald zu einer Einigung kommt. Es lägen gute Vorschläge auf dem Tisch, sagte er im Bundestag. Dort wurde des Etat seines Ministeriums debatt",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html",
    "titel": "Puma Shen, Critic of China, Could be the Next Mayor of Taipei",
@@ -293,17 +328,6 @@
    "maerkte": [],
    "text": "The deaths follow a series of strikes on Gulf Arab states that host U.S. military facilities in recent weeks as talks to end the war continue to stall.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/abschlagsfreie-rente-100.html",
-   "titel": "FAQ zur \"Rente mit 63\": Was wird gerade diskutiert?",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/abschlagsfreie-rente-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-26T19:16:09.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Debatte über die \"Rente mit 63\" wird zunehmend unübersichtlich: Welche Vorschläge werden aktuell diskutiert? Was deutet auf Bewegung innerhalb der Koalition hin? Und warum ist das Thema so umstritten? Ein Überblick.",
-   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/ausland/asien/kuwait-tote-angriff-kuwait-100.html",
@@ -1031,39 +1055,13 @@
    ],
    "text": "Die US-Börsen haben ihre hohen Anfangsverluste am Mittwoch weitgehend aufgeholt. Nicht nur neue Zolldrohungen und die Aussicht auf höhere Zinsen belasten die Anleger.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-will-furcht-vor-einem-ki-crash-nicht-weichen/100272767.html",
-   "titel": "Börsen: Die Furcht vor einem KI-Crash will nicht weichen: Was kann die Angst der Anleger jetzt stoppen?",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-will-furcht-vor-einem-ki-crash-nicht-weichen/100272767.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T19:01:06.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Am Mittwoch sind die US-Märkte erneut mit hohen Verlusten gestartet. Zwar konnten sie sich im Handelsverlauf fangen. Doch nicht nur Sorgen vor steigenden Zinsen und neue Zölle machen Anleger nervös.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-verstaerkt-sich-die-flucht-aus-risikoanlagen/100272767.html",
-   "titel": "Börsen: Neue Flucht aus Risikoanlagen: Warum sich der Ausverkauf nun beschleunigt",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/boersen-an-den-finanzmaerkten-verstaerkt-sich-die-flucht-aus-risikoanlagen/100272767.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T19:01:06.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Am Mittwoch sind die US-Märkte erneut mit hohen Kursverlusten gestartet. Nicht nur Sorgen vor steigenden Zinsen und neue Zölle machen Anleger nervös.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 10,
-  "DW": 14,
+  "DW": 13,
   "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 4,
+  "FAZ Wirtschaft": 5,
   "Handelsblatt": 2,
   "BBC World": 12,
   "NYT World": 23,
