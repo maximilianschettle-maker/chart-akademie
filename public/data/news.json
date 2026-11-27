@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T19:24:14.216Z",
+ "lastUpdated": "2026-11-27T20:01:52.870Z",
  "eintraege": [
+  {
+   "id": "https://www.spiegel.de/wirtschaft/ki-ex-us-arbeitsminister-robert-reich-will-die-macht-der-techmilliardaere-brechen-a-36aa8aa5-d8a0-4cd8-91a2-88d3fa5ed2e0",
+   "titel": "KI: Ex-US-Arbeitsminister Robert Reich will die Macht der Techmilliardäre brechen",
+   "link": "https://www.spiegel.de/wirtschaft/ki-ex-us-arbeitsminister-robert-reich-will-die-macht-der-techmilliardaere-brechen-a-36aa8aa5-d8a0-4cd8-91a2-88d3fa5ed2e0#ref=rss",
+   "quelle": "Spiegel Wirtschaft",
+   "zeit": "2026-11-27T19:28:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Robert Reich gilt als Vordenker der Demokratischen Partei und war Arbeitsminister unter Bill Clinton. Er hat einen Vorschlag, wie die Macht der KI-Milliardäre zu brechen wäre.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o",
    "titel": "Weary of war but with no sign of backing down, Kyiv faces another punishing winter",
@@ -1037,27 +1048,16 @@
    ],
    "text": "Der Dax fällt auf den tiefsten Stand seit Juli. Sorgen um KI-Aktien und neue US-Zölle belasten den deutschen Leitindex. Am Donnerstag stehen Konjunkturdaten und Rheinmetall im Fokus.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/26/world/europe/pasolini-house-eviction-court.html",
-   "titel": "An Italian Couple Bought a House Built by Pier Paolo Pasolini. Local Villagers Want to Evict Them.",
-   "link": "https://www.nytimes.com/2026/11/26/world/europe/pasolini-house-eviction-court.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-26T05:01:11.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "After an Italian couple bought a house built by Pier Paolo Pasolini, one of the country’s greatest film directors, local villagers claimed the property.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 9,
   "DW": 11,
-  "Spiegel Wirtschaft": 3,
+  "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 4,
   "BBC World": 10,
-  "NYT World": 22,
+  "NYT World": 21,
   "EIA Today in Energy": 0
  }
 }
