@@ -1,7 +1,62 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T16:24:07.558Z",
+ "lastUpdated": "2026-11-27T17:24:43.233Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/russland-warnungen-vor-eu-sanktionen-gegen-gerhard-schroeder-und-manager/100273308.html",
+   "titel": "EU-Sanktionen: Wirtschaft warnt vor „Lex Schröder“ gegen Altkanzler und andere Manager in Russland",
+   "link": "https://www.handelsblatt.com/politik/deutschland/russland-warnungen-vor-eu-sanktionen-gegen-gerhard-schroeder-und-manager/100273308.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-27T16:59:43.000Z",
+   "kategorie": "handel",
+   "maerkte": [],
+   "text": "EU-Kommissionspräsidentin von der Leyen will EU-Bürgern sämtliche Führungsjobs in Russland verbieten. Wirtschaftsverbände sind alarmiert, die Bundesregierung ist gespalten.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/innenpolitik/rentenreform-entwurf-arbeitsministerium-100.html",
+   "titel": "Das plant Arbeitsminister Schweitzer für die Rente",
+   "link": "https://www.tagesschau.de/inland/innenpolitik/rentenreform-entwurf-arbeitsministerium-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-27T16:30:51.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Seit Monaten ringt die Koalition um einen Kompromiss bei der Rente. Arbeitsminister Schweitzer hat nun einen ersten Entwurf vorgelegt. Einer der Punkte: Die \"Rente mit 63\" soll im Kern bestehen bleiben. Von Jan-Peter Bartels und Tim Aßmann.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/video/world/europe/100000010915175/why-russia-is-erasing-stalins-crimes.html",
+   "titel": "Why Russia Is Erasing Stalin’s Crimes",
+   "link": "https://www.nytimes.com/video/world/europe/100000010915175/why-russia-is-erasing-stalins-crimes.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-27T16:29:46.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Across Russia, memorials to victims of Joseph Stalin’s repressive regime are being quietly dismantled as more and more critics of the war in Ukraine are jailed. Our Moscow correspondent Valerie Hopkins takes us to one example of this erasur",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/kommentar/rentenplaene-schweitzer-100.html",
+   "titel": "Kommentar zu Schweitzers Rentenplänen: Die politische Irrfahrt geht weiter",
+   "link": "https://www.tagesschau.de/kommentar/rentenplaene-schweitzer-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-27T16:26:55.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Die \"Rente mit 63\" ist eine Umverteilung von unten nach oben, meint Dagmar Pepping. Arbeitsminister Schweitzer hätte ihr ein Ende setzen müssen. Stattdessen geht die Irrfahrt weiter - und der Streit in der Koalition wohl ebenso.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/rente-mit-63-schweitzer-will-abschlagsfreie-fruehrente-einschraenken-201724330.html",
+   "titel": "RentenGesetzentwurf: Schweitzer will „Rente mit 65“ statt „Rente mit 63“",
+   "link": "https://www.faz.net/aktuell/wirtschaft/rente-mit-63-schweitzer-will-abschlagsfreie-fruehrente-einschraenken-201724330.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-27T16:23:17.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der Arbeitsminister will die abschlagsfreie Frührente einschränken. Der Koalitionspartner CDU zeigt sich von dem Gesetzentwurf überrascht.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/cdu-und-spd-streiten-ueber-steuern-rente-und-benzinpreisdeckel-201722938.html",
    "titel": "Koalition stolpert vorwärts: Haushalt 2027? Endlich durch! Steuerpaket? Vielleicht später!",
@@ -38,17 +93,6 @@
    "sprache": "de"
   },
   {
-   "id": "https://www.faz.net/aktuell/wirtschaft/rente-mit-63-schweitzer-will-abschlagsfreie-fruehrente-einschraenken-201724330.html",
-   "titel": "RentenGesetzentwurf: Schweitzer will „Rente mit 65“ statt „Rente mit 63“",
-   "link": "https://www.faz.net/aktuell/wirtschaft/rente-mit-63-schweitzer-will-abschlagsfreie-fruehrente-einschraenken-201724330.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-27T14:34:47.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Der Arbeitsminister will die abschlagsfreie Frührente einschränken. Der Koalitionspartner CDU zeigt sich von dem Gesetzentwurf überrascht.",
-   "sprache": "de"
-  },
-  {
    "id": "https://www.dw.com/de/woher-kommen-afrikas-kleinwaffen-und-warum-lassen-sie-sich-so-schwer-kontrollieren/a-80064257",
    "titel": "Woher kommen Afrikas Kleinwaffen – und warum lassen sie sich so schwer kontrollieren?",
    "link": "https://www.dw.com/de/woher-kommen-afrikas-kleinwaffen-und-warum-lassen-sie-sich-so-schwer-kontrollieren/a-80064257?maca=de-rss-de-all-1119-xml-mrss",
@@ -70,17 +114,6 @@
     "anleihen"
    ],
    "text": "Der Haushalt 2027 ist beschlossen, es ist der größte in der Geschichte der Bundesrepublik. Sehen Sie hier, wo der Staat wie viel Geld ausgibt – und wo die Tücken für die Zukunft liegen.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/rentenreform-entwurf-arbeitsministerium-100.html",
-   "titel": "Das plant Arbeitsminister Schweitzer für die Rente",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/rentenreform-entwurf-arbeitsministerium-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-27T14:00:01.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Seit Monaten ringt die Koalition um einen Kompromiss bei der Rente. Arbeitsminister Schweitzer hat nun einen ersten Entwurf vorgelegt. Einer der Punkte: Die \"Rente mit 63\" soll im Kern bestehen bleiben. Von Jan-Peter Bartels und Tim Aßmann.",
    "sprache": "de"
   },
   {
@@ -208,17 +241,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "The Kremlin’s rehabilitation of Stalin, who presided over the brutal labor camps of the Gulag, has accelerated during Russia’s war in Ukraine.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/video/world/europe/100000010915175/why-russia-is-erasing-stalins-crimes.html",
-   "titel": "Why Russia Is Erasing Stalin’s Crimes",
-   "link": "https://www.nytimes.com/video/world/europe/100000010915175/why-russia-is-erasing-stalins-crimes.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-27T10:00:01.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Across Russia, memorials to victims of Joseph Stalin’s repressive regime are being quietly dismantled as more and more critics of the war in Ukraine are jailed. Our Moscow correspondent Valerie Hopkins takes us to one example of this erasur",
    "sprache": "en"
   },
   {
@@ -1026,38 +1048,16 @@
    "maerkte": [],
    "text": "Somalia relies heavily on foreign funding and military support for its very survival.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c6wy4ejnyvdyo",
-   "titel": "Spanish elections: What you need to know and what's at stake",
-   "link": "https://www.bbc.co.uk/news/articles/c6wy4ejnyvdyo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-26T00:23:49.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "After eight years of Socialist-led rule, snap elections are taking place on Sunday with conservative Alberto Núñez Feijóo vying to win office.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq772vedgepro",
-   "titel": "France's political mainstream risks presidential vote debacle with no clear candidate",
-   "link": "https://www.bbc.co.uk/news/articles/cq772vedgepro?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-26T00:23:27.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Hard-right and hard-left candidates dominate the polls ahead of next year's presidential election.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 8,
+  "tagesschau": 9,
   "DW": 12,
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 5,
+  "Handelsblatt": 4,
   "BBC World": 9,
-  "NYT World": 23,
+  "NYT World": 22,
   "EIA Today in Energy": 0
  }
 }
