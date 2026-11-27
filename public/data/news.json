@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T10:24:11.295Z",
+ "lastUpdated": "2026-11-27T10:59:53.613Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html",
+   "titel": "Puma Shen, Critic of China, Could be the Next Mayor of Taipei",
+   "link": "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-27T10:42:02.000Z",
+   "kategorie": "handel",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Puma Shen, who has been sanctioned by China for his efforts to prepare civilians for an invasion, could become Taiwan’s next political star if he wins.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cq4gnj2ldkyzo",
+   "titel": "Uganda to withdraw troops from DR Congo town amid diplomatic row",
+   "link": "https://www.bbc.co.uk/news/articles/cq4gnj2ldkyzo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-27T10:39:31.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Ugandan army is helping the Congolese military fight an Islamist militant group in the east of the country.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/eu-gipfel-euhaushalt-es-kommt-zum-showdown-vor-weihnachten/100273137.html",
    "titel": "EU-Gipfel: EU‑Haushalt – es kommt zum Showdown zwischen Merz und Macron vor Weihnachten",
@@ -110,6 +134,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Despite the strikes, markets and restaurants in Riyadh remain busy as residents express trust in the government to protect them.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/ckr5gr4g8gn5o",
+   "titel": "Leaders clash in final Spain election debate as housing dominates run-in",
+   "link": "https://www.bbc.co.uk/news/articles/ckr5gr4g8gn5o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-27T06:03:39.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The struggle many face in buying a home has been the biggest issue of a bitter campaign.",
    "sprache": "en"
   },
   {
@@ -1022,39 +1057,6 @@
    ],
    "text": "Am Mittwoch sind die US-Märkte erneut mit hohen Kursverlusten gestartet. Nicht nur Sorgen vor steigenden Zinsen und neue Zölle machen Anleger nervös.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo",
-   "titel": "Colombian police storm supermarket to free 76 held hostage for 17 hours",
-   "link": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-25T18:41:33.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "One gunman was killed after what the country's president described as a robbery of a cash-laden armoured car gone wrong.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/25/world/middleeast/israel-opposition-netanyahu-new-government.html",
-   "titel": "Opposition Makes Progress Toward Ousting Netanyahu, Party Leader Says",
-   "link": "https://www.nytimes.com/2026/11/25/world/middleeast/israel-opposition-netanyahu-new-government.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-25T18:12:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Gadi Eisenkot, a former military chief, has set Dec. 6 as the deadline to form a new Israeli government. His ally, Avigdor Liberman, said Mr. Eisenkot was on track.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/25/world/middleeast/opposition-makes-progress-toward-ousting-netanyahu-party-leader-says.html",
-   "titel": "Opposition Makes Progress Toward Ousting Netanyahu, Party Leader Says",
-   "link": "https://www.nytimes.com/2026/11/25/world/middleeast/opposition-makes-progress-toward-ousting-netanyahu-party-leader-says.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-25T18:12:36.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Gadi Eisenkot, a former military chief, has set Dec. 6 as the deadline to form a new Israeli government. His ally, Avigdor Liberman, said Mr. Eisenkot was on track.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1063,8 +1065,8 @@
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 2,
-  "BBC World": 11,
-  "NYT World": 22,
+  "BBC World": 12,
+  "NYT World": 23,
   "EIA Today in Energy": 0
  }
 }
