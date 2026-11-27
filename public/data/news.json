@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T20:24:09.848Z",
+ "lastUpdated": "2026-11-27T21:24:12.584Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/27/world/africa/johannesburg-mayor-zille-mashaba-anc.html",
+   "titel": "Johannesburg Lawmakers Snub Helen Zille in Mayoral Election",
+   "link": "https://www.nytimes.com/2026/11/27/world/africa/johannesburg-mayor-zille-mashaba-anc.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-27T20:51:21.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The selection of Herman Mashaba to lead South Africa’s wealthiest city was a blow to Helen Zille, the candidate whose party won the most votes in the election.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cvrlgz6g0ekgo",
+   "titel": "Capsized tanker carrying 7,000 tonnes of diesel to be towed away from Ibiza",
+   "link": "https://www.bbc.co.uk/news/articles/cvrlgz6g0ekgo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-27T20:34:45.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "There are fears of a major oil spillage off Ibiza but the ship's fuel tanks are so far intact.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.spiegel.de/wirtschaft/ki-ex-us-arbeitsminister-robert-reich-will-die-macht-der-techmilliardaere-brechen-a-36aa8aa5-d8a0-4cd8-91a2-88d3fa5ed2e0",
    "titel": "KI: Ex-US-Arbeitsminister Robert Reich will die Macht der Techmilliardäre brechen",
@@ -1023,41 +1047,16 @@
    ],
    "text": "Die USA verschärfen ihre Exportkontrollen, um China den Zugang zu KI-Chips zu erschweren. Nun treffen die Beschränkungen laut einem Bericht auch Lieferungen in südostasiatische Länder.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/kupfer-steht-der-bergbau-in-deutschland-vor-einem-comeback/100255103.html",
-   "titel": "Deep Read: Kupfer aus Deutschland? Warum der Bergbau vor einem Comeback stehen könnte",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/kupfer-steht-der-bergbau-in-deutschland-vor-einem-comeback/100255103.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-26T06:11:00.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Die Kupfernachfrage steigt, die Erzgehalte der südamerikanischen Vorkommen sinken – plötzlich werden auch Vorkommen in Deutschland für Bergbaukonzerne interessant. Ein Ortstermin.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sieben-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html",
-   "titel": "Börse am 26. November: Sieben Punkte, die für Anleger heute wichtig sind",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sieben-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-26T05:18:41.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "ruestung",
-    "aktien"
-   ],
-   "text": "Der Dax fällt auf den tiefsten Stand seit Juli. Sorgen um KI-Aktien und neue US-Zölle belasten den deutschen Leitindex. Am Donnerstag stehen Konjunkturdaten und Rheinmetall im Fokus.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 9,
   "DW": 11,
   "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 5,
+  "FAZ Wirtschaft": 4,
   "Handelsblatt": 4,
-  "BBC World": 9,
-  "NYT World": 21,
+  "BBC World": 10,
+  "NYT World": 22,
   "EIA Today in Energy": 0
  }
 }
