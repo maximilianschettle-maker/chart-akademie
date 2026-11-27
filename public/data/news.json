@@ -1,13 +1,26 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T02:24:10.435Z",
+ "lastUpdated": "2026-11-27T03:24:16.039Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/technik/it-internet/nvidia-chef-jensen-huang-und-der-offenbarungseid-des-silicon-valley/100248894.html",
+   "titel": "Technologie: Nvidia ist nur der Anfang – Sechs Warnsignale, warum das Silicon Valley in der Krise steckt",
+   "link": "https://www.handelsblatt.com/technik/it-internet/nvidia-chef-jensen-huang-und-der-offenbarungseid-des-silicon-valley/100248894.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-27T03:00:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "Der Huang-Skandal zeigt die Abhängigkeiten der Tech-Industrie – von dem Chipkonzern, aber auch von Donald Trump. Und das sind nur zwei der Risiken, mit denen die wertvollsten Firmen der Welt kämpfen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/articles/c670278qk879o",
    "titel": "New Zealand's ruling coalition falls short of parliamentary majority by one seat",
    "link": "https://www.bbc.co.uk/news/articles/c670278qk879o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
-   "zeit": "2026-11-27T02:22:37.000Z",
+   "zeit": "2026-11-27T02:55:31.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "The right-leaning ruling bloc led by the National Party has fallen short of the majority needed to govern.",
@@ -1056,17 +1069,6 @@
    "maerkte": [],
    "text": "Die USA haben neue Sonderzölle gegen die EU und weitere Handelspartner angekündigt. Für betroffene EU-Produkte ist ein Zollsatz von 15 Prozent vorgesehen, auf chinesische Waren soll eine Abgabe von 20 Prozent fällig werden.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo",
-   "titel": "Five Russian military jets hit in airfield strike, says Ukraine",
-   "link": "https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-25T14:46:41.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Savasleyka airfield hosts aircraft used by Russia to launch hypersonic missiles and glide bombs at Ukraine.",
-   "sprache": "en"
   }
  ],
  "quellen": {
