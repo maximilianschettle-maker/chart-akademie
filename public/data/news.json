@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T02:16:31.765Z",
+ "lastUpdated": "2026-11-27T02:24:10.435Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c670278qk879o",
+   "titel": "New Zealand's ruling coalition falls short of parliamentary majority by one seat",
+   "link": "https://www.bbc.co.uk/news/articles/c670278qk879o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-27T02:22:37.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "The right-leaning ruling bloc led by the National Party has fallen short of the majority needed to govern.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.spiegel.de/wirtschaft/eu-gipfel-wie-der-milliarden-streit-ueber-das-budget-im-chaos-versank-a-2a5848d7-950e-4ab5-8faa-f2ea66bc9d62",
    "titel": "EU-Gipfel: Wie der Milliarden-Streit über das Budget im Chaos versank",
@@ -12,17 +23,6 @@
    "maerkte": [],
    "text": "Im Streit über das EU-Budget gingen die Staats- und Regierungschefs ergebnislos auseinander. Ein Faktor: Deutschland und Frankreich finden bisher nicht zueinander. Chronologie eines chaotischen Abends.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c670278qk879o",
-   "titel": "New Zealand's ruling coalition falls short of parliamentary majority by one seat",
-   "link": "https://www.bbc.co.uk/news/articles/c670278qk879o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-27T01:45:30.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "The right-leaning ruling bloc led by the National Party has fallen short of the majority needed to govern.",
-   "sprache": "en"
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqvg2nlr8kd8o",
