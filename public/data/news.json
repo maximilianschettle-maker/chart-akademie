@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T11:24:14.826Z",
+ "lastUpdated": "2026-11-27T12:24:19.410Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/afrika/vereinte-nationen-hunger-hotspots-100.html",
+   "titel": "UN sieht fünf \"Hunger-Hotspots\": Ernährungskrisen verschärfen sich",
+   "link": "https://www.tagesschau.de/ausland/afrika/vereinte-nationen-hunger-hotspots-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-27T12:09:57.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Krieg, Dürre und Budgetkürzungen bei Hilfsorganisationen. Die UN sehen fünf Länder auf eine gefährliche Hungerkrise zusteuern und warnen vor den Auswirkungen. Die Welt müsse nun schnell handeln. Von Tilman Kleinjung.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/afd-weidel-bremst-nord-stream-initiative-ihrer-partei-mit-russland/100273238.html",
+   "titel": "AfD: Weidel bremst Nord-Stream-Initiative ihrer Partei mit Russland",
+   "link": "https://www.handelsblatt.com/politik/deutschland/afd-weidel-bremst-nord-stream-initiative-ihrer-partei-mit-russland/100273238.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-27T11:25:57.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "gas"
+   ],
+   "text": "Außenpolitiker der AfD planen einen Energiegipfel mit Russland und den USA, um wieder Gas über die Nord-Stream-Pipelines zu beziehen. Parteichefin Weidel warnt vor „Schattendiplomatie“.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/business-liveticker-rheinmetall-mitarbeiter-durch-drohnenangriff-in-kuwait-getoetet-faz-200452404.html",
    "titel": "Business-Ticker: Rheinmetall-Mitarbeiter durch Drohnenangriff in Kuwait getötet",
@@ -661,7 +685,7 @@
    "maerkte": [
     "halbleiter"
    ],
-   "text": "Angekündigt war ein »intimes Kamingespräch«, heraus kam offenbar eine Schuldzuweisung an kanadische Frauen. Chip Wilson, Chef der Yoga-Firma Lululemon, hat auf einer Konferenz für Aufsehen gesorgt. Es war nicht das erste Mal.",
+   "text": "Angekündigt war ein »intimes Kamingespräch«, heraus kam offenbar eine Schuldzuweisung an kanadische Frauen. Chip Wilson, Gründer der Yoga-Firma Lululemon, hat auf einer Konferenz für Aufsehen gesorgt. Es war nicht das erste Mal.",
    "sprache": "de"
   },
   {
@@ -1031,38 +1055,14 @@
    "maerkte": [],
    "text": "Mehr Schutz vor Gewalt und Ausbeutung - Zwangsprostitution und Menschenhandel wirksamer bekämpfen: Die schwarz-rote Koalition will Prostitution neu regeln. Eine Expertenkommission empfiehlt nun strengere Regeln.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/25/world/middleeast/libya-ukraine-russia-haftar.html",
-   "titel": "Libyan Forces Threaten Retaliation Over Ukraine’s Attack on Russian Ships",
-   "link": "https://www.nytimes.com/2026/11/25/world/middleeast/libya-ukraine-russia-haftar.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-25T19:02:51.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The Ukrainian drone strike off Libya’s coast killed two Libyan naval officers, according to the forces controlling the country’s east.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/boersen-die-angst-vor-einem-ki-crash-haelt-an/100272767.html",
-   "titel": "Börsen: Die Furcht vor einem KI-Crash will nicht weichen: Was kann die Angst der Anleger jetzt stoppen?",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/boersen-die-angst-vor-einem-ki-crash-haelt-an/100272767.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T19:01:06.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "aktien"
-   ],
-   "text": "Die US-Börsen haben ihre hohen Anfangsverluste am Mittwoch weitgehend aufgeholt. Nicht nur neue Zolldrohungen und die Aussicht auf höhere Zinsen belasten die Anleger.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 11,
   "DW": 13,
   "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 5,
-  "Handelsblatt": 2,
+  "FAZ Wirtschaft": 3,
+  "Handelsblatt": 3,
   "BBC World": 12,
   "NYT World": 23,
   "EIA Today in Energy": 0
