@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T07:24:13.083Z",
+ "lastUpdated": "2026-11-27T08:24:12.814Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/news-kompakt-neuseeland-vor-schwieriger-regierungsbildung/a-80070525",
+   "titel": "News kompakt: Neuseeland vor schwieriger Regierungsbildung",
+   "link": "https://www.dw.com/de/news-kompakt-neuseeland-vor-schwieriger-regierungsbildung/a-80070525?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-27T08:01:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach Neuseelands Parlamentswahl könnte eine neue Mitte-Partei über die Regierung entscheiden. Der EU-Sondergipfel zum langfristigen Haushalt ist wegen Differenzen vorzeitig zu Ende gegangen. Der DW-Nachrichtenüberblick.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.bbc.co.uk/news/videos/cm9w9y8947xqo",
    "titel": "Could housing decide Spain's general election?",
@@ -11,6 +22,17 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Europe correspondent Nick Beake speaks to one couple kept apart by high rents in Valencia.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c6ly7jgv7jzdo",
+   "titel": "Houthi attacks test Saudi Arabia's image of security",
+   "link": "https://www.bbc.co.uk/news/articles/c6ly7jgv7jzdo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-27T06:04:51.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Despite the strikes, markets and restaurants in Riyadh remain busy as residents express trust in the government to protect them.",
    "sprache": "en"
   },
   {
@@ -71,6 +93,17 @@
    "sprache": "de"
   },
   {
+   "id": "https://www.tagesschau.de/ausland/europa/dodik-bosnien-sohn-100.html",
+   "titel": "Bosnien und Herzogowina: Dodik hebt Sohn auf den Thron",
+   "link": "https://www.tagesschau.de/ausland/europa/dodik-bosnien-sohn-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-27T01:29:29.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Milorad Dodik war über mehr als 20 Jahre der mächtige Mann in der serbisch dominierten Republika Srpska. 2025 musste er nach internationalem Druck zurücktreten. Nun macht er seinen Sohn zum Regierungschef. Von Oliver Soos.",
+   "sprache": "de"
+  },
+  {
    "id": "https://www.bbc.co.uk/news/articles/cqvg2nlr8kd8o",
    "titel": "Met Police ruined my life, says Kenyan man wrongly convicted over attack on UK couple",
    "link": "https://www.bbc.co.uk/news/articles/cqvg2nlr8kd8o?at_medium=RSS&at_campaign=rss",
@@ -79,6 +112,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Evidence from a British police officer helped convict Ali Kololo over a 2011 attack in the Kenyan resort of Lamu.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo",
+   "titel": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+   "link": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-26T22:49:27.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ukraine's president voices frustration with US and says it is not pushing Russia hard enough in peace talks to end the war.",
    "sprache": "en"
   },
   {
@@ -1019,61 +1063,15 @@
    ],
    "text": "A court threw out a report suggesting that Cyril Ramaphosa may have tried to conceal the theft of more than half a million dollars of U.S. currency.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/innenpolitik/haushalt-generaldebatte-merz-100.html",
-   "titel": "Generaldebatte im Bundestag: Nachdenkliche Töne und ein Zugeständnis",
-   "link": "https://www.tagesschau.de/inland/innenpolitik/haushalt-generaldebatte-merz-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-25T16:10:40.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Selbstkritisch hat Bundeskanzler Merz im Bundestag den Kurs seiner Regierung verteidigt. Bei der Rede war es ungewöhnlich leise im Saal. Merz führte aus, wessen Kanzler er sein will - ein Zugeständnis an die SPD ging beinahe unter. Von S. H",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/kupferschiefer-kupfer-aus-deutschland-bergbau-koennte-vor-comeback-stehen/100255103.html",
-   "titel": "Deep Read: Kupfer aus Deutschland? Warum der Bergbau vor einem Comeback stehen könnte",
-   "link": "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/kupferschiefer-kupfer-aus-deutschland-bergbau-koennte-vor-comeback-stehen/100255103.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T16:05:33.000Z",
-   "kategorie": "energie",
-   "maerkte": [],
-   "text": "Die Kupfernachfrage steigt, die Erzgehalte der südamerikanischen Vorkommen sinken – plötzlich werden auch Vorkommen in Deutschland für Bergbaukonzerne interessant. Ein Ortstermin.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/usa-wollen-neuen-15-prozent-zoll-f%C3%BCr-eu-importe/a-80045806",
-   "titel": "USA wollen neuen 15-Prozent-Zoll für EU-Importe",
-   "link": "https://www.dw.com/de/usa-wollen-neuen-15-prozent-zoll-für-eu-importe/a-80045806?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-25T15:57:00.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Der US-Handelsbeauftragte bestätigt Berichte, wonach der Zollkonflikt zwischen den USA und deren wichtigsten Handelspartnern in die nächste Runde geht. Für etliche Länder könnte es teuer werden.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-trumps-selbstschaedigender-zollwahnsinn-geht-weiter/100272596.html",
-   "titel": "Kommentar: Trumps selbstschädigender Zollwahnsinn geht weiter – und sein Aktionismus wird sich nicht darauf beschränken",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-trumps-selbstschaedigender-zollwahnsinn-geht-weiter/100272596.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T15:54:48.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Erst macht der US‑Präsident Stephen Miller zum Stabschef, dann setzt er Jensen Huang wieder an die Nvidia-Spitze – und jetzt die nächste Zollrunde. Das Konzept Lame Duck ist inkompatibel mit Trump.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
-  "DW": 12,
+  "tagesschau": 10,
+  "DW": 13,
   "Spiegel Wirtschaft": 5,
-  "FAZ Wirtschaft": 5,
+  "FAZ Wirtschaft": 4,
   "Handelsblatt": 2,
-  "BBC World": 8,
+  "BBC World": 10,
   "NYT World": 20,
   "EIA Today in Energy": 0
  }
