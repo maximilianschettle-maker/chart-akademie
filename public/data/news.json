@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T06:24:09.554Z",
+ "lastUpdated": "2026-11-27T07:24:13.083Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/videos/cm9w9y8947xqo",
+   "titel": "Could housing decide Spain's general election?",
+   "link": "https://www.bbc.co.uk/news/videos/cm9w9y8947xqo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-27T06:09:31.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Europe correspondent Nick Beake speaks to one couple kept apart by high rents in Valencia.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.faz.net/aktuell/wirtschaft/eu-haushalt-das-scheitern-des-sondergipfels-wirft-zweifel-auf-accg-201721661.html",
    "titel": "EU-Budget: Dann war es den sparsamen Staaten um Deutschland zu viel",
@@ -61,7 +72,7 @@
   },
   {
    "id": "https://www.bbc.co.uk/news/articles/cqvg2nlr8kd8o",
-   "titel": "Met Police ruined my life, says Kenyan man wrongly sentenced over attack on UK couple",
+   "titel": "Met Police ruined my life, says Kenyan man wrongly convicted over attack on UK couple",
    "link": "https://www.bbc.co.uk/news/articles/cqvg2nlr8kd8o?at_medium=RSS&at_campaign=rss",
    "quelle": "BBC World",
    "zeit": "2026-11-27T00:48:11.000Z",
@@ -1054,28 +1065,15 @@
    ],
    "text": "Erst macht der US‑Präsident Stephen Miller zum Stabschef, dann setzt er Jensen Huang wieder an die Nvidia-Spitze – und jetzt die nächste Zollrunde. Das Konzept Lame Duck ist inkompatibel mit Trump.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-trump-wahnsinn-geht-ungebremst-weiter/100272596.html",
-   "titel": "Kommentar: Trumps selbstschädigender Zollwahnsinn geht weiter",
-   "link": "https://www.handelsblatt.com/meinung/kommentare/kommentar-der-trump-wahnsinn-geht-ungebremst-weiter/100272596.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-25T15:54:48.000Z",
-   "kategorie": "handel",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Erst macht der US‑Präsident Stephen Miller zum Stabschef, dann setzt er Jensen Huang wieder an die Nvidia-Spitze – und jetzt die nächste Zollrunde. Das Konzept Lame Duck ist inkompatibel mit Trump.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 9,
   "DW": 12,
   "Spiegel Wirtschaft": 5,
-  "FAZ Wirtschaft": 4,
+  "FAZ Wirtschaft": 5,
   "Handelsblatt": 2,
-  "BBC World": 7,
+  "BBC World": 8,
   "NYT World": 20,
   "EIA Today in Energy": 0
  }
