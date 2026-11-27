@@ -1,7 +1,29 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T15:24:14.152Z",
+ "lastUpdated": "2026-11-27T16:24:07.558Z",
  "eintraege": [
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/cdu-und-spd-streiten-ueber-steuern-rente-und-benzinpreisdeckel-201722938.html",
+   "titel": "Koalition stolpert vorwärts: Haushalt 2027? Endlich durch! Steuerpaket? Vielleicht später!",
+   "link": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/cdu-und-spd-streiten-ueber-steuern-rente-und-benzinpreisdeckel-201722938.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-27T16:07:17.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Um den Koalitionsfrieden ist es weiterhin nicht gut bestellt. Der Streit über Steuern, Rente, Benzinpreisdeckel überlagert den Erfolg mit dem Etat, den die Koalition nach zähem Ringen vorweisen kann.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/rentenreform-schweitzer-legt-neuen-gesetzentwurf-vor-union-laeuft-sturm/100273340.html",
+   "titel": "Koalition: „Maximale Eskalation“: Arbeitsminister Schweitzer legt unabgestimmt Gesetzentwurf zur Rente vor",
+   "link": "https://www.handelsblatt.com/politik/deutschland/rentenreform-schweitzer-legt-neuen-gesetzentwurf-vor-union-laeuft-sturm/100273340.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-27T15:34:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Auf 287 Seiten plant der SPD-Minister zahlreiche neue Regeln. Die „Rente mit 63“ soll demnach bleiben – was die Union erzürnt. Geeint sei der Entwurf nicht, so das Kanzleramt.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.dw.com/de/die-internationalen-drohnen-allianzen-der-ukraine/a-80066338",
    "titel": "Die internationalen Drohnen-Allianzen der Ukraine",
@@ -13,6 +35,17 @@
     "ruestung"
    ],
    "text": "Ukrainisches Know-how trifft auf Europas finanzielle und industrielle Stärke: Deutschland und andere Partner bauen ihre Drohnenproduktion mit der Ukraine aus. Das verändert auch Europas Rüstungsindustrie.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/rente-mit-63-schweitzer-will-abschlagsfreie-fruehrente-einschraenken-201724330.html",
+   "titel": "RentenGesetzentwurf: Schweitzer will „Rente mit 65“ statt „Rente mit 63“",
+   "link": "https://www.faz.net/aktuell/wirtschaft/rente-mit-63-schweitzer-will-abschlagsfreie-fruehrente-einschraenken-201724330.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-27T14:34:47.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Der Arbeitsminister will die abschlagsfreie Frührente einschränken. Der Koalitionspartner CDU zeigt sich von dem Gesetzentwurf überrascht.",
    "sprache": "de"
   },
   {
@@ -28,7 +61,7 @@
   },
   {
    "id": "https://www.spiegel.de/wirtschaft/service/bundeshaushalt-2027-diese-vier-grafiken-zeigen-wohin-ihr-steuergeld-fliesst-a-a443d60d-a93e-4300-bae9-f4bcd3d9c995",
-   "titel": "Bundeshaushalt 2027: Diese vier Grafiken zeigen, wohin Ihr Steuergeld fließt",
+   "titel": "Bundeshaushalt 2027: Diese Grafiken zeigen, wohin Ihr Steuergeld fließt",
    "link": "https://www.spiegel.de/wirtschaft/service/bundeshaushalt-2027-diese-vier-grafiken-zeigen-wohin-ihr-steuergeld-fliesst-a-a443d60d-a93e-4300-bae9-f4bcd3d9c995#ref=rss",
    "quelle": "Spiegel Wirtschaft",
    "zeit": "2026-11-27T14:07:00.000Z",
@@ -1015,52 +1048,14 @@
    "maerkte": [],
    "text": "Hard-right and hard-left candidates dominate the polls ahead of next year's presidential election.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqy7rn30v314o",
-   "titel": "Thirty-one killed in massive fire as fuel tanker crashes on Cairo highway",
-   "link": "https://www.bbc.co.uk/news/articles/cqy7rn30v314o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-25T22:18:06.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel",
-    "aktien"
-   ],
-   "text": "Another 21 are injured after the tanker reportedly overturns on a busy ring road in the Egyptian capital.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o",
-   "titel": "North Korea expels Swiss diplomat in sanctions row",
-   "link": "https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-25T21:51:17.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "Swiss officials said relations would be kept through North Korea's embassy in Bern, and its own embassy in Beijing.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/25/world/africa/mauritius-stray-dogs.html",
-   "titel": "Island Paradise of Mauritius Has Sun, Beaches and Too Many Dogs",
-   "link": "https://www.nytimes.com/2026/11/25/world/africa/mauritius-stray-dogs.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-25T20:40:27.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Mauritius, a popular tourist destination off southern Africa, has become overrun with strays. With more and more residents chased and attacked, many are fed up.",
-   "sprache": "en"
   }
  ],
  "quellen": {
-  "tagesschau": 9,
+  "tagesschau": 8,
   "DW": 12,
-  "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 4,
-  "Handelsblatt": 4,
+  "Spiegel Wirtschaft": 3,
+  "FAZ Wirtschaft": 5,
+  "Handelsblatt": 5,
   "BBC World": 9,
   "NYT World": 23,
   "EIA Today in Energy": 0
