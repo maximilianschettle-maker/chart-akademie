@@ -1,7 +1,31 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T14:24:10.603Z",
+ "lastUpdated": "2026-11-27T15:24:14.152Z",
  "eintraege": [
+  {
+   "id": "https://www.dw.com/de/die-internationalen-drohnen-allianzen-der-ukraine/a-80066338",
+   "titel": "Die internationalen Drohnen-Allianzen der Ukraine",
+   "link": "https://www.dw.com/de/die-internationalen-drohnen-allianzen-der-ukraine/a-80066338?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-27T15:01:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "ruestung"
+   ],
+   "text": "Ukrainisches Know-how trifft auf Europas finanzielle und industrielle Stärke: Deutschland und andere Partner bauen ihre Drohnenproduktion mit der Ukraine aus. Das verändert auch Europas Rüstungsindustrie.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.dw.com/de/woher-kommen-afrikas-kleinwaffen-und-warum-lassen-sie-sich-so-schwer-kontrollieren/a-80064257",
+   "titel": "Woher kommen Afrikas Kleinwaffen – und warum lassen sie sich so schwer kontrollieren?",
+   "link": "https://www.dw.com/de/woher-kommen-afrikas-kleinwaffen-und-warum-lassen-sie-sich-so-schwer-kontrollieren/a-80064257?maca=de-rss-de-all-1119-xml-mrss",
+   "quelle": "DW",
+   "zeit": "2026-11-27T14:34:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Internationale Lieferungen, alte Kriegsbestände und gestohlene Waffenarsenale: Kleinwaffen befeuern Konflikte in Afrika. Regierungen versuchen, ihre Verbreitung einzudämmen – doch die Kontrolle bleibt schwierig.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.spiegel.de/wirtschaft/service/bundeshaushalt-2027-diese-vier-grafiken-zeigen-wohin-ihr-steuergeld-fliesst-a-a443d60d-a93e-4300-bae9-f4bcd3d9c995",
    "titel": "Bundeshaushalt 2027: Diese vier Grafiken zeigen, wohin Ihr Steuergeld fließt",
@@ -1029,32 +1053,6 @@
    ],
    "text": "Mauritius, a popular tourist destination off southern Africa, has become overrun with strays. With more and more residents chased and attacked, many are fed up.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/25/world/africa/maritius-stray-dogs.html",
-   "titel": "Island Paradise of Mauritius Has Sun, Beaches and Too Many Dogs",
-   "link": "https://www.nytimes.com/2026/11/25/world/africa/maritius-stray-dogs.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-25T20:40:27.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Mauritius, a popular tourist destination off southern Africa, has become overrun with strays. With more and more residents chased and attacked, many are fed up.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.dw.com/de/haushalt-2027-rekordschulden-versch%C3%A4rfen-den-streit-in-der-koalition/a-80048368",
-   "titel": "Haushalt 2027: Rekordschulden verschärfen den Streit in der Koalition",
-   "link": "https://www.dw.com/de/haushalt-2027-rekordschulden-verschärfen-den-streit-in-der-koalition/a-80048368?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-25T20:02:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "anleihen"
-   ],
-   "text": "Der Bundeshaushalt erreicht neue Höchststände, während Rentenkassen, Verteidigung und schwache Konjunktur den Druck erhöhen. Zugleich wachsen die Spannungen zwischen Union und SPD über den künftigen Kurs.",
-   "sprache": "de"
   }
  ],
  "quellen": {
