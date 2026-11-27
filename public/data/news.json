@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-27T18:24:06.583Z",
+ "lastUpdated": "2026-11-27T19:24:14.216Z",
  "eintraege": [
+  {
+   "id": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o",
+   "titel": "Weary of war but with no sign of backing down, Kyiv faces another punishing winter",
+   "link": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-27T18:42:50.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Ukraine settles in for another devastating winter as the questions persists: how will it all end?",
+   "sprache": "en"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/27/world/europe/russia-ai-journey-conference.html",
    "titel": "With Dancing Robots, Russia Projects a Future Shaped by A.I., Not War",
@@ -32,7 +43,7 @@
    "zeit": "2026-11-27T17:35:03.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Die britische Regierungspartei ist tief gespalten, ob das große Ölfeld Rosebank genehmigt werden soll. Klimaschützer kämpfen gegen Gewerkschaften. Den Haushalten droht im Januar ein Energiepreisschock.",
+   "text": "Die britische Regierungspartei ist tief gespalten in der Frage, ob das große Ölfeld Rosebank genehmigt werden soll. Klimaschützer kämpfen gegen Gewerkschaften. Den Haushalten droht im Januar ein Energiepreisschock.",
    "sprache": "de"
   },
   {
@@ -1037,17 +1048,6 @@
    "maerkte": [],
    "text": "After an Italian couple bought a house built by Pier Paolo Pasolini, one of the country’s greatest film directors, local villagers claimed the property.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o",
-   "titel": "US announces new tariffs on host of countries including China",
-   "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-26T04:10:58.000Z",
-   "kategorie": "handel",
-   "maerkte": [],
-   "text": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
-   "sprache": "en"
   }
  ],
  "quellen": {
@@ -1056,8 +1056,8 @@
   "Spiegel Wirtschaft": 3,
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 4,
-  "BBC World": 9,
-  "NYT World": 23,
+  "BBC World": 10,
+  "NYT World": 22,
   "EIA Today in Energy": 0
  }
 }
