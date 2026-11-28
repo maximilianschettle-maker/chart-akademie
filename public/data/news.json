@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-28T13:24:07.155Z",
+ "lastUpdated": "2026-11-28T14:24:11.643Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/28/world/europe/ukraine-russia-long-range-strikes.html",
+   "titel": "Ukraine’s Deep Strikes Grow in Scale and Scope Across Russia and Beyond",
+   "link": "https://www.nytimes.com/2026/11/28/world/europe/ukraine-russia-long-range-strikes.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-28T13:25:26.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A campaign aimed at depriving Moscow’s war machine of fuel, weapons and money has been criticized by the Trump administration.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/drohnensichtung-flugverkehr-am-airport-koelnbonn-gestoppt-100.html",
    "titel": "Flugverkehr am Airport Köln/Bonn nach Drohnensichtung zeitweise gestoppt",
@@ -56,17 +67,6 @@
    "maerkte": [],
    "text": "Der Vorschlag des Arbeitsministers zur Reform der Rente liegt auf dem Tisch - und der Gegenwind aus der Union ist recht rau. Dem Koalitionspartner stößt auf, dass die \"Rente mit 63\" im Kern erhalten bleibt. Doch nicht nur das.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/28/world/europe/ukraine-russia-long-range-strikes.html",
-   "titel": "Ukraine’s Deep Strikes Grow in Scale and Scope Across Russia and Beyond",
-   "link": "https://www.nytimes.com/2026/11/28/world/europe/ukraine-russia-long-range-strikes.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-28T10:02:15.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A campaign aimed at depriving Moscow’s war machine of fuel, weapons and money has been criticized by the Trump administration.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/asien/gaza-israel-angriff-hamas-aerzte-ohne-grenzen-100.html",
@@ -1042,12 +1042,12 @@
  ],
  "quellen": {
   "tagesschau": 10,
-  "DW": 11,
+  "DW": 10,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 5,
   "Handelsblatt": 6,
   "BBC World": 5,
-  "NYT World": 20,
+  "NYT World": 18,
   "EIA Today in Energy": 0
  }
 }
