@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-28T19:24:07.610Z",
+ "lastUpdated": "2026-11-28T20:17:02.392Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/ausland/europa/ukraine-russland-krieg-angriffe-110.html",
@@ -1038,7 +1038,7 @@
   }
  ],
  "quellen": {
-  "tagesschau": 12,
+  "tagesschau": 11,
   "DW": 8,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 5,
