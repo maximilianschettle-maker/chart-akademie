@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-28T11:58:25.710Z",
+ "lastUpdated": "2026-11-28T12:24:08.035Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/ausland/europa/russland-rosstat-datenleak-hacker-100.html",
+   "titel": "Datenleak zeigt Ausmaß russischer Verluste im Krieg gegen die Ukraine",
+   "link": "https://www.tagesschau.de/ausland/europa/russland-rosstat-datenleak-hacker-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-28T12:16:17.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russland hält die offiziellen Zahlen zu seinen Verlusten im Ukraine-Krieg unter Verschluss. Nun liefert ein Hackerangriff auf die Statistikbehörde Einblicke - und gibt Hinweise auf Hunderttausende getötete russische Soldaten. Von L. Becker.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-bietet-waffenruhe-im-schwarzen-meer-an/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Russland stellt Atom-U-Boot mit Hyperschallraketen in Dienst",
@@ -1026,19 +1037,6 @@
     "halbleiter"
    ],
    "text": "Angekündigt war ein »intimes Kamingespräch«, heraus kam offenbar eine Schuldzuweisung an kanadische Frauen. Chip Wilson, Gründer der Yoga-Firma Lululemon, hat auf einer Konferenz für Aufsehen gesorgt. Es war nicht das erste Mal.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.spiegel.de/wirtschaft/unternehmen/lululemon-chip-wilson-kritisiert-kanadas-frauen-fuer-niedrige-geburtenrate-a-7c6a208b-8462-43df-afb8-c82338e36a3b",
-   "titel": "Lululemon: Chip Wilson kritisiert Kanadas Frauen für niedrige Geburtenrate",
-   "link": "https://www.spiegel.de/wirtschaft/unternehmen/lululemon-chip-wilson-kritisiert-kanadas-frauen-fuer-niedrige-geburtenrate-a-7c6a208b-8462-43df-afb8-c82338e36a3b#ref=rss",
-   "quelle": "Spiegel Wirtschaft",
-   "zeit": "2026-11-26T11:26:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "Angekündigt war ein »intimes Kamingespräch«, heraus kam offenbar eine Schuldzuweisung an kanadische Frauen. Chip Wilson, Chef der Yoga-Firma Lululemon, hat auf einer Konferenz für Aufsehen gesorgt. Es war nicht das erste Mal.",
    "sprache": "de"
   }
  ],
