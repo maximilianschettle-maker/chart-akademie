@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-28T12:24:08.035Z",
+ "lastUpdated": "2026-11-28T13:24:07.155Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/drohnensichtung-flugverkehr-am-airport-koelnbonn-gestoppt-100.html",
+   "titel": "Flugverkehr am Airport Köln/Bonn nach Drohnensichtung zeitweise gestoppt",
+   "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/drohnensichtung-flugverkehr-am-airport-koelnbonn-gestoppt-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-28T12:35:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Am Airport Köln/Bonn ist am späten Abend der Flugverkehr vorübergehend eingestellt worden. Anlass war eine gesichtete Drohne. Warum sie dort unterwegs war, ist unklar. Mittlerweile können die Flugzeuge wieder starten und landen.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/russland-rosstat-datenleak-hacker-100.html",
    "titel": "Datenleak zeigt Ausmaß russischer Verluste im Krieg gegen die Ukraine",
@@ -99,17 +110,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Zwei Männer wurden bei einem israelischen Luftangriff auf eine Klinik im Gazastreifen getötet. Deutschlands Umweltminister plädiert für Umbau des Rheins. Der DW-Nachrichtenüberblick.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/drohnensichtung-flugverkehr-am-airport-koelnbonn-gestoppt-100.html",
-   "titel": "Flugverkehr am Airport Köln/Bonn nach Drohnensichtung zeitweise gestoppt",
-   "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/drohnensichtung-flugverkehr-am-airport-koelnbonn-gestoppt-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-28T06:41:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Am Airport Köln/Bonn ist am späten Abend der Flugverkehr vorübergehend eingestellt worden. Anlass war eine gesichtete Drohne. Warum sie dort unterwegs war, ist unklar. Mittlerweile können die Flugzeuge wieder starten und landen.",
    "sprache": "de"
   },
   {
