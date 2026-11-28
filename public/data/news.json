@@ -1,7 +1,18 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-28T20:17:02.392Z",
+ "lastUpdated": "2026-11-28T20:24:10.207Z",
  "eintraege": [
+  {
+   "id": "https://www.nytimes.com/2026/11/28/world/europe/ukraine-russia-long-range-strikes.html",
+   "titel": "Ukraine’s Deep Strikes Grow in Scale and Scope Across Russia and Beyond",
+   "link": "https://www.nytimes.com/2026/11/28/world/europe/ukraine-russia-long-range-strikes.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-28T20:20:41.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A campaign aimed at depriving Moscow’s war machine of fuel, weapons and money has been criticized by the Trump administration.",
+   "sprache": "en"
+  },
   {
    "id": "https://www.tagesschau.de/ausland/europa/ukraine-russland-krieg-angriffe-110.html",
    "titel": "Krieg gegen die Ukraine: Mehrere Tote bei russischen Angriffen",
@@ -163,17 +174,6 @@
    "maerkte": [],
    "text": "Gewinnt die spanische Rechte am Sonntag die Wahl? Dann könnte dem Wachstumsmotor Europas ein wirtschaftspolitischer Kurswechsel bevorstehen.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/28/world/europe/ukraine-russia-long-range-strikes.html",
-   "titel": "Ukraine’s Deep Strikes Grow in Scale and Scope Across Russia and Beyond",
-   "link": "https://www.nytimes.com/2026/11/28/world/europe/ukraine-russia-long-range-strikes.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-28T13:25:27.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "A campaign aimed at depriving Moscow’s war machine of fuel, weapons and money has been criticized by the Trump administration.",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/europa/russland-rosstat-datenleak-hacker-100.html",
