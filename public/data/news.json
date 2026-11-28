@@ -1,17 +1,63 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-28T16:24:07.968Z",
+ "lastUpdated": "2026-11-28T17:24:10.234Z",
  "eintraege": [
   {
    "id": "https://www.handelsblatt.com/politik/international/selenskyj-angriff-auf-kriegsschiff-in-libyen-nicht-abgesprochen/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Selenskyj: Angriff auf Kriegsschiff in Libyen nicht abgesprochen",
    "link": "https://www.handelsblatt.com/politik/international/selenskyj-angriff-auf-kriegsschiff-in-libyen-nicht-abgesprochen/27982126.html",
    "quelle": "Handelsblatt",
-   "zeit": "2026-11-28T15:52:00.000Z",
+   "zeit": "2026-11-28T17:22:18.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [
+    "eurusd"
+   ],
+   "text": "Saab erhält von Ukraine Radar-Auftrag über 450 Millionen Euro +++ Russland meldet Angriffe auf Energieanlagen im Raum Kiew +++ Neun Tote bei Angriffen in Ukraine gemeldet +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/luftwaffenstuetzpunkt-usa-wehrten-offenbar-drohnen-an-britischer-militaerbasis-ab/100273458.html",
+   "titel": "Luftwaffenstützpunkt: USA wehrten offenbar Drohnen an britischer Militärbasis ab",
+   "link": "https://www.handelsblatt.com/politik/international/luftwaffenstuetzpunkt-usa-wehrten-offenbar-drohnen-an-britischer-militaerbasis-ab/100273458.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-28T17:11:54.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
-   "text": "Russland meldet Angriffe auf Energieanlagen im Raum Kiew +++ Neun Tote bei Angriffen in Ukraine gemeldet +++ Russland stellt Atom-U-Boot mit Hyperschallraketen in Dienst +++ Der Newsblog.",
+   "text": "Drohnen sollen nahe einem Luftwaffenstützpunkt in Großbritannien gesichtet worden sein. Medien berichten, dass sie abgewehrt, aber nicht sichergestellt wurden. Eine wichtige Frage bleibt damit offen.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/28/world/middleeast/israeli-strike-kills-two-workers-at-gaza-clinic.html",
+   "titel": "Israeli Strike Kills 2 Workers at Gaza Clinic, Doctors Without Borders Says",
+   "link": "https://www.nytimes.com/2026/11/28/world/middleeast/israeli-strike-kills-two-workers-at-gaza-clinic.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-28T17:11:02.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The aid group condemned the attack on a medical facility. Israel said it had conducted a targeted strike that killed two security guards it said were Hamas operatives.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cm752q30q5leo",
+   "titel": "Dozens killed as Myanmar military strikes hit wedding venue and school",
+   "link": "https://www.bbc.co.uk/news/articles/cm752q30q5leo?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-28T16:53:20.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Air strikes by Myanmar's military government have killed dozens of civilians across the South East Asian nation in recent days.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.nytimes.com/video/world/europe/100000010915175/why-russia-is-erasing-stalins-crimes.html",
+   "titel": "Why Russia Is Erasing Stalin’s Crimes",
+   "link": "https://www.nytimes.com/video/world/europe/100000010915175/why-russia-is-erasing-stalins-crimes.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-28T16:28:07.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Across Russia, memorials to victims of Joseph Stalin’s repressive regime are being quietly dismantled as more and more critics of the war in Ukraine are jailed. Our Moscow correspondent Valerie Hopkins takes us to one example of this erasur",
+   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/ausland/amerika/streit-falklandinseln-100.html",
@@ -62,17 +108,6 @@
    ],
    "text": "Die Wahl am Sonntag dürfte eine Zäsur markieren. Ein Bündnis rechter Parteien wird wohl die nächste Regierung stellen. Das hätte Folgen für Spaniens Wirtschaft und für Europa.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/28/world/middleeast/israeli-strike-kills-two-workers-at-gaza-clinic.html",
-   "titel": "Israeli Strike Kills 2 Workers at Gaza Clinic, Doctors Without Borders Says",
-   "link": "https://www.nytimes.com/2026/11/28/world/middleeast/israeli-strike-kills-two-workers-at-gaza-clinic.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-28T15:18:21.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The aid group condemned the attack on a medical facility. Israel said it had conducted a targeted strike that killed two security guards it said were Hamas operatives.",
-   "sprache": "en"
   },
   {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-bietet-waffenruhe-im-schwarzen-meer-an/27982126.html",
@@ -343,17 +378,6 @@
    "maerkte": [],
    "text": "Seit Monaten ringt die Koalition um einen Kompromiss bei der Rente. Arbeitsminister Schweitzer hat nun einen ersten Entwurf vorgelegt. Einer der Punkte: Die \"Rente mit 63\" soll im Kern bestehen bleiben. Von Jan-Peter Bartels und Tim Aßmann.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/video/world/europe/100000010915175/why-russia-is-erasing-stalins-crimes.html",
-   "titel": "Why Russia Is Erasing Stalin’s Crimes",
-   "link": "https://www.nytimes.com/video/world/europe/100000010915175/why-russia-is-erasing-stalins-crimes.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-27T16:29:46.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Across Russia, memorials to victims of Joseph Stalin’s repressive regime are being quietly dismantled as more and more critics of the war in Ukraine are jailed. Our Moscow correspondent Valerie Hopkins takes us to one example of this erasur",
-   "sprache": "en"
   },
   {
    "id": "https://www.tagesschau.de/kommentar/rentenplaene-schweitzer-100.html",
@@ -1011,39 +1035,15 @@
    "maerkte": [],
    "text": "Dozens of Brazilians were sent to the front lines with little training, and the high salaries they were promised, they say, turned out to be illusory.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/russland-vier-szenarien-fuer-putins-schattenkrieg-bis-2029/100272728.html",
-   "titel": "Russland: Wie Putins Schattenkrieg weitergehen könnte – vier Szenarien",
-   "link": "https://www.handelsblatt.com/politik/international/russland-vier-szenarien-fuer-putins-schattenkrieg-bis-2029/100272728.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-26T14:00:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Einer neuen Studie zufolge konzentriert Russland seine hybriden Angriffe auf Deutschland und Polen. Die Experten haben durchgespielt, wie dieser Konflikt weitergehen könnte.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/tanker-ibiza-100.html",
-   "titel": "Schiffsunglück vor Ibiza: Tanker mit 7.000 Tonnen Diesel gekentert",
-   "link": "https://www.tagesschau.de/ausland/europa/tanker-ibiza-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-26T13:51:28.000Z",
-   "kategorie": "energie",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Wegen möglicher Umweltgefahren aktivierten die spanischen Behörden einen Notfallplan: Vor der Küste Ibizas ist ein Tanker mit 7.000 Tonnen Diesel gekentert. Bei dem Unglück kam ein Seemann ums Leben.",
-   "sprache": "de"
   }
  ],
  "quellen": {
   "tagesschau": 11,
-  "DW": 9,
+  "DW": 8,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 5,
-  "Handelsblatt": 6,
-  "BBC World": 5,
+  "Handelsblatt": 7,
+  "BBC World": 6,
   "NYT World": 18,
   "EIA Today in Energy": 0
  }
