@@ -1,7 +1,68 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-28T15:24:10.720Z",
+ "lastUpdated": "2026-11-28T16:24:07.968Z",
  "eintraege": [
+  {
+   "id": "https://www.handelsblatt.com/politik/international/selenskyj-angriff-auf-kriegsschiff-in-libyen-nicht-abgesprochen/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Selenskyj: Angriff auf Kriegsschiff in Libyen nicht abgesprochen",
+   "link": "https://www.handelsblatt.com/politik/international/selenskyj-angriff-auf-kriegsschiff-in-libyen-nicht-abgesprochen/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-28T15:52:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russland meldet Angriffe auf Energieanlagen im Raum Kiew +++ Neun Tote bei Angriffen in Ukraine gemeldet +++ Russland stellt Atom-U-Boot mit Hyperschallraketen in Dienst +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/amerika/streit-falklandinseln-100.html",
+   "titel": "Ölförderung vor Falklandinseln: Seegerichtshof weist Antrag Argentiniens ab",
+   "link": "https://www.tagesschau.de/ausland/amerika/streit-falklandinseln-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-28T15:45:16.000Z",
+   "kategorie": "energie",
+   "maerkte": [
+    "oel"
+   ],
+   "text": "Seit Jahrzehnten beanspruchen Briten und Argentinier die Kontrolle über die Falklandinseln im Südatlantik. Argentinien wollte nun ein britisches Ölprojekt vor der Küste der Inselgruppe gerichtlich stoppen - ohne Erfolg.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/28/world/asia/taiwan-election-taipei-china.html",
+   "titel": "A Critic of Beijing Falls Short in Taiwan’s Key Mayoral Election",
+   "link": "https://www.nytimes.com/2026/11/28/world/asia/taiwan-election-taipei-china.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-28T15:39:19.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "halbleiter"
+   ],
+   "text": "The result in the capital was part of broader local elections and will probably bring a sigh of relief in China, which claims the island as its territory.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/drohnensichtung-flugverkehr-am-airport-koelnbonn-gestoppt-100.html",
+   "titel": "Flugverkehr am Airport Köln/Bonn nach Drohnensichtung zeitweise gestoppt",
+   "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/drohnensichtung-flugverkehr-am-airport-koelnbonn-gestoppt-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-28T15:35:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Am Airport Köln/Bonn ist am späten Abend der Flugverkehr vorübergehend eingestellt worden. Anlass war eine gesichtete Drohne. Warum sie dort unterwegs war, ist unklar. Mittlerweile können die Flugzeuge wieder starten und landen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/neuwahl-was-ein-rechtsruck-fuer-spaniens-wachstumsmodell-bedeuten-wuerde/100270892.html",
+   "titel": "Neuwahl: Weniger Wachstum und steigendes Defizit? – Was ein Rechtsruck in Spanien bedeuten würde",
+   "link": "https://www.handelsblatt.com/politik/international/neuwahl-was-ein-rechtsruck-fuer-spaniens-wachstumsmodell-bedeuten-wuerde/100270892.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-28T15:34:25.000Z",
+   "kategorie": "politik",
+   "maerkte": [
+    "anleihen"
+   ],
+   "text": "Die Wahl am Sonntag dürfte eine Zäsur markieren. Ein Bündnis rechter Parteien wird wohl die nächste Regierung stellen. Das hätte Folgen für Spaniens Wirtschaft und für Europa.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/28/world/middleeast/israeli-strike-kills-two-workers-at-gaza-clinic.html",
    "titel": "Israeli Strike Kills 2 Workers at Gaza Clinic, Doctors Without Borders Says",
@@ -14,19 +75,6 @@
    "sprache": "en"
   },
   {
-   "id": "https://www.nytimes.com/2026/11/28/world/asia/taiwan-election-taipei-china.html",
-   "titel": "A Critic of Beijing Falls Short in Taiwan’s Key Mayoral Election",
-   "link": "https://www.nytimes.com/2026/11/28/world/asia/taiwan-election-taipei-china.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-28T15:09:10.000Z",
-   "kategorie": "politik",
-   "maerkte": [
-    "halbleiter"
-   ],
-   "text": "The result in the capital was part of broader local elections and will probably bring a sigh of relief in China, which claims the island as its territory.",
-   "sprache": "en"
-  },
-  {
    "id": "https://www.handelsblatt.com/politik/international/ukraine-bietet-waffenruhe-im-schwarzen-meer-an/27982126.html",
    "titel": "+++ Ukraine-Krieg +++: Russland stellt Atom-U-Boot mit Hyperschallraketen in Dienst",
    "link": "https://www.handelsblatt.com/politik/international/ukraine-bietet-waffenruhe-im-schwarzen-meer-an/27982126.html",
@@ -35,6 +83,17 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Russland meldet Angriffe auf Energieanlagen im Raum Kiew +++ Neun Tote bei Angriffen in Ukraine gemeldet +++ Selenskyj: Angriff auf Schiff in Libyen war nicht abgesprochen +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.faz.net/aktuell/wirtschaft/wahl-in-spanien-vox-plant-radikale-kuerzungen-nach-milei-vorbild-accg-201722436.html",
+   "titel": "Wahl in Spanien: Vox plant radikale Kürzungen nach Milei-Vorbild",
+   "link": "https://www.faz.net/aktuell/wirtschaft/wahl-in-spanien-vox-plant-radikale-kuerzungen-nach-milei-vorbild-accg-201722436.html",
+   "quelle": "FAZ Wirtschaft",
+   "zeit": "2026-11-28T14:36:14.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Gewinnt die spanische Rechte am Sonntag die Wahl? Dann könnte dem Wachstumsmotor Europas ein wirtschaftspolitischer Kurswechsel bevorstehen.",
    "sprache": "de"
   },
   {
@@ -53,22 +112,11 @@
    "titel": "Ukraine’s Deep Strikes Grow in Scale and Scope Across Russia and Beyond",
    "link": "https://www.nytimes.com/2026/11/28/world/europe/ukraine-russia-long-range-strikes.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-28T13:25:26.000Z",
+   "zeit": "2026-11-28T13:25:27.000Z",
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "A campaign aimed at depriving Moscow’s war machine of fuel, weapons and money has been criticized by the Trump administration.",
    "sprache": "en"
-  },
-  {
-   "id": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/drohnensichtung-flugverkehr-am-airport-koelnbonn-gestoppt-100.html",
-   "titel": "Flugverkehr am Airport Köln/Bonn nach Drohnensichtung zeitweise gestoppt",
-   "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/drohnensichtung-flugverkehr-am-airport-koelnbonn-gestoppt-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-28T12:35:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Am Airport Köln/Bonn ist am späten Abend der Flugverkehr vorübergehend eingestellt worden. Anlass war eine gesichtete Drohne. Warum sie dort unterwegs war, ist unklar. Mittlerweile können die Flugzeuge wieder starten und landen.",
-   "sprache": "de"
   },
   {
    "id": "https://www.tagesschau.de/ausland/europa/russland-rosstat-datenleak-hacker-100.html",
@@ -149,7 +197,7 @@
   },
   {
    "id": "https://www.nytimes.com/2026/11/28/world/europe/spain-pedro-sanchez-conservatives-election.html",
-   "titel": "Abroad, Spain’s Leader Is a Left-Wing Hero. Will He Lose Power at Home?",
+   "titel": "Spain’s Election Could Oust Sánchez, a Left-Wing Hero Abroad",
    "link": "https://www.nytimes.com/2026/11/28/world/europe/spain-pedro-sanchez-conservatives-election.html",
    "quelle": "NYT World",
    "zeit": "2026-11-28T05:01:10.000Z",
@@ -987,62 +1035,16 @@
    ],
    "text": "Wegen möglicher Umweltgefahren aktivierten die spanischen Behörden einen Notfallplan: Vor der Küste Ibizas ist ein Tanker mit 7.000 Tonnen Diesel gekentert. Bei dem Unglück kam ein Seemann ums Leben.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/tanker-vor-ibiza-gekentert-ein-besatzungsmitglied-tot/a-80062333",
-   "titel": "Tanker vor Ibiza gekentert: Ein Besatzungsmitglied tot",
-   "link": "https://www.dw.com/de/tanker-vor-ibiza-gekentert-ein-besatzungsmitglied-tot/a-80062333?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-26T13:43:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "oel"
-   ],
-   "text": "Mit 8,2 Millionen Litern Dieseltreibstoff in den Tanks geriet die \"Med Emre\" vor der spanischen Insel Ibiza in Seenot. Dann kenterte das Schiff. Wird es sinken?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/asien/mehr-frauen-in-russland-sterben-durch-gewalt-100.html",
-   "titel": "Russland: Sieben von zehn ermordeten Frauen Opfer häuslicher Gewalt",
-   "link": "https://www.tagesschau.de/ausland/asien/mehr-frauen-in-russland-sterben-durch-gewalt-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-26T13:40:55.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Der Krieg gegen die Ukraine hinterlässt auch in der Statistik zu häuslicher Gewalt in Russland Spuren. Eine Studie zeigt: Viele Täter sind Kriegsteilnehmer. Und Verfahren können ausgesetzt werden, wenn Beschuldigte in den Krieg ziehen. Von ",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/ausland/europa/tote-nach-russischen-angriffen-ukraine-100.html",
-   "titel": "Krieg gegen die Ukraine: Angriffe auf Kiew - Tote in Saporischschja",
-   "link": "https://www.tagesschau.de/ausland/europa/tote-nach-russischen-angriffen-ukraine-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-26T13:20:47.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Russland hat die Ukraine wieder massiv angegriffen. Auch bei einem ukrainischen Drohnenangriff im russisch besetzten Teil von Saporischschja gab es Tote. Beide Seiten tauschten die Leichen gefallener Soldaten aus.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/rentenreform-warum-diese-reform-zur-existenzfrage-fuer-die-koalition-wird/100272907.html",
-   "titel": "Bundesregierung: „Wie lange lassen wir uns noch für blöd verkaufen?“: Rentenreform wird zur Existenzfrage der Koalition",
-   "link": "https://www.handelsblatt.com/politik/deutschland/rentenreform-warum-diese-reform-zur-existenzfrage-fuer-die-koalition-wird/100272907.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-26T12:49:30.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Die Rente wird zeigen, ob die Koalition noch Reformen zustande bringt. Am Abend treffen sich die Verhandlungsführer. Ein Vorschlag der CDU sorgt für Unruhe – und beschreibt das Dilemma.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
-  "DW": 10,
+  "tagesschau": 11,
+  "DW": 9,
   "Spiegel Wirtschaft": 4,
-  "FAZ Wirtschaft": 6,
-  "Handelsblatt": 5,
+  "FAZ Wirtschaft": 5,
+  "Handelsblatt": 6,
   "BBC World": 5,
-  "NYT World": 19,
+  "NYT World": 18,
   "EIA Today in Energy": 0
  }
 }
