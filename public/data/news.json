@@ -1,16 +1,60 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-28T09:24:11.189Z",
+ "lastUpdated": "2026-11-28T10:24:10.231Z",
  "eintraege": [
   {
    "id": "https://www.tagesschau.de/inland/rentenplaene-reaktionen-102.html",
    "titel": "Kritik aus der Union an Rentenplänen von Arbeitsminister Schweitzer",
    "link": "https://www.tagesschau.de/inland/rentenplaene-reaktionen-102.html",
    "quelle": "tagesschau",
-   "zeit": "2026-11-28T09:14:19.000Z",
+   "zeit": "2026-11-28T10:11:40.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "Der Vorschlag des Arbeitsministers zur Reform der Rente liegt auf dem Tisch - und der Gegenwind aus der Union ist recht rau. Dem Koalitionspartner stößt auf, dass die \"Rente mit 63\" im Kern erhalten bleibt. Doch nicht nur das.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.nytimes.com/2026/11/28/world/europe/ukraine-russia-long-range-strikes.html",
+   "titel": "Ukraine’s Deep Strikes Grow in Scale and Scope Across Russia and Beyond",
+   "link": "https://www.nytimes.com/2026/11/28/world/europe/ukraine-russia-long-range-strikes.html",
+   "quelle": "NYT World",
+   "zeit": "2026-11-28T10:02:15.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "A campaign aimed at depriving Moscow’s war machine of fuel, weapons and money has been criticized by the Trump administration.",
+   "sprache": "en"
+  },
+  {
+   "id": "https://www.tagesschau.de/ausland/asien/gaza-israel-angriff-hamas-aerzte-ohne-grenzen-100.html",
+   "titel": "Mitarbeiter von Ärzte ohne Grenzen im Gazastreifen getötet",
+   "link": "https://www.tagesschau.de/ausland/asien/gaza-israel-angriff-hamas-aerzte-ohne-grenzen-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-28T09:58:16.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Israel wirft der Hamas im Gazastreifen immer wieder vor, sich als humanitäre Helfer auszugeben. Nun hat das Militär bei einem Angriff zwei Wachleute von Ärzte ohne Grenzen getötet. Die Hilfsorganisation zeigt sich empört.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/deutschland/bundespolitik-umweltminister-plaediert-fuer-umbau-des-rheins/100137034.html",
+   "titel": "+++ Bundespolitik +++: Umweltminister plädiert für Umbau des Rheins",
+   "link": "https://www.handelsblatt.com/politik/deutschland/bundespolitik-umweltminister-plaediert-fuer-umbau-des-rheins/100137034.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-28T09:54:00.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Reaktionen auf Rentenentwurf +++ Bundestag verabschiedet Haushaltsbegleitgesetz für 2027 +++ Klingbeil warnt Koalition vor Blockade bei Einkommensteuerentlastung +++ Der Newsblog.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/spanien-vor-der-wahl-rechte-vox-distanziert-sich-von-trump/100268861.html",
+   "titel": "Spanien: „Die Linken wissen nicht, wie sie reagieren sollen“ – Spaniens Rechte probiert neuen Kurs",
+   "link": "https://www.handelsblatt.com/politik/international/spanien-vor-der-wahl-rechte-vox-distanziert-sich-von-trump/100268861.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-28T09:52:19.000Z",
+   "kategorie": "politik",
+   "maerkte": [],
+   "text": "Nach der Wahl am Sonntag könnte Vox in die spanische Regierung einziehen. Die Partei setzte sich einst gegen Separatisten ein und hofierte Trump. Jetzt ist die Strategie eine andere.",
    "sprache": "de"
   },
   {
@@ -45,6 +89,17 @@
    "maerkte": [],
    "text": "Russland meldet Abschuss von mehr als 1200 ukrainischen Drohnen +++ Ukraine bietet Waffenruhe im Schwarzen Meer an +++ Tote nach russischen Angriffen in der Nordukraine +++ Der Newsblog.",
    "sprache": "de"
+  },
+  {
+   "id": "https://www.bbc.co.uk/news/articles/cm5y10yydln3o",
+   "titel": "Two staff killed in Israeli strike on Gaza medical clinic, MSF says",
+   "link": "https://www.bbc.co.uk/news/articles/cm5y10yydln3o?at_medium=RSS&at_campaign=rss",
+   "quelle": "BBC World",
+   "zeit": "2026-11-28T06:52:05.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "The Israeli military says it targeted \"Hamas terrorists\" in the strike which has been condemned by the World Health Organization.",
+   "sprache": "en"
   },
   {
    "id": "https://www.nytimes.com/2026/11/28/world/europe/spain-pedro-sanchez-conservatives-election.html",
@@ -92,17 +147,6 @@
    "kategorie": "konflikte",
    "maerkte": [],
    "text": "Im Golf von Oman hat das US-Militär nach eigenen Angaben ein Handelsschiff beschossen. Die Besatzung habe versucht, die US-Blockade iranischer Häfen zu durchbrechen. Das Schiff sei manövrierunfähig, die Crew unverletzt.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/deutschland/bundespolitik-umweltminister-plaediert-fuer-umbau-des-rheins/100137034.html",
-   "titel": "+++ Bundespolitik +++: Umweltminister plädiert für Umbau des Rheins",
-   "link": "https://www.handelsblatt.com/politik/deutschland/bundespolitik-umweltminister-plaediert-fuer-umbau-des-rheins/100137034.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-28T03:26:00.000Z",
-   "kategorie": "politik",
-   "maerkte": [],
-   "text": "Bundestag verabschiedet Haushaltsbegleitgesetz für 2027 +++ Klingbeil warnt Koalition vor Blockade bei Einkommensteuerentlastung +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -996,64 +1040,16 @@
    ],
    "text": "Angekündigt war ein »intimes Kamingespräch«, heraus kam offenbar eine Schuldzuweisung an kanadische Frauen. Chip Wilson, Chef der Yoga-Firma Lululemon, hat auf einer Konferenz für Aufsehen gesorgt. Es war nicht das erste Mal.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.nytimes.com/2026/11/26/world/middleeast/isis-attack-syria.html",
-   "titel": "Attack Blamed on ISIS Kills 2 Syrian Security Force Members",
-   "link": "https://www.nytimes.com/2026/11/26/world/middleeast/isis-attack-syria.html",
-   "quelle": "NYT World",
-   "zeit": "2026-11-26T11:08:41.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The assault on a security headquarters in the northeastern city of Hasakah was carried out by four militants who local officials linked to the Islamic State.",
-   "sprache": "en"
-  },
-  {
-   "id": "https://www.faz.net/aktuell/wirtschaft/unternehmen/bayer-investiert-in-china-europa-wird-abgekoppelt-von-innovationen-accg-201718672.html",
-   "titel": "Bayer investiert in China: „Europa wird abgekoppelt“",
-   "link": "https://www.faz.net/aktuell/wirtschaft/unternehmen/bayer-investiert-in-china-europa-wird-abgekoppelt-von-innovationen-accg-201718672.html",
-   "quelle": "FAZ Wirtschaft",
-   "zeit": "2026-11-26T11:00:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "eurusd"
-   ],
-   "text": "Bayer investiert bis zu vier Milliarden Euro in China. Die ganze Branche kriegt von chinesischen Medikamenten nicht genug. Droht das gleiche Schicksal wie in der Autoindustrie?",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.tagesschau.de/wirtschaft/verbraucher/black-friday-schnaeppchen-wahnsinn-100.html",
-   "titel": "Black Weeks: Wie die Rabattschlacht Handel und Kunden verändert",
-   "link": "https://www.tagesschau.de/wirtschaft/verbraucher/black-friday-schnaeppchen-wahnsinn-100.html",
-   "quelle": "tagesschau",
-   "zeit": "2026-11-26T10:54:56.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Früher war es ein einzelner Einkaufstag, heute zieht sich die Schnäppchenjagd über Wochen: Der Black Friday hat sich auf den ganzen Monat ausgedehnt. Verbraucher warten gezielt auf Rabatte, Händler müssen mitziehen. Von Anke Heinhaus.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.dw.com/de/trump-und-rutte-putin-soll-ukraine-krieg-nicht-ausweiten/a-80058560",
-   "titel": "Trump und Rutte: Putin soll Ukraine-Krieg nicht \"ausweiten\"",
-   "link": "https://www.dw.com/de/trump-und-rutte-putin-soll-ukraine-krieg-nicht-ausweiten/a-80058560?maca=de-rss-de-all-1119-xml-mrss",
-   "quelle": "DW",
-   "zeit": "2026-11-26T10:48:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [
-    "ruestung"
-   ],
-   "text": "Vor seinem Gespräch mit dem US-Präsidenten plädierte der NATO-Generalsekretär für mehr Druck auf Russlands Machthaber Putin. Nach dem Treffen klangen Trump und Rutte moderater.",
-   "sprache": "de"
   }
  ],
  "quellen": {
-  "tagesschau": 10,
+  "tagesschau": 11,
   "DW": 12,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 6,
-  "Handelsblatt": 5,
-  "BBC World": 4,
-  "NYT World": 20,
+  "Handelsblatt": 6,
+  "BBC World": 5,
+  "NYT World": 21,
   "EIA Today in Energy": 0
  }
 }
