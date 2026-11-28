@@ -1,13 +1,35 @@
 {
  "version": 1,
- "lastUpdated": "2026-11-28T06:24:19.784Z",
+ "lastUpdated": "2026-11-28T08:24:09.402Z",
  "eintraege": [
+  {
+   "id": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/drohnensichtung-flugverkehr-am-airport-koelnbonn-gestoppt-100.html",
+   "titel": "Flugverkehr am Airport Köln/Bonn nach Drohnensichtung zeitweise gestoppt",
+   "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/drohnensichtung-flugverkehr-am-airport-koelnbonn-gestoppt-100.html",
+   "quelle": "tagesschau",
+   "zeit": "2026-11-28T08:21:27.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Am Airport Köln/Bonn ist am späten Abend der Flugverkehr vorübergehend eingestellt worden. Anlass war eine gesichtete Drohne. Warum sie dort unterwegs war, ist unklar. Mittlerweile können die Flugzeuge wieder starten und landen.",
+   "sprache": "de"
+  },
+  {
+   "id": "https://www.handelsblatt.com/politik/international/ukraine-bietet-waffenruhe-im-schwarzen-meer-an/27982126.html",
+   "titel": "+++ Ukraine-Krieg +++: Russland stellt Atom-U-Boot mit Hyperschallraketen in Dienst",
+   "link": "https://www.handelsblatt.com/politik/international/ukraine-bietet-waffenruhe-im-schwarzen-meer-an/27982126.html",
+   "quelle": "Handelsblatt",
+   "zeit": "2026-11-28T08:07:00.000Z",
+   "kategorie": "konflikte",
+   "maerkte": [],
+   "text": "Russland meldet Abschuss von mehr als 1200 ukrainischen Drohnen +++ Ukraine bietet Waffenruhe im Schwarzen Meer an +++ Tote nach russischen Angriffen in der Nordukraine +++ Der Newsblog.",
+   "sprache": "de"
+  },
   {
    "id": "https://www.nytimes.com/2026/11/28/world/europe/spain-pedro-sanchez-conservatives-election.html",
    "titel": "Abroad, Spain’s Leader Is a Left-Wing Hero. Will He Lose Power at Home?",
    "link": "https://www.nytimes.com/2026/11/28/world/europe/spain-pedro-sanchez-conservatives-election.html",
    "quelle": "NYT World",
-   "zeit": "2026-11-28T05:01:09.000Z",
+   "zeit": "2026-11-28T05:01:10.000Z",
    "kategorie": "politik",
    "maerkte": [],
    "text": "Prime Minister Pedro Sánchez, a staunch critic of President Trump, faces an uphill task to overcome a right-wing challenge in the national election on Sunday.",
@@ -70,17 +92,6 @@
    "kategorie": "politik",
    "maerkte": [],
    "text": "Bundestag verabschiedet Haushaltsbegleitgesetz für 2027 +++ Klingbeil warnt Koalition vor Blockade bei Einkommensteuerentlastung +++ Der Newsblog.",
-   "sprache": "de"
-  },
-  {
-   "id": "https://www.handelsblatt.com/politik/international/ukraine-bietet-waffenruhe-im-schwarzen-meer-an/27982126.html",
-   "titel": "+++ Ukraine-Krieg +++: Russland stellt Atom-U-Boot mit Hyperschallraketen in Dienst",
-   "link": "https://www.handelsblatt.com/politik/international/ukraine-bietet-waffenruhe-im-schwarzen-meer-an/27982126.html",
-   "quelle": "Handelsblatt",
-   "zeit": "2026-11-28T03:08:00.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "Ukraine bietet Waffenruhe im Schwarzen Meer an +++ Tote nach russischen Angriffen in der Nordukraine +++ Russland wirft Lettland Behinderung von Getreide-Transit vor +++ Der Newsblog.",
    "sprache": "de"
   },
   {
@@ -1036,27 +1047,16 @@
    ],
    "text": "Anleger greifen bei zuletzt stark gefallenen Aktien zu. Im Tagesverlauf richten sich die Blicke auf das EZB-Protokoll und den EU-Gipfel.",
    "sprache": "de"
-  },
-  {
-   "id": "https://www.bbc.co.uk/news/articles/cqvg2n4mzl1jo",
-   "titel": "Hamas political official and wife among eight Palestinians killed in Israeli strikes on Gaza",
-   "link": "https://www.bbc.co.uk/news/articles/cqvg2n4mzl1jo?at_medium=RSS&at_campaign=rss",
-   "quelle": "BBC World",
-   "zeit": "2026-11-26T10:14:08.000Z",
-   "kategorie": "konflikte",
-   "maerkte": [],
-   "text": "The killings are the latest from a series of near daily attacks by Israel against what it says are Hamas targets.",
-   "sprache": "en"
   }
  ],
  "quellen": {
   "tagesschau": 10,
-  "DW": 11,
+  "DW": 10,
   "Spiegel Wirtschaft": 4,
   "FAZ Wirtschaft": 4,
   "Handelsblatt": 6,
   "BBC World": 4,
-  "NYT World": 21,
+  "NYT World": 20,
   "EIA Today in Energy": 0
  }
 }
